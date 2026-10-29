@@ -906,11 +906,11 @@ hash = "0a6023bdd97fd82ae544a44d27e93c0139b8fea542e6debef764e0acce1a9c1b"
 
 [[files]]
 file = "kubejs/server_scripts/remnants/echo.js"
-hash = "b040f7f9c1cd881dc83049a27107187bea8a1877e6638c8289627b79e87bfde9"
+hash = "7eaa1859f380a810731885e829185492d509d33afdb5530d8e2d5297151f64a0"
 
 [[files]]
 file = "kubejs/server_scripts/remnants/eclipse.js"
-hash = "0ab91f75e857c104ea85f2b4c32d03f2d5e1218b2f1bd270e03736bcf25e71eb"
+hash = "0ddf8ca8f647f431d5db935a71c39dc4028a8cfa10dce9c583bda2e1a164b144"
 
 [[files]]
 file = "kubejs/server_scripts/remnants/lastlight.js"

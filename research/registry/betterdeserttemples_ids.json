@@ -1,0 +1,18 @@
+{
+ "ids": [
+  "betterdeserttemples:desert_temple",
+  "betterdeserttemples:root",
+  "betterdeserttemples:temple_clear",
+  "betterdeserttemples:temple_entry",
+  "loot:betterdeserttemples:chests/food_storage",
+  "loot:betterdeserttemples:chests/lab",
+  "loot:betterdeserttemples:chests/library",
+  "loot:betterdeserttemples:chests/pharaoh_hidden",
+  "loot:betterdeserttemples:chests/pot",
+  "loot:betterdeserttemples:chests/statue",
+  "loot:betterdeserttemples:chests/storage",
+  "loot:betterdeserttemples:chests/tomb",
+  "loot:betterdeserttemples:chests/tomb_pharaoh",
+  "loot:betterdeserttemples:chests/wardrobe"
+ ]
+}

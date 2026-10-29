@@ -1,0 +1,48 @@
+chapter: s1_epilogue
+group: main
+order: 6
+title: "&6Epilogue: &fFirst Light"
+subtitle: "The sun remembers you. The End doesn't."
+icon: minecraft:sunflower
+shape: rsquare
+quests:
+  - key: first_light
+    title: "&6&lFirst Light"
+    subtitle: "Eight embers. One sun."
+    icon: minecraft:sunflower
+    deps: [s1_act5_realm/waking_world]
+    shape: hexagon
+    size: 3.0
+    desc: |
+      &o"Rest, Ashborn. The sun remembers you."&r
+
+      Every ember you rekindled is still burning, and every Ashborn on this world carries a heart for each one. The Long Eclipse is over.
+
+      Mostly.
+    tasks: [{checkmark: "I watched the sun come up"}]
+    rewards: [{item: runeborn:sovereign_rune}, {item: rpg_attribute_system:tome_of_ascension, count: 2}, {xp: 2000}]
+
+  - key: who_broke_the_sun
+    title: "&5Who Broke the Sun?"
+    subtitle: "Seven crowns, one hollow."
+    icon: minecraft:dragon_egg
+    deps: [first_light]
+    shape: diamond
+    size: 1.5
+    desc: |
+      The Sovereigns broke the sun to share it. The Hollow Sovereign drank what was left. But the sun was already cracked when the Crown was forged; the Archive remembers that much.
+
+      Something at the edge of the End is still dark. The Dragon remembers the Eighth, and it remembers someone before him.
+
+      &7Season 2 begins where this one ends. Until then: the Boss Compendium, the Fractured Archive and the Ashen Contracts are endless.
+    tasks: [{checkmark: "To be continued"}]
+    rewards: [{xp: 500}]
+
+  - key: ascendant
+    title: "Ascendant"
+    subtitle: "Rune level 100."
+    icon: runeborn:sovereign_rune
+    deps: [first_light]
+    optional: true
+    tasks: [{advancement: "runeborn:feats/level_100"}]
+    rewards: [{item: runeborn:sovereign_lustrous_stone}, {xp: 1000}]

@@ -1,0 +1,16 @@
+name = "The Witch Hut (mod id better_witch_huts)"
+filename = "better_witch_huts-1.0.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/xcgCWpcP/versions/3dxLP8EC/better_witch_huts-1.0.0-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "119821dbe59a3f777ae47d1be12ccbfe51071956cb06fcd1b341ca3d79f9eda149445b9060ca555cf715ab1f1bf1176a016dc64f89c33cc7fc4df6485fa5f9a3"
+
+[update]
+[update.curseforge]
+file-id = 7279422
+project-id = 1393188
+[update.modrinth]
+mod-id = "xcgCWpcP"
+version = "3dxLP8EC"

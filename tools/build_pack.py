@@ -99,16 +99,21 @@ def sha256(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def folder(m):
+    """mods/ for jars; resource packs (Fresh Animations) live in resourcepacks/."""
+    return m.get("folder", "mods")
+
+
 def write_pack(mods, meta):
-    mods_dir = PACK / "mods"
-    mods_dir.mkdir(parents=True, exist_ok=True)
     wanted = set()
     for m in mods:
-        p = mods_dir / f"{m['slug']}.pw.toml"
+        d = PACK / folder(m)
+        d.mkdir(parents=True, exist_ok=True)
+        p = d / f"{m['slug']}.pw.toml"
         p.write_text(pw_toml(m))
-        wanted.add(p.name)
-    for stale in mods_dir.glob("*.pw.toml"):
-        if stale.name not in wanted:
+        wanted.add(p)
+    for stale in PACK.glob("*/*.pw.toml"):
+        if stale not in wanted:
             stale.unlink()
 
     entries = []
@@ -117,7 +122,7 @@ def write_pack(mods, meta):
         if f.is_dir() or rel in SKIP_INDEX:
             continue
         entry = [f"file = {toml_str(rel)}", f"hash = {toml_str(sha256(f))}"]
-        if rel.startswith("mods/") and rel.endswith(".pw.toml"):
+        if rel.endswith(".pw.toml"):
             entry.append("metafile = true")
         entries.append("[[files]]\n" + "\n".join(entry))
     (PACK / "index.toml").write_text('hash-format = "sha256"\n\n' + "\n\n".join(entries) + "\n")
@@ -136,7 +141,7 @@ def write_pack(mods, meta):
 def override_files():
     for f in sorted(PACK.rglob("*")):
         rel = f.relative_to(PACK).as_posix()
-        if f.is_file() and rel not in SKIP_INDEX and not rel.startswith("mods/"):
+        if f.is_file() and rel not in SKIP_INDEX and not rel.endswith(".pw.toml"):
             yield f, rel
 
 
@@ -177,7 +182,7 @@ def export(mods, meta):
         client, server = env[m.get("side", "both")]
         if m.get("decision") == "optional":
             client = "optional" if client == "required" else client
-        mr_files.append({"path": f"mods/{mr['filename']}", "hashes": {"sha1": mr["sha1"], "sha512": mr["sha512"]},
+        mr_files.append({"path": f"{folder(m)}/{mr['filename']}", "hashes": {"sha1": mr["sha1"], "sha512": mr["sha512"]},
                          "env": {"client": client, "server": server}, "downloads": [mr["url"]],
                          "fileSize": int(mr["size"])})
     index = {"formatVersion": 1, "game": "minecraft", "versionId": meta["version"], "name": meta["name"],
@@ -193,7 +198,7 @@ def export(mods, meta):
     # Server: every mod that runs on a dedicated server, with a direct URL and its sha1.
     rows = []
     for m in mods:
-        if m.get("side", "both") == "client":
+        if m.get("side", "both") == "client" or folder(m) != "mods":
             continue
         mr, cf = m.get("modrinth"), m.get("curseforge")
         if mr:

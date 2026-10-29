@@ -1,0 +1,168 @@
+# Mob LootBags, re-tuned for Remnants S1 (the defaults hand out beacons and maxed netherite, which break a soulslike
+# curve). Bags pay in the pack's own economy: runes (Faded 200 / Lustrous 1k / Radiant 4k / Hero's 12k / Sovereign
+# 40k), tempering and lustrous stones, whetstones, Remnant Shards, tomes and food.
+# tools/build_data.py writes kubejs/data/mob_loot_bags/loot_table/bags/. Entries: [item, weight, min, max].
+
+tiers:
+  common:
+    rolls: [2, 3]
+    entries:
+      - [minecraft:bread, 10, 2, 4]
+      - [minecraft:cooked_porkchop, 8, 1, 3]
+      - [minecraft:torch, 8, 4, 12]
+      - [minecraft:arrow, 8, 4, 10]
+      - [minecraft:iron_nugget, 8, 3, 9]
+      - [minecraft:gold_nugget, 8, 3, 9]
+      - [minecraft:leather, 5, 1, 3]
+      - [runeborn:faded_rune, 7, 1, 1]
+      - [runeborn:tempering_stone_1, 5, 1, 2]
+      - [remnant_mobs:remnant_shard, 2, 1, 1]
+      - [farmersdelight:rice, 3, 1, 3]
+  uncommon:
+    rolls: [2, 3]
+    entries:
+      - [minecraft:iron_ingot, 10, 2, 5]
+      - [minecraft:gold_ingot, 9, 2, 4]
+      - [minecraft:emerald, 6, 1, 3]
+      - [minecraft:golden_carrot, 6, 2, 4]
+      - [minecraft:ender_pearl, 4, 1, 2]
+      - [runeborn:faded_rune, 8, 1, 3]
+      - [runeborn:lustrous_rune, 3, 1, 1]
+      - [runeborn:tempering_stone_2, 6, 1, 2]
+      - [runeborn:tempering_stone_3, 3, 1, 1]
+      - [runeborn:blank_whetstone, 3, 1, 1]
+      - [remnant_mobs:remnant_shard, 4, 1, 2]
+      - [farmersdelight:beef_stew, 4, 1, 2]
+  rare:
+    rolls: [3, 4]
+    entries:
+      - [minecraft:diamond, 6, 1, 2]
+      - [minecraft:gold_ingot, 8, 4, 8]
+      - [minecraft:golden_apple, 5, 1, 1]
+      - [runeborn:lustrous_rune, 7, 1, 2]
+      - [runeborn:radiant_rune, 2, 1, 1]
+      - [runeborn:tempering_stone_3, 6, 1, 2]
+      - [runeborn:tempering_stone_4, 4, 1, 2]
+      - [runeborn:lustrous_stone_1, 3, 1, 1]
+      - [runeborn:keen_whetstone, 2, 1, 1]
+      - [runeborn:heavy_whetstone, 2, 1, 1]
+      - [runeborn:quality_whetstone, 2, 1, 1]
+      - [runeborn:sovereign_fragment, 2, 1, 1]
+      - [remnant_mobs:remnant_shard, 5, 2, 3]
+      - [farmersdelight:shepherds_pie, 3, 1, 1]
+  epic:
+    rolls: [3, 4]
+    entries:
+      - [minecraft:diamond, 8, 2, 4]
+      - [minecraft:experience_bottle, 6, 8, 16]
+      - [minecraft:netherite_scrap, 2, 1, 1]
+      - [minecraft:totem_of_undying, 1, 1, 1]
+      - [runeborn:radiant_rune, 6, 1, 2]
+      - [runeborn:tempering_stone_5, 5, 1, 2]
+      - [runeborn:tempering_stone_6, 3, 1, 1]
+      - [runeborn:lustrous_stone_2, 4, 1, 1]
+      - [runeborn:lustrous_stone_3, 2, 1, 1]
+      - [runeborn:fire_whetstone, 1, 1, 1]
+      - [runeborn:cold_whetstone, 1, 1, 1]
+      - [runeborn:lightning_whetstone, 1, 1, 1]
+      - [runeborn:magic_whetstone, 1, 1, 1]
+      - [runeborn:sacred_whetstone, 1, 1, 1]
+      - [runeborn:blood_whetstone, 1, 1, 1]
+      - [runeborn:sovereign_fragment, 4, 1, 2]
+      - [runeborn:sunseed, 1, 1, 1]
+      - [rpg_attribute_system:tome_of_ascension, 2, 1, 1]
+      - [elementals:remnant_tome, 2, 1, 1]
+  legendary:
+    rolls: [3, 5]
+    entries:
+      - [minecraft:diamond, 6, 3, 6]
+      - [minecraft:netherite_scrap, 5, 1, 2]
+      - [minecraft:enchanted_golden_apple, 1, 1, 1]
+      - [minecraft:totem_of_undying, 2, 1, 1]
+      - [runeborn:heros_rune, 4, 1, 1]
+      - [runeborn:radiant_rune, 6, 1, 2]
+      - [runeborn:tempering_stone_7, 5, 1, 2]
+      - [runeborn:tempering_stone_8, 3, 1, 1]
+      - [runeborn:lustrous_stone_4, 4, 1, 1]
+      - [runeborn:lustrous_stone_5, 3, 1, 1]
+      - [runeborn:lustrous_stone_6, 2, 1, 1]
+      - [runeborn:occult_whetstone, 1, 1, 1]
+      - [runeborn:flame_art_whetstone, 1, 1, 1]
+      - [runeborn:poison_whetstone, 1, 1, 1]
+      - [runeborn:hallowed_tear, 2, 1, 1]
+      - [runeborn:sunseed, 2, 1, 1]
+      - [runeborn:rebirth_tear, 1, 1, 1]
+      - [rpg_attribute_system:tome_of_ascension, 4, 1, 1]
+      - [elementals:remnant_tome, 3, 1, 1]
+  mythic:
+    rolls: [4, 5]
+    entries:
+      - [minecraft:netherite_ingot, 3, 1, 1]
+      - [minecraft:enchanted_golden_apple, 3, 1, 1]
+      - [runeborn:sovereign_rune, 3, 1, 1]
+      - [runeborn:heros_rune, 6, 1, 2]
+      - [runeborn:lustrous_stone_7, 4, 1, 1]
+      - [runeborn:lustrous_stone_8, 3, 1, 1]
+      - [runeborn:lustrous_stone_9, 2, 1, 1]
+      - [runeborn:sovereign_tempering_stone, 2, 1, 1]
+      - [runeborn:sovereign_lustrous_stone, 1, 1, 1]
+      - [runeborn:hallowed_tear, 4, 1, 1]
+      - [runeborn:sunseed, 4, 1, 1]
+      - [rpg_attribute_system:tome_of_ascension, 6, 1, 2]
+      - [elementals:remnant_tome, 4, 1, 1]
+
+# Extra themed pool for kills in the Nether and the End (replaces the defaults, which add beacons and nether stars).
+dimensions:
+  the_nether:
+    - [minecraft:blaze_rod, 8, 1, 3]
+    - [minecraft:magma_cream, 6, 1, 3]
+    - [minecraft:quartz, 8, 4, 10]
+    - [minecraft:ghast_tear, 3, 1, 1]
+    - [minecraft:gold_ingot, 8, 2, 5]
+    - [minecraft:netherite_scrap, 1, 1, 1]
+  the_end:
+    - [minecraft:ender_pearl, 8, 2, 4]
+    - [minecraft:chorus_fruit, 6, 2, 6]
+    - [minecraft:shulker_shell, 2, 1, 1]
+    - [minecraft:dragon_breath, 2, 1, 1]
+    - [minecraft:experience_bottle, 6, 4, 8]
+
+# Every boss in the pack: bosses always drop 3 Epic+ bags (Mob LootBags) and are shown-but-never-scaled by RPG Mobs.
+bosses:
+  - remnants:hollow_sovereign
+  - remnants:gravebound_warden
+  - remnants:forgotten_watcher
+  - remnants:ossukage
+  - remnants:burial_guardian
+  - cataclysm:ignis
+  - cataclysm:netherite_monstrosity
+  - cataclysm:ender_guardian
+  - cataclysm:the_harbinger
+  - cataclysm:the_leviathan
+  - cataclysm:ancient_remnant
+  - cataclysm:maledictus
+  - cataclysm:scylla
+  - mowziesmobs:ferrous_wroughtnaut
+  - mowziesmobs:frostmaw
+  - mowziesmobs:umvuthi
+  - mowziesmobs:sculptor
+  - block_factorys_bosses:underworld_knight
+  - block_factorys_bosses:infernal_dragon
+  - block_factorys_bosses:yeti
+  - block_factorys_bosses:sandworm
+  - block_factorys_bosses:kraken
+  - bosses_of_mass_destruction:lich
+  - bosses_of_mass_destruction:obsidilith
+  - bosses_of_mass_destruction:gauntlet
+  - bosses_of_mass_destruction:void_blossom
+  - born_in_chaos_v1:lord_pumpkinhead
+  - born_in_chaos_v1:supreme_bonescaller
+  - born_in_chaos_v1:nightmare_stalker
+  - born_in_chaos_v1:krampus
+  - graveyard:lich
+  - aquamirae:captain_cornelia
+  - aquamirae:maze_mother
+  - illagerinvasion:invoker
+  - friendsandfoes:wildfire
+  - deeperdarker:stalker
+  - tbos:phoenix_guardian

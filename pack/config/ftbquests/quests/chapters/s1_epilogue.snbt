@@ -1,0 +1,113 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "s1_epilogue"
+	group: "764F9A359750532B"
+	icon: {
+		id: "minecraft:sunflower"
+	}
+	id: "4F942AE65198D849"
+	images: [ ]
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["638690A07E4AB834"]
+			icon: {
+				id: "minecraft:sunflower"
+			}
+			id: "1396239BCA1C36D0"
+			rewards: [
+				{
+					id: "3E9F567E61D79CA2"
+					item: {
+						count: 1
+						id: "runeborn:sovereign_rune"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "57DB125DBA77E78E"
+					item: {
+						count: 1
+						id: "rpg_attribute_system:tome_of_ascension"
+					}
+					type: "item"
+				}
+				{
+					id: "660035A7B7826FAB"
+					type: "xp"
+					xp: 2000
+				}
+			]
+			shape: "hexagon"
+			size: 3.0d
+			tasks: [
+				{
+					id: "567AC1802220D65F"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1396239BCA1C36D0"]
+			icon: {
+				id: "minecraft:dragon_egg"
+			}
+			id: "21DCE1D40E334C97"
+			rewards: [
+				{
+					id: "4F90977443FC1990"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					id: "2388ADA1F49D2E55"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: -0.875d
+		}
+		{
+			dependencies: ["1396239BCA1C36D0"]
+			icon: {
+				id: "runeborn:sovereign_rune"
+			}
+			id: "194DBF5B86695C7E"
+			optional: true
+			rewards: [
+				{
+					id: "34E91AE12ADD7164"
+					item: {
+						count: 1
+						id: "runeborn:sovereign_lustrous_stone"
+					}
+					type: "item"
+				}
+				{
+					id: "2B2E094E31A6A12E"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [
+				{
+					advancement: "runeborn:feats/level_100"
+					criterion: ""
+					id: "7021A40735230A59"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: 0.875d
+		}
+	]
+}

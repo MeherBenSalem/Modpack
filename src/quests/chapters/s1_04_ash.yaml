@@ -1,0 +1,174 @@
+chapter: s1_act4_ash
+group: main
+order: 4
+title: "&6Act IV: &fAsh and Crown"
+subtitle: "The Ashlands, the Wither, the Last Shore. Levels 50–70."
+icon: minecraft:netherite_scrap
+shape: rsquare
+quests:
+  - key: ashlands
+    title: "&6The Ashlands"
+    subtitle: "Morgrath's ash is still falling."
+    icon: minecraft:netherrack
+    deps: [s1_act3_deep/ysolde]
+    shape: hexagon
+    size: 2.0
+    desc: |
+      &o"The Nether wasn't always this. Morgrath burned his own kingdom to keep anyone else from ruling it. The ash you breathe down there was his people."&r
+
+      Mob levels start high in the Ashlands. Go prepared.
+    tasks: [{dimension: "minecraft:the_nether"}]
+    rewards:
+      - {item: {id: minecraft:potion, components: {"minecraft:potion_contents": {potion: "minecraft:long_fire_resistance"}}}, count: 2}
+      - {xp: 300}
+
+  - key: fortress
+    title: "A Fortress in the Ash"
+    subtitle: "Blaze rods and wither skulls."
+    icon: minecraft:blaze_rod
+    deps: [ashlands]
+    tasks: [{structure: "betterfortresses:fortress"}, {item: minecraft:blaze_rod, count: 8}]
+    rewards: [{table: hunters_spoils}, {xp: 300}]
+
+  - key: bastille
+    title: "The Infernal Bastille"
+    subtitle: "The last Labyrinth burns."
+    icon: minecraft:blackstone
+    deps: [ashlands]
+    optional: true
+    tasks: [{advancement: "muchmoredungeons:slay_nether_bastille_guardian"}]
+    rewards: [{table: hunters_spoils}, {xp: 500}]
+
+  - key: soulfire_crypt
+    title: "The Soulfire Crypt"
+    subtitle: "Tier IV. The end of the dungeon trail."
+    icon: minecraft:soul_campfire
+    deps: [s1_act3_deep/cursed_keep]
+    desc: |
+      In the far snows the &6Soulfire Crypt&r burns blue. The Cinder Warden keeps the last map of the dungeon trail, and there are no more after it.
+    tasks: [{advancement: "muchmoredungeons:slay_soulfire_crypt_guardian"}]
+    rewards: [{table: sovereign_tribute}, {xp: 600}]
+
+  - key: monstrosity
+    title: "The Netherite Monstrosity"
+    subtitle: "A forge that learned to walk."
+    icon: cataclysm:monstrous_horn
+    deps: [fortress]
+    optional: true
+    shape: gear
+    tasks: [{kill: cataclysm:netherite_monstrosity}]
+    rewards: [{table: sovereign_tribute}, {xp: 1000}]
+
+  - key: ignis
+    title: "Ignis"
+    subtitle: "The burning arena."
+    icon: cataclysm:the_incinerator
+    deps: [fortress]
+    optional: true
+    shape: gear
+    desc: |
+      In the depths of the Ashlands a burning knight waits in a ring of fire. It was Morgrath's champion. It is still loyal.
+    tasks: [{kill: cataclysm:ignis}]
+    rewards: [{table: sovereign_tribute}, {xp: 1200}]
+
+  - key: underworld_knight
+    title: "The Underworld Knight"
+    subtitle: "A duel in the deep arena."
+    icon: block_factorys_bosses:knight_sword
+    deps: [fortress]
+    optional: true
+    shape: gear
+    tasks: [{kill: block_factorys_bosses:underworld_knight}]
+    rewards: [{table: sovereign_tribute}, {xp: 1000}]
+
+  - key: wither
+    title: "&5The Withering"
+    subtitle: "Old Power: the Wither."
+    icon: runeborn:relic_wither
+    deps: [fortress]
+    shape: gear
+    size: 1.75
+    desc: |
+      Three skulls and soul sand call the oldest hunger in the world. Fight it somewhere you don't mind losing.
+
+      &6Keep its Nether Star.&r Something in the Eclipsed Realm answers to one.
+    tasks: [{kill: minecraft:wither}, {item: runeborn:relic_wither}]
+    rewards: [{table: sovereign_tribute}, {xp: 1200}]
+
+  - key: burning_crown
+    title: "The Burning Crown"
+    subtitle: "Morgrath's token is what's left of the world's best metal."
+    icon: minecraft:netherite_scrap
+    deps: [fortress]
+    desc: |
+      &6Morgrath, Ash Sovereign&r, of the Burning Crown. His token is &8netherite scrap&r: ancient debris, the bones of his burned kingdom.
+    tasks: [{item: minecraft:netherite_scrap}, {item: runeborn:sovereign_fragment, count: 6}]
+    rewards: [{xp: 200}]
+
+  - key: morgrath
+    title: "&6Sovereign: Morgrath, Ash Sovereign"
+    subtitle: "Sovereign of the Burning Crown. Level 50."
+    icon: runeborn:hellbrand
+    deps: [burning_crown]
+    shape: gear
+    size: 2.0
+    desc: |
+      Fire doesn't hurt him. Everything else does, just less than you'd like. His shard makes its bearer immune to fire; earn it.
+    tasks: [{item: runeborn:sigil_morgrath}, {advancement: "runeborn:feats/fell_morgrath"}]
+    rewards: [{table: sovereign_tribute}, {item: runeborn:tempering_stone_7, count: 2}, {xp: 1200}]
+
+  - key: netherite
+    title: "Worthy of Netherite"
+    subtitle: "Attribute 30. The metal knows."
+    icon: minecraft:netherite_chestplate
+    deps: [morgrath]
+    desc: |
+      Netherite weapons and armour refuse anyone below &6level 30&r in the matching attribute (Attack Power for weapons, Protection for armour). You're probably there.
+    tasks: [{item: minecraft:netherite_ingot}]
+    rewards: [{item: minecraft:netherite_upgrade_smithing_template}, {xp: 400}]
+
+  - key: stronghold
+    title: "The Eye of the World"
+    subtitle: "Somewhere below, a portal to the Last Shore."
+    icon: minecraft:ender_eye
+    deps: [morgrath]
+    tasks: [{structure: "betterstrongholds:stronghold"}]
+    rewards: [{item: minecraft:ender_pearl, count: 8}, {xp: 300}]
+
+  - key: last_shore
+    title: "&6The Last Shore"
+    subtitle: "The End is where the sun's last light fell."
+    icon: minecraft:end_stone
+    deps: [stronghold]
+    shape: hexagon
+    size: 1.75
+    desc: |
+      &o"When the Hollow Sovereign drank the sun, a drop of it fell off the edge of the world. It landed there. The Dragon has been guarding it ever since."&r
+    tasks: [{dimension: "minecraft:the_end"}]
+    rewards: [{table: hunters_spoils}, {xp: 400}]
+
+  - key: dragon
+    title: "&5The Dragon at the World's Edge"
+    subtitle: "Old Power: the Ender Dragon."
+    icon: runeborn:relic_ender_dragon
+    deps: [last_shore]
+    shape: gear
+    size: 2.0
+    desc: |
+      Break the crystals. Bring a bow. Bring bottles: before it dies, catch its &dbreath&r. The last Sovereign answers to nothing else.
+    tasks: [{kill: minecraft:ender_dragon}, {item: minecraft:dragon_breath}]
+    rewards: [{table: sovereign_tribute}, {item: runeborn:crown_shard_ender_dragon}, {xp: 1500}]
+
+  - key: vaelorn
+    title: "&6Sovereign: Vaelorn, the Wyrm-Ravager"
+    subtitle: "Sovereign of the Last Shore. Level 70."
+    icon: runeborn:wyrmfang_halberd
+    deps: [dragon]
+    shape: gear
+    size: 2.0
+    desc: |
+      The last of the seven. He rode the dragons before there was a Dragon, and he hits like the thing he rides. Fight him on open ground, and never directly in front of him.
+
+      &o"Seven embers. One left, and it isn't in this world. Rest first, Ashborn. Then we find the black sun."&r
+    tasks: [{item: runeborn:sigil_vaelorn}, {advancement: "runeborn:feats/fell_vaelorn"}]
+    rewards: [{table: sovereign_tribute}, {item: runeborn:sovereign_tempering_stone}, {xp: 2000}]

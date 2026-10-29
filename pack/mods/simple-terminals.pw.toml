@@ -1,0 +1,16 @@
+name = "Simple Terminals"
+filename = "simple-terminals-1.21.1-neoforge-1.1.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Ss3e4qjk/versions/DpRrldoJ/simple-terminals-1.21.1-neoforge-1.1.1.jar"
+hash-format = "sha512"
+hash = "56fe737256577b9d97c56281762f28c6a2c7cbfcfee7518afa155718f1b4845aff26c3a0f46bd19042ae85596d4068e68b1fb5386c88bdb5f4f8161cd252a5a1"
+
+[update]
+[update.curseforge]
+file-id = 9076436
+project-id = 1528758
+[update.modrinth]
+mod-id = "Ss3e4qjk"
+version = "DpRrldoJ"

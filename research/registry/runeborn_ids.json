@@ -1,0 +1,27 @@
+{
+ "ids": [
+  "loot:runeborn:blocks/ember_shrine",
+  "runeborn:feats/champion",
+  "runeborn:feats/crown",
+  "runeborn:feats/died",
+  "runeborn:feats/fell_dusk_rider",
+  "runeborn:feats/fell_kaelthar",
+  "runeborn:feats/fell_morgrath",
+  "runeborn:feats/fell_sylvara",
+  "runeborn:feats/fell_vaelorn",
+  "runeborn:feats/fell_varghast",
+  "runeborn:feats/fell_ysolde",
+  "runeborn:feats/infused",
+  "runeborn:feats/kindle",
+  "runeborn:feats/level_100",
+  "runeborn:feats/level_20",
+  "runeborn:feats/level_50",
+  "runeborn:feats/masterwork",
+  "runeborn:feats/rebirth",
+  "runeborn:feats/reclaimed",
+  "runeborn:feats/root",
+  "runeborn:feats/summon",
+  "runeborn:feats/tempered",
+  "runeborn:feats/travel"
+ ]
+}

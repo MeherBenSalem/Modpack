@@ -1,0 +1,15 @@
+{
+ "ids": [
+  "betterstrongholds:stronghold",
+  "loot:betterstrongholds:chests/armoury",
+  "loot:betterstrongholds:chests/cmd_yung",
+  "loot:betterstrongholds:chests/common",
+  "loot:betterstrongholds:chests/crypt",
+  "loot:betterstrongholds:chests/grand_library",
+  "loot:betterstrongholds:chests/library_md",
+  "loot:betterstrongholds:chests/mess",
+  "loot:betterstrongholds:chests/prison_lg",
+  "loot:betterstrongholds:chests/trap",
+  "loot:betterstrongholds:chests/treasure"
+ ]
+}

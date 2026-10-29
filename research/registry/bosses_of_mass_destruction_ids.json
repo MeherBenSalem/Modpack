@@ -1,0 +1,28 @@
+{
+ "ids": [
+  "bosses_of_mass_destruction:adventure/night_lich_defeat",
+  "bosses_of_mass_destruction:adventure/void_blossom_defeat",
+  "bosses_of_mass_destruction:end/obsidilith_defeat",
+  "bosses_of_mass_destruction:gauntlet_arena",
+  "bosses_of_mass_destruction:lich_tower",
+  "bosses_of_mass_destruction:nether/gauntlet_defeat",
+  "bosses_of_mass_destruction:obsidilith_arena",
+  "bosses_of_mass_destruction:recipes/blast_amplifier",
+  "bosses_of_mass_destruction:recipes/brimstone_nectar",
+  "bosses_of_mass_destruction:recipes/charged_ender_pearl",
+  "bosses_of_mass_destruction:recipes/earthdive_spear",
+  "bosses_of_mass_destruction:recipes/levitation_block",
+  "bosses_of_mass_destruction:recipes/mob_ward",
+  "bosses_of_mass_destruction:recipes/void_lily",
+  "bosses_of_mass_destruction:void_blossom",
+  "loot:bosses_of_mass_destruction:blocks/levitation_block",
+  "loot:bosses_of_mass_destruction:blocks/mob_ward",
+  "loot:bosses_of_mass_destruction:blocks/monolith_block",
+  "loot:bosses_of_mass_destruction:blocks/void_lily",
+  "loot:bosses_of_mass_destruction:chests/gauntlet",
+  "loot:bosses_of_mass_destruction:chests/lich_tower",
+  "loot:bosses_of_mass_destruction:chests/obsidilith",
+  "loot:bosses_of_mass_destruction:entities/lich",
+  "loot:bosses_of_mass_destruction:entities/void_blossom"
+ ]
+}

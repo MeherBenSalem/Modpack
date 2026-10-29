@@ -1,0 +1,13 @@
+name = "Remnants | The Modpack"
+author = "NightBeam Studio"
+version = "1.0.0-beta.1"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "3be55306612e03ff43346b76347ea906377c4a77b3c97f3ed0c81ec636cd9718"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.265"

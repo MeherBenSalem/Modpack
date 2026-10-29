@@ -1,0 +1,560 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "s1_act2_hunt"
+	group: "764F9A359750532B"
+	icon: {
+		id: "remnant_mobs:brand_of_challenge"
+	}
+	id: "3CFC5F2EB26BB279"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2A7E4FBEE8E2A089"]
+			icon: {
+				id: "minecraft:red_dye"
+			}
+			id: "1B71C09161A6DDFB"
+			rewards: [
+				{
+					id: "2613BB7762794608"
+					table_id: 5603019727193511887L
+					type: "random"
+				}
+				{
+					id: "11B57A04749D50CF"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					advancement: "remnant_mobs:under_the_hunters_moon"
+					criterion: ""
+					id: "596BA783CA285BE1"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: -0.875d
+		}
+		{
+			dependencies: ["1B71C09161A6DDFB"]
+			icon: {
+				id: "minecraft:iron_sword"
+			}
+			id: "244492C516FAF63B"
+			rewards: [
+				{
+					count: 2
+					id: "3E93D95BEB8226BD"
+					item: {
+						count: 1
+						id: "runeborn:lustrous_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "781B879E56C6A7AB"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					advancement: "remnant_mobs:punching_up"
+					criterion: ""
+					id: "083CC5687B1FAD17"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1B71C09161A6DDFB"]
+			icon: {
+				id: "remnant_mobs:remnant_shard"
+			}
+			id: "6EC45FFDFEE6E919"
+			rewards: [
+				{
+					id: "2B857E8E4DEDA276"
+					table_id: 5603019727193511887L
+					type: "random"
+				}
+				{
+					id: "0E3E2588C66159A5"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					advancement: "remnant_mobs:champions_bane"
+					criterion: ""
+					id: "0FBFDE33EFABB898"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: -1.75d
+		}
+		{
+			dependencies: ["6EC45FFDFEE6E919"]
+			icon: {
+				id: "remnant_mobs:brand_of_challenge"
+			}
+			id: "5C77FA2F283917EA"
+			optional: true
+			rewards: [
+				{
+					count: 6
+					id: "488C1A60CE4552BF"
+					item: {
+						count: 1
+						id: "remnant_mobs:remnant_shard"
+					}
+					type: "item"
+				}
+				{
+					id: "0953462DB133DB44"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					advancement: "remnant_mobs:accept_the_challenge"
+					criterion: ""
+					id: "3409E818D951750E"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: -1.75d
+		}
+		{
+			dependencies: ["6EC45FFDFEE6E919"]
+			icon: {
+				id: "minecraft:goat_horn"
+			}
+			id: "6493FE1CBE6B9CD4"
+			rewards: [
+				{
+					id: "36C11AA48E78399B"
+					table_id: 5603019727193511887L
+					type: "random"
+				}
+				{
+					id: "2814B71AB73ADA2D"
+					item: {
+						count: 1
+						id: "runeborn:radiant_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "3F760D8C1F54659B"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.75d
+			tasks: [
+				{
+					advancement: "remnant_mobs:remnants_end"
+					criterion: ""
+					id: "0206D177FB32645F"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1B71C09161A6DDFB"]
+			icon: {
+				id: "minecraft:mossy_stone_bricks"
+			}
+			id: "3463E48C851C4E39"
+			rewards: [
+				{
+					id: "418474BBC3D17F34"
+					table_id: 5603019727193511887L
+					type: "random"
+				}
+				{
+					id: "5A3CB2EAC7EABA94"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					advancement: "muchmoredungeons:slay_catacombs_guardian"
+					criterion: ""
+					id: "26BEAE8636EA372C"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["30F39C23D463CB31"]
+			icon: {
+				id: "minecraft:enchanted_book"
+			}
+			id: "7471008BCC83F1C9"
+			rewards: [
+				{
+					id: "6FFA306DF824FD8E"
+					table_id: 5603019727193511887L
+					type: "random"
+				}
+				{
+					id: "27B084048694621E"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					advancement: "muchmoredungeons:slay_tower_dungeon_guardian"
+					criterion: ""
+					id: "732958AE221FE056"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 0.875d
+		}
+		{
+			dependencies: ["1B71C09161A6DDFB"]
+			icon: {
+				id: "runeborn:astral_staff"
+			}
+			id: "037DDC36DF427850"
+			rewards: [
+				{
+					id: "01529B45C203671B"
+					item: {
+						count: 1
+						id: "elementals:remnant_tome"
+					}
+					type: "item"
+				}
+				{
+					id: "3B48CFAF030CD698"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "1FBC542EF4BDDEE3"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["1B71C09161A6DDFB"]
+			icon: {
+				id: "minecraft:iron_block"
+			}
+			id: "463F4A4D56B7E057"
+			rewards: [
+				{
+					id: "0A0CD42B9E50E085"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					count: 6L
+					id: "3A81100C25E2E415"
+					item: {
+						count: 1
+						id: "runeborn:sovereign_fragment"
+					}
+					type: "item"
+				}
+				{
+					id: "614C32C79803C224"
+					item: {
+						count: 1
+						id: "minecraft:iron_block"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["463F4A4D56B7E057"]
+			icon: {
+				id: "runeborn:graft_axe"
+			}
+			id: "190E84DFB94144CA"
+			rewards: [
+				{
+					id: "7258F74616974E77"
+					table_id: 5895024424703439718L
+					type: "random"
+				}
+				{
+					id: "72929C87882C2838"
+					type: "xp"
+					xp: 600
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "390D7126BE2C9BC9"
+					item: {
+						count: 1
+						id: "runeborn:sigil_varghast"
+					}
+					type: "item"
+				}
+				{
+					advancement: "runeborn:feats/fell_varghast"
+					criterion: ""
+					id: "1BFAED986C46021A"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["190E84DFB94144CA"]
+			icon: {
+				id: "runeborn:crown_shard_varghast"
+			}
+			id: "289D0416C0109482"
+			rewards: [
+				{
+					id: "0A2EB423446B481C"
+					item: {
+						count: 1
+						id: "runeborn:hallowed_tear"
+					}
+					type: "item"
+				}
+				{
+					id: "07F3136A69DDB5C9"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					advancement: "runeborn:feats/crown"
+					criterion: ""
+					id: "12948494D179B48D"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: -0.875d
+		}
+		{
+			dependencies: ["190E84DFB94144CA"]
+			icon: {
+				id: "minecraft:blue_ice"
+			}
+			id: "6C617748F8950056"
+			rewards: [
+				{
+					count: 2
+					id: "3DB7E9162D74EB55"
+					item: {
+						count: 1
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+				{
+					id: "7315E20EB1EF8E30"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "36C2218473FB6FA4"
+					item: {
+						count: 1
+						id: "minecraft:blue_ice"
+					}
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "4837B9667D806690"
+					item: {
+						count: 1
+						id: "runeborn:sovereign_fragment"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.875d
+		}
+		{
+			dependencies: ["6C617748F8950056"]
+			icon: {
+				id: "mowziesmobs:ice_crystal"
+			}
+			id: "28475B28C255FDD9"
+			optional: true
+			rewards: [
+				{
+					id: "71EB1ADD3C2D53C0"
+					table_id: 5603019727193511887L
+					type: "random"
+				}
+				{
+					id: "356317CEFE0050F4"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					entity: "mowziesmobs:frostmaw"
+					id: "68FA183F27279A1D"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 8.0d
+			y: -1.75d
+		}
+		{
+			dependencies: ["6C617748F8950056", "3463E48C851C4E39"]
+			icon: {
+				id: "minecraft:packed_ice"
+			}
+			id: "72B530DE7D787BE9"
+			optional: true
+			rewards: [
+				{
+					id: "66D335AA7FC0D04D"
+					table_id: 5603019727193511887L
+					type: "random"
+				}
+				{
+					id: "071365A31E28F497"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					advancement: "muchmoredungeons:slay_frost_vaults_guardian"
+					criterion: ""
+					id: "204340AF621CDA24"
+					type: "advancement"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C617748F8950056"]
+			icon: {
+				id: "runeborn:frostbound_staff"
+			}
+			id: "53F967EF1BEA3D24"
+			rewards: [
+				{
+					id: "1A50FFFA12AFAE2E"
+					table_id: 5895024424703439718L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "6130DBE9B1200978"
+					item: {
+						count: 1
+						id: "runeborn:tempering_stone_5"
+					}
+					type: "item"
+				}
+				{
+					id: "774924EED0BF7FCB"
+					type: "xp"
+					xp: 800
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "70502D80EBAEE358"
+					item: {
+						count: 1
+						id: "runeborn:sigil_sylvara"
+					}
+					type: "item"
+				}
+				{
+					advancement: "runeborn:feats/fell_sylvara"
+					criterion: ""
+					id: "5F0B83677D92612E"
+					type: "advancement"
+				}
+			]
+			x: 8.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["53F967EF1BEA3D24"]
+			icon: {
+				id: "runeborn:radiant_rune"
+			}
+			id: "337E61B442FEAD4C"
+			rewards: [
+				{
+					id: "52594DA94C9991C6"
+					item: {
+						count: 1
+						id: "rpg_attribute_system:tome_of_ascension"
+					}
+					type: "item"
+				}
+				{
+					id: "7032A224CCDCEA9B"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					advancement: "runeborn:feats/level_50"
+					criterion: ""
+					id: "167A986D9BE918D4"
+					type: "advancement"
+				}
+			]
+			x: 10.0d
+			y: 0.0d
+		}
+	]
+}

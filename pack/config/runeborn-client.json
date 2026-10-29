@@ -1,0 +1,12 @@
+{
+  "hudEnabled": true,
+  "hideVanillaHearts": true,
+  "showBarNumbers": true,
+  "showBanners": true,
+  "showTargetBar": false,
+  "showBossBars": true,
+  "showEquipment": true,
+  "hudOffsetX": 0,
+  "hudOffsetY": 0,
+  "hudScale": 1.0
+}

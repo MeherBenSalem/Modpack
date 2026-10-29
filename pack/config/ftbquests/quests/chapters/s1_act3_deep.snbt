@@ -1,0 +1,484 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "s1_act3_deep"
+	group: "764F9A359750532B"
+	icon: {
+		id: "minecraft:echo_shard"
+	}
+	id: "698ED4652531778D"
+	images: [ ]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["53F967EF1BEA3D24"]
+			icon: {
+				id: "minecraft:sculk_shrieker"
+			}
+			id: "36E2AF0A1C071B2E"
+			rewards: [
+				{
+					id: "3EE83022C860E396"
+					table_id: 5603019727193511887L
+					type: "random"
+				}
+				{
+					id: "63F4101F1B7ADE4F"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "1753309BBA502C60"
+					structure: "minecraft:ancient_city"
+					type: "structure"
+				}
+			]
+			x: 0.0d
+			y: -0.875d
+		}
+		{
+			dependencies: ["36E2AF0A1C071B2E"]
+			icon: {
+				id: "runeborn:relic_warden"
+			}
+			id: "354182D19FF9BB17"
+			rewards: [
+				{
+					id: "105D5F570A3FCF2D"
+					table_id: 5895024424703439718L
+					type: "random"
+				}
+				{
+					id: "0D45D2B4659E78FC"
+					type: "xp"
+					xp: 800
+				}
+			]
+			shape: "gear"
+			size: 1.75d
+			tasks: [
+				{
+					entity: "minecraft:warden"
+					id: "5FF5525B5B0C5B80"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "0C9E67DE60348A5F"
+					item: {
+						count: 1
+						id: "runeborn:relic_warden"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["36E2AF0A1C071B2E"]
+			icon: {
+				id: "deeperdarker:heart_of_the_deep"
+			}
+			id: "2DA0C51A5F99227F"
+			optional: true
+			rewards: [
+				{
+					id: "562D14C31FF8D663"
+					table_id: 5603019727193511887L
+					type: "random"
+				}
+				{
+					id: "2E0DD7EC12B71A9F"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					dimension: "deeperdarker:otherside"
+					id: "7E5EAC047EB927EA"
+					type: "dimension"
+				}
+			]
+			x: 2.0d
+			y: -1.75d
+		}
+		{
+			dependencies: ["36E2AF0A1C071B2E"]
+			icon: {
+				id: "runeborn:relic_elder_guardian"
+			}
+			id: "1410C8CE7B678479"
+			rewards: [
+				{
+					id: "76821B1ED8F6B527"
+					table_id: 5603019727193511887L
+					type: "random"
+				}
+				{
+					id: "63E027AC49630629"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "77E97544604E419C"
+					structure: "betteroceanmonuments:ocean_monument"
+					type: "structure"
+				}
+				{
+					entity: "minecraft:elder_guardian"
+					id: "6E819A03A2CDEB6E"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1410C8CE7B678479"]
+			icon: {
+				id: "minecraft:lightning_rod"
+			}
+			id: "7E3D4C73C791AAAC"
+			rewards: [
+				{
+					id: "282B75FDF65F912B"
+					item: {
+						count: 1
+						id: "minecraft:trident"
+					}
+					type: "item"
+				}
+				{
+					id: "507FCD7F93DB47E6"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "0565FA003FD03839"
+					item: {
+						count: 1
+						id: "minecraft:lightning_rod"
+					}
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "487CF481255A913E"
+					item: {
+						count: 1
+						id: "runeborn:sovereign_fragment"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E3D4C73C791AAAC"]
+			icon: {
+				id: "cataclysm:tidal_claws"
+			}
+			id: "42C35A7C13BD60B5"
+			optional: true
+			rewards: [
+				{
+					id: "5ADB20FC2F9CE995"
+					table_id: 5895024424703439718L
+					type: "random"
+				}
+				{
+					id: "62C59BD85477506E"
+					type: "xp"
+					xp: 800
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					entity: "cataclysm:the_leviathan"
+					id: "2E31FF17A64344F8"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 6.0d
+			y: -1.75d
+		}
+		{
+			dependencies: ["7E3D4C73C791AAAC"]
+			icon: {
+				id: "block_factorys_bosses:kraken_tooth"
+			}
+			id: "74EC35070559D24A"
+			optional: true
+			rewards: [
+				{
+					id: "6BF6591406F39FE7"
+					table_id: 5603019727193511887L
+					type: "random"
+				}
+				{
+					id: "62A19CC0FB02F954"
+					type: "xp"
+					xp: 600
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					entity: "block_factorys_bosses:kraken"
+					id: "7C0DDD1B8BBD2B84"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E3D4C73C791AAAC"]
+			icon: {
+				id: "runeborn:storm_totem"
+			}
+			id: "125F0DA757CBDD14"
+			rewards: [
+				{
+					id: "521FC8D6087B15BB"
+					table_id: 5895024424703439718L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "4173E2D56DFA8EBB"
+					item: {
+						count: 1
+						id: "runeborn:tempering_stone_6"
+					}
+					type: "item"
+				}
+				{
+					id: "7472055A663B899F"
+					type: "xp"
+					xp: 900
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "1A816DB563434FF5"
+					item: {
+						count: 1
+						id: "runeborn:sigil_kaelthar"
+					}
+					type: "item"
+				}
+				{
+					advancement: "runeborn:feats/fell_kaelthar"
+					criterion: ""
+					id: "2F0053CC5B8B9589"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["36E2AF0A1C071B2E"]
+			icon: {
+				id: "cataclysm:wrath_of_the_desert"
+			}
+			id: "7678FF900809530E"
+			rewards: [
+				{
+					id: "641768EDC8D9F866"
+					table_id: 5895024424703439718L
+					type: "random"
+				}
+				{
+					id: "127FAFE675627E25"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "gear"
+			size: 1.75d
+			tasks: [
+				{
+					entity: "cataclysm:ancient_remnant"
+					id: "5EBB13C47247760F"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 2.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["7471008BCC83F1C9"]
+			icon: {
+				id: "minecraft:soul_lantern"
+			}
+			id: "5308A52218AFD4B1"
+			rewards: [
+				{
+					id: "2CCDCB0F8593B5C6"
+					table_id: 5603019727193511887L
+					type: "random"
+				}
+				{
+					id: "7FE476CFCE7D3506"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					advancement: "muchmoredungeons:slay_dungeon_t2_guardian"
+					criterion: ""
+					id: "7E66DE334D907A1F"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 0.875d
+		}
+		{
+			dependencies: ["3463E48C851C4E39", "36E2AF0A1C071B2E"]
+			icon: {
+				id: "minecraft:deepslate_bricks"
+			}
+			id: "07EB56F3B729FC13"
+			optional: true
+			rewards: [
+				{
+					id: "177E40B07F7EF9E7"
+					table_id: 5603019727193511887L
+					type: "random"
+				}
+				{
+					id: "7AB71813EF07BA25"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					advancement: "muchmoredungeons:slay_deepslate_halls_guardian"
+					criterion: ""
+					id: "1504293B763C0E5D"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["125F0DA757CBDD14"]
+			icon: {
+				id: "minecraft:redstone_block"
+			}
+			id: "1C4F62CC967526A2"
+			rewards: [
+				{
+					count: 3
+					id: "4AC3E6E4263344D4"
+					item: {
+						count: 1
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+				{
+					id: "3D0C2853AF6F6CFD"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "6620433302C50BCF"
+					item: {
+						count: 1
+						id: "minecraft:redstone_block"
+					}
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "5D9F48C201D2CF51"
+					item: {
+						count: 1
+						id: "runeborn:sovereign_fragment"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C4F62CC967526A2"]
+			icon: {
+				id: "runeborn:crimsonfall"
+			}
+			id: "10A48EAE33052B15"
+			rewards: [
+				{
+					id: "173DFEEE1A8DE9B3"
+					table_id: 5895024424703439718L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "7B8FAB160B01E1FB"
+					item: {
+						count: 1
+						id: "runeborn:lustrous_stone_4"
+					}
+					type: "item"
+				}
+				{
+					id: "398E395396141F1A"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "717C6FAA72F4627D"
+					item: {
+						count: 1
+						id: "runeborn:sigil_ysolde"
+					}
+					type: "item"
+				}
+				{
+					advancement: "runeborn:feats/fell_ysolde"
+					criterion: ""
+					id: "2A311165F73FC734"
+					type: "advancement"
+				}
+			]
+			x: 10.0d
+			y: 0.0d
+		}
+	]
+}

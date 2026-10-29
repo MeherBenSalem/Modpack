@@ -1,0 +1,16 @@
+name = "Fisherman's Coast (mod id fisherman_house)"
+filename = "fisherman_house-neoforge-1.21.1-2.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Dku9hJfB/versions/Evb6ajjS/fisherman_house-neoforge-1.21.1-2.0.0.jar"
+hash-format = "sha512"
+hash = "4b0937bad43e2f4e3efa693caf44cceecb34da0f4c7cbc2d13678125f80b6bc34a2f703715ed2f0c499ae3d84971a32e3cd3ae61f0ebe0db565e51d74de442e7"
+
+[update]
+[update.curseforge]
+file-id = 9330850
+project-id = 1388089
+[update.modrinth]
+mod-id = "Dku9hJfB"
+version = "Evb6ajjS"

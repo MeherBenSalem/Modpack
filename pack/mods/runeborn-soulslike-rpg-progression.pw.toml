@@ -1,0 +1,16 @@
+name = "Runeborn | Soulslike RPG progression"
+filename = "runeborn-neoforge-1.21.1-3.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ENwBoUVH/versions/9IohPC6P/runeborn-neoforge-1.21.1-3.0.0.jar"
+hash-format = "sha512"
+hash = "3739e40d20ff09ec7a1706224d804b5d73b37354dba413fb4836409b16f0f2ceb5db4d26c932bf06a58e95117f656df4c3ba3eaf78fd632a470ccf696962794c"
+
+[update]
+[update.curseforge]
+file-id = 9296400
+project-id = 1150827
+[update.modrinth]
+mod-id = "ENwBoUVH"
+version = "9IohPC6P"

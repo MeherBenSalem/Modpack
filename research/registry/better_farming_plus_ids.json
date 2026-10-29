@@ -1,0 +1,8 @@
+{
+ "ids": [
+  "better_farming_plus:recipes/misc/crates_recipe",
+  "better_farming_plus:recipes/misc/sprinkler",
+  "loot:better_farming_plus:blocks/farming_crate",
+  "loot:better_farming_plus:blocks/sprinkler"
+ ]
+}

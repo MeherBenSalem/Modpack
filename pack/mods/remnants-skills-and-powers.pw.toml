@@ -1,0 +1,16 @@
+name = "Remnants | Skills and Powers (mod id elementals, formerly Elementals)"
+filename = "remnants-skills-and-powers-neoforge-1.21.1-2.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/RFO8VXZx/versions/QochbfYu/remnants-skills-and-powers-neoforge-1.21.1-2.0.1.jar"
+hash-format = "sha512"
+hash = "977b98cefed215b172ad9ee3657623ad9a153a80073afad1bcd0554e353fe920de7e2b91346350f9710afd7ef5a03c8451f9750a6528d121e66d0364e364da48"
+
+[update]
+[update.curseforge]
+file-id = 9342741
+project-id = 1228643
+[update.modrinth]
+mod-id = "RFO8VXZx"
+version = "QochbfYu"

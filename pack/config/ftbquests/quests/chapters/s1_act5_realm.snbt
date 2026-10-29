@@ -1,0 +1,389 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "s1_act5_realm"
+	group: "764F9A359750532B"
+	icon: {
+		id: "remnant_bosses:eclipse_shard"
+	}
+	id: "42655E5D516196A5"
+	images: [ ]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5867200A6552CB88"]
+			icon: {
+				id: "remnant_bosses:eclipse_shard"
+			}
+			id: "4E4B23BBB691EBC8"
+			rewards: [
+				{
+					count: 4
+					id: "2B638F9CAE1D79FF"
+					item: {
+						count: 1
+						id: "minecraft:amethyst_shard"
+					}
+					type: "item"
+				}
+				{
+					id: "7C75C9B6A2804912"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					advancement: "remnant_bosses:realm/root"
+					criterion: ""
+					id: "093DB06B0B133FA5"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4E4B23BBB691EBC8"]
+			icon: {
+				id: "remnant_bosses:eclipse_waygate"
+			}
+			id: "5EFE0C39CCCCE0DF"
+			rewards: [
+				{
+					id: "1B7DD303D80405BA"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					advancement: "remnant_bosses:realm/kindle_waygate"
+					criterion: ""
+					id: "054B88A51203BABC"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5EFE0C39CCCCE0DF"]
+			icon: {
+				id: "remnant_bosses:grace_ember"
+			}
+			id: "63F14370CFF061C7"
+			rewards: [
+				{
+					id: "709C89C817BEBE10"
+					item: {
+						count: 1
+						id: "remnant_bosses:boss_journal"
+					}
+					type: "item"
+				}
+				{
+					id: "79AC2392133C417D"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					dimension: "remnant_bosses:eclipsed_realm"
+					id: "6216108CD84CE1C9"
+					type: "dimension"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["63F14370CFF061C7"]
+			icon: {
+				id: "remnant_bosses:boss_journal"
+			}
+			id: "582A0D136C5119A7"
+			rewards: [
+				{
+					id: "39E7D402DC7D62C4"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "36B391A6A07ED3C8"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["582A0D136C5119A7"]
+			icon: {
+				id: "remnant_bosses:grave_iron"
+			}
+			id: "05A146304EF19E9B"
+			rewards: [
+				{
+					id: "7B70230561B8534C"
+					table_id: 5603019727193511887L
+					type: "random"
+				}
+				{
+					id: "6C8A4AC57C1C1B90"
+					type: "xp"
+					xp: 600
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					entity: "remnants:burial_guardian"
+					id: "615EFBEEF12CA4BA"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "1FF0F8B223497A55"
+					item: {
+						count: 1
+						id: "remnant_bosses:crypt_key"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -1.75d
+		}
+		{
+			dependencies: ["05A146304EF19E9B"]
+			icon: {
+				id: "remnant_bosses:wardens_grasp"
+			}
+			id: "5AE07438B5B547E1"
+			rewards: [
+				{
+					id: "5759FC3BC0506FB1"
+					table_id: 5895024424703439718L
+					type: "random"
+				}
+				{
+					id: "39C2D962822E5E44"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					entity: "remnants:gravebound_warden"
+					id: "3326369E6956C78C"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 10.0d
+			y: -0.875d
+		}
+		{
+			dependencies: ["582A0D136C5119A7"]
+			icon: {
+				id: "remnant_bosses:memory_shard"
+			}
+			id: "070E2217B342F75C"
+			rewards: [
+				{
+					id: "0260228F718D2BDD"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "716A5B33EF8CD05C"
+					item: {
+						count: 1
+						id: "remnant_bosses:memory_shard"
+					}
+					type: "item"
+				}
+				{
+					id: "35EC502BF5C3AE7E"
+					item: {
+						count: 1
+						id: "remnant_bosses:memory_lens"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["070E2217B342F75C"]
+			icon: {
+				id: "remnant_bosses:watchers_eye"
+			}
+			id: "245A28BBE7AF789F"
+			rewards: [
+				{
+					id: "20B476BE14999FA7"
+					table_id: 5895024424703439718L
+					type: "random"
+				}
+				{
+					id: "22B5CC942A008DFD"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					entity: "remnants:forgotten_watcher"
+					id: "509B84E8B529B4EA"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 10.0d
+			y: 0.875d
+		}
+		{
+			dependencies: ["582A0D136C5119A7", "616E722849BB220E"]
+			icon: {
+				id: "remnant_bosses:ossukage_sword"
+			}
+			id: "1A2FC801E1E229F5"
+			rewards: [
+				{
+					id: "2C2616352875289D"
+					table_id: 5895024424703439718L
+					type: "random"
+				}
+				{
+					id: "005D94703DFB16EC"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					entity: "remnants:ossukage"
+					id: "57BB86063E778146"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 8.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["5AE07438B5B547E1", "245A28BBE7AF789F"]
+			icon: {
+				id: "remnant_bosses:tarnished_regalia"
+			}
+			id: "7074BD6B0D4A6BB7"
+			rewards: [
+				{
+					id: "3AABC5D1A1E7F8D3"
+					item: {
+						count: 1
+						id: "minecraft:enchanted_golden_apple"
+					}
+					type: "item"
+				}
+				{
+					id: "4EDEC3DA3C133785"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					id: "0B2892B7133850F6"
+					item: {
+						count: 1
+						id: "remnant_bosses:sovereigns_seal"
+					}
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7074BD6B0D4A6BB7"]
+			icon: {
+				id: "remnant_bosses:hollow_crown"
+			}
+			id: "6B937298FD1028CD"
+			rewards: [
+				{
+					id: "1C63C94300E45AD8"
+					table_id: 5895024424703439718L
+					type: "random"
+				}
+				{
+					id: "7767FA3A5F9A09FD"
+					table_id: 5895024424703439718L
+					type: "random"
+				}
+				{
+					id: "3B7C0268C7EAE671"
+					type: "xp"
+					xp: 5000
+				}
+			]
+			shape: "gear"
+			size: 3.0d
+			tasks: [
+				{
+					advancement: "remnant_bosses:realm/remnant_felled"
+					criterion: ""
+					id: "210C3C48FC10CF38"
+					type: "advancement"
+				}
+			]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6B937298FD1028CD"]
+			icon: {
+				id: "minecraft:sunflower"
+			}
+			id: "638690A07E4AB834"
+			rewards: [
+				{
+					id: "2DA83B1EB04D91FC"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					advancement: "remnant_bosses:realm/waking_world"
+					criterion: ""
+					id: "7D7840426E79D59C"
+					type: "advancement"
+				}
+			]
+			x: 16.0d
+			y: 0.0d
+		}
+	]
+}

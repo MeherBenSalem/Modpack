@@ -1,0 +1,201 @@
+chapter: s1_act1_embers
+group: main
+order: 1
+title: "&6Act I: &fEmbers"
+subtitle: "Light the first shrine. Call the first Sovereign. Levels 5–15."
+icon: runeborn:ember_shrine
+shape: rsquare
+quests:
+  - key: kindling
+    title: "&6Kindling"
+    subtitle: "A shrine needs old flame."
+    icon: minecraft:blaze_powder
+    deps: [s1_prologue/village]
+    shape: hexagon
+    size: 1.5
+    desc: |
+      &o"Campfire for the heart. Gold for the oath. Deepslate for the bones. And old flame, the kind nothing in this world makes anymore. Here. I kept some."&r
+
+      An &6Ember Shrine&r is a campfire under a crown of gold, set on polished deepslate, lit with &6blaze powder&r. The Keeper gives you the flame. The rest is yours to find.
+    tasks: [{item: minecraft:campfire}, {item: minecraft:gold_ingot, count: 2}, {item: minecraft:polished_deepslate, count: 3}]
+    rewards: [{item: minecraft:blaze_powder, count: 3}, {xp: 60}]
+
+  - key: kindle
+    title: "&6Ember in the Dark"
+    subtitle: "The first shrine in an age."
+    icon: runeborn:ember_shrine
+    deps: [kindling]
+    shape: hexagon
+    size: 2.0
+    desc: |
+      Craft the &6Ember Shrine&r, set it down in the village and kindle it. It takes its name from the land around it.
+
+      Rest at it to heal, refill your &6Ember&r and &bAzure&r flasks and bind your respawn. Spend runes there to grow.
+
+      &o"Last Light. That's what we'll call this place. The dark can count, Ashborn; let's give it a number it doesn't like."&r
+    tasks: [{advancement: "runeborn:feats/kindle"}]
+    rewards:
+      - {command: "/lastlight arrive keeper {p}", title: "The Keeper takes up residence at your shrine", icon: minecraft:bell}
+      - {table: wanderers_cache}
+      - {xp: 150}
+
+  - key: level_up
+    title: "Spend Your Light"
+    subtitle: "Runes become strength at the shrine."
+    icon: runeborn:heros_rune
+    deps: [kindle]
+    desc: |
+      At a shrine, choose &6Level Up&r. Every rune level raises one of eight attributes (Vigor, Mind, Endurance, Strength, Dexterity, Intelligence, Faith, Arcane) and also grants &6RPG levels&r for your &eK&r screen.
+
+      Your armament shows a scaling grade for each attribute (&6S&r to &7E&r). Feed the ones your weapon loves.
+    tasks: [{advancement: "runeborn:feats/level_20"}]
+    rewards: [{item: runeborn:tempering_stone_1, count: 4}, {xp: 120}]
+
+  - key: tempered
+    title: "Tempered Steel"
+    subtitle: "+1 is a beginning."
+    icon: runeborn:tempering_stone_1
+    deps: [level_up]
+    desc: |
+      Tempering Stones take standard armaments up to &6+25&r. The first ones are cheap: iron, flint and cobbled deepslate.
+
+      Reinforce your weapon at a shrine.
+    tasks: [{advancement: "runeborn:feats/tempered"}]
+    rewards: [{item: runeborn:tempering_stone_2, count: 3}, {xp: 100}]
+
+  - key: travel
+    title: "Paths of Ember"
+    subtitle: "Two fires, one road."
+    icon: minecraft:campfire
+    deps: [kindle]
+    desc: |
+      Kindle a second shrine somewhere far from the first, then travel between them from the shrine menu.
+
+      &7The Remnants Minimap marks every shrine you kindle as a Site of Grace.
+    tasks: [{advancement: "runeborn:feats/travel"}]
+    rewards: [{item: minecraft:blaze_powder, count: 2}, {table: ashborn_provisions}, {xp: 120}]
+
+  - key: sellsword
+    title: "The Ashen Company"
+    subtitle: "They fight for gold, not causes."
+    icon: better_with_gold:warbanner
+    deps: [kindle]
+    desc: |
+      Sellswords loiter near village bells. They're survivors: they stayed together and they stayed paid.
+
+      Walk up holding &6gold ingots&r and use them on one to hire it. Each has a class (Bulwark, Skirmisher, Ranger, Mender, Arcanist), a trait and an epithet it earned somewhere you weren't.
+
+      Hold &eG&r for the command wheel. &eU&r opens your roster, where every ally's &6Chronicle&r records what it actually did.
+
+      &o"Don't get attached. Or do. They'll be remembered either way."&r
+    tasks: [{item: minecraft:gold_ingot, count: 12}, {checkmark: "I hired a sellsword"}]
+    rewards:
+      - {command: "/lastlight arrive captain {p}", title: "The Company's captain sets up camp at Last Light", icon: better_with_gold:warbanner}
+      - {item: better_with_gold:golden_fish, count: 2}
+      - {xp: 120}
+
+  - key: proven_hunter
+    title: "Proven Hunter"
+    subtitle: "Kill something that has died before."
+    icon: remnant_mobs:remnant_shard
+    deps: [kindle]
+    desc: |
+      Elites carry a blue crest and two traits. They hit hard and pay well: triple XP, extra loot rolls, a Remnant Shard and bonus Valor.
+    tasks: [{advancement: "remnant_mobs:proven_hunter"}]
+    rewards: [{table: hunters_spoils}, {xp: 150}]
+
+  - key: spoils
+    title: "Spoils of the Dead"
+    subtitle: "The dead hoard."
+    icon: mob_loot_bags:commonlootbag
+    deps: [kindle]
+    desc: |
+      Monsters sometimes drop &6loot bags&r. Hold use to open one; hold &eShift&r over a bag to see its real odds.
+
+      Four bags of a tier combine into the next one, all the way to &dMythic&r.
+    tasks: [{advancement: "mob_loot_bags:open_bag"}]
+    rewards: [{item: mob_loot_bags:uncommonlootbag, count: 2}, {xp: 60}]
+
+  - key: first_dungeon
+    title: "Into the Dark Places"
+    subtitle: "Someone built these to keep things in."
+    icon: minecraft:spawner
+    deps: [proven_hunter]
+    desc: |
+      Old dungeons are everywhere under the Eclipse: cramped, full of spawners, and worth it. Clear one.
+    tasks: [{structure: "betterdungeons:zombie_dungeon", title: "Find a dungeon"}]
+    rewards: [{table: wanderers_cache}, {xp: 120}]
+
+  - key: dungeon_trail
+    title: "The Dungeon Trail"
+    subtitle: "Smugglers, mages, warlords."
+    icon: minecraft:filled_map
+    deps: [first_dungeon]
+    desc: |
+      The &6Much More Dungeons&r strongholds are guarded: each has a named Guardian at its heart and a map to the next, harder one.
+
+      Start with the &6Smuggler's Villa&r and kill its chief.
+    tasks: [{advancement: "muchmoredungeons:slay_outdoor_villa_guardian"}]
+    rewards: [{table: hunters_spoils}, {xp: 200}]
+
+  - key: champion
+    title: "Champion's Bane"
+    subtitle: "Gold titles. Sovereign Fragments."
+    icon: runeborn:sovereign_fragment
+    deps: [proven_hunter]
+    desc: |
+      About one hostile in twenty-five wears a &6gold title&r: a &6champion&r with affixes like Blazing, Phasing or Warded. Champions carry the Sovereigns' &6Fragments&r, the shards of the broken sun.
+
+      Kill one.
+    tasks: [{advancement: "runeborn:feats/champion"}]
+    rewards: [{xp: 150}]
+
+  - key: fragments
+    title: "Six Pieces of the Sun"
+    subtitle: "A Sovereign answers six Fragments and a token."
+    icon: runeborn:sovereign_fragment
+    deps: [champion]
+    desc: |
+      Gather six &6Sovereign Fragments&r. With a token, they make a &6Sigil&r, and a Sigil wakes a Sovereign.
+
+      The first is the &6Dusk Rider&r, who rides when the light fails. His token is a &6clock&r: he never forgot what time it was when the sun went out.
+    tasks: [{item: runeborn:sovereign_fragment, count: 6}, {item: minecraft:clock}]
+    rewards: [{xp: 150}]
+
+  - key: dusk_sigil
+    title: "A Clock for the Dusk"
+    icon: runeborn:sigil_dusk_rider
+    deps: [fragments]
+    tasks: [{item: runeborn:sigil_dusk_rider}]
+    rewards: [{item: minecraft:golden_apple, count: 2}, {xp: 100}]
+
+  - key: dusk_rider
+    title: "&6Sovereign: The Dusk Rider"
+    subtitle: "Who Rides When Light Fails. Level 15."
+    icon: runeborn:duskrider_glaive
+    deps: [dusk_sigil, level_up]
+    shape: gear
+    size: 2.0
+    desc: |
+      Use the Sigil at night, in the open, with full flasks.
+
+      He rides; you don't. Roll &othrough&r the charge, not away from it, and punish him when he turns. If he dismounts, he's angry, not beaten.
+
+      &7Defeating a Sovereign rekindles one of the eight embers of the &6Long Eclipse&7 for everyone on this world, and every player gains a permanent heart.
+    tasks: [{advancement: "runeborn:feats/fell_dusk_rider"}]
+    rewards:
+      - {table: sovereign_tribute}
+      - {command: "/lastlight arrive smith {p}", title: "The Smith Under Ash comes to Last Light", icon: minecraft:anvil}
+      - {xp: 400}
+
+  - key: relic
+    title: "A Relic Remembered"
+    subtitle: "Every Sovereign leaves something behind."
+    icon: runeborn:relic_dusk_rider
+    deps: [dusk_rider]
+    desc: |
+      A Sovereign's &6Relic&r can be exchanged at a shrine for its legendary armament, and its &6Crown Shard&r grants a lasting boon when equipped.
+
+      The Dusk Rider's relic becomes the &6Duskrider Glaive&r.
+    tasks: [{item: runeborn:relic_dusk_rider}]
+    rewards: [{item: runeborn:lustrous_stone_1, count: 2}, {xp: 150}]

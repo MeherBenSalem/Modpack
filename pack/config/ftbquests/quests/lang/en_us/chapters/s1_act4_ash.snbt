@@ -1,0 +1,70 @@
+{
+	chapter.00706B057024A893.chapter_subtitle: ["The Ashlands, the Wither, the Last Shore. Levels 50–70."]
+	chapter.00706B057024A893.title: "&6Act IV: &fAsh and Crown"
+	quest.0242238F2A247AFE.quest_desc: [
+		"&6Morgrath, Ash Sovereign&r, of the Burning Crown. His token is &8netherite scrap&r: ancient debris, the bones of his burned kingdom."
+	]
+	quest.0242238F2A247AFE.quest_subtitle: "Morgrath's token is what's left of the world's best metal."
+	quest.0242238F2A247AFE.title: "The Burning Crown"
+	quest.06B2E89F7AAD0CBA.quest_desc: [
+		"In the far snows the &6Soulfire Crypt&r burns blue. The Cinder Warden keeps the last map of the dungeon trail, and there are no more after it."
+	]
+	quest.06B2E89F7AAD0CBA.quest_subtitle: "Tier IV. The end of the dungeon trail."
+	quest.06B2E89F7AAD0CBA.title: "The Soulfire Crypt"
+	quest.0DF8C2E1B1B039B5.quest_subtitle: "The last Labyrinth burns."
+	quest.0DF8C2E1B1B039B5.title: "The Infernal Bastille"
+	quest.117A2520497C8CF2.quest_desc: [
+		"In the depths of the Ashlands a burning knight waits in a ring of fire. It was Morgrath's champion. It is still loyal."
+	]
+	quest.117A2520497C8CF2.quest_subtitle: "The burning arena."
+	quest.117A2520497C8CF2.title: "Ignis"
+	quest.25DE78C170374A07.quest_desc: [
+		"Netherite weapons and armour refuse anyone below &6level 30&r in the matching attribute (Attack Power for weapons, Protection for armour). You're probably there."
+	]
+	quest.25DE78C170374A07.quest_subtitle: "Attribute 30. The metal knows."
+	quest.25DE78C170374A07.title: "Worthy of Netherite"
+	quest.4D0587808D220640.quest_desc: [
+		"Break the crystals. Bring a bow. Bring bottles: before it dies, catch its &dbreath&r. The last Sovereign answers to nothing else."
+	]
+	quest.4D0587808D220640.quest_subtitle: "Old Power: the Ender Dragon."
+	quest.4D0587808D220640.title: "&5The Dragon at the World's Edge"
+	quest.4D80153791FC3844.quest_subtitle: "A duel in the deep arena."
+	quest.4D80153791FC3844.title: "The Underworld Knight"
+	quest.5867200A6552CB88.quest_desc: [
+		"The last of the seven. He rode the dragons before there was a Dragon, and he hits like the thing he rides. Fight him on open ground, and never directly in front of him."
+		""
+		"&o\"Seven embers. One left, and it isn't in this world. Rest first, Ashborn. Then we find the black sun.\"&r"
+	]
+	quest.5867200A6552CB88.quest_subtitle: "Sovereign of the Last Shore. Level 70."
+	quest.5867200A6552CB88.title: "&6Sovereign: Vaelorn, the Wyrm-Ravager"
+	quest.616E722849BB220E.quest_desc: [
+		"Three skulls and soul sand call the oldest hunger in the world. Fight it somewhere you don't mind losing."
+		""
+		"&6Keep its Nether Star.&r Something in the Eclipsed Realm answers to one."
+	]
+	quest.616E722849BB220E.quest_subtitle: "Old Power: the Wither."
+	quest.616E722849BB220E.title: "&5The Withering"
+	quest.65E3C17D51F13C6D.quest_desc: [
+		"&o\"The Nether wasn't always this. Morgrath burned his own kingdom to keep anyone else from ruling it. The ash you breathe down there was his people.\"&r"
+		""
+		"Mob levels start high in the Ashlands. Go prepared."
+	]
+	quest.65E3C17D51F13C6D.quest_subtitle: "Morgrath's ash is still falling."
+	quest.65E3C17D51F13C6D.title: "&6The Ashlands"
+	quest.67ED0BC9562790E0.quest_desc: [
+		"Fire doesn't hurt him. Everything else does, just less than you'd like. His shard makes its bearer immune to fire; earn it."
+	]
+	quest.67ED0BC9562790E0.quest_subtitle: "Sovereign of the Burning Crown. Level 50."
+	quest.67ED0BC9562790E0.title: "&6Sovereign: Morgrath, Ash Sovereign"
+	quest.67F80731A0585B0A.quest_subtitle: "Somewhere below, a portal to the Last Shore."
+	quest.67F80731A0585B0A.title: "The Eye of the World"
+	quest.6AFD03D05428FB28.quest_subtitle: "Blaze rods and wither skulls."
+	quest.6AFD03D05428FB28.title: "A Fortress in the Ash"
+	quest.786FC37A4A6098F2.quest_subtitle: "A forge that learned to walk."
+	quest.786FC37A4A6098F2.title: "The Netherite Monstrosity"
+	quest.7CD33967D099FE24.quest_desc: [
+		"&o\"When the Hollow Sovereign drank the sun, a drop of it fell off the edge of the world. It landed there. The Dragon has been guarding it ever since.\"&r"
+	]
+	quest.7CD33967D099FE24.quest_subtitle: "The End is where the sun's last light fell."
+	quest.7CD33967D099FE24.title: "&6The Last Shore"
+}

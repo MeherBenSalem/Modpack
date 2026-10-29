@@ -26,13 +26,15 @@ A chapter file looks like:
       optional: false
       hide_until_deps: false
       repeatable: false
-      tasks:   [{item: minecraft:campfire, count: 1}, {kill: minecraft:zombie, count: 5}, {dimension: ...},
+      tasks:   [{item: minecraft:campfire, count: 1}, {tag: minecraft:logs, count: 16},
+                {kill: minecraft:zombie, count: 5}, {dimension: ...},
                 {structure: ...}, {biome: ...}, {advancement: ...}, {observe: ...}, {checkmark: "Read me"},
                 {xp_levels: 10}, {stat: minecraft:mob_kills, value: 100}]
       rewards: [{item: minecraft:bread, count: 4}, {xp: 100}, {xp_levels: 3}, {table: hunters_cache},
                 {choice: origin_kits}, {loot: ember_cache}, {command: "/title @p ...", as_player: false}]
 
-Reward tables live in src/quests/reward_tables.yaml (key -> {title, loot_size, rewards: [{item, count, weight}]}).
+Reward tables live in src/quests/reward_tables.yaml and src/quests/reward_tables/*.yaml
+(key -> {title, icon, loot_size, rewards: [{item, count, weight}]}).
 Item values may also be {id: ..., count: ..., components: {...}} for named or enchanted items.
 """
 import argparse
@@ -153,6 +155,11 @@ class Compiler:
             if t.get("consume"):
                 out["consume_items"] = "true"
             self.refs.append((where, "item", t["item"] if isinstance(t["item"], str) else t["item"]["id"]))
+        elif "tag" in t:  # any item in an item tag, through FTB Filter System's smart filter
+            out.update(type="item", item={"count": 1, "id": "ftbfiltersystem:smart_filter", "components": {
+                "ftbfiltersystem:filter": f"ftbfiltersystem:item_tag({t['tag']})"}})
+            if t.get("count", 1) != 1:
+                out["count"] = L(t["count"])
         elif "kill" in t:
             out.update(type="kill", entity=t["kill"], value=L(t.get("count", 1)))
             self.refs.append((where, "entity", t["kill"]))
@@ -166,6 +173,7 @@ class Compiler:
             out.update(type="biome", biome=t["biome"])
         elif "advancement" in t:
             out.update(type="advancement", advancement=t["advancement"], criterion=t.get("criterion", ""))
+            self.refs.append((where, "advancement", t["advancement"]))
         elif "observe" in t:
             out.update(type="observation", observe_type=t.get("observe_type", 0), timer=L(t.get("timer", 0)),
                        to_observe=t["observe"])
@@ -295,6 +303,11 @@ class Compiler:
         for i, g in enumerate(meta["groups"]):
             groups[g["key"]] = self.new_id("group", g["key"])
         tables_src = yaml.safe_load((SRC / "reward_tables.yaml").read_text()) or {}
+        for extra in sorted(SRC.glob("reward_tables/*.yaml")):  # one file per chapter author
+            for key, table in (yaml.safe_load(extra.read_text()) or {}).items():
+                if key in tables_src:
+                    sys.exit(f"{extra.name}: reward table {key} already defined")
+                tables_src[key] = table
         for key in tables_src:
             self.tables[key] = self.new_id("table", key)
 
@@ -385,10 +398,14 @@ def check(refs):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true")
+    ap.add_argument("--out", help="write somewhere else (e.g. a scratch dir) instead of pack/config/ftbquests/quests")
     args = ap.parse_args()
+    if args.out:
+        global OUT
+        OUT = Path(args.out)
     c = Compiler()
     chapters, quests, tables = c.run()
-    print(f"{chapters} chapters, {quests} quests, {tables} reward tables -> {OUT.relative_to(ROOT)}")
+    print(f"{chapters} chapters, {quests} quests, {tables} reward tables -> {OUT}")
     if args.check and not check(c.refs):
         sys.exit(1)
 

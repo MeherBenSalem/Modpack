@@ -1,0 +1,30 @@
+{
+ "ids": [
+  "loot:philipsruins:chest/ancient_ruins",
+  "loot:philipsruins:chest/ancient_ruins_loot",
+  "loot:philipsruins:chest/level_one_ruins_loot",
+  "loot:philipsruins:chest/level_three_ruins_loot",
+  "loot:philipsruins:chest/lost_soul_city_loot",
+  "loot:philipsruins:chest/ocean_ruin_fortress",
+  "loot:philipsruins:chest/ocean_ruins_loot",
+  "loot:philipsruins:chest/ruin_loot",
+  "loot:philipsruins:chest/ruin_loot_value",
+  "philipsruins:ancient_crypt",
+  "philipsruins:ancient_dungeon",
+  "philipsruins:ancient_ruins",
+  "philipsruins:ancient_towers",
+  "philipsruins:field_stone_ruins",
+  "philipsruins:field_stone_ruins_rocks",
+  "philipsruins:level_one_ruins",
+  "philipsruins:level_three_ruins",
+  "philipsruins:level_two_ruins",
+  "philipsruins:level_two_ruins_pool",
+  "philipsruins:lost_soul_city",
+  "philipsruins:lost_soul_dungeon",
+  "philipsruins:ocean_fortress",
+  "philipsruins:ocean_ruins",
+  "philipsruins:pumpkin_ruins",
+  "philipsruins:rare_ruin",
+  "philipsruins:underground_structures"
+ ]
+}

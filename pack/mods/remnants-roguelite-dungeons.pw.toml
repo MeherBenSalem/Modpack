@@ -1,0 +1,16 @@
+name = "Remnants: Roguelite Dungeons (mod id tbos, formerly The Birth of Steve)"
+filename = "tbos-neoforge-1.21.1-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/gKOBlOap/versions/2apQ9m7S/tbos-neoforge-1.21.1-1.0.0.jar"
+hash-format = "sha512"
+hash = "a0fe388606f8612477b18a00cae0e7f2b5b023c45a893dba3ebdccda8ca42f2d4ea1d1ebd78b29f09ed95aab258354a55f3e13d88e370f457b308f38ae73ce7e"
+
+[update]
+[update.curseforge]
+file-id = 9359791
+project-id = 1621994
+[update.modrinth]
+mod-id = "gKOBlOap"
+version = "2apQ9m7S"

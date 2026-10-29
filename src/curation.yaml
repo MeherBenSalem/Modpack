@@ -1,0 +1,157 @@
+# The pack's mod decisions. tools/merge_research.py turns this + research/*_mods.json into src/mods.json.
+# include = always installed; optional = a launcher toggle (on by default). Required libraries are added automatically.
+# Every exclusion and its reason is in research/*_mods.md.
+
+include:
+  nightbeam:
+    - jauml: "NightBeam's shared config library"
+    - remnants-rpg-stats-skills-progression: "RPG levels from Valor, the K screen, item locks by level"
+    - runeborn-soulslike-rpg-progression: "The soulslike core: runes, Ember Shrines, flasks, stamina, dodge, 74 armaments, the seven Sovereigns"
+    - remnants-rpg-mobs: "Mob levels, ranks, traits, named Remnants and the Hunter's Moon (owns all mob scaling)"
+    - remnants-eclipsed-realm: "Act V: the Eclipsed Realm and the Hollow Sovereign"
+    - remnants-roguelite-dungeons: "The Fractured Archive: the Archivist's side story and the roguelite endgame loop"
+    - remnants-fellowship: "The Ashen Company: hireable sellswords with chronicles"
+    - remnants-skills-and-powers: "The Remnant Constellation: a 522-node skill tree and six schools (the class layer)"
+    - mob-loot-bags: "Spoils: loot bags with pack-tuned tables"
+    - much-more-dungeons: "The dungeon trail and the six Labyrinths"
+    - fisherman-coast: "Coastal structures, fishers and the Messages in a Bottle"
+    - remnants-minimap: "The parchment minimap with Sites of Grace and bloodstains"
+    - smart-villagers-ai: "Villagers that ask for help and remember you (built-in dialogue, no AI key)"
+    - reconstructed-wands: "Building wands for Last Light"
+    - better-farming-plus: "Farming QoL: sweep harvest, sprinklers"
+    - the-witch-hut: "The Hollow Wood Coven's huts"
+    - simple-terminals: "One crafting terminal over your chests"
+  combat:
+    - better-combat: "Weapon movesets; Runeborn's armaments get pack-made weapon_attributes"
+  bosses:
+    - l_enders-cataclysm: "Ignis, the Netherite Monstrosity, the Ancient Remnant, the Leviathan, the Harbinger…"
+    - mowzies-mobs: "Ferrous Wroughtnaut, Frostmaw, Umvuthi, the Sculptor"
+    - bossesrise: "Five soulslike bosses: Underworld Knight, Infernal Dragon, Yeti, Sandworm, Kraken"
+    - bosses-of-mass-destruction-forge: "Lich, Obsidilith, Gauntlet, Void Blossom"
+    - borninchaos: "Dark-fantasy mobs and the Pumpkinheads"
+    - the-graveyard-fabric: "Graveyards, crypts, the Lich and the Nightmare"
+    - aquamirae: "The frozen sea, Captain Cornelia and the Maze Mother"
+    - deeperdarker: "The Otherside below the ancient cities"
+    - friends-and-foes-forge: "Wildfire, Iceologer and vanilla-style mob additions"
+    - illager-invasion: "Illager forts and the Invoker"
+    - mutant-monsters: "Mutant zombies, skeletons, creepers and endermen: things that rose wrong"
+    - guard-villagers: "Villages that fight back"
+    - naturalist: "Wildlife that makes the world feel alive"
+  world:
+    - terralith: "Vanilla-plus terrain"
+    - tectonic: "Mountains worth climbing"
+    - nullscape: "A stranger End"
+    - yungs-better-dungeons: "Better vanilla dungeons"
+    - yungs-better-mineshafts: "Better mineshafts"
+    - yungs-better-strongholds: "Better strongholds"
+    - yungs-better-desert-temples: "Better desert temples"
+    - yungs-better-jungle-temples: "Better jungle temples"
+    - yungs-better-ocean-monuments: "Better ocean monuments"
+    - yungs-better-nether-fortresses: "Better fortresses"
+    - yungs-better-end-island: "A real Ender Dragon arena"
+    - yungs-bridges: "Bridges over rivers"
+    - yungs-extras: "Small world details"
+    - dungeons-and-taverns: "Taverns, camps and ruins"
+    - when-dungeons-arise: "Big set-piece dungeons"
+    - towns-and-towers: "Village and outpost variety"
+    - structory: "Ruins and camps"
+    - philips-ruins: "Ruins with lore-ish loot"
+    - sparsestructures: "Keeps ~300 structure types from crowding the world"
+    - explorers-compass: "Find structures (quests point you at them)"
+    - natures-compass: "Find biomes"
+  life:
+    - farmers-delight: "Cooking"
+    - brewin-and-chewin: "Brewing and cheese"
+    - supplementaries: "Small useful blocks"
+    - amendments: "Supplementaries' vanilla tweaks"
+    - handcrafted: "Furniture for Last Light"
+    - horseman: "Better horses"
+    - artifacts: "Rare accessories from chests"
+    - create: "The Clockwork Path: light automation for those who want it"
+    - aquaculture: "Fishing for the coast"
+
+  performance:
+    - sodium: "Renderer (0.8 backport; Iris needs exactly this)"
+    - iris: "Shaders"
+    - sodium-extra: "Sodium options"
+    - lithium: "Server and game-logic speed"
+    - modernfix: "Load time and memory"
+    - ferrite-core: "Memory"
+    - immediatelyfast: "Rendering speed"
+    - entityculling: "Skip hidden entities"
+    - moreculling: "Skip hidden faces"
+    - alltheleaks: "Memory-leak fixes"
+    - leaves-be-gone: "Fast leaf decay"
+    - clumps: "XP orb clumping (bosses drop a lot)"
+    - spark: "Profiler for bug reports"
+    - dynamic-fps: "Idle FPS cap"
+    - packet-fixer: "Large-packet fixes for big modded worlds"
+    - attributefix: "Lifts vanilla attribute caps so RPG stats can grow past 30 armour"
+  interface:
+    - jei: "Recipes"
+    - just-enough-resources-jer: "Loot and ore info in JEI"
+    - jade: "What am I looking at (health bars off: RPG Mobs draws its own)"
+    - appleskin: "Food values"
+    - mouse-tweaks: "Inventory dragging"
+    - clientsort: "Inventory sorting (client-only, no IPN crash)"
+    - controlling: "Keybind search (this pack has a lot of keys)"
+    - polymorph: "Recipe conflicts"
+    - enchantment-descriptions: "Enchantment tooltips"
+    - legendary-tooltips: "Rarity tooltips"
+    - item-borders: "Rarity borders"
+    - equipment-compare: "Compare gear"
+    - shoulder-surfing-reloaded: "Over-the-shoulder camera for soulslike fights"
+    - not-enough-animations: "Third-person animations"
+    - better-advancements: "Readable advancement tree (quests use many advancements)"
+    - chat-heads: "Co-op chat"
+  story:
+    - ftb-quests: "The quest book"
+    - ftb-filter-system: "Tag-based quest tasks"
+    - ftb-xmod-compat: "FTB Quests ↔ KubeJS"
+    - patchouli: "Lore book"
+    - easy-npc: "Story NPCs for later seasons and hand-made scenes"
+    - fancymenu: "Main menu"
+    - drippy-loading-screen: "Loading screen"
+    - default-options: "Ships the pack's keybinds and options"
+    - kubejs: "The pack's own mechanics: Echoes, the Long Eclipse, Last Light"
+    - lootjs: "Loot table edits"
+    - crash-assistant: "Readable crash help"
+    - better-compatibility-checker: "Warns when a client and server pack version differ"
+  storage:
+    - sophisticated-backpacks: "Backpacks"
+    - sophisticated-storage: "Chests and the storage the crafting terminal reads"
+    - lootr: "Per-player loot in co-op"
+    - corpse: "Your items wait in a corpse; your runes wait with your Echo"
+    - comforts: "Sleeping bags for the road"
+  multiplayer:
+    - ftb-ultimine: "Vein mining"
+    - netherportalfix: "Portals link where you expect"
+    - chunky: "Pre-generation for servers"
+    - ping-wheel: "Co-op pings"
+  juice:
+    - loot-beams-refork: "Beams over rare drops"
+    - ambientsounds: "A living soundscape"
+    - lambdynamiclights: "Torches light your hand"
+    - entity-model-features: "Fresh Animations support"
+    - entitytexturefeatures: "Fresh Animations support"
+    - fresh-animations: "Mobs that move like they mean it (resource pack)"
+    - particle-rain: "Rain and snow particles"
+
+provided: []
+side_overrides:
+  remnants-minimap: client
+  smart-villagers-ai: server
+
+# CurseForge files the research couldn't list (cfwidget shows only the newest 29 files). Found on the CurseForge
+# CDN next to the Forge build and checked byte-for-byte (sha1) against the Modrinth file, 2026-10-29.
+curseforge_overrides:
+  yungs-better-desert-temples: {project_id: 631016, file_id: 6276955, filename: YungsBetterDesertTemples-1.21.1-NeoForge-4.1.5.jar}
+  yungs-better-dungeons: {project_id: 510089, file_id: 5954804, filename: YungsBetterDungeons-1.21.1-NeoForge-5.1.4.jar}
+  yungs-better-end-island: {project_id: 901344, file_id: 6300968, filename: YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar}
+  yungs-better-jungle-temples: {project_id: 897669, file_id: 5924482, filename: YungsBetterJungleTemples-1.21.1-NeoForge-3.1.2.jar}
+  yungs-better-mineshafts: {project_id: 389665, file_id: 5812193, filename: YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar}
+  yungs-better-nether-fortresses: {project_id: 817651, file_id: 6606621, filename: YungsBetterNetherFortresses-1.21.1-NeoForge-3.1.5.jar}
+  yungs-better-ocean-monuments: {project_id: 689238, file_id: 5924487, filename: YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2.jar}
+  yungs-better-strongholds: {project_id: 465575, file_id: 6272264, filename: YungsBetterStrongholds-1.21.1-NeoForge-5.1.3.jar}
+  yungs-bridges: {project_id: 536660, file_id: 5812553, filename: YungsBridges-1.21.1-NeoForge-5.1.1.jar}
+  yungs-extras: {project_id: 480006, file_id: 5812546, filename: YungsExtras-1.21.1-NeoForge-5.1.1.jar}

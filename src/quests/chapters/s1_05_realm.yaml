@@ -1,0 +1,156 @@
+chapter: s1_act5_realm
+group: main
+order: 5
+title: "&6Act V: &fThe Eclipsed Realm"
+subtitle: "Under the black sun sits a crown with nothing inside. Level 70+."
+icon: remnant_bosses:eclipse_shard
+shape: rsquare
+quests:
+  - key: shard
+    title: "&5Splinter of the Black Sun"
+    subtitle: "Amethyst, an ender pearl, a gold ingot."
+    icon: remnant_bosses:eclipse_shard
+    deps: [s1_act4_ash/vaelorn]
+    shape: hexagon
+    size: 2.0
+    desc: |
+      &o"Seven Sovereigns, seven embers. The eighth light is where he took it: behind the black sun. You'll need a door."&r
+
+      Craft an &5Eclipse Shard&r from an amethyst shard, an ender pearl and a gold ingot.
+    tasks: [{advancement: "remnant_bosses:realm/root"}]
+    rewards: [{item: minecraft:amethyst_shard, count: 4}, {xp: 300}]
+
+  - key: waygate
+    title: "The Way Remembered"
+    subtitle: "Build the arch. Kindle it with a second shard."
+    icon: remnant_bosses:eclipse_waygate
+    deps: [shard]
+    desc: |
+      A &6Waygate&r: six polished deepslate around a shard on top and a gold ingot at the bottom. Place it and it raises a stone arch.
+
+      Use a second &5Eclipse Shard&r on the arch. It burns for six seconds. Walk through.
+    tasks: [{advancement: "remnant_bosses:realm/kindle_waygate"}]
+    rewards: [{xp: 300}]
+
+  - key: enter
+    title: "&5Beneath the Eclipse"
+    subtitle: "The Realm will not change."
+    icon: remnant_bosses:grace_ember
+    deps: [waygate]
+    shape: hexagon
+    size: 2.0
+    desc: |
+      Black sun. A burning tree on the horizon. Silence.
+
+      You arrive at an &6Arrival Shrine&r with a return Waygate and a &6Grace Ember&r. Rest at graces to heal and set your respawn; their golden motes lead to the nearest arena. Nothing can be built or broken here.
+
+      &o"I can't follow you in, Ashborn. Nothing living can. Come back with the light."&r
+    tasks: [{dimension: "remnant_bosses:eclipsed_realm"}]
+    rewards: [{item: remnant_bosses:boss_journal}, {xp: 500}]
+
+  - key: journal
+    title: "Boss Hunts"
+    subtitle: "Undiscovered. Encountered. Defeated."
+    icon: remnant_bosses:boss_journal
+    deps: [enter]
+    desc: |
+      The &6Boss Hunts Journal&r tracks every boss of the Realm as you find and fell them. Three arenas wait behind &7fog gates&r: the Gravebound Catacombs, the Forgotten Observatory and the Hollow Citadel. Each has an Ancient Altar already laid with its offerings; you bring the summoning item.
+    tasks: [{checkmark: "I read the journal"}]
+    rewards: [{xp: 100}]
+
+  - key: burial_guardian
+    title: "The Burial Guardian"
+    subtitle: "It keeps the Grave Iron."
+    icon: remnant_bosses:grave_iron
+    deps: [journal]
+    shape: gear
+    desc: |
+      In the Gravefield Barrows, a &6Burial Guardian&r drops the &7Grave Iron&r that forges the &6Crypt Key&r: six Grave Iron around a block of iron.
+    tasks: [{kill: remnants:burial_guardian}, {item: remnant_bosses:crypt_key}]
+    rewards: [{table: hunters_spoils}, {xp: 600}]
+
+  - key: gravebound_warden
+    title: "&6The Gravebound Warden"
+    subtitle: "The Gravebound Catacombs."
+    icon: remnant_bosses:wardens_grasp
+    deps: [burial_guardian]
+    shape: gear
+    size: 2.0
+    desc: |
+      The executioner of the Hollow Legion. Sweeps, chain grabs, graves that erupt beneath you. At half health he raises chain walls: break the four &7Chain Anchors&r to stagger him.
+    tasks: [{kill: remnants:gravebound_warden}]
+    rewards: [{table: sovereign_tribute}, {xp: 1500}]
+
+  - key: memory
+    title: "Shards of Memory"
+    subtitle: "The Forgotten Souls remember for you."
+    icon: remnant_bosses:memory_shard
+    deps: [journal]
+    desc: |
+      &6Memory Shards&r drop from the Realm's forgotten souls. Four shards, four amethyst and a spyglass make the &6Lens of Memory&r.
+    tasks: [{item: remnant_bosses:memory_shard, count: 4}, {item: remnant_bosses:memory_lens}]
+    rewards: [{xp: 500}]
+
+  - key: forgotten_watcher
+    title: "&6The Forgotten Watcher"
+    subtitle: "The Forgotten Observatory."
+    icon: remnant_bosses:watchers_eye
+    deps: [memory]
+    shape: gear
+    size: 2.0
+    desc: |
+      Rings of memory bolts, a sweeping beam, and a teleport between four lens platforms. In its second phase it makes illusions of itself and hides behind a turning crystal aegis.
+
+      &o"Every ruin has a before."&r
+    tasks: [{kill: remnants:forgotten_watcher}]
+    rewards: [{table: sovereign_tribute}, {xp: 1500}]
+
+  - key: ossukage
+    title: "&cRemnant: Ossukage"
+    subtitle: "He calls himself the original Remnant."
+    icon: remnant_bosses:ossukage_sword
+    deps: [journal, s1_act4_ash/wither]
+    shape: gear
+    size: 2.0
+    desc: |
+      An Ancient Altar, four skeleton skulls on the pedestals, and a &5Nether Star&r. Ossukage answers anywhere, not just in the Realm.
+
+      He is invulnerable while he rises. Then a sword chain, kunai at range, and a second form that raises soldiers and dashes through you. His blade is worth it.
+    tasks: [{kill: remnants:ossukage}]
+    rewards: [{table: sovereign_tribute}, {xp: 1500}]
+
+  - key: regalia
+    title: "Tarnished Regalia"
+    subtitle: "A seal for a king who isn't there."
+    icon: remnant_bosses:tarnished_regalia
+    deps: [gravebound_warden, forgotten_watcher]
+    desc: |
+      Four &6Tarnished Regalia&r, four gold ingots and an &bEcho Shard&r forge the &6Sovereign's Seal&r. The Hollow Citadel's altar waits for it.
+    tasks: [{item: remnant_bosses:sovereigns_seal}]
+    rewards: [{item: minecraft:enchanted_golden_apple}, {xp: 500}]
+
+  - key: hollow_sovereign
+    title: "&6&lThe Hollow Sovereign"
+    subtitle: "The Last King. The eighth light."
+    icon: remnant_bosses:hollow_crown
+    deps: [regalia]
+    shape: gear
+    size: 3.0
+    desc: |
+      He drank the sun and became a crown with nothing inside.
+
+      Three-hit combos and a throne slam; break his guard with an &6axe&r. At two thirds, his pauldrons fly and spectral royal guards rise. At one third, spectral crescents and a soul lunge. At the very end, &c"The Last Command"&r: a rain of blades.
+
+      &o"Bring it home, Ashborn."&r
+    tasks: [{advancement: "remnant_bosses:realm/remnant_felled"}]
+    rewards: [{table: sovereign_tribute}, {table: sovereign_tribute}, {xp: 5000}]
+
+  - key: waking_world
+    title: "The Waking World"
+    subtitle: "Go home. Look up."
+    icon: minecraft:sunflower
+    deps: [hollow_sovereign]
+    desc: |
+      Depart the Realm through a grace and walk out into the Overworld.
+    tasks: [{advancement: "remnant_bosses:realm/waking_world"}]
+    rewards: [{xp: 500}]

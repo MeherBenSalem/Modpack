@@ -1,0 +1,19 @@
+{
+ "ids": [
+  "betterdungeons:all_dungeons",
+  "betterdungeons:root",
+  "betterdungeons:skeleton_dungeon",
+  "betterdungeons:small_dungeon",
+  "betterdungeons:small_nether_dungeon",
+  "betterdungeons:spider_dungeon",
+  "betterdungeons:zombie_dungeon",
+  "loot:betterdungeons:skeleton_dungeon/chests/common",
+  "loot:betterdungeons:skeleton_dungeon/chests/middle",
+  "loot:betterdungeons:small_dungeon/chests/loot_piles",
+  "loot:betterdungeons:small_nether_dungeon/chests/common",
+  "loot:betterdungeons:spider_dungeon/chests/egg_room",
+  "loot:betterdungeons:zombie_dungeon/chests/common",
+  "loot:betterdungeons:zombie_dungeon/chests/special",
+  "loot:betterdungeons:zombie_dungeon/chests/tombstone"
+ ]
+}

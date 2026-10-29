@@ -1,0 +1,159 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 3,
+        "max": 4
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:experience_bottle",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 8,
+                "max": 16
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_scrap",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:totem_of_undying",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "runeborn:radiant_rune",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "runeborn:tempering_stone_5",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "runeborn:tempering_stone_6",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "runeborn:lustrous_stone_2",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "runeborn:lustrous_stone_3",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "runeborn:fire_whetstone",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "runeborn:cold_whetstone",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "runeborn:lightning_whetstone",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "runeborn:magic_whetstone",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "runeborn:sacred_whetstone",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "runeborn:blood_whetstone",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "runeborn:sovereign_fragment",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "runeborn:sunseed",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "rpg_attribute_system:tome_of_ascension",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementals:remnant_tome",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

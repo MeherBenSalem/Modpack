@@ -1,0 +1,497 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "s1_prologue"
+	group: "764F9A359750532B"
+	icon: {
+		id: "runeborn:faded_rune"
+	}
+	id: "50B167D1406FDCEA"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "runeborn:faded_rune"
+			}
+			id: "79BAD0382EFA559F"
+			rewards: [
+				{
+					id: "586E44229D73C446"
+					table_id: 7547820078087610474L
+					type: "random"
+				}
+				{
+					id: "488AA5C319A1C332"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "6E48F831AFB399AE"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["79BAD0382EFA559F"]
+			icon: {
+				id: "runeborn:errant_longsword"
+			}
+			id: "6D7FD40BC81A0E63"
+			rewards: [
+				{
+					id: "494F74241B194234"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					id: "60615542741752CD"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: -0.875d
+		}
+		{
+			dependencies: ["79BAD0382EFA559F"]
+			icon: {
+				id: "minecraft:oak_log"
+			}
+			id: "1ABD147F1054853C"
+			rewards: [
+				{
+					count: 4
+					id: "1E6F9BEB9B2F7311"
+					item: {
+						count: 1
+						id: "minecraft:apple"
+					}
+					type: "item"
+				}
+				{
+					id: "02AF598043926079"
+					type: "xp"
+					xp: 20
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "6CE655276653AFB3"
+					item: {
+						components: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)"
+						}
+						count: 1
+						id: "ftbfiltersystem:smart_filter"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.875d
+		}
+		{
+			dependencies: ["1ABD147F1054853C"]
+			icon: {
+				id: "minecraft:stone_sword"
+			}
+			id: "4C67E689E70A462B"
+			rewards: [
+				{
+					count: 16
+					id: "0B869813A2B6CA02"
+					item: {
+						count: 1
+						id: "minecraft:torch"
+					}
+					type: "item"
+				}
+				{
+					id: "7B5BF4256329081E"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "599B5BCA1F565F57"
+					item: {
+						count: 1
+						id: "minecraft:cobblestone"
+					}
+					type: "item"
+				}
+				{
+					id: "0ACCF7726EB7FE77"
+					item: {
+						count: 1
+						id: "minecraft:stone_pickaxe"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -0.875d
+		}
+		{
+			dependencies: ["6D7FD40BC81A0E63"]
+			icon: {
+				id: "minecraft:feather"
+			}
+			id: "2A6B94BDD99CE7BC"
+			rewards: [
+				{
+					id: "3A9928C2B440EB1F"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "05572FA508E0884E"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: 0.875d
+		}
+		{
+			dependencies: ["2A6B94BDD99CE7BC", "4C67E689E70A462B"]
+			icon: {
+				id: "minecraft:rotten_flesh"
+			}
+			id: "3B2BC7E46FADA8F0"
+			rewards: [
+				{
+					id: "1B1A99AB076C4F11"
+					table_id: 7547820078087610474L
+					type: "random"
+				}
+				{
+					id: "76406708AE010D2C"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:zombie"
+					id: "6C48DD2A9598E073"
+					type: "kill"
+					value: 5L
+				}
+				{
+					entity: "minecraft:skeleton"
+					id: "03A00691C347EB16"
+					type: "kill"
+					value: 3L
+				}
+			]
+			x: 6.0d
+			y: -0.875d
+		}
+		{
+			dependencies: ["3B2BC7E46FADA8F0"]
+			icon: {
+				id: "runeborn:faded_rune"
+			}
+			id: "7BCC2DCBDC56577B"
+			rewards: [
+				{
+					id: "1D0F4D59AFB63B13"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "1F33EE9902AD248C"
+					type: "checkmark"
+				}
+			]
+			x: 8.0d
+			y: -2.625d
+		}
+		{
+			dependencies: ["7BCC2DCBDC56577B"]
+			icon: {
+				id: "minecraft:skeleton_skull"
+			}
+			id: "7A936AC05E6E9BA9"
+			rewards: [
+				{
+					id: "25BA89516B434B40"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					advancement: "runeborn:feats/died"
+					criterion: ""
+					id: "1717518ECBCDCDC4"
+					type: "advancement"
+				}
+			]
+			x: 10.0d
+			y: -0.875d
+		}
+		{
+			dependencies: ["7A936AC05E6E9BA9"]
+			icon: {
+				id: "runeborn:heros_rune"
+			}
+			id: "282CFDC633090E33"
+			rewards: [
+				{
+					id: "655FFB6D87BDB7AC"
+					table_id: 139939361058897245L
+					type: "random"
+				}
+				{
+					id: "6AF002C2B338B090"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					advancement: "runeborn:feats/reclaimed"
+					criterion: ""
+					id: "0B289D3D0B2B74FC"
+					type: "advancement"
+				}
+			]
+			x: 12.0d
+			y: -0.875d
+		}
+		{
+			dependencies: ["4C67E689E70A462B"]
+			icon: {
+				id: "minecraft:iron_ingot"
+			}
+			id: "5E38C6BB4D9030A0"
+			rewards: [
+				{
+					id: "7DC8302BBB639985"
+					item: {
+						count: 1
+						id: "minecraft:shield"
+					}
+					type: "item"
+				}
+				{
+					id: "65495274C38E8370"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					count: 12L
+					id: "1D3DA7CDD49CB10C"
+					item: {
+						count: 1
+						id: "minecraft:iron_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.875d
+		}
+		{
+			dependencies: ["5E38C6BB4D9030A0"]
+			icon: {
+				id: "minecraft:iron_chestplate"
+			}
+			id: "19610B4F5D841A48"
+			rewards: [
+				{
+					id: "6A1582030CB84318"
+					item: {
+						count: 1
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+				{
+					id: "52D8BB44BFA83A91"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "5839759C17CA6030"
+					item: {
+						count: 1
+						id: "minecraft:iron_chestplate"
+					}
+					type: "item"
+				}
+				{
+					id: "172002B1B4584716"
+					item: {
+						count: 1
+						id: "minecraft:iron_helmet"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -0.875d
+		}
+		{
+			dependencies: ["3B2BC7E46FADA8F0"]
+			icon: {
+				id: "minecraft:red_bed"
+			}
+			id: "299D979D228918F3"
+			rewards: [
+				{
+					count: 8
+					id: "3A8F020D22DC6E1C"
+					item: {
+						count: 1
+						id: "minecraft:cooked_beef"
+					}
+					type: "item"
+				}
+				{
+					id: "618B82EDFC13DA97"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "0378877FA83D814C"
+					item: {
+						components: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:beds)"
+						}
+						count: 1
+						id: "ftbfiltersystem:smart_filter"
+					}
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "6E23122DBCBDF80C"
+					item: {
+						count: 1
+						id: "minecraft:torch"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.875d
+		}
+		{
+			dependencies: ["3B2BC7E46FADA8F0"]
+			icon: {
+				id: "remnant_mobs:hunters_lens"
+			}
+			id: "05EAAA5866A04A29"
+			rewards: [
+				{
+					id: "5511B17883757CA7"
+					item: {
+						count: 1
+						id: "remnant_mobs:hunters_lens"
+					}
+					type: "item"
+				}
+				{
+					id: "056ABD13460C1C2A"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					advancement: "remnant_mobs:know_thy_enemy"
+					criterion: ""
+					id: "17897BB0D04BAB13"
+					type: "advancement"
+				}
+			]
+			x: 8.0d
+			y: 2.625d
+		}
+		{
+			dependencies: ["05EAAA5866A04A29"]
+			icon: {
+				id: "remnant_mobs:remnant_shard"
+			}
+			id: "78696D547ABF637A"
+			rewards: [
+				{
+					id: "60D97D21A22D41CF"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "461BF21CCA2E64D9"
+					table_id: 7547820078087610474L
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					advancement: "remnant_mobs:taste_of_valor"
+					criterion: ""
+					id: "6E664EFB022E436C"
+					type: "advancement"
+				}
+			]
+			x: 10.0d
+			y: 0.875d
+		}
+		{
+			dependencies: ["299D979D228918F3", "19610B4F5D841A48", "78696D547ABF637A"]
+			icon: {
+				id: "minecraft:bell"
+			}
+			id: "20A88504DC6B5A17"
+			min_required_dependencies: 2
+			rewards: [
+				{
+					id: "686387281BE1FDAE"
+					table_id: 139939361058897245L
+					type: "random"
+				}
+				{
+					id: "74CC428E57C657BF"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "466C8278DBCC8889"
+					structure: "#minecraft:village"
+					type: "structure"
+				}
+			]
+			x: 12.0d
+			y: 0.875d
+		}
+	]
+}

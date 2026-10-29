@@ -1,0 +1,13 @@
+{
+  "block.better_farming_plus.farming_crate": "Farming Crate",
+  "block.better_farming_plus.sprinkler": "Sprinkler",
+  "item.better_farming_plus.farming_crate": "Farming Crate",
+  "item.better_farming_plus.sprinkler": "Sprinkler",
+  "container.better_farming_plus.farming_crate": "Farming Crate",
+  "gui.better_farming_plus.crate.working": "Harvesting",
+  "gui.better_farming_plus.crate.full": "Storage full!",
+  "gui.better_farming_plus.crate.idle": "Nothing ripe",
+  "gui.better_farming_plus.crate.harvested": "Harvested: %s",
+  "gui.better_farming_plus.crate.area": "Area %sx%s",
+  "pack.better_farming_plus.harvest_indicators": "Harvest Indicators"
+}

@@ -1,0 +1,45 @@
+# Better Combat movesets for Runeborn's armaments (Runeborn ships none). Runeborn's weapon class -> Better Combat preset.
+# Classes read from the Runeborn 3.0.0 jar; tools/build_data.py writes kubejs/data/runeborn/weapon_attributes/.
+presets:
+  DAGGER: dagger
+  STRAIGHT_SWORD: sword
+  THRUSTING_SWORD: rapier
+  CURVED_SWORD: cutlass
+  KATANA: katana
+  TWINBLADE: twin_blade
+  GREATSWORD: claymore
+  COLOSSAL_SWORD: claymore
+  AXE: axe
+  GREATAXE: heavy_axe
+  HAMMER: mace
+  GREAT_HAMMER: hammer
+  SPEAR: spear
+  HALBERD: halberd
+  REAPER: scythe
+  CLAW: claw
+  STAFF: staff
+  SEAL: wand
+  # WHIP: no Better Combat preset; Thornlash keeps its own swing
+overrides:
+  hollow_monk_staff: battlestaff   # a twinblade by class, but it's a monk's quarterstaff
+  duskrider_glaive: glaive
+  ironbound_knuckles: fist
+weapons:
+  DAGGER: [rusted_dagger, cutthroat_kris, starshard_kris, venomfang_stiletto, shadowfang]
+  STRAIGHT_SWORD: [errant_longsword, oathsworn_blade, ossuary_blade, emberbrand, rimeguard_sword, sunlit_sword]
+  THRUSTING_SWORD: [hexblade_estoc, noble_rapier, thornspur_rapier]
+  CURVED_SWORD: [duelist_scimitar, desert_shamshir, fangtooth_cleaver, magma_falchion]
+  KATANA: [ronin_uchigatana, longfang_nodachi, mistveil_katana, stormfang, crimsonfall, rimeveil]
+  TWINBLADE: [twinfang_glaive, hollow_monk_staff, eclipse_twinblade]
+  GREATSWORD: [highland_claymore, wavecut_flamberge, banneret_greatsword, hellbrand, ashen_greatsword, lunar_bloomfang]
+  COLOSSAL_SWORD: [ruinbreaker, starfall_slab, crownsplitter]
+  AXE: [warlord_battleaxe, jawbone_axe, rimebite_axe]
+  GREATAXE: [executioner_greataxe, ravager_greataxe, graft_axe]
+  HAMMER: [ashborn_club, iron_warhammer, penitent_mace, morning_star, bloomwarden_mace]
+  GREAT_HAMMER: [titans_gavel, stoneheart_maul, voidstar_hammer]
+  SPEAR: [militia_spear, hallowed_lance, stormcaller_pike]
+  HALBERD: [sentinel_halberd, duskrider_glaive, wyrmfang_halberd]
+  REAPER: [grave_scythe, winters_hook, gravewarden_scythe]
+  CLAW: [beast_claws, ironbound_knuckles]
+  STAFF: [astral_staff, stormglass_rod, crystal_spire_staff, gravebound_staff, frostbound_staff, abyssal_scepter]
+  SEAL: [pilgrim_seal, golden_rite_seal, storm_totem, bloodbloom_sigil, dragonsoul_seal]

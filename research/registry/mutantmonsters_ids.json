@@ -1,0 +1,33 @@
+{
+ "ids": [
+  "loot:mutantmonsters:blocks/mutant_skeleton_skull",
+  "loot:mutantmonsters:entities/creeper_minion",
+  "loot:mutantmonsters:entities/endersoul_clone",
+  "loot:mutantmonsters:entities/mutant_creeper",
+  "loot:mutantmonsters:entities/mutant_enderman",
+  "loot:mutantmonsters:entities/mutant_enderman_continuous",
+  "loot:mutantmonsters:entities/mutant_skeleton",
+  "loot:mutantmonsters:entities/mutant_skeleton/limb",
+  "loot:mutantmonsters:entities/mutant_skeleton/pelvis",
+  "loot:mutantmonsters:entities/mutant_skeleton/rib",
+  "loot:mutantmonsters:entities/mutant_skeleton/shoulder_pad",
+  "loot:mutantmonsters:entities/mutant_skeleton/skull",
+  "loot:mutantmonsters:entities/mutant_snow_golem",
+  "loot:mutantmonsters:entities/mutant_zombie",
+  "loot:mutantmonsters:entities/spider_pig",
+  "mutantmonsters:burn_zombie_burn",
+  "mutantmonsters:frosty_the_snow_golem",
+  "mutantmonsters:gunpowder_spice",
+  "mutantmonsters:hulk_smash",
+  "mutantmonsters:no_bones_about_it",
+  "mutantmonsters:recipes/combat/mutant_skeleton_arms",
+  "mutantmonsters:recipes/combat/mutant_skeleton_boots",
+  "mutantmonsters:recipes/combat/mutant_skeleton_chestplate",
+  "mutantmonsters:recipes/combat/mutant_skeleton_leggings",
+  "mutantmonsters:recipes/combat/mutant_skeleton_rib_cage",
+  "mutantmonsters:recipes/tools/creeper_minion_tracker",
+  "mutantmonsters:root",
+  "mutantmonsters:spider_pig_spider_pig",
+  "mutantmonsters:you_da_bomby"
+ ]
+}

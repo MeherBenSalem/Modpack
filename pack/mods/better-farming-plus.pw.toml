@@ -1,0 +1,16 @@
+name = "Better Farming ++ (mod id better_farming_plus)"
+filename = "better_farming_plus-neoforge-1.21.1-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/cYvmbMbJ/versions/Tnsm7vVi/better_farming_plus-neoforge-1.21.1-1.0.0.jar"
+hash-format = "sha512"
+hash = "1ed907d0d81fd0955cf9b202fe2862e2831f5e87440bab3db376a71c11c6d9a0742f53cb7a33622e6c0d549e6bfae6b4478a6910c2f8d68b194ab7ee566cf560"
+
+[update]
+[update.curseforge]
+file-id = 9319765
+project-id = 1255531
+[update.modrinth]
+mod-id = "cYvmbMbJ"
+version = "Tnsm7vVi"

@@ -1,0 +1,179 @@
+chapter: s1_prologue
+group: main
+order: 0
+title: "&6Prologue: &fAshborn"
+subtitle: "You rose from ash with nothing. Start there."
+icon: runeborn:faded_rune
+shape: rsquare
+quests:
+  - key: rise
+    title: "&6Rise, Ashborn"
+    subtitle: "The sun was eaten an age ago."
+    icon: runeborn:faded_rune
+    shape: hexagon
+    size: 2.0
+    desc: |
+      &o"Another one. Up you get. The ash doesn't keep its dead for long."&r
+
+      An age ago the sun was eaten. Everything that died in the dark came back wrong: &cRemnants&r, echoes that keep a name and a grudge.
+
+      You are one of the &6Ashborn&r. You can't die for good, which is exactly why the dead are coming for you.
+
+      Press &eI&r to open your &6Status&r and the &6Codex&r. Everything this world will try to kill you with is written there.
+    tasks: [{checkmark: "I am awake"}]
+    rewards: [{table: ashborn_provisions}, {xp: 20}]
+
+  - key: origin
+    title: "What You Were"
+    subtitle: "Pick the life you half-remember."
+    icon: runeborn:errant_longsword
+    deps: [rise]
+    desc: |
+      Your &6origin&r is the life you half-remember: Knight-Errant, Duelist, Astromancer, Penitent… or &7Ashborn&r, risen with nothing at all.
+
+      It sets your starting attributes and armament. You can change your mind later with a &6Tear of Rebirth&r, so don't agonise. The dark won't wait.
+    tasks: [{checkmark: "I chose an origin in the Status screen (I)"}]
+    rewards: [{xp: 30}]
+
+  - key: wood
+    title: "Wood Before Iron"
+    subtitle: "Every Ashborn starts the same way."
+    icon: minecraft:oak_log
+    deps: [rise]
+    tasks: [{tag: minecraft:logs, count: 16}]
+    rewards: [{item: minecraft:apple, count: 4}, {xp: 20}]
+
+  - key: stone
+    title: "Stone Teeth"
+    icon: minecraft:stone_sword
+    deps: [wood]
+    tasks: [{item: minecraft:cobblestone, count: 32}, {item: minecraft:stone_pickaxe}]
+    rewards: [{item: minecraft:torch, count: 16}, {xp: 30}]
+
+  - key: stamina
+    title: "The Breath Between Blows"
+    subtitle: "Stamina, and the roll that saves you."
+    icon: minecraft:feather
+    deps: [origin]
+    desc: |
+      Every swing and every dodge spends &astamina&r, the green bar. Swing while exhausted and your blows land at a fraction of their strength.
+
+      Tap &eLeft Alt&r to &6roll&r: for a heartbeat nothing can touch you. Learn the timing on zombies. You'll need it on things that aren't zombies.
+
+      &7Weapon arts (&eR&7) cost &bFP&7, the blue bar. Refill both at an Ember Shrine.
+    tasks: [{checkmark: "I rolled through an attack"}]
+    rewards: [{xp: 40}]
+
+  - key: first_blood
+    title: "First Blood"
+    subtitle: "They were people, once. Mostly."
+    icon: minecraft:rotten_flesh
+    deps: [stamina, stone]
+    desc: |
+      Every monster carries a &elevel&r over its head. Levels climb the further you go from where you woke, the deeper you dig and the longer the world has lived under the Eclipse.
+
+      A &agreen&r level is safe. A &cred&r one will kill you. Start with green.
+    tasks: [{kill: minecraft:zombie, count: 5}, {kill: minecraft:skeleton, count: 3}]
+    rewards: [{table: ashborn_provisions}, {xp: 60}]
+
+  - key: runes
+    title: "Runes"
+    subtitle: "The light that leaves the dead."
+    icon: runeborn:faded_rune
+    deps: [first_blood]
+    desc: |
+      When anything dies, its light leaves as &6runes&r, and you can hold them. Runes buy levels, upgrades and wares.
+
+      Here is the cruel part: when &oyou&r die, your runes stay where you fell.
+    tasks: [{checkmark: "I understand what I stand to lose"}]
+    rewards: [{xp: 40}]
+
+  - key: you_died
+    title: "&4YOU DIED"
+    subtitle: "Not the last time."
+    icon: minecraft:skeleton_skull
+    deps: [runes]
+    shape: diamond
+    desc: |
+      &o"Good. Now you know."&r
+
+      Here, the dead don't stay quiet. Where you fell, an &cEcho&r of you rises: a named Remnant that wears your face and guards the runes you lost.
+
+      Kill your own Echo to take them back. Die again before you do, and both the Echo and your runes fade into the ash.
+    tasks: [{advancement: "runeborn:feats/died"}]
+    rewards: [{xp: 50}]
+
+  - key: reclaimed
+    title: "Not This Time"
+    subtitle: "Take back what's yours."
+    icon: runeborn:heros_rune
+    deps: [you_died]
+    tasks: [{advancement: "runeborn:feats/reclaimed"}]
+    rewards: [{table: wanderers_cache}, {xp: 80}]
+
+  - key: iron
+    title: "Iron Will"
+    icon: minecraft:iron_ingot
+    deps: [stone]
+    tasks: [{item: minecraft:iron_ingot, count: 12}]
+    rewards: [{item: minecraft:shield}, {xp: 60}]
+
+  - key: armour
+    title: "Something Between You and Them"
+    icon: minecraft:iron_chestplate
+    deps: [iron]
+    tasks: [{item: minecraft:iron_chestplate}, {item: minecraft:iron_helmet}]
+    rewards: [{item: minecraft:golden_apple}, {xp: 80}]
+
+  - key: night
+    title: "The First Night"
+    subtitle: "Light holds the dark back. For now."
+    icon: minecraft:red_bed
+    deps: [first_blood]
+    desc: |
+      Torches keep the small things away. Beds skip the worst of it. Neither will save you from what comes on a &cred moon&r.
+    tasks: [{tag: minecraft:beds}, {item: minecraft:torch, count: 32}]
+    rewards: [{item: minecraft:cooked_beef, count: 8}, {xp: 40}]
+
+  - key: know_enemy
+    title: "Know Thy Enemy"
+    subtitle: "Veteran, Elite, Champion… Remnant."
+    icon: remnant_mobs:hunters_lens
+    deps: [first_blood]
+    desc: |
+      Some monsters rise more than once. Their crest shows how many times:
+
+      &7Common&r → &aVeteran&r → &9Elite&r → &5Champion&r → &cRemnant&r
+
+      Ranked monsters carry &etraits&r (Vampiric, Blinking, Packleader…) shown under their name. Every ranked kill drops a &6Remnant Shard&r; crush one in your hand to absorb its &6Valor&r.
+
+      A &6Hunter's Lens&r reads a monster's threat before you commit. Take this one.
+    tasks: [{advancement: "remnant_mobs:know_thy_enemy"}]
+    rewards: [{item: remnant_mobs:hunters_lens}, {xp: 60}]
+
+  - key: valor
+    title: "Taste of Valor"
+    subtitle: "Your first level."
+    icon: remnant_mobs:remnant_shard
+    deps: [know_enemy]
+    desc: |
+      Kills give &6Valor&r. Valor gives &6RPG levels&r, and every level gives attribute points.
+
+      Press &eK&r to open the &6Level Up&r screen: stage points, preview &7current → after&r, confirm.
+    tasks: [{advancement: "remnant_mobs:taste_of_valor"}]
+    rewards: [{xp: 60}, {table: ashborn_provisions}]
+
+  - key: village
+    title: "Smoke on the Horizon"
+    subtitle: "Somewhere, someone kept a fire lit."
+    icon: minecraft:bell
+    deps: [night, armour, valor]
+    min_deps: 2
+    shape: hexagon
+    size: 1.5
+    desc: |
+      Villages survived the Eclipse by staying small and staying lit. Find one with a bell.
+
+      &o"Bring me to a village, Ashborn. Fire wants company."&r
+    tasks: [{structure: "#minecraft:village"}]
+    rewards: [{table: wanderers_cache}, {xp: 100}]

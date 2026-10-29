@@ -1,0 +1,112 @@
+{
+	chapter.046A4DB1253C4718.chapter_subtitle: ["Light the first shrine. Call the first Sovereign. Levels 5–15."]
+	chapter.046A4DB1253C4718.title: "&6Act I: &fEmbers"
+	quest.063AD2AB6F866AE5.title: "A Clock for the Dusk"
+	quest.0706431E96A6A53E.quest_desc: [
+		"Monsters sometimes drop &6loot bags&r. Hold use to open one; hold &eShift&r over a bag to see its real odds."
+		""
+		"Four bags of a tier combine into the next one, all the way to &dMythic&r."
+	]
+	quest.0706431E96A6A53E.quest_subtitle: "The dead hoard."
+	quest.0706431E96A6A53E.title: "Spoils of the Dead"
+	quest.27437F0D8FF32DCD.quest_desc: [
+		"Gather six &6Sovereign Fragments&r. With a token, they make a &6Sigil&r, and a Sigil wakes a Sovereign."
+		""
+		"The first is the &6Dusk Rider&r, who rides when the light fails. His token is a &6clock&r: he never forgot what time it was when the sun went out."
+	]
+	quest.27437F0D8FF32DCD.quest_subtitle: "A Sovereign answers six Fragments and a token."
+	quest.27437F0D8FF32DCD.title: "Six Pieces of the Sun"
+	quest.282F5F9817BEE567.quest_desc: [
+		"Sellswords loiter near village bells. They're survivors: they stayed together and they stayed paid."
+		""
+		"Walk up holding &6gold ingots&r and use them on one to hire it. Each has a class (Bulwark, Skirmisher, Ranger, Mender, Arcanist), a trait and an epithet it earned somewhere you weren't."
+		""
+		"Hold &eG&r for the command wheel. &eU&r opens your roster, where every ally's &6Chronicle&r records what it actually did."
+		""
+		"&o\"Don't get attached. Or do. They'll be remembered either way.\"&r"
+	]
+	quest.282F5F9817BEE567.quest_subtitle: "They fight for gold, not causes."
+	quest.282F5F9817BEE567.title: "The Ashen Company"
+	quest.29E73181EF9F52B4.quest_desc: [
+		"At a shrine, choose &6Level Up&r. Every rune level raises one of eight attributes (Vigor, Mind, Endurance, Strength, Dexterity, Intelligence, Faith, Arcane) and also grants &6RPG levels&r for your &eK&r screen."
+		""
+		"Your armament shows a scaling grade for each attribute (&6S&r to &7E&r). Feed the ones your weapon loves."
+	]
+	quest.29E73181EF9F52B4.quest_subtitle: "Runes become strength at the shrine."
+	quest.29E73181EF9F52B4.title: "Spend Your Light"
+	quest.2A7E4FBEE8E2A089.quest_desc: [
+		"Use the Sigil at night, in the open, with full flasks."
+		""
+		"He rides; you don't. Roll &othrough&r the charge, not away from it, and punish him when he turns. If he dismounts, he's angry, not beaten."
+		""
+		"&7Defeating a Sovereign rekindles one of the eight embers of the &6Long Eclipse&7 for everyone on this world, and every player gains a permanent heart."
+	]
+	quest.2A7E4FBEE8E2A089.quest_subtitle: "Who Rides When Light Fails. Level 15."
+	quest.2A7E4FBEE8E2A089.title: "&6Sovereign: The Dusk Rider"
+	quest.2C20532DADD2D13F.quest_desc: [
+		"Kindle a second shrine somewhere far from the first, then travel between them from the shrine menu."
+		""
+		"&7The Remnants Minimap marks every shrine you kindle as a Site of Grace."
+	]
+	quest.2C20532DADD2D13F.quest_subtitle: "Two fires, one road."
+	quest.2C20532DADD2D13F.title: "Paths of Ember"
+	quest.2D462FB5D6B13E35.quest_desc: [
+		"Craft the &6Ember Shrine&r, set it down in the village and kindle it. It takes its name from the land around it."
+		""
+		"Rest at it to heal, refill your &6Ember&r and &bAzure&r flasks and bind your respawn. Spend runes there to grow."
+		""
+		"&o\"Last Light. That's what we'll call this place. The dark can count, Ashborn; let's give it a number it doesn't like.\"&r"
+	]
+	quest.2D462FB5D6B13E35.quest_subtitle: "The first shrine in an age."
+	quest.2D462FB5D6B13E35.title: "&6Ember in the Dark"
+	quest.30F39C23D463CB31.quest_desc: [
+		"The &6Much More Dungeons&r strongholds are guarded: each has a named Guardian at its heart and a map to the next, harder one."
+		""
+		"Start with the &6Smuggler's Villa&r and kill its chief."
+	]
+	quest.30F39C23D463CB31.quest_subtitle: "Smugglers, mages, warlords."
+	quest.30F39C23D463CB31.title: "The Dungeon Trail"
+	quest.5651DDA19B1EF5FB.quest_desc: [
+		"&o\"Campfire for the heart. Gold for the oath. Deepslate for the bones. And old flame, the kind nothing in this world makes anymore. Here. I kept some.\"&r"
+		""
+		"An &6Ember Shrine&r is a campfire under a crown of gold, set on polished deepslate, lit with &6blaze powder&r. The Keeper gives you the flame. The rest is yours to find."
+	]
+	quest.5651DDA19B1EF5FB.quest_subtitle: "A shrine needs old flame."
+	quest.5651DDA19B1EF5FB.title: "&6Kindling"
+	quest.6456CEF413461135.quest_desc: [
+		"About one hostile in twenty-five wears a &6gold title&r: a &6champion&r with affixes like Blazing, Phasing or Warded. Champions carry the Sovereigns' &6Fragments&r, the shards of the broken sun."
+		""
+		"Kill one."
+	]
+	quest.6456CEF413461135.quest_subtitle: "Gold titles. Sovereign Fragments."
+	quest.6456CEF413461135.title: "Champion's Bane"
+	quest.69DA8552347527AD.quest_desc: [
+		"Tempering Stones take standard armaments up to &6+25&r. The first ones are cheap: iron, flint and cobbled deepslate."
+		""
+		"Reinforce your weapon at a shrine."
+	]
+	quest.69DA8552347527AD.quest_subtitle: "+1 is a beginning."
+	quest.69DA8552347527AD.title: "Tempered Steel"
+	quest.6AA9A3468FD7793E.quest_desc: [
+		"Elites carry a blue crest and two traits. They hit hard and pay well: triple XP, extra loot rolls, a Remnant Shard and bonus Valor."
+	]
+	quest.6AA9A3468FD7793E.quest_subtitle: "Kill something that has died before."
+	quest.6AA9A3468FD7793E.title: "Proven Hunter"
+	quest.6D86DE336AB40AB6.quest_desc: [
+		"A Sovereign's &6Relic&r can be exchanged at a shrine for its legendary armament, and its &6Crown Shard&r grants a lasting boon when equipped."
+		""
+		"The Dusk Rider's relic becomes the &6Duskrider Glaive&r."
+	]
+	quest.6D86DE336AB40AB6.quest_subtitle: "Every Sovereign leaves something behind."
+	quest.6D86DE336AB40AB6.title: "A Relic Remembered"
+	quest.7CAE9FA8D44BB153.quest_desc: [
+		"Old dungeons are everywhere under the Eclipse: cramped, full of spawners, and worth it. Clear one."
+	]
+	quest.7CAE9FA8D44BB153.quest_subtitle: "Someone built these to keep things in."
+	quest.7CAE9FA8D44BB153.title: "Into the Dark Places"
+	reward.16BC1D4DAC9E0D3F.title: "The Company's captain sets up camp at Last Light"
+	reward.5D2D8BB547765500.title: "The Keeper takes up residence at your shrine"
+	reward.78030302AA635B7F.title: "The Smith Under Ash comes to Last Light"
+	task.01B4C7B15B5C80F1.title: "Find a dungeon"
+	task.5B291896AFA6C5BE.title: "I hired a sellsword"
+}

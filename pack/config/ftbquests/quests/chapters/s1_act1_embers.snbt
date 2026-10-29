@@ -1,0 +1,557 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "s1_act1_embers"
+	group: "764F9A359750532B"
+	icon: {
+		id: "runeborn:ember_shrine"
+	}
+	id: "046A4DB1253C4718"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["20A88504DC6B5A17"]
+			icon: {
+				id: "minecraft:blaze_powder"
+			}
+			id: "5651DDA19B1EF5FB"
+			rewards: [
+				{
+					count: 3
+					id: "5F4072C7548CFFB7"
+					item: {
+						count: 1
+						id: "minecraft:blaze_powder"
+					}
+					type: "item"
+				}
+				{
+					id: "6C2A278F27886C7A"
+					type: "xp"
+					xp: 60
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "4B33EE008B56EEC9"
+					item: {
+						count: 1
+						id: "minecraft:campfire"
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "33D24511760EA660"
+					item: {
+						count: 1
+						id: "minecraft:gold_ingot"
+					}
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "5B47F4C9B4D76B7A"
+					item: {
+						count: 1
+						id: "minecraft:polished_deepslate"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5651DDA19B1EF5FB"]
+			icon: {
+				id: "runeborn:ember_shrine"
+			}
+			id: "2D462FB5D6B13E35"
+			rewards: [
+				{
+					command: "/lastlight arrive keeper {p}"
+					elevate_perms: true
+					icon: {
+						id: "minecraft:bell"
+					}
+					id: "5D2D8BB547765500"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					id: "4994B15F1EF65F49"
+					table_id: 139939361058897245L
+					type: "random"
+				}
+				{
+					id: "783B08CF29B449A0"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					advancement: "runeborn:feats/kindle"
+					criterion: ""
+					id: "4204CCD3F7F13A3F"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D462FB5D6B13E35"]
+			icon: {
+				id: "runeborn:heros_rune"
+			}
+			id: "29E73181EF9F52B4"
+			rewards: [
+				{
+					count: 4
+					id: "1CEC3822749C684C"
+					item: {
+						count: 1
+						id: "runeborn:tempering_stone_1"
+					}
+					type: "item"
+				}
+				{
+					id: "0572080D63BDE7B3"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					advancement: "runeborn:feats/level_20"
+					criterion: ""
+					id: "6758172BD92A7C52"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["29E73181EF9F52B4"]
+			icon: {
+				id: "runeborn:tempering_stone_1"
+			}
+			id: "69DA8552347527AD"
+			rewards: [
+				{
+					count: 3
+					id: "7D69F521B36B3220"
+					item: {
+						count: 1
+						id: "runeborn:tempering_stone_2"
+					}
+					type: "item"
+				}
+				{
+					id: "79C8A219E3CECB47"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					advancement: "runeborn:feats/tempered"
+					criterion: ""
+					id: "40CC50A99F9FBE92"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: -1.75d
+		}
+		{
+			dependencies: ["2D462FB5D6B13E35"]
+			icon: {
+				id: "minecraft:campfire"
+			}
+			id: "2C20532DADD2D13F"
+			rewards: [
+				{
+					count: 2
+					id: "195F2F42DA582EEF"
+					item: {
+						count: 1
+						id: "minecraft:blaze_powder"
+					}
+					type: "item"
+				}
+				{
+					id: "22170C822862C949"
+					table_id: 7547820078087610474L
+					type: "random"
+				}
+				{
+					id: "3B6E34D20FA5A3A4"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					advancement: "runeborn:feats/travel"
+					criterion: ""
+					id: "3E766ED2CA5820EE"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: -1.75d
+		}
+		{
+			dependencies: ["2D462FB5D6B13E35"]
+			icon: {
+				id: "better_with_gold:warbanner"
+			}
+			id: "282F5F9817BEE567"
+			rewards: [
+				{
+					command: "/lastlight arrive captain {p}"
+					elevate_perms: true
+					icon: {
+						id: "better_with_gold:warbanner"
+					}
+					id: "16BC1D4DAC9E0D3F"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					count: 2
+					id: "64A4DC26197AB916"
+					item: {
+						count: 1
+						id: "better_with_gold:golden_fish"
+					}
+					type: "item"
+				}
+				{
+					id: "2F70CF4C7EC42259"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					count: 12L
+					id: "0178562A42705702"
+					item: {
+						count: 1
+						id: "minecraft:gold_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "5B291896AFA6C5BE"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D462FB5D6B13E35"]
+			icon: {
+				id: "remnant_mobs:remnant_shard"
+			}
+			id: "6AA9A3468FD7793E"
+			rewards: [
+				{
+					id: "517C7EEE5A895D93"
+					table_id: 5603019727193511887L
+					type: "random"
+				}
+				{
+					id: "6DDF988C9BFEA037"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					advancement: "remnant_mobs:proven_hunter"
+					criterion: ""
+					id: "4D336AF8DEC29E59"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["2D462FB5D6B13E35"]
+			icon: {
+				id: "mob_loot_bags:commonlootbag"
+			}
+			id: "0706431E96A6A53E"
+			rewards: [
+				{
+					count: 2
+					id: "39E9B28F3793EDCE"
+					item: {
+						count: 1
+						id: "mob_loot_bags:uncommonlootbag"
+					}
+					type: "item"
+				}
+				{
+					id: "38B898556B2E8CAD"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					advancement: "mob_loot_bags:open_bag"
+					criterion: ""
+					id: "7ED30DA686B7CC0A"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6AA9A3468FD7793E"]
+			icon: {
+				id: "minecraft:spawner"
+			}
+			id: "7CAE9FA8D44BB153"
+			rewards: [
+				{
+					id: "46B8987A041937D9"
+					table_id: 139939361058897245L
+					type: "random"
+				}
+				{
+					id: "494E28B9B25C5DF8"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					id: "01B4C7B15B5C80F1"
+					structure: "betterdungeons:zombie_dungeon"
+					type: "structure"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7CAE9FA8D44BB153"]
+			icon: {
+				id: "minecraft:filled_map"
+			}
+			id: "30F39C23D463CB31"
+			rewards: [
+				{
+					id: "14B1906E45570254"
+					table_id: 5603019727193511887L
+					type: "random"
+				}
+				{
+					id: "3AEEAD1A30ED1D54"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					advancement: "muchmoredungeons:slay_outdoor_villa_guardian"
+					criterion: ""
+					id: "607B16334C019E3E"
+					type: "advancement"
+				}
+			]
+			x: 8.0d
+			y: -0.875d
+		}
+		{
+			dependencies: ["6AA9A3468FD7793E"]
+			icon: {
+				id: "runeborn:sovereign_fragment"
+			}
+			id: "6456CEF413461135"
+			rewards: [
+				{
+					id: "2BA51463BF7A591C"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					advancement: "runeborn:feats/champion"
+					criterion: ""
+					id: "67BC3C1B4C8C3364"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["6456CEF413461135"]
+			icon: {
+				id: "runeborn:sovereign_fragment"
+			}
+			id: "27437F0D8FF32DCD"
+			rewards: [
+				{
+					id: "354F13A90AB4DFC3"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					count: 6L
+					id: "2F457680D7DC9B4C"
+					item: {
+						count: 1
+						id: "runeborn:sovereign_fragment"
+					}
+					type: "item"
+				}
+				{
+					id: "5DCF397FC0137917"
+					item: {
+						count: 1
+						id: "minecraft:clock"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.875d
+		}
+		{
+			dependencies: ["27437F0D8FF32DCD"]
+			icon: {
+				id: "runeborn:sigil_dusk_rider"
+			}
+			id: "063AD2AB6F866AE5"
+			rewards: [
+				{
+					count: 2
+					id: "796CCD56264C6622"
+					item: {
+						count: 1
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+				{
+					id: "1AB1708DA432AA02"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "0D3614A5187BD54A"
+					item: {
+						count: 1
+						id: "runeborn:sigil_dusk_rider"
+					}
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["063AD2AB6F866AE5", "29E73181EF9F52B4"]
+			icon: {
+				id: "runeborn:duskrider_glaive"
+			}
+			id: "2A7E4FBEE8E2A089"
+			rewards: [
+				{
+					id: "797E86A15C91702E"
+					table_id: 5895024424703439718L
+					type: "random"
+				}
+				{
+					command: "/lastlight arrive smith {p}"
+					elevate_perms: true
+					icon: {
+						id: "minecraft:anvil"
+					}
+					id: "78030302AA635B7F"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					id: "460D8525AE7C8CC7"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					advancement: "runeborn:feats/fell_dusk_rider"
+					criterion: ""
+					id: "65BE4567E9D8201F"
+					type: "advancement"
+				}
+			]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2A7E4FBEE8E2A089"]
+			icon: {
+				id: "runeborn:relic_dusk_rider"
+			}
+			id: "6D86DE336AB40AB6"
+			rewards: [
+				{
+					count: 2
+					id: "753F245C15D28574"
+					item: {
+						count: 1
+						id: "runeborn:lustrous_stone_1"
+					}
+					type: "item"
+				}
+				{
+					id: "5B17E8AAAECD3AE2"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "55FE6954A9ABCB8C"
+					item: {
+						count: 1
+						id: "runeborn:relic_dusk_rider"
+					}
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 0.0d
+		}
+	]
+}

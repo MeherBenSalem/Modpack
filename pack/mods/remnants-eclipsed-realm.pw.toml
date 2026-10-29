@@ -1,0 +1,16 @@
+name = "Remnants | The Eclipsed Realm (mod id remnant_bosses, \"Remnant Bosses\")"
+filename = "remnant_bosses-neoforge-1.21.1-3.1.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/coZxDAGe/versions/HSEZGrga/remnant_bosses-neoforge-1.21.1-3.1.0.jar"
+hash-format = "sha512"
+hash = "9c6741c6e44259c448195cfc283982957d3d0f294678f2f00d9703197afc4df52be9025631e9ef21ba6bd5cdd24644156953971579e639bfdaf3700c8959263e"
+
+[update]
+[update.curseforge]
+file-id = 9265581
+project-id = 1225026
+[update.modrinth]
+mod-id = "coZxDAGe"
+version = "HSEZGrga"

@@ -1,0 +1,14 @@
+{
+ "ids": [
+  "betterfortresses:fortress",
+  "loot:betterfortresses:chests/beacon",
+  "loot:betterfortresses:chests/extra",
+  "loot:betterfortresses:chests/hall",
+  "loot:betterfortresses:chests/keep",
+  "loot:betterfortresses:chests/obsidian",
+  "loot:betterfortresses:chests/puzzle",
+  "loot:betterfortresses:chests/quarters",
+  "loot:betterfortresses:chests/storage",
+  "loot:betterfortresses:chests/worship"
+ ]
+}

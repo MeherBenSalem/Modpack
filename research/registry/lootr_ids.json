@@ -1,0 +1,29 @@
+{
+ "ids": [
+  "loot:lootr:blocks/lootr_barrel",
+  "loot:lootr:blocks/lootr_chest",
+  "loot:lootr:blocks/lootr_inventory",
+  "loot:lootr:blocks/lootr_shulker",
+  "loot:lootr:blocks/lootr_trapped_chest",
+  "loot:lootr:blocks/trophy",
+  "loot:lootr:chests/elytra",
+  "loot:lootr:entity/item_frame_empty",
+  "loot:lootr:reward/trophy",
+  "lootr:100loot",
+  "lootr:10loot",
+  "lootr:1barrel",
+  "lootr:1cart",
+  "lootr:1chest",
+  "lootr:1frame",
+  "lootr:1shulker",
+  "lootr:25loot",
+  "lootr:50loot",
+  "lootr:all_gravel",
+  "lootr:archaeologist",
+  "lootr:emergency_escape_hatch",
+  "lootr:pot_opened",
+  "lootr:root",
+  "lootr:social",
+  "lootr:trapped_chest"
+ ]
+}

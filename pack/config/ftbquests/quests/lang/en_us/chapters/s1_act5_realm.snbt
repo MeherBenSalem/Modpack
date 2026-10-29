@@ -1,0 +1,79 @@
+{
+	chapter.42655E5D516196A5.chapter_subtitle: ["Under the black sun sits a crown with nothing inside. Level 70+."]
+	chapter.42655E5D516196A5.title: "&6Act V: &fThe Eclipsed Realm"
+	quest.05A146304EF19E9B.quest_desc: [
+		"In the Gravefield Barrows, a &6Burial Guardian&r drops the &7Grave Iron&r that forges the &6Crypt Key&r: six Grave Iron around a block of iron."
+	]
+	quest.05A146304EF19E9B.quest_subtitle: "It keeps the Grave Iron."
+	quest.05A146304EF19E9B.title: "The Burial Guardian"
+	quest.070E2217B342F75C.quest_desc: [
+		"&6Memory Shards&r drop from the Realm's forgotten souls. Four shards, four amethyst and a spyglass make the &6Lens of Memory&r."
+	]
+	quest.070E2217B342F75C.quest_subtitle: "The Forgotten Souls remember for you."
+	quest.070E2217B342F75C.title: "Shards of Memory"
+	quest.1A2FC801E1E229F5.quest_desc: [
+		"An Ancient Altar, four skeleton skulls on the pedestals, and a &5Nether Star&r. Ossukage answers anywhere, not just in the Realm."
+		""
+		"He is invulnerable while he rises. Then a sword chain, kunai at range, and a second form that raises soldiers and dashes through you. His blade is worth it."
+	]
+	quest.1A2FC801E1E229F5.quest_subtitle: "He calls himself the original Remnant."
+	quest.1A2FC801E1E229F5.title: "&cRemnant: Ossukage"
+	quest.245A28BBE7AF789F.quest_desc: [
+		"Rings of memory bolts, a sweeping beam, and a teleport between four lens platforms. In its second phase it makes illusions of itself and hides behind a turning crystal aegis."
+		""
+		"&o\"Every ruin has a before.\"&r"
+	]
+	quest.245A28BBE7AF789F.quest_subtitle: "The Forgotten Observatory."
+	quest.245A28BBE7AF789F.title: "&6The Forgotten Watcher"
+	quest.4E4B23BBB691EBC8.quest_desc: [
+		"&o\"Seven Sovereigns, seven embers. The eighth light is where he took it: behind the black sun. You'll need a door.\"&r"
+		""
+		"Craft an &5Eclipse Shard&r from an amethyst shard, an ender pearl and a gold ingot."
+	]
+	quest.4E4B23BBB691EBC8.quest_subtitle: "Amethyst, an ender pearl, a gold ingot."
+	quest.4E4B23BBB691EBC8.title: "&5Splinter of the Black Sun"
+	quest.582A0D136C5119A7.quest_desc: [
+		"The &6Boss Hunts Journal&r tracks every boss of the Realm as you find and fell them. Three arenas wait behind &7fog gates&r: the Gravebound Catacombs, the Forgotten Observatory and the Hollow Citadel. Each has an Ancient Altar already laid with its offerings; you bring the summoning item."
+	]
+	quest.582A0D136C5119A7.quest_subtitle: "Undiscovered. Encountered. Defeated."
+	quest.582A0D136C5119A7.title: "Boss Hunts"
+	quest.5AE07438B5B547E1.quest_desc: [
+		"The executioner of the Hollow Legion. Sweeps, chain grabs, graves that erupt beneath you. At half health he raises chain walls: break the four &7Chain Anchors&r to stagger him."
+	]
+	quest.5AE07438B5B547E1.quest_subtitle: "The Gravebound Catacombs."
+	quest.5AE07438B5B547E1.title: "&6The Gravebound Warden"
+	quest.5EFE0C39CCCCE0DF.quest_desc: [
+		"A &6Waygate&r: six polished deepslate around a shard on top and a gold ingot at the bottom. Place it and it raises a stone arch."
+		""
+		"Use a second &5Eclipse Shard&r on the arch. It burns for six seconds. Walk through."
+	]
+	quest.5EFE0C39CCCCE0DF.quest_subtitle: "Build the arch. Kindle it with a second shard."
+	quest.5EFE0C39CCCCE0DF.title: "The Way Remembered"
+	quest.638690A07E4AB834.quest_desc: ["Depart the Realm through a grace and walk out into the Overworld."]
+	quest.638690A07E4AB834.quest_subtitle: "Go home. Look up."
+	quest.638690A07E4AB834.title: "The Waking World"
+	quest.63F14370CFF061C7.quest_desc: [
+		"Black sun. A burning tree on the horizon. Silence."
+		""
+		"You arrive at an &6Arrival Shrine&r with a return Waygate and a &6Grace Ember&r. Rest at graces to heal and set your respawn; their golden motes lead to the nearest arena. Nothing can be built or broken here."
+		""
+		"&o\"I can't follow you in, Ashborn. Nothing living can. Come back with the light.\"&r"
+	]
+	quest.63F14370CFF061C7.quest_subtitle: "The Realm will not change."
+	quest.63F14370CFF061C7.title: "&5Beneath the Eclipse"
+	quest.6B937298FD1028CD.quest_desc: [
+		"He drank the sun and became a crown with nothing inside."
+		""
+		"Three-hit combos and a throne slam; break his guard with an &6axe&r. At two thirds, his pauldrons fly and spectral royal guards rise. At one third, spectral crescents and a soul lunge. At the very end, &c\"The Last Command\"&r: a rain of blades."
+		""
+		"&o\"Bring it home, Ashborn.\"&r"
+	]
+	quest.6B937298FD1028CD.quest_subtitle: "The Last King. The eighth light."
+	quest.6B937298FD1028CD.title: "&6&lThe Hollow Sovereign"
+	quest.7074BD6B0D4A6BB7.quest_desc: [
+		"Four &6Tarnished Regalia&r, four gold ingots and an &bEcho Shard&r forge the &6Sovereign's Seal&r. The Hollow Citadel's altar waits for it."
+	]
+	quest.7074BD6B0D4A6BB7.quest_subtitle: "A seal for a king who isn't there."
+	quest.7074BD6B0D4A6BB7.title: "Tarnished Regalia"
+	task.36B391A6A07ED3C8.title: "I read the journal"
+}

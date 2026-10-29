@@ -1,0 +1,20 @@
+{
+ "ids": [
+  "loot:kaisyn:archeology/forest_ruins_common",
+  "loot:kaisyn:archeology/forest_ruins_rare",
+  "loot:kaisyn:outpost/common/armory",
+  "loot:kaisyn:outpost/common/food",
+  "loot:kaisyn:outpost/exclusives/outpost_beach_barrel",
+  "loot:kaisyn:outpost/exclusives/outpost_mediterranean_barrel",
+  "loot:kaisyn:outpost/exclusives/outpost_rustic_barrel",
+  "loot:kaisyn:village/exclusives/village_classic_blacksmith",
+  "loot:kaisyn:village/exclusives/village_mediterranean_house",
+  "loot:kaisyn:village/exclusives/village_piglin_barrel",
+  "loot:kaisyn:village/exclusives/village_piglin_house",
+  "loot:kaisyn:village/exclusives/village_wandering_trader_hut",
+  "loot:kaisyn:village/village_badlands_house",
+  "loot:kaisyn:village/village_jungle_house",
+  "loot:kaisyn:village/village_mushroom_house",
+  "loot:kaisyn:village/village_swamp_house"
+ ]
+}

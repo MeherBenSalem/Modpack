@@ -1,0 +1,4348 @@
+[
+  {
+    "name": "Sodium",
+    "slug": "sodium",
+    "category": "performance",
+    "decision": "include",
+    "reason": "Official CaffeineMC NeoForge build; 0.8.13 is the 2026 backport of Sodium 0.8 to 1.21.1 (+up to 115% world-render FPS vs 0.6). Pin the pair Sodium 0.8.13 + Iris 1.8.14-beta.1. PolyForm Shield licence: reference it from Modrinth or CF; never rehost it. Sodium 0.8 breaks anything built on 'Sodium Options API'; if a gameplay mod still needs Sodium 0.6, fall back to Sodium 0.6.13 + Iris 1.8.12 together.",
+    "side": "client",
+    "license": "LicenseRef-Polyform-Shield-1.0.0",
+    "modrinth": {
+      "project_id": "AANobbMI",
+      "version_id": "uMOpc5uV",
+      "version_number": "mc1.21.1-0.8.13-neoforge",
+      "filename": "sodium-neoforge-0.8.13+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/AANobbMI/versions/uMOpc5uV/sodium-neoforge-0.8.13%2Bmc1.21.1.jar",
+      "sha1": "1757289be21ed18db5b0d90703fa3db1b2de5693",
+      "sha512": "4f537696af95411e9daf15795fb5fcbc49913d488a96fa912fa8f1d7db408710995e8a1461190f3cd0f8217bf9e35e9539176592428ed587ca2d7aa84450a390",
+      "size": 1292934
+    },
+    "curseforge": {
+      "project_id": 394468,
+      "file_id": 8756580,
+      "filename": "sodium-neoforge-0.8.13+mc1.21.1.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Iris Shaders",
+    "slug": "iris",
+    "category": "performance",
+    "decision": "include",
+    "reason": "Official Iris for NeoForge (Oculus is dead on 1.21.1). Shaders stay off by default; it is a client toggle. Version 1.8.14-beta.1 is the only Iris that accepts Sodium 0.8.13 (it pins that exact Sodium version). Modrinth marks it release, CurseForge marks the same jar beta: use CF file 8242804, not CF's newest 'release' 1.8.12, which needs Sodium 0.6.13.",
+    "side": "client",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "YL57xq9U",
+      "version_id": "KduFYu4t",
+      "version_number": "1.8.14-beta.1+1.21.1-neoforge",
+      "filename": "iris-neoforge-1.8.14-beta.1+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/YL57xq9U/versions/KduFYu4t/iris-neoforge-1.8.14-beta.1%2Bmc1.21.1.jar",
+      "sha1": "1bd129cf7bce65d6b1c0543045f0620c98a0f885",
+      "sha512": "33fddb430e16222902eac75b8b3d57c381b0f3cc729f3b56c4628df12ca108f23a0b11e2feb167923d6d14d1fc7e8ee1a977ec421b19d1951bdca74c4092b9c5",
+      "size": 2540723
+    },
+    "curseforge": {
+      "project_id": 455508,
+      "file_id": 8242804,
+      "filename": "iris-neoforge-1.8.14-beta.1+mc1.21.1.jar"
+    },
+    "required_deps": [
+      "sodium"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Sodium Extra",
+    "slug": "sodium-extra",
+    "category": "performance",
+    "decision": "include",
+    "reason": "Extra video toggles (FPS overlay, fog, particles/animations, etc.). The 0.9.x line targets Sodium 0.8 on 1.21.1.",
+    "side": "client",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "PtjYWJkn",
+      "version_id": "T819dLGI",
+      "version_number": "mc1.21.1-0.9.5+neoforge",
+      "filename": "sodium-extra-neoforge-0.9.5+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/PtjYWJkn/versions/T819dLGI/sodium-extra-neoforge-0.9.5%2Bmc1.21.1.jar",
+      "sha1": "6ca433df0ad08ce8413582e75dcae7619414a068",
+      "sha512": "1f213565e110e39a3e70ce5327f31448b301d2365f7ea281e06535169fd088f7d635370db7417adc927b1278eaefd75c77def7519395408ed0f86f6be240c076",
+      "size": 483373
+    },
+    "curseforge": {
+      "project_id": 447673,
+      "file_id": 9324102,
+      "filename": "sodium-extra-neoforge-0.9.5+mc1.21.1.jar"
+    },
+    "required_deps": [
+      "sodium"
+    ],
+    "optional_deps": [
+      "greenlight",
+      "iris",
+      "reeses-sodium-options"
+    ]
+  },
+  {
+    "name": "Lithium",
+    "slug": "lithium",
+    "category": "performance",
+    "decision": "include",
+    "reason": "Official NeoForge builds since 0.14 (October 2024). General game-logic and server-tick optimisation, used on both sides and safe in vanilla-like RPG packs.",
+    "side": "both",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "gvQqBUqZ",
+      "version_id": "DDUrRVCA",
+      "version_number": "mc1.21.1-0.15.4-neoforge",
+      "filename": "lithium-neoforge-0.15.4+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/DDUrRVCA/lithium-neoforge-0.15.4%2Bmc1.21.1.jar",
+      "sha1": "97212e45c963730bbfc7c44780df99317814c21b",
+      "sha512": "2735da2088b88a8bdcd4ad02a2b6fffbfd3925557cefd4fa54b5477dfb9e582ea7f521300c060f57dff1325dd21bff276b7333363ad3371ed6893e3de9eca9cd",
+      "size": 774220
+    },
+    "curseforge": {
+      "project_id": 360438,
+      "file_id": 8330365,
+      "filename": "lithium-neoforge-0.15.4+mc1.21.1.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "ModernFix",
+    "slug": "modernfix",
+    "category": "performance",
+    "decision": "include",
+    "reason": "Faster launch, lower memory, many bug and leak fixes. Its 1.21.1 builds are actively updated (2026-10).",
+    "side": "both",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "nmDcB62a",
+      "version_id": "ZDZENbHH",
+      "version_number": "5.27.27+mc1.21.1",
+      "filename": "modernfix-neoforge-5.27.27+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/nmDcB62a/versions/ZDZENbHH/modernfix-neoforge-5.27.27%2Bmc1.21.1.jar",
+      "sha1": "52c008540c7dc2cc451f7e939a885d7462c9ae72",
+      "sha512": "af14a35e51f1c5d94139c6225ae641e8b0ded5a8c68eb4806cf28025d6c043455ac289902cd6b854a867320ab845ad619b186d02b8341822faf03f4476dec555",
+      "size": 614138
+    },
+    "curseforge": {
+      "project_id": 790626,
+      "file_id": 9309399,
+      "filename": "modernfix-neoforge-5.27.27+mc1.21.1.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "FerriteCore",
+    "slug": "ferrite-core",
+    "category": "performance",
+    "decision": "include",
+    "reason": "Cuts memory use of blockstates and models. Essential in any pack with many blocks.",
+    "side": "both",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "uXXizFIs",
+      "version_id": "x7kQWVju",
+      "version_number": "7.0.3-neoforge",
+      "filename": "ferritecore-7.0.3-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/uXXizFIs/versions/x7kQWVju/ferritecore-7.0.3-neoforge.jar",
+      "sha1": "9563692efb708b6b568df27a01ec52f6311928ef",
+      "sha512": "19af89a2075bb10a63884fa853ebf84b02c79dc3242430ecdad056fd764fdcde367a7303276b329df01b0736e2ef264c5d80c7dc92c6aebd244f556a230bb417",
+      "size": 121559
+    },
+    "curseforge": {
+      "project_id": 429235,
+      "file_id": 7524151,
+      "filename": "ferritecore-7.0.3-neoforge.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "ImmediatelyFast",
+    "slug": "immediatelyfast",
+    "category": "performance",
+    "decision": "include",
+    "reason": "Speeds up immediate-mode rendering (HUD, text, entities). Recent builds fix Iron's Spells cooldown rendering, which matters if the magic layer uses Iron's.",
+    "side": "client",
+    "license": "LGPL-3.0-or-later",
+    "modrinth": {
+      "project_id": "5ZwdcRci",
+      "version_id": "EJzmEPZV",
+      "version_number": "1.6.15+1.21.1-neoforge",
+      "filename": "ImmediatelyFast-NeoForge-1.6.15+1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/5ZwdcRci/versions/EJzmEPZV/ImmediatelyFast-NeoForge-1.6.15%2B1.21.1.jar",
+      "sha1": "f991166f7c82b493481c876e3c83c9fac4159671",
+      "sha512": "c115cad7b060373fc597aae08c685e2d56f173b88b792a4a2c229e222f8da293b99865e9553cf716483d3c3d6a18f31c51c5dd55be22d4625ed2c962d7b94fd0",
+      "size": 368896
+    },
+    "curseforge": {
+      "project_id": 686911,
+      "file_id": 9165518,
+      "filename": "ImmediatelyFast-NeoForge-1.6.15+1.21.1.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Entity Culling",
+    "slug": "entityculling",
+    "category": "performance",
+    "decision": "include",
+    "reason": "Skips rendering entities and block entities that are hidden behind walls. Large win in mob-heavy RPG scenes. The tr7zw licence allows Modrinth and CurseForge modpacks.",
+    "side": "client",
+    "license": "LicenseRef-tr7zw-Protective-License",
+    "modrinth": {
+      "project_id": "NNAgCjsB",
+      "version_id": "eieYbWYb",
+      "version_number": "1.11.3",
+      "filename": "entityculling-neoforge-1.11.3-mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/NNAgCjsB/versions/eieYbWYb/entityculling-neoforge-1.11.3-mc1.21.1.jar",
+      "sha1": "f122f84f329793675b2625d51b77f990d7de3579",
+      "sha512": "93e83dd690b91d610be29451b34836c9daa7e08bd952f88ffa07c62d8774bbaac2ff0c6768d2cbf1b14f47d0b86f98cef9fd341e0d29bd37207eaf4aa2abea63",
+      "size": 1510075
+    },
+    "curseforge": {
+      "project_id": 448233,
+      "file_id": 9100286,
+      "filename": "entityculling-neoforge-1.11.3-mc1.21.1.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "More Culling",
+    "slug": "moreculling",
+    "category": "performance",
+    "decision": "include",
+    "reason": "Extra culling for leaves, item frames, signs and similar. 1.0.8 fixed the crash with Sodium 0.8 and 1.0.7 fixed an Epic Fight incompatibility. Needs Cloth Config.",
+    "side": "client",
+    "license": "GPL-3.0-only",
+    "modrinth": {
+      "project_id": "51shyZVL",
+      "version_id": "5M4T2FfG",
+      "version_number": "1.0.10",
+      "filename": "moreculling-neoforge-1.21.1-1.0.10.jar",
+      "url": "https://cdn.modrinth.com/data/51shyZVL/versions/5M4T2FfG/moreculling-neoforge-1.21.1-1.0.10.jar",
+      "sha1": "7e2d906031fdba883649eef6ef48a4dbdbb0f6cf",
+      "sha512": "64b6d1c71b7251915a35d93ddfb2a0a44851c9962b081fc8a7bb9458a19cb1ce6efb8eeef447bb7217c67010ed7e903d2bed8ed6d166053cacc3f8fb6d2df3d4",
+      "size": 335699
+    },
+    "curseforge": {
+      "project_id": 630104,
+      "file_id": 8833217,
+      "filename": "moreculling-neoforge-1.21.1-1.0.10.jar"
+    },
+    "required_deps": [
+      "cloth-config"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "AllTheLeaks",
+    "slug": "alltheleaks",
+    "category": "performance",
+    "decision": "include",
+    "reason": "Memory-leak fixes for NeoForge, vanilla and popular mods (by Uncandango; about 80M CurseForge downloads). It matters for long co-op sessions. Available on CurseForge only, so it cannot be referenced by URL in a .mrpack. In a Modrinth build, drop it unless the licence allows bundling it in overrides (no licence was visible through CFWidget).",
+    "side": "both",
+    "license": "unknown (CurseForge-only; not stated via CFWidget)",
+    "modrinth": null,
+    "curseforge": {
+      "project_id": 1091339,
+      "file_id": 8943912,
+      "filename": "alltheleaks-1.1.13+1.21.1-neoforge.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Leaves Be Gone",
+    "slug": "leaves-be-gone",
+    "category": "performance",
+    "decision": "include",
+    "reason": "Fast leaf decay (server-side, Fuzs). Pairs with FTB Ultimine tree chopping. Uses Puzzles Lib.",
+    "side": "server",
+    "license": "MPL-2.0",
+    "modrinth": {
+      "project_id": "AVq17PqV",
+      "version_id": "kAbmpvF3",
+      "version_number": "v21.1.1-1.21.1-NeoForge",
+      "filename": "LeavesBeGone-v21.1.1-1.21.1-NeoForge.jar",
+      "url": "https://cdn.modrinth.com/data/AVq17PqV/versions/kAbmpvF3/LeavesBeGone-v21.1.1-1.21.1-NeoForge.jar",
+      "sha1": "1d8eec39ed44414af14d14c0dfb5abd097e77491",
+      "sha512": "4a9103e5c4e8da84a596c9ef70fa4a6a6ef740798d34bda8a707e5ec3ea12e0bcdc57937090b9eb30e2d5221f4033f530d86a250c8e684654728e23f0483d96d",
+      "size": 55937
+    },
+    "curseforge": {
+      "project_id": 686435,
+      "file_id": 8036398,
+      "filename": "LeavesBeGone-v21.1.1-1.21.1-NeoForge.jar"
+    },
+    "required_deps": [
+      "puzzles-lib"
+    ],
+    "optional_deps": [
+      "forge-config-screens"
+    ]
+  },
+  {
+    "name": "Clumps",
+    "slug": "clumps",
+    "category": "performance",
+    "decision": "include",
+    "reason": "Merges XP orbs, which helps when RPG mobs and bosses drop large amounts of XP. Tiny.",
+    "side": "both",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "Wnxd13zP",
+      "version_id": "jo7lDoK4",
+      "version_number": "19.0.0.1",
+      "filename": "Clumps-neoforge-1.21.1-19.0.0.1.jar",
+      "url": "https://cdn.modrinth.com/data/Wnxd13zP/versions/jo7lDoK4/Clumps-neoforge-1.21.1-19.0.0.1.jar",
+      "sha1": "fa2576297c7bd12b28aa7070e8141792bd66da4c",
+      "sha512": "314d8d8e640d73041f27e0f3f2cad7aad8b4c77dbd7fb31700ef7760362261f77085eed5289555c725d99c3f47a114e7290cd608f39c9f0f12ef74958463bdcc",
+      "size": 18382
+    },
+    "curseforge": {
+      "project_id": 256717,
+      "file_id": 5623731,
+      "filename": "Clumps-neoforge-1.21.1-19.0.0.1.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "spark",
+    "slug": "spark",
+    "category": "performance",
+    "decision": "include",
+    "reason": "Profiler (/spark profiler, /spark health). Needed to diagnose lag reports from players and servers.",
+    "side": "both",
+    "license": "GPL-3.0-only",
+    "modrinth": {
+      "project_id": "l6YH9Als",
+      "version_id": "v5qtqRQi",
+      "version_number": "1.10.124-neoforge-1.21.1",
+      "filename": "spark-1.10.124-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/l6YH9Als/versions/v5qtqRQi/spark-1.10.124-neoforge.jar",
+      "sha1": "9430cc2ab64ff89d698be593769fb9f9ee4efae6",
+      "sha512": "f86ce34f2759c69df82578c397ff55b666c84626229a98f598458b960c21b38c95d6bfef4772af7f963c4f4868e5e2d9aef6b99c1d51bab55bf45e0e6e6b5ed4",
+      "size": 3642581
+    },
+    "curseforge": {
+      "project_id": 361579,
+      "file_id": 6225208,
+      "filename": "spark-1.10.124-neoforge.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Dynamic FPS",
+    "slug": "dynamic-fps",
+    "category": "performance",
+    "decision": "include",
+    "reason": "Throttles FPS when the game window is unfocused or minimised. Saves battery and heat on laptops. Cloth Config is optional and provides its config screen.",
+    "side": "client",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "LQ3K71Q1",
+      "version_id": "T238FZpQ",
+      "version_number": "3.11.4",
+      "filename": "dynamic-fps-3.11.4+minecraft-1.21.0-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/LQ3K71Q1/versions/T238FZpQ/dynamic-fps-3.11.4%2Bminecraft-1.21.0-neoforge.jar",
+      "sha1": "35b17e95b2b65930116ccc83e0cc358ac1bfcf9e",
+      "sha512": "8eb18a280b265e598540306275b51a165836f4b14c6c703b6ced11fcac50bfab439e4deb69e222f62614a9f15fa0ef58e5bd84e20e37ae57755d9c2f8b134057",
+      "size": 220193
+    },
+    "curseforge": {
+      "project_id": 335493,
+      "file_id": 7546938,
+      "filename": "dynamic-fps-3.11.4+minecraft-1.21.0-neoforge.jar"
+    },
+    "required_deps": [],
+    "optional_deps": [
+      "cloth-config"
+    ]
+  },
+  {
+    "name": "Packet Fixer",
+    "slug": "packet-fixer",
+    "category": "performance",
+    "decision": "include",
+    "reason": "Raises packet and NBT size limits that big packs hit (full backpacks, large quest books, loot NBT). Prevents 'packet too big' disconnects in co-op.",
+    "side": "both",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "c7m1mi73",
+      "version_id": "2C41Q8WX",
+      "version_number": "3.3.1",
+      "filename": "packetfixer-3.3.1-1.20.5-1.21.X-merged.jar",
+      "url": "https://cdn.modrinth.com/data/c7m1mi73/versions/2C41Q8WX/packetfixer-3.3.1-1.20.5-1.21.X-merged.jar",
+      "sha1": "a8bb6e25807682e72c23bf4065f3cd5f6373ece3",
+      "sha512": "d0acfaa6ef394fc7d9e677022bda06a6c8be7851ba8860897999775b657b5e10878578fe626505b0c9dbc01d26f559dbb1214aabb081d076824648047094e2e1",
+      "size": 46623
+    },
+    "curseforge": {
+      "project_id": 689467,
+      "file_id": 7221528,
+      "filename": "packetfixer-3.3.1-1.20.5-1.21.X-merged.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Cloth Config API",
+    "slug": "cloth-config",
+    "category": "performance",
+    "decision": "include",
+    "reason": "Library: required by More Culling, Client Sort and SRDP; optional config screen for Dynamic FPS, Chat Heads and others.",
+    "side": "both",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "9s6osm5g",
+      "version_id": "izKINKFg",
+      "version_number": "15.0.140+neoforge",
+      "filename": "cloth-config-15.0.140-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/9s6osm5g/versions/izKINKFg/cloth-config-15.0.140-neoforge.jar",
+      "sha1": "c3e5733ba4503b102589a026000fd5ce0212f6f2",
+      "sha512": "aaf9b010955b8cd294e5a92f069985b18729fd5e2cf22d351f1dff9680f15488688803ec41e77e941cbde130ceb535014ca4c868047d80ab69c2d508e216654d",
+      "size": 1163890
+    },
+    "curseforge": {
+      "project_id": 348521,
+      "file_id": 5729127,
+      "filename": "cloth-config-15.0.140-neoforge.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Reese's Sodium Options",
+    "slug": "reeses-sodium-options",
+    "category": "performance",
+    "decision": "optional",
+    "reason": "Tabbed or searchable video-settings screen. Sodium 0.8 already reworked its own Video Settings UI, so this is cosmetic. Ship it as a client toggle at most.",
+    "side": "client",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "Bh37bMuy",
+      "version_id": "XjF2IkL8",
+      "version_number": "mc1.21.1-2.2.4+neoforge",
+      "filename": "reeses-sodium-options-neoforge-2.2.4+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/Bh37bMuy/versions/XjF2IkL8/reeses-sodium-options-neoforge-2.2.4%2Bmc1.21.1.jar",
+      "sha1": "e9e6d101b31acb51539141937ad5b069ff2ccc4d",
+      "sha512": "a99d41a41ca83376c4fa29ed22a99e98288a7e9a4749fbf6d3724b9804b8e66648e267c6851a53d040069fdc2d889f8205cbb444bee10a35be840d13fc9ed477",
+      "size": 258894
+    },
+    "curseforge": {
+      "project_id": 511319,
+      "file_id": 8891797,
+      "filename": "reeses-sodium-options-neoforge-2.2.4+mc1.21.1.jar"
+    },
+    "required_deps": [
+      "sodium"
+    ],
+    "optional_deps": [
+      "iris",
+      "sodium-extra"
+    ]
+  },
+  {
+    "name": "Distant Horizons",
+    "slug": "distanthorizons",
+    "category": "performance",
+    "decision": "optional",
+    "reason": "LOD terrain far past render distance. Heavy on CPU, RAM and disk, and it generates extra chunks in the background. Ship it as an opt-in client toggle, off by default. 3.3.3 supports 1.21.1 NeoForge and turns its own worldgen off while Chunky runs. Pair with an Iris shaderpack that supports DH. No source confirms DH 3.3 + Iris 1.8.14 + Sodium 0.8 together, so test before enabling.",
+    "side": "both",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "uCdwusMi",
+      "version_id": "9w34y8ai",
+      "version_number": "3.3.3-1.21.1",
+      "filename": "DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/uCdwusMi/versions/9w34y8ai/DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar",
+      "sha1": "4357b4d19fab818780c94f0e43dad1cc931634b2",
+      "sha512": "d14b32d3fd143a06514d6ad388eee11e9d657c84e1a937aaf8d033b1137fb43ef8b05cff1011a994cc42f3106823c51234f8bc18d72bb05bc317a20ea83c50ed",
+      "size": 28289212
+    },
+    "curseforge": {
+      "project_id": 508933,
+      "file_id": 9004764,
+      "filename": "DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Fast IP Ping",
+    "slug": "fast-ip-ping",
+    "category": "performance",
+    "decision": "optional",
+    "reason": "Client-only. Speeds up multiplayer server-list pings. Harmless; add it if a server list is part of the experience.",
+    "side": "client",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "9mtu0sUO",
+      "version_id": "SNWnJAqf",
+      "version_number": "v1.0.12-mc1.21.1-neoforge",
+      "filename": "fast-ip-ping-v1.0.12-mc1.21.1-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/9mtu0sUO/versions/SNWnJAqf/fast-ip-ping-v1.0.12-mc1.21.1-neoforge.jar",
+      "sha1": "4dc232213f88173d360d892faae11a8d6dcda10d",
+      "sha512": "aeb3a94cfd8076c9ab22e36b72178ea1baeb28aae23f820687acc8a3c341e0115b08fe51933c873d4c89894c86cdd485aa95649c4aa5f8b1fb1e26797f16eead",
+      "size": 10414
+    },
+    "curseforge": {
+      "project_id": 904356,
+      "file_id": 8905303,
+      "filename": "fast-ip-ping-v1.0.12-mc1.21.1-neoforge.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Sodium Options API",
+    "slug": "sodium-options-api",
+    "category": "performance",
+    "decision": "exclude",
+    "reason": "Sodium 0.8.12+ release notes say it is 'not compatible with any version of Sodium Options API … and any mods that depend on it'. Last 1.21.1 build is 2025-01.",
+    "side": "client",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "Es5v4eyq",
+      "version_id": "lrsX3TMS",
+      "version_number": "neoforge-1.21.1-1.0.10",
+      "filename": "sodiumoptionsapi-neoforge-1.0.10-1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/Es5v4eyq/versions/lrsX3TMS/sodiumoptionsapi-neoforge-1.0.10-1.21.1.jar",
+      "sha1": "5d014d031fa77ab600e07835b032ef4dcb79b442",
+      "sha512": "f2f022183f300961d7d0503461daa59e3e606c32f189f1cb3307edaf765986c541929205b7bf6f40c4c88319696e9d863c1bf711bd441dc9b7081c198ddb445b",
+      "size": 309122
+    },
+    "curseforge": {
+      "project_id": 1103431,
+      "file_id": 6100815,
+      "filename": "sodiumoptionsapi-neoforge-1.0.10-1.21.1.jar"
+    },
+    "required_deps": [
+      "sodium"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Embeddium",
+    "slug": "embeddium",
+    "category": "performance",
+    "decision": "exclude",
+    "reason": "Sodium fork. Last 1.21.1 build is 2025-01, and it cannot coexist with Sodium. Official Sodium on NeoForge supersedes it.",
+    "side": "client",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "sk9rgfiA",
+      "version_id": "J7b96IEd",
+      "version_number": "1.0.15+mc1.21.1",
+      "filename": "embeddium-1.0.15+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/sk9rgfiA/versions/J7b96IEd/embeddium-1.0.15%2Bmc1.21.1.jar",
+      "sha1": "56063839172a000d079272794bad366f2ad4cbbd",
+      "sha512": "d073cf52dcf2aeec3ac9f746d4571c7b4b1ad746fa11d4bcc5a21a264ae3119ac6d341d08cc9a70042cf0ddffc3b3ef3329ed30217035d4551c9d6788b6dc1e6",
+      "size": 1048745
+    },
+    "curseforge": {
+      "project_id": 908741,
+      "file_id": 6118392,
+      "filename": "embeddium-1.0.15+mc1.21.1.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Oculus",
+    "slug": "oculus",
+    "category": "performance",
+    "decision": "exclude",
+    "reason": "Embeddium shader port with no NeoForge 1.21.1 build. Iris has an official NeoForge build.",
+    "side": "client",
+    "license": "LGPL-3.0-only",
+    "modrinth": null,
+    "curseforge": null,
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Radium Reforged",
+    "slug": "radium",
+    "category": "performance",
+    "decision": "exclude",
+    "reason": "Unofficial Lithium port. Beta, last built 2024-09, and redundant now that Lithium ships for NeoForge. Do not run both.",
+    "side": "server",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "2gvRmQXx",
+      "version_id": "pSBrVnrI",
+      "version_number": "0.13.1",
+      "filename": "radium-mc1.21.1-0.13.1+git.4994e83.jar",
+      "url": "https://cdn.modrinth.com/data/2gvRmQXx/versions/pSBrVnrI/radium-mc1.21.1-0.13.1%2Bgit.4994e83.jar",
+      "sha1": "9e4d01da859e98cfba4ee18604aaa7cb1211f67d",
+      "sha512": "ddd1afa0ad462b8d4a3901ed917110341e5eddb23db491c80ed0ffc32cff36e61705440fab1a2186ac889bb1e6b03d29e90154ccafc131d53ab26dbc71aeaee5",
+      "size": 749577
+    },
+    "curseforge": null,
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Noisium",
+    "slug": "noisium",
+    "category": "performance",
+    "decision": "exclude",
+    "reason": "Last 1.21.1 build is 2024-08 and the project is effectively archived. Worldgen-noise mixins risk clashing with the gameplay layer's worldgen mods for little gain.",
+    "side": "server",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "KuNKN7d2",
+      "version_id": "nJBE6tif",
+      "version_number": "2.3.0+mc1.21-1.21.1",
+      "filename": "noisium-neoforge-2.3.0+mc1.21-1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/KuNKN7d2/versions/nJBE6tif/noisium-neoforge-2.3.0%2Bmc1.21-1.21.1.jar",
+      "sha1": "1bea6b61378ba80f038256c4345d9ff3b67928c4",
+      "sha512": "b50c37d2f69d51742d4407d272cea525b428784d2a39338d34b692937320495cd77d47b2d2321b3976713447028f50823e9ba44ca618900eba4ced907985ec84",
+      "size": 60296
+    },
+    "curseforge": null,
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "C2ME (NeoForge)",
+    "slug": "c2me-neoforge",
+    "category": "performance",
+    "decision": "exclude",
+    "reason": "Only alpha builds (0.4.0-alpha). Concurrent chunk generation is the most common source of worldgen-mod incompatibilities. Revisit later for dedicated servers only.",
+    "side": "both",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "COlSi5iR",
+      "version_id": "VACgDPOc",
+      "version_number": "0.4.0-alpha.0.124+1.21.1",
+      "filename": "c2me-neoforge-mc1.21.1-0.4.0-alpha.0.124.jar",
+      "url": "https://cdn.modrinth.com/data/COlSi5iR/versions/VACgDPOc/c2me-neoforge-mc1.21.1-0.4.0-alpha.0.124.jar",
+      "sha1": "469497c209e77742a85020845a361851f14d99e2",
+      "sha512": "ad5675893a856663659b4d73285d154615e6c1924fef0f52513e3f07895ba474e3629778087aa8ec0edcfd802c21ee773f6483397bde858ff30a2b62887b208b",
+      "size": 3717706
+    },
+    "curseforge": null,
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Krypton",
+    "slug": "krypton",
+    "category": "performance",
+    "decision": "exclude",
+    "reason": "Fabric only, with no NeoForge port. Network-stack savings do not matter for 2–8 players.",
+    "side": "both",
+    "license": "LGPL-3.0-only",
+    "modrinth": null,
+    "curseforge": null,
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Fast Leaf Decay",
+    "slug": "fast-leaf-decay",
+    "category": "performance",
+    "decision": "exclude",
+    "reason": "No NeoForge build for 1.21.1 (the Modrinth project is Fabric). Leaves Be Gone covers it.",
+    "side": "both",
+    "license": "MIT",
+    "modrinth": null,
+    "curseforge": null,
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "BadOptimizations",
+    "slug": "badoptimizations",
+    "category": "performance",
+    "decision": "exclude",
+    "reason": "Small client micro-optimisations that overlap ModernFix and ImmediatelyFast. Its own wiki marks some options incompatible with 'camera lock-on' style mods, a risk for soulslike lock-on combat.",
+    "side": "client",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "g96Z4WVZ",
+      "version_id": "S2qthD5S",
+      "version_number": "2.4.1",
+      "filename": "BadOptimizations-2.4.1-1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/g96Z4WVZ/versions/S2qthD5S/BadOptimizations-2.4.1-1.21.1.jar",
+      "sha1": "1461d8e46391efd32a3085150e86094c9f6f5c9d",
+      "sha512": "2b66428bd98bd5ec0e09f2ec6af801cefb7b9b99cc4f0993daeaffe8d0ccc5ee0c2a73e9f38d4f92540ead0181704d2c9e946837ec05cf710fc3b20fce3b0cac",
+      "size": 283566
+    },
+    "curseforge": {
+      "project_id": 949555,
+      "file_id": 7338300,
+      "filename": "BadOptimizations-2.4.1-1.21.1.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "ScalableLux",
+    "slug": "scalablelux",
+    "category": "performance",
+    "decision": "exclude",
+    "reason": "Light-engine replacement (NeoForge 0.1.0.1, 2025-09). Stability comes first. Revisit only if spark shows lighting as a bottleneck.",
+    "side": "both",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "Ps1zyz6x",
+      "version_id": "j10HNoNf",
+      "version_number": "0.1.0.1+neoforge.1cb1e91",
+      "filename": "ScalableLux-0.1.0.1+neoforge.1cb1e91-all.jar",
+      "url": "https://cdn.modrinth.com/data/Ps1zyz6x/versions/j10HNoNf/ScalableLux-0.1.0.1%2Bneoforge.1cb1e91-all.jar",
+      "sha1": "d087823f3aec9e1ba5d8ec9b2888c35f95c06d4e",
+      "sha512": "9378b6a70eca81b018121c01a1467c16245ee3f0bb3cfeece6e9045508ae18834256aed4a72d045df9fc3feca94f006518788260e47094173fa64c39d8450223",
+      "size": 176443
+    },
+    "curseforge": {
+      "project_id": 1055925,
+      "file_id": 6952385,
+      "filename": "ScalableLux-0.1.0.1+neoforge.1cb1e91-all.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Moonrise",
+    "slug": "moonrise-opt",
+    "category": "performance",
+    "decision": "exclude",
+    "reason": "Beta, and it declares itself incompatible with several mods. Server-side chunk-system rewrite that is too risky for a content-heavy pack.",
+    "side": "both",
+    "license": "GPL-3.0-only",
+    "modrinth": {
+      "project_id": "KOHu7RCS",
+      "version_id": "eIaUXSTm",
+      "version_number": "0.1.0-beta.15+2eae1b1",
+      "filename": "Moonrise-NeoForge-0.1.0-beta.15+2eae1b1.jar",
+      "url": "https://cdn.modrinth.com/data/KOHu7RCS/versions/eIaUXSTm/Moonrise-NeoForge-0.1.0-beta.15%2B2eae1b1.jar",
+      "sha1": "9dc6114ad58d74ca7319abc25b031d0ac5bd9919",
+      "sha512": "9c93c16460e3d72236e3ab92fffbec4cbb96c207756dc0d35435789f3318f519a70a0f232dcaab32f22739947f52e7dbf7ade6bd8a16b320ab8f3caa289eff8c",
+      "size": 2478810
+    },
+    "curseforge": {
+      "project_id": 1096335,
+      "file_id": 7089177,
+      "filename": "Moonrise-NeoForge-0.1.0-beta.15+2eae1b1.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Just Enough Items (JEI)",
+    "slug": "jei",
+    "category": "recipe-info-ui",
+    "decision": "include",
+    "reason": "Recipe viewer. Chosen over EMI because nearly every 1.21.1 content mod (magic, combat, RPG) ships a JEI plugin, FTB XMod Compat and Sophisticated integrate with JEI, and JEI alone costs one library instead of EMI+JEI running side by side. Newest release is 19.64.0.455. The 19.70 betas exist, and since 19.55 JEI requires MezzConfig.",
+    "side": "both",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "u6dRKJwZ",
+      "version_id": "iv3KiVkE",
+      "version_number": "19.64.0.455",
+      "filename": "jei-1.21.1-neoforge-19.64.0.455.jar",
+      "url": "https://cdn.modrinth.com/data/u6dRKJwZ/versions/iv3KiVkE/jei-1.21.1-neoforge-19.64.0.455.jar",
+      "sha1": "f6d6fc08d54c40752926b570a2220471e8c45c1a",
+      "sha512": "fdd02e57ce4dcf20b69860a5ace1b97d9a771486241179cf9edfe71e30c69bb4003b046d0cce8d8c4913b9689f1d8b04cf0542b0b04a6cf0b3b0465f3bb11702",
+      "size": 2375741
+    },
+    "curseforge": {
+      "project_id": 238222,
+      "file_id": 9205121,
+      "filename": "jei-1.21.1-neoforge-19.64.0.455.jar"
+    },
+    "required_deps": [
+      "mezzconfig"
+    ],
+    "optional_deps": [
+      "mezzconfiggui"
+    ]
+  },
+  {
+    "name": "MezzConfig",
+    "slug": "mezzconfig",
+    "category": "recipe-info-ui",
+    "decision": "include",
+    "reason": "Library: required by JEI 19.55+ (mezz's config lib). Only beta builds exist (0.6.9).",
+    "side": "both",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "7tEfOcA7",
+      "version_id": "RdGonQpr",
+      "version_number": "0.6.9",
+      "filename": "mezz_config-1.21.1-neoforge-0.6.9-standalone.jar",
+      "url": "https://cdn.modrinth.com/data/7tEfOcA7/versions/RdGonQpr/mezz_config-1.21.1-neoforge-0.6.9-standalone.jar",
+      "sha1": "a20ecb9978bd8eebd40f4548d14b0a360a63f8a4",
+      "sha512": "2a20fdcca268c0f80547806582c94d79de6d339aabd3714af4bc5cf25ce983028f72ae707d52b44786adeb4e4c1976bebd7dbc4a75a3bf4575ec44c2bcd28dc3",
+      "size": 345479
+    },
+    "curseforge": {
+      "project_id": 1689768,
+      "file_id": 9318719,
+      "filename": "mezz_config-1.21.1-neoforge-0.6.9-standalone.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Jade",
+    "slug": "jade",
+    "category": "recipe-info-ui",
+    "decision": "include",
+    "reason": "Shows what you are looking at (blocks, entities, mob health) and is the standard info HUD. CC-BY-NC-SA: fine in a free modpack, and the non-commercial clause matters only if the pack itself is sold. Configure its entity health display to avoid duplicating Remnants RPG Mobs' bars.",
+    "side": "both",
+    "license": "CC-BY-NC-SA-4.0",
+    "modrinth": {
+      "project_id": "nvQzSEkH",
+      "version_id": "eYz2YBGT",
+      "version_number": "15.10.6+neoforge",
+      "filename": "Jade-1.21.1-NeoForge-15.10.6.jar",
+      "url": "https://cdn.modrinth.com/data/nvQzSEkH/versions/eYz2YBGT/Jade-1.21.1-NeoForge-15.10.6.jar",
+      "sha1": "88ee316e68900080b017f60c12162e2731924cf8",
+      "sha512": "dad9755dce8d85d914fc4df2baa0211f13e5839a71c1925fdd01f69081a95e30a2934e6273f8b01f0169adebe7a9dae57a8d904de0c4cb36dc17369bb474f0f2",
+      "size": 726853
+    },
+    "curseforge": {
+      "project_id": 324717,
+      "file_id": 8591319,
+      "filename": "Jade-1.21.1-NeoForge-15.10.6.jar"
+    },
+    "required_deps": [],
+    "optional_deps": [
+      "jei"
+    ]
+  },
+  {
+    "name": "AppleSkin",
+    "slug": "appleskin",
+    "category": "recipe-info-ui",
+    "decision": "include",
+    "reason": "Food/saturation preview. Works client-only; the server copy syncs exact saturation. Ships on both sides.",
+    "side": "both",
+    "license": "Unlicense",
+    "modrinth": {
+      "project_id": "EsAfCjCV",
+      "version_id": "uAKA6Laj",
+      "version_number": "3.0.9+mc1.21",
+      "filename": "appleskin-neoforge-mc1.21-3.0.9.jar",
+      "url": "https://cdn.modrinth.com/data/EsAfCjCV/versions/uAKA6Laj/appleskin-neoforge-mc1.21-3.0.9.jar",
+      "sha1": "81cf0e668f991f83ac8820c386fbd6c9c3602246",
+      "sha512": "f4ea46273e407334b63e262e2555c9a8204f7b5e60f23f272fbaa83ad9e88800e0ee186aca840710df2dbe0a18b37758695fef2ae1a902c10b3706e3de772937",
+      "size": 75804
+    },
+    "curseforge": {
+      "project_id": 248787,
+      "file_id": 7854442,
+      "filename": "appleskin-neoforge-mc1.21-3.0.9.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Mouse Tweaks",
+    "slug": "mouse-tweaks",
+    "category": "recipe-info-ui",
+    "decision": "include",
+    "reason": "Drag and scroll-wheel item transfer. A universal staple.",
+    "side": "client",
+    "license": "BSD-3-Clause",
+    "modrinth": {
+      "project_id": "aC3cM3Vq",
+      "version_id": "9I21YYxf",
+      "version_number": "1.21-2.26.1-neoforge",
+      "filename": "MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+      "url": "https://cdn.modrinth.com/data/aC3cM3Vq/versions/9I21YYxf/MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+      "sha1": "6dae57f4f50f7808d2ed9a18f6cd1c0d4640c6bc",
+      "sha512": "f95c0cc881211ee0442434976775e07aae40b4a2ba4e3a85455bc57ca9d3c991e239cd98374a8abd442dc9c378dcd9001e2caa1bf69991d424b5652dd7f3483b",
+      "size": 73938
+    },
+    "curseforge": {
+      "project_id": 60089,
+      "file_id": 5637846,
+      "filename": "MouseTweaks-neoforge-mc1.21-2.26.1.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Client Sort",
+    "slug": "clientsort",
+    "category": "recipe-info-ui",
+    "decision": "include",
+    "reason": "Inventory and container sorting through vanilla click packets, so it works on any server without a server mod. Configurable buttons and hotkeys. Chosen over Inventory Profiles Next. Needs Cloth Config.",
+    "side": "both",
+    "license": "Apache-2.0",
+    "modrinth": {
+      "project_id": "K0AkAin6",
+      "version_id": "2c4hM8Ut",
+      "version_number": "3.89.2+1.21.1",
+      "filename": "clientsort-neoforge-3.89.2+1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/K0AkAin6/versions/2c4hM8Ut/clientsort-neoforge-3.89.2%2B1.21.1.jar",
+      "sha1": "05c7d37ad5f8aa5dcbe81623842b6f87f5ce1ae8",
+      "sha512": "64fbd0f381e01c698569c1e292c6aa0699c3c685eca824124f674d03aaebc55bda5c879864061809dfdbc89fd2203c166f719edcb811a6b3cf71a9480647b589",
+      "size": 353091
+    },
+    "curseforge": {
+      "project_id": 1049891,
+      "file_id": 8978780,
+      "filename": "clientsort-neoforge-3.89.2+1.21.1.jar"
+    },
+    "required_deps": [
+      "cloth-config"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Controlling",
+    "slug": "controlling",
+    "category": "recipe-info-ui",
+    "decision": "include",
+    "reason": "Searchable keybind menu with conflict view. Essential with many keybinds. Needs Searchables.",
+    "side": "client",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "xv94TkTM",
+      "version_id": "FaNppCJJ",
+      "version_number": "19.0.5",
+      "filename": "Controlling-neoforge-1.21.1-19.0.5.jar",
+      "url": "https://cdn.modrinth.com/data/xv94TkTM/versions/FaNppCJJ/Controlling-neoforge-1.21.1-19.0.5.jar",
+      "sha1": "8a34424fc1428778be2fdbfa4da67b21b70bcbfe",
+      "sha512": "bd01b2a38a869ea38e5f2a8fcd601e67ea9b132b9883c6ae752bc35dff6e94f6d47b965e31c1ee5c2f6a1221653549680da779fcb5319d199aec261d221d179e",
+      "size": 77555
+    },
+    "curseforge": {
+      "project_id": 250398,
+      "file_id": 6368976,
+      "filename": "Controlling-neoforge-1.21.1-19.0.5.jar"
+    },
+    "required_deps": [
+      "searchables"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Searchables",
+    "slug": "searchables",
+    "category": "recipe-info-ui",
+    "decision": "include",
+    "reason": "Library: required by Controlling.",
+    "side": "client",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "fuuu3xnx",
+      "version_id": "iEE85X0w",
+      "version_number": "1.0.2",
+      "filename": "Searchables-neoforge-1.21.1-1.0.2.jar",
+      "url": "https://cdn.modrinth.com/data/fuuu3xnx/versions/iEE85X0w/Searchables-neoforge-1.21.1-1.0.2.jar",
+      "sha1": "5b8a0b43a474c066371b2e16f9bfb88622552a74",
+      "sha512": "d0824bac1900142ac9a53e68f7ec3b4c0d33d9366bbd3f1d0d93eed860e5eb6b5e6f5a215a69bfffa70bcb48573ff49b5a12bbaa96096ceac6636000d506027a",
+      "size": 77326
+    },
+    "curseforge": {
+      "project_id": 858542,
+      "file_id": 5831692,
+      "filename": "Searchables-neoforge-1.21.1-1.0.2.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Polymorph",
+    "slug": "polymorph",
+    "category": "recipe-info-ui",
+    "decision": "include",
+    "reason": "Resolves recipe conflicts between mods by letting players pick the output. A safety net in a pack assembled from many content mods. Needed on both sides.",
+    "side": "both",
+    "license": "LGPL-3.0-or-later",
+    "modrinth": {
+      "project_id": "tagwiZkJ",
+      "version_id": "VEburL70",
+      "version_number": "1.1.0+1.21.1",
+      "filename": "polymorph-neoforge-1.1.0+1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/tagwiZkJ/versions/VEburL70/polymorph-neoforge-1.1.0%2B1.21.1.jar",
+      "sha1": "84f8c539fa326dc723ae62b7a6916d6b01982d07",
+      "sha512": "37358e19d8f251b7d435ea5198eded7b1361e90d5728e11fcb15aeb55786f4ee10fd8fecd14b11f34a99bd92aea01a9977c0dbc46ab6bb07af61a6c89455b6ff",
+      "size": 174972
+    },
+    "curseforge": {
+      "project_id": 388800,
+      "file_id": 6794589,
+      "filename": "polymorph-neoforge-1.1.0+1.21.1.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Enchantment Descriptions",
+    "slug": "enchantment-descriptions",
+    "category": "recipe-info-ui",
+    "decision": "include",
+    "reason": "Shows what each enchantment does in tooltips, which helps when the gameplay layer adds many enchantments. Needs Bookshelf + Prickle (shared with AttributeFix and Open Loader).",
+    "side": "both",
+    "license": "LGPL-2.1-only",
+    "modrinth": {
+      "project_id": "UVtY3ZAC",
+      "version_id": "IktklYWh",
+      "version_number": "21.1.11",
+      "filename": "enchdesc-neoforge-1.21.1-21.1.11.jar",
+      "url": "https://cdn.modrinth.com/data/UVtY3ZAC/versions/IktklYWh/enchdesc-neoforge-1.21.1-21.1.11.jar",
+      "sha1": "4d453df785ac21e0e7389cba949f4fa460c3e267",
+      "sha512": "b12eb7f5fe460b865d54c23aee04bb72ea47fd9681d29cf46d96ad672cbe8e5bb5cbce5b87baafc69146aee468c567cf6eeedc42fec08169fb4395c39ef92252",
+      "size": 82648
+    },
+    "curseforge": {
+      "project_id": 250419,
+      "file_id": 8693034,
+      "filename": "enchdesc-neoforge-1.21.1-21.1.11.jar"
+    },
+    "required_deps": [
+      "bookshelf-lib",
+      "prickle"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Bookshelf",
+    "slug": "bookshelf-lib",
+    "category": "recipe-info-ui",
+    "decision": "include",
+    "reason": "Library: required by Enchantment Descriptions (and AttributeFix / Open Loader if enabled).",
+    "side": "both",
+    "license": "LGPL-2.1-only",
+    "modrinth": {
+      "project_id": "uy4Cnpcm",
+      "version_id": "1sdJl7J1",
+      "version_number": "21.1.81",
+      "filename": "bookshelf-neoforge-1.21.1-21.1.81.jar",
+      "url": "https://cdn.modrinth.com/data/uy4Cnpcm/versions/1sdJl7J1/bookshelf-neoforge-1.21.1-21.1.81.jar",
+      "sha1": "efc4cda6da4dd879f24d057ed0a6413764c9ba40",
+      "sha512": "78d4577a8e8fbb241216968475dd73f5b9e5efeb7da802b18a4e6c290e49af6cb4a5676e9855d0d8ff3613f967812e4bd363bbb9196c17c954d19454f84b2214",
+      "size": 328813
+    },
+    "curseforge": {
+      "project_id": 228525,
+      "file_id": 7606240,
+      "filename": "bookshelf-neoforge-1.21.1-21.1.81.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Prickle",
+    "slug": "prickle",
+    "category": "recipe-info-ui",
+    "decision": "include",
+    "reason": "Library (Darkhax config/JSON lib): required by Enchantment Descriptions.",
+    "side": "both",
+    "license": "LGPL-2.1-only",
+    "modrinth": {
+      "project_id": "aaRl8GiW",
+      "version_id": "EE1FHDyD",
+      "version_number": "21.1.11",
+      "filename": "prickle-neoforge-1.21.1-21.1.11.jar",
+      "url": "https://cdn.modrinth.com/data/aaRl8GiW/versions/EE1FHDyD/prickle-neoforge-1.21.1-21.1.11.jar",
+      "sha1": "5174059ecf97340a0de5ef211b938de26c4eaa36",
+      "sha512": "154d42795ccf1f3e07714775cdb82fd5db17574319286ced13d86b0456b64e4cf5bb89ffbcbfcefce67b73ed0b83e4e2944e493d79d9a385ff9de23006ee7bf5",
+      "size": 84812
+    },
+    "curseforge": {
+      "project_id": 1023259,
+      "file_id": 6961457,
+      "filename": "prickle-neoforge-1.21.1-21.1.11.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Legendary Tooltips",
+    "slug": "legendary-tooltips",
+    "category": "recipe-info-ui",
+    "decision": "include",
+    "reason": "Rarity- and tag-driven tooltip frames, the RPG 'legendary item' look. Fully data-driven so the pack can style NightBeam gear tiers. CC-BY-NC-ND: fine to reference in a free pack; never modify or rehost it.",
+    "side": "client",
+    "license": "CC-BY-NC-ND-4.0",
+    "modrinth": {
+      "project_id": "atHH8NyV",
+      "version_id": "BabRJO04",
+      "version_number": "1.5.5",
+      "filename": "LegendaryTooltips-1.21.1-neoforge-1.5.5.jar",
+      "url": "https://cdn.modrinth.com/data/atHH8NyV/versions/BabRJO04/LegendaryTooltips-1.21.1-neoforge-1.5.5.jar",
+      "sha1": "e7d3b66f3afe115c709749739f26f807ca8e827b",
+      "sha512": "3c0de6b6597a57b0fc3a134dde03ea3aeed0a7d64db63def8eda182c8bb7717293d2e4753887dcecaa27e17051c308269039eec6e74186d5eede68f98e74feeb",
+      "size": 81808
+    },
+    "curseforge": {
+      "project_id": 532127,
+      "file_id": 6400660,
+      "filename": "LegendaryTooltips-1.21.1-neoforge-1.5.5.jar"
+    },
+    "required_deps": [
+      "iceberg",
+      "prism-lib"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Item Borders",
+    "slug": "item-borders",
+    "category": "recipe-info-ui",
+    "decision": "include",
+    "reason": "Rarity-coloured slot borders, consistent with Legendary Tooltips (same author and libraries). An optional integration of Sophisticated Backpacks.",
+    "side": "client",
+    "license": "CC-BY-NC-ND-4.0",
+    "modrinth": {
+      "project_id": "b1fMg6sH",
+      "version_id": "WjErgKWV",
+      "version_number": "1.2.5",
+      "filename": "ItemBorders-1.21-neoforge-1.2.5.jar",
+      "url": "https://cdn.modrinth.com/data/b1fMg6sH/versions/WjErgKWV/ItemBorders-1.21-neoforge-1.2.5.jar",
+      "sha1": "b5ae56007c0bbb86b9a05f9f12b522ed485d7884",
+      "sha512": "050917782aba18d6f5bd9cc71462e96195d2124e8a99f538ac40c45e38de69e0f95fce4efa3835b6df364ac543ede7a5ec6084b78e03fe15a072ed3cee05e4f5",
+      "size": 23511
+    },
+    "curseforge": {
+      "project_id": 513769,
+      "file_id": 5591010,
+      "filename": "ItemBorders-1.21-neoforge-1.2.5.jar"
+    },
+    "required_deps": [
+      "iceberg",
+      "prism-lib"
+    ],
+    "optional_deps": [
+      "legendary-tooltips"
+    ]
+  },
+  {
+    "name": "Equipment Compare",
+    "slug": "equipment-compare",
+    "category": "recipe-info-ui",
+    "decision": "include",
+    "reason": "Shows the currently equipped item next to a hovered weapon or armor tooltip. Core RPG gear-decision QoL.",
+    "side": "client",
+    "license": "CC-BY-NC-ND-4.0",
+    "modrinth": {
+      "project_id": "CYSUVOdj",
+      "version_id": "efoMHHTh",
+      "version_number": "1.3.13",
+      "filename": "EquipmentCompare-1.21.1-neoforge-1.3.13.jar",
+      "url": "https://cdn.modrinth.com/data/CYSUVOdj/versions/efoMHHTh/EquipmentCompare-1.21.1-neoforge-1.3.13.jar",
+      "sha1": "fff2c71ff62d7c74bf9e73754536706cdf4893d1",
+      "sha512": "2e96d8b54f3f2c99525c91cae298561cc122dde8840bcb2d64ec0cfd997b6f49efcd13050f82f500f5cf414c5caaae29118ac45532ac34b1b62e62ad49cbcb31",
+      "size": 35691
+    },
+    "curseforge": {
+      "project_id": 502561,
+      "file_id": 6375501,
+      "filename": "EquipmentCompare-1.21.1-neoforge-1.3.13.jar"
+    },
+    "required_deps": [
+      "iceberg"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Iceberg",
+    "slug": "iceberg",
+    "category": "recipe-info-ui",
+    "decision": "include",
+    "reason": "Library: required by Legendary Tooltips, Item Borders and Equipment Compare.",
+    "side": "both",
+    "license": "CC-BY-NC-ND-4.0",
+    "modrinth": {
+      "project_id": "5faXoLqX",
+      "version_id": "IMssx9du",
+      "version_number": "1.3.2",
+      "filename": "Iceberg-1.21.1-neoforge-1.3.2.jar",
+      "url": "https://cdn.modrinth.com/data/5faXoLqX/versions/IMssx9du/Iceberg-1.21.1-neoforge-1.3.2.jar",
+      "sha1": "f6014d198be9503573cd9cb41cc789d282768ad8",
+      "sha512": "19d33195cfee0a640f40fb64d82346df7ac970ddb43ed68ba2dacb4793b18d577fd57dd43a4c2e94f731487c024b8d7ebcc52721764ec9d8a87bd68fc7df5c96",
+      "size": 213853
+    },
+    "curseforge": {
+      "project_id": 520110,
+      "file_id": 6423863,
+      "filename": "Iceberg-1.21.1-neoforge-1.3.2.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Prism",
+    "slug": "prism-lib",
+    "category": "recipe-info-ui",
+    "decision": "include",
+    "reason": "Library: required by Legendary Tooltips and Item Borders.",
+    "side": "client",
+    "license": "CC-BY-NC-ND-4.0",
+    "modrinth": {
+      "project_id": "1OE8wbN0",
+      "version_id": "kMcz2lDj",
+      "version_number": "1.0.11",
+      "filename": "Prism-1.21.1-neoforge-1.0.11.jar",
+      "url": "https://cdn.modrinth.com/data/1OE8wbN0/versions/kMcz2lDj/Prism-1.21.1-neoforge-1.0.11.jar",
+      "sha1": "1ae6f7be2ba8f963344dbf27e552920a7bc7a35f",
+      "sha512": "b3539b5dba6414b5f6db126dd703a0923984c1fa11a53e50090eb1b03ec3ef3a09fc048ae2d03b8241e4d182ec4e942cc905d0f3e7366608fd8a0bb2509f55f4",
+      "size": 62031
+    },
+    "curseforge": {
+      "project_id": 638111,
+      "file_id": 6372979,
+      "filename": "Prism-1.21.1-neoforge-1.0.11.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Shoulder Surfing Reloaded",
+    "slug": "shoulder-surfing-reloaded",
+    "category": "recipe-info-ui",
+    "decision": "include",
+    "reason": "Over-the-shoulder third-person camera popular in RPG and soulslike packs (MIT, active). Declares Better Third Person incompatible. Coordinate with the combat layer: SSR 1.21.1 disables outdated Epic Fight mixins, and the 'SSR Camera Fixes & Additions' bridge (Epic Fight, Better Combat, Iron's Spells) only supports SSR 4.x, not 5.x. Pin SSR to match the combat mod.",
+    "side": "client",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "kepjj2sy",
+      "version_id": "woekHsje",
+      "version_number": "1.21.1-5.2.0+neoforge",
+      "filename": "ShoulderSurfing-NeoForge-1.21.1-5.2.0.jar",
+      "url": "https://cdn.modrinth.com/data/kepjj2sy/versions/woekHsje/ShoulderSurfing-NeoForge-1.21.1-5.2.0.jar",
+      "sha1": "b889e1671b02f262fc4520a46b8140c3b1371585",
+      "sha512": "4497d2f8a992d6d8985b1a6fa7018158a877521052302682866f89171d14eafa7c6b75d92c6e08531003476bc292f71c67c7e4f34b8c1a6864074a3b0dcd7e75",
+      "size": 423716
+    },
+    "curseforge": {
+      "project_id": 243190,
+      "file_id": 9013811,
+      "filename": "ShoulderSurfing-NeoForge-1.21.1-5.2.0.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Not Enough Animations",
+    "slug": "not-enough-animations",
+    "category": "recipe-info-ui",
+    "decision": "include",
+    "reason": "Third-person player animations (eating, maps, ladders), which matter with a shoulder camera. Client-only. The tr7zw licence allows modpacks.",
+    "side": "client",
+    "license": "LicenseRef-tr7zw-Protective-License",
+    "modrinth": {
+      "project_id": "MPCX6s5C",
+      "version_id": "VCuMsK45",
+      "version_number": "1.12.6",
+      "filename": "notenoughanimations-neoforge-1.12.6-mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/MPCX6s5C/versions/VCuMsK45/notenoughanimations-neoforge-1.12.6-mc1.21.1.jar",
+      "sha1": "2098ae4965ebefb2dc8d5aec42a7d5282414fddc",
+      "sha512": "2b392f770cac669abcc796e836fc86579e29c1c70174f773fadbb747d8a49763fefd938835aeef8681a384aee9a7b6a8fa4684aaa1961159ccddea680e936acd",
+      "size": 1866035
+    },
+    "curseforge": {
+      "project_id": 433760,
+      "file_id": 8925075,
+      "filename": "notenoughanimations-neoforge-1.12.6-mc1.21.1.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Puzzles Lib",
+    "slug": "puzzles-lib",
+    "category": "recipe-info-ui",
+    "decision": "include",
+    "reason": "Library (Fuzs): required by Leaves Be Gone, plus Pick Up Notifier and Overflowing Bars if enabled.",
+    "side": "both",
+    "license": "MPL-2.0",
+    "modrinth": {
+      "project_id": "QAGBst4M",
+      "version_id": "kmN5PWk9",
+      "version_number": "21.1.66",
+      "filename": "puzzleslib-v21.1.66-mc1.21.1+neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/QAGBst4M/versions/kmN5PWk9/puzzleslib-v21.1.66-mc1.21.1%2Bneoforge.jar",
+      "sha1": "fd584167f1277aef5411a98a22390c65cabe6e07",
+      "sha512": "d265016586d39d7e0ac63b064fcad6fd64df79ce885ae81aa1d7a51ba32b4c6849c4b3021b563667eb392599512fe193adfa52b40d99a101ab411dd0b5c5d484",
+      "size": 1451120
+    },
+    "curseforge": {
+      "project_id": 495476,
+      "file_id": 9331322,
+      "filename": "puzzleslib-v21.1.66-mc1.21.1+neoforge.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Just Enough Resources (JER)",
+    "slug": "just-enough-resources-jer",
+    "category": "recipe-info-ui",
+    "decision": "optional",
+    "reason": "JEI plugin that shows mob drops, dungeon loot and ore distribution. Useful in an RPG, but it spoils boss and chest loot. Pack-designer decision.",
+    "side": "client",
+    "license": "LicenseRef-Dont-Be-a-Jerk",
+    "modrinth": {
+      "project_id": "uEfK2CXF",
+      "version_id": "A2G7NFcD",
+      "version_number": "1.6.0.57",
+      "filename": "JustEnoughResources-NeoForge-1.21.1-1.6.0.57.jar",
+      "url": "https://cdn.modrinth.com/data/uEfK2CXF/versions/A2G7NFcD/JustEnoughResources-NeoForge-1.21.1-1.6.0.57.jar",
+      "sha1": "f1826764b265e48d6705c223ccdf1e48cddc2a97",
+      "sha512": "2625d3ba42c0ab7ee52443c35cfc4cf256dc089e4fa8bfde5cdbb3f72621abf081d3718d9fda68d375921f618b719fddaa25a01ebf3229e19543d491094f8e5e",
+      "size": 292338
+    },
+    "curseforge": {
+      "project_id": 240630,
+      "file_id": 9311693,
+      "filename": "JustEnoughResources-NeoForge-1.21.1-1.6.0.57.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Inventory Essentials",
+    "slug": "inventory-essentials",
+    "category": "recipe-info-ui",
+    "decision": "optional",
+    "reason": "Lightweight bulk-transfer shortcuts (Balm, both sides). Overlaps Mouse Tweaks; optional extra.",
+    "side": "both",
+    "license": "LicenseRef-All-Rights-Reserved",
+    "modrinth": {
+      "project_id": "Boon8xwi",
+      "version_id": "B2gBjJSj",
+      "version_number": "21.1.20+neoforge-1.21.1",
+      "filename": "inventoryessentials-neoforge-1.21.1-21.1.20.jar",
+      "url": "https://cdn.modrinth.com/data/Boon8xwi/versions/B2gBjJSj/inventoryessentials-neoforge-1.21.1-21.1.20.jar",
+      "sha1": "7a3d6c52ae45491581a97bf09053cd0bd14d4a82",
+      "sha512": "70687fe3abd640cd6f9145e107b58b1b11a94c2cbb67cd8e5aa9a924b33e9532fe8bd6a47026250d65f379c89202a67eb32ab74105cc717b70871a0481925a9c",
+      "size": 201140
+    },
+    "curseforge": {
+      "project_id": 368825,
+      "file_id": 9035078,
+      "filename": "inventoryessentials-neoforge-1.21.1-21.1.20.jar"
+    },
+    "required_deps": [
+      "balm"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Configured",
+    "slug": "configured",
+    "category": "recipe-info-ui",
+    "decision": "optional",
+    "reason": "In-game config editor (client side; a server install enables remote config editing). On CurseForge only for NeoForge 1.21.1 (the Modrinth project lists no NeoForge build). NeoForge 21.1 has its own config screens, so this is a convenience, not a requirement.",
+    "side": "client",
+    "license": "MIT (per Modrinth project page; NeoForge build CF-only)",
+    "modrinth": null,
+    "curseforge": {
+      "project_id": 457570,
+      "file_id": 7276577,
+      "filename": "configured-neoforge-1.21.1-2.6.3.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Catalogue",
+    "slug": "catalogue",
+    "category": "recipe-info-ui",
+    "decision": "optional",
+    "reason": "Nicer mod list screen than NeoForge's built-in one. CurseForge only; cosmetic.",
+    "side": "client",
+    "license": "unknown (CurseForge-only; not stated via CFWidget)",
+    "modrinth": null,
+    "curseforge": {
+      "project_id": 459701,
+      "file_id": 6926815,
+      "filename": "catalogue-neoforge-1.21.1-1.11.2.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Toast Control",
+    "slug": "toast-control",
+    "category": "recipe-info-ui",
+    "decision": "optional",
+    "reason": "Suppresses recipe and advancement toast spam. Requires Placebo, a large library. Optional, because FTB Quests and KubeJS can already silence most toasts.",
+    "side": "client",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "CnOG2wlS",
+      "version_id": "jXHDAUrd",
+      "version_number": "1.21.1-9.0.1",
+      "filename": "ToastControl-1.21.1-9.0.1.jar",
+      "url": "https://cdn.modrinth.com/data/CnOG2wlS/versions/jXHDAUrd/ToastControl-1.21.1-9.0.1.jar",
+      "sha1": "47f9b3eb9e499996c77a7567c85e6bb9d3d51be8",
+      "sha512": "544965f940c3b3eb856a57e9d35c79b7a88b9562a82a39618247b796037f7f4a83279f1effa08557a1a1d363f6169429b265e8645d5bb89578b32fdf22e4ee39",
+      "size": 21072
+    },
+    "curseforge": {
+      "project_id": 271740,
+      "file_id": 6751464,
+      "filename": "ToastControl-1.21.1-9.0.1.jar"
+    },
+    "required_deps": [
+      "placebo"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Placebo",
+    "slug": "placebo",
+    "category": "recipe-info-ui",
+    "decision": "optional",
+    "reason": "Library: required by Toast Control (and FastWorkbench). Ship it only if Toast Control is enabled.",
+    "side": "both",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "tCkE8p2N",
+      "version_id": "B5zbSVlT",
+      "version_number": "1.21.1-9.9.4",
+      "filename": "Placebo-1.21.1-9.9.4.jar",
+      "url": "https://cdn.modrinth.com/data/tCkE8p2N/versions/B5zbSVlT/Placebo-1.21.1-9.9.4.jar",
+      "sha1": "007d52a42020a331d5272495f6d676e0ad1a2c13",
+      "sha512": "4f3a9c5974132f3638c262c56b0c2886df2bc58027c961aa11d06d0ae2e608b63f24f949b2f8c240989e2a1bfe303fd237c5f2d49269453ad6c2ff1f85f2c648",
+      "size": 326063
+    },
+    "curseforge": {
+      "project_id": 283644,
+      "file_id": 9153039,
+      "filename": "Placebo-1.21.1-9.9.4.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Better Advancements",
+    "slug": "better-advancements",
+    "category": "recipe-info-ui",
+    "decision": "optional",
+    "reason": "Nicer advancement screen (0.4.3.21, beta). In a quest-driven story pack, FTB Quests is the progression UI, so this is optional.",
+    "side": "client",
+    "license": "LicenseRef-Dont-Be-a-Jerk",
+    "modrinth": {
+      "project_id": "Q2OqKxDG",
+      "version_id": "FjTYILOi",
+      "version_number": "0.4.3.21",
+      "filename": "BetterAdvancements-NeoForge-1.21.1-0.4.3.21.jar",
+      "url": "https://cdn.modrinth.com/data/Q2OqKxDG/versions/FjTYILOi/BetterAdvancements-NeoForge-1.21.1-0.4.3.21.jar",
+      "sha1": "870521cfaa1a4cb6c830e2409e8b9e4cf179aff2",
+      "sha512": "b3deafd146dc3ea6e879fbc92f00de5797319a1aa620fb3b39be64c19271dab2efa07f824cda7139f8c22f2524ea413949357f5469bb6de584d1386de069c6b7",
+      "size": 98641
+    },
+    "curseforge": {
+      "project_id": 272515,
+      "file_id": 5850587,
+      "filename": "BetterAdvancements-NeoForge-1.21.1-0.4.3.21.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Just Zoom",
+    "slug": "just-zoom",
+    "category": "recipe-info-ui",
+    "decision": "optional",
+    "reason": "Zoom key (Keksuccino). Uses Konkrete, already present for FancyMenu, so it costs nothing extra. The vanilla spyglass exists, so optional.",
+    "side": "client",
+    "license": "LicenseRef-DSMSLv3.1",
+    "modrinth": {
+      "project_id": "iAiqcykM",
+      "version_id": "Ha3713r0",
+      "version_number": "3.1.0-1.21.1-neoforge",
+      "filename": "justzoom_neoforge_3.1.0_MC_1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/iAiqcykM/versions/Ha3713r0/justzoom_neoforge_3.1.0_MC_1.21.1.jar",
+      "sha1": "e8eb95e2ff3730a9cf0491b1221745e4b6eb4d45",
+      "sha512": "4e673b1dadfb4c84cf0ad113b4199d8c9ef8677fbc4fc27e403cc2b0ab481e261d8d4b46383ce845c7063bfdc0aba3f87008b36cb9c5ec2edd272984b0ea6b17",
+      "size": 168109
+    },
+    "curseforge": {
+      "project_id": 561885,
+      "file_id": 9325459,
+      "filename": "justzoom_neoforge_3.1.0_MC_1.21.1.jar"
+    },
+    "required_deps": [
+      "konkrete"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Pick Up Notifier",
+    "slug": "pick-up-notifier",
+    "category": "recipe-info-ui",
+    "decision": "optional",
+    "reason": "Item pickup feed (Fuzs). Nice loot feedback that uses Puzzles Lib, already present. Optional to keep the HUD clean next to RPG HUD elements.",
+    "side": "both",
+    "license": "MPL-2.0",
+    "modrinth": {
+      "project_id": "ZX66K16c",
+      "version_id": "5NZounJc",
+      "version_number": "v21.1.1-1.21.1-NeoForge",
+      "filename": "PickUpNotifier-v21.1.1-1.21.1-NeoForge.jar",
+      "url": "https://cdn.modrinth.com/data/ZX66K16c/versions/5NZounJc/PickUpNotifier-v21.1.1-1.21.1-NeoForge.jar",
+      "sha1": "90d3fe207c95a3a5d849ebf8d70ffa885694e30f",
+      "sha512": "9754f44f3bf084f45b47c88c3830dc37ffc68b4b5d6cf03ca5015177611068e8c1725670d20c0ed4674fb619227b18ccbff39cfc687a46f5258caf91c96db6db",
+      "size": 97094
+    },
+    "curseforge": {
+      "project_id": 351441,
+      "file_id": 6409785,
+      "filename": "PickUpNotifier-v21.1.1-1.21.1-NeoForge.jar"
+    },
+    "required_deps": [
+      "puzzles-lib"
+    ],
+    "optional_deps": [
+      "forge-config-screens"
+    ]
+  },
+  {
+    "name": "Overflowing Bars",
+    "slug": "overflowing-bars",
+    "category": "recipe-info-ui",
+    "decision": "optional",
+    "reason": "Stacks health and armour rows when values exceed 20. Only needed if the gameplay or RPG-stats layer doesn't draw its own health HUD.",
+    "side": "client",
+    "license": "MPL-2.0",
+    "modrinth": {
+      "project_id": "XD7XOrAF",
+      "version_id": "PYRrjTaY",
+      "version_number": "v21.1.1-1.21.1-NeoForge",
+      "filename": "OverflowingBars-v21.1.1-1.21.1-NeoForge.jar",
+      "url": "https://cdn.modrinth.com/data/XD7XOrAF/versions/PYRrjTaY/OverflowingBars-v21.1.1-1.21.1-NeoForge.jar",
+      "sha1": "a9dea4b9ef893fc955512ff2dee75c9c82e09a52",
+      "sha512": "2962a12664e24711096d9be98bfda2ae0b86c5050d0860a36b3567870d794767d308328060c6fbe4f4854b569d97ce465b8b250775f3ae7a5d0a563f342a4136",
+      "size": 78482
+    },
+    "curseforge": {
+      "project_id": 852662,
+      "file_id": 5770623,
+      "filename": "OverflowingBars-v21.1.1-1.21.1-NeoForge.jar"
+    },
+    "required_deps": [
+      "puzzles-lib"
+    ],
+    "optional_deps": [
+      "forge-config-screens"
+    ]
+  },
+  {
+    "name": "Item Highlighter",
+    "slug": "item-highlighter",
+    "category": "recipe-info-ui",
+    "decision": "optional",
+    "reason": "Marks newly picked-up items in the inventory (Iceberg). Small QoL.",
+    "side": "client",
+    "license": "CC-BY-NC-ND-4.0",
+    "modrinth": {
+      "project_id": "cVNW5lr6",
+      "version_id": "AsQ0Y2G9",
+      "version_number": "1.1.11",
+      "filename": "Highlighter-1.21-neoforge-1.1.11.jar",
+      "url": "https://cdn.modrinth.com/data/cVNW5lr6/versions/AsQ0Y2G9/Highlighter-1.21-neoforge-1.1.11.jar",
+      "sha1": "22d29eba774530b40a540fdf5ce2d14d89bbe036",
+      "sha512": "41e1d2b3f73cf81b94563f04877528d0076672f95a456e959ca8f72162c8803bb9cf5ad540d1fbd15642a1d974bf11362a6b161003cd0853de050a443458a13b",
+      "size": 30417
+    },
+    "curseforge": {
+      "project_id": 521590,
+      "file_id": 5591015,
+      "filename": "Highlighter-1.21-neoforge-1.1.11.jar"
+    },
+    "required_deps": [
+      "iceberg"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Advancement Plaques",
+    "slug": "advancement-plaques",
+    "category": "recipe-info-ui",
+    "decision": "optional",
+    "reason": "Replaces advancement toasts with plaques (Iceberg + Prism). Cosmetic, worth it only if advancements are used for story beats.",
+    "side": "client",
+    "license": "CC-BY-NC-ND-4.0",
+    "modrinth": {
+      "project_id": "9NM0dXub",
+      "version_id": "OWylG33I",
+      "version_number": "1.6.8",
+      "filename": "AdvancementPlaques-1.21.1-neoforge-1.6.8.jar",
+      "url": "https://cdn.modrinth.com/data/9NM0dXub/versions/OWylG33I/AdvancementPlaques-1.21.1-neoforge-1.6.8.jar",
+      "sha1": "829d33e71b30e9158d772f5963bb6020f6026d78",
+      "sha512": "94724dd77d005f0a189c4843efcc2800cf3d3e01d1f1ac184c6f6ad7c921aec508e93fa0bfac0e641a74c1629d4e5e4d06b8c1a3e0d8e63f97db89b2f879c106",
+      "size": 195730
+    },
+    "curseforge": {
+      "project_id": 499826,
+      "file_id": 5905995,
+      "filename": "AdvancementPlaques-1.21.1-neoforge-1.6.8.jar"
+    },
+    "required_deps": [
+      "iceberg"
+    ],
+    "optional_deps": [
+      "prism-lib"
+    ]
+  },
+  {
+    "name": "Chat Heads",
+    "slug": "chat-heads",
+    "category": "recipe-info-ui",
+    "decision": "optional",
+    "reason": "Player heads in chat. Client-only multiplayer polish.",
+    "side": "client",
+    "license": "MPL-2.0",
+    "modrinth": {
+      "project_id": "Wb5oqrBJ",
+      "version_id": "ZPylso9i",
+      "version_number": "0.15.7",
+      "filename": "chat_heads-0.15.7-neoforge-1.21.jar",
+      "url": "https://cdn.modrinth.com/data/Wb5oqrBJ/versions/ZPylso9i/chat_heads-0.15.7-neoforge-1.21.jar",
+      "sha1": "536b2af675229d2a33eb4cf5afbe7148a62d5f3f",
+      "sha512": "97ec4a08ffe54917591e7e05ba5ed9359e591719e4f3246745de36923a8080e68332aff28be437997c40a215b7aebc3537df892c99db4de6a5348ac7b4995144",
+      "size": 91948
+    },
+    "curseforge": {
+      "project_id": 407206,
+      "file_id": 8642154,
+      "filename": "chat_heads-0.15.7-neoforge-1.21.jar"
+    },
+    "required_deps": [],
+    "optional_deps": [
+      "cloth-config"
+    ]
+  },
+  {
+    "name": "Crafting Tweaks",
+    "slug": "crafting-tweaks",
+    "category": "recipe-info-ui",
+    "decision": "optional",
+    "reason": "Rotate, balance and clear buttons on crafting grids (Balm), integrated with Sophisticated. Little value in a low-crafting RPG.",
+    "side": "both",
+    "license": "LicenseRef-All-Rights-Reserved",
+    "modrinth": {
+      "project_id": "DMu0oBKf",
+      "version_id": "IhkQpEve",
+      "version_number": "21.1.11+neoforge-1.21.1",
+      "filename": "craftingtweaks-neoforge-1.21.1-21.1.11.jar",
+      "url": "https://cdn.modrinth.com/data/DMu0oBKf/versions/IhkQpEve/craftingtweaks-neoforge-1.21.1-21.1.11.jar",
+      "sha1": "b6252039445978a742f439fc398f2a198b86bd4e",
+      "sha512": "e1869211c2e037bdaadbe9b9f592d4ccfb7ab94d7ba6803629d6525945edc05db973db6bd7568f2af4550ae4616ae6cbb832e1684412ba439d37f523b564d9a7",
+      "size": 256086
+    },
+    "curseforge": {
+      "project_id": 233071,
+      "file_id": 8697050,
+      "filename": "craftingtweaks-neoforge-1.21.1-21.1.11.jar"
+    },
+    "required_deps": [
+      "balm"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "TrashSlot",
+    "slug": "trashslot",
+    "category": "recipe-info-ui",
+    "decision": "optional",
+    "reason": "Inventory trash slot (Balm). Optional QoL. Sophisticated Backpacks has an optional integration.",
+    "side": "both",
+    "license": "LicenseRef-All-Rights-Reserved",
+    "modrinth": {
+      "project_id": "vRYk0bv7",
+      "version_id": "HY8Ybozd",
+      "version_number": "21.1.11+neoforge-1.21.1",
+      "filename": "trashslot-neoforge-1.21.1-21.1.11.jar",
+      "url": "https://cdn.modrinth.com/data/vRYk0bv7/versions/HY8Ybozd/trashslot-neoforge-1.21.1-21.1.11.jar",
+      "sha1": "ce09d0128e6a7d225e731e1307f9c1deddac209a",
+      "sha512": "4d3b7e5a103829d4cc5adafa18e05071f59ed1eb16ef198890b615e000aaa2d8447f9651a60c981886cbeb137c96abace32e235527f9d818b06ff7ae473d9cd2",
+      "size": 77535
+    },
+    "curseforge": {
+      "project_id": 235577,
+      "file_id": 8163135,
+      "filename": "trashslot-neoforge-1.21.1-21.1.11.jar"
+    },
+    "required_deps": [
+      "balm"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "EMI",
+    "slug": "emi",
+    "category": "recipe-info-ui",
+    "decision": "exclude",
+    "reason": "Strong alternative with recipe tree and favourites. It loads JEI plugins only when JEI is also installed (\"install JEI alongside EMI … JEI will be hidden\"), so EMI would mean two recipe mods. Choose EMI+JEI instead of JEI only if the team wants EMI's UX.",
+    "side": "both",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "fRiHVvU7",
+      "version_id": "5sIPA1To",
+      "version_number": "1.1.24+1.21.1+neoforge",
+      "filename": "emi-1.1.24+1.21.1+neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/fRiHVvU7/versions/5sIPA1To/emi-1.1.24%2B1.21.1%2Bneoforge.jar",
+      "sha1": "3fd494b37027dfbc7f78414d7cbf251c9eb6738a",
+      "sha512": "f4c45ed686fe617311d6debadcb6ace5963e66f8cfe0cfed398231f081f87407070efc7a73c8b695d158f1d87a97180737b9107a46771e77df2bc9a7dc715ebd",
+      "size": 1111538
+    },
+    "curseforge": {
+      "project_id": 580555,
+      "file_id": 8081408,
+      "filename": "emi-1.1.24+1.21.1+neoforge.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "EMI Loot",
+    "slug": "emi-loot",
+    "category": "recipe-info-ui",
+    "decision": "exclude",
+    "reason": "Depends on EMI (not chosen). It also pulls Fzzy Config and Symbols 'n' Stuff, and it shows boss loot tables, which spoils discovery.",
+    "side": "both",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "qbbO7Jns",
+      "version_id": "QXkODMCT",
+      "version_number": "0.7.9+1.21+neoforge",
+      "filename": "emi_loot-0.7.9+1.21+neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/qbbO7Jns/versions/QXkODMCT/emi_loot-0.7.9%2B1.21%2Bneoforge.jar",
+      "sha1": "bd0326eeda721c87a29efd78f9a52f46d572392c",
+      "sha512": "9c67ff502da7a94ef7707c144deb4ec6472f445e99cc8eab30b77f22d886a86b8793338452fe394296f3132ed4d37271d475af184e3a9519ddebdad1a82eecf7",
+      "size": 465870
+    },
+    "curseforge": {
+      "project_id": 681783,
+      "file_id": 7417271,
+      "filename": "emi_loot-0.7.9+1.21+neoforge.jar"
+    },
+    "required_deps": [
+      "emi",
+      "fzzy-config"
+    ],
+    "optional_deps": [
+      "symbols-n-stuff"
+    ]
+  },
+  {
+    "name": "Jade Addons (Neo/Forge)",
+    "slug": "jade-addons-forge",
+    "category": "recipe-info-ui",
+    "decision": "exclude",
+    "reason": "Only adds tooltips for specific tech and storage mods that this pack does not run. Add it later if the gameplay layer needs it.",
+    "side": "both",
+    "license": "LicenseRef-All-Rights-Reserved",
+    "modrinth": {
+      "project_id": "xuDOzCLy",
+      "version_id": "O3F6Dkle",
+      "version_number": "6.1.2+neoforge",
+      "filename": "JadeAddons-1.21.1-NeoForge-6.1.2.jar",
+      "url": "https://cdn.modrinth.com/data/xuDOzCLy/versions/O3F6Dkle/JadeAddons-1.21.1-NeoForge-6.1.2.jar",
+      "sha1": "479b327078f8f0091e2413675d1236c931f68cf4",
+      "sha512": "7fc0f413a73e11af6463cc246d9390e0cbe14ff46d0778d9893be59bb1dbbf300a745cc50731412ab4a940f7fe06e5433fa61a423a38ff64b6c6742c5ee62c7b",
+      "size": 82315
+    },
+    "curseforge": {
+      "project_id": 583345,
+      "file_id": 9056575,
+      "filename": "JadeAddons-1.21.1-NeoForge-6.1.2.jar"
+    },
+    "required_deps": [
+      "jade"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Inventory Profiles Next",
+    "slug": "inventory-profiles-next",
+    "category": "recipe-info-ui",
+    "decision": "exclude",
+    "reason": "Feature-rich but heavy (Kotlin for Forge + libIPN, AGPL). A NeoForge 1.21.1 pack (Gregnautics Continued) reported an IndexOutOfBounds client crash on middle-click pick-block in multiplayer that is still present in the latest 1.21.1 build (2.2.5), and swapped it for Client Sort. Co-op stability wins.",
+    "side": "client",
+    "license": "AGPL-3.0-or-later",
+    "modrinth": {
+      "project_id": "O7RBXm3n",
+      "version_id": "vjuNnHLv",
+      "version_number": "neoforge-1.21.1-2.2.5",
+      "filename": "InventoryProfilesNext-neoforge-1.21.1-2.2.5.jar",
+      "url": "https://cdn.modrinth.com/data/O7RBXm3n/versions/vjuNnHLv/InventoryProfilesNext-neoforge-1.21.1-2.2.5.jar",
+      "sha1": "b09d7c0820c233ea34af54d0a3ab7ed510b32dcc",
+      "sha512": "521296cc7e4fa48e06eb0c00d430968c7b879946db5b02e632cc724672759ac152e11bd9d320bd09f7418edd6fe4ece521a1a2cac49d7f5687519c69a0bcbf12",
+      "size": 1295466
+    },
+    "curseforge": {
+      "project_id": 495267,
+      "file_id": 7810574,
+      "filename": "InventoryProfilesNext-neoforge-1.21.1-2.2.5.jar"
+    },
+    "required_deps": [
+      "kotlin-for-forge",
+      "libipn"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "libIPN",
+    "slug": "libipn",
+    "category": "recipe-info-ui",
+    "decision": "exclude",
+    "reason": "Library for Inventory Profiles Next only (not chosen).",
+    "side": "client",
+    "license": "AGPL-3.0-or-later",
+    "modrinth": {
+      "project_id": "onSQdWhM",
+      "version_id": "BGe4KMlE",
+      "version_number": "neoforge-1.21.1-6.6.3",
+      "filename": "libIPN-neoforge-1.21.1-6.6.3.jar",
+      "url": "https://cdn.modrinth.com/data/onSQdWhM/versions/BGe4KMlE/libIPN-neoforge-1.21.1-6.6.3.jar",
+      "sha1": "baab9e8cae3d2b77b5e172b5694e465ee9f30d4a",
+      "sha512": "89383465eb8dfa296e7518dd0e6ddc1a242f4537a3183425f2319c79a3e97843ded0f5e13f86b095f2f09beacd2a1f249f554e0f4e18291209720826031a8b93",
+      "size": 626146
+    },
+    "curseforge": {
+      "project_id": 679177,
+      "file_id": 7810552,
+      "filename": "libIPN-neoforge-1.21.1-6.6.3.jar"
+    },
+    "required_deps": [
+      "kotlin-for-forge"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Obscure Tooltips",
+    "slug": "obscure-tooltips",
+    "category": "recipe-info-ui",
+    "decision": "exclude",
+    "reason": "Flashy alternative to Legendary Tooltips. Pick one tooltip renderer. It needs Fragmentum and its Obscuria licence is custom, while Legendary Tooltips is more configurable for custom rarity tiers.",
+    "side": "client",
+    "license": "LicenseRef-Obscuria-Ecosystem",
+    "modrinth": {
+      "project_id": "5vetjDBY",
+      "version_id": "Yo2oNdw1",
+      "version_number": "4.2.5",
+      "filename": "obscure_tooltips-neoforge-1.21.1-4.2.5.jar",
+      "url": "https://cdn.modrinth.com/data/5vetjDBY/versions/Yo2oNdw1/obscure_tooltips-neoforge-1.21.1-4.2.5.jar",
+      "sha1": "35469a3b86c85e2e535b559280e3a140d1acdc74",
+      "sha512": "08c4259ff4ad3af1d146581f9cd30ac403c5e2cc410ed685f0a32227062a40363986b9c8af46423dce3240d417b9d8e139cbee1117d8eb50b1da7e0877815fa5",
+      "size": 448989
+    },
+    "curseforge": {
+      "project_id": 715660,
+      "file_id": 8922038,
+      "filename": "obscure_tooltips-neoforge-1.21.1-4.2.5.jar"
+    },
+    "required_deps": [
+      "fragmentum"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Fragmentum",
+    "slug": "fragmentum",
+    "category": "recipe-info-ui",
+    "decision": "exclude",
+    "reason": "Library for Obscure Tooltips and Loot Journal (neither chosen).",
+    "side": "both",
+    "license": "LicenseRef-Obscuria-Ecosystem",
+    "modrinth": {
+      "project_id": "49C5QgTK",
+      "version_id": "kCXNhuIV",
+      "version_number": "5.4.0",
+      "filename": "fragmentum-5.4.0+1.21.1-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/49C5QgTK/versions/kCXNhuIV/fragmentum-5.4.0%2B1.21.1-neoforge.jar",
+      "sha1": "711f46b591cbee203e68cf023277dae9060725f8",
+      "sha512": "426b3a7f2085266ae231d7ef81092baabb0409bbf222b9220472dd3ba482840a0850047aabc4b59d20fd65170ec9920559d29df6527d8119ecf02c69cfa78e53",
+      "size": 7815344
+    },
+    "curseforge": {
+      "project_id": 1123977,
+      "file_id": 9202578,
+      "filename": "fragmentum-5.4.0+1.21.1-neoforge.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Better Third Person",
+    "slug": "better-third-person",
+    "category": "recipe-info-ui",
+    "decision": "exclude",
+    "reason": "Declared incompatible by Shoulder Surfing Reloaded. Last 1.21.1 build is 2024-10.",
+    "side": "client",
+    "license": "LicenseRef-All-Rights-Reserved",
+    "modrinth": {
+      "project_id": "G1s2WpNo",
+      "version_id": "aG5y4JUQ",
+      "version_number": "1.9.0",
+      "filename": "BetterThirdPerson-neoforge-1.9.0.jar",
+      "url": "https://cdn.modrinth.com/data/G1s2WpNo/versions/aG5y4JUQ/BetterThirdPerson-neoforge-1.9.0.jar",
+      "sha1": "e91af996b413bb498e276bf410d0deff52a34a74",
+      "sha512": "053acb813940aac69578810558056942966f2f0a24006a3a5de545c82888f8190b3bdc27a2401d0f70200dc4c927c0f84a45bf17821fb94fb9b886d633644619",
+      "size": 60941
+    },
+    "curseforge": {
+      "project_id": 435044,
+      "file_id": 5833474,
+      "filename": "BetterThirdPerson-neoforge-1.9.0.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Zoomify",
+    "slug": "zoomify",
+    "category": "recipe-info-ui",
+    "decision": "exclude",
+    "reason": "No NeoForge 1.21.1 build (Fabric only on CF and Modrinth).",
+    "side": "client",
+    "license": "LGPL-3.0-only",
+    "modrinth": null,
+    "curseforge": null,
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Xaero's Minimap",
+    "slug": "xaeros-minimap",
+    "category": "recipe-info-ui",
+    "decision": "exclude",
+    "reason": "NightBeam ships its own 'Remnants | Advanced Minimap & Waypoints' (NeoForge 1.21.1, needed on both sides). A second minimap would duplicate the HUD. Fallback if Remnants Minimap is dropped: Xaero's Minimap + World Map (ARR; reference it, do not rehost).",
+    "side": "both",
+    "license": "LicenseRef-All-Rights-Reserved",
+    "modrinth": {
+      "project_id": "1bokaNcj",
+      "version_id": "irjR7dHk",
+      "version_number": "neoforge-1.21.1-26.6.0",
+      "filename": "xaerominimap-neoforge-1.21.1-26.6.0.jar",
+      "url": "https://cdn.modrinth.com/data/1bokaNcj/versions/irjR7dHk/xaerominimap-neoforge-1.21.1-26.6.0.jar",
+      "sha1": "551e8e2aa3498b506cc949a74606cdc0380e5e00",
+      "sha512": "d56b93ddb921285624b491d6a85aba23748bec9974867399c881c257eb25a746df92a735473adf3a6875e0928a56ff78245d5238eb9207b0e45c3fec20c896dc",
+      "size": 2186351
+    },
+    "curseforge": {
+      "project_id": 263420,
+      "file_id": 9067173,
+      "filename": "xaerominimap-neoforge-1.21.1-26.6.0.jar"
+    },
+    "required_deps": [],
+    "optional_deps": [
+      "open-parties-and-claims"
+    ]
+  },
+  {
+    "name": "Xaero's World Map",
+    "slug": "xaeros-world-map",
+    "category": "recipe-info-ui",
+    "decision": "exclude",
+    "reason": "Use only if Remnants Minimap has no fullscreen map. Integrates with Open Parties and Claims, not FTB Chunks.",
+    "side": "both",
+    "license": "LicenseRef-All-Rights-Reserved",
+    "modrinth": {
+      "project_id": "NcUtCpym",
+      "version_id": "SnQ4SoDe",
+      "version_number": "neoforge-1.21.1-1.47.0",
+      "filename": "xaeroworldmap-neoforge-1.21.1-1.47.0.jar",
+      "url": "https://cdn.modrinth.com/data/NcUtCpym/versions/SnQ4SoDe/xaeroworldmap-neoforge-1.21.1-1.47.0.jar",
+      "sha1": "2936c9cb9dfbdab145fe6f1e8ae2c68915246a5f",
+      "sha512": "4d2d78bc85afa002f682ef344b7284cf1baa4903cc5a11cd1d7bd260ac63952580ae717bab47079540ead633cdd5d8e4fdf230dc99a68bcb7a269500e7dada13",
+      "size": 1427078
+    },
+    "curseforge": {
+      "project_id": 317780,
+      "file_id": 9067277,
+      "filename": "xaeroworldmap-neoforge-1.21.1-1.47.0.jar"
+    },
+    "required_deps": [],
+    "optional_deps": [
+      "open-parties-and-claims"
+    ]
+  },
+  {
+    "name": "JourneyMap",
+    "slug": "journeymap",
+    "category": "recipe-info-ui",
+    "decision": "exclude",
+    "reason": "Alternative to Remnants Minimap / Xaero. Heavier, with its own waypoint system. Not needed.",
+    "side": "both",
+    "license": "LicenseRef-All-Rights-Reserved",
+    "modrinth": {
+      "project_id": "lfHFW1mp",
+      "version_id": "CtFE7hwT",
+      "version_number": "1.21.1-6.0.9+neoforge",
+      "filename": "journeymap-neoforge-1.21.1-6.0.9.jar",
+      "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/CtFE7hwT/journeymap-neoforge-1.21.1-6.0.9.jar",
+      "sha1": "3a5c86e620a7d5aa53b6e42ca4a1577bbba1d332",
+      "sha512": "8900ee4cdb7d1ffb6559decdeec84ad479d04b2e7b01a60be9f6e328809af2bfd7a80077b7da0e49bc96261fe8fe274ba33c62f6c9f65302c783ed823c4ff746",
+      "size": 4320499
+    },
+    "curseforge": {
+      "project_id": 32274,
+      "file_id": 8923668,
+      "filename": "journeymap-neoforge-1.21.1-6.0.9.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Neat",
+    "slug": "neat",
+    "category": "recipe-info-ui",
+    "decision": "exclude",
+    "reason": "Mob health bars. Deferred to the gameplay layer: Remnants RPG Mobs and Jade may already show health. Avoid two health-bar systems.",
+    "side": "client",
+    "license": "CC-BY-NC-SA-3.0",
+    "modrinth": {
+      "project_id": "Ins7SzzR",
+      "version_id": "kALoScYM",
+      "version_number": "1.21.1-47-neoforge",
+      "filename": "Neat-1.21-47-NEOFORGE.jar",
+      "url": "https://cdn.modrinth.com/data/Ins7SzzR/versions/kALoScYM/Neat-1.21-47-NEOFORGE.jar",
+      "sha1": "7744c5b02427572f7154d6f851507544fd9404d2",
+      "sha512": "9ed98ab1eabbceae693de360fd6ec11c5f4badd4e59c2f4a2820345d33f675a7d4d6e55c73ad21d777981c663f21b0827273cb6a050a6052132d3cf3ac492bb2",
+      "size": 110834
+    },
+    "curseforge": {
+      "project_id": 238372,
+      "file_id": 7774002,
+      "filename": "Neat-1.21-47-NEOFORGE.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Highly Customizable Damage Numbers",
+    "slug": "hicudan",
+    "category": "recipe-info-ui",
+    "decision": "exclude",
+    "reason": "Damage-number option (NeoForge 1.21.1, 2026-04). Deferred to the combat and RPG-mobs layer to avoid duplicate damage feedback. Listed only as an option.",
+    "side": "client",
+    "license": "Apache-2.0",
+    "modrinth": {
+      "project_id": "3DnMjWfL",
+      "version_id": "rsTVs2KV",
+      "version_number": "v1.1.31+mc1.21.1",
+      "filename": "highly_customizable_damage_numbers-neoforge-1.21-1.1.31.jar",
+      "url": "https://cdn.modrinth.com/data/3DnMjWfL/versions/rsTVs2KV/highly_customizable_damage_numbers-neoforge-1.21-1.1.31.jar",
+      "sha1": "1f55166a89638d3ae5d098a99bec3b9361eea9ec",
+      "sha512": "9ffee7fa81cabb35f81b36cd6c2d6582c096f6eeb72bf519464898677a881d1d705152261989234c1b6e9913a4f0849240473c431e42b670d138aeaffbac10e8",
+      "size": 133927
+    },
+    "curseforge": null,
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Damage Numbers",
+    "slug": "damagenumbers",
+    "category": "recipe-info-ui",
+    "decision": "exclude",
+    "reason": "Alternative damage-number mod. Last build 2024-06 (1.21), CF has no 1.21.1 NeoForge file. Deferred to the gameplay layer.",
+    "side": "client",
+    "license": "LicenseRef-All-Rights-Reserved",
+    "modrinth": {
+      "project_id": "iWdXs2dQ",
+      "version_id": "UhaoW1JM",
+      "version_number": "1.4.1-neoforge",
+      "filename": "damagenumbers-1.4.1-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/iWdXs2dQ/versions/UhaoW1JM/damagenumbers-1.4.1-neoforge.jar",
+      "sha1": "cf825d4e78c88fe5238d5798ed8bbbd77bebd6e3",
+      "sha512": "a4abeacb9ec39952582a2242d3f77ee5d3f372dba0e861e06e4886a1c17206c3f5f38641dfa499756a5ebaef1bafb51a134cc8f8dd4079e0983d26f99f706321",
+      "size": 38378
+    },
+    "curseforge": null,
+    "required_deps": [],
+    "optional_deps": [
+      "yacl"
+    ]
+  },
+  {
+    "name": "FTB Quests",
+    "slug": "ftb-quests",
+    "category": "quests-story-scripting",
+    "decision": "include",
+    "reason": "Quest book backbone: chapters, rich text and images for story, team-shared progress through FTB Teams, reward tables, and KubeJS/stage hooks through FTB XMod Compat. CurseForge only, All Rights Reserved (Feed The Beast Ltd), not on Modrinth, so the pack must be published on CurseForge first (which matches NightBeam's 85%-CurseForge audience). A Modrinth .mrpack can only link users to CurseForge for the FTB jars. The Modrinth-friendly alternative is Odyssey Quests.",
+    "side": "both",
+    "license": "All Rights Reserved (Feed The Beast Ltd; CurseForge-only)",
+    "modrinth": null,
+    "curseforge": {
+      "project_id": 289412,
+      "file_id": 9298629,
+      "filename": "ftb-quests-neoforge-2101.1.37.jar"
+    },
+    "required_deps": [
+      "architectury-api",
+      "ftb-library",
+      "ftb-teams"
+    ],
+    "optional_deps": [
+      "ftb-filter-system",
+      "ftb-xmod-compat"
+    ]
+  },
+  {
+    "name": "FTB Library",
+    "slug": "ftb-library",
+    "category": "quests-story-scripting",
+    "decision": "include",
+    "reason": "Library: required by FTB Quests, FTB Teams, FTB XMod Compat, FTB Ultimine (and FTB Chunks / FTB Essentials if enabled). CurseForge only, ARR.",
+    "side": "both",
+    "license": "All Rights Reserved (Feed The Beast Ltd; CurseForge-only)",
+    "modrinth": null,
+    "curseforge": {
+      "project_id": 404465,
+      "file_id": 9350706,
+      "filename": "ftb-library-neoforge-2101.1.39.jar"
+    },
+    "required_deps": [
+      "architectury-api"
+    ],
+    "optional_deps": [
+      "ftb-xmod-compat"
+    ]
+  },
+  {
+    "name": "FTB Teams",
+    "slug": "ftb-teams",
+    "category": "quests-story-scripting",
+    "decision": "include",
+    "reason": "Library and party system: shared quest progress for co-op parties (and shared claims if FTB Chunks is enabled). CurseForge only, ARR.",
+    "side": "both",
+    "license": "All Rights Reserved (Feed The Beast Ltd; CurseForge-only)",
+    "modrinth": null,
+    "curseforge": {
+      "project_id": 404468,
+      "file_id": 8724782,
+      "filename": "ftb-teams-neoforge-2101.1.11.jar"
+    },
+    "required_deps": [
+      "architectury-api",
+      "ftb-library"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "FTB XMod Compat",
+    "slug": "ftb-xmod-compat",
+    "category": "quests-story-scripting",
+    "decision": "include",
+    "reason": "Bridges FTB Quests to KubeJS (custom tasks and rewards, stages), JEI (recipe lookups from quests) and Waystones. Story scripting needs it. CurseForge only, ARR.",
+    "side": "both",
+    "license": "All Rights Reserved (Feed The Beast Ltd; CurseForge-only)",
+    "modrinth": null,
+    "curseforge": {
+      "project_id": 889915,
+      "file_id": 9344504,
+      "filename": "ftb-xmod-compat-neoforge-21.1.14.jar"
+    },
+    "required_deps": [
+      "architectury-api",
+      "ftb-library"
+    ],
+    "optional_deps": [
+      "ftb-chunks",
+      "ftb-quests",
+      "jei",
+      "kubejs",
+      "waystones"
+    ]
+  },
+  {
+    "name": "Architectury API",
+    "slug": "architectury-api",
+    "category": "quests-story-scripting",
+    "decision": "include",
+    "reason": "Library: required by FTB Quests, FTB Library, FTB Teams, FTB XMod Compat and FTB Ultimine (and Simple Discord Rich Presence).",
+    "side": "both",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "lhGA9TYQ",
+      "version_id": "1IiqEQGl",
+      "version_number": "13.0.11+neoforge",
+      "filename": "architectury-13.0.11-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/lhGA9TYQ/versions/1IiqEQGl/architectury-13.0.11-neoforge.jar",
+      "sha1": "008656a0702801174b8ec245ed7aad1921d6e9f1",
+      "sha512": "d9f7c3bb8162577dfb461ffdf04bd6a3563c7586934a0e2a744c14421beffb8286f0d88d4c758317003f20f99fe8072a39b9d675af061e036970d36db36027f0",
+      "size": 584734
+    },
+    "curseforge": {
+      "project_id": 419699,
+      "file_id": 8492726,
+      "filename": "architectury-13.0.11-neoforge.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Patchouli",
+    "slug": "patchouli",
+    "category": "quests-story-scripting",
+    "decision": "include",
+    "reason": "In-game lore and guide book, written as JSON in a resource or data pack (no Java). Fits a story codex and is widely used by magic and content mods. CC-BY-NC-SA-3.0: modpack use is fine.",
+    "side": "both",
+    "license": "CC-BY-NC-SA-3.0",
+    "modrinth": {
+      "project_id": "nU0bVIaL",
+      "version_id": "BIogJv2D",
+      "version_number": "1.21.1-93-neoforge",
+      "filename": "Patchouli-1.21.1-93-NEOFORGE.jar",
+      "url": "https://cdn.modrinth.com/data/nU0bVIaL/versions/BIogJv2D/Patchouli-1.21.1-93-NEOFORGE.jar",
+      "sha1": "5413bb9b8fc35ebe46b06b48bf9afafbd8471140",
+      "sha512": "0b5c172db9a6eeecb5ca44b359a83548c3a60be7ff313959acdfc1e5b8039736c18e57e947d435b52d06da31159d2d02ea36e5742668dbc826308a4c99e4039f",
+      "size": 646777
+    },
+    "curseforge": {
+      "project_id": 306770,
+      "file_id": 7730942,
+      "filename": "Patchouli-1.21.1-93-NEOFORGE.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Easy NPC (Bundle)",
+    "slug": "easy-npc",
+    "category": "quests-story-scripting",
+    "decision": "include",
+    "reason": "Story NPCs with dialog trees, trades, actions and commands, with no coding (MIT, very active 2026-10). The bundle jar only installs the modules: Easy NPC Core and Config UI are separate required jars.",
+    "side": "both",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "CgGEe1h3",
+      "version_id": "udWJnlYD",
+      "version_number": "7.17.1",
+      "filename": "easy_npc_bundle-neoforge-1.21.1-7.17.1.jar",
+      "url": "https://cdn.modrinth.com/data/CgGEe1h3/versions/udWJnlYD/easy_npc_bundle-neoforge-1.21.1-7.17.1.jar",
+      "sha1": "c2f263c46f9a2a862fff6fd98687bc15bd5c96e3",
+      "sha512": "93c2567bb0917091bb38ad3c48ecc7659c17a9552c54bd97e85da3b85e992b2930eb88d9d1ade210699ed99959c29fe8887c5fb923f3c5acc9dc18c5ab81a845",
+      "size": 25225
+    },
+    "curseforge": {
+      "project_id": 559312,
+      "file_id": 9310929,
+      "filename": "easy_npc_bundle-neoforge-1.21.1-7.17.1.jar"
+    },
+    "required_deps": [
+      "easy-npc-config-ui",
+      "easy-npc-core"
+    ],
+    "optional_deps": [
+      "easy-model-entities"
+    ]
+  },
+  {
+    "name": "Easy NPC: Core",
+    "slug": "easy-npc-core",
+    "category": "quests-story-scripting",
+    "decision": "include",
+    "reason": "Library/module: required by Easy NPC.",
+    "side": "both",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "Epm6R3P2",
+      "version_id": "QyvBBoEd",
+      "version_number": "7.17.1",
+      "filename": "easy_npc-neoforge-1.21.1-7.17.1.jar",
+      "url": "https://cdn.modrinth.com/data/Epm6R3P2/versions/QyvBBoEd/easy_npc-neoforge-1.21.1-7.17.1.jar",
+      "sha1": "dbe3e7ff4b0a48e63fe8a28a2330180d77194d39",
+      "sha512": "e3f93183a92de47ba0c2ed5bdab8f31a4c1df0c2a29c93c1815c2a50df7ff5a609c8de6aad84e593b3291115f5d184bc75d4b3b8e03c0ac8e02508eff52b8a3e",
+      "size": 3038455
+    },
+    "curseforge": {
+      "project_id": 1308987,
+      "file_id": 9310906,
+      "filename": "easy_npc-neoforge-1.21.1-7.17.1.jar"
+    },
+    "required_deps": [],
+    "optional_deps": [
+      "armourers-workshop",
+      "easy-model-entities"
+    ]
+  },
+  {
+    "name": "Easy NPC: Config UI",
+    "slug": "easy-npc-config-ui",
+    "category": "quests-story-scripting",
+    "decision": "include",
+    "reason": "Module: required by Easy NPC (config tools and required networking).",
+    "side": "both",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "uTGjf7vA",
+      "version_id": "VqoJoXmC",
+      "version_number": "7.17.1",
+      "filename": "easy_npc_config_ui-neoforge-1.21.1-7.17.1.jar",
+      "url": "https://cdn.modrinth.com/data/uTGjf7vA/versions/VqoJoXmC/easy_npc_config_ui-neoforge-1.21.1-7.17.1.jar",
+      "sha1": "c4b0447581ef156e0099eb9bbb683bc078f9fb98",
+      "sha512": "3880f9769a5ae1928527bb76f8d00c08eac9040169e7584115b3caf2e28ed845eb3a1b0f88cfe36935471f52a11a0617b8ee395e39d2d3dcb06c04751312824a",
+      "size": 1144567
+    },
+    "curseforge": {
+      "project_id": 1214728,
+      "file_id": 9310917,
+      "filename": "easy_npc_config_ui-neoforge-1.21.1-7.17.1.jar"
+    },
+    "required_deps": [
+      "easy-npc-core"
+    ],
+    "optional_deps": [
+      "easy-model-entities"
+    ]
+  },
+  {
+    "name": "FancyMenu",
+    "slug": "fancymenu",
+    "category": "quests-story-scripting",
+    "decision": "include",
+    "reason": "Custom main menu and other screens (branding, buttons, background video and audio) for the 'Remnants | The Modpack' look. Needs Konkrete + Melody. The DSMSL licence allows modpacks only as a mod reference downloaded from the official source. Never ship the jar inside pack files or a server pack; it is server-optional, so leave it out of the server zip.",
+    "side": "both",
+    "license": "LicenseRef-DSMSLv3.1",
+    "modrinth": {
+      "project_id": "Wq5SjeWM",
+      "version_id": "P9dDosz2",
+      "version_number": "3.9.14-1.21.1-neoforge",
+      "filename": "fancymenu_neoforge_3.9.14_MC_1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/Wq5SjeWM/versions/P9dDosz2/fancymenu_neoforge_3.9.14_MC_1.21.1.jar",
+      "sha1": "cafbef98afb4f60adea426b950c5452655040c40",
+      "sha512": "57ea23ab4424217770025a9447f3990fa39befdb51ac99d7e6bcde4bf7d926b125ceed824f38e7cf504e389bc0d30edb3a7592b47d4763516c9cb0ef4ab2a9c3",
+      "size": 25922080
+    },
+    "curseforge": {
+      "project_id": 367706,
+      "file_id": 9002957,
+      "filename": "fancymenu_neoforge_3.9.14_MC_1.21.1.jar"
+    },
+    "required_deps": [
+      "konkrete",
+      "melody"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Drippy Loading Screen",
+    "slug": "drippy-loading-screen",
+    "category": "quests-story-scripting",
+    "decision": "include",
+    "reason": "Custom world-loading screen built with the FancyMenu editor. Pair with FancyMenu. A separate 'Drippy Early Loading Module' exists for NeoForge's early window but isn't needed. DSMSL licence: reference it only, never bundle it.",
+    "side": "client",
+    "license": "LicenseRef-DSMSLv3",
+    "modrinth": {
+      "project_id": "v3CYg2V9",
+      "version_id": "MVgsDsSB",
+      "version_number": "3.1.5-1.21.1-neoforge",
+      "filename": "drippyloadingscreen_neoforge_3.1.5_MC_1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/v3CYg2V9/versions/MVgsDsSB/drippyloadingscreen_neoforge_3.1.5_MC_1.21.1.jar",
+      "sha1": "9d27991a7f5a551265692abf8ed40ece10ea1958",
+      "sha512": "3ef65f88cfa42cca781a91a2490efc890fb1865502370f71d0871d5b33a70f53fc80af9ab99650a3b4a82e1c6a13aa62c1de3dd3b2f674ac18f0e9b9dd49f4d5",
+      "size": 168632
+    },
+    "curseforge": {
+      "project_id": 511770,
+      "file_id": 8552907,
+      "filename": "drippyloadingscreen_neoforge_3.1.5_MC_1.21.1.jar"
+    },
+    "required_deps": [
+      "fancymenu",
+      "konkrete",
+      "melody"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Konkrete",
+    "slug": "konkrete",
+    "category": "quests-story-scripting",
+    "decision": "include",
+    "reason": "Library: required by FancyMenu, Drippy and Just Zoom.",
+    "side": "both",
+    "license": "Apache-2.0",
+    "modrinth": {
+      "project_id": "J81TRJWm",
+      "version_id": "stJDU839",
+      "version_number": "1.9.9-1.21-neoforge",
+      "filename": "konkrete_neoforge_1.9.9_MC_1.21.jar",
+      "url": "https://cdn.modrinth.com/data/J81TRJWm/versions/stJDU839/konkrete_neoforge_1.9.9_MC_1.21.jar",
+      "sha1": "97771eb287d5ac7fe667d1df9493d5e54c8ca1fa",
+      "sha512": "378bd12e3c32329abbae5cd514e1d1cc2a3cc3a45979fedb1d4e4c0a6732bdcf4b7d1bf7f7a112074bf288957edf86152c9c090a27d1d5de84a9a7825d3d6511",
+      "size": 618842
+    },
+    "curseforge": {
+      "project_id": 410295,
+      "file_id": 5453385,
+      "filename": "konkrete_neoforge_1.9.9_MC_1.21.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Melody",
+    "slug": "melody",
+    "category": "quests-story-scripting",
+    "decision": "include",
+    "reason": "Library: required by FancyMenu and Drippy (audio).",
+    "side": "client",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "CVT4pFB2",
+      "version_id": "efcdRVZP",
+      "version_number": "1.0.10-1.21-neoforge",
+      "filename": "melody_neoforge_1.0.10_MC_1.21.jar",
+      "url": "https://cdn.modrinth.com/data/CVT4pFB2/versions/efcdRVZP/melody_neoforge_1.0.10_MC_1.21.jar",
+      "sha1": "e83052a92c4ca0016bcfe7f0207273983dc84698",
+      "sha512": "3bd96b851a65fa95d92d051851e6a7a415927f718fcb05f0dfb5983eb3ca54edfb842ea85f1497e1b3510b5884181b8f9c6080d2b15642ceadac695011c00ec1",
+      "size": 36096
+    },
+    "curseforge": {
+      "project_id": 938643,
+      "file_id": 5453382,
+      "filename": "melody_neoforge_1.0.10_MC_1.21.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Default Options",
+    "slug": "default-options",
+    "category": "quests-story-scripting",
+    "decision": "include",
+    "reason": "Ships default options.txt, keybinds and server list without overwriting user changes on updates. Also enables Fresh Animations and other bundled resource packs by default. Needs Balm.",
+    "side": "client",
+    "license": "LicenseRef-All-Rights-Reserved",
+    "modrinth": {
+      "project_id": "WEg59z5b",
+      "version_id": "1zt17WsC",
+      "version_number": "21.1.8+neoforge-1.21.1",
+      "filename": "defaultoptions-neoforge-1.21.1-21.1.8.jar",
+      "url": "https://cdn.modrinth.com/data/WEg59z5b/versions/1zt17WsC/defaultoptions-neoforge-1.21.1-21.1.8.jar",
+      "sha1": "d682687ec41236092c5206a21e2ed34bdb7f6b79",
+      "sha512": "29f66777068d92b1e149630d569441e5176ac40ec5cb4ee6c63c565aa7d475587a5097f59c433d69a39fd238b64902e2ba742b30c26419de901c86a3300b848e",
+      "size": 105507
+    },
+    "curseforge": {
+      "project_id": 232131,
+      "file_id": 8498229,
+      "filename": "defaultoptions-neoforge-1.21.1-21.1.8.jar"
+    },
+    "required_deps": [
+      "balm"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "KubeJS",
+    "slug": "kubejs",
+    "category": "quests-story-scripting",
+    "decision": "include",
+    "reason": "Scripting backbone: recipes, tags, item tweaks, events, player stages, and loading the pack's own data and assets from kubejs/data and kubejs/assets. Build 377 requires Rhino and Better Advanced Tooltips.",
+    "side": "both",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "umyGl7zF",
+      "version_id": "THIGFPwf",
+      "version_number": "2101.7.2-build.377",
+      "filename": "kubejs-neoforge-2101.7.2-build.377.jar",
+      "url": "https://cdn.modrinth.com/data/umyGl7zF/versions/THIGFPwf/kubejs-neoforge-2101.7.2-build.377.jar",
+      "sha1": "7313fcd99318834c642ee9f3a05ed7fd7bcb6ef4",
+      "sha512": "fcdbee8790f8f39c106ab4bf606808c9c5bf0f13a41e216207a6fe4d15bf4a5722ce57078781e3a1823e7fdd2928e8e042d104d8ae255a36db8f12a9f46d8089",
+      "size": 2294111
+    },
+    "curseforge": {
+      "project_id": 238086,
+      "file_id": 8843626,
+      "filename": "kubejs-neoforge-2101.7.2-build.377.jar"
+    },
+    "required_deps": [
+      "better-advanced-tooltips",
+      "rhino"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Rhino",
+    "slug": "rhino",
+    "category": "quests-story-scripting",
+    "decision": "include",
+    "reason": "Library: JavaScript engine required by KubeJS.",
+    "side": "both",
+    "license": "MPL-2.0",
+    "modrinth": {
+      "project_id": "sk9knFPE",
+      "version_id": "cQ4POTah",
+      "version_number": "2101.2.7-build.85+Rhino-1.21",
+      "filename": "rhino-2101.2.7-build.85.jar",
+      "url": "https://cdn.modrinth.com/data/sk9knFPE/versions/cQ4POTah/rhino-2101.2.7-build.85.jar",
+      "sha1": "3c8d34c7efe9e42fc90506acbf9fc842d36f9a42",
+      "sha512": "0a6c7f4410281aeb03b815ec03487a8e80a4d3dae013d81282e447bf9c08144ef57318af614ea6d40b7d9a8c25031c557890ec792a5895a82467c1643116f693",
+      "size": 882075
+    },
+    "curseforge": {
+      "project_id": 416294,
+      "file_id": 8218748,
+      "filename": "rhino-2101.2.7-build.85.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Better Advanced Tooltips",
+    "slug": "better-advanced-tooltips",
+    "category": "quests-story-scripting",
+    "decision": "include",
+    "reason": "Library: new required dependency of KubeJS 2101.7.2 build 374+ (Lat). Shows tag and component tooltips in F3+H.",
+    "side": "both",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "iHLDc0eo",
+      "version_id": "uPFbnD32",
+      "version_number": "2101.1.0-build.5",
+      "filename": "better-advanced-tooltips-2101.1.0-build.5.jar",
+      "url": "https://cdn.modrinth.com/data/iHLDc0eo/versions/uPFbnD32/better-advanced-tooltips-2101.1.0-build.5.jar",
+      "sha1": "5b73537b908764f2d3fd593a0f56a8b1b034bc50",
+      "sha512": "05b5cdad948d1735eab7a67a16aaf32814678c392014ec2ada61b8341c0ed1c1ac181cab1de9da3f2c4632592f4a1a5db254bd0543e6778897c8ccd260894142",
+      "size": 37653
+    },
+    "curseforge": {
+      "project_id": 1637623,
+      "file_id": 8576077,
+      "filename": "better-advanced-tooltips-2101.1.0-build.5.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "LootJS",
+    "slug": "lootjs",
+    "category": "quests-story-scripting",
+    "decision": "include",
+    "reason": "KubeJS addon for loot-table modification (boss drops, chest tiers, per-biome loot). Server-side logic; ships in the client pack too for single-player.",
+    "side": "server",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "fJFETWDN",
+      "version_id": "5AZDyUSn",
+      "version_number": "1.21.1-3.7.0+neoforge",
+      "filename": "lootjs-neoforge-1.21.1-3.7.0.jar",
+      "url": "https://cdn.modrinth.com/data/fJFETWDN/versions/5AZDyUSn/lootjs-neoforge-1.21.1-3.7.0.jar",
+      "sha1": "54ffddd1763ae4af84e9bbcb22e4081a1e7f3556",
+      "sha512": "fab507e70197e74ffba43bd400066f55ef58c2f91cb213efedf4acd2a2ad7876d9de905f02788a0b6831304c2177fdc9996c435bcf855eabdb4daca7581270bc",
+      "size": 247689
+    },
+    "curseforge": {
+      "project_id": 570630,
+      "file_id": 8009262,
+      "filename": "lootjs-neoforge-1.21.1-3.7.0.jar"
+    },
+    "required_deps": [
+      "kubejs"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Crash Assistant",
+    "slug": "crash-assistant",
+    "category": "quests-story-scripting",
+    "decision": "include",
+    "reason": "Friendly crash and startup-failure GUI with log upload and 'what changed vs the official modlist' detection. Cuts pack-support load. The KostromDan licence explicitly allows use in modpacks without asking, and prefers that the jar be downloaded from CF or Modrinth.",
+    "side": "client",
+    "license": "LicenseRef-LicenseRef-KostromDan-MML-1.1.3",
+    "modrinth": {
+      "project_id": "ix1qq8Ux",
+      "version_id": "18SR4EJw",
+      "version_number": "1.11.12",
+      "filename": "CrashAssistant-neoforge-1.20.6-1.21.4-1.11.12.jar",
+      "url": "https://cdn.modrinth.com/data/ix1qq8Ux/versions/18SR4EJw/CrashAssistant-neoforge-1.20.6-1.21.4-1.11.12.jar",
+      "sha1": "ec9e35065ce3a49ecec6bd6ff7fec6992476f7bb",
+      "sha512": "43d4f453e346df095e494eac6b2a3adbdaf6c679e32ab88c88294db1414e3d747c0667543a0c9be57f45837504dfeeb2af15fe57ffdf3d0f1c968482ed6b6820",
+      "size": 3481341
+    },
+    "curseforge": {
+      "project_id": 1154099,
+      "file_id": 8636685,
+      "filename": "CrashAssistant-neoforge-1.20.6-1.21.4-1.11.12.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Better Compatibility Checker",
+    "slug": "better-compatibility-checker",
+    "category": "quests-story-scripting",
+    "decision": "include",
+    "reason": "Shows the pack name and version in the server list and warns about client/server version mismatches. Essential for co-op.",
+    "side": "both",
+    "license": "LicenseRef-All-Rights-Reserved",
+    "modrinth": {
+      "project_id": "KJhXPbHQ",
+      "version_id": "NYkU1ldY",
+      "version_number": "21.1.8",
+      "filename": "better-compatability-checker-neoforge-21.1.8.jar",
+      "url": "https://cdn.modrinth.com/data/KJhXPbHQ/versions/NYkU1ldY/better-compatability-checker-neoforge-21.1.8.jar",
+      "sha1": "186ba3fbacacb0ce93b9c5a5ddca28799c1577cb",
+      "sha512": "43f8817abd4c48f2cf2087332a84e9840bde232bc62f838badb241f31bbabaa68ebb0b6403875ea66338cf76c0e394f13fafdee3804a37462c04f0acc7dfcd81",
+      "size": 25085
+    },
+    "curseforge": {
+      "project_id": 551894,
+      "file_id": 7404415,
+      "filename": "better-compatability-checker-neoforge-21.1.8.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "FTB Filter System",
+    "slug": "ftb-filter-system",
+    "category": "quests-story-scripting",
+    "decision": "optional",
+    "reason": "Item filters for quest tasks (tag, NBT, OR/AND filters). Add it when the quest author needs smart item tasks. CurseForge only, ARR.",
+    "side": "both",
+    "license": "All Rights Reserved (Feed The Beast Ltd; CurseForge-only)",
+    "modrinth": null,
+    "curseforge": {
+      "project_id": 943925,
+      "file_id": 7429011,
+      "filename": "ftb-filter-system-neoforge-21.1.4.jar"
+    },
+    "required_deps": [
+      "architectury-api"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "FTB Quests Optimizer",
+    "slug": "ftb-quests-optimizer",
+    "category": "quests-story-scripting",
+    "decision": "optional",
+    "reason": "Server-side performance fix for large quest books with many inventory-check tasks. Add it if the story quest book grows large.",
+    "side": "both",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "oPwMsrcf",
+      "version_id": "T0bGa7Hg",
+      "version_number": "3.2.0-1.21.1",
+      "filename": "FTBQuestsOptimizer-neoforge-3.2.0-1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/oPwMsrcf/versions/T0bGa7Hg/FTBQuestsOptimizer-neoforge-3.2.0-1.21.1.jar",
+      "sha1": "28e4926c62f9f010aea43a091f7fc113200175be",
+      "sha512": "06f26506641451d733bbe6ae3db3abe026b6483738fcff67e39d762740ceeb1feafc11c45720246bcf8a5cd91a3cbba1bf50110bf1e89e1f3fcc10202ed29891",
+      "size": 18059
+    },
+    "curseforge": {
+      "project_id": 912469,
+      "file_id": 7576461,
+      "filename": "FTBQuestsOptimizer-neoforge-3.2.0-1.21.1.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Easy Model Entities",
+    "slug": "easy-model-entities",
+    "category": "quests-story-scripting",
+    "decision": "optional",
+    "reason": "Optional Easy NPC module for custom NPC models. Add it if the story NPCs need non-humanoid or custom models.",
+    "side": "both",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "ngLoLP1P",
+      "version_id": "9X141cCZ",
+      "version_number": "2.6.0",
+      "filename": "easy_model_entities-neoforge-1.21.1-2.6.0.jar",
+      "url": "https://cdn.modrinth.com/data/ngLoLP1P/versions/9X141cCZ/easy_model_entities-neoforge-1.21.1-2.6.0.jar",
+      "sha1": "1c32e6bcfe8234a7797764190a0960599f60b0b0",
+      "sha512": "1b54292deba89c2ccdc4751d6fee36d4ceb0ffecdfec155a2100c63ea3b0e66714343d24d32d74d507c1f98c266d2ae3bb3f06bee34fb178d077666a2bd8dba1",
+      "size": 748159
+    },
+    "curseforge": {
+      "project_id": 1539533,
+      "file_id": 9202419,
+      "filename": "easy_model_entities-neoforge-1.21.1-2.6.0.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "MoreJS",
+    "slug": "morejs",
+    "category": "quests-story-scripting",
+    "decision": "optional",
+    "reason": "KubeJS addon with villager and wandering-trader trades, enchanting events and structure hooks. Add it if the story economy uses villager trades.",
+    "side": "both",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "mo64mR1W",
+      "version_id": "kyNrtsUY",
+      "version_number": "1.21.1-0.16.0+neoforge",
+      "filename": "morejs-neoforge-1.21.1-0.16.0.jar",
+      "url": "https://cdn.modrinth.com/data/mo64mR1W/versions/kyNrtsUY/morejs-neoforge-1.21.1-0.16.0.jar",
+      "sha1": "7e8aea4f03b18076cab5555f6d30e35ff919b342",
+      "sha512": "3fbbe82b5b827e03518f7e515978af4e9fc0736b5385f80b5b86ef562a51e53fe32e815d416a6a0fe1ba752f835fbf641b42b59b5ffd5bb6469abb8b74ab29a2",
+      "size": 157690
+    },
+    "curseforge": {
+      "project_id": 666198,
+      "file_id": 7103440,
+      "filename": "morejs-neoforge-1.21.1-0.16.0.jar"
+    },
+    "required_deps": [
+      "kubejs"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Open Loader",
+    "slug": "open-loader",
+    "category": "quests-story-scripting",
+    "decision": "optional",
+    "reason": "Use it to drop third-party datapack or resource-pack zips into a global folder. Adds no new libraries, since it reuses Bookshelf + Prickle. Optional because KubeJS + Default Options already cover pack-authored data, assets and default resource packs.",
+    "side": "both",
+    "license": "LGPL-2.1-only",
+    "modrinth": {
+      "project_id": "KwWsINvD",
+      "version_id": "Szobbnyh",
+      "version_number": "21.1.5",
+      "filename": "OpenLoader-neoforge-1.21.1-21.1.5.jar",
+      "url": "https://cdn.modrinth.com/data/KwWsINvD/versions/Szobbnyh/OpenLoader-neoforge-1.21.1-21.1.5.jar",
+      "sha1": "b4b49fa0bbefcecd41aaba60aca38c3658ac2c46",
+      "sha512": "3a4b0b6605f30b98a9d26954f8e211e6422f1f6402d400a9f9eb32a5af065da808dd3648a839dd60e47e50c8075b6a71624e142e50fb61273a6ba505bf6b1d09",
+      "size": 35602
+    },
+    "curseforge": {
+      "project_id": 354339,
+      "file_id": 6546293,
+      "filename": "OpenLoader-neoforge-1.21.1-21.1.5.jar"
+    },
+    "required_deps": [
+      "bookshelf-lib",
+      "prickle"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Odyssey Quests (formerly Heracles)",
+    "slug": "odyssey-quests",
+    "category": "quests-story-scripting",
+    "decision": "exclude",
+    "reason": "Terrarium's continuation of Heracles: tree-style quests, MIT, on both Modrinth and CurseForge (2.0.3, beta) with Resourceful Lib. The only credible FTB Quests alternative if a Modrinth-first .mrpack becomes the priority. Smaller ecosystem: no KubeJS bridge comparable to FTB XMod Compat and no FTB Teams integration.",
+    "side": "both",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "lo90fZoB",
+      "version_id": "DYaRmc9w",
+      "version_number": "2.0.3",
+      "filename": "heracles-neoforge-1.21.1-2.0.3.jar",
+      "url": "https://cdn.modrinth.com/data/lo90fZoB/versions/DYaRmc9w/heracles-neoforge-1.21.1-2.0.3.jar",
+      "sha1": "43d0b1c4530fd0fc12addbce9892a8f85ebc3b7e",
+      "sha512": "169520d794a26ed2b6cde03bcb50de0c20bb5a3464ae5c3ac36ca789edea65e26ec1e923cbfffaad9ebe4657a85ae876a3297d882b4376da3b42d212d32aff6d",
+      "size": 2297249
+    },
+    "curseforge": {
+      "project_id": 845831,
+      "file_id": 9250436,
+      "filename": "heracles-neoforge-1.21.1-2.0.3.jar"
+    },
+    "required_deps": [
+      "resourceful-lib"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "\"Heracles\" on CurseForge (project-1505798, unrelated)",
+    "slug": "heracles-cf-squat",
+    "category": "quests-story-scripting",
+    "decision": "exclude",
+    "reason": "WARNING: the CurseForge URL slug 'heracles' now resolves (via CFWidget) to project 1505798, an unrelated 2026 'optimization' mod by MaxCreateMC with ~945 downloads (virtual-thread AI/network rewrite, 'incompatibilities possible'). It is not the quest mod. Never add it by slug.",
+    "side": "both",
+    "license": "unknown",
+    "modrinth": null,
+    "curseforge": {
+      "project_id": 1505798,
+      "file_id": 7887164,
+      "filename": "Heracles 1.21.1 Neoforge v1.0.2.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Modonomicon",
+    "slug": "modonomicon",
+    "category": "quests-story-scripting",
+    "decision": "exclude",
+    "reason": "Alternative book mod with unlockable entries (MIT). FTB Quests already handles progression gating, so Patchouli is enough. It will come in anyway if a gameplay mod (e.g. Occultism) depends on it.",
+    "side": "both",
+    "license": "MIT AND CC-BY-4.0",
+    "modrinth": {
+      "project_id": "692GClaE",
+      "version_id": "IfWJiNP3",
+      "version_number": "1.21.1-1.121.0",
+      "filename": "modonomicon-1.21.1-neoforge-1.121.0.jar",
+      "url": "https://cdn.modrinth.com/data/692GClaE/versions/IfWJiNP3/modonomicon-1.21.1-neoforge-1.121.0.jar",
+      "sha1": "b64377fa0889d92fb8deefad013e32333e5ac791",
+      "sha512": "2ac63dc113bf9b4af5fec69572a7aa61e8ef91e56bf8a08b16523a0a9583e5c0bfb4df277efca048ac4975178187c02285503a3e638214f083a3f6234fc5e491",
+      "size": 2408548
+    },
+    "curseforge": {
+      "project_id": 538392,
+      "file_id": 9351619,
+      "filename": "modonomicon-1.21.1-neoforge-1.121.0.jar"
+    },
+    "required_deps": [],
+    "optional_deps": [
+      "jei"
+    ]
+  },
+  {
+    "name": "Custom NPCs",
+    "slug": "customnpcs",
+    "category": "quests-story-scripting",
+    "decision": "exclude",
+    "reason": "No NeoForge 1.21.1 build on either CurseForge or Modrinth. Easy NPC is the 1.21.1 answer.",
+    "side": "both",
+    "license": "CC-BY-NC-4.0",
+    "modrinth": null,
+    "curseforge": null,
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "YOSBR",
+    "slug": "yosbr",
+    "category": "quests-story-scripting",
+    "decision": "exclude",
+    "reason": "No NeoForge 1.21.1 build (Fabric/Quilt only). Default Options covers it.",
+    "side": "client",
+    "license": "LGPL-3.0-only",
+    "modrinth": null,
+    "curseforge": null,
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "ProbeJS",
+    "slug": "probejs",
+    "category": "quests-story-scripting",
+    "decision": "exclude",
+    "reason": "Dev-only: generates TypeScript typings for KubeJS script authoring. Use it in the dev instance, never ship it.",
+    "side": "both",
+    "license": "LGPL-2.1-only",
+    "modrinth": {
+      "project_id": "JJNYRb4B",
+      "version_id": "xC9KUA7R",
+      "version_number": "8.0.3",
+      "filename": "ProbeJS-8.0.3.jar",
+      "url": "https://cdn.modrinth.com/data/JJNYRb4B/versions/xC9KUA7R/ProbeJS-8.0.3.jar",
+      "sha1": "f0529482eff9596fa01de8a34abdce50529bdf55",
+      "sha512": "342be675356044e7328841eb13116e66e476a6176dea8c634d3ca096b98cf818b314d190e42f2be859c9c9d2c53087fd471b0052e50872c3fc3f5090c813f5f3",
+      "size": 3405057
+    },
+    "curseforge": {
+      "project_id": 585406,
+      "file_id": 8304356,
+      "filename": "ProbeJS-8.0.3.jar"
+    },
+    "required_deps": [
+      "kubejs"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Paxi",
+    "slug": "paxi",
+    "category": "quests-story-scripting",
+    "decision": "exclude",
+    "reason": "Global datapack/resourcepack loader. Requires YUNG's API (the CF NeoForge build is a separate '[1.20.4–1.21.1 only]' project). KubeJS already loads pack data and assets.",
+    "side": "both",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "CU0PAyzb",
+      "version_id": "CLZfFbCx",
+      "version_number": "1.21.1-NeoForge-5.1.3",
+      "filename": "Paxi-1.21.1-NeoForge-5.1.3.jar",
+      "url": "https://cdn.modrinth.com/data/CU0PAyzb/versions/CLZfFbCx/Paxi-1.21.1-NeoForge-5.1.3.jar",
+      "sha1": "7140974a26a2cd79cdc7b85ab4e834916eacc7f1",
+      "sha512": "ed6a33eb9a4ac6ce4dd0cd03a45aba6068536121ab89cd4040d8c53964d59a7a8ceaee2f3bae13a3df3813eaf8d4fc4f82883e28ac4577b53aa26b750a181699",
+      "size": 102980
+    },
+    "curseforge": {
+      "project_id": 1015157,
+      "file_id": 6485740,
+      "filename": "Paxi-1.21.1-NeoForge-5.1.3.jar"
+    },
+    "required_deps": [
+      "yungs-api"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "YUNG's API",
+    "slug": "yungs-api",
+    "category": "quests-story-scripting",
+    "decision": "exclude",
+    "reason": "Library for Paxi (not chosen). Note: the gameplay layer will likely add it anyway via YUNG's structure mods.",
+    "side": "both",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "Ua7DFN59",
+      "version_id": "2prKITKh",
+      "version_number": "1.21.1-NeoForge-5.1.9",
+      "filename": "YungsApi-1.21.1-NeoForge-5.1.9.jar",
+      "url": "https://cdn.modrinth.com/data/Ua7DFN59/versions/2prKITKh/YungsApi-1.21.1-NeoForge-5.1.9.jar",
+      "sha1": "2c4b740c8ad27bbcb2a21b85b64f011b809aed91",
+      "sha512": "7e3cf0b429e8a1c51dca094c2d8eabf12245bb42cbcd8b6e3e54959f931bef93201b81a08d200b417059aaa438e8eb445c3978a09568597bfb588199b7775967",
+      "size": 413763
+    },
+    "curseforge": {
+      "project_id": 1015100,
+      "file_id": 8894736,
+      "filename": "YungsApi-1.21.1-NeoForge-5.1.9.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Global Packs",
+    "slug": "globalpacks",
+    "category": "quests-story-scripting",
+    "decision": "exclude",
+    "reason": "Same job as Paxi and Open Loader. ARR, last built 2025-06. Not needed.",
+    "side": "both",
+    "license": "LicenseRef-All-Rights-Reserved",
+    "modrinth": {
+      "project_id": "NRLPy2mk",
+      "version_id": "FPcUOp35",
+      "version_number": "21.0.6",
+      "filename": "globalpacks-neoforge-1.21.1-21.0.6.jar",
+      "url": "https://cdn.modrinth.com/data/NRLPy2mk/versions/FPcUOp35/globalpacks-neoforge-1.21.1-21.0.6.jar",
+      "sha1": "55cf667b16b81df9b8f7fead042cf2f732b21b85",
+      "sha512": "5590a9066d84265a53e756fdb5b8872c383ffe069745756f1ff0fe54a315cefb5cc90ee3d0233a95f1dc2a7d68396b1102b9002d8b1aaf3ec476b52c7286c6b8",
+      "size": 27239
+    },
+    "curseforge": {
+      "project_id": 317134,
+      "file_id": 6634585,
+      "filename": "globalpacks-neoforge-1.21.1-21.0.6.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Sophisticated Backpacks",
+    "slug": "sophisticated-backpacks",
+    "category": "storage-travel",
+    "decision": "include",
+    "reason": "Upgradeable backpacks (pickup, magnet, feeding, crafting, sorting), the modern staple. Chosen over Traveler's Backpack because its upgrades are configurable, it sorts natively and it integrates with JEI, Item Borders and Curios. ARR: reference it from CF or Modrinth and do not rehost.",
+    "side": "both",
+    "license": "LicenseRef-All-Rights-Reserved",
+    "modrinth": {
+      "project_id": "TyCTlI4b",
+      "version_id": "7V3OGECb",
+      "version_number": "1.21.1-3.26.17.2232",
+      "filename": "sophisticatedbackpacks-1.21.1-3.26.17.2232.jar",
+      "url": "https://cdn.modrinth.com/data/TyCTlI4b/versions/7V3OGECb/sophisticatedbackpacks-1.21.1-3.26.17.2232.jar",
+      "sha1": "8e7edebc4182974d4371499953a6f41f6b45a7b1",
+      "sha512": "f01ef419bfdd6744acb4a7536751535bd0aa6ea4b2807468cad1c63e59878c8875324375247c84c3baae21f34d7599860a1db05238a89ad20aa6d6c5a7cb528a",
+      "size": 1256228
+    },
+    "curseforge": {
+      "project_id": 422301,
+      "file_id": 9341438,
+      "filename": "sophisticatedbackpacks-1.21.1-3.26.17.2232.jar"
+    },
+    "required_deps": [
+      "sophisticated-core"
+    ],
+    "optional_deps": [
+      "chipped",
+      "crafting-tweaks",
+      "curios",
+      "item-borders",
+      "jei",
+      "trashslot",
+      "universal-sawmill"
+    ]
+  },
+  {
+    "name": "Sophisticated Core",
+    "slug": "sophisticated-core",
+    "category": "storage-travel",
+    "decision": "include",
+    "reason": "Library: required by Sophisticated Backpacks and Sophisticated Storage.",
+    "side": "both",
+    "license": "LicenseRef-All-Rights-Reserved",
+    "modrinth": {
+      "project_id": "nmoqTijg",
+      "version_id": "p1iOw2RH",
+      "version_number": "1.21.1-1.5.19.2434",
+      "filename": "sophisticatedcore-1.21.1-1.5.19.2434.jar",
+      "url": "https://cdn.modrinth.com/data/nmoqTijg/versions/p1iOw2RH/sophisticatedcore-1.21.1-1.5.19.2434.jar",
+      "sha1": "f0d0fc6d3d8738a4c7a2ff79eaf59bac894d3fd1",
+      "sha512": "a8ef09646497a372e7e00d12366465d2d18809ff4d8c1358e40303c8567bc9e7100d76940908c563095167777c5cb5bbed50cc3bbb371573fcab40490cf01321",
+      "size": 1820184
+    },
+    "curseforge": {
+      "project_id": 618298,
+      "file_id": 9341397,
+      "filename": "sophisticatedcore-1.21.1-1.5.19.2434.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Waystones",
+    "slug": "waystones",
+    "category": "storage-travel",
+    "decision": "include",
+    "reason": "Fast-travel network (works as a soulslike 'bonfire' map). FTB XMod Compat links it to quests. Needs Balm.",
+    "side": "both",
+    "license": "LicenseRef-All-Rights-Reserved",
+    "modrinth": {
+      "project_id": "LOpKHB2A",
+      "version_id": "6Z6MQ6os",
+      "version_number": "21.1.46+neoforge-1.21.1",
+      "filename": "waystones-neoforge-1.21.1-21.1.46.jar",
+      "url": "https://cdn.modrinth.com/data/LOpKHB2A/versions/6Z6MQ6os/waystones-neoforge-1.21.1-21.1.46.jar",
+      "sha1": "75718161662d9ec957ba22e10e497788ec1687ba",
+      "sha512": "ca90b58d884d4bc2b08a870484ae7ede397e71d31eaaf01ff2603ad498d584763e099c2094e57031522385339705d2c011ed4910bf36efae688e64935b49ece9",
+      "size": 1223229
+    },
+    "curseforge": {
+      "project_id": 245755,
+      "file_id": 8969751,
+      "filename": "waystones-neoforge-1.21.1-21.1.46.jar"
+    },
+    "required_deps": [
+      "balm"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Balm",
+    "slug": "balm",
+    "category": "storage-travel",
+    "decision": "include",
+    "reason": "Library (BlayTheNinth): required by Waystones, Default Options and NetherPortalFix.",
+    "side": "both",
+    "license": "LicenseRef-All-Rights-Reserved",
+    "modrinth": {
+      "project_id": "MBAkmtvl",
+      "version_id": "CquiaiDj",
+      "version_number": "21.0.66+neoforge-1.21.1",
+      "filename": "balm-neoforge-1.21.1-21.0.66.jar",
+      "url": "https://cdn.modrinth.com/data/MBAkmtvl/versions/CquiaiDj/balm-neoforge-1.21.1-21.0.66.jar",
+      "sha1": "dd3606a349f4a3c8fb5bd0ab22905675c02b0d74",
+      "sha512": "0262d51c0e931d10c3dccefb3b5426a1622edecab243d4b15dce07a23309641370184776739765067d292d808242d088c6fbf249762689824eff9ba42c2d1e63",
+      "size": 783793
+    },
+    "curseforge": {
+      "project_id": 531761,
+      "file_id": 8969738,
+      "filename": "balm-neoforge-1.21.1-21.0.66.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Lootr",
+    "slug": "lootr",
+    "category": "storage-travel",
+    "decision": "include",
+    "reason": "Per-player loot in every chest and loot container, essential for co-op: each player gets their own dungeon and boss loot.",
+    "side": "both",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "EltpO5cN",
+      "version_id": "SPOrIzX8",
+      "version_number": "1.21.1-1.11.38.127",
+      "filename": "lootr-neoforge-1.21.1-1.11.38.127.jar",
+      "url": "https://cdn.modrinth.com/data/EltpO5cN/versions/SPOrIzX8/lootr-neoforge-1.21.1-1.11.38.127.jar",
+      "sha1": "7a305b581abd90e1a8b7c1bb5eb4511d2653aa58",
+      "sha512": "7496051c1ba98f8801b8eb81773d1baec16166c3d2c5682476bd6f9433f794095099cea609fd5610525edb7c450b1bacd0011a31763e91c77c9a0034c8245ca3",
+      "size": 1075929
+    },
+    "curseforge": {
+      "project_id": 361276,
+      "file_id": 8968561,
+      "filename": "lootr-neoforge-1.21.1-1.11.38.127.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Corpse",
+    "slug": "corpse",
+    "category": "storage-travel",
+    "decision": "include",
+    "reason": "On death your items stay in a corpse entity at the death spot: a soulslike 'recover your bloodstain' loop that does not place blocks or need a valid grave position. Picked over GraveStone. The gameplay layer may replace it with its own death-penalty system.",
+    "side": "both",
+    "license": "LicenseRef-All-Rights-Reserved",
+    "modrinth": {
+      "project_id": "WrpuIfhw",
+      "version_id": "SElnDbg1",
+      "version_number": "neoforge-1.21.1-1.1.22",
+      "filename": "corpse-neoforge-1.21.1-1.1.22.jar",
+      "url": "https://cdn.modrinth.com/data/WrpuIfhw/versions/SElnDbg1/corpse-neoforge-1.21.1-1.1.22.jar",
+      "sha1": "0d73e082e4d5c0f185aa8030bcefb68c259d1107",
+      "sha512": "22261271a46bdbbf8b27bf34304abe69561612d5c3b56947170910948426566b812b3f72153880b64a223fff5858b5ae1e8290d46deb9271ecf6dc88b0ba3f9b",
+      "size": 256780
+    },
+    "curseforge": {
+      "project_id": 316582,
+      "file_id": 9289316,
+      "filename": "corpse-neoforge-1.21.1-1.1.22.jar"
+    },
+    "required_deps": [],
+    "optional_deps": [
+      "jade",
+      "openhud"
+    ]
+  },
+  {
+    "name": "Sophisticated Storage",
+    "slug": "sophisticated-storage",
+    "category": "storage-travel",
+    "decision": "optional",
+    "reason": "Upgradeable chests and barrels. Nice, but a low-tech RPG can live with vanilla chests + Client Sort. Enable it if base-building is part of the loop.",
+    "side": "both",
+    "license": "LicenseRef-All-Rights-Reserved",
+    "modrinth": {
+      "project_id": "hMlaZH8f",
+      "version_id": "1q0eUZlg",
+      "version_number": "1.21.1-1.6.10.2206",
+      "filename": "sophisticatedstorage-1.21.1-1.6.10.2206.jar",
+      "url": "https://cdn.modrinth.com/data/hMlaZH8f/versions/1q0eUZlg/sophisticatedstorage-1.21.1-1.6.10.2206.jar",
+      "sha1": "005b5aea37178fe5f2ba1028cdbf55976b9b5baf",
+      "sha512": "ece1736fea39ee586da4645af0747b70282b4c81eba510b2d25d241f90da55f8a58b76b0fb9e5194aed29595493ec853ff7640bdebb27e9499779ffcd3e96bd9",
+      "size": 1933124
+    },
+    "curseforge": {
+      "project_id": 619320,
+      "file_id": 9341485,
+      "filename": "sophisticatedstorage-1.21.1-1.6.10.2206.jar"
+    },
+    "required_deps": [
+      "sophisticated-core"
+    ],
+    "optional_deps": [
+      "chipped",
+      "crafting-tweaks",
+      "item-borders",
+      "jei",
+      "quark",
+      "trashslot",
+      "universal-sawmill"
+    ]
+  },
+  {
+    "name": "Comforts",
+    "slug": "comforts",
+    "category": "storage-travel",
+    "decision": "optional",
+    "reason": "Sleeping bags and hammocks. Sleeping bags skip the night without moving spawn, which conflicts with a Waystone/bonfire respawn design. Designer's call.",
+    "side": "both",
+    "license": "LGPL-3.0-or-later",
+    "modrinth": {
+      "project_id": "SaCpeal4",
+      "version_id": "3kpPjcTc",
+      "version_number": "9.0.5+1.21.1",
+      "filename": "comforts-neoforge-9.0.5+1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/SaCpeal4/versions/3kpPjcTc/comforts-neoforge-9.0.5%2B1.21.1.jar",
+      "sha1": "21d6bee3821d62fe3356c51fb1d697871a3087ff",
+      "sha512": "e9de2952545e9e773a6e78fc501e8cd231ea19750c30404355b71df9928eb5bd0921a4429aeca9d0fa10e67717f77fcf7a2aae117ac953b8f7de246b0ad685e4",
+      "size": 422658
+    },
+    "curseforge": {
+      "project_id": 276951,
+      "file_id": 7515858,
+      "filename": "comforts-neoforge-9.0.5+1.21.1.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Traveler's Backpack",
+    "slug": "travelersbackpack",
+    "category": "storage-travel",
+    "decision": "exclude",
+    "reason": "Pick one backpack mod. Sophisticated has more upgrades and better sorting and JEI integration. Traveler's needed a separate 'Legendary Tooltips x Traveler's Backpack Fix'.",
+    "side": "both",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "rlloIFEV",
+      "version_id": "ZqrwMSn5",
+      "version_number": "1.21.1-10.1.40",
+      "filename": "travelersbackpack-neoforge-1.21.1-10.1.40.jar",
+      "url": "https://cdn.modrinth.com/data/rlloIFEV/versions/ZqrwMSn5/travelersbackpack-neoforge-1.21.1-10.1.40.jar",
+      "sha1": "02f9fff31ac9a5e151d91f959a0556dea60188e3",
+      "sha512": "03950e5772b3cf8ae91f6444b8980d8958b1e06388159764c2ed1dee200d209bffde83602e1f40e2e23e10892eef1e62a6cfd8c8abe9630be1bedf312ed6c61e",
+      "size": 1444892
+    },
+    "curseforge": {
+      "project_id": 321117,
+      "file_id": 9297032,
+      "filename": "travelersbackpack-neoforge-1.21.1-10.1.40.jar"
+    },
+    "required_deps": [],
+    "optional_deps": [
+      "accessories",
+      "comforts",
+      "crafting-tweaks",
+      "curios",
+      "emi",
+      "jei",
+      "lambdynamiclights",
+      "polymorph",
+      "rei",
+      "trashslot"
+    ]
+  },
+  {
+    "name": "GraveStone Mod",
+    "slug": "gravestone-mod",
+    "category": "storage-travel",
+    "decision": "exclude",
+    "reason": "Same job as Corpse (pick one). It places a block, which can fail in dungeons and Lootr spaces.",
+    "side": "both",
+    "license": "LicenseRef-All-Rights-Reserved",
+    "modrinth": {
+      "project_id": "RYtXKJPr",
+      "version_id": "rMGJpjaM",
+      "version_number": "neoforge-1.21.1-1.0.40",
+      "filename": "gravestone-neoforge-1.21.1-1.0.40.jar",
+      "url": "https://cdn.modrinth.com/data/RYtXKJPr/versions/rMGJpjaM/gravestone-neoforge-1.21.1-1.0.40.jar",
+      "sha1": "97230b93af34ac6581ed36b0cc98f6b16b06c04e",
+      "sha512": "5504a222d4085da1898ff6d4dff8eb1821fd14a8caaaac785554277147f984262e63925a411db3f1a34e9c7874652fb6737176bea4c0c3f01243f5eae4ea6eaa",
+      "size": 322082
+    },
+    "curseforge": {
+      "project_id": 238551,
+      "file_id": 8671622,
+      "filename": "gravestone-neoforge-1.21.1-1.0.40.jar"
+    },
+    "required_deps": [],
+    "optional_deps": [
+      "jade"
+    ]
+  },
+  {
+    "name": "Carry On",
+    "slug": "carry-on",
+    "category": "storage-travel",
+    "decision": "exclude",
+    "reason": "Lets players pick up chests and mobs, which can cheese bosses and NPCs and relocate Lootr containers. Needs extensive blacklisting in a story pack.",
+    "side": "both",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "joEfVgkn",
+      "version_id": "PV8oLZ1q",
+      "version_number": "2.2.6",
+      "filename": "carryon-neoforge-1.21.1-2.2.6.13.jar",
+      "url": "https://cdn.modrinth.com/data/joEfVgkn/versions/PV8oLZ1q/carryon-neoforge-1.21.1-2.2.6.13.jar",
+      "sha1": "2ceb0d9284525b6cb2a214c88cf6511cab91f601",
+      "sha512": "e097b11d6f14e0957bab6c0276b81542e786cb86b9c31d9f25975f8c9fb04a734188b8790683298bbc5c695dc3de7d6e947616a20ad26d4a728a3beb0bb78667",
+      "size": 361486
+    },
+    "curseforge": {
+      "project_id": 274259,
+      "file_id": 8512888,
+      "filename": "carryon-neoforge-1.21.1-2.2.6.13.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Storage Drawers",
+    "slug": "storagedrawers",
+    "category": "storage-travel",
+    "decision": "exclude",
+    "reason": "Tech-leaning bulk storage; not the low-tech RPG vibe.",
+    "side": "both",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "guitPqEi",
+      "version_id": "px0CCB06",
+      "version_number": "1.21.1-13.11.4",
+      "filename": "StorageDrawers-neoforge-1.21.1-13.11.4.jar",
+      "url": "https://cdn.modrinth.com/data/guitPqEi/versions/px0CCB06/StorageDrawers-neoforge-1.21.1-13.11.4.jar",
+      "sha1": "b8e11e3d1fd63fd1a0d9277ec3f966c7e5cff385",
+      "sha512": "df97b8b5053a902264a236a71e7585b78d9d48a0bce585033aa8b169896d775f6fda462cfc77431af79cc596ab356eb9642e0c69a205a46b02d4d6f7ab3e74e9",
+      "size": 1131420
+    },
+    "curseforge": {
+      "project_id": 223852,
+      "file_id": 6995432,
+      "filename": "StorageDrawers-neoforge-1.21.1-13.11.4.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Tom's Simple Storage",
+    "slug": "toms-storage",
+    "category": "storage-travel",
+    "decision": "exclude",
+    "reason": "Storage terminal network, too tech for a low-tech RPG. Sophisticated Storage is the optional storage path.",
+    "side": "both",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "XZNI4Cpy",
+      "version_id": "WQAMoIMC",
+      "version_number": "1.21-2.4.2",
+      "filename": "toms_storage-1.21-2.4.2.jar",
+      "url": "https://cdn.modrinth.com/data/XZNI4Cpy/versions/WQAMoIMC/toms_storage-1.21-2.4.2.jar",
+      "sha1": "592af3bc4768c804c4929af16961ca2a1a916942",
+      "sha512": "53db61b4486616b3a78dfff83b58f9424dd9bf525ea3db4e444ff0403fb70aa9ab7fc097dff2f49665e480bce936b32be76b3051a5aff217898b2b94d846d30b",
+      "size": 856803
+    },
+    "curseforge": {
+      "project_id": 378609,
+      "file_id": 8769956,
+      "filename": "toms_storage-1.21-2.4.2.jar"
+    },
+    "required_deps": [],
+    "optional_deps": [
+      "emi",
+      "jei",
+      "polymorph",
+      "rei",
+      "sophisticated-storage"
+    ]
+  },
+  {
+    "name": "FTB Ultimine",
+    "slug": "ftb-ultimine",
+    "category": "multiplayer",
+    "decision": "include",
+    "reason": "Vein mining (hold a key). Opt-in per action, with hunger cost and tool/tag limits configurable. Covers ores and trees, reuses FTB Library and Architectury, and cuts gathering chores in a combat-focused RPG. Requires the server side. CurseForge only, ARR.",
+    "side": "both",
+    "license": "All Rights Reserved (Feed The Beast Ltd; CurseForge-only)",
+    "modrinth": null,
+    "curseforge": {
+      "project_id": 386134,
+      "file_id": 8231400,
+      "filename": "ftb-ultimine-neoforge-2101.1.15.jar"
+    },
+    "required_deps": [
+      "architectury-api",
+      "ftb-library"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "NetherPortalFix",
+    "slug": "netherportalfix",
+    "category": "multiplayer",
+    "decision": "include",
+    "reason": "Makes portals return to the portal you came from in multiplayer. Server-side, tiny, uses Balm.",
+    "side": "server",
+    "license": "LicenseRef-All-Rights-Reserved",
+    "modrinth": {
+      "project_id": "nPZr02ET",
+      "version_id": "O09BGtgh",
+      "version_number": "21.1.1+neoforge-1.21.1",
+      "filename": "netherportalfix-neoforge-1.21.1-21.1.1.jar",
+      "url": "https://cdn.modrinth.com/data/nPZr02ET/versions/O09BGtgh/netherportalfix-neoforge-1.21.1-21.1.1.jar",
+      "sha1": "9f1ba483216aebce1ee6185601231158684f5de8",
+      "sha512": "be26c53b4e7aa9dc27b05fe4cafdd120a3d1356410b35d25381d473bd9a7aa19ce6cec1bb982fda842f2a663d15dec5d12248b50141f9479a5e9ec33ed2ab3f7",
+      "size": 211972
+    },
+    "curseforge": {
+      "project_id": 241160,
+      "file_id": 5623547,
+      "filename": "netherportalfix-neoforge-1.21.1-21.1.1.jar"
+    },
+    "required_deps": [
+      "balm"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Chunky",
+    "slug": "chunky",
+    "category": "multiplayer",
+    "decision": "include",
+    "reason": "World pre-generation. Pre-generate the spawn region on servers and for single-player to avoid worldgen stutter from heavy structure and biome mods. Distant Horizons respects it.",
+    "side": "both",
+    "license": "GPL-3.0-only",
+    "modrinth": {
+      "project_id": "fALzjamp",
+      "version_id": "LuFhm4eU",
+      "version_number": "1.4.23",
+      "filename": "Chunky-NeoForge-1.4.23.jar",
+      "url": "https://cdn.modrinth.com/data/fALzjamp/versions/LuFhm4eU/Chunky-NeoForge-1.4.23.jar",
+      "sha1": "ab0c74743a653020fe2dfc4986b43e893947f3e9",
+      "sha512": "2db769dd723f243a21e1881e7c9f825e9c193da6f2bed454b70cb6fa9e51c57f63fdcf017c0657bbd26f7bba30815413e27c74d3c7be0783390a96ee9baa4bf7",
+      "size": 340572
+    },
+    "curseforge": {
+      "project_id": 485681,
+      "file_id": 6383261,
+      "filename": "Chunky-NeoForge-1.4.23.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Ping Wheel",
+    "slug": "ping-wheel",
+    "category": "multiplayer",
+    "decision": "include",
+    "reason": "Radial ping markers ('enemy here / go here') for 2–8-player co-op communication without voice. Beta 1.12.2 for 1.21.1; needed on both sides.",
+    "side": "both",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "QQXAdCzh",
+      "version_id": "Zrh2Fmn9",
+      "version_number": "1.12.2",
+      "filename": "Ping-Wheel-1.12.2-neoforge-1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/QQXAdCzh/versions/Zrh2Fmn9/Ping-Wheel-1.12.2-neoforge-1.21.1.jar",
+      "sha1": "bfc416a7bc2edde6ff98672a7df43a3d9930a396",
+      "sha512": "d9f289464fa85c8af34bc57044a6f03abc0ccf4d93bc67451d1e68386be0e3b55524a68dcbf529773859f9166e09cf1fe848c83f1c0c1d10a374819d120d2554",
+      "size": 153528
+    },
+    "curseforge": {
+      "project_id": 734339,
+      "file_id": 7996932,
+      "filename": "Ping-Wheel-1.12.2-neoforge-1.21.1.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "FTB Chunks",
+    "slug": "ftb-chunks",
+    "category": "multiplayer",
+    "decision": "optional",
+    "reason": "Chosen claim mod (pick over Open Parties and Claims) because it reuses FTB Teams parties already needed by FTB Quests. Optional (server-profile toggle): 2–8 friends rarely need claims, and its built-in minimap must be disabled in client config so it doesn't duplicate Remnants Minimap. CurseForge only, ARR.",
+    "side": "both",
+    "license": "All Rights Reserved (Feed The Beast Ltd; CurseForge-only)",
+    "modrinth": null,
+    "curseforge": {
+      "project_id": 314906,
+      "file_id": 8791113,
+      "filename": "ftb-chunks-neoforge-2101.1.22.jar"
+    },
+    "required_deps": [
+      "architectury-api",
+      "ftb-library",
+      "ftb-teams"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Simple Voice Chat",
+    "slug": "simple-voice-chat",
+    "category": "multiplayer",
+    "decision": "optional",
+    "reason": "Proximity voice chat (needs the server mod and a UDP port). Opt-in for groups who want it.",
+    "side": "both",
+    "license": "LicenseRef-All-Rights-Reserved",
+    "modrinth": {
+      "project_id": "9eGKb6K1",
+      "version_id": "2s7zUspF",
+      "version_number": "neoforge-1.21.1-2.6.22",
+      "filename": "voicechat-neoforge-1.21.1-2.6.22.jar",
+      "url": "https://cdn.modrinth.com/data/9eGKb6K1/versions/2s7zUspF/voicechat-neoforge-1.21.1-2.6.22.jar",
+      "sha1": "3b2001d8df61fe6dc03dcd5f5cd4a8f49821feb0",
+      "sha512": "309e3b18e299b2bccf9128dbb05c2603a9860f7cd68858d23f8fdb8265ea85ec7fb1655c95b87c0a9522ae1fd6380b26e4a4c31207f9c7af80870fcc6207abad",
+      "size": 4918442
+    },
+    "curseforge": {
+      "project_id": 416089,
+      "file_id": 8601207,
+      "filename": "voicechat-neoforge-1.21.1-2.6.22.jar"
+    },
+    "required_deps": [],
+    "optional_deps": [
+      "cloth-config",
+      "simple-voice-chat"
+    ]
+  },
+  {
+    "name": "FTB Essentials",
+    "slug": "ftb-essentials",
+    "category": "multiplayer",
+    "decision": "optional",
+    "reason": "Server commands: /home, /spawn, /back, /tpa, /rtp, /nick and so on. Optional server toggle. If enabled, disable /back, /home and /rtp in the config, since they trivialise soulslike death stakes and Waystones handles travel. CurseForge only, ARR.",
+    "side": "server",
+    "license": "All Rights Reserved (Feed The Beast Ltd; CurseForge-only)",
+    "modrinth": null,
+    "curseforge": {
+      "project_id": 410811,
+      "file_id": 8442866,
+      "filename": "ftb-essentials-neoforge-2101.1.10.jar"
+    },
+    "required_deps": [
+      "ftb-library"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "No Chat Reports",
+    "slug": "no-chat-reports",
+    "category": "multiplayer",
+    "decision": "optional",
+    "reason": "Removes chat signing and report prompts and the 'unverified message' noise on private co-op servers. Last 1.21.1 build is 2024-11. Optional on both sides.",
+    "side": "both",
+    "license": "WTFPL",
+    "modrinth": {
+      "project_id": "qQyHxfxd",
+      "version_id": "ZV8eL55E",
+      "version_number": "NeoForge-1.21.1-v2.9.1",
+      "filename": "NoChatReports-NEOFORGE-1.21.1-v2.9.1.jar",
+      "url": "https://cdn.modrinth.com/data/qQyHxfxd/versions/ZV8eL55E/NoChatReports-NEOFORGE-1.21.1-v2.9.1.jar",
+      "sha1": "9edfc7861277ff661141304dc8216f83eacdd9af",
+      "sha512": "292a3623b5addb17e9f15681a4f2534562e9882ef809e504f49da4778fafc12e21a71995b5d05554d435201f401ace1e86af50e6e26f6ce9d203a5896a1ece21",
+      "size": 306668
+    },
+    "curseforge": {
+      "project_id": 634062,
+      "file_id": 5885735,
+      "filename": "NoChatReports-NEOFORGE-1.21.1-v2.9.1.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Simple Discord Rich Presence",
+    "slug": "srdp",
+    "category": "multiplayer",
+    "decision": "optional",
+    "reason": "Discord status 'Playing Remnants | The Modpack', which is free word-of-mouth marketing. Uses Architectury + Cloth Config, already present. Client toggle, recommended on.",
+    "side": "client",
+    "license": "LicenseRef-All-Rights-Reserved",
+    "modrinth": {
+      "project_id": "SCAopByd",
+      "version_id": "ggKPQKwC",
+      "version_number": "88.0.1",
+      "filename": "SimpleDiscordRichPresence-neoforge-88.0.1-build.54+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/SCAopByd/versions/ggKPQKwC/SimpleDiscordRichPresence-neoforge-88.0.1-build.54%2Bmc1.21.1.jar",
+      "sha1": "3bcccf27fb2f954a81a3984bcb1ee8ea636d7247",
+      "sha512": "ea7c4757fc74085b06ce0293f02fd6d6ff47616244987feec3a5fc2fadd491c13d47e55e344ac4602db00aafb3071370ddfadd08333925be1cff2b6a26111dd8",
+      "size": 79869
+    },
+    "curseforge": {
+      "project_id": 334853,
+      "file_id": 7505758,
+      "filename": "SimpleDiscordRichPresence-neoforge-88.0.1-build.54+mc1.21.1.jar"
+    },
+    "required_deps": [
+      "architectury-api",
+      "cloth-config"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Open Parties and Claims",
+    "slug": "open-parties-and-claims",
+    "category": "multiplayer",
+    "decision": "exclude",
+    "reason": "Good claims mod (pairs with Xaero maps), but it would add a second party system next to FTB Teams. Only beta builds.",
+    "side": "both",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "gF3BGWvG",
+      "version_id": "yWmXD7GW",
+      "version_number": "neoforge-1.21.1-0.33.0",
+      "filename": "open-parties-and-claims-neoforge-1.21.1-0.33.0.jar",
+      "url": "https://cdn.modrinth.com/data/gF3BGWvG/versions/yWmXD7GW/open-parties-and-claims-neoforge-1.21.1-0.33.0.jar",
+      "sha1": "6075cf36ac8d70bd1fd870e0eb9ac84685388df7",
+      "sha512": "646fd9796ef2dfd1132e22aacf1a417639233d90fb7eb862a718badfed955d54714c88327b7ddc651f98cd5b7d2a80e8c91233d2232680d4998fdd10ef392ffb",
+      "size": 1903256
+    },
+    "curseforge": {
+      "project_id": 636608,
+      "file_id": 9221991,
+      "filename": "open-parties-and-claims-neoforge-1.21.1-0.33.0.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "FallingTree",
+    "slug": "fallingtree",
+    "category": "multiplayer",
+    "decision": "exclude",
+    "reason": "Tree felling, redundant with FTB Ultimine.",
+    "side": "both",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "Fb4jn8m6",
+      "version_id": "wxGXaJMA",
+      "version_number": "1.21.1-1.21.1.11",
+      "filename": "FallingTree-1.21.1-1.21.1.11.jar",
+      "url": "https://cdn.modrinth.com/data/Fb4jn8m6/versions/wxGXaJMA/FallingTree-1.21.1-1.21.1.11.jar",
+      "sha1": "7e1b3ee0ba89b556d5a468797bb1b5f4e2b8ccb7",
+      "sha512": "21876b270ca40e3ad6168423f2aba04460f590be191c5558d53e4f542993efa6070589029cb3218557309b096cd920e4da65e53f19687b86c638ec6c342d83e5",
+      "size": 496356
+    },
+    "curseforge": {
+      "project_id": 349559,
+      "file_id": 6835168,
+      "filename": "FallingTree-1.21.1-1.21.1.11.jar"
+    },
+    "required_deps": [],
+    "optional_deps": [
+      "cloth-config"
+    ]
+  },
+  {
+    "name": "VeinMiner (Miraculixx)",
+    "slug": "veinminer",
+    "category": "multiplayer",
+    "decision": "exclude",
+    "reason": "Redundant with FTB Ultimine, and needs a different Kotlin runtime (kotlin-lang-forge).",
+    "side": "both",
+    "license": "AGPL-3.0-only",
+    "modrinth": {
+      "project_id": "OhduvhIc",
+      "version_id": "syKekkIm",
+      "version_number": "2.11.2",
+      "filename": "veinminer-neoforge-2.11.2+1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/OhduvhIc/versions/syKekkIm/veinminer-neoforge-2.11.2%2B1.21.1.jar",
+      "sha1": "19f67a98cf5e7cfeefb089b5ec31450ac6d5bd53",
+      "sha512": "195fdfe9f1358e85218e770c953223825d102f54b5f607857b8893959cd2164a04c921987611a7933592ba89a83aa2bd8f3cec0b1fcf7d87a20b168f88b2cc05",
+      "size": 616301
+    },
+    "curseforge": null,
+    "required_deps": [
+      "kotlin-lang-forge"
+    ],
+    "optional_deps": [
+      "veinminer-client"
+    ]
+  },
+  {
+    "name": "CraftPresence",
+    "slug": "craftpresence",
+    "category": "multiplayer",
+    "decision": "exclude",
+    "reason": "More configurable Discord RPC but needs UniLib. SRDP is simpler and already covered by existing libraries.",
+    "side": "client",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "DFqQfIBR",
+      "version_id": "tjZKI2uh",
+      "version_number": "2.7.1+1.21.1-neoforge",
+      "filename": "CraftPresence-2.7.1+1.21.1-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/DFqQfIBR/versions/tjZKI2uh/CraftPresence-2.7.1%2B1.21.1-neoforge.jar",
+      "sha1": "a0629a26ec41099fad1c0f6143d15b5b2c4f3ab2",
+      "sha512": "d032b1699a5c83c144155c44909207bd9e2c4cfe0bc7d0703ecd48a793f6ad792821c68007ae9f8378e88e7a2c2844887edb0f2fce94ecbf9d880b5dfb1529e9",
+      "size": 1306084
+    },
+    "curseforge": {
+      "project_id": 297038,
+      "file_id": 7704907,
+      "filename": "CraftPresence-2.7.1+1.21.1-neoforge.jar"
+    },
+    "required_deps": [
+      "unilib"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Better Ping Display",
+    "slug": "better-ping-display",
+    "category": "multiplayer",
+    "decision": "exclude",
+    "reason": "Numeric ping in the tab list. Nice-to-have; not needed for friends' co-op.",
+    "side": "client",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "ZvaHbwoZ",
+      "version_id": "AzKubcBR",
+      "version_number": "1.21.1-1.1",
+      "filename": "BetterPingDisplay-1.21.1-1.1.jar",
+      "url": "https://cdn.modrinth.com/data/ZvaHbwoZ/versions/AzKubcBR/BetterPingDisplay-1.21.1-1.1.jar",
+      "sha1": "66702459c2a87b9943af3347c4df1ae6ff14c897",
+      "sha512": "301362230f1e66a6725eb20fae106435f2d9561df631a54091956b052f9a2111a230b238dbeb0ae58a5bfa261be43474ab40315e50eebeeacef5a592e2c3bfbb",
+      "size": 13871
+    },
+    "curseforge": null,
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Loot Beams: Refork",
+    "slug": "loot-beams-refork",
+    "category": "juice",
+    "decision": "include",
+    "reason": "Rarity-coloured light beams and labels on dropped loot: the signature RPG 'loot pop'. The only maintained NeoForge 1.21.1 loot-beam mod (Loot Beams Up and the original have no NeoForge 1.21.1 build). MIT. Costs Nirvana Lib → Common Network + Fzzy Config → Kotlin for Forge.",
+    "side": "client",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "rp7ooqvq",
+      "version_id": "lsOrQAr5",
+      "version_number": "neoforge-1.21.1-3.4.7",
+      "filename": "Loot Beams Refork-neoforge-1.21.1-3.4.7.jar",
+      "url": "https://cdn.modrinth.com/data/rp7ooqvq/versions/lsOrQAr5/Loot%20Beams%20Refork-neoforge-1.21.1-3.4.7.jar",
+      "sha1": "38012122e012278c22e40321f85aaa8ccdaffce4",
+      "sha512": "89c42087f9586184cf21810bbfe1309427c827685bfd0d24656b995ac2ddde298c913c8560bd48bab4a4fdb60184afa292497aad38ffef8ef64b109e95459d72",
+      "size": 522358
+    },
+    "curseforge": {
+      "project_id": 1150640,
+      "file_id": 8358509,
+      "filename": "Loot Beams Refork-neoforge-1.21.1-3.4.7.jar"
+    },
+    "required_deps": [
+      "nirvana-library"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Nirvana Lib",
+    "slug": "nirvana-library",
+    "category": "juice",
+    "decision": "include",
+    "reason": "Library: required by Loot Beams: Refork.",
+    "side": "both",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "6gKEW2ql",
+      "version_id": "T4VXxkNe",
+      "version_number": "neoforge-1.21.1-2.2.0",
+      "filename": "Nirvana Lib-neoforge-1.21.1-2.2.0.jar",
+      "url": "https://cdn.modrinth.com/data/6gKEW2ql/versions/T4VXxkNe/Nirvana%20Lib-neoforge-1.21.1-2.2.0.jar",
+      "sha1": "fa44604cb163447561611909e1221a96bf3286f6",
+      "sha512": "8818ec3894578462cefde173387fbd526eb43f441210d3bb8646e045cad0c758c4163b839a3bd4a61e8953a8b3e555cabeb44540daf39ab9ec0327cbb49cd462",
+      "size": 1266810
+    },
+    "curseforge": {
+      "project_id": 1164411,
+      "file_id": 7986004,
+      "filename": "Nirvana Lib-neoforge-1.21.1-2.2.0.jar"
+    },
+    "required_deps": [
+      "common-network",
+      "fzzy-config"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Common Network",
+    "slug": "common-network",
+    "category": "juice",
+    "decision": "include",
+    "reason": "Library: required by Nirvana Lib.",
+    "side": "both",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "HIuqnQpi",
+      "version_id": "pR7AeZk3",
+      "version_number": "1.0.21-1.21.1",
+      "filename": "common-networking-neoforge-1.0.21-1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/HIuqnQpi/versions/pR7AeZk3/common-networking-neoforge-1.0.21-1.21.1.jar",
+      "sha1": "f55722a4278997e7ef278f4390a31e848f7beea7",
+      "sha512": "2797cb78554fb413276d700c1021c2c0b93c30a7cbd2c47fd6f88578a99788c37f1a5241165fafc61e114377ec328f9155db77fc8975c9c66416ff7081980f31",
+      "size": 26017
+    },
+    "curseforge": {
+      "project_id": 806044,
+      "file_id": 7087488,
+      "filename": "common-networking-neoforge-1.0.21-1.21.1.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Fzzy Config",
+    "slug": "fzzy-config",
+    "category": "juice",
+    "decision": "include",
+    "reason": "Library: required by Nirvana Lib. Uses a custom TDL-M licence (Timefall Development Licence Modified). I could not read its modpack terms; check them before release. Referencing it from CF or Modrinth does not redistribute the jar.",
+    "side": "both",
+    "license": "LicenseRef-TDL-M",
+    "modrinth": {
+      "project_id": "hYykXjDp",
+      "version_id": "jRuOkBAG",
+      "version_number": "0.7.7+fix1+1.21+neoforge",
+      "filename": "fzzy_config-0.7.7+fix1+1.21+neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/jRuOkBAG/fzzy_config-0.7.7%2Bfix1%2B1.21%2Bneoforge.jar",
+      "sha1": "aa04a2ddbce2f50b21d667d2f3e589f9e043e472",
+      "sha512": "7ea074ac2bee3471a213ed6e55d3beafded16631ea517ecbc6711324f6af82b697c9d391aaadcefff67eda13d5dcc2bfb5011373c73a7015761060b6d89cf15c",
+      "size": 2392720
+    },
+    "curseforge": {
+      "project_id": 1005914,
+      "file_id": 9326327,
+      "filename": "fzzy_config-0.7.7+fix1+1.21+neoforge.jar"
+    },
+    "required_deps": [
+      "kotlin-for-forge"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Kotlin for Forge",
+    "slug": "kotlin-for-forge",
+    "category": "juice",
+    "decision": "include",
+    "reason": "Library (Kotlin runtime): required by Fzzy Config. Many gameplay mods need it too.",
+    "side": "both",
+    "license": "LGPL-2.1-only",
+    "modrinth": {
+      "project_id": "ordsPcFz",
+      "version_id": "uhJhCT7X",
+      "version_number": "5.12.0",
+      "filename": "kotlinforforge-5.12.0-all.jar",
+      "url": "https://cdn.modrinth.com/data/ordsPcFz/versions/uhJhCT7X/kotlinforforge-5.12.0-all.jar",
+      "sha1": "d10d062caf1aad9aec82d7852f2fee1781735c1f",
+      "sha512": "b8c3942f4d33179edf3f102f3d870b99dd436f8b8236dbbd31aa51b888162c692cfd88927295f24dc8b4375232f4c6c17360c5d6c4823f93cbcd7cf4bdc8bd14",
+      "size": 7279264
+    },
+    "curseforge": {
+      "project_id": 351264,
+      "file_id": 8335665,
+      "filename": "kotlinforforge-5.12.0-all.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "AmbientSounds",
+    "slug": "ambientsounds",
+    "category": "juice",
+    "decision": "include",
+    "reason": "Biome, time and weather ambience, a large immersion win for a story pack. Client-only, needs CreativeCore.",
+    "side": "client",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "fM515JnW",
+      "version_id": "WGalCQAo",
+      "version_number": "6.3.11",
+      "filename": "AmbientSounds_NEOFORGE_v6.3.11_mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/fM515JnW/versions/WGalCQAo/AmbientSounds_NEOFORGE_v6.3.11_mc1.21.1.jar",
+      "sha1": "9762244f9c116c85a6af3469da686650ed455bb1",
+      "sha512": "1e615137f1e4d4e2cd0f366560922304f6d96ce7a73e9e55bae2572a1f03916efccc633b249026826471162d498a2eecba10b712f20ecfd540cb818915d8e227",
+      "size": 84815086
+    },
+    "curseforge": {
+      "project_id": 254284,
+      "file_id": 9254776,
+      "filename": "AmbientSounds_NEOFORGE_v6.3.11_mc1.21.1.jar"
+    },
+    "required_deps": [
+      "creativecore"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "CreativeCore",
+    "slug": "creativecore",
+    "category": "juice",
+    "decision": "include",
+    "reason": "Library: required by AmbientSounds.",
+    "side": "both",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "OsZiaDHq",
+      "version_id": "vRMtFt35",
+      "version_number": "2.13.51",
+      "filename": "CreativeCore_NEOFORGE_v2.13.51_mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/OsZiaDHq/versions/vRMtFt35/CreativeCore_NEOFORGE_v2.13.51_mc1.21.1.jar",
+      "sha1": "eb2242b3d4442ad4017ba0624a7f9588e778b157",
+      "sha512": "864301fa1229511203fc291e9b683db5af3cb4aa4faed0ef1eb54112491b3c97f9b5006b42d41fb2c169f7fc93ad13459f5079c6ffc73dc4b145ee61b7687997",
+      "size": 1236490
+    },
+    "curseforge": {
+      "project_id": 257814,
+      "file_id": 9108041,
+      "filename": "CreativeCore_NEOFORGE_v2.13.51_mc1.21.1.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "LambDynamicLights",
+    "slug": "lambdynamiclights",
+    "category": "juice",
+    "decision": "include",
+    "reason": "Hand-held and dropped light sources light the world (torches in dungeons). The multi-loader jar supports NeoForge; 4.8.9+ updated for Sodium 0.8, and 4.8.11 is the declared end-of-life for 1.21. The 'fabric-api' dependency on Modrinth applies only to Fabric. Declares Sodium Dynamic Lights incompatible.",
+    "side": "client",
+    "license": "LicenseRef-Lambda-License",
+    "modrinth": {
+      "project_id": "yBW8D80W",
+      "version_id": "ksaGCvSu",
+      "version_number": "4.8.11+1.21.1",
+      "filename": "lambdynamiclights-4.8.11+1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/yBW8D80W/versions/ksaGCvSu/lambdynamiclights-4.8.11%2B1.21.1.jar",
+      "sha1": "7b5afc75a094b4e8a7118f9856eec959b10f2422",
+      "sha512": "0286076e8b2922dfbe90cd4544a0d16e6d07d7249c732a37479ea4281e9cf96c86dd2e1ce5261489bd5553ceba33044bc550a04b9eb582645eb97f15c9c6a64c",
+      "size": 2023375
+    },
+    "curseforge": {
+      "project_id": 393442,
+      "file_id": 8780227,
+      "filename": "lambdynamiclights-4.8.11+1.21.1.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Entity Model Features (EMF)",
+    "slug": "entity-model-features",
+    "category": "juice",
+    "decision": "include",
+    "reason": "OptiFine-format custom entity models. Required by Fresh Animations, and it lets the pack ship resource-pack mob variants.",
+    "side": "client",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "4I1XuqiY",
+      "version_id": "197m3VoU",
+      "version_number": "3.3.12-neoforge-1.21",
+      "filename": "entity_model_features-3.3.12-1.21-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/4I1XuqiY/versions/197m3VoU/entity_model_features-3.3.12-1.21-neoforge.jar",
+      "sha1": "e9a163b77243cdfcb0ad3d698dc48a60cb8710e9",
+      "sha512": "b18bde755c6719c62579d65c96e6e768c99b25fba9f987dc843b2a64ce4d713ba2f8151da4a98efe76d854550f40356ac4fdfa952568cf1fb11771353dfc70e8",
+      "size": 656382
+    },
+    "curseforge": {
+      "project_id": 844662,
+      "file_id": 9188526,
+      "filename": "entity_model_features-3.3.12-1.21-neoforge.jar"
+    },
+    "required_deps": [
+      "entitytexturefeatures"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Entity Texture Features (ETF)",
+    "slug": "entitytexturefeatures",
+    "category": "juice",
+    "decision": "include",
+    "reason": "Random, emissive and conditional entity textures. Required by EMF and Fresh Animations.",
+    "side": "client",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "BVzZfTc1",
+      "version_id": "lwNx1nD1",
+      "version_number": "7.2.6-neoforge-1.21",
+      "filename": "entity_texture_features-7.2.6-1.21-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/BVzZfTc1/versions/lwNx1nD1/entity_texture_features-7.2.6-1.21-neoforge.jar",
+      "sha1": "1a77ddb156daa4125c205424f05f0fa861517d9c",
+      "sha512": "0e349c235b509de605ef4175a60e87ee78eab208b554ebc1dfa756b18ab2b531ce4641bfdc1c4542cb3c24d45b81698ca1413fcd001d589d82cbad6cea346f46",
+      "size": 807089
+    },
+    "curseforge": {
+      "project_id": 568563,
+      "file_id": 9188408,
+      "filename": "entity_texture_features-7.2.6-1.21-neoforge.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Fresh Animations (resource pack)",
+    "slug": "fresh-animations",
+    "category": "juice",
+    "decision": "include",
+    "reason": "Resource pack that animates vanilla mobs (needs EMF+ETF). Terms allow including it in a mod pack but forbid redistribution: reference it by Modrinth URL or CF project instead of rehosting, and enable it via Default Options. No paid-product use.",
+    "side": "client",
+    "license": "LicenseRef-See-Terms-of-Use-in-Description",
+    "modrinth": {
+      "project_id": "50dA9Sha",
+      "version_id": "aQjwvDfY",
+      "version_number": "1.11.1",
+      "filename": "FreshAnimations_v1.11.1_1.20+.zip",
+      "url": "https://cdn.modrinth.com/data/50dA9Sha/versions/aQjwvDfY/FreshAnimations_v1.11.1_1.20%2B.zip",
+      "sha1": "eaf28f57dee43c469534953517501a021d28cf21",
+      "sha512": "641a03d55c36920cc9a70d891bcca3347b196968bcb5637781f21b417b1ff893ce60652abcf02be872872fc1130ccc6785155ea3b19a0ed484de714b6229c922",
+      "size": 743793
+    },
+    "curseforge": {
+      "project_id": 453763,
+      "file_id": 9261871,
+      "filename": "FreshAnimations_v1.11.1_1.20+.zip"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Sound Physics Remastered",
+    "slug": "sound-physics-remastered",
+    "category": "juice",
+    "decision": "optional",
+    "reason": "Reverb and occlusion. Beta for 1.21.1, noticeable CPU cost, and it can muffle boss audio cues. Client toggle.",
+    "side": "both",
+    "license": "GPL-3.0-only",
+    "modrinth": {
+      "project_id": "qyVF9oeo",
+      "version_id": "85fA7L1W",
+      "version_number": "neoforge-1.21.1-1.5.2",
+      "filename": "sound-physics-remastered-neoforge-1.21.1-1.5.2.jar",
+      "url": "https://cdn.modrinth.com/data/qyVF9oeo/versions/85fA7L1W/sound-physics-remastered-neoforge-1.21.1-1.5.2.jar",
+      "sha1": "f1903e867a71cbdc3078caf957372b9959482cfb",
+      "sha512": "958747dc1914536e357512dd2f0b926f2ee936dace3f9a43a0e8eb51ae6f35b9c7359529ee48d2ac50d190b02b617d94d22eced202ecd3056494c71a4958b14b",
+      "size": 204230
+    },
+    "curseforge": {
+      "project_id": 535489,
+      "file_id": 9279974,
+      "filename": "sound-physics-remastered-neoforge-1.21.1-1.5.2.jar"
+    },
+    "required_deps": [],
+    "optional_deps": [
+      "cloth-config",
+      "simple-voice-chat"
+    ]
+  },
+  {
+    "name": "Presence Footsteps (NeoForge port)",
+    "slug": "pf-neoforge",
+    "category": "juice",
+    "decision": "optional",
+    "reason": "Unofficial NeoForge port (beta, MIT) of Presence Footsteps. Rich footstep sounds. Client toggle; test with AmbientSounds.",
+    "side": "client",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "JIEwmDVI",
+      "version_id": "f3SxKzof",
+      "version_number": "1.21.1-1.12.0-beta.1",
+      "filename": "PresenceFootsteps-1.21.1-1.12.0-beta.1-1.21NeoForge.jar",
+      "url": "https://cdn.modrinth.com/data/JIEwmDVI/versions/f3SxKzof/PresenceFootsteps-1.21.1-1.12.0-beta.1-1.21NeoForge.jar",
+      "sha1": "71bd6de2b01441d92be1e109879b76b7750bd787",
+      "sha512": "a3726621e16dc4724ac62e60c329490025df54c5f545ae26fb867b5ac5daa19cba7620d06fcbb451528b1d9368481f8e410545cd4730f73b7a2f6f21b1b589bf",
+      "size": 7096988
+    },
+    "curseforge": {
+      "project_id": 1390302,
+      "file_id": 7252696,
+      "filename": "PresenceFootsteps-1.21.1-1.12.0-beta.1-1.21NeoForge.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Falling Leaves (NeoForge/Forge)",
+    "slug": "fallingleavesforge",
+    "category": "juice",
+    "decision": "optional",
+    "reason": "Leaf particles from trees (Cheaterpaul's NeoForge port, 2026-10). Cheap client polish; coordinate with the visuals layer.",
+    "side": "client",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "2JAUNCL4",
+      "version_id": "ZTfOTZtM",
+      "version_number": "1.21.1-2.6.0",
+      "filename": "fallingleaves-1.21.1-2.6.0.jar",
+      "url": "https://cdn.modrinth.com/data/2JAUNCL4/versions/ZTfOTZtM/fallingleaves-1.21.1-2.6.0.jar",
+      "sha1": "c1ae4a2ca27be388d4c2fc75eff208059eaf4cc9",
+      "sha512": "96c300ebc2110b95c8315467ee7a5d123b9143461ebe0608e6201fe7fb18279e38b87d9fa5321640a394a8f37477c375fd98cac907b6fa9b02c4d6611c02c45c",
+      "size": 153794
+    },
+    "curseforge": null,
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Particle Rain",
+    "slug": "particle-rain",
+    "category": "juice",
+    "decision": "optional",
+    "reason": "Particle rain, snow and sandstorm weather plus fog. Client toggle. Coordinate with the visuals layer and shaderpack, since some shaders render their own rain.",
+    "side": "client",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "nrikgvxm",
+      "version_id": "RxfaR4ud",
+      "version_number": "v4.0.2+1.21.1-neoforge",
+      "filename": "particlerain-4.0.2+1.21.1-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/nrikgvxm/versions/RxfaR4ud/particlerain-4.0.2%2B1.21.1-neoforge.jar",
+      "sha1": "444c6f221e57cca8e433702b18c4643faa82545a",
+      "sha512": "dc5fd6224dbd58079d9c82ef318ba2b945e5aa58f3476daea371ca86bb9ce976db5f4893a7093a990c0c1a8ddb7716089b24cced176f30cb253c2696b0cfd5b2",
+      "size": 623257
+    },
+    "curseforge": {
+      "project_id": 421897,
+      "file_id": 9113934,
+      "filename": "particlerain-4.0.2+1.21.1-neoforge.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Fancy World Animations",
+    "slug": "fwa",
+    "category": "juice",
+    "decision": "optional",
+    "reason": "Smooth door, trapdoor, lever and chest animations. Client toggle. Overlaps any 'animated blocks' choice the visuals layer makes.",
+    "side": "client",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "IAzUFvS6",
+      "version_id": "79A6vRlK",
+      "version_number": "1.2.31",
+      "filename": "fwa+1.21.1-neoforge-1.2.31.jar",
+      "url": "https://cdn.modrinth.com/data/IAzUFvS6/versions/79A6vRlK/fwa%2B1.21.1-neoforge-1.2.31.jar",
+      "sha1": "a896f8442b9ffa62345b1fcfb868dd86a894d3e1",
+      "sha512": "dd44ef2dad3df2b52610b2f289f02590265b467409737630ae12ac5d540613f84191a1b5488bac8098ebbeb78f1922b3b6d86c2c09bbe026f46c88f91b25f74a",
+      "size": 385558
+    },
+    "curseforge": {
+      "project_id": 1452982,
+      "file_id": 8221257,
+      "filename": "fwa+1.21.1-neoforge-1.2.31.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Fusion (Connected Textures)",
+    "slug": "fusion-connected-textures",
+    "category": "juice",
+    "decision": "optional",
+    "reason": "Native NeoForge connected-textures engine (Sodium and Iris compatible). Only needed if the pack ships a CTM-style resource pack.",
+    "side": "client",
+    "license": "LicenseRef-All-Rights-Reserved",
+    "modrinth": {
+      "project_id": "p19vrgc2",
+      "version_id": "AYDaLPK8",
+      "version_number": "1.3.16-neoforge-mc1.21.1",
+      "filename": "fusion-1.3.16-neoforge-mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/p19vrgc2/versions/AYDaLPK8/fusion-1.3.16-neoforge-mc1.21.1.jar",
+      "sha1": "c3cd7c2718583aa5a12e8502c6b92e050bad0c19",
+      "sha512": "0b65c3a78db5785c76a222639a56da0cd09fc8445e02cdfb84e4bb7c88dc2c5622ccb468291a12df30440205a881db2023d9857fdb7252e7d21238876fcc8608",
+      "size": 947335
+    },
+    "curseforge": {
+      "project_id": 854949,
+      "file_id": 9070353,
+      "filename": "fusion-1.3.16-neoforge-mc1.21.1.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Loot Journal: Pickup Notifier",
+    "slug": "loot-journal",
+    "category": "juice",
+    "decision": "exclude",
+    "reason": "Pickup feed alternative to Pick Up Notifier. Needs Fragmentum, and on CurseForge the NeoForge build is a separate project (1120395).",
+    "side": "client",
+    "license": "LicenseRef-Obscuria-Ecosystem",
+    "modrinth": {
+      "project_id": "OJ6ZYz5L",
+      "version_id": "zyIMDDzM",
+      "version_number": "6.2.2",
+      "filename": "loot_journal-neoforge-1.21.1-6.2.2.jar",
+      "url": "https://cdn.modrinth.com/data/OJ6ZYz5L/versions/zyIMDDzM/loot_journal-neoforge-1.21.1-6.2.2.jar",
+      "sha1": "9f6030dd1f081bc71f24e5c50ff83d58ce8e4cc4",
+      "sha512": "da6be07bebe1f2f38242568a49e13020c4cbead8e563d02d5106110ce3bc34525c2388ce47d36b477db8dcc7661afc38fa9eb243cc42c53737c531e0b5189c77",
+      "size": 304549
+    },
+    "curseforge": {
+      "project_id": 1120395,
+      "file_id": 8922056,
+      "filename": "loot_journal-neoforge-1.21.1-6.2.2.jar"
+    },
+    "required_deps": [
+      "fragmentum"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Presence Footsteps",
+    "slug": "presence-footsteps",
+    "category": "juice",
+    "decision": "exclude",
+    "reason": "Official mod is Fabric-only on 1.21.1. See the NeoForge port above.",
+    "side": "client",
+    "license": "LicenseRef-Polyform-Shield-1.0",
+    "modrinth": null,
+    "curseforge": null,
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Falling Leaves",
+    "slug": "fallingleaves",
+    "category": "juice",
+    "decision": "exclude",
+    "reason": "Original is Fabric-only. See the NeoForge port above.",
+    "side": "client",
+    "license": "MIT",
+    "modrinth": null,
+    "curseforge": null,
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Cool Rain Reforged",
+    "slug": "cool-rain-reforged",
+    "category": "juice",
+    "decision": "exclude",
+    "reason": "Overlaps Particle Rain.",
+    "side": "both",
+    "license": "LicenseRef-All-Rights-Reserved",
+    "modrinth": {
+      "project_id": "IgftU6Mn",
+      "version_id": "SwSSfJQQ",
+      "version_number": "1.0.2",
+      "filename": "coolrain-1.21.1-NeoForge-1.0.2.jar",
+      "url": "https://cdn.modrinth.com/data/IgftU6Mn/versions/SwSSfJQQ/coolrain-1.21.1-NeoForge-1.0.2.jar",
+      "sha1": "2f41f15cb7b6c46aeeae95c29c1f3a9c1d53f327",
+      "sha512": "bd463f60ac2ab9f22bc7b7c35656e3e174b2db5bde95f3c7d404b07f085bdbd550774e9bf7ff81310a0f4eea5348398d2a8f617a1d1644db6e38c8eb83245328",
+      "size": 4151295
+    },
+    "curseforge": {
+      "project_id": 1346978,
+      "file_id": 8819888,
+      "filename": "coolrain-1.21.1-NeoForge-1.0.2.jar"
+    },
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Visuality",
+    "slug": "visuality",
+    "category": "juice",
+    "decision": "exclude",
+    "reason": "No NeoForge 1.21.1 build (Fabric/Quilt only).",
+    "side": "client",
+    "license": "MIT",
+    "modrinth": null,
+    "curseforge": null,
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Punchy!",
+    "slug": "punchy",
+    "category": "juice",
+    "decision": "exclude",
+    "reason": "No 1.21.1 NeoForge build.",
+    "side": "client",
+    "license": "LicenseRef-All-Rights-Reserved",
+    "modrinth": null,
+    "curseforge": null,
+    "required_deps": [],
+    "optional_deps": []
+  },
+  {
+    "name": "Inventory Particles",
+    "slug": "inventory-particles",
+    "category": "juice",
+    "decision": "exclude",
+    "reason": "Cosmetic GUI particles. Needs MossyLib; CC-BY-ND. Not worth another library.",
+    "side": "client",
+    "license": "CC-BY-ND-4.0",
+    "modrinth": {
+      "project_id": "XYnKrsxH",
+      "version_id": "tIeIGFCs",
+      "version_number": "3.2.0+1.21.1+neoforge",
+      "filename": "InventoryParticles-3.2.0+1.21.1+neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/XYnKrsxH/versions/tIeIGFCs/InventoryParticles-3.2.0%2B1.21.1%2Bneoforge.jar",
+      "sha1": "8fa0f0dabd7d5495dc01632941b8fc38343a65a7",
+      "sha512": "0fcec536b01339f1d3bdd875c924cd083328362fdcde9487e67f2a425426faa2b7783a86c1fb7af885e25edfa802cb2cce81db7a643291f2d0677ad6cbcf9c02",
+      "size": 1677419
+    },
+    "curseforge": {
+      "project_id": 1339689,
+      "file_id": 8939238,
+      "filename": "InventoryParticles-3.2.0+1.21.1+neoforge.jar"
+    },
+    "required_deps": [
+      "mossylib"
+    ],
+    "optional_deps": [
+      "inventory-interactions",
+      "particle-effects",
+      "yacl"
+    ]
+  },
+  {
+    "name": "Sodium Dynamic Lights",
+    "slug": "sodium-dynamic-lights",
+    "category": "juice",
+    "decision": "exclude",
+    "reason": "Depends on Sodium Options API, which Sodium 0.8 does not support. Declared incompatible by LambDynamicLights.",
+    "side": "client",
+    "license": "MIT",
+    "modrinth": {
+      "project_id": "PxQSWIcD",
+      "version_id": "XI0WLXdn",
+      "version_number": "neoforge-1.21.1-1.0.10",
+      "filename": "sodiumdynamiclights-neoforge-1.0.10-1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/PxQSWIcD/versions/XI0WLXdn/sodiumdynamiclights-neoforge-1.0.10-1.21.1.jar",
+      "sha1": "02e9bc7ba28147cdf2d608ecf4f2c1eab34b4652",
+      "sha512": "ec19a81cf2dfde255990a457d8f6d7375df53cb94190dce71c4bfe5d5263f4862027ce4aa0af20cb11d56c7c031d5e149b3bdf95bec6343e5bd4552450b14c0a",
+      "size": 299353
+    },
+    "curseforge": null,
+    "required_deps": [
+      "sodium",
+      "sodium-options-api"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "Continuity",
+    "slug": "continuity",
+    "category": "juice",
+    "decision": "exclude",
+    "reason": "Its NeoForge build needs Sinytra Connector + Forgified Fabric API (Fabric-on-NeoForge layer). Not acceptable for a clean pack.",
+    "side": "client",
+    "license": "LGPL-3.0-only",
+    "modrinth": {
+      "project_id": "1IjD5062",
+      "version_id": "eXGUs5sy",
+      "version_number": "3.0.0+1.21.neoforge",
+      "filename": "continuity-3.0.0+1.21.neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/1IjD5062/versions/eXGUs5sy/continuity-3.0.0%2B1.21.neoforge.jar",
+      "sha1": "0aecd2d043ac25299254623fafdd9129ab2ba9c2",
+      "sha512": "320b6def6073ce0ffc0ce2bd7cdb66324467ea3e7cec05508f32d78f65c60ff3e155394b94c60f62e059404ec0ca3fc6112987a5764a8f85241d3026a2ee4935",
+      "size": 1014626
+    },
+    "curseforge": null,
+    "required_deps": [
+      "connector",
+      "forgified-fabric-api"
+    ],
+    "optional_deps": []
+  },
+  {
+    "name": "AttributeFix",
+    "slug": "attributefix",
+    "category": "fixes",
+    "decision": "optional",
+    "reason": "Raises vanilla attribute caps (armour 30, etc.) that RPG stat and gear mods exceed. Zero extra libraries (Bookshelf + Prickle). Belongs to the combat/RPG layer, which should confirm it.",
+    "side": "both",
+    "license": "LGPL-2.1-only",
+    "modrinth": {
+      "project_id": "lOOpEntO",
+      "version_id": "TyNITLDY",
+      "version_number": "21.1.3",
+      "filename": "attributefix-neoforge-1.21.1-21.1.3.jar",
+      "url": "https://cdn.modrinth.com/data/lOOpEntO/versions/TyNITLDY/attributefix-neoforge-1.21.1-21.1.3.jar",
+      "sha1": "7aae849f6d2a6cb1368227407ea5deb552e100ba",
+      "sha512": "09e1ff6012d5b7bef7bb701d38feaaab41db4f2fc8b9f669b820fc2c91e53098e093e401062ad80a0ce249c68aa7a6209ac9ee341518b8f640bae2393b1595ae",
+      "size": 19809
+    },
+    "curseforge": {
+      "project_id": 280510,
+      "file_id": 7115922,
+      "filename": "attributefix-neoforge-1.21.1-21.1.3.jar"
+    },
+    "required_deps": [
+      "bookshelf-lib",
+      "prickle"
+    ],
+    "optional_deps": []
+  }
+]

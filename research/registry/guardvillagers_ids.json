@@ -1,0 +1,8 @@
+{
+ "ids": [
+  "guardvillagers:adventure/recruit_guard",
+  "loot:guardvillagers:entities/armor_sets/armor",
+  "loot:guardvillagers:entities/guard",
+  "loot:guardvillagers:entities/guard_armor"
+ ]
+}

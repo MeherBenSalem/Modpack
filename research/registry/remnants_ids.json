@@ -1,0 +1,24 @@
+{
+ "ids": [
+  "loot:remnants:entities/ancient_vessel",
+  "loot:remnants:entities/ashbound_crawler",
+  "loot:remnants:entities/burial_guardian",
+  "loot:remnants:entities/catacomb_rat",
+  "loot:remnants:entities/crypt_lurker",
+  "loot:remnants:entities/ember_servitor",
+  "loot:remnants:entities/fallen_standard_bearer",
+  "loot:remnants:entities/forgotten_watcher",
+  "loot:remnants:entities/gravebound_soldier",
+  "loot:remnants:entities/gravebound_warden",
+  "loot:remnants:entities/hollow_arbalist",
+  "loot:remnants:entities/hollow_sentinel",
+  "loot:remnants:entities/hollow_sovereign",
+  "loot:remnants:entities/lost_pilgrim",
+  "loot:remnants:entities/memory_wraith",
+  "loot:remnants:entities/relic_stalker",
+  "loot:remnants:entities/rusted_guardian",
+  "loot:remnants:entities/shardling",
+  "loot:remnants:entities/soul_collector",
+  "loot:remnants:entities/soulbound_knight"
+ ]
+}

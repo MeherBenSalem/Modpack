@@ -1,0 +1,8 @@
+{
+ "ids": [
+  "betterjungletemples:jungle_temple",
+  "loot:betterjungletemples:archaeology/emerald",
+  "loot:betterjungletemples:chests/campsite",
+  "loot:betterjungletemples:chests/treasure"
+ ]
+}

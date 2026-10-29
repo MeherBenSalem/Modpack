@@ -1,0 +1,26 @@
+{
+	chapter.4F942AE65198D849.chapter_subtitle: ["The sun remembers you. The End doesn't."]
+	chapter.4F942AE65198D849.title: "&6Epilogue: &fFirst Light"
+	quest.1396239BCA1C36D0.quest_desc: [
+		"&o\"Rest, Ashborn. The sun remembers you.\"&r"
+		""
+		"Every ember you rekindled is still burning, and every Ashborn on this world carries a heart for each one. The Long Eclipse is over."
+		""
+		"Mostly."
+	]
+	quest.1396239BCA1C36D0.quest_subtitle: "Eight embers. One sun."
+	quest.1396239BCA1C36D0.title: "&6&lFirst Light"
+	quest.194DBF5B86695C7E.quest_subtitle: "Rune level 100."
+	quest.194DBF5B86695C7E.title: "Ascendant"
+	quest.21DCE1D40E334C97.quest_desc: [
+		"The Sovereigns broke the sun to share it. The Hollow Sovereign drank what was left. But the sun was already cracked when the Crown was forged; the Archive remembers that much."
+		""
+		"Something at the edge of the End is still dark. The Dragon remembers the Eighth, and it remembers someone before him."
+		""
+		"&7Season 2 begins where this one ends. Until then: the Boss Compendium, the Fractured Archive and the Ashen Contracts are endless."
+	]
+	quest.21DCE1D40E334C97.quest_subtitle: "Seven crowns, one hollow."
+	quest.21DCE1D40E334C97.title: "&5Who Broke the Sun?"
+	task.2388ADA1F49D2E55.title: "To be continued"
+	task.567AC1802220D65F.title: "I watched the sun come up"
+}

@@ -1,0 +1,17 @@
+{
+  "entity.gmm.leap_creeper": "Leap Creeper",
+  "item.gmm.leap_creeper_spawn_egg": "Leap Creeper Spawn Egg",
+  "entity.gmm.climb_creeper": "Climb Creeper",
+  "item.gmm.climb_creeper_spawn_egg": "Climb Creeper Spawn Egg",
+  "entity.gmm.swift_creeper": "Swift Creeper",
+  "item.gmm.swift_creeper_spawn_egg": "Swift Creeper Spawn Egg",
+  "entity.gmm.adaptive_creeper": "Adaptive Creeper",
+  "item.gmm.adaptive_creeper_spawn_egg": "Adaptive Creeper Spawn Egg",
+  "entity.gmm.overcharge_creeper": "Overcharge Creeper",
+  "item.gmm.overcharge_creeper_spawn_egg": "Overcharge Creeper Spawn Egg",
+  "entity.gmm.silent_creeper": "Silent Creeper",
+  "item.gmm.silent_creeper_spawn_egg": "Silent Creeper Spawn Egg",
+  "entity.gmm.hunter_creeper": "Hunter Creeper",
+  "item.gmm.hunter_creeper_spawn_egg": "Hunter Creeper Spawn Egg",
+  "itemGroup.gmm": "Genetically Modified Monsters"
+}

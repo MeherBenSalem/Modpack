@@ -1,0 +1,555 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "s1_act4_ash"
+	group: "764F9A359750532B"
+	icon: {
+		id: "minecraft:netherite_scrap"
+	}
+	id: "00706B057024A893"
+	images: [ ]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["10A48EAE33052B15"]
+			icon: {
+				id: "minecraft:netherrack"
+			}
+			id: "65E3C17D51F13C6D"
+			rewards: [
+				{
+					count: 2
+					id: "20265FC3BA294221"
+					item: {
+						components: {
+							"minecraft:potion_contents": {
+								potion: "minecraft:long_fire_resistance"
+							}
+						}
+						count: 1
+						id: "minecraft:potion"
+					}
+					type: "item"
+				}
+				{
+					id: "75C6C43A611A3722"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					id: "3D054513A30DAEBF"
+					type: "dimension"
+				}
+			]
+			x: 0.0d
+			y: -0.875d
+		}
+		{
+			dependencies: ["65E3C17D51F13C6D"]
+			icon: {
+				id: "minecraft:blaze_rod"
+			}
+			id: "6AFD03D05428FB28"
+			rewards: [
+				{
+					id: "0AA9A888C2667921"
+					table_id: 5603019727193511887L
+					type: "random"
+				}
+				{
+					id: "0806945632F97B8C"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "0EB9AF03573C2542"
+					structure: "betterfortresses:fortress"
+					type: "structure"
+				}
+				{
+					count: 8L
+					id: "7ECBADE74C9661E2"
+					item: {
+						count: 1
+						id: "minecraft:blaze_rod"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -0.875d
+		}
+		{
+			dependencies: ["65E3C17D51F13C6D"]
+			icon: {
+				id: "minecraft:blackstone"
+			}
+			id: "0DF8C2E1B1B039B5"
+			optional: true
+			rewards: [
+				{
+					id: "1C9595E95850E2DF"
+					table_id: 5603019727193511887L
+					type: "random"
+				}
+				{
+					id: "31857809F87CF756"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					advancement: "muchmoredungeons:slay_nether_bastille_guardian"
+					criterion: ""
+					id: "3DF5DB6BDBAA1C3B"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: 0.875d
+		}
+		{
+			dependencies: ["5308A52218AFD4B1"]
+			icon: {
+				id: "minecraft:soul_campfire"
+			}
+			id: "06B2E89F7AAD0CBA"
+			rewards: [
+				{
+					id: "580F621694B08031"
+					table_id: 5895024424703439718L
+					type: "random"
+				}
+				{
+					id: "7F9B8C7B1EB0F55C"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					advancement: "muchmoredungeons:slay_soulfire_crypt_guardian"
+					criterion: ""
+					id: "0FE8531E7481029F"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 0.875d
+		}
+		{
+			dependencies: ["6AFD03D05428FB28"]
+			icon: {
+				id: "cataclysm:monstrous_horn"
+			}
+			id: "786FC37A4A6098F2"
+			optional: true
+			rewards: [
+				{
+					id: "66C68F54533AA10A"
+					table_id: 5895024424703439718L
+					type: "random"
+				}
+				{
+					id: "7AAD86D19AE8A3F1"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					entity: "cataclysm:netherite_monstrosity"
+					id: "172ABD37BDC6C44F"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6AFD03D05428FB28"]
+			icon: {
+				id: "cataclysm:the_incinerator"
+			}
+			id: "117A2520497C8CF2"
+			optional: true
+			rewards: [
+				{
+					id: "3CF30C3369BB3C31"
+					table_id: 5895024424703439718L
+					type: "random"
+				}
+				{
+					id: "155FF62184A417C2"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					entity: "cataclysm:ignis"
+					id: "3F7A25F58A52B20B"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 4.0d
+			y: -1.75d
+		}
+		{
+			dependencies: ["6AFD03D05428FB28"]
+			icon: {
+				id: "block_factorys_bosses:knight_sword"
+			}
+			id: "4D80153791FC3844"
+			optional: true
+			rewards: [
+				{
+					id: "0C7576ABF4C073DB"
+					table_id: 5895024424703439718L
+					type: "random"
+				}
+				{
+					id: "2297D70478C85CCD"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					entity: "block_factorys_bosses:underworld_knight"
+					id: "08AA34AF29FE4114"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6AFD03D05428FB28"]
+			icon: {
+				id: "runeborn:relic_wither"
+			}
+			id: "616E722849BB220E"
+			rewards: [
+				{
+					id: "54522E093FCBEA1F"
+					table_id: 5895024424703439718L
+					type: "random"
+				}
+				{
+					id: "67D79BD064900674"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			shape: "gear"
+			size: 1.75d
+			tasks: [
+				{
+					entity: "minecraft:wither"
+					id: "05377A0B891C341F"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "55C485F829571B50"
+					item: {
+						count: 1
+						id: "runeborn:relic_wither"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["6AFD03D05428FB28"]
+			icon: {
+				id: "minecraft:netherite_scrap"
+			}
+			id: "0242238F2A247AFE"
+			rewards: [
+				{
+					id: "5F563824C00D5D92"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "5733D5672065220A"
+					item: {
+						count: 1
+						id: "minecraft:netherite_scrap"
+					}
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "321ECE6CA0D4C3ED"
+					item: {
+						count: 1
+						id: "runeborn:sovereign_fragment"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0242238F2A247AFE"]
+			icon: {
+				id: "runeborn:hellbrand"
+			}
+			id: "67ED0BC9562790E0"
+			rewards: [
+				{
+					id: "571125E35D23F91D"
+					table_id: 5895024424703439718L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "12D2C53E79648AF0"
+					item: {
+						count: 1
+						id: "runeborn:tempering_stone_7"
+					}
+					type: "item"
+				}
+				{
+					id: "103E3ED0D366E9D6"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "3EEED28F37C8C94C"
+					item: {
+						count: 1
+						id: "runeborn:sigil_morgrath"
+					}
+					type: "item"
+				}
+				{
+					advancement: "runeborn:feats/fell_morgrath"
+					criterion: ""
+					id: "11D99FABFCB87B56"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["67ED0BC9562790E0"]
+			icon: {
+				id: "minecraft:netherite_chestplate"
+			}
+			id: "25DE78C170374A07"
+			rewards: [
+				{
+					id: "0C230B59DF549EE0"
+					item: {
+						count: 1
+						id: "minecraft:netherite_upgrade_smithing_template"
+					}
+					type: "item"
+				}
+				{
+					id: "2CBEF1B132083618"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					id: "31006707DEF6AF01"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -0.875d
+		}
+		{
+			dependencies: ["67ED0BC9562790E0"]
+			icon: {
+				id: "minecraft:ender_eye"
+			}
+			id: "67F80731A0585B0A"
+			rewards: [
+				{
+					count: 8
+					id: "06E7C579E1BDC1D3"
+					item: {
+						count: 1
+						id: "minecraft:ender_pearl"
+					}
+					type: "item"
+				}
+				{
+					id: "002AEE026CCC003D"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "438FD2980138C63E"
+					structure: "betterstrongholds:stronghold"
+					type: "structure"
+				}
+			]
+			x: 8.0d
+			y: 0.875d
+		}
+		{
+			dependencies: ["67F80731A0585B0A"]
+			icon: {
+				id: "minecraft:end_stone"
+			}
+			id: "7CD33967D099FE24"
+			rewards: [
+				{
+					id: "4B08CBFC66510E46"
+					table_id: 5603019727193511887L
+					type: "random"
+				}
+				{
+					id: "0207CB60B3CA6DED"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			size: 1.75d
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					id: "7DF2E026E2E815B9"
+					type: "dimension"
+				}
+			]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7CD33967D099FE24"]
+			icon: {
+				id: "runeborn:relic_ender_dragon"
+			}
+			id: "4D0587808D220640"
+			rewards: [
+				{
+					id: "49E41F2B0510BE06"
+					table_id: 5895024424703439718L
+					type: "random"
+				}
+				{
+					id: "0AC6F8E99E6E6027"
+					item: {
+						count: 1
+						id: "runeborn:crown_shard_ender_dragon"
+					}
+					type: "item"
+				}
+				{
+					id: "6FB861783FCAE7AE"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					entity: "minecraft:ender_dragon"
+					id: "2850AF6D3FEAD077"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "002876477F251DA0"
+					item: {
+						count: 1
+						id: "minecraft:dragon_breath"
+					}
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D0587808D220640"]
+			icon: {
+				id: "runeborn:wyrmfang_halberd"
+			}
+			id: "5867200A6552CB88"
+			rewards: [
+				{
+					id: "6B032E6531DBF224"
+					table_id: 5895024424703439718L
+					type: "random"
+				}
+				{
+					id: "691B0CA8ECDB64DA"
+					item: {
+						count: 1
+						id: "runeborn:sovereign_tempering_stone"
+					}
+					type: "item"
+				}
+				{
+					id: "5703C612E37869E6"
+					type: "xp"
+					xp: 2000
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "2D8A5D554D91F6D6"
+					item: {
+						count: 1
+						id: "runeborn:sigil_vaelorn"
+					}
+					type: "item"
+				}
+				{
+					advancement: "runeborn:feats/fell_vaelorn"
+					criterion: ""
+					id: "6653BE14C36BF74C"
+					type: "advancement"
+				}
+			]
+			x: 14.0d
+			y: 0.0d
+		}
+	]
+}

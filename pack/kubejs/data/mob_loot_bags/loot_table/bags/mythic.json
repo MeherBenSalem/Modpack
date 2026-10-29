@@ -1,0 +1,99 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 4,
+        "max": 5
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_ingot",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_golden_apple",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "runeborn:sovereign_rune",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "runeborn:heros_rune",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "runeborn:lustrous_stone_7",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "runeborn:lustrous_stone_8",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "runeborn:lustrous_stone_9",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "runeborn:sovereign_tempering_stone",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "runeborn:sovereign_lustrous_stone",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "runeborn:hallowed_tear",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "runeborn:sunseed",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "rpg_attribute_system:tome_of_ascension",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elementals:remnant_tome",
+          "weight": 4
+        }
+      ]
+    }
+  ]
+}

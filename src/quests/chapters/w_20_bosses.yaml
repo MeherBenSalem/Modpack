@@ -1,0 +1,650 @@
+chapter: w_bosses
+group: world
+order: 20
+title: "&bBoss Compendium"
+subtitle: "Every crowned and nameless thing under the Eclipse, and the level it expects you to be."
+icon: remnant_bosses:boss_journal
+shape: gear
+quests:
+  # ---- The Sovereigns (one page; the main story walks you to each) ----
+  - key: seven_crowns
+    title: "&6Seven Crowns"
+    subtitle: "The Sovereigns. Levels 15 to 70."
+    icon: runeborn:sovereign_fragment
+    pos: [-3.5, 8.75]
+    shape: hexagon
+    size: 2.0
+    deps: [s1_act1_embers/kindle]
+    desc: |
+      The seven who broke the sun. Each one answers a &6Sigil&r: six Sovereign Fragments and a token. This page only keeps the tally.
+
+      &6Dusk Rider&r 15 · &6Varghast&r 20 · &6Sylvara&r 25 · &6Kaelthar&r 30 · &6Ysolde&r 35 · &6Morgrath&r 50 · &6Vaelorn&r 70.
+
+      Summon them in the open, with room to roll and full flasks. A Sovereign has a boss bar and no patience.
+
+      &7They wear borrowed bodies, so the world counts them by the feat, not the corpse.
+    tasks:
+      - {advancement: "runeborn:feats/fell_dusk_rider", title: "The Dusk Rider"}
+      - {advancement: "runeborn:feats/fell_varghast", title: "Varghast the Grafted"}
+      - {advancement: "runeborn:feats/fell_sylvara", title: "Sylvara, Frost Matron"}
+      - {advancement: "runeborn:feats/fell_kaelthar", title: "Kaelthar the Stormcaller"}
+      - {advancement: "runeborn:feats/fell_ysolde", title: "Ysolde, the Crimson Bloom"}
+      - {advancement: "runeborn:feats/fell_morgrath", title: "Morgrath, Ash Sovereign"}
+      - {advancement: "runeborn:feats/fell_vaelorn", title: "Vaelorn, the Wyrm-Ravager"}
+    rewards: [{item: runeborn:heros_rune, count: 2}, {xp: 1000}]
+
+  # ---- Act I: levels 15-20 ----
+  - key: tenth_night
+    title: "Invaders of the Tenth Night"
+    subtitle: "Born in Chaos. Level 15–20."
+    icon: born_in_chaos_v1:supreme_bonescaller_spawn_egg
+    pos: [0, 0]
+    deps: [s1_act1_embers/kindle]
+    desc: |
+      From the tenth night on, the world gets visitors. The chat warns you: &c"Something powerful is invading this world..."&r
+
+      The &6Supreme Bonescaller&r raises skeletons, then gets up again in a second form. Kill the summons only when they stand between you and him.
+
+      The &6Nightmare Stalker&r hunts you, not the other way round. Fight it in the light with a wall at your back, and never chase it into the dark.
+    tasks:
+      - {advancement: "born_in_chaos_v1:dismantledto_bones", title: "Slay the Supreme Bonescaller"}
+      - {advancement: "born_in_chaos_v1:fighting_nightmares", title: "Slay the Nightmare Stalker"}
+    rewards: [{table: world_ember_spoils}, {xp: 300}]
+
+  - key: wroughtnaut
+    title: "The Ferrous Wroughtnaut"
+    subtitle: "A sealed chamber underground. Level 20."
+    icon: mowziesmobs:wrought_axe
+    pos: [2, 0]
+    size: 1.5
+    deps: [s1_act1_embers/kindle]
+    desc: |
+      An empty suit of armour with an axe and a grudge, locked in a &6Wrought Chamber&r under the hills.
+
+      From the front it shrugs off everything. Bait the big swing, roll aside, and when the axe bites the floor, get behind it and hit its back. Repeat until it stops getting up.
+    tasks:
+      - {structure: "mowziesmobs:wrought_chamber", title: "Find the Wrought Chamber"}
+      - {kill: "mowziesmobs:ferrous_wroughtnaut"}
+    rewards: [{table: world_ember_spoils}, {xp: 350}]
+
+  - key: yeti
+    title: "Skor, the Yeti"
+    subtitle: "A hideout in the snowy plains. Level 20."
+    icon: block_factorys_bosses:ice_gauntlet
+    pos: [4, 0]
+    size: 1.5
+    deps: [s1_act1_embers/kindle]
+    desc: |
+      Something with a great deal of fur keeps a hideout in the snowy plains, and it throws ice the size of a cart.
+
+      Spikes run along the ground before they erupt: roll across the line, not along it. When it leaps, move. When it lands, punish.
+    tasks:
+      - {structure: "block_factorys_bosses:yeti_hideout", title: "Find the Yeti's hideout"}
+      - {kill: "block_factorys_bosses:yeti"}
+    rewards: [{table: world_ember_spoils}, {xp: 350}]
+
+  - key: krampus
+    title: "Naughty Child"
+    subtitle: "Born in Chaos. Level 20. If you've earned it."
+    icon: born_in_chaos_v1:krampus_spawn_egg
+    pos: [6, 0]
+    optional: true
+    deps: [s1_act1_embers/kindle]
+    desc: |
+      Make enough mischief and &6Krampus&r comes for you, with henchmen and a sack.
+
+      He hits hard and never comes alone. Clear the henchmen first, keep moving, and don't let him pin you in a corner.
+
+      &7If he never shows up, congratulations: you're on the other list.
+    tasks: [{kill: "born_in_chaos_v1:krampus"}]
+    rewards: [{table: world_ember_spoils}, {xp: 300}]
+
+  # ---- Act II: levels 25-35 ----
+  - key: mutants
+    title: "Things That Rose Wrong"
+    subtitle: "Mutant Monsters. Level 25."
+    icon: mutantmonsters:hulk_hammer
+    pos: [0, 2.5]
+    deps: [s1_act2_hunt/hunters_moon]
+    desc: |
+      Sometimes the dead come back &obigger&r. Mutants walk the Overworld on rare nights; the enderman kind prefers the End.
+
+      The &6Mutant Zombie&r goes down and gets back up: set it on fire while it's down. The &6Mutant Skeleton&r out-shoots you, so close in. The &6Mutant Creeper&r pounces; don't be where it lands. The &6Mutant Enderman&r throws the landscape at you.
+    tasks:
+      - {kill: "mutantmonsters:mutant_zombie"}
+      - {kill: "mutantmonsters:mutant_skeleton"}
+      - {kill: "mutantmonsters:mutant_creeper"}
+      - {kill: "mutantmonsters:mutant_enderman"}
+    rewards: [{table: world_hunt_spoils}, {xp: 500}]
+
+  - key: umvuthi
+    title: "Umvuthi, the Sunbird"
+    subtitle: "An Umvuthana grove in the savanna. Level 25."
+    icon: mowziesmobs:sol_visage
+    pos: [2, 2.5]
+    size: 1.5
+    deps: [s1_act2_hunt/hunters_moon]
+    desc: |
+      The masked &6Umvuthana&r guard a grove in the savanna, and their chief wears the sun for a face.
+
+      Thin the masks before you go up to him. When he calls the sun down, get out from under the beam; when he leaps, he lands where you were standing.
+
+      &7Wear one of their masks and they may take you for family. Briefly.
+    tasks:
+      - {structure: "mowziesmobs:umvuthana_grove", title: "Find an Umvuthana grove"}
+      - {kill: "mowziesmobs:umvuthi"}
+    rewards: [{table: world_hunt_spoils}, {xp: 500}]
+
+  - key: frostmaw
+    title: "The Frostmaw"
+    subtitle: "Asleep in the snowfields. Level 25."
+    icon: mowziesmobs:ice_crystal
+    pos: [4, 2.5]
+    size: 1.5
+    deps: [s1_act2_hunt/hunters_moon]
+    desc: |
+      A white brute the size of a house, asleep on the open snow. You can steal the &6Ice Crystal&r it keeps while it sleeps. You can also try to walk away afterwards.
+
+      Its breath freezes and its swipes sweep wide. Stay at its flank, roll the slam, and never fight it on thin ice.
+    tasks: [{kill: "mowziesmobs:frostmaw"}]
+    rewards: [{item: runeborn:lustrous_rune, count: 2}, {xp: 250}]
+
+  - key: sculptor
+    title: "Tongbi, the Sculptor"
+    subtitle: "A monastery on the peaks. Any level."
+    icon: mowziesmobs:earthrend_gauntlet
+    pos: [6, 2.5]
+    deps: [s1_act2_hunt/hunters_moon]
+    desc: |
+      Not every boss wants you dead. This one wants you to climb.
+
+      Find the monastery on a mountain peak and take the &6Sculptor's test&r: reach the top of the moving pillar before time runs out, then speak to the Sculptor again. No placing blocks, no pearls, no flying.
+
+      &7Falling is permitted. Once.
+    tasks:
+      - {structure: "mowziesmobs:monastery", title: "Find the monastery"}
+      - {advancement: "mowziesmobs:sculptor_challenge", title: "Pass the Sculptor's test"}
+    rewards: [{table: world_hunt_spoils}, {xp: 400}]
+
+  - key: sandworm
+    title: "Sirok, the Sandworm"
+    subtitle: "A nest in the desert. Level 25."
+    icon: block_factorys_bosses:sandworm_gauntlet
+    pos: [8, 2.5]
+    size: 1.5
+    deps: [s1_act2_hunt/hunters_moon]
+    desc: |
+      The desert has a mouth. Find its &6nest&r and stand where the sand trembles, briefly.
+
+      It surfaces under you, spits poison and dives again. Keep moving so it misses, stay out of the green pools, and hit it hard every time it shows its head.
+    tasks:
+      - {structure: "block_factorys_bosses:sandworm_nest", title: "Find the Sandworm's nest"}
+      - {kill: "block_factorys_bosses:sandworm"}
+    rewards: [{table: world_hunt_spoils}, {xp: 500}]
+
+  - key: ice_maze
+    title: "Ghosts of the Ice Maze"
+    subtitle: "Aquamirae. Level 25–30."
+    icon: aquamirae:frozen_key
+    pos: [0, 5]
+    size: 1.5
+    deps: [s1_act2_hunt/hunters_moon]
+    desc: |
+      The deep frozen ocean is a maze of ice and wrecks, and two things rule it.
+
+      The &6Maze Mother&r hunts the channels. Fight her from solid ice, never from the water.
+
+      The &6Ghost of Captain Cornelia&r answers a &6Shell Horn&r from the frozen pirate ships, blown at the water's edge. She keeps the &6Frozen Key&r. Bring Water Breathing and something to stand on.
+    tasks:
+      - {kill: "aquamirae:maze_mother"}
+      - {kill: "aquamirae:captain_cornelia"}
+    rewards: [{table: world_hunt_spoils}, {xp: 600}]
+
+  - key: pumpkinhead
+    title: "Lord Pumpkinhead"
+    subtitle: "Born in Chaos. Level 30."
+    icon: born_in_chaos_v1:lord_pumpkinheads_lamp
+    pos: [2, 5]
+    size: 1.5
+    deps: [s1_act2_hunt/hunters_moon]
+    desc: |
+      Pour a &6Transmuting Elixir&r on an &6Infernal Evil Pumpkin&r and the Lord rides out on a burning horse.
+
+      Take the horse out from under him first: on foot he's slower and angrier, in that order. His bombs are slow, but they are still bombs.
+    tasks: [{advancement: "born_in_chaos_v1:pumpkin_lord", title: "Slay Lord Pumpkinhead"}]
+    rewards: [{table: world_hunt_spoils}, {xp: 600}]
+
+  - key: invoker
+    title: "The Invoker"
+    subtitle: "An Illager fort in the taiga. Level 30."
+    icon: illagerinvasion:hallowed_gem
+    pos: [4, 5]
+    deps: [s1_act2_hunt/hunters_moon]
+    desc: |
+      The illagers keep a sorcerer at the heart of their &6forts&r in the taiga and the snow.
+
+      It conjures fangs under your feet and raises its dead to fight for it. Never stand still, put the summons down fast, and close in between casts.
+    tasks:
+      - {structure: "illagerinvasion:illager_fort", title: "Find an Illager Fort"}
+      - {kill: "illagerinvasion:invoker"}
+    rewards: [{table: world_hunt_spoils}, {xp: 500}]
+
+  - key: night_lich
+    title: "The Night Lich"
+    subtitle: "A tower in the cold lands. Level 30."
+    icon: bosses_of_mass_destruction:soul_star
+    pos: [6, 5]
+    size: 1.5
+    deps: [s1_act2_hunt/hunters_moon]
+    desc: |
+      Bosses of Mass Destruction's &6Night Lich&r keeps a tower in the snow. Not to be confused with the other lich. Or the other other one.
+
+      It fights from range: volleys of blue fire and comets out of the sky. Close the gap after each volley; up close it's all bones.
+    tasks:
+      - {structure: "bosses_of_mass_destruction:lich_tower", title: "Find the Lich's tower"}
+      - {kill: "bosses_of_mass_destruction:lich"}
+    rewards: [{table: world_hunt_spoils}, {xp: 600}]
+
+  - key: corrupted_champion
+    title: "The Corrupted Champion"
+    subtitle: "A cursed island in the frozen sea. Level 35."
+    icon: graveyard:black_bone_staff
+    pos: [8, 5]
+    size: 1.5
+    deps: [s1_act2_hunt/hunters_moon]
+    desc: |
+      The Graveyard's lich (no relation to the gold-titled kind) is chained on an island in the frozen ocean.
+
+      Wake it at its altar, at night, with a full &6Vial of Blood&r and all three &6bone staff&r pieces. It has three forms, heals itself and lifts you off your feet: bring Slow Falling and punish every stagger.
+    tasks:
+      - {structure: "graveyard:lich_prison", title: "Find the Cursed Island"}
+      - {kill: "graveyard:lich"}
+    rewards: [{table: world_hunt_spoils}, {xp: 700}]
+
+  # ---- Act III: levels 30-50 ----
+  - key: elder_guardian
+    title: "&5The Elder Guardian"
+    subtitle: "Old Power. An ocean monument. Level 30."
+    icon: runeborn:relic_elder_guardian
+    pos: [0, 7.5]
+    size: 1.5
+    deps: [s1_act2_hunt/sylvara]
+    desc: |
+      The oldest thing in the sea keeps a relic in its monument, and it would like you to stop mining, thank you.
+
+      Bring Water Breathing and milk for the fatigue. Break line of sight when its eye starts to glow; doors hold air.
+    tasks: [{kill: "minecraft:elder_guardian"}]
+    rewards: [{item: runeborn:radiant_rune}, {xp: 300}]
+
+  - key: warden
+    title: "&5The Warden"
+    subtitle: "Old Power. An ancient city. Level 45."
+    icon: runeborn:relic_warden
+    pos: [2, 7.5]
+    size: 1.5
+    deps: [s1_act2_hunt/sylvara]
+    desc: |
+      Blind, patient and older than the Crown. It hears your footsteps and smells your fear, and its roar goes through walls.
+
+      Sneak. Throw snowballs or arrows to send it elsewhere. If you must fight, never stand in a straight line with it when it draws breath.
+    tasks: [{kill: "minecraft:warden"}]
+    rewards: [{item: runeborn:radiant_rune}, {xp: 400}]
+
+  - key: stalker
+    title: "The Stalker"
+    subtitle: "Deeper and Darker. The Otherside. Level 50."
+    icon: deeperdarker:stalker_spawn_egg
+    pos: [4, 7.5]
+    deps: [warden]
+    desc: |
+      Below the ancient cities lies the &6Otherside&r, and something there hunts the way the Warden does: by sound.
+
+      It rises out of the floor where you last made noise and dims your sight. It's slow to start: hit it as it surfaces, then get clear before the shockwave ring.
+    tasks:
+      - {dimension: "deeperdarker:otherside", title: "Enter the Otherside"}
+      - {kill: "deeperdarker:stalker"}
+    rewards: [{table: world_deep_spoils}, {xp: 800}]
+
+  - key: void_blossom
+    title: "The Void Blossom"
+    subtitle: "A cavern deep underground. Level 35."
+    icon: bosses_of_mass_destruction:void_thorn
+    pos: [6, 7.5]
+    size: 1.5
+    deps: [s1_act2_hunt/sylvara]
+    desc: |
+      A flower the size of a chapel, rooted in a cavern far below the surface. It can't move, so it makes sure you can't either.
+
+      Thorns erupt under your feet, petals fly and spores linger. Keep your feet moving between volleys and cut it down while it reloads.
+    tasks:
+      - {structure: "bosses_of_mass_destruction:void_blossom", title: "Find the Void Blossom's cavern"}
+      - {kill: "bosses_of_mass_destruction:void_blossom"}
+    rewards: [{table: world_deep_spoils}, {xp: 700}]
+
+  - key: kraken
+    title: "Nerakyss, the Kraken"
+    subtitle: "A pirate wreck on the deep ocean. Level 35."
+    icon: block_factorys_bosses:kraken_tooth
+    pos: [8, 7.5]
+    size: 1.5
+    deps: [s1_act2_hunt/sylvara]
+    desc: |
+      The ship still has a crew, and the crew still has a captain, and the captain is mostly tentacles.
+
+      Clear the deck before you wake it. Fight on the planks, cut each tentacle as it rises, and stay out of the cannons' line.
+    tasks:
+      - {structure: "block_factorys_bosses:kraken_ship", title: "Board the Kraken's ship"}
+      - {kill: "block_factorys_bosses:kraken"}
+    rewards: [{item: runeborn:radiant_rune}, {xp: 400}]
+
+  - key: ashlord
+    title: "Ashlord, the Infernal Dragon"
+    subtitle: "A dragon's tower. Level 40."
+    icon: block_factorys_bosses:dragon_bone
+    pos: [10, 7.5]
+    size: 1.5
+    deps: [s1_act2_hunt/sylvara]
+    desc: |
+      Climb the &6dragon's tower&r past its burning guard. The top floor is a nest, and the nest is occupied.
+
+      Fire Resistance first, questions later. It breathes in long sweeps: roll toward its flank, never back toward the edge.
+    tasks:
+      - {structure: "block_factorys_bosses:dragon_tower", title: "Find the dragon's tower"}
+      - {kill: "block_factorys_bosses:infernal_dragon"}
+    rewards: [{table: world_deep_spoils}, {xp: 800}]
+
+  - key: ancient_remnant
+    title: "&cThe Ancient Remnant"
+    subtitle: "The Cursed Pyramid. Level 40."
+    icon: cataclysm:wrath_of_the_desert
+    pos: [0, 10]
+    size: 1.5
+    deps: [s1_act2_hunt/sylvara]
+    desc: |
+      The first Remnant of all sleeps under a pyramid in the desert. Brush the suspicious sand inside for the &6Necklace of the Desert&r, and it wakes.
+
+      It charges in straight lines and calls up sandstorms. Roll its charge sideways, and keep your distance while the storms are up.
+    tasks:
+      - {structure: "cataclysm:cursed_pyramid", title: "Find the Cursed Pyramid"}
+      - {kill: "cataclysm:ancient_remnant"}
+    rewards: [{item: runeborn:radiant_rune}, {xp: 500}]
+
+  - key: harbinger
+    title: "The Harbinger"
+    subtitle: "The Ancient Factory, underground. Level 45."
+    icon: cataclysm:wither_assault_shoulder_weapon
+    pos: [2, 10]
+    size: 1.5
+    deps: [s1_act2_hunt/sylvara]
+    desc: |
+      A war machine from before the Crown, switched off and waiting in a buried &6factory&r. It wakes for a &6Nether Star&r. Think about that before you offer one.
+
+      Its missiles follow you: break line of sight behind pillars. Its lasers sweep: roll through, never along.
+    tasks:
+      - {structure: "cataclysm:ancient_factory", title: "Find the Ancient Factory"}
+      - {kill: "cataclysm:the_harbinger"}
+    rewards: [{table: world_deep_spoils}, {xp: 900}]
+
+  - key: leviathan
+    title: "The Leviathan"
+    subtitle: "The Sunken City. Level 45."
+    icon: cataclysm:tidal_claws
+    pos: [4, 10]
+    size: 1.5
+    deps: [s1_act2_hunt/sylvara]
+    desc: |
+      Under the deep ocean lies a city, and an &6Altar of Abyss&r that wants an &6Abyssal Sacrifice&r.
+
+      It cannot be hurt out of the water, so you must go in after it. Water Breathing, Depth Strider, and roll away from the tentacles, not into the dark.
+    tasks:
+      - {structure: "cataclysm:sunken_city", title: "Find the Sunken City"}
+      - {kill: "cataclysm:the_leviathan"}
+    rewards: [{item: runeborn:radiant_rune}, {xp: 500}]
+
+  - key: maledictus
+    title: "Maledictus"
+    subtitle: "The Frosted Prison. Level 45."
+    icon: cataclysm:cursium_ingot
+    pos: [6, 10]
+    size: 1.5
+    deps: [s1_act2_hunt/sylvara]
+    desc: |
+      Someone built a prison in the snowy plains for a cursed warrior and forgot to finish the job.
+
+      It leaps across the room and rains phantom halberds and arrows. Watch where it jumps, stay mobile, and hit hard every time it lands.
+    tasks:
+      - {structure: "cataclysm:frosted_prison", title: "Find the Frosted Prison"}
+      - {kill: "cataclysm:maledictus"}
+    rewards: [{table: world_deep_spoils}, {xp: 900}]
+
+  - key: scylla
+    title: "Scylla, the Storm Empress"
+    subtitle: "The Acropolis, over the warm sea. Level 50."
+    icon: cataclysm:ceraunus
+    pos: [8, 10]
+    size: 1.5
+    deps: [s1_act2_hunt/sylvara]
+    desc: |
+      Kaelthar talked to storms. &6Scylla&r owns one, and holds court at the &6Acropolis&r over the warm sea.
+
+      Her lightning spears telegraph a line before they land: sidestep, don't backpedal. When she throws the anchor, it comes back.
+    tasks:
+      - {structure: "cataclysm:acropolis", title: "Find the Acropolis"}
+      - {kill: "cataclysm:scylla"}
+    rewards: [{table: world_deep_spoils}, {xp: 1000}]
+
+  # ---- Act IV: the Ashlands, levels 50-65 ----
+  - key: wildfire
+    title: "The Wildfire"
+    subtitle: "A Nether citadel. Level 50."
+    icon: friendsandfoes:wildfire_crown
+    pos: [0, 12.5]
+    deps: [s1_act3_deep/ysolde]
+    desc: |
+      The blazes answer to something bigger, and it keeps a &6citadel&r in the Ashlands.
+
+      Shields orbit it; break them before you bother with the rest. It calls more blazes and slams the ground. Fire Resistance, and fight with your back to nothing.
+    tasks:
+      - {structure: "friendsandfoes:citadel", title: "Find a Nether citadel"}
+      - {kill: "friendsandfoes:wildfire"}
+    rewards: [{table: world_ash_spoils}, {xp: 800}]
+
+  - key: monstrosity
+    title: "The Netherite Monstrosity"
+    subtitle: "The Soul Forge. Level 55."
+    icon: cataclysm:monstrous_horn
+    pos: [2, 12.5]
+    size: 1.5
+    deps: [s1_act3_deep/ysolde]
+    desc: |
+      A forge that learned to walk. It sleeps in the &6Soul Forge&r until something warm comes close.
+
+      It's slow and it telegraphs everything. Roll the slam's shockwave, stay out of the lava it throws, and never trade blows with it.
+    tasks:
+      - {structure: "cataclysm:soul_black_smith", title: "Find the Soul Forge"}
+      - {kill: "cataclysm:netherite_monstrosity"}
+    rewards: [{item: runeborn:heros_rune}, {xp: 500}]
+
+  - key: gauntlet
+    title: "The Nether Gauntlet"
+    subtitle: "An arena under the Ashlands. Level 55."
+    icon: bosses_of_mass_destruction:blazing_eye
+    pos: [4, 12.5]
+    size: 1.5
+    deps: [s1_act3_deep/ysolde]
+    desc: |
+      A floating fist of black iron in a buried arena. It punches, it fires lasers, and most of the time you might as well be hitting a wall.
+
+      Wait for the eye in its palm to open. That's the fight. Everything else is not getting hit while you wait.
+    tasks:
+      - {structure: "bosses_of_mass_destruction:gauntlet_arena", title: "Find the Gauntlet's arena"}
+      - {kill: "bosses_of_mass_destruction:gauntlet"}
+    rewards: [{table: world_ash_spoils}, {xp: 900}]
+
+  - key: underworld_knight
+    title: "Helvar, the Underworld Knight"
+    subtitle: "The Underworld Arena. Level 55."
+    icon: block_factorys_bosses:knight_sword
+    pos: [6, 12.5]
+    size: 1.5
+    deps: [s1_act3_deep/ysolde]
+    desc: |
+      A duel, nothing more. The arena keeps its keys in its own vaults; find them and the knight will see you.
+
+      Read the sword waves, roll &othrough&r them and punish the recovery. When his weak point shows, that's your window. Take it.
+    tasks:
+      - {structure: "block_factorys_bosses:underworld_arena", title: "Find the Underworld Arena"}
+      - {kill: "block_factorys_bosses:underworld_knight"}
+    rewards: [{item: runeborn:heros_rune}, {xp: 500}]
+
+  - key: ignis
+    title: "Ignis"
+    subtitle: "The Burning Arena. Level 60."
+    icon: cataclysm:ignitium_ingot
+    pos: [8, 12.5]
+    size: 1.5
+    deps: [s1_act3_deep/ysolde]
+    desc: |
+      Lay &6Burning Ashes&r on the &6Altar of Fire&r in the Burning Arena and a knight made of flame stands up.
+
+      Sword, shield and three moods. Don't attack into the shield; punish after the charge. When its flames turn blue, it has stopped holding back.
+    tasks:
+      - {structure: "cataclysm:burning_arena", title: "Find the Burning Arena"}
+      - {kill: "cataclysm:ignis"}
+    rewards: [{item: runeborn:heros_rune}, {xp: 600}]
+
+  - key: wither
+    title: "&5The Wither"
+    subtitle: "Old Power. Level 60."
+    icon: runeborn:relic_wither
+    pos: [10, 12.5]
+    size: 1.5
+    deps: [s1_act3_deep/ysolde]
+    desc: |
+      Three skulls and soul sand make a thing that hates everything that lives. It keeps a relic of the world before.
+
+      Build it underground so it can't fly away from you. Below half health it wears armour against arrows: put the bow away and go in with steel and milk.
+    tasks: [{kill: "minecraft:wither"}]
+    rewards: [{item: runeborn:heros_rune}, {xp: 600}]
+
+  # ---- The End: levels 65-75 ----
+  - key: ender_dragon
+    title: "&5The Ender Dragon"
+    subtitle: "Old Power. The Last Shore. Level 65."
+    icon: runeborn:relic_ender_dragon
+    pos: [0, 15]
+    size: 1.5
+    deps: [s1_act3_deep/ysolde]
+    desc: |
+      The Dragon remembers the sun, and it remembers the Eighth. It keeps its relic, and a Crown Shard, on the island at the world's edge.
+
+      Break the crystals before the dragon. Bring empty bottles: its &6breath&r is Vaelorn's token.
+    tasks: [{kill: "minecraft:ender_dragon"}]
+    rewards: [{item: runeborn:heros_rune}, {xp: 800}]
+
+  - key: ender_guardian
+    title: "The Ender Guardian"
+    subtitle: "The Ruined Citadel. Level 70."
+    icon: cataclysm:gauntlet_of_guard
+    pos: [2, 15]
+    size: 1.5
+    deps: [s1_act4_ash/vaelorn]
+    desc: |
+      A knight in void-black armour keeps the &6Ruined Citadel&r on the outer End islands.
+
+      Void runes burst from the floor in rows: keep moving. It pulls you in with its gauntlet, so roll when the fist opens. When the helmet breaks, it gets faster.
+    tasks:
+      - {structure: "cataclysm:ruined_citadel", title: "Find the Ruined Citadel"}
+      - {kill: "cataclysm:ender_guardian"}
+    rewards: [{table: world_eclipse_spoils}, {xp: 1200}]
+
+  - key: obsidilith
+    title: "The Obsidilith"
+    subtitle: "An arena among the End islands. Level 75."
+    icon: bosses_of_mass_destruction:obsidian_heart
+    pos: [4, 15]
+    size: 1.5
+    deps: [s1_act4_ash/vaelorn]
+    desc: |
+      A pillar of living obsidian. It doesn't walk; it doesn't need to.
+
+      Its runes change colour before each attack. Learn the colours, and the fight becomes a dance. Ignore them, and it becomes a short one.
+    tasks:
+      - {structure: "bosses_of_mass_destruction:obsidilith_arena", title: "Find the Obsidilith's arena"}
+      - {kill: "bosses_of_mass_destruction:obsidilith"}
+    rewards: [{table: world_eclipse_spoils}, {xp: 1200}]
+
+  # ---- The Eclipsed Realm: levels 75-100 ----
+  - key: burial_guardian
+    title: "The Burial Guardian"
+    subtitle: "The Eclipsed Realm. Level 75."
+    icon: remnant_bosses:grave_iron
+    pos: [0, 17.5]
+    deps: [s1_act5_realm/enter]
+    hide_until_deps: true
+    desc: |
+      The Cryptborn's warden-in-waiting. It carries the &6Grave Iron&r you need for a &6Crypt Key&r: six around an iron block.
+
+      It's slow and heavy-handed. Bait the swing, roll, punish. Leave the rats for later.
+    tasks: [{kill: "remnants:burial_guardian"}]
+    rewards: [{item: runeborn:heros_rune}, {xp: 600}]
+
+  - key: gravebound_warden
+    title: "The Gravebound Warden"
+    subtitle: "The Gravebound Catacombs. Level 80."
+    icon: remnant_bosses:wardens_grasp
+    pos: [2, 17.5]
+    size: 1.5
+    deps: [burial_guardian]
+    hide_until_deps: true
+    desc: |
+      An executioner in a chain chapel, behind a fog gate. The altar is already set; the &6Crypt Key&r wakes him.
+
+      Wide sweeps, chain grabs, graves bursting under you. At half health he raises chain walls: break the four &6anchors&r to stagger him, then make it count.
+    tasks: [{kill: "remnants:gravebound_warden"}]
+    rewards: [{item: runeborn:heros_rune}, {xp: 800}]
+
+  - key: forgotten_watcher
+    title: "The Forgotten Watcher"
+    subtitle: "The Forgotten Observatory. Level 85."
+    icon: remnant_bosses:memory_staff
+    pos: [4, 17.5]
+    size: 1.5
+    deps: [s1_act5_realm/enter]
+    hide_until_deps: true
+    desc: |
+      It remembers everything except why. A &6Lens of Memory&r wakes it in the dome of its observatory.
+
+      It fires rings of memory bolts and a beam, then blinks between four lens platforms. In its second phase come the illusions and a crystal aegis: find the real one and break the shield.
+    tasks: [{kill: "remnants:forgotten_watcher"}]
+    rewards: [{item: runeborn:heros_rune}, {xp: 800}]
+
+  - key: ossukage
+    title: "&cRemnant: Ossukage"
+    subtitle: "Anywhere you dare. Level 90."
+    icon: remnant_bosses:ossukage_sword
+    pos: [6, 17.5]
+    size: 1.5
+    deps: [wither, s1_act5_realm/enter]
+    hide_until_deps: true
+    desc: |
+      He calls himself the original Remnant. Four skeleton skulls on the pedestals, a &6Nether Star&r on the altar, and he rises: in any world you like.
+
+      He can't be hurt while he rises; use the time to breathe. Sword chains and kunai first, then he changes, raises soldiers and dashes. Roll the dash late.
+    tasks: [{kill: "remnants:ossukage"}]
+    rewards: [{item: runeborn:heros_rune}, {xp: 800}]
+
+  - key: hollow_sovereign
+    title: "&6&lThe Hollow Sovereign"
+    subtitle: "The Hollow Citadel. Level 100."
+    icon: remnant_bosses:hollow_crown
+    pos: [8.75, 17.5]
+    size: 2.0
+    deps: [gravebound_warden, forgotten_watcher, ossukage]
+    hide_until_deps: true
+    desc: |
+      The Eighth. A crown with nothing inside, on a throne under the black sun.
+
+      An axe breaks his guard. At two thirds he sends his pauldrons and his spectral guard; at one third, crescents and a lunge. At the very end he gives &c"The Last Command"&r. Keep a flask for it.
+    tasks: [{kill: "remnants:hollow_sovereign"}]
+    rewards: [{table: world_eclipse_spoils}, {xp: 2000}]

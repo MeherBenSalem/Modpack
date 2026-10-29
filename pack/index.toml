@@ -586,15 +586,15 @@ hash = "0a6023bdd97fd82ae544a44d27e93c0139b8fea542e6debef764e0acce1a9c1b"
 
 [[files]]
 file = "kubejs/server_scripts/remnants/echo.js"
-hash = "66b86be51173a277967584d77741d3d01cb827224fcb9a4d018e188964416cb7"
+hash = "da4652c067c839514e251f8ef3658c8552c4e4307d9ab02b3434fd1e7cf4cb72"
 
 [[files]]
 file = "kubejs/server_scripts/remnants/eclipse.js"
-hash = "8a4bd53741cdbdfc807ebc7db5fd2bf27eed66152e5196acd139c6aaa1e4986d"
+hash = "0ab91f75e857c104ea85f2b4c32d03f2d5e1218b2f1bd270e03736bcf25e71eb"
 
 [[files]]
 file = "kubejs/server_scripts/remnants/lastlight.js"
-hash = "0bbec8733b7047b18d306c31c9f62d51252ab63fb434be16d347263f45652dbe"
+hash = "eeca0594e12b8dab0e93d8b3c60ec9ab12cc618a28e0f8a0b487238fae94bf09"
 
 [[files]]
 file = "mods/alltheleaks.pw.toml"

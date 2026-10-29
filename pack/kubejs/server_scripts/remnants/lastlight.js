@@ -9,7 +9,7 @@
 //   /lastlight echoes <on|off>         toggle Echoes of the Fallen for this world (ops)
 
 function lastLightTrade(buy, sell, buyB) {
-  const stack = s => `{id:"${s[0]}",count:${s[1]}}`
+  var stack = s => `{id:"${s[0]}",count:${s[1]}}`
   return `{buy:${stack(buy)},${buyB ? `buyB:${stack(buyB)},` : ''}sell:${stack(sell)},` +
     'maxUses:2147483647,rewardExp:0b,xp:0,priceMultiplier:0.0f}'
 }
@@ -62,9 +62,9 @@ const LAST_LIGHT_NPCS = {
 }
 
 function lastLightSummon(server, key, dim, x, y, z) {
-  const npc = LAST_LIGHT_NPCS[key]
-  const name = JSON.stringify(JSON.stringify({ text: npc.name, color: npc.color, italic: false }))
-  const offers = npc.trades.map(t => lastLightTrade(t[0], t[1], t[2])).join(',')
+  var npc = LAST_LIGHT_NPCS[key]
+  var name = JSON.stringify(JSON.stringify({ text: npc.name, color: npc.color, italic: false }))
+  var offers = npc.trades.map(t => lastLightTrade(t[0], t[1], t[2])).join(',')
   server.runCommandSilent(`execute in ${dim} run summon minecraft:villager ${x} ${y} ${z} {CustomName:${name},` +
     'CustomNameVisible:1b,NoAI:1b,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,' +
     `Tags:["lastlight_npc","lastlight_${key}"],` +
@@ -73,17 +73,17 @@ function lastLightSummon(server, key, dim, x, y, z) {
 }
 
 function lastLightArrive(server, key, player) {
-  const npc = LAST_LIGHT_NPCS[key]
+  var npc = LAST_LIGHT_NPCS[key]
   if (!npc) return 0
-  const flag = `lastlight_arrived_${key}`
+  var flag = `lastlight_arrived_${key}`
   if (server.persistentData.getBoolean(flag)) {
     player.tell(Text.gray(`${npc.name} is already at Last Light.`))
     return 1
   }
   server.persistentData.putBoolean(flag, true)
-  const a = player.yRot * Math.PI / 180
-  const x = (player.x - Math.sin(a) * 2).toFixed(2)
-  const z = (player.z + Math.cos(a) * 2).toFixed(2)
+  var a = player.yRot * Math.PI / 180
+  var x = (player.x - Math.sin(a) * 2).toFixed(2)
+  var z = (player.z + Math.cos(a) * 2).toFixed(2)
   lastLightSummon(server, key, String(player.level.dimension), x, player.y.toFixed(2), z)
   server.runCommandSilent(`tellraw @a [{"text":"${npc.name}","color":"${npc.color}"},` +
     `{"text":" has come to Last Light. ","color":"gray"},{"text":${JSON.stringify(npc.line)},"color":"gray","italic":true}]`)
@@ -91,8 +91,8 @@ function lastLightArrive(server, key, player) {
 }
 
 ServerEvents.commandRegistry(event => {
-  const { commands: Commands, arguments: Arguments } = event
-  const npcArg = () => Commands.argument('npc', Arguments.WORD.create(event))
+  var { commands: Commands, arguments: Arguments } = event
+  var npcArg = () => Commands.argument('npc', Arguments.WORD.create(event))
     .suggests((ctx, builder) => {
       Object.keys(LAST_LIGHT_NPCS).forEach(k => builder.suggest(k))
       return builder.buildFuture()
@@ -101,7 +101,7 @@ ServerEvents.commandRegistry(event => {
   event.register(Commands.literal('lastlight')
     .then(Commands.literal('eclipse').executes(ctx => {
       try {
-        const player = ctx.source.player
+        var player = ctx.source.player
         eclipseShowBar(ctx.source.server, player ? player.username : '@a', 15)
         return 1
       } catch (e) {
@@ -114,17 +114,17 @@ ServerEvents.commandRegistry(event => {
         lastLightArrive(ctx.source.server, Arguments.WORD.getResult(ctx, 'npc'), Arguments.PLAYER.getResult(ctx, 'player'))))))
     .then(Commands.literal('spawnat').requires(s => s.hasPermission(2))
       .then(npcArg().then(Commands.argument('pos', Arguments.BLOCK_POS.create(event)).executes(ctx => {
-        const key = Arguments.WORD.getResult(ctx, 'npc')
+        var key = Arguments.WORD.getResult(ctx, 'npc')
         if (!LAST_LIGHT_NPCS[key]) return 0
-        const pos = Arguments.BLOCK_POS.getResult(ctx, 'pos')
+        var pos = Arguments.BLOCK_POS.getResult(ctx, 'pos')
         lastLightSummon(ctx.source.server, key, String(ctx.source.level.dimension), pos.x + 0.5, pos.y, pos.z + 0.5)
         return 1
       }))))
     .then(Commands.literal('testecho').requires(s => s.hasPermission(2))
       .then(Commands.argument('pos', Arguments.BLOCK_POS.create(event)).executes(ctx => {
         try {
-          const pos = Arguments.BLOCK_POS.getResult(ctx, 'pos')
-          const echo = echoRaise(ctx.source.server, ctx.source.level, pos.x + 0.5, pos.y, pos.z + 0.5, 'Test',
+          var pos = Arguments.BLOCK_POS.getResult(ctx, 'pos')
+          var echo = echoRaise(ctx.source.server, ctx.source.level, pos.x + 0.5, pos.y, pos.z + 0.5, 'Test',
             `${ECHO_TAG}_test`, null)
           return echo ? 1 : 0
         } catch (e) {

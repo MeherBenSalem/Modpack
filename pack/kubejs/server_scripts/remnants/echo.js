@@ -15,12 +15,12 @@ function echoMobFor(dimension) {
 }
 
 function echoPlayerTag(player) {
-  return `${ECHO_TAG}_${String(player.getUUID()).replace(/-/g, '').substring(0, 16)}`
+  return `${ECHO_TAG}_${String(player.username).toLowerCase()}`
 }
 
 // Raise an Echo at x/y/z. `gear` is the fallen player (their equipment is copied) or null.
 function echoRaise(server, level, x, y, z, username, tag, gear) {
-  const echo = level.createEntity(echoMobFor(String(level.dimension)))
+  var echo = level.createEntity(echoMobFor(String(level.dimension)))
   if (!echo) return null
   echo.setPosition(x, y, z)
   echo.addTag(ECHO_TAG)
@@ -35,25 +35,27 @@ function echoRaise(server, level, x, y, z, username, tag, gear) {
   }
   echo.spawn()
 
-  const id = String(echo.getUUID())
-  const name = JSON.stringify(JSON.stringify({ text: `Echo of ${username}`, color: 'dark_red', italic: false }))
-  server.runCommandSilent(`attribute ${id} minecraft:generic.max_health modifier add remnants:echo_health ${ECHO_HEALTH_BONUS} add_multiplied_total`)
-  server.runCommandSilent(`attribute ${id} minecraft:generic.attack_damage modifier add remnants:echo_damage ${ECHO_DAMAGE_BONUS} add_multiplied_total`)
-  server.runCommandSilent(`effect give ${id} minecraft:fire_resistance infinite 0 true`)
+  // The newest Echo is the one carrying this tag nearest to where it rose (older ones were killed first).
+  var at = `execute in ${String(level.dimension)} positioned ${x} ${y} ${z} run`
+  var self = `@e[tag=${tag},limit=1,sort=nearest]`
+  var name = JSON.stringify(JSON.stringify({ text: `Echo of ${username}`, color: 'dark_red', italic: false }))
+  server.runCommandSilent(`${at} attribute ${self} minecraft:generic.max_health modifier add remnants:echo_health ${ECHO_HEALTH_BONUS} add_multiplied_total`)
+  server.runCommandSilent(`${at} attribute ${self} minecraft:generic.attack_damage modifier add remnants:echo_damage ${ECHO_DAMAGE_BONUS} add_multiplied_total`)
+  server.runCommandSilent(`${at} effect give ${self} minecraft:fire_resistance infinite 0 true`)
   // Health last: loading Health clamps it to the new, higher maximum.
-  server.runCommandSilent(`data merge entity ${id} {PersistenceRequired:1b,CanPickUpLoot:0b,CustomNameVisible:1b,` +
+  server.runCommandSilent(`${at} data merge entity ${self} {PersistenceRequired:1b,CanPickUpLoot:0b,CustomNameVisible:1b,` +
     `ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f],CustomName:${name},Health:4096.0f}`)
   return echo
 }
 
 EntityEvents.death('minecraft:player', event => {
-  const player = event.entity
-  const server = event.server
-  const level = event.level
+  var player = event.entity
+  var server = event.server
+  var level = event.level
   if (ECHO_SKIP_DIMENSIONS.includes(String(level.dimension))) return
   if (server.persistentData.getBoolean('remnants_echoes_off')) return
 
-  const tag = echoPlayerTag(player)
+  var tag = echoPlayerTag(player)
   // The previous Echo fades with the runes it guarded.
   server.runCommandSilent(`kill @e[tag=${tag}]`)
   if (echoRaise(server, level, player.x, player.y, player.z, player.username, tag, player)) {
@@ -63,9 +65,9 @@ EntityEvents.death('minecraft:player', event => {
 })
 
 EntityEvents.death(event => {
-  const e = event.entity
+  var e = event.entity
   if (e.isPlayer() || !e.tags.contains(ECHO_TAG)) return
-  const killer = event.source.actual
+  var killer = event.source.actual
   if (killer && killer.isPlayer()) {
     event.server.runCommandSilent(`title ${killer.username} actionbar {"text":"Echo laid to rest","color":"gold"}`)
   }

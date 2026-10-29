@@ -1,0 +1,302 @@
+chapter: h_lastlight
+group: hearth
+order: 31
+title: "&aLast Light"
+subtitle: "A shrine makes a place you come back to. The rest makes it home."
+icon: handcrafted:oak_table
+quests:
+  # ---- the house ----
+  - key: home
+    title: "&aA Home Worth Defending"
+    subtitle: "Last Light needs more than a fire."
+    icon: handcrafted:oak_table
+    pos: [0, 0.75]
+    deps: [s1_act1_embers/kindle]
+    shape: hexagon
+    size: 1.5
+    desc: |
+      &o"A shrine makes a place you come back to. A table makes it a place you'd want to."&r
+
+      Craft a &6table&r and a &6chair&r from any wood. Handcrafted furniture can be sat on, set with plates and cups, and dressed with cushions and sheets.
+
+      The village has a name now. Give it a hall.
+    tasks: [{tag: handcrafted:tables}, {tag: handcrafted:chairs}]
+    rewards: [{table: hearth_homestead}, {xp: 60}]
+
+  - key: fancy_bed
+    title: "A Bed Worth Waking In"
+    subtitle: "You can't die for good. You can at least sleep well."
+    icon: handcrafted:oak_fancy_bed
+    pos: [2, -4.5]
+    deps: [home]
+    desc: |
+      A &6fancy bed&r takes planks, wool, a &6cushion&r and a &6sheet&r. It does what a bed does, with more dignity.
+
+      Sleeping in a bed sets your respawn, so keep it within sight of the shrine.
+    tasks: [{tag: handcrafted:fancy_beds}]
+    rewards: [{item: minecraft:white_wool, count: 8}, {xp: 40}]
+
+  - key: trophy
+    title: "Trophy Wall"
+    subtitle: "Proof, mounted."
+    icon: handcrafted:skeleton_trophy
+    pos: [4, -4.5]
+    deps: [fancy_bed]
+    desc: |
+      Handcrafted &6trophies&r are made from what you take off the dead: a spider's eye, a skeleton's skull, a creeper's head, a phantom's membrane.
+
+      Hang one above the shrine. The Keeper won't say anything. The Keeper will look at it.
+    tasks: [{tag: handcrafted:trophies}]
+    rewards: [{item: remnant_mobs:remnant_shard, count: 4}, {xp: 60}]
+
+  # ---- small useful things ----
+  - key: sack
+    title: "Flax and String"
+    subtitle: "Supplies need somewhere to live."
+    icon: supplementaries:sack
+    pos: [2, -3]
+    deps: [home]
+    desc: |
+      &6Flax&r grows wild here and there and plants like any crop. Weave it with string into a &6Sack&r: a bag you can set down, pick up and carry with everything still inside.
+
+      Sacks are heavy. So is dying with everything you own in your pockets.
+    tasks: [{item: supplementaries:sack}]
+    rewards: [{item: minecraft:string, count: 16}, {xp: 40}]
+
+  - key: jars
+    title: "Glass and Patience"
+    subtitle: "Keep what's precious where you can see it."
+    icon: supplementaries:jar
+    pos: [4, -3.5]
+    deps: [sack]
+    desc: |
+      A &6Jar&r stores what bowls, bottles and buckets carry (honey, soup, potions, water), a stack of cookies, or a small living thing.
+
+      Some Ashborn keep a jar of honey by the shrine. Some keep a jar of something that glows.
+    tasks: [{item: supplementaries:jar, count: 2}]
+    rewards: [{item: minecraft:honey_bottle, count: 4}, {xp: 40}]
+
+  - key: quiver
+    title: "A Quiver Taken Back"
+    subtitle: "The skeletons won't need it."
+    icon: supplementaries:quiver
+    pos: [4, -2.5]
+    deps: [sack]
+    desc: |
+      Some skeletons rise with a &6Quiver&r on their backs. Kill them and it's yours. Dungeon chests and pillager camps hide a few more.
+
+      A quiver holds several kinds of arrow and lets you choose which one to loose. Carry it in your offhand or an accessory slot.
+    tasks: [{item: supplementaries:quiver}]
+    rewards: [{item: minecraft:arrow, count: 32}, {xp: 50}]
+
+  - key: globe
+    title: "The World as It Was"
+    subtitle: "Round, and lit. Imagine that."
+    icon: supplementaries:globe
+    pos: [6, -3]
+    deps: [jars]
+    desc: |
+      The &6Wandering Trader&r still carries &6Globes&r, painted back when the world had a sun to turn under. Buy one and set it somewhere in Last Light.
+
+      Spin it. Nobody's stopping you.
+    tasks: [{item: supplementaries:globe}]
+    rewards: [{item: minecraft:emerald, count: 6}, {xp: 50}]
+
+  # ---- building ----
+  - key: wand
+    title: "Walls in an Afternoon"
+    subtitle: "The dark can count. Make it count bricks."
+    icon: reconstructedwands:iron_wand
+    pos: [2, -1.25]
+    deps: [home]
+    desc: |
+      An &6Iron Wand&r (iron, redstone and a stick) extends the face you click: one course of wall becomes two, two become ten. It draws blocks from your inventory, shulker boxes and bundles.
+
+      It can undo its last placements, too (see &eControls&r). Everyone builds a wall in the wrong place once.
+    tasks: [{item: reconstructedwands:iron_wand}]
+    rewards: [{item: minecraft:stone_bricks, count: 64}, {xp: 40}]
+
+  - key: architect
+    title: "The Architect's Core"
+    subtitle: "Lines, walls, rings. Geometry against the dark."
+    icon: reconstructedwands:core_architect
+    pos: [4, -1.25]
+    deps: [wand]
+    desc: |
+      Craft an &6Architect Core&r (glass panes, amethyst and a compass) and combine it with your wand in a crafting grid. Click two corners for a line, wall, floor, box or cube; click a centre, then an edge, for a circle or a ring.
+
+      &7Angel, Exchange and Destruction cores fit the same way.
+
+      A ring of stone around Last Light won't stop a Sovereign. It will stop most of what comes before one.
+    tasks: [{item: reconstructedwands:core_architect}]
+    rewards: [{item: minecraft:amethyst_shard, count: 4}, {xp: 50}]
+
+  # ---- carrying ----
+  - key: backpack
+    title: "Everything You Own, Carried"
+    subtitle: "Pack light. Then don't."
+    icon: sophisticatedbackpacks:backpack
+    pos: [2, 0.5]
+    deps: [home]
+    desc: |
+      A &6Backpack&r is leather, string and a chest. Carry it, wear it or set it down; it keeps everything inside either way.
+
+      &7When you die, your items wait in your corpse. A backpack is one item. Think about that.
+    tasks: [{item: sophisticatedbackpacks:backpack}]
+    rewards: [{item: minecraft:leather, count: 8}, {xp: 40}]
+
+  - key: backpack_iron
+    title: "Iron-Bound"
+    subtitle: "Bigger, and nothing falls out."
+    icon: sophisticatedbackpacks:iron_backpack
+    pos: [4, 0]
+    deps: [backpack]
+    desc: |
+      Surround a backpack with iron in a crafting grid and it grows, with everything still inside. Copper, iron, gold, diamond, netherite: each tier holds more and fits more upgrades.
+    tasks: [{item: sophisticatedbackpacks:iron_backpack}]
+    rewards: [{item: minecraft:gold_ingot, count: 8}, {xp: 50}]
+
+  - key: pickup
+    title: "Upgrades"
+    subtitle: "A bag that bends over so you don't have to."
+    icon: sophisticatedbackpacks:pickup_upgrade
+    pos: [4, 1]
+    deps: [backpack]
+    desc: |
+      Every upgrade starts as an &6Upgrade Base&r (iron, leather, string). A &6Pickup Upgrade&r scoops loot into the pack as you walk; set its filter so it leaves the rotten flesh where it fell.
+
+      Magnet, crafting, smelting, compacting, void: there are dozens more, and JEI has every recipe.
+    tasks: [{item: sophisticatedbackpacks:pickup_upgrade}]
+    rewards: [{item: sophisticatedbackpacks:upgrade_base, count: 2}, {xp: 50}]
+
+  - key: feeding
+    title: "The Pack That Feeds You"
+    subtitle: "Eat without stopping."
+    icon: sophisticatedbackpacks:feeding_upgrade
+    pos: [6, 1]
+    deps: [pickup]
+    desc: |
+      A &6Feeding Upgrade&r eats for you from the backpack whenever you're hungry. Stock it from the Hearth & Harvest kitchen and stop opening your inventory in the middle of a fight.
+    tasks: [{item: sophisticatedbackpacks:feeding_upgrade}]
+    rewards: [{table: hearth_pantry}, {xp: 80}]
+
+  - key: lootr
+    title: "Everyone's Share"
+    subtitle: "The dead hoard. Fairly, now."
+    icon: minecraft:chest
+    pos: [6, 0]
+    deps: [backpack_iron]
+    desc: |
+      Loot chests in dungeons, ruins and towers are &6per-player&r: everyone who opens one gets their own roll, and nobody takes a companion's share.
+
+      Open ten of them. A loot chest looks different once you've opened it, so you always know which ones are left.
+    tasks: [{advancement: "lootr:10loot"}]
+    rewards: [{table: wanderers_cache}, {xp: 60}]
+
+  # ---- storing ----
+  - key: storage
+    title: "Chests That Grow"
+    subtitle: "The larder outgrew the larder."
+    icon: sophisticatedstorage:iron_chest
+    pos: [2, 2.25]
+    deps: [home]
+    desc: |
+      A &6Sophisticated Chest&r is planks around a lever, or a chest and a lever. Surround it with iron for an &6Iron Chest&r, or use a &6Tier Upgrade&r on a placed chest to grow it where it stands.
+
+      More room, room for upgrades, and nothing spilled. Barrels work the same way.
+    tasks: [{item: sophisticatedstorage:iron_chest}]
+    rewards: [{item: minecraft:iron_ingot, count: 8}, {xp: 50}]
+
+  - key: controller
+    title: "One Room, Many Chests"
+    subtitle: "Put it in once. It finds its own shelf."
+    icon: sophisticatedstorage:controller
+    pos: [4, 2.25]
+    deps: [storage]
+    desc: |
+      A &6Storage Controller&r joins every Sophisticated chest and barrel touching it, or touching each other, into one network. Put an item into the controller and it goes to the right chest.
+
+      &7Storage Links stretch the network to chests further away.
+    tasks: [{item: sophisticatedstorage:controller}]
+    rewards: [{item: minecraft:comparator, count: 2}, {xp: 50}]
+
+  - key: terminal
+    title: "&aThe Crafting Terminal"
+    subtitle: "Every chest at once, and a table to work at."
+    icon: simple_terminals:crafting_terminal
+    pos: [6, 2.25]
+    deps: [controller]
+    shape: hexagon
+    desc: |
+      A &6Crafting Terminal&r (crafting table, chest, redstone torch and a diamond) set against a chest, or against your Storage Controller, shows everything inside in one scrolling view, with a crafting grid beside it.
+
+      &o"I've seen Sovereigns' treasuries kept worse."&r
+    tasks: [{item: simple_terminals:crafting_terminal}]
+    rewards: [{table: hearth_homestead}, {xp: 100}]
+
+  # ---- resting ----
+  - key: sleeping_bag
+    title: "Rest on the Road"
+    subtitle: "Skip the night. Keep your shrine."
+    icon: comforts:sleeping_bag_red
+    pos: [2, 4]
+    deps: [home]
+    desc: |
+      A &6Sleeping Bag&r lets you sleep through the night wherever you unroll it, and it doesn't move your respawn. Your shrine stays your shrine.
+
+      &7You can't sleep with monsters nearby. On a Hunter's Moon, there are always monsters nearby.
+    tasks: [{tag: comforts:sleeping_bags}]
+    rewards: [{table: ashborn_provisions}, {xp: 40}]
+
+  - key: hammock
+    title: "The Night Shift"
+    subtitle: "Some hunts only happen after dark."
+    icon: comforts:hammock_white
+    pos: [4, 4]
+    deps: [sleeping_bag]
+    desc: |
+      Hang a &6Hammock&r between two &6Rope and Nails&r and you can sleep through the &oday&r instead.
+
+      For Ashborn who prefer to hunt when the hunting is good.
+    tasks: [{tag: comforts:hammocks}, {item: comforts:rope_and_nail, count: 2}]
+    rewards: [{item: minecraft:torch, count: 32}, {xp: 40}]
+
+  # ---- the villagers ----
+  - key: first_request
+    title: "A Favour for a Friend"
+    subtitle: "The villagers have problems too. Smaller ones."
+    icon: minecraft:emerald
+    pos: [2, 5.75]
+    deps: [home]
+    desc: |
+      The villagers of Last Light talk. Stand close and say something in chat; they answer in speech bubbles. Ask one for work.
+
+      Accept the request (&e/villagerai request accept&r) and see it through: fetch what they need, or kill what's bothering them. They pay in emeralds, and they remember.
+    tasks: [{advancement: "smartvillagers:first_request"}]
+    rewards: [{item: minecraft:emerald, count: 8}, {xp: 60}]
+
+  - key: village_hero
+    title: "Hero of the Village Square"
+    subtitle: "Ten favours. They'll name a well after you."
+    icon: minecraft:bell
+    pos: [4, 5.25]
+    deps: [first_request]
+    desc: |
+      Finish &6ten&r villager requests. Word spreads: your standing climbs from stranger to friend to &6hero&r, and heroes get better prices.
+
+      &7Gossip carries about 48 blocks. So does a bad reputation.
+    tasks: [{advancement: "smartvillagers:village_hero"}]
+    rewards: [{table: wanderers_cache}, {xp: 150}]
+
+  - key: guard
+    title: "Last Light Takes Up Arms"
+    subtitle: "Villages that fight back live longer."
+    icon: minecraft:iron_sword
+    pos: [4, 6.25]
+    deps: [first_request]
+    desc: |
+      Give a sword to a villager with no profession and they become a &6Guard&r: armoured, patrolling, loyal to the bell.
+
+      Guards are not sellswords. They won't follow you out. That's rather the point.
+    tasks: [{advancement: "guardvillagers:adventure/recruit_guard"}]
+    rewards: [{item: minecraft:iron_sword}, {xp: 60}]

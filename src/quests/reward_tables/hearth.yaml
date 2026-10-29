@@ -1,0 +1,107 @@
+# Reward tables for the Hearth chapters (h_hearth, h_lastlight, h_clockwork) and the Ashen Contracts (c_contracts).
+# {table: key} rolls one entry by weight. No netherite, no flask upgrades (Sunseeds, Hallowed Tears): contracts repeat.
+
+# ---- Hearth & Harvest / Last Light / The Clockwork Path ----
+
+hearth_pantry:
+  title: "Last Light Pantry"
+  icon: farmersdelight:cooking_pot
+  rewards:
+    - {item: farmersdelight:beef_stew, count: 3, weight: 3}
+    - {item: farmersdelight:vegetable_soup, count: 3, weight: 3}
+    - {item: farmersdelight:fish_stew, count: 3, weight: 2}
+    - {item: farmersdelight:steak_and_potatoes, count: 2, weight: 2}
+    - {item: farmersdelight:shepherds_pie, count: 2, weight: 2}
+    - {item: farmersdelight:roast_chicken, count: 2, weight: 1}
+    - {item: farmersdelight:honey_glazed_ham, count: 2, weight: 1}
+    - {item: farmersdelight:hot_cocoa, count: 3, weight: 1}
+
+hearth_tavern:
+  title: "The Tavern Cellar"
+  icon: brewinandchewin:keg
+  rewards:
+    - {item: brewinandchewin:beer, count: 2, weight: 3}
+    - {item: brewinandchewin:mead, count: 2, weight: 3}
+    - {item: brewinandchewin:strongroot_ale, count: 2, weight: 2}
+    - {item: brewinandchewin:flaxen_cheese_wedge, count: 4, weight: 2}
+    - {item: brewinandchewin:jerky, count: 6, weight: 2}
+    - {item: brewinandchewin:kippers, count: 4, weight: 1}
+    - {item: brewinandchewin:pizza_slice, count: 4, weight: 1}
+
+hearth_tackle:
+  title: "Fisher's Tackle"
+  icon: aquaculture:tackle_box
+  rewards:
+    - {item: fisherman_house:fish_bait, count: 8, weight: 3}
+    - {item: fisherman_house:chum, count: 6, weight: 2}
+    - {item: fisherman_house:glow_bait, count: 4, weight: 2}
+    - {item: aquaculture:worm, count: 8, weight: 2}
+    - {item: aquaculture:gold_hook, count: 1, weight: 1}
+    - {item: aquaculture:double_hook, count: 1, weight: 1}
+    - {item: aquaculture:light_hook, count: 1, weight: 1}
+    - {item: fisherman_house:message_in_a_bottle, count: 1, weight: 0.5}
+
+hearth_homestead:
+  title: "Homestead Crate"
+  icon: handcrafted:oak_table
+  rewards:
+    - {item: minecraft:emerald, count: 8, weight: 3}
+    - {item: minecraft:lantern, count: 6, weight: 2}
+    - {item: supplementaries:sconce, count: 6, weight: 2}
+    - {item: minecraft:iron_ingot, count: 8, weight: 2}
+    - {item: supplementaries:jar, count: 3, weight: 1}
+    - {item: sophisticatedbackpacks:upgrade_base, count: 2, weight: 1}
+    - {item: minecraft:white_wool, count: 16, weight: 1}
+
+hearth_workshop:
+  title: "Engineer's Crate"
+  icon: create:cogwheel
+  rewards:
+    - {item: create:andesite_alloy, count: 16, weight: 3}
+    - {item: create:shaft, count: 16, weight: 2}
+    - {item: create:cogwheel, count: 8, weight: 2}
+    - {item: create:iron_sheet, count: 8, weight: 2}
+    - {item: create:zinc_ingot, count: 6, weight: 2}
+    - {item: create:brass_ingot, count: 4, weight: 1}
+    - {item: create:electron_tube, count: 2, weight: 1}
+    - {item: create:builders_tea, count: 2, weight: 1}
+
+# ---- Ashen Contracts: the Huntmaster's pay, by tier ----
+
+contracts_minor:
+  title: "Minor Bounty"
+  icon: remnant_mobs:remnant_shard
+  rewards:
+    - {item: remnant_mobs:remnant_shard, count: 4, weight: 3}
+    - {item: runeborn:faded_rune, count: 3, weight: 3}
+    - {item: runeborn:lustrous_rune, count: 1, weight: 1}
+    - {item: runeborn:tempering_stone_1, count: 2, weight: 2}
+    - {item: runeborn:tempering_stone_2, count: 1, weight: 1}
+    - {item: mob_loot_bags:commonlootbag, count: 2, weight: 2}
+    - {item: mob_loot_bags:uncommonlootbag, count: 1, weight: 1}
+
+contracts_major:
+  title: "Major Bounty"
+  icon: runeborn:lustrous_rune
+  rewards:
+    - {item: remnant_mobs:remnant_shard, count: 8, weight: 3}
+    - {item: runeborn:lustrous_rune, count: 2, weight: 3}
+    - {item: runeborn:radiant_rune, count: 1, weight: 1}
+    - {item: runeborn:tempering_stone_3, count: 2, weight: 2}
+    - {item: runeborn:tempering_stone_4, count: 1, weight: 1}
+    - {item: mob_loot_bags:uncommonlootbag, count: 2, weight: 2}
+    - {item: mob_loot_bags:rarelootbag, count: 1, weight: 1}
+
+contracts_grave:
+  title: "Grave Bounty"
+  icon: runeborn:radiant_rune
+  rewards:
+    - {item: remnant_mobs:remnant_shard, count: 16, weight: 3}
+    - {item: runeborn:radiant_rune, count: 2, weight: 3}
+    - {item: runeborn:heros_rune, count: 1, weight: 0.5}
+    - {item: runeborn:tempering_stone_5, count: 2, weight: 2}
+    - {item: runeborn:tempering_stone_6, count: 2, weight: 1}
+    - {item: runeborn:tempering_stone_7, count: 1, weight: 0.5}
+    - {item: mob_loot_bags:rarelootbag, count: 2, weight: 2}
+    - {item: mob_loot_bags:epiclootbag, count: 1, weight: 1}
+    - {item: mob_loot_bags:legendarylootbag, count: 1, weight: 0.3}

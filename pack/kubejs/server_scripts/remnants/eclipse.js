@@ -17,7 +17,7 @@ const ECLIPSE_SOVEREIGNS = {
 const ECLIPSE_TOTAL = Object.keys(ECLIPSE_SOVEREIGNS).length
 
 function eclipseLit(server) {
-  const raw = server.persistentData.getString(ECLIPSE_KEY)
+  var raw = server.persistentData.getString(ECLIPSE_KEY)
   return raw ? raw.split(',') : []
 }
 
@@ -27,7 +27,7 @@ function eclipseTitle(n) {
 }
 
 function eclipseRefreshBar(server) {
-  const n = eclipseLit(server).length
+  var n = eclipseLit(server).length
   server.runCommandSilent(`bossbar add ${ECLIPSE_BAR} ""`)
   server.runCommandSilent(`bossbar set ${ECLIPSE_BAR} max ${ECLIPSE_TOTAL}`)
   server.runCommandSilent(`bossbar set ${ECLIPSE_BAR} value ${n}`)
@@ -54,24 +54,24 @@ function eclipseBless(server, playerName, count) {
 ServerEvents.loaded(event => eclipseRefreshBar(event.server))
 
 PlayerEvents.loggedIn(event => {
-  const server = event.server
-  const name = event.player.username
-  const n = eclipseLit(server).length
+  var server = event.server
+  var name = event.player.username
+  var n = eclipseLit(server).length
   eclipseBless(server, name, n)
   server.scheduleInTicks(100, () => eclipseShowBar(server, name, 12))
 })
 
 PlayerEvents.advancement(event => {
-  const id = String(event.advancement.id)
-  const sovereign = ECLIPSE_SOVEREIGNS[id]
+  var id = String(event.advancement.id)
+  var sovereign = ECLIPSE_SOVEREIGNS[id]
   if (!sovereign) return
-  const server = event.server
-  const lit = eclipseLit(server)
+  var server = event.server
+  var lit = eclipseLit(server)
   if (lit.includes(id)) return
   lit.push(id)
   server.persistentData.putString(ECLIPSE_KEY, lit.join(','))
-  const n = lit.length
-  const done = n >= ECLIPSE_TOTAL
+  var n = lit.length
+  var done = n >= ECLIPSE_TOTAL
   server.runCommandSilent('title @a times 20 80 30')
   server.runCommandSilent(done
     ? 'title @a title {"text":"FIRST LIGHT","color":"gold","bold":true}'

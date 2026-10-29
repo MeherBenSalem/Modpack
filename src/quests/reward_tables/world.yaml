@@ -1,0 +1,97 @@
+# Reward tables for the "World Under Ash" side chapters (w_20_bosses, w_21_dungeons, w_22_wayfarer, w_23_bestiary).
+# One tier table per act, so a boss or dungeon pays what its act can carry. No netherite, no Tome of Ascension.
+
+world_ember_spoils:
+  title: "Embers' Bounty"
+  icon: runeborn:tempering_stone_2
+  rewards:
+    - {item: runeborn:tempering_stone_1, count: 4, weight: 3}
+    - {item: runeborn:tempering_stone_2, count: 2, weight: 2}
+    - {item: runeborn:faded_rune, count: 3, weight: 3}
+    - {item: remnant_mobs:remnant_shard, count: 6, weight: 2}
+    - {item: mob_loot_bags:uncommonlootbag, count: 2, weight: 2}
+    - {item: minecraft:golden_apple, count: 1, weight: 1}
+
+world_hunt_spoils:
+  title: "Spoils of the Red Moon"
+  icon: runeborn:tempering_stone_4
+  rewards:
+    - {item: runeborn:tempering_stone_3, count: 3, weight: 3}
+    - {item: runeborn:tempering_stone_4, count: 2, weight: 2}
+    - {item: runeborn:lustrous_rune, count: 2, weight: 3}
+    - {item: remnant_mobs:remnant_shard, count: 10, weight: 2}
+    - {item: mob_loot_bags:rarelootbag, count: 2, weight: 2}
+    - {item: runeborn:lustrous_stone_1, count: 1, weight: 1}
+    - {item: remnant_mobs:brand_of_challenge, count: 1, weight: 1}
+
+world_deep_spoils:
+  title: "Treasures of the Deep"
+  icon: runeborn:tempering_stone_6
+  rewards:
+    - {item: runeborn:tempering_stone_5, count: 3, weight: 3}
+    - {item: runeborn:tempering_stone_6, count: 2, weight: 2}
+    - {item: runeborn:lustrous_stone_2, count: 2, weight: 2}
+    - {item: runeborn:lustrous_stone_3, count: 1, weight: 1}
+    - {item: runeborn:radiant_rune, count: 2, weight: 3}
+    - {item: mob_loot_bags:epiclootbag, count: 1, weight: 2}
+    - {item: runeborn:sunseed, count: 1, weight: 0.5}
+
+world_ash_spoils:
+  title: "What the Ash Kept"
+  icon: runeborn:tempering_stone_8
+  rewards:
+    - {item: runeborn:tempering_stone_7, count: 3, weight: 3}
+    - {item: runeborn:tempering_stone_8, count: 2, weight: 2}
+    - {item: runeborn:lustrous_stone_4, count: 2, weight: 2}
+    - {item: runeborn:lustrous_stone_5, count: 1, weight: 2}
+    - {item: runeborn:heros_rune, count: 1, weight: 3}
+    - {item: mob_loot_bags:legendarylootbag, count: 1, weight: 2}
+    - {item: runeborn:hallowed_tear, count: 1, weight: 0.5}
+
+world_eclipse_spoils:
+  title: "Light of the Black Sun"
+  icon: runeborn:sovereign_tempering_stone
+  rewards:
+    - {item: runeborn:sovereign_tempering_stone, count: 1, weight: 2}
+    - {item: runeborn:lustrous_stone_6, count: 2, weight: 3}
+    - {item: runeborn:lustrous_stone_7, count: 2, weight: 2}
+    - {item: runeborn:lustrous_stone_8, count: 1, weight: 1}
+    - {item: runeborn:heros_rune, count: 2, weight: 3}
+    - {item: mob_loot_bags:legendarylootbag, count: 2, weight: 2}
+    - {item: runeborn:sunseed, count: 1, weight: 0.5}
+
+world_delver_cache:
+  title: "Delver's Cache"
+  icon: minecraft:chest
+  rewards:
+    - {item: runeborn:tempering_stone_2, count: 3, weight: 3}
+    - {item: runeborn:tempering_stone_3, count: 2, weight: 2}
+    - {item: runeborn:lustrous_rune, count: 1, weight: 2}
+    - {item: mob_loot_bags:rarelootbag, count: 1, weight: 2}
+    - {item: mob_loot_bags:diamond_key, count: 1, weight: 1}
+    - {item: minecraft:gold_ingot, count: 8, weight: 2}
+    - {item: minecraft:torch, count: 48, weight: 2}
+
+world_wayfarer_pack:
+  title: "Wayfarer's Pack"
+  icon: minecraft:filled_map
+  rewards:
+    - {item: minecraft:emerald, count: 8, weight: 3}
+    - {item: minecraft:ender_pearl, count: 3, weight: 2}
+    - {item: brewinandchewin:jerky, count: 8, weight: 3}
+    - {item: farmersdelight:beef_stew, count: 3, weight: 2}
+    - {item: runeborn:faded_rune, count: 3, weight: 2}
+    - {item: supplementaries:rope, count: 32, weight: 1}
+    - {item: comforts:sleeping_bag_brown, count: 1, weight: 1}
+    - {item: minecraft:spyglass, count: 1, weight: 1}
+
+world_huntmaster_ledger:
+  title: "The Huntmaster's Ledger"
+  icon: remnant_mobs:hunters_lens
+  rewards:
+    - {item: remnant_mobs:remnant_shard, count: 8, weight: 3}
+    - {item: runeborn:faded_rune, count: 3, weight: 2}
+    - {item: runeborn:lustrous_rune, count: 1, weight: 2}
+    - {item: mob_loot_bags:uncommonlootbag, count: 2, weight: 2}
+    - {item: remnant_mobs:brand_of_challenge, count: 1, weight: 1}
+    - {item: minecraft:golden_carrot, count: 8, weight: 1}

@@ -1,0 +1,353 @@
+chapter: h_hearth
+group: hearth
+order: 30
+title: "&aHearth & Harvest"
+subtitle: "The Ashborn still has to eat. Last Light feeds itself."
+icon: farmersdelight:cooking_pot
+quests:
+  # ---- the knife ----
+  - key: knife
+    title: "&aHunt and Gather"
+    subtitle: "Undying isn't the same as fed."
+    icon: farmersdelight:flint_knife
+    pos: [0, 0]
+    deps: [s1_prologue/village]
+    shape: hexagon
+    size: 1.5
+    desc: |
+      You can't die for good. You can still go hungry, and a hungry Ashborn can't sprint, can't heal and can't outrun much of anything.
+
+      Craft a &6knife&r from flint or iron. It takes more from the world than a sword does: straw from grass, ham from pigs, slices from a fish.
+
+      &o"The villages that lived through the Eclipse learned one thing before swordplay. Supper."&r
+    tasks: [{advancement: "farmersdelight:main/craft_knife"}]
+    rewards: [{table: ashborn_provisions}, {xp: 40}]
+
+  # ---- the field ----
+  - key: straw
+    title: "Grasping at Straws"
+    subtitle: "Nothing in a village goes to waste."
+    icon: farmersdelight:straw
+    pos: [2, -4.5]
+    deps: [knife]
+    desc: |
+      Cut grass, wheat or rice with your knife and keep the &6straw&r.
+
+      Straw twists into rope and canvas. Rope climbs, and tomatoes climb it too. Canvas keeps the rain off the larder.
+    tasks: [{advancement: "farmersdelight:main/harvest_straw"}]
+    rewards: [{item: farmersdelight:rope, count: 16}, {xp: 30}]
+
+  - key: rich_soil
+    title: "Plant Food"
+    subtitle: "Rot, patience, then something green."
+    icon: farmersdelight:rich_soil
+    pos: [4, -4.5]
+    deps: [straw]
+    desc: |
+      Mix &6Organic Compost&r from dirt, straw, bone meal and rotten flesh (or tree bark), set it down and leave it be. Sunlight, water and nearby mushrooms hurry it along.
+
+      In time it turns into &6Rich Soil&r. Crops grown in it get a free push now and then, and mushrooms planted on it spread into colonies.
+
+      &7The dead feed the living. Even here.
+    tasks: [{advancement: "farmersdelight:main/get_rich_soil"}]
+    rewards: [{item: minecraft:bone_meal, count: 16}, {xp: 50}]
+
+  - key: wild_crops
+    title: "Crops of the Wild"
+    subtitle: "Somebody planted these, once."
+    icon: farmersdelight:cabbage
+    pos: [2, -3]
+    deps: [knife]
+    desc: |
+      Wild &6cabbages&r, &6tomatoes&r, &6onions&r and &6rice&r still grow where farms stood before the Eclipse: on beaches, in the warm grasslands, along the rivers. Village farms sometimes keep a row of them.
+
+      Gather any of them and bring the seed home.
+    tasks: [{advancement: "farmersdelight:main/get_fd_seed"}]
+    rewards: [{item: minecraft:bone_meal, count: 8}, {xp: 40}]
+
+  - key: rice
+    title: "Dipping Your Roots"
+    subtitle: "Rice wants its feet wet."
+    icon: farmersdelight:rice
+    pos: [4, -3.25]
+    deps: [wild_crops]
+    desc: |
+      Plant &6rice&r in water one block deep. It grows up out of the water and gives you grain and straw both.
+
+      Half the cooking pot's recipes start with rice. The other half want an onion.
+    tasks: [{advancement: "farmersdelight:main/plant_rice"}]
+    rewards: [{item: farmersdelight:cooked_rice, count: 4}, {xp: 30}]
+
+  - key: sprinkler
+    title: "Rain on Demand"
+    subtitle: "The sky stopped helping. Copper didn't."
+    icon: better_farming_plus:sprinkler
+    pos: [4, -2.25]
+    deps: [wild_crops]
+    desc: |
+      Right-click a ripe crop to harvest and replant it in one motion. With a hoe in hand the harvest sweeps: iron or gold 3×3, diamond 5×5.
+
+      A &6Sprinkler&r (copper and a bucket) keeps a 9×9 field wet and growing about three times as fast. It needs water within four blocks, below it or beside it.
+    tasks: [{item: better_farming_plus:sprinkler}]
+    rewards: [{item: minecraft:copper_ingot, count: 8}, {xp: 40}]
+
+  - key: farming_crate
+    title: "The Crate That Farms"
+    subtitle: "Let the box do the stooping."
+    icon: better_farming_plus:farming_crate
+    pos: [6, -2.25]
+    deps: [sprinkler]
+    desc: |
+      A &6Farming Crate&r harvests, replants and stores everything in the 9×9 around it, and never voids a harvest.
+
+      Set one in the middle of the village fields and go kill something. Supper will be waiting.
+    tasks: [{item: better_farming_plus:farming_crate}]
+    rewards: [{table: hearth_pantry}, {xp: 80}]
+
+  # ---- the kitchen ----
+  - key: cutting_board
+    title: "Watch Your Fingers"
+    subtitle: "Steel for the monsters. A board for the meat."
+    icon: farmersdelight:cutting_board
+    pos: [2, 0]
+    deps: [knife]
+    desc: |
+      Place a &6Cutting Board&r, set an item on it and use it with a tool in hand. A knife slices meat, fish and vegetables; an axe strips logs and keeps the bark.
+
+      More food from less. That's the whole trick of surviving.
+    tasks: [{advancement: "farmersdelight:main/use_cutting_board"}]
+    rewards: [{item: farmersdelight:cabbage, count: 4}, {item: farmersdelight:tomato, count: 4}, {xp: 30}]
+
+  - key: kitchen
+    title: "&aDinner's Served"
+    subtitle: "A stove, a pot, a reason to come home."
+    icon: farmersdelight:cooking_pot
+    pos: [4, 0]
+    deps: [cutting_board]
+    shape: hexagon
+    desc: |
+      Build a &6Stove&r from bricks, iron and a campfire, and set a &6Cooking Pot&r on it. Any heat beneath will do; the stove just does it with dignity.
+
+      The pot takes up to six ingredients and a bowl, and gives back meals that keep you going far longer than raw meat ever did.
+
+      &o"A shrine warms the dead. A stove warms the living. Keep both lit."&r
+    tasks: [{item: farmersdelight:stove}, {advancement: "farmersdelight:main/place_cooking_pot"}]
+    rewards: [{table: hearth_pantry}, {xp: 60}]
+
+  - key: skillet
+    title: "Portable Cooking"
+    subtitle: "Supper on the road."
+    icon: farmersdelight:skillet
+    pos: [6, -1]
+    deps: [kitchen]
+    desc: |
+      Hold a &6Skillet&r in one hand and raw food in the other, stand near a fire, and cook as you go. Sneak to set it down on a stove instead.
+
+      It also makes a perfectly respectable club. Nobody has to know.
+    tasks: [{advancement: "farmersdelight:main/use_skillet"}]
+    rewards: [{item: minecraft:cooked_porkchop, count: 6}, {xp: 30}]
+
+  - key: nourishing
+    title: "Nourishing!"
+    subtitle: "A full belly outlasts a long fight."
+    icon: farmersdelight:steak_and_potatoes
+    pos: [6, 0]
+    deps: [kitchen]
+    desc: |
+      Plated meals grant &6Nourishment&r: your hunger stops draining while it lasts. Soups and stews grant &6Comfort&r: you heal naturally however empty your stomach is.
+
+      Eat one before a long dungeon and you won't be chewing bread in the middle of a boss's second phase.
+    tasks: [{advancement: "farmersdelight:main/eat_nourishing_food"}]
+    rewards: [{item: farmersdelight:vegetable_soup, count: 3}, {xp: 40}]
+
+  - key: feast
+    title: "&aA Glorious Feast"
+    subtitle: "Some meals are meant for the whole village."
+    icon: farmersdelight:roast_chicken_block
+    pos: [8, -0.25]
+    deps: [nourishing]
+    shape: hexagon
+    size: 1.5
+    desc: |
+      Cook a &6feast&r (a Roast Chicken, a Stuffed Pumpkin, a Honey Glazed Ham or a Shepherd's Pie) and set it down. Anyone with a bowl can take a serving.
+
+      The sellswords of the Ashen Company will fight for gold. They'll stay for this.
+    tasks: [{advancement: "farmersdelight:main/place_feast"}]
+    rewards: [{table: hearth_pantry}, {table: hearth_pantry}, {xp: 100}]
+
+  - key: master_chef
+    title: "Master of the Last Kitchen"
+    subtitle: "Every dish, at least once."
+    icon: farmersdelight:honey_glazed_ham
+    pos: [10, -0.25]
+    deps: [feast]
+    optional: true
+    desc: |
+      Eat a course of every meal the cooking pot knows. It's a long menu. You have, technically, forever.
+
+      &7A long-term goal. Your advancements list the dishes you still owe.
+    tasks: [{advancement: "farmersdelight:main/master_chef"}]
+    rewards: [{item: minecraft:golden_carrot, count: 16}, {item: runeborn:lustrous_rune, count: 2}, {xp: 300}]
+
+  # ---- the keg ----
+  - key: keg
+    title: "Here Starts the Process"
+    subtitle: "Patience, in a barrel."
+    icon: brewinandchewin:keg
+    pos: [6, 1.25]
+    deps: [kitchen]
+    desc: |
+      A &6Keg&r (iron, planks and a honeycomb) ferments drinks and cheese from a base liquid and up to four ingredients. Pour from it into &6tankards&r.
+
+      Some brews want warmth, some want cold. A &6Heating Cask&r or an &6Ice Crate&r next to the keg shifts its temperature.
+
+      &o"The Company says it can't fight sober. I've seen it fight drunk. Brew anyway."&r
+    tasks: [{advancement: "brewinandchewin:main/place_keg"}]
+    rewards: [{item: brewinandchewin:tankard, count: 4}, {xp: 40}]
+
+  - key: mead
+    title: "Mead for the Living"
+    subtitle: "Honey, wheat and sweet berries. And time."
+    icon: brewinandchewin:mead
+    pos: [8, 1.25]
+    deps: [keg]
+    desc: |
+      Fill a keg with honey, add wheat, seeds and sweet berries, and wait. &6Mead&r is what the Ashen Company drinks to its dead.
+
+      Every brew leaves you a little &6Tipsy&r. Don't roll into a fight seeing double.
+    tasks: [{item: brewinandchewin:mead, count: 2}]
+    rewards: [{table: hearth_tavern}, {xp: 50}]
+
+  - key: strongroot
+    title: "Strongroot Ale"
+    subtitle: "Beer, improved by things that grow underground."
+    icon: brewinandchewin:strongroot_ale
+    pos: [10, 1.25]
+    deps: [mead]
+    desc: |
+      Brew plain &6beer&r first: water, wheat, seeds and a brown mushroom. Then ferment that beer again with beetroot, potato, another mushroom and a strip of &6jerky&r.
+
+      &6Strongroot Ale&r is a miner's drink. It makes a long day underground feel shorter, and the walk home feel longer.
+    tasks: [{item: brewinandchewin:strongroot_ale}]
+    rewards: [{table: hearth_tavern}, {xp: 60}]
+
+  - key: cheese
+    title: "Taste of Time"
+    subtitle: "The one thing here that improves with age."
+    icon: brewinandchewin:flaxen_cheese_wheel
+    pos: [8, 2.25]
+    deps: [keg]
+    desc: |
+      Ferment milk with a brown mushroom, pumpkin seeds and sugar in a &6warm&r keg. Pour the full keg out over a honeycomb into an &6Unripe Cheese Wheel&r, set it down and leave it alone.
+
+      When it's ripe, cut it into wedges on a board. Cheese keeps. Most things in this world don't.
+    tasks: [{item: brewinandchewin:flaxen_cheese_wheel}]
+    rewards: [{item: brewinandchewin:ham_and_cheese_sandwich, count: 4}, {xp: 60}]
+
+  # ---- the water ----
+  - key: rod
+    title: "A Line in Dark Water"
+    subtitle: "Fish don't care what happened to the sun."
+    icon: aquaculture:iron_fishing_rod
+    pos: [2, 4.25]
+    deps: [knife]
+    desc: |
+      Craft an &6Iron Fishing Rod&r. Better rods take a &6hook&r, &6bait&r and a coloured line; fit them at a &6Tackle Box&r.
+
+      Every water keeps its own fish: rivers, oceans, jungles, swamps and frozen seas.
+    tasks: [{item: aquaculture:iron_fishing_rod}]
+    rewards: [{item: aquaculture:worm, count: 8}, {xp: 40}]
+
+  - key: big_catch
+    title: "The Ones That Didn't Get Away"
+    subtitle: "Every fisher has a story. Bring proof."
+    icon: aquaculture:tuna
+    pos: [4, 3.5]
+    deps: [rod]
+    desc: |
+      Land a &6Tuna&r from the open ocean and a &6Catfish&r from a river or lake inland.
+
+      Fillet the big ones with a &6Fillet Knife&r. A tuna feeds a table. A catfish feeds the village cats, mostly.
+    tasks: [{item: aquaculture:tuna}, {item: aquaculture:catfish}]
+    rewards: [{item: aquaculture:iron_fillet_knife}, {table: hearth_tackle}, {xp: 60}]
+
+  - key: coast
+    title: "Home of Saylor"
+    subtitle: "Someone on the shore kept fishing through the end of the world."
+    icon: fisherman_house:fishing_net
+    pos: [4, 5]
+    deps: [rod]
+    desc: |
+      A &6Fisherman's Cottage&r sits on a sandy or snowy beach. Saylor lives there, and trades things no village fisherman will.
+
+      The coast has six more places like it, each with its own resident: Harbourmaster Wren, Keeper Morrow, Old Bayou Tam, Frost-Beard Ole, Ferryman Hale… and two deckhands who don't say much anymore.
+    tasks: [{advancement: "fisherman_house:discover_fisherman_house"}]
+    rewards: [{table: hearth_tackle}, {xp: 50}]
+
+  - key: crab_pot
+    title: "Pot Luck"
+    subtitle: "Bait it, sink it, walk away."
+    icon: fisherman_house:crab_pot
+    pos: [6, 4.25]
+    deps: [coast]
+    desc: |
+      Knot &6Fishing Nets&r from string, then a &6Crab Pot&r from nets and sticks, or buy one from a coast fisherman. Set it in open water with &6bait&r inside.
+
+      &6Fish Bait&r is seeds and rotten flesh. &6Chum&r and &6Glow Bait&r are the others; the swamp folk swear by chum. Rain doubles the catch, and a hopper underneath empties the pot for you.
+    tasks: [{advancement: "fisherman_house:get_crab_pot"}, {item: fisherman_house:fish_bait, count: 8}]
+    rewards: [{item: fisherman_house:chum, count: 8}, {xp: 50}]
+
+  - key: bottle
+    title: "Message Received"
+    subtitle: "Twelve notes from the sea. Most of them are complaints."
+    icon: fisherman_house:message_in_a_bottle
+    pos: [6, 5.25]
+    deps: [coast]
+    desc: |
+      Now and then a rod or a crab pot brings up a &6Message in a Bottle&r. Open it. Some hold a little treasure; some hold a &6Bottled Map to a Wreck&r.
+
+      The sea had a lot to say before the Eclipse. It hasn't stopped.
+    tasks: [{advancement: "fisherman_house:open_bottle"}]
+    rewards: [{table: wanderers_cache}, {xp: 50}]
+
+  - key: lighthouse
+    title: "Keeper of the Light"
+    subtitle: "Another fire someone refused to let go out."
+    icon: minecraft:lantern
+    pos: [6, 6.25]
+    deps: [coast]
+    desc: |
+      On a stony shore stands a &6Lighthouse&r. Keeper Morrow lives at its foot and trades with anyone who makes the climb.
+
+      &o"A keeper of a light, by the sea. We'd have a great deal to talk about, he and I."&r
+    tasks: [{advancement: "fisherman_house:discover_lighthouse"}]
+    rewards: [{item: minecraft:lantern, count: 4}, {xp: 60}]
+
+  - key: coastal_wanderer
+    title: "&aCoastal Wanderer"
+    subtitle: "Seven places on the water."
+    icon: fisherman_house:crab_pot
+    pos: [8, 5.25]
+    deps: [lighthouse, crab_pot, bottle]
+    optional: true
+    shape: hexagon
+    desc: |
+      Visit all seven: the Cottage, the Harbour Pier, the Lighthouse, the Stilt Shack, the Ice Fishing Camp, the River Boathouse and, under twelve blocks of water, the &6Sunken Trawler&r.
+
+      &7The captain's chest on the trawler sometimes holds a Heart of the Sea. The drowned deckhands would rather it didn't.
+    tasks: [{advancement: "fisherman_house:all_structures"}]
+    rewards: [{table: hunters_spoils}, {xp: 200}]
+
+  # ---- the wild ----
+  - key: venison
+    title: "Game in the Ash"
+    subtitle: "The deer survived the Eclipse. Mostly by running."
+    icon: naturalist:cooked_venison
+    pos: [2, 2]
+    deps: [knife]
+    desc: |
+      The wild keeps its own larder: &6venison&r from deer, &6drumsticks&r from turkeys, &6duck&r from the ponds, &6crab meat&r on the beaches.
+
+      Deer bolt at the first footstep. Come at them slowly, or bring a bow.
+    tasks: [{item: naturalist:cooked_venison, count: 4}]
+    rewards: [{table: ashborn_provisions}, {xp: 40}]

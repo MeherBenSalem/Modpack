@@ -30,7 +30,8 @@
 The server boot test (`tools/test_server.py`) proves every server mod loads together, the quests load, the scripts
 run and the Last Light NPCs, the Echo and the Eclipse bar work. A client play-test still has to confirm:
 
-1. The client starts with all 157 mods (Sodium 0.8 + Iris + the client-only mods) and reaches a world.
+1. ~~The client starts with every mod and reaches a world.~~ Verified 2026-10-29 (headless client: title screen,
+   world load, no crash). Still worth a look on a real GPU with shaders on.
 2. Runeborn stamina and Better Combat combos feel right together (the movesets in `src/data/runeborn_movesets.yaml`).
 3. The default keybinds in `config/defaultoptions/options.txt` apply on a fresh install and show no conflicts.
 4. Fresh Animations is enabled by default and Entity Model Features renders it.
@@ -43,8 +44,10 @@ run and the Last Light NPCs, the Echo and the Eclipse bar work. A client play-te
 
 ## What only the owner can make
 
-- **Pack icon, logo and main-menu art** (human-made; FancyMenu and Drippy are installed and ready for a custom menu
-  and loading screen).
+- **Pack art is drafted** in `art/` (icon, logo, menu background, title card) and the custom main menu is built
+  from it (`tools/build_menu.py`). It is code-drawn over a real screenshot; read `art/README.md` on disclosure
+  before uploading it anywhere. Upload `art/out/icon.png` as the CurseForge project avatar: a modpack zip can't carry
+  an icon. The Drippy loading screen is still the default.
 - **Gallery:** 8–12 real in-game screenshots and the trailer reel from the NightBeam video pipeline.
 - **Store page:** pitch from `design/STORY.md`, the feature list from `design/PROGRESSION.md`.
 - **Season 2:** the story hook is in the Epilogue ("Who broke the sun?"); Twilight Forest is the suggested new

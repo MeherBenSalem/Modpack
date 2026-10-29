@@ -87,7 +87,7 @@ include:
     - dynamic-fps: "Idle FPS cap"
     - packet-fixer: "Large-packet fixes for big modded worlds"
     - attributefix: "Lifts vanilla attribute caps so RPG stats can grow past 30 armour"
-    - experimentalist: "Removes the experimental-settings warning modded worldgen triggers"
+    - hide-experimental-warning: "Hides the experimental-settings warning modded worldgen triggers (create and load)"
   interface:
     - jei: "Recipes"
     - just-enough-resources-jer: "Loot and ore info in JEI"
@@ -141,6 +141,7 @@ include:
 provided: []
 side_overrides:
   remnants-minimap: client
+  hide-experimental-warning: client
   smart-villagers-ai: both
 
 # CurseForge files the research couldn't list (cfwidget shows only the newest 29 files). Found on the CurseForge

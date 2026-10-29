@@ -144,7 +144,7 @@ def substitute(arg, values):
     return re.sub(r"\$\{([a-z_]+)\}", lambda m: values.get(m.group(1), m.group(0)), arg)
 
 
-def launch_command(nf_json_path, meta):
+def launch_command(nf_json_path, meta, size=(1280, 720), quick=True):
     nf = json.loads(nf_json_path.read_text())
     vanilla_path = RUN / "versions" / meta["minecraft"] / f"{meta['minecraft']}.json"
     vanilla = json.loads(vanilla_path.read_text())
@@ -169,7 +169,9 @@ def launch_command(nf_json_path, meta):
         for a in src:
             if isinstance(a, str):
                 game.append(substitute(a, values))
-    game += ["--width", "1280", "--height", "720", "--quickPlaySingleplayer", "remnants-test"]
+    game += ["--width", str(size[0]), "--height", str(size[1])]
+    if quick:
+        game += ["--quickPlaySingleplayer", "remnants-test"]
     return ["java"] + jvm + [nf["mainClass"]] + game
 
 
@@ -178,16 +180,20 @@ def main():
     ap.add_argument("--seconds", type=int, default=240, help="how long to stay in the world after it loads")
     ap.add_argument("--timeout", type=int, default=1500)
     ap.add_argument("--world", default=str(ROOT / "run" / "server" / "world"))
+    ap.add_argument("--size", default="1280x720", help="window and virtual screen size, e.g. 1920x1080")
+    ap.add_argument("--menu", action="store_true",
+                    help="stay on the title screen and screenshot it (run/client/menu.png)")
     args = ap.parse_args()
     meta = json.loads((ROOT / "src" / "pack.json").read_text())
     mods = json.loads((ROOT / "src" / "mods.json").read_text())
     nf_json = install_neoforge(meta)
     sync_mods([m for m in mods if m.get("decision") in ("include", "optional")])
     sync_pack(args.world)
-    cmd = launch_command(nf_json, meta)
+    size = tuple(int(v) for v in args.size.split("x"))
+    cmd = launch_command(nf_json, meta, size, quick=not args.menu)
     env = dict(os.environ, LIBGL_ALWAYS_SOFTWARE="1", GALLIUM_DRIVER="llvmpipe",
                MESA_GL_VERSION_OVERRIDE="4.5", MESA_GLSL_VERSION_OVERRIDE="450")
-    xvfb = subprocess.Popen(["Xvfb", ":7", "-screen", "0", "1280x720x24"], stdout=subprocess.DEVNULL,
+    xvfb = subprocess.Popen(["Xvfb", ":7", "-screen", "0", f"{size[0]}x{size[1]}x24"], stdout=subprocess.DEVNULL,
                             stderr=subprocess.DEVNULL)
     env["DISPLAY"] = ":7"
     log_path = RUN / "boot.log"
@@ -199,6 +205,12 @@ def main():
             while time.time() - t0 < args.timeout and p.poll() is None:
                 time.sleep(5)
                 text = log_path.read_text(errors="replace")
+                if args.menu and re.search(r"Game took [0-9.]+ seconds to start", text):
+                    time.sleep(20)
+                    subprocess.run(["import", "-display", ":7", "-window", "root", str(RUN / "menu.png")], env=env,
+                                   stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                    in_world = True
+                    break
                 if not in_world and re.search(r"joined the game|logged in with entity id", text):
                     in_world = True
                     loaded_at = time.time()
@@ -215,7 +227,8 @@ def main():
     finally:
         xvfb.terminate()
     text = log_path.read_text(errors="replace")
-    crashes = sorted((RUN / "crash-reports").glob("*.txt")) if (RUN / "crash-reports").exists() else []
+    crashes = sorted(c for c in (RUN / "crash-reports").glob("*.txt") if c.stat().st_mtime >= t0) \
+        if (RUN / "crash-reports").exists() else []  # only this run's
     report = {"reached_world": in_world, "seconds": round(time.time() - t0), "crash_reports": [c.name for c in crashes],
               "mods_loaded": (re.findall(r"Loading (\d+) mods", text) or ["?"])[-1],
               "errors": len(re.findall(r"/(ERROR|FATAL)\]", text))}

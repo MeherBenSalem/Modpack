@@ -1231,6 +1231,33 @@
   "reason": "required by clientsort"
  },
  {
+  "name": "Collective",
+  "slug": "collective",
+  "category": "fixes",
+  "side": "both",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "modrinth": {
+   "project_id": "e0M1UDsY",
+   "version_id": "iOfXOH1b",
+   "version_number": "1.21.1-8.68-fabric+forge+neo",
+   "filename": "collective-1.21.1-8.68.jar",
+   "url": "https://cdn.modrinth.com/data/e0M1UDsY/versions/iOfXOH1b/collective-1.21.1-8.68.jar",
+   "sha1": "cba65b885031b87aa3b93580b389fcb30ca19d8e",
+   "sha512": "2654562ec64ac1f6b20931a6731bfb286f3e1f56ec307da4b980ee296e7a81637ff82b271b33fcf866df93d356e405c3ccd78f77ef0134f4350a0f7150f8a853",
+   "size": 1309012
+  },
+  "curseforge": {
+   "project_id": 342584,
+   "file_id": 9357816,
+   "filename": "collective-1.21.1-8.68.jar"
+  },
+  "required_deps": [],
+  "optional_deps": [],
+  "decision": "include",
+  "group": "library",
+  "reason": "required by hide-experimental-warning"
+ },
+ {
   "name": "Common Network",
   "slug": "common-network",
   "category": "juice",
@@ -3066,33 +3093,6 @@
   "reason": "Skip hidden entities"
  },
  {
-  "name": "Experimentalist",
-  "slug": "experimentalist",
-  "category": "fixes",
-  "side": "both",
-  "license": "MIT",
-  "modrinth": {
-   "project_id": "SKCLXAJ2",
-   "version_id": "fZLBWziY",
-   "version_number": "2.0.2+1.21.x-neoforge",
-   "filename": "experimentalist-2.0.2+1.21.x-neoforge.jar",
-   "url": "https://cdn.modrinth.com/data/SKCLXAJ2/versions/fZLBWziY/experimentalist-2.0.2%2B1.21.x-neoforge.jar",
-   "sha1": "65735efa6304f0e2998b07daae9f0a1121acad5f",
-   "sha512": "64ae98038cbe9102e34dcdfcff26035d0a8b49f3d0fcfa9f9b714091c1f3e5567659d036bf79a48019d62246a2f83ebd84dd209bf5114d28639cba6a8aa59b76",
-   "size": 60663
-  },
-  "curseforge": {
-   "project_id": 1161753,
-   "file_id": 7271701,
-   "filename": "experimentalist-2.0.2+1.21.x-neoforge.jar"
-  },
-  "required_deps": [],
-  "optional_deps": [],
-  "decision": "include",
-  "group": "performance",
-  "reason": "Removes the experimental-settings warning modded worldgen triggers"
- },
- {
   "name": "FerriteCore",
   "slug": "ferrite-core",
   "category": "performance",
@@ -3118,6 +3118,35 @@
   "decision": "include",
   "group": "performance",
   "reason": "Memory"
+ },
+ {
+  "name": "Hide Experimental Warning",
+  "slug": "hide-experimental-warning",
+  "category": "fixes",
+  "side": "client",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "modrinth": {
+   "project_id": "Rm4OOdHd",
+   "version_id": "tJbfSalt",
+   "version_number": "1.21.1-1.3-fabric+forge+neo",
+   "filename": "hideexperimentalwarning-1.21.1-1.3.jar",
+   "url": "https://cdn.modrinth.com/data/Rm4OOdHd/versions/tJbfSalt/hideexperimentalwarning-1.21.1-1.3.jar",
+   "sha1": "0c18b1e2534fd1dd633ae438a51206651fe46d6d",
+   "sha512": "a45d6aa619670a64594c04ea59efb031aec92a84952106b2375e1667a9b445da4e4a6ed81557c99f9017e338f30b208812b0a0983907c9d094fab1ee661b73fb",
+   "size": 18664
+  },
+  "curseforge": {
+   "project_id": 1009556,
+   "file_id": 9033946,
+   "filename": "hideexperimentalwarning-1.21.1-1.3.jar"
+  },
+  "required_deps": [
+   "collective"
+  ],
+  "optional_deps": [],
+  "decision": "include",
+  "group": "performance",
+  "reason": "Hides the experimental-settings warning modded worldgen triggers (create and load)"
  },
  {
   "name": "ImmediatelyFast",

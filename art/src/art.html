@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- Remnants S1 art: the logo (transparent), the pack icon, and the menu/title-card composites.
+     Rendered by art/render.cjs; #view=logo|icon|menu|card picks the piece. Fonts are SIL OFL (art/fonts). -->
+<style>
+  @font-face { font-family: "Cinzel Decorative"; font-weight: 900; src: url("../fonts/CinzelDecorative-Black.ttf"); }
+  @font-face { font-family: "Cinzel Decorative"; font-weight: 700; src: url("../fonts/CinzelDecorative-Bold.ttf"); }
+  @font-face { font-family: "Cinzel"; font-weight: 400 900; src: url("../fonts/Cinzel-wght.ttf"); }
+  @font-face { font-family: "Garamond"; font-style: italic; src: url("../fonts/EBGaramond-Italic-wght.ttf"); }
+  :root {
+    --gold-hi: #fff1c4; --gold: #f2c45a; --gold-mid: #d39a2e; --gold-lo: #8a5a14;
+    --ember: #ff8a2a; --ash: #0b0910; --night: #15101c;
+  }
+  html, body { margin: 0; background: transparent; }
+  .piece { display: none; position: relative; overflow: hidden; }
+  body[data-view="logo"] #logo, body[data-view="icon"] #icon,
+  body[data-view="menu"] #menu, body[data-view="card"] #card { display: block; }
+
+  /* ---------- logo ---------- */
+  #logo { width: 1600px; height: 700px; }
+  .lockup { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .lockup .emblem { width: 190px; height: 190px; margin-bottom: -26px; filter: drop-shadow(0 6px 10px rgba(0,0,0,.7)); }
+  .word {
+    font-family: "Cinzel Decorative"; font-weight: 900; font-size: 236px; line-height: 1; letter-spacing: 6px;
+    color: transparent; position: relative;
+    background: linear-gradient(180deg, var(--gold-hi) 6%, var(--gold) 34%, var(--gold-mid) 62%, var(--gold-lo) 96%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-stroke: 3px #3a2508;
+    filter: drop-shadow(0 4px 0 #1a0f03) drop-shadow(0 10px 18px rgba(0,0,0,.85)) drop-shadow(0 0 26px rgba(255,138,42,.35));
+  }
+  .rule { display: flex; align-items: center; gap: 22px; margin: 18px 0 10px; }
+  .rule i { display: block; height: 3px; width: 380px; background: linear-gradient(90deg, transparent, var(--gold) 30%, var(--gold) 70%, transparent); }
+  .rule b { display: block; width: 18px; height: 18px; background: var(--gold); transform: rotate(45deg); box-shadow: 0 0 14px rgba(255,138,42,.8); }
+  .sub {
+    font-family: "Cinzel"; font-weight: 700; font-size: 54px; letter-spacing: 26px; color: #f3dfb0; margin-right: -26px;
+    text-shadow: 0 3px 0 #1a0f03, 0 6px 14px rgba(0,0,0,.9);
+  }
+  .season {
+    font-family: "Cinzel"; font-weight: 800; font-size: 40px; letter-spacing: 12px; color: var(--ember); margin-top: 14px; margin-right: -12px;
+    text-shadow: 0 2px 0 #2a1003, 0 0 18px rgba(255,120,30,.55), 0 4px 12px rgba(0,0,0,.95);
+  }
+  .season span { color: #f3dfb0; }
+
+  /* ---------- icon ---------- */
+  #icon { width: 512px; height: 512px; border-radius: 0;
+    background:
+      radial-gradient(120% 90% at 50% 105%, rgba(255,118,32,.55) 0%, rgba(120,40,10,.25) 32%, transparent 60%),
+      radial-gradient(90% 80% at 50% 38%, #2a1c34 0%, #120d18 55%, #07050a 100%); }
+  #icon .frame { position: absolute; inset: 14px; border: 3px solid rgba(242,196,90,.75); box-shadow: inset 0 0 0 2px rgba(0,0,0,.6), 0 0 0 2px rgba(0,0,0,.6); }
+  #icon .frame::before, #icon .frame::after { content: ""; position: absolute; width: 16px; height: 16px; background: var(--gold); transform: rotate(45deg); top: -10px; left: calc(50% - 8px); box-shadow: 0 0 10px rgba(255,138,42,.9); }
+  #icon .frame::after { top: auto; bottom: -10px; }
+  #icon svg.big { position: absolute; left: 56px; top: 34px; width: 400px; height: 400px; }
+  #icon .flame { position: absolute; left: 176px; top: 268px; width: 160px; height: 200px; filter: drop-shadow(0 0 18px rgba(255,140,40,.9)); }
+  #icon .r { position: absolute; left: 0; right: 0; bottom: 34px; text-align: center; font-family: "Cinzel Decorative"; font-weight: 900;
+    font-size: 56px; letter-spacing: 6px; color: transparent;
+    background: linear-gradient(180deg, var(--gold-hi), var(--gold) 45%, var(--gold-lo)); -webkit-background-clip: text; background-clip: text;
+    -webkit-text-stroke: 1.5px #2a1806; filter: drop-shadow(0 3px 4px rgba(0,0,0,.9)); }
+
+  /* ---------- composites over the in-game shot ---------- */
+  #menu, #card { width: 1920px; height: 1080px; background: #000; }
+  .shot { position: absolute; inset: 0; background-size: cover; background-position: center; }
+  .shade-left { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(5,4,8,.86) 0%, rgba(5,4,8,.58) 22%, rgba(5,4,8,.14) 36%, transparent 43%); }
+  .vignette { position: absolute; inset: 0; background: radial-gradient(130% 100% at 55% 50%, transparent 58%, rgba(0,0,0,.5) 100%); }
+  .shade-bottom { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(5,4,8,.75) 0%, transparent 35%); }
+  #card .lockup { transform: translateY(-262px) scale(.56); }
+  #card .season { color: #ffe6bc; text-shadow: 0 2px 0 #1a0a02, 0 0 6px rgba(0,0,0,.9), 0 4px 14px rgba(0,0,0,.95); }
+  #card .tag { position: absolute; left: 0; right: 0; bottom: 70px; text-align: center; font-family: "Garamond"; font-style: italic;
+    font-size: 40px; color: #f3dfb0; text-shadow: 0 2px 10px rgba(0,0,0,.95); }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <radialGradient id="corona" cx="50%" cy="50%" r="50%">
+      <stop offset="52%" stop-color="#fff3c9" stop-opacity="1"/>
+      <stop offset="60%" stop-color="#f2c45a" stop-opacity=".95"/>
+      <stop offset="74%" stop-color="#d36a1c" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#d36a1c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="0" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff1c4"/><stop offset=".5" stop-color="#f2c45a"/><stop offset="1" stop-color="#8a5a14"/>
+    </linearGradient>
+    <linearGradient id="fire" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#ff5a12"/><stop offset=".55" stop-color="#ffa53a"/><stop offset="1" stop-color="#fff0b8"/>
+    </linearGradient>
+    <g id="eclipse">
+      <!-- rays -->
+      <g stroke="url(#ring)" stroke-linecap="round" opacity=".9">
+        <line x1="100" y1="4" x2="100" y2="24" stroke-width="4"/><line x1="100" y1="176" x2="100" y2="196" stroke-width="4"/>
+        <line x1="4" y1="100" x2="24" y2="100" stroke-width="4"/><line x1="176" y1="100" x2="196" y2="100" stroke-width="4"/>
+        <line x1="32" y1="32" x2="45" y2="45" stroke-width="3"/><line x1="168" y1="32" x2="155" y2="45" stroke-width="3"/>
+        <line x1="32" y1="168" x2="45" y2="155" stroke-width="3"/><line x1="168" y1="168" x2="155" y2="155" stroke-width="3"/>
+      </g>
+      <circle cx="100" cy="100" r="74" fill="url(#corona)"/>
+      <circle cx="100" cy="100" r="56" fill="none" stroke="url(#ring)" stroke-width="5"/>
+      <circle cx="100" cy="100" r="50" fill="#07050a"/>
+      <circle cx="94" cy="94" r="48" fill="none" stroke="rgba(255,240,200,.08)" stroke-width="2"/>
+    </g>
+  </defs>
+</svg>
+
+<div id="logo" class="piece">
+  <div class="lockup">
+    <svg class="emblem" viewBox="0 0 200 200"><use href="#eclipse"/></svg>
+    <div class="word">REMNANTS</div>
+    <div class="rule"><i></i><b></b><i></i></div>
+    <div class="sub">THE MODPACK</div>
+    <div class="season">SEASON 1 <span>·</span> THE LONG ECLIPSE</div>
+  </div>
+</div>
+
+<div id="icon" class="piece">
+  <svg class="big" viewBox="0 0 200 200"><use href="#eclipse"/></svg>
+  <svg class="flame" viewBox="0 0 80 100">
+    <path d="M40 2 C46 20 64 30 64 56 C64 78 52 96 40 96 C28 96 16 78 16 56 C16 42 24 34 28 22 C32 34 36 38 40 40 C38 26 38 14 40 2 Z" fill="url(#fire)"/>
+    <path d="M40 46 C44 56 52 62 52 74 C52 86 46 94 40 94 C34 94 28 86 28 74 C28 66 32 62 34 56 C36 62 38 64 40 64 C39 58 39 52 40 46 Z" fill="#fff3cf" opacity=".9"/>
+  </svg>
+  <div class="frame"></div>
+</div>
+
+<div id="menu" class="piece">
+  <div class="shot" id="menu-shot"></div>
+  <div class="shade-left"></div><div class="vignette"></div>
+</div>
+
+<div id="card" class="piece">
+  <div class="shot" id="card-shot"></div>
+  <div class="vignette"></div><div class="shade-bottom"></div>
+  <div class="lockup">
+    <svg class="emblem" viewBox="0 0 200 200"><use href="#eclipse"/></svg>
+    <div class="word">REMNANTS</div>
+    <div class="rule"><i></i><b></b><i></i></div>
+    <div class="sub">THE MODPACK</div>
+    <div class="season">SEASON 1 <span>·</span> THE LONG ECLIPSE</div>
+  </div>
+  <div class="tag">The sun was eaten an age ago. Relight it.</div>
+</div>
+
+<script>
+  const p = new URLSearchParams(location.hash.slice(1));
+  document.body.dataset.view = p.get('view') || 'logo';
+  if (p.get('shot')) for (const id of ['menu-shot', 'card-shot'])
+    document.getElementById(id).style.backgroundImage = `url("${p.get('shot')}")`;
+</script>
+</body>
+</html>

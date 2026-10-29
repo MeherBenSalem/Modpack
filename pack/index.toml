@@ -5,8 +5,24 @@ file = "config/defaultoptions/options.txt"
 hash = "c092a79713715e5a4021f19eb0a8f396e3d438d81e2329c6a0189b14ce7b390d"
 
 [[files]]
+file = "config/fancymenu/assets/remnants_logo.png"
+hash = "72c696c797172e050799ba5cddae5528a83bf5ed0ed4e7504e2aff634c375dcb"
+
+[[files]]
+file = "config/fancymenu/assets/remnants_menu_background.png"
+hash = "7c4387c4860766f7730bb4e9ca162002a5556ca7524a3fbb6b51715e5a36c59e"
+
+[[files]]
+file = "config/fancymenu/customizablemenus.txt"
+hash = "4c68ab99c906dd487952f61bf33c0635039a8bbff3f02099e3cd8272fe51b4aa"
+
+[[files]]
+file = "config/fancymenu/customization/remnants_title_screen.txt"
+hash = "804a467477426a5d45c00a9dc4ab0b5465c151dfb16a7c8baf14e3d53639ce77"
+
+[[files]]
 file = "config/fancymenu/options.txt"
-hash = "f025f7ebadbc1ea831ad5f5d117d46b359dffdff3c46f782e1381354b0369c98"
+hash = "6df834ff0756d1d57f5ff20abcc8d5e716f7736fe38f83f390d5b4f539b407ab"
 
 [[files]]
 file = "config/friendsandfoes.json"
@@ -403,6 +419,10 @@ hash = "ea5da82c2acbb390e91cf3648a82bb65b50500a3314bad418a2413f1302534ad"
 [[files]]
 file = "kubejs/assets/remnants/patchouli_books/ashen_codex/en_us/entries/world/sun_crown.json"
 hash = "dbf7d98ca8e8d23afff132042bcb73ad8395583476cfda43c80f89d6af904956"
+
+[[files]]
+file = "kubejs/client_scripts/remnants/title_menu.js"
+hash = "00b8cf41743d5079cfd9d564aa8ca7048173a2209e1a07a1dcb58017b36dc65c"
 
 [[files]]
 file = "kubejs/data/mob_loot_bags/loot_table/bags/common/the_end.json"
@@ -919,6 +939,11 @@ hash = "201022bf40c87198607254673d745f73636d74e1a0e119737a1242c88f932771"
 metafile = true
 
 [[files]]
+file = "mods/collective.pw.toml"
+hash = "696891b20ac75363d212eeda6d6ac7bbd38a6e93b68201bd089a855ab878a5dd"
+metafile = true
+
+[[files]]
 file = "mods/comforts.pw.toml"
 hash = "0ab406ab6c25b54fe060f9ec2162ec76b97af400397d267aa73530427643240d"
 metafile = true
@@ -1029,11 +1054,6 @@ hash = "5b5d5262cf3533d305a10ab9da50f88643996c30e47d63f57e1b3bd62ba3ef2a"
 metafile = true
 
 [[files]]
-file = "mods/experimentalist.pw.toml"
-hash = "90d85a7625fb7506ec8e4e39251733b138ac71f3539fc5fdf0ca3fec1fe76d52"
-metafile = true
-
-[[files]]
 file = "mods/explorers-compass.pw.toml"
 hash = "5a36fed56e2cc221a59e3d14289b3b8a5aa2c282b2e23995aad111aa389b7d0e"
 metafile = true
@@ -1116,6 +1136,11 @@ metafile = true
 [[files]]
 file = "mods/handcrafted.pw.toml"
 hash = "8af7a1b29c63bc75423ee57a71105a928776e4dfdaf57c5d2feeed08f7c44ace"
+metafile = true
+
+[[files]]
+file = "mods/hide-experimental-warning.pw.toml"
+hash = "021866867d74fb6ceba8e3d2ba35335a952b7c8f324f36eabba15aab74816667"
 metafile = true
 
 [[files]]

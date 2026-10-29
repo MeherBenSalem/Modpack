@@ -11,6 +11,7 @@ a banner, a divider, a header and a card per section, bullet lists and a couple 
 | `images/header-*.png` | 1400×120 | Section headers: threshold, story, bosses, systems, world, install (transparent edges) |
 | `images/card-*.png` | 1600×900 | Feature cards: threshold, story, sovereigns, remnants, soulslike, world |
 | `images/gifs/odric.gif`, `felled.gif` | 600 wide, 12 fps | Ser Odric's Ash Slam; his fall in soul fire |
+| `images/trailer.png` | 1600×900 | A trailer frame with a play button, linked to the trailer on YouTube (https://youtu.be/U_x7PBLXGaM) |
 
 ## Before you paste the page
 

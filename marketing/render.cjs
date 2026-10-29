@@ -8,7 +8,7 @@ const fs = require('fs'), path = require('path');
   const specs = JSON.parse(fs.readFileSync(path.join(here, 'src', 'images.json')));
   const only = process.argv.slice(2);
   fs.mkdirSync(path.join(here, 'images'), { recursive: true });
-  const sizes = { banner: [1800, 600], divider: [1400, 40], header: [1400, 120], card: [1600, 900] };
+  const sizes = { banner: [1800, 600], divider: [1400, 40], header: [1400, 120], card: [1600, 900], trailer: [1600, 900] };
   const browser = await chromium.launch();
   for (const [name, spec] of Object.entries(specs)) {
     if (only.length && !only.includes(name)) continue;

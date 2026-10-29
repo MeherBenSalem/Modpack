@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <!-- CurseForge/Modrinth page images for Remnants | The Modpack, in the house style of NightBeam's other pages
-     (Remnant Bosses, Runeborn): banner 1800x600, divider 1400x40, header-* 1400x120, card-* 1600x900.
+     (Remnant Bosses, Runeborn): banner 1800x600, divider 1400x40, header-* 1400x120, card-* and trailer 1600x900.
      marketing/render.cjs renders every entry of marketing/src/images.json through this page (#<json spec>).
      Fonts: art/fonts (SIL OFL). Pictures: real in-game frames from the trailer's Cine footage (marketing/src/shots). -->
 <style>
@@ -43,7 +43,7 @@
 <script>
 const spec = JSON.parse(decodeURIComponent(location.hash.slice(1)));
 const root = document.getElementById('root');
-const [W, H] = { banner: [1800, 600], divider: [1400, 40], header: [1400, 120], card: [1600, 900] }[spec.kind];
+const [W, H] = { banner: [1800, 600], divider: [1400, 40], header: [1400, 120], card: [1600, 900], trailer: [1600, 900] }[spec.kind];
 root.style.width = W + 'px'; root.style.height = H + 'px';
 const html = (h) => { root.insertAdjacentHTML('beforeend', h); };
 const shot = (p) => `url('shots/${p}')`;
@@ -109,6 +109,24 @@ const K = {
     html(`<div class="frame" style="left:${fx}px;top:${fy}px;width:${fw}px;height:${fh}px;background-image:${shot(spec.shot)};background-position:${spec.pos || 'center'};background-size:${spec.size || 'cover'}"></div>`);
     if (spec.inset) html(`<div class="frame" style="left:${fx + fw - 330 + 26}px;top:${fy - 42}px;width:330px;height:210px;background-image:${shot(spec.inset)};background-position:${spec.insetPos || 'center'};background-size:${spec.insetSize || 'cover'}"></div>`);
     if (spec.stats) html(`<div class="stats" style="left:${fx}px;top:${fy + fh + 22}px;width:${fw}px">${spec.stats.map(([l, v]) => `<div><small>${l}</small><b>${v}</b></div>`).join('')}</div>`);
+  },
+  trailer() {   // the trailer link: a frame of the trailer with a play button, linked to the video on the page
+    root.style.background = '#050306';
+    html(`<div style="position:absolute;inset:0;background:${shot(spec.shot)} ${spec.pos || 'center'}/cover;filter:brightness(.62) saturate(1.05)"></div>`);
+    html(`<div style="position:absolute;inset:0;background:radial-gradient(75% 70% at 50% 48%, transparent 30%, rgba(5,3,6,.82) 100%)"></div>`);
+    html(`<div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(5,3,6,.85) 0%,transparent 38%,transparent 78%,rgba(5,3,6,.55) 100%)"></div>`);
+    motes(60, spec.seed || 13, 0.8);
+    html(`<div style="position:absolute;inset:26px;border:1.5px solid rgba(232,198,116,.55)"></div>`);
+    html(`<div style="position:absolute;left:50%;top:372px;width:200px;height:200px;margin:-100px 0 0 -100px;border-radius:50%;
+      border:3px solid #f2c45a;background:radial-gradient(circle, rgba(10,6,4,.55) 0%, rgba(10,6,4,.35) 70%);
+      box-shadow:0 0 40px rgba(255,170,60,.55), inset 0 0 30px rgba(255,170,60,.25), 0 12px 40px rgba(0,0,0,.8)"></div>`);
+    html(`<svg style="position:absolute;left:50%;top:372px;width:90px;height:100px;margin:-50px 0 0 -36px;filter:drop-shadow(0 0 12px rgba(255,180,70,.8))" viewBox="0 0 90 100">
+      <defs><linearGradient id="pg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff1c4"/><stop offset=".5" stop-color="#f2c45a"/><stop offset="1" stop-color="#b8802a"/></linearGradient></defs>
+      <path d="M8 6 L84 50 L8 94 Z" fill="url(#pg)" stroke="#5a3a0c" stroke-width="2" stroke-linejoin="round"/></svg>`);
+    html(`<div style="position:absolute;left:0;right:0;top:560px;display:flex;flex-direction:column;align-items:center">
+      <div class="kicker" style="font-size:22px">${spec.kicker}</div>
+      <div class="title goldtext" style="margin-top:18px;font-size:${spec.tsize || 74}px;letter-spacing:6px">${spec.title}</div>
+      <div class="it" style="margin-top:16px;font-size:32px;text-shadow:0 2px 8px #000">${spec.sub}</div></div>`);
   },
 };
 K[spec.kind]();

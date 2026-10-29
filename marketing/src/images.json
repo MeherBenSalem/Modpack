@@ -235,5 +235,14 @@
   "tsize": 54,
   "textW": 470,
   "insetPos": "30% 35%"
+ },
+ "trailer": {
+  "kind": "trailer",
+  "seed": 13,
+  "shot": "odric_looms.jpg",
+  "pos": "50% 35%",
+  "kicker": "Official Trailer",
+  "title": "Watch the Trailer",
+  "sub": "One minute, every shot recorded in game inside the pack"
  }
 }

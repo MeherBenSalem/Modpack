@@ -12,6 +12,10 @@ ranked and named, and when you die an **Echo** of you guards your runes where yo
 **Season 1, "The Long Eclipse"** builds NightBeam's own mods (Runeborn, RPG Mobs, the Eclipsed Realm, RPG Stats,
 Skills and Powers, Fellowship and more) into one rule set, with 167 mods in all.
 
+[![Watch the trailer](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/marketing/images/trailer.png)](https://youtu.be/U_x7PBLXGaM)
+
+**[Watch the official trailer on YouTube](https://youtu.be/U_x7PBLXGaM)**
+
 ![divider](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/marketing/images/divider.png)
 
 ![The Threshold](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/marketing/images/header-threshold.png)

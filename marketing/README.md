@@ -14,9 +14,9 @@ a banner, a divider, a header and a card per section, bullet lists and a couple 
 
 ## Before you paste the page
 
-**This repository is private, so raw.githubusercontent.com links won't load on CurseForge.** Either make the repository
-public (the other NightBeam repos serve their page images this way), or upload the PNGs and GIFs through CurseForge's
-own image uploader and swap the URLs in `CURSEFORGE.md`.
+The images load from this repository's `main` branch on raw.githubusercontent.com, which needs the repository to stay
+**public** (it is, like the other NightBeam repos). If it ever goes private, every image on the CurseForge page turns
+into its alt text; upload the PNGs and GIFs through CurseForge's own image uploader and swap the URLs instead.
 
 ## Regenerate
 

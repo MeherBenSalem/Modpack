@@ -677,5 +677,42 @@
 			x: 8.0d
 			y: 10.0d
 		}
+		{
+			dependencies: ["669ACB3AAEA214D2"]
+			icon: {
+				id: "minecraft:cookie"
+			}
+			id: "5FFF933FACD13104"
+			rewards: [
+				{
+					id: "246AF32F3E061DC5"
+					table_id: 1229507771120329193L
+					type: "random"
+				}
+				{
+					count: 16
+					id: "3ED34F5D757FB2A8"
+					item: {
+						count: 1
+						id: "minecraft:cookie"
+					}
+					type: "item"
+				}
+				{
+					id: "6D002221A588E3CE"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "62423915FBD9AD0B"
+					structure: "christmas_ginger_house:christmas_ginger_house"
+					type: "structure"
+				}
+			]
+			x: 10.0d
+			y: 10.0d
+		}
 	]
 }

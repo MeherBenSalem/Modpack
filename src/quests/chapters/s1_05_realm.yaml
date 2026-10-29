@@ -6,17 +6,40 @@ subtitle: "Under the black sun sits a crown with nothing inside. Level 70+."
 icon: remnant_bosses:eclipse_shard
 shape: rsquare
 quests:
+  - key: tale_eighth
+    title: "&e♪ &6The Tale of the Eighth"
+    subtitle: "The one who wanted all of it."
+    icon: minecraft:written_book
+    deps: [s1_act4_ash/vaelorn]
+    shape: hexagon
+    size: 1.75
+    keeper: |
+      I knew him, you know. Before.
+
+      He wasn't a king. He was a herald, one of the ones who carried the flame between the seven and never kept any for himself. When they broke the sun, they forgot him. No Fragment for the herald. No crown.
+
+      So he took what was left. All of it. He drank the last of the sun and walked behind it, into the black, and the light went out inside him the moment he swallowed it. A crown with nothing inside.
+
+      He's still sitting there, on his throne, under the sun he ate, waiting for someone to tell him it was worth it. It wasn't. Go and tell him.
+    voice: true
+    desc: |
+      The &5Hollow Sovereign&r, the Eighth, the Last King, sits in the &5Eclipsed Realm&r: a land behind the black sun, made of the light he swallowed and could not keep.
+    tasks: [{checkmark: "♪ Listen to the Keeper"}]
+    rewards: [{xp: 120}]
+
   - key: shard
     title: "&5Splinter of the Black Sun"
     subtitle: "Amethyst, an ender pearl, a gold ingot."
     icon: remnant_bosses:eclipse_shard
-    deps: [s1_act4_ash/vaelorn]
+    deps: [tale_eighth]
     shape: hexagon
     size: 2.0
+    keeper: |
+      Seven Sovereigns, seven embers. The eighth light is where he took it: behind the black sun. You'll need a door.
     desc: |
-      &o"Seven Sovereigns, seven embers. The eighth light is where he took it: behind the black sun. You'll need a door."&r
+      A shard of the eclipse itself: a sliver of the dark the Hollow Sovereign hides behind, caught in crystal.
 
-      Craft an &5Eclipse Shard&r from an amethyst shard, an ender pearl and a gold ingot.
+      &7Craft an &5Eclipse Shard&7 from an amethyst shard, an ender pearl and a gold ingot.
     tasks: [{advancement: "remnant_bosses:realm/root"}]
     rewards: [{item: minecraft:amethyst_shard, count: 4}, {xp: 300}]
 
@@ -26,9 +49,9 @@ quests:
     icon: remnant_bosses:eclipse_waygate
     deps: [shard]
     desc: |
-      A &6Waygate&r: six polished deepslate around a shard on top and a gold ingot at the bottom. Place it and it raises a stone arch.
+      The heralds built &6Waygates&r to carry the flame between kingdoms. One road was sealed when the Eighth walked down it. Open it again.
 
-      Use a second &5Eclipse Shard&r on the arch. It burns for six seconds. Walk through.
+      &7A Waygate: six polished deepslate around a shard on top and a gold ingot at the bottom. Place it and it raises a stone arch. Use a second &5Eclipse Shard&7 on the arch; it burns for six seconds. Walk through.
     tasks: [{advancement: "remnant_bosses:realm/kindle_waygate"}]
     rewards: [{xp: 300}]
 
@@ -39,12 +62,13 @@ quests:
     deps: [waygate]
     shape: hexagon
     size: 2.0
+    keeper: |
+      I can't follow you in, Ashborn. Nothing living can, and I'm not sure I count as living any more. Come back with the light. I'll keep the fire going.
+    voice: true
     desc: |
-      Black sun. A burning tree on the horizon. Silence.
+      Black sun. A burning tree on the horizon. Silence. The Realm is the Eighth's memory of the world, frozen at the moment he swallowed the light. Nothing here can be built, and nothing can be broken.
 
-      You arrive at an &6Arrival Shrine&r with a return Waygate and a &6Grace Ember&r. Rest at graces to heal and set your respawn; their golden motes lead to the nearest arena. Nothing can be built or broken here.
-
-      &o"I can't follow you in, Ashborn. Nothing living can. Come back with the light."&r
+      &7You arrive at an &6Arrival Shrine&7 with a return Waygate and a &6Grace Ember&7. Rest at graces to heal and set your respawn; their golden motes lead to the nearest arena.
     tasks: [{dimension: "remnant_bosses:eclipsed_realm"}]
     rewards: [{item: remnant_bosses:boss_journal}, {xp: 500}]
 
@@ -54,7 +78,9 @@ quests:
     icon: remnant_bosses:boss_journal
     deps: [enter]
     desc: |
-      The &6Boss Hunts Journal&r tracks every boss of the Realm as you find and fell them. Three arenas wait behind &7fog gates&r: the Gravebound Catacombs, the Forgotten Observatory and the Hollow Citadel. Each has an Ancient Altar already laid with its offerings; you bring the summoning item.
+      Someone was here before you and kept notes. The handwriting gets worse toward the end.
+
+      &7The &6Boss Hunts Journal&7 tracks every boss of the Realm as you find and fell them. Three arenas wait behind &7fog gates: the Gravebound Catacombs, the Forgotten Observatory and the Hollow Citadel. Each has an Ancient Altar already laid with its offerings; you bring the summoning item.
     tasks: [{checkmark: "I read the journal"}]
     rewards: [{xp: 100}]
 
@@ -65,7 +91,9 @@ quests:
     deps: [journal]
     shape: gear
     desc: |
-      In the Gravefield Barrows, a &6Burial Guardian&r drops the &7Grave Iron&r that forges the &6Crypt Key&r: six Grave Iron around a block of iron.
+      In the &6Gravefield Barrows&r, a Burial Guardian tends the graves of the Hollow Legion: the soldiers who followed the Eighth behind the sun. It carries the iron of their coffins.
+
+      &7Kill it for &7Grave Iron&7, then forge the &6Crypt Key&7: six Grave Iron around a block of iron.
     tasks: [{kill: remnants:burial_guardian}, {item: remnant_bosses:crypt_key}]
     rewards: [{table: hunters_spoils}, {xp: 600}]
 
@@ -77,7 +105,9 @@ quests:
     shape: gear
     size: 2.0
     desc: |
-      The executioner of the Hollow Legion. Sweeps, chain grabs, graves that erupt beneath you. At half health he raises chain walls: break the four &7Chain Anchors&r to stagger him.
+      The executioner of the Hollow Legion. He chained the Eighth's deserters to their own graves, and when the deserters ran out he chained himself.
+
+      &7Sweeps, chain grabs and graves that erupt beneath you. At half health he raises chain walls: break the four &7Chain Anchors&7 to stagger him.
     tasks: [{kill: remnants:gravebound_warden}]
     rewards: [{table: sovereign_tribute}, {xp: 1500}]
 
@@ -87,7 +117,9 @@ quests:
     icon: remnant_bosses:memory_shard
     deps: [journal]
     desc: |
-      &6Memory Shards&r drop from the Realm's forgotten souls. Four shards, four amethyst and a spyglass make the &6Lens of Memory&r.
+      The Realm's forgotten souls carry crumbs of the light the Eighth swallowed: tiny memories of mornings, warmth, colour. Collect enough and you can see through them.
+
+      &7Four &6Memory Shards&7, four amethyst and a spyglass make the &6Lens of Memory&7.
     tasks: [{item: remnant_bosses:memory_shard, count: 4}, {item: remnant_bosses:memory_lens}]
     rewards: [{xp: 500}]
 
@@ -99,7 +131,9 @@ quests:
     shape: gear
     size: 2.0
     desc: |
-      Rings of memory bolts, a sweeping beam, and a teleport between four lens platforms. In its second phase it makes illusions of itself and hides behind a turning crystal aegis.
+      The Eighth built an observatory to watch the sun he'd lost, and set a Watcher to stare at it so he wouldn't have to. It has been staring at the black for an age. It has started seeing things.
+
+      &7Rings of memory bolts, a sweeping beam and a teleport between four lens platforms. In its second phase it makes illusions of itself and hides behind a turning crystal aegis.
 
       &o"Every ruin has a before."&r
     tasks: [{kill: remnants:forgotten_watcher}]
@@ -113,9 +147,9 @@ quests:
     shape: gear
     size: 2.0
     desc: |
-      An Ancient Altar, four skeleton skulls on the pedestals, and a &5Nether Star&r. Ossukage answers anywhere, not just in the Realm.
+      The Eighth's sworn blade, who followed his master behind the sun and was the first to rise again under it. He's proud of that. He shouldn't be: the desert remembers someone older.
 
-      He is invulnerable while he rises. Then a sword chain, kunai at range, and a second form that raises soldiers and dashes through you. His blade is worth it.
+      &7An Ancient Altar, four skeleton skulls on the pedestals and a &5Nether Star&7. Ossukage answers anywhere, not just in the Realm. He is invulnerable while he rises; then a sword chain, kunai at range, and a second form that raises soldiers and dashes through you.
     tasks: [{kill: remnants:ossukage}]
     rewards: [{table: sovereign_tribute}, {xp: 1500}]
 
@@ -125,7 +159,9 @@ quests:
     icon: remnant_bosses:tarnished_regalia
     deps: [gravebound_warden, forgotten_watcher]
     desc: |
-      Four &6Tarnished Regalia&r, four gold ingots and an &bEcho Shard&r forge the &6Sovereign's Seal&r. The Hollow Citadel's altar waits for it.
+      The Eighth had regalia made for a coronation that never happened. It tarnished in the dark, waiting.
+
+      &7Four &6Tarnished Regalia&7, four gold ingots and an &bEcho Shard&7 forge the &6Sovereign's Seal&7. The Hollow Citadel's altar waits for it.
     tasks: [{item: remnant_bosses:sovereigns_seal}]
     rewards: [{item: minecraft:enchanted_golden_apple}, {xp: 500}]
 
@@ -136,12 +172,13 @@ quests:
     deps: [regalia]
     shape: gear
     size: 3.0
+    keeper: |
+      It's done. Eight embers. Can you feel it? The light is coming back the way it left: all at once. Come home, Ashborn. Come and see the sun.
+    voice: true
     desc: |
-      He drank the sun and became a crown with nothing inside.
+      He drank the sun and became a crown with nothing inside. He will tell you it was his by right. He will tell you nobody else remembered him. Both are true. Neither matters now.
 
-      Three-hit combos and a throne slam; break his guard with an &6axe&r. At two thirds, his pauldrons fly and spectral royal guards rise. At one third, spectral crescents and a soul lunge. At the very end, &c"The Last Command"&r: a rain of blades.
-
-      &o"Bring it home, Ashborn."&r
+      &7Three-hit combos and a throne slam; break his guard with an &6axe&7. At two thirds his pauldrons fly and spectral royal guards rise. At one third, spectral crescents and a soul lunge. At the very end, &c"The Last Command"&7: a rain of blades.
     tasks: [{advancement: "remnant_bosses:realm/remnant_felled"}]
     rewards: [{table: sovereign_tribute}, {table: sovereign_tribute}, {xp: 5000}]
 
@@ -151,6 +188,8 @@ quests:
     icon: minecraft:sunflower
     deps: [hollow_sovereign]
     desc: |
-      Depart the Realm through a grace and walk out into the Overworld.
+      The Realm is fading behind you, the way a dream does when you try to remember it.
+
+      &7Depart the Realm through a grace and walk out into the Overworld.
     tasks: [{advancement: "remnant_bosses:realm/waking_world"}]
     rewards: [{xp: 500}]

@@ -16,7 +16,8 @@
   html, body { margin: 0; background: transparent; }
   .piece { display: none; position: relative; overflow: hidden; }
   body[data-view="logo"] #logo, body[data-view="icon"] #icon,
-  body[data-view="menu"] #menu, body[data-view="card"] #card { display: block; }
+  body[data-view="menu"] #menu, body[data-view="card"] #card,
+  body[data-view="menu2"] #menu2, body[data-view="btn"] #btn { display: block; }
 
   /* ---------- logo ---------- */
   #logo { width: 1600px; height: 700px; }
@@ -66,6 +67,27 @@
   .shade-bottom { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(5,4,8,.75) 0%, transparent 35%); }
   #card .lockup { transform: translateY(-262px) scale(.56); }
   #card .season { color: #ffe6bc; text-shadow: 0 2px 0 #1a0a02, 0 0 6px rgba(0,0,0,.9), 0 4px 14px rgba(0,0,0,.95); }
+  /* ---------- soulslike title screen: dark plate, centred logo, text-only menu ---------- */
+  #menu2 { width: 1920px; height: 1080px; background: #050407; }
+  #menu2 .shot { filter: brightness(.36) saturate(.5) blur(4px); transform: scale(1.06); }
+  #menu2 .veil { position: absolute; inset: 0;
+    background: radial-gradient(60% 55% at 50% 34%, rgba(5,4,7,0) 0%, rgba(5,4,7,.55) 55%, rgba(5,4,7,.92) 100%),
+                linear-gradient(0deg, rgba(5,4,7,.95) 0%, rgba(5,4,7,.55) 34%, rgba(5,4,7,0) 60%); }
+  #menu2 .halo { position: absolute; left: 50%; top: 300px; width: 900px; height: 900px; margin: -450px 0 0 -450px;
+    background: radial-gradient(circle, rgba(255,170,70,.20) 0%, rgba(255,120,40,.08) 28%, transparent 60%); }
+  #menu2 .lockup { transform: translateY(-190px) scale(.62); }
+  #menu2 .season { color: #d9b77a; }
+  #btn { width: 640px; height: 64px; background: transparent; }
+  #btn .label { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+    font-family: "Cinzel"; font-weight: 600; font-size: 36px; letter-spacing: 8px; color: #b9b0a0;
+    text-shadow: 0 2px 6px rgba(0,0,0,.95); margin-right: -8px; }
+  #btn.hover .label { color: #fff3d6; text-shadow: 0 0 14px rgba(255,190,90,.55), 0 2px 6px rgba(0,0,0,.95); }
+  #btn .bar { display: none; position: absolute; left: 0; right: 0; top: 10px; bottom: 10px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255,196,110,.48) 0%, rgba(255,160,70,.2) 45%, transparent 78%); }
+  #btn .rule { display: none; position: absolute; left: 40px; right: 40px; height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(242,196,90,.95) 25%, rgba(242,196,90,.95) 75%, transparent); }
+  #btn.hover .bar, #btn.hover .rule { display: block; }
+  #btn .rule.t { top: 6px; } #btn .rule.b { bottom: 6px; }
   #card .tag { position: absolute; left: 0; right: 0; bottom: 70px; text-align: center; font-family: "Garamond"; font-style: italic;
     font-size: 40px; color: #f3dfb0; text-shadow: 0 2px 10px rgba(0,0,0,.95); }
 </style>
@@ -138,10 +160,26 @@
   <div class="tag">The sun was eaten an age ago. Relight it.</div>
 </div>
 
+<div id="menu2" class="piece">
+  <div class="shot" id="menu2-shot"></div>
+  <div class="veil"></div><div class="halo"></div>
+  <div class="lockup">
+    <svg class="emblem" viewBox="0 0 200 200"><use href="#eclipse"/></svg>
+    <div class="word">REMNANTS</div>
+    <div class="rule"><i></i><b></b><i></i></div>
+    <div class="sub">THE MODPACK</div>
+    <div class="season">SEASON 1 <span>·</span> THE LONG ECLIPSE</div>
+  </div>
+</div>
+
+<div id="btn" class="piece"><div class="bar"></div><div class="rule t"></div><div class="rule b"></div><div class="label" id="btn-label"></div></div>
+
 <script>
   const p = new URLSearchParams(location.hash.slice(1));
   document.body.dataset.view = p.get('view') || 'logo';
-  if (p.get('shot')) for (const id of ['menu-shot', 'card-shot'])
+  if (p.get('label')) document.getElementById('btn-label').textContent = p.get('label')
+  if (p.get('state') === 'hover') document.getElementById('btn').classList.add('hover')
+  if (p.get('shot')) for (const id of ['menu-shot', 'card-shot', 'menu2-shot'])
     document.getElementById(id).style.backgroundImage = `url("${p.get('shot')}")`;
 </script>
 </body>

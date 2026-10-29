@@ -13,24 +13,63 @@ quests:
     deps: [s1_act5_realm/waking_world]
     shape: hexagon
     size: 3.0
+    keeper: |
+      Look at that. Go on, look. I'd almost forgotten the colour.
+
+      Every ember you rekindled is still burning, and every Ashborn on this world carries a heart for each one. The dead are lying down, Ashborn. Not all of them. Most. The ones still walking out there are just stubborn, like the rest of us.
+
+      Rest now. The sun remembers you. It remembers all of us, I think. Even the ones who don't deserve it.
+    voice: true
     desc: |
-      &o"Rest, Ashborn. The sun remembers you."&r
-
-      Every ember you rekindled is still burning, and every Ashborn on this world carries a heart for each one. The Long Eclipse is over.
-
-      Mostly.
-    tasks: [{checkmark: "I watched the sun come up"}]
+      The &6Long Eclipse&r is over. Mostly.
+    tasks: [{checkmark: "♪ I watched the sun come up"}]
     rewards: [{item: runeborn:sovereign_rune}, {item: rpg_attribute_system:tome_of_ascension, count: 2}, {xp: 2000}]
+
+  - key: homecoming
+    title: "Homecoming"
+    subtitle: "Last Light, in daylight."
+    icon: minecraft:bell
+    deps: [first_light]
+    keeper: |
+      The Smith is singing. Badly. The Company's captain is pretending not to cry. Come home, Ashborn. Somebody saved you a seat by the fire, though I suppose you don't need the fire any more.
+    desc: |
+      Last Light was the first shrine kindled in an age. Now it is just a village with a strange old fire in the middle and a great many people who owe you a drink.
+
+      &7Rest at the Ember Shrine in Last Light.
+    tasks: [{checkmark: "I rested at Last Light"}]
+    rewards: [{table: wanderers_cache}, {xp: 500}]
+
+  - key: keepers_name
+    title: "&e♪ &6The Keeper's Name"
+    subtitle: "You never asked."
+    icon: minecraft:written_book
+    deps: [homecoming]
+    shape: hexagon
+    size: 1.5
+    keeper: |
+      You never asked my name. Nobody does. I'll tell you anyway, since you've earned it: I don't have one. Heralds didn't. We had a title, a flame and a road.
+
+      I carried the first flame to the forge where the Crown was made. I watched them break the sun into pieces, and I said nothing. That's my share of all this.
+
+      After, I kept a little of the old flame. Just in case. I gave it to you.
+    voice: true
+    desc: |
+      The Fractured Archive records a herald who carried the first flame to the Crown's forge, and stood by while the Sovereigns broke the sun. The herald's name was never written. Only the title: &6Keeper&r.
+    tasks: [{checkmark: "♪ Listen to the Keeper"}]
+    rewards: [{xp: 500}]
 
   - key: who_broke_the_sun
     title: "&5Who Broke the Sun?"
     subtitle: "Seven crowns, one hollow."
     icon: minecraft:dragon_egg
-    deps: [first_light]
+    deps: [keepers_name]
     shape: diamond
     size: 1.5
+    whisper: |
+      Seven crowns. One hollow. A herald who kept a little flame for later. You were all so busy with the pieces. Not one of you asked who cracked the sun first.
+    voice: true
     desc: |
-      The Sovereigns broke the sun to share it. The Hollow Sovereign drank what was left. But the sun was already cracked when the Crown was forged; the Archive remembers that much.
+      The Sovereigns broke the sun to share it. The Hollow Sovereign drank what was left. But the Archive is certain of one more thing: the sun was already cracked when the Crown was forged.
 
       Something at the edge of the End is still dark. The Dragon remembers the Eighth, and it remembers someone before him.
 
@@ -44,5 +83,12 @@ quests:
     icon: runeborn:sovereign_rune
     deps: [first_light]
     optional: true
+    keeper: |
+      A hundred levels. You could carry a Sovereign's share of light now, and not go mad from it. Probably.
+    desc: |
+      The Sovereigns each held a hundredth of the sun and it broke them. You hold more than that, and you're still you. Mostly.
+
+      &7Reach rune level 100.
     tasks: [{advancement: "runeborn:feats/level_100"}]
     rewards: [{item: runeborn:sovereign_lustrous_stone}, {xp: 1000}]
+

@@ -6,21 +6,40 @@ subtitle: "The red moon rises. The Remnants hunt you back. Levels 15–30."
 icon: remnant_mobs:brand_of_challenge
 shape: rsquare
 quests:
+  - key: tale_red_moon
+    title: "&e♪ &6The Tale of the Red Moon"
+    subtitle: "Why the dead hunt on certain nights."
+    icon: minecraft:written_book
+    deps: [s1_act1_embers/dusk_rider]
+    shape: hexagon
+    size: 1.75
+    keeper: |
+      You heard the bell last night. You'll hear it again.
+
+      When the sun went out, the moon kept its light for a while. The old priests called it the Hunter's Moon: the night the Crown's huntsmen rode out to clear the roads. The huntsmen are Remnants now. On certain nights the moon remembers them, and turns the colour of what they hunted.
+
+      On those nights everything that has died before wakes hungrier. They'll find you, Ashborn. Your light is a beacon, and a red moon lets the dead see further.
+
+      So hunt back. Varghast waits beyond the hunt, and the Frost Matron beyond him. Two more embers. Go and take them.
+    voice: true
+    desc: |
+      The &cHunter's Moon&r is the Eclipse's tide: on its nights the dead rise in greater numbers and higher ranks, and the &cRemnants&r, the named ones, begin to walk.
+    tasks: [{checkmark: "♪ Listen to the Keeper"}]
+    rewards: [{xp: 60}]
+
   - key: hunters_moon
     title: "&cUnder the Hunter's Moon"
     subtitle: "Monsters grow stronger until dawn."
     icon: minecraft:red_dye
-    deps: [s1_act1_embers/dusk_rider]
+    deps: [tale_red_moon]
     shape: hexagon
     size: 2.0
+    keeper: |
+      Toll's ringing. Bar the doors, sharpen something, and don't stand near the windows. Or go out there. You were always going to go out there.
     desc: |
-      Some full moons rise &cred&r. On those nights a toll sounds, every monster gains &c+5 levels&r, ranks come twice as often and Remnant Shards drop twice as thick.
+      Some full moons rise &cred&r. A toll sounds across the world, and until dawn the Eclipse leans close.
 
-      Survive one. Better: hunt through one.
-
-      &o"The Dusk Rider was only the first. The dark noticed you, Ashborn. Now it sends its hunters."&r
-
-      &7Type /remnants moon to check tonight's moon.
+      &7On a Hunter's Moon every monster gains &c+5 levels&7, ranks come twice as often and Remnant Shards drop twice as thick. Survive one. Better: hunt through one. Type &e/remnants moon&7 to check tonight's moon.
     tasks: [{advancement: "remnant_mobs:under_the_hunters_moon"}]
     rewards: [{table: hunters_spoils}, {xp: 300}]
 
@@ -29,8 +48,12 @@ quests:
     subtitle: "Kill something above your level."
     icon: minecraft:iron_sword
     deps: [hunters_moon]
+    keeper: |
+      The Company has a saying: pick on someone your own size, and you'll stay that size forever.
     desc: |
-      A monster whose level burns &cred&r against yours pays half again as much Valor. Pick a fight you shouldn't win, and win it.
+      Valor comes faster from fights you shouldn't win. Every Ashborn who ever mattered got there by being reckless at least once and surviving it.
+
+      &7A monster whose level burns &cred&7 against yours pays half again as much Valor. Kill one.
     tasks: [{advancement: "remnant_mobs:punching_up"}]
     rewards: [{item: runeborn:lustrous_rune, count: 2}, {xp: 200}]
 
@@ -40,9 +63,9 @@ quests:
     icon: remnant_mobs:remnant_shard
     deps: [hunters_moon]
     desc: |
-      A &5Champion&r has risen four times. It carries three traits and pays five times the experience of its kind.
+      A &5Champion&r has risen four times. By now it remembers nothing of who it was, only how it died, and it has learned to make sure that never happens again.
 
-      Read its traits before you swing. A &cVolatile&r one explodes when it dies; a &bBlinking&r one teleports behind you; a &6Packleader&r calls its pack at 60% health.
+      &7It carries three traits and pays five times the experience of its kind. Read its traits before you swing: a &cVolatile&7 one explodes when it dies; a &bBlinking&7 one teleports behind you; a &6Packleader&7 calls its pack at 60% health.
     tasks: [{advancement: "remnant_mobs:champions_bane"}]
     rewards: [{table: hunters_spoils}, {xp: 300}]
 
@@ -52,8 +75,12 @@ quests:
     icon: remnant_mobs:brand_of_challenge
     deps: [champions_bane]
     optional: true
+    keeper: |
+      You're branding them now? On purpose? I've buried braver people than you. Well. Not buried. You know what I mean.
     desc: |
-      A &6Brand of Challenge&r gives a monster one more rank and five more levels, and doubles everything it pays. Brand something and kill it.
+      The &6Brand of Challenge&r was the huntsmen's mark: a sign burned into a beast to say &oI chose you&r. The dead still answer it.
+
+      &7A Brand gives a monster one more rank and five more levels, and doubles everything it pays. Brand something and kill it.
     tasks: [{advancement: "remnant_mobs:accept_the_challenge"}]
     rewards: [{item: remnant_mobs:remnant_shard, count: 6}, {xp: 150}]
 
@@ -64,10 +91,12 @@ quests:
     deps: [champions_bane]
     shape: hexagon
     size: 1.75
+    keeper: |
+      That horn means one of them has your scent. Don't run. They're faster, and they've done this before.
     desc: |
-      From level 30, the rarest rank rises: a &cRemnant&r. It has a name and a title, its horn carries for forty-eight blocks, it never despawns, and when it falls the whole world hears about it.
+      From level 30 the rarest rank rises: a &cRemnant&r, a monster that died so often it grew a name and a title out of the habit. Its horn carries for forty-eight blocks. It never despawns. When it falls, the whole world hears.
 
-      &o"That horn means one of them has your scent. Don't run. They're faster."&r
+      &7Kill a Remnant.
     tasks: [{advancement: "remnant_mobs:remnants_end"}]
     rewards: [{table: hunters_spoils}, {item: runeborn:radiant_rune}, {xp: 500}]
 
@@ -76,10 +105,12 @@ quests:
     subtitle: "The Sovereigns built prisons under the world."
     icon: minecraft:mossy_stone_bricks
     deps: [hunters_moon]
+    keeper: |
+      The Sovereigns couldn't kill everything they feared. So they dug.
     desc: |
-      Under the plains lie the &6Forgotten Catacombs&r, the first of the &6Labyrinths&r: prisons the Sovereigns dug for things they couldn't kill. A Bone Warden keeps its heart.
+      Under the plains lie the &6Forgotten Catacombs&r, the first of the &6Labyrinths&r: prisons the Sovereigns dug for things they couldn't kill. A Bone Warden still keeps its heart, though nobody remembers who it was told to keep in.
 
-      Find the Catacombs and break their warden.
+      &7Find the Catacombs and break their warden.
     tasks: [{advancement: "muchmoredungeons:slay_catacombs_guardian"}]
     rewards: [{table: hunters_spoils}, {xp: 300}]
 
@@ -89,7 +120,9 @@ quests:
     icon: minecraft:enchanted_book
     deps: [s1_act1_embers/dungeon_trail]
     desc: |
-      In the old forests stands the &6Arcane Spire&r, kept by an illusionist who has forgotten which of him is real. Climb it.
+      In the old forests stands the &6Arcane Spire&r, kept by an illusionist who split himself into reflections to outlive the dark, and has since forgotten which of him is real.
+
+      &7Climb the Spire and kill its master.
     tasks: [{advancement: "muchmoredungeons:slay_tower_dungeon_guardian"}]
     rewards: [{table: hunters_spoils}, {xp: 300}]
 
@@ -98,13 +131,12 @@ quests:
     subtitle: "Blade, sorcery or faith. Or all three, badly."
     icon: runeborn:astral_staff
     deps: [hunters_moon]
+    keeper: |
+      Your runes have opinions now. Listen to them. A blade, a star, a prayer. Pick one before the dark picks for you.
     desc: |
-      By now your attributes are telling you who you are:
-      &6Strength&r and &6Dexterity&r for steel, &bIntelligence&r for staves, &eFaith&r for sacred seals, &5Arcane&r for the strange things.
+      The &6Remnant Constellation&r is the map the Crown's astromancers drew of every way a person can carry light. Most of its stars went dark with the sun. Yours are lighting up.
 
-      Open the &6Remnant Constellation&r (&eP&r) and take your first ability; cast it with &eZ&r. Its &bEssence&r refills on its own.
-
-      &7The Paths of the Ashborn chapters go deeper into each one.
+      &7&6Strength&7 and &6Dexterity&7 for steel, &bIntelligence&7 for staves, &eFaith&7 for sacred seals, &5Arcane&7 for the strange things. Open the Constellation (&eP&7), take your first ability and cast it with &eZ&7. Its &bEssence&7 refills on its own. The &ePaths of the Ashborn&7 chapters go deeper into each one.
     tasks: [{checkmark: "I took my first ability in the Constellation"}]
     rewards: [{item: elementals:remnant_tome}, {xp: 150}]
 
@@ -113,8 +145,12 @@ quests:
     subtitle: "Six Fragments and an iron block."
     icon: minecraft:iron_block
     deps: [hunters_moon]
+    keeper: |
+      Varghast was a good king, once. Too good. He couldn't bear to lose a single soldier, so he kept them. Every arm of every man who fell for him, sewn onto his own.
     desc: |
-      &6Varghast the Grafted&r, Sovereign of the Hollow Vale, sewed other men's arms to his own until there was nothing left of him but grip. His token is a block of &firon&r.
+      &6Varghast the Grafted&r, Sovereign of the Hollow Vale, kept his army's strength the only way he could: by wearing it. By the end there was nothing left of him but grip. His token is a block of &firon&r, the metal of the stitches.
+
+      &7Gather six Fragments and an iron block.
     tasks: [{item: runeborn:sovereign_fragment, count: 6}, {item: minecraft:iron_block}]
     rewards: [{xp: 150}]
 
@@ -125,10 +161,13 @@ quests:
     deps: [varghast_fragments]
     shape: gear
     size: 2.0
+    keeper: |
+      Two embers. When he fell, I heard them. All those soldiers, finally let go. Some of them were saying thank you, Ashborn. I think one of them was saying it to you.
+    voice: true
     desc: |
-      Craft his &6Sigil&r and call him somewhere wide. He swings like a man with nothing to lose, because he hasn't.
+      Craft his &6Sigil&r and call him somewhere wide. He swings like a man with a hundred arms and nothing left to lose, because he has and he hasn't.
 
-      His grafted arm has the reach of a spear. Don't trade blows; roll &oforward&r into his swing and punish the recovery.
+      &7His grafted arm has the reach of a spear. Don't trade blows; roll &oforward&7 into his swing and punish the recovery.
     tasks: [{item: runeborn:sigil_varghast}, {advancement: "runeborn:feats/fell_varghast"}]
     rewards: [{table: sovereign_tribute}, {xp: 600}]
 
@@ -137,10 +176,12 @@ quests:
     subtitle: "Wear a piece of the broken sun."
     icon: runeborn:crown_shard_varghast
     deps: [varghast]
+    keeper: |
+      The Crown was made to hold the sun. Every piece still remembers how. Wear it, and it will try to hold you.
     desc: |
-      Every Sovereign but the Dusk Rider leaves a &6Crown Shard&r: a fragment of the Sun-Crown with a lasting boon. Equip it at a shrine.
+      Every Sovereign but the Dusk Rider leaves a &6Crown Shard&r: a fragment of the Sun-Crown, each with a lasting boon. Six Sovereigns, six shards. The seventh piece was never a Sovereign's to keep.
 
-      &7Seven shards remake the Crown. The seventh is not a Sovereign's.
+      &7Equip the shard at a shrine.
     tasks: [{item: runeborn:crown_shard_varghast}]
     rewards: [{item: runeborn:hallowed_tear}, {xp: 200}]
 
@@ -149,10 +190,12 @@ quests:
     subtitle: "Where the cold went to hide."
     icon: minecraft:blue_ice
     deps: [varghast]
+    keeper: |
+      Sylvara buried her piece of the sun under the snow to keep it from melting away. It worked. Nothing there has melted in an age, including her.
     desc: |
-      &6Sylvara, Frost Matron&r rules the Rime Veil: the frozen lands where the last warmth of the old sun was buried under snow. Her token is &bblue ice&r.
+      &6Sylvara, Frost Matron&r, rules the &bRime Veil&r: the frozen lands where the last warmth of the old sun was buried and kept, like a seed nobody was allowed to plant. Her token is &bblue ice&r.
 
-      Before you call her, learn the cold. In the frozen peaks a beast called the &6Frostmaw&r guards its ice crystal; under the ice, the &6Rimefrost Vaults&r hold a Frost Lich.
+      &7Before you call her, learn the cold. In the frozen peaks the &6Frostmaw&7 guards its ice crystal; under the ice, the &6Rimefrost Vaults&7 hold a Frost Lich.
     tasks: [{item: minecraft:blue_ice}, {item: runeborn:sovereign_fragment, count: 6}]
     rewards: [{item: minecraft:golden_apple, count: 2}, {xp: 200}]
 
@@ -164,7 +207,9 @@ quests:
     optional: true
     shape: gear
     desc: |
-      A hulking frost beast sleeps in the snow. It breathes ice and leaps like a falling glacier. It guards an &bIce Crystal&r that freezes everything around its bearer.
+      A hulking frost beast sleeps in the snow, curled around a crystal of the Matron's ice like a dog around a bone. It breathes winter and leaps like a falling glacier.
+
+      &7Kill the Frostmaw. Its &bIce Crystal&7 freezes everything around its bearer.
     tasks: [{kill: mowziesmobs:frostmaw}]
     rewards: [{table: hunters_spoils}, {xp: 400}]
 
@@ -174,6 +219,10 @@ quests:
     icon: minecraft:packed_ice
     deps: [rime_veil, labyrinth]
     optional: true
+    desc: |
+      The Matron's court did not die. It froze, mid-feast, mid-sentence, and the Frost Lich who keeps the vaults has been waiting ever since for someone to finish the conversation.
+
+      &7Clear the Rimefrost Vaults and kill their guardian.
     tasks: [{advancement: "muchmoredungeons:slay_frost_vaults_guardian"}]
     rewards: [{table: hunters_spoils}, {xp: 400}]
 
@@ -184,12 +233,13 @@ quests:
     deps: [rime_veil]
     shape: gear
     size: 2.0
+    keeper: |
+      Three embers. Feel that wind? It's warm. For the first time in an age, something in the north is thawing. Three Sovereigns, Ashborn. You're making the dark nervous.
+    voice: true
     desc: |
       Call her in the snow, where she feels at home. She fights from range and freezes what she can't reach.
 
-      &cFrostbite&r builds with every hit. Let it fill and it bursts for a chunk of your health. Close the distance, use cover against her blizzards, and keep a flask for the burst.
-
-      &o"Two Sovereigns. Two embers. You're making the dark nervous."&r
+      &7&cFrostbite&7 builds with every hit; let it fill and it bursts for a chunk of your health. Close the distance, use cover against her blizzards and keep a flask for the burst.
     tasks: [{item: runeborn:sigil_sylvara}, {advancement: "runeborn:feats/fell_sylvara"}]
     rewards: [{table: sovereign_tribute}, {item: runeborn:tempering_stone_5, count: 2}, {xp: 800}]
 
@@ -198,7 +248,11 @@ quests:
     subtitle: "Rune level 50."
     icon: runeborn:radiant_rune
     deps: [sylvara]
+    keeper: |
+      Fifty levels of light. You glow, you know. Not so anyone else could see. But I can.
     desc: |
-      Fifty levels of light. You are no longer the weakest thing in the ash.
+      You are no longer the weakest thing in the ash. Remnants that once hunted you now hesitate at the edge of your torchlight.
+
+      &7Reach rune level 50.
     tasks: [{advancement: "runeborn:feats/level_50"}]
     rewards: [{item: rpg_attribute_system:tome_of_ascension}, {xp: 400}]

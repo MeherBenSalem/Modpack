@@ -14,6 +14,30 @@
 		{
 			dependencies: ["53F967EF1BEA3D24"]
 			icon: {
+				id: "minecraft:written_book"
+			}
+			id: "66EEF900D3D6B3A0"
+			rewards: [
+				{
+					id: "1AAE3275144D47FA"
+					type: "xp"
+					xp: 80
+				}
+			]
+			shape: "hexagon"
+			size: 1.75d
+			tasks: [
+				{
+					id: "2AC5E5A9B5109715"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: -0.875d
+		}
+		{
+			dependencies: ["66EEF900D3D6B3A0"]
+			icon: {
 				id: "minecraft:sculk_shrieker"
 			}
 			id: "36E2AF0A1C071B2E"
@@ -38,8 +62,8 @@
 					type: "structure"
 				}
 			]
-			x: 0.0d
-			y: -0.875d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["36E2AF0A1C071B2E"]
@@ -77,7 +101,7 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
+			x: 4.0d
 			y: -3.5d
 		}
 		{
@@ -106,7 +130,7 @@
 					type: "dimension"
 				}
 			]
-			x: 2.0d
+			x: 4.0d
 			y: -1.75d
 		}
 		{
@@ -142,7 +166,7 @@
 					value: 1L
 				}
 			]
-			x: 2.0d
+			x: 4.0d
 			y: 0.0d
 		}
 		{
@@ -185,7 +209,7 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
@@ -216,7 +240,7 @@
 					value: 1L
 				}
 			]
-			x: 6.0d
+			x: 8.0d
 			y: -1.75d
 		}
 		{
@@ -247,7 +271,7 @@
 					value: 1L
 				}
 			]
-			x: 6.0d
+			x: 8.0d
 			y: 0.0d
 		}
 		{
@@ -295,7 +319,7 @@
 					type: "advancement"
 				}
 			]
-			x: 6.0d
+			x: 8.0d
 			y: 1.75d
 		}
 		{
@@ -326,7 +350,7 @@
 					value: 1L
 				}
 			]
-			x: 2.0d
+			x: 4.0d
 			y: 1.75d
 		}
 		{
@@ -385,7 +409,7 @@
 					type: "advancement"
 				}
 			]
-			x: 2.0d
+			x: 4.0d
 			y: 3.5d
 		}
 		{
@@ -429,7 +453,7 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
+			x: 10.0d
 			y: 0.0d
 		}
 		{
@@ -477,7 +501,7 @@
 					type: "advancement"
 				}
 			]
-			x: 10.0d
+			x: 12.0d
 			y: 0.0d
 		}
 	]

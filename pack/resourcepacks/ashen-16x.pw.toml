@@ -1,0 +1,16 @@
+name = "Ashen 16x (resource pack)"
+filename = "Ashen_16x.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/LSmohupN/versions/xiwrkYeI/Ashen_16x.zip"
+hash-format = "sha512"
+hash = "93c5dbc407792dc5bf5c2de87d2a4cfb805ba5de654bd47c4edd248164688e998858edc68791358297f3ef7b1a8ec46290e122b61971810a8116fb57ebcded41"
+
+[update]
+[update.curseforge]
+file-id = 9240834
+project-id = 864112
+[update.modrinth]
+mod-id = "LSmohupN"
+version = "xiwrkYeI"

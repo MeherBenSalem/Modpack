@@ -14,6 +14,30 @@
 		{
 			dependencies: ["2A7E4FBEE8E2A089"]
 			icon: {
+				id: "minecraft:written_book"
+			}
+			id: "456BE32594E10424"
+			rewards: [
+				{
+					id: "0A3F5FC4995B42B4"
+					type: "xp"
+					xp: 60
+				}
+			]
+			shape: "hexagon"
+			size: 1.75d
+			tasks: [
+				{
+					id: "5CCA7FA567E6349B"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: -0.875d
+		}
+		{
+			dependencies: ["456BE32594E10424"]
+			icon: {
 				id: "minecraft:red_dye"
 			}
 			id: "1B71C09161A6DDFB"
@@ -39,8 +63,8 @@
 					type: "advancement"
 				}
 			]
-			x: 0.0d
-			y: -0.875d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1B71C09161A6DDFB"]
@@ -72,7 +96,7 @@
 					type: "advancement"
 				}
 			]
-			x: 2.0d
+			x: 4.0d
 			y: -3.5d
 		}
 		{
@@ -101,7 +125,7 @@
 					type: "advancement"
 				}
 			]
-			x: 2.0d
+			x: 4.0d
 			y: -1.75d
 		}
 		{
@@ -135,7 +159,7 @@
 					type: "advancement"
 				}
 			]
-			x: 4.0d
+			x: 6.0d
 			y: -1.75d
 		}
 		{
@@ -174,7 +198,7 @@
 					type: "advancement"
 				}
 			]
-			x: 4.0d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
@@ -203,7 +227,7 @@
 					type: "advancement"
 				}
 			]
-			x: 2.0d
+			x: 4.0d
 			y: 0.0d
 		}
 		{
@@ -262,7 +286,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 2.0d
+			x: 4.0d
 			y: 1.75d
 		}
 		{
@@ -297,7 +321,7 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
+			x: 4.0d
 			y: 3.5d
 		}
 		{
@@ -336,7 +360,7 @@
 					type: "advancement"
 				}
 			]
-			x: 4.0d
+			x: 6.0d
 			y: 1.75d
 		}
 		{
@@ -370,7 +394,7 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
+			x: 8.0d
 			y: -0.875d
 		}
 		{
@@ -414,7 +438,7 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
+			x: 8.0d
 			y: 0.875d
 		}
 		{
@@ -445,7 +469,7 @@
 					value: 1L
 				}
 			]
-			x: 8.0d
+			x: 10.0d
 			y: -1.75d
 		}
 		{
@@ -475,7 +499,7 @@
 					type: "advancement"
 				}
 			]
-			x: 8.0d
+			x: 10.0d
 			y: 0.0d
 		}
 		{
@@ -523,7 +547,7 @@
 					type: "advancement"
 				}
 			]
-			x: 8.0d
+			x: 10.0d
 			y: 1.75d
 		}
 		{
@@ -555,7 +579,7 @@
 					type: "advancement"
 				}
 			]
-			x: 10.0d
+			x: 12.0d
 			y: 0.0d
 		}
 	]

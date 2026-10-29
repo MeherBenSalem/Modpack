@@ -12,29 +12,65 @@ quests:
     icon: runeborn:faded_rune
     shape: hexagon
     size: 2.0
+    keeper: |
+      Another one. Up you get. The ash doesn't keep its dead for long.
+
+      Listen, because I'll only say it once. Once there was a sun, and a crown to hold its light. Seven rulers swore to share it, so they broke the sun into pieces and each carried one home. An eighth wanted all of it. He drank the last light himself, and the sky went black.
+
+      Since then, nothing that dies here stays dead. It comes back wrong. Remnants, we call them. And you came back too, little ember. That makes you the brightest thing left in the world. They will want it. Let's not give it to them.
+    voice: true
     desc: |
-      &o"Another one. Up you get. The ash doesn't keep its dead for long."&r
+      You are one of the &6Ashborn&r: risen from ash with no name, no memory and no way to stay dead. The &cRemnants&r, everything that died under the Eclipse and rose wrong, can smell the light in you.
 
-      An age ago the sun was eaten. Everything that died in the dark came back wrong: &cRemnants&r, echoes that keep a name and a grudge.
-
-      You are one of the &6Ashborn&r. You can't die for good, which is exactly why the dead are coming for you.
-
-      Press &eI&r to open your &6Status&r and the &6Codex&r. Everything this world will try to kill you with is written there.
-    tasks: [{checkmark: "I am awake"}]
+      &7Press &eI&7 for your &6Status&7 and the &6Ashen Codex&7. Everything this world will try to kill you with is written there.
+    tasks: [{checkmark: "♪ Listen to the Keeper"}]
     rewards:
       - {item: {id: patchouli:guide_book, components: {"patchouli:book": "remnants:ashen_codex"}}, title: "The Ashen Codex"}
       - {table: ashborn_provisions}
       - {xp: 20}
+
+  - key: gatekeeper
+    title: "&6Gatekeeper of the Threshold"
+    subtitle: "Ser Odric was told not to let anyone leave."
+    icon: minecraft:wither_skeleton_skull
+    deps: [rise]
+    optional: true
+    shape: gear
+    size: 1.5
+    keeper: |
+      Odric kept this gate for the heralds. Kept it well. When the heralds died, nobody told him to stop.
+    desc: |
+      The &6Threshold&r was the heralds' crypt, where the Crown laid its light-bearers to rest. &6Ser Odric&r was their gatekeeper, sworn to keep the dead from leaving. The Eclipse made that oath very busy.
+
+      &7Beyond the fog in the Hall of Messages, Odric waits. Fall to him once and the &6Ember Door&7 in the crypt opens anyway, but felling him is worth it. Watch for his &cAsh Slam&7: a roar, a ring of smoke, then a blast. Roll out of it, or roll through.
+    tasks: [{advancement: "remnants:threshold/gatekeeper", title: "Fell Ser Odric"}]
+    rewards: [{table: ashborn_provisions}, {item: runeborn:heros_rune}, {xp: 120}]
+
+  - key: beyond
+    title: "&6Beyond the Gate"
+    subtitle: "Up the Last Stair, through the Waygate."
+    icon: minecraft:lodestone
+    deps: [rise]
+    keeper: |
+      Up the stair. Through the gate. Don't look back; there's nothing behind you but graves, and one of them was yours.
+    desc: |
+      The Waygate at the top of the Last Stair is the heralds' road out of the Threshold. It leads to the &6Lands Under Ash&r: the world, what's left of it.
+
+      &7Pass the Ember Door and climb to the Waygate.
+    tasks: [{advancement: "remnants:threshold/beyond", title: "Step through the Waygate"}]
+    rewards: [{item: minecraft:bread, count: 8}, {xp: 40}]
 
   - key: origin
     title: "What You Were"
     subtitle: "Pick the life you half-remember."
     icon: runeborn:errant_longsword
     deps: [rise]
+    keeper: |
+      You had a life before the ash. Most of you remember a sword, or a prayer, or a debt. Pick the one that feels true. It won't matter to the dead.
     desc: |
-      Your &6origin&r is the life you half-remember: Knight-Errant, Duelist, Astromancer, Penitent… or &7Ashborn&r, risen with nothing at all.
+      Your &6origin&r is the shape your last life left in you: Knight-Errant, Warlord, Duelist, Cutthroat, Astromancer, Oracle, Ronin, Penitent, Hexblade… or &7Ashborn&r, risen with nothing at all.
 
-      It sets your starting attributes and armament. You can change your mind later with a &6Tear of Rebirth&r, so don't agonise. The dark won't wait.
+      &7It sets your starting attributes and armament. A &6Tear of Rebirth&7 lets you choose again later, so don't agonise. The dark won't wait.
     tasks: [{checkmark: "I chose an origin in the Status screen (I)"}]
     rewards: [{xp: 30}]
 
@@ -42,14 +78,25 @@ quests:
     title: "Wood Before Iron"
     subtitle: "Every Ashborn starts the same way."
     icon: minecraft:oak_log
-    deps: [rise]
+    deps: [beyond]
+    desc: |
+      The forests outlived the sun. Trees grow toward a light that isn't there any more, out of habit, the way old soldiers salute an empty throne.
+
+      &7Gather logs. Everything starts with wood.
     tasks: [{tag: minecraft:logs, count: 16}]
     rewards: [{item: minecraft:apple, count: 4}, {xp: 20}]
 
   - key: stone
     title: "Stone Teeth"
+    subtitle: "Something sharper than your hands."
     icon: minecraft:stone_sword
     deps: [wood]
+    keeper: |
+      Stone. Good. Stone doesn't care what you were, either.
+    desc: |
+      Under the soil, the world's bones. The first Ashborn fought with whatever the earth gave them, and most of them are Remnants now. Do better than they did.
+
+      &7Mine cobblestone and make a stone pickaxe.
     tasks: [{item: minecraft:cobblestone, count: 32}, {item: minecraft:stone_pickaxe}]
     rewards: [{item: minecraft:torch, count: 16}, {xp: 30}]
 
@@ -58,12 +105,12 @@ quests:
     subtitle: "Stamina, and the roll that saves you."
     icon: minecraft:feather
     deps: [origin]
+    keeper: |
+      You're not strong yet. So don't be there when it lands.
     desc: |
-      Every swing and every dodge spends &astamina&r, the green bar. Swing while exhausted and your blows land at a fraction of their strength.
+      The dead don't tire. You do. Every swing and every dodge spends &astamina&r, the green bar, and a blow struck while exhausted lands at a fraction of its strength.
 
-      Tap &eLeft Alt&r to &6roll&r: for a heartbeat nothing can touch you. Learn the timing on zombies. You'll need it on things that aren't zombies.
-
-      &7Weapon arts (&eR&7) cost &bFP&7, the blue bar. Refill both at an Ember Shrine.
+      &7Tap &eLeft Alt&7 to &6roll&7: for a heartbeat nothing can touch you. Learn the timing on zombies; you'll need it on things that aren't zombies. Weapon arts (&eR&7) cost &bFP&7, the blue bar. Both refill at an Ember Shrine.
     tasks: [{checkmark: "I rolled through an attack"}]
     rewards: [{xp: 40}]
 
@@ -72,10 +119,12 @@ quests:
     subtitle: "They were people, once. Mostly."
     icon: minecraft:rotten_flesh
     deps: [stamina, stone]
+    keeper: |
+      Don't look at their faces. Some of them used to be someone's.
     desc: |
-      Every monster carries a &elevel&r over its head. Levels climb the further you go from where you woke, the deeper you dig and the longer the world has lived under the Eclipse.
+      The shambling dead are the oldest Remnants: villagers, farmers and soldiers who died in the first dark years and rose before anyone understood what rising meant.
 
-      A &agreen&r level is safe. A &cred&r one will kill you. Start with green.
+      &7Every monster carries a &elevel&7 over its head. Levels climb the further you go from where you woke, the deeper you dig and the longer the world lives under the Eclipse. &aGreen&7 is safe. &cRed&7 will kill you. Start with green.
     tasks: [{kill: minecraft:zombie, count: 5}, {kill: minecraft:skeleton, count: 3}]
     rewards: [{table: ashborn_provisions}, {xp: 60}]
 
@@ -84,10 +133,12 @@ quests:
     subtitle: "The light that leaves the dead."
     icon: runeborn:faded_rune
     deps: [first_blood]
+    keeper: |
+      Feel that? A little warmth, where there wasn't any. That was theirs. Now it's yours. Don't lose it.
     desc: |
-      When anything dies, its light leaves as &6runes&r, and you can hold them. Runes buy levels, upgrades and wares.
+      When anything dies, the scrap of sunlight it carried leaves it as &6runes&r. The Ashborn are the only things left that can hold them. Runes buy levels, upgrades and wares.
 
-      Here is the cruel part: when &oyou&r die, your runes stay where you fell.
+      &7The cruel part: when &oyou&7 die, your runes stay where you fell.
     tasks: [{checkmark: "I understand what I stand to lose"}]
     rewards: [{xp: 40}]
 
@@ -97,12 +148,13 @@ quests:
     icon: minecraft:skeleton_skull
     deps: [runes]
     shape: diamond
+    keeper: |
+      Good. Now you know. Everyone dies once. The trick is not to make a habit of it. Go back to where you fell. Something is wearing your face, and it is holding your light.
+    voice: true
     desc: |
-      &o"Good. Now you know."&r
+      Here, the dead don't stay quiet, and that includes you. Where you fell, an &cEcho&r of you rises: a Remnant that wears your face, your gear and your name, guarding the runes you dropped.
 
-      Here, the dead don't stay quiet. Where you fell, an &cEcho&r of you rises: a named Remnant that wears your face and guards the runes you lost.
-
-      Kill your own Echo to take them back. Die again before you do, and both the Echo and your runes fade into the ash.
+      &7Kill your own Echo to take them back. Die again before you do, and the Echo and your runes fade into the ash together.
     tasks: [{advancement: "runeborn:feats/died"}]
     rewards: [{xp: 50}]
 
@@ -111,20 +163,38 @@ quests:
     subtitle: "Take back what's yours."
     icon: runeborn:heros_rune
     deps: [you_died]
+    keeper: |
+      Strange, killing yourself. It gets easier. That should worry you more than it does.
+    desc: |
+      An Echo fights the way you fought when you died: same weapon, same habits, same mistakes. Learn from them before it does.
+
+      &7Kill your Echo and reclaim your runes.
     tasks: [{advancement: "runeborn:feats/reclaimed"}]
     rewards: [{table: wanderers_cache}, {xp: 80}]
 
   - key: iron
     title: "Iron Will"
+    subtitle: "The world's best argument."
     icon: minecraft:iron_ingot
     deps: [stone]
+    desc: |
+      Iron remembers the old forges. In the age of the sun, smiths sang over it; now it just goes quiet in the furnace and waits to be useful.
+
+      &7Smelt iron. A shield comes with it, and you will want one.
     tasks: [{item: minecraft:iron_ingot, count: 12}]
     rewards: [{item: minecraft:shield}, {xp: 60}]
 
   - key: armour
     title: "Something Between You and Them"
+    subtitle: "Plate, for the parts that bleed."
     icon: minecraft:iron_chestplate
     deps: [iron]
+    keeper: |
+      Armour doesn't make you brave. It makes you stupid for a little longer, which is nearly the same thing.
+    desc: |
+      Every Remnant out there was once someone who thought leather was enough.
+
+      &7Forge an iron chestplate and helmet.
     tasks: [{item: minecraft:iron_chestplate}, {item: minecraft:iron_helmet}]
     rewards: [{item: minecraft:golden_apple}, {xp: 80}]
 
@@ -133,8 +203,12 @@ quests:
     subtitle: "Light holds the dark back. For now."
     icon: minecraft:red_bed
     deps: [first_blood]
+    keeper: |
+      Nights are longer than they used to be. Or we are smaller. Light a fire and don't argue with the dark.
     desc: |
       Torches keep the small things away. Beds skip the worst of it. Neither will save you from what comes on a &cred moon&r.
+
+      &7Make a bed and carry torches.
     tasks: [{tag: minecraft:beds}, {item: minecraft:torch, count: 32}]
     rewards: [{item: minecraft:cooked_beef, count: 8}, {xp: 40}]
 
@@ -143,14 +217,14 @@ quests:
     subtitle: "Veteran, Elite, Champion… Remnant."
     icon: remnant_mobs:hunters_lens
     deps: [first_blood]
+    keeper: |
+      Some of them have died more than once. Each time they come back meaner. Count the crests before you count your chances.
     desc: |
-      Some monsters rise more than once. Their crest shows how many times:
+      A monster that rises again rises stronger. Its crest shows how many times:
 
       &7Common&r → &aVeteran&r → &9Elite&r → &5Champion&r → &cRemnant&r
 
-      Ranked monsters carry &etraits&r (Vampiric, Blinking, Packleader…) shown under their name. Every ranked kill drops a &6Remnant Shard&r; crush one in your hand to absorb its &6Valor&r.
-
-      A &6Hunter's Lens&r reads a monster's threat before you commit. Take this one.
+      &7Ranked monsters carry &etraits&7 (Vampiric, Blinking, Packleader…) under their name. Every ranked kill drops a &6Remnant Shard&7; crush it to absorb its &6Valor&7. A &6Hunter's Lens&7 reads a monster's threat before you commit. Take this one.
     tasks: [{advancement: "remnant_mobs:know_thy_enemy"}]
     rewards: [{item: remnant_mobs:hunters_lens}, {xp: 60}]
 
@@ -160,9 +234,9 @@ quests:
     icon: remnant_mobs:remnant_shard
     deps: [know_enemy]
     desc: |
-      Kills give &6Valor&r. Valor gives &6RPG levels&r, and every level gives attribute points.
+      Runes are light; &6Valor&r is memory. Every kill teaches your body something, and your body keeps it.
 
-      Press &eK&r to open the &6Level Up&r screen: stage points, preview &7current → after&r, confirm.
+      &7Kills give Valor. Valor gives &6RPG levels&7, and every level gives attribute points. Press &eK&7 to open the &6Level Up&7 screen: stage points, preview, confirm.
     tasks: [{advancement: "remnant_mobs:taste_of_valor"}]
     rewards: [{xp: 60}, {table: ashborn_provisions}]
 
@@ -174,9 +248,12 @@ quests:
     min_deps: 2
     shape: hexagon
     size: 1.5
+    keeper: |
+      There. Smoke. People, and people who stayed small and stayed lit. Take me there, Ashborn. Fire wants company, and so, I'm told, do I.
+    voice: true
     desc: |
-      Villages survived the Eclipse by staying small and staying lit. Find one with a bell.
+      Villages survived the Eclipse by being too small to bother with and too stubborn to die. Their bells still ring at dusk, out of habit, to tell the dark that someone is counting.
 
-      &o"Bring me to a village, Ashborn. Fire wants company."&r
+      &7Find a village with a bell.
     tasks: [{structure: "#minecraft:village"}]
     rewards: [{table: wanderers_cache}, {xp: 100}]

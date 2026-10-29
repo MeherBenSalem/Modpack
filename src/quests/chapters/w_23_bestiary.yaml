@@ -339,3 +339,40 @@ quests:
       - {kill: "remnants:ancient_vessel"}
       - {kill: "remnants:relic_stalker"}
     rewards: [{table: world_eclipse_spoils}, {xp: 800}]
+
+  # ---- NightBeam: Genetically Modified Monsters ----
+  - key: wrongborn
+    title: "&aThe Wrongborn"
+    subtitle: "Creepers that rose wrong."
+    icon: minecraft:creeper_head
+    pos: [6, 12.5]
+    deps: [s1_prologue/first_blood]
+    desc: |
+      &o"Creepers always came back. That's what they're for. But some of them came back… improved."&r &7— the Huntmaster
+
+      The &aWrongborn&r are creepers the Eclipse tinkered with: &aLeap&r and &aClimb&r creepers that come at you from above, &aSwift&r ones you hear too late, &aSilent&r ones you never hear at all, &aHunters&r that track you, &aAdaptive&r ones that learn, and the &cOvercharged&r, which take half a hillside with them.
+
+      Kill them before they finish their sentence.
+    tasks:
+      - {kill: "gmm:leap_creeper"}
+      - {kill: "gmm:swift_creeper"}
+      - {kill: "gmm:silent_creeper"}
+    rewards: [{table: world_ember_spoils}, {xp: 200}]
+
+  - key: wrongborn_all
+    title: "&cOvercharged"
+    subtitle: "The one that takes the hillside."
+    icon: minecraft:tnt
+    pos: [8, 12.5]
+    deps: [wrongborn]
+    optional: true
+    desc: |
+      An &cOvercharged&r creeper carries twice a lightning-struck creeper's blast. The Huntmaster pays well for one that dies quietly.
+
+      &7Kill the rest of the Wrongborn: Climb, Hunter, Adaptive and Overcharged.
+    tasks:
+      - {kill: "gmm:climb_creeper"}
+      - {kill: "gmm:hunter_creeper"}
+      - {kill: "gmm:adaptive_creeper"}
+      - {kill: "gmm:overcharge_creeper"}
+    rewards: [{table: world_hunt_spoils}, {xp: 400}]

@@ -20,6 +20,8 @@ include:
     - reconstructed-wands: "Building wands for Last Light"
     - better-farming-plus: "Farming QoL: sweep harvest, sprinklers"
     - the-witch-hut: "The Hollow Wood Coven's huts"
+    - the-gingerbread-house: "The Coven's sweetest lure: a candy house in the snow (dark fairy tale side story)"
+    - genetically-modified-monsters: "Wrongborn creepers: seven variants of the things that rose wrong"
     - simple-terminals: "One crafting terminal over your chests"
   combat:
     - better-combat: "Weapon movesets; Runeborn's armaments get pack-made weapon_attributes"
@@ -136,24 +138,30 @@ include:
     - entity-model-features: "Fresh Animations support"
     - entitytexturefeatures: "Fresh Animations support"
     - fresh-animations: "Mobs that move like they mean it (resource pack)"
+    - ashen-16x: "The default look: Ashen 16x, a medieval-fantasy retexture (resource pack, on by default)"
     - particle-rain: "Rain and snow particles"
+    - reactive-music: "Music that follows the night, the deep, the village and the danger"
+    - fog: "Fog that thickens with depth and follows weather and the moon"
+    - subtle-effects: "Small ambient effects: sparks, smoke, breath, a heartbeat at low health"
 
 provided: []
 side_overrides:
   remnants-minimap: client
   hide-experimental-warning: client
+  ashen-16x: client
   smart-villagers-ai: both
 
-# CurseForge files the research couldn't list (cfwidget shows only the newest 29 files). Found on the CurseForge
-# CDN next to the Forge build and checked byte-for-byte (sha1) against the Modrinth file, 2026-10-29.
+# CurseForge ids the research got wrong or couldn't list (cfwidget shows only the newest 29 files). YUNG's NeoForge
+# builds live in separate "(NeoForge)" projects; the owner found these when the first zip wouldn't import, 2026-10-29.
 curseforge_overrides:
-  yungs-better-desert-temples: {project_id: 631016, file_id: 6276955, filename: YungsBetterDesertTemples-1.21.1-NeoForge-4.1.5.jar}
-  yungs-better-dungeons: {project_id: 510089, file_id: 5954804, filename: YungsBetterDungeons-1.21.1-NeoForge-5.1.4.jar}
-  yungs-better-end-island: {project_id: 901344, file_id: 6300968, filename: YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar}
-  yungs-better-jungle-temples: {project_id: 897669, file_id: 5924482, filename: YungsBetterJungleTemples-1.21.1-NeoForge-3.1.2.jar}
-  yungs-better-mineshafts: {project_id: 389665, file_id: 5812193, filename: YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar}
-  yungs-better-nether-fortresses: {project_id: 817651, file_id: 6606621, filename: YungsBetterNetherFortresses-1.21.1-NeoForge-3.1.5.jar}
-  yungs-better-ocean-monuments: {project_id: 689238, file_id: 5924487, filename: YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2.jar}
-  yungs-better-strongholds: {project_id: 465575, file_id: 6272264, filename: YungsBetterStrongholds-1.21.1-NeoForge-5.1.3.jar}
-  yungs-bridges: {project_id: 536660, file_id: 5812553, filename: YungsBridges-1.21.1-NeoForge-5.1.1.jar}
-  yungs-extras: {project_id: 480006, file_id: 5812546, filename: YungsExtras-1.21.1-NeoForge-5.1.1.jar}
+  yungs-better-desert-temples: {project_id: 1015114, file_id: 6276955, filename: YungsBetterDesertTemples-1.21.1-NeoForge-4.1.5.jar}
+  yungs-better-dungeons: {project_id: 1015112, file_id: 5954804, filename: YungsBetterDungeons-1.21.1-NeoForge-5.1.4.jar}
+  yungs-better-end-island: {project_id: 1015127, file_id: 6300968, filename: YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar}
+  yungs-better-jungle-temples: {project_id: 1015123, file_id: 5924482, filename: YungsBetterJungleTemples-1.21.1-NeoForge-3.1.2.jar}
+  yungs-better-mineshafts: {project_id: 1015096, file_id: 5812193, filename: YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar}
+  yungs-better-nether-fortresses: {project_id: 1015118, file_id: 6606621, filename: YungsBetterNetherFortresses-1.21.1-NeoForge-3.1.5.jar}
+  yungs-better-ocean-monuments: {project_id: 1015115, file_id: 5924487, filename: YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2.jar}
+  yungs-better-strongholds: {project_id: 1015105, file_id: 6272264, filename: YungsBetterStrongholds-1.21.1-NeoForge-5.1.3.jar}
+  yungs-bridges: {project_id: 1015149, file_id: 5812553, filename: YungsBridges-1.21.1-NeoForge-5.1.1.jar}
+  yungs-extras: {project_id: 1015146, file_id: 5812546, filename: YungsExtras-1.21.1-NeoForge-5.1.1.jar}
+  villagerstradingplus: {project_id: 1635301, file_id: 9346744, filename: villagertradingplus-neoforge-mc1.21.1-1.1.1.jar}

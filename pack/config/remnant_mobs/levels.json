@@ -1,0 +1,164 @@
+// Remnants: RPG Mobs 3.0: mob levels.
+// Edit and run /remnants reload, or restart. Missing keys are restored with their defaults.
+{
+  // Master switch. When false, new mobs get no level, rank or traits.
+  "enabled": true,
+
+  // Also level passive and neutral creatures (they never get ranks).
+  "affect_passive": false,
+
+  // Level range for dimensions not listed under dimensions.
+  "default_band": {
+    "min": 1,
+    "max": 60,
+    "distance_scale": 1.0
+  },
+
+  // Level range per dimension, and distance_scale: how much faster (above 1) or slower distance
+  // raises the threat there.
+  "dimensions": {
+    "minecraft:overworld": {
+      "min": 1,
+      "max": 60,
+      "distance_scale": 1.0
+    },
+    "minecraft:the_nether": {
+      "min": 15,
+      "max": 80,
+      "distance_scale": 1.0
+    },
+    "minecraft:the_end": {
+      "min": 35,
+      "max": 100,
+      "distance_scale": 1.0
+    },
+    "remnant_bosses:eclipsed_realm": {
+      "min": 30,
+      "max": 100,
+      "distance_scale": 1.0
+    },
+    // Remnants pack: the Threshold (starting area). Its few mobs stay level 1; Ser Odric sets his own.
+    "remnants:threshold": {
+      "min": 1,
+      "max": 1,
+      "distance_scale": 0.0
+    }
+  },
+
+  // Threat grows by one level every blocks_per_level blocks (horizontal) from world spawn. Distance
+  // is measured in Overworld blocks, so one Nether block counts as eight.
+  "distance": {
+    "blocks_per_level": 128
+  },
+
+  // ...and by one level every days_per_level in-game days, up to max_levels.
+  "time": {
+    "days_per_level": 4,
+    "max_levels": 15
+  },
+
+  // ...and by one level every blocks_per_level blocks below start_y, up to max_levels.
+  "depth": {
+    "start_y": 32,
+    "blocks_per_level": 12,
+    "max_levels": 8
+  },
+
+  // Each mob's level varies by up to this much around the threat of its spawn point.
+  "spread": 2,
+
+  // Minimum level of mobs spawning inside these structures.
+  "structures": {
+    "minecraft:ancient_city": 40,
+    "minecraft:end_city": 50,
+    "minecraft:bastion_remnant": 30,
+    "minecraft:mansion": 30,
+    "minecraft:stronghold": 25,
+    "minecraft:monument": 25,
+    "minecraft:fortress": 20,
+    "minecraft:trial_chambers": 20,
+    "minecraft:pillager_outpost": 12
+  },
+
+  // Player progression. source: "ras" (RPG Attribute System level), "vanilla" (experience level)
+  // or "none". mode: "average", "nearest" or "highest" of the players within radius blocks.
+  // weight 0 ignores players; 1 makes mobs match the players' level; 0.35 pulls the threat a third
+  // of the way toward it.
+  "players": {
+    "source": "ras",
+    "mode": "average",
+    "radius": 64,
+    "weight": 0.35
+  },
+
+  // What a level does. mode "additive": +per_level per level, up to max.
+  // "percent": +per_level% of the mob's base value per level, up to max%.
+  // "multiplicative": compounds per_level% per level, up to max%.
+  "attributes": [
+    {
+      "attribute": "minecraft:max_health",
+      "mode": "percent",
+      "per_level": 6.0,
+      "max": 600.0
+    },
+    {
+      "attribute": "minecraft:attack_damage",
+      "mode": "percent",
+      "per_level": 3.0,
+      "max": 300.0
+    },
+    {
+      "attribute": "minecraft:armor",
+      "mode": "additive",
+      "per_level": 0.15,
+      "max": 15.0
+    },
+    {
+      "attribute": "minecraft:armor_toughness",
+      "mode": "additive",
+      "per_level": 0.05,
+      "max": 6.0
+    },
+    {
+      "attribute": "minecraft:movement_speed",
+      "mode": "percent",
+      "per_level": 0.3,
+      "max": 30.0
+    },
+    {
+      "attribute": "minecraft:knockback_resistance",
+      "mode": "additive",
+      "per_level": 0.005,
+      "max": 0.5
+    },
+    {
+      "attribute": "minecraft:follow_range",
+      "mode": "percent",
+      "per_level": 0.5,
+      "max": 50.0
+    }
+  ],
+
+  // Arrows, tridents and fireballs of leveled mobs scale like attack_damage.
+  "scale_projectile_damage": true,
+
+  // exclude: entity ids, #entity_type tags or "namespace:" prefixes that never get levels.
+  // level_locks: entity id -> fixed level. boss_stats: bosses (#remnant_mobs:bosses) get a level shown
+  // on their plate; set true to also scale their stats.
+  "mobs": {
+    "exclude": [],
+    "level_locks": {},
+    "boss_stats": false
+  },
+
+  // On full-moon nights, chance that a Hunter's Moon rises: mobs spawn level_bonus levels
+  // higher, ranks are rank_chance_multiplier times likelier and shards drop shard_multiplier times as
+  // often, until dawn.
+  "hunters_moon": {
+    "enabled": true,
+    "chance": 0.35,
+    "level_bonus": 5,
+    "rank_chance_multiplier": 2.0,
+    "shard_multiplier": 2.0
+  }
+}

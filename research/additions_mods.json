@@ -78,5 +78,168 @@
   },
   "required_deps": [],
   "optional_deps": []
+ },
+ {
+  "name": "Ashen 16x (resource pack)",
+  "slug": "ashen-16x",
+  "category": "juice",
+  "decision": "include",
+  "reason": "The pack's default look: a 16px medieval-fantasy retexture (owner's pick)",
+  "side": "client",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "folder": "resourcepacks",
+  "modrinth": {
+   "project_id": "LSmohupN",
+   "version_id": "xiwrkYeI",
+   "version_number": "1.17.2",
+   "filename": "Ashen_16x.zip",
+   "url": "https://cdn.modrinth.com/data/LSmohupN/versions/xiwrkYeI/Ashen_16x.zip",
+   "sha1": "a3645a8233ee6acbb4206cba7a411af15867729b",
+   "size": 12629401,
+   "sha512": "93c5dbc407792dc5bf5c2de87d2a4cfb805ba5de654bd47c4edd248164688e998858edc68791358297f3ef7b1a8ec46290e122b61971810a8116fb57ebcded41"
+  },
+  "curseforge": {
+   "project_id": 864112,
+   "file_id": 9240834,
+   "filename": "Ashen_16x.zip"
+  },
+  "required_deps": [],
+  "optional_deps": []
+ },
+ {
+  "name": "Reactive Music",
+  "slug": "reactive-music",
+  "category": "juice",
+  "decision": "include",
+  "reason": "Music that follows the night, the deep, the village and the danger (event-driven soundtrack)",
+  "side": "client",
+  "license": "GPL-3.0-only",
+  "modrinth": {
+   "project_id": "Bqnfeesx",
+   "version_id": "bqvWqBAp",
+   "version_number": "1.3.5+1.21.1-neoforge",
+   "filename": "reactivemusic-neoforge-1.3.5+1.21.1.jar",
+   "url": "https://cdn.modrinth.com/data/Bqnfeesx/versions/bqvWqBAp/reactivemusic-neoforge-1.3.5%2B1.21.1.jar",
+   "sha1": "97626925107054b11c658f9cc59e17f60fda6f4a",
+   "sha512": "faae7a2bdc191f441d7cff8caa2d13d3acb9e0429ebce72b3e5e1b0344a2902f91a32b48b71818bad99df7ece812baaff443480b5712904cec0fefb5d45f80ff",
+   "size": 294837148
+  },
+  "curseforge": {
+   "project_id": 960382,
+   "file_id": 8530938,
+   "filename": "reactivemusic-neoforge-1.3.5+1.21.1.jar"
+  },
+  "required_deps": [],
+  "optional_deps": []
+ },
+ {
+  "name": "Fog",
+  "slug": "fog",
+  "category": "juice",
+  "decision": "include",
+  "reason": "Fog that thickens with depth in caves and follows weather and the moon",
+  "side": "client",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "modrinth": {
+   "project_id": "WuGVWUF2",
+   "version_id": "c4ytB02Y",
+   "version_number": "1.11.0+1.21-neoforge",
+   "filename": "Fog-neoforge-1.11.0-1.21.1.jar",
+   "url": "https://cdn.modrinth.com/data/WuGVWUF2/versions/c4ytB02Y/Fog-neoforge-1.11.0-1.21.1.jar",
+   "sha1": "106460aa8b09e8ce6051b332d104c787c208d28a",
+   "sha512": "930acf4610db47432ae305ab12ed317c00961e96bbb6c8c41c2f528f5b16a798405297b42f313dc641fbf725cb9d2aae8ab98e83a72739669284843e1df2959d",
+   "size": 300280
+  },
+  "curseforge": {
+   "project_id": 815438,
+   "file_id": 7079142,
+   "filename": "Fog-neoforge-1.11.0-1.21.1.jar"
+  },
+  "required_deps": [
+   "architectury-api",
+   "yacl",
+   "mru"
+  ],
+  "optional_deps": []
+ },
+ {
+  "name": "MRU",
+  "slug": "mru",
+  "category": "library",
+  "decision": "include",
+  "reason": "required by fog",
+  "side": "client",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "modrinth": {
+   "project_id": "SNVQ2c0g",
+   "version_id": "Kpai1paZ",
+   "version_number": "1.0.41+1.21.1-neoforge",
+   "filename": "mru-1.0.41+1.21.1-neoforge.jar",
+   "url": "https://cdn.modrinth.com/data/SNVQ2c0g/versions/Kpai1paZ/mru-1.0.41%2B1.21.1-neoforge.jar",
+   "sha1": "c06ebac32fb438a1efc705a9d367c425cc86fa18",
+   "sha512": "463127834c3c0e6f4a849849640be66e5ba666bd9e00121dbd390dc368b55efc9bfd2155ba58817cc88ce0138687970e3ef2ab84273566890b15b4b4a70c6199",
+   "size": 151764
+  },
+  "curseforge": {
+   "project_id": 669659,
+   "file_id": 9004036,
+   "filename": "mru-1.0.41+1.21.1-neoforge.jar"
+  },
+  "required_deps": [],
+  "optional_deps": []
+ },
+ {
+  "name": "YetAnotherConfigLib (YACL)",
+  "slug": "yacl",
+  "category": "library",
+  "decision": "include",
+  "reason": "required by fog (standalone YACL)",
+  "side": "client",
+  "license": "LGPL-3.0-or-later",
+  "modrinth": {
+   "project_id": "1eAoo2KR",
+   "version_id": "7TVdVtxF",
+   "version_number": "3.8.2+1.21.1-neoforge",
+   "filename": "yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar",
+   "url": "https://cdn.modrinth.com/data/1eAoo2KR/versions/7TVdVtxF/yet_another_config_lib_v3-3.8.2%2B1.21.1-neoforge.jar",
+   "sha1": "fe270c9f6e0a8142cf316944087f5109cef08bbb",
+   "sha512": "583de19b927ce8050c2b7d5e60b75accc69e325e5aac85c27994c82a9dec2e4e078343fa1d4c3a10d4bd7e0e524e0b3b246a18cf03db01e363a1e6f865adcf48",
+   "size": 1118651
+  },
+  "curseforge": {
+   "project_id": 667299,
+   "file_id": 7437845,
+   "filename": "yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar"
+  },
+  "required_deps": [],
+  "optional_deps": []
+ },
+ {
+  "name": "Subtle Effects",
+  "slug": "subtle-effects",
+  "category": "juice",
+  "decision": "include",
+  "reason": "Small ambient effects: sparks, smoke, breath in the cold, a heartbeat at low health",
+  "side": "client",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "modrinth": {
+   "project_id": "4q8UOK1d",
+   "version_id": "ReUDmzrA",
+   "version_number": "1.15.1",
+   "filename": "SubtleEffects-neoforge-1.21.1-1.15.1.jar",
+   "url": "https://cdn.modrinth.com/data/4q8UOK1d/versions/ReUDmzrA/SubtleEffects-neoforge-1.21.1-1.15.1.jar",
+   "sha1": "e8ab4df7ac4bf3d88fa389a1cf97ad2449c3206d",
+   "sha512": "4bc61c3cb3df0d774f623eb9177c0ec3d74617c044d3a80a5b564094d2b14c9ebc98b79893a01bb5461d92141787bb814dd869101a293a840dade027bd0a56a1",
+   "size": 3445062
+  },
+  "curseforge": {
+   "project_id": 1023913,
+   "file_id": 9150589,
+   "filename": "SubtleEffects-neoforge-1.21.1-1.15.1.jar"
+  },
+  "required_deps": [
+   "fzzy-config"
+  ],
+  "optional_deps": []
  }
 ]

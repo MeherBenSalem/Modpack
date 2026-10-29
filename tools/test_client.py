@@ -183,6 +183,8 @@ def main():
     ap.add_argument("--size", default="1280x720", help="window and virtual screen size, e.g. 1920x1080")
     ap.add_argument("--menu", action="store_true",
                     help="stay on the title screen and screenshot it (run/client/menu.png)")
+    ap.add_argument("--hold", type=int, default=0,
+                    help="with --menu: keep the game open this many seconds after the screenshot (to drive it by hand)")
     args = ap.parse_args()
     meta = json.loads((ROOT / "src" / "pack.json").read_text())
     mods = json.loads((ROOT / "src" / "mods.json").read_text())
@@ -210,6 +212,7 @@ def main():
                     subprocess.run(["import", "-display", ":7", "-window", "root", str(RUN / "menu.png")], env=env,
                                    stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
                     in_world = True
+                    time.sleep(args.hold)
                     break
                 if not in_world and re.search(r"joined the game|logged in with entity id", text):
                     in_world = True

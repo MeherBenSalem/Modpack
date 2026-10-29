@@ -20,7 +20,10 @@ a world whose sun was eaten; relight it one Ember Shrine and one Sovereign at a 
 | `tools/test_server.py` | Boots the pack on a real NeoForge dedicated server and reports errors |
 | `tools/test_client.py` | Boots the real client headless (Xvfb); `--menu` screenshots the title screen |
 | `art/` | Pack icon, logo, menu background and title card ([`art/README.md`](art/README.md)) |
-| `tools/build_menu.py` | Writes the FancyMenu main menu (`pack/config/fancymenu/`) from `art/out/` |
+| `tools/build_menu.py` | Writes the FancyMenu title screen and Drippy loading screen (`pack/config/fancymenu/`) from `art/out/` |
+| `tools/build_threshold.py` | Writes the Threshold (the first-join starting area): dimension, build function, advancements, layout |
+| `tools/build_voice.py` | Masters the Keeper's narration (`src/voice/`) into `kubejs/assets/remnants/sounds/vo/` |
+| `tools/check_cf.py` | Checks every CurseForge project/file id against the live project before an export |
 
 ## Build
 
@@ -29,6 +32,9 @@ python3 tools/build_quests.py --check   # quests -> pack/config/ftbquests
 python3 tools/build_pack.py --export    # pack/ + dist/*.zip, dist/*.mrpack, dist/server-mods.tsv
 python3 tools/test_server.py            # boot test on NeoForge (Java 21)
 node art/render.cjs art/shots/ember_shrine_sunset.png && python3 tools/build_menu.py   # art + main menu
+python3 tools/build_threshold.py         # the starting area
+python3 tools/build_voice.py --kokoro <model-dir>   # narration (recordings in src/voice/raw/ win)
+python3 tools/check_cf.py                # before uploading: every CurseForge id is the right project
 ```
 
 Needs Python 3.11+ with PyYAML, and Java 21 for the boot test.

@@ -9,7 +9,7 @@ layout-meta {
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:68497410-a73d-5f5c-a597-3db7c3f2983f-1761700000000] = [groups:][instances:]
+  [loading_requirement_container_meta:658db52a-4e0c-5c4c-b7ea-48e53ab3cda1-1761700000000] = [groups:][instances:]
 }
 
 customization {
@@ -24,14 +24,12 @@ customization {
 }
 
 menu_background {
-  image_path = [source:local]/config/fancymenu/assets/remnants_menu_background.png
+  image_path = [source:local]/config/fancymenu/assets/remnants_menu_background_dark.png
   slide = false
   repeat_texture = false
   parallax = false
-  parallax_intensity = 0.015
-  invert_parallax = false
   restart_animated_on_menu_load = false
-  instance_identifier = 04639ec1-db52-5efa-99fb-41b198e2eb0d-1761700000000
+  instance_identifier = bef42cfa-7fe4-58e8-a367-eaed246c66f9-1761700000000
   background_type = image
 }
 
@@ -44,50 +42,15 @@ layout_action_executable_blocks {
 }
 
 
-element {
-  source = [source:local]/config/fancymenu/assets/remnants_logo.png
-  repeat_texture = false
-  nine_slice_texture = false
-  nine_slice_texture_border_x = 5
-  nine_slice_texture_border_y = 5
-  image_tint = #FFFFFF
-  restart_animated_on_menu_load = false
-  element_type = image
-  instance_identifier = 849d7885-9e14-5ad3-bfc6-b7d7b30c8321-1761700000000
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in_v2 = no_fading
-  fade_in_speed = 1.0
-  fade_out = no_fading
-  fade_out_speed = 1.0
-  base_opacity = 1.0
-  auto_sizing = false
-  auto_sizing_base_screen_width = 0
-  auto_sizing_base_screen_height = 0
-  sticky_anchor = false
-  anchor_point = top-left
-  x = 32
-  y = 30
-  width = 352
-  height = 154
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = 4d9e3b40-1465-5e35-976a-f8cb6b88b86b-1761700000000
-  [loading_requirement_container_meta:4d9e3b40-1465-5e35-976a-f8cb6b88b86b-1761700000000] = [groups:][instances:]
-  enable_parallax = false
-  parallax_intensity_v2 = 0.5
-  invert_parallax = false
-  animated_offset_x = 0
-  animated_offset_y = 0
-  load_once_per_session = false
-  in_editor_color = #FFC800FF
-  layer_hidden_in_editor = false
-}
-
 vanilla_button {
   button_element_executable_block_identifier = 66b5c14e-7f56-59e8-8fbf-318d48f8af54-1761700000000
   [executable_block:66b5c14e-7f56-59e8-8fbf-318d48f8af54-1761700000000][type:generic] = [executables:]
+  label =
+  backgroundnormal = [source:local]/config/fancymenu/assets/menu/btn_singleplayer_normal.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/menu/btn_singleplayer_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/menu/btn_singleplayer_normal.png
+  hoversound = [source:local]/config/fancymenu/assets/sounds/ui_hover.ogg
+  clicksound = [source:local]/config/fancymenu/assets/sounds/ui_click.ogg
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -120,11 +83,11 @@ vanilla_button {
   auto_sizing_base_screen_width = 0
   auto_sizing_base_screen_height = 0
   sticky_anchor = false
-  anchor_point = mid-left
-  x = 108
-  y = -46
-  width = 200
-  height = 20
+  anchor_point = mid-centered
+  x = -110
+  y = 50
+  width = 220
+  height = 22
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -145,6 +108,12 @@ vanilla_button {
 vanilla_button {
   button_element_executable_block_identifier = 1e6cae81-8bd8-55ef-b29f-8e1f90db0473-1761700000000
   [executable_block:1e6cae81-8bd8-55ef-b29f-8e1f90db0473-1761700000000][type:generic] = [executables:]
+  label =
+  backgroundnormal = [source:local]/config/fancymenu/assets/menu/btn_multiplayer_normal.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/menu/btn_multiplayer_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/menu/btn_multiplayer_normal.png
+  hoversound = [source:local]/config/fancymenu/assets/sounds/ui_hover.ogg
+  clicksound = [source:local]/config/fancymenu/assets/sounds/ui_click.ogg
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -177,11 +146,11 @@ vanilla_button {
   auto_sizing_base_screen_width = 0
   auto_sizing_base_screen_height = 0
   sticky_anchor = false
-  anchor_point = mid-left
-  x = 108
-  y = -22
-  width = 200
-  height = 20
+  anchor_point = mid-centered
+  x = -110
+  y = 74
+  width = 220
+  height = 22
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -202,6 +171,12 @@ vanilla_button {
 vanilla_button {
   button_element_executable_block_identifier = fa323d5d-05ed-54a9-a4cc-a687d04ef89e-1761700000000
   [executable_block:fa323d5d-05ed-54a9-a4cc-a687d04ef89e-1761700000000][type:generic] = [executables:]
+  label =
+  backgroundnormal = [source:local]/config/fancymenu/assets/menu/btn_mods_normal.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/menu/btn_mods_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/menu/btn_mods_normal.png
+  hoversound = [source:local]/config/fancymenu/assets/sounds/ui_hover.ogg
+  clicksound = [source:local]/config/fancymenu/assets/sounds/ui_click.ogg
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -234,11 +209,11 @@ vanilla_button {
   auto_sizing_base_screen_width = 0
   auto_sizing_base_screen_height = 0
   sticky_anchor = false
-  anchor_point = mid-left
-  x = 108
-  y = 2
-  width = 200
-  height = 20
+  anchor_point = mid-centered
+  x = -110
+  y = 98
+  width = 220
+  height = 22
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -259,6 +234,12 @@ vanilla_button {
 vanilla_button {
   button_element_executable_block_identifier = ad64b177-3032-5b5f-8480-29c3331cbd62-1761700000000
   [executable_block:ad64b177-3032-5b5f-8480-29c3331cbd62-1761700000000][type:generic] = [executables:]
+  label =
+  backgroundnormal = [source:local]/config/fancymenu/assets/menu/btn_options_normal.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/menu/btn_options_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/menu/btn_options_normal.png
+  hoversound = [source:local]/config/fancymenu/assets/sounds/ui_hover.ogg
+  clicksound = [source:local]/config/fancymenu/assets/sounds/ui_click.ogg
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -291,11 +272,11 @@ vanilla_button {
   auto_sizing_base_screen_width = 0
   auto_sizing_base_screen_height = 0
   sticky_anchor = false
-  anchor_point = mid-left
-  x = 108
-  y = 26
-  width = 98
-  height = 20
+  anchor_point = mid-centered
+  x = -110
+  y = 122
+  width = 220
+  height = 22
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -316,6 +297,12 @@ vanilla_button {
 vanilla_button {
   button_element_executable_block_identifier = 9cef7581-e1b3-527d-a508-5de44d9eab0c-1761700000000
   [executable_block:9cef7581-e1b3-527d-a508-5de44d9eab0c-1761700000000][type:generic] = [executables:]
+  label =
+  backgroundnormal = [source:local]/config/fancymenu/assets/menu/btn_quit_normal.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/menu/btn_quit_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/menu/btn_quit_normal.png
+  hoversound = [source:local]/config/fancymenu/assets/sounds/ui_hover.ogg
+  clicksound = [source:local]/config/fancymenu/assets/sounds/ui_click.ogg
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
@@ -348,11 +335,11 @@ vanilla_button {
   auto_sizing_base_screen_width = 0
   auto_sizing_base_screen_height = 0
   sticky_anchor = false
-  anchor_point = mid-left
-  x = 210
-  y = 26
-  width = 98
-  height = 20
+  anchor_point = mid-centered
+  x = -110
+  y = 146
+  width = 220
+  height = 22
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -586,6 +573,63 @@ vanilla_button {
   stay_on_screen = true
   element_loading_requirement_container_identifier = b7280b75-cf64-5ae9-9459-431c985d2a3a-1761700000000
   [loading_requirement_container_meta:b7280b75-cf64-5ae9-9459-431c985d2a3a-1761700000000] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+  is_hidden = true
+  automated_button_clicks = 0
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = 08ce2c10-fdbc-58e3-88c1-2834af764ef6-1761700000000
+  [executable_block:08ce2c10-fdbc-58e3-88c1-2834af764ef6-1761700000000][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  navigatable = true
+  widget_active_state_requirement_container_identifier = cb99b201-4209-5ac6-922f-6b3ca6250254-1761700000000
+  [loading_requirement_container_meta:cb99b201-4209-5ac6-922f-6b3ca6250254-1761700000000] = [groups:][instances:]
+  is_template = false
+  template_apply_width = false
+  template_apply_height = false
+  template_apply_posx = false
+  template_apply_posy = false
+  template_apply_opacity = false
+  template_apply_visibility = false
+  template_apply_label = false
+  template_share_with = buttons
+  nine_slice_slider_handle = false
+  nine_slice_slider_handle_border_x = 5
+  nine_slice_slider_handle_border_y = 5
+  element_type = vanilla_button
+  instance_identifier = minecraft_branding_widget
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 0
+  auto_sizing_base_screen_height = 0
+  sticky_anchor = false
+  anchor_point = vanilla
+  x = 0
+  y = 0
+  width = 200
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 91a738c1-f489-57f7-aa77-f19a1ef2c4e6-1761700000000
+  [loading_requirement_container_meta:91a738c1-f489-57f7-aa77-f19a1ef2c4e6-1761700000000] = [groups:][instances:]
   enable_parallax = false
   parallax_intensity_v2 = 0.5
   invert_parallax = false

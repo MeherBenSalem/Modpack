@@ -6,17 +6,40 @@ subtitle: "The Ashlands, the Wither, the Last Shore. Levels 50–70."
 icon: minecraft:netherite_scrap
 shape: rsquare
 quests:
+  - key: tale_burning_crown
+    title: "&e♪ &6The Tale of the Burning Crown"
+    subtitle: "The proudest of the seven."
+    icon: minecraft:written_book
+    deps: [s1_act3_deep/ysolde]
+    shape: hexagon
+    size: 1.75
+    keeper: |
+      Down there, the ash is still falling. Do you know what it is?
+
+      Morgrath was the proudest of the seven. When he saw the others going mad, he swore no one would rule his kingdom after him. So he burned it. Every field, every hall, every soul who called him king. When it was done, he sat on the ashes and called himself their Sovereign.
+
+      The ash you'll breathe down there was his people, Ashborn. Breathe gently.
+
+      Past him, beyond the eye of the world, there is a shore where a drop of the sun fell when the Eighth drank it. The Dragon guards it, and Vaelorn, the last of the seven, guards the Dragon. Two more embers. Then the black sun.
+    voice: true
+    desc: |
+      The &6Ashlands&r were once the Burning Crown, the richest kingdom of the seven. Now they are a furnace that never cools, and their Sovereign still sits on its throne of cinders.
+    tasks: [{checkmark: "♪ Listen to the Keeper"}]
+    rewards: [{xp: 100}]
+
   - key: ashlands
     title: "&6The Ashlands"
     subtitle: "Morgrath's ash is still falling."
     icon: minecraft:netherrack
-    deps: [s1_act3_deep/ysolde]
+    deps: [tale_burning_crown]
     shape: hexagon
     size: 2.0
+    keeper: |
+      Hot, isn't it? He wanted it to stay warm forever. Be careful what you wish for when you wear a crown.
     desc: |
-      &o"The Nether wasn't always this. Morgrath burned his own kingdom to keep anyone else from ruling it. The ash you breathe down there was his people."&r
+      The portal hums with old heat. On the other side, the sky is the colour of a forge and the ground still remembers being a kingdom.
 
-      Mob levels start high in the Ashlands. Go prepared.
+      &7Mob levels start high in the Ashlands. Go prepared.
     tasks: [{dimension: "minecraft:the_nether"}]
     rewards:
       - {item: {id: minecraft:potion, components: {"minecraft:potion_contents": {potion: "minecraft:long_fire_resistance"}}}, count: 2}
@@ -27,6 +50,10 @@ quests:
     subtitle: "Blaze rods and wither skulls."
     icon: minecraft:blaze_rod
     deps: [ashlands]
+    desc: |
+      Morgrath's war-forts still stand, manned by the things that tended his furnaces. The blazes were his smiths. The wither skeletons were his honour guard, and they still salute anything with a crown.
+
+      &7Find a fortress and take eight blaze rods.
     tasks: [{structure: "betterfortresses:fortress"}, {item: minecraft:blaze_rod, count: 8}]
     rewards: [{table: hunters_spoils}, {xp: 300}]
 
@@ -36,6 +63,10 @@ quests:
     icon: minecraft:blackstone
     deps: [ashlands]
     optional: true
+    desc: |
+      Morgrath had prisons too. When he burned his kingdom, he forgot to burn them. The prisoners noticed.
+
+      &7Clear the Infernal Bastille and kill its guardian.
     tasks: [{advancement: "muchmoredungeons:slay_nether_bastille_guardian"}]
     rewards: [{table: hunters_spoils}, {xp: 500}]
 
@@ -44,8 +75,12 @@ quests:
     subtitle: "Tier IV. The end of the dungeon trail."
     icon: minecraft:soul_campfire
     deps: [s1_act3_deep/cursed_keep]
+    keeper: |
+      The end of the trail. The Archivist owes me a drink. I said someone would make it.
     desc: |
-      In the far snows the &6Soulfire Crypt&r burns blue. The Cinder Warden keeps the last map of the dungeon trail, and there are no more after it.
+      In the far snows the &6Soulfire Crypt&r burns blue. The Cinder Warden keeps the last map of the dungeon trail, and the last map leads nowhere: just a drawing of the Crypt itself, and a note in an old hand. &o"You found it. Now turn back."&r
+
+      &7Kill the Cinder Warden.
     tasks: [{advancement: "muchmoredungeons:slay_soulfire_crypt_guardian"}]
     rewards: [{table: sovereign_tribute}, {xp: 600}]
 
@@ -56,6 +91,10 @@ quests:
     deps: [fortress]
     optional: true
     shape: gear
+    desc: |
+      Morgrath's greatest forge was built to make a weapon that could never be broken. It worked. The weapon was the forge, and it got up.
+
+      &7Kill the Netherite Monstrosity.
     tasks: [{kill: cataclysm:netherite_monstrosity}]
     rewards: [{table: sovereign_tribute}, {xp: 1000}]
 
@@ -67,7 +106,9 @@ quests:
     optional: true
     shape: gear
     desc: |
-      In the depths of the Ashlands a burning knight waits in a ring of fire. It was Morgrath's champion. It is still loyal.
+      In the depths of the Ashlands a burning knight waits in a ring of fire. It was Morgrath's champion, the one who lit the first torch. It is still loyal, and it is still holding the torch.
+
+      &7Kill Ignis.
     tasks: [{kill: cataclysm:ignis}]
     rewards: [{table: sovereign_tribute}, {xp: 1200}]
 
@@ -78,6 +119,10 @@ quests:
     deps: [fortress]
     optional: true
     shape: gear
+    desc: |
+      A knight who swore to guard the Ashlands' gate until relieved. Nobody came to relieve him. He'd like to duel you about it.
+
+      &7Kill the Underworld Knight.
     tasks: [{kill: block_factorys_bosses:underworld_knight}]
     rewards: [{table: sovereign_tribute}, {xp: 1000}]
 
@@ -88,10 +133,12 @@ quests:
     deps: [fortress]
     shape: gear
     size: 1.75
+    keeper: |
+      Three skulls and the sand of lost souls. That's not a summoning, Ashborn, it's a dinner bell.
     desc: |
-      Three skulls and soul sand call the oldest hunger in the world. Fight it somewhere you don't mind losing.
+      The Wither is the oldest hunger in the world, older than the sun it would have eaten if anyone had let it. It doesn't hate you. It doesn't know you exist. It just wants.
 
-      &6Keep its Nether Star.&r Something in the Eclipsed Realm answers to one.
+      &7Fight it somewhere you don't mind losing. &6Keep its Nether Star&7: something in the Eclipsed Realm answers to one.
     tasks: [{kill: minecraft:wither}, {item: runeborn:relic_wither}]
     rewards: [{table: sovereign_tribute}, {xp: 1200}]
 
@@ -101,7 +148,9 @@ quests:
     icon: minecraft:netherite_scrap
     deps: [fortress]
     desc: |
-      &6Morgrath, Ash Sovereign&r, of the Burning Crown. His token is &8netherite scrap&r: ancient debris, the bones of his burned kingdom.
+      &6Morgrath, Ash Sovereign&r, of the Burning Crown. His token is &8netherite scrap&r: ancient debris, the melted bones of his kingdom's treasure, the only thing his fire couldn't destroy.
+
+      &7Gather six Fragments and a scrap of netherite.
     tasks: [{item: minecraft:netherite_scrap}, {item: runeborn:sovereign_fragment, count: 6}]
     rewards: [{xp: 200}]
 
@@ -112,8 +161,13 @@ quests:
     deps: [burning_crown]
     shape: gear
     size: 2.0
+    keeper: |
+      Six embers. Down there, for the first time in an age, the ash has stopped falling. His people can rest now. Maybe he can too.
+    voice: true
     desc: |
-      Fire doesn't hurt him. Everything else does, just less than you'd like. His shard makes its bearer immune to fire; earn it.
+      Fire doesn't hurt him. Everything else does, just less than you'd like. He doesn't fight to win. He fights so that nobody else does.
+
+      &7His Crown Shard makes its bearer immune to fire. Earn it.
     tasks: [{item: runeborn:sigil_morgrath}, {advancement: "runeborn:feats/fell_morgrath"}]
     rewards: [{table: sovereign_tribute}, {item: runeborn:tempering_stone_7, count: 2}, {xp: 1200}]
 
@@ -123,7 +177,9 @@ quests:
     icon: minecraft:netherite_chestplate
     deps: [morgrath]
     desc: |
-      Netherite weapons and armour refuse anyone below &6level 30&r in the matching attribute (Attack Power for weapons, Protection for armour). You're probably there.
+      Netherite was Morgrath's metal, and it remembers being his. It won't let just anyone carry it.
+
+      &7Netherite weapons and armour refuse anyone below &6level 30&7 in the matching attribute (Attack Power for weapons, Protection for armour). Make a netherite ingot.
     tasks: [{item: minecraft:netherite_ingot}]
     rewards: [{item: minecraft:netherite_upgrade_smithing_template}, {xp: 400}]
 
@@ -132,6 +188,12 @@ quests:
     subtitle: "Somewhere below, a portal to the Last Shore."
     icon: minecraft:ender_eye
     deps: [morgrath]
+    keeper: |
+      Follow the eyes. They know where the edge is. They've been trying to get back there since the sky went dark.
+    desc: |
+      The &6strongholds&r were the Crown's watchtowers, built over the one door that leads off the edge of the world. The eyes still point the way home.
+
+      &7Find a stronghold.
     tasks: [{structure: "betterstrongholds:stronghold"}]
     rewards: [{item: minecraft:ender_pearl, count: 8}, {xp: 300}]
 
@@ -142,8 +204,12 @@ quests:
     deps: [stronghold]
     shape: hexagon
     size: 1.75
+    keeper: |
+      When the Hollow Sovereign drank the sun, a drop of it spilled off the edge of the world. It landed there. The Dragon has been guarding it ever since, and it doesn't know why.
     desc: |
-      &o"When the Hollow Sovereign drank the sun, a drop of it fell off the edge of the world. It landed there. The Dragon has been guarding it ever since."&r
+      Pale stone under a starless sky. The &6Last Shore&r is where the world ends and the last drop of the old sun fell.
+
+      &7Enter the End.
     tasks: [{dimension: "minecraft:the_end"}]
     rewards: [{table: hunters_spoils}, {xp: 400}]
 
@@ -154,8 +220,12 @@ quests:
     deps: [last_shore]
     shape: gear
     size: 2.0
+    keeper: |
+      Catch its breath before it dies. That breath was sunlight, once. Vaelorn will smell it on you.
     desc: |
-      Break the crystals. Bring a bow. Bring bottles: before it dies, catch its &dbreath&r. The last Sovereign answers to nothing else.
+      The Dragon was there before the Crown and it will be there after it. It remembers the Eighth. It remembers someone before him, too, but it won't say who.
+
+      &7Break the crystals. Bring a bow. Bring bottles: before it dies, catch its &dbreath&7. The last Sovereign answers to nothing else.
     tasks: [{kill: minecraft:ender_dragon}, {item: minecraft:dragon_breath}]
     rewards: [{table: sovereign_tribute}, {item: runeborn:crown_shard_ender_dragon}, {xp: 1500}]
 
@@ -166,10 +236,13 @@ quests:
     deps: [dragon]
     shape: gear
     size: 2.0
+    keeper: |
+      Seven embers. All seven. Do you know how long I waited to say that? One light left, and it isn't in this world. Rest first, Ashborn. Then we find the black sun.
+    voice: true
     desc: |
-      The last of the seven. He rode the dragons before there was a Dragon, and he hits like the thing he rides. Fight him on open ground, and never directly in front of him.
+      The last of the seven. He rode the dragons before there was only one, and he hits like the thing he rode. He chose the edge of the world as his kingdom so that nobody could ever come up behind him.
 
-      &o"Seven embers. One left, and it isn't in this world. Rest first, Ashborn. Then we find the black sun."&r
+      &7Fight him on open ground, and never directly in front of him.
     tasks: [{item: runeborn:sigil_vaelorn}, {advancement: "runeborn:feats/fell_vaelorn"}]
     rewards: [{table: sovereign_tribute}, {item: runeborn:sovereign_tempering_stone}, {xp: 2000}]
 
@@ -180,7 +253,11 @@ quests:
     deps: [dragon]
     optional: true
     shape: hexagon
+    keeper: |
+      Put it down, Ashborn. It doesn't fit anyone. That was always the problem.
     desc: |
-      Six Sovereigns' shards and the Dragon's. The Sun-Crown, whole for the first time since it was broken. It doesn't fit anyone. That was always the problem.
+      Six Sovereigns' shards and the Dragon's. The &6Sun-Crown&r, whole for the first time since it was broken. It is lighter than you'd think, and colder.
+
+      &7Remake the Crown from all seven shards.
     tasks: [{advancement: "runeborn:feats/crown"}]
     rewards: [{item: runeborn:sovereign_rune}, {xp: 1000}]

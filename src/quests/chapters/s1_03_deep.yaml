@@ -6,17 +6,40 @@ subtitle: "Drowned skies, buried cities, the Old Powers. Levels 30–50."
 icon: minecraft:echo_shard
 shape: rsquare
 quests:
+  - key: tale_old_powers
+    title: "&e♪ &6The Tale of the Old Powers"
+    subtitle: "Older than the Crown. Maybe older than the sun."
+    icon: minecraft:written_book
+    deps: [s1_act2_hunt/sylvara]
+    shape: hexagon
+    size: 1.75
+    keeper: |
+      Some things are older than the Crown, Ashborn. Older than the sun, maybe.
+
+      The Warden in the deep dark, who listens for heartbeats. The Drowned Keeper under the sea. The Wither, which is only hunger with three mouths. And the Dragon at the edge of the world. They never knelt to the Crown, and the Sovereigns were wise enough to leave them alone.
+
+      Each of them keeps a relic of the world before. Not light, exactly. Memory. What the world was like when it was young.
+
+      You'll need that memory where you're going. The storm-lord waits beneath the waves, and the gardener behind her roses. Go down. The deep has been waiting for someone to bother it.
+    voice: true
+    desc: |
+      The &5Old Powers&r are the world's first guardians: the &6Warden&r, the &6Elder Guardian&r, the &6Wither&r and the &6Ender Dragon&r. Each keeps a &6Relic&r, and the Relics are the only things left that remember the sun as it was.
+    tasks: [{checkmark: "♪ Listen to the Keeper"}]
+    rewards: [{xp: 80}]
+
   - key: descent
     title: "&6The Deep"
     subtitle: "The dark was here before the Eclipse."
     icon: minecraft:sculk_shrieker
-    deps: [s1_act2_hunt/sylvara]
+    deps: [tale_old_powers]
     shape: hexagon
     size: 2.0
+    keeper: |
+      Quiet down there. Not the polite kind. The kind that is listening back.
     desc: |
-      &o"There are things older than the Sovereigns, Ashborn. They never served the Crown. They keep relics of the world before, and they don't share."&r
+      The &8ancient cities&r were built by people who chose the dark before the dark was forced on anyone. Nobody knows why. Their streets are still lit by soul fire, and something still walks them.
 
-      The Old Powers: the &6Warden&r below, the &6Elder Guardian&r beneath the sea, the &6Wither&r and the &6Dragon&r. Each keeps a &6Relic&r. Start in the deep dark.
+      &7Find an ancient city in the deep dark.
     tasks: [{structure: "minecraft:ancient_city"}]
     rewards: [{table: hunters_spoils}, {xp: 300}]
 
@@ -27,10 +50,12 @@ quests:
     deps: [descent]
     shape: gear
     size: 1.75
+    keeper: |
+      It can't see you. It doesn't need to. Every heart is a drum to it, and yours is louder than most.
     desc: |
-      It's blind. It hears your heartbeat. It hits harder than anything you've met.
+      The Warden was set to guard the deep cities when their builders left, and told to listen. It has been listening ever since, and it has grown very, very tired of what it hears.
 
-      You don't have to fight it fair. Its Relic becomes &6Shadowfang&r, the dagger that strikes from where you are not.
+      &7It's blind, it hears your heartbeat and it hits harder than anything you've met. You don't have to fight fair. Its Relic becomes &6Shadowfang&7, the dagger that strikes from where you are not.
     tasks: [{kill: minecraft:warden}, {item: runeborn:relic_warden}]
     rewards: [{table: sovereign_tribute}, {xp: 800}]
 
@@ -41,7 +66,9 @@ quests:
     deps: [descent]
     optional: true
     desc: |
-      Some ancient cities hide a portal frame of reinforced sculk. Beyond it lies the &5Otherside&r, an echo of a world the Wardens remember. The &5Stalker&r hunts there.
+      Some ancient cities hide a frame of reinforced sculk. Beyond it lies the &5Otherside&r: an echo of the world the Wardens remember, preserved the way a shell keeps the sound of the sea. The &5Stalker&r hunts there.
+
+      &7Enter the Otherside.
     tasks: [{dimension: "deeperdarker:otherside"}]
     rewards: [{table: hunters_spoils}, {xp: 400}]
 
@@ -52,8 +79,12 @@ quests:
     deps: [descent]
     shape: gear
     size: 1.5
+    keeper: |
+      The sea kept a secret for the world. Three old things guard it, and they curse anyone who swims too close. Swim close.
     desc: |
-      Deep in the ocean monuments, three Elder Guardians keep the sea's oldest secret and curse anyone who tries to learn it. Kill one and take its Relic.
+      Deep in the &3ocean monuments&r, three Elder Guardians keep the sea's oldest memory: the first sunrise, sunk in a vault of prismarine so it could never be stolen.
+
+      &7Find a monument and kill an Elder Guardian.
     tasks: [{structure: "betteroceanmonuments:ocean_monument"}, {kill: minecraft:elder_guardian}]
     rewards: [{table: hunters_spoils}, {xp: 500}]
 
@@ -62,8 +93,10 @@ quests:
     subtitle: "Kaelthar spoke to the storm."
     icon: minecraft:lightning_rod
     deps: [monument]
+    keeper: |
+      Kaelthar was afraid of the dark, so he kept the one thing that still flashed: lightning. He drowned his own coast to keep the storm close. Every bolt you see out there is him, still talking to it.
     desc: |
-      &6Kaelthar the Stormcaller&r, Sovereign of the Drowned Sky, drowned his own coast to keep the storm for himself. His token is a &6lightning rod&r.
+      &6Kaelthar the Stormcaller&r, Sovereign of the Drowned Sky, flooded his kingdom to keep the storm for himself. His token is a &6lightning rod&r.
 
       &7Before him, the drowned coast has other things to fight: a sunken city with a Leviathan, a kraken's ship, a frozen pirate captain. None is required. All of them will teach you about water.
     tasks: [{item: minecraft:lightning_rod}, {item: runeborn:sovereign_fragment, count: 6}]
@@ -77,7 +110,9 @@ quests:
     optional: true
     shape: gear
     desc: |
-      Under the ocean lies a &3sunken city&r, and in it something vast that drags its prey into the abyss. Bring water breathing. Bring friends.
+      Under the ocean lies a &3sunken city&r, drowned when Kaelthar called the sea in. Something vast lives there now, and it drags whatever it catches down into the abyss to keep.
+
+      &7Bring water breathing. Bring friends. Kill the Leviathan.
     tasks: [{kill: cataclysm:the_leviathan}]
     rewards: [{table: sovereign_tribute}, {xp: 800}]
 
@@ -88,6 +123,10 @@ quests:
     deps: [drowned_sky]
     optional: true
     shape: gear
+    desc: |
+      A Crown warship went down in Kaelthar's storm with every hand aboard. The crew are long gone. The thing that sank it never left.
+
+      &7Kill the Kraken.
     tasks: [{kill: block_factorys_bosses:kraken}]
     rewards: [{table: hunters_spoils}, {xp: 600}]
 
@@ -98,8 +137,13 @@ quests:
     deps: [drowned_sky]
     shape: gear
     size: 2.0
+    keeper: |
+      Four embers. Listen. No thunder. For the first time in an age, the sea is just the sea. Halfway, Ashborn. Halfway home.
+    voice: true
     desc: |
-      He calls lightning down where you stand. Keep moving, never stand still for a whole breath, and never fight him in the rain if you can help it.
+      He calls lightning down where you stand. The storm loves him back, which is the saddest thing about him.
+
+      &7Keep moving, never stand still for a whole breath, and never fight him in the rain if you can help it.
     tasks: [{item: runeborn:sigil_kaelthar}, {advancement: "runeborn:feats/fell_kaelthar"}]
     rewards: [{table: sovereign_tribute}, {item: runeborn:tempering_stone_6, count: 2}, {xp: 900}]
 
@@ -110,10 +154,14 @@ quests:
     deps: [descent]
     shape: gear
     size: 1.75
+    keeper: |
+      Before the Crown, there was a king of sand who refused to die. He was the first. Everything rising out there learned it from him.
     desc: |
       The Hollow Sovereign's warrior, Ossukage, likes to call himself the first Remnant. He's wrong.
 
-      Somewhere under the desert sand sleeps a pharaoh-thing that rose again before there was a Crown to serve: the &cAncient Remnant&r. Wake it. Then survive it.
+      Under the desert sleeps a pharaoh-thing that rose again before there was a Crown to serve: the &cAncient Remnant&r. The Eclipse didn't make it. It made the Eclipse feel at home.
+
+      &7Wake it. Then survive it.
     tasks: [{kill: cataclysm:ancient_remnant}]
     rewards: [{table: sovereign_tribute}, {xp: 1000}]
 
@@ -123,7 +171,9 @@ quests:
     icon: minecraft:soul_lantern
     deps: [s1_act2_hunt/spire]
     desc: |
-      In the hot, wet places stands the &6Cursed Keep&r. Its Warlord died long ago. He didn't notice.
+      In the hot, wet places stands the &6Cursed Keep&r. Its Warlord died defending it in the first year of the dark. He didn't notice. He's still defending it.
+
+      &7Kill the Keep's Warlord.
     tasks: [{advancement: "muchmoredungeons:slay_dungeon_t2_guardian"}]
     rewards: [{table: hunters_spoils}, {xp: 400}]
 
@@ -133,6 +183,10 @@ quests:
     icon: minecraft:deepslate_bricks
     deps: [s1_act2_hunt/labyrinth, descent]
     optional: true
+    desc: |
+      The deepest prison the Sovereigns dug, for the thing they feared most. Whatever it was, they were right to.
+
+      &7Clear the Abyssal Halls and kill their guardian.
     tasks: [{advancement: "muchmoredungeons:slay_deepslate_halls_guardian"}]
     rewards: [{table: hunters_spoils}, {xp: 500}]
 
@@ -141,8 +195,12 @@ quests:
     subtitle: "Ysolde grew flowers in blood."
     icon: minecraft:redstone_block
     deps: [kaelthar]
+    keeper: |
+      Ysolde loved her garden more than her court. When the sun went out, the flowers started dying, so she fed them. First the servants. Then the court. Then herself, a little, every day.
     desc: |
-      &6Ysolde, the Crimson Bloom&r, Sovereign of the Scarlet Garden, fed her garden on her own court. Her token is a &cblock of redstone&r, the colour of everything she ever loved.
+      &6Ysolde, the Crimson Bloom&r, Sovereign of the Scarlet Garden, kept her roses alive in the dark at any price. Her token is a &cblock of redstone&r, the colour of everything she ever loved.
+
+      &7Gather six Fragments and a block of redstone.
     tasks: [{item: minecraft:redstone_block}, {item: runeborn:sovereign_fragment, count: 6}]
     rewards: [{item: minecraft:golden_apple, count: 3}, {xp: 200}]
 
@@ -153,9 +211,12 @@ quests:
     deps: [scarlet_garden]
     shape: gear
     size: 2.0
+    keeper: |
+      Five embers. More than half the sun. Look up tonight, Ashborn. The sky is not black any more. It's dark blue. Tell me you can't see it.
+    voice: true
     desc: |
-      She bleeds you. &cHemorrhage&r builds with every cut and bursts for a share of your health. Don't let her chain combos; one clean roll beats three panicked ones.
+      Her garden dies with her. Something in you will be sorry about that, and you should let it.
 
-      &o"Four embers. Half the sun. Look up tonight, Ashborn. Tell me you can't see it."&r
+      &7She bleeds you: &cHemorrhage&7 builds with every cut and bursts for a share of your health. Don't let her chain combos; one clean roll beats three panicked ones.
     tasks: [{item: runeborn:sigil_ysolde}, {advancement: "runeborn:feats/fell_ysolde"}]
     rewards: [{table: sovereign_tribute}, {item: runeborn:lustrous_stone_4, count: 2}, {xp: 1000}]

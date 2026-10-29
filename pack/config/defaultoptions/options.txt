@@ -23,5 +23,6 @@ key_key.tbos.memory_loadout:key.keyboard.semicolon
 key_key.tbos.toggle_objectives:key.keyboard.j
 key_key.reconstructedwands.wheel:key.keyboard.unknown
 key_key.reconstructedwands.screen:key.keyboard.unknown
-resourcePacks:["vanilla","mod_resources","file/FreshAnimations_v1.11.1_1.20+.zip"]
+resourcePacks:["vanilla","mod_resources","file/Ashen_16x.zip","file/FreshAnimations_v1.11.1_1.20+.zip"]
 incompatibleResourcePacks:["file/FreshAnimations_v1.11.1_1.20+.zip"]
+tutorialStep:none

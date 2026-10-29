@@ -859,5 +859,94 @@
 			x: 4.0d
 			y: 12.5d
 		}
+		{
+			dependencies: ["3B2BC7E46FADA8F0"]
+			icon: {
+				id: "minecraft:creeper_head"
+			}
+			id: "79C830E03DC57E0F"
+			rewards: [
+				{
+					id: "4A29E22E923C7F2D"
+					table_id: 4000594783902426681L
+					type: "random"
+				}
+				{
+					id: "2B26526A058A7329"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					entity: "gmm:leap_creeper"
+					id: "160FAF1741A54585"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "gmm:swift_creeper"
+					id: "59BAB5D9C7BE9AAF"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "gmm:silent_creeper"
+					id: "2C7FD48D503A36C0"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 6.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["79C830E03DC57E0F"]
+			icon: {
+				id: "minecraft:tnt"
+			}
+			id: "67C536F94BDB9C78"
+			optional: true
+			rewards: [
+				{
+					id: "69D2A36FCF04E596"
+					table_id: 8538537266808005067L
+					type: "random"
+				}
+				{
+					id: "12ABBA0035E63FAD"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					entity: "gmm:climb_creeper"
+					id: "7FE79432D630866A"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "gmm:hunter_creeper"
+					id: "15D418C40ACEA4AF"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "gmm:adaptive_creeper"
+					id: "0BCDE0A92AC368EC"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "gmm:overcharge_creeper"
+					id: "4F76C463F7AC10D5"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 8.0d
+			y: 12.5d
+		}
 	]
 }

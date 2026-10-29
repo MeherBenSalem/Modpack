@@ -53,11 +53,43 @@ light is the brightest thing left in the world.
 - **The Eclipsed Realm**: a dimension under a black sun, seven biomes, three arenas behind fog gates, and the
   throne.
 
+## The Threshold (the first ten minutes)
+
+Every new Ashborn wakes in **the Threshold**, the heralds' crypt: a floating ruin in its own dimension, frozen at
+dusk, facing the black sun on the horizon. Pick an origin, the screen fades from black, a bell tolls and the Keeper
+speaks the opening tale. West through the **Hall of Messages** (signs scratched by the Ashborn before you), through
+the **fog gate**, into the arena of **Ser Odric, Gatekeeper of the Threshold**: the heralds' gate guard, sworn to keep
+the dead from leaving and never told to stop. Fell him, or fall to him once, and the **Ember Door** opens; the
+**Last Stair** climbs to the **Waygate**, and the Waygate drops you into the Overworld under the title
+*The Lands Under Ash*. Co-op players who arrive together fight Odric together. (`pack/kubejs/server_scripts/remnants/threshold.js`,
+layout from `tools/build_threshold.py`; ops can `/threshold off|on|skip|send|rebuild`.)
+
+## The Keeper's secret (planted in Act V, paid off in the Epilogue)
+
+The Keeper "kept some" old flame from before the Eclipse, knew the Eighth "before", and calls the Eighth a herald.
+In the Epilogue the Keeper admits to being a herald too: the one who carried the first flame to the Crown's forge
+and said nothing while the Sovereigns broke the sun. Then a voice from nowhere asks who cracked the sun *first*:
+the Season 2 hook.
+
+## Area names
+
+Walking into a new kind of land fades in its old name (`regions.js`): the Ashen Fields, the Grey Wood, the Hollow
+Wood, the Rime Veil, the Broken Crowns, the Sunless Sands, the Scarred Reach, the Dusk Steppe, the Weeping Mire, the
+Drowned Coast and the Drowned Sky, the Last Coast, the Fanged Dark, the Deep; in the Nether the Ashlands, the
+Crimson Pyre, the Cold Fire, the Cinder Deltas and the Valley of Ash-Souls; in the End the Last Shore and the
+Starless Reach.
+
+## Narration
+
+The Keeper's tales open every act ("♪ Listen to the Keeper" quests) and the Keeper speaks at every Sovereign's fall.
+The script is generated into `src/voice/lines.yaml`; recordings go in `src/voice/raw/`, and `tools/build_voice.py`
+masters them (or synthesises placeholders with the open Kokoro TTS) into `kubejs/assets/remnants/sounds/vo/`.
+
 ## Season 1, act by act
 
 | Act | Title | Levels | The beat | Ends with |
 |---|---|---|---|---|
-| Prologue | **Ashborn** | 1–5 | Wake in ash, survive the first night, learn stamina, the dodge and runes | Your first death, and meeting your own Echo |
+| Prologue | **Ashborn** | 1–5 | Wake in the Threshold, face Ser Odric, step into the world; survive the first night, learn stamina, the dodge and runes | Your first death, and meeting your own Echo |
 | I | **Embers** | 5–15 | Find a village, light the first Ember Shrine, the Keeper names it Last Light; hire your first sellsword | **The Dusk Rider**, first Sovereign |
 | II | **The Hunt** | 15–30 | The first Hunter's Moon; named Remnants roam; the Labyrinths open; choose your path (blade, sorcery, faith) | **Varghast** and **Sylvara** |
 | III | **The Deep** | 30–50 | Ancient cities and drowned temples; the Old Powers' relics; the first Remnant of all waits in the desert | **Kaelthar** and **Ysolde** |

@@ -55,6 +55,57 @@
 		{
 			dependencies: ["1396239BCA1C36D0"]
 			icon: {
+				id: "minecraft:bell"
+			}
+			id: "6CA5B84D2F345074"
+			rewards: [
+				{
+					id: "73DAF41471E5D6D7"
+					table_id: 139939361058897245L
+					type: "random"
+				}
+				{
+					id: "77553CA85A1617EB"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					id: "65D4D53159105A9B"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: -0.875d
+		}
+		{
+			dependencies: ["6CA5B84D2F345074"]
+			icon: {
+				id: "minecraft:written_book"
+			}
+			id: "22201CEDCE4457E8"
+			rewards: [
+				{
+					id: "731DF8D060C8FA2F"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "62637C9FD5B7646C"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["22201CEDCE4457E8"]
+			icon: {
 				id: "minecraft:dragon_egg"
 			}
 			id: "21DCE1D40E334C97"
@@ -73,8 +124,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 2.0d
-			y: -0.875d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1396239BCA1C36D0"]

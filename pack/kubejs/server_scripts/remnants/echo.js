@@ -4,7 +4,7 @@
 // The copies have a 0% drop chance (set as SNBT floats), so nothing is duplicated; real items wait in the corpse.
 
 const ECHO_TAG = 'remnants_echo'
-const ECHO_SKIP_DIMENSIONS = ['tbos:fractured_archive'] // the Archive has its own death rules
+const ECHO_SKIP_DIMENSIONS = ['tbos:fractured_archive', 'remnants:threshold'] // own death rules; no Echo in the tutorial
 const ECHO_HEALTH_BONUS = 1.0   // +100% max health on top of whatever RPG Mobs rolls
 const ECHO_DAMAGE_BONUS = 0.5   // +50% attack damage
 

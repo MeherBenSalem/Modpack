@@ -53,6 +53,79 @@
 		{
 			dependencies: ["79BAD0382EFA559F"]
 			icon: {
+				id: "minecraft:wither_skeleton_skull"
+			}
+			id: "295933238D4366D9"
+			optional: true
+			rewards: [
+				{
+					id: "473B991D1C9D3377"
+					table_id: 7547820078087610474L
+					type: "random"
+				}
+				{
+					id: "17DC09E93506ED09"
+					item: {
+						count: 1
+						id: "runeborn:heros_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "3B6E5F9C7AF191EC"
+					type: "xp"
+					xp: 120
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "remnants:threshold/gatekeeper"
+					criterion: ""
+					id: "4D4E3941F5106599"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: -1.75d
+		}
+		{
+			dependencies: ["79BAD0382EFA559F"]
+			icon: {
+				id: "minecraft:lodestone"
+			}
+			id: "60736FE08ABE9C7F"
+			rewards: [
+				{
+					count: 8
+					id: "52553E9F1D7E7257"
+					item: {
+						count: 1
+						id: "minecraft:bread"
+					}
+					type: "item"
+				}
+				{
+					id: "194FB0CCE05F8109"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					advancement: "remnants:threshold/beyond"
+					criterion: ""
+					id: "231F83EB9BB6910F"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["79BAD0382EFA559F"]
+			icon: {
 				id: "runeborn:errant_longsword"
 			}
 			id: "6D7FD40BC81A0E63"
@@ -70,10 +143,10 @@
 				}
 			]
 			x: 2.0d
-			y: -0.875d
+			y: 1.75d
 		}
 		{
-			dependencies: ["79BAD0382EFA559F"]
+			dependencies: ["60736FE08ABE9C7F"]
 			icon: {
 				id: "minecraft:oak_log"
 			}
@@ -108,8 +181,8 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
-			y: 0.875d
+			x: 4.0d
+			y: -0.875d
 		}
 		{
 			dependencies: ["1ABD147F1054853C"]
@@ -152,8 +225,8 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
-			y: -0.875d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6D7FD40BC81A0E63"]
@@ -209,7 +282,7 @@
 					value: 3L
 				}
 			]
-			x: 6.0d
+			x: 8.0d
 			y: -0.875d
 		}
 		{
@@ -231,7 +304,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 8.0d
+			x: 10.0d
 			y: -2.625d
 		}
 		{
@@ -256,7 +329,7 @@
 					type: "advancement"
 				}
 			]
-			x: 10.0d
+			x: 12.0d
 			y: -0.875d
 		}
 		{
@@ -285,7 +358,7 @@
 					type: "advancement"
 				}
 			]
-			x: 12.0d
+			x: 14.0d
 			y: -0.875d
 		}
 		{
@@ -320,7 +393,7 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
+			x: 8.0d
 			y: 0.875d
 		}
 		{
@@ -362,7 +435,7 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
+			x: 10.0d
 			y: -0.875d
 		}
 		{
@@ -409,7 +482,7 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
+			x: 10.0d
 			y: 0.875d
 		}
 		{
@@ -441,7 +514,7 @@
 					type: "advancement"
 				}
 			]
-			x: 8.0d
+			x: 10.0d
 			y: 2.625d
 		}
 		{
@@ -470,7 +543,7 @@
 					type: "advancement"
 				}
 			]
-			x: 10.0d
+			x: 12.0d
 			y: 0.875d
 		}
 		{
@@ -501,7 +574,7 @@
 					type: "structure"
 				}
 			]
-			x: 12.0d
+			x: 14.0d
 			y: 0.875d
 		}
 	]

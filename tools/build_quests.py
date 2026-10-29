@@ -18,6 +18,11 @@ A chapter file looks like:
       subtitle: "A fire the dark respects"
       desc: |
         Paragraphs separated by blank lines. Formatting codes like &6 work.
+      keeper: |                 # optional: the Keeper's spoken lines, shown in italics above desc
+        Plain text, paragraphs separated by blank lines.
+      whisper: |                # optional: the same for the unknown voice of the epilogue
+      voice: true               # narrate keeper/whisper: listed in src/voice/lines.yaml and played by KubeJS
+                                # when the quest completes (subtitles go to chat unless a task is a checkmark)
       icon: minecraft:campfire
       pos: [0, 0]               # optional; quests without pos are laid out by dependency depth
       shape: hexagon            # optional
@@ -50,6 +55,9 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "src" / "quests"
 OUT = ROOT / "pack" / "config" / "ftbquests" / "quests"
+VOICE_SRC = ROOT / "src" / "voice"
+# startup script: KubeJS 2101 only lets startup scripts assign to `global`; server scripts read it
+NARRATION_JS = ROOT / "pack" / "kubejs" / "startup_scripts" / "remnants_narration_lines.js"
 REGISTRY = ROOT / "research" / "registry"
 
 
@@ -123,6 +131,28 @@ def lang_lines(text):
     return [ln for ln in lines]
 
 
+SPEAKERS = {  # yaml field -> (header, text colour)
+    "keeper": ("&6The Keeper", "&f&o"),
+    "whisper": ("&5&k|||&r &5A voice from nowhere &k|||", "&d&o"),
+}
+
+
+def spoken(field, text, voiced):
+    """The italic, quoted speech block that opens a quest's description."""
+    header, colour = SPEAKERS[field]
+    paras = [" ".join(p.split()) for p in text.strip().split("\n\n") if p.strip()]
+    lines = [header + ("&r &e♪" if voiced else "&r")]
+    for i, para in enumerate(paras):
+        quote_open = '"' if i == 0 else ""
+        quote_close = '"' if i == len(paras) - 1 else ""
+        lines += ["", f"{colour}{quote_open}{para}{quote_close}&r"]
+    return lines
+
+
+def spoken_text(text):
+    return "\n\n".join(" ".join(p.split()) for p in text.strip().split("\n\n") if p.strip())
+
+
 class Compiler:
     def __init__(self):
         self.lang = {}            # file name -> {key: value}
@@ -130,6 +160,7 @@ class Compiler:
         self.quest_ids = {}       # "chapter/key" -> id
         self.tables = {}          # key -> id
         self.refs = []            # (where, kind, value) for --check
+        self.voice = []           # narrated lines: {line, quest, speaker, text, chat}
 
     def new_id(self, *parts):
         i = qid(*parts)
@@ -288,7 +319,21 @@ class Compiler:
                 entry["hide_dependency_lines"] = True
             self.put(self.cur_lang, f"quest.{qid_}.title", q["title"])
             self.put(self.cur_lang, f"quest.{qid_}.quest_subtitle", q.get("subtitle"))
-            self.put(self.cur_lang, f"quest.{qid_}.quest_desc", lang_lines(q.get("desc", "")))
+            desc = []
+            for field in SPEAKERS:
+                if q.get(field):
+                    desc += spoken(field, q[field], bool(q.get("voice")))
+                    if q.get("voice"):
+                        tasks = q.get("tasks") or [{"checkmark": True}]
+                        self.voice.append({"line": f"{ch}_{k}", "quest": qid_, "speaker": field,
+                                           "text": spoken_text(q[field]),
+                                           "chat": not any("checkmark" in t for t in tasks)})
+            if q.get("voice") and not desc:
+                sys.exit(f"{ch}/{k}: voice: true needs a keeper or whisper text")
+            body = lang_lines(q.get("desc", ""))
+            if desc and body:
+                desc.append("")
+            self.put(self.cur_lang, f"quest.{qid_}.quest_desc", desc + body)
             out_q.append(entry)
         chapter = {"default_hide_dependency_lines": False, "default_quest_shape": doc.get("shape", ""),
                    "filename": ch, "group": groups[doc["group"]], "icon": {"id": doc["icon"]}, "id": cid,
@@ -328,7 +373,7 @@ class Compiler:
             shutil.rmtree(OUT)
         (OUT / "chapters").mkdir(parents=True)
         (OUT / "reward_tables").mkdir()
-        (OUT / "lang" / "en_us" / "chapters").mkdir(parents=True)
+        (OUT / "lang").mkdir()
 
         data = {"default_autoclaim_rewards": "disabled", "default_consume_items": False,
                 "default_quest_disable_jei": False, "default_quest_shape": "circle", "default_reward_team": False,
@@ -367,12 +412,39 @@ class Compiler:
             (OUT / "chapters" / f"{name}.snbt").write_text(snbt(chapter) + "\n")
             n_quests += len(chapter["quests"])
 
-        for file, entries in self.lang.items():
-            p = OUT / "lang" / "en_us" / f"{file}.snbt"
-            p.parent.mkdir(parents=True, exist_ok=True)
-            p.write_text(snbt(entries) + "\n")
+        # FTB Quests 2101.1.37 reads only lang/<locale>.snbt files (it skips the lang/<locale>/ folders later
+        # versions write), so every chapter's strings go into one file.
+        merged = {}
+        for entries in self.lang.values():
+            merged.update(entries)
+        (OUT / "lang" / "en_us.snbt").write_text(snbt(dict(sorted(merged.items()))) + "\n")
+        self.write_voice()
         return len(docs), n_quests, len(self.tables)
 
+    def write_voice(self):
+        """src/voice/lines.yaml is the recording script; narration_lines.js tells KubeJS what to play.
+
+        Lines come from the quests (keeper/whisper + voice: true) and from src/voice/extra_lines.yaml (the
+        Threshold's cinematics)."""
+        script = {v["line"]: {"speaker": v["speaker"], "text": v["text"]} for v in self.voice}
+        extra = yaml.safe_load((VOICE_SRC / "extra_lines.yaml").read_text()) if (VOICE_SRC / "extra_lines.yaml").exists() else {}
+        for line, e in (extra or {}).items():
+            if line in script:
+                sys.exit(f"extra_lines.yaml: {line} is also a quest line")
+            script[line] = {"speaker": e["speaker"], "text": spoken_text(e["text"])}
+        VOICE_SRC.mkdir(parents=True, exist_ok=True)
+        (VOICE_SRC / "lines.yaml").write_text(
+            "# Generated by tools/build_quests.py from the quests' keeper/whisper text and extra_lines.yaml.\n"
+            "# Record each line as src/voice/raw/<line>.mp3, then run tools/build_voice.py.\n"
+            + yaml.safe_dump(script, sort_keys=False, allow_unicode=True, width=1000))
+        lines = {k: {"speaker": v["speaker"], "text": v["text"].split("\n\n")} for k, v in script.items()}
+        quests = {v["quest"]: {"line": v["line"], "chat": v["chat"]} for v in self.voice}
+        NARRATION_JS.parent.mkdir(parents=True, exist_ok=True)
+        NARRATION_JS.write_text(
+            "// priority: 100\n"
+            "// Generated by tools/build_quests.py. Do not edit; edit src/quests/ or src/voice/extra_lines.yaml.\n"
+            "global.REMNANTS_LINES = " + json.dumps(lines, indent=2, ensure_ascii=False) + "\n"
+            "global.REMNANTS_NARRATION = " + json.dumps(quests, indent=2) + "\n")
 
 def check(refs):
     """Every item/entity/dimension/structure id must exist in a registry dump or be a vanilla id."""
@@ -389,6 +461,11 @@ def check(refs):
                     known.add(f"{parts[1]}:{'.'.join(parts[2:])}")
         elif isinstance(data, dict) and "ids" in data:
             known.update(data["ids"])
+    # the pack's own datapack (KubeJS): advancements, dimensions, functions it defines
+    for f in (ROOT / "pack" / "kubejs" / "data").glob("*/*/**/*.json"):
+        ns, kind = f.relative_to(ROOT / "pack" / "kubejs" / "data").parts[:2]
+        rel = f.relative_to(ROOT / "pack" / "kubejs" / "data" / ns / kind).with_suffix("")
+        known.add(f"{ns}:{rel.as_posix()}")
     bad = [(w, k, v) for w, k, v in refs if not v.startswith(("minecraft:", "#")) and v not in known]
     for w, k, v in bad:
         print(f"UNKNOWN {k} {v}  ({w})")

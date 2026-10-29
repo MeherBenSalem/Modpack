@@ -14,6 +14,30 @@
 		{
 			dependencies: ["5867200A6552CB88"]
 			icon: {
+				id: "minecraft:written_book"
+			}
+			id: "7A21A291E4DB088D"
+			rewards: [
+				{
+					id: "52C5429D1E8D7BB4"
+					type: "xp"
+					xp: 120
+				}
+			]
+			shape: "hexagon"
+			size: 1.75d
+			tasks: [
+				{
+					id: "5F8D152F14BF0CB6"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A21A291E4DB088D"]
+			icon: {
 				id: "remnant_bosses:eclipse_shard"
 			}
 			id: "4E4B23BBB691EBC8"
@@ -43,7 +67,7 @@
 					type: "advancement"
 				}
 			]
-			x: 0.0d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
@@ -67,7 +91,7 @@
 					type: "advancement"
 				}
 			]
-			x: 2.0d
+			x: 4.0d
 			y: 0.0d
 		}
 		{
@@ -100,7 +124,7 @@
 					type: "dimension"
 				}
 			]
-			x: 4.0d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
@@ -122,7 +146,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 6.0d
+			x: 8.0d
 			y: 0.0d
 		}
 		{
@@ -160,7 +184,7 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
+			x: 10.0d
 			y: -1.75d
 		}
 		{
@@ -191,7 +215,7 @@
 					value: 1L
 				}
 			]
-			x: 10.0d
+			x: 12.0d
 			y: -0.875d
 		}
 		{
@@ -226,7 +250,7 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
+			x: 10.0d
 			y: 0.0d
 		}
 		{
@@ -257,7 +281,7 @@
 					value: 1L
 				}
 			]
-			x: 10.0d
+			x: 12.0d
 			y: 0.875d
 		}
 		{
@@ -288,7 +312,7 @@
 					value: 1L
 				}
 			]
-			x: 8.0d
+			x: 10.0d
 			y: 1.75d
 		}
 		{
@@ -322,7 +346,7 @@
 					type: "item"
 				}
 			]
-			x: 12.0d
+			x: 14.0d
 			y: 0.0d
 		}
 		{
@@ -358,7 +382,7 @@
 					type: "advancement"
 				}
 			]
-			x: 14.0d
+			x: 16.0d
 			y: 0.0d
 		}
 		{
@@ -382,7 +406,7 @@
 					type: "advancement"
 				}
 			]
-			x: 16.0d
+			x: 18.0d
 			y: 0.0d
 		}
 	]

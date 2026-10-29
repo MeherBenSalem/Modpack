@@ -1,0 +1,18 @@
+# Narrated lines that aren't quest text (the Threshold's cinematics). tools/build_quests.py merges these into
+# src/voice/lines.yaml and the KubeJS line table. speaker: keeper | whisper.
+threshold_gate:
+  speaker: keeper
+  text: |
+    Fog. Beyond it, Odric. He kept this gate for the heralds when they lived, and he keeps it for the dead now. He was told not to let anyone leave. He has never once been told to stop.
+threshold_fell:
+  speaker: keeper
+  text: |
+    Not yet. That's all right. Nobody passes Odric the first time. The Ember Door in the crypt will open for you now. Go around him, or go back through him. Either way, go.
+threshold_victory:
+  speaker: keeper
+  text: |
+    There. You see? You can be killed, and you can still win. Remember that, when the big ones come. Odric can rest now. Climb the stair, Ashborn. The world is waiting, and it isn't patient.
+threshold_beyond:
+  speaker: keeper
+  text: |
+    There it is. The world, or what the dark left of it. Walk toward the smoke. Someone out there kept a fire lit.

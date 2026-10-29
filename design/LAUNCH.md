@@ -42,6 +42,37 @@ run and the Last Light NPCs, the Echo and the Eclipse bar work. A client play-te
 9. Fellowship sellswords and the Eclipsed Realm's fog gates (allies may not follow you into arenas).
 10. Mob LootBags contents feel fair through Act I–II, the RAS item locks (diamond 12, netherite 30) aren't too tight.
 
+## Narration (the Keeper's voice)
+
+- 25 lines (tales, Sovereign falls, the Threshold) are scripted in `src/voice/lines.yaml`, generated from the quests.
+- The shipped audio is a **placeholder made with Kokoro**, an open-source TTS model (Apache-2.0), mastered by
+  `tools/build_voice.py`. The ElevenLabs account connected during development had no credits left, so nothing was
+  generated there.
+- To upgrade: record or generate each line as `src/voice/raw/<line>.mp3` (or wav/ogg) and run
+  `python3 tools/build_voice.py`. Real recordings automatically replace the placeholders.
+  The voice picked for the Keeper was "Arkadius - Old Storyteller", eleven_v4, about 7,000 characters for the whole script.
+- Players can turn the Keeper down with the *Voice/Speech* volume slider.
+
+## The Threshold (first-join starting area)
+
+- New players wake in the Threshold after picking an origin, fight Ser Odric and leave through the Waygate.
+- Players who already have 5+ minutes on a world skip it.
+- Ops can manage it with `/threshold`:
+  - `off` / `on`: switch it off or on for new players.
+  - `skip <player>`: send a player past it.
+  - `send <player>`: send a player back in.
+  - `rebuild`: rebuild the ruin.
+- Odric's tuning is at the top of `kubejs/server_scripts/remnants/threshold.js`. The pack scales incoming damage about
+  16x to match players' larger health, so he hits for about 60 and four hits kill a fresh character.
+
+## Licences of the new defaults
+
+- **Ashen 16x** (resource pack, on by default) is All Rights Reserved. The CurseForge zip references it by project and
+  file id, so CurseForge serves it; never bundle the zip itself.
+- **Reactive Music** bundles "copyright free (non-commercially)" tracks, another reason the pack must stay free.
+- **Subtle Effects** asks for credit and a link to its project page on the pack page.
+- **Fog** is covered by IMB11's mod EULA, which allows CurseForge and Modrinth modpacks.
+
 ## What only the owner can make
 
 - **Pack art is drafted** in `art/` (icon, logo, menu background, title card) and the custom main menu is built

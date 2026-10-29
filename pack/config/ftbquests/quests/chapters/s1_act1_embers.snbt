@@ -14,6 +14,30 @@
 		{
 			dependencies: ["20A88504DC6B5A17"]
 			icon: {
+				id: "minecraft:written_book"
+			}
+			id: "46646A7C9FE93DA1"
+			rewards: [
+				{
+					id: "3F4DA3B220CA20E6"
+					type: "xp"
+					xp: 40
+				}
+			]
+			shape: "hexagon"
+			size: 1.75d
+			tasks: [
+				{
+					id: "24CFF9F37C73E355"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["46646A7C9FE93DA1"]
+			icon: {
 				id: "minecraft:blaze_powder"
 			}
 			id: "5651DDA19B1EF5FB"
@@ -63,7 +87,7 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
@@ -105,7 +129,7 @@
 					type: "advancement"
 				}
 			]
-			x: 2.0d
+			x: 4.0d
 			y: 0.0d
 		}
 		{
@@ -138,7 +162,7 @@
 					type: "advancement"
 				}
 			]
-			x: 4.0d
+			x: 6.0d
 			y: -3.5d
 		}
 		{
@@ -171,7 +195,7 @@
 					type: "advancement"
 				}
 			]
-			x: 6.0d
+			x: 8.0d
 			y: -1.75d
 		}
 		{
@@ -209,7 +233,7 @@
 					type: "advancement"
 				}
 			]
-			x: 4.0d
+			x: 6.0d
 			y: -1.75d
 		}
 		{
@@ -260,7 +284,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 4.0d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
@@ -289,7 +313,7 @@
 					type: "advancement"
 				}
 			]
-			x: 4.0d
+			x: 6.0d
 			y: 1.75d
 		}
 		{
@@ -322,7 +346,7 @@
 					type: "advancement"
 				}
 			]
-			x: 4.0d
+			x: 6.0d
 			y: 3.5d
 		}
 		{
@@ -350,7 +374,7 @@
 					type: "structure"
 				}
 			]
-			x: 6.0d
+			x: 8.0d
 			y: 0.0d
 		}
 		{
@@ -379,7 +403,7 @@
 					type: "advancement"
 				}
 			]
-			x: 8.0d
+			x: 10.0d
 			y: -0.875d
 		}
 		{
@@ -403,7 +427,7 @@
 					type: "advancement"
 				}
 			]
-			x: 6.0d
+			x: 8.0d
 			y: 1.75d
 		}
 		{
@@ -438,7 +462,7 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
+			x: 10.0d
 			y: 0.875d
 		}
 		{
@@ -473,7 +497,7 @@
 					type: "item"
 				}
 			]
-			x: 10.0d
+			x: 12.0d
 			y: 0.0d
 		}
 		{
@@ -515,7 +539,7 @@
 					type: "advancement"
 				}
 			]
-			x: 12.0d
+			x: 14.0d
 			y: 0.0d
 		}
 		{
@@ -550,7 +574,7 @@
 					type: "item"
 				}
 			]
-			x: 14.0d
+			x: 16.0d
 			y: 0.0d
 		}
 	]

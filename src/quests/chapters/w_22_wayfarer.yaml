@@ -294,3 +294,20 @@ quests:
       The Ender Dragon wasn't the first. Stand in the ribcage and wonder who broke the sun, and whether it was the first thing they broke.
     tasks: [{structure: "nullscape:dragon_skeleton", title: "Find the dragon's skeleton"}]
     rewards: [{table: world_eclipse_spoils}, {xp: 600}]
+
+  - key: gingerbread
+    title: "&dThe Sweetest Lure"
+    subtitle: "A candy house in the snow. Nobody lives there. Nobody lives anywhere near it, either."
+    icon: minecraft:cookie
+    pos: [10, 10]
+    deps: [compass]
+    desc: |
+      &o"The Coven used to say: you catch more Ashborn with sugar than with iron. Then they built the house to prove it."&r &7— the Archivist
+
+      Somewhere in the snow, or out on the open plains, stands a house made of gingerbread and frosting, warm-windowed and smelling of the old world. It was built by the &5Hollow Wood Coven&r as a lure for the hungry and the lost in the first starving winters of the Eclipse.
+
+      The witches are gone. The house is still warm. Don't wonder why.
+
+      &7Find the Gingerbread House.
+    tasks: [{structure: "christmas_ginger_house:christmas_ginger_house", title: "Find the Gingerbread House"}]
+    rewards: [{table: world_wayfarer_pack}, {item: minecraft:cookie, count: 16}, {xp: 200}]

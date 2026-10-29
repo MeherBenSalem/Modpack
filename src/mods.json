@@ -900,6 +900,34 @@
   "reason": "A living soundscape"
  },
  {
+  "name": "Ashen 16x (resource pack)",
+  "slug": "ashen-16x",
+  "category": "juice",
+  "side": "client",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "modrinth": {
+   "project_id": "LSmohupN",
+   "version_id": "xiwrkYeI",
+   "version_number": "1.17.2",
+   "filename": "Ashen_16x.zip",
+   "url": "https://cdn.modrinth.com/data/LSmohupN/versions/xiwrkYeI/Ashen_16x.zip",
+   "sha1": "a3645a8233ee6acbb4206cba7a411af15867729b",
+   "size": 12629401,
+   "sha512": "93c5dbc407792dc5bf5c2de87d2a4cfb805ba5de654bd47c4edd248164688e998858edc68791358297f3ef7b1a8ec46290e122b61971810a8116fb57ebcded41"
+  },
+  "curseforge": {
+   "project_id": 864112,
+   "file_id": 9240834,
+   "filename": "Ashen_16x.zip"
+  },
+  "required_deps": [],
+  "optional_deps": [],
+  "folder": "resourcepacks",
+  "decision": "include",
+  "group": "juice",
+  "reason": "The default look: Ashen 16x, a medieval-fantasy retexture (resource pack, on by default)"
+ },
+ {
   "name": "Entity Model Features (EMF)",
   "slug": "entity-model-features",
   "category": "juice",
@@ -954,6 +982,37 @@
   "decision": "include",
   "group": "juice",
   "reason": "Fresh Animations support"
+ },
+ {
+  "name": "Fog",
+  "slug": "fog",
+  "category": "juice",
+  "side": "client",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "modrinth": {
+   "project_id": "WuGVWUF2",
+   "version_id": "c4ytB02Y",
+   "version_number": "1.11.0+1.21-neoforge",
+   "filename": "Fog-neoforge-1.11.0-1.21.1.jar",
+   "url": "https://cdn.modrinth.com/data/WuGVWUF2/versions/c4ytB02Y/Fog-neoforge-1.11.0-1.21.1.jar",
+   "sha1": "106460aa8b09e8ce6051b332d104c787c208d28a",
+   "sha512": "930acf4610db47432ae305ab12ed317c00961e96bbb6c8c41c2f528f5b16a798405297b42f313dc641fbf725cb9d2aae8ab98e83a72739669284843e1df2959d",
+   "size": 300280
+  },
+  "curseforge": {
+   "project_id": 815438,
+   "file_id": 7079142,
+   "filename": "Fog-neoforge-1.11.0-1.21.1.jar"
+  },
+  "required_deps": [
+   "architectury-api",
+   "yacl",
+   "mru"
+  ],
+  "optional_deps": [],
+  "decision": "include",
+  "group": "juice",
+  "reason": "Fog that thickens with depth and follows weather and the moon"
  },
  {
   "name": "Fresh Animations (resource pack)",
@@ -1067,6 +1126,62 @@
   "reason": "Rain and snow particles"
  },
  {
+  "name": "Reactive Music",
+  "slug": "reactive-music",
+  "category": "juice",
+  "side": "client",
+  "license": "GPL-3.0-only",
+  "modrinth": {
+   "project_id": "Bqnfeesx",
+   "version_id": "bqvWqBAp",
+   "version_number": "1.3.5+1.21.1-neoforge",
+   "filename": "reactivemusic-neoforge-1.3.5+1.21.1.jar",
+   "url": "https://cdn.modrinth.com/data/Bqnfeesx/versions/bqvWqBAp/reactivemusic-neoforge-1.3.5%2B1.21.1.jar",
+   "sha1": "97626925107054b11c658f9cc59e17f60fda6f4a",
+   "sha512": "faae7a2bdc191f441d7cff8caa2d13d3acb9e0429ebce72b3e5e1b0344a2902f91a32b48b71818bad99df7ece812baaff443480b5712904cec0fefb5d45f80ff",
+   "size": 294837148
+  },
+  "curseforge": {
+   "project_id": 960382,
+   "file_id": 8530938,
+   "filename": "reactivemusic-neoforge-1.3.5+1.21.1.jar"
+  },
+  "required_deps": [],
+  "optional_deps": [],
+  "decision": "include",
+  "group": "juice",
+  "reason": "Music that follows the night, the deep, the village and the danger"
+ },
+ {
+  "name": "Subtle Effects",
+  "slug": "subtle-effects",
+  "category": "juice",
+  "side": "client",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "modrinth": {
+   "project_id": "4q8UOK1d",
+   "version_id": "ReUDmzrA",
+   "version_number": "1.15.1",
+   "filename": "SubtleEffects-neoforge-1.21.1-1.15.1.jar",
+   "url": "https://cdn.modrinth.com/data/4q8UOK1d/versions/ReUDmzrA/SubtleEffects-neoforge-1.21.1-1.15.1.jar",
+   "sha1": "e8ab4df7ac4bf3d88fa389a1cf97ad2449c3206d",
+   "sha512": "4bc61c3cb3df0d774f623eb9177c0ec3d74617c044d3a80a5b564094d2b14c9ebc98b79893a01bb5461d92141787bb814dd869101a293a840dade027bd0a56a1",
+   "size": 3445062
+  },
+  "curseforge": {
+   "project_id": 1023913,
+   "file_id": 9150589,
+   "filename": "SubtleEffects-neoforge-1.21.1-1.15.1.jar"
+  },
+  "required_deps": [
+   "fzzy-config"
+  ],
+  "optional_deps": [],
+  "decision": "include",
+  "group": "juice",
+  "reason": "Small ambient effects: sparks, smoke, breath, a heartbeat at low health"
+ },
+ {
   "name": "Architectury API",
   "slug": "architectury-api",
   "category": "quests-story-scripting",
@@ -1091,7 +1206,7 @@
   "optional_deps": [],
   "decision": "include",
   "group": "library",
-  "reason": "required by ftb-ultimine"
+  "reason": "required by fog"
  },
  {
   "name": "Balm",
@@ -1523,7 +1638,7 @@
   "optional_deps": [],
   "decision": "include",
   "group": "library",
-  "reason": "required by nirvana-library"
+  "reason": "required by subtle-effects"
  },
  {
   "name": "Geckolib",
@@ -1767,6 +1882,33 @@
   "decision": "include",
   "group": "library",
   "reason": "required by amendments"
+ },
+ {
+  "name": "MRU",
+  "slug": "mru",
+  "category": "library",
+  "side": "client",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "modrinth": {
+   "project_id": "SNVQ2c0g",
+   "version_id": "Kpai1paZ",
+   "version_number": "1.0.41+1.21.1-neoforge",
+   "filename": "mru-1.0.41+1.21.1-neoforge.jar",
+   "url": "https://cdn.modrinth.com/data/SNVQ2c0g/versions/Kpai1paZ/mru-1.0.41%2B1.21.1-neoforge.jar",
+   "sha1": "c06ebac32fb438a1efc705a9d367c425cc86fa18",
+   "sha512": "463127834c3c0e6f4a849849640be66e5ba666bd9e00121dbd390dc368b55efc9bfd2155ba58817cc88ce0138687970e3ef2ab84273566890b15b4b4a70c6199",
+   "size": 151764
+  },
+  "curseforge": {
+   "project_id": 669659,
+   "file_id": 9004036,
+   "filename": "mru-1.0.41+1.21.1-neoforge.jar"
+  },
+  "required_deps": [],
+  "optional_deps": [],
+  "decision": "include",
+  "group": "library",
+  "reason": "required by fog"
  },
  {
   "name": "Nirvana Lib",
@@ -2033,9 +2175,9 @@
    "size": 269697
   },
   "curseforge": {
-   "project_id": 1107609,
-   "file_id": 5747126,
-   "filename": "villager-trading-plus-1.1+1.21.jar"
+   "project_id": 1635301,
+   "file_id": 9346744,
+   "filename": "villagertradingplus-neoforge-mc1.21.1-1.1.1.jar"
   },
   "required_deps": [],
   "optional_deps": [
@@ -2044,6 +2186,33 @@
   "decision": "include",
   "group": "library",
   "reason": "required by the-graveyard-fabric"
+ },
+ {
+  "name": "YetAnotherConfigLib (YACL)",
+  "slug": "yacl",
+  "category": "library",
+  "side": "client",
+  "license": "LGPL-3.0-or-later",
+  "modrinth": {
+   "project_id": "1eAoo2KR",
+   "version_id": "7TVdVtxF",
+   "version_number": "3.8.2+1.21.1-neoforge",
+   "filename": "yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar",
+   "url": "https://cdn.modrinth.com/data/1eAoo2KR/versions/7TVdVtxF/yet_another_config_lib_v3-3.8.2%2B1.21.1-neoforge.jar",
+   "sha1": "fe270c9f6e0a8142cf316944087f5109cef08bbb",
+   "sha512": "583de19b927ce8050c2b7d5e60b75accc69e325e5aac85c27994c82a9dec2e4e078343fa1d4c3a10d4bd7e0e524e0b3b246a18cf03db01e363a1e6f865adcf48",
+   "size": 1118651
+  },
+  "curseforge": {
+   "project_id": 667299,
+   "file_id": 7437845,
+   "filename": "yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar"
+  },
+  "required_deps": [],
+  "optional_deps": [],
+  "decision": "include",
+  "group": "library",
+  "reason": "required by fog"
  },
  {
   "name": "YUNG's API",
@@ -2493,6 +2662,36 @@
   "reason": "Coastal structures, fishers and the Messages in a Bottle"
  },
  {
+  "name": "Genetically Modified Monsters (mod id gmm)",
+  "slug": "genetically-modified-monsters",
+  "category": "mobs",
+  "side": "both",
+  "license": "Apache-2.0",
+  "modrinth": {
+   "project_id": "56wxSt5P",
+   "version_id": "B2tTlGwb",
+   "version_number": "1.0.0+neoforge-1.21.1",
+   "filename": "gmm-neoforge-1.21.1-1.0.0.jar",
+   "url": "https://cdn.modrinth.com/data/56wxSt5P/versions/B2tTlGwb/gmm-neoforge-1.21.1-1.0.0.jar",
+   "sha1": "6325d3d46b15a2636b452650cda12d3910fb6c18",
+   "sha512": "b908e8ded4dbc094f5f42e45a169f6080aee74d7ccb2ee0f8a27f4d8cbe690a8d9286768068bb4ecaeda8cb71a1f341d11ee29a5b03e6bd752d2ae08e94436d0",
+   "size": 56255,
+   "date_published": "2026-09-14T14:28:21.635663Z"
+  },
+  "curseforge": {
+   "project_id": 1390363,
+   "file_id": 8879894,
+   "filename": "gmm-neoforge-1.21.1-1.0.0.jar",
+   "release_type": "release",
+   "cf_slug": "genetically-modified-monsters"
+  },
+  "required_deps": [],
+  "optional_deps": [],
+  "decision": "include",
+  "group": "nightbeam",
+  "reason": "Wrongborn creepers: seven variants of the things that rose wrong"
+ },
+ {
   "name": "Jauml",
   "slug": "jauml",
   "category": "library",
@@ -2929,6 +3128,38 @@
   "decision": "include",
   "group": "nightbeam",
   "reason": "Villagers that ask for help and remember you (built-in dialogue, no AI key)"
+ },
+ {
+  "name": "The Gingerbread House (mod id christmas_ginger_house)",
+  "slug": "the-gingerbread-house",
+  "category": "worldgen / structure",
+  "side": "both",
+  "license": "Apache-2.0",
+  "modrinth": {
+   "project_id": "Ddgd2w2n",
+   "version_id": "aEQ294YN",
+   "version_number": "1.0.0",
+   "filename": "christmas_ginger_house-1.0.0-neoforge-1.21.1.jar",
+   "url": "https://cdn.modrinth.com/data/Ddgd2w2n/versions/aEQ294YN/christmas_ginger_house-1.0.0-neoforge-1.21.1.jar",
+   "sha1": "c62d3549a9e2ab7093e5a8a996dec4220c601cdc",
+   "sha512": "39cdcd1e23127451ac72ff9a2994f803eccb3f2922ba57e79a7e007d9da8c5964984d93ab563c3f66c917fd58f076cea9c015be4cf6e5d443392434dda6b9ea8",
+   "size": 21811,
+   "date_published": "2026-01-07T17:02:58.784835Z"
+  },
+  "curseforge": {
+   "project_id": 1409805,
+   "file_id": 7374514,
+   "filename": "christmas_ginger_house-1.0.0-neoforge-1.21.1.jar",
+   "release_type": "release",
+   "cf_slug": "the-gingerbread-house"
+  },
+  "required_deps": [
+   "jauml"
+  ],
+  "optional_deps": [],
+  "decision": "include",
+  "group": "nightbeam",
+  "reason": "The Coven's sweetest lure: a candy house in the snow (dark fairy tale side story)"
  },
  {
   "name": "The Witch Hut (mod id better_witch_huts)",
@@ -4241,7 +4472,7 @@
    "size": 905839
   },
   "curseforge": {
-   "project_id": 631016,
+   "project_id": 1015114,
    "file_id": 6276955,
    "filename": "YungsBetterDesertTemples-1.21.1-NeoForge-4.1.5.jar"
   },
@@ -4270,7 +4501,7 @@
    "size": 782160
   },
   "curseforge": {
-   "project_id": 510089,
+   "project_id": 1015112,
    "file_id": 5954804,
    "filename": "YungsBetterDungeons-1.21.1-NeoForge-5.1.4.jar"
   },
@@ -4299,7 +4530,7 @@
    "size": 398130
   },
   "curseforge": {
-   "project_id": 901344,
+   "project_id": 1015127,
    "file_id": 6300968,
    "filename": "YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar"
   },
@@ -4328,7 +4559,7 @@
    "size": 795839
   },
   "curseforge": {
-   "project_id": 897669,
+   "project_id": 1015123,
    "file_id": 5924482,
    "filename": "YungsBetterJungleTemples-1.21.1-NeoForge-3.1.2.jar"
   },
@@ -4357,7 +4588,7 @@
    "size": 493967
   },
   "curseforge": {
-   "project_id": 389665,
+   "project_id": 1015096,
    "file_id": 5812193,
    "filename": "YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar"
   },
@@ -4386,7 +4617,7 @@
    "size": 609639
   },
   "curseforge": {
-   "project_id": 817651,
+   "project_id": 1015118,
    "file_id": 6606621,
    "filename": "YungsBetterNetherFortresses-1.21.1-NeoForge-3.1.5.jar"
   },
@@ -4415,7 +4646,7 @@
    "size": 1025571
   },
   "curseforge": {
-   "project_id": 689238,
+   "project_id": 1015115,
    "file_id": 5924487,
    "filename": "YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2.jar"
   },
@@ -4444,7 +4675,7 @@
    "size": 461244
   },
   "curseforge": {
-   "project_id": 465575,
+   "project_id": 1015105,
    "file_id": 6272264,
    "filename": "YungsBetterStrongholds-1.21.1-NeoForge-5.1.3.jar"
   },
@@ -4473,7 +4704,7 @@
    "size": 136820
   },
   "curseforge": {
-   "project_id": 536660,
+   "project_id": 1015149,
    "file_id": 5812553,
    "filename": "YungsBridges-1.21.1-NeoForge-5.1.1.jar"
   },
@@ -4502,7 +4733,7 @@
    "size": 198183
   },
   "curseforge": {
-   "project_id": 480006,
+   "project_id": 1015146,
    "file_id": 5812546,
    "filename": "YungsExtras-1.21.1-NeoForge-5.1.1.jar"
   },

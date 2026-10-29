@@ -1,0 +1,227 @@
+{
+  "vo.s1_prologue_rise": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/s1_prologue_rise",
+        "stream": true
+      }
+    ]
+  },
+  "vo.s1_prologue_you_died": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/s1_prologue_you_died",
+        "stream": true
+      }
+    ]
+  },
+  "vo.s1_prologue_village": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/s1_prologue_village",
+        "stream": true
+      }
+    ]
+  },
+  "vo.s1_act1_embers_tale_seven": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/s1_act1_embers_tale_seven",
+        "stream": true
+      }
+    ]
+  },
+  "vo.s1_act1_embers_kindle": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/s1_act1_embers_kindle",
+        "stream": true
+      }
+    ]
+  },
+  "vo.s1_act1_embers_dusk_rider": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/s1_act1_embers_dusk_rider",
+        "stream": true
+      }
+    ]
+  },
+  "vo.s1_act2_hunt_tale_red_moon": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/s1_act2_hunt_tale_red_moon",
+        "stream": true
+      }
+    ]
+  },
+  "vo.s1_act2_hunt_varghast": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/s1_act2_hunt_varghast",
+        "stream": true
+      }
+    ]
+  },
+  "vo.s1_act2_hunt_sylvara": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/s1_act2_hunt_sylvara",
+        "stream": true
+      }
+    ]
+  },
+  "vo.s1_act3_deep_tale_old_powers": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/s1_act3_deep_tale_old_powers",
+        "stream": true
+      }
+    ]
+  },
+  "vo.s1_act3_deep_kaelthar": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/s1_act3_deep_kaelthar",
+        "stream": true
+      }
+    ]
+  },
+  "vo.s1_act3_deep_ysolde": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/s1_act3_deep_ysolde",
+        "stream": true
+      }
+    ]
+  },
+  "vo.s1_act4_ash_tale_burning_crown": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/s1_act4_ash_tale_burning_crown",
+        "stream": true
+      }
+    ]
+  },
+  "vo.s1_act4_ash_morgrath": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/s1_act4_ash_morgrath",
+        "stream": true
+      }
+    ]
+  },
+  "vo.s1_act4_ash_vaelorn": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/s1_act4_ash_vaelorn",
+        "stream": true
+      }
+    ]
+  },
+  "vo.s1_act5_realm_tale_eighth": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/s1_act5_realm_tale_eighth",
+        "stream": true
+      }
+    ]
+  },
+  "vo.s1_act5_realm_enter": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/s1_act5_realm_enter",
+        "stream": true
+      }
+    ]
+  },
+  "vo.s1_act5_realm_hollow_sovereign": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/s1_act5_realm_hollow_sovereign",
+        "stream": true
+      }
+    ]
+  },
+  "vo.s1_epilogue_first_light": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/s1_epilogue_first_light",
+        "stream": true
+      }
+    ]
+  },
+  "vo.s1_epilogue_keepers_name": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/s1_epilogue_keepers_name",
+        "stream": true
+      }
+    ]
+  },
+  "vo.s1_epilogue_who_broke_the_sun": {
+    "subtitle": "subtitles.remnants.vo.whisper",
+    "sounds": [
+      {
+        "name": "remnants:vo/s1_epilogue_who_broke_the_sun",
+        "stream": true
+      }
+    ]
+  },
+  "vo.threshold_gate": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/threshold_gate",
+        "stream": true
+      }
+    ]
+  },
+  "vo.threshold_fell": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/threshold_fell",
+        "stream": true
+      }
+    ]
+  },
+  "vo.threshold_victory": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/threshold_victory",
+        "stream": true
+      }
+    ]
+  },
+  "vo.threshold_beyond": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/threshold_beyond",
+        "stream": true
+      }
+    ]
+  }
+}

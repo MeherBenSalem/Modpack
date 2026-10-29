@@ -14,6 +14,30 @@
 		{
 			dependencies: ["10A48EAE33052B15"]
 			icon: {
+				id: "minecraft:written_book"
+			}
+			id: "3C10E6447520A102"
+			rewards: [
+				{
+					id: "3F35E6A148AC90E1"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "hexagon"
+			size: 1.75d
+			tasks: [
+				{
+					id: "0BEEB2DB3D22ABB5"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: -0.875d
+		}
+		{
+			dependencies: ["3C10E6447520A102"]
+			icon: {
 				id: "minecraft:netherrack"
 			}
 			id: "65E3C17D51F13C6D"
@@ -47,8 +71,8 @@
 					type: "dimension"
 				}
 			]
-			x: 0.0d
-			y: -0.875d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["65E3C17D51F13C6D"]
@@ -84,7 +108,7 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
+			x: 4.0d
 			y: -0.875d
 		}
 		{
@@ -114,7 +138,7 @@
 					type: "advancement"
 				}
 			]
-			x: 2.0d
+			x: 4.0d
 			y: 0.875d
 		}
 		{
@@ -174,7 +198,7 @@
 					value: 1L
 				}
 			]
-			x: 4.0d
+			x: 6.0d
 			y: -3.5d
 		}
 		{
@@ -205,7 +229,7 @@
 					value: 1L
 				}
 			]
-			x: 4.0d
+			x: 6.0d
 			y: -1.75d
 		}
 		{
@@ -236,7 +260,7 @@
 					value: 1L
 				}
 			]
-			x: 4.0d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
@@ -275,7 +299,7 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
+			x: 6.0d
 			y: 1.75d
 		}
 		{
@@ -310,7 +334,7 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
+			x: 6.0d
 			y: 3.5d
 		}
 		{
@@ -358,7 +382,7 @@
 					type: "advancement"
 				}
 			]
-			x: 6.0d
+			x: 8.0d
 			y: 0.0d
 		}
 		{
@@ -392,7 +416,7 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
+			x: 10.0d
 			y: -0.875d
 		}
 		{
@@ -424,7 +448,7 @@
 					type: "structure"
 				}
 			]
-			x: 8.0d
+			x: 10.0d
 			y: 0.875d
 		}
 		{
@@ -454,7 +478,7 @@
 					type: "dimension"
 				}
 			]
-			x: 10.0d
+			x: 12.0d
 			y: 0.0d
 		}
 		{
@@ -501,7 +525,7 @@
 					type: "item"
 				}
 			]
-			x: 12.0d
+			x: 14.0d
 			y: 0.0d
 		}
 		{
@@ -548,7 +572,7 @@
 					type: "advancement"
 				}
 			]
-			x: 14.0d
+			x: 16.0d
 			y: -0.875d
 		}
 		{
@@ -582,7 +606,7 @@
 					type: "advancement"
 				}
 			]
-			x: 14.0d
+			x: 16.0d
 			y: 0.875d
 		}
 	]

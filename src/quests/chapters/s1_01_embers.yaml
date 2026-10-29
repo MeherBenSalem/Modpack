@@ -6,17 +6,42 @@ subtitle: "Light the first shrine. Call the first Sovereign. Levels 5–15."
 icon: runeborn:ember_shrine
 shape: rsquare
 quests:
+  - key: tale_seven
+    title: "&e♪ &6The Tale of the Seven"
+    subtitle: "Who broke the sun, and why."
+    icon: minecraft:written_book
+    deps: [s1_prologue/village]
+    shape: hexagon
+    size: 1.75
+    keeper: |
+      Sit. The fire is listening, so I'll keep it short.
+
+      The seven who broke the sun were not monsters, at first. A rider who kept the hours. A king with too many arms. A queen of frost, a lord of storms, a gardener, a burning king, and a wyrm-rider at the edge of the world.
+
+      Each took a piece of the light home and swore to bring it back when the Crown called. The Crown never called. The Eighth drank what was left, and the seven went mad in the dark, clutching their scraps of sun like misers.
+
+      Gather their Fragments. Make a sigil. Wake them. And take back the light they never returned.
+    voice: true
+    desc: |
+      The &6Sovereigns&r still live, after a fashion. Their light is split into &6Fragments&r and scattered among their &6champions&r. Six Fragments and a token make a &6Sigil&r, and a Sigil calls its Sovereign to wherever you stand.
+
+      Each Sovereign you fell rekindles one of the eight embers of the &6Long Eclipse&r.
+    tasks: [{checkmark: "♪ Listen to the Keeper"}]
+    rewards: [{xp: 40}]
+
   - key: kindling
     title: "&6Kindling"
     subtitle: "A shrine needs old flame."
     icon: minecraft:blaze_powder
-    deps: [s1_prologue/village]
+    deps: [tale_seven]
     shape: hexagon
     size: 1.5
+    keeper: |
+      Campfire for the heart. Gold for the oath. Deepslate for the bones. And old flame, the kind nothing in this world makes any more. Here. I kept some.
     desc: |
-      &o"Campfire for the heart. Gold for the oath. Deepslate for the bones. And old flame, the kind nothing in this world makes anymore. Here. I kept some."&r
+      An &6Ember Shrine&r is a promise made in stone: that light will be kept here, whatever comes. The first shrines were built by the Sun-Crown's heralds. Almost all of them went cold.
 
-      An &6Ember Shrine&r is a campfire under a crown of gold, set on polished deepslate, lit with &6blaze powder&r. The Keeper gives you the flame. The rest is yours to find.
+      &7An Ember Shrine is a campfire under a crown of gold, set on polished deepslate, lit with &6blaze powder&7. The Keeper gives you the flame. Find the rest.
     tasks: [{item: minecraft:campfire}, {item: minecraft:gold_ingot, count: 2}, {item: minecraft:polished_deepslate, count: 3}]
     rewards: [{item: minecraft:blaze_powder, count: 3}, {xp: 60}]
 
@@ -27,12 +52,13 @@ quests:
     deps: [kindling]
     shape: hexagon
     size: 2.0
+    keeper: |
+      There. Do you see it? First fire in an age that wasn't stolen. Last Light, we'll call this place. The dark can count, Ashborn. Let's give it a number it doesn't like.
+    voice: true
     desc: |
-      Craft the &6Ember Shrine&r, set it down in the village and kindle it. It takes its name from the land around it.
+      A kindled shrine takes its name from the land around it, the way a candle takes the shape of the room. This one becomes &6Last Light&r: your home, and in time a home to others.
 
-      Rest at it to heal, refill your &6Ember&r and &bAzure&r flasks and bind your respawn. Spend runes there to grow.
-
-      &o"Last Light. That's what we'll call this place. The dark can count, Ashborn; let's give it a number it doesn't like."&r
+      &7Craft the &6Ember Shrine&7, set it down in the village and kindle it. Rest there to heal, refill your &6Ember&7 and &bAzure&7 flasks and bind your respawn. Spend runes there to grow.
     tasks: [{advancement: "runeborn:feats/kindle"}]
     rewards:
       - {command: "/lastlight arrive keeper {p}", title: "The Keeper takes up residence at your shrine", icon: minecraft:bell}
@@ -44,10 +70,12 @@ quests:
     subtitle: "Runes become strength at the shrine."
     icon: runeborn:heros_rune
     deps: [kindle]
+    keeper: |
+      Light hoarded is light wasted. The Sovereigns learned that too late. Spend yours.
     desc: |
-      At a shrine, choose &6Level Up&r. Every rune level raises one of eight attributes (Vigor, Mind, Endurance, Strength, Dexterity, Intelligence, Faith, Arcane) and also grants &6RPG levels&r for your &eK&r screen.
+      At a shrine, runes become flesh. The old heralds called it &oattunement&r: letting a scrap of sun decide what kind of person you'll be.
 
-      Your armament shows a scaling grade for each attribute (&6S&r to &7E&r). Feed the ones your weapon loves.
+      &7Choose &6Level Up&7. Each rune level raises one of eight attributes (Vigor, Mind, Endurance, Strength, Dexterity, Intelligence, Faith, Arcane) and grants &6RPG levels&7 for your &eK&7 screen. Your armament shows a scaling grade per attribute (&6S&7 to &7E). Feed the ones your weapon loves.
     tasks: [{advancement: "runeborn:feats/level_20"}]
     rewards: [{item: runeborn:tempering_stone_1, count: 4}, {xp: 120}]
 
@@ -57,9 +85,9 @@ quests:
     icon: runeborn:tempering_stone_1
     deps: [level_up]
     desc: |
-      Tempering Stones take standard armaments up to &6+25&r. The first ones are cheap: iron, flint and cobbled deepslate.
+      Steel forgets. Tempering Stones remind it: crushed bone-iron from the old forges, pressed into the blade until it remembers being sharp.
 
-      Reinforce your weapon at a shrine.
+      &7Tempering Stones take standard armaments up to &6+25&7. The first are cheap: iron, flint and cobbled deepslate. Reinforce your weapon at a shrine.
     tasks: [{advancement: "runeborn:feats/tempered"}]
     rewards: [{item: runeborn:tempering_stone_2, count: 3}, {xp: 100}]
 
@@ -68,10 +96,12 @@ quests:
     subtitle: "Two fires, one road."
     icon: minecraft:campfire
     deps: [kindle]
+    keeper: |
+      One fire is a home. Two fires is a road. Ten fires, and the dark starts to feel crowded.
     desc: |
-      Kindle a second shrine somewhere far from the first, then travel between them from the shrine menu.
+      Kindled shrines remember each other. Step into one and you can step out of another, as if the light were a single room with many doors.
 
-      &7The Remnants Minimap marks every shrine you kindle as a Site of Grace.
+      &7Kindle a second shrine far from the first, then travel between them from the shrine menu. The Remnants Minimap marks every shrine you kindle as a Site of Grace.
     tasks: [{advancement: "runeborn:feats/travel"}]
     rewards: [{item: minecraft:blaze_powder, count: 2}, {table: ashborn_provisions}, {xp: 120}]
 
@@ -80,12 +110,12 @@ quests:
     subtitle: "They fight for gold, not causes."
     icon: better_with_gold:warbanner
     deps: [kindle]
+    keeper: |
+      The Company? Survivors. They stayed together and they stayed paid, which is more than the Sovereigns managed.
     desc: |
-      Sellswords loiter near village bells. They're survivors: they stayed together and they stayed paid.
+      The &6Ashen Company&r has no flag, no country and no god. Their captain keeps a ledger of every sellsword who ever drew Company pay, and reads the names aloud on Hunter's Moons.
 
-      Walk up holding &6gold ingots&r and use them on one to hire it. Each has a class (Bulwark, Skirmisher, Ranger, Mender, Arcanist), a trait and an epithet it earned somewhere you weren't.
-
-      Hold &eG&r for the command wheel. &eU&r opens your roster, where every ally's &6Chronicle&r records what it actually did.
+      &7Sellswords loiter near village bells. Use &6gold ingots&7 on one to hire it. Each has a class (Bulwark, Skirmisher, Ranger, Mender, Arcanist), a trait and an epithet it earned somewhere you weren't. Hold &eG&7 for the command wheel; &eU&7 opens your roster and every ally's &6Chronicle&7.
 
       &o"Don't get attached. Or do. They'll be remembered either way."&r
     tasks: [{item: minecraft:gold_ingot, count: 12}, {checkmark: "I hired a sellsword"}]
@@ -100,7 +130,9 @@ quests:
     icon: remnant_mobs:remnant_shard
     deps: [kindle]
     desc: |
-      Elites carry a blue crest and two traits. They hit hard and pay well: triple XP, extra loot rolls, a Remnant Shard and bonus Valor.
+      An Elite has risen three times. Each death took something human from it and gave back something worse. It carries a blue crest and two traits.
+
+      &7Elites pay triple experience, extra loot, a Remnant Shard and bonus Valor. Kill one.
     tasks: [{advancement: "remnant_mobs:proven_hunter"}]
     rewards: [{table: hunters_spoils}, {xp: 150}]
 
@@ -109,10 +141,12 @@ quests:
     subtitle: "The dead hoard."
     icon: mob_loot_bags:commonlootbag
     deps: [kindle]
+    keeper: |
+      The dead keep pockets. Habit, I think. Nobody tells them they can't take it with them.
     desc: |
-      Monsters sometimes drop &6loot bags&r. Hold use to open one; hold &eShift&r over a bag to see its real odds.
+      Remnants carry what they carried when they died: coin, trinkets, letters to people long gone. The Company calls it &6spoils&r and doesn't ask whose.
 
-      Four bags of a tier combine into the next one, all the way to &dMythic&r.
+      &7Monsters sometimes drop &6loot bags&7. Hold use to open one; hold &eShift&7 over a bag for its odds. Four bags of a tier combine into the next, up to &dMythic&7.
     tasks: [{advancement: "mob_loot_bags:open_bag"}]
     rewards: [{item: mob_loot_bags:uncommonlootbag, count: 2}, {xp: 60}]
 
@@ -122,7 +156,9 @@ quests:
     icon: minecraft:spawner
     deps: [proven_hunter]
     desc: |
-      Old dungeons are everywhere under the Eclipse: cramped, full of spawners, and worth it. Clear one.
+      Before the Eclipse, the Crown's wardens sealed its worst prisoners underground with cages that bred their own guards. The wardens are gone. The cages still breed.
+
+      &7Find and clear a dungeon.
     tasks: [{structure: "betterdungeons:zombie_dungeon", title: "Find a dungeon"}]
     rewards: [{table: wanderers_cache}, {xp: 120}]
 
@@ -131,10 +167,12 @@ quests:
     subtitle: "Smugglers, mages, warlords."
     icon: minecraft:filled_map
     deps: [first_dungeon]
+    keeper: |
+      Every guardian carries a map to someone worse. Nobody knows who started the chain. Nobody's reached the end and come back to say.
     desc: |
-      The &6Much More Dungeons&r strongholds are guarded: each has a named Guardian at its heart and a map to the next, harder one.
+      Four strongholds, four Guardians, one trail of maps. The Company swears the trail was laid by a Sovereign's quartermaster to hide something. The Archivist swears it was a joke. Both have lost people to it.
 
-      Start with the &6Smuggler's Villa&r and kill its chief.
+      &7Start with the &6Smuggler's Villa&7 and kill its chief.
     tasks: [{advancement: "muchmoredungeons:slay_outdoor_villa_guardian"}]
     rewards: [{table: hunters_spoils}, {xp: 200}]
 
@@ -143,10 +181,12 @@ quests:
     subtitle: "Gold titles. Sovereign Fragments."
     icon: runeborn:sovereign_fragment
     deps: [proven_hunter]
+    keeper: |
+      When a Sovereign went mad, its champions went with it. They still carry their master's light. Take it back.
     desc: |
-      About one hostile in twenty-five wears a &6gold title&r: a &6champion&r with affixes like Blazing, Phasing or Warded. Champions carry the Sovereigns' &6Fragments&r, the shards of the broken sun.
+      About one hostile in twenty-five wears a &6gold title&r: a &6champion&r, sworn to a Sovereign an age ago and never released from the oath. Champions carry the Sovereigns' &6Fragments&r, the shards of the broken sun, and affixes like Blazing, Phasing or Warded.
 
-      Kill one.
+      &7Kill one.
     tasks: [{advancement: "runeborn:feats/champion"}]
     rewards: [{xp: 150}]
 
@@ -155,17 +195,24 @@ quests:
     subtitle: "A Sovereign answers six Fragments and a token."
     icon: runeborn:sovereign_fragment
     deps: [champion]
+    keeper: |
+      The Dusk Rider kept the hours for the Crown. When the sun went out, he stopped his clock at that minute, and he has been riding at that minute ever since.
     desc: |
-      Gather six &6Sovereign Fragments&r. With a token, they make a &6Sigil&r, and a Sigil wakes a Sovereign.
+      The first Sovereign is the &6Dusk Rider&r, Who Rides When Light Fails: herald of evening, keeper of the Crown's hours. His token is a &6clock&r. He never forgot what time it was when the sun went out.
 
-      The first is the &6Dusk Rider&r, who rides when the light fails. His token is a &6clock&r: he never forgot what time it was when the sun went out.
+      &7Gather six &6Sovereign Fragments&7 and a clock.
     tasks: [{item: runeborn:sovereign_fragment, count: 6}, {item: minecraft:clock}]
     rewards: [{xp: 150}]
 
   - key: dusk_sigil
     title: "A Clock for the Dusk"
+    subtitle: "Time, folded into a seal."
     icon: runeborn:sigil_dusk_rider
     deps: [fragments]
+    desc: |
+      A Sigil is a Sovereign's own name, pressed into a scrap of their light. Hold it up at dusk and the name remembers who it belongs to.
+
+      &7Craft the Dusk Rider's Sigil.
     tasks: [{item: runeborn:sigil_dusk_rider}]
     rewards: [{item: minecraft:golden_apple, count: 2}, {xp: 100}]
 
@@ -176,12 +223,13 @@ quests:
     deps: [dusk_sigil, level_up]
     shape: gear
     size: 2.0
+    keeper: |
+      One ember. Look at it, Ashborn. The first light in an age that came back on its own. Every Ashborn on this world just felt their heart beat a little stronger. That was you. The dark felt it too. It will send something worse.
+    voice: true
     desc: |
-      Use the Sigil at night, in the open, with full flasks.
+      The Dusk Rider still makes his rounds: the same road, the same minute, forever. Break his clock and the evening will finally end.
 
-      He rides; you don't. Roll &othrough&r the charge, not away from it, and punish him when he turns. If he dismounts, he's angry, not beaten.
-
-      &7Defeating a Sovereign rekindles one of the eight embers of the &6Long Eclipse&7 for everyone on this world, and every player gains a permanent heart.
+      &7Use the Sigil at night, in the open, with full flasks. He rides; you don't. Roll &othrough&7 the charge, not away from it, and punish him when he turns. If he dismounts, he's angry, not beaten. Felling a Sovereign rekindles one of the eight embers of the &6Long Eclipse&7 and gives every player a permanent heart.
     tasks: [{advancement: "runeborn:feats/fell_dusk_rider"}]
     rewards:
       - {table: sovereign_tribute}
@@ -193,9 +241,11 @@ quests:
     subtitle: "Every Sovereign leaves something behind."
     icon: runeborn:relic_dusk_rider
     deps: [dusk_rider]
+    keeper: |
+      The Smith can make something of that. He says the Rider's glaive still keeps time, if you listen.
     desc: |
-      A Sovereign's &6Relic&r can be exchanged at a shrine for its legendary armament, and its &6Crown Shard&r grants a lasting boon when equipped.
+      A Sovereign's &6Relic&r is the part of them that refused to die: the habit they couldn't break, hardened into an object.
 
-      The Dusk Rider's relic becomes the &6Duskrider Glaive&r.
+      &7Exchange the relic at a shrine for its legendary armament, the &6Duskrider Glaive&7.
     tasks: [{item: runeborn:relic_dusk_rider}]
     rewards: [{item: runeborn:lustrous_stone_1, count: 2}, {xp: 150}]

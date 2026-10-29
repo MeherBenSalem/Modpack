@@ -1,0 +1,16 @@
+name = "Genetically Modified Monsters (mod id gmm)"
+filename = "gmm-neoforge-1.21.1-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/56wxSt5P/versions/B2tTlGwb/gmm-neoforge-1.21.1-1.0.0.jar"
+hash-format = "sha512"
+hash = "b908e8ded4dbc094f5f42e45a169f6080aee74d7ccb2ee0f8a27f4d8cbe690a8d9286768068bb4ecaeda8cb71a1f341d11ee29a5b03e6bd752d2ae08e94436d0"
+
+[update]
+[update.curseforge]
+file-id = 8879894
+project-id = 1390363
+[update.modrinth]
+mod-id = "56wxSt5P"
+version = "B2tTlGwb"

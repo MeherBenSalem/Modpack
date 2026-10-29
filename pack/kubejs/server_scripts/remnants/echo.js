@@ -56,8 +56,10 @@ EntityEvents.death('minecraft:player', event => {
   if (server.persistentData.getBoolean('remnants_echoes_off')) return
 
   var tag = echoPlayerTag(player)
-  // The previous Echo fades with the runes it guarded.
-  server.runCommandSilent(`kill @e[tag=${tag}]`)
+  // The previous Echo fades with the runes it guarded, in any dimension. Through the entity API, not /kill: when the
+  // death itself came from a command (/kill, /damage), commands run from this handler are queued until after it,
+  // and a queued /kill took the new Echo as well.
+  server.allLevels.forEach(l => l.getEntities().forEach(e => { if (e.tags.contains(tag)) e.kill() }))
   if (echoRaise(server, level, player.x, player.y, player.z, player.username, tag, player)) {
     server.runCommandSilent(`tellraw ${player.username} [{"text":"Where you fell, ","color":"gray"},` +
       `{"text":"your Echo rises","color":"dark_red"},{"text":". It guards your runes.","color":"gray"}]`)

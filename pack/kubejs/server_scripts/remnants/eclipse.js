@@ -17,7 +17,8 @@ const ECLIPSE_SOVEREIGNS = {
 const ECLIPSE_TOTAL = Object.keys(ECLIPSE_SOVEREIGNS).length
 
 function eclipseLit(server) {
-  var raw = server.persistentData.getString(ECLIPSE_KEY)
+  // String(): a Java string's split() returns a fixed-size Java array, and push() on it threw at the second ember
+  var raw = String(server.persistentData.getString(ECLIPSE_KEY))
   return raw ? raw.split(',') : []
 }
 

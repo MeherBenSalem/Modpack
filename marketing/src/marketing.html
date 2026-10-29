@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- CurseForge/Modrinth page images for Remnants | The Modpack, in the house style of NightBeam's other pages
+     (Remnant Bosses, Runeborn): banner 1800x600, divider 1400x40, header-* 1400x120, card-* 1600x900.
+     marketing/render.cjs renders every entry of marketing/src/images.json through this page (#<json spec>).
+     Fonts: art/fonts (SIL OFL). Pictures: real in-game frames from the trailer's Cine footage (marketing/src/shots). -->
+<style>
+  @font-face { font-family: "Cinzel Decorative"; font-weight: 900; src: url("../../art/fonts/CinzelDecorative-Black.ttf"); }
+  @font-face { font-family: "Cinzel"; font-weight: 400 900; src: url("../../art/fonts/Cinzel-wght.ttf"); }
+  @font-face { font-family: "Garamond"; font-style: italic; font-weight: 400 800; src: url("../../art/fonts/EBGaramond-Italic-wght.ttf"); }
+  :root { --gold-hi: #fff1c4; --gold: #f2c45a; --gold-mid: #d39a2e; --gold-lo: #8a5a14; --cream: #ecdfc3; --ink: #070509; }
+  html, body { margin: 0; background: transparent; }
+  #root { position: relative; overflow: hidden; }
+  .goldtext { color: transparent; background: linear-gradient(180deg, var(--gold-hi) 0%, #f4d489 40%, #c9973e 78%, #8e6424 100%);
+              -webkit-background-clip: text; background-clip: text; filter: drop-shadow(0 4px 8px rgba(0,0,0,.8)) drop-shadow(0 0 18px rgba(255,184,74,.25)); }
+  .kicker { font-family: Cinzel; font-weight: 700; letter-spacing: 7px; text-transform: uppercase; color: #e8c674; display: flex; align-items: center; gap: 14px; }
+  .kicker::before { content: ""; width: 11px; height: 11px; background: #f2d184; transform: rotate(45deg); box-shadow: 0 0 10px rgba(255,190,80,.8); }
+  .title { font-family: Cinzel; font-weight: 700; text-transform: uppercase; line-height: 1.04; letter-spacing: 3px; }
+  .hr { height: 2px; background: linear-gradient(90deg, rgba(232,198,116,.85), rgba(232,198,116,.25) 70%, transparent); }
+  .it { font-family: Garamond; font-style: italic; font-weight: 500; color: var(--cream); }
+  ul.dia { list-style: none; margin: 0; padding: 0; }
+  ul.dia li { position: relative; padding-left: 28px; font-family: Garamond; font-style: italic; font-weight: 500; color: var(--cream);
+              text-shadow: 0 2px 6px #000; }
+  ul.dia li::before { content: ""; position: absolute; left: 2px; width: 9px; height: 9px; background: #f2c45a; transform: rotate(45deg);
+                      box-shadow: 0 0 8px rgba(255,180,60,.7); }
+  ul.dia li em { font-style: italic; color: #f6d27a; }
+  .chip { display: inline-block; border: 1.5px solid rgba(232,198,116,.7); padding: 9px 16px 7px; font-family: Cinzel; font-weight: 700;
+          letter-spacing: 4px; color: #f3e3bd; text-transform: uppercase; background: rgba(0,0,0,.35); }
+  .frame { position: absolute; border: 1.5px solid rgba(232,198,116,.55); box-shadow: 0 18px 50px rgba(0,0,0,.75), 0 0 0 1px rgba(0,0,0,.6);
+           background-size: cover; background-position: center; }
+  .stats { position: absolute; display: flex; border: 1.5px solid rgba(232,198,116,.45); background: rgba(6,4,8,.82); }
+  .stats > div { flex: 1; padding: 16px 24px 14px; border-left: 1px solid rgba(232,198,116,.3); }
+  .stats > div:first-child { border-left: 0; }
+  .stats small { display: block; font-family: Cinzel; font-weight: 600; font-size: 17px; letter-spacing: 5px; color: #b9a684; text-transform: uppercase; }
+  .stats b { display: block; margin-top: 6px; font-family: Cinzel; font-weight: 700; font-size: 34px; letter-spacing: 2px; color: var(--cream); text-transform: uppercase; }
+  canvas.motes { position: absolute; inset: 0; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const spec = JSON.parse(decodeURIComponent(location.hash.slice(1)));
+const root = document.getElementById('root');
+const [W, H] = { banner: [1800, 600], divider: [1400, 40], header: [1400, 120], card: [1600, 900] }[spec.kind];
+root.style.width = W + 'px'; root.style.height = H + 'px';
+const html = (h) => { root.insertAdjacentHTML('beforeend', h); };
+const shot = (p) => `url('shots/${p}')`;
+
+// drifting golden motes and soft bokeh, the same seed every render
+function motes(n, seed, alpha = 1) {
+  const c = document.createElement('canvas'); c.className = 'motes'; c.width = W; c.height = H; root.appendChild(c);
+  const g = c.getContext('2d'); let s = seed;
+  const rnd = () => (s = (s * 16807) % 2147483647) / 2147483647;
+  for (let i = 0; i < n; i++) {
+    const x = rnd() * W, y = rnd() * H, big = rnd() < 0.18, r = big ? 3 + rnd() * 5 : 0.8 + rnd() * 2.2, a = (0.25 + rnd() * 0.75) * alpha;
+    const gr = g.createRadialGradient(x, y, 0, x, y, r * (big ? 3.2 : 4));
+    gr.addColorStop(0, `rgba(255,214,140,${a})`); gr.addColorStop(0.35, `rgba(255,170,70,${a * 0.45})`); gr.addColorStop(1, 'rgba(255,150,40,0)');
+    g.fillStyle = gr; g.beginPath(); g.arc(x, y, r * (big ? 3.2 : 4), 0, Math.PI * 2); g.fill();
+  }
+}
+
+const K = {
+  banner() {
+    root.style.background = '#050306';
+    html(`<div style="position:absolute;inset:0;background:${shot(spec.shot)} ${spec.pos || 'center'}/${spec.size || 'cover'} no-repeat;-webkit-mask-image:linear-gradient(90deg,transparent ${spec.fadeFrom || 0}px,#000 ${(spec.fadeFrom || 0) + 380}px)"></div>`);
+    html(`<div style="position:absolute;inset:0;background:linear-gradient(90deg,#050306 0%,rgba(5,3,6,.95) 27%,rgba(5,3,6,.6) 45%,rgba(5,3,6,.0) 66%,rgba(5,3,6,.0) 92%,rgba(5,3,6,.3) 100%)"></div>`);
+    html(`<div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(5,3,6,.35),transparent 22%,transparent 85%,rgba(5,3,6,.35))"></div>`);
+    motes(90, 7, 0.9);
+    html(`<div style="position:absolute;left:90px;top:86px;width:780px">
+      <div class="kicker" style="font-size:22px">${spec.kicker}</div>
+      <div class="goldtext" style="margin-top:22px;font-family:'Cinzel Decorative';font-weight:900;font-size:118px;letter-spacing:4px;line-height:1">REMNANTS</div>
+      <div style="margin-top:10px;font-family:Cinzel;font-weight:700;font-size:40px;letter-spacing:19px;color:#f1dfb3;text-shadow:0 3px 10px #000">THE MODPACK</div>
+      <div class="hr" style="margin:30px 0 26px;width:600px"></div>
+      <div class="it" style="font-size:33px;line-height:1.32;text-shadow:0 2px 8px #000">${spec.tagline}</div>
+      <div style="margin-top:30px;display:flex;gap:14px;align-items:center">${spec.chips.map(c => `<span class="chip" style="font-size:19px">${c}</span>`).join('')}
+        <span style="font-family:Garamond;font-style:italic;font-size:28px;color:#cbbd9d;margin-left:8px">${spec.note || ''}</span></div>
+    </div>`);
+  },
+  divider() {
+    html(`<div style="position:absolute;left:150px;right:150px;top:19px;display:flex;align-items:center;gap:16px">
+      <i style="flex:1;height:2px;background:linear-gradient(90deg,transparent,#d9a94a)"></i>
+      <b style="width:12px;height:12px;background:#d9a94a;transform:rotate(45deg)"></b>
+      <i style="flex:1;height:2px;background:linear-gradient(90deg,#d9a94a,transparent)"></i></div>`);
+  },
+  header() {
+    html(`<div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,24,22,0) 0%,rgba(28,24,22,.75) 18%,#2a2522 32%,#2a2522 68%,rgba(28,24,22,.75) 82%,rgba(28,24,22,0) 100%)"></div>`);
+    html(`<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:28px">
+      <i style="width:290px;height:2px;background:linear-gradient(90deg,transparent,#d9a94a)"></i>
+      <b style="width:10px;height:10px;background:#e2b55a;transform:rotate(45deg)"></b>
+      <span class="goldtext" style="font-family:Cinzel;font-weight:700;font-size:42px;letter-spacing:4px;white-space:nowrap;filter:drop-shadow(0 2px 4px rgba(0,0,0,.7))">${spec.text}</span>
+      <b style="width:10px;height:10px;background:#e2b55a;transform:rotate(45deg)"></b>
+      <i style="width:290px;height:2px;background:linear-gradient(90deg,#d9a94a,transparent)"></i></div>`);
+  },
+  card() {
+    root.style.background = 'radial-gradient(70% 60% at 62% 45%, #2a1d12 0%, #120c0a 55%, #070509 100%)';
+    if (spec.bg) html(`<div style="position:absolute;inset:-40px;background:${shot(spec.bg)} center/cover;filter:blur(26px) brightness(.2) saturate(1.1)"></div>`);
+    html(`<div style="position:absolute;inset:0;background:radial-gradient(60% 55% at 65% 48%, rgba(255,160,60,.10), transparent 70%)"></div>`);
+    motes(70, spec.seed || 3, 0.8);
+    const tx = 80, top = spec.top || 120;
+    html(`<div style="position:absolute;left:${tx}px;top:${top}px;width:${spec.textW || 460}px">
+      <div class="kicker" style="font-size:21px">${spec.kicker}</div>
+      <div class="title goldtext" style="margin-top:20px;font-size:${spec.tsize || 58}px">${spec.title}</div>
+      <div class="hr" style="margin:26px 0 30px;width:${(spec.textW || 460) - 70}px"></div>
+      <ul class="dia" style="font-size:${spec.lsize || 28}px;line-height:1.3">${spec.bullets.map(b => `<li style="margin-bottom:${spec.gap ?? 22}px">${b}</li>`).join('')}</ul>
+    </div>`);
+    const fx = spec.fx || 580, fy = spec.fy || 120, fw = spec.fw || 960, fh = spec.fh || 552;
+    html(`<div class="frame" style="left:${fx}px;top:${fy}px;width:${fw}px;height:${fh}px;background-image:${shot(spec.shot)};background-position:${spec.pos || 'center'};background-size:${spec.size || 'cover'}"></div>`);
+    if (spec.inset) html(`<div class="frame" style="left:${fx + fw - 330 + 26}px;top:${fy - 42}px;width:330px;height:210px;background-image:${shot(spec.inset)};background-position:${spec.insetPos || 'center'};background-size:${spec.insetSize || 'cover'}"></div>`);
+    if (spec.stats) html(`<div class="stats" style="left:${fx}px;top:${fy + fh + 22}px;width:${fw}px">${spec.stats.map(([l, v]) => `<div><small>${l}</small><b>${v}</b></div>`).join('')}</div>`);
+  },
+};
+K[spec.kind]();
+</script>
+</body>
+</html>

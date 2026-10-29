@@ -1,0 +1,239 @@
+{
+ "banner": {
+  "kind": "banner",
+  "shot": "banner_vista.jpg",
+  "pos": "474px -42px",
+  "kicker": "Season 1 &middot; The Long Eclipse",
+  "tagline": "The sun was eaten an age ago.<br>Wake in the ash. Fell the Gatekeeper. Relight the world.",
+  "chips": [
+   "NeoForge",
+   "1.21.1"
+  ],
+  "note": "167 mods &middot; 380 quests",
+  "size": "1632px auto",
+  "fadeFrom": 474
+ },
+ "divider": {
+  "kind": "divider"
+ },
+ "header-threshold": {
+  "kind": "header",
+  "text": "The Threshold"
+ },
+ "header-story": {
+  "kind": "header",
+  "text": "The Story"
+ },
+ "header-bosses": {
+  "kind": "header",
+  "text": "Sovereigns &amp; Remnants"
+ },
+ "header-systems": {
+  "kind": "header",
+  "text": "A Soulslike Rule Set"
+ },
+ "header-world": {
+  "kind": "header",
+  "text": "A World Under Ash"
+ },
+ "header-install": {
+  "kind": "header",
+  "text": "Install &amp; Play"
+ },
+ "card-threshold": {
+  "kind": "card",
+  "seed": 11,
+  "bg": "threshold_island.jpg",
+  "kicker": "The first ten minutes",
+  "title": "Wake in the<br>Threshold",
+  "shot": "threshold_gate.jpg",
+  "inset": "odric_looms.jpg",
+  "insetPos": "50% 30%",
+  "bullets": [
+   "Every new Ashborn wakes in a ruined crypt, floating in its own dimension at dusk",
+   "Walk the Hall of Messages toward the black sun",
+   "Cross the fog gate and face <em>Ser Odric</em>, Gatekeeper of the Threshold",
+   "Fell him, or fall to him once, and the Ember Door opens"
+  ],
+  "stats": [
+   [
+    "First boss",
+    "Ser Odric"
+   ],
+   [
+    "Players",
+    "Solo or co-op"
+   ],
+   [
+    "Then",
+    "The Waygate"
+   ]
+  ],
+  "tsize": 54,
+  "textW": 470
+ },
+ "card-story": {
+  "kind": "card",
+  "seed": 5,
+  "bg": "quest_book.jpg",
+  "kicker": "The Long Eclipse",
+  "title": "Told in<br>380 quests",
+  "shot": "quest_book.jpg",
+  "bullets": [
+   "A prologue, five acts and an epilogue; every act ends on a Sovereign",
+   "The Keeper narrates the main story and the old tales",
+   "Lore in every chapter, and a secret the Keeper has kept since before the eclipse",
+   "Old names for every land: the Grey Wood, the Rime Veil, the Ashlands"
+  ],
+  "stats": [
+   [
+    "Chapters",
+    "20"
+   ],
+   [
+    "Quests",
+    "380"
+   ],
+   [
+    "Narrated lines",
+    "25"
+   ]
+  ],
+  "tsize": 54,
+  "textW": 470,
+  "pos": "92% 36%",
+  "size": "132%"
+ },
+ "card-sovereigns": {
+  "kind": "card",
+  "seed": 9,
+  "bg": "morgrath_summon.jpg",
+  "kicker": "The Long Eclipse",
+  "title": "Eight<br>Sovereigns",
+  "shot": "morgrath_summon.jpg",
+  "inset": "vaelorn.jpg",
+  "bullets": [
+   "Seven broke the sun; the Eighth drank its last light",
+   "Call each Sovereign with a sigil and fight them in soulslike duels",
+   "Every first kill rekindles an ember on the world's Long Eclipse bar",
+   "Each ember gives every player a permanent extra heart"
+  ],
+  "stats": [
+   [
+    "Sovereigns",
+    "8"
+   ],
+   [
+    "Bar",
+    "0 / 8 embers"
+   ],
+   [
+    "Each ember",
+    "+1 heart"
+   ]
+  ],
+  "tsize": 54,
+  "textW": 470,
+  "pos": "45% 50%",
+  "insetPos": "45% 50%"
+ },
+ "card-remnants": {
+  "kind": "card",
+  "seed": 21,
+  "bg": "hunters_moon.jpg",
+  "kicker": "Came back wrong",
+  "title": "The Dead<br>Rise Ranked",
+  "shot": "hunters_moon.jpg",
+  "inset": "echo.jpg",
+  "bullets": [
+   "Mobs rise as <em>Veterans</em>, <em>Elites</em>, <em>Champions</em> and rare named <em>Remnants</em>",
+   "On a Hunter's Moon they hunt you: higher levels, more ranks, better spoils",
+   "Die, and an <em>Echo</em> of you rises where you fell, guarding your runes",
+   "Big bosses from Cataclysm, Mowzie's Mobs and more, woven into the quests"
+  ],
+  "stats": [
+   [
+    "Ranks",
+    "4"
+   ],
+   [
+    "Moon",
+    "Hunter's"
+   ],
+   [
+    "Death",
+    "Your Echo"
+   ]
+  ],
+  "tsize": 54,
+  "textW": 470,
+  "pos": "55% 35%",
+  "insetPos": "50% 45%",
+  "insetSize": "170%"
+ },
+ "card-soulslike": {
+  "kind": "card",
+  "seed": 33,
+  "bg": "shrine.jpg",
+  "kicker": "One rule set",
+  "title": "Runes &amp;<br>Shrines",
+  "shot": "shrine.jpg",
+  "inset": "origin.jpg",
+  "bullets": [
+   "Pick an origin, then grow by runes at Ember Shrines (Runeborn)",
+   "Stamina, a dodge roll, flasks, weapon arts and over 70 armaments",
+   "RPG levels and attributes, a skill tree and elemental powers",
+   "Hire sellswords of the Ashen Company to fight beside you"
+  ],
+  "stats": [
+   [
+    "Levels",
+    "Runes"
+   ],
+   [
+    "Travel",
+    "Shrines"
+   ],
+   [
+    "Allies",
+    "Sellswords"
+   ]
+  ],
+  "tsize": 54,
+  "textW": 470,
+  "insetPos": "50% 30%",
+  "insetSize": "200%"
+ },
+ "card-world": {
+  "kind": "card",
+  "seed": 44,
+  "bg": "vista.jpg",
+  "kicker": "The Lands Under Ash",
+  "title": "A World<br>Under Ash",
+  "shot": "vista.jpg",
+  "inset": "realm.jpg",
+  "bullets": [
+   "An eclipsed sun, the Ashen 16x look and Fresh Animations by default",
+   "Terralith and Tectonic terrain, YUNG's structures, When Dungeons Arise and Much More Dungeons",
+   "Reactive music, deeper fog, ambient sound and subtle effects",
+   "In Act V, cross into the Eclipsed Realm and its Hollow Sovereign"
+  ],
+  "stats": [
+   [
+    "Mods",
+    "167"
+   ],
+   [
+    "Loader",
+    "NeoForge"
+   ],
+   [
+    "Minecraft",
+    "1.21.1"
+   ]
+  ],
+  "tsize": 54,
+  "textW": 470,
+  "insetPos": "30% 35%"
+ }
+}

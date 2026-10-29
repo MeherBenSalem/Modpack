@@ -1,0 +1,291 @@
+chapter: p_archive
+group: paths
+order: 14
+title: "&eThe Fractured Archive"
+subtitle: "Every ruin has a before. Someone has been collecting them."
+icon: tbos:yesterglass_lens
+quests:
+  # ---- the Meridian Archive (the prologue, in the order the Archive tells it) ----
+  - key: before
+    title: "&eEvery Ruin Has a Before"
+    subtitle: "Somewhere, a day never ended."
+    icon: tbos:archivists_journal
+    pos: [0, 0]
+    deps: [s1_prologue/village]
+    shape: hexagon
+    size: 1.5
+    desc: |
+      Somewhere in this world, a day never ended. An &6Archivist's Journal&r turned up in your pack the day you woke. Read it.
+
+      Three &6Fracture Shrines&r stand at fixed places, a long walk from spawn. They mark where the catalogue tore. Find one.
+
+      &o"The day did not end. We filed it anyway."&r &7— the Archivist's Journal&r
+    tasks: [{advancement: "tbos:story/root", title: "Find a Fracture Shrine"}]
+    rewards: [{table: ashborn_provisions}, {xp: 60}]
+
+  - key: cracked_lens
+    title: "A Fractured Memory"
+    subtitle: "We sealed a Lens in each shrine before we fled."
+    icon: tbos:cracked_yesterglass_lens
+    pos: [2, 0]
+    deps: [before]
+    desc: |
+      Open the shrine's &6Fracture Coffer&r. Inside: a &6Cracked Yesterglass Lens&r and an &6Archive Survey Map&r.
+
+      The Lens catches moments that have already passed. The crack is why it only catches pieces.
+    tasks: [{advancement: "tbos:story/obtain_cracked_lens"}]
+    rewards: [{item: tbos:lenswork_crystal}, {xp: 50}]
+
+  - key: repair_lens
+    title: "Through Yesterglass"
+    subtitle: "The glass remembers what stone forgets."
+    icon: tbos:yesterglass_lens
+    pos: [4, 0]
+    deps: [cracked_lens]
+    desc: |
+      Mend the Lens. The recipe viewer knows what the glass wants: Yesterglass, a Lenswork Crystal and a Chronicle Shard around the cracked one.
+
+      &o"A repaired Lens does not invent a past. It only agrees to see one."&r &7— the Archivist's Journal&r
+    tasks: [{advancement: "tbos:story/repair_lens"}]
+    rewards: [{xp: 60}]
+
+  - key: meridian
+    title: "&eThe Meridian Archive"
+    subtitle: "The Overworld forgot it. The map didn't."
+    icon: tbos:archive_survey_map
+    pos: [6, 0]
+    deps: [repair_lens]
+    shape: hexagon
+    size: 1.5
+    desc: |
+      Use the &6Survey Map&r for a bearing, and again for a fresh one. No compass will find the &6Meridian Archive&r; only the map remembers where it stands.
+
+      Cross its threshold.
+
+      &7Word of an open Archive travels fast. Someone at Last Light has been waiting a long time to hear it.&r
+    tasks: [{advancement: "tbos:story/enter_archive"}]
+    rewards:
+      - {command: "/lastlight arrive archivist {p}", title: "Oren the Archivist comes to Last Light", icon: minecraft:lectern}
+      - {table: paths_archive_cache}
+      - {xp: 150}
+
+  - key: atrium
+    title: "Recall the First Room"
+    subtitle: "Ruin, and Remembered."
+    icon: tbos:memory_anchor
+    pos: [8, 0]
+    deps: [meridian]
+    desc: |
+      The Archive exists in two tenses: &7Ruin&r, what's left, and &bRemembered&r, the page still open. Use the Lens at a &6Memory Anchor&r to move a room between them.
+
+      Reconstruct the &6Parallax Atrium&r.
+
+      &o"Every ruin has a before. I collect befores."&r &7— Oren, the Archivist&r
+    tasks: [{advancement: "tbos:story/reconstruct_first_room"}]
+    rewards: [{item: tbos:chronicle_shard, count: 2}, {xp: 80}]
+
+  - key: alignment
+    title: "Lines Across Time"
+    subtitle: "The observatory still wants its lines drawn."
+    icon: tbos:alignment_dial
+    pos: [10, 0]
+    deps: [atrium]
+    desc: |
+      In the Hall of Alignment, turn each dial until its conduit of light reaches the engraved mark. The broken dials only turn in the &bRemembered&r Hall.
+
+      Made a mess of it? Crouch-use the Memory Anchor and the dials return to north.
+    tasks: [{advancement: "tbos:story/solve_hall_of_alignment"}]
+    rewards: [{xp: 100}]
+
+  - key: choir
+    title: "The Hours Answer"
+    subtitle: "Still keeping time for someone who isn't there."
+    icon: tbos:resonant_bell
+    pos: [12, 0]
+    deps: [alignment]
+    desc: |
+      In &bRemembered&r, watch the Choir of Hours: four steps, each with a light, a silhouette, a pitch and a subtitle. Return to &7Ruin&r and repeat them in order.
+
+      A wrong cadence costs nothing but pride. Fail often enough and the old mechanism etches the answer for you, which is somehow worse.
+    tasks: [{advancement: "tbos:story/complete_choir_of_hours"}]
+    rewards: [{xp: 100}]
+
+  - key: broken_meridian
+    title: "Causality Has Weight"
+    subtitle: "A bridge in two tenses."
+    icon: tbos:meridian_relay
+    pos: [14, 0]
+    deps: [choir]
+    desc: |
+      The first bridge over the Broken Meridian exists only in memory. Follow the live channel of light to its remote seal, arm it, then wake the glowing socket to move the relay.
+
+      Return to &7Ruin&r. What's left of the relay is your second crossing.
+    tasks: [{advancement: "tbos:story/cross_broken_meridian"}]
+    rewards: [{item: tbos:lenswork_crystal}, {xp: 120}]
+
+  - key: curator
+    title: "&cThe Last Curator"
+    subtitle: "It was told to preserve this day forever."
+    icon: tbos:archive_core
+    pos: [16, 0]
+    deps: [broken_meridian]
+    shape: gear
+    size: 2.0
+    desc: |
+      It was told to preserve this day forever, and it's still obeying. Open the Archive Core and it begins the &6Catalogue&r.
+
+      Read the floor: in &6Catalogue&r, leave the marked row; in &6Revision&r, leave the marked radius; in &cErasure&r, its afterimages detonate where they were recorded. Trigger the &6Memory Anchor&r to revise the Grand Orrery around it, and strike while its core is exposed.
+    tasks: [{advancement: "tbos:story/defeat_last_curator"}]
+    rewards: [{table: paths_archive_cache}, {item: runeborn:lustrous_rune}, {xp: 400}]
+
+  - key: scenes
+    title: "The Past, Kept Kindly"
+    subtitle: "A memory made small."
+    icon: tbos:memory_lantern
+    pos: [18, -2.5]
+    deps: [curator]
+    desc: |
+      The Curator leaves a &6Memory Lantern&r. Place it. Use a &6Memory Plate&r on it to load a scene, use it empty-handed to play, crouch-use to clear. The plate isn't used up.
+
+      Watch one scene through to the end. They were visitors, mostly. The record kept them anyway.
+    tasks:
+      - {advancement: "tbos:story/obtain_memory_lantern"}
+      - {advancement: "tbos:story/display_complete_memory_scene"}
+    rewards: [{xp: 100}]
+
+  - key: plates
+    title: "Six Ways to Remember"
+    subtitle: "The whole of the last day."
+    icon: tbos:memory_plate
+    pos: [20, -2.5]
+    deps: [scenes]
+    optional: true
+    desc: |
+      Six scenes survive: &7The Evacuation&r, &7The Instant the Archive Fell&r, &7The Orrery at Work&r, &7A Family Beneath the Conjunction&r, &7The Curator Repaired&r and &7The Final Command&r. Carry all six plates at once.
+
+      &o"Bring me all six and I'll tell you which one is a lie. Archives are polite like that."&r &7— Oren&r
+    tasks: [{advancement: "tbos:story/collect_all_memory_plates"}]
+    rewards: [{table: paths_archive_cache}, {xp: 150}]
+
+  - key: gateway
+    title: "&eBeyond the Curator's Gate"
+    subtitle: "Every recollection they failed to finish."
+    icon: tbos:curator_core
+    pos: [18.5, 0]
+    deps: [curator]
+    shape: hexagon
+    size: 1.5
+    desc: |
+      The Archive Core is now the &6Curator Gateway&r. Carry the &6Curator Core&r and your repaired Lens and step through into the &6Fractured Archive&r: floor after floor rebuilt from what the archivists never finished.
+
+      It keeps its own death rules. Your party shares its revives, a &6Recalled Hour&r buys one back, and no Echo rises there.
+    tasks: [{advancement: "tbos:story/enter_fractured_archive"}]
+    rewards: [{item: tbos:memory_key}, {item: tbos:recalled_hour}, {xp: 200}]
+
+  # ---- expeditions: the roguelite loop ----
+  - key: living_memories
+    title: "Living Memories"
+    subtitle: "You, rewritten for one expedition."
+    icon: tbos:light_dust
+    pos: [18.5, 2]
+    deps: [gateway]
+    desc: |
+      Inside the Archive you build yourself from drafts. Clear encounters to discover &6Living Memories&r: abilities like &6Echo Lance&r, &6Parallax Step&r and &6Recall&r on &eH&r, &eO&r and &e`&r, and artifacts that bend them (&6Split Prism&r, &6Storm Filament&r, &6Returning Thread&r…).
+
+      &e;&r opens the loadout. They last one expedition. Choose as if it's the only one.
+    tasks: [{checkmark: "I drafted a Living Memory"}]
+    rewards: [{xp: 80}]
+
+  - key: memory_key
+    title: "A Key Cut from Memory"
+    subtitle: "Amethyst, gold, and a pearl for the lock."
+    icon: tbos:memory_key
+    pos: [20.5, 0]
+    deps: [gateway]
+    desc: |
+      A &6Memory Key&r (amethyst, gold and an ender pearl, or a trade with Oren) opens an expedition. Use it on a &6Waystone&r, on the Curator Gateway, or inside any structure.
+
+      The Attunement screen offers &cDistortions&r: Fortified, Tyrannical, Bolstering, Volatile, Haunted, Frailty, Hourglass, Amnesia. Each adds &cHeat&r; &6Fracture&r is tier plus Heat, and Fracture pays. Friends within 24 blocks come along.
+    tasks: [{advancement: "tbos:expedition/root", title: "Attune a Memory Key"}]
+    rewards: [{item: tbos:memory_key}, {xp: 100}]
+
+  - key: recollection
+    title: "Echo of a Place"
+    subtitle: "This is what he means by befores."
+    icon: tbos:waystone
+    pos: [22.5, -1.5]
+    deps: [memory_key]
+    desc: |
+      Turn a key inside a structure (a dungeon, a temple, a village) and the Archive opens a &6Recollection&r of what it was before. Each place answers once per Ashborn.
+
+      &o"A ruin is a story with the middle torn out. Go and read me the middle."&r &7— Oren&r
+    tasks: [{advancement: "tbos:expedition/recollection"}]
+    rewards: [{table: paths_archive_cache}, {xp: 120}]
+
+  - key: remember
+    title: "&aRemember"
+    subtitle: "Bank it. Go home. Keep it forever."
+    icon: tbos:chronicle_shard
+    pos: [22.5, 0]
+    deps: [memory_key]
+    desc: |
+      Every floor ends behind a boss. Then comes the choice: &aRemember&r or &cForget&r.
+
+      &aRemember&r banks your &6Renown&r times your &6Momentum&r, brings your sealed Relics home and earns a better key. Your Codex keeps it forever, and a quarter of the Renown comes home as &6Valor&r.
+    tasks: [{advancement: "tbos:expedition/remember"}]
+    rewards: [{item: tbos:memory_key}, {table: paths_archive_cache}, {xp: 150}]
+
+  - key: forget
+    title: "&cForget"
+    subtitle: "Deeper, for more. Or for nothing."
+    icon: tbos:shatter_pane
+    pos: [24.5, -1.5]
+    deps: [remember]
+    desc: |
+      &cForget&r takes the party a floor deeper and raises &6Momentum&r by a quarter. Everyone votes.
+
+      If the party falls, everything unbanked is lost and the key dims. Greed has a multiplier now. So does grief.
+    tasks: [{advancement: "tbos:expedition/forget"}]
+    rewards: [{item: tbos:recalled_hour}, {xp: 120}]
+
+  - key: relic
+    title: "Remnant"
+    subtitle: "The rarest thing the Archive gives back."
+    icon: minecraft:diamond_sword
+    pos: [24.5, 0]
+    deps: [remember]
+    desc: |
+      Floor bosses seal &6Relics&r into your Recollection: weapons and armour with affixes like Keen, Thirsting, Echoing or Storied, graded Common up to Legendary, and rarest of all, &cRemnant&r.
+
+      A Remnant relic carries a signature: &6Last Hour&r, &6Fracture Step&r, &6Choir's Echo&r or &6Yesterglass&r. Recover one.
+    tasks: [{advancement: "tbos:expedition/remnant_relic"}]
+    rewards: [{table: paths_archive_cache}, {xp: 300}]
+
+  - key: weekly
+    title: "This Week's Memory"
+    subtitle: "Same recollection, everyone."
+    icon: minecraft:clock
+    pos: [24.5, 1.5]
+    deps: [remember]
+    desc: |
+      Every week the Archive offers one recollection to everyone. Claim the &6Weekly Memory Key&r from the Weekly page of your &6Archive Codex&r (&eY&r). Its Distortions are sealed; the only choice left is how deep.
+
+      Remember it. The board shows who went deepest.
+    tasks: [{advancement: "tbos:expedition/weekly"}]
+    rewards: [{item: tbos:memory_key}, {xp: 150}]
+
+  - key: storied
+    title: "Storied"
+    subtitle: "What the Archive remembers of you."
+    icon: tbos:archive_seal
+    pos: [24.5, 3]
+    deps: [remember]
+    shape: hexagon
+    desc: |
+      Banked Renown raises your &6Archive Codex&r (&eY&r) from level 1 to 30, and each level is an &6Insight&r to spend: Last Stand, Keymaker, Hoarder, Second Draft and a dozen more. The &6Bestiary&r records every creature you've slain; the &6Hall of Records&r remembers who did it best.
+
+      Reach Codex level 10.
+
+      &o"You collect ruins. I collect befores. Between us we might have one whole world."&r &7— Oren&r
+    tasks: [{advancement: "tbos:expedition/storied"}]
+    rewards: [{table: paths_archive_cache}, {item: runeborn:radiant_rune}, {xp: 400}]

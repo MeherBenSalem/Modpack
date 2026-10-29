@@ -40,10 +40,12 @@
 	quest.28475B28C255FDD9.quest_subtitle: "Snowy peaks. Something big sleeps there."
 	quest.28475B28C255FDD9.title: "The Frostmaw"
 	quest.289D0416C0109482.quest_desc: [
-		"Every Sovereign but the Dusk Rider leaves a &6Crown Shard&r: a fragment of the Sun-Crown with a lasting boon. Equip one at a shrine."
+		"Every Sovereign but the Dusk Rider leaves a &6Crown Shard&r: a fragment of the Sun-Crown with a lasting boon. Equip it at a shrine."
+		""
+		"&7Seven shards remake the Crown. The seventh is not a Sovereign's."
 	]
 	quest.289D0416C0109482.quest_subtitle: "Wear a piece of the broken sun."
-	quest.289D0416C0109482.title: "The Crown Remade"
+	quest.289D0416C0109482.title: "A Shard of the Crown"
 	quest.337E61B442FEAD4C.quest_desc: ["Fifty levels of light. You are no longer the weakest thing in the ash."]
 	quest.337E61B442FEAD4C.quest_subtitle: "Rune level 50."
 	quest.337E61B442FEAD4C.title: "Runebearer"

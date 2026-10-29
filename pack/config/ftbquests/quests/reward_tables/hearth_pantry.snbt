@@ -1,0 +1,82 @@
+{
+	icon: {
+		id: "farmersdelight:cooking_pot"
+	}
+	id: "24C9AAFCDBABE6BF"
+	loot_size: 1
+	order_index: 4
+	rewards: [
+		{
+			count: 3
+			id: "44968D4FC27DA90E"
+			item: {
+				count: 1
+				id: "farmersdelight:beef_stew"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 3
+			id: "06CCEAE8FBE8EC05"
+			item: {
+				count: 1
+				id: "farmersdelight:vegetable_soup"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 3
+			id: "732C635582D7D8BB"
+			item: {
+				count: 1
+				id: "farmersdelight:fish_stew"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 2
+			id: "799B96B7417259F6"
+			item: {
+				count: 1
+				id: "farmersdelight:steak_and_potatoes"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 2
+			id: "2B8C73D312385B3E"
+			item: {
+				count: 1
+				id: "farmersdelight:shepherds_pie"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 2
+			id: "152A3BABF0677B47"
+			item: {
+				count: 1
+				id: "farmersdelight:roast_chicken"
+			}
+			weight: 1.0f
+		}
+		{
+			count: 2
+			id: "41A41E38CE327147"
+			item: {
+				count: 1
+				id: "farmersdelight:honey_glazed_ham"
+			}
+			weight: 1.0f
+		}
+		{
+			count: 3
+			id: "421544E7399B60E0"
+			item: {
+				count: 1
+				id: "farmersdelight:hot_cocoa"
+			}
+			weight: 1.0f
+		}
+	]
+}

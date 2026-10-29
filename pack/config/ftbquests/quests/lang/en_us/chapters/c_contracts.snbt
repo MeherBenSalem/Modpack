@@ -1,0 +1,124 @@
+{
+	chapter.5A0DEE3E083BE9EF.chapter_subtitle: ["Ilse the Huntmaster pays for proof. The board never empties."]
+	chapter.5A0DEE3E083BE9EF.title: "&cAshen Contracts"
+	quest.012027CCDC4F3D86.quest_desc: [
+		"&o\"Not the Coven. The Coven pays its debts. These are the ones it threw out.\"&r"
+		""
+		"Kill &c5 witches&r. They drink their own potions mid-fight; hit them while the bottle's still raised."
+	]
+	quest.012027CCDC4F3D86.quest_subtitle: "Major bounty · 5 witches"
+	quest.012027CCDC4F3D86.title: "Contract: The Coven's Castoffs"
+	quest.09ECC735C3E73819.quest_desc: [
+		"&o\"If you feel like something is following you, something is. Turn around slowly. Then stop being slow.\"&r"
+		""
+		"Kill a &cNightmare Stalker&r. It finds you, not the other way round: walk the dark at night and wait for the warning."
+	]
+	quest.09ECC735C3E73819.quest_subtitle: "Major bounty · 1 Nightmare Stalker · after Sylvara"
+	quest.09ECC735C3E73819.title: "Contract: Something Following"
+	quest.0BF2293E74CE6419.quest_desc: [
+		"&o\"Zombies. I know. Somebody has to, and the somebody is you.\"&r"
+		""
+		"Kill &c20 zombies&r. Ranked ones count the same and pay their own shards on top. A &eVampiric&r one heals when it bites; don't trade blows with it."
+	]
+	quest.0BF2293E74CE6419.quest_subtitle: "Minor bounty · 20 zombies"
+	quest.0BF2293E74CE6419.title: "Contract: The Shambling Dead"
+	quest.0C9C07E1DB69D5DA.quest_desc: [
+		"&o\"The fishers won't go out past the reeds anymore. Fix that.\"&r"
+		""
+		"Kill &c10 drowned&r in the rivers and the shallows. Some carry tridents, and they throw them."
+	]
+	quest.0C9C07E1DB69D5DA.quest_subtitle: "Minor bounty · 10 drowned"
+	quest.0C9C07E1DB69D5DA.title: "Contract: The Drowned Watch"
+	quest.1932FE6F415B39CD.quest_desc: [
+		"&o\"Cave spiders don't count. I'm not paying you to crawl into a mineshaft after something the size of a dinner plate.\"&r"
+		""
+		"Kill &c10 spiders&r. &eVenomous&r ones poison you: rest at a shrine or let a flask do its work."
+	]
+	quest.1932FE6F415B39CD.quest_subtitle: "Minor bounty · 10 spiders"
+	quest.1932FE6F415B39CD.title: "Contract: Eight Legs"
+	quest.1B9493EA2CDB6435.quest_desc: [
+		"&o\"Close the distance or don't bother. They never run out of arrows. You'll run out of patience.\"&r"
+		""
+		"Kill &c15 skeletons&r. Watch for &eBlinking&r ones: they won't stay where you left them."
+	]
+	quest.1B9493EA2CDB6435.quest_subtitle: "Minor bounty · 15 skeletons"
+	quest.1B9493EA2CDB6435.title: "Contract: Bone Archers"
+	quest.1C9D50B3DE7EAF63.quest_desc: [
+		"&o\"Two kinds of dead that never rot right. One's dried out, one's frozen solid. I want both.\"&r"
+		""
+		"Kill &c8 husks&r in the deserts and &c8 strays&r in the frozen lands. Husks bring hunger and strays bring slowness: eat well before you go, and bring the dodge."
+	]
+	quest.1C9D50B3DE7EAF63.quest_subtitle: "Major bounty · 8 husks and 8 strays"
+	quest.1C9D50B3DE7EAF63.title: "Contract: Sand and Frost"
+	quest.30007ED76BC15B2D.quest_desc: [
+		"&o\"The Ashlands burn without fuel. That's the blazes. Fewer blazes, less burning. Simple sums.\"&r"
+		""
+		"Kill &c10 blazes&r. A shield catches fireballs; a bow catches blazes."
+	]
+	quest.30007ED76BC15B2D.quest_subtitle: "Major bounty · 10 blazes · the Ashlands"
+	quest.30007ED76BC15B2D.title: "Contract: Ash and Embers"
+	quest.3317D34188380A48.quest_desc: [
+		"&o\"The Realm's dead are organised. I respect that. Kill them anyway.\"&r"
+		""
+		"Kill &c8 Gravebound Soldiers&r and &c4 Crypt Lurkers&r. The &6Grave Iron&r they carry forges the Crypt Key."
+	]
+	quest.3317D34188380A48.quest_subtitle: "Grave bounty · the Eclipsed Realm"
+	quest.3317D34188380A48.title: "Contract: The Cryptborn"
+	quest.42910F1AA9CF2EC8.quest_desc: [
+		"&o\"Every one of them carries the Wither on its blade. Don't let it cut you twice.\"&r"
+		""
+		"Kill &c10 wither skeletons&r in the fortresses of the Ashlands. Withering stops your health coming back; milk stops the withering."
+	]
+	quest.42910F1AA9CF2EC8.quest_subtitle: "Major bounty · 10 wither skeletons · the Ashlands"
+	quest.42910F1AA9CF2EC8.title: "Contract: Black Bones"
+	quest.4CC4B7C1F9472779.quest_desc: [
+		"&o\"Kill them before they reach the walls. I've rebuilt the tannery twice.\"&r"
+		""
+		"Kill &c10 creepers&r. When one starts to hiss, roll out, not back. A &eVolatile&r one is worse news than usual."
+	]
+	quest.4CC4B7C1F9472779.quest_subtitle: "Minor bounty · 10 creepers"
+	quest.4CC4B7C1F9472779.title: "Contract: Quiet Fuses"
+	quest.57415FB9EFDCAEA5.quest_desc: [
+		"&o\"The Hollow Sovereign still keeps an army. It doesn't know the war ended. Neither do I, some days.\"&r"
+		""
+		"Kill &c8 Hollow Sentinels&r and &c4 Hollow Arbalists&r. Keep the &6Tarnished Regalia&r they drop: the Sovereign's Seal is made from it."
+	]
+	quest.57415FB9EFDCAEA5.quest_subtitle: "Grave bounty · the Eclipsed Realm"
+	quest.57415FB9EFDCAEA5.title: "Contract: The Hollow Legion"
+	quest.5CFD01DF56BD242D.quest_desc: [
+		"&o\"Big. Slow. Hits like a falling house. I'll pay double what it's worth, which is to say, the usual.\"&r"
+		""
+		"Kill a &cBurial Guardian&r, the hulking keeper of the Cryptborn. It carries Grave Iron, and sometimes a Crypt Key."
+	]
+	quest.5CFD01DF56BD242D.quest_subtitle: "Grave bounty · 1 Burial Guardian · the Eclipsed Realm"
+	quest.5CFD01DF56BD242D.title: "Contract: The Burial Guardian"
+	quest.74F09FE2DD3E57EA.quest_desc: [
+		"&o\"They hunt in packs of three to five. So should you, if you have friends. If you don't, roll well.\"&r"
+		""
+		"Kill &c10 Dread Hounds&r. Where there's a pack there's sometimes a &6Dire Hound Leader&r. It isn't on the contract. It is in your way."
+	]
+	quest.74F09FE2DD3E57EA.quest_subtitle: "Minor bounty · 10 Dread Hounds"
+	quest.74F09FE2DD3E57EA.title: "Contract: Dread Hounds"
+	quest.7B54978A2BB19EE5.quest_desc: [
+		"&o\"Piglins you can bargain with. Brutes you bury. Three of them.\"&r"
+		""
+		"Kill &c3 piglin brutes&r. They guard the bastions, they never stop chasing, and gold won't buy them off."
+		""
+		"&7Brutes don't come back once a bastion is cleared. Each contract needs a fresh one."
+	]
+	quest.7B54978A2BB19EE5.quest_subtitle: "Grave bounty · 3 piglin brutes · the Ashlands"
+	quest.7B54978A2BB19EE5.title: "Contract: The Bastion's Wardens"
+	quest.7B5BD6C5BA5AF56F.quest_desc: [
+		"The first red moon brought the Remnants out, and it brought &6Ilse&r with it. She hunted them before the Eclipse had a name, and she has never once been paid in thanks."
+		""
+		"&o\"You're the Ashborn who lit the shrine. Good. I need someone who gets back up. I post contracts, you fill them, I pay. Nothing personal, nothing owed.\"&r"
+		""
+		"Every contract on this board can be taken again once it's paid. Kills count from the moment a contract is posted; collect, and it's posted again from zero."
+		""
+		"&7Under a Hunter's Moon the board pays the same. The shards don't."
+	]
+	quest.7B5BD6C5BA5AF56F.quest_subtitle: "She knows every rank and every trait. Ask nicely."
+	quest.7B5BD6C5BA5AF56F.title: "&cThe Huntmaster's Board"
+	reward.1B5FD5AE9F90F7CC.title: "Ilse the Huntmaster comes to Last Light"
+	task.1D34485F6645BDC2.title: "I'll take Ilse's contracts"
+}

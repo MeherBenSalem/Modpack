@@ -1,0 +1,70 @@
+{
+	icon: {
+		id: "minecraft:chest"
+	}
+	id: "4F9688C9FFA4610A"
+	loot_size: 1
+	order_index: 22
+	rewards: [
+		{
+			count: 3
+			id: "7B7C7625259ED971"
+			item: {
+				count: 1
+				id: "runeborn:tempering_stone_2"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "38A6C054ABC79FAE"
+			item: {
+				count: 1
+				id: "runeborn:tempering_stone_3"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "52C6B77338AF1092"
+			item: {
+				count: 1
+				id: "runeborn:lustrous_rune"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "723011D138169763"
+			item: {
+				count: 1
+				id: "mob_loot_bags:rarelootbag"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "49B7E0DB479841C2"
+			item: {
+				count: 1
+				id: "mob_loot_bags:diamond_key"
+			}
+			weight: 1.0f
+		}
+		{
+			count: 8
+			id: "428EC73F4EEEEA3F"
+			item: {
+				count: 1
+				id: "minecraft:gold_ingot"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 48
+			id: "2096A48AD6E44272"
+			item: {
+				count: 1
+				id: "minecraft:torch"
+			}
+			weight: 2.0f
+		}
+	]
+}

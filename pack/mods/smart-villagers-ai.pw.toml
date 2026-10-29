@@ -1,6 +1,6 @@
 name = "Smart Villagers AI (mod id smartvillagers)"
 filename = "smartvillagers-neoforge-1.21.1-2.0.0.jar"
-side = "server"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/l9oZCCPS/versions/bGNaqTaL/smartvillagers-neoforge-1.21.1-2.0.0.jar"

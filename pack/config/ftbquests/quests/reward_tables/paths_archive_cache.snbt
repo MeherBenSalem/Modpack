@@ -1,0 +1,53 @@
+{
+	icon: {
+		id: "tbos:chronicle_shard"
+	}
+	id: "656B4EB5E7614323"
+	loot_size: 1
+	order_index: 16
+	rewards: [
+		{
+			count: 2
+			id: "621B76BCA4513C0D"
+			item: {
+				count: 1
+				id: "tbos:chronicle_shard"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7885E80139F17C9F"
+			item: {
+				count: 1
+				id: "tbos:lenswork_crystal"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 8
+			id: "627B41E050745F63"
+			item: {
+				count: 1
+				id: "minecraft:amethyst_shard"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "0295E1C7BE3CC12F"
+			item: {
+				count: 1
+				id: "minecraft:ender_pearl"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "4B4A4C22D738E7E1"
+			item: {
+				count: 1
+				id: "tbos:recalled_hour"
+			}
+			weight: 1.0f
+		}
+	]
+}

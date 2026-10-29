@@ -1,0 +1,175 @@
+{
+	chapter.618C9EA6E37794F6.chapter_subtitle: ["The world went dark. It didn't go away. Go and see what's left of it."]
+	chapter.618C9EA6E37794F6.title: "&bWayfarer"
+	quest.0057E9078F823C01.quest_desc: [
+		"The sky went cold. The ground didn't. In &6Yellowstone&r the earth still steams and bubbles, as if it remembers noon."
+		""
+		"Warm your hands. Mind the vents."
+	]
+	quest.0057E9078F823C01.quest_subtitle: "Terralith. Yellowstone."
+	quest.0057E9078F823C01.title: "The Warm Ground"
+	quest.026CFFF3DA3C13B9.quest_desc: [
+		"The Last Shore isn't a shore anymore. Past the Dragon's island the End breaks into &6crystal peaks&r, &6shadowlands&r and &6void barrens&r, as if something tore through it."
+		""
+		"Walk all three. Watch your step; the floor is optional."
+	]
+	quest.026CFFF3DA3C13B9.quest_subtitle: "Nullscape. The broken End."
+	quest.026CFFF3DA3C13B9.title: "The Shore Stays Dark"
+	quest.0B070AB1FFD55E20.quest_desc: [
+		"Out in the broken End lie the &6bones of a dragon&r far bigger than the one you killed."
+		""
+		"The Ender Dragon wasn't the first. Stand in the ribcage and wonder who broke the sun, and whether it was the first thing they broke."
+	]
+	quest.0B070AB1FFD55E20.quest_subtitle: "Nullscape. Something died here first."
+	quest.0B070AB1FFD55E20.title: "Bones of an Older Dragon"
+	quest.0D90FE9683ACA82F.quest_desc: [
+		"Last Light isn't the only village that kept a fire. Out in the meadows, badlands, groves and swamps, people built in their own fashion and rang their own bells."
+		""
+		"Visit one built the way its land wanted. Sellswords loiter by every bell, by the way."
+	]
+	quest.0D90FE9683ACA82F.quest_subtitle: "Towns and Towers. A village not like yours."
+	quest.0D90FE9683ACA82F.title: "Other People's Fires"
+	quest.13C1BD37F51047C4.quest_desc: [
+		"A &6Nature's Compass&r: a compass framed in logs and saplings. Name a kind of land and it turns toward the nearest."
+		""
+		"The world grew strange in the dark: savannas gone grey, groves that only bloom by moonlight, mountains that never stop climbing."
+	]
+	quest.13C1BD37F51047C4.quest_subtitle: "Every land has a name too."
+	quest.13C1BD37F51047C4.title: "&6The Compass That Listens"
+	quest.17FE1BB1FA957E89.quest_desc: [
+		"The fishers of the coast never stopped fishing. The dark doesn't care about the tide, and neither do they."
+		""
+		"Find &6Saylor's&r cottage on a sandy or snowy beach. The residents trade things you won't find inland."
+	]
+	quest.17FE1BB1FA957E89.quest_subtitle: "Fisherman's Coast. A cottage on the beach."
+	quest.17FE1BB1FA957E89.title: "Home of Saylor"
+	quest.1EB0C168D8B7EF05.quest_desc: [
+		"Not every campfire on the horizon is a friend's. Illagers pitch &6camps&r along the rivers, beaches and forest edges: tents, a cookfire and a lot of crossbows."
+		""
+		"Walk in loud or walk in quiet. Either way, the loot is in the tents."
+	]
+	quest.1EB0C168D8B7EF05.quest_subtitle: "Dungeons and Taverns. An illager camp."
+	quest.1EB0C168D8B7EF05.title: "Smoke That Isn't Yours"
+	quest.24F3E0341FB78846.quest_desc: [
+		"When the sun went out, one city tried to hide from the dark by digging into it. It dug too deep."
+		""
+		"The &6Lost Soul City&r lies under the forests, hills and plains. Bring light, and a way back up."
+	]
+	quest.24F3E0341FB78846.quest_subtitle: "Philip's Ruins. A city that went underground."
+	quest.24F3E0341FB78846.title: "The Lost Soul City"
+	quest.2D0B1E132CA6FE68.quest_desc: [
+		"The ash from the Long Eclipse fell everywhere. In one stretch of savanna, it never blew away."
+		""
+		"Stand in the &6Ashen Savanna&r. You'll feel right at home, Ashborn."
+	]
+	quest.2D0B1E132CA6FE68.quest_subtitle: "Terralith. The Ashen Savanna."
+	quest.2D0B1E132CA6FE68.title: "Where the Ash Settled"
+	quest.3892E9A287EF8059.quest_desc: [
+		"The mountains grew in the dark. Ridges climb past the clouds now, and the &6jagged peaks&r are higher than anyone alive has stood."
+		""
+		"Climb one. From the top you can see three shrines' worth of country, and none of it lit."
+	]
+	quest.3892E9A287EF8059.quest_subtitle: "Tectonic. The jagged peaks."
+	quest.3892E9A287EF8059.title: "The Roof of the World"
+	quest.3B27876F2A33641B.quest_desc: [
+		"Every tavern has a &6cartographer&r in the corner, and every cartographer has a map they'd rather sell to someone else."
+		""
+		"Trade for a quest map and follow it. Taverns know which roads end somewhere interesting."
+	]
+	quest.3B27876F2A33641B.quest_subtitle: "The cartographer sells more than maps."
+	quest.3B27876F2A33641B.title: "Call for Adventure"
+	quest.3C86D771B876323D.quest_desc: [
+		"Somewhere out there, someone still pours ale for strangers. Find a &6tavern&r."
+		""
+		"Sit down. Eat something hot. The road will still be dark when you leave."
+	]
+	quest.3C86D771B876323D.quest_subtitle: "Dungeons and Taverns. A roof, a fire, a drink."
+	quest.3C86D771B876323D.title: "Safe Haven"
+	quest.41A39FBD20739BC5.quest_desc: [
+		"The sea gives back what it takes, one bottle at a time. &6Messages in a Bottle&r turn up on rod lines, in crab pots, in coastal chests."
+		""
+		"Open one. Some hold treasure, some hold a &6map to a wreck&r, and all of them hold a note from someone who never got home."
+	]
+	quest.41A39FBD20739BC5.quest_subtitle: "Twelve notes from the sea."
+	quest.41A39FBD20739BC5.title: "Message Received"
+	quest.469917A864125217.quest_desc: [
+		"The deep frozen ocean is a &6maze of ice&r, wrecks frozen into it like flies in amber. Pirates still haunt the hulls, and worse things haunt the channels."
+		""
+		"Enter the &6Ice Maze&r. Wrap up warm, bring a boat, and don't fall in."
+	]
+	quest.469917A864125217.quest_subtitle: "Aquamirae. The frozen sea."
+	quest.469917A864125217.title: "The Ship Graveyard"
+	quest.4D6D7046C590360F.quest_desc: [
+		"Cottage, pier, lighthouse, stilt shack, ice camp, boathouse, and the &6Sunken Trawler&r twelve blocks under the waves."
+		""
+		"Visit them all. Frost-Beard Ole, Old Bayou Tam and Ferryman Hale all have opinions about the weather, and they'll share them."
+	]
+	quest.4D6D7046C590360F.quest_subtitle: "All seven places of the coast."
+	quest.4D6D7046C590360F.title: "&6Coastal Wanderer"
+	quest.538C290E26032521.quest_desc: [
+		"Morgrath's ash didn't fall evenly. The &6Ashlands&r have their own countries: blue soul valleys, black basalt deltas, red and teal forests of fungus."
+		""
+		"Walk all four. Fire Resistance is cheaper than funerals."
+	]
+	quest.538C290E26032521.quest_subtitle: "Every country of the Nether."
+	quest.538C290E26032521.title: "An Atlas of the Ashlands"
+	quest.65601A0EB7F957AD.quest_desc: [
+		"With the sun gone, the moon is the only light that still crosses the sky. Some groves learned to live on it."
+		""
+		"Find a &6Moonlight Grove&r. It's the prettiest thing the Eclipse didn't kill."
+	]
+	quest.65601A0EB7F957AD.quest_subtitle: "Terralith. The Moonlight Grove."
+	quest.65601A0EB7F957AD.title: "By the Moon's Grace"
+	quest.669ACB3AAEA214D2.quest_desc: [
+		"An &6Explorer's Compass&r: a plain compass ringed with cracked stone bricks and cobwebs, as if it had been somewhere already."
+		""
+		"Use it to pick any structure in the world by name; it points the way and tells you how far. It won't tell you what's inside."
+	]
+	quest.669ACB3AAEA214D2.quest_subtitle: "Every ruin has a name. This finds it."
+	quest.669ACB3AAEA214D2.title: "&6The Compass That Knows"
+	quest.726AEC662B5E70D9.quest_desc: [
+		"Not every village kept its fire. The ruined farms, smithies, schools and castles out there are what the Long Eclipse leaves behind: walls, a well, and nobody home."
+		""
+		"Walk through one. Take what's useful. Don't sleep there."
+	]
+	quest.726AEC662B5E70D9.quest_subtitle: "Dungeons and Taverns. A ruined settlement."
+	quest.726AEC662B5E70D9.title: "What the Dark Left Standing"
+	quest.77326E9BE51A54C4.quest_desc: [
+		"Small chapels stand alone in the plains and forests, their doors open and their candles cold. Somebody prayed for the sun here. It didn't come."
+		""
+		"Find one. Light a candle if you like. It can't hurt."
+	]
+	quest.77326E9BE51A54C4.quest_subtitle: "Structory. An abandoned chapel."
+	quest.77326E9BE51A54C4.title: "Where the Prayers Stopped"
+	quest.79248E793BD1E258.quest_desc: [
+		"&6Keeper Morrow&r has kept a lamp lit on the stony shore through the whole Long Eclipse. You're not the only one who tends a fire."
+		""
+		"Go and say hello. He doesn't get many visitors who aren't drowned."
+	]
+	quest.79248E793BD1E258.quest_subtitle: "Fisherman's Coast. A lighthouse on the stones."
+	quest.79248E793BD1E258.title: "Keeper of the Light"
+	task.0117CCF75F60AD7E.title: "Find an abandoned chapel"
+	task.04CEABD50D246080.title: "Enter the Ice Maze"
+	task.1308CC9597DDC36E.title: "Visit Yellowstone"
+	task.169D65D949070768.title: "Stand on the jagged peaks"
+	task.1A53B65F5D2EE310.title: "Crimson Forest"
+	task.1C51083296E09327.title: "Find a Lighthouse"
+	task.1C8A39121A973D1F.title: "Find the dragon's skeleton"
+	task.29615BE87DFCFAA4.title: "Buy a tavern quest map"
+	task.29991F1C7724DD65.title: "Crystal Peaks"
+	task.318175CE75B81EBD.title: "Basalt Deltas"
+	task.334EFF71859BBCCD.title: "Void Barrens"
+	task.3F5690D3AE72AD7D.title: "Visit an Ashen Savanna"
+	task.4A0251D645B5D9A4.title: "Find an illager camp"
+	task.4C6784E6F5FB8FBB.title: "Open a Message in a Bottle"
+	task.550FD571A18025AE.title: "Find a tavern"
+	task.5D030DF8F5DE10D9.title: "Find a Fisherman's Cottage"
+	task.5F59223B642636F3.title: "Visit a Moonlight Grove"
+	task.63E8640EAAF147CB.title: "Find a ruined settlement"
+	task.6720398D3BB31083.title: "Visit all seven coastal places"
+	task.6872C073D8368D1D.title: "Find the Lost Soul City"
+	task.6C4F5DB75B627A94.title: "Soul Sand Valley"
+	task.700B4EBBF6E82F5D.title: "Visit a Towns and Towers village"
+	task.756D1DF66A1E9A2E.title: "Shadowlands"
+	task.778CE109BD01F37A.title: "Warped Forest"
+}

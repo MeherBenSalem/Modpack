@@ -1,0 +1,161 @@
+chapter: p_company
+group: paths
+order: 13
+title: "&eThe Ashen Company"
+subtitle: "Sellswords who survived by staying together. Gold up front."
+icon: better_with_gold:warbanner
+quests:
+  - key: muster
+    title: "&eMuster"
+    subtitle: "One is a bodyguard. Two is a warband."
+    icon: better_with_gold:warbanner
+    pos: [0, 0]
+    deps: [s1_act1_embers/sellsword]
+    shape: hexagon
+    size: 1.5
+    desc: |
+      &o"Gold up front. Graves are extra."&r &7— Maren, Captain of the Ashen Company&r
+
+      A sellsword's price is paid in &6gold ingots&r, used on the sellsword itself: a handful at level 1, and a few more for every level of experience it brings with it. They loiter near village bells, waiting for someone solvent.
+
+      Hire a second.
+    tasks: [{checkmark: "Two sellswords march with me"}]
+    rewards: [{item: minecraft:gold_ingot, count: 8}, {xp: 80}]
+
+  - key: classes
+    title: "Five Trades"
+    subtitle: "Somebody has to carry you home."
+    icon: minecraft:shield
+    pos: [2, -1.5]
+    deps: [muster]
+    desc: |
+      Every sellsword has a trade. &6Bulwarks&r hold the line and &6Challenge&r foes onto themselves. &6Skirmishers&r &6Whirl&r through crowds. &6Rangers&r loose &6Volleys&r. &6Arcanists&r call an &6Arc Storm&r. &6Menders&r heal, and haul the fallen back to their feet.
+
+      Each also has a trait (Steadfast, Brutal, Keen-eyed, Greedy…) and the epithet that came with it. Hire a Mender.
+    tasks: [{checkmark: "A Mender marches with me"}]
+    rewards: [{table: paths_company_purse}, {xp: 80}]
+
+  - key: downed
+    title: "Downed, Not Dead"
+    subtitle: "Thirty seconds is a long time to bleed."
+    icon: minecraft:red_dye
+    pos: [4, -1.5]
+    deps: [classes]
+    desc: |
+      A sellsword that drops isn't dead yet. It's &cdowned&r, bleeding out for thirty seconds. Crouch beside it for three to pull it back up, or let your Mender do it.
+
+      One that bleeds out limps back to camp after five minutes. On harsher worlds it doesn't come back at all, and its name goes into the &6Remembrance&r.
+    tasks: [{checkmark: "I pulled a downed sellsword back to its feet"}]
+    rewards: [{item: minecraft:golden_apple}, {xp: 80}]
+
+  - key: wheel
+    title: "The Command Wheel"
+    subtitle: "They listen. Mostly."
+    icon: minecraft:compass
+    pos: [2, 0]
+    deps: [muster]
+    desc: |
+      Hold &eG&r for the &6command wheel&r: &aFollow&r, &cCharge&r, &6Focus&r your target, &eHold&r here, &7Fall back&r, &6Guard banner&r, &6Formation&r and &6Recall&r.
+
+      They follow you through doors, dimensions and the odd logout. If one gets lost anyway, &6Recall&r brings it back.
+    tasks: [{checkmark: "I gave an order from the wheel (G)"}]
+    rewards: [{xp: 50}]
+
+  - key: warbanner
+    title: "Plant the Banner"
+    subtitle: "A place to stand."
+    icon: better_with_gold:warbanner
+    pos: [4, 0]
+    deps: [wheel]
+    desc: |
+      A &6Warbanner&r is gold around a black banner, on a stick, or twenty gold from Maren. Use it on the ground to plant it, and your warband guards it in formation. Use it in the air to lift it, and they follow you again.
+
+      Formations: &6Line&r, &6Wedge&r, &6Shield Wall&r and &6Circle&r, around you or around the banner.
+    tasks: [{item: better_with_gold:warbanner}]
+    rewards: [{table: paths_company_purse}, {xp: 80}]
+
+  - key: chronicle
+    title: "The Chronicle"
+    subtitle: "Two ledgers. One for gold, one for names."
+    icon: minecraft:writable_book
+    pos: [4, 1.5]
+    deps: [wheel]
+    desc: |
+      Press &eU&r for the &6roster&r. Every sellsword has a portrait, a level, a title and a &6Chronicle&r written from what it actually did: the oath it swore, the kill that blooded it, the time it saved you.
+
+      &o"The Company keeps two ledgers. One for gold, one for names. The second one's longer."&r
+    tasks: [{checkmark: "I read a sellsword's Chronicle (U)"}]
+    rewards: [{xp: 50}]
+
+  - key: blooded
+    title: "Blooded"
+    subtitle: "Veteran, Champion, Hero, Legend."
+    icon: minecraft:iron_sword
+    pos: [6, 1.5]
+    deps: [chronicle]
+    desc: |
+      Sellswords level as they fight, up to 20, and never past your own RPG level. Along the way they earn titles: &aVeteran&r, &9Champion&r, &5Hero&r, &6Legend&r.
+
+      Keep one alive long enough to earn the first. Harder than it sounds. Easier than the last.
+    tasks: [{checkmark: "One of my sellswords earned a title"}]
+    rewards: [{item: better_with_gold:golden_fish, count: 2}, {table: paths_company_purse}, {xp: 150}]
+
+  - key: golden_fish
+    title: "The Golden Fish"
+    subtitle: "Expensive. So are funerals."
+    icon: better_with_gold:golden_fish
+    pos: [2, -3]
+    deps: [muster]
+    desc: |
+      Feed a &6Golden Fish&r to a sellsword: full health and +30 &6morale&r. It's eight gold ingots around a cooked cod. Expensive. So are funerals.
+
+      Morale rises and falls with the fight. A band that's winning fights like it.
+    tasks: [{item: better_with_gold:golden_fish, count: 3}]
+    rewards: [{item: minecraft:cod, count: 4}, {xp: 50}]
+
+  # ---- the Gilded Regalia ----
+  - key: template
+    title: "Gilded Regalia"
+    subtitle: "Gold is soft. Reinforced gold only looks it."
+    icon: better_with_gold:upgrade_template
+    pos: [2, 3]
+    deps: [muster]
+    desc: |
+      The Company's old smiths still work gold. An &6Upgrade Template&r (gold ingots around obsidian and an amethyst shard), a golden piece and an &6amethyst block&r make &6Reinforced Golden&r gear at a smithing table.
+
+      &o"Everyone in the Company was paid in gold once. The clever ones wore it."&r
+    tasks: [{item: better_with_gold:upgrade_template}]
+    rewards: [{item: minecraft:amethyst_block, count: 2}, {xp: 60}]
+
+  - key: regalia
+    title: "Dressed in Gold"
+    subtitle: "The look of someone who pays on time."
+    icon: better_with_gold:reinforced_golden_armor_chestplate
+    pos: [4, 3]
+    deps: [template]
+    desc: |
+      Every piece of &6Reinforced Golden Armor&r you wear makes the sellswords near you hit &a3%&r harder. A full set is twelve.
+
+      It also gives you the unmistakable look of someone who pays on time, which does more for morale than any speech.
+    tasks:
+      - {item: better_with_gold:reinforced_golden_armor_helmet}
+      - {item: better_with_gold:reinforced_golden_armor_chestplate}
+      - {item: better_with_gold:reinforced_golden_armor_leggings}
+      - {item: better_with_gold:reinforced_golden_armor_boots}
+    rewards: [{table: paths_company_purse}, {xp: 200}]
+
+  - key: gilded_arms
+    title: "Gilded Arms"
+    subtitle: "Heavy gold, swung with intent."
+    icon: better_with_gold:greater_golden_hammer
+    pos: [4, 4.5]
+    deps: [template]
+    optional: true
+    desc: |
+      The Regalia has weapons too. The &6Greater Golden Axe&r bites harder into the nearly dead; the &6Golden Scythe&r strikes everything in its arc; the &6Greater Golden Hammer&r is mostly an argument.
+
+      Each takes the template, and an amethyst block, for a reinforced version.
+    tasks:
+      - title: "Any greater golden axe, greater golden hammer or golden scythe"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(better_with_gold:greater_golden_axe)ftbfiltersystem:item(better_with_gold:reinforced_greater_golden_axe)ftbfiltersystem:item(better_with_gold:greater_golden_hammer)ftbfiltersystem:item(better_with_gold:reinforced_greater_golden_hammer)ftbfiltersystem:item(better_with_gold:golden_scythe)ftbfiltersystem:item(better_with_gold:reinforced_golden_scythe))"}}
+    rewards: [{item: minecraft:gold_block, count: 1}, {xp: 80}]

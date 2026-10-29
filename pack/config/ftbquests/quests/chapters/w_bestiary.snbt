@@ -1,0 +1,863 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "w_bestiary"
+	group: "736A8EEBE4B075CD"
+	icon: {
+		id: "remnant_mobs:hunters_lens"
+	}
+	id: "660332D9BC141A99"
+	images: [ ]
+	order_index: 23
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3B2BC7E46FADA8F0"]
+			icon: {
+				id: "remnant_mobs:hunters_lens"
+			}
+			id: "5FE44DCC8BF3F598"
+			rewards: [
+				{
+					id: "5C477EE566753FA6"
+					table_id: 5347775814510086984L
+					type: "random"
+				}
+				{
+					id: "3E3D8BA0D7E31496"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "remnant_mobs:know_thy_enemy"
+					criterion: ""
+					id: "0D20FE63946348FF"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5FE44DCC8BF3F598"]
+			icon: {
+				id: "remnant_mobs:remnant_shard"
+			}
+			id: "30868611AB85833E"
+			rewards: [
+				{
+					count: 6
+					id: "034D64C2B00FBEC9"
+					item: {
+						count: 1
+						id: "remnant_mobs:remnant_shard"
+					}
+					type: "item"
+				}
+				{
+					id: "1A9012B10C3515A8"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					advancement: "remnant_mobs:proven_hunter"
+					criterion: ""
+					id: "35FA404D229DCE98"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["30868611AB85833E"]
+			icon: {
+				id: "minecraft:amethyst_shard"
+			}
+			id: "316111022AD294F3"
+			rewards: [
+				{
+					id: "19F8776A06F5D11C"
+					table_id: 5347775814510086984L
+					type: "random"
+				}
+				{
+					id: "0EAC1D1A964B270C"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					advancement: "remnant_mobs:champions_bane"
+					criterion: ""
+					id: "587F7162F6D906DC"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["316111022AD294F3"]
+			icon: {
+				id: "minecraft:goat_horn"
+			}
+			id: "0BE5288086362BBD"
+			rewards: [
+				{
+					id: "7AD5B85FBA5B3121"
+					table_id: 5347775814510086984L
+					type: "random"
+				}
+				{
+					id: "4143468E3199DBD5"
+					item: {
+						count: 1
+						id: "runeborn:lustrous_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "4AB9761D97A52626"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					advancement: "remnant_mobs:remnants_end"
+					criterion: ""
+					id: "40B29FF01A6F1B92"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["316111022AD294F3"]
+			icon: {
+				id: "minecraft:ender_eye"
+			}
+			id: "53317B8CCC27689B"
+			rewards: [
+				{
+					id: "3C828FCAF2CB4745"
+					table_id: 8538537266808005067L
+					type: "random"
+				}
+				{
+					id: "5EA9D9AF78D26933"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					advancement: "remnant_mobs:nothing_left_to_hide"
+					criterion: ""
+					id: "518A0C6A4C9ECC88"
+					type: "advancement"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5FE44DCC8BF3F598"]
+			icon: {
+				id: "minecraft:clock"
+			}
+			id: "4E10B19140F80394"
+			rewards: [
+				{
+					id: "0B2E63BDBC1BE671"
+					table_id: 5347775814510086984L
+					type: "random"
+				}
+				{
+					id: "1C4131E93F4023C2"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					advancement: "remnant_mobs:under_the_hunters_moon"
+					criterion: ""
+					id: "57C5307D2D3C8AC7"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["30868611AB85833E"]
+			icon: {
+				id: "minecraft:iron_sword"
+			}
+			id: "4E9D7ED6C63801AD"
+			rewards: [
+				{
+					id: "2E0A922A26EA854E"
+					table_id: 5347775814510086984L
+					type: "random"
+				}
+				{
+					id: "11F06C157202841A"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [
+				{
+					advancement: "remnant_mobs:punching_up"
+					criterion: ""
+					id: "33DCE59DB530629C"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["316111022AD294F3"]
+			icon: {
+				id: "remnant_mobs:brand_of_challenge"
+			}
+			id: "23C14B15781EAB1B"
+			rewards: [
+				{
+					count: 8
+					id: "36EB1ACBF7C27657"
+					item: {
+						count: 1
+						id: "remnant_mobs:remnant_shard"
+					}
+					type: "item"
+				}
+				{
+					id: "400D34045B8292A7"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					advancement: "remnant_mobs:accept_the_challenge"
+					criterion: ""
+					id: "127F9290AE36E44A"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5FE44DCC8BF3F598"]
+			icon: {
+				id: "minecraft:spider_eye"
+			}
+			id: "5A3C796647331707"
+			rewards: [
+				{
+					id: "30EB2D8D790CE402"
+					item: {
+						count: 1
+						id: "minecraft:milk_bucket"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "243D24ED1DC2EE0F"
+					item: {
+						count: 1
+						id: "minecraft:honey_bottle"
+					}
+					type: "item"
+				}
+				{
+					id: "0E03BF0C89C3DABB"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "552C3AB75A35BAAF"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5FE44DCC8BF3F598"]
+			icon: {
+				id: "minecraft:shield"
+			}
+			id: "0EEE9DC26AF062BF"
+			rewards: [
+				{
+					count: 32
+					id: "0108DC99E9406BD5"
+					item: {
+						count: 1
+						id: "minecraft:arrow"
+					}
+					type: "item"
+				}
+				{
+					id: "638A8B72E7238340"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "4614A1E93129F7AF"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5FE44DCC8BF3F598"]
+			icon: {
+				id: "minecraft:ender_pearl"
+			}
+			id: "39A176F019D32804"
+			rewards: [
+				{
+					id: "284557BA84235D23"
+					table_id: 7547820078087610474L
+					type: "random"
+				}
+				{
+					id: "67631D6D900A9389"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "0D0583C900538D3B"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["20A88504DC6B5A17"]
+			icon: {
+				id: "minecraft:iron_sword"
+			}
+			id: "372FD165139361F2"
+			rewards: [
+				{
+					id: "3DDC0B848DCE95D4"
+					item: {
+						count: 1
+						id: "minecraft:iron_sword"
+					}
+					type: "item"
+				}
+				{
+					id: "611F9986A3C0FB17"
+					table_id: 7547820078087610474L
+					type: "random"
+				}
+				{
+					id: "56842117D5E41ECB"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					advancement: "guardvillagers:adventure/recruit_guard"
+					criterion: ""
+					id: "053F1B8AC7C4DA90"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["3B2BC7E46FADA8F0"]
+			icon: {
+				id: "born_in_chaos_v1:fangofthe_hound_leader"
+			}
+			id: "4CF532D459AE3D38"
+			rewards: [
+				{
+					id: "0FB0F0F0CC01FAC0"
+					table_id: 4000594783902426681L
+					type: "random"
+				}
+				{
+					id: "319D1E6875DDA5D6"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [
+				{
+					entity: "born_in_chaos_v1:dread_hound"
+					id: "2A6E7BA9255A1B9B"
+					type: "kill"
+					value: 5L
+				}
+				{
+					advancement: "born_in_chaos_v1:big_boy"
+					criterion: ""
+					id: "7F3A1246BA65524E"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["3B2BC7E46FADA8F0"]
+			icon: {
+				id: "born_in_chaos_v1:dark_metal_ingot"
+			}
+			id: "7CA0F3AF7F1D0DE4"
+			rewards: [
+				{
+					id: "01AFF0E0A531745B"
+					table_id: 4000594783902426681L
+					type: "random"
+				}
+				{
+					id: "5BBDE18655BDF3EA"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					entity: "born_in_chaos_v1:decaying_zombie"
+					id: "6A89B5FDEC0ADAAA"
+					type: "kill"
+					value: 5L
+				}
+				{
+					entity: "born_in_chaos_v1:bonescaller"
+					id: "1E6DFF292EA9724E"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "born_in_chaos_v1:zombie_clown"
+					id: "311690612C880051"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 4.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["3B2BC7E46FADA8F0"]
+			icon: {
+				id: "naturalist:antler"
+			}
+			id: "7ED324DAAC228EA8"
+			rewards: [
+				{
+					count: 2
+					id: "2A25A1670AF24380"
+					item: {
+						count: 1
+						id: "farmersdelight:beef_stew"
+					}
+					type: "item"
+				}
+				{
+					id: "3FEDDD7C8201E4B7"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "42B969A859AB5928"
+					item: {
+						count: 1
+						id: "naturalist:venison"
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "57C90C704059A9D8"
+					item: {
+						count: 1
+						id: "naturalist:fur"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["3B2BC7E46FADA8F0"]
+			icon: {
+				id: "naturalist:capture_net"
+			}
+			id: "57B6EC7D178747AD"
+			rewards: [
+				{
+					count: 8
+					id: "23B0CA7335EEE289"
+					item: {
+						count: 1
+						id: "minecraft:glow_berries"
+					}
+					type: "item"
+				}
+				{
+					id: "5B42716EAF7F8A19"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "236E05DF8AAC38ED"
+					item: {
+						count: 1
+						id: "naturalist:capture_net"
+					}
+					type: "item"
+				}
+				{
+					id: "49CBEECCFD4915C7"
+					item: {
+						count: 1
+						id: "naturalist:butterfly"
+					}
+					type: "item"
+				}
+				{
+					id: "20CEE47D3042D2F2"
+					item: {
+						count: 1
+						id: "naturalist:firefly"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["3B2BC7E46FADA8F0"]
+			icon: {
+				id: "minecraft:copper_block"
+			}
+			id: "47CB725721EA1EEA"
+			rewards: [
+				{
+					count: 8
+					id: "03BD82F0CE91AAC2"
+					item: {
+						count: 1
+						id: "minecraft:glow_berries"
+					}
+					type: "item"
+				}
+				{
+					count: 32
+					id: "05E65DE182D385D6"
+					item: {
+						count: 1
+						id: "minecraft:torch"
+					}
+					type: "item"
+				}
+				{
+					id: "1EA2979C32F37F8F"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					advancement: "friendsandfoes:adventure/summon_copper_golem"
+					criterion: ""
+					id: "0A179E776918767C"
+					type: "advancement"
+				}
+				{
+					advancement: "friendsandfoes:husbandry/tame_a_glare"
+					criterion: ""
+					id: "3E0676B51A9B9AAD"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["3B2BC7E46FADA8F0"]
+			icon: {
+				id: "friendsandfoes:totem_of_freezing"
+			}
+			id: "19666D84A72F033D"
+			rewards: [
+				{
+					id: "6D9F00C8A1B0CEDD"
+					table_id: 4000594783902426681L
+					type: "random"
+				}
+				{
+					id: "5E3179E5762987D3"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [
+				{
+					advancement: "friendsandfoes:adventure/it_bites"
+					criterion: ""
+					id: "4621E61733FA8E13"
+					type: "advancement"
+				}
+				{
+					advancement: "friendsandfoes:adventure/kill_iceologer"
+					criterion: ""
+					id: "71D81C1CBDED1E0A"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["53F967EF1BEA3D24"]
+			icon: {
+				id: "deeperdarker:sculk_bone"
+			}
+			id: "23295F8651BB32DA"
+			rewards: [
+				{
+					id: "43E8CB0DE37422E0"
+					table_id: 6557265280331931275L
+					type: "random"
+				}
+				{
+					id: "1B4B9000C84F9696"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					entity: "deeperdarker:shattered"
+					id: "3059BBF6BED8B449"
+					type: "kill"
+					value: 3L
+				}
+				{
+					entity: "deeperdarker:sculk_snapper"
+					id: "69E1D667ADBF0D00"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "deeperdarker:sculk_centipede"
+					id: "4BAA5B19A9C79CAA"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["63F14370CFF061C7"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "remnant_bosses:tarnished_regalia"
+			}
+			id: "0B3D47A11A359E87"
+			rewards: [
+				{
+					id: "7987C776BA21D74B"
+					table_id: 1294859340652504733L
+					type: "random"
+				}
+				{
+					id: "6BC98BBC7185BD81"
+					type: "xp"
+					xp: 800
+				}
+			]
+			tasks: [
+				{
+					entity: "remnants:hollow_sentinel"
+					id: "7C0C1A93C7CA6F54"
+					type: "kill"
+					value: 3L
+				}
+				{
+					entity: "remnants:hollow_arbalist"
+					id: "7C815A2A29D8A6BC"
+					type: "kill"
+					value: 3L
+				}
+				{
+					entity: "remnants:fallen_standard_bearer"
+					id: "2E7552604FBCBF33"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "remnants:soulbound_knight"
+					id: "25305C48423D5547"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 0.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["63F14370CFF061C7"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "remnant_bosses:memory_shard"
+			}
+			id: "440BE6E04BADB9D5"
+			rewards: [
+				{
+					id: "59EFCDD97D567FFA"
+					table_id: 1294859340652504733L
+					type: "random"
+				}
+				{
+					id: "6CF1937C3D941327"
+					type: "xp"
+					xp: 800
+				}
+			]
+			tasks: [
+				{
+					entity: "remnants:catacomb_rat"
+					id: "2C6F7B1466DE5F6A"
+					type: "kill"
+					value: 5L
+				}
+				{
+					entity: "remnants:crypt_lurker"
+					id: "767D8AD92CCE8475"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "remnants:gravebound_soldier"
+					id: "40077F7D373B4A9A"
+					type: "kill"
+					value: 3L
+				}
+				{
+					entity: "remnants:lost_pilgrim"
+					id: "5761217BA55BB483"
+					type: "kill"
+					value: 2L
+				}
+				{
+					entity: "remnants:memory_wraith"
+					id: "5DB47E8E3728AFB1"
+					type: "kill"
+					value: 2L
+				}
+				{
+					entity: "remnants:soul_collector"
+					id: "545D2BA88EA26FAB"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 2.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["63F14370CFF061C7"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "remnant_bosses:ashen_cog"
+			}
+			id: "604CE6C989BE7731"
+			rewards: [
+				{
+					id: "224DF5EBF2567A12"
+					table_id: 1294859340652504733L
+					type: "random"
+				}
+				{
+					id: "30C71BC3E224058F"
+					type: "xp"
+					xp: 800
+				}
+			]
+			tasks: [
+				{
+					entity: "remnants:ashbound_crawler"
+					id: "0C3AECAE522DE10C"
+					type: "kill"
+					value: 3L
+				}
+				{
+					entity: "remnants:ember_servitor"
+					id: "16A78EA9FC053275"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "remnants:rusted_guardian"
+					id: "0BCC37E37686B1ED"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "remnants:shardling"
+					id: "3940BB4C2A223A4B"
+					type: "kill"
+					value: 3L
+				}
+				{
+					entity: "remnants:ancient_vessel"
+					id: "0C089A825EAE0F8C"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "remnants:relic_stalker"
+					id: "60CFCDB8CF9DB816"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 4.0d
+			y: 12.5d
+		}
+	]
+}

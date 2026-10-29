@@ -1,0 +1,73 @@
+{
+	icon: {
+		id: "handcrafted:oak_table"
+	}
+	id: "1123D46C31382E34"
+	loot_size: 1
+	order_index: 7
+	rewards: [
+		{
+			count: 8
+			id: "616CFD451A8E88C6"
+			item: {
+				count: 1
+				id: "minecraft:emerald"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 6
+			id: "1BE928BDE7B91EC5"
+			item: {
+				count: 1
+				id: "minecraft:lantern"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 6
+			id: "4D977274FB1EE918"
+			item: {
+				count: 1
+				id: "supplementaries:sconce"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 8
+			id: "7639406187F8A54A"
+			item: {
+				count: 1
+				id: "minecraft:iron_ingot"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 3
+			id: "1D631C773EDD88D0"
+			item: {
+				count: 1
+				id: "supplementaries:jar"
+			}
+			weight: 1.0f
+		}
+		{
+			count: 2
+			id: "0F6E472AC62017FB"
+			item: {
+				count: 1
+				id: "sophisticatedbackpacks:upgrade_base"
+			}
+			weight: 1.0f
+		}
+		{
+			count: 16
+			id: "7A68588F30519619"
+			item: {
+				count: 1
+				id: "minecraft:white_wool"
+			}
+			weight: 1.0f
+		}
+	]
+}

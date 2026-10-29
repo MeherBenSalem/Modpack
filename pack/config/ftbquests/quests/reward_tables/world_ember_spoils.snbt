@@ -1,0 +1,63 @@
+{
+	icon: {
+		id: "runeborn:tempering_stone_2"
+	}
+	id: "3784F7C288C8E639"
+	loot_size: 1
+	order_index: 17
+	rewards: [
+		{
+			count: 4
+			id: "304B9A7BA928725D"
+			item: {
+				count: 1
+				id: "runeborn:tempering_stone_1"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "36301AE6EE4CCCAC"
+			item: {
+				count: 1
+				id: "runeborn:tempering_stone_2"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 3
+			id: "4148D6F303007651"
+			item: {
+				count: 1
+				id: "runeborn:faded_rune"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 6
+			id: "38139729C001D967"
+			item: {
+				count: 1
+				id: "remnant_mobs:remnant_shard"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 2
+			id: "432FF9F2CA5BAB6C"
+			item: {
+				count: 1
+				id: "mob_loot_bags:uncommonlootbag"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "109598EF38362B43"
+			item: {
+				count: 1
+				id: "minecraft:golden_apple"
+			}
+			weight: 1.0f
+		}
+	]
+}

@@ -107,7 +107,7 @@ quests:
     pos: [0, 2.5]
     deps: [s1_act2_hunt/hunters_moon]
     desc: |
-      Sometimes the dead come back &obigger&r. Mutants walk the Overworld on rare nights; the enderman kind prefers the End.
+      Sometimes the dead come back &obigger&r. Mutants spawn wherever their ordinary kin do, only rarely; the enderman kind is easiest to find in the End.
 
       The &6Mutant Zombie&r goes down and gets back up: set it on fire while it's down. The &6Mutant Skeleton&r out-shoots you, so close in. The &6Mutant Creeper&r pounces; don't be where it lands. The &6Mutant Enderman&r throws the landscape at you.
     tasks:
@@ -127,7 +127,7 @@ quests:
     desc: |
       The masked &6Umvuthana&r guard a grove in the savanna, and their chief wears the sun for a face.
 
-      Thin the masks before you go up to him. When he calls the sun down, get out from under the beam; when he leaps, he lands where you were standing.
+      Thin the masks before you go up to him. When he calls the sun down, keep moving: it lands where you stood. When the air around him starts to burn, get out of reach.
 
       &7Wear one of their masks and they may take you for family. Briefly.
     tasks:
@@ -216,16 +216,16 @@ quests:
 
   - key: invoker
     title: "The Invoker"
-    subtitle: "An Illager fort in the taiga. Level 30."
+    subtitle: "A woodland mansion. Level 30."
     icon: illagerinvasion:hallowed_gem
     pos: [4, 5]
     deps: [s1_act2_hunt/hunters_moon]
     desc: |
-      The illagers keep a sorcerer at the heart of their &6forts&r in the taiga and the snow.
+      The illagers keep their worst sorcerer in the &6woodland mansions&r of the dark forests, waiting on the stairs like a host who hates guests.
 
-      It conjures fangs under your feet and raises its dead to fight for it. Never stand still, put the summons down fast, and close in between casts.
+      It conjures fangs under your feet and calls spirits to fight for it. Never stand still, put the summons down fast, and close in between casts.
     tasks:
-      - {structure: "illagerinvasion:illager_fort", title: "Find an Illager Fort"}
+      - {structure: "minecraft:mansion", title: "Enter a woodland mansion"}
       - {kill: "illagerinvasion:invoker"}
     rewards: [{table: world_hunt_spoils}, {xp: 500}]
 
@@ -259,6 +259,20 @@ quests:
     tasks:
       - {structure: "graveyard:lich_prison", title: "Find the Cursed Island"}
       - {kill: "graveyard:lich"}
+    rewards: [{table: world_hunt_spoils}, {xp: 700}]
+
+  - key: last_curator
+    title: "The Last Curator"
+    subtitle: "The Meridian Archive. Level 30."
+    icon: tbos:curator_core
+    pos: [10, 5]
+    size: 1.5
+    deps: [s1_act2_hunt/hunters_moon]
+    desc: |
+      Below a Fracture Shrine, past the puzzles and a repaired &6Yesterglass Lens&r, the &6Meridian Archive&r still obeys its last order: preserve this day forever. Its keeper agrees.
+
+      &6Catalogue&r: leave the marked row. &6Revision&r: it seals, then strikes a marked radius; be outside it. &6Erasure&r: it records afterimages of you and detonates them where you stood, so keep moving. Hit the core whenever it's exposed.
+    tasks: [{advancement: "tbos:story/defeat_last_curator", title: "Defeat the Last Curator"}]
     rewards: [{table: world_hunt_spoils}, {xp: 700}]
 
   # ---- Act III: levels 30-50 ----
@@ -297,9 +311,9 @@ quests:
     pos: [4, 7.5]
     deps: [warden]
     desc: |
-      Below the ancient cities lies the &6Otherside&r, and something there hunts the way the Warden does: by sound.
+      Below the ancient cities lies the &6Otherside&r, littered with &6Ancient Vases&r. Most hold loot. Break the wrong one and a &6Stalker&r climbs out.
 
-      It rises out of the floor where you last made noise and dims your sight. It's slow to start: hit it as it surfaces, then get clear before the shockwave ring.
+      It hunts by sound, like the Warden, and dims your sight. It's slow to start: hit it while it's still emerging, then get clear before the shockwave ring.
     tasks:
       - {dimension: "deeperdarker:otherside", title: "Enter the Otherside"}
       - {kill: "deeperdarker:stalker"}
@@ -583,7 +597,7 @@ quests:
     deps: [s1_act5_realm/enter]
     hide_until_deps: true
     desc: |
-      The Cryptborn's warden-in-waiting. It carries the &6Grave Iron&r you need for a &6Crypt Key&r: six around an iron block.
+      The Cryptborn's warden-in-waiting. It carries &6Grave Iron&r, and sometimes the &6Crypt Key&r itself; if not, six Grave Iron around an iron block makes one.
 
       It's slow and heavy-handed. Bait the swing, roll, punish. Leave the rats for later.
     tasks: [{kill: "remnants:burial_guardian"}]

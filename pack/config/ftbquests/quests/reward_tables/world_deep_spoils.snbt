@@ -1,0 +1,70 @@
+{
+	icon: {
+		id: "runeborn:tempering_stone_6"
+	}
+	id: "5B001607D42FDE8B"
+	loot_size: 1
+	order_index: 19
+	rewards: [
+		{
+			count: 3
+			id: "6B870236D536FC44"
+			item: {
+				count: 1
+				id: "runeborn:tempering_stone_5"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "5F9322F97FC07181"
+			item: {
+				count: 1
+				id: "runeborn:tempering_stone_6"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 2
+			id: "038884A833997E63"
+			item: {
+				count: 1
+				id: "runeborn:lustrous_stone_2"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "16C6EF6A166D9A07"
+			item: {
+				count: 1
+				id: "runeborn:lustrous_stone_3"
+			}
+			weight: 1.0f
+		}
+		{
+			count: 2
+			id: "3CF1CD98E380DA72"
+			item: {
+				count: 1
+				id: "runeborn:radiant_rune"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7258D305FA98D1DA"
+			item: {
+				count: 1
+				id: "mob_loot_bags:epiclootbag"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "49B4D4F626043737"
+			item: {
+				count: 1
+				id: "runeborn:sunseed"
+			}
+			weight: 0.5f
+		}
+	]
+}

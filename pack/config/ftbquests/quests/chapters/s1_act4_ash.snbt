@@ -549,7 +549,41 @@
 				}
 			]
 			x: 14.0d
-			y: 0.0d
+			y: -0.875d
+		}
+		{
+			dependencies: ["4D0587808D220640"]
+			icon: {
+				id: "runeborn:crown_shard_ender_dragon"
+			}
+			id: "7A11D1EEA3BD0D28"
+			optional: true
+			rewards: [
+				{
+					id: "0D506BE1A7787D59"
+					item: {
+						count: 1
+						id: "runeborn:sovereign_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "2399505BA966F026"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					advancement: "runeborn:feats/crown"
+					criterion: ""
+					id: "4D284EC874F9CEA2"
+					type: "advancement"
+				}
+			]
+			x: 14.0d
+			y: 0.875d
 		}
 	]
 }

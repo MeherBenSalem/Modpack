@@ -141,7 +141,7 @@ quests:
     pos: [6, -1]
     deps: [kitchen]
     desc: |
-      Hold a &6Skillet&r in one hand and raw food in the other, stand near a fire, and cook as you go. Sneak to set it down on a stove instead.
+      Hold a &6Skillet&r in one hand and raw food in the other, stand near a fire, and cook as you go. Sneak to set it down as a block over a fire or a stove, and it cooks there too.
 
       It also makes a perfectly respectable club. Nobody has to know.
     tasks: [{advancement: "farmersdelight:main/use_skillet"}]
@@ -238,7 +238,7 @@ quests:
     pos: [8, 2.25]
     deps: [keg]
     desc: |
-      Ferment milk with a brown mushroom, pumpkin seeds and sugar in a &6warm&r keg. Pour the full keg out over a honeycomb into an &6Unripe Cheese Wheel&r, set it down and leave it alone.
+      Ferment milk with a brown mushroom, pumpkin seeds and sugar in a &6warm&r keg. Draw the full keg off with a &6honeycomb&r for a rind and you get an &6Unripe Cheese Wheel&r. Set it down and leave it alone.
 
       When it's ripe, cut it into wedges on a board. Cheese keeps. Most things in this world don't.
     tasks: [{item: brewinandchewin:flaxen_cheese_wheel}]
@@ -252,7 +252,7 @@ quests:
     pos: [2, 4.25]
     deps: [knife]
     desc: |
-      Craft an &6Iron Fishing Rod&r. Better rods take a &6hook&r, &6bait&r and a coloured line; fit them at a &6Tackle Box&r.
+      Craft an &6Iron Fishing Rod&r. Aquaculture's rods take a &6hook&r, &6bait&r, a coloured line and a bobber; fit them at a &6Tackle Box&r.
 
       Every water keeps its own fish: rivers, oceans, jungles, swamps and frozen seas.
     tasks: [{item: aquaculture:iron_fishing_rod}]
@@ -317,7 +317,7 @@ quests:
     pos: [6, 6.25]
     deps: [coast]
     desc: |
-      On a stony shore stands a &6Lighthouse&r. Keeper Morrow lives at its foot and trades with anyone who makes the climb.
+      On a stony shore stands a &6Lighthouse&r. Keeper Morrow lives there, and trades with anyone who makes the climb.
 
       &o"A keeper of a light, by the sea. We'd have a great deal to talk about, he and I."&r
     tasks: [{advancement: "fisherman_house:discover_lighthouse"}]

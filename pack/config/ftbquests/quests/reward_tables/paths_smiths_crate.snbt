@@ -1,0 +1,61 @@
+{
+	icon: {
+		id: "runeborn:tempering_stone_2"
+	}
+	id: "7D012DF38E9015AD"
+	loot_size: 1
+	order_index: 13
+	rewards: [
+		{
+			count: 3
+			id: "29A2EC61FB4C67B5"
+			item: {
+				count: 1
+				id: "runeborn:tempering_stone_2"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "56C94F1B27B0898B"
+			item: {
+				count: 1
+				id: "runeborn:tempering_stone_3"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "23629D3A6AA57B53"
+			item: {
+				count: 1
+				id: "runeborn:blank_whetstone"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "15FF1526EA651913"
+			item: {
+				count: 1
+				id: "runeborn:lustrous_stone_1"
+			}
+			weight: 1.0f
+		}
+		{
+			id: "3065FA577D9B7073"
+			item: {
+				count: 1
+				id: "runeborn:lustrous_rune"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 8
+			id: "4A7DE318269AD482"
+			item: {
+				count: 1
+				id: "minecraft:iron_ingot"
+			}
+			weight: 2.0f
+		}
+	]
+}

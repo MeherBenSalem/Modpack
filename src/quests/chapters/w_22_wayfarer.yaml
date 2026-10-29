@@ -1,0 +1,296 @@
+chapter: w_wayfarer
+group: world
+order: 22
+title: "&bWayfarer"
+subtitle: "The world went dark. It didn't go away. Go and see what's left of it."
+icon: explorerscompass:explorerscompass
+quests:
+  # ---- Roads, rests and ruins (Explorer's Compass) ----
+  - key: compass
+    title: "&6The Compass That Knows"
+    subtitle: "Every ruin has a name. This finds it."
+    icon: explorerscompass:explorerscompass
+    pos: [0, 2.5]
+    shape: hexagon
+    size: 1.5
+    deps: [s1_prologue/village]
+    desc: |
+      An &6Explorer's Compass&r: a plain compass ringed with cracked stone bricks and cobwebs, as if it had been somewhere already.
+
+      Use it to pick any structure in the world by name; it points the way and tells you how far. It won't tell you what's inside.
+    tasks: [{item: "explorerscompass:explorerscompass"}]
+    rewards: [{table: world_wayfarer_pack}, {xp: 100}]
+
+  - key: towns
+    title: "Other People's Fires"
+    subtitle: "Towns and Towers. A village not like yours."
+    icon: minecraft:bell
+    pos: [2, 0]
+    deps: [compass]
+    desc: |
+      Last Light isn't the only village that kept a fire. Out in the meadows, badlands, groves and swamps, people built in their own fashion and rang their own bells.
+
+      Visit one built the way its land wanted. Sellswords loiter by every bell, by the way.
+    tasks: [{structure: "#towns_and_towers:town", title: "Visit a Towns and Towers village"}]
+    rewards: [{table: world_wayfarer_pack}, {xp: 150}]
+
+  - key: tavern
+    title: "Safe Haven"
+    subtitle: "Dungeons and Taverns. A roof, a fire, a drink."
+    icon: brewinandchewin:tankard
+    pos: [4, 0]
+    deps: [compass]
+    desc: |
+      Somewhere out there, someone still pours ale for strangers. Find a &6tavern&r.
+
+      Sit down. Eat something hot. The road will still be dark when you leave.
+    tasks: [{advancement: "nova_structures:adventure/find_tavern", title: "Find a tavern"}]
+    rewards: [{item: brewinandchewin:mead, count: 2}, {table: world_wayfarer_pack}, {xp: 150}]
+
+  - key: tavern_quest
+    title: "Call for Adventure"
+    subtitle: "The cartographer sells more than maps."
+    icon: minecraft:map
+    pos: [6, 0]
+    deps: [tavern]
+    desc: |
+      Every tavern has a &6cartographer&r in the corner, and every cartographer has a map they'd rather sell to someone else.
+
+      Trade for a quest map and follow it. Taverns know which roads end somewhere interesting.
+    tasks: [{advancement: "nova_structures:adventure/tavern_quest", title: "Buy a tavern quest map"}]
+    rewards: [{table: world_wayfarer_pack}, {xp: 250}]
+
+  - key: camp
+    title: "Smoke That Isn't Yours"
+    subtitle: "Dungeons and Taverns. An illager camp."
+    icon: minecraft:campfire
+    pos: [8, 0]
+    deps: [compass]
+    desc: |
+      Not every campfire on the horizon is a friend's. Illagers pitch &6camps&r along the rivers, beaches and forest edges: tents, a cookfire and a lot of crossbows.
+
+      Walk in loud or walk in quiet. Either way, the loot is in the tents.
+    tasks: [{structure: "nova_structures:illager_camp", title: "Find an illager camp"}]
+    rewards: [{table: world_wayfarer_pack}, {xp: 200}]
+
+  - key: remnant_ruins
+    title: "What the Dark Left Standing"
+    subtitle: "Dungeons and Taverns. A ruined settlement."
+    icon: minecraft:cracked_stone_bricks
+    pos: [2, 2.5]
+    deps: [compass]
+    desc: |
+      Not every village kept its fire. The ruined farms, smithies, schools and castles out there are what the Long Eclipse leaves behind: walls, a well, and nobody home.
+
+      Walk through one. Take what's useful. Don't sleep there.
+    tasks: [{structure: "#nova_structures:remnants", title: "Find a ruined settlement"}]
+    rewards: [{table: world_wayfarer_pack}, {xp: 150}]
+
+  - key: chapel
+    title: "Where the Prayers Stopped"
+    subtitle: "Structory. An abandoned chapel."
+    icon: minecraft:candle
+    pos: [4, 2.5]
+    deps: [compass]
+    desc: |
+      Small chapels stand alone in the plains and forests, their doors open and their candles cold. Somebody prayed for the sun here. It didn't come.
+
+      Find one. Light a candle if you like. It can't hurt.
+    tasks: [{structure: "structory:abandoned_chapel", title: "Find an abandoned chapel"}]
+    rewards: [{table: world_wayfarer_pack}, {xp: 150}]
+
+  - key: lost_soul_city
+    title: "The Lost Soul City"
+    subtitle: "Philip's Ruins. A city that went underground."
+    icon: minecraft:soul_lantern
+    pos: [6, 2.5]
+    deps: [compass]
+    desc: |
+      When the sun went out, one city tried to hide from the dark by digging into it. It dug too deep.
+
+      The &6Lost Soul City&r lies under the forests, hills and plains. Bring light, and a way back up.
+    tasks: [{structure: "philipsruins:lost_soul_city", title: "Find the Lost Soul City"}]
+    rewards: [{table: world_delver_cache}, {xp: 300}]
+
+  # ---- Fisherman's Coast ----
+  - key: cottage
+    title: "Home of Saylor"
+    subtitle: "Fisherman's Coast. A cottage on the beach."
+    icon: minecraft:fishing_rod
+    pos: [2, 5]
+    deps: [compass]
+    desc: |
+      The fishers of the coast never stopped fishing. The dark doesn't care about the tide, and neither do they.
+
+      Find &6Saylor's&r cottage on a sandy or snowy beach. The residents trade things you won't find inland.
+    tasks: [{advancement: "fisherman_house:discover_fisherman_house", title: "Find a Fisherman's Cottage"}]
+    rewards: [{item: fisherman_house:fish_bait, count: 8}, {table: world_wayfarer_pack}, {xp: 150}]
+
+  - key: lighthouse
+    title: "Keeper of the Light"
+    subtitle: "Fisherman's Coast. A lighthouse on the stones."
+    icon: minecraft:lantern
+    pos: [4, 5]
+    deps: [cottage]
+    desc: |
+      &6Keeper Morrow&r has kept a lamp lit on the stony shore through the whole Long Eclipse. You're not the only one who tends a fire.
+
+      Go and say hello. He doesn't get many visitors who aren't drowned.
+    tasks: [{advancement: "fisherman_house:discover_lighthouse", title: "Find a Lighthouse"}]
+    rewards: [{table: world_wayfarer_pack}, {xp: 200}]
+
+  - key: bottle
+    title: "Message Received"
+    subtitle: "Twelve notes from the sea."
+    icon: fisherman_house:message_in_a_bottle
+    pos: [6, 5]
+    deps: [cottage]
+    desc: |
+      The sea gives back what it takes, one bottle at a time. &6Messages in a Bottle&r turn up on rod lines, in crab pots, in coastal chests.
+
+      Open one. Some hold treasure, some hold a &6map to a wreck&r, and all of them hold a note from someone who never got home.
+    tasks: [{advancement: "fisherman_house:open_bottle", title: "Open a Message in a Bottle"}]
+    rewards: [{item: fisherman_house:crab_pot}, {table: world_wayfarer_pack}, {xp: 200}]
+
+  - key: coastal_wanderer
+    title: "&6Coastal Wanderer"
+    subtitle: "All seven places of the coast."
+    icon: fisherman_house:crab_pot
+    pos: [8.5, 5]
+    shape: hexagon
+    size: 1.5
+    deps: [lighthouse, bottle]
+    desc: |
+      Cottage, pier, lighthouse, stilt shack, ice camp, boathouse, and the &6Sunken Trawler&r twelve blocks under the waves.
+
+      Visit them all. Frost-Beard Ole, Old Bayou Tam and Ferryman Hale all have opinions about the weather, and they'll share them.
+    tasks: [{advancement: "fisherman_house:all_structures", title: "Visit all seven coastal places"}]
+    rewards: [{item: minecraft:heart_of_the_sea}, {table: world_hunt_spoils}, {xp: 600}]
+
+  # ---- The land itself (Nature's Compass) ----
+  - key: natures_compass
+    title: "&6The Compass That Listens"
+    subtitle: "Every land has a name too."
+    icon: naturescompass:naturescompass
+    pos: [0, 8.75]
+    shape: hexagon
+    size: 1.5
+    deps: [s1_prologue/village]
+    desc: |
+      A &6Nature's Compass&r: a compass framed in logs and saplings. Name a kind of land and it turns toward the nearest.
+
+      The world grew strange in the dark: savannas gone grey, groves that only bloom by moonlight, mountains that never stop climbing.
+    tasks: [{item: "naturescompass:naturescompass"}]
+    rewards: [{table: world_wayfarer_pack}, {xp: 100}]
+
+  - key: ashen_savanna
+    title: "Where the Ash Settled"
+    subtitle: "Terralith. The Ashen Savanna."
+    icon: minecraft:gray_dye
+    pos: [2, 7.5]
+    deps: [natures_compass]
+    desc: |
+      The ash from the Long Eclipse fell everywhere. In one stretch of savanna, it never blew away.
+
+      Stand in the &6Ashen Savanna&r. You'll feel right at home, Ashborn.
+    tasks: [{biome: "terralith:ashen_savanna", title: "Visit an Ashen Savanna"}]
+    rewards: [{table: world_wayfarer_pack}, {xp: 150}]
+
+  - key: moonlight
+    title: "By the Moon's Grace"
+    subtitle: "Terralith. The Moonlight Grove."
+    icon: minecraft:glow_berries
+    pos: [4, 7.5]
+    deps: [natures_compass]
+    desc: |
+      With the sun gone, the moon is the only light that still crosses the sky. Some groves learned to live on it.
+
+      Find a &6Moonlight Grove&r. It's the prettiest thing the Eclipse didn't kill.
+    tasks: [{biome: "terralith:moonlight_grove", title: "Visit a Moonlight Grove"}]
+    rewards: [{table: world_wayfarer_pack}, {xp: 150}]
+
+  - key: yellowstone
+    title: "The Warm Ground"
+    subtitle: "Terralith. Yellowstone."
+    icon: minecraft:magma_block
+    pos: [6, 7.5]
+    deps: [natures_compass]
+    desc: |
+      The sky went cold. The ground didn't. In &6Yellowstone&r the earth still steams and bubbles, as if it remembers noon.
+
+      Warm your hands. Mind the vents.
+    tasks: [{biome: "terralith:yellowstone", title: "Visit Yellowstone"}]
+    rewards: [{table: world_wayfarer_pack}, {xp: 150}]
+
+  - key: roof_of_the_world
+    title: "The Roof of the World"
+    subtitle: "Tectonic. The jagged peaks."
+    icon: minecraft:snow_block
+    pos: [8, 7.5]
+    deps: [natures_compass]
+    desc: |
+      The mountains grew in the dark. Ridges climb past the clouds now, and the &6jagged peaks&r are higher than anyone alive has stood.
+
+      Climb one. From the top you can see three shrines' worth of country, and none of it lit.
+    tasks: [{biome: "minecraft:jagged_peaks", title: "Stand on the jagged peaks"}]
+    rewards: [{table: world_wayfarer_pack}, {xp: 200}]
+
+  # ---- The far places ----
+  - key: ice_maze
+    title: "The Ship Graveyard"
+    subtitle: "Aquamirae. The frozen sea."
+    icon: aquamirae:shell_horn
+    pos: [2, 10]
+    deps: [natures_compass, s1_act2_hunt/hunters_moon]
+    desc: |
+      The deep frozen ocean is a &6maze of ice&r, wrecks frozen into it like flies in amber. Pirates still haunt the hulls, and worse things haunt the channels.
+
+      Enter the &6Ice Maze&r. Wrap up warm, bring a boat, and don't fall in.
+    tasks: [{advancement: "aquamirae:adventure/find_ice_maze", title: "Enter the Ice Maze"}]
+    rewards: [{table: world_hunt_spoils}, {xp: 400}]
+
+  - key: ashlands_atlas
+    title: "An Atlas of the Ashlands"
+    subtitle: "Every country of the Nether."
+    icon: minecraft:crimson_fungus
+    pos: [4, 10]
+    deps: [natures_compass, s1_act3_deep/ysolde]
+    desc: |
+      Morgrath's ash didn't fall evenly. The &6Ashlands&r have their own countries: blue soul valleys, black basalt deltas, red and teal forests of fungus.
+
+      Walk all four. Fire Resistance is cheaper than funerals.
+    tasks:
+      - {biome: "minecraft:soul_sand_valley", title: "Soul Sand Valley"}
+      - {biome: "minecraft:basalt_deltas", title: "Basalt Deltas"}
+      - {biome: "minecraft:crimson_forest", title: "Crimson Forest"}
+      - {biome: "minecraft:warped_forest", title: "Warped Forest"}
+    rewards: [{table: world_ash_spoils}, {xp: 600}]
+
+  - key: shattered_end
+    title: "The Shore Stays Dark"
+    subtitle: "Nullscape. The broken End."
+    icon: minecraft:end_stone
+    pos: [6, 10]
+    deps: [natures_compass, s1_act4_ash/vaelorn]
+    desc: |
+      The Last Shore isn't a shore anymore. Past the Dragon's island the End breaks into &6crystal peaks&r, &6shadowlands&r and &6void barrens&r, as if something tore through it.
+
+      Walk all three. Watch your step; the floor is optional.
+    tasks:
+      - {biome: "nullscape:crystal_peaks", title: "Crystal Peaks"}
+      - {biome: "nullscape:shadowlands", title: "Shadowlands"}
+      - {biome: "nullscape:void_barrens", title: "Void Barrens"}
+    rewards: [{table: world_eclipse_spoils}, {xp: 800}]
+
+  - key: older_dragon
+    title: "Bones of an Older Dragon"
+    subtitle: "Nullscape. Something died here first."
+    icon: minecraft:bone_block
+    pos: [8, 10]
+    deps: [shattered_end]
+    desc: |
+      Out in the broken End lie the &6bones of a dragon&r far bigger than the one you killed.
+
+      The Ender Dragon wasn't the first. Stand in the ribcage and wonder who broke the sun, and whether it was the first thing they broke.
+    tasks: [{structure: "nullscape:dragon_skeleton", title: "Find the dragon's skeleton"}]
+    rewards: [{table: world_eclipse_spoils}, {xp: 600}]

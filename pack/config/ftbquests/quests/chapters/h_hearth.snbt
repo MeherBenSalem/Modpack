@@ -1,0 +1,878 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "h_hearth"
+	group: "7E3F2D0C845CD671"
+	icon: {
+		id: "farmersdelight:cooking_pot"
+	}
+	id: "1F66B030D96EB9E2"
+	images: [ ]
+	order_index: 30
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["20A88504DC6B5A17"]
+			icon: {
+				id: "farmersdelight:flint_knife"
+			}
+			id: "582A451645F1551B"
+			rewards: [
+				{
+					id: "0653AD2E07B151C1"
+					table_id: 7547820078087610474L
+					type: "random"
+				}
+				{
+					id: "401E5EAE7362C492"
+					type: "xp"
+					xp: 40
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "farmersdelight:main/craft_knife"
+					criterion: ""
+					id: "72CBB81EE63B47E8"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["582A451645F1551B"]
+			icon: {
+				id: "farmersdelight:straw"
+			}
+			id: "65CD1B65F3364DF4"
+			rewards: [
+				{
+					count: 16
+					id: "1A7EECAE7D0E065B"
+					item: {
+						count: 1
+						id: "farmersdelight:rope"
+					}
+					type: "item"
+				}
+				{
+					id: "2FB1DDA831BCAEB4"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					advancement: "farmersdelight:main/harvest_straw"
+					criterion: ""
+					id: "158A4A8CD49C3959"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["65CD1B65F3364DF4"]
+			icon: {
+				id: "farmersdelight:rich_soil"
+			}
+			id: "685BB5F97A1C8228"
+			rewards: [
+				{
+					count: 16
+					id: "3ED6FE4824300620"
+					item: {
+						count: 1
+						id: "minecraft:bone_meal"
+					}
+					type: "item"
+				}
+				{
+					id: "636C3695941518A5"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					advancement: "farmersdelight:main/get_rich_soil"
+					criterion: ""
+					id: "6FF9C9DC55CEF6C6"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["582A451645F1551B"]
+			icon: {
+				id: "farmersdelight:cabbage"
+			}
+			id: "69446A3F5A0ACE55"
+			rewards: [
+				{
+					count: 8
+					id: "351F22FB8FC0A788"
+					item: {
+						count: 1
+						id: "minecraft:bone_meal"
+					}
+					type: "item"
+				}
+				{
+					id: "25E173CDE96E6F19"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					advancement: "farmersdelight:main/get_fd_seed"
+					criterion: ""
+					id: "47CD8A29BF8BE4BC"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["69446A3F5A0ACE55"]
+			icon: {
+				id: "farmersdelight:rice"
+			}
+			id: "736B14FDA7FC812D"
+			rewards: [
+				{
+					count: 4
+					id: "515A6A0621C91F5E"
+					item: {
+						count: 1
+						id: "farmersdelight:cooked_rice"
+					}
+					type: "item"
+				}
+				{
+					id: "217BFF9C44910B46"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					advancement: "farmersdelight:main/plant_rice"
+					criterion: ""
+					id: "400840EB6ED3AF17"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: -3.25d
+		}
+		{
+			dependencies: ["69446A3F5A0ACE55"]
+			icon: {
+				id: "better_farming_plus:sprinkler"
+			}
+			id: "6F9D0921E45DDD1A"
+			rewards: [
+				{
+					count: 8
+					id: "4070F9614DC4847E"
+					item: {
+						count: 1
+						id: "minecraft:copper_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "66595D0AA7572CD1"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "435D977FC0BD95F8"
+					item: {
+						count: 1
+						id: "better_farming_plus:sprinkler"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["6F9D0921E45DDD1A"]
+			icon: {
+				id: "better_farming_plus:farming_crate"
+			}
+			id: "639D8FCB83578040"
+			rewards: [
+				{
+					id: "1AC78DCDC4FDBC50"
+					table_id: 2650837858678204095L
+					type: "random"
+				}
+				{
+					id: "018C2577CE3449F0"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "2D8618BE822112E9"
+					item: {
+						count: 1
+						id: "better_farming_plus:farming_crate"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["582A451645F1551B"]
+			icon: {
+				id: "farmersdelight:cutting_board"
+			}
+			id: "7F2214D371459953"
+			rewards: [
+				{
+					count: 4
+					id: "2A97B18E89B281F8"
+					item: {
+						count: 1
+						id: "farmersdelight:cabbage"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "32BD628801742C32"
+					item: {
+						count: 1
+						id: "farmersdelight:tomato"
+					}
+					type: "item"
+				}
+				{
+					id: "3E631FB756D9B495"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					advancement: "farmersdelight:main/use_cutting_board"
+					criterion: ""
+					id: "766742EAF2EAD8B7"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7F2214D371459953"]
+			icon: {
+				id: "farmersdelight:cooking_pot"
+			}
+			id: "2CB0F847FFAEAE21"
+			rewards: [
+				{
+					id: "3C7A929DBE61B07E"
+					table_id: 2650837858678204095L
+					type: "random"
+				}
+				{
+					id: "5BFB11D9941158C0"
+					type: "xp"
+					xp: 60
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "6BD0DED14423319A"
+					item: {
+						count: 1
+						id: "farmersdelight:stove"
+					}
+					type: "item"
+				}
+				{
+					advancement: "farmersdelight:main/place_cooking_pot"
+					criterion: ""
+					id: "27D77BD99A43E39F"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2CB0F847FFAEAE21"]
+			icon: {
+				id: "farmersdelight:skillet"
+			}
+			id: "54BEC32A2A59D661"
+			rewards: [
+				{
+					count: 6
+					id: "2E3A3EEFFECD2136"
+					item: {
+						count: 1
+						id: "minecraft:cooked_porkchop"
+					}
+					type: "item"
+				}
+				{
+					id: "38088346A36165DC"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					advancement: "farmersdelight:main/use_skillet"
+					criterion: ""
+					id: "5656596ECEDC08A4"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2CB0F847FFAEAE21"]
+			icon: {
+				id: "farmersdelight:steak_and_potatoes"
+			}
+			id: "1378690974492D71"
+			rewards: [
+				{
+					count: 3
+					id: "082AA207E0B076E5"
+					item: {
+						count: 1
+						id: "farmersdelight:vegetable_soup"
+					}
+					type: "item"
+				}
+				{
+					id: "12A3E7306130DAD3"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					advancement: "farmersdelight:main/eat_nourishing_food"
+					criterion: ""
+					id: "60BFB10AA4127DD4"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1378690974492D71"]
+			icon: {
+				id: "farmersdelight:roast_chicken_block"
+			}
+			id: "267A34C74D5C4387"
+			rewards: [
+				{
+					id: "79B034EEA86C4B23"
+					table_id: 2650837858678204095L
+					type: "random"
+				}
+				{
+					id: "6C6D464803A27B92"
+					table_id: 2650837858678204095L
+					type: "random"
+				}
+				{
+					id: "4319E8BD9FFAA299"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "farmersdelight:main/place_feast"
+					criterion: ""
+					id: "79528183C0C4D352"
+					type: "advancement"
+				}
+			]
+			x: 8.0d
+			y: -0.25d
+		}
+		{
+			dependencies: ["267A34C74D5C4387"]
+			icon: {
+				id: "farmersdelight:honey_glazed_ham"
+			}
+			id: "726D1A034A7B4C5F"
+			optional: true
+			rewards: [
+				{
+					count: 16
+					id: "16464B29C36A9042"
+					item: {
+						count: 1
+						id: "minecraft:golden_carrot"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4E7E2F695F3DF278"
+					item: {
+						count: 1
+						id: "runeborn:lustrous_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "41591B3A79DBB6C1"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					advancement: "farmersdelight:main/master_chef"
+					criterion: ""
+					id: "33A64C63C9AF4A8C"
+					type: "advancement"
+				}
+			]
+			x: 10.0d
+			y: -0.25d
+		}
+		{
+			dependencies: ["2CB0F847FFAEAE21"]
+			icon: {
+				id: "brewinandchewin:keg"
+			}
+			id: "322940C8C88BF0BD"
+			rewards: [
+				{
+					count: 4
+					id: "4D8F134A6CC537B8"
+					item: {
+						count: 1
+						id: "brewinandchewin:tankard"
+					}
+					type: "item"
+				}
+				{
+					id: "22C708D439B0C84B"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					advancement: "brewinandchewin:main/place_keg"
+					criterion: ""
+					id: "0666488D18310E41"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 1.25d
+		}
+		{
+			dependencies: ["322940C8C88BF0BD"]
+			icon: {
+				id: "brewinandchewin:mead"
+			}
+			id: "7412822E46239020"
+			rewards: [
+				{
+					id: "33E267D633999608"
+					table_id: 4665445401036095611L
+					type: "random"
+				}
+				{
+					id: "41E2613B23DD7253"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "4AFD18C54F94173A"
+					item: {
+						count: 1
+						id: "brewinandchewin:mead"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 1.25d
+		}
+		{
+			dependencies: ["7412822E46239020"]
+			icon: {
+				id: "brewinandchewin:strongroot_ale"
+			}
+			id: "26F13D2CFD0BD33F"
+			rewards: [
+				{
+					id: "2450C851800EF7EC"
+					table_id: 4665445401036095611L
+					type: "random"
+				}
+				{
+					id: "1096DB01B160A7A1"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "4C4367BC43CB0C4C"
+					item: {
+						count: 1
+						id: "brewinandchewin:strongroot_ale"
+					}
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 1.25d
+		}
+		{
+			dependencies: ["322940C8C88BF0BD"]
+			icon: {
+				id: "brewinandchewin:flaxen_cheese_wheel"
+			}
+			id: "739A57228824E136"
+			rewards: [
+				{
+					count: 4
+					id: "6D8B6038AE770BD0"
+					item: {
+						count: 1
+						id: "brewinandchewin:ham_and_cheese_sandwich"
+					}
+					type: "item"
+				}
+				{
+					id: "0B6EF301FD7F71DA"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "3FB96BCB14D45B35"
+					item: {
+						count: 1
+						id: "brewinandchewin:flaxen_cheese_wheel"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 2.25d
+		}
+		{
+			dependencies: ["582A451645F1551B"]
+			icon: {
+				id: "aquaculture:iron_fishing_rod"
+			}
+			id: "069692FDDF270544"
+			rewards: [
+				{
+					count: 8
+					id: "453503703FB6D20D"
+					item: {
+						count: 1
+						id: "aquaculture:worm"
+					}
+					type: "item"
+				}
+				{
+					id: "1F58C8988EDD6DE6"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "2CB1E61E4F41348D"
+					item: {
+						count: 1
+						id: "aquaculture:iron_fishing_rod"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 4.25d
+		}
+		{
+			dependencies: ["069692FDDF270544"]
+			icon: {
+				id: "aquaculture:tuna"
+			}
+			id: "42FE195A97F774D8"
+			rewards: [
+				{
+					id: "30067316E467321D"
+					item: {
+						count: 1
+						id: "aquaculture:iron_fillet_knife"
+					}
+					type: "item"
+				}
+				{
+					id: "37E303AC81884E2A"
+					table_id: 5243491749338036789L
+					type: "random"
+				}
+				{
+					id: "081566BAE335E006"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "2926B6D948C895D0"
+					item: {
+						count: 1
+						id: "aquaculture:tuna"
+					}
+					type: "item"
+				}
+				{
+					id: "4CDC60EB89F8A312"
+					item: {
+						count: 1
+						id: "aquaculture:catfish"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["069692FDDF270544"]
+			icon: {
+				id: "fisherman_house:fishing_net"
+			}
+			id: "38273B3664CCA777"
+			rewards: [
+				{
+					id: "5ED547890D34A289"
+					table_id: 5243491749338036789L
+					type: "random"
+				}
+				{
+					id: "1D72DFBC24C5FFFD"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					advancement: "fisherman_house:discover_fisherman_house"
+					criterion: ""
+					id: "683F17F72CD1C9E2"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["38273B3664CCA777"]
+			icon: {
+				id: "fisherman_house:crab_pot"
+			}
+			id: "1BA27B12A75053E1"
+			rewards: [
+				{
+					count: 8
+					id: "252CA3576DB9FF95"
+					item: {
+						count: 1
+						id: "fisherman_house:chum"
+					}
+					type: "item"
+				}
+				{
+					id: "61E5889007DE1E88"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					advancement: "fisherman_house:get_crab_pot"
+					criterion: ""
+					id: "4563E9B93962FD62"
+					type: "advancement"
+				}
+				{
+					count: 8L
+					id: "66E283A84304545C"
+					item: {
+						count: 1
+						id: "fisherman_house:fish_bait"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 4.25d
+		}
+		{
+			dependencies: ["38273B3664CCA777"]
+			icon: {
+				id: "fisherman_house:message_in_a_bottle"
+			}
+			id: "5C4120A5CBCF549B"
+			rewards: [
+				{
+					id: "6838EC128985E57E"
+					table_id: 139939361058897245L
+					type: "random"
+				}
+				{
+					id: "3D8677FBF9215704"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					advancement: "fisherman_house:open_bottle"
+					criterion: ""
+					id: "2E99659811FDC202"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 5.25d
+		}
+		{
+			dependencies: ["38273B3664CCA777"]
+			icon: {
+				id: "minecraft:lantern"
+			}
+			id: "6CB9503B1FD8393F"
+			rewards: [
+				{
+					count: 4
+					id: "5B46EBBC30A86AD5"
+					item: {
+						count: 1
+						id: "minecraft:lantern"
+					}
+					type: "item"
+				}
+				{
+					id: "33AD54FD4C84C181"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					advancement: "fisherman_house:discover_lighthouse"
+					criterion: ""
+					id: "43B357C8D993450B"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 6.25d
+		}
+		{
+			dependencies: ["6CB9503B1FD8393F", "1BA27B12A75053E1", "5C4120A5CBCF549B"]
+			icon: {
+				id: "fisherman_house:crab_pot"
+			}
+			id: "27B8119DAEAD1FB1"
+			optional: true
+			rewards: [
+				{
+					id: "6C24A4F3C8BBD323"
+					table_id: 5603019727193511887L
+					type: "random"
+				}
+				{
+					id: "6C55B2857DA1F574"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					advancement: "fisherman_house:all_structures"
+					criterion: ""
+					id: "24FFB908F1FA24EC"
+					type: "advancement"
+				}
+			]
+			x: 8.0d
+			y: 5.25d
+		}
+		{
+			dependencies: ["582A451645F1551B"]
+			icon: {
+				id: "naturalist:cooked_venison"
+			}
+			id: "5316B4764FFB7FDC"
+			rewards: [
+				{
+					id: "41EBC5555F2E81E6"
+					table_id: 7547820078087610474L
+					type: "random"
+				}
+				{
+					id: "5F2156E9416711A4"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "3A61FD0DDCC8729E"
+					item: {
+						count: 1
+						id: "naturalist:cooked_venison"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+	]
+}

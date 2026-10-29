@@ -1,0 +1,223 @@
+chapter: p_constellation
+group: paths
+order: 12
+title: "&eThe Remnant Constellation"
+subtitle: "When the sun broke, its light had to land somewhere. Press P."
+icon: elementals:remnant_tome
+quests:
+  - key: constellation
+    title: "&eThe Remnant Constellation"
+    subtitle: "A sky only the Ashborn can see."
+    icon: elementals:remnant_tome
+    pos: [0, 0]
+    deps: [s1_act1_embers/kindle]
+    shape: hexagon
+    size: 1.5
+    desc: |
+      When the sun broke, not all of its light went into the Fragments. Some scattered into a sky only the Ashborn can read.
+
+      Press &eP&r for the &6Remnant Constellation&r: 522 stars, among them 30 abilities and 12 keystones. Every &6RPG level&r you gain is a &6skill point&r to spend here, and every point must connect back to an &6origin&r.
+
+      Plan freely; nothing is spent until you confirm. Refunding a node later costs experience levels.
+    tasks: [{checkmark: "I opened the Constellation (P)"}]
+    rewards: [{item: minecraft:lapis_lazuli, count: 8}, {xp: 40}]
+
+  - key: origin
+    title: "Choose a School"
+    subtitle: "Six schools. Pick one to start."
+    icon: minecraft:amethyst_shard
+    pos: [2, 0]
+    deps: [constellation]
+    desc: |
+      Six schools ring the Constellation, each with its own &6origin&r: &6Pyromancy&r (fire), &eStormcalling&r (storm), &5Umbral Arts&r (void), &bTidecalling&r (frost), &2Earthshaping&r (earth) and &aVerdance&r (life).
+
+      Spend your first point on an origin. The stars beyond it raise that school's damage, your &bEssence&r and your health. Where two schools meet, hybrid notables like &6Plasma Arc&r and &bBlack Ice&r are where builds get strange.
+    tasks: [{checkmark: "I took a school's origin"}]
+    rewards: [{table: paths_star_cache}, {xp: 50}]
+
+  - key: essence
+    title: "Essence"
+    subtitle: "The third bar. Yes, really."
+    icon: minecraft:glowstone_dust
+    pos: [4, 0]
+    deps: [origin]
+    desc: |
+      Abilities cost &bEssence&r, a bar of their own, and recharge on a cooldown. Slot up to four from the Constellation screen and cast them with &eZ&r, &eX&r, &eC&r and &eV&r.
+
+      They never break blocks, and they never hit your allies or your pets. Your sellswords will thank you, in their way.
+    tasks: [{checkmark: "I cast an ability (Z)"}]
+    rewards: [{item: minecraft:experience_bottle, count: 8}, {xp: 50}]
+
+  # ---- the six schools ----
+  - key: pyromancy
+    title: "&6Pyromancy"
+    subtitle: "Breathe in. Burn out. Again."
+    icon: minecraft:blaze_powder
+    pos: [0.5, -2.25]
+    deps: [origin]
+    hide_dependency_lines: true
+    optional: true
+    desc: |
+      &6Ember Bolt&r, &6Explosive Orb&r, &6Ember Shield&r, &6Inferno Wave&r, and the ultimate, &6Meteor&r.
+
+      Keystones: &6Pyre Heart&r (burning can't hurt you, and your ignites last twice as long) and &6Glass Cannon&r (40% more ability damage for a quarter of your health). A &6Fire Seed&r, eaten, awakens this origin for free.
+    tasks: [{checkmark: "I walk the path of Pyromancy"}]
+    rewards: [{item: minecraft:blaze_powder, count: 4}, {xp: 40}]
+
+  - key: stormcalling
+    title: "&eStormcalling"
+    subtitle: "The air tastes of copper before it breaks."
+    icon: minecraft:lightning_rod
+    pos: [2, -2.25]
+    deps: [origin]
+    hide_dependency_lines: true
+    optional: true
+    desc: |
+      &eChain Lightning&r, &eStatic Field&r, &eThunderclap&r, &eGale Step&r, and the ultimate, &eTempest&r.
+
+      Keystones: &eConduit&r (every fourth ability is free and hits twice as hard) and &eWindborne&r (no fall damage and 15% more speed, for 15% of your armour).
+    tasks: [{checkmark: "I walk the path of Stormcalling"}]
+    rewards: [{item: minecraft:copper_ingot, count: 8}, {xp: 40}]
+
+  - key: umbral
+    title: "&5Umbral Arts"
+    subtitle: "The dark answers. It always has."
+    icon: minecraft:ender_eye
+    pos: [3.5, -2.25]
+    deps: [origin]
+    hide_dependency_lines: true
+    optional: true
+    desc: |
+      &5Shadow Bolt&r, &5Soul Harvest&r, &5Void Rift&r, &5Shadow Step&r, and the ultimate, &5Eclipse&r.
+
+      Keystones: &5Blood Pact&r (abilities cost health instead of Essence, for 25% more damage) and &5Soul Eater&r (every kill restores Essence and a little health). An Ashborn studying the dark under an eclipse. Nobody is surprised.
+    tasks: [{checkmark: "I walk the path of the Umbral Arts"}]
+    rewards: [{item: minecraft:ender_pearl, count: 2}, {xp: 40}]
+
+  - key: tidecalling
+    title: "&bTidecalling"
+    subtitle: "Clear as meltwater."
+    icon: minecraft:heart_of_the_sea
+    pos: [5, -2.25]
+    deps: [origin]
+    hide_dependency_lines: true
+    optional: true
+    desc: |
+      &bFrost Lance&r, &bTidebinder&r, &bGlacial Prison&r, &bTidal Surge&r, and the ultimate, &bMaelstrom&r.
+
+      Keystones: &bEternal Tide&r (Essence returns twice as fast from a smaller pool) and &bGlacial Bulwark&r (less damage while above half health, and whatever hits you is chilled). A &bWater Seed&r, eaten, awakens this origin for free.
+    tasks: [{checkmark: "I walk the path of Tidecalling"}]
+    rewards: [{item: minecraft:prismarine_crystals, count: 4}, {xp: 40}]
+
+  - key: earthshaping
+    title: "&2Earthshaping"
+    subtitle: "Slow to bleed, slower to fall."
+    icon: minecraft:mossy_cobblestone
+    pos: [6.5, -2.25]
+    deps: [origin]
+    hide_dependency_lines: true
+    optional: true
+    desc: |
+      &2Stone Spear&r, &2Stone Skin&r, &2Tremor&r, &2Fissure&r, and the ultimate, &2Mountain's Wrath&r.
+
+      Keystones: &2Unyielding&r (no knockback and 30% more armour, at a slower walk) and &2Bedrock Will&r (15% less damage taken, for longer cooldowns).
+    tasks: [{checkmark: "I walk the path of Earthshaping"}]
+    rewards: [{item: minecraft:iron_ingot, count: 6}, {xp: 40}]
+
+  - key: verdance
+    title: "&aVerdance"
+    subtitle: "Life, stubbornly."
+    icon: minecraft:glow_berries
+    pos: [8, -2.25]
+    deps: [origin]
+    hide_dependency_lines: true
+    optional: true
+    desc: |
+      &aMending Light&r, &aThorn Burst&r, &aSanctuary&r, &aRadiant Nova&r, and the ultimate, &aVerdant Rebirth&r.
+
+      Keystones: &aUndying Grove&r (once every five minutes, a killing blow leaves you standing and roots everything near) and &aVerdant Bloom&r (stronger healing and steady regeneration, for less damage).
+    tasks: [{checkmark: "I walk the path of Verdance"}]
+    rewards: [{item: minecraft:golden_apple}, {xp: 40}]
+
+  # ---- runes and tomes ----
+  - key: fire_golems
+    title: "Fire Golems"
+    subtitle: "Something in the Ashlands kept its light."
+    icon: elementals:fire_rune
+    pos: [6, 1.75]
+    deps: [essence]
+    desc: |
+      In the &cAshlands&r, &6Fire Golems&r walk the wastes, the crimson forests and the basalt deltas. They're slow to die and slower to share.
+
+      Each one drops &6Fire Runes&r and magma cream, and now and then a whole &6Remnant Tome&r. Blazes carry Fire Runes too.
+    tasks: [{kill: elementals:fire_golem, count: 3}, {item: elementals:fire_rune, count: 2}]
+    rewards: [{item: minecraft:magma_cream, count: 4}, {table: paths_star_cache}, {xp: 150}]
+
+  - key: water_runes
+    title: "Water Runes"
+    subtitle: "The sea kept its share."
+    icon: elementals:water_rune
+    pos: [6, 3.25]
+    deps: [essence]
+    desc: |
+      &bWater Runes&r come from the drowned and from guardians, so you'll be fighting underwater or on a beach at night. Pick your misery.
+
+      A Fire Rune and a Water Rune together are the heart of a &6Remnant Tome&r.
+    tasks: [{item: elementals:water_rune, count: 2}]
+    rewards: [{item: minecraft:prismarine_crystals, count: 4}, {xp: 100}]
+
+  - key: tome
+    title: "The Remnant Tome"
+    subtitle: "One more star, bought and paid for."
+    icon: elementals:remnant_tome
+    pos: [8, 2.5]
+    deps: [fire_golems, water_runes]
+    desc: |
+      Four amethyst shards, two diamonds, a book, a &6Fire Rune&r and a &bWater Rune&r make a &6Remnant Tome&r. Read it for one more &6skill point&r.
+
+      Each Ashborn can only read so many, twenty in a lifetime, which in your case is a technical term.
+    tasks: [{item: elementals:remnant_tome}]
+    rewards: [{item: minecraft:amethyst_shard, count: 4}, {xp: 150}]
+
+  # ---- keystones and ultimates ----
+  - key: keystone
+    title: "Keystones"
+    subtitle: "Break a rule. Pay for it."
+    icon: minecraft:end_crystal
+    pos: [6, 0]
+    deps: [essence]
+    desc: |
+      Twelve &6keystones&r change the rules, and every one charges for it. &6Glass Cannon&r trades a quarter of your health for damage. &5Blood Pact&r pays in blood. &2Bedrock Will&r blunts every blow and slows every cooldown.
+
+      Take one. Read the price first.
+    tasks: [{checkmark: "I took a keystone"}]
+    rewards: [{table: paths_star_cache}, {xp: 100}]
+
+  - key: ultimate
+    title: "&6The Ultimates"
+    subtitle: "Two points. Worth both."
+    icon: minecraft:nether_star
+    pos: [8, 0]
+    deps: [keystone]
+    shape: hexagon
+    size: 1.5
+    desc: |
+      Each school's fifth ability is its &6ultimate&r, and it costs two points: &6Meteor&r, &eTempest&r, &5Eclipse&r, &bMaelstrom&r, &2Mountain's Wrath&r, &aVerdant Rebirth&r.
+
+      Slot one and cast it at something that deserves it.
+    tasks: [{checkmark: "I unleashed an ultimate"}]
+    rewards: [{item: elementals:remnant_tome}, {xp: 250}]
+
+  - key: unbinding
+    title: "Tome of Unbinding"
+    subtitle: "Every star returned."
+    icon: elementals:tome_of_unbinding
+    pos: [0, 2]
+    deps: [constellation]
+    optional: true
+    desc: |
+      Refunding nodes one by one costs experience. A &6Tome of Unbinding&r (a book, an ender pearl and two lapis) refunds the whole Constellation for free, and lets you choose a new origin.
+
+      Builds can be copied as codes from the tree screen. Steal a good one; nobody owns the stars.
+    tasks: [{item: elementals:tome_of_unbinding}]
+    rewards: [{xp: 60}]

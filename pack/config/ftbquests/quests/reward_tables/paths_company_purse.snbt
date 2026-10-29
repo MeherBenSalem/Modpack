@@ -1,0 +1,44 @@
+{
+	icon: {
+		id: "minecraft:gold_ingot"
+	}
+	id: "7020B79AE39F7342"
+	loot_size: 1
+	order_index: 15
+	rewards: [
+		{
+			count: 10
+			id: "5F3DBF5A804706AD"
+			item: {
+				count: 1
+				id: "minecraft:gold_ingot"
+			}
+			weight: 4.0f
+		}
+		{
+			id: "7B872F091931C02D"
+			item: {
+				count: 1
+				id: "better_with_gold:golden_fish"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 8
+			id: "1FABFE2B4DDBE33D"
+			item: {
+				count: 1
+				id: "minecraft:golden_carrot"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "0332D71AAD60F4A8"
+			item: {
+				count: 1
+				id: "minecraft:gold_block"
+			}
+			weight: 1.0f
+		}
+	]
+}

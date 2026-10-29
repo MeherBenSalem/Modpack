@@ -1,0 +1,156 @@
+{
+	chapter.672B340B4A3198A6.chapter_subtitle: ["Every ruin has a before. Someone has been collecting them."]
+	chapter.672B340B4A3198A6.title: "&eThe Fractured Archive"
+	quest.0A7BBCEB78D48C97.quest_desc: [
+		"The first bridge over the Broken Meridian exists only in memory. Follow the live channel of light to its remote seal, arm it, then wake the glowing socket to move the relay."
+		""
+		"Return to &7Ruin&r. What's left of the relay is your second crossing."
+	]
+	quest.0A7BBCEB78D48C97.quest_subtitle: "A bridge in two tenses."
+	quest.0A7BBCEB78D48C97.title: "Causality Has Weight"
+	quest.0C411F150C9A925E.quest_desc: [
+		"Every week the Archive offers one recollection to everyone. Claim the &6Weekly Memory Key&r from the Weekly page of your &6Archive Codex&r (&eY&r). Its Distortions are sealed; the only choice left is how deep."
+		""
+		"Remember it. The board shows who went deepest."
+	]
+	quest.0C411F150C9A925E.quest_subtitle: "Same recollection, everyone."
+	quest.0C411F150C9A925E.title: "This Week's Memory"
+	quest.13710AE6CE4464A8.quest_desc: [
+		"A &6Memory Key&r (amethyst, gold and an ender pearl, or a trade with Oren) opens an expedition. Use it on a &6Waystone&r, on the Curator Gateway, or inside any structure."
+		""
+		"The Attunement screen offers &cDistortions&r: Fortified, Tyrannical, Bolstering, Volatile, Haunted, Frailty, Hourglass, Amnesia. Each adds &cHeat&r; &6Fracture&r is tier plus Heat, and Fracture pays. Friends within 24 blocks come along."
+	]
+	quest.13710AE6CE4464A8.quest_subtitle: "Amethyst, gold, and a pearl for the lock."
+	quest.13710AE6CE4464A8.title: "A Key Cut from Memory"
+	quest.178657B676B4FF56.quest_desc: [
+		"Six scenes survive: &7The Evacuation&r, &7The Instant the Archive Fell&r, &7The Orrery at Work&r, &7A Family Beneath the Conjunction&r, &7The Curator Repaired&r and &7The Final Command&r. Carry all six plates at once."
+		""
+		"&o\"Bring me all six and I'll tell you which one is a lie. Archives are polite like that.\"&r &7— Oren&r"
+	]
+	quest.178657B676B4FF56.quest_subtitle: "The whole of the last day."
+	quest.178657B676B4FF56.title: "Six Ways to Remember"
+	quest.1BD8E51A73CB9F07.quest_desc: [
+		"Somewhere in this world, a day never ended. An &6Archivist's Journal&r turned up in your pack the day you woke. Read it."
+		""
+		"Three &6Fracture Shrines&r stand at fixed places, a long walk from spawn. They mark where the catalogue tore. Find one."
+		""
+		"&o\"The day did not end. We filed it anyway.\"&r &7— the Archivist's Journal&r"
+	]
+	quest.1BD8E51A73CB9F07.quest_subtitle: "Somewhere, a day never ended."
+	quest.1BD8E51A73CB9F07.title: "&eEvery Ruin Has a Before"
+	quest.1E6B2E42498D1A9F.quest_desc: [
+		"The Archive exists in two tenses: &7Ruin&r, what's left, and &bRemembered&r, the page still open. Use the Lens at a &6Memory Anchor&r to move a room between them."
+		""
+		"Reconstruct the &6Parallax Atrium&r."
+		""
+		"&o\"Every ruin has a before. I collect befores.\"&r &7— Oren, the Archivist&r"
+	]
+	quest.1E6B2E42498D1A9F.quest_subtitle: "Ruin, and Remembered."
+	quest.1E6B2E42498D1A9F.title: "Recall the First Room"
+	quest.239F8EB31B6167E6.quest_desc: [
+		"Open the shrine's &6Fracture Coffer&r. Inside: a &6Cracked Yesterglass Lens&r and an &6Archive Survey Map&r."
+		""
+		"The Lens catches moments that have already passed. The crack is why it only catches pieces."
+	]
+	quest.239F8EB31B6167E6.quest_subtitle: "We sealed a Lens in each shrine before we fled."
+	quest.239F8EB31B6167E6.title: "A Fractured Memory"
+	quest.26BA4E1B73379C8E.quest_desc: [
+		"The Archive Core is now the &6Curator Gateway&r. Carry the &6Curator Core&r and your repaired Lens and step through into the &6Fractured Archive&r: floor after floor rebuilt from what the archivists never finished."
+		""
+		"It keeps its own death rules. Your party shares its revives, a &6Recalled Hour&r buys one back, and no Echo rises there."
+	]
+	quest.26BA4E1B73379C8E.quest_subtitle: "Every recollection they failed to finish."
+	quest.26BA4E1B73379C8E.title: "&eBeyond the Curator's Gate"
+	quest.2CD95D9E03D2D57F.quest_desc: [
+		"Mend the Lens. The recipe viewer knows what the glass wants: Yesterglass, a Lenswork Crystal and a Chronicle Shard around the cracked one."
+		""
+		"&o\"A repaired Lens does not invent a past. It only agrees to see one.\"&r &7— the Archivist's Journal&r"
+	]
+	quest.2CD95D9E03D2D57F.quest_subtitle: "The glass remembers what stone forgets."
+	quest.2CD95D9E03D2D57F.title: "Through Yesterglass"
+	quest.3785FC1657322281.quest_desc: [
+		"Banked Renown raises your &6Archive Codex&r (&eY&r) from level 1 to 30, and each level is an &6Insight&r to spend: Last Stand, Keymaker, Hoarder, Second Draft and a dozen more. The &6Bestiary&r records every creature you've slain; the &6Hall of Records&r remembers who did it best."
+		""
+		"Reach Codex level 10."
+		""
+		"&o\"You collect ruins. I collect befores. Between us we might have one whole world.\"&r &7— Oren&r"
+	]
+	quest.3785FC1657322281.quest_subtitle: "What the Archive remembers of you."
+	quest.3785FC1657322281.title: "Storied"
+	quest.38F1C601D4A43F84.quest_desc: [
+		"In &bRemembered&r, watch the Choir of Hours: four steps, each with a light, a silhouette, a pitch and a subtitle. Return to &7Ruin&r and repeat them in order."
+		""
+		"A wrong cadence costs nothing but pride. Fail often enough and the old mechanism etches the answer for you, which is somehow worse."
+	]
+	quest.38F1C601D4A43F84.quest_subtitle: "Still keeping time for someone who isn't there."
+	quest.38F1C601D4A43F84.title: "The Hours Answer"
+	quest.3D62A6C30068A419.quest_desc: [
+		"Inside the Archive you build yourself from drafts. Clear encounters to discover &6Living Memories&r: abilities like &6Echo Lance&r, &6Parallax Step&r and &6Recall&r on &eH&r, &eO&r and &e`&r, and artifacts that bend them (&6Split Prism&r, &6Storm Filament&r, &6Returning Thread&r…)."
+		""
+		"&e;&r opens the loadout. They last one expedition. Choose as if it's the only one."
+	]
+	quest.3D62A6C30068A419.quest_subtitle: "You, rewritten for one expedition."
+	quest.3D62A6C30068A419.title: "Living Memories"
+	quest.3EB68B3A1BA90389.quest_desc: [
+		"Turn a key inside a structure (a dungeon, a temple, a village) and the Archive opens a &6Recollection&r of what it was before. Each place answers once per Ashborn."
+		""
+		"&o\"A ruin is a story with the middle torn out. Go and read me the middle.\"&r &7— Oren&r"
+	]
+	quest.3EB68B3A1BA90389.quest_subtitle: "This is what he means by befores."
+	quest.3EB68B3A1BA90389.title: "Echo of a Place"
+	quest.49D921BB43B33F9E.quest_desc: [
+		"In the Hall of Alignment, turn each dial until its conduit of light reaches the engraved mark. The broken dials only turn in the &bRemembered&r Hall."
+		""
+		"Made a mess of it? Crouch-use the Memory Anchor and the dials return to north."
+	]
+	quest.49D921BB43B33F9E.quest_subtitle: "The observatory still wants its lines drawn."
+	quest.49D921BB43B33F9E.title: "Lines Across Time"
+	quest.4D8CC4FACA003D12.quest_desc: [
+		"Use the &6Survey Map&r for a bearing, and again for a fresh one. No compass will find the &6Meridian Archive&r; only the map remembers where it stands."
+		""
+		"Cross its threshold."
+		""
+		"&7Word of an open Archive travels fast. Someone at Last Light has been waiting a long time to hear it.&r"
+	]
+	quest.4D8CC4FACA003D12.quest_subtitle: "The Overworld forgot it. The map didn't."
+	quest.4D8CC4FACA003D12.title: "&eThe Meridian Archive"
+	quest.5D342ECF383FA3F5.quest_desc: [
+		"Floor bosses seal &6Relics&r into your Recollection: weapons and armour with affixes like Keen, Thirsting, Echoing or Storied, graded Common up to Legendary, and rarest of all, &cRemnant&r."
+		""
+		"A Remnant relic carries a signature: &6Last Hour&r, &6Fracture Step&r, &6Choir's Echo&r or &6Yesterglass&r. Recover one."
+	]
+	quest.5D342ECF383FA3F5.quest_subtitle: "The rarest thing the Archive gives back."
+	quest.5D342ECF383FA3F5.title: "Remnant"
+	quest.5E82C40296E650F1.quest_desc: [
+		"It was told to preserve this day forever, and it's still obeying. Open the Archive Core and it begins the &6Catalogue&r."
+		""
+		"Read the floor: in &6Catalogue&r, leave the marked row; in &6Revision&r, leave the marked radius; in &cErasure&r, its afterimages detonate where they were recorded. Trigger the &6Memory Anchor&r to revise the Grand Orrery around it, and strike while its core is exposed."
+	]
+	quest.5E82C40296E650F1.quest_subtitle: "It was told to preserve this day forever."
+	quest.5E82C40296E650F1.title: "&cThe Last Curator"
+	quest.65A7F79D6DA0D6EC.quest_desc: [
+		"Every floor ends behind a boss. Then comes the choice: &aRemember&r or &cForget&r."
+		""
+		"&aRemember&r banks your &6Renown&r times your &6Momentum&r, brings your sealed Relics home and earns a better key. Your Codex keeps it forever, and a quarter of the Renown comes home as &6Valor&r."
+	]
+	quest.65A7F79D6DA0D6EC.quest_subtitle: "Bank it. Go home. Keep it forever."
+	quest.65A7F79D6DA0D6EC.title: "&aRemember"
+	quest.7343AEBA9E7454A7.quest_desc: [
+		"&cForget&r takes the party a floor deeper and raises &6Momentum&r by a quarter. Everyone votes."
+		""
+		"If the party falls, everything unbanked is lost and the key dims. Greed has a multiplier now. So does grief."
+	]
+	quest.7343AEBA9E7454A7.quest_subtitle: "Deeper, for more. Or for nothing."
+	quest.7343AEBA9E7454A7.title: "&cForget"
+	quest.7F30D8E42C88A805.quest_desc: [
+		"The Curator leaves a &6Memory Lantern&r. Place it. Use a &6Memory Plate&r on it to load a scene, use it empty-handed to play, crouch-use to clear. The plate isn't used up."
+		""
+		"Watch one scene through to the end. They were visitors, mostly. The record kept them anyway."
+	]
+	quest.7F30D8E42C88A805.quest_subtitle: "A memory made small."
+	quest.7F30D8E42C88A805.title: "The Past, Kept Kindly"
+	reward.532C04A9BE8FB450.title: "Oren the Archivist comes to Last Light"
+	task.3D87AD87672EB6C2.title: "Attune a Memory Key"
+	task.54036B421C12053D.title: "Find a Fracture Shrine"
+	task.76A4AE675E7A3156.title: "I drafted a Living Memory"
+}

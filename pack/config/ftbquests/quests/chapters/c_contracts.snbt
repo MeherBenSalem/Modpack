@@ -1,0 +1,558 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "c_contracts"
+	group: "479956DAC7B14367"
+	icon: {
+		id: "minecraft:crossbow"
+	}
+	id: "5A0DEE3E083BE9EF"
+	images: [ ]
+	order_index: 40
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1B71C09161A6DDFB"]
+			icon: {
+				id: "minecraft:crossbow"
+			}
+			id: "7B5BD6C5BA5AF56F"
+			rewards: [
+				{
+					command: "/lastlight arrive huntmaster {p}"
+					elevate_perms: true
+					icon: {
+						id: "minecraft:crossbow"
+					}
+					id: "1B5FD5AE9F90F7CC"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					id: "46EC8658A70E58E6"
+					item: {
+						count: 1
+						id: "remnant_mobs:brand_of_challenge"
+					}
+					type: "item"
+				}
+				{
+					id: "33EC30B487CEFC23"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "1D34485F6645BDC2"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: -0.25d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7B5BD6C5BA5AF56F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "minecraft:zombie_head"
+			}
+			id: "0BF2293E74CE6419"
+			rewards: [
+				{
+					id: "045B32124AE932BC"
+					table_id: 8096864399047325313L
+					type: "random"
+				}
+				{
+					id: "7A30740D53E64365"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:zombie"
+					id: "70C87B0B94C51391"
+					type: "kill"
+					value: 20L
+				}
+			]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7B5BD6C5BA5AF56F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "minecraft:skeleton_skull"
+			}
+			id: "1B9493EA2CDB6435"
+			rewards: [
+				{
+					id: "05982186ACA399A4"
+					table_id: 8096864399047325313L
+					type: "random"
+				}
+				{
+					id: "7315D36C91F07DC1"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:skeleton"
+					id: "640FB7F8EA4C574A"
+					type: "kill"
+					value: 15L
+				}
+			]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7B5BD6C5BA5AF56F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "minecraft:spider_eye"
+			}
+			id: "1932FE6F415B39CD"
+			rewards: [
+				{
+					id: "7AEEF6D2EC031BAF"
+					table_id: 8096864399047325313L
+					type: "random"
+				}
+				{
+					id: "70A1329BCEE71263"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:spider"
+					id: "6A90BB48FCFA5C03"
+					type: "kill"
+					value: 10L
+				}
+			]
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7B5BD6C5BA5AF56F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "minecraft:creeper_head"
+			}
+			id: "4CC4B7C1F9472779"
+			rewards: [
+				{
+					id: "7A91069D932150D9"
+					table_id: 8096864399047325313L
+					type: "random"
+				}
+				{
+					id: "3ACB8FB636BD3860"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:creeper"
+					id: "50110BB03FBE55D1"
+					type: "kill"
+					value: 10L
+				}
+			]
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7B5BD6C5BA5AF56F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "minecraft:trident"
+			}
+			id: "0C9C07E1DB69D5DA"
+			rewards: [
+				{
+					id: "50D9C3C84C439DA8"
+					table_id: 8096864399047325313L
+					type: "random"
+				}
+				{
+					id: "2B851418600C8318"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:drowned"
+					id: "294DA29D6CC46E94"
+					type: "kill"
+					value: 10L
+				}
+			]
+			x: 8.5d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7B5BD6C5BA5AF56F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "minecraft:packed_ice"
+			}
+			id: "1C9D50B3DE7EAF63"
+			rewards: [
+				{
+					id: "1A07B07F2E748815"
+					table_id: 7565193722747404744L
+					type: "random"
+				}
+				{
+					id: "4710B5629C7243BD"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:husk"
+					id: "0DEA82C6EB545FD5"
+					type: "kill"
+					value: 8L
+				}
+				{
+					entity: "minecraft:stray"
+					id: "6110755EB2A36339"
+					type: "kill"
+					value: 8L
+				}
+			]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7B5BD6C5BA5AF56F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "handcrafted:witch_trophy"
+			}
+			id: "012027CCDC4F3D86"
+			rewards: [
+				{
+					id: "3E7DD262359DCF36"
+					table_id: 7565193722747404744L
+					type: "random"
+				}
+				{
+					id: "121DEDFBA25B9362"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:witch"
+					id: "35E8DCA63FC20A61"
+					type: "kill"
+					value: 5L
+				}
+			]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7B5BD6C5BA5AF56F"]
+			hide_dependency_lines: true
+			icon: {
+				id: "born_in_chaos_v1:fangofthe_hound_leader"
+			}
+			id: "74F09FE2DD3E57EA"
+			rewards: [
+				{
+					id: "0F35D92A7CD80336"
+					table_id: 8096864399047325313L
+					type: "random"
+				}
+				{
+					id: "718AA1B952988DB7"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					entity: "born_in_chaos_v1:dread_hound"
+					id: "5EF389265F48F370"
+					type: "kill"
+					value: 10L
+				}
+			]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7B5BD6C5BA5AF56F", "53F967EF1BEA3D24"]
+			hide_dependency_lines: true
+			icon: {
+				id: "born_in_chaos_v1:nightmare_claw"
+			}
+			id: "09ECC735C3E73819"
+			rewards: [
+				{
+					id: "0109AEF7C8B625E2"
+					table_id: 7565193722747404744L
+					type: "random"
+				}
+				{
+					count: 8
+					id: "7F9D7987506AF26D"
+					item: {
+						count: 1
+						id: "remnant_mobs:remnant_shard"
+					}
+					type: "item"
+				}
+				{
+					id: "266C5BF6932928C3"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [
+				{
+					entity: "born_in_chaos_v1:nightmare_stalker"
+					id: "3D94403CD4465A14"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7B5BD6C5BA5AF56F", "10A48EAE33052B15"]
+			hide_dependency_lines: true
+			icon: {
+				id: "minecraft:blaze_rod"
+			}
+			id: "30007ED76BC15B2D"
+			rewards: [
+				{
+					id: "358751C9F9F1FA02"
+					table_id: 7565193722747404744L
+					type: "random"
+				}
+				{
+					id: "61BAF3312D175A37"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:blaze"
+					id: "77EB8B34A541C97A"
+					type: "kill"
+					value: 10L
+				}
+			]
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7B5BD6C5BA5AF56F", "10A48EAE33052B15"]
+			hide_dependency_lines: true
+			icon: {
+				id: "minecraft:wither_skeleton_skull"
+			}
+			id: "42910F1AA9CF2EC8"
+			rewards: [
+				{
+					id: "44E7F24006B92489"
+					table_id: 7565193722747404744L
+					type: "random"
+				}
+				{
+					id: "7C3692EB93FE332E"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:wither_skeleton"
+					id: "27DF16D3BEE00BBF"
+					type: "kill"
+					value: 10L
+				}
+			]
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7B5BD6C5BA5AF56F", "10A48EAE33052B15"]
+			hide_dependency_lines: true
+			icon: {
+				id: "minecraft:golden_axe"
+			}
+			id: "7B54978A2BB19EE5"
+			rewards: [
+				{
+					id: "7AF8AFF54B744AAB"
+					table_id: 2008997777298347331L
+					type: "random"
+				}
+				{
+					id: "04BB256393139117"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:piglin_brute"
+					id: "70DEAE710DF3794B"
+					type: "kill"
+					value: 3L
+				}
+			]
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7B5BD6C5BA5AF56F", "63F14370CFF061C7"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				id: "remnant_bosses:tarnished_regalia"
+			}
+			id: "57415FB9EFDCAEA5"
+			rewards: [
+				{
+					id: "50628A3494427FC9"
+					table_id: 2008997777298347331L
+					type: "random"
+				}
+				{
+					id: "77C31EFF5629CAC8"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					entity: "remnants:hollow_sentinel"
+					id: "462804D066D01F29"
+					type: "kill"
+					value: 8L
+				}
+				{
+					entity: "remnants:hollow_arbalist"
+					id: "7A0E71A336DCD543"
+					type: "kill"
+					value: 4L
+				}
+			]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7B5BD6C5BA5AF56F", "63F14370CFF061C7"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				id: "remnant_bosses:grave_iron"
+			}
+			id: "3317D34188380A48"
+			rewards: [
+				{
+					id: "3D12E0D8359E9AA1"
+					table_id: 2008997777298347331L
+					type: "random"
+				}
+				{
+					id: "10178924F5EC19F4"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					entity: "remnants:gravebound_soldier"
+					id: "2DB46440BA4969F1"
+					type: "kill"
+					value: 8L
+				}
+				{
+					entity: "remnants:crypt_lurker"
+					id: "144DE950C0AB3F8C"
+					type: "kill"
+					value: 4L
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7B5BD6C5BA5AF56F", "63F14370CFF061C7"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				id: "remnant_bosses:crypt_key"
+			}
+			id: "5CFD01DF56BD242D"
+			rewards: [
+				{
+					id: "4A23421205AC8E65"
+					table_id: 2008997777298347331L
+					type: "random"
+				}
+				{
+					id: "337AF699ED6A1884"
+					table_id: 2008997777298347331L
+					type: "random"
+				}
+				{
+					id: "58653B11A6F9B222"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					entity: "remnants:burial_guardian"
+					id: "5FC8C4108F7252A0"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 5.5d
+			y: 2.0d
+		}
+	]
+}

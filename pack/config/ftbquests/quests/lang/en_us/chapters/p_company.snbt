@@ -1,0 +1,90 @@
+{
+	chapter.1614F74ADAA06D65.chapter_subtitle: ["Sellswords who survived by staying together. Gold up front."]
+	chapter.1614F74ADAA06D65.title: "&eThe Ashen Company"
+	quest.0AE0B33F0F37E88C.quest_desc: [
+		"Sellswords level as they fight, up to 20, and never past your own RPG level. Along the way they earn titles: &aVeteran&r, &9Champion&r, &5Hero&r, &6Legend&r."
+		""
+		"Keep one alive long enough to earn the first. Harder than it sounds. Easier than the last."
+	]
+	quest.0AE0B33F0F37E88C.quest_subtitle: "Veteran, Champion, Hero, Legend."
+	quest.0AE0B33F0F37E88C.title: "Blooded"
+	quest.155ECFEC2013184C.quest_desc: [
+		"Press &eU&r for the &6roster&r. Every sellsword has a portrait, a level, a title and a &6Chronicle&r written from what it actually did: the oath it swore, the kill that blooded it, the time it saved you."
+		""
+		"&o\"The Company keeps two ledgers. One for gold, one for names. The second one's longer.\"&r"
+	]
+	quest.155ECFEC2013184C.quest_subtitle: "Two ledgers. One for gold, one for names."
+	quest.155ECFEC2013184C.title: "The Chronicle"
+	quest.262E107A9CDDD1B5.quest_desc: [
+		"Every piece of &6Reinforced Golden Armor&r you wear makes the sellswords near you hit &a3%&r harder. A full set is twelve."
+		""
+		"It also gives you the unmistakable look of someone who pays on time, which does more for morale than any speech."
+	]
+	quest.262E107A9CDDD1B5.quest_subtitle: "The look of someone who pays on time."
+	quest.262E107A9CDDD1B5.title: "Dressed in Gold"
+	quest.2F015422EDB1358D.quest_desc: [
+		"&o\"Gold up front. Graves are extra.\"&r &7— Maren, Captain of the Ashen Company&r"
+		""
+		"A sellsword's price is paid in &6gold ingots&r, used on the sellsword itself: a handful at level 1, and a few more for every level of experience it brings with it. They loiter near village bells, waiting for someone solvent."
+		""
+		"Hire a second."
+	]
+	quest.2F015422EDB1358D.quest_subtitle: "One is a bodyguard. Two is a warband."
+	quest.2F015422EDB1358D.title: "&eMuster"
+	quest.304ECA06BDAE1D37.quest_desc: [
+		"The Company's old smiths still work gold. An &6Upgrade Template&r (gold ingots around obsidian and an amethyst shard), a golden piece and an &6amethyst block&r make &6Reinforced Golden&r gear at a smithing table."
+		""
+		"&o\"Everyone in the Company was paid in gold once. The clever ones wore it.\"&r"
+	]
+	quest.304ECA06BDAE1D37.quest_subtitle: "Gold is soft. Reinforced gold only looks it."
+	quest.304ECA06BDAE1D37.title: "Gilded Regalia"
+	quest.358A39F760C2C389.quest_desc: [
+		"Hold &eG&r for the &6command wheel&r: &aFollow&r, &cCharge&r, &6Focus&r your target, &eHold&r here, &7Fall back&r, &6Guard banner&r, &6Formation&r and &6Recall&r."
+		""
+		"They follow you through doors, dimensions and the odd logout. If one gets lost anyway, &6Recall&r brings it back."
+	]
+	quest.358A39F760C2C389.quest_subtitle: "They listen. Mostly."
+	quest.358A39F760C2C389.title: "The Command Wheel"
+	quest.50CDEE7C92E6A561.quest_desc: [
+		"Every sellsword has a trade. &6Bulwarks&r hold the line and &6Challenge&r foes onto themselves. &6Skirmishers&r &6Whirl&r through crowds. &6Rangers&r loose &6Volleys&r. &6Arcanists&r call an &6Arc Storm&r. &6Menders&r heal, and haul the fallen back to their feet."
+		""
+		"Each also has a trait (Steadfast, Brutal, Keen-eyed, Greedy…) and the epithet that came with it. Hire a Mender."
+	]
+	quest.50CDEE7C92E6A561.quest_subtitle: "Somebody has to carry you home."
+	quest.50CDEE7C92E6A561.title: "Five Trades"
+	quest.5F6A657F32780475.quest_desc: [
+		"Feed a &6Golden Fish&r to a sellsword: full health and +30 &6morale&r. It's eight gold ingots around a cooked cod. Expensive. So are funerals."
+		""
+		"Morale rises and falls with the fight. A band that's winning fights like it."
+	]
+	quest.5F6A657F32780475.quest_subtitle: "Expensive. So are funerals."
+	quest.5F6A657F32780475.title: "The Golden Fish"
+	quest.723B8D2420490EBB.quest_desc: [
+		"The Regalia has weapons too. The &6Greater Golden Axe&r bites harder into the nearly dead; the &6Golden Scythe&r strikes everything in its arc; the &6Greater Golden Hammer&r is mostly an argument."
+		""
+		"Each takes the template, and an amethyst block, for a reinforced version."
+	]
+	quest.723B8D2420490EBB.quest_subtitle: "Heavy gold, swung with intent."
+	quest.723B8D2420490EBB.title: "Gilded Arms"
+	quest.794789CB3EBFB77B.quest_desc: [
+		"A &6Warbanner&r is gold around a black banner, on a stick, or twenty gold from Maren. Use it on the ground to plant it, and your warband guards it in formation. Use it in the air to lift it, and they follow you again."
+		""
+		"Formations: &6Line&r, &6Wedge&r, &6Shield Wall&r and &6Circle&r, around you or around the banner."
+	]
+	quest.794789CB3EBFB77B.quest_subtitle: "A place to stand."
+	quest.794789CB3EBFB77B.title: "Plant the Banner"
+	quest.7A711F495C4A3D36.quest_desc: [
+		"A sellsword that drops isn't dead yet. It's &cdowned&r, bleeding out for thirty seconds. Crouch beside it for three to pull it back up, or let your Mender do it."
+		""
+		"One that bleeds out limps back to camp after five minutes. On harsher worlds it doesn't come back at all, and its name goes into the &6Remembrance&r."
+	]
+	quest.7A711F495C4A3D36.quest_subtitle: "Thirty seconds is a long time to bleed."
+	quest.7A711F495C4A3D36.title: "Downed, Not Dead"
+	task.1D9A19EDFF3A0E45.title: "I pulled a downed sellsword back to its feet"
+	task.2FABF7221F94955A.title: "One of my sellswords earned a title"
+	task.34397EE2A9ADA453.title: "I gave an order from the wheel (G)"
+	task.47B8876C085C236D.title: "I read a sellsword's Chronicle (U)"
+	task.6369BABAFAC1C598.title: "Any greater golden axe, greater golden hammer or golden scythe"
+	task.6A8D9D2F76E799C1.title: "Two sellswords march with me"
+	task.7EB50CFFBA70F20A.title: "A Mender marches with me"
+}

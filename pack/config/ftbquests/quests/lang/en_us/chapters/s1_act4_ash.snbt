@@ -62,6 +62,11 @@
 	quest.6AFD03D05428FB28.title: "A Fortress in the Ash"
 	quest.786FC37A4A6098F2.quest_subtitle: "A forge that learned to walk."
 	quest.786FC37A4A6098F2.title: "The Netherite Monstrosity"
+	quest.7A11D1EEA3BD0D28.quest_desc: [
+		"Six Sovereigns' shards and the Dragon's. The Sun-Crown, whole for the first time since it was broken. It doesn't fit anyone. That was always the problem."
+	]
+	quest.7A11D1EEA3BD0D28.quest_subtitle: "Seven shards. One Sun-Crown."
+	quest.7A11D1EEA3BD0D28.title: "&6The Crown Remade"
 	quest.7CD33967D099FE24.quest_desc: [
 		"&o\"When the Hollow Sovereign drank the sun, a drop of it fell off the edge of the world. It landed there. The Dragon has been guarding it ever since.\"&r"
 	]

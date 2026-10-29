@@ -1,0 +1,54 @@
+{
+	icon: {
+		id: "runeborn:faded_rune"
+	}
+	id: "1F54F5F182F2E084"
+	loot_size: 1
+	order_index: 12
+	rewards: [
+		{
+			count: 2
+			id: "354A1BAE4AE822C3"
+			item: {
+				count: 1
+				id: "runeborn:faded_rune"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 4
+			id: "045E5D1F18A419C6"
+			item: {
+				count: 1
+				id: "remnant_mobs:remnant_shard"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 3
+			id: "7BFC54A46933B4C0"
+			item: {
+				count: 1
+				id: "runeborn:tempering_stone_1"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 6
+			id: "38E5C43BC97FDD1C"
+			item: {
+				count: 1
+				id: "minecraft:golden_carrot"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "45918B0CBFE7433E"
+			item: {
+				count: 1
+				id: "runeborn:lustrous_rune"
+			}
+			weight: 1.0f
+		}
+	]
+}

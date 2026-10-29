@@ -1,0 +1,80 @@
+{
+	icon: {
+		id: "minecraft:filled_map"
+	}
+	id: "111016CDBA35A1E9"
+	loot_size: 1
+	order_index: 23
+	rewards: [
+		{
+			count: 8
+			id: "795B92BFBFC599B3"
+			item: {
+				count: 1
+				id: "minecraft:emerald"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 3
+			id: "47AB7EEE61CAAEAA"
+			item: {
+				count: 1
+				id: "minecraft:ender_pearl"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 8
+			id: "443E012A7DC917AC"
+			item: {
+				count: 1
+				id: "brewinandchewin:jerky"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 3
+			id: "6B17A13D3E45E1D2"
+			item: {
+				count: 1
+				id: "farmersdelight:beef_stew"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 3
+			id: "44E3EA84B00D487E"
+			item: {
+				count: 1
+				id: "runeborn:faded_rune"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 32
+			id: "25956FD915ED340C"
+			item: {
+				count: 1
+				id: "supplementaries:rope"
+			}
+			weight: 1.0f
+		}
+		{
+			id: "00AA290319D0A075"
+			item: {
+				count: 1
+				id: "comforts:sleeping_bag_brown"
+			}
+			weight: 1.0f
+		}
+		{
+			id: "4A73B348B47D5106"
+			item: {
+				count: 1
+				id: "minecraft:spyglass"
+			}
+			weight: 1.0f
+		}
+	]
+}

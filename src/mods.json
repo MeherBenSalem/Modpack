@@ -1288,7 +1288,7 @@
   "name": "Cristel Lib",
   "slug": "cristel-lib",
   "category": "Library",
-  "side": "server",
+  "side": "both",
   "license": "CC-BY-NC-ND-4.0",
   "modrinth": {
    "project_id": "cl223EMc",
@@ -1637,7 +1637,7 @@
   "name": "Lithostitched",
   "slug": "lithostitched",
   "category": "Library",
-  "side": "server",
+  "side": "both",
   "license": "MIT",
   "modrinth": {
    "project_id": "XaDC71GB",
@@ -2353,7 +2353,7 @@
   "name": "NetherPortalFix",
   "slug": "netherportalfix",
   "category": "multiplayer",
-  "side": "server",
+  "side": "both",
   "license": "LicenseRef-All-Rights-Reserved",
   "modrinth": {
    "project_id": "nPZr02ET",
@@ -2875,7 +2875,7 @@
   "name": "Smart Villagers AI (mod id smartvillagers)",
   "slug": "smart-villagers-ai",
   "category": "NPC / villagers",
-  "side": "server",
+  "side": "both",
   "license": "Apache-2.0",
   "modrinth": {
    "project_id": "l9oZCCPS",
@@ -3152,7 +3152,7 @@
   "name": "Leaves Be Gone",
   "slug": "leaves-be-gone",
   "category": "performance",
-  "side": "server",
+  "side": "both",
   "license": "MPL-2.0",
   "modrinth": {
    "project_id": "AVq17PqV",
@@ -3813,7 +3813,7 @@
   "name": "LootJS",
   "slug": "lootjs",
   "category": "quests-story-scripting",
-  "side": "server",
+  "side": "both",
   "license": "LGPL-3.0-only",
   "modrinth": {
    "project_id": "fJFETWDN",
@@ -3869,7 +3869,7 @@
   "name": "Dungeons and Taverns",
   "slug": "dungeons-and-taverns",
   "category": "Exploration & worldgen",
-  "side": "server",
+  "side": "both",
   "license": "LicenseRef-All-Rights-Reserved",
   "modrinth": {
    "project_id": "tpehi7ww",
@@ -3950,7 +3950,7 @@
   "name": "Nullscape",
   "slug": "nullscape",
   "category": "Exploration & worldgen",
-  "side": "server",
+  "side": "both",
   "license": "LicenseRef-Stardust-Labs-License",
   "modrinth": {
    "project_id": "LPjGiSO4",
@@ -4004,7 +4004,7 @@
   "name": "Sparse Structures",
   "slug": "sparsestructures",
   "category": "Exploration & worldgen",
-  "side": "server",
+  "side": "both",
   "license": "MIT",
   "modrinth": {
    "project_id": "qwvI41y9",
@@ -4031,7 +4031,7 @@
   "name": "Structory",
   "slug": "structory",
   "category": "Exploration & worldgen",
-  "side": "server",
+  "side": "both",
   "license": "LicenseRef-Stardust-Labs-License",
   "modrinth": {
    "project_id": "aKCwCJlY",
@@ -4058,7 +4058,7 @@
   "name": "Tectonic",
   "slug": "tectonic",
   "category": "Exploration & worldgen",
-  "side": "server",
+  "side": "both",
   "license": "MIT",
   "modrinth": {
    "project_id": "lWDHr9jE",
@@ -4087,7 +4087,7 @@
   "name": "Terralith",
   "slug": "terralith",
   "category": "Exploration & worldgen",
-  "side": "server",
+  "side": "both",
   "license": "LicenseRef-Stardust-Labs-License",
   "modrinth": {
    "project_id": "8oi3bsk5",
@@ -4116,7 +4116,7 @@
   "name": "Towns and Towers",
   "slug": "towns-and-towers",
   "category": "Exploration & worldgen",
-  "side": "server",
+  "side": "both",
   "license": "CC-BY-NC-SA-4.0",
   "modrinth": {
    "project_id": "DjLobEOy",
@@ -4145,7 +4145,7 @@
   "name": "When Dungeons Arise",
   "slug": "when-dungeons-arise",
   "category": "Exploration & worldgen",
-  "side": "server",
+  "side": "both",
   "license": "LicenseRef-All-Rights-Reserved",
   "modrinth": {
    "project_id": "8DfbfASn",
@@ -4172,7 +4172,7 @@
   "name": "YUNG's Better Desert Temples",
   "slug": "yungs-better-desert-temples",
   "category": "Exploration & worldgen",
-  "side": "server",
+  "side": "both",
   "license": "LGPL-3.0-only",
   "modrinth": {
    "project_id": "XNlO7sBv",
@@ -4201,7 +4201,7 @@
   "name": "YUNG's Better Dungeons",
   "slug": "yungs-better-dungeons",
   "category": "Exploration & worldgen",
-  "side": "server",
+  "side": "both",
   "license": "LGPL-3.0-only",
   "modrinth": {
    "project_id": "o1C1Dkj5",
@@ -4230,7 +4230,7 @@
   "name": "YUNG's Better End Island",
   "slug": "yungs-better-end-island",
   "category": "Exploration & worldgen",
-  "side": "server",
+  "side": "both",
   "license": "LGPL-3.0-only",
   "modrinth": {
    "project_id": "2BwBOmBQ",
@@ -4259,7 +4259,7 @@
   "name": "YUNG's Better Jungle Temples",
   "slug": "yungs-better-jungle-temples",
   "category": "Exploration & worldgen",
-  "side": "server",
+  "side": "both",
   "license": "LGPL-3.0-only",
   "modrinth": {
    "project_id": "z9Ve58Ih",
@@ -4288,7 +4288,7 @@
   "name": "YUNG's Better Mineshafts",
   "slug": "yungs-better-mineshafts",
   "category": "Exploration & worldgen",
-  "side": "server",
+  "side": "both",
   "license": "LGPL-3.0-only",
   "modrinth": {
    "project_id": "HjmxVlSr",
@@ -4317,7 +4317,7 @@
   "name": "YUNG's Better Nether Fortresses",
   "slug": "yungs-better-nether-fortresses",
   "category": "Exploration & worldgen",
-  "side": "server",
+  "side": "both",
   "license": "LGPL-3.0-only",
   "modrinth": {
    "project_id": "Z2mXHnxP",
@@ -4346,7 +4346,7 @@
   "name": "YUNG's Better Ocean Monuments",
   "slug": "yungs-better-ocean-monuments",
   "category": "Exploration & worldgen",
-  "side": "server",
+  "side": "both",
   "license": "LGPL-3.0-only",
   "modrinth": {
    "project_id": "3dT9sgt4",
@@ -4375,7 +4375,7 @@
   "name": "YUNG's Better Strongholds",
   "slug": "yungs-better-strongholds",
   "category": "Exploration & worldgen",
-  "side": "server",
+  "side": "both",
   "license": "LGPL-3.0-only",
   "modrinth": {
    "project_id": "kidLKymU",
@@ -4404,7 +4404,7 @@
   "name": "YUNG's Bridges",
   "slug": "yungs-bridges",
   "category": "Exploration & worldgen",
-  "side": "server",
+  "side": "both",
   "license": "LGPL-3.0-only",
   "modrinth": {
    "project_id": "Ht4BfYp6",
@@ -4433,7 +4433,7 @@
   "name": "YUNG's Extras",
   "slug": "yungs-extras",
   "category": "Exploration & worldgen",
-  "side": "server",
+  "side": "both",
   "license": "LGPL-3.0-only",
   "modrinth": {
    "project_id": "ZYgyPyfq",

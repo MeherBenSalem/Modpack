@@ -1,0 +1,69 @@
+{
+	icon: {
+		id: "runeborn:tempering_stone_8"
+	}
+	id: "40CE7AD0E43456F2"
+	loot_size: 1
+	order_index: 20
+	rewards: [
+		{
+			count: 3
+			id: "3CE6D76B95229A3B"
+			item: {
+				count: 1
+				id: "runeborn:tempering_stone_7"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "5291990F850EDD14"
+			item: {
+				count: 1
+				id: "runeborn:tempering_stone_8"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 2
+			id: "32875DEE0D625311"
+			item: {
+				count: 1
+				id: "runeborn:lustrous_stone_4"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "3D4F507250F80126"
+			item: {
+				count: 1
+				id: "runeborn:lustrous_stone_5"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "3F5AE7D657395D94"
+			item: {
+				count: 1
+				id: "runeborn:heros_rune"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "0EB4833377139E9E"
+			item: {
+				count: 1
+				id: "mob_loot_bags:legendarylootbag"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "281FC16E557573DC"
+			item: {
+				count: 1
+				id: "runeborn:hallowed_tear"
+			}
+			weight: 0.5f
+		}
+	]
+}

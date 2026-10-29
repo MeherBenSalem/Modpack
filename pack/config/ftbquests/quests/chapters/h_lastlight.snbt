@@ -1,0 +1,791 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "h_lastlight"
+	group: "7E3F2D0C845CD671"
+	icon: {
+		id: "handcrafted:oak_table"
+	}
+	id: "46A368D9176A5934"
+	images: [ ]
+	order_index: 31
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2D462FB5D6B13E35"]
+			icon: {
+				id: "handcrafted:oak_table"
+			}
+			id: "358480A0A0312181"
+			rewards: [
+				{
+					id: "36F9A9AC7C7BF2F9"
+					table_id: 1235064283976969780L
+					type: "random"
+				}
+				{
+					id: "7AB90AB1B44E9C5A"
+					type: "xp"
+					xp: 60
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "557B5B89336E0EA8"
+					item: {
+						components: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(handcrafted:tables)"
+						}
+						count: 1
+						id: "ftbfiltersystem:smart_filter"
+					}
+					type: "item"
+				}
+				{
+					id: "7EAD80EF7157F9C6"
+					item: {
+						components: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(handcrafted:chairs)"
+						}
+						count: 1
+						id: "ftbfiltersystem:smart_filter"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.75d
+		}
+		{
+			dependencies: ["358480A0A0312181"]
+			icon: {
+				id: "handcrafted:oak_fancy_bed"
+			}
+			id: "047D48D40E43B390"
+			rewards: [
+				{
+					count: 8
+					id: "3D2BABDC4B6A6ED7"
+					item: {
+						count: 1
+						id: "minecraft:white_wool"
+					}
+					type: "item"
+				}
+				{
+					id: "415886620D38332C"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "20ED885C2DAA0D8C"
+					item: {
+						components: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(handcrafted:fancy_beds)"
+						}
+						count: 1
+						id: "ftbfiltersystem:smart_filter"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["047D48D40E43B390"]
+			icon: {
+				id: "handcrafted:skeleton_trophy"
+			}
+			id: "39DE42D02949D134"
+			rewards: [
+				{
+					count: 4
+					id: "2A05BC7370E89876"
+					item: {
+						count: 1
+						id: "remnant_mobs:remnant_shard"
+					}
+					type: "item"
+				}
+				{
+					id: "54FBCFACB89B5857"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "158B4EF0FE56A5EA"
+					item: {
+						components: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(handcrafted:trophies)"
+						}
+						count: 1
+						id: "ftbfiltersystem:smart_filter"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["358480A0A0312181"]
+			icon: {
+				id: "supplementaries:sack"
+			}
+			id: "5045D3883BE1B335"
+			rewards: [
+				{
+					count: 16
+					id: "095D96634A7C8A6F"
+					item: {
+						count: 1
+						id: "minecraft:string"
+					}
+					type: "item"
+				}
+				{
+					id: "004EA36D21B8F706"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "57E560EC2B7311D4"
+					item: {
+						count: 1
+						id: "supplementaries:sack"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5045D3883BE1B335"]
+			icon: {
+				id: "supplementaries:jar"
+			}
+			id: "3CB7A01DC9399058"
+			rewards: [
+				{
+					count: 4
+					id: "36D3FCFF5F763D5C"
+					item: {
+						count: 1
+						id: "minecraft:honey_bottle"
+					}
+					type: "item"
+				}
+				{
+					id: "65D07CF35F18D4E9"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "00104C0214A3794D"
+					item: {
+						count: 1
+						id: "supplementaries:jar"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5045D3883BE1B335"]
+			icon: {
+				id: "supplementaries:quiver"
+			}
+			id: "18B87BE4E12BE468"
+			rewards: [
+				{
+					count: 32
+					id: "0B64C74BB7B8EC1D"
+					item: {
+						count: 1
+						id: "minecraft:arrow"
+					}
+					type: "item"
+				}
+				{
+					id: "2895D0421394ABFF"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "1A346EB0D50D0E98"
+					item: {
+						count: 1
+						id: "supplementaries:quiver"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3CB7A01DC9399058"]
+			icon: {
+				id: "supplementaries:globe"
+			}
+			id: "4948168D26CE48A0"
+			rewards: [
+				{
+					count: 6
+					id: "47E9B4529D68C0B7"
+					item: {
+						count: 1
+						id: "minecraft:emerald"
+					}
+					type: "item"
+				}
+				{
+					id: "598596FB46DB4497"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "1157549EE59C1733"
+					item: {
+						count: 1
+						id: "supplementaries:globe"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["358480A0A0312181"]
+			icon: {
+				id: "reconstructedwands:iron_wand"
+			}
+			id: "4A77FF56062A9728"
+			rewards: [
+				{
+					count: 64
+					id: "45D4AC65B7DB395B"
+					item: {
+						count: 1
+						id: "minecraft:stone_bricks"
+					}
+					type: "item"
+				}
+				{
+					id: "01DFD091E1B1C52D"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "0059621016A4E408"
+					item: {
+						count: 1
+						id: "reconstructedwands:iron_wand"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -1.25d
+		}
+		{
+			dependencies: ["4A77FF56062A9728"]
+			icon: {
+				id: "reconstructedwands:core_architect"
+			}
+			id: "2DC4BEB2E6A7F2FE"
+			rewards: [
+				{
+					count: 4
+					id: "68BFD19E8A67D566"
+					item: {
+						count: 1
+						id: "minecraft:amethyst_shard"
+					}
+					type: "item"
+				}
+				{
+					id: "46A43807CF140F59"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "52F0367666787EE2"
+					item: {
+						count: 1
+						id: "reconstructedwands:core_architect"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -1.25d
+		}
+		{
+			dependencies: ["358480A0A0312181"]
+			icon: {
+				id: "sophisticatedbackpacks:backpack"
+			}
+			id: "6E014AE2ED557564"
+			rewards: [
+				{
+					count: 8
+					id: "25EDE15B110B6930"
+					item: {
+						count: 1
+						id: "minecraft:leather"
+					}
+					type: "item"
+				}
+				{
+					id: "66024B29C8CCB02C"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "7E0ACF63DA43885A"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:backpack"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6E014AE2ED557564"]
+			icon: {
+				id: "sophisticatedbackpacks:iron_backpack"
+			}
+			id: "78776E476DD6B987"
+			rewards: [
+				{
+					count: 8
+					id: "36EE069761E1336A"
+					item: {
+						count: 1
+						id: "minecraft:gold_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "59E1D3769121D699"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "5756E62A020AF1BD"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:iron_backpack"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6E014AE2ED557564"]
+			icon: {
+				id: "sophisticatedbackpacks:pickup_upgrade"
+			}
+			id: "3675ACCA0A03C6D3"
+			rewards: [
+				{
+					count: 2
+					id: "7ADF1AF99995643E"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:upgrade_base"
+					}
+					type: "item"
+				}
+				{
+					id: "6873CA5C7C6298E6"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "7C940A8F760E0CB0"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:pickup_upgrade"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3675ACCA0A03C6D3"]
+			icon: {
+				id: "sophisticatedbackpacks:feeding_upgrade"
+			}
+			id: "2FF7CCB355D5CBF4"
+			rewards: [
+				{
+					id: "27044E3A70E6C3C6"
+					table_id: 2650837858678204095L
+					type: "random"
+				}
+				{
+					id: "5B96BB42EB9332B0"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "5967D2B2EE782776"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:feeding_upgrade"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["78776E476DD6B987"]
+			icon: {
+				id: "minecraft:chest"
+			}
+			id: "2FBD8F55F6E3206B"
+			rewards: [
+				{
+					id: "3B02B0D694D7CB1A"
+					table_id: 139939361058897245L
+					type: "random"
+				}
+				{
+					id: "7813D259541EF8CF"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					advancement: "lootr:10loot"
+					criterion: ""
+					id: "4BC6890BD787C9AA"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["358480A0A0312181"]
+			icon: {
+				id: "sophisticatedstorage:iron_chest"
+			}
+			id: "24B421000D19B905"
+			rewards: [
+				{
+					count: 8
+					id: "34518242D0320784"
+					item: {
+						count: 1
+						id: "minecraft:iron_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "1C13462D40D14763"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "254393F578CDA716"
+					item: {
+						count: 1
+						id: "sophisticatedstorage:iron_chest"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 2.25d
+		}
+		{
+			dependencies: ["24B421000D19B905"]
+			icon: {
+				id: "sophisticatedstorage:controller"
+			}
+			id: "5A752C24FAE57D9C"
+			rewards: [
+				{
+					count: 2
+					id: "2E7EB39F8D1A3C2C"
+					item: {
+						count: 1
+						id: "minecraft:comparator"
+					}
+					type: "item"
+				}
+				{
+					id: "4D9600CABE5A72B1"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "73E53F7090B9F873"
+					item: {
+						count: 1
+						id: "sophisticatedstorage:controller"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 2.25d
+		}
+		{
+			dependencies: ["5A752C24FAE57D9C"]
+			icon: {
+				id: "simple_terminals:crafting_terminal"
+			}
+			id: "2FC050ACF53FEE8A"
+			rewards: [
+				{
+					id: "78A5C83742ABAD8B"
+					table_id: 1235064283976969780L
+					type: "random"
+				}
+				{
+					id: "2F7B56021B75FC0B"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "105274E49D3C37B9"
+					item: {
+						count: 1
+						id: "simple_terminals:crafting_terminal"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 2.25d
+		}
+		{
+			dependencies: ["358480A0A0312181"]
+			icon: {
+				id: "comforts:sleeping_bag_red"
+			}
+			id: "615B8AB77BC469EF"
+			rewards: [
+				{
+					id: "38176590A9733A90"
+					table_id: 7547820078087610474L
+					type: "random"
+				}
+				{
+					id: "70C8B3AA673795D5"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "706881830103E0CF"
+					item: {
+						components: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(comforts:sleeping_bags)"
+						}
+						count: 1
+						id: "ftbfiltersystem:smart_filter"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["615B8AB77BC469EF"]
+			icon: {
+				id: "comforts:hammock_white"
+			}
+			id: "6B4F33F8809D9497"
+			rewards: [
+				{
+					count: 32
+					id: "0B233C50218ED46D"
+					item: {
+						count: 1
+						id: "minecraft:torch"
+					}
+					type: "item"
+				}
+				{
+					id: "66D21A97F17DDF95"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "4A4A9A676BD49688"
+					item: {
+						components: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(comforts:hammocks)"
+						}
+						count: 1
+						id: "ftbfiltersystem:smart_filter"
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "47498C9DCEEFD33A"
+					item: {
+						count: 1
+						id: "comforts:rope_and_nail"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["358480A0A0312181"]
+			icon: {
+				id: "minecraft:emerald"
+			}
+			id: "3231A33EEC9969F2"
+			rewards: [
+				{
+					count: 8
+					id: "7EC9C110588439C0"
+					item: {
+						count: 1
+						id: "minecraft:emerald"
+					}
+					type: "item"
+				}
+				{
+					id: "79E5EAF386D23661"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					advancement: "smartvillagers:first_request"
+					criterion: ""
+					id: "060BB3564AFCC8B0"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: 5.75d
+		}
+		{
+			dependencies: ["3231A33EEC9969F2"]
+			icon: {
+				id: "minecraft:bell"
+			}
+			id: "3247E2B74E352B87"
+			rewards: [
+				{
+					id: "0CD56E7836069520"
+					table_id: 139939361058897245L
+					type: "random"
+				}
+				{
+					id: "75ABF561D3C4217D"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					advancement: "smartvillagers:village_hero"
+					criterion: ""
+					id: "5A11E444B9C2EFAF"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: 5.25d
+		}
+		{
+			dependencies: ["3231A33EEC9969F2"]
+			icon: {
+				id: "minecraft:iron_sword"
+			}
+			id: "15F5C86082963CDF"
+			rewards: [
+				{
+					id: "0EA49B6063827871"
+					item: {
+						count: 1
+						id: "minecraft:iron_sword"
+					}
+					type: "item"
+				}
+				{
+					id: "7E8F8FB956FEA36F"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					advancement: "guardvillagers:adventure/recruit_guard"
+					criterion: ""
+					id: "6753F3C73AF1C9F0"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: 6.25d
+		}
+	]
+}

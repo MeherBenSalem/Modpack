@@ -1,0 +1,73 @@
+{
+	icon: {
+		id: "brewinandchewin:keg"
+	}
+	id: "40BEFDDFA7BC807B"
+	loot_size: 1
+	order_index: 5
+	rewards: [
+		{
+			count: 2
+			id: "67EF92570EC4D32B"
+			item: {
+				count: 1
+				id: "brewinandchewin:beer"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "483FAD32E6B89001"
+			item: {
+				count: 1
+				id: "brewinandchewin:mead"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "249453B8EF1BE1AD"
+			item: {
+				count: 1
+				id: "brewinandchewin:strongroot_ale"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 4
+			id: "7F4FDEB2C7224D8A"
+			item: {
+				count: 1
+				id: "brewinandchewin:flaxen_cheese_wedge"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 6
+			id: "6623E629B7EEED81"
+			item: {
+				count: 1
+				id: "brewinandchewin:jerky"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 4
+			id: "05440A23DCE884CE"
+			item: {
+				count: 1
+				id: "brewinandchewin:kippers"
+			}
+			weight: 1.0f
+		}
+		{
+			count: 4
+			id: "12E121465F547EF8"
+			item: {
+				count: 1
+				id: "brewinandchewin:pizza_slice"
+			}
+			weight: 1.0f
+		}
+	]
+}

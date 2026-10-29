@@ -133,13 +133,15 @@ quests:
     rewards: [{table: sovereign_tribute}, {xp: 600}]
 
   - key: crown
-    title: "The Crown Remade"
+    title: "A Shard of the Crown"
     subtitle: "Wear a piece of the broken sun."
     icon: runeborn:crown_shard_varghast
     deps: [varghast]
     desc: |
-      Every Sovereign but the Dusk Rider leaves a &6Crown Shard&r: a fragment of the Sun-Crown with a lasting boon. Equip one at a shrine.
-    tasks: [{advancement: "runeborn:feats/crown"}]
+      Every Sovereign but the Dusk Rider leaves a &6Crown Shard&r: a fragment of the Sun-Crown with a lasting boon. Equip it at a shrine.
+
+      &7Seven shards remake the Crown. The seventh is not a Sovereign's.
+    tasks: [{item: runeborn:crown_shard_varghast}]
     rewards: [{item: runeborn:hallowed_tear}, {xp: 200}]
 
   - key: rime_veil

@@ -1,0 +1,53 @@
+{
+	icon: {
+		id: "elementals:fire_rune"
+	}
+	id: "2A8F9BA268F4E60E"
+	loot_size: 1
+	order_index: 14
+	rewards: [
+		{
+			id: "0DCD147A75351699"
+			item: {
+				count: 1
+				id: "elementals:fire_rune"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "4EA3A7902803D673"
+			item: {
+				count: 1
+				id: "elementals:water_rune"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 6
+			id: "3B7BD375640F53AD"
+			item: {
+				count: 1
+				id: "minecraft:amethyst_shard"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 8
+			id: "1C1714273C35BBB7"
+			item: {
+				count: 1
+				id: "minecraft:lapis_lazuli"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 8
+			id: "3E150A748B23A5EA"
+			item: {
+				count: 1
+				id: "minecraft:experience_bottle"
+			}
+			weight: 2.0f
+		}
+	]
+}

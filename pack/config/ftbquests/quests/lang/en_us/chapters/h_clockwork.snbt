@@ -1,0 +1,117 @@
+{
+	chapter.254E1D32E51CD0D3.chapter_subtitle: [
+		"&7Optional.&r Some Ashborn remember gears. Light automation for Last Light, with Create."
+	]
+	chapter.254E1D32E51CD0D3.title: "&aThe Clockwork Path"
+	quest.035F99AB6E2BC271.quest_desc: [
+		"Drop copper and zinc ingots into a basin over a lit Blaze Burner and let the mixer turn them into &6Brass&r."
+		""
+		"Brass casings, electron tubes, brass hands: everything past this point needs it."
+	]
+	quest.035F99AB6E2BC271.quest_subtitle: "Gold's honest cousin."
+	quest.035F99AB6E2BC271.title: "&aReal Alloys"
+	quest.053AA33D36140B4E.quest_desc: [
+		"&7This whole path is optional. Nothing in the story needs it; Last Light just runs smoother with it."
+		""
+		"Mix andesite with iron or zinc nuggets into &6Andesite Alloy&r: the bones of every machine to come."
+		""
+		"&o\"The old world ran on wheels and water. It ran right up until it didn't.\"&r"
+	]
+	quest.053AA33D36140B4E.quest_subtitle: "Someone before the Eclipse built machines. Some of you remember how."
+	quest.053AA33D36140B4E.title: "&aAshen Engineers"
+	quest.078DDBFAFBBDF838.quest_desc: [
+		"Arrange &6Mechanical Crafters&r in the shape of a recipe, point them toward each other and give them rotation. They pass the ingredients along and finish the craft on their own."
+	]
+	quest.078DDBFAFBBDF838.quest_subtitle: "A crafting table that does its own work."
+	quest.078DDBFAFBBDF838.title: "Automated Assembly"
+	quest.157BCBD1438177C5.quest_desc: [
+		"A &6Deployer&r uses whatever item it holds on the block in front of it: places, clicks, plants, shears. Point one at a field with seeds in its hand."
+		""
+		"&7It can also attack. It will not dodge."
+	]
+	quest.157BCBD1438177C5.quest_subtitle: "It uses what it holds. It never gets tired."
+	quest.157BCBD1438177C5.title: "A Hand That Isn't Yours"
+	quest.1BB0482EBD1CCB9B.quest_desc: [
+		"Wear &6Engineer's Goggles&r and hold a &6Wrench&r. The goggles show speed and stress on anything you look at; the wrench turns blocks and picks machines up whole."
+	]
+	quest.1BB0482EBD1CCB9B.quest_subtitle: "See the strain before it breaks."
+	quest.1BB0482EBD1CCB9B.title: "Kitted Out"
+	quest.29FDDC247E8E25AD.quest_desc: [
+		"A &6Mechanical Mixer&r over a &6Basin&r combines whatever you drop in."
+		""
+		"Some recipes want heat beneath the basin, and only a &6Blaze Burner&r gives enough of it."
+	]
+	quest.29FDDC247E8E25AD.quest_subtitle: "A basin, and a whisk the size of a man."
+	quest.29FDDC247E8E25AD.title: "Mixing It Up"
+	quest.2AE288B066F21681.quest_desc: [
+		"Use an &6Empty Blaze Burner&r on a living blaze to trap it inside. Feed it fuel and it heats whatever sits above it."
+		""
+		"Blazes live in the &cAshlands&r. Bring a shield, or several."
+	]
+	quest.2AE288B066F21681.quest_subtitle: "Bottle a blaze. Be polite about it."
+	quest.2AE288B066F21681.title: "A Fire That Watches Back"
+	quest.2BACE57C368EB864.quest_desc: [
+		"A &6Windmill Bearing&r with &6sails&r attached turns in any weather, far from any river. More sails, more stress capacity."
+	]
+	quest.2BACE57C368EB864.quest_subtitle: "The wind doesn't care about the sun either."
+	quest.2BACE57C368EB864.title: "A Mild Breeze"
+	quest.4733C14701DD23BA.quest_desc: [
+		"Place a &6Water Wheel&r where flowing water strikes its blades and it turns everything connected to it."
+		""
+		"Each source gives a little &6stress capacity&r and each machine draws some. Ask too much and the whole line stops: add wheels, or slow things down."
+	]
+	quest.4733C14701DD23BA.quest_subtitle: "The rivers still run. Put them to work."
+	quest.4733C14701DD23BA.title: "Harnessed Hydraulics"
+	quest.48066C21C40D4177.quest_desc: [
+		"&6Zinc Ore&r hides underground in pale veins. Smelt the raw zinc into ingots."
+		""
+		"Copper and zinc together make brass. Brass makes the clever machines."
+	]
+	quest.48066C21C40D4177.quest_subtitle: "Zinc, deep and patient."
+	quest.48066C21C40D4177.title: "A Grey Metal"
+	quest.4F1CC87DF85FA7DC.quest_desc: [
+		"Use Andesite Alloy on a &6stripped log&r to make &6Andesite Casing&r. Most of the early machines are built around it."
+	]
+	quest.4F1CC87DF85FA7DC.quest_subtitle: "Every machine needs a coat."
+	quest.4F1CC87DF85FA7DC.title: "The Andesite Age"
+	quest.5B17BE44F64CBE69.quest_desc: [
+		"A &6Millstone&r grinds wheat into &6flour&r, bones into bone meal and raw ore into crushed ore."
+		""
+		"Flour and water make dough. The Hearth & Harvest kitchen will thank you."
+	]
+	quest.5B17BE44F64CBE69.quest_subtitle: "Flour for the kitchen."
+	quest.5B17BE44F64CBE69.title: "Embrace the Grind"
+	quest.60F8EFC33FD55BED.quest_desc: [
+		"Fix &6Mechanical Harvesters&r, drills or saws to a moving frame (a bearing, a piston, a cart) and set it in motion. That's a &6contraption&r: the old world's favourite trick."
+		""
+		"A harvester boom sweeping the wheat while you're off killing Sovereigns. Last Light, fed by clockwork."
+	]
+	quest.60F8EFC33FD55BED.quest_subtitle: "Harvesters on a bearing, sweeping the fields."
+	quest.60F8EFC33FD55BED.title: "&aMoving with Purpose"
+	quest.6988026593AB272B.quest_desc: [
+		"&6Shafts&r carry rotation in a straight line. &6Cogwheels&r pass it sideways, and a &6Large Cogwheel&r meshed with a small one changes the speed."
+		""
+		"Everything in Create turns. Learn to make it turn."
+	]
+	quest.6988026593AB272B.quest_subtitle: "Turn one thing; turn everything."
+	quest.6988026593AB272B.title: "Shafts and Cogs"
+	quest.6C6C3832262BBC37.quest_desc: [
+		"Blow an &6Encased Fan&r through fire to smoke, through lava to smelt, through water to wash. Through &6soul fire&r it &6haunts&r: things come out the other side changed."
+		""
+		"Run a belt of raw meat past a fire and the whole village eats tonight."
+	]
+	quest.6C6C3832262BBC37.quest_subtitle: "Bulk cooking, the engineer's way."
+	quest.6C6C3832262BBC37.title: "Through Fire and Soul Fire"
+	quest.74E6CDE38393A866.quest_desc: [
+		"Craft a &6Mechanical Belt&r from dried kelp and connect two shafts with it. Items ride along it, and presses and fans work on them as they pass."
+	]
+	quest.74E6CDE38393A866.quest_subtitle: "Make the work come to you."
+	quest.74E6CDE38393A866.title: "On the Belt"
+	quest.7CC8D5C9FD545DC8.quest_desc: [
+		"Set a powered &6Mechanical Press&r over a depot or a belt and feed it ingots. Out come &6iron sheets&r, the plates half of Create's recipes ask for."
+		""
+		"Over a basin, the same press compacts things instead."
+	]
+	quest.7CC8D5C9FD545DC8.quest_subtitle: "Ingots in, sheets out."
+	quest.7CC8D5C9FD545DC8.title: "Pressed Flat"
+}

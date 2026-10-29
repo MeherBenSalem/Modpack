@@ -1,0 +1,311 @@
+chapter: w_dungeons
+group: world
+order: 21
+title: "&bThe Dungeon Trail"
+subtitle: "Prisons, crypts, temples and forts. Somebody built them to keep things in."
+icon: minecraft:spawner
+quests:
+  # ---- Much More Dungeons: the four dungeons, each vault mapping the next ----
+  - key: villa
+    title: "Contraband"
+    subtitle: "Tier I: the Smuggler's Villa."
+    icon: minecraft:filled_map
+    pos: [0, 0]
+    deps: [s1_act1_embers/kindle]
+    desc: |
+      The &6dungeon trail&r starts with thieves. A &6Smuggler's Villa&r stands in the open plains, meadows, flower forests and savannas.
+
+      Every dungeon on the trail has a named guardian and a vault, and every vault holds a &6Dungeon Map&r to the next, harder one. Follow the maps.
+
+      &7An Explorer's Compass finds them too, if you'd rather not read.
+    tasks: [{advancement: "muchmoredungeons:discover_outdoor_villa", title: "Find a Smuggler's Villa"}]
+    rewards: [{table: world_delver_cache}, {xp: 200}]
+
+  - key: spire
+    title: "Spellbound Heights"
+    subtitle: "Tier II: the Arcane Spire."
+    icon: minecraft:enchanted_book
+    pos: [2, 0]
+    deps: [villa]
+    desc: |
+      The villa's map points to a tower in the forests and taigas. The &6Arcane Spire&r belongs to a &6Spire Illusionist&r, who prefers you confused.
+
+      Climb it. Count the copies. Hit the one that bleeds.
+    tasks: [{advancement: "muchmoredungeons:discover_tower_dungeon", title: "Enter an Arcane Spire"}]
+    rewards: [{table: world_hunt_spoils}, {xp: 300}]
+
+  - key: cursed_keep
+    title: "Cursed Ground"
+    subtitle: "Tier III: the Cursed Keep."
+    icon: minecraft:zombie_head
+    pos: [4, 0]
+    deps: [spire, s1_act2_hunt/sylvara]
+    desc: |
+      The third map leads to the hot, wet edges of the world: deserts, badlands, jungles, swamps. The &6Cursed Keep&r is held by the &6Keep Warlord&r, and he hasn't been relieved in an age.
+
+      &7Cartographers disagree on whether it's the second or third dungeon. The map says III. Trust the map.
+    tasks: [{advancement: "muchmoredungeons:discover_dungeon_t2", title: "Enter a Cursed Keep"}]
+    rewards: [{table: world_deep_spoils}, {xp: 400}]
+
+  - key: soulfire
+    title: "Cold Fire"
+    subtitle: "Tier IV: the Soulfire Crypt."
+    icon: minecraft:soul_lantern
+    pos: [6, 0]
+    deps: [cursed_keep, s1_act3_deep/ysolde]
+    desc: |
+      The last map points to the snow: plains, slopes, groves and taigas. Under the ice burns the &6Soulfire Crypt&r, and the &6Cinder Warden&r keeps its fire blue.
+
+      Fire Resistance won't save you from what's holding the sword. It helps with everything else.
+    tasks: [{advancement: "muchmoredungeons:discover_soulfire_crypt", title: "Enter a Soulfire Crypt"}]
+    rewards: [{table: world_ash_spoils}, {xp: 500}]
+
+  - key: delver
+    title: "&6Dungeon Delver"
+    subtitle: "All four dungeons."
+    icon: minecraft:spawner
+    pos: [8.5, 0]
+    shape: hexagon
+    size: 1.5
+    deps: [soulfire]
+    desc: |
+      Villa, Spire, Keep and Crypt. Four doors the Sovereigns' servants locked, and you walked through every one.
+
+      &o"Most people follow a treasure map once. You followed four. That's not luck, that's a habit."&r
+    tasks: [{advancement: "muchmoredungeons:all_dungeons", title: "Enter all four dungeons"}]
+    rewards: [{item: runeborn:heros_rune}, {item: mob_loot_bags:epiclootbag}, {xp: 800}]
+
+  # ---- Much More Dungeons: the six Labyrinths ----
+  - key: catacombs
+    title: "Rest in Pieces"
+    subtitle: "A Labyrinth: the Forgotten Catacombs."
+    icon: minecraft:bone_block
+    pos: [0, 2.5]
+    deps: [s1_act2_hunt/hunters_moon]
+    desc: |
+      The &6Labyrinths&r are prisons the Sovereigns dug for things they could not kill. Six of them wind under the world.
+
+      The nearest lies under the plains, meadows and forests: the &6Forgotten Catacombs&r. Walk in. Remember the way out.
+    tasks: [{advancement: "muchmoredungeons:discover_catacombs", title: "Enter the Forgotten Catacombs"}]
+    rewards: [{table: world_delver_cache}, {xp: 250}]
+
+  - key: tomb
+    title: "Dethroned"
+    subtitle: "A Labyrinth: the Sunscorched Tomb."
+    icon: minecraft:sandstone
+    pos: [2, 2.5]
+    deps: [catacombs]
+    desc: |
+      Under the deserts and badlands, a king was buried with his court and never told to stop ruling. The &6Tomb King&r is a husk with a crown and a long memory.
+
+      Bring food and a way to see in the dark. Leave with whatever he was holding; guardians always drop their weapons.
+    tasks:
+      - {advancement: "muchmoredungeons:discover_sandstone_tomb", title: "Enter the Sunscorched Tomb"}
+      - {advancement: "muchmoredungeons:slay_sandstone_tomb_guardian", title: "Defeat the Tomb King"}
+    rewards: [{table: world_hunt_spoils}, {xp: 450}]
+
+  - key: warrens
+    title: "Exterminator"
+    subtitle: "A Labyrinth: the Verdant Warrens."
+    icon: minecraft:cobweb
+    pos: [4, 2.5]
+    deps: [catacombs]
+    desc: |
+      Under jungles, swamps and lush caves, the &6Verdant Warrens&r breed spiders the way other places grow moss. At the heart sits the &6Broodmother&r.
+
+      Shears for the webs, a sword for the rest, and don't look up.
+    tasks:
+      - {advancement: "muchmoredungeons:discover_overgrown_warrens", title: "Enter the Verdant Warrens"}
+      - {advancement: "muchmoredungeons:slay_overgrown_warrens_guardian", title: "Defeat the Broodmother"}
+    rewards: [{table: world_hunt_spoils}, {xp: 450}]
+
+  - key: every_maze
+    title: "&6Into Every Maze"
+    subtitle: "All six Labyrinths."
+    icon: minecraft:recovery_compass
+    pos: [8.5, 2.5]
+    shape: hexagon
+    size: 1.5
+    deps: [tomb, warrens, s1_act3_deep/ysolde]
+    desc: |
+      Six prisons. The &6Catacombs&r, the &6Tomb&r and the &6Warrens&r you know. The &6Rimefrost Vaults&r lie under the snow, the &6Abyssal Halls&r deep under everything, and the &6Infernal Bastille&r burns in the Ashlands.
+
+      Enter them all. Whether you leave each one is, technically, a separate matter.
+    tasks: [{advancement: "muchmoredungeons:all_labyrinths", title: "Enter all six Labyrinths"}]
+    rewards: [{item: runeborn:heros_rune}, {item: mob_loot_bags:legendarylootbag}, {xp: 1000}]
+
+  # ---- YUNG's old places ----
+  - key: bones_and_webs
+    title: "Bones and Webs"
+    subtitle: "Spawner rooms that grew up."
+    icon: minecraft:skeleton_skull
+    pos: [0, 5]
+    deps: [s1_act1_embers/kindle]
+    desc: |
+      The old monster rooms aren't small anymore. Some became &6Fortresses of the Undead&r, skeletons stacked to the ceiling. Others became &6Spider Caves&r, and you can guess.
+
+      Break the spawners, or light them out. Loot the chests either way.
+    tasks:
+      - {structure: "betterdungeons:skeleton_dungeon", title: "Enter a Fortress of the Undead"}
+      - {structure: "betterdungeons:spider_dungeon", title: "Find a Spider Cave"}
+    rewards: [{table: world_delver_cache}, {xp: 200}]
+
+  - key: mineshaft
+    title: "Old Workings"
+    subtitle: "Someone dug for something. Then stopped."
+    icon: minecraft:rail
+    pos: [2, 5]
+    deps: [s1_act1_embers/kindle]
+    desc: |
+      Mineshafts run under every kind of land, and each one is built from what was growing above it: spruce in the taiga, acacia in the savanna, ice in the cold.
+
+      Ore, rails and the occasional chest. Mind the cave spiders, and don't ask why the miners left.
+    tasks: [{structure: "#bettermineshafts:better_mineshafts", title: "Walk into a mineshaft"}]
+    rewards: [{table: ashborn_provisions}, {item: minecraft:iron_ingot, count: 8}, {xp: 150}]
+
+  - key: desert_temple
+    title: "Eternal Slumber"
+    subtitle: "A temple, a curse, a Pharaoh."
+    icon: minecraft:chiseled_sandstone
+    pos: [4, 5]
+    deps: [s1_act1_embers/kindle]
+    desc: |
+      The desert temples go deeper than they used to. Traps, puzzles, a curse that slows your hands, and at the bottom a &6Pharaoh&r who never agreed to leave.
+
+      Watch the floor, read the walls, and end him. The curse lifts when he does.
+    tasks:
+      - {advancement: "betterdeserttemples:temple_entry", title: "Enter a desert temple"}
+      - {advancement: "betterdeserttemples:temple_clear", title: "Slay the Pharaoh"}
+    rewards: [{table: world_ember_spoils}, {xp: 300}]
+
+  - key: jungle_temple
+    title: "Under the Vines"
+    subtitle: "The jungle remembers who built it."
+    icon: minecraft:mossy_cobblestone
+    pos: [6, 5]
+    deps: [s1_act1_embers/kindle]
+    desc: |
+      The jungle temples are bigger, older and meaner than the stories. Tripwires, darts and puzzles that kill you for guessing.
+
+      Go slowly. Step where the last one didn't.
+    tasks: [{structure: "betterjungletemples:jungle_temple", title: "Enter a jungle temple"}]
+    rewards: [{table: world_delver_cache}, {xp: 250}]
+
+  - key: monument
+    title: "The Drowned Halls"
+    subtitle: "An ocean monument, inside and out."
+    icon: minecraft:prismarine_bricks
+    pos: [0, 7.5]
+    deps: [s1_act2_hunt/sylvara]
+    desc: |
+      The ocean monuments are halls now, wings and galleries and a throne for an Old Power. Its lesser guardians patrol every corridor.
+
+      Water Breathing, Night Vision, a door or two for air pockets. Clear the patrols and the monument is yours to search.
+    tasks:
+      - {structure: "betteroceanmonuments:ocean_monument", title: "Enter an ocean monument"}
+      - {kill: "minecraft:guardian", count: 6}
+    rewards: [{table: world_deep_spoils}, {xp: 400}]
+
+  - key: fortress
+    title: "Skulls for the Withering"
+    subtitle: "A Nether fortress, and what it guards."
+    icon: minecraft:wither_skeleton_skull
+    pos: [2, 7.5]
+    deps: [s1_act3_deep/ysolde]
+    desc: |
+      The Ashlands' fortresses sprawl now: halls, bridges, a forge or two. Wither skeletons walk them with their heads still on.
+
+      Three of those heads build the Wither. Take them.
+    tasks:
+      - {structure: "betterfortresses:fortress", title: "Enter a Nether fortress"}
+      - {item: "minecraft:wither_skeleton_skull", count: 3}
+    rewards: [{table: world_ash_spoils}, {xp: 400}]
+
+  - key: stronghold
+    title: "The Eye's Road"
+    subtitle: "A stronghold, a library, a door."
+    icon: minecraft:ender_eye
+    pos: [4, 7.5]
+    deps: [s1_act3_deep/ysolde]
+    desc: |
+      Strongholds are proper dungeons now: prisons, crypts, libraries and traps, all built around a door to the Last Shore.
+
+      Eyes of Ender lead you there. Bring more than you think. Bring torches for the way back.
+    tasks: [{structure: "betterstrongholds:stronghold", title: "Enter a stronghold"}]
+    rewards: [{table: world_ash_spoils}, {xp: 300}]
+
+  # ---- Set pieces, crypts and forts ----
+  - key: plague_asylum
+    title: "The Plague Asylum"
+    subtitle: "When Dungeons Arise. A forest set piece."
+    icon: minecraft:fermented_spider_eye
+    pos: [0, 10]
+    deps: [s1_act2_hunt/hunters_moon]
+    desc: |
+      Somebody tried to cure the dead. Somebody failed. The &6Plague Asylum&r stands in the forests, floor upon floor of wards nobody walked out of.
+
+      Bring friends. It's a co-op dungeon on purpose.
+    tasks: [{advancement: "dungeons_arise:find_plague_asylum", title: "Find a Plague Asylum"}]
+    rewards: [{table: world_hunt_spoils}, {xp: 400}]
+
+  - key: keep_kayra
+    title: "Keep Kayra"
+    subtitle: "When Dungeons Arise. A fortress in the swamp."
+    icon: minecraft:iron_bars
+    pos: [2, 10]
+    deps: [s1_act2_hunt/sylvara]
+    desc: |
+      A walled keep sinking into a swamp, still garrisoned, still loyal to someone who died a long time ago.
+
+      Storm the walls or find the side door. Both are traditional.
+    tasks: [{advancement: "dungeons_arise:find_keep_kayra", title: "Find Keep Kayra"}]
+    rewards: [{table: world_deep_spoils}, {xp: 500}]
+
+  - key: crypt
+    title: "Into Darkness"
+    subtitle: "The Graveyard. A crypt underground."
+    icon: graveyard:vial_of_blood
+    pos: [4, 10]
+    deps: [s1_act1_embers/kindle]
+    desc: |
+      Under the graveyards are the &6crypts&r: coffins, candles and acolytes who pray to things that answer.
+
+      Don't open a coffin unless you're ready for what's inside. Wraiths don't forgive being woken.
+    tasks: [{structure: "graveyard:crypt", title: "Find an underground crypt"}]
+    rewards: [{table: world_delver_cache}, {xp: 250}]
+
+  - key: illager_fort
+    title: "The Illagers' Fort"
+    subtitle: "Illager Invasion. Taiga and snow."
+    icon: minecraft:crossbow
+    pos: [6, 10]
+    deps: [s1_act2_hunt/hunters_moon]
+    desc: |
+      The illagers stopped raiding villages long enough to build themselves a &6fort&r in the taiga. Then they went back to raiding.
+
+      &6Inquisitors&r hold the gates, &6Provokers&r stir up the garrison, and vindicators do what vindicators do. Take the walls first.
+    tasks: [{structure: "illagerinvasion:illager_fort", title: "Find an Illager Fort"}]
+    rewards: [{table: world_hunt_spoils}, {xp: 350}]
+
+  - key: cataclysm_lairs
+    title: "&6Lairs of the Cataclysm"
+    subtitle: "Eight arenas across three worlds."
+    icon: cataclysm:monstrous_eye
+    pos: [8.5, 10]
+    shape: hexagon
+    size: 1.5
+    deps: [s1_act2_hunt/sylvara]
+    desc: |
+      Eight great lairs, each built around something that should have stayed asleep: a pyramid, a prison, a factory and a sunken city in the Overworld; an arena and a forge in the Ashlands; a citadel at the Last Shore; an acropolis over the warm sea.
+
+      Cataclysm's &6Eyes&r fly toward their lairs like Eyes of Ender. Find all eight. Fighting what's inside is the Compendium's business.
+    tasks:
+      - {advancement: "cataclysm:find_cursed_pyramid", title: "The Cursed Pyramid"}
+      - {advancement: "cataclysm:find_frosted_prison", title: "The Frosted Prison"}
+      - {advancement: "cataclysm:find_ancient_factory", title: "The Ancient Factory"}
+      - {advancement: "cataclysm:find_sunken_city", title: "The Sunken City"}
+      - {advancement: "cataclysm:find_acropolis", title: "The Acropolis"}
+      - {advancement: "cataclysm:find_burning_arena", title: "The Burning Arena"}
+      - {advancement: "cataclysm:find_soul_black_smith", title: "The Soul Forge"}
+      - {advancement: "cataclysm:find_ruined_citadel", title: "The Ruined Citadel"}
+    rewards: [{table: world_eclipse_spoils}, {xp: 1000}]

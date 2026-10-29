@@ -172,3 +172,15 @@ quests:
       &o"Seven embers. One left, and it isn't in this world. Rest first, Ashborn. Then we find the black sun."&r
     tasks: [{item: runeborn:sigil_vaelorn}, {advancement: "runeborn:feats/fell_vaelorn"}]
     rewards: [{table: sovereign_tribute}, {item: runeborn:sovereign_tempering_stone}, {xp: 2000}]
+
+  - key: crown_remade
+    title: "&6The Crown Remade"
+    subtitle: "Seven shards. One Sun-Crown."
+    icon: runeborn:crown_shard_ender_dragon
+    deps: [dragon]
+    optional: true
+    shape: hexagon
+    desc: |
+      Six Sovereigns' shards and the Dragon's. The Sun-Crown, whole for the first time since it was broken. It doesn't fit anyone. That was always the problem.
+    tasks: [{advancement: "runeborn:feats/crown"}]
+    rewards: [{item: runeborn:sovereign_rune}, {xp: 1000}]

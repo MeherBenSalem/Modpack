@@ -1,0 +1,78 @@
+{
+	icon: {
+		id: "aquaculture:tackle_box"
+	}
+	id: "48C49FF6FDFC3A35"
+	loot_size: 1
+	order_index: 6
+	rewards: [
+		{
+			count: 8
+			id: "709ECC96B5AE75CE"
+			item: {
+				count: 1
+				id: "fisherman_house:fish_bait"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 6
+			id: "699637C35455AC42"
+			item: {
+				count: 1
+				id: "fisherman_house:chum"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 4
+			id: "71F429455B3537EE"
+			item: {
+				count: 1
+				id: "fisherman_house:glow_bait"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 8
+			id: "6E2E9870495175DA"
+			item: {
+				count: 1
+				id: "aquaculture:worm"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "4164F66561898625"
+			item: {
+				count: 1
+				id: "aquaculture:gold_hook"
+			}
+			weight: 1.0f
+		}
+		{
+			id: "195DC87416CCD556"
+			item: {
+				count: 1
+				id: "aquaculture:double_hook"
+			}
+			weight: 1.0f
+		}
+		{
+			id: "3DB5F699D4D9DBED"
+			item: {
+				count: 1
+				id: "aquaculture:light_hook"
+			}
+			weight: 1.0f
+		}
+		{
+			id: "3EB29B725C97DB8B"
+			item: {
+				count: 1
+				id: "fisherman_house:message_in_a_bottle"
+			}
+			weight: 0.5f
+		}
+	]
+}

@@ -362,10 +362,12 @@
 			]
 			tasks: [
 				{
-					advancement: "runeborn:feats/crown"
-					criterion: ""
 					id: "12948494D179B48D"
-					type: "advancement"
+					item: {
+						count: 1
+						id: "runeborn:crown_shard_varghast"
+					}
+					type: "item"
 				}
 			]
 			x: 6.0d

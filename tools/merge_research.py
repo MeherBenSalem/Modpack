@@ -51,6 +51,10 @@ def main():
     for slug, (decision, group, reason) in sorted(chosen.items(), key=lambda kv: (kv[1][1], kv[0])):
         m = {k: known[slug].get(k) for k in FIELDS if known[slug].get(k) is not None}
         m["side"] = side_fix.get(slug, m.get("side", "both"))
+        if m["side"] == "server":
+            # Singleplayer runs an integrated server on the client, so "server-side" worldgen and structure mods
+            # must be installed on clients too. Only client-only mods ever skip a side.
+            m["side"] = "both"
         if slug in (cur.get("curseforge_overrides") or {}):
             m["curseforge"] = cur["curseforge_overrides"][slug]
         if (m.get("modrinth") or m.get("curseforge") or {}).get("filename", "").endswith(".zip"):

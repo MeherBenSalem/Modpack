@@ -1,0 +1,326 @@
+chapter: p_codex
+group: paths
+order: 10
+title: "&eThe Ashen Codex"
+subtitle: "Everything the dark will try, written in the margins. Press I."
+icon: minecraft:writable_book
+quests:
+  # ---- the body: stamina, arts, shrines, flasks ----
+  - key: codex
+    pos: [0, 0]
+    title: "&eThe Ashen Codex"
+    subtitle: "All a Runeborn must know."
+    icon: minecraft:writable_book
+    deps: [s1_prologue/rise]
+    shape: hexagon
+    size: 1.5
+    desc: |
+      Press &eI&r for your &6Status&r. The &6Codex&r inside it holds the rules of this world: runes, shrines, flasks, armaments, Sovereigns.
+
+      This chapter is the margin notes. Each page teaches one system and checks that you've actually used it.
+
+      &o"Read it twice. The dead have."&r
+    tasks: [{advancement: "runeborn:feats/root", title: "Choose who you were"}]
+    rewards: [{item: minecraft:torch, count: 16}, {xp: 30}]
+
+  - key: stamina
+    pos: [2, -4.5]
+    title: "The Green Bar"
+    subtitle: "Stamina, and the roll that saves you."
+    icon: minecraft:feather
+    deps: [codex]
+    desc: |
+      Every swing and every roll spends &astamina&r. It comes back fast the moment you stop. Fight it down to nothing and your blows land at &c60%&r.
+
+      Tap &eLeft Alt&r to &6roll&r. A roll costs nearly two straight-sword swings, and for a third of a second nothing can touch you. Roll &ointo&r the blow, not away from it.
+
+      Spiders leap. Roll under the leap and cut as it lands.
+    tasks: [{kill: minecraft:spider, count: 4}]
+    rewards: [{item: minecraft:cooked_beef, count: 4}, {xp: 40}]
+
+  - key: arts
+    pos: [4, -4.5]
+    title: "Arts and the Blue Bar"
+    subtitle: "FP is spent, not owed."
+    icon: minecraft:lapis_lazuli
+    deps: [stamina]
+    desc: |
+      Every armament carries a &6weapon art&r. Press &eR&r to unleash it. Arts cost &bFP&r, the blue bar, and recharge after a short cooldown.
+
+      Staves cast &bsorceries&r that scale with Intelligence; sacred seals cast &eincantations&r that scale with Faith. On a catalyst, &eR&r casts its bound spell.
+
+      &bMind&r raises your FP. It trickles back on its own, slowly. The Azure Flask is faster.
+    tasks: [{checkmark: "I unleashed a weapon art (R)"}]
+    rewards: [{xp: 40}]
+
+  - key: shrine
+    pos: [6, -4.5]
+    title: "Rest by the Flame"
+    subtitle: "Heal, refill, and choose where you wake."
+    icon: runeborn:ember_shrine
+    deps: [arts]
+    desc: |
+      Use a placed &6Ember Shrine&r to kindle it. &aRest&r restores health and FP, refills your flasks and binds your return there when you fall. You can't rest with enemies close; neither could anyone else, which is why the shrines survived.
+
+      The menu holds the rest: &6Level Up&r, &6Reinforce&r, &6Infuse&r, &6Flasks&r, &6Travel&r, the &6Merchant&r, &6Relics&r, &6Crown Shards&r and &6Rebirth&r.
+    tasks: [{advancement: "runeborn:feats/kindle", title: "Kindle an Ember Shrine"}]
+    rewards: [{item: minecraft:blaze_powder, count: 2}, {xp: 40}]
+
+  - key: flasks
+    pos: [8, -7.5]
+    title: "Ember and Azure"
+    subtitle: "Tears of the shrine flame."
+    icon: runeborn:ember_flask
+    deps: [shrine]
+    desc: |
+      The &6Ember Flask&r restores health; the &bAzure Flask&r restores FP. Use one to drink. Every charge comes back when you rest, and the shrine's &6Flasks&r service splits your charges between the two.
+
+      A &6Sunseed&r adds a charge, up to fourteen. A &6Hallowed Tear&r makes every sip stronger. Champions and Sovereigns carry them, and the Keeper will part with a Sunseed for enough shards and gold.
+    tasks: [{item: runeborn:sunseed}]
+    rewards: [{item: minecraft:glistering_melon_slice, count: 2}, {item: minecraft:amethyst_shard, count: 2}, {xp: 80}]
+
+  - key: travel
+    pos: [8, -6]
+    title: "Between Two Fires"
+    subtitle: "The road is shorter if you've lit both ends."
+    icon: minecraft:ender_pearl
+    deps: [shrine]
+    desc: |
+      A kindled shrine stays kindled, and every one is a door. Open &6Travel&r at any shrine to step out at another.
+
+      Kindle them where you'll need to come back: the mouth of a dungeon, the edge of the Ashlands, the road home.
+    tasks: [{advancement: "runeborn:feats/travel"}]
+    rewards: [{item: minecraft:ender_pearl, count: 2}, {xp: 60}]
+
+  - key: level_up
+    pos: [8, -4.5]
+    title: "Runebearer"
+    subtitle: "Two ladders, one climb."
+    icon: runeborn:radiant_rune
+    deps: [shrine]
+    desc: |
+      &6Level Up&r at a shrine spends runes on one of eight attributes: &6Vigor&r (health), &bMind&r (FP), &aEndurance&r (stamina and poise), &6Strength&r, &6Dexterity&r, &bIntelligence&r, &eFaith&r and &dArcane&r (status and discovery). Your rune level is their sum.
+
+      Every rune level also grants an &6RPG level&r, with points for your &eK&r screen.
+
+      Reach rune level 50.
+    tasks: [{advancement: "runeborn:feats/level_50"}]
+    rewards: [{item: runeborn:lustrous_rune, count: 2}, {xp: 300}]
+
+  - key: reinforce
+    pos: [8, -3]
+    title: "The Smith's Service"
+    subtitle: "Stones the dead leave behind."
+    icon: runeborn:tempering_stone_1
+    deps: [shrine]
+    desc: |
+      &6Reinforce&r at a shrine spends runes and stones to raise an armament's plus. Standard steel climbs on &6Tempering Stones&r; unique armaments on &6Lustrous Stones&r.
+
+      The first stones are cheap: iron, flint and cobbled deepslate make two. The rest of the trade lives in &eThe Armory&r.
+    tasks: [{item: runeborn:tempering_stone_1, count: 8}]
+    rewards: [{item: runeborn:tempering_stone_2, count: 2}, {xp: 50}]
+
+  - key: minimap
+    pos: [8, -1.5]
+    title: "Ink and Grace"
+    subtitle: "Mark the fires. The map remembers the rest."
+    icon: minecraft:filled_map
+    deps: [corpse, shrine]
+    desc: |
+      Your map is parchment and ink, fogged over every land you haven't walked. &eN&r hides the minimap, &eM&r opens the world map, &eB&r places a marker.
+
+      Shrines don't mark themselves. Stand at yours, press &eB&r and pick the &6Site of Grace&r emblem. On the world map, &eG&r lists every grace you've marked.
+
+      Where you die, the map leaves a &cBloodstain&r (it keeps the last three). Your last bed is your &aResting Place&r.
+    tasks: [{checkmark: "I marked a shrine as a Site of Grace"}]
+    rewards: [{xp: 40}]
+
+  # ---- death: runes, the Echo, the corpse ----
+  - key: runes
+    pos: [2, -1.5]
+    title: "Light in Your Pocket"
+    subtitle: "Runes you hold are runes you can lose."
+    icon: runeborn:faded_rune
+    deps: [codex]
+    desc: |
+      Everything you kill pays &6runes&r: more for higher levels, far more for champions and Sovereigns. They're held, not banked. When you die, they stay where you fell.
+
+      Sometimes the dead drop runes as an item: a &6Faded Rune&r is 200, a Lustrous 1,000, a Radiant 4,000. An item in your pack goes into your corpse when you die, not into the ash. Crush it when you're standing at a shrine, not before.
+    tasks: [{advancement: "runeborn:feats/died", title: "Fall"}]
+    rewards: [{item: runeborn:faded_rune, count: 2}, {xp: 40}]
+
+  - key: echo
+    pos: [4, -1.5]
+    title: "&cEcho of the Fallen"
+    subtitle: "Your death leaves a Remnant."
+    icon: minecraft:zombie_head
+    deps: [runes]
+    desc: |
+      Where you fall, an &cEcho&r rises: &c"Echo of <you>"&r, wearing a copy of your armour and swinging a copy of your weapon, with twice the health it deserves. Fire won't touch it. It stands over your runes.
+
+      It rises as a zombie, a wither skeleton in the Ashlands, an enderman in the End. Put it down and walk into the glow.
+
+      Die again first and the Echo fades, with every rune it guarded. &7The Fractured Archive keeps its own rules; no Echo rises there.&r
+    tasks: [{advancement: "runeborn:feats/reclaimed", title: "Reclaim your lost runes"}]
+    rewards: [{table: paths_ashen_lessons}, {xp: 80}]
+
+  - key: corpse
+    pos: [6, -1.5]
+    title: "What the Corpse Keeps"
+    subtitle: "Your things wait where you fell."
+    icon: minecraft:chest
+    deps: [echo]
+    desc: |
+      Your gear doesn't scatter. It stays in your &6corpse&r, lying where you died. Open it and take everything back with &6Transfer Items&r.
+
+      The Echo's armour is only a copy, and it drops nothing. The real thing is in the corpse it's standing on, which is exactly why it's standing there.
+    tasks: [{checkmark: "I took my gear back from my corpse"}]
+    rewards: [{xp: 40}]
+
+  # ---- the second ladder: Valor and RPG levels ----
+  - key: valor
+    pos: [2, 0]
+    title: "Valor and the K Screen"
+    subtitle: "Kills pay twice."
+    icon: remnant_mobs:remnant_shard
+    deps: [codex]
+    desc: |
+      Kills also pay &6Valor&r. Valor fills your &6RPG level&r, and every level gives points for Vitality, Attack Power, Attack Speed, Protection, Toughness, Agility, Fortitude and Exploration.
+
+      Press &eK&r. Stage points with the arrow keys (&eShift&r for five), read the &7current → after&r preview, and press &eEnter&r to confirm.
+
+      A &6Remnant Shard&r is 15 Valor waiting to be crushed. Sneak to crush the stack.
+    tasks: [{advancement: "remnant_mobs:taste_of_valor", title: "Absorb a Remnant Shard"}]
+    rewards: [{item: remnant_mobs:remnant_shard, count: 4}, {xp: 50}]
+
+  - key: item_locks
+    pos: [4, 0]
+    title: "Earned, Not Found"
+    subtitle: "Diamond is a promise you have to keep."
+    icon: minecraft:diamond_pickaxe
+    deps: [valor]
+    desc: |
+      Some gear refuses a weak hand. &bDiamond&r tools and weapons need &612 Attack Power&r; diamond armour needs &612 Protection&r. &5Netherite&r asks for 30.
+
+      The tooltip tells you what's missing. Find the diamonds whenever you like. Spend the points before you swing.
+    tasks: [{item: minecraft:diamond_pickaxe}]
+    rewards: [{item: minecraft:diamond, count: 2}, {xp: 80}]
+
+  # ---- the hunted: threat, ranks, traits, the moon ----
+  - key: threat
+    pos: [2, 4.5]
+    title: "Reading the Threat"
+    subtitle: "The dark has a number. Learn to read it."
+    icon: remnant_mobs:hunters_lens
+    deps: [codex]
+    desc: |
+      A monster's level comes from where it rose: &7+1 for every 128 blocks from spawn, +1 every 4 days (up to 15), +1 for every 12 blocks below Y 32&r. Ruins set a floor: outposts 12, fortresses 20, strongholds 25, bastions 30, ancient cities 40. The Ashlands start at 15.
+
+      Your own level drags theirs a third of the way toward you. Kills above your level pay half again; kills far below pay a quarter.
+
+      Hold a &6Hunter's Lens&r to read the area. Look through it to read one monster whole.
+    tasks: [{advancement: "remnant_mobs:know_thy_enemy", title: "Look through a Hunter's Lens"}]
+    rewards: [{xp: 50}]
+
+  - key: ranks
+    pos: [4, 4.5]
+    title: "Crest and Rank"
+    subtitle: "Some of them have died before."
+    icon: minecraft:goat_horn
+    deps: [threat]
+    desc: |
+      Monsters that rose more than once wear a crest: &7Common&r → &aVeteran&r → &9Elite&r → &5Champion&r → &cRemnant&r. Each rank pays more experience (up to ten times), extra loot, a &6Remnant Shard&r and bonus Valor.
+
+      Don't mistake a &5Champion&r crest for a &6gold title&r. The gold title is the Sovereigns' mark, with affixes like Blazing or Warded, and it carries their Fragments.
+
+      &o"Every rank has a weakness. Every Remnant has a name. Learn both."&r &7— Ilse, the Huntmaster&r
+    tasks: [{advancement: "remnant_mobs:proven_hunter", title: "Slay an Elite"}]
+    rewards: [{table: hunters_spoils}, {xp: 100}]
+
+  - key: traits
+    pos: [6, 1]
+    title: "Nothing Left to Hide"
+    subtitle: "Sixteen ways to die, four at a time."
+    icon: minecraft:fermented_spider_eye
+    deps: [ranks]
+    desc: |
+      Ranked monsters carry &etraits&r, listed under their name. Read them before you swing.
+
+      &eVolatile&r explodes after it dies: step away. &eThornskin&r returns melee damage. &eDeflecting&r shrugs off arrows. &eWarded&r regrows its shield if you let it rest. &ePackleader&r calls copies once wounded. &eBlinking&r ends up behind you.
+
+      Kill a monster with four traits.
+    tasks: [{advancement: "remnant_mobs:nothing_left_to_hide"}]
+    rewards: [{item: remnant_mobs:remnant_shard, count: 6}, {xp: 150}]
+
+  - key: brand
+    pos: [6, 2.75]
+    title: "Accept the Challenge"
+    subtitle: "Make it worse. Get paid double."
+    icon: remnant_mobs:brand_of_challenge
+    deps: [ranks]
+    optional: true
+    desc: |
+      A &6Brand of Challenge&r, used on a leveled monster, lifts it one rank, five levels and one trait, and doubles what it pays. A Remnant can't rise any higher, which is the only mercy in the description.
+
+      Craft one from Remnant Shards and an echo shard, or trade shards to the Huntmaster.
+    tasks: [{advancement: "remnant_mobs:accept_the_challenge"}]
+    rewards: [{item: remnant_mobs:remnant_shard, count: 4}, {xp: 80}]
+
+  - key: remnant
+    pos: [6, 4.5]
+    title: "&cA Remnant's End"
+    subtitle: "A name, a title and a grudge."
+    icon: minecraft:wither_skeleton_skull
+    deps: [ranks]
+    shape: gear
+    size: 1.5
+    desc: |
+      Rarest of all is a &cRemnant&r: a named echo with a title, rising only past level 30. It never despawns. Its horn carries 48 blocks (&o"A Remnant stirs nearby"&r), it wears a boss bar, and when it falls the whole world hears who did it.
+
+      Bring full flasks. Read its traits through the Lens first.
+    tasks: [{advancement: "remnant_mobs:remnants_end"}]
+    rewards: [{table: hunters_spoils}, {item: runeborn:radiant_rune}, {xp: 300}]
+
+  - key: hunters_moon
+    pos: [6, 6.25]
+    title: "The Hunter's Moon"
+    subtitle: "Some full moons come up red."
+    icon: minecraft:redstone
+    deps: [ranks]
+    desc: |
+      On about one full moon in three, a toll sounds and the &cHunter's Moon&r rises. Until dawn, monsters spawn five levels stronger, ranks come twice as often and shards drop double.
+
+      An icon on your HUD tells you it's up. Survive one first. Then learn to farm it.
+    tasks: [{advancement: "remnant_mobs:under_the_hunters_moon", title: "Slay a ranked monster under a Hunter's Moon"}]
+    rewards: [{item: remnant_mobs:remnant_shard, count: 8}, {xp: 150}]
+
+  - key: sovereigns
+    pos: [6, 8]
+    title: "Fragments, Sigils, Relics, Crowns"
+    subtitle: "How a Sovereign is called, and what it leaves."
+    icon: runeborn:sovereign_fragment
+    deps: [ranks]
+    desc: |
+      Gold-titled champions carry &6Sovereign Fragments&r. Six Fragments and the right token make a &6Sigil&r. Use it, and a Sovereign answers.
+
+      A felled Sovereign leaves a &6Relic&r, exchanged at a shrine for one of two legendary armaments, and most leave a &6Crown Shard&r: use it to claim its blessing, then wear one at a time from a shrine. The Old Powers keep relics too.
+
+      Each Sovereign's first fall rekindles an ember of &6The Long Eclipse&r for everyone. &e/lastlight eclipse&r shows the count.
+    tasks: [{advancement: "runeborn:feats/summon", title: "Call a Sovereign with its Sigil"}]
+    rewards: [{item: runeborn:sovereign_fragment}, {xp: 120}]
+
+  # ---- spoils ----
+  - key: loot_bags
+    pos: [2, 1.5]
+    title: "The Dead Hoard"
+    subtitle: "Four small sins make a bigger one."
+    icon: mob_loot_bags:rarelootbag
+    deps: [codex]
+    desc: |
+      Monsters drop &6loot bags&r: Common, Uncommon, Rare, Epic, Legendary, &dMythic&r. Hold use to open one; hold &eShift&r over it to read its real odds.
+
+      Four bags of a tier craft into the next (Mythic also wants a nether star), and any bag splits back into four. Odd ones turn up: &cCursed&r bags gamble, &6Hourglass&r bags ripen if you wait, &bLocked&r bags want a Diamond Key cut from a diamond.
+
+      Combine four Uncommon bags and open the Rare.
+    tasks: [{advancement: "mob_loot_bags:open_rare", title: "Open a Rare Loot Bag"}]
+    rewards: [{item: mob_loot_bags:uncommonlootbag, count: 2}, {xp: 60}]

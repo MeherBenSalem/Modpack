@@ -1,0 +1,649 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "p_archive"
+	group: "7641D8544E1E75E6"
+	icon: {
+		id: "tbos:yesterglass_lens"
+	}
+	id: "672B340B4A3198A6"
+	images: [ ]
+	order_index: 14
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["20A88504DC6B5A17"]
+			icon: {
+				id: "tbos:archivists_journal"
+			}
+			id: "1BD8E51A73CB9F07"
+			rewards: [
+				{
+					id: "79E4457663F2F863"
+					table_id: 7547820078087610474L
+					type: "random"
+				}
+				{
+					id: "7363153747C82F29"
+					type: "xp"
+					xp: 60
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "tbos:story/root"
+					criterion: ""
+					id: "54036B421C12053D"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1BD8E51A73CB9F07"]
+			icon: {
+				id: "tbos:cracked_yesterglass_lens"
+			}
+			id: "239F8EB31B6167E6"
+			rewards: [
+				{
+					id: "382579FD0F72DE18"
+					item: {
+						count: 1
+						id: "tbos:lenswork_crystal"
+					}
+					type: "item"
+				}
+				{
+					id: "4E36FAED17C8ABF4"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					advancement: "tbos:story/obtain_cracked_lens"
+					criterion: ""
+					id: "32285CC8CD1FF6F0"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["239F8EB31B6167E6"]
+			icon: {
+				id: "tbos:yesterglass_lens"
+			}
+			id: "2CD95D9E03D2D57F"
+			rewards: [
+				{
+					id: "3A5F236D04243FF4"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					advancement: "tbos:story/repair_lens"
+					criterion: ""
+					id: "52F4482A497053EF"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2CD95D9E03D2D57F"]
+			icon: {
+				id: "tbos:archive_survey_map"
+			}
+			id: "4D8CC4FACA003D12"
+			rewards: [
+				{
+					command: "/lastlight arrive archivist {p}"
+					elevate_perms: true
+					icon: {
+						id: "minecraft:lectern"
+					}
+					id: "532C04A9BE8FB450"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					id: "743DF804F779CD7D"
+					table_id: 7308021363516719907L
+					type: "random"
+				}
+				{
+					id: "038381388F6A23AF"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "tbos:story/enter_archive"
+					criterion: ""
+					id: "7BFA3B26A5AD86C7"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D8CC4FACA003D12"]
+			icon: {
+				id: "tbos:memory_anchor"
+			}
+			id: "1E6B2E42498D1A9F"
+			rewards: [
+				{
+					count: 2
+					id: "772255ABD88F81D8"
+					item: {
+						count: 1
+						id: "tbos:chronicle_shard"
+					}
+					type: "item"
+				}
+				{
+					id: "575B3C11EB08F005"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					advancement: "tbos:story/reconstruct_first_room"
+					criterion: ""
+					id: "450EC559ABFC1DDD"
+					type: "advancement"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E6B2E42498D1A9F"]
+			icon: {
+				id: "tbos:alignment_dial"
+			}
+			id: "49D921BB43B33F9E"
+			rewards: [
+				{
+					id: "0E40762760460BF0"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					advancement: "tbos:story/solve_hall_of_alignment"
+					criterion: ""
+					id: "156C9FA43682456C"
+					type: "advancement"
+				}
+			]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["49D921BB43B33F9E"]
+			icon: {
+				id: "tbos:resonant_bell"
+			}
+			id: "38F1C601D4A43F84"
+			rewards: [
+				{
+					id: "6A8C1BC7287BDC9B"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					advancement: "tbos:story/complete_choir_of_hours"
+					criterion: ""
+					id: "518B462312E102F2"
+					type: "advancement"
+				}
+			]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["38F1C601D4A43F84"]
+			icon: {
+				id: "tbos:meridian_relay"
+			}
+			id: "0A7BBCEB78D48C97"
+			rewards: [
+				{
+					id: "7C5491BD1CED66E5"
+					item: {
+						count: 1
+						id: "tbos:lenswork_crystal"
+					}
+					type: "item"
+				}
+				{
+					id: "02B91B613741D59D"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					advancement: "tbos:story/cross_broken_meridian"
+					criterion: ""
+					id: "2DF1F8A694FD35C7"
+					type: "advancement"
+				}
+			]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0A7BBCEB78D48C97"]
+			icon: {
+				id: "tbos:archive_core"
+			}
+			id: "5E82C40296E650F1"
+			rewards: [
+				{
+					id: "542267F1F08AD1CA"
+					table_id: 7308021363516719907L
+					type: "random"
+				}
+				{
+					id: "0DA131B6E7A469E2"
+					item: {
+						count: 1
+						id: "runeborn:lustrous_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "555AAF9E3BF086C3"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					advancement: "tbos:story/defeat_last_curator"
+					criterion: ""
+					id: "4CDCDA14B52EE77F"
+					type: "advancement"
+				}
+			]
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E82C40296E650F1"]
+			icon: {
+				id: "tbos:memory_lantern"
+			}
+			id: "7F30D8E42C88A805"
+			rewards: [
+				{
+					id: "7A6F8D6127BEA767"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					advancement: "tbos:story/obtain_memory_lantern"
+					criterion: ""
+					id: "5DF07299B99ABE3D"
+					type: "advancement"
+				}
+				{
+					advancement: "tbos:story/display_complete_memory_scene"
+					criterion: ""
+					id: "64230D5C9CB3322E"
+					type: "advancement"
+				}
+			]
+			x: 18.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7F30D8E42C88A805"]
+			icon: {
+				id: "tbos:memory_plate"
+			}
+			id: "178657B676B4FF56"
+			optional: true
+			rewards: [
+				{
+					id: "6564B1E47B667D3C"
+					table_id: 7308021363516719907L
+					type: "random"
+				}
+				{
+					id: "628003375D19FDC0"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					advancement: "tbos:story/collect_all_memory_plates"
+					criterion: ""
+					id: "15D696EBE45E218A"
+					type: "advancement"
+				}
+			]
+			x: 20.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5E82C40296E650F1"]
+			icon: {
+				id: "tbos:curator_core"
+			}
+			id: "26BA4E1B73379C8E"
+			rewards: [
+				{
+					id: "683B860DF071825C"
+					item: {
+						count: 1
+						id: "tbos:memory_key"
+					}
+					type: "item"
+				}
+				{
+					id: "4258B18E7B9DDBD0"
+					item: {
+						count: 1
+						id: "tbos:recalled_hour"
+					}
+					type: "item"
+				}
+				{
+					id: "0BA615582A15CB9E"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "tbos:story/enter_fractured_archive"
+					criterion: ""
+					id: "119151D805C8E2F5"
+					type: "advancement"
+				}
+			]
+			x: 18.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["26BA4E1B73379C8E"]
+			icon: {
+				id: "tbos:light_dust"
+			}
+			id: "3D62A6C30068A419"
+			rewards: [
+				{
+					id: "4200D1C9B88D2F76"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "76A4AE675E7A3156"
+					type: "checkmark"
+				}
+			]
+			x: 18.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["26BA4E1B73379C8E"]
+			icon: {
+				id: "tbos:memory_key"
+			}
+			id: "13710AE6CE4464A8"
+			rewards: [
+				{
+					id: "1165F6A9597C34E4"
+					item: {
+						count: 1
+						id: "tbos:memory_key"
+					}
+					type: "item"
+				}
+				{
+					id: "62AEEEB6A459C7FB"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					advancement: "tbos:expedition/root"
+					criterion: ""
+					id: "3D87AD87672EB6C2"
+					type: "advancement"
+				}
+			]
+			x: 20.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["13710AE6CE4464A8"]
+			icon: {
+				id: "tbos:waystone"
+			}
+			id: "3EB68B3A1BA90389"
+			rewards: [
+				{
+					id: "161F016703DC01AF"
+					table_id: 7308021363516719907L
+					type: "random"
+				}
+				{
+					id: "38888A6BFCF38DEF"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					advancement: "tbos:expedition/recollection"
+					criterion: ""
+					id: "1E6DF443E9EA866A"
+					type: "advancement"
+				}
+			]
+			x: 22.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["13710AE6CE4464A8"]
+			icon: {
+				id: "tbos:chronicle_shard"
+			}
+			id: "65A7F79D6DA0D6EC"
+			rewards: [
+				{
+					id: "0B49427B4A568181"
+					item: {
+						count: 1
+						id: "tbos:memory_key"
+					}
+					type: "item"
+				}
+				{
+					id: "08F0B79DBE3FB4B4"
+					table_id: 7308021363516719907L
+					type: "random"
+				}
+				{
+					id: "538CB995A446B19A"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					advancement: "tbos:expedition/remember"
+					criterion: ""
+					id: "0C6DE6B91860B0D7"
+					type: "advancement"
+				}
+			]
+			x: 22.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["65A7F79D6DA0D6EC"]
+			icon: {
+				id: "tbos:shatter_pane"
+			}
+			id: "7343AEBA9E7454A7"
+			rewards: [
+				{
+					id: "7A51C9DB49BE0B97"
+					item: {
+						count: 1
+						id: "tbos:recalled_hour"
+					}
+					type: "item"
+				}
+				{
+					id: "1AC1A397099CD629"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					advancement: "tbos:expedition/forget"
+					criterion: ""
+					id: "4180BB19900873B5"
+					type: "advancement"
+				}
+			]
+			x: 24.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["65A7F79D6DA0D6EC"]
+			icon: {
+				id: "minecraft:diamond_sword"
+			}
+			id: "5D342ECF383FA3F5"
+			rewards: [
+				{
+					id: "28427103CE6CD70C"
+					table_id: 7308021363516719907L
+					type: "random"
+				}
+				{
+					id: "6505E68248298138"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					advancement: "tbos:expedition/remnant_relic"
+					criterion: ""
+					id: "75ED2E7B7BCFF6A4"
+					type: "advancement"
+				}
+			]
+			x: 24.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["65A7F79D6DA0D6EC"]
+			icon: {
+				id: "minecraft:clock"
+			}
+			id: "0C411F150C9A925E"
+			rewards: [
+				{
+					id: "47AAA76C7D2F4307"
+					item: {
+						count: 1
+						id: "tbos:memory_key"
+					}
+					type: "item"
+				}
+				{
+					id: "37D3F14C3B4C40ED"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					advancement: "tbos:expedition/weekly"
+					criterion: ""
+					id: "4CE9936D8457B572"
+					type: "advancement"
+				}
+			]
+			x: 24.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["65A7F79D6DA0D6EC"]
+			icon: {
+				id: "tbos:archive_seal"
+			}
+			id: "3785FC1657322281"
+			rewards: [
+				{
+					id: "0758C1C52336A1A6"
+					table_id: 7308021363516719907L
+					type: "random"
+				}
+				{
+					id: "7697E9160DF71B0D"
+					item: {
+						count: 1
+						id: "runeborn:radiant_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "08D001E6213E9BB0"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					advancement: "tbos:expedition/storied"
+					criterion: ""
+					id: "0D746F477D8E1834"
+					type: "advancement"
+				}
+			]
+			x: 24.5d
+			y: 3.0d
+		}
+	]
+}

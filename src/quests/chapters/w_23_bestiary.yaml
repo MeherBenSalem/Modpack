@@ -1,0 +1,341 @@
+chapter: w_bestiary
+group: world
+order: 23
+title: "&bBestiary"
+subtitle: "The Huntmaster's ledger: ranks, traits, and every kind of thing that bites."
+icon: remnant_mobs:hunters_lens
+quests:
+  # ---- Ranks (RPG Mobs) ----
+  - key: know_thy_enemy
+    title: "&6Know Thy Enemy"
+    subtitle: "Read it before it reads you."
+    icon: remnant_mobs:hunters_lens
+    pos: [0, 0]
+    shape: hexagon
+    size: 1.5
+    deps: [s1_prologue/first_blood]
+    desc: |
+      &o"Every monster out there has a level, a rank and a temper. Two of those you can read."&r &7— the Huntmaster
+
+      Ring a spyglass with four &6Remnant Shards&r and you have a &6Hunter's Lens&r. Held, it tells you how dangerous the area is. Look through it at a monster to read its level, rank, traits and stats.
+    tasks: [{advancement: "remnant_mobs:know_thy_enemy", title: "Look through a Hunter's Lens"}]
+    rewards: [{table: world_huntmaster_ledger}, {xp: 100}]
+
+  - key: proven_hunter
+    title: "Elite"
+    subtitle: "Blue crest. Two traits."
+    icon: remnant_mobs:remnant_shard
+    pos: [2, 0]
+    deps: [know_thy_enemy]
+    desc: |
+      Ranks climb &7Common&r, &fVeteran&r, &9Elite&r, &5Champion&r, and finally &cRemnant&r. Every rank adds traits and pays more Valor.
+
+      About one monster in seventy is an &9Elite&r. Slay one, and look at what dropped.
+    tasks: [{advancement: "remnant_mobs:proven_hunter", title: "Slay an Elite"}]
+    rewards: [{item: remnant_mobs:remnant_shard, count: 6}, {xp: 100}]
+
+  - key: champions_bane
+    title: "Champion"
+    subtitle: "Purple crest. Three traits. Bad news."
+    icon: minecraft:amethyst_shard
+    pos: [4, 0]
+    deps: [proven_hunter]
+    desc: |
+      One monster in three hundred is a &5Champion&r. Not the gold-titled kind that carries Sovereign Fragments; that's a different curse. This one is just bigger, meaner and better paid.
+
+      Get close enough to read its three traits, then decide whether you're staying.
+    tasks: [{advancement: "remnant_mobs:champions_bane", title: "Slay a Champion"}]
+    rewards: [{table: world_huntmaster_ledger}, {xp: 200}]
+
+  - key: remnants_end
+    title: "&cA Remnant's End"
+    subtitle: "It has a name. It has a horn."
+    icon: minecraft:goat_horn
+    pos: [6, 0]
+    deps: [champions_bane]
+    desc: |
+      Past level 30, a very few monsters rise as &cRemnants&r: named echoes with a title, a boss bar and a horn you can hear from nearly fifty blocks off. They never despawn. They remember.
+
+      When one falls, the whole world hears about it. Make sure it's your name in the message.
+    tasks: [{advancement: "remnant_mobs:remnants_end", title: "Slay a Remnant"}]
+    rewards: [{table: world_huntmaster_ledger}, {item: runeborn:lustrous_rune}, {xp: 300}]
+
+  - key: nothing_left_to_hide
+    title: "Nothing Left to Hide"
+    subtitle: "Four traits on one monster."
+    icon: minecraft:ender_eye
+    pos: [8, 0]
+    deps: [champions_bane]
+    desc: |
+      Some monsters wear every trick they've got at once. &6Four traits&r on a single body: the rarest ranks carry that many, and a Brand of Challenge can add the last one.
+
+      Kill one. Then sit down for a bit.
+    tasks: [{advancement: "remnant_mobs:nothing_left_to_hide", title: "Slay a monster with four traits"}]
+    rewards: [{table: world_hunt_spoils}, {xp: 400}]
+
+  - key: hunters_moon
+    title: "Under the Red Moon"
+    subtitle: "Some full moons are not for sleeping."
+    icon: minecraft:clock
+    pos: [2, 2.5]
+    deps: [know_thy_enemy]
+    desc: |
+      On about one full moon in three, a toll sounds and the &cHunter's Moon&r rises. Until dawn, monsters spawn five levels stronger, ranks come twice as often and shards drop double.
+
+      An icon on your screen means it's up. Hunt under it, or bar the door. Both are reasonable.
+    tasks: [{advancement: "remnant_mobs:under_the_hunters_moon", title: "Slay a ranked monster under a Hunter's Moon"}]
+    rewards: [{table: world_huntmaster_ledger}, {xp: 200}]
+
+  - key: punching_up
+    title: "Punching Up"
+    subtitle: "Ten levels above you, and still standing. Briefly."
+    icon: minecraft:iron_sword
+    pos: [4, 2.5]
+    deps: [proven_hunter]
+    desc: |
+      A monster's level shows in colour against your own. The redder it is, the worse your odds and the better the pay: kills above your level give half again the Valor.
+
+      Kill a ranked monster at least ten levels above you.
+    tasks: [{advancement: "remnant_mobs:punching_up", title: "Slay a ranked monster ten levels above you"}]
+    rewards: [{table: world_huntmaster_ledger}, {xp: 250}]
+
+  - key: accept_the_challenge
+    title: "Accept the Challenge"
+    subtitle: "Make it worse. On purpose."
+    icon: remnant_mobs:brand_of_challenge
+    pos: [6, 2.5]
+    deps: [champions_bane]
+    desc: |
+      An echo shard ringed with eight Remnant Shards makes a &6Brand of Challenge&r. Use it on a monster and it climbs one rank, gains five levels and one more trait.
+
+      Its rewards double. So does everything else about it.
+    tasks: [{advancement: "remnant_mobs:accept_the_challenge", title: "Brand a monster"}]
+    rewards: [{item: remnant_mobs:remnant_shard, count: 8}, {xp: 150}]
+
+  # ---- Trait lessons ----
+  - key: traits_blood
+    title: "Blood, Venom and Frost"
+    subtitle: "Traits that follow you home."
+    icon: minecraft:spider_eye
+    pos: [2, 5]
+    deps: [know_thy_enemy]
+    desc: |
+      &cVampiric&r: heals for part of what it deals. Don't trade blows; every hit you take feeds it.
+      &2Venomous&r: poisons. Champions and Remnants poison harder. Carry milk or honey.
+      &8Withering&r: withers you. Back off before it stacks up.
+      &bFrostbite&r: slows and freezes you, and can't be frozen itself. Fight it on open ground.
+      &6Infernal&r: immune to fire, and sets you ablaze. Leave the fire weapons at home.
+    tasks: [{checkmark: "I know which traits bleed me"}]
+    rewards: [{item: minecraft:milk_bucket}, {item: minecraft:honey_bottle, count: 2}, {xp: 50}]
+
+  - key: traits_iron
+    title: "Hard to Kill"
+    subtitle: "Traits that keep it standing."
+    icon: minecraft:shield
+    pos: [4, 5]
+    deps: [know_thy_enemy]
+    desc: |
+      &bWarded&r: a shield of absorption that regrows if you leave it alone. Keep the pressure on.
+      &aRegenerating&r: steadily heals, and fast once out of combat. Retreating to heal helps it more than you.
+      &2Thornskin&r: melee hits hurt you back. Use a bow, a spell or a sellsword.
+      &7Juggernaut&r: can't be knocked back, more health and armour, but slower. Walk circles around it.
+      &fDeflecting&r: projectiles barely scratch it. Draw steel.
+    tasks: [{checkmark: "I know which traits keep it alive"}]
+    rewards: [{item: minecraft:arrow, count: 32}, {xp: 50}]
+
+  - key: traits_wild
+    title: "Hard to Pin Down"
+    subtitle: "Traits that change the fight."
+    icon: minecraft:ender_pearl
+    pos: [6, 5]
+    deps: [know_thy_enemy]
+    desc: |
+      &5Blinking&r: when hit, may appear behind you. Turn around before you swing again.
+      &eSwift&r: much faster. Don't run; you'll lose.
+      &cBerserk&r: below half health it hits harder and moves faster. Finish it, or step back and let it come.
+      &7Crushing&r: knocks you far and breaks shields. Stay away from ledges.
+      &6Packleader&r: once wounded, calls lesser copies of itself. Kill it fast or fight the pack in a doorway.
+      &cVolatile&r: explodes shortly after it dies. Step away from the body.
+    tasks: [{checkmark: "I know which traits change the fight"}]
+    rewards: [{table: ashborn_provisions}, {xp: 50}]
+
+  # ---- The Overworld's creatures ----
+  - key: guards
+    title: "We Want You"
+    subtitle: "Guard Villagers. A village that fights back."
+    icon: minecraft:iron_sword
+    pos: [0, 7.5]
+    deps: [s1_prologue/village]
+    desc: |
+      Villages have &6guards&r now: villagers who picked up a sword when the dark came and never put it down.
+
+      Give a sword to a villager with no trade, and you've got another one. Last Light could use the help.
+    tasks: [{advancement: "guardvillagers:adventure/recruit_guard", title: "Recruit a guard"}]
+    rewards: [{item: minecraft:iron_sword}, {table: ashborn_provisions}, {xp: 100}]
+
+  - key: hounds
+    title: "The Mound of Hounds"
+    subtitle: "Born in Chaos. They hunt in packs."
+    icon: born_in_chaos_v1:fangofthe_hound_leader
+    pos: [2, 7.5]
+    deps: [s1_prologue/first_blood]
+    desc: |
+      &6Dread Hounds&r run in packs out of the dark, and every pack answers to a &6Dire Hound Leader&r twice their size.
+
+      Fight with your back to a wall so they can't circle you. Mind the hound traps around their mounds.
+    tasks:
+      - {kill: "born_in_chaos_v1:dread_hound", count: 5}
+      - {advancement: "born_in_chaos_v1:big_boy", title: "Slay the Dire Hound Leader"}
+    rewards: [{table: world_ember_spoils}, {xp: 250}]
+
+  - key: carnival
+    title: "A Carnival of the Damned"
+    subtitle: "Born in Chaos. The things that walk at night."
+    icon: born_in_chaos_v1:dark_metal_ingot
+    pos: [4, 7.5]
+    deps: [s1_prologue/first_blood]
+    desc: |
+      The dead don't all come back the same. &6Decaying Zombies&r smell worse than they hit. &6Bonescallers&r raise the skeletons you thought you'd finished. And somewhere a caravan of &6Zombie Clowns&r is still on tour.
+
+      Kill the caller first. Kill the clown whenever you like.
+    tasks:
+      - {kill: "born_in_chaos_v1:decaying_zombie", count: 5}
+      - {kill: "born_in_chaos_v1:bonescaller"}
+      - {kill: "born_in_chaos_v1:zombie_clown"}
+    rewards: [{table: world_ember_spoils}, {xp: 200}]
+
+  - key: hunt
+    title: "The Hunt That Feeds"
+    subtitle: "Naturalist. Deer, boar and bear."
+    icon: naturalist:antler
+    pos: [6, 7.5]
+    deps: [s1_prologue/first_blood]
+    desc: |
+      Not everything in the woods wants you dead. Deer flee, boars charge, and bears couldn't care less until you're close.
+
+      Hunt &6venison&r for the pot and &6fur&r from a bear for the cold. Then leave the rest alone; the world has enough corpses.
+    tasks:
+      - {item: "naturalist:venison", count: 4}
+      - {item: "naturalist:fur", count: 2}
+    rewards: [{item: farmersdelight:beef_stew, count: 2}, {xp: 150}]
+
+  - key: capture_net
+    title: "Lights in the Grass"
+    subtitle: "Naturalist. Small things worth keeping."
+    icon: naturalist:capture_net
+    pos: [8, 7.5]
+    deps: [s1_prologue/first_blood]
+    desc: |
+      Fireflies are the only lights that still come out at night by choice. Butterflies kept flying through the whole Long Eclipse, out of stubbornness.
+
+      Make a &6Capture Net&r and catch one of each. Let them go at Last Light, if you like.
+    tasks:
+      - {item: "naturalist:capture_net"}
+      - {item: "naturalist:butterfly"}
+      - {item: "naturalist:firefly"}
+    rewards: [{item: minecraft:glow_berries, count: 8}, {xp: 150}]
+
+  - key: old_friends
+    title: "Small Kindnesses"
+    subtitle: "Friends & Foes. Not everything is hostile."
+    icon: minecraft:copper_block
+    pos: [0, 10]
+    deps: [s1_prologue/first_blood]
+    desc: |
+      A &6Copper Golem&r presses buttons for you and asks for nothing. A &6Glare&r is a grumpy little moss cloud that hates the dark as much as you do: tame it, and it'll show you the shadows where monsters would spawn.
+
+      Build one. Tame the other. Light every place the Glare grumbles at.
+    tasks:
+      - {advancement: "friendsandfoes:adventure/summon_copper_golem", title: "Build a Copper Golem"}
+      - {advancement: "friendsandfoes:husbandry/tame_a_glare", title: "Tame a Glare"}
+    rewards: [{item: minecraft:glow_berries, count: 8}, {item: minecraft:torch, count: 32}, {xp: 200}]
+
+  - key: old_foes
+    title: "Teeth and Ice"
+    subtitle: "Friends & Foes. The ones that aren't friends."
+    icon: friendsandfoes:totem_of_freezing
+    pos: [2, 10]
+    deps: [s1_prologue/first_blood]
+    desc: |
+      The &6Mauler&r lies in wait in dry country, all jaws and patience. The &6Iceologer&r keeps a cabin in the snow and drops chunks of ice on anyone who visits.
+
+      Kill both. Look down for the first, up for the second.
+    tasks:
+      - {advancement: "friendsandfoes:adventure/it_bites", title: "Slay a Mauler"}
+      - {advancement: "friendsandfoes:adventure/kill_iceologer", title: "Slay an Iceologer"}
+    rewards: [{table: world_ember_spoils}, {xp: 250}]
+
+  - key: sculk
+    title: "Things That Hear You"
+    subtitle: "Deeper and Darker. The Otherside."
+    icon: deeperdarker:sculk_bone
+    pos: [4, 10]
+    deps: [s1_act2_hunt/sylvara]
+    desc: |
+      Below the ancient cities, the &6Otherside&r has its own animals, and none of them have eyes.
+
+      The &6Shattered&r stalk the echoing forests, &6Sculk Snappers&r bite at anything that makes a sound, and &6Sculk Centipedes&r crawl the deeplands. They all listen. Sneak, and pick your moment.
+    tasks:
+      - {kill: "deeperdarker:shattered", count: 3}
+      - {kill: "deeperdarker:sculk_snapper"}
+      - {kill: "deeperdarker:sculk_centipede"}
+    rewards: [{table: world_deep_spoils}, {xp: 500}]
+
+  # ---- The Eclipsed Realm's families ----
+  - key: hollow_legion
+    title: "The Hollow Legion"
+    subtitle: "The Eclipsed Realm. Soldiers of a hollow king."
+    icon: remnant_bosses:tarnished_regalia
+    pos: [0, 12.5]
+    deps: [s1_act5_realm/enter]
+    hide_until_deps: true
+    desc: |
+      The Hollow Sovereign's army still drills under the black sun. &6Sentinels&r hold the line, &6Arbalists&r shoot from behind it, a &6Standard Bearer&r keeps them in order and &6Soulbound Knights&r break whatever's left.
+
+      Kill the banner first. Armies without one are just crowds. Their &6Tarnished Regalia&r is worth keeping: a Sovereign's Seal needs four.
+    tasks:
+      - {kill: "remnants:hollow_sentinel", count: 3}
+      - {kill: "remnants:hollow_arbalist", count: 3}
+      - {kill: "remnants:fallen_standard_bearer"}
+      - {kill: "remnants:soulbound_knight"}
+    rewards: [{table: world_eclipse_spoils}, {xp: 800}]
+
+  - key: crypts_and_souls
+    title: "The Buried and the Forgotten"
+    subtitle: "The Eclipsed Realm. Cryptborn and Forgotten Souls."
+    icon: remnant_bosses:memory_shard
+    pos: [2, 12.5]
+    deps: [s1_act5_realm/enter]
+    hide_until_deps: true
+    desc: |
+      In the Gravefield Barrows the &6Cryptborn&r keep house: rats, lurkers and soldiers that never stopped guarding the dead. Elsewhere drift the &6Forgotten Souls&r, pilgrims and wraiths who lost the thread of who they were.
+
+      The Cryptborn drop &6Grave Iron&r for a Crypt Key. The souls drop &6Memory Shards&r for a Lens of Memory.
+    tasks:
+      - {kill: "remnants:catacomb_rat", count: 5}
+      - {kill: "remnants:crypt_lurker"}
+      - {kill: "remnants:gravebound_soldier", count: 3}
+      - {kill: "remnants:lost_pilgrim", count: 2}
+      - {kill: "remnants:memory_wraith", count: 2}
+      - {kill: "remnants:soul_collector"}
+    rewards: [{table: world_eclipse_spoils}, {xp: 800}]
+
+  - key: ash_and_relics
+    title: "Cogs and Shards"
+    subtitle: "The Eclipsed Realm. Ashbound and Corrupted Relics."
+    icon: remnant_bosses:ashen_cog
+    pos: [4, 12.5]
+    deps: [s1_act5_realm/enter]
+    hide_until_deps: true
+    desc: |
+      Some things in the Realm were never alive. The &6Ashbound&r are constructs of soot and gears that still keep their posts in the Ashen Wastes. The &6Corrupted Relics&r are worse: old treasures that learned to walk and want to be held again.
+
+      They drop &6Ashen Cogs&r and &6Relic Shards&r. Keep both.
+    tasks:
+      - {kill: "remnants:ashbound_crawler", count: 3}
+      - {kill: "remnants:ember_servitor"}
+      - {kill: "remnants:rusted_guardian"}
+      - {kill: "remnants:shardling", count: 3}
+      - {kill: "remnants:ancient_vessel"}
+      - {kill: "remnants:relic_stalker"}
+    rewards: [{table: world_eclipse_spoils}, {xp: 800}]

@@ -1,0 +1,715 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "p_codex"
+	group: "7641D8544E1E75E6"
+	icon: {
+		id: "minecraft:writable_book"
+	}
+	id: "4941E899663944DE"
+	images: [ ]
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["79BAD0382EFA559F"]
+			icon: {
+				id: "minecraft:writable_book"
+			}
+			id: "3F8695952D198BDA"
+			rewards: [
+				{
+					count: 16
+					id: "01DB49E5C6583DAF"
+					item: {
+						count: 1
+						id: "minecraft:torch"
+					}
+					type: "item"
+				}
+				{
+					id: "7010C88EA4EC1A77"
+					type: "xp"
+					xp: 30
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "runeborn:feats/root"
+					criterion: ""
+					id: "1638797E27C6EA4E"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3F8695952D198BDA"]
+			icon: {
+				id: "minecraft:feather"
+			}
+			id: "2FA9F80D569FB325"
+			rewards: [
+				{
+					count: 4
+					id: "0742FC99B72AE7E4"
+					item: {
+						count: 1
+						id: "minecraft:cooked_beef"
+					}
+					type: "item"
+				}
+				{
+					id: "0DBC528418FA49EA"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:spider"
+					id: "0C5FBED80A6CCC01"
+					type: "kill"
+					value: 4L
+				}
+			]
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2FA9F80D569FB325"]
+			icon: {
+				id: "minecraft:lapis_lazuli"
+			}
+			id: "0CC770C15897C5B5"
+			rewards: [
+				{
+					id: "271E81780734BE24"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "73534A93A25F251A"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0CC770C15897C5B5"]
+			icon: {
+				id: "runeborn:ember_shrine"
+			}
+			id: "3BAC2454C42FA6CB"
+			rewards: [
+				{
+					count: 2
+					id: "39DA9F9C0DA16AB3"
+					item: {
+						count: 1
+						id: "minecraft:blaze_powder"
+					}
+					type: "item"
+				}
+				{
+					id: "6BD2BCEB6D26B149"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					advancement: "runeborn:feats/kindle"
+					criterion: ""
+					id: "22B68009CD434C48"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3BAC2454C42FA6CB"]
+			icon: {
+				id: "runeborn:ember_flask"
+			}
+			id: "37BCA8A9E629FACA"
+			rewards: [
+				{
+					count: 2
+					id: "25EB41A81220D547"
+					item: {
+						count: 1
+						id: "minecraft:glistering_melon_slice"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "655BF13F12B1F986"
+					item: {
+						count: 1
+						id: "minecraft:amethyst_shard"
+					}
+					type: "item"
+				}
+				{
+					id: "7146C932E735B90D"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "1064A745EEC181A7"
+					item: {
+						count: 1
+						id: "runeborn:sunseed"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["3BAC2454C42FA6CB"]
+			icon: {
+				id: "minecraft:ender_pearl"
+			}
+			id: "137F886E8D60FFF5"
+			rewards: [
+				{
+					count: 2
+					id: "10A62C60455F334C"
+					item: {
+						count: 1
+						id: "minecraft:ender_pearl"
+					}
+					type: "item"
+				}
+				{
+					id: "61538B8E7EEA4AE5"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					advancement: "runeborn:feats/travel"
+					criterion: ""
+					id: "68B22FDA70B45BF1"
+					type: "advancement"
+				}
+			]
+			x: 8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3BAC2454C42FA6CB"]
+			icon: {
+				id: "runeborn:radiant_rune"
+			}
+			id: "4433CD98ABE1C906"
+			rewards: [
+				{
+					count: 2
+					id: "23A257AB3E9722E6"
+					item: {
+						count: 1
+						id: "runeborn:lustrous_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "1187F5CF9E26AB68"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					advancement: "runeborn:feats/level_50"
+					criterion: ""
+					id: "5557C87B00C001AF"
+					type: "advancement"
+				}
+			]
+			x: 8.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3BAC2454C42FA6CB"]
+			icon: {
+				id: "runeborn:tempering_stone_1"
+			}
+			id: "1FF5AC3A0B7D829A"
+			rewards: [
+				{
+					count: 2
+					id: "55F434CA31E3E188"
+					item: {
+						count: 1
+						id: "runeborn:tempering_stone_2"
+					}
+					type: "item"
+				}
+				{
+					id: "21191A60552077CF"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "6E986831098E6FB4"
+					item: {
+						count: 1
+						id: "runeborn:tempering_stone_1"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6BAD9AD42869E32B", "3BAC2454C42FA6CB"]
+			icon: {
+				id: "minecraft:filled_map"
+			}
+			id: "28DE5885F44FB7AB"
+			rewards: [
+				{
+					id: "1271583B269FA46E"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "11A93AE67F47B7C1"
+					type: "checkmark"
+				}
+			]
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3F8695952D198BDA"]
+			icon: {
+				id: "runeborn:faded_rune"
+			}
+			id: "0D9E578083218E57"
+			rewards: [
+				{
+					count: 2
+					id: "1774EF14EABA3B8F"
+					item: {
+						count: 1
+						id: "runeborn:faded_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "047C76C05AE02928"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					advancement: "runeborn:feats/died"
+					criterion: ""
+					id: "355E064ADE66550E"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0D9E578083218E57"]
+			icon: {
+				id: "minecraft:zombie_head"
+			}
+			id: "7D6EF30C6076578E"
+			rewards: [
+				{
+					id: "38D793E3D3459FB0"
+					table_id: 2257699730852339844L
+					type: "random"
+				}
+				{
+					id: "2D019595DE7F85E4"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					advancement: "runeborn:feats/reclaimed"
+					criterion: ""
+					id: "25B7BD40FE1FD042"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7D6EF30C6076578E"]
+			icon: {
+				id: "minecraft:chest"
+			}
+			id: "6BAD9AD42869E32B"
+			rewards: [
+				{
+					id: "05A00C3D1EBDCF6D"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "69CB6FA9A8C28A5A"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3F8695952D198BDA"]
+			icon: {
+				id: "remnant_mobs:remnant_shard"
+			}
+			id: "47698F7A014C082E"
+			rewards: [
+				{
+					count: 4
+					id: "589C82F370412C15"
+					item: {
+						count: 1
+						id: "remnant_mobs:remnant_shard"
+					}
+					type: "item"
+				}
+				{
+					id: "5CAFEEF91F336A5F"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					advancement: "remnant_mobs:taste_of_valor"
+					criterion: ""
+					id: "19B100501ADA2CD7"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["47698F7A014C082E"]
+			icon: {
+				id: "minecraft:diamond_pickaxe"
+			}
+			id: "53F1F7B9F1CC8A15"
+			rewards: [
+				{
+					count: 2
+					id: "33945F8478A79F76"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+				{
+					id: "5D05EFBCE4925C8E"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "0F6FC99E6641BC9C"
+					item: {
+						count: 1
+						id: "minecraft:diamond_pickaxe"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3F8695952D198BDA"]
+			icon: {
+				id: "remnant_mobs:hunters_lens"
+			}
+			id: "62751E1F10BB8066"
+			rewards: [
+				{
+					id: "12ABA8B0614A7604"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					advancement: "remnant_mobs:know_thy_enemy"
+					criterion: ""
+					id: "645093CDF9445269"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["62751E1F10BB8066"]
+			icon: {
+				id: "minecraft:goat_horn"
+			}
+			id: "4E93F1A57F31020C"
+			rewards: [
+				{
+					id: "1B3F7D2F2E77030F"
+					table_id: 5603019727193511887L
+					type: "random"
+				}
+				{
+					id: "5D585227EA1F7DAE"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					advancement: "remnant_mobs:proven_hunter"
+					criterion: ""
+					id: "1398856FED2CF8C2"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4E93F1A57F31020C"]
+			icon: {
+				id: "minecraft:fermented_spider_eye"
+			}
+			id: "46BDA82E37018B35"
+			rewards: [
+				{
+					count: 6
+					id: "5F914A8F88C95EB4"
+					item: {
+						count: 1
+						id: "remnant_mobs:remnant_shard"
+					}
+					type: "item"
+				}
+				{
+					id: "0344A59A92AFBD8F"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					advancement: "remnant_mobs:nothing_left_to_hide"
+					criterion: ""
+					id: "069B7EE5D9FC2F80"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4E93F1A57F31020C"]
+			icon: {
+				id: "remnant_mobs:brand_of_challenge"
+			}
+			id: "622E439071EE06FA"
+			optional: true
+			rewards: [
+				{
+					count: 4
+					id: "2B1F470525282B4C"
+					item: {
+						count: 1
+						id: "remnant_mobs:remnant_shard"
+					}
+					type: "item"
+				}
+				{
+					id: "1A7D40E3914FA486"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					advancement: "remnant_mobs:accept_the_challenge"
+					criterion: ""
+					id: "442D7171657F2EF4"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 2.75d
+		}
+		{
+			dependencies: ["4E93F1A57F31020C"]
+			icon: {
+				id: "minecraft:wither_skeleton_skull"
+			}
+			id: "703249CD6A2EF82D"
+			rewards: [
+				{
+					id: "674BFE4E760271EA"
+					table_id: 5603019727193511887L
+					type: "random"
+				}
+				{
+					id: "2AB53B98160DA52E"
+					item: {
+						count: 1
+						id: "runeborn:radiant_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "66967B48098E01D0"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "remnant_mobs:remnants_end"
+					criterion: ""
+					id: "696C0A4AC71E77AB"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4E93F1A57F31020C"]
+			icon: {
+				id: "minecraft:redstone"
+			}
+			id: "33073B9049935075"
+			rewards: [
+				{
+					count: 8
+					id: "4F6F1F0871DC0E96"
+					item: {
+						count: 1
+						id: "remnant_mobs:remnant_shard"
+					}
+					type: "item"
+				}
+				{
+					id: "6C417D2BCA4ABDF9"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					advancement: "remnant_mobs:under_the_hunters_moon"
+					criterion: ""
+					id: "6D1B461EF804FAFC"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 6.25d
+		}
+		{
+			dependencies: ["4E93F1A57F31020C"]
+			icon: {
+				id: "runeborn:sovereign_fragment"
+			}
+			id: "5393850EC277437A"
+			rewards: [
+				{
+					id: "7C1D1C2404A4B9FC"
+					item: {
+						count: 1
+						id: "runeborn:sovereign_fragment"
+					}
+					type: "item"
+				}
+				{
+					id: "279F6CD3202AAFC3"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					advancement: "runeborn:feats/summon"
+					criterion: ""
+					id: "270820777E0E5E7D"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3F8695952D198BDA"]
+			icon: {
+				id: "mob_loot_bags:rarelootbag"
+			}
+			id: "7678572C5CDE2BAB"
+			rewards: [
+				{
+					count: 2
+					id: "5920C7AFFD522FCC"
+					item: {
+						count: 1
+						id: "mob_loot_bags:uncommonlootbag"
+					}
+					type: "item"
+				}
+				{
+					id: "01DED5E83564436D"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					advancement: "mob_loot_bags:open_rare"
+					criterion: ""
+					id: "18D2E096BEF9EB8B"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: 1.5d
+		}
+	]
+}

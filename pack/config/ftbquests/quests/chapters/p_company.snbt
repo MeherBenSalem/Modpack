@@ -1,0 +1,380 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "p_company"
+	group: "7641D8544E1E75E6"
+	icon: {
+		id: "better_with_gold:warbanner"
+	}
+	id: "1614F74ADAA06D65"
+	images: [ ]
+	order_index: 13
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["282F5F9817BEE567"]
+			icon: {
+				id: "better_with_gold:warbanner"
+			}
+			id: "2F015422EDB1358D"
+			rewards: [
+				{
+					count: 8
+					id: "13832BD7FA63367C"
+					item: {
+						count: 1
+						id: "minecraft:gold_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "72EAC44ADD342BAC"
+					type: "xp"
+					xp: 80
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "6A8D9D2F76E799C1"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2F015422EDB1358D"]
+			icon: {
+				id: "minecraft:shield"
+			}
+			id: "50CDEE7C92E6A561"
+			rewards: [
+				{
+					id: "4FDB3ED86EBE2140"
+					table_id: 8079659607374394178L
+					type: "random"
+				}
+				{
+					id: "5A2EF4FD70725264"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "7EB50CFFBA70F20A"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["50CDEE7C92E6A561"]
+			icon: {
+				id: "minecraft:red_dye"
+			}
+			id: "7A711F495C4A3D36"
+			rewards: [
+				{
+					id: "4AF08CE410B0D1F8"
+					item: {
+						count: 1
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+				{
+					id: "2C343008AD2C234F"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "1D9A19EDFF3A0E45"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2F015422EDB1358D"]
+			icon: {
+				id: "minecraft:compass"
+			}
+			id: "358A39F760C2C389"
+			rewards: [
+				{
+					id: "62EE345DBBAC8FE2"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "34397EE2A9ADA453"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["358A39F760C2C389"]
+			icon: {
+				id: "better_with_gold:warbanner"
+			}
+			id: "794789CB3EBFB77B"
+			rewards: [
+				{
+					id: "2095610EBB7FCC41"
+					table_id: 8079659607374394178L
+					type: "random"
+				}
+				{
+					id: "48AC3E1D16198578"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "1B56491DBA19C31D"
+					item: {
+						count: 1
+						id: "better_with_gold:warbanner"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["358A39F760C2C389"]
+			icon: {
+				id: "minecraft:writable_book"
+			}
+			id: "155ECFEC2013184C"
+			rewards: [
+				{
+					id: "5772C55E2ECF4BEB"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "47B8876C085C236D"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["155ECFEC2013184C"]
+			icon: {
+				id: "minecraft:iron_sword"
+			}
+			id: "0AE0B33F0F37E88C"
+			rewards: [
+				{
+					count: 2
+					id: "27C0078A7C7D8762"
+					item: {
+						count: 1
+						id: "better_with_gold:golden_fish"
+					}
+					type: "item"
+				}
+				{
+					id: "26120940C6B6F14E"
+					table_id: 8079659607374394178L
+					type: "random"
+				}
+				{
+					id: "717C72340E67A49C"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "2FABF7221F94955A"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2F015422EDB1358D"]
+			icon: {
+				id: "better_with_gold:golden_fish"
+			}
+			id: "5F6A657F32780475"
+			rewards: [
+				{
+					count: 4
+					id: "7BC833F0BF773D3C"
+					item: {
+						count: 1
+						id: "minecraft:cod"
+					}
+					type: "item"
+				}
+				{
+					id: "5C846BB9EA7AF75F"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "732289A6F9CFB282"
+					item: {
+						count: 1
+						id: "better_with_gold:golden_fish"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2F015422EDB1358D"]
+			icon: {
+				id: "better_with_gold:upgrade_template"
+			}
+			id: "304ECA06BDAE1D37"
+			rewards: [
+				{
+					count: 2
+					id: "786EEF506E6D2AA3"
+					item: {
+						count: 1
+						id: "minecraft:amethyst_block"
+					}
+					type: "item"
+				}
+				{
+					id: "3559D4FF363AB443"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "2E10F66AC5C0E033"
+					item: {
+						count: 1
+						id: "better_with_gold:upgrade_template"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["304ECA06BDAE1D37"]
+			icon: {
+				id: "better_with_gold:reinforced_golden_armor_chestplate"
+			}
+			id: "262E107A9CDDD1B5"
+			rewards: [
+				{
+					id: "5894060572FB753D"
+					table_id: 8079659607374394178L
+					type: "random"
+				}
+				{
+					id: "2095CD8728416661"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "7099F75572E2B64F"
+					item: {
+						count: 1
+						id: "better_with_gold:reinforced_golden_armor_helmet"
+					}
+					type: "item"
+				}
+				{
+					id: "50A6F568246A2559"
+					item: {
+						count: 1
+						id: "better_with_gold:reinforced_golden_armor_chestplate"
+					}
+					type: "item"
+				}
+				{
+					id: "3A6944B2FB18E4C1"
+					item: {
+						count: 1
+						id: "better_with_gold:reinforced_golden_armor_leggings"
+					}
+					type: "item"
+				}
+				{
+					id: "654D719F764CC750"
+					item: {
+						count: 1
+						id: "better_with_gold:reinforced_golden_armor_boots"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["304ECA06BDAE1D37"]
+			icon: {
+				id: "better_with_gold:greater_golden_hammer"
+			}
+			id: "723B8D2420490EBB"
+			optional: true
+			rewards: [
+				{
+					id: "2E57FA71066B1A26"
+					item: {
+						count: 1
+						id: "minecraft:gold_block"
+					}
+					type: "item"
+				}
+				{
+					id: "2018D32B10E9DC90"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "6369BABAFAC1C598"
+					item: {
+						components: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(better_with_gold:greater_golden_axe)ftbfiltersystem:item(better_with_gold:reinforced_greater_golden_axe)ftbfiltersystem:item(better_with_gold:greater_golden_hammer)ftbfiltersystem:item(better_with_gold:reinforced_greater_golden_hammer)ftbfiltersystem:item(better_with_gold:golden_scythe)ftbfiltersystem:item(better_with_gold:reinforced_golden_scythe))"
+						}
+						count: 1
+						id: "ftbfiltersystem:smart_filter"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 4.5d
+		}
+	]
+}

@@ -1,0 +1,424 @@
+chapter: p_armory
+group: paths
+order: 11
+title: "&eThe Armory"
+subtitle: "Steel, stones, and what the Sovereigns leave behind."
+icon: runeborn:errant_longsword
+quests:
+  - key: armory
+    title: "&eThe Armory"
+    subtitle: "Bring me what the dead leave behind."
+    icon: runeborn:errant_longsword
+    pos: [0, 0]
+    deps: [s1_act1_embers/kindle]
+    shape: hexagon
+    size: 1.5
+    desc: |
+      &o"Bring me what the dead leave behind. I'll make it sing."&r &7— the Smith Under Ash&r
+
+      An armament deals up to five kinds of damage (&7physical&r, &bmagic&r, &6fire&r, &elightning&r, &fholy&r), scales with your attributes on grades from &6S&r down to &7E&r, and lists what it requires. Wield one you don't qualify for and it hits like an apology.
+
+      Hold &eShift&r over an armament to read it. The dead drop them; the shrine &6Merchant&r stocks more as Sovereigns fall.
+    tasks: [{checkmark: "I read an armament's tooltip (Shift)"}]
+    rewards: [{table: paths_smiths_crate}, {xp: 50}]
+
+  # ---- armaments by class: any armament of the class completes the quest ----
+  - key: dagger
+    title: "The Short Answer"
+    subtitle: "Daggers"
+    icon: runeborn:cutthroat_kris
+    pos: [0, -2.5]
+    deps: [armory]
+    hide_dependency_lines: true
+    optional: true
+    desc: |
+      &6Daggers&r are quick, short and cheap: six stamina a swing. Most carry &6Quickstep&r, a burst of speed through an attack.
+
+      They're built for &cstatus&r. The &6Cutthroat's Kris&r builds &cHemorrhage&r; the &6Venomfang Stiletto&r, &2Poison&r. Every hit fills the meter, and when it bursts, it hurts.
+    tasks:
+      - title: "Any dagger"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:rusted_dagger)ftbfiltersystem:item(runeborn:cutthroat_kris)ftbfiltersystem:item(runeborn:starshard_kris)ftbfiltersystem:item(runeborn:venomfang_stiletto)ftbfiltersystem:item(runeborn:shadowfang))"}}
+    rewards: [{item: runeborn:tempering_stone_1, count: 2}, {xp: 40}]
+
+  - key: straight_sword
+    title: "Honest Steel"
+    subtitle: "Straight swords"
+    icon: runeborn:errant_longsword
+    pos: [1.5, -2.5]
+    deps: [armory]
+    hide_dependency_lines: true
+    optional: true
+    desc: |
+      The &6straight sword&r does everything adequately, which is more than most things in this world can say. Ten stamina a swing, Strength and Dexterity alike, and &6War Cry&r on &eR&r to harden you for the fight.
+
+      The &6Errant Longsword&r was carried by knights who swore to no lord. Later blades burn (&6Emberbrand&r), freeze (&6Rimeguard Sword&r) or rot (&6Ossuary Blade&r).
+    tasks:
+      - title: "Any straight sword"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:errant_longsword)ftbfiltersystem:item(runeborn:oathsworn_blade)ftbfiltersystem:item(runeborn:ossuary_blade)ftbfiltersystem:item(runeborn:emberbrand)ftbfiltersystem:item(runeborn:rimeguard_sword)ftbfiltersystem:item(runeborn:sunlit_sword))"}}
+    rewards: [{item: runeborn:tempering_stone_1, count: 2}, {xp: 40}]
+
+  - key: thrusting_sword
+    title: "The Needle"
+    subtitle: "Thrusting swords"
+    icon: runeborn:noble_rapier
+    pos: [3, -2.5]
+    deps: [armory]
+    hide_dependency_lines: true
+    optional: true
+    desc: |
+      &6Thrusting swords&r reach a little further and strike a little faster. Their art is &6Impaling Thrust&r, a lunge that pierces every foe in a line.
+
+      The &6Noble's Rapier&r trades it for &6Quickstep&r and lives on Dexterity. The &6Thornspur Rapier&r leaves &2Blight&r in every wound.
+    tasks:
+      - title: "Any thrusting sword"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:hexblade_estoc)ftbfiltersystem:item(runeborn:noble_rapier)ftbfiltersystem:item(runeborn:thornspur_rapier))"}}
+    rewards: [{item: runeborn:tempering_stone_1, count: 2}, {xp: 40}]
+
+  - key: curved_sword
+    title: "The Curve of It"
+    subtitle: "Curved swords"
+    icon: runeborn:duelist_scimitar
+    pos: [4.5, -2.5]
+    deps: [armory]
+    hide_dependency_lines: true
+    optional: true
+    desc: |
+      &6Curved swords&r are for those who'd rather not be standing where the blow lands. Fast, hungry for Dexterity, &6Quickstep&r on &eR&r.
+
+      The &6Fangtooth Cleaver&r frenzies and bleeds (&6Frenzied Strikes&r). The &6Magma Falchion&r was quenched in molten rock and still cuts with fire.
+    tasks:
+      - title: "Any curved sword"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:duelist_scimitar)ftbfiltersystem:item(runeborn:desert_shamshir)ftbfiltersystem:item(runeborn:fangtooth_cleaver)ftbfiltersystem:item(runeborn:magma_falchion))"}}
+    rewards: [{item: runeborn:tempering_stone_1, count: 2}, {xp: 40}]
+
+  - key: katana
+    title: "One Draw"
+    subtitle: "Katanas"
+    icon: runeborn:ronin_uchigatana
+    pos: [6, -2.5]
+    deps: [armory]
+    hide_dependency_lines: true
+    optional: true
+    desc: |
+      A &6katana&r cuts fast and bleeds. Its art is &6Unsheathe&r: gather focus, then cut everything before you in one draw.
+
+      The &6Ronin's Uchigatana&r builds &cHemorrhage&r from the first swing. The &6Longfang Nodachi&r is too long to draw quickly and too deadly for that to matter.
+    tasks:
+      - title: "Any katana"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:ronin_uchigatana)ftbfiltersystem:item(runeborn:longfang_nodachi)ftbfiltersystem:item(runeborn:mistveil_katana)ftbfiltersystem:item(runeborn:stormfang)ftbfiltersystem:item(runeborn:crimsonfall)ftbfiltersystem:item(runeborn:rimeveil))"}}
+    rewards: [{item: runeborn:tempering_stone_1, count: 2}, {xp: 40}]
+
+  - key: twinblade
+    title: "Two Edges, No Rest"
+    subtitle: "Twinblades"
+    icon: runeborn:twinfang_glaive
+    pos: [7.5, -2.5]
+    deps: [armory]
+    hide_dependency_lines: true
+    optional: true
+    desc: |
+      A &6twinblade&r is an edge at both ends of a pole. Twelve stamina a swing, and &6Whirlwind&r: three spins, a storm of steel around you.
+
+      Crowds are its business. Bosses, rather less so.
+    tasks:
+      - title: "Any twinblade"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:twinfang_glaive)ftbfiltersystem:item(runeborn:hollow_monk_staff)ftbfiltersystem:item(runeborn:eclipse_twinblade))"}}
+    rewards: [{item: runeborn:tempering_stone_1, count: 2}, {xp: 40}]
+
+  - key: fist_whip
+    title: "Fist and Lash"
+    subtitle: "Fists and whips"
+    icon: runeborn:beast_claws
+    pos: [9, -2.5]
+    deps: [armory]
+    hide_dependency_lines: true
+    optional: true
+    desc: |
+      &6Fists&r are the fastest thing you can hold: five stamina a swing and no reach to speak of. &6Beast Claws&r bleed; &6Ironbound Knuckles&r shout (&6War Cry&r).
+
+      A &6whip&r is the opposite: the longest reach of any armament. The &6Thornlash&r is a vine that learned to bite.
+    tasks:
+      - title: "Any fist weapon or whip"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:beast_claws)ftbfiltersystem:item(runeborn:ironbound_knuckles)ftbfiltersystem:item(runeborn:thornlash))"}}
+    rewards: [{item: runeborn:tempering_stone_1, count: 2}, {xp: 40}]
+
+  - key: greatswords
+    title: "The Weight of the Blade"
+    subtitle: "Greatswords and colossal swords"
+    icon: runeborn:highland_claymore
+    pos: [0, -4]
+    deps: [armory]
+    hide_dependency_lines: true
+    optional: true
+    desc: |
+      A &6greatsword&r costs eighteen stamina a swing and is worth it. &6Leaping Cleave&r brings the full weight down from the air. The &6Highland Claymore&r is the honest start.
+
+      A &6colossal sword&r is less a sword than a falling wall: twenty-six stamina a swing and &6Ruinous Charge&r. The &6Ruinbreaker&r wants 26 Strength before it will move at all.
+    tasks:
+      - title: "Any greatsword or colossal sword"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:highland_claymore)ftbfiltersystem:item(runeborn:wavecut_flamberge)ftbfiltersystem:item(runeborn:banneret_greatsword)ftbfiltersystem:item(runeborn:hellbrand)ftbfiltersystem:item(runeborn:ashen_greatsword)ftbfiltersystem:item(runeborn:lunar_bloomfang)ftbfiltersystem:item(runeborn:ruinbreaker)ftbfiltersystem:item(runeborn:starfall_slab)ftbfiltersystem:item(runeborn:crownsplitter))"}}
+    rewards: [{item: runeborn:tempering_stone_1, count: 2}, {xp: 40}]
+
+  - key: axes
+    title: "Axes, Small and Great"
+    subtitle: "Axes and greataxes"
+    icon: runeborn:warlord_battleaxe
+    pos: [1.5, -4]
+    deps: [armory]
+    hide_dependency_lines: true
+    optional: true
+    desc: |
+      An &6axe&r is a Strength weapon that doesn't apologise: &6War Cry&r on &eR&r, and the &6Warlord's Battleaxe&r is notched once for every war it survived.
+
+      A &6greataxe&r swings slower and harder, with &6Frenzied Strikes&r: five savage blows. The &6Executioner's Greataxe&r has only ever had one job.
+    tasks:
+      - title: "Any axe or greataxe"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:warlord_battleaxe)ftbfiltersystem:item(runeborn:jawbone_axe)ftbfiltersystem:item(runeborn:rimebite_axe)ftbfiltersystem:item(runeborn:executioner_greataxe)ftbfiltersystem:item(runeborn:ravager_greataxe)ftbfiltersystem:item(runeborn:graft_axe))"}}
+    rewards: [{item: runeborn:tempering_stone_1, count: 2}, {xp: 40}]
+
+  - key: hammers
+    title: "Blunt Instruments"
+    subtitle: "Hammers and great hammers"
+    icon: runeborn:iron_warhammer
+    pos: [3, -4]
+    deps: [armory]
+    hide_dependency_lines: true
+    optional: true
+    desc: |
+      &6Hammers&r don't care where the armour is. &6Earthshaker&r drives the head into the ground and throws foes skyward. The &6Iron Warhammer&r: simple, solid, final.
+
+      &6Great hammers&r do it bigger and slower. The &6Titan's Gavel&r asks for 30 Strength and delivers judgement by weight.
+    tasks:
+      - title: "Any hammer or great hammer"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:ashborn_club)ftbfiltersystem:item(runeborn:iron_warhammer)ftbfiltersystem:item(runeborn:penitent_mace)ftbfiltersystem:item(runeborn:morning_star)ftbfiltersystem:item(runeborn:bloomwarden_mace)ftbfiltersystem:item(runeborn:titans_gavel)ftbfiltersystem:item(runeborn:stoneheart_maul)ftbfiltersystem:item(runeborn:voidstar_hammer))"}}
+    rewards: [{item: runeborn:tempering_stone_1, count: 2}, {xp: 40}]
+
+  - key: polearms
+    title: "Reach"
+    subtitle: "Spears and halberds"
+    icon: runeborn:militia_spear
+    pos: [4.5, -4]
+    deps: [armory]
+    hide_dependency_lines: true
+    optional: true
+    desc: |
+      A &6spear&r keeps the dead a step and a half further away and runs them through with &6Impaling Thrust&r. The &6Militia Spear&r was handed to farmers when the walls began to fall.
+
+      A &6halberd&r reaches nearly as far and sweeps instead: &6Spinning Reap&r. The &6Sentinel Halberd&r stood guard long after the guard fell.
+    tasks:
+      - title: "Any spear or halberd"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:militia_spear)ftbfiltersystem:item(runeborn:hallowed_lance)ftbfiltersystem:item(runeborn:stormcaller_pike)ftbfiltersystem:item(runeborn:sentinel_halberd)ftbfiltersystem:item(runeborn:duskrider_glaive)ftbfiltersystem:item(runeborn:wyrmfang_halberd))"}}
+    rewards: [{item: runeborn:tempering_stone_1, count: 2}, {xp: 40}]
+
+  - key: reaper
+    title: "The Harvest"
+    subtitle: "Reapers"
+    icon: runeborn:grave_scythe
+    pos: [6, -4]
+    deps: [armory]
+    hide_dependency_lines: true
+    optional: true
+    desc: |
+      A &6reaper&r is a scythe made for people. &6Spinning Reap&r: a wide circle that doubles status build-up.
+
+      The &6Grave Scythe&r bleeds them; &6Winter's Reaping Hook&r freezes them. The harvest is always ready.
+    tasks:
+      - title: "Any reaper"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:grave_scythe)ftbfiltersystem:item(runeborn:winters_hook)ftbfiltersystem:item(runeborn:gravewarden_scythe))"}}
+    rewards: [{item: runeborn:tempering_stone_1, count: 2}, {xp: 40}]
+
+  - key: staff
+    title: "Read the Stars"
+    subtitle: "Staves"
+    icon: runeborn:astral_staff
+    pos: [7.5, -4]
+    deps: [armory]
+    hide_dependency_lines: true
+    optional: true
+    desc: |
+      A &6staff&r is a catalyst: &eR&r casts its bound &bsorcery&r, paid in FP, scaling with &bIntelligence&r. The &6Astral Staff&r throws a Starshard Bolt.
+
+      Later staves call storms, starshard barrages and gravity itself. Swinging one at a skeleton remains, technically, an option.
+    tasks:
+      - title: "Any staff"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:astral_staff)ftbfiltersystem:item(runeborn:stormglass_rod)ftbfiltersystem:item(runeborn:crystal_spire_staff)ftbfiltersystem:item(runeborn:gravebound_staff)ftbfiltersystem:item(runeborn:frostbound_staff)ftbfiltersystem:item(runeborn:abyssal_scepter))"}}
+    rewards: [{item: minecraft:lapis_lazuli, count: 8}, {xp: 40}]
+
+  - key: seal
+    title: "Prayers That Answer"
+    subtitle: "Sacred seals"
+    icon: runeborn:pilgrim_seal
+    pos: [9, -4]
+    deps: [armory]
+    hide_dependency_lines: true
+    optional: true
+    desc: |
+      A &6sacred seal&r casts &eincantations&r on &eR&r, scaling with &eFaith&r. The &6Pilgrim's Seal&r calls down Blessed Flame.
+
+      The &6Seal of the Golden Rite&r mends you and your allies; the &6Flame Prayer Seal&r raises a pillar of fire under your foe.
+    tasks:
+      - title: "Any sacred seal"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:pilgrim_seal)ftbfiltersystem:item(runeborn:golden_rite_seal)ftbfiltersystem:item(runeborn:flame_prayer_seal)ftbfiltersystem:item(runeborn:storm_totem)ftbfiltersystem:item(runeborn:bloodbloom_sigil)ftbfiltersystem:item(runeborn:dragonsoul_seal))"}}
+    rewards: [{item: minecraft:glistering_melon_slice, count: 2}, {xp: 40}]
+
+  # ---- reinforcement and affinities ----
+  - key: temper
+    title: "Tempered Steel"
+    subtitle: "Three steps to a stone."
+    icon: runeborn:tempering_stone_4
+    pos: [2, 0]
+    deps: [armory]
+    desc: |
+      Standard armaments climb to &6+25&r on &6Tempering Stones&r. Each grade carries three steps (I takes +0 to +3, II to +6, on to VIII at +24), and a &6Sovereign Tempering Stone&r makes the last.
+
+      The dead drop stones now and then, champions by the handful, and the Merchant sells I to V. Reinforce at a shrine: runes and stones.
+
+      Take an armament to &6+10&r.
+    tasks: [{advancement: "runeborn:feats/tempered"}]
+    rewards: [{item: runeborn:tempering_stone_4, count: 2}, {table: paths_smiths_crate}, {xp: 120}]
+
+  - key: infused
+    title: "A Keener Edge"
+    subtitle: "Whetstones and affinities."
+    icon: runeborn:fire_whetstone
+    pos: [2, 1.5]
+    deps: [armory]
+    desc: |
+      A &6Blank Whetstone&r (smooth stone slabs and flint) plus a reagent makes an &6affinity whetstone&r: iron block for &7Heavy&r, flint and feather for &aKeen&r, lapis block for &bMagic&r, blaze powder and magma cream for &6Fire&r, a lightning rod for &eLightning&r, a golden apple for &fSacred&r, blue ice for &bCold&r. Twelve in all.
+
+      &6Infuse&r at a shrine to give a standard armament that affinity. The whetstone isn't consumed; the runes are. Unique armaments refuse the stone.
+    tasks:
+      - title: "Any affinity whetstone"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:heavy_whetstone)ftbfiltersystem:item(runeborn:keen_whetstone)ftbfiltersystem:item(runeborn:quality_whetstone)ftbfiltersystem:item(runeborn:magic_whetstone)ftbfiltersystem:item(runeborn:fire_whetstone)ftbfiltersystem:item(runeborn:flame_art_whetstone)ftbfiltersystem:item(runeborn:lightning_whetstone)ftbfiltersystem:item(runeborn:sacred_whetstone)ftbfiltersystem:item(runeborn:cold_whetstone)ftbfiltersystem:item(runeborn:blood_whetstone)ftbfiltersystem:item(runeborn:poison_whetstone)ftbfiltersystem:item(runeborn:occult_whetstone))"}}
+      - {advancement: "runeborn:feats/infused"}
+    rewards: [{item: runeborn:blank_whetstone}, {xp: 100}]
+
+  - key: masterwork
+    title: "Masterwork"
+    subtitle: "Now it sings."
+    icon: runeborn:sovereign_tempering_stone
+    pos: [4, 0]
+    deps: [temper]
+    shape: hexagon
+    size: 1.5
+    desc: |
+      Fully reinforce one armament: &6+25&r for standard steel, &6+10&r for a unique one. The last step always takes a &6Sovereign&r stone, and those only come from things that wore a crown, or wanted one.
+
+      &o"There. Now it sings. Try not to lose it in a ditch."&r
+    tasks: [{advancement: "runeborn:feats/masterwork"}]
+    rewards: [{item: runeborn:heros_rune}, {table: paths_smiths_crate}, {xp: 500}]
+
+  # ---- relics: each becomes one of two armaments at a shrine's Relics service ----
+  - key: relic_dusk
+    title: "Relic of the Dusk Rider"
+    subtitle: "A relic remembers what its owner carried."
+    icon: runeborn:duskrider_glaive
+    pos: [2, 3]
+    deps: [armory, s1_act1_embers/dusk_rider]
+    desc: |
+      Take the &6Relic of the Dusk Rider&r to a shrine and open &6Relics&r. It becomes one of two: the &6Duskrider Glaive&r, a halberd for Strength and Dexterity, or the &6Sunlit Sword&r, holy steel for &eFaith&r.
+
+      Choose the one your attributes can carry. The relic is spent either way.
+    tasks:
+      - title: "The Duskrider Glaive or the Sunlit Sword"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:duskrider_glaive)ftbfiltersystem:item(runeborn:sunlit_sword))"}}
+    rewards: [{item: runeborn:lustrous_stone_1, count: 2}, {xp: 150}]
+
+  - key: lustrous
+    title: "Lustrous Stones"
+    subtitle: "Unique steel climbs slower."
+    icon: runeborn:lustrous_stone_4
+    pos: [2, 4.5]
+    deps: [relic_dusk]
+    desc: |
+      Unique armaments, &6Epic&r and &6Legendary&r, don't take tempering. They climb to &6+10&r on &6Lustrous Stones&r, one grade per step (I for +1, on to IX for +9), and a &6Sovereign Lustrous Stone&r for the last.
+
+      Champions carry them, Sovereigns leave two, and the Merchant sells the first three. A unique armament can't be infused, so the plus is all it will ever get. Make it count.
+    tasks: [{item: runeborn:lustrous_stone_4}]
+    rewards: [{item: runeborn:lustrous_stone_3, count: 2}, {xp: 150}]
+
+  - key: relic_hunt
+    title: "Graft and Frost"
+    subtitle: "Varghast and Sylvara"
+    icon: runeborn:graft_axe
+    pos: [4, 3]
+    deps: [relic_dusk, s1_act2_hunt/sylvara]
+    desc: |
+      &6Varghast's&r relic becomes his &6Graft-Axe&r or &6Crownsplitter&r, the colossal sword he grafted to his own arm. Both want more Strength than is polite.
+
+      &6Sylvara's&r becomes her &6Frostbound Staff&r, winter on command for a sorcerer, or &6Rimeveil&r, her veil folded into a katana.
+    tasks:
+      - title: "An armament of Varghast"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:graft_axe)ftbfiltersystem:item(runeborn:crownsplitter))"}}
+      - title: "An armament of Sylvara"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:frostbound_staff)ftbfiltersystem:item(runeborn:rimeveil))"}}
+    rewards: [{item: runeborn:lustrous_stone_4, count: 2}, {xp: 250}]
+
+  - key: relic_deep
+    title: "Storm and Bloom"
+    subtitle: "Kaelthar and Ysolde"
+    icon: runeborn:stormcaller_pike
+    pos: [6, 3]
+    deps: [relic_hunt, s1_act3_deep/ysolde]
+    desc: |
+      &6Kaelthar's&r relic becomes his &6Storm Totem&r, a seal that hurls spears of storm, or the &6Stormcaller's Pike&r: raise it and the sky obeys.
+
+      &6Ysolde's&r becomes &6Crimsonfall&r, a katana that drinks before you do, or the &6Bloodbloom Sigil&r, a seal of Faith and Arcane that ruptures every vein nearby.
+    tasks:
+      - title: "An armament of Kaelthar"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:storm_totem)ftbfiltersystem:item(runeborn:stormcaller_pike))"}}
+      - title: "An armament of Ysolde"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:crimsonfall)ftbfiltersystem:item(runeborn:bloodbloom_sigil))"}}
+    rewards: [{item: runeborn:lustrous_stone_6, count: 2}, {xp: 350}]
+
+  - key: old_powers
+    title: "Relics of the Old Powers"
+    subtitle: "Older than the Crown."
+    icon: runeborn:shadowfang
+    pos: [6, 4.5]
+    deps: [relic_deep]
+    optional: true
+    desc: |
+      The Old Powers never served the Sovereigns, but each kept a relic of the world before. The &6Warden&r's becomes &6Shadowfang&r or the &6Eclipse Twinblade&r; the &6Elder Guardian&r's, &6Stormfang&r or the &6Bloomwarden's Mace&r; the &6Wither&r's, the &6Gravewarden's Scythe&r or the &6Starfall Slab&r.
+
+      &7The Dragon at the world's end keeps one too. It can wait.&r
+    tasks:
+      - title: "An armament of the Warden"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:shadowfang)ftbfiltersystem:item(runeborn:eclipse_twinblade))"}}
+      - title: "An armament of the Elder Guardian"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:stormfang)ftbfiltersystem:item(runeborn:bloomwarden_mace))"}}
+      - title: "An armament of the Wither"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:gravewarden_scythe)ftbfiltersystem:item(runeborn:starfall_slab))"}}
+    rewards: [{item: runeborn:sovereign_lustrous_stone}, {xp: 500}]
+
+  - key: relic_ash
+    title: "Ash and Wyrm"
+    subtitle: "Morgrath and Vaelorn"
+    icon: runeborn:voidstar_hammer
+    pos: [8, 3]
+    deps: [relic_deep, s1_act4_ash/vaelorn]
+    desc: |
+      &6Morgrath's&r relic becomes the &6Voidstar Hammer&r, which called stars down, or his &6Ashen Greatsword&r, which remembers the burning of the old crown.
+
+      &6Vaelorn's&r becomes the &6Wyrmfang Halberd&r, cut from his own fang, or the &6Dragonsoul Seal&r: a wyrm's heart, still beating, bound in gold.
+    tasks:
+      - title: "An armament of Morgrath"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:voidstar_hammer)ftbfiltersystem:item(runeborn:ashen_greatsword))"}}
+      - title: "An armament of Vaelorn"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:wyrmfang_halberd)ftbfiltersystem:item(runeborn:dragonsoul_seal))"}}
+    rewards: [{item: runeborn:sovereign_tempering_stone}, {item: runeborn:lustrous_stone_8, count: 2}, {xp: 500}]
+
+  - key: crown
+    title: "&6The Crown Remade"
+    subtitle: "Seven shards. One hollow crown."
+    icon: runeborn:crown_shard_morgrath
+    pos: [10, 3]
+    deps: [relic_ash]
+    shape: gear
+    size: 2.0
+    desc: |
+      Six Sovereigns leave &6Crown Shards&r: Varghast's (+5 to every attribute), Sylvara's (health, and no frostbite), Kaelthar's (lightning and stamina), Ysolde's (life from every kill), Morgrath's (physical damage, and no fire), Vaelorn's (cheaper spells). The seventh is the Dragon's, at the world's end.
+
+      Use each to claim it, then wear one at a time from a shrine. Claim all seven and the crown that broke the sun is whole again, for whatever that's worth.
+    tasks: [{advancement: "runeborn:feats/crown"}]
+    rewards: [{table: sovereign_tribute}, {xp: 1000}]

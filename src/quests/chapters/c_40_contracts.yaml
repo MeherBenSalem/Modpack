@@ -1,0 +1,262 @@
+chapter: c_contracts
+group: contracts
+order: 40
+title: "&cAshen Contracts"
+subtitle: "Ilse the Huntmaster pays for proof. The board never empties."
+icon: minecraft:crossbow
+shape: square
+quests:
+  - key: huntmaster
+    title: "&cThe Huntmaster's Board"
+    subtitle: "She knows every rank and every trait. Ask nicely."
+    icon: minecraft:crossbow
+    pos: [0, -0.25]
+    deps: [s1_act2_hunt/hunters_moon]
+    shape: hexagon
+    size: 2.0
+    desc: |
+      The first red moon brought the Remnants out, and it brought &6Ilse&r with it. She hunted them before the Eclipse had a name, and she has never once been paid in thanks.
+
+      &o"You're the Ashborn who lit the shrine. Good. I need someone who gets back up. I post contracts, you fill them, I pay. Nothing personal, nothing owed."&r
+
+      Every contract on this board can be taken again once it's paid. Kills count from the moment a contract is posted; collect, and it's posted again from zero.
+
+      &7Under a Hunter's Moon the board pays the same. The shards don't.
+    tasks: [{checkmark: "I'll take Ilse's contracts"}]
+    rewards:
+      - {command: "/lastlight arrive huntmaster {p}", title: "Ilse the Huntmaster comes to Last Light", icon: minecraft:crossbow}
+      - {item: remnant_mobs:brand_of_challenge}
+      - {xp: 150}
+
+  # ---- the Overworld (Act II) ----
+  - key: zombies
+    title: "Contract: The Shambling Dead"
+    subtitle: "Minor bounty · 20 zombies"
+    icon: minecraft:zombie_head
+    pos: [2.5, -2.5]
+    deps: [huntmaster]
+    repeatable: true
+    hide_dependency_lines: true
+    desc: |
+      &o"Zombies. I know. Somebody has to, and the somebody is you."&r
+
+      Kill &c20 zombies&r. Ranked ones count the same and pay their own shards on top. A &eVampiric&r one heals when it bites; don't trade blows with it.
+    tasks: [{kill: minecraft:zombie, count: 20}]
+    rewards: [{table: contracts_minor}, {xp: 80}]
+
+  - key: skeletons
+    title: "Contract: Bone Archers"
+    subtitle: "Minor bounty · 15 skeletons"
+    icon: minecraft:skeleton_skull
+    pos: [4, -2.5]
+    deps: [huntmaster]
+    repeatable: true
+    hide_dependency_lines: true
+    desc: |
+      &o"Close the distance or don't bother. They never run out of arrows. You'll run out of patience."&r
+
+      Kill &c15 skeletons&r. Watch for &eBlinking&r ones: they won't stay where you left them.
+    tasks: [{kill: minecraft:skeleton, count: 15}]
+    rewards: [{table: contracts_minor}, {xp: 80}]
+
+  - key: spiders
+    title: "Contract: Eight Legs"
+    subtitle: "Minor bounty · 10 spiders"
+    icon: minecraft:spider_eye
+    pos: [5.5, -2.5]
+    deps: [huntmaster]
+    repeatable: true
+    hide_dependency_lines: true
+    desc: |
+      &o"Cave spiders don't count. I'm not paying you to crawl into a mineshaft after something the size of a dinner plate."&r
+
+      Kill &c10 spiders&r. &eVenomous&r ones poison you: rest at a shrine or let a flask do its work.
+    tasks: [{kill: minecraft:spider, count: 10}]
+    rewards: [{table: contracts_minor}, {xp: 80}]
+
+  - key: creepers
+    title: "Contract: Quiet Fuses"
+    subtitle: "Minor bounty · 10 creepers"
+    icon: minecraft:creeper_head
+    pos: [7, -2.5]
+    deps: [huntmaster]
+    repeatable: true
+    hide_dependency_lines: true
+    desc: |
+      &o"Kill them before they reach the walls. I've rebuilt the tannery twice."&r
+
+      Kill &c10 creepers&r. When one starts to hiss, roll out, not back. A &eVolatile&r one is worse news than usual.
+    tasks: [{kill: minecraft:creeper, count: 10}]
+    rewards: [{table: contracts_minor}, {xp: 80}]
+
+  - key: drowned
+    title: "Contract: The Drowned Watch"
+    subtitle: "Minor bounty · 10 drowned"
+    icon: minecraft:trident
+    pos: [8.5, -2.5]
+    deps: [huntmaster]
+    repeatable: true
+    hide_dependency_lines: true
+    desc: |
+      &o"The fishers won't go out past the reeds anymore. Fix that."&r
+
+      Kill &c10 drowned&r in the rivers and the shallows. Some carry tridents, and they throw them.
+    tasks: [{kill: minecraft:drowned, count: 10}]
+    rewards: [{table: contracts_minor}, {xp: 80}]
+
+  - key: husks_strays
+    title: "Contract: Sand and Frost"
+    subtitle: "Major bounty · 8 husks and 8 strays"
+    icon: minecraft:packed_ice
+    pos: [2.5, -1]
+    deps: [huntmaster]
+    repeatable: true
+    hide_dependency_lines: true
+    desc: |
+      &o"Two kinds of dead that never rot right. One's dried out, one's frozen solid. I want both."&r
+
+      Kill &c8 husks&r in the deserts and &c8 strays&r in the frozen lands. Husks bring hunger and strays bring slowness: eat well before you go, and bring the dodge.
+    tasks: [{kill: minecraft:husk, count: 8}, {kill: minecraft:stray, count: 8}]
+    rewards: [{table: contracts_major}, {xp: 150}]
+
+  - key: witches
+    title: "Contract: The Coven's Castoffs"
+    subtitle: "Major bounty · 5 witches"
+    icon: handcrafted:witch_trophy
+    pos: [4, -1]
+    deps: [huntmaster]
+    repeatable: true
+    hide_dependency_lines: true
+    desc: |
+      &o"Not the Coven. The Coven pays its debts. These are the ones it threw out."&r
+
+      Kill &c5 witches&r. They drink their own potions mid-fight; hit them while the bottle's still raised.
+    tasks: [{kill: minecraft:witch, count: 5}]
+    rewards: [{table: contracts_major}, {xp: 150}]
+
+  - key: dread_hounds
+    title: "Contract: Dread Hounds"
+    subtitle: "Minor bounty · 10 Dread Hounds"
+    icon: born_in_chaos_v1:fangofthe_hound_leader
+    pos: [5.5, -1]
+    deps: [huntmaster]
+    repeatable: true
+    hide_dependency_lines: true
+    desc: |
+      &o"They hunt in packs of three to five. So should you, if you have friends. If you don't, roll well."&r
+
+      Kill &c10 Dread Hounds&r. Where there's a pack there's sometimes a &6Dire Hound Leader&r. It isn't on the contract. It is in your way.
+    tasks: [{kill: born_in_chaos_v1:dread_hound, count: 10}]
+    rewards: [{table: contracts_minor}, {xp: 100}]
+
+  - key: stalker
+    title: "Contract: Something Following"
+    subtitle: "Major bounty · 1 Nightmare Stalker · after Sylvara"
+    icon: born_in_chaos_v1:nightmare_claw
+    pos: [7, -1]
+    deps: [huntmaster, s1_act2_hunt/sylvara]
+    repeatable: true
+    hide_dependency_lines: true
+    desc: |
+      &o"If you feel like something is following you, something is. Turn around slowly. Then stop being slow."&r
+
+      Kill a &cNightmare Stalker&r. It finds you, not the other way round: walk the dark at night and wait for the warning.
+    tasks: [{kill: born_in_chaos_v1:nightmare_stalker}]
+    rewards: [{table: contracts_major}, {item: remnant_mobs:remnant_shard, count: 8}, {xp: 250}]
+
+  # ---- the Ashlands (Act IV) ----
+  - key: blazes
+    title: "Contract: Ash and Embers"
+    subtitle: "Major bounty · 10 blazes · the Ashlands"
+    icon: minecraft:blaze_rod
+    pos: [2.5, 0.5]
+    deps: [huntmaster, s1_act3_deep/ysolde]
+    repeatable: true
+    hide_dependency_lines: true
+    desc: |
+      &o"The Ashlands burn without fuel. That's the blazes. Fewer blazes, less burning. Simple sums."&r
+
+      Kill &c10 blazes&r. A shield catches fireballs; a bow catches blazes.
+    tasks: [{kill: minecraft:blaze, count: 10}]
+    rewards: [{table: contracts_major}, {xp: 200}]
+
+  - key: wither_skeletons
+    title: "Contract: Black Bones"
+    subtitle: "Major bounty · 10 wither skeletons · the Ashlands"
+    icon: minecraft:wither_skeleton_skull
+    pos: [4, 0.5]
+    deps: [huntmaster, s1_act3_deep/ysolde]
+    repeatable: true
+    hide_dependency_lines: true
+    desc: |
+      &o"Every one of them carries the Wither on its blade. Don't let it cut you twice."&r
+
+      Kill &c10 wither skeletons&r in the fortresses of the Ashlands. Withering stops your health coming back; milk stops the withering.
+    tasks: [{kill: minecraft:wither_skeleton, count: 10}]
+    rewards: [{table: contracts_major}, {xp: 200}]
+
+  - key: brutes
+    title: "Contract: The Bastion's Wardens"
+    subtitle: "Grave bounty · 3 piglin brutes · the Ashlands"
+    icon: minecraft:golden_axe
+    pos: [5.5, 0.5]
+    deps: [huntmaster, s1_act3_deep/ysolde]
+    repeatable: true
+    hide_dependency_lines: true
+    desc: |
+      &o"Piglins you can bargain with. Brutes you bury. Three of them."&r
+
+      Kill &c3 piglin brutes&r. They guard the bastions, they never stop chasing, and gold won't buy them off.
+
+      &7Brutes don't come back once a bastion is cleared. Each contract needs a fresh one.
+    tasks: [{kill: minecraft:piglin_brute, count: 3}]
+    rewards: [{table: contracts_grave}, {xp: 300}]
+
+  # ---- the Eclipsed Realm (Act V) ----
+  - key: hollow_legion
+    title: "Contract: The Hollow Legion"
+    subtitle: "Grave bounty · the Eclipsed Realm"
+    icon: remnant_bosses:tarnished_regalia
+    pos: [2.5, 2]
+    deps: [huntmaster, s1_act5_realm/enter]
+    repeatable: true
+    hide_until_deps: true
+    hide_dependency_lines: true
+    desc: |
+      &o"The Hollow Sovereign still keeps an army. It doesn't know the war ended. Neither do I, some days."&r
+
+      Kill &c8 Hollow Sentinels&r and &c4 Hollow Arbalists&r. Keep the &6Tarnished Regalia&r they drop: the Sovereign's Seal is made from it.
+    tasks: [{kill: remnants:hollow_sentinel, count: 8}, {kill: remnants:hollow_arbalist, count: 4}]
+    rewards: [{table: contracts_grave}, {xp: 300}]
+
+  - key: cryptborn
+    title: "Contract: The Cryptborn"
+    subtitle: "Grave bounty · the Eclipsed Realm"
+    icon: remnant_bosses:grave_iron
+    pos: [4, 2]
+    deps: [huntmaster, s1_act5_realm/enter]
+    repeatable: true
+    hide_until_deps: true
+    hide_dependency_lines: true
+    desc: |
+      &o"The Realm's dead are organised. I respect that. Kill them anyway."&r
+
+      Kill &c8 Gravebound Soldiers&r and &c4 Crypt Lurkers&r. The &6Grave Iron&r they carry forges the Crypt Key.
+    tasks: [{kill: remnants:gravebound_soldier, count: 8}, {kill: remnants:crypt_lurker, count: 4}]
+    rewards: [{table: contracts_grave}, {xp: 300}]
+
+  - key: burial_guardian
+    title: "Contract: The Burial Guardian"
+    subtitle: "Grave bounty · 1 Burial Guardian · the Eclipsed Realm"
+    icon: remnant_bosses:crypt_key
+    pos: [5.5, 2]
+    deps: [huntmaster, s1_act5_realm/enter]
+    repeatable: true
+    hide_until_deps: true
+    hide_dependency_lines: true
+    desc: |
+      &o"Big. Slow. Hits like a falling house. I'll pay double what it's worth, which is to say, the usual."&r
+
+      Kill a &cBurial Guardian&r, the hulking keeper of the Cryptborn. It carries Grave Iron, and sometimes a Crypt Key.
+    tasks: [{kill: remnants:burial_guardian}]
+    rewards: [{table: contracts_grave}, {table: contracts_grave}, {xp: 400}]

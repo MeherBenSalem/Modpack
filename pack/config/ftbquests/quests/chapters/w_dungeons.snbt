@@ -1,0 +1,733 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "w_dungeons"
+	group: "736A8EEBE4B075CD"
+	icon: {
+		id: "minecraft:spawner"
+	}
+	id: "19459C781145AE41"
+	images: [ ]
+	order_index: 21
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2D462FB5D6B13E35"]
+			icon: {
+				id: "minecraft:filled_map"
+			}
+			id: "17F741649E804F38"
+			rewards: [
+				{
+					id: "610AC626D7CED8B5"
+					table_id: 5734921576661672202L
+					type: "random"
+				}
+				{
+					id: "147997C352DC8DAA"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					advancement: "muchmoredungeons:discover_outdoor_villa"
+					criterion: ""
+					id: "16CC345B4711ADBF"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["17F741649E804F38"]
+			icon: {
+				id: "minecraft:enchanted_book"
+			}
+			id: "41F84D93CCC8D01C"
+			rewards: [
+				{
+					id: "506676023BD6DC3E"
+					table_id: 8538537266808005067L
+					type: "random"
+				}
+				{
+					id: "08839F87526C0089"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					advancement: "muchmoredungeons:discover_tower_dungeon"
+					criterion: ""
+					id: "26680AA0AFAB8C48"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["41F84D93CCC8D01C", "53F967EF1BEA3D24"]
+			icon: {
+				id: "minecraft:zombie_head"
+			}
+			id: "114B02670B918297"
+			rewards: [
+				{
+					id: "6AF1D7EF3F5FF7A0"
+					table_id: 6557265280331931275L
+					type: "random"
+				}
+				{
+					id: "00D791EE0A2AB287"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					advancement: "muchmoredungeons:discover_dungeon_t2"
+					criterion: ""
+					id: "3C84671BFB2CF15C"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["114B02670B918297", "10A48EAE33052B15"]
+			icon: {
+				id: "minecraft:soul_lantern"
+			}
+			id: "6B298C443C41887C"
+			rewards: [
+				{
+					id: "015EE645929260A7"
+					table_id: 4669804901230204658L
+					type: "random"
+				}
+				{
+					id: "762BD76ACFC0D8F7"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					advancement: "muchmoredungeons:discover_soulfire_crypt"
+					criterion: ""
+					id: "7C03B6A6DC7891D4"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6B298C443C41887C"]
+			icon: {
+				id: "minecraft:spawner"
+			}
+			id: "2EB4D681607450E6"
+			rewards: [
+				{
+					id: "504A3953786C3E37"
+					item: {
+						count: 1
+						id: "runeborn:heros_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "092C7D9B77A4A782"
+					item: {
+						count: 1
+						id: "mob_loot_bags:epiclootbag"
+					}
+					type: "item"
+				}
+				{
+					id: "4E7D68B20171E1B2"
+					type: "xp"
+					xp: 800
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "muchmoredungeons:all_dungeons"
+					criterion: ""
+					id: "1FD70EA69A990468"
+					type: "advancement"
+				}
+			]
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1B71C09161A6DDFB"]
+			icon: {
+				id: "minecraft:bone_block"
+			}
+			id: "59408FECF06D8CF0"
+			rewards: [
+				{
+					id: "20AF39759D473012"
+					table_id: 5734921576661672202L
+					type: "random"
+				}
+				{
+					id: "4B9811C3247C3BAF"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [
+				{
+					advancement: "muchmoredungeons:discover_catacombs"
+					criterion: ""
+					id: "5ABA04D279CEE84B"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["59408FECF06D8CF0"]
+			icon: {
+				id: "minecraft:sandstone"
+			}
+			id: "6C3C7785780D7DD1"
+			rewards: [
+				{
+					id: "449772438BC0A8C6"
+					table_id: 8538537266808005067L
+					type: "random"
+				}
+				{
+					id: "6CB0ED7A7442EA65"
+					type: "xp"
+					xp: 450
+				}
+			]
+			tasks: [
+				{
+					advancement: "muchmoredungeons:discover_sandstone_tomb"
+					criterion: ""
+					id: "02805C69A449C728"
+					type: "advancement"
+				}
+				{
+					advancement: "muchmoredungeons:slay_sandstone_tomb_guardian"
+					criterion: ""
+					id: "5B7D9315BA4EBFB7"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["59408FECF06D8CF0"]
+			icon: {
+				id: "minecraft:cobweb"
+			}
+			id: "22CFCF60A22D43F2"
+			rewards: [
+				{
+					id: "65292991C1CA0938"
+					table_id: 8538537266808005067L
+					type: "random"
+				}
+				{
+					id: "709C9E929241627B"
+					type: "xp"
+					xp: 450
+				}
+			]
+			tasks: [
+				{
+					advancement: "muchmoredungeons:discover_overgrown_warrens"
+					criterion: ""
+					id: "06CD2194C6CF6B74"
+					type: "advancement"
+				}
+				{
+					advancement: "muchmoredungeons:slay_overgrown_warrens_guardian"
+					criterion: ""
+					id: "2F7D533F69B1301B"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6C3C7785780D7DD1", "22CFCF60A22D43F2", "10A48EAE33052B15"]
+			icon: {
+				id: "minecraft:recovery_compass"
+			}
+			id: "2FA2ABAB39D5D95B"
+			rewards: [
+				{
+					id: "7A2C26D9A408C336"
+					item: {
+						count: 1
+						id: "runeborn:heros_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "6FE819A1D578E8A0"
+					item: {
+						count: 1
+						id: "mob_loot_bags:legendarylootbag"
+					}
+					type: "item"
+				}
+				{
+					id: "14A55943D1502534"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "muchmoredungeons:all_labyrinths"
+					criterion: ""
+					id: "43B35B245455A762"
+					type: "advancement"
+				}
+			]
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2D462FB5D6B13E35"]
+			icon: {
+				id: "minecraft:skeleton_skull"
+			}
+			id: "4E3972478AB115D3"
+			rewards: [
+				{
+					id: "1E3F61DBEE284228"
+					table_id: 5734921576661672202L
+					type: "random"
+				}
+				{
+					id: "5A24FEBD7625CD20"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "2B2E341959317BE0"
+					structure: "betterdungeons:skeleton_dungeon"
+					type: "structure"
+				}
+				{
+					id: "068BDDDCBB80449E"
+					structure: "betterdungeons:spider_dungeon"
+					type: "structure"
+				}
+			]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2D462FB5D6B13E35"]
+			icon: {
+				id: "minecraft:rail"
+			}
+			id: "6082A67EB4C4FE83"
+			rewards: [
+				{
+					id: "76B07B6E07D6F9EA"
+					table_id: 7547820078087610474L
+					type: "random"
+				}
+				{
+					count: 8
+					id: "0DD8AA2A9347CEA7"
+					item: {
+						count: 1
+						id: "minecraft:iron_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "4E21B7290DC7D877"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "000690800B16E429"
+					structure: "#bettermineshafts:better_mineshafts"
+					type: "structure"
+				}
+			]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2D462FB5D6B13E35"]
+			icon: {
+				id: "minecraft:chiseled_sandstone"
+			}
+			id: "3990E7B1699C5CBE"
+			rewards: [
+				{
+					id: "2D995529A9169FE8"
+					table_id: 4000594783902426681L
+					type: "random"
+				}
+				{
+					id: "18AADCB8C4C98D80"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					advancement: "betterdeserttemples:temple_entry"
+					criterion: ""
+					id: "1BAA320D310FD87C"
+					type: "advancement"
+				}
+				{
+					advancement: "betterdeserttemples:temple_clear"
+					criterion: ""
+					id: "6789946FC46526BD"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2D462FB5D6B13E35"]
+			icon: {
+				id: "minecraft:mossy_cobblestone"
+			}
+			id: "44B9D941A36D68C0"
+			rewards: [
+				{
+					id: "3D78D63FA592C469"
+					table_id: 5734921576661672202L
+					type: "random"
+				}
+				{
+					id: "218195969CDB215C"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [
+				{
+					id: "2990DE98B2CF5B34"
+					structure: "betterjungletemples:jungle_temple"
+					type: "structure"
+				}
+			]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["53F967EF1BEA3D24"]
+			icon: {
+				id: "minecraft:prismarine_bricks"
+			}
+			id: "41EDE0DA5C7509EA"
+			rewards: [
+				{
+					id: "7BE2FEE44A829F87"
+					table_id: 6557265280331931275L
+					type: "random"
+				}
+				{
+					id: "09F90C860D38205C"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					id: "4BA76EA085869B92"
+					structure: "betteroceanmonuments:ocean_monument"
+					type: "structure"
+				}
+				{
+					entity: "minecraft:guardian"
+					id: "15914F9463F83210"
+					type: "kill"
+					value: 6L
+				}
+			]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["10A48EAE33052B15"]
+			icon: {
+				id: "minecraft:wither_skeleton_skull"
+			}
+			id: "10216BCC92CE4DFA"
+			rewards: [
+				{
+					id: "621F9DECE24F6540"
+					table_id: 4669804901230204658L
+					type: "random"
+				}
+				{
+					id: "48ABB1DF3D8DCA20"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					id: "5B545F55ACC3AA06"
+					structure: "betterfortresses:fortress"
+					type: "structure"
+				}
+				{
+					count: 3L
+					id: "5F41C0AD2C20C0EB"
+					item: {
+						count: 1
+						id: "minecraft:wither_skeleton_skull"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["10A48EAE33052B15"]
+			icon: {
+				id: "minecraft:ender_eye"
+			}
+			id: "14F7C59D230494DE"
+			rewards: [
+				{
+					id: "10C816637E1AB0A0"
+					table_id: 4669804901230204658L
+					type: "random"
+				}
+				{
+					id: "4A698D86399348C2"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "02522156EF639298"
+					structure: "betterstrongholds:stronghold"
+					type: "structure"
+				}
+			]
+			x: 4.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1B71C09161A6DDFB"]
+			icon: {
+				id: "minecraft:fermented_spider_eye"
+			}
+			id: "568BFF2F4516A32D"
+			rewards: [
+				{
+					id: "26BABEBF478E4A5C"
+					table_id: 8538537266808005067L
+					type: "random"
+				}
+				{
+					id: "65F5FA513AF7EFFB"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					advancement: "dungeons_arise:find_plague_asylum"
+					criterion: ""
+					id: "78B656A2DA5D990B"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["53F967EF1BEA3D24"]
+			icon: {
+				id: "minecraft:iron_bars"
+			}
+			id: "19DAFF2C11C635D4"
+			rewards: [
+				{
+					id: "380CCFB4A3507EFA"
+					table_id: 6557265280331931275L
+					type: "random"
+				}
+				{
+					id: "449D69F1B7C83A0A"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					advancement: "dungeons_arise:find_keep_kayra"
+					criterion: ""
+					id: "4BA6253DA0F9E1B0"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["2D462FB5D6B13E35"]
+			icon: {
+				id: "graveyard:vial_of_blood"
+			}
+			id: "055B513D43CFE9C9"
+			rewards: [
+				{
+					id: "11C718D84CDD44C7"
+					table_id: 5734921576661672202L
+					type: "random"
+				}
+				{
+					id: "58A1B784EBEEEBD0"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [
+				{
+					id: "09FF04F61B604ACA"
+					structure: "graveyard:crypt"
+					type: "structure"
+				}
+			]
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["1B71C09161A6DDFB"]
+			icon: {
+				id: "minecraft:crossbow"
+			}
+			id: "45A8C358612B49ED"
+			rewards: [
+				{
+					id: "627F867B2A20D2D1"
+					table_id: 8538537266808005067L
+					type: "random"
+				}
+				{
+					id: "25D781CF59EBAC14"
+					type: "xp"
+					xp: 350
+				}
+			]
+			tasks: [
+				{
+					id: "0C6DA4232E63EFCC"
+					structure: "illagerinvasion:illager_fort"
+					type: "structure"
+				}
+			]
+			x: 6.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["53F967EF1BEA3D24"]
+			icon: {
+				id: "cataclysm:monstrous_eye"
+			}
+			id: "4DB697F2135216F6"
+			rewards: [
+				{
+					id: "078AE5B64A0F49C7"
+					table_id: 1294859340652504733L
+					type: "random"
+				}
+				{
+					id: "1195DB5C9AFDFC9D"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "cataclysm:find_cursed_pyramid"
+					criterion: ""
+					id: "06E9AC8251B9EC98"
+					type: "advancement"
+				}
+				{
+					advancement: "cataclysm:find_frosted_prison"
+					criterion: ""
+					id: "5247E840967F9A6C"
+					type: "advancement"
+				}
+				{
+					advancement: "cataclysm:find_ancient_factory"
+					criterion: ""
+					id: "37CF6846E3762114"
+					type: "advancement"
+				}
+				{
+					advancement: "cataclysm:find_sunken_city"
+					criterion: ""
+					id: "340075ED5EC05D6F"
+					type: "advancement"
+				}
+				{
+					advancement: "cataclysm:find_acropolis"
+					criterion: ""
+					id: "5C6C1A5D94A33020"
+					type: "advancement"
+				}
+				{
+					advancement: "cataclysm:find_burning_arena"
+					criterion: ""
+					id: "0E8603F9FF038A26"
+					type: "advancement"
+				}
+				{
+					advancement: "cataclysm:find_soul_black_smith"
+					criterion: ""
+					id: "7B21F28C73CF6C1C"
+					type: "advancement"
+				}
+				{
+					advancement: "cataclysm:find_ruined_citadel"
+					criterion: ""
+					id: "1672B81A3F6E17F3"
+					type: "advancement"
+				}
+			]
+			x: 8.5d
+			y: 10.0d
+		}
+	]
+}

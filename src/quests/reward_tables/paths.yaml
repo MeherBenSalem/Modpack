@@ -1,0 +1,52 @@
+# Reward tables for the "Paths of the Ashborn" side chapters (p_10_codex … p_14_archive).
+# Keys are prefixed paths_ so they never collide with other chapter authors' tables.
+
+paths_ashen_lessons:
+  title: "Ashen Lessons"
+  icon: runeborn:faded_rune
+  rewards:
+    - {item: runeborn:faded_rune, count: 2, weight: 3}
+    - {item: remnant_mobs:remnant_shard, count: 4, weight: 3}
+    - {item: runeborn:tempering_stone_1, count: 3, weight: 2}
+    - {item: minecraft:golden_carrot, count: 6, weight: 2}
+    - {item: runeborn:lustrous_rune, count: 1, weight: 1}
+
+paths_smiths_crate:
+  title: "The Smith's Crate"
+  icon: runeborn:tempering_stone_2
+  rewards:
+    - {item: runeborn:tempering_stone_2, count: 3, weight: 3}
+    - {item: runeborn:tempering_stone_3, count: 2, weight: 2}
+    - {item: runeborn:blank_whetstone, count: 1, weight: 2}
+    - {item: runeborn:lustrous_stone_1, count: 1, weight: 1}
+    - {item: runeborn:lustrous_rune, count: 1, weight: 2}
+    - {item: minecraft:iron_ingot, count: 8, weight: 2}
+
+paths_star_cache:
+  title: "Starfall Cache"
+  icon: elementals:fire_rune
+  rewards:
+    - {item: elementals:fire_rune, count: 1, weight: 2}
+    - {item: elementals:water_rune, count: 1, weight: 2}
+    - {item: minecraft:amethyst_shard, count: 6, weight: 3}
+    - {item: minecraft:lapis_lazuli, count: 8, weight: 3}
+    - {item: minecraft:experience_bottle, count: 8, weight: 2}
+
+paths_company_purse:
+  title: "The Company's Purse"
+  icon: minecraft:gold_ingot
+  rewards:
+    - {item: minecraft:gold_ingot, count: 10, weight: 4}
+    - {item: better_with_gold:golden_fish, count: 1, weight: 2}
+    - {item: minecraft:golden_carrot, count: 8, weight: 2}
+    - {item: minecraft:gold_block, count: 1, weight: 1}
+
+paths_archive_cache:
+  title: "Archive Cache"
+  icon: tbos:chronicle_shard
+  rewards:
+    - {item: tbos:chronicle_shard, count: 2, weight: 3}
+    - {item: tbos:lenswork_crystal, count: 1, weight: 2}
+    - {item: minecraft:amethyst_shard, count: 8, weight: 3}
+    - {item: minecraft:ender_pearl, count: 2, weight: 2}
+    - {item: tbos:recalled_hour, count: 1, weight: 1}

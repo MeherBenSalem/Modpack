@@ -140,7 +140,7 @@ include:
 provided: []
 side_overrides:
   remnants-minimap: client
-  smart-villagers-ai: server
+  smart-villagers-ai: both
 
 # CurseForge files the research couldn't list (cfwidget shows only the newest 29 files). Found on the CurseForge
 # CDN next to the Forge build and checked byte-for-byte (sha1) against the Modrinth file, 2026-10-29.

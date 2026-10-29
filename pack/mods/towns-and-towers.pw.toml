@@ -1,6 +1,6 @@
 name = "Towns and Towers"
 filename = "t_and_t-fabric-neoforge-1.13.11.jar"
-side = "server"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/DjLobEOy/versions/DZxwgj6V/t_and_t-fabric-neoforge-1.13.11.jar"

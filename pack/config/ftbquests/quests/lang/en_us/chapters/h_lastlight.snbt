@@ -1,0 +1,158 @@
+{
+	chapter.46A368D9176A5934.chapter_subtitle: ["A shrine makes a place you come back to. The rest makes it home."]
+	chapter.46A368D9176A5934.title: "&aLast Light"
+	quest.047D48D40E43B390.quest_desc: [
+		"A &6fancy bed&r takes planks, wool, a &6cushion&r and a &6sheet&r. It does what a bed does, with more dignity."
+		""
+		"Sleeping in a bed sets your respawn, so keep it within sight of the shrine."
+	]
+	quest.047D48D40E43B390.quest_subtitle: "You can't die for good. You can at least sleep well."
+	quest.047D48D40E43B390.title: "A Bed Worth Waking In"
+	quest.15F5C86082963CDF.quest_desc: [
+		"Give a sword to a villager with no profession and they become a &6Guard&r: armoured, patrolling, loyal to the bell."
+		""
+		"Guards are not sellswords. They won't follow you out. That's rather the point."
+	]
+	quest.15F5C86082963CDF.quest_subtitle: "Villages that fight back live longer."
+	quest.15F5C86082963CDF.title: "Last Light Takes Up Arms"
+	quest.18B87BE4E12BE468.quest_desc: [
+		"Some skeletons rise with a &6Quiver&r on their backs. Kill them and it's yours. Dungeon chests and pillager camps hide a few more."
+		""
+		"A quiver holds several kinds of arrow and lets you choose which one to loose. Carry it in your offhand or an accessory slot."
+	]
+	quest.18B87BE4E12BE468.quest_subtitle: "The skeletons won't need it."
+	quest.18B87BE4E12BE468.title: "A Quiver Taken Back"
+	quest.24B421000D19B905.quest_desc: [
+		"A &6Sophisticated Chest&r is planks around a lever, or a chest and a lever. Surround it with iron for an &6Iron Chest&r, or use a &6Tier Upgrade&r on a placed chest to grow it where it stands."
+		""
+		"More room, room for upgrades, and nothing spilled. Barrels work the same way."
+	]
+	quest.24B421000D19B905.quest_subtitle: "The larder outgrew the larder."
+	quest.24B421000D19B905.title: "Chests That Grow"
+	quest.2DC4BEB2E6A7F2FE.quest_desc: [
+		"Craft an &6Architect Core&r (glass panes, amethyst and a compass) and combine it with your wand in a crafting grid. Click two corners for a line, wall, floor, box or cube; click a centre, then an edge, for a circle or a ring."
+		""
+		"&7Angel, Exchange and Destruction cores fit the same way."
+		""
+		"A ring of stone around Last Light won't stop a Sovereign. It will stop most of what comes before one."
+	]
+	quest.2DC4BEB2E6A7F2FE.quest_subtitle: "Lines, walls, rings. Geometry against the dark."
+	quest.2DC4BEB2E6A7F2FE.title: "The Architect's Core"
+	quest.2FBD8F55F6E3206B.quest_desc: [
+		"Loot chests in dungeons, ruins and towers are &6per-player&r: everyone who opens one gets their own roll, and nobody takes a companion's share."
+		""
+		"Open ten of them. A loot chest looks different once you've opened it, so you always know which ones are left."
+	]
+	quest.2FBD8F55F6E3206B.quest_subtitle: "The dead hoard. Fairly, now."
+	quest.2FBD8F55F6E3206B.title: "Everyone's Share"
+	quest.2FC050ACF53FEE8A.quest_desc: [
+		"A &6Crafting Terminal&r (crafting table, chest, redstone torch and a diamond) set against a chest, or against your Storage Controller, shows everything inside in one scrolling view, with a crafting grid beside it."
+		""
+		"&o\"I've seen Sovereigns' treasuries kept worse.\"&r"
+	]
+	quest.2FC050ACF53FEE8A.quest_subtitle: "Every chest at once, and a table to work at."
+	quest.2FC050ACF53FEE8A.title: "&aThe Crafting Terminal"
+	quest.2FF7CCB355D5CBF4.quest_desc: [
+		"A &6Feeding Upgrade&r eats for you from the backpack whenever you're hungry. Stock it from the Hearth & Harvest kitchen and stop opening your inventory in the middle of a fight."
+	]
+	quest.2FF7CCB355D5CBF4.quest_subtitle: "Eat without stopping."
+	quest.2FF7CCB355D5CBF4.title: "The Pack That Feeds You"
+	quest.3231A33EEC9969F2.quest_desc: [
+		"The villagers of Last Light talk. Stand close and say something in chat; they answer in speech bubbles. Ask one for work."
+		""
+		"Accept the request (&e/villagerai request accept&r) and see it through: fetch what they need, or kill what's bothering them. They pay in emeralds, and they remember."
+	]
+	quest.3231A33EEC9969F2.quest_subtitle: "The villagers have problems too. Smaller ones."
+	quest.3231A33EEC9969F2.title: "A Favour for a Friend"
+	quest.3247E2B74E352B87.quest_desc: [
+		"Finish &6ten&r villager requests. Word spreads: your standing climbs from stranger to friend to &6hero&r, and heroes get better prices."
+		""
+		"&7Gossip carries about 48 blocks. So does a bad reputation."
+	]
+	quest.3247E2B74E352B87.quest_subtitle: "Ten favours. They'll name a well after you."
+	quest.3247E2B74E352B87.title: "Hero of the Village Square"
+	quest.358480A0A0312181.quest_desc: [
+		"&o\"A shrine makes a place you come back to. A table makes it a place you'd want to.\"&r"
+		""
+		"Craft a &6table&r and a &6chair&r from any wood. Handcrafted furniture can be sat on, set with plates and cups, and dressed with cushions and sheets."
+		""
+		"The village has a name now. Give it a hall."
+	]
+	quest.358480A0A0312181.quest_subtitle: "Last Light needs more than a fire."
+	quest.358480A0A0312181.title: "&aA Home Worth Defending"
+	quest.3675ACCA0A03C6D3.quest_desc: [
+		"Every upgrade starts as an &6Upgrade Base&r (iron, leather, string). A &6Pickup Upgrade&r scoops loot into the pack as you walk; set its filter so it leaves the rotten flesh where it fell."
+		""
+		"Magnet, crafting, smelting, compacting, void: there are dozens more, and JEI has every recipe."
+	]
+	quest.3675ACCA0A03C6D3.quest_subtitle: "A bag that bends over so you don't have to."
+	quest.3675ACCA0A03C6D3.title: "Upgrades"
+	quest.39DE42D02949D134.quest_desc: [
+		"Handcrafted &6trophies&r are made from what you take off the dead: a spider's eye, a skeleton's skull, a creeper's head, a phantom's membrane."
+		""
+		"Hang one above the shrine. The Keeper won't say anything. The Keeper will look at it."
+	]
+	quest.39DE42D02949D134.quest_subtitle: "Proof, mounted."
+	quest.39DE42D02949D134.title: "Trophy Wall"
+	quest.3CB7A01DC9399058.quest_desc: [
+		"A &6Jar&r stores what bowls, bottles and buckets carry (honey, soup, potions, water), a stack of cookies, or a small living thing."
+		""
+		"Some Ashborn keep a jar of honey by the shrine. Some keep a jar of something that glows."
+	]
+	quest.3CB7A01DC9399058.quest_subtitle: "Keep what's precious where you can see it."
+	quest.3CB7A01DC9399058.title: "Glass and Patience"
+	quest.4948168D26CE48A0.quest_desc: [
+		"The &6Wandering Trader&r still carries &6Globes&r, painted back when the world had a sun to turn under. Buy one and set it somewhere in Last Light."
+		""
+		"Spin it. Nobody's stopping you."
+	]
+	quest.4948168D26CE48A0.quest_subtitle: "Round, and lit. Imagine that."
+	quest.4948168D26CE48A0.title: "The World as It Was"
+	quest.4A77FF56062A9728.quest_desc: [
+		"An &6Iron Wand&r (iron, redstone and a stick) extends the face you click: one course of wall becomes two, two become ten. It draws blocks from your inventory, shulker boxes and bundles."
+		""
+		"It can undo its last placements, too (see &eControls&r). Everyone builds a wall in the wrong place once."
+	]
+	quest.4A77FF56062A9728.quest_subtitle: "The dark can count. Make it count bricks."
+	quest.4A77FF56062A9728.title: "Walls in an Afternoon"
+	quest.5045D3883BE1B335.quest_desc: [
+		"&6Flax&r grows wild here and there and plants like any crop. Weave it with string into a &6Sack&r: a bag you can set down, pick up and carry with everything still inside."
+		""
+		"Sacks are heavy. So is dying with everything you own in your pockets."
+	]
+	quest.5045D3883BE1B335.quest_subtitle: "Supplies need somewhere to live."
+	quest.5045D3883BE1B335.title: "Flax and String"
+	quest.5A752C24FAE57D9C.quest_desc: [
+		"A &6Storage Controller&r joins every Sophisticated chest and barrel touching it, or touching each other, into one network. Put an item into the controller and it goes to the right chest."
+		""
+		"&7Storage Links stretch the network to chests further away."
+	]
+	quest.5A752C24FAE57D9C.quest_subtitle: "Put it in once. It finds its own shelf."
+	quest.5A752C24FAE57D9C.title: "One Room, Many Chests"
+	quest.615B8AB77BC469EF.quest_desc: [
+		"A &6Sleeping Bag&r lets you sleep through the night wherever you unroll it, and it doesn't move your respawn. Your shrine stays your shrine."
+		""
+		"&7You can't sleep with monsters nearby. On a Hunter's Moon, there are always monsters nearby."
+	]
+	quest.615B8AB77BC469EF.quest_subtitle: "Skip the night. Keep your shrine."
+	quest.615B8AB77BC469EF.title: "Rest on the Road"
+	quest.6B4F33F8809D9497.quest_desc: [
+		"Hang a &6Hammock&r between two &6Rope and Nails&r and you can sleep through the &oday&r instead."
+		""
+		"For Ashborn who prefer to hunt when the hunting is good."
+	]
+	quest.6B4F33F8809D9497.quest_subtitle: "Some hunts only happen after dark."
+	quest.6B4F33F8809D9497.title: "The Night Shift"
+	quest.6E014AE2ED557564.quest_desc: [
+		"A &6Backpack&r is leather, string and a chest. Carry it, wear it or set it down; it keeps everything inside either way."
+		""
+		"&7When you die, your items wait in your corpse. A backpack is one item. Think about that."
+	]
+	quest.6E014AE2ED557564.quest_subtitle: "Pack light. Then don't."
+	quest.6E014AE2ED557564.title: "Everything You Own, Carried"
+	quest.78776E476DD6B987.quest_desc: [
+		"Surround a backpack with iron in a crafting grid and it grows, with everything still inside. Copper, iron, gold, diamond, netherite: each tier holds more and fits more upgrades."
+	]
+	quest.78776E476DD6B987.quest_subtitle: "Bigger, and nothing falls out."
+	quest.78776E476DD6B987.title: "Iron-Bound"
+}

@@ -1,0 +1,62 @@
+{
+	icon: {
+		id: "remnant_mobs:hunters_lens"
+	}
+	id: "4A371DC5024C8B48"
+	loot_size: 1
+	order_index: 24
+	rewards: [
+		{
+			count: 8
+			id: "7AAD7123D9F68ABB"
+			item: {
+				count: 1
+				id: "remnant_mobs:remnant_shard"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 3
+			id: "62252FE66CC12A9B"
+			item: {
+				count: 1
+				id: "runeborn:faded_rune"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "32B141ADEAFDE25B"
+			item: {
+				count: 1
+				id: "runeborn:lustrous_rune"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 2
+			id: "039B144DEDCA7A15"
+			item: {
+				count: 1
+				id: "mob_loot_bags:uncommonlootbag"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "69A36E1F790C63E3"
+			item: {
+				count: 1
+				id: "remnant_mobs:brand_of_challenge"
+			}
+			weight: 1.0f
+		}
+		{
+			count: 8
+			id: "0620E6A8FC9467FA"
+			item: {
+				count: 1
+				id: "minecraft:golden_carrot"
+			}
+			weight: 1.0f
+		}
+	]
+}

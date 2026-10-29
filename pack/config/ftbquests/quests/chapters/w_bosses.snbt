@@ -1,0 +1,1480 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "gear"
+	filename: "w_bosses"
+	group: "736A8EEBE4B075CD"
+	icon: {
+		id: "remnant_bosses:boss_journal"
+	}
+	id: "3416798044C87559"
+	images: [ ]
+	order_index: 20
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2D462FB5D6B13E35"]
+			icon: {
+				id: "runeborn:sovereign_fragment"
+			}
+			id: "50C7CAC5DFA54CD2"
+			rewards: [
+				{
+					count: 2
+					id: "27D7CF2C1C95A403"
+					item: {
+						count: 1
+						id: "runeborn:heros_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "02DA3953FFFC8CB6"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					advancement: "runeborn:feats/fell_dusk_rider"
+					criterion: ""
+					id: "6DCAF84BC3DFAC4D"
+					type: "advancement"
+				}
+				{
+					advancement: "runeborn:feats/fell_varghast"
+					criterion: ""
+					id: "6183E8EA3E7716A2"
+					type: "advancement"
+				}
+				{
+					advancement: "runeborn:feats/fell_sylvara"
+					criterion: ""
+					id: "2DA9D28CAD046F33"
+					type: "advancement"
+				}
+				{
+					advancement: "runeborn:feats/fell_kaelthar"
+					criterion: ""
+					id: "3653A144544C4DF8"
+					type: "advancement"
+				}
+				{
+					advancement: "runeborn:feats/fell_ysolde"
+					criterion: ""
+					id: "775F519B243AE9AF"
+					type: "advancement"
+				}
+				{
+					advancement: "runeborn:feats/fell_morgrath"
+					criterion: ""
+					id: "3677C3E0345BAAA5"
+					type: "advancement"
+				}
+				{
+					advancement: "runeborn:feats/fell_vaelorn"
+					criterion: ""
+					id: "43F78B37F500F407"
+					type: "advancement"
+				}
+			]
+			x: -3.5d
+			y: 8.75d
+		}
+		{
+			dependencies: ["2D462FB5D6B13E35"]
+			icon: {
+				id: "born_in_chaos_v1:supreme_bonescaller_spawn_egg"
+			}
+			id: "3A8B8901F094E14E"
+			rewards: [
+				{
+					id: "2A6CD38FE8BAB3E8"
+					table_id: 4000594783902426681L
+					type: "random"
+				}
+				{
+					id: "5A4D249ACEE26514"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					advancement: "born_in_chaos_v1:dismantledto_bones"
+					criterion: ""
+					id: "291180445B7B848B"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:fighting_nightmares"
+					criterion: ""
+					id: "3BCC89C265876CC4"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D462FB5D6B13E35"]
+			icon: {
+				id: "mowziesmobs:wrought_axe"
+			}
+			id: "6B34B1BE171CDCCA"
+			rewards: [
+				{
+					id: "0FF83599197F1486"
+					table_id: 4000594783902426681L
+					type: "random"
+				}
+				{
+					id: "5D4177581CBDA271"
+					type: "xp"
+					xp: 350
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "6CCBDED3071055EE"
+					structure: "mowziesmobs:wrought_chamber"
+					type: "structure"
+				}
+				{
+					entity: "mowziesmobs:ferrous_wroughtnaut"
+					id: "65CBC394E885EAB6"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D462FB5D6B13E35"]
+			icon: {
+				id: "block_factorys_bosses:ice_gauntlet"
+			}
+			id: "7AAFFE69C8355986"
+			rewards: [
+				{
+					id: "20B1608DFA1ECC6C"
+					table_id: 4000594783902426681L
+					type: "random"
+				}
+				{
+					id: "5469217C63FCD166"
+					type: "xp"
+					xp: 350
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "47537E61D0BF7949"
+					structure: "block_factorys_bosses:yeti_hideout"
+					type: "structure"
+				}
+				{
+					entity: "block_factorys_bosses:yeti"
+					id: "3E1CD0293D1B0597"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D462FB5D6B13E35"]
+			icon: {
+				id: "born_in_chaos_v1:krampus_spawn_egg"
+			}
+			id: "60D85B08B049B48E"
+			optional: true
+			rewards: [
+				{
+					id: "10F253E430EAAB22"
+					table_id: 4000594783902426681L
+					type: "random"
+				}
+				{
+					id: "2AA4912F39358875"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					entity: "born_in_chaos_v1:krampus"
+					id: "7F672D3014961B39"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1B71C09161A6DDFB"]
+			icon: {
+				id: "mutantmonsters:hulk_hammer"
+			}
+			id: "6AEEA1DF18061060"
+			rewards: [
+				{
+					id: "6BA59A5F2050E413"
+					table_id: 8538537266808005067L
+					type: "random"
+				}
+				{
+					id: "7C94A4BE2045BBD5"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					entity: "mutantmonsters:mutant_zombie"
+					id: "5984B14AA3603839"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "mutantmonsters:mutant_skeleton"
+					id: "6FD716B8DBA3E049"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "mutantmonsters:mutant_creeper"
+					id: "06C7F2461F1096F7"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "mutantmonsters:mutant_enderman"
+					id: "6853E7CC74B39D34"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1B71C09161A6DDFB"]
+			icon: {
+				id: "mowziesmobs:sol_visage"
+			}
+			id: "134DD4A4C8D25F41"
+			rewards: [
+				{
+					id: "6EBD5E7C35C0B3E5"
+					table_id: 8538537266808005067L
+					type: "random"
+				}
+				{
+					id: "22C4918803B55803"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "33951C8DE52AE8FC"
+					structure: "mowziesmobs:umvuthana_grove"
+					type: "structure"
+				}
+				{
+					entity: "mowziesmobs:umvuthi"
+					id: "41EC15E6F3B42E93"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1B71C09161A6DDFB"]
+			icon: {
+				id: "mowziesmobs:ice_crystal"
+			}
+			id: "67B64790B596F3B0"
+			rewards: [
+				{
+					count: 2
+					id: "00A73F009178B16C"
+					item: {
+						count: 1
+						id: "runeborn:lustrous_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "1D4160E7C6E1F0A0"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					entity: "mowziesmobs:frostmaw"
+					id: "452C23829027B901"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1B71C09161A6DDFB"]
+			icon: {
+				id: "mowziesmobs:earthrend_gauntlet"
+			}
+			id: "1ABCE2303C3DC417"
+			rewards: [
+				{
+					id: "2DB922BA176E32D7"
+					table_id: 8538537266808005067L
+					type: "random"
+				}
+				{
+					id: "14B6EFD4A49CCF44"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					id: "5C552F147B7E1A7F"
+					structure: "mowziesmobs:monastery"
+					type: "structure"
+				}
+				{
+					advancement: "mowziesmobs:sculptor_challenge"
+					criterion: ""
+					id: "0952E849A18F81F2"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1B71C09161A6DDFB"]
+			icon: {
+				id: "block_factorys_bosses:sandworm_gauntlet"
+			}
+			id: "63233232B452D155"
+			rewards: [
+				{
+					id: "7DDA8891B10D7F32"
+					table_id: 8538537266808005067L
+					type: "random"
+				}
+				{
+					id: "44B910E0DDC30164"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "74003C3A959F5388"
+					structure: "block_factorys_bosses:sandworm_nest"
+					type: "structure"
+				}
+				{
+					entity: "block_factorys_bosses:sandworm"
+					id: "6BC362A7243864DB"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1B71C09161A6DDFB"]
+			icon: {
+				id: "aquamirae:frozen_key"
+			}
+			id: "49F90ED7C1B4D80E"
+			rewards: [
+				{
+					id: "61BAA7ABBDC6386D"
+					table_id: 8538537266808005067L
+					type: "random"
+				}
+				{
+					id: "305ADE2751C2C3DF"
+					type: "xp"
+					xp: 600
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					entity: "aquamirae:maze_mother"
+					id: "7DA5C592E34A27BB"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "aquamirae:captain_cornelia"
+					id: "742A289665AFB4E2"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1B71C09161A6DDFB"]
+			icon: {
+				id: "born_in_chaos_v1:lord_pumpkinheads_lamp"
+			}
+			id: "6FBD402AF700B0A6"
+			rewards: [
+				{
+					id: "1FE9B435492D9078"
+					table_id: 8538537266808005067L
+					type: "random"
+				}
+				{
+					id: "5F42374055BD3213"
+					type: "xp"
+					xp: 600
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "born_in_chaos_v1:pumpkin_lord"
+					criterion: ""
+					id: "6F41A5C31DD320BB"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1B71C09161A6DDFB"]
+			icon: {
+				id: "illagerinvasion:hallowed_gem"
+			}
+			id: "64E68A9320821FE6"
+			rewards: [
+				{
+					id: "4A5D4D0AC37624D2"
+					table_id: 8538537266808005067L
+					type: "random"
+				}
+				{
+					id: "1684E0C6AF9CE3F7"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					id: "2DBDA3E5BAFF8CD6"
+					structure: "minecraft:mansion"
+					type: "structure"
+				}
+				{
+					entity: "illagerinvasion:invoker"
+					id: "6F9A00A5BD99DB37"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1B71C09161A6DDFB"]
+			icon: {
+				id: "bosses_of_mass_destruction:soul_star"
+			}
+			id: "701FB9ECA717BD0A"
+			rewards: [
+				{
+					id: "3A743FEB0018AAD8"
+					table_id: 8538537266808005067L
+					type: "random"
+				}
+				{
+					id: "1424A0DA3C0398C3"
+					type: "xp"
+					xp: 600
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "4877984B4DAE23AA"
+					structure: "bosses_of_mass_destruction:lich_tower"
+					type: "structure"
+				}
+				{
+					entity: "bosses_of_mass_destruction:lich"
+					id: "1E03B79D031C1425"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1B71C09161A6DDFB"]
+			icon: {
+				id: "graveyard:black_bone_staff"
+			}
+			id: "576B4D96CAC7D4D4"
+			rewards: [
+				{
+					id: "421922FA1EBCA60B"
+					table_id: 8538537266808005067L
+					type: "random"
+				}
+				{
+					id: "088366152F7794AA"
+					type: "xp"
+					xp: 700
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "11FD26BA8EED7F8F"
+					structure: "graveyard:lich_prison"
+					type: "structure"
+				}
+				{
+					entity: "graveyard:lich"
+					id: "0FE7129DA0192AD9"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1B71C09161A6DDFB"]
+			icon: {
+				id: "tbos:curator_core"
+			}
+			id: "767A80D2CBCD5AAA"
+			rewards: [
+				{
+					id: "3B135CD239E9194A"
+					table_id: 8538537266808005067L
+					type: "random"
+				}
+				{
+					id: "0627521DCAF0733C"
+					type: "xp"
+					xp: 700
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "tbos:story/defeat_last_curator"
+					criterion: ""
+					id: "2A85D7B6D36CD2A4"
+					type: "advancement"
+				}
+			]
+			x: 10.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["53F967EF1BEA3D24"]
+			icon: {
+				id: "runeborn:relic_elder_guardian"
+			}
+			id: "2BC2703123E27B5A"
+			rewards: [
+				{
+					id: "4BE1227193032A7B"
+					item: {
+						count: 1
+						id: "runeborn:radiant_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "759D9C2D1E0D40B7"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					entity: "minecraft:elder_guardian"
+					id: "51E119DE9196A3E2"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["53F967EF1BEA3D24"]
+			icon: {
+				id: "runeborn:relic_warden"
+			}
+			id: "0500F324C32C43A3"
+			rewards: [
+				{
+					id: "53F7B5A1E2A7AFC1"
+					item: {
+						count: 1
+						id: "runeborn:radiant_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "1A9813A6117A4B49"
+					type: "xp"
+					xp: 400
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					entity: "minecraft:warden"
+					id: "10306981B2E0F1BE"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0500F324C32C43A3"]
+			icon: {
+				id: "deeperdarker:stalker_spawn_egg"
+			}
+			id: "2F549134AFB15975"
+			rewards: [
+				{
+					id: "1EC0118687D44C66"
+					table_id: 6557265280331931275L
+					type: "random"
+				}
+				{
+					id: "0E45929F414A9936"
+					type: "xp"
+					xp: 800
+				}
+			]
+			tasks: [
+				{
+					dimension: "deeperdarker:otherside"
+					id: "2125CB084C328683"
+					type: "dimension"
+				}
+				{
+					entity: "deeperdarker:stalker"
+					id: "39D6D8667067A48A"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 4.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["53F967EF1BEA3D24"]
+			icon: {
+				id: "bosses_of_mass_destruction:void_thorn"
+			}
+			id: "34B0A6FBE6926ED4"
+			rewards: [
+				{
+					id: "11CCCB4068CEEE42"
+					table_id: 6557265280331931275L
+					type: "random"
+				}
+				{
+					id: "267DA0F144CCA4EB"
+					type: "xp"
+					xp: 700
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "1C2793E01D4475BD"
+					structure: "bosses_of_mass_destruction:void_blossom"
+					type: "structure"
+				}
+				{
+					entity: "bosses_of_mass_destruction:void_blossom"
+					id: "6DBF8FEEFD3D42C2"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 6.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["53F967EF1BEA3D24"]
+			icon: {
+				id: "block_factorys_bosses:kraken_tooth"
+			}
+			id: "190A1E4452E9C0BB"
+			rewards: [
+				{
+					id: "406BBC858A28280A"
+					item: {
+						count: 1
+						id: "runeborn:radiant_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "57A6CCC4A33558B9"
+					type: "xp"
+					xp: 400
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "24DACF3901DFAF5B"
+					structure: "block_factorys_bosses:kraken_ship"
+					type: "structure"
+				}
+				{
+					entity: "block_factorys_bosses:kraken"
+					id: "633258F067D47F8B"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 8.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["53F967EF1BEA3D24"]
+			icon: {
+				id: "block_factorys_bosses:dragon_bone"
+			}
+			id: "0CA8540794DAC251"
+			rewards: [
+				{
+					id: "0B66230EC5C11551"
+					table_id: 6557265280331931275L
+					type: "random"
+				}
+				{
+					id: "540F067C09F5BF0D"
+					type: "xp"
+					xp: 800
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "14FA476749EF736B"
+					structure: "block_factorys_bosses:dragon_tower"
+					type: "structure"
+				}
+				{
+					entity: "block_factorys_bosses:infernal_dragon"
+					id: "135CB7AD77778388"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 10.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["53F967EF1BEA3D24"]
+			icon: {
+				id: "cataclysm:wrath_of_the_desert"
+			}
+			id: "3064A853B6E7131C"
+			rewards: [
+				{
+					id: "773EC33DA5269E73"
+					item: {
+						count: 1
+						id: "runeborn:radiant_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "381F95998080893E"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "2E680FD8AB2AC5A3"
+					structure: "cataclysm:cursed_pyramid"
+					type: "structure"
+				}
+				{
+					entity: "cataclysm:ancient_remnant"
+					id: "7FC9D2FA92CCB99E"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["53F967EF1BEA3D24"]
+			icon: {
+				id: "cataclysm:wither_assault_shoulder_weapon"
+			}
+			id: "12F851598BB7E340"
+			rewards: [
+				{
+					id: "33B71A4B0BB24EDE"
+					table_id: 6557265280331931275L
+					type: "random"
+				}
+				{
+					id: "73579F417C1CBD92"
+					type: "xp"
+					xp: 900
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "15A3CB3DF5E327C3"
+					structure: "cataclysm:ancient_factory"
+					type: "structure"
+				}
+				{
+					entity: "cataclysm:the_harbinger"
+					id: "28F69103CC39957D"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 2.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["53F967EF1BEA3D24"]
+			icon: {
+				id: "cataclysm:tidal_claws"
+			}
+			id: "75F5AE3C6F07254E"
+			rewards: [
+				{
+					id: "40EC1A18936C411D"
+					item: {
+						count: 1
+						id: "runeborn:radiant_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "02439776DB20B2BD"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "48699F91F4DDC95B"
+					structure: "cataclysm:sunken_city"
+					type: "structure"
+				}
+				{
+					entity: "cataclysm:the_leviathan"
+					id: "40B2863168D98177"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["53F967EF1BEA3D24"]
+			icon: {
+				id: "cataclysm:cursium_ingot"
+			}
+			id: "3B605936F1371214"
+			rewards: [
+				{
+					id: "6CEFA8CAB905C73A"
+					table_id: 6557265280331931275L
+					type: "random"
+				}
+				{
+					id: "5C4216AD65AEBE5B"
+					type: "xp"
+					xp: 900
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "3B9272CD11D72947"
+					structure: "cataclysm:frosted_prison"
+					type: "structure"
+				}
+				{
+					entity: "cataclysm:maledictus"
+					id: "3268AF94CCA09937"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 6.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["53F967EF1BEA3D24"]
+			icon: {
+				id: "cataclysm:ceraunus"
+			}
+			id: "1C55780131B14BC9"
+			rewards: [
+				{
+					id: "6F845DD066A20877"
+					table_id: 6557265280331931275L
+					type: "random"
+				}
+				{
+					id: "60B7BF6981E43ADF"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "33469A2CC722D577"
+					structure: "cataclysm:acropolis"
+					type: "structure"
+				}
+				{
+					entity: "cataclysm:scylla"
+					id: "76F1029F2ED1E9CF"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 8.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["10A48EAE33052B15"]
+			icon: {
+				id: "friendsandfoes:wildfire_crown"
+			}
+			id: "5373FCB143487DB0"
+			rewards: [
+				{
+					id: "066ECDCF1DEE6A54"
+					table_id: 4669804901230204658L
+					type: "random"
+				}
+				{
+					id: "7BD7712F841BC80C"
+					type: "xp"
+					xp: 800
+				}
+			]
+			tasks: [
+				{
+					id: "24198DA477D60C0D"
+					structure: "friendsandfoes:citadel"
+					type: "structure"
+				}
+				{
+					entity: "friendsandfoes:wildfire"
+					id: "2AC4EB8014F6F130"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 0.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["10A48EAE33052B15"]
+			icon: {
+				id: "cataclysm:monstrous_horn"
+			}
+			id: "1392419458694CF8"
+			rewards: [
+				{
+					id: "7DBBBAE8CCCA2509"
+					item: {
+						count: 1
+						id: "runeborn:heros_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "679156CC0C0DF742"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "31C19D73CCA629D5"
+					structure: "cataclysm:soul_black_smith"
+					type: "structure"
+				}
+				{
+					entity: "cataclysm:netherite_monstrosity"
+					id: "478DFCA07F2F7C90"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 2.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["10A48EAE33052B15"]
+			icon: {
+				id: "bosses_of_mass_destruction:blazing_eye"
+			}
+			id: "311060BEC208E673"
+			rewards: [
+				{
+					id: "4CF389C46E84DE06"
+					table_id: 4669804901230204658L
+					type: "random"
+				}
+				{
+					id: "37D6BA739BA7BE17"
+					type: "xp"
+					xp: 900
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "3F16123A2BE3A49E"
+					structure: "bosses_of_mass_destruction:gauntlet_arena"
+					type: "structure"
+				}
+				{
+					entity: "bosses_of_mass_destruction:gauntlet"
+					id: "0C6E5ED28D088435"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 4.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["10A48EAE33052B15"]
+			icon: {
+				id: "block_factorys_bosses:knight_sword"
+			}
+			id: "560C7BFC391C8635"
+			rewards: [
+				{
+					id: "0C336025895FE49D"
+					item: {
+						count: 1
+						id: "runeborn:heros_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "2E70C942209DC059"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "6E464BC23865C672"
+					structure: "block_factorys_bosses:underworld_arena"
+					type: "structure"
+				}
+				{
+					entity: "block_factorys_bosses:underworld_knight"
+					id: "26130ED1F6D04203"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 6.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["10A48EAE33052B15"]
+			icon: {
+				id: "cataclysm:ignitium_ingot"
+			}
+			id: "0C94C038DC564A5E"
+			rewards: [
+				{
+					id: "772E1A25AC770692"
+					item: {
+						count: 1
+						id: "runeborn:heros_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "384D9078760F0027"
+					type: "xp"
+					xp: 600
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "36817A2EFF7BF89B"
+					structure: "cataclysm:burning_arena"
+					type: "structure"
+				}
+				{
+					entity: "cataclysm:ignis"
+					id: "3A3E81C777A2C689"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 8.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["10A48EAE33052B15"]
+			icon: {
+				id: "runeborn:relic_wither"
+			}
+			id: "10E01E0949060610"
+			rewards: [
+				{
+					id: "402E96FF0FEEB759"
+					item: {
+						count: 1
+						id: "runeborn:heros_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "6480D25B38EADFD1"
+					type: "xp"
+					xp: 600
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					entity: "minecraft:wither"
+					id: "48C097D48578FC68"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 10.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["10A48EAE33052B15"]
+			icon: {
+				id: "runeborn:relic_ender_dragon"
+			}
+			id: "5C890DFD03E0E5BA"
+			rewards: [
+				{
+					id: "52061E392755F29A"
+					item: {
+						count: 1
+						id: "runeborn:heros_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "5875A291900A4B64"
+					type: "xp"
+					xp: 800
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					entity: "minecraft:ender_dragon"
+					id: "4AEC0B6C3ECDDD9A"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 0.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["5867200A6552CB88"]
+			icon: {
+				id: "cataclysm:gauntlet_of_guard"
+			}
+			id: "15567CA6EC3B8885"
+			rewards: [
+				{
+					id: "0CC50A47BE249C09"
+					table_id: 1294859340652504733L
+					type: "random"
+				}
+				{
+					id: "274D2D5F7A636F84"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "454A527EB241AF52"
+					structure: "cataclysm:ruined_citadel"
+					type: "structure"
+				}
+				{
+					entity: "cataclysm:ender_guardian"
+					id: "0C430CDD9E11D5D7"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 2.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["5867200A6552CB88"]
+			icon: {
+				id: "bosses_of_mass_destruction:obsidian_heart"
+			}
+			id: "66127E66408DD797"
+			rewards: [
+				{
+					id: "7E3D5BEB0DB3C253"
+					table_id: 1294859340652504733L
+					type: "random"
+				}
+				{
+					id: "6117B2519DFAF79B"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "3D6F375B6E72B9E1"
+					structure: "bosses_of_mass_destruction:obsidilith_arena"
+					type: "structure"
+				}
+				{
+					entity: "bosses_of_mass_destruction:obsidilith"
+					id: "21922A24125825A8"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 4.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["63F14370CFF061C7"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "remnant_bosses:grave_iron"
+			}
+			id: "663A276CBC8CEB08"
+			rewards: [
+				{
+					id: "10AF98089787DBA0"
+					item: {
+						count: 1
+						id: "runeborn:heros_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "7B654E73FDCFC410"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					entity: "remnants:burial_guardian"
+					id: "0028017A0659854C"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 0.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["663A276CBC8CEB08"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "remnant_bosses:wardens_grasp"
+			}
+			id: "510150BC74B32079"
+			rewards: [
+				{
+					id: "6660025F902CC85C"
+					item: {
+						count: 1
+						id: "runeborn:heros_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "158A0D88990658BB"
+					type: "xp"
+					xp: 800
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					entity: "remnants:gravebound_warden"
+					id: "438CFA71A88992BE"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 2.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["63F14370CFF061C7"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "remnant_bosses:memory_staff"
+			}
+			id: "2753FFA19D2803D5"
+			rewards: [
+				{
+					id: "7BB481330280A17F"
+					item: {
+						count: 1
+						id: "runeborn:heros_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "19F5C2C44B355405"
+					type: "xp"
+					xp: 800
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					entity: "remnants:forgotten_watcher"
+					id: "78E9B4ED66D5DA14"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 4.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["10E01E0949060610", "63F14370CFF061C7"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "remnant_bosses:ossukage_sword"
+			}
+			id: "6CFEAF41F7D1C50A"
+			rewards: [
+				{
+					id: "0FD18A0620F1268E"
+					item: {
+						count: 1
+						id: "runeborn:heros_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "52D5F84DE90E6C0A"
+					type: "xp"
+					xp: 800
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					entity: "remnants:ossukage"
+					id: "4D5C9C25C1E59EFE"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 6.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["510150BC74B32079", "2753FFA19D2803D5", "6CFEAF41F7D1C50A"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "remnant_bosses:hollow_crown"
+			}
+			id: "3598EAD366B19674"
+			rewards: [
+				{
+					id: "4AA52B267DB8FC86"
+					table_id: 1294859340652504733L
+					type: "random"
+				}
+				{
+					id: "7D46A64741B2D740"
+					type: "xp"
+					xp: 2000
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					entity: "remnants:hollow_sovereign"
+					id: "7BD3EBFFC8124972"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 8.75d
+			y: 17.5d
+		}
+	]
+}

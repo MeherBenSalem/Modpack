@@ -1,0 +1,507 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "p_constellation"
+	group: "7641D8544E1E75E6"
+	icon: {
+		id: "elementals:remnant_tome"
+	}
+	id: "68E793F75D53746F"
+	images: [ ]
+	order_index: 12
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2D462FB5D6B13E35"]
+			icon: {
+				id: "elementals:remnant_tome"
+			}
+			id: "23DCECA4ED0C21FE"
+			rewards: [
+				{
+					count: 8
+					id: "44223E3A9AF8CC15"
+					item: {
+						count: 1
+						id: "minecraft:lapis_lazuli"
+					}
+					type: "item"
+				}
+				{
+					id: "032B0DFD07D733EF"
+					type: "xp"
+					xp: 40
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "5A428290351A4C72"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["23DCECA4ED0C21FE"]
+			icon: {
+				id: "minecraft:amethyst_shard"
+			}
+			id: "42D405F229C89E43"
+			rewards: [
+				{
+					id: "1B657200DAD2CE70"
+					table_id: 3066840993110484494L
+					type: "random"
+				}
+				{
+					id: "38DAC65C34C308C6"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "0C93C58647B1E66D"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["42D405F229C89E43"]
+			icon: {
+				id: "minecraft:glowstone_dust"
+			}
+			id: "41A688DC65EE8C37"
+			rewards: [
+				{
+					count: 8
+					id: "560A8BFF9514D14F"
+					item: {
+						count: 1
+						id: "minecraft:experience_bottle"
+					}
+					type: "item"
+				}
+				{
+					id: "678D205535349404"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "0537E2CC5F58D380"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["42D405F229C89E43"]
+			hide_dependency_lines: true
+			icon: {
+				id: "minecraft:blaze_powder"
+			}
+			id: "39436CEE9A923B24"
+			optional: true
+			rewards: [
+				{
+					count: 4
+					id: "289C8F7C2E064FDD"
+					item: {
+						count: 1
+						id: "minecraft:blaze_powder"
+					}
+					type: "item"
+				}
+				{
+					id: "3818F76616E3E8AE"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "476B43C495E88772"
+					type: "checkmark"
+				}
+			]
+			x: 0.5d
+			y: -2.25d
+		}
+		{
+			dependencies: ["42D405F229C89E43"]
+			hide_dependency_lines: true
+			icon: {
+				id: "minecraft:lightning_rod"
+			}
+			id: "0781526A75E94F30"
+			optional: true
+			rewards: [
+				{
+					count: 8
+					id: "72BE59D277A1E436"
+					item: {
+						count: 1
+						id: "minecraft:copper_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "47EA0D70A2BC0BA0"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "4F042A061B96CF5C"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["42D405F229C89E43"]
+			hide_dependency_lines: true
+			icon: {
+				id: "minecraft:ender_eye"
+			}
+			id: "4923F67E00A81431"
+			optional: true
+			rewards: [
+				{
+					count: 2
+					id: "10DB561128DBF571"
+					item: {
+						count: 1
+						id: "minecraft:ender_pearl"
+					}
+					type: "item"
+				}
+				{
+					id: "53288212B5A95537"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "5F38F27FDB945B57"
+					type: "checkmark"
+				}
+			]
+			x: 3.5d
+			y: -2.25d
+		}
+		{
+			dependencies: ["42D405F229C89E43"]
+			hide_dependency_lines: true
+			icon: {
+				id: "minecraft:heart_of_the_sea"
+			}
+			id: "1D21C51451BE6A00"
+			optional: true
+			rewards: [
+				{
+					count: 4
+					id: "13CE1A4346AE0163"
+					item: {
+						count: 1
+						id: "minecraft:prismarine_crystals"
+					}
+					type: "item"
+				}
+				{
+					id: "158F0B07E86C06C2"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "5D2B7B518E9A3B12"
+					type: "checkmark"
+				}
+			]
+			x: 5.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["42D405F229C89E43"]
+			hide_dependency_lines: true
+			icon: {
+				id: "minecraft:mossy_cobblestone"
+			}
+			id: "7056F332A8D9ED0D"
+			optional: true
+			rewards: [
+				{
+					count: 6
+					id: "7C15D3DF30901F68"
+					item: {
+						count: 1
+						id: "minecraft:iron_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "3487D0244666553C"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "4405FD23F069CEE9"
+					type: "checkmark"
+				}
+			]
+			x: 6.5d
+			y: -2.25d
+		}
+		{
+			dependencies: ["42D405F229C89E43"]
+			hide_dependency_lines: true
+			icon: {
+				id: "minecraft:glow_berries"
+			}
+			id: "3D4D4F654A7AA731"
+			optional: true
+			rewards: [
+				{
+					id: "6400788BBD0F04F2"
+					item: {
+						count: 1
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+				{
+					id: "49F5CE36383B56F0"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "3BBB48C95CF5CCA8"
+					type: "checkmark"
+				}
+			]
+			x: 8.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["41A688DC65EE8C37"]
+			icon: {
+				id: "elementals:fire_rune"
+			}
+			id: "748040AE2697D524"
+			rewards: [
+				{
+					count: 4
+					id: "25C92CA9964DFB94"
+					item: {
+						count: 1
+						id: "minecraft:magma_cream"
+					}
+					type: "item"
+				}
+				{
+					id: "4B9712E89A3F49B5"
+					table_id: 3066840993110484494L
+					type: "random"
+				}
+				{
+					id: "18A03CA8BE775B52"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					entity: "elementals:fire_golem"
+					id: "2AEAB280B429FF8A"
+					type: "kill"
+					value: 3L
+				}
+				{
+					count: 2L
+					id: "6A3C920B65BCC8B7"
+					item: {
+						count: 1
+						id: "elementals:fire_rune"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["41A688DC65EE8C37"]
+			icon: {
+				id: "elementals:water_rune"
+			}
+			id: "5005FD9E609A763F"
+			rewards: [
+				{
+					count: 4
+					id: "21B1AF1DAA48409C"
+					item: {
+						count: 1
+						id: "minecraft:prismarine_crystals"
+					}
+					type: "item"
+				}
+				{
+					id: "18BE9A150396C729"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "5E91BFB5163B42D5"
+					item: {
+						count: 1
+						id: "elementals:water_rune"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 3.25d
+		}
+		{
+			dependencies: ["748040AE2697D524", "5005FD9E609A763F"]
+			icon: {
+				id: "elementals:remnant_tome"
+			}
+			id: "285823D079E22842"
+			rewards: [
+				{
+					count: 4
+					id: "0D0C6DB1AF90731C"
+					item: {
+						count: 1
+						id: "minecraft:amethyst_shard"
+					}
+					type: "item"
+				}
+				{
+					id: "45B99F6D174502D4"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "13128EC03F9CC1F0"
+					item: {
+						count: 1
+						id: "elementals:remnant_tome"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["41A688DC65EE8C37"]
+			icon: {
+				id: "minecraft:end_crystal"
+			}
+			id: "6492667B55216AA8"
+			rewards: [
+				{
+					id: "18516404002252EB"
+					table_id: 3066840993110484494L
+					type: "random"
+				}
+				{
+					id: "5D59A745CBCA50C9"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "09E537CC78EB0395"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6492667B55216AA8"]
+			icon: {
+				id: "minecraft:nether_star"
+			}
+			id: "70D8B91F195CC2F6"
+			rewards: [
+				{
+					id: "53F0A02947757914"
+					item: {
+						count: 1
+						id: "elementals:remnant_tome"
+					}
+					type: "item"
+				}
+				{
+					id: "1CB6863189B6EF3F"
+					type: "xp"
+					xp: 250
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "71FB4C72922DF540"
+					type: "checkmark"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["23DCECA4ED0C21FE"]
+			icon: {
+				id: "elementals:tome_of_unbinding"
+			}
+			id: "645BFBE6FFB12A04"
+			optional: true
+			rewards: [
+				{
+					id: "10CC9C946947C66A"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "257634C852FC6067"
+					item: {
+						count: 1
+						id: "elementals:tome_of_unbinding"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.0d
+		}
+	]
+}

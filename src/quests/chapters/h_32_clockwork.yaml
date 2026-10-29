@@ -1,0 +1,245 @@
+chapter: h_clockwork
+group: hearth
+order: 32
+title: "&aThe Clockwork Path"
+subtitle: "&7Optional.&r Some Ashborn remember gears. Light automation for Last Light, with Create."
+icon: create:cogwheel
+quests:
+  # ---- the andesite age ----
+  - key: alloy
+    title: "&aAshen Engineers"
+    subtitle: "Someone before the Eclipse built machines. Some of you remember how."
+    icon: create:andesite_alloy
+    pos: [0, 0]
+    deps: [s1_act1_embers/kindle]
+    optional: true
+    shape: hexagon
+    size: 1.5
+    desc: |
+      &7This whole path is optional. Nothing in the story needs it; Last Light just runs smoother with it.
+
+      Mix andesite with iron or zinc nuggets into &6Andesite Alloy&r: the bones of every machine to come.
+
+      &o"The old world ran on wheels and water. It ran right up until it didn't."&r
+    tasks: [{advancement: "create:andesite_alloy"}]
+    rewards: [{item: create:andesite_alloy, count: 16}, {xp: 40}]
+
+  - key: shafts
+    title: "Shafts and Cogs"
+    subtitle: "Turn one thing; turn everything."
+    icon: create:cogwheel
+    pos: [2, -1.25]
+    deps: [alloy]
+    optional: true
+    desc: |
+      &6Shafts&r carry rotation in a straight line. &6Cogwheels&r pass it sideways, and a &6Large Cogwheel&r meshed with a small one changes the speed.
+
+      Everything in Create turns. Learn to make it turn.
+    tasks: [{item: create:shaft, count: 8}, {item: create:cogwheel, count: 4}, {item: create:large_cogwheel, count: 2}]
+    rewards: [{item: create:andesite_alloy, count: 8}, {xp: 30}]
+
+  - key: casing
+    title: "The Andesite Age"
+    subtitle: "Every machine needs a coat."
+    icon: create:andesite_casing
+    pos: [2, 1.25]
+    deps: [alloy]
+    optional: true
+    desc: |
+      Use Andesite Alloy on a &6stripped log&r to make &6Andesite Casing&r. Most of the early machines are built around it.
+    tasks: [{advancement: "create:andesite_casing"}]
+    rewards: [{item: create:andesite_casing, count: 8}, {xp: 30}]
+
+  # ---- power ----
+  - key: water_wheel
+    title: "Harnessed Hydraulics"
+    subtitle: "The rivers still run. Put them to work."
+    icon: create:water_wheel
+    pos: [4, -1.75]
+    deps: [shafts]
+    optional: true
+    desc: |
+      Place a &6Water Wheel&r where flowing water strikes its blades and it turns everything connected to it.
+
+      Each source gives a little &6stress capacity&r and each machine draws some. Ask too much and the whole line stops: add wheels, or slow things down.
+    tasks: [{advancement: "create:water_wheel"}]
+    rewards: [{item: create:water_wheel, count: 2}, {xp: 40}]
+
+  - key: windmill
+    title: "A Mild Breeze"
+    subtitle: "The wind doesn't care about the sun either."
+    icon: create:windmill_bearing
+    pos: [4, -0.75]
+    deps: [shafts]
+    optional: true
+    desc: |
+      A &6Windmill Bearing&r with &6sails&r attached turns in any weather, far from any river. More sails, more stress capacity.
+    tasks: [{advancement: "create:windmill"}]
+    rewards: [{item: create:white_sail, count: 8}, {xp: 40}]
+
+  - key: goggles
+    title: "Kitted Out"
+    subtitle: "See the strain before it breaks."
+    icon: create:goggles
+    pos: [6, -2.5]
+    deps: [water_wheel]
+    optional: true
+    desc: |
+      Wear &6Engineer's Goggles&r and hold a &6Wrench&r. The goggles show speed and stress on anything you look at; the wrench turns blocks and picks machines up whole.
+    tasks: [{advancement: "create:wrench_goggles"}]
+    rewards: [{xp: 30}]
+
+  - key: millstone
+    title: "Embrace the Grind"
+    subtitle: "Flour for the kitchen."
+    icon: create:millstone
+    pos: [6, -1.5]
+    deps: [water_wheel]
+    optional: true
+    desc: |
+      A &6Millstone&r grinds wheat into &6flour&r, bones into bone meal and raw ore into crushed ore.
+
+      Flour and water make dough. The Hearth & Harvest kitchen will thank you.
+    tasks: [{advancement: "create:millstone"}]
+    rewards: [{item: create:wheat_flour, count: 16}, {xp: 40}]
+
+  # ---- making things ----
+  - key: press
+    title: "Pressed Flat"
+    subtitle: "Ingots in, sheets out."
+    icon: create:mechanical_press
+    pos: [4, 0.75]
+    deps: [casing]
+    optional: true
+    desc: |
+      Set a powered &6Mechanical Press&r over a depot or a belt and feed it ingots. Out come &6iron sheets&r, the plates half of Create's recipes ask for.
+
+      Over a basin, the same press compacts things instead.
+    tasks: [{advancement: "create:mechanical_press"}]
+    rewards: [{item: create:iron_sheet, count: 8}, {xp: 40}]
+
+  - key: belt
+    title: "On the Belt"
+    subtitle: "Make the work come to you."
+    icon: create:belt_connector
+    pos: [4, 1.75]
+    deps: [casing]
+    optional: true
+    desc: |
+      Craft a &6Mechanical Belt&r from dried kelp and connect two shafts with it. Items ride along it, and presses and fans work on them as they pass.
+    tasks: [{advancement: "create:belt"}]
+    rewards: [{item: create:belt_connector, count: 8}, {xp: 40}]
+
+  - key: mixer
+    title: "Mixing It Up"
+    subtitle: "A basin, and a whisk the size of a man."
+    icon: create:mechanical_mixer
+    pos: [6, 0.5]
+    deps: [press]
+    optional: true
+    desc: |
+      A &6Mechanical Mixer&r over a &6Basin&r combines whatever you drop in.
+
+      Some recipes want heat beneath the basin, and only a &6Blaze Burner&r gives enough of it.
+    tasks: [{advancement: "create:mechanical_mixer"}]
+    rewards: [{item: create:basin, count: 2}, {xp: 40}]
+
+  - key: fan
+    title: "Through Fire and Soul Fire"
+    subtitle: "Bulk cooking, the engineer's way."
+    icon: create:encased_fan
+    pos: [6, 1.75]
+    deps: [belt]
+    optional: true
+    desc: |
+      Blow an &6Encased Fan&r through fire to smoke, through lava to smelt, through water to wash. Through &6soul fire&r it &6haunts&r: things come out the other side changed.
+
+      Run a belt of raw meat past a fire and the whole village eats tonight.
+    tasks: [{advancement: "create:fan_processing"}]
+    rewards: [{table: hearth_pantry}, {xp: 50}]
+
+  - key: contraption
+    title: "&aMoving with Purpose"
+    subtitle: "Harvesters on a bearing, sweeping the fields."
+    icon: create:mechanical_harvester
+    pos: [6, 3.25]
+    deps: [press, belt]
+    optional: true
+    shape: gear
+    size: 1.5
+    desc: |
+      Fix &6Mechanical Harvesters&r, drills or saws to a moving frame (a bearing, a piston, a cart) and set it in motion. That's a &6contraption&r: the old world's favourite trick.
+
+      A harvester boom sweeping the wheat while you're off killing Sovereigns. Last Light, fed by clockwork.
+    tasks: [{advancement: "create:contraption_actors"}]
+    rewards: [{table: hearth_workshop}, {table: hearth_pantry}, {xp: 150}]
+
+  # ---- the brass age ----
+  - key: zinc
+    title: "A Grey Metal"
+    subtitle: "Zinc, deep and patient."
+    icon: create:zinc_ingot
+    pos: [8, 1]
+    deps: [mixer]
+    optional: true
+    desc: |
+      &6Zinc Ore&r hides underground in pale veins. Smelt the raw zinc into ingots.
+
+      Copper and zinc together make brass. Brass makes the clever machines.
+    tasks: [{item: create:zinc_ingot, count: 8}]
+    rewards: [{item: create:raw_zinc, count: 8}, {xp: 40}]
+
+  - key: burner
+    title: "A Fire That Watches Back"
+    subtitle: "Bottle a blaze. Be polite about it."
+    icon: create:blaze_burner
+    pos: [8, 0]
+    deps: [mixer]
+    optional: true
+    desc: |
+      Use an &6Empty Blaze Burner&r on a living blaze to trap it inside. Feed it fuel and it heats whatever sits above it.
+
+      Blazes live in the &cAshlands&r. Bring a shield, or several.
+    tasks: [{advancement: "create:burner"}]
+    rewards: [{xp: 80}]
+
+  - key: brass
+    title: "&aReal Alloys"
+    subtitle: "Gold's honest cousin."
+    icon: create:brass_ingot
+    pos: [10, 0.5]
+    deps: [zinc, burner]
+    optional: true
+    shape: hexagon
+    desc: |
+      Drop copper and zinc ingots into a basin over a lit Blaze Burner and let the mixer turn them into &6Brass&r.
+
+      Brass casings, electron tubes, brass hands: everything past this point needs it.
+    tasks: [{advancement: "create:brass"}]
+    rewards: [{table: hearth_workshop}, {xp: 100}]
+
+  - key: deployer
+    title: "A Hand That Isn't Yours"
+    subtitle: "It uses what it holds. It never gets tired."
+    icon: create:deployer
+    pos: [12, 0]
+    deps: [brass]
+    optional: true
+    desc: |
+      A &6Deployer&r uses whatever item it holds on the block in front of it: places, clicks, plants, shears. Point one at a field with seeds in its hand.
+
+      &7It can also attack. It will not dodge.
+    tasks: [{advancement: "create:deployer"}]
+    rewards: [{item: create:brass_ingot, count: 4}, {xp: 60}]
+
+  - key: crafter
+    title: "Automated Assembly"
+    subtitle: "A crafting table that does its own work."
+    icon: create:mechanical_crafter
+    pos: [12, 1]
+    deps: [brass]
+    optional: true
+    desc: |
+      Arrange &6Mechanical Crafters&r in the shape of a recipe, point them toward each other and give them rotation. They pass the ingredients along and finish the craft on their own.
+    tasks: [{advancement: "create:mechanical_crafter"}]
+    rewards: [{table: hearth_workshop}, {xp: 80}]

@@ -1,0 +1,209 @@
+{
+	chapter.25BC9FF73CA087DA.chapter_subtitle: ["Steel, stones, and what the Sovereigns leave behind."]
+	chapter.25BC9FF73CA087DA.title: "&eThe Armory"
+	quest.023C18D31A2D4291.quest_desc: [
+		"Fully reinforce one armament: &6+25&r for standard steel, &6+10&r for a unique one. The last step always takes a &6Sovereign&r stone, and those only come from things that wore a crown, or wanted one."
+		""
+		"&o\"There. Now it sings. Try not to lose it in a ditch.\"&r"
+	]
+	quest.023C18D31A2D4291.quest_subtitle: "Now it sings."
+	quest.023C18D31A2D4291.title: "Masterwork"
+	quest.0342C5D96B7F756D.quest_desc: [
+		"A &6spear&r keeps the dead a step and a half further away and runs them through with &6Impaling Thrust&r. The &6Militia Spear&r was handed to farmers when the walls began to fall."
+		""
+		"A &6halberd&r reaches nearly as far and sweeps instead: &6Spinning Reap&r. The &6Sentinel Halberd&r stood guard long after the guard fell."
+	]
+	quest.0342C5D96B7F756D.quest_subtitle: "Spears and halberds"
+	quest.0342C5D96B7F756D.title: "Reach"
+	quest.0DAAF69B89766698.quest_desc: [
+		"Six Sovereigns leave &6Crown Shards&r: Varghast's (+5 to every attribute), Sylvara's (health, and no frostbite), Kaelthar's (lightning and stamina), Ysolde's (life from every kill), Morgrath's (physical damage, and no fire), Vaelorn's (cheaper spells). The seventh is the Dragon's, at the world's end."
+		""
+		"Use each to claim it, then wear one at a time from a shrine. Claim all seven and the crown that broke the sun is whole again, for whatever that's worth."
+	]
+	quest.0DAAF69B89766698.quest_subtitle: "Seven shards. One hollow crown."
+	quest.0DAAF69B89766698.title: "&6The Crown Remade"
+	quest.20671916ECA3ECDB.quest_desc: [
+		"The Old Powers never served the Sovereigns, but each kept a relic of the world before. The &6Warden&r's becomes &6Shadowfang&r or the &6Eclipse Twinblade&r; the &6Elder Guardian&r's, &6Stormfang&r or the &6Bloomwarden's Mace&r; the &6Wither&r's, the &6Gravewarden's Scythe&r or the &6Starfall Slab&r."
+		""
+		"&7The Dragon at the world's end keeps one too. It can wait.&r"
+	]
+	quest.20671916ECA3ECDB.quest_subtitle: "Older than the Crown."
+	quest.20671916ECA3ECDB.title: "Relics of the Old Powers"
+	quest.28C2D4799B0F9121.quest_desc: [
+		"&o\"Bring me what the dead leave behind. I'll make it sing.\"&r &7— the Smith Under Ash&r"
+		""
+		"An armament deals up to five kinds of damage (&7physical&r, &bmagic&r, &6fire&r, &elightning&r, &fholy&r), scales with your attributes on grades from &6S&r down to &7E&r, and lists what it requires. Wield one you don't qualify for and it hits like an apology."
+		""
+		"Hold &eShift&r over an armament to read it. The dead drop them; the shrine &6Merchant&r stocks more as Sovereigns fall."
+	]
+	quest.28C2D4799B0F9121.quest_subtitle: "Bring me what the dead leave behind."
+	quest.28C2D4799B0F9121.title: "&eThe Armory"
+	quest.2C9C1A4E43C75D9E.quest_desc: [
+		"A &6reaper&r is a scythe made for people. &6Spinning Reap&r: a wide circle that doubles status build-up."
+		""
+		"The &6Grave Scythe&r bleeds them; &6Winter's Reaping Hook&r freezes them. The harvest is always ready."
+	]
+	quest.2C9C1A4E43C75D9E.quest_subtitle: "Reapers"
+	quest.2C9C1A4E43C75D9E.title: "The Harvest"
+	quest.2DF3735F3E3A787F.quest_desc: [
+		"&6Hammers&r don't care where the armour is. &6Earthshaker&r drives the head into the ground and throws foes skyward. The &6Iron Warhammer&r: simple, solid, final."
+		""
+		"&6Great hammers&r do it bigger and slower. The &6Titan's Gavel&r asks for 30 Strength and delivers judgement by weight."
+	]
+	quest.2DF3735F3E3A787F.quest_subtitle: "Hammers and great hammers"
+	quest.2DF3735F3E3A787F.title: "Blunt Instruments"
+	quest.30A32CEC43EA5DB9.quest_desc: [
+		"Standard armaments climb to &6+25&r on &6Tempering Stones&r. Each grade carries three steps (I takes +0 to +3, II to +6, on to VIII at +24), and a &6Sovereign Tempering Stone&r makes the last."
+		""
+		"The dead drop stones now and then, champions by the handful, and the Merchant sells I to V. Reinforce at a shrine: runes and stones."
+		""
+		"Take an armament to &6+10&r."
+	]
+	quest.30A32CEC43EA5DB9.quest_subtitle: "Three steps to a stone."
+	quest.30A32CEC43EA5DB9.title: "Tempered Steel"
+	quest.321336B72E8417EC.quest_desc: [
+		"Take the &6Relic of the Dusk Rider&r to a shrine and open &6Relics&r. It becomes one of two: the &6Duskrider Glaive&r, a halberd for Strength and Dexterity, or the &6Sunlit Sword&r, holy steel for &eFaith&r."
+		""
+		"Choose the one your attributes can carry. The relic is spent either way."
+	]
+	quest.321336B72E8417EC.quest_subtitle: "A relic remembers what its owner carried."
+	quest.321336B72E8417EC.title: "Relic of the Dusk Rider"
+	quest.3B6E842709B2EE5E.quest_desc: [
+		"A &6Blank Whetstone&r (smooth stone slabs and flint) plus a reagent makes an &6affinity whetstone&r: iron block for &7Heavy&r, flint and feather for &aKeen&r, lapis block for &bMagic&r, blaze powder and magma cream for &6Fire&r, a lightning rod for &eLightning&r, a golden apple for &fSacred&r, blue ice for &bCold&r. Twelve in all."
+		""
+		"&6Infuse&r at a shrine to give a standard armament that affinity. The whetstone isn't consumed; the runes are. Unique armaments refuse the stone."
+	]
+	quest.3B6E842709B2EE5E.quest_subtitle: "Whetstones and affinities."
+	quest.3B6E842709B2EE5E.title: "A Keener Edge"
+	quest.3FD00E03D41C5E6B.quest_desc: [
+		"A &6greatsword&r costs eighteen stamina a swing and is worth it. &6Leaping Cleave&r brings the full weight down from the air. The &6Highland Claymore&r is the honest start."
+		""
+		"A &6colossal sword&r is less a sword than a falling wall: twenty-six stamina a swing and &6Ruinous Charge&r. The &6Ruinbreaker&r wants 26 Strength before it will move at all."
+	]
+	quest.3FD00E03D41C5E6B.quest_subtitle: "Greatswords and colossal swords"
+	quest.3FD00E03D41C5E6B.title: "The Weight of the Blade"
+	quest.41F25821C7A9B085.quest_desc: [
+		"&6Morgrath's&r relic becomes the &6Voidstar Hammer&r, which called stars down, or his &6Ashen Greatsword&r, which remembers the burning of the old crown."
+		""
+		"&6Vaelorn's&r becomes the &6Wyrmfang Halberd&r, cut from his own fang, or the &6Dragonsoul Seal&r: a wyrm's heart, still beating, bound in gold."
+	]
+	quest.41F25821C7A9B085.quest_subtitle: "Morgrath and Vaelorn"
+	quest.41F25821C7A9B085.title: "Ash and Wyrm"
+	quest.450A6C1D94F44BC6.quest_desc: [
+		"&6Fists&r are the fastest thing you can hold: five stamina a swing and no reach to speak of. &6Beast Claws&r bleed; &6Ironbound Knuckles&r shout (&6War Cry&r)."
+		""
+		"A &6whip&r is the opposite: the longest reach of any armament. The &6Thornlash&r is a vine that learned to bite."
+	]
+	quest.450A6C1D94F44BC6.quest_subtitle: "Fists and whips"
+	quest.450A6C1D94F44BC6.title: "Fist and Lash"
+	quest.4B6D3CFFC418A385.quest_desc: [
+		"A &6twinblade&r is an edge at both ends of a pole. Twelve stamina a swing, and &6Whirlwind&r: three spins, a storm of steel around you."
+		""
+		"Crowds are its business. Bosses, rather less so."
+	]
+	quest.4B6D3CFFC418A385.quest_subtitle: "Twinblades"
+	quest.4B6D3CFFC418A385.title: "Two Edges, No Rest"
+	quest.4FE09E1915F28730.quest_desc: [
+		"An &6axe&r is a Strength weapon that doesn't apologise: &6War Cry&r on &eR&r, and the &6Warlord's Battleaxe&r is notched once for every war it survived."
+		""
+		"A &6greataxe&r swings slower and harder, with &6Frenzied Strikes&r: five savage blows. The &6Executioner's Greataxe&r has only ever had one job."
+	]
+	quest.4FE09E1915F28730.quest_subtitle: "Axes and greataxes"
+	quest.4FE09E1915F28730.title: "Axes, Small and Great"
+	quest.64DA6EF3552845CF.quest_desc: [
+		"A &6staff&r is a catalyst: &eR&r casts its bound &bsorcery&r, paid in FP, scaling with &bIntelligence&r. The &6Astral Staff&r throws a Starshard Bolt."
+		""
+		"Later staves call storms, starshard barrages and gravity itself. Swinging one at a skeleton remains, technically, an option."
+	]
+	quest.64DA6EF3552845CF.quest_subtitle: "Staves"
+	quest.64DA6EF3552845CF.title: "Read the Stars"
+	quest.653EF093B9903AC4.quest_desc: [
+		"&6Curved swords&r are for those who'd rather not be standing where the blow lands. Fast, hungry for Dexterity, &6Quickstep&r on &eR&r."
+		""
+		"The &6Fangtooth Cleaver&r frenzies and bleeds (&6Frenzied Strikes&r). The &6Magma Falchion&r was quenched in molten rock and still cuts with fire."
+	]
+	quest.653EF093B9903AC4.quest_subtitle: "Curved swords"
+	quest.653EF093B9903AC4.title: "The Curve of It"
+	quest.67A822FF15E3AF09.quest_desc: [
+		"The &6straight sword&r does everything adequately, which is more than most things in this world can say. Ten stamina a swing, Strength and Dexterity alike, and &6War Cry&r on &eR&r to harden you for the fight."
+		""
+		"The &6Errant Longsword&r was carried by knights who swore to no lord. Later blades burn (&6Emberbrand&r), freeze (&6Rimeguard Sword&r) or rot (&6Ossuary Blade&r)."
+	]
+	quest.67A822FF15E3AF09.quest_subtitle: "Straight swords"
+	quest.67A822FF15E3AF09.title: "Honest Steel"
+	quest.6823AEF49166175C.quest_desc: [
+		"&6Varghast's&r relic becomes his &6Graft-Axe&r or &6Crownsplitter&r, the colossal sword he grafted to his own arm. Both want more Strength than is polite."
+		""
+		"&6Sylvara's&r becomes her &6Frostbound Staff&r, winter on command for a sorcerer, or &6Rimeveil&r, her veil folded into a katana."
+	]
+	quest.6823AEF49166175C.quest_subtitle: "Varghast and Sylvara"
+	quest.6823AEF49166175C.title: "Graft and Frost"
+	quest.6CE2F849B3006488.quest_desc: [
+		"&6Kaelthar's&r relic becomes his &6Storm Totem&r, a seal that hurls spears of storm, or the &6Stormcaller's Pike&r: raise it and the sky obeys."
+		""
+		"&6Ysolde's&r becomes &6Crimsonfall&r, a katana that drinks before you do, or the &6Bloodbloom Sigil&r, a seal of Faith and Arcane that ruptures every vein nearby."
+	]
+	quest.6CE2F849B3006488.quest_subtitle: "Kaelthar and Ysolde"
+	quest.6CE2F849B3006488.title: "Storm and Bloom"
+	quest.7644A14C6A63013E.quest_desc: [
+		"&6Thrusting swords&r reach a little further and strike a little faster. Their art is &6Impaling Thrust&r, a lunge that pierces every foe in a line."
+		""
+		"The &6Noble's Rapier&r trades it for &6Quickstep&r and lives on Dexterity. The &6Thornspur Rapier&r leaves &2Blight&r in every wound."
+	]
+	quest.7644A14C6A63013E.quest_subtitle: "Thrusting swords"
+	quest.7644A14C6A63013E.title: "The Needle"
+	quest.78F7124FE9EA4E98.quest_desc: [
+		"A &6sacred seal&r casts &eincantations&r on &eR&r, scaling with &eFaith&r. The &6Pilgrim's Seal&r calls down Blessed Flame."
+		""
+		"The &6Seal of the Golden Rite&r mends you and your allies; the &6Flame Prayer Seal&r raises a pillar of fire under your foe."
+	]
+	quest.78F7124FE9EA4E98.quest_subtitle: "Sacred seals"
+	quest.78F7124FE9EA4E98.title: "Prayers That Answer"
+	quest.799E9723EEE4C197.quest_desc: [
+		"&6Daggers&r are quick, short and cheap: six stamina a swing. Most carry &6Quickstep&r, a burst of speed through an attack."
+		""
+		"They're built for &cstatus&r. The &6Cutthroat's Kris&r builds &cHemorrhage&r; the &6Venomfang Stiletto&r, &2Poison&r. Every hit fills the meter, and when it bursts, it hurts."
+	]
+	quest.799E9723EEE4C197.quest_subtitle: "Daggers"
+	quest.799E9723EEE4C197.title: "The Short Answer"
+	quest.7E4AFBBD2C4C680D.quest_desc: [
+		"Unique armaments, &6Epic&r and &6Legendary&r, don't take tempering. They climb to &6+10&r on &6Lustrous Stones&r, one grade per step (I for +1, on to IX for +9), and a &6Sovereign Lustrous Stone&r for the last."
+		""
+		"Champions carry them, Sovereigns leave two, and the Merchant sells the first three. A unique armament can't be infused, so the plus is all it will ever get. Make it count."
+	]
+	quest.7E4AFBBD2C4C680D.quest_subtitle: "Unique steel climbs slower."
+	quest.7E4AFBBD2C4C680D.title: "Lustrous Stones"
+	quest.7EBB2B0B118FE4D0.quest_desc: [
+		"A &6katana&r cuts fast and bleeds. Its art is &6Unsheathe&r: gather focus, then cut everything before you in one draw."
+		""
+		"The &6Ronin's Uchigatana&r builds &cHemorrhage&r from the first swing. The &6Longfang Nodachi&r is too long to draw quickly and too deadly for that to matter."
+	]
+	quest.7EBB2B0B118FE4D0.quest_subtitle: "Katanas"
+	quest.7EBB2B0B118FE4D0.title: "One Draw"
+	task.06EBE37B4F2EB671.title: "An armament of Morgrath"
+	task.0C627622069254A9.title: "Any axe or greataxe"
+	task.0E01D69777B4537C.title: "Any affinity whetstone"
+	task.1074298C9698BFE9.title: "An armament of Ysolde"
+	task.1965F71091DA9D40.title: "I read an armament's tooltip (Shift)"
+	task.1A2E609DFDB5E92F.title: "Any twinblade"
+	task.2291E78E4190650E.title: "Any staff"
+	task.22B2FDE78C13EBFF.title: "An armament of Sylvara"
+	task.24ECBFDCEC326388.title: "Any spear or halberd"
+	task.258390EB7CE85106.title: "An armament of Varghast"
+	task.2DE6CBDB8C7316BA.title: "An armament of the Warden"
+	task.336EE3FEBEF3B21A.title: "An armament of the Elder Guardian"
+	task.34E960FEC8D84731.title: "Any greatsword or colossal sword"
+	task.362BD9F03CC10816.title: "Any katana"
+	task.423324BAF663133D.title: "Any hammer or great hammer"
+	task.45E0543B31CE3724.title: "An armament of Vaelorn"
+	task.4A0E40151BF82644.title: "Any thrusting sword"
+	task.58BD2B5917E6361F.title: "An armament of the Wither"
+	task.5AE1A9BFFA1F91B5.title: "Any fist weapon or whip"
+	task.5C56EE8D2B84A4A4.title: "Any reaper"
+	task.5DDDCCC360134AD2.title: "Any curved sword"
+	task.6785F0A0C5DC9891.title: "An armament of Kaelthar"
+	task.729C6FCCE2F22B9A.title: "The Duskrider Glaive or the Sunlit Sword"
+	task.74408D1ED6C880A2.title: "Any sacred seal"
+	task.76FE4999021AB353.title: "Any straight sword"
+	task.7BDD0D1332534655.title: "Any dagger"
+}

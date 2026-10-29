@@ -1,0 +1,70 @@
+{
+	icon: {
+		id: "runeborn:sovereign_tempering_stone"
+	}
+	id: "11F843B5B9B0669D"
+	loot_size: 1
+	order_index: 21
+	rewards: [
+		{
+			id: "362F5284741EB1F7"
+			item: {
+				count: 1
+				id: "runeborn:sovereign_tempering_stone"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 2
+			id: "129CAC51594AA51B"
+			item: {
+				count: 1
+				id: "runeborn:lustrous_stone_6"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "21AB8B74CC01E281"
+			item: {
+				count: 1
+				id: "runeborn:lustrous_stone_7"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "4C73B159FE721C1C"
+			item: {
+				count: 1
+				id: "runeborn:lustrous_stone_8"
+			}
+			weight: 1.0f
+		}
+		{
+			count: 2
+			id: "5822E315F173B659"
+			item: {
+				count: 1
+				id: "runeborn:heros_rune"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "2513E95CC9A3681F"
+			item: {
+				count: 1
+				id: "mob_loot_bags:legendarylootbag"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "1530B8BC15B89C9F"
+			item: {
+				count: 1
+				id: "runeborn:sunseed"
+			}
+			weight: 0.5f
+		}
+	]
+}

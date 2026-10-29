@@ -1,11 +1,11 @@
 # Pack art
 
 The icon, logo, main-menu background and title card for Season 1. Everything is drawn as SVG/HTML in
-`src/art.html` and rendered with the pre-installed Chromium; the only picture in it is a real in-game screenshot.
+`src/art.html` (the icon in `src/icon.html`) and rendered with the pre-installed Chromium; the only picture in it is a real in-game screenshot.
 
 | File | Size | Where it goes |
 |---|---|---|
-| `out/icon.png` | 512×512 | CurseForge project avatar (upload on the project page; a modpack zip can't carry it) |
+| `out/icon.png`, `out/icon_1024.png` | 512×512, 1024×1024 | CurseForge project avatar (upload on the project page; a modpack zip can't carry it). Drawn in `src/icon.html`: an Ashborn's greatsword planted in ash blocks before the black sun, the broken Sun-Crown at its foot, ruined spires in the haze, embers rising |
 | `out/logo.png` | 1600×700, transparent | Main menu (copied into `pack/config/fancymenu/assets/`), page headers |
 | `out/menu_background.png` | 1920×1080 | Main-menu background: the shot with a dark band on the left for the buttons |
 | `out/title_card.png` | 1920×1080 | First gallery image, page banner, video thumbnail base |

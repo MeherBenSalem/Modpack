@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-<!-- Remnants S1 art: the logo (transparent), the pack icon, and the menu/title-card composites.
-     Rendered by art/render.cjs; #view=logo|icon|menu|card picks the piece. Fonts are SIL OFL (art/fonts). -->
+<!-- Remnants S1 art: the logo (transparent) and the menu/title-card composites (the icon is src/icon.html).
+     Rendered by art/render.cjs; #view=logo|menu|card|menu2|btn picks the piece. Fonts are SIL OFL (art/fonts). -->
 <style>
   @font-face { font-family: "Cinzel Decorative"; font-weight: 900; src: url("../fonts/CinzelDecorative-Black.ttf"); }
   @font-face { font-family: "Cinzel Decorative"; font-weight: 700; src: url("../fonts/CinzelDecorative-Bold.ttf"); }
@@ -15,7 +15,7 @@
   }
   html, body { margin: 0; background: transparent; }
   .piece { display: none; position: relative; overflow: hidden; }
-  body[data-view="logo"] #logo, body[data-view="icon"] #icon,
+  body[data-view="logo"] #logo,
   body[data-view="menu"] #menu, body[data-view="card"] #card,
   body[data-view="menu2"] #menu2, body[data-view="btn"] #btn { display: block; }
 
@@ -43,21 +43,6 @@
     text-shadow: 0 2px 0 #2a1003, 0 0 18px rgba(255,120,30,.55), 0 4px 12px rgba(0,0,0,.95);
   }
   .season span { color: #f3dfb0; }
-
-  /* ---------- icon ---------- */
-  #icon { width: 512px; height: 512px; border-radius: 0;
-    background:
-      radial-gradient(120% 90% at 50% 105%, rgba(255,118,32,.55) 0%, rgba(120,40,10,.25) 32%, transparent 60%),
-      radial-gradient(90% 80% at 50% 38%, #2a1c34 0%, #120d18 55%, #07050a 100%); }
-  #icon .frame { position: absolute; inset: 14px; border: 3px solid rgba(242,196,90,.75); box-shadow: inset 0 0 0 2px rgba(0,0,0,.6), 0 0 0 2px rgba(0,0,0,.6); }
-  #icon .frame::before, #icon .frame::after { content: ""; position: absolute; width: 16px; height: 16px; background: var(--gold); transform: rotate(45deg); top: -10px; left: calc(50% - 8px); box-shadow: 0 0 10px rgba(255,138,42,.9); }
-  #icon .frame::after { top: auto; bottom: -10px; }
-  #icon svg.big { position: absolute; left: 56px; top: 34px; width: 400px; height: 400px; }
-  #icon .flame { position: absolute; left: 176px; top: 268px; width: 160px; height: 200px; filter: drop-shadow(0 0 18px rgba(255,140,40,.9)); }
-  #icon .r { position: absolute; left: 0; right: 0; bottom: 34px; text-align: center; font-family: "Cinzel Decorative"; font-weight: 900;
-    font-size: 56px; letter-spacing: 6px; color: transparent;
-    background: linear-gradient(180deg, var(--gold-hi), var(--gold) 45%, var(--gold-lo)); -webkit-background-clip: text; background-clip: text;
-    -webkit-text-stroke: 1.5px #2a1806; filter: drop-shadow(0 3px 4px rgba(0,0,0,.9)); }
 
   /* ---------- composites over the in-game shot ---------- */
   #menu, #card { width: 1920px; height: 1080px; background: #000; }
@@ -104,9 +89,6 @@
     <linearGradient id="ring" x1="0" y1="0" x2="0" y2="200" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#fff1c4"/><stop offset=".5" stop-color="#f2c45a"/><stop offset="1" stop-color="#8a5a14"/>
     </linearGradient>
-    <linearGradient id="fire" x1="0" y1="1" x2="0" y2="0">
-      <stop offset="0" stop-color="#ff5a12"/><stop offset=".55" stop-color="#ffa53a"/><stop offset="1" stop-color="#fff0b8"/>
-    </linearGradient>
     <g id="eclipse">
       <!-- rays -->
       <g stroke="url(#ring)" stroke-linecap="round" opacity=".9">
@@ -131,15 +113,6 @@
     <div class="sub">THE MODPACK</div>
     <div class="season">SEASON 1 <span>·</span> THE LONG ECLIPSE</div>
   </div>
-</div>
-
-<div id="icon" class="piece">
-  <svg class="big" viewBox="0 0 200 200"><use href="#eclipse"/></svg>
-  <svg class="flame" viewBox="0 0 80 100">
-    <path d="M40 2 C46 20 64 30 64 56 C64 78 52 96 40 96 C28 96 16 78 16 56 C16 42 24 34 28 22 C32 34 36 38 40 40 C38 26 38 14 40 2 Z" fill="url(#fire)"/>
-    <path d="M40 46 C44 56 52 62 52 74 C52 86 46 94 40 94 C34 94 28 86 28 74 C28 66 32 62 34 56 C36 62 38 64 40 64 C39 58 39 52 40 46 Z" fill="#fff3cf" opacity=".9"/>
-  </svg>
-  <div class="frame"></div>
 </div>
 
 <div id="menu" class="piece">

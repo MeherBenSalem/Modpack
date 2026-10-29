@@ -1,6 +1,6 @@
 // Render the pack art from art/src/art.html with the pre-installed Chromium.
 //   node art/render.cjs [path/to/in-game-shot.png]
-// Writes art/out/: logo.png (transparent), icon.png (512), menu_background.png, menu_background_dark.png and
+// Writes art/out/: logo.png (transparent), icon_1024.png and icon.png (512, from src/icon.html), menu_background.png, menu_background_dark.png and
 // title_card.png (1920x1080, only when a shot is given), and art/out/menu/btn_<entry>_<normal|hover>.png. The in-game shot is a real screenshot from the pack (see art/README.md).
 const { chromium } = require('playwright');
 const path = require('path');
@@ -14,7 +14,6 @@ const fs = require('fs');
   const browser = await chromium.launch();
   const jobs = [
     { view: 'logo', w: 1600, h: 700, file: 'logo.png', transparent: true },
-    { view: 'icon', w: 512, h: 512, file: 'icon.png' },
   ];
   if (shot) jobs.push({ view: 'menu', w: 1920, h: 1080, file: 'menu_background.png' },
                       { view: 'menu2', w: 1920, h: 1080, file: 'menu_background_dark.png' },
@@ -34,6 +33,16 @@ const fs = require('fs');
     await page.locator('#' + j.view).screenshot({ path: path.join(out, j.file), omitBackground: !!j.transparent });
     await page.close();
     console.log('wrote', path.join('art/out', j.file));
+  }
+  // The icon (the CurseForge project avatar) is its own page, drawn at 1024 and rendered at full and half scale.
+  for (const [scale, file] of [[1, 'icon_1024.png'], [0.5, 'icon.png']]) {
+    const page = await browser.newPage({ viewport: { width: 1024, height: 1024 }, deviceScaleFactor: scale });
+    await page.goto('file://' + path.join(root, 'src', 'icon.html'));
+    await page.evaluate(() => document.fonts.ready);
+    await page.waitForTimeout(300);
+    await page.locator('#icon').screenshot({ path: path.join(out, file) });
+    await page.close();
+    console.log('wrote', path.join('art/out', file));
   }
   await browser.close();
 })();

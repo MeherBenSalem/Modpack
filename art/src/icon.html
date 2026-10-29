@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- Remnants S1 icon (the CurseForge project avatar): an Ashborn's greatsword planted in a mound of ash blocks before the
+     black sun, the broken Sun-Crown fallen at its foot, embers rising, the name under it in a gold frame.
+     1024x1024 vector; art/render.cjs writes out/icon_1024.png and out/icon.png (512). #notext drops the name.
+     Fonts: SIL OFL (art/fonts). -->
+<style>
+  @font-face { font-family: "Cinzel Decorative"; font-weight: 900; src: url("../fonts/CinzelDecorative-Black.ttf"); }
+  @font-face { font-family: "Cinzel"; font-weight: 400 900; src: url("../fonts/Cinzel-wght.ttf"); }
+  html, body { margin: 0; background: #000; }
+  #icon { position: relative; width: 1024px; height: 1024px; overflow: hidden; background: #040304; }
+  #icon svg { position: absolute; inset: 0; }
+  .name { position: absolute; left: 0; right: 0; top: 806px; text-align: center; font-family: "Cinzel Decorative"; font-weight: 900;
+          font-size: 126px; line-height: 1; letter-spacing: 4px; margin-right: -4px; color: transparent;
+          background: linear-gradient(180deg, #fff6d8 6%, #f7d27a 34%, #d9a03a 60%, #8a5a14 92%); -webkit-background-clip: text; background-clip: text;
+          -webkit-text-stroke: 2.5px #241404;
+          filter: drop-shadow(0 4px 0 #0e0702) drop-shadow(0 10px 16px rgba(0,0,0,.95)) drop-shadow(0 0 26px rgba(255,140,40,.4)); }
+  .rule { position: absolute; left: 0; right: 0; top: 938px; display: flex; align-items: center; justify-content: center; gap: 16px; }
+  .rule i { display: block; width: 150px; height: 2px; }
+  .rule i:first-child { background: linear-gradient(90deg, transparent, #e8b85a); }
+  .rule i:last-child { background: linear-gradient(90deg, #e8b85a, transparent); }
+  .rule b { display: block; width: 11px; height: 11px; background: #f2c45a; transform: rotate(45deg); box-shadow: 0 0 10px rgba(255,150,50,.9); }
+  .sub { position: absolute; left: 0; right: 0; top: 951px; text-align: center; font-family: Cinzel; font-weight: 700; font-size: 27px;
+         letter-spacing: 15px; margin-right: -15px; color: #eedcb2; text-shadow: 0 2px 0 #120a03, 0 3px 10px #000; }
+  body.notext .name, body.notext .rule, body.notext .sub { display: none; }
+</style>
+</head>
+<body>
+<div id="icon">
+<svg viewBox="0 0 1024 1024" width="1024" height="1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="sky" cx="512" cy="372" r="640" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4a2210"/><stop offset=".3" stop-color="#22110b"/><stop offset=".62" stop-color="#0c0708"/><stop offset="1" stop-color="#030203"/>
+    </radialGradient>
+    <radialGradient id="halo" cx="512" cy="372" r="360" gradientUnits="userSpaceOnUse">
+      <stop offset=".40" stop-color="#ffd27a" stop-opacity=".85"/><stop offset=".47" stop-color="#ffa040" stop-opacity=".42"/>
+      <stop offset=".64" stop-color="#ff6a1c" stop-opacity=".13"/><stop offset="1" stop-color="#ff5a10" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moon" cx="470" cy="330" r="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#151012"/><stop offset=".78" stop-color="#070506"/><stop offset=".96" stop-color="#0b0505"/><stop offset="1" stop-color="#2a0d06"/>
+    </radialGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1e1b1a"/><stop offset=".06" stop-color="#a59d92"/><stop offset=".15" stop-color="#6c655e"/>
+      <stop offset=".42" stop-color="#3f3935"/><stop offset=".48" stop-color="#1a1716"/><stop offset=".52" stop-color="#1a1716"/>
+      <stop offset=".58" stop-color="#37322f"/><stop offset=".85" stop-color="#5e5751"/><stop offset=".94" stop-color="#b9afa2"/><stop offset="1" stop-color="#211e1c"/>
+    </linearGradient>
+    <linearGradient id="bladeLight" x1="0" y1="318" x2="0" y2="790" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffe6b0" stop-opacity=".22"/><stop offset=".35" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset=".62" stop-color="#ff8a2a" stop-opacity="0"/><stop offset="1" stop-color="#ff7a1c" stop-opacity=".75"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4dca0"/><stop offset=".28" stop-color="#c8913a"/><stop offset=".66" stop-color="#6e4612"/><stop offset="1" stop-color="#2a1806"/>
+    </linearGradient>
+    <linearGradient id="goldH" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3e2808"/><stop offset=".25" stop-color="#b8822e"/><stop offset=".5" stop-color="#ead09a"/>
+      <stop offset=".75" stop-color="#a87228"/><stop offset="1" stop-color="#2e1c06"/>
+    </linearGradient>
+    <linearGradient id="cloth" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7a1a12"/><stop offset=".55" stop-color="#4a0e0a"/><stop offset="1" stop-color="#1e0504"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="730" x2="0" y2="1024" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#17100d"/><stop offset=".25" stop-color="#0b0807"/><stop offset="1" stop-color="#040303"/>
+    </linearGradient>
+    <linearGradient id="fogMask" x1="0" y1="640" x2="0" y2="880" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".45" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="baseGlow" cx="512" cy="756" r="210" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 756) scale(1 .32) translate(0 -756)">
+      <stop offset="0" stop-color="#ffb050" stop-opacity=".9"/><stop offset=".35" stop-color="#ff7a20" stop-opacity=".45"/><stop offset="1" stop-color="#ff5a10" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx="512" cy="470" r="760" gradientUnits="userSpaceOnUse">
+      <stop offset=".45" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".92"/>
+    </radialGradient>
+    <linearGradient id="frameGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6d88a"/><stop offset=".5" stop-color="#b8842e"/><stop offset="1" stop-color="#f0c868"/>
+    </linearGradient>
+
+    <filter id="b2" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2"/></filter>
+    <filter id="b5" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>
+    <filter id="b12" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="12"/></filter>
+    <filter id="b28" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="28"/></filter>
+    <filter id="wisp" x="-30%" y="-30%" width="160%" height="160%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.005 0.008" numOctaves="2" seed="4" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="16" xChannelSelector="R" yChannelSelector="G"/>
+      <feGaussianBlur stdDeviation="2.4"/>
+    </filter>
+    <filter id="fog" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.0045 0.02" numOctaves="4" seed="9" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 .2  0 0 0 0 .13  0 0 0 0 .11  0 0 0 1.7 -.62" result="f"/>
+      <feComposite in="f" in2="SourceGraphic" operator="in"/>
+    </filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="3"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 .9  0 0 0 0 .8  0 0 0 .9 -.38"/>
+    </filter>
+    <filter id="smoke" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.0035 0.011" numOctaves="5" seed="21" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 .07  0 0 0 0 .045  0 0 0 0 .04  0 0 0 2.1 -.86" result="f"/>
+      <feComposite in="f" in2="SourceGraphic" operator="in"/>
+    </filter>
+    <linearGradient id="smokeMask" x1="0" y1="360" x2="0" y2="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity=".6"/>
+    </linearGradient>
+    <filter id="grime" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.022 0.05" numOctaves="4" seed="12" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 .14  0 0 0 0 .08  0 0 0 0 .045  0 0 0 3.2 -1.55" result="g0"/>
+      <feGaussianBlur in="g0" stdDeviation="1.2" result="g"/>
+      <feComposite in="g" in2="SourceGraphic" operator="in"/>
+    </filter>
+    <clipPath id="bladeClip"><path d="M474 318 L550 318 L549 420 L553 427 L547 434 L545 560 L543 700 L542 796 L482 796 L482 700 L480 612 L474 605 L480 598 L477 470 Z"/></clipPath>
+    <clipPath id="guardClip"><path d="M512 286 L640 288 C656 288 664 296 668 306 L676 330 C668 320 658 316 644 314 L512 316 L380 314 C366 316 356 320 348 330 L356 306 C360 296 368 288 384 288 Z"/><path d="M488 280 L536 280 L544 300 L536 324 L488 324 L480 300 Z"/><path d="M512 104 L536 128 L526 150 L498 150 L488 128 Z"/></clipPath>
+    <clipPath id="discClip"><circle cx="512" cy="372" r="158"/></clipPath>
+  </defs>
+
+  <!-- sky, corona, the black sun -->
+  <rect width="1024" height="1024" fill="url(#sky)"/>
+  <circle cx="512" cy="372" r="360" fill="url(#halo)"/>
+  <g id="streamers" filter="url(#b12)" opacity=".75"></g>
+  <g id="rays" filter="url(#wisp)"></g>
+  <circle cx="512" cy="372" r="166" fill="none" stroke="#ffe7b0" stroke-width="22" filter="url(#b12)" opacity=".9"/>
+  <circle cx="512" cy="372" r="161" fill="none" stroke="#fff4d6" stroke-width="7" filter="url(#b2)"/>
+  <circle cx="512" cy="372" r="158" fill="url(#moon)"/>
+  <circle cx="512" cy="372" r="157" fill="none" stroke="#fffaf0" stroke-width="2.2"/>
+  <!-- the last bead of light on the rim -->
+  <g id="bead"></g>
+
+  <!-- ruined spires on the horizon, dark against a warm haze -->
+  <ellipse cx="512" cy="742" rx="600" ry="120" fill="#7a3414" opacity=".5" filter="url(#b28)"/>
+  <g id="ruins"></g>
+
+  <!-- ash smoke drifting across the lower sun -->
+  <rect x="0" y="330" width="1024" height="440" fill="url(#smokeMask)" filter="url(#smoke)"/>
+
+  <!-- fog behind the mound -->
+  <rect x="0" y="600" width="1024" height="300" fill="url(#fogMask)" filter="url(#fog)" opacity=".95"/>
+
+  <!-- the tattered ribbon, the blade, the guard, the wrapped grip, the pommel -->
+  <g id="sword">
+    <path d="M524 326 C560 340 590 352 612 372 C636 394 646 420 664 452 L650 446 L656 474 L640 458 L636 490 L624 462 C612 440 596 418 576 400 C560 386 540 372 526 362 Z"
+          fill="url(#cloth)" stroke="#120302" stroke-width="2"/>
+    <path d="M524 326 C560 340 590 352 612 372 C636 394 646 420 664 452" fill="none" stroke="#ff8a4a" stroke-width="2.4" opacity=".65"/>
+    <path d="M540 350 C566 366 590 384 606 404 C618 420 628 440 636 462" fill="none" stroke="#1a0403" stroke-width="3" opacity=".7"/>
+    <path id="blade" d="M474 318 L550 318 L549 420 L553 427 L547 434 L545 560 L543 700 L542 796 L482 796 L482 700 L480 612 L474 605 L480 598 L477 470 Z"
+          fill="url(#steel)" stroke="#0e0b0a" stroke-width="2"/>
+    <path d="M474 318 L550 318 L549 420 L553 427 L547 434 L545 560 L543 700 L542 796 L482 796 L482 700 L480 612 L474 605 L480 598 L477 470 Z"
+          fill="url(#bladeLight)" style="mix-blend-mode:screen"/>
+    <rect x="507" y="334" width="9" height="400" fill="#0e0c0b" opacity=".9"/>
+    <rect x="516" y="334" width="2" height="400" fill="#e8dcc8" opacity=".25"/>
+    <g clip-path="url(#bladeClip)">
+      <rect x="470" y="318" width="90" height="480" fill="#000" filter="url(#grime)"/>
+      <path d="M484 380 L500 352 M530 470 L541 446 M488 530 L497 512 M526 610 L538 590 M490 662 L503 640" stroke="#d6cbbb" stroke-width="1.2" opacity=".35"/>
+    </g>
+    <path d="M476 318 L479 598" stroke="#ffe0a8" stroke-width="2" opacity=".45"/>
+    <path d="M548 318 L545 560" stroke="#ffcf8a" stroke-width="2" opacity=".35"/>
+    <!-- guard: drooping quillons -->
+    <path d="M512 286 L640 288 C656 288 664 296 668 306 L676 330 C668 320 658 316 644 314 L512 316 L380 314 C366 316 356 320 348 330 L356 306 C360 296 368 288 384 288 Z"
+          fill="url(#gold)" stroke="#120a02" stroke-width="2.5"/>
+    <path d="M384 290 L640 290" stroke="#fff3d0" stroke-width="2" opacity=".7"/>
+    <path d="M488 280 L536 280 L544 300 L536 324 L488 324 L480 300 Z" fill="url(#gold)" stroke="#120a02" stroke-width="2.5"/>
+    <path d="M512 290 L522 302 L512 314 L502 302 Z" fill="#ff5a14" stroke="#2a0a02" stroke-width="1.5"/>
+    <circle cx="512" cy="302" r="16" fill="#ff7a24" opacity=".55" filter="url(#b5)"/>
+    <!-- grip wrapped in pale linen -->
+    <rect x="496" y="150" width="32" height="132" fill="#1c1410" stroke="#0a0604" stroke-width="2"/>
+    <g id="wrap"></g>
+    <!-- pommel -->
+    <path d="M512 104 L536 128 L526 150 L498 150 L488 128 Z" fill="url(#gold)" stroke="#120a02" stroke-width="2.5"/>
+    <rect x="340" y="100" width="344" height="232" fill="#000" filter="url(#grime)" clip-path="url(#guardClip)" opacity=".85"/>
+    <circle cx="512" cy="128" r="8" fill="#ff6a1a" stroke="#2a0a02" stroke-width="1.5"/>
+    <circle cx="512" cy="128" r="14" fill="#ff8a2a" opacity=".55" filter="url(#b5)"/>
+  </g>
+
+  <!-- the mound of ash blocks, lit from the sword's foot -->
+  <ellipse cx="512" cy="756" rx="300" ry="96" fill="url(#baseGlow)"/>
+  <g id="mound"></g>
+  <g id="cracks"></g>
+
+  <!-- the broken Sun-Crown, fallen against the blade -->
+  <g transform="translate(408 738) rotate(-19)">
+    <ellipse cx="0" cy="6" rx="80" ry="18" fill="#ff7a24" opacity=".3" filter="url(#b12)"/>
+    <path d="M-70 -4 L-61 -62 L-44 -18 L-24 -82 L-8 -20 L2 -44 L-2 -36 L9 -40 L7 -26 L12 -20 L30 -78 L46 -18 L62 -60 L70 -4 Z"
+          fill="url(#gold)" stroke="#120a02" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M-61 -62 L-55 -30 M-24 -82 L-20 -36 M30 -78 L28 -34 M62 -60 L57 -28" stroke="#f4dca0" stroke-width="1.6" opacity=".55"/>
+    <rect x="-72" y="-8" width="144" height="30" rx="2" fill="url(#goldH)" stroke="#120a02" stroke-width="2.5"/>
+    <rect x="-72" y="-8" width="144" height="30" fill="#000" filter="url(#grime)" opacity=".9"/>
+    <path d="M-70 -6 L70 -6" stroke="#f6e0a8" stroke-width="1.8" opacity=".6"/>
+    <path d="M-38 7 L-30 -1 L-22 7 L-30 15 Z" fill="#160604" stroke="#2a1404" stroke-width="1.5"/>
+    <path d="M-8 7 L0 -1 L8 7 L0 15 Z" fill="#b8320c" stroke="#2a0e04" stroke-width="1.5"/>
+    <path d="M22 7 L30 -1 L38 7 L30 15 Z" fill="#160604" stroke="#2a1404" stroke-width="1.5"/>
+  </g>
+
+
+  <!-- embers and ash on the air -->
+  <g id="embers"></g>
+
+  <rect width="1024" height="1024" fill="url(#vignette)"/>
+  <rect width="1024" height="1024" filter="url(#grain)" opacity=".5" style="mix-blend-mode:overlay"/>
+
+  <!-- the frame -->
+  <rect x="20" y="20" width="984" height="984" fill="none" stroke="#b8842e" stroke-opacity=".55" stroke-width="2"/>
+  <rect x="32" y="32" width="960" height="960" fill="none" stroke="url(#frameGold)" stroke-width="3.5"/>
+  <g id="corners"></g>
+</svg>
+<div class="name">REMNANTS</div>
+<div class="rule"><i></i><b></b><i></i></div>
+<div class="sub">THE MODPACK</div>
+</div>
+
+<script>
+  if (location.hash.includes('notext')) document.body.classList.add('notext');
+  const NS = 'http://www.w3.org/2000/svg';
+  const el = (parent, tag, attrs) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]);
+                                      document.getElementById(parent).appendChild(e); return e; };
+  let s = 20261029; const rnd = () => (s = (s * 16807) % 2147483647) / 2147483647;
+  const CX = 512, CY = 372, R = 158;
+
+  // corona: thin rays of every length, a few long streamers, all bent by the wisp filter
+  for (let i = 0; i < 300; i++) {
+    const a = rnd() * Math.PI * 2, inner = i < 110, len = inner ? R + 6 + rnd() * 60 : R + 10 + Math.pow(rnd(), 1.7) * 290,
+          w = inner ? 1.5 + rnd() * 3 : 0.8 + rnd() * 2.6;
+    const tx = -Math.sin(a), ty = Math.cos(a), c = Math.cos(a), sn = Math.sin(a), r0 = R - 4;
+    const pts = [[CX + c * r0 + tx * w, CY + sn * r0 + ty * w], [CX + c * len, CY + sn * len], [CX + c * r0 - tx * w, CY + sn * r0 - ty * w]];
+    el('rays', 'polygon', { points: pts.map(p => p.join(',')).join(' '), fill: rnd() < 0.25 ? '#fff0cc' : '#ffbf6a',
+                            opacity: (inner ? 0.3 + rnd() * 0.45 : 0.06 + rnd() * 0.3).toFixed(2) });
+  }
+  for (const [deg, len, w] of [[-8, 330, 34], [172, 320, 30], [-95, 250, 22], [62, 280, 26], [208, 260, 24], [128, 230, 20], [-48, 240, 18]]) {
+    const a = deg * Math.PI / 180, c = Math.cos(a), sn = Math.sin(a), tx = -sn, ty = c, r0 = R;
+    const pts = [[CX + c * r0 + tx * w, CY + sn * r0 + ty * w], [CX + c * len, CY + sn * len], [CX + c * r0 - tx * w, CY + sn * r0 - ty * w]];
+    el('streamers', 'polygon', { points: pts.map(p => p.join(',')).join(' '), fill: '#ffb766', opacity: '.32' });
+  }
+
+  // the bead: the last light on the rim, with a four-point flare
+  { const a = -62 * Math.PI / 180, bx = CX + Math.cos(a) * (R + 1), by = CY + Math.sin(a) * (R + 1);
+    el('bead', 'circle', { cx: bx, cy: by, r: 70, fill: '#ffc060', opacity: '.45', filter: 'url(#b28)' });
+    el('bead', 'circle', { cx: bx, cy: by, r: 26, fill: '#fff2c8', opacity: '.95', filter: 'url(#b12)' });
+    el('bead', 'path', { d: `M${bx - 150} ${by} L${bx + 150} ${by} M${bx} ${by - 95} L${bx} ${by + 95}`, stroke: '#fff6dc', 'stroke-width': 3, opacity: '.8', filter: 'url(#b2)' });
+    el('bead', 'circle', { cx: bx, cy: by, r: 8, fill: '#ffffff' }); }
+
+  // ruins: towers (some spired, some broken) and low walls, dark against the glow, half lost in the smoke
+  for (const [x0, parts] of [[44, [['t', 30, 150, 's'], ['w', 46, 64], ['t', 38, 214, 'b'], ['w', 54, 52], ['t', 26, 128, 's'], ['w', 40, 40]]],
+                             [702, [['w', 34, 46], ['t', 28, 132, 's'], ['w', 40, 70], ['t', 40, 248, 's'], ['w', 50, 58], ['t', 30, 168, 'b'], ['w', 40, 44]]]]) {
+    let x = x0, d = `M${x} 800`;
+    for (const [k, w, h, roof] of parts) {
+      const y = 790 - h;
+      if (k === 'w') {   // a wall with a broken, stepped top
+        d += ` L${x} ${y} L${x + w * 0.3} ${y} L${x + w * 0.3} ${y + 8} L${x + w * 0.6} ${y + 8} L${x + w * 0.6} ${y - 4} L${x + w} ${y - 4}`;
+      } else if (roof === 's') {   // a spire, with a slit window
+        d += ` L${x} ${y} L${x - 4} ${y} L${x + w / 2} ${y - h * 0.42} L${x + w + 4} ${y} L${x + w} ${y}`;
+        el('ruins', 'rect', { x: x + w / 2 - 2.5, y: y + 26, width: 5, height: 14, fill: '#ff8a3a', opacity: '.35' });
+      } else {   // a broken tower top
+        d += ` L${x} ${y + 6} L${x + w * 0.25} ${y - 10} L${x + w * 0.45} ${y + 4} L${x + w * 0.7} ${y - 18} L${x + w} ${y + 10}`;
+      }
+      x += w;
+    }
+    d += ` L${x} 800 Z`;
+    el('ruins', 'path', { d, fill: '#070404' });
+  }
+
+  // linen wrap on the grip
+  for (let y = 154; y < 280; y += 13) {
+    el('wrap', 'path', { d: `M497 ${y + 8} L527 ${y} L527 ${y + 7} L497 ${y + 15} Z`, fill: '#76664f', stroke: '#1a110a', 'stroke-width': 1.4 });
+    el('wrap', 'path', { d: `M497 ${y + 8} L527 ${y}`, stroke: '#d9c49a', 'stroke-width': 1, opacity: '.45' });
+  }
+
+  // the mound: columns of ash blocks (32 px), half-block steps, peaking at the sword
+  const topY = x => Math.round((806 - 66 * Math.exp(-Math.pow((x - CX) / 210, 2))) / 16) * 16;
+  let d = 'M0 1024';
+  const cols = [];
+  for (let x = 0; x < 1024; x += 32) { const y = topY(x + 16); cols.push([x, y]); d += ` L${x} ${y} L${x + 32} ${y}`; }
+  d += ' L1024 1024 Z';
+  el('mound', 'path', { d, fill: 'url(#ground)' });
+  cols.forEach(([x, y], i) => {
+    const near = Math.exp(-Math.pow((x + 16 - CX) / 190, 2));
+    el('mound', 'path', { d: `M${x} ${y} L${x + 32} ${y}`, stroke: '#ffae5a', 'stroke-width': 2.5, opacity: (0.18 + 0.7 * near).toFixed(2) });
+    const prev = cols[i - 1];
+    if (prev && prev[1] !== y) { const yy = Math.min(prev[1], y), y2 = Math.max(prev[1], y);
+      el('mound', 'path', { d: `M${x} ${yy} L${x} ${y2}`, stroke: '#ff9a4a', 'stroke-width': 2, opacity: (0.12 + 0.5 * near).toFixed(2) }); }
+    // block seams under the top face
+    for (let yy = y + 32; yy < 1024; yy += 32) el('mound', 'path', { d: `M${x} ${yy} L${x + 32} ${yy} M${x} ${yy - 32} L${x} ${yy}`,
+      stroke: '#000', 'stroke-width': 1.5, opacity: '.35' });
+  });
+  // ember light in the seams between the ash blocks near the blade's foot
+  for (let i = 0; i < 16; i++) {
+    const x = Math.round((CX + (rnd() - 0.5) * 340) / 32) * 32, y0 = topY(x + 16), y = y0 + 32 * Math.floor(rnd() * 2) + 32;
+    const vertical = rnd() < 0.45, len = 12 + rnd() * 20, near = Math.exp(-Math.pow((x - CX) / 160, 2));
+    const d = vertical ? `M${x} ${y - len} L${x} ${y}` : `M${x} ${y} L${x + len} ${y}`;
+    el('cracks', 'path', { d, stroke: '#ff6a14', 'stroke-width': 7, opacity: (0.35 * near + 0.1).toFixed(2), filter: 'url(#b5)' });
+    el('cracks', 'path', { d, stroke: '#ffc070', 'stroke-width': 1.8, opacity: (0.7 * near + 0.15).toFixed(2) });
+  }
+
+  // embers rising from the foot of the sword, thinning as they climb; ash flakes everywhere
+  for (let i = 0; i < 110; i++) {
+    const u = Math.pow(rnd(), 1.15), y = 772 - u * 600, spread = 90 + u * 330, x = CX + (rnd() + rnd() - 1) * spread;
+    const r = (1 + rnd() * 3.4) * (1 - u * 0.4), a = (0.95 - u * 0.6) * (0.5 + rnd() * 0.5), tilt = (rnd() - 0.5) * 30;
+    const col = rnd() < 0.5 ? '#ffb347' : '#ff7424';
+    el('embers', 'ellipse', { cx: x, cy: y, rx: r * 2.4, ry: r * 4.2, fill: col, opacity: (a * 0.5).toFixed(2), filter: 'url(#b5)',
+                              transform: `rotate(${tilt} ${x} ${y})` });
+    el('embers', 'ellipse', { cx: x, cy: y, rx: r * 0.8, ry: r * 1.6, fill: '#fff0c4', opacity: a.toFixed(2), transform: `rotate(${tilt} ${x} ${y})` });
+  }
+  for (let i = 0; i < 50; i++) el('embers', 'circle', { cx: rnd() * 1024, cy: 60 + rnd() * 760, r: 0.8 + rnd() * 1.6, fill: '#cbbfb2',
+                                                        opacity: (0.12 + rnd() * 0.25).toFixed(2) });
+
+  // frame corners: an L of two rules and a diamond, and a diamond at the top centre
+  for (const [x, y, sx, sy] of [[32, 32, 1, 1], [992, 32, -1, 1], [32, 992, 1, -1], [992, 992, -1, -1]]) {
+    el('corners', 'path', { d: `M${x + sx * 14} ${y + sy * 84} L${x + sx * 14} ${y + sy * 14} L${x + sx * 84} ${y + sy * 14}`,
+                            fill: 'none', stroke: '#e8b85a', 'stroke-width': 2, opacity: '.85' });
+    el('corners', 'path', { d: `M${x} ${y - 13} L${x + 13} ${y} L${x} ${y + 13} L${x - 13} ${y} Z`, fill: '#f2c45a', stroke: '#2a1806', 'stroke-width': 2 });
+  }
+  el('corners', 'path', { d: 'M512 21 L525 32 L512 43 L499 32 Z', fill: '#f2c45a', stroke: '#2a1806', 'stroke-width': 2 });
+</script>
+</body>
+</html>

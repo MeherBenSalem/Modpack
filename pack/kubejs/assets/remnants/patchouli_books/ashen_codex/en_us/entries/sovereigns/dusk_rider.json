@@ -1,0 +1,12 @@
+{
+  "name": "The Dusk Rider",
+  "icon": "runeborn:duskrider_glaive",
+  "category": "remnants:sovereigns",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)Who Rides When Light Fails.$() He never forgot what time it was when the sun went out. His token is a clock."
+    }
+  ]
+}

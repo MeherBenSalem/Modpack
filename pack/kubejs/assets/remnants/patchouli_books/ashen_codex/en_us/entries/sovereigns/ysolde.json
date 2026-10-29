@@ -1,0 +1,12 @@
+{
+  "name": "Ysolde, the Crimson Bloom",
+  "icon": "runeborn:crimsonfall",
+  "category": "remnants:sovereigns",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Sovereign of the Scarlet Garden, which she fed on her own court. Her token is a block of redstone, the colour of everything she loved."
+    }
+  ]
+}

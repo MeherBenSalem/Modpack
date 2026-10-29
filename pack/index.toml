@@ -38,7 +38,7 @@ hash = "09cdef52ef5cc16bec0bebd0e1e4f2b75ac7110053192167fd83db187991aa23"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/s1_prologue.snbt"
-hash = "2f8cce2e6dc73312df60acf30e2f741401d6e6875037e9b4c24e542ba488e4c6"
+hash = "cc0a70870920e52e0525f17d2916135c047a9033aa0294fdb140f4b6abf57267"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -74,7 +74,7 @@ hash = "86f6b38412a8c9b54991a984440ae3f6202db693107ca7f8c455b7e21aaa3b8a"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us/chapters/s1_prologue.snbt"
-hash = "bc7c565bd17001e394c527ac53783460a1e7ef1f8e40a5e488ddf1308c791299"
+hash = "79d45e9bd1e13cb3e6250d106409458a9c829e6057e94d95a8ecf288fb3dd4ec"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us/file.snbt"
@@ -119,6 +119,98 @@ hash = "9ac8fd6177521ab62a82fc73cbad5ab59e83fc8efe2717cc9b50a90a785dfa27"
 [[files]]
 file = "config/sparsestructures.json5"
 hash = "e278f3834c56995f246ce8bcfd2f340d846b94056e919d02e602e3e743fa64aa"
+
+[[files]]
+file = "kubejs/assets/remnants/patchouli_books/ashen_codex/en_us/categories/dead.json"
+hash = "e45227bd38bba44c795ea4b0d7d801c37bf7dc40743fb0ba28696b7c21f2ed7d"
+
+[[files]]
+file = "kubejs/assets/remnants/patchouli_books/ashen_codex/en_us/categories/people.json"
+hash = "cefb8b7d82aebe3cdbdcc1f017b6ea4f9d6f79a398182af44b32491a4feae088"
+
+[[files]]
+file = "kubejs/assets/remnants/patchouli_books/ashen_codex/en_us/categories/powers.json"
+hash = "06871aafbf83b5aacd4c9e5aeecfee6799d931cd78359c495900bb3a76002420"
+
+[[files]]
+file = "kubejs/assets/remnants/patchouli_books/ashen_codex/en_us/categories/sovereigns.json"
+hash = "17322582c5bcad1b60516f474aab010f7dd4814f5415ac4f81377c73f56435c6"
+
+[[files]]
+file = "kubejs/assets/remnants/patchouli_books/ashen_codex/en_us/categories/world.json"
+hash = "a8fbfddcd654305e5ab8a59d1006063b805444b7d6aaa8733209e0015fc37df7"
+
+[[files]]
+file = "kubejs/assets/remnants/patchouli_books/ashen_codex/en_us/entries/dead/echoes.json"
+hash = "d85e38a84fa8f4c4b2c9fc074e2db427c6bc104d6d923c20ef90ce367f14a8c5"
+
+[[files]]
+file = "kubejs/assets/remnants/patchouli_books/ashen_codex/en_us/entries/dead/hunters_moon.json"
+hash = "e724b2fe610bf9cfdbf0bbbb491bc816f3ef74e9fc29ad77935a9fa58b470237"
+
+[[files]]
+file = "kubejs/assets/remnants/patchouli_books/ashen_codex/en_us/entries/dead/ranks.json"
+hash = "08a32d2a10d114b3ea13db42c6532829a9d93a6e6e67c9c23f27039e38294476"
+
+[[files]]
+file = "kubejs/assets/remnants/patchouli_books/ashen_codex/en_us/entries/people/archivist.json"
+hash = "52517bb6ed0bfb4a87c7f44097d67d428db173afec4b1189207c6c5ee28e2c14"
+
+[[files]]
+file = "kubejs/assets/remnants/patchouli_books/ashen_codex/en_us/entries/people/company.json"
+hash = "296491948b9ac6f1832abd424c85650eb9dfe6c943837c896f5ad3de61b60f42"
+
+[[files]]
+file = "kubejs/assets/remnants/patchouli_books/ashen_codex/en_us/entries/people/huntmaster.json"
+hash = "36a6f75f6c5c5c71564fc36408d7b66f015d168fd09334ef76d2e76c6d2a15e3"
+
+[[files]]
+file = "kubejs/assets/remnants/patchouli_books/ashen_codex/en_us/entries/people/keeper.json"
+hash = "8a44f75894a2c3b0575f5e834b460adf9a47e2d7b7eafa13649352b7dcbecb48"
+
+[[files]]
+file = "kubejs/assets/remnants/patchouli_books/ashen_codex/en_us/entries/powers/old_powers.json"
+hash = "50467476b80a7d8e30a72af227892e45f274b7120f878e4d5e513558ad4eb382"
+
+[[files]]
+file = "kubejs/assets/remnants/patchouli_books/ashen_codex/en_us/entries/sovereigns/dusk_rider.json"
+hash = "2c04ad0006c4a17639f0d246f852f4a26d663da8f777627f3072f1ef228848ee"
+
+[[files]]
+file = "kubejs/assets/remnants/patchouli_books/ashen_codex/en_us/entries/sovereigns/kaelthar.json"
+hash = "736c8c609b624b326647876e13bd76c827183eb2908c14a415d899a1415ed522"
+
+[[files]]
+file = "kubejs/assets/remnants/patchouli_books/ashen_codex/en_us/entries/sovereigns/morgrath.json"
+hash = "b3e3c0da7021cede27576ac1ed21fd97efe4e5eebb501e7acd458ae0d09b026f"
+
+[[files]]
+file = "kubejs/assets/remnants/patchouli_books/ashen_codex/en_us/entries/sovereigns/sylvara.json"
+hash = "7986980ac2ea31b58b9f7489c61b42a20e8a8c1b9a3a5e4d5e9dfcad772e8403"
+
+[[files]]
+file = "kubejs/assets/remnants/patchouli_books/ashen_codex/en_us/entries/sovereigns/vaelorn.json"
+hash = "a8296ce32e72bf50330dbc4ac63c37698eb306e6bb02b58da8819bbb99b1a821"
+
+[[files]]
+file = "kubejs/assets/remnants/patchouli_books/ashen_codex/en_us/entries/sovereigns/varghast.json"
+hash = "25d3faf1cd3273ee7e3e9e855c0bda6201461824f1bc1aa9c15e817b7a22cebc"
+
+[[files]]
+file = "kubejs/assets/remnants/patchouli_books/ashen_codex/en_us/entries/sovereigns/ysolde.json"
+hash = "6ebbe6009ba97ffe7a0c3973d6dab6452e88c43e8538d62a5be0e533b90b4223"
+
+[[files]]
+file = "kubejs/assets/remnants/patchouli_books/ashen_codex/en_us/entries/world/eclipse.json"
+hash = "a95a6ff0a35a985a1e967a54b2b3091f7eecef29efdb40f27b598b6d6acee12a"
+
+[[files]]
+file = "kubejs/assets/remnants/patchouli_books/ashen_codex/en_us/entries/world/eighth.json"
+hash = "ea5da82c2acbb390e91cf3648a82bb65b50500a3314bad418a2413f1302534ad"
+
+[[files]]
+file = "kubejs/assets/remnants/patchouli_books/ashen_codex/en_us/entries/world/sun_crown.json"
+hash = "dbf7d98ca8e8d23afff132042bcb73ad8395583476cfda43c80f89d6af904956"
 
 [[files]]
 file = "kubejs/data/mob_loot_bags/loot_table/bags/common/the_end.json"
@@ -199,6 +291,10 @@ hash = "832e1d679bfd780c4f442a9f563c9fd44390935f56b882872fc5383dbae4d0c3"
 [[files]]
 file = "kubejs/data/remnant_mobs/tags/entity_type/bosses.json"
 hash = "832e1d679bfd780c4f442a9f563c9fd44390935f56b882872fc5383dbae4d0c3"
+
+[[files]]
+file = "kubejs/data/remnants/patchouli_books/ashen_codex/book.json"
+hash = "071a1128f9cf5a979c7f492d037f93d7bafccf189161885bf1533d8509a10288"
 
 [[files]]
 file = "kubejs/data/runeborn/weapon_attributes/abyssal_scepter.json"

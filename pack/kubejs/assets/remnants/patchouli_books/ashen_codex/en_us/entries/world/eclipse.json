@@ -1,0 +1,16 @@
+{
+  "name": "The Long Eclipse",
+  "icon": "remnant_bosses:eclipse_shard",
+  "category": "remnants:world",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "With the sun swallowed, the dead stopped resting. A creature that dies under the Eclipse may rise again stronger. Rise often enough and it keeps a $(o)name$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The Archivist counts the embers still burning. Eight Sovereigns hold the light. Free it from each, and the bar of the Long Eclipse fills."
+    }
+  ]
+}

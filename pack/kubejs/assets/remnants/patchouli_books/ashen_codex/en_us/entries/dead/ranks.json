@@ -1,0 +1,16 @@
+{
+  "name": "Ranks of the Risen",
+  "icon": "remnant_mobs:hunters_lens",
+  "category": "remnants:dead",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Common$(), then $(#55aa55)Veteran$(), $(#5577ff)Elite$(), $(#aa55aa)Champion$(). Each rising adds traits and strength. Read the crest before you swing."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The rarest is a $(#cc3333)Remnant$(): a named echo with a horn and a title. When one falls, everyone hears of it."
+    }
+  ]
+}

@@ -21,7 +21,10 @@ quests:
 
       Press &eI&r to open your &6Status&r and the &6Codex&r. Everything this world will try to kill you with is written there.
     tasks: [{checkmark: "I am awake"}]
-    rewards: [{table: ashborn_provisions}, {xp: 20}]
+    rewards:
+      - {item: {id: patchouli:guide_book, components: {"patchouli:book": "remnants:ashen_codex"}}, title: "The Ashen Codex"}
+      - {table: ashborn_provisions}
+      - {xp: 20}
 
   - key: origin
     title: "What You Were"

@@ -1,0 +1,16 @@
+{
+  "name": "The Eighth",
+  "icon": "remnant_bosses:hollow_crown",
+  "category": "remnants:world",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "One more wanted all of it. He drank the last light himself and became the $(l)Hollow Sovereign$(): a crown with nothing inside."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Where he sits there is a second sun, black, and a realm under it that does not change. The Archivist calls it the $(#7a4ec2)Eclipsed Realm$()."
+    }
+  ]
+}

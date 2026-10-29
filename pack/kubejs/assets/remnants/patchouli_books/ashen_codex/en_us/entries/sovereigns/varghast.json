@@ -1,0 +1,12 @@
+{
+  "name": "Varghast the Grafted",
+  "icon": "runeborn:graft_axe",
+  "category": "remnants:sovereigns",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Sovereign of the Hollow Vale. He sewed other men's arms to his own until nothing was left of him but grip. His token is a block of iron."
+    }
+  ]
+}

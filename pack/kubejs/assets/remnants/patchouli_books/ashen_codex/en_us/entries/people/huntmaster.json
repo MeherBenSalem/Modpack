@@ -1,0 +1,12 @@
+{
+  "name": "The Huntmaster",
+  "icon": "minecraft:crossbow",
+  "category": "remnants:people",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Ilse knows every rank and every trait, and she pays for proof. Her contracts never run out, because the dead never do."
+    }
+  ]
+}

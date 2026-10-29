@@ -1,0 +1,16 @@
+{
+  "name": "Older Than the Crown",
+  "icon": "minecraft:nether_star",
+  "category": "remnants:powers",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The $(l)Warden$() below, the $(l)Elder Guardian$() beneath the sea, the $(l)Wither$() and the $(l)Dragon$(). None of them served the Sovereigns. Each keeps a relic of the world before."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Under the desert sleeps something older still: the $(#cc3333)Ancient Remnant$(). Ossukage calls himself the first Remnant. The desert disagrees."
+    }
+  ]
+}

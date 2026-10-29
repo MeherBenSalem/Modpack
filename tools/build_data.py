@@ -85,10 +85,38 @@ def loot_bags():
     return len(src["tiers"]), len(values)
 
 
+def codex():
+    """The Ashen Codex (Patchouli): book.json in data, categories and entries in assets (use_resource_pack)."""
+    src = yaml.safe_load((ROOT / "src" / "data" / "codex.yaml").read_text())
+    book = "ashen_codex"
+    write_json(OUT / "remnants" / "patchouli_books" / book / "book.json", {
+        "name": src["name"], "landing_text": src["landing"], "version": 1, "use_resource_pack": True,
+        "model": "patchouli:book_brown", "book_texture": "patchouli:textures/gui/book_brown.png",
+        "show_progress": False, "i18n": False})
+    assets = ROOT / "pack" / "kubejs" / "assets" / "remnants" / "patchouli_books" / book / "en_us"
+    if assets.exists():
+        for old in assets.rglob("*.json"):
+            old.unlink()
+    n = 0
+    for order, cat in enumerate(src["categories"]):
+        check(cat["icon"], "codex")
+        write_json(assets / "categories" / f"{cat['key']}.json", {
+            "name": cat["name"], "description": cat["description"], "icon": cat["icon"], "sortnum": order})
+        for eorder, e in enumerate(cat["entries"]):
+            check(e["icon"], "codex")
+            write_json(assets / "entries" / cat["key"] / f"{e['key']}.json", {
+                "name": e["name"], "icon": e["icon"], "category": f"remnants:{cat['key']}", "sortnum": eorder,
+                "pages": [{"type": "patchouli:text", "text": t} for t in e["pages"]]})
+            n += 1
+    return n
+
+
 if __name__ == "__main__":
     n = movesets()
     tiers, bosses = loot_bags()
-    print(f"{n} Runeborn movesets, {tiers} loot-bag tiers (+ Nether/End pools), {bosses} bosses tagged")
+    entries = codex()
+    print(f"{n} Runeborn movesets, {tiers} loot-bag tiers (+ Nether/End pools), {bosses} bosses tagged, "
+          f"{entries} codex entries")
     if BAD:
         print("UNKNOWN IDS:\n  " + "\n  ".join(BAD))
         sys.exit(1)

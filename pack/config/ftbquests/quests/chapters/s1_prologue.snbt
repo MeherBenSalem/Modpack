@@ -19,11 +19,22 @@
 			rewards: [
 				{
 					id: "586E44229D73C446"
+					item: {
+						components: {
+							"patchouli:book": "remnants:ashen_codex"
+						}
+						count: 1
+						id: "patchouli:guide_book"
+					}
+					type: "item"
+				}
+				{
+					id: "488AA5C319A1C332"
 					table_id: 7547820078087610474L
 					type: "random"
 				}
 				{
-					id: "488AA5C319A1C332"
+					id: "0F46D3EFF821D2AC"
 					type: "xp"
 					xp: 20
 				}

@@ -1,0 +1,16 @@
+{
+  "name": "The Sun-Crown",
+  "icon": "minecraft:sunflower",
+  "category": "remnants:world",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Long ago the world had one sun and one crown. Seven rulers swore to share the crown's light and called themselves the $(l)Sovereigns$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "To share a sun you must break it. They did. Each took a $(#c08a3e)Fragment$() and ruled by its light, and for a while it was enough."
+    }
+  ]
+}

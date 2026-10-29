@@ -1,0 +1,12 @@
+{
+  "name": "Sylvara, Frost Matron",
+  "icon": "runeborn:frostbound_staff",
+  "category": "remnants:sovereigns",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Sovereign of the Rime Veil, where the last warmth of the old sun lies buried under snow. Her token is blue ice."
+    }
+  ]
+}

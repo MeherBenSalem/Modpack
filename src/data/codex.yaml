@@ -1,0 +1,116 @@
+# The Ashen Codex: the pack's lore book (Patchouli). tools/build_data.py writes it into kubejs/data and kubejs/assets.
+# Text uses Patchouli codes: $(br2) new paragraph, $(o)italic$(), $(l)bold$(), $(#c08a3e)colour$().
+name: The Ashen Codex
+landing: "$(o)Kept by the Archivist of Last Light. Everything the ash remembers, and a little it would rather forget.$()"
+categories:
+  - key: world
+    name: The Long Eclipse
+    icon: minecraft:campfire
+    description: How the sun was lost.
+    entries:
+      - key: sun_crown
+        name: The Sun-Crown
+        icon: minecraft:sunflower
+        pages:
+          - "Long ago the world had one sun and one crown. Seven rulers swore to share the crown's light and called themselves the $(l)Sovereigns$()."
+          - "To share a sun you must break it. They did. Each took a $(#c08a3e)Fragment$() and ruled by its light, and for a while it was enough."
+      - key: eighth
+        name: The Eighth
+        icon: remnant_bosses:hollow_crown
+        pages:
+          - "One more wanted all of it. He drank the last light himself and became the $(l)Hollow Sovereign$(): a crown with nothing inside."
+          - "Where he sits there is a second sun, black, and a realm under it that does not change. The Archivist calls it the $(#7a4ec2)Eclipsed Realm$()."
+      - key: eclipse
+        name: The Long Eclipse
+        icon: remnant_bosses:eclipse_shard
+        pages:
+          - "With the sun swallowed, the dead stopped resting. A creature that dies under the Eclipse may rise again stronger. Rise often enough and it keeps a $(o)name$()."
+          - "The Archivist counts the embers still burning. Eight Sovereigns hold the light. Free it from each, and the bar of the Long Eclipse fills."
+  - key: dead
+    name: The Risen
+    icon: remnant_mobs:remnant_shard
+    description: What comes back, and how strong.
+    entries:
+      - key: ranks
+        name: Ranks of the Risen
+        icon: remnant_mobs:hunters_lens
+        pages:
+          - "$(l)Common$(), then $(#55aa55)Veteran$(), $(#5577ff)Elite$(), $(#aa55aa)Champion$(). Each rising adds traits and strength. Read the crest before you swing."
+          - "The rarest is a $(#cc3333)Remnant$(): a named echo with a horn and a title. When one falls, everyone hears of it."
+      - key: hunters_moon
+        name: The Hunter's Moon
+        icon: minecraft:red_dye
+        pages:
+          - "Some full moons rise red. A toll sounds. Until dawn, everything is five levels stronger and rises twice as often."
+          - "$(o)\"Don't hide from the red moon,\" says the Huntmaster. \"Farm it.\"$()"
+      - key: echoes
+        name: Echoes of the Fallen
+        icon: minecraft:skeleton_skull
+        pages:
+          - "The Ashborn cannot die for good. But where one falls, the ash remembers: an $(#cc3333)Echo$() rises, wearing the Ashborn's armour, guarding the runes they lost."
+          - "Lay your Echo to rest and the runes are yours again. Fall twice before you do, and both fade."
+  - key: sovereigns
+    name: The Sovereigns
+    icon: runeborn:sovereign_fragment
+    description: The seven who broke the sun.
+    entries:
+      - key: dusk_rider
+        name: The Dusk Rider
+        icon: runeborn:duskrider_glaive
+        pages: ["$(o)Who Rides When Light Fails.$() He never forgot what time it was when the sun went out. His token is a clock."]
+      - key: varghast
+        name: Varghast the Grafted
+        icon: runeborn:graft_axe
+        pages: ["Sovereign of the Hollow Vale. He sewed other men's arms to his own until nothing was left of him but grip. His token is a block of iron."]
+      - key: sylvara
+        name: Sylvara, Frost Matron
+        icon: runeborn:frostbound_staff
+        pages: ["Sovereign of the Rime Veil, where the last warmth of the old sun lies buried under snow. Her token is blue ice."]
+      - key: kaelthar
+        name: Kaelthar the Stormcaller
+        icon: runeborn:storm_totem
+        pages: ["Sovereign of the Drowned Sky. He drowned his own coast to keep the storm for himself. His token is a lightning rod."]
+      - key: ysolde
+        name: Ysolde, the Crimson Bloom
+        icon: runeborn:crimsonfall
+        pages: ["Sovereign of the Scarlet Garden, which she fed on her own court. Her token is a block of redstone, the colour of everything she loved."]
+      - key: morgrath
+        name: Morgrath, Ash Sovereign
+        icon: runeborn:hellbrand
+        pages: ["Sovereign of the Burning Crown. He burned his kingdom rather than let it be ruled by another. The Ashlands are what is left. His token is netherite scrap."]
+      - key: vaelorn
+        name: Vaelorn, the Wyrm-Ravager
+        icon: runeborn:wyrmfang_halberd
+        pages: ["Sovereign of the Last Shore. He rode dragons before there was a Dragon. His token is the Dragon's own breath."]
+  - key: powers
+    name: The Old Powers
+    icon: minecraft:dragon_head
+    description: Older than the Crown.
+    entries:
+      - key: old_powers
+        name: Older Than the Crown
+        icon: minecraft:nether_star
+        pages:
+          - "The $(l)Warden$() below, the $(l)Elder Guardian$() beneath the sea, the $(l)Wither$() and the $(l)Dragon$(). None of them served the Sovereigns. Each keeps a relic of the world before."
+          - "Under the desert sleeps something older still: the $(#cc3333)Ancient Remnant$(). Ossukage calls himself the first Remnant. The desert disagrees."
+  - key: people
+    name: Last Light
+    icon: minecraft:bell
+    description: The people around your fire.
+    entries:
+      - key: keeper
+        name: The Keeper
+        icon: runeborn:ember_shrine
+        pages: ["She kept a pinch of old flame through the whole Eclipse, waiting for someone stubborn enough to light a shrine with it. That was you."]
+      - key: company
+        name: The Ashen Company
+        icon: better_with_gold:warbanner
+        pages: ["Sellswords who survived by staying together and staying paid. Their captain, Maren, keeps a ledger of the living and a longer one of the dead. They fight for gold, not causes; they are remembered either way."]
+      - key: archivist
+        name: The Archivist
+        icon: minecraft:lectern
+        pages: ["Oren collects befores. The Fractured Archive under the world remembers places that no longer exist, and he wants all of them back, one memory at a time."]
+      - key: huntmaster
+        name: The Huntmaster
+        icon: minecraft:crossbow
+        pages: ["Ilse knows every rank and every trait, and she pays for proof. Her contracts never run out, because the dead never do."]

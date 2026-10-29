@@ -1,0 +1,12 @@
+{
+  "name": "Vaelorn, the Wyrm-Ravager",
+  "icon": "runeborn:wyrmfang_halberd",
+  "category": "remnants:sovereigns",
+  "sortnum": 6,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Sovereign of the Last Shore. He rode dragons before there was a Dragon. His token is the Dragon's own breath."
+    }
+  ]
+}

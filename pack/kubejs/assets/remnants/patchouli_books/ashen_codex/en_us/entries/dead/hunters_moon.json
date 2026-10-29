@@ -1,0 +1,16 @@
+{
+  "name": "The Hunter's Moon",
+  "icon": "minecraft:red_dye",
+  "category": "remnants:dead",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Some full moons rise red. A toll sounds. Until dawn, everything is five levels stronger and rises twice as often."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(o)\"Don't hide from the red moon,\" says the Huntmaster. \"Farm it.\"$()"
+    }
+  ]
+}

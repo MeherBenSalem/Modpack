@@ -1,0 +1,16 @@
+{
+  "name": "Echoes of the Fallen",
+  "icon": "minecraft:skeleton_skull",
+  "category": "remnants:dead",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The Ashborn cannot die for good. But where one falls, the ash remembers: an $(#cc3333)Echo$() rises, wearing the Ashborn's armour, guarding the runes they lost."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Lay your Echo to rest and the runes are yours again. Fall twice before you do, and both fade."
+    }
+  ]
+}

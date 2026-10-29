@@ -1,0 +1,12 @@
+{
+  "name": "Kaelthar the Stormcaller",
+  "icon": "runeborn:storm_totem",
+  "category": "remnants:sovereigns",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Sovereign of the Drowned Sky. He drowned his own coast to keep the storm for himself. His token is a lightning rod."
+    }
+  ]
+}

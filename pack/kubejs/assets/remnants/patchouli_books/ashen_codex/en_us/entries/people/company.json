@@ -1,0 +1,12 @@
+{
+  "name": "The Ashen Company",
+  "icon": "better_with_gold:warbanner",
+  "category": "remnants:people",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Sellswords who survived by staying together and staying paid. Their captain, Maren, keeps a ledger of the living and a longer one of the dead. They fight for gold, not causes; they are remembered either way."
+    }
+  ]
+}

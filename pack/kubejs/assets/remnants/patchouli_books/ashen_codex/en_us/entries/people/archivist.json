@@ -1,0 +1,12 @@
+{
+  "name": "The Archivist",
+  "icon": "minecraft:lectern",
+  "category": "remnants:people",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Oren collects befores. The Fractured Archive under the world remembers places that no longer exist, and he wants all of them back, one memory at a time."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Morgrath, Ash Sovereign",
+  "icon": "runeborn:hellbrand",
+  "category": "remnants:sovereigns",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Sovereign of the Burning Crown. He burned his kingdom rather than let it be ruled by another. The Ashlands are what is left. His token is netherite scrap."
+    }
+  ]
+}

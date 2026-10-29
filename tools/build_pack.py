@@ -207,6 +207,17 @@ def export(mods, meta):
             rows.append(f"{cf['filename']}\t{forgecdn_url(cf['file_id'], cf['filename'])}\t"
                         f"{cached_sha1(cf['file_id'], cf['filename'])['sha1']}")
     (DIST / "server-mods.tsv").write_text("\n".join(rows) + "\n")
+
+    # Server pack: installer + mod list + the pack's server-relevant files. Jars are downloaded, never re-hosted.
+    installer = (ROOT / "tools" / "server_install.sh").read_text().replace("@NEOFORGE@", meta["neoforge"])
+    with zipfile.ZipFile(DIST / f"{base}-server.zip", "w", zipfile.ZIP_DEFLATED) as z:
+        info = zipfile.ZipInfo("install.sh")
+        info.external_attr = 0o755 << 16
+        z.writestr(info, installer)
+        z.writestr("server-mods.tsv", "\n".join(rows) + "\n")
+        for f, rel in override_files():
+            if rel.split("/")[0] in ("config", "defaultconfigs", "kubejs", "datapacks"):
+                z.write(f, rel)
     return problems
 
 

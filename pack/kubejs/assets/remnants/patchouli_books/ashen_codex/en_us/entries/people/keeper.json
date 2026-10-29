@@ -1,0 +1,12 @@
+{
+  "name": "The Keeper",
+  "icon": "runeborn:ember_shrine",
+  "category": "remnants:people",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "She kept a pinch of old flame through the whole Eclipse, waiting for someone stubborn enough to light a shrine with it. That was you."
+    }
+  ]
+}

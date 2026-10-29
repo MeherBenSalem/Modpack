@@ -5,6 +5,10 @@ file = "config/defaultoptions/options.txt"
 hash = "c092a79713715e5a4021f19eb0a8f396e3d438d81e2329c6a0189b14ce7b390d"
 
 [[files]]
+file = "config/fancymenu/options.txt"
+hash = "f025f7ebadbc1ea831ad5f5d117d46b359dffdff3c46f782e1381354b0369c98"
+
+[[files]]
 file = "config/friendsandfoes.json"
 hash = "a941ca97ab33bc7095efbf70cf0bb567f11309ed93a3e82f7699ae31306f64ce"
 
@@ -1022,6 +1026,11 @@ metafile = true
 [[files]]
 file = "mods/equipment-compare.pw.toml"
 hash = "5b5d5262cf3533d305a10ab9da50f88643996c30e47d63f57e1b3bd62ba3ef2a"
+metafile = true
+
+[[files]]
+file = "mods/experimentalist.pw.toml"
+hash = "90d85a7625fb7506ec8e4e39251733b138ac71f3539fc5fdf0ca3fec1fe76d52"
 metafile = true
 
 [[files]]

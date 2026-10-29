@@ -1,0 +1,16 @@
+name = "Experimentalist"
+filename = "experimentalist-2.0.2+1.21.x-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/SKCLXAJ2/versions/fZLBWziY/experimentalist-2.0.2%2B1.21.x-neoforge.jar"
+hash-format = "sha512"
+hash = "64ae98038cbe9102e34dcdfcff26035d0a8b49f3d0fcfa9f9b714091c1f3e5567659d036bf79a48019d62246a2f83ebd84dd209bf5114d28639cba6a8aa59b76"
+
+[update]
+[update.curseforge]
+file-id = 7271701
+project-id = 1161753
+[update.modrinth]
+mod-id = "SKCLXAJ2"
+version = "fZLBWziY"

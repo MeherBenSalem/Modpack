@@ -87,6 +87,7 @@ include:
     - dynamic-fps: "Idle FPS cap"
     - packet-fixer: "Large-packet fixes for big modded worlds"
     - attributefix: "Lifts vanilla attribute caps so RPG stats can grow past 30 armour"
+    - experimentalist: "Removes the experimental-settings warning modded worldgen triggers"
   interface:
     - jei: "Recipes"
     - just-enough-resources-jer: "Loot and ore info in JEI"

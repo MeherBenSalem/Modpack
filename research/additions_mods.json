@@ -1,0 +1,28 @@
+[
+ {
+  "name": "Experimentalist",
+  "slug": "experimentalist",
+  "category": "fixes",
+  "decision": "include",
+  "reason": "Removes the experimental-settings warning that modded worldgen triggers on every world load",
+  "side": "both",
+  "license": "MIT",
+  "modrinth": {
+   "project_id": "SKCLXAJ2",
+   "version_id": "fZLBWziY",
+   "version_number": "2.0.2+1.21.x-neoforge",
+   "filename": "experimentalist-2.0.2+1.21.x-neoforge.jar",
+   "url": "https://cdn.modrinth.com/data/SKCLXAJ2/versions/fZLBWziY/experimentalist-2.0.2%2B1.21.x-neoforge.jar",
+   "sha1": "65735efa6304f0e2998b07daae9f0a1121acad5f",
+   "sha512": "64ae98038cbe9102e34dcdfcff26035d0a8b49f3d0fcfa9f9b714091c1f3e5567659d036bf79a48019d62246a2f83ebd84dd209bf5114d28639cba6a8aa59b76",
+   "size": 60663
+  },
+  "curseforge": {
+   "project_id": 1161753,
+   "file_id": 7271701,
+   "filename": "experimentalist-2.0.2+1.21.x-neoforge.jar"
+  },
+  "required_deps": [],
+  "optional_deps": []
+ }
+]

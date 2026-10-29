@@ -1,0 +1,43 @@
+# Reward tables used by quests ({table: key} = random roll, {choice: key} = the player picks one).
+# Mod items are added once the mod audit lands; vanilla-only tables are safe to use now.
+
+ashborn_provisions:
+  title: "Ashborn Provisions"
+  icon: minecraft:bread
+  rewards:
+    - {item: minecraft:bread, count: 8, weight: 3}
+    - {item: minecraft:cooked_beef, count: 6, weight: 2}
+    - {item: minecraft:golden_carrot, count: 4, weight: 1}
+    - {item: minecraft:torch, count: 32, weight: 2}
+
+wanderers_cache:
+  title: "Wanderer's Cache"
+  icon: minecraft:chest
+  rewards:
+    - {item: minecraft:iron_ingot, count: 8, weight: 3}
+    - {item: minecraft:gold_ingot, count: 6, weight: 2}
+    - {item: minecraft:diamond, count: 1, weight: 1}
+    - {item: minecraft:ender_pearl, count: 2, weight: 1}
+    - {item: minecraft:name_tag, count: 1, weight: 1}
+    - {item: minecraft:saddle, count: 1, weight: 1}
+
+hunters_spoils:
+  title: "Hunter's Spoils"
+  icon: minecraft:goat_horn
+  rewards:
+    - {item: minecraft:gold_ingot, count: 12, weight: 3}
+    - {item: minecraft:diamond, count: 2, weight: 2}
+    - {item: minecraft:emerald, count: 12, weight: 2}
+    - {item: minecraft:golden_apple, count: 2, weight: 2}
+    - {item: minecraft:experience_bottle, count: 16, weight: 2}
+    - {item: minecraft:totem_of_undying, count: 1, weight: 0.3}
+
+sovereign_tribute:
+  title: "Sovereign's Tribute"
+  icon: minecraft:nether_star
+  rewards:
+    - {item: minecraft:diamond, count: 8, weight: 3}
+    - {item: minecraft:enchanted_golden_apple, count: 1, weight: 1}
+    - {item: minecraft:netherite_scrap, count: 2, weight: 1}
+    - {item: minecraft:experience_bottle, count: 48, weight: 2}
+    - {item: minecraft:totem_of_undying, count: 1, weight: 1}

@@ -1,0 +1,63 @@
+{
+	icon: {
+		id: "minecraft:goat_horn"
+	}
+	id: "4DC1ECC17CE017CF"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{
+			count: 12
+			id: "7515E6A660D827F9"
+			item: {
+				count: 1
+				id: "minecraft:gold_ingot"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "57E866C9FB23EF8A"
+			item: {
+				count: 1
+				id: "minecraft:diamond"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 12
+			id: "68F5EEF7E0FB8049"
+			item: {
+				count: 1
+				id: "minecraft:emerald"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 2
+			id: "087064983C5A864F"
+			item: {
+				count: 1
+				id: "minecraft:golden_apple"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 16
+			id: "594866DE6B1D4B42"
+			item: {
+				count: 1
+				id: "minecraft:experience_bottle"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "6BDF42BA39DA2FF1"
+			item: {
+				count: 1
+				id: "minecraft:totem_of_undying"
+			}
+			weight: 0.3f
+		}
+	]
+}

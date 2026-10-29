@@ -1,0 +1,13 @@
+title: "&6Remnants &7| &fThe Long Eclipse"
+icon: minecraft:campfire
+groups:
+  - key: main
+    title: "&6The Long Eclipse"
+  - key: paths
+    title: "&ePaths of the Ashborn"
+  - key: world
+    title: "&bThe World Under Ash"
+  - key: hearth
+    title: "&aHearth & Harvest"
+  - key: contracts
+    title: "&cAshen Contracts"

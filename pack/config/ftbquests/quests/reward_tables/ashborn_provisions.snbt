@@ -1,0 +1,46 @@
+{
+	icon: {
+		id: "minecraft:bread"
+	}
+	id: "68BF3E5EF6F9206A"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{
+			count: 8
+			id: "0E9250E3B06A93DE"
+			item: {
+				count: 1
+				id: "minecraft:bread"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 6
+			id: "33CF31DC52C7A728"
+			item: {
+				count: 1
+				id: "minecraft:cooked_beef"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 4
+			id: "13F15245A6F0359D"
+			item: {
+				count: 1
+				id: "minecraft:golden_carrot"
+			}
+			weight: 1.0f
+		}
+		{
+			count: 32
+			id: "164E9F6DEB8C0041"
+			item: {
+				count: 1
+				id: "minecraft:torch"
+			}
+			weight: 2.0f
+		}
+	]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Remnants | The Modpack",
+  "file_name": "Remnants-The-Modpack-S1",
+  "author": "NightBeam Studio",
+  "version": "1.0.0-beta.1",
+  "summary": "Season 1: The Long Eclipse. A story-driven soulslike RPG: relight the world one shrine and one Sovereign at a time.",
+  "minecraft": "1.21.1",
+  "neoforge": "21.1.265"
+}

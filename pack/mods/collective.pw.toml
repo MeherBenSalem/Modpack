@@ -1,6 +1,6 @@
 name = "Collective"
 filename = "collective-1.21.1-8.68.jar"
-side = "both"
+side = "client"
 
 [download]
 url = "https://cdn.modrinth.com/data/e0M1UDsY/versions/iOfXOH1b/collective-1.21.1-8.68.jar"

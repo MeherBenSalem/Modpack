@@ -98,8 +98,11 @@
 
   // Chance that a naturally spawned mob in #mob_loot_bags:bag_carriers spawns holding a loot bag
   // in its off hand. It always drops it. luck is the Bag Luck used to roll the carried bag.
+  // OFF in this pack: Mob LootBags 2.0.0 rolls it with the level's shared random even for mobs placed by world
+  // generation, from a worldgen thread, which can crash a server ("Accessing LegacyRandomSource from multiple
+  // threads"). Set it back to 0.02 once the mod rolls with the mob's own random.
   "carriers": {
-    "chance": 0.02,
+    "chance": 0.0,
     "luck": 1.0
   },
 

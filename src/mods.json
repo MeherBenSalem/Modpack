@@ -558,7 +558,7 @@
   "name": "Enchantment Descriptions",
   "slug": "enchantment-descriptions",
   "category": "recipe-info-ui",
-  "side": "both",
+  "side": "client",
   "license": "LGPL-2.1-only",
   "modrinth": {
    "project_id": "UVtY3ZAC",
@@ -1239,7 +1239,7 @@
   "name": "Better Advanced Tooltips",
   "slug": "better-advanced-tooltips",
   "category": "quests-story-scripting",
-  "side": "both",
+  "side": "client",
   "license": "MIT",
   "modrinth": {
    "project_id": "iHLDc0eo",
@@ -1349,7 +1349,7 @@
   "name": "Collective",
   "slug": "collective",
   "category": "fixes",
-  "side": "both",
+  "side": "client",
   "license": "LicenseRef-All-Rights-Reserved",
   "modrinth": {
    "project_id": "e0M1UDsY",
@@ -1403,7 +1403,7 @@
   "name": "CreativeCore",
   "slug": "creativecore",
   "category": "juice",
-  "side": "both",
+  "side": "client",
   "license": "LGPL-3.0-only",
   "modrinth": {
    "project_id": "OsZiaDHq",
@@ -1671,7 +1671,7 @@
   "name": "Iceberg",
   "slug": "iceberg",
   "category": "recipe-info-ui",
-  "side": "both",
+  "side": "client",
   "license": "CC-BY-NC-ND-4.0",
   "modrinth": {
    "project_id": "5faXoLqX",
@@ -1698,7 +1698,7 @@
   "name": "Konkrete",
   "slug": "konkrete",
   "category": "quests-story-scripting",
-  "side": "both",
+  "side": "client",
   "license": "Apache-2.0",
   "modrinth": {
    "project_id": "J81TRJWm",
@@ -3553,6 +3553,62 @@
   "reason": "Load time and memory"
  },
  {
+  "name": "Structure Layout Optimizer",
+  "slug": "structure-layout-optimizer",
+  "category": "performance",
+  "side": "both",
+  "license": "MIT",
+  "modrinth": {
+   "project_id": "ayPU0OHc",
+   "version_id": "eTz03Gfd",
+   "version_number": "1.0.12+1.21.1-neoforge",
+   "filename": "structure_layout_optimizer-neoforge-1.0.12.jar",
+   "url": "https://cdn.modrinth.com/data/ayPU0OHc/versions/eTz03Gfd/structure_layout_optimizer-neoforge-1.0.12.jar",
+   "sha1": "052c31cb9881c04c17d949345539aa8684f474bf",
+   "sha512": "8c38ebd0e221f5bfe887a40ab21caede40cadc90bfc3b8dbbc79888c07faee44d58f12a974f1c5af324c9feceaa2ed04ea62724c6453650c77e1910582914153",
+   "size": 61777
+  },
+  "curseforge": {
+   "project_id": 1087831,
+   "file_id": 7439136,
+   "filename": "structure_layout_optimizer-neoforge-1.0.12.jar"
+  },
+  "required_deps": [
+   "resourceful-config"
+  ],
+  "optional_deps": [],
+  "decision": "include",
+  "group": "performance",
+  "reason": "Faster jigsaw structure generation (YUNG's, Towns and Towers, Dungeons and Taverns, Dungeons Arise...)"
+ },
+ {
+  "name": "Resourceful Config",
+  "slug": "resourceful-config",
+  "category": "library",
+  "side": "both",
+  "license": "MIT",
+  "modrinth": {
+   "project_id": "M1953qlQ",
+   "version_id": "lSbyRD6v",
+   "version_number": "3.0.11",
+   "filename": "resourcefulconfig-neoforge-1.21-3.0.11.jar",
+   "url": "https://cdn.modrinth.com/data/M1953qlQ/versions/lSbyRD6v/resourcefulconfig-neoforge-1.21-3.0.11.jar",
+   "sha1": "6bf2b6ea9c071c00a2abcdc552667fb6f7d21031",
+   "sha512": "8e4ccc37732b3f5190e7e98df34dbc1339fe614494fcabf1aeaeab9ad8e5993522964b51be31882000c08c48a6d0096b5458364415bb81f2b2b775a7daf2eb87",
+   "size": 341009
+  },
+  "curseforge": {
+   "project_id": 714059,
+   "file_id": 6467772,
+   "filename": "resourcefulconfig-neoforge-1.21-3.0.11.jar"
+  },
+  "required_deps": [],
+  "optional_deps": [],
+  "decision": "include",
+  "group": "library",
+  "reason": "Config library for Structure Layout Optimizer"
+ },
+ {
   "name": "More Culling",
   "slug": "moreculling",
   "category": "performance",
@@ -4003,7 +4059,7 @@
   "name": "FancyMenu",
   "slug": "fancymenu",
   "category": "quests-story-scripting",
-  "side": "both",
+  "side": "client",
   "license": "LicenseRef-DSMSLv3.1",
   "modrinth": {
    "project_id": "Wq5SjeWM",

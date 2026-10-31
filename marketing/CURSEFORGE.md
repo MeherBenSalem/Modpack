@@ -10,7 +10,7 @@ relight it one **Ember Shrine** and one **Sovereign** at a time. The story runs 
 ranked and named, and when you die an **Echo** of you guards your runes where you fell.
 
 **Season 1, "The Long Eclipse"** builds NightBeam's own mods (Runeborn, RPG Mobs, the Eclipsed Realm, RPG Stats,
-Skills and Powers, Fellowship and more) into one rule set, with 168 mods in all.
+Skills and Powers, Fellowship and more) into one rule set, with 170 mods in all.
 
 [![Watch the trailer](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/marketing/images/trailer.png)](https://youtu.be/U_x7PBLXGaM)
 
@@ -140,7 +140,7 @@ Every system has one owner, and the overlapping ones are switched off, so every 
 4. **Servers:** download the server pack, unzip it and run `start.sh` (Linux/macOS) or `start.bat` (Windows): it
    installs NeoForge on first start (Java 21). `SERVER.md` inside covers RAM, ports and pregeneration with Chunky.
 
-**Credits.** Built by NightBeam Studio on the work of 168 mods and their authors: thank you. Special thanks to
+**Credits.** Built by NightBeam Studio on the work of 170 mods and their authors: thank you. Special thanks to
 [Subtle Effects](https://www.curseforge.com/minecraft/mc-mods/subtle-effects),
 [Ashen 16x](https://www.curseforge.com/minecraft/texture-packs/ashen-16x),
 [Fresh Animations](https://www.curseforge.com/minecraft/texture-packs/fresh-animations),

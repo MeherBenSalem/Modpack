@@ -1,29 +1,39 @@
 #!/usr/bin/env python3
 """Build Remnants | The Modpack from src/mods.json and the files in pack/.
 
-  python3 modpack/tools/build_pack.py            # write pack/mods/*.pw.toml, pack/index.toml, pack/pack.toml
-  python3 modpack/tools/build_pack.py --export   # also write dist/: CurseForge zip, Modrinth .mrpack, server mod list
+  python3 tools/build_pack.py            # write pack/mods/*.pw.toml, pack/index.toml, pack/pack.toml
+  python3 tools/build_pack.py --export   # also write dist/: CurseForge zip, Modrinth .mrpack, server pack zip
 
 src/mods.json is the curated list: one object per mod with "name", "slug", "side" (both|client|server), "decision"
 (include|optional) and at least one of "modrinth" {project_id, version_id, filename, url, sha1, sha512, size} or
 "curseforge" {project_id, file_id, filename}. The output is packwiz-compatible, so `packwiz refresh` and
 packwiz-installer work on it later. Hashes for CurseForge-only files are downloaded once and cached in .cache/.
+
+The server pack (dist/*-server.zip) is self-contained, as CurseForge server packs are: every server-side mod as its
+CurseForge file (sha1-checked, cached in .cache/jars/), the pack's server-relevant files, the NeoForge installer, and
+start scripts, JVM flags, server.properties and SERVER.md from tools/server/.
 """
 import argparse
 import hashlib
 import json
 import os
+import re
 import sys
+import threading
 import tomllib
+import urllib.parse
 import urllib.request
 import zipfile
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 PACK = ROOT / "pack"
 DIST = ROOT / "dist"
 CACHE = ROOT / ".cache"
+JARS = CACHE / "jars"
 SRC = ROOT / "src"
+SERVER_TEMPLATES = ROOT / "tools" / "server"
 UA = "NightBeam-pack/1.0 (remnants-modpack)"
 
 # Files under pack/ that never go into a pack (packwiz's own metadata and editor leftovers).
@@ -36,26 +46,81 @@ def toml_str(s):
 
 def forgecdn_url(file_id, filename):
     fid = str(file_id)
-    return f"https://edge.forgecdn.net/files/{fid[:-3]}/{int(fid[-3:])}/{filename}"
+    return f"https://edge.forgecdn.net/files/{fid[:-3]}/{int(fid[-3:])}/{urllib.parse.quote(filename)}"
+
+
+_sha1_lock = threading.Lock()
+
+
+# Committed: the sha1 of every CurseForge file the pack uses, so a fresh build (CI) checks each download against
+# what was tested here instead of trusting the first download. export() adds new files to it.
+PINNED_SHA1 = ROOT / "src" / "cf_sha1.json"
+
+
+def _sha1_memo():
+    memo = CACHE / "cf_sha1.json"
+    data = json.loads(memo.read_text()) if memo.exists() else {}
+    if PINNED_SHA1.exists():
+        data.update(json.loads(PINNED_SHA1.read_text()))
+    return data
+
+
+def pin_cf_sha1(mods):
+    """Write src/cf_sha1.json: the recorded sha1 and size of each included mod's CurseForge file."""
+    memo = _sha1_memo()
+    pinned = {}
+    for m in mods:
+        cf = m.get("curseforge") or {}
+        if m.get("decision") in ("include", "optional") and str(cf.get("file_id")) in memo:
+            pinned[str(cf["file_id"])] = memo[str(cf["file_id"])]
+    PINNED_SHA1.write_text(json.dumps(pinned, indent=1, sort_keys=True) + "\n")
+
+
+def _file_sha1(path):
+    h = hashlib.sha1()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(1 << 20), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def cf_jar(file_id, filename):
+    """The CurseForge file itself: downloaded once into .cache/jars/<sha1>/<filename>, its sha1 recorded in
+    .cache/cf_sha1.json, and checked against that record every time it is used. Returns (path, {sha1, size})."""
+    key = str(file_id)
+    known = _sha1_memo().get(key)
+    if known:
+        path = JARS / known["sha1"] / filename
+        if path.exists() and _file_sha1(path) == known["sha1"]:
+            return path, known
+    req = urllib.request.Request(forgecdn_url(file_id, filename), headers={"User-Agent": UA})
+    h, size = hashlib.sha1(), 0
+    JARS.mkdir(parents=True, exist_ok=True)
+    tmp = JARS / f".{key}.part"
+    with urllib.request.urlopen(req, timeout=300) as r, open(tmp, "wb") as out:
+        for chunk in iter(lambda: r.read(1 << 16), b""):
+            h.update(chunk)
+            out.write(chunk)
+            size += len(chunk)
+    info = {"sha1": h.hexdigest(), "size": size}
+    if known and known["sha1"] != info["sha1"]:
+        tmp.unlink()
+        sys.exit(f"sha1 mismatch for CurseForge file {key} ({filename}): expected {known['sha1']}, got {info['sha1']}")
+    path = JARS / info["sha1"] / filename
+    path.parent.mkdir(parents=True, exist_ok=True)
+    os.replace(tmp, path)
+    with _sha1_lock:
+        memo = _sha1_memo()
+        memo[key] = info
+        part = CACHE / f"cf_sha1.json.{threading.get_ident()}"
+        part.write_text(json.dumps(memo, indent=1, sort_keys=True))
+        os.replace(part, CACHE / "cf_sha1.json")  # atomic: readers never see half a file
+    return path, info
 
 
 def cached_sha1(file_id, filename):
     """sha1 of a CurseForge file (packwiz needs it; cfwidget does not give hashes)."""
-    CACHE.mkdir(exist_ok=True)
-    memo = CACHE / "cf_sha1.json"
-    known = json.loads(memo.read_text()) if memo.exists() else {}
-    key = str(file_id)
-    if key not in known:
-        req = urllib.request.Request(forgecdn_url(file_id, filename), headers={"User-Agent": UA})
-        h = hashlib.sha1()
-        size = 0
-        with urllib.request.urlopen(req, timeout=120) as r:
-            for chunk in iter(lambda: r.read(1 << 16), b""):
-                h.update(chunk)
-                size += len(chunk)
-        known[key] = {"sha1": h.hexdigest(), "size": size}
-        memo.write_text(json.dumps(known, indent=1, sort_keys=True))
-    return known[key]
+    return cf_jar(file_id, filename)[1]
 
 
 def pw_toml(mod):
@@ -195,29 +260,91 @@ def export(mods, meta):
     if not_on_mr:
         problems.append(f"Modrinth export is missing {len(not_on_mr)} CurseForge-only mods: {', '.join(not_on_mr)}")
 
-    # Server: every mod that runs on a dedicated server, with a direct URL and its sha1.
-    rows = []
-    for m in mods:
-        if m.get("side", "both") == "client" or folder(m) != "mods":
-            continue
-        mr, cf = m.get("modrinth"), m.get("curseforge")
-        if mr:
-            rows.append(f"{mr['filename']}\t{mr['url']}\t{mr['sha1']}")
-        else:
-            rows.append(f"{cf['filename']}\t{forgecdn_url(cf['file_id'], cf['filename'])}\t"
-                        f"{cached_sha1(cf['file_id'], cf['filename'])['sha1']}")
-    (DIST / "server-mods.tsv").write_text("\n".join(rows) + "\n")
+    # Server pack: self-contained, like CurseForge server packs. See write_server_pack.
+    problems += write_server_pack(mods, meta, DIST / f"{base}-server.zip")
+    pin_cf_sha1(mods)
+    return problems
 
-    # Server pack: installer + mod list + the pack's server-relevant files. Jars are downloaded, never re-hosted.
-    installer = (ROOT / "tools" / "server_install.sh").read_text().replace("@NEOFORGE@", meta["neoforge"])
-    with zipfile.ZipFile(DIST / f"{base}-server.zip", "w", zipfile.ZIP_DEFLATED) as z:
-        info = zipfile.ZipInfo("install.sh")
-        info.external_attr = 0o755 << 16
-        z.writestr(info, installer)
-        z.writestr("server-mods.tsv", "\n".join(rows) + "\n")
+
+# Parts of the pack a dedicated server never reads: client-only mods' configs, client configs, KubeJS client
+# scripts and assets (sounds, textures, lang, book text). Paths relative to pack/.
+CLIENT_ONLY = ("config/defaultoptions/", "config/fancymenu/", "config/dynamic_fps.json", "kubejs/assets/",
+               "kubejs/client_scripts/")
+SERVER_DIRS = ("config", "defaultconfigs", "kubejs", "datapacks")
+
+
+def server_side(m):
+    return m.get("side", "both") != "client" and folder(m) == "mods"
+
+
+def server_file(rel):
+    """Whether pack/<rel> belongs in the server pack."""
+    if rel.split("/")[0] not in SERVER_DIRS or rel.startswith(CLIENT_ONLY):
+        return False
+    name = rel.rsplit("/", 1)[-1]
+    return not (rel.startswith("config/") and re.search(r"[-_.]client\.(toml|json5?|cfg|properties|snbt)$", name))
+
+
+def neoforge_installer(version):
+    path = CACHE / f"neoforge-{version}-installer.jar"
+    if not path.exists():
+        url = f"https://maven.neoforged.net/releases/net/neoforged/neoforge/{version}/neoforge-{version}-installer.jar"
+        req = urllib.request.Request(url, headers={"User-Agent": UA})
+        with urllib.request.urlopen(req, timeout=300) as r:
+            data = r.read()
+        with urllib.request.urlopen(urllib.request.Request(url + ".sha1", headers={"User-Agent": UA}), timeout=60) as r:
+            want = r.read().decode().split()[0]
+        if hashlib.sha1(data).hexdigest() != want:
+            sys.exit(f"sha1 mismatch for {url}")
+        CACHE.mkdir(exist_ok=True)
+        path.write_bytes(data)
+    return path
+
+
+def write_server_pack(mods, meta, dest):
+    """mods/ (every server-side mod, as its CurseForge file), the pack's server files, the NeoForge installer,
+    start.sh/start.bat, user_jvm_args.txt, server.properties and SERVER.md."""
+    problems = []
+    server_mods = [m for m in mods if server_side(m)]
+    missing = [m["slug"] for m in server_mods if not m.get("curseforge")]
+    if missing:
+        problems.append(f"server pack is missing {len(missing)} mods with no CurseForge file: {', '.join(missing)}")
+        server_mods = [m for m in server_mods if m.get("curseforge")]
+    with ThreadPoolExecutor(8) as pool:
+        jars = list(pool.map(lambda m: cf_jar(m["curseforge"]["file_id"], m["curseforge"]["filename"])[0], server_mods))
+    names = [m["curseforge"]["filename"] for m in server_mods]
+    if len(set(names)) != len(names):
+        sys.exit("server pack: two mods have the same file name")
+
+    nf = meta["neoforge"]
+    subst = {"@NAME@": meta["name"], "@VERSION@": meta["version"], "@NEOFORGE@": nf,
+             "@MOTD@": f"{meta['name']} {meta['version']}".replace("\\", "\\\\")}
+
+    def template(name):
+        text = (SERVER_TEMPLATES / name).read_text()
+        for k, v in subst.items():
+            text = text.replace(k, v)
+        return text
+
+    def add_text(z, name, text, mode=0o644):
+        info = zipfile.ZipInfo(name, date_time=(2026, 1, 1, 0, 0, 0))
+        info.external_attr = (0o100000 | mode) << 16
+        info.compress_type = zipfile.ZIP_DEFLATED
+        z.writestr(info, text)
+
+    tmp = dest.with_suffix(".zip.part")
+    with zipfile.ZipFile(tmp, "w", zipfile.ZIP_DEFLATED) as z:
+        add_text(z, "start.sh", template("start.sh"), 0o755)
+        add_text(z, "start.bat", template("start.bat").replace("\r\n", "\n").replace("\n", "\r\n"))
+        for name in ("user_jvm_args.txt", "server.properties", "SERVER.md"):
+            add_text(z, name, template(name))
+        z.write(neoforge_installer(nf), f"neoforge-{nf}-installer.jar")
+        for path, name in zip(jars, names):
+            z.write(path, f"mods/{name}")
         for f, rel in override_files():
-            if rel.split("/")[0] in ("config", "defaultconfigs", "kubejs", "datapacks"):
+            if server_file(rel):
                 z.write(f, rel)
+    os.replace(tmp, dest)
     return problems
 
 

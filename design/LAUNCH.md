@@ -15,12 +15,15 @@
      are banned outright there: use real in-game screenshots and human-made art.
 - CurseForge: check its current content and AI-disclosure rules at upload time and disclose the same way.
 
-## Licences (why the server pack downloads its jars)
+## Licences
 
 - Several mods forbid re-hosting or only allow links: FancyMenu, Drippy Loading Screen, LambDynamicLights, Fresh
   Animations, Remnants: Roguelite Dungeons (All Rights Reserved), L_Ender's Cataclysm and Friends&Foes (CC BY-NC-ND).
-  The CurseForge zip references every mod by project and file id, and the server zip ships an `install.sh` that
-  downloads each jar from its official host and checks its sha1. Never add jars to `pack/`.
+  The CurseForge zip references every mod by project and file id. The server zip bundles the CurseForge file of
+  every server-side mod (as CurseForge server packs do; it is uploaded to CurseForge as this pack's server file and
+  never hosted anywhere else), plus the NeoForge installer and start scripts. FancyMenu, Drippy and LambDynamicLights
+  are client-only, so they are not in it. Before the first upload, confirm on CurseForge that the server-file rules
+  still allow bundling the All Rights Reserved and ND-licensed jars above. Never add jars to `pack/`.
 - Non-commercial licences (Jade, Patchouli, the Legendary Tooltips family, Fresh Animations) mean the pack must stay
   free. Paid server ranks that sell gameplay would need those authors' permission.
 - AllTheLeaks, Catalogue and Fzzy Config licences were not verified by the research; check them before release.

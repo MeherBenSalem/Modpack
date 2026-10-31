@@ -79,6 +79,7 @@ include:
     - sodium-extra: "Sodium options"
     - lithium: "Server and game-logic speed"
     - modernfix: "Load time and memory"
+    - structure-layout-optimizer: "Faster jigsaw structure generation"
     - ferrite-core: "Memory"
     - immediatelyfast: "Rendering speed"
     - entityculling: "Skip hidden entities"

@@ -136,7 +136,6 @@
 	#Gives the villager trade buttons the same look loom and stonecutter buttons have
 	villager_trade_buttons = true
 	#Makes the selected hotbar slot slide to its new position. Higher is faster, 0 for vanilla behavior
-	#Remnants pack: off. The slide draws the selection box over the held item, and Ashen 16x's box is opaque.
 	# Default: 2.5
 	# Range: 0.0 ~ 5.0
 	hotbar_slot_animation_speed = 0.0

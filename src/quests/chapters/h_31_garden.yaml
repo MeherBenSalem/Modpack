@@ -1,0 +1,230 @@
+chapter: h_garden
+group: hearth
+order: 31
+title: "&aThe Ash Garden"
+subtitle: "Forty crops, twelve trees and a pot over the fire. Sprout and Soil."
+icon: sprout_and_soil:cooking_pot
+quests:
+  # ---- growing ----
+  - key: wild_garden
+    title: "&aThe Wild Gardens"
+    subtitle: "Somebody's garden outlived somebody."
+    icon: sprout_and_soil:tomato_seeds
+    pos: [0, 0]
+    deps: [h_hearth/knife]
+    shape: hexagon
+    size: 1.5
+    desc: |
+      The gardeners are long gone, but their gardens kept going without them. &6Wild gardens&r grow in six climates (meadow, woodland, highland, arid, tropical and marsh), and each drops the seeds of what grew there: forty crops between them. Farmers in the villages trade seeds too.
+
+      &7Find a wild garden and break it for seeds.
+    tasks: [{advancement: "sprout_and_soil:wild_garden"}]
+    rewards: [{item: minecraft:bone_meal, count: 16}, {xp: 50}]
+
+  - key: harvest
+    title: "Fruits of Your Labor"
+    subtitle: "Pick it. It plants itself again."
+    icon: sprout_and_soil:tomato
+    pos: [2, 0]
+    deps: [wild_garden]
+    desc: |
+      &6Right-click&r a ripe crop to pick it and it replants itself, vanilla crops included. Perennials like berries and herbs grow back from the same plant. Corn grows two blocks tall; harvest it from the top.
+
+      &7Harvest your first crop.
+    tasks: [{advancement: "sprout_and_soil:harvest"}]
+    rewards: [{item: sprout_and_soil:corn_seeds, count: 4}, {item: sprout_and_soil:cotton_seeds, count: 4}, {xp: 50}]
+
+  - key: watering_can
+    title: "Rain Maker"
+    subtitle: "The sky forgot. You didn't."
+    icon: sprout_and_soil:watering_can
+    pos: [4, -1]
+    deps: [harvest]
+    desc: |
+      A &6Watering Can&r is copper around a bucket. Fill it at any water and hold it over your rows: it waters a 3x3 patch at a time and gives the crops a burst of growth.
+
+      &7Craft a watering can and water a crop.
+    tasks: [{advancement: "sprout_and_soil:watering_can"}]
+    rewards: [{item: minecraft:copper_ingot, count: 6}, {xp: 40}]
+
+  - key: sprinkler
+    title: "Let It Pour"
+    subtitle: "Water that doesn't need you."
+    icon: sprout_and_soil:sprinkler
+    pos: [6, -1]
+    deps: [watering_can]
+    optional: true
+    desc: |
+      Set copper around your &6Watering Can&r and it becomes a &6Sprinkler&r. Place it next to water and it keeps a whole 9x9 field wet and growing on its own.
+
+      &7Place a sprinkler by your crops.
+    tasks: [{advancement: "sprout_and_soil:sprinkler"}]
+    rewards: [{table: hearth_garden}, {xp: 60}]
+
+  - key: sickle
+    title: "Reap What You Sow"
+    subtitle: "A whole patch in one swing."
+    icon: sprout_and_soil:iron_sickle
+    pos: [4, 1]
+    deps: [harvest]
+    desc: |
+      A &6Sickle&r cuts every ripe crop around you in one swing, 3x3 or 5x5, and they replant behind you. Fortune works on it.
+
+      &7Harvest a whole patch at once with a sickle.
+    tasks: [{advancement: "sprout_and_soil:sickle"}]
+    rewards: [{item: minecraft:iron_ingot, count: 4}, {xp: 50}]
+
+  - key: scarecrow
+    title: "Field Guardian"
+    subtitle: "The crows haven't heard about the Eclipse."
+    icon: sprout_and_soil:scarecrow
+    pos: [6, 1]
+    deps: [sickle]
+    optional: true
+    desc: |
+      A pumpkin head, a bale of hay and a few sticks. A &6Scarecrow&r stops anything trampling the farmland within 8 blocks of it.
+
+      &7Put up a scarecrow beside your crops.
+    tasks: [{advancement: "sprout_and_soil:scarecrow"}]
+    rewards: [{item: minecraft:hay_block, count: 4}, {xp: 40}]
+
+  - key: master_gardener
+    title: "&aMaster Gardener"
+    subtitle: "All forty. Even the coffee."
+    icon: sprout_and_soil:corn
+    pos: [8, 0]
+    deps: [sickle, watering_can]
+    optional: true
+    shape: gear
+    size: 1.5
+    desc: |
+      Vegetables, grains, legumes, berries, herbs, spices, coffee, tea and cotton: forty crops, from every climate the world still has. Some only grow wild far from Last Light.
+
+      &7Harvest every one of the forty crops.
+    tasks: [{advancement: "sprout_and_soil:master_gardener"}]
+    rewards: [{table: hearth_homestead}, {table: hearth_garden}, {xp: 500}]
+
+  # ---- orchards ----
+  - key: orchard
+    title: "Branching Out"
+    subtitle: "Trees take years. Start now."
+    icon: sprout_and_soil:apple_sapling
+    pos: [2, -2.5]
+    deps: [wild_garden]
+    desc: |
+      Twelve kinds of &6fruit tree&r grow wild in the biomes that suit them. Their leaves blossom, then fruit, then ripen; pick the fruit and the tree keeps it coming. Saplings drop from their leaves like any other tree's.
+
+      &7Get a fruit tree sapling.
+    tasks: [{advancement: "sprout_and_soil:orchard"}]
+    rewards: [{item: minecraft:bone_meal, count: 16}, {xp: 50}]
+
+  - key: fruit_basket
+    title: "Fruit Basket"
+    subtitle: "Every orchard the world kept."
+    icon: sprout_and_soil:pineapple
+    pos: [4, -2.5]
+    deps: [orchard]
+    optional: true
+    desc: |
+      Apples and pears in the temperate woods, oranges and lemons where it's warm, mangoes and bananas in the jungle, olives on the dry hills.
+
+      &7Collect every kind of tree fruit.
+    tasks: [{advancement: "sprout_and_soil:fruit_basket"}]
+    rewards: [{table: hearth_garden}, {table: hearth_garden}, {xp: 300}]
+
+  # ---- the kitchen ----
+  - key: cooking_pot
+    title: "&aSomething's Cooking"
+    subtitle: "Iron, a bowl and a fire under it."
+    icon: sprout_and_soil:cooking_pot
+    pos: [2, 3.25]
+    deps: [harvest]
+    shape: hexagon
+    desc: |
+      The garden's &6Cooking Pot&r is iron around a bowl. Set it over a fire or a campfire and it takes up to six ingredients: soups, stews, curries, risotto and more than a hundred other foods.
+
+      &7Craft a cooking pot and set it over a fire.
+    tasks: [{advancement: "sprout_and_soil:cooking_pot"}]
+    rewards: [{item: sprout_and_soil:onion_crate, count: 1}, {xp: 60}]
+
+  - key: cutting_board
+    title: "Sharp Skills"
+    subtitle: "Chop first. Cook second."
+    icon: sprout_and_soil:cutting_board
+    pos: [4, 4]
+    deps: [cooking_pot]
+    desc: |
+      A &6Cutting Board&r and a &6Knife&r turn whole produce into slices, fillets and wedges. A &6Mortar and Pestle&r grinds flour, cornmeal and spices right in the crafting grid.
+
+      &7Craft a knife for the cutting board.
+    tasks: [{advancement: "sprout_and_soil:cutting_board"}]
+    rewards: [{item: sprout_and_soil:tomato, count: 6}, {xp: 40}]
+
+  - key: first_meal
+    title: "Soup's On"
+    subtitle: "Something warm, in a bowl, at last."
+    icon: sprout_and_soil:vegetable_soup
+    pos: [4, 2.5]
+    deps: [cooking_pot]
+    desc: |
+      The first warm bowl at Last Light since the sun went out was soup. It's still most people's favourite.
+
+      &7Eat a bowl of something warm.
+    tasks: [{advancement: "sprout_and_soil:first_meal"}]
+    rewards: [{table: hearth_garden}, {xp: 40}]
+
+  - key: pie
+    title: "Easy as Pie"
+    subtitle: "Pastry, fruit and an oven's patience."
+    icon: sprout_and_soil:apple_pie
+    pos: [6, 4]
+    deps: [cutting_board]
+    desc: |
+      Roll a &6Pie Crust&r, fill it with apples, berries or cherries, and bake it. Place a pie to share it a slice at a time.
+
+      &7Bake a pie.
+    tasks: [{advancement: "sprout_and_soil:pie"}]
+    rewards: [{item: sprout_and_soil:cherry_pie, count: 1}, {xp: 60}]
+
+  - key: warm_cup
+    title: "A Warm Cup"
+    subtitle: "Ginger, mint or green. Or coffee, if you're brave."
+    icon: sprout_and_soil:ginger_tea
+    pos: [6, 2.5]
+    deps: [first_meal]
+    desc: |
+      Tea leaves and herbs from the garden brew into hot drinks that leave you &6Cozy&r: no freezing, and a little healing. Roasted coffee beans make &6Coffee&r, and coffee makes you &6Caffeinated&r: faster on your feet and with a pick, for a while.
+
+      &7Warm up with a hot drink.
+    tasks: [{advancement: "sprout_and_soil:cozy"}]
+    rewards: [{item: sprout_and_soil:coffee, count: 3}, {xp: 40}]
+
+  - key: well_fed
+    title: "&aWell Fed"
+    subtitle: "A full belly outlasts a long night."
+    icon: sprout_and_soil:steak_dinner
+    pos: [8, 3.25]
+    deps: [first_meal]
+    shape: hexagon
+    desc: |
+      Hearty meals leave you &6Well Fed&r: your hunger drains slowly for a long while after the last bite. Eat one before you call a Sovereign, and spend the fight rolling instead of eating.
+
+      &7Eat a hearty meal and feel Well Fed.
+    tasks: [{advancement: "sprout_and_soil:well_fed"}]
+    rewards: [{table: hearth_garden}, {xp: 100}]
+
+  - key: gourmet
+    title: "&aGourmet"
+    subtitle: "Every plate in the book."
+    icon: sprout_and_soil:breakfast_plate
+    pos: [10, 3.25]
+    deps: [well_fed, pie]
+    optional: true
+    shape: gear
+    size: 1.5
+    desc: |
+      Breakfast plates, steak dinners and every other plated meal the gardens can feed. Last Light's cooks keep a book of them. Fill it.
+
+      &7Eat every plated meal.
+    tasks: [{advancement: "sprout_and_soil:gourmet"}]
+    rewards: [{table: hearth_homestead}, {table: hearth_pantry}, {xp: 500}]

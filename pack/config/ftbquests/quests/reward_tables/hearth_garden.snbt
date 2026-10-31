@@ -1,0 +1,81 @@
+{
+	icon: {
+		id: "sprout_and_soil:tomato"
+	}
+	id: "5D24E616E4A4D7E1"
+	loot_size: 1
+	order_index: 5
+	rewards: [
+		{
+			count: 3
+			id: "02BD39F4A32552D0"
+			item: {
+				count: 1
+				id: "sprout_and_soil:vegetable_soup"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 3
+			id: "72EBFAE2E6664E6F"
+			item: {
+				count: 1
+				id: "sprout_and_soil:tomato_soup"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "7CEBE4ABFB4D67A2"
+			item: {
+				count: 1
+				id: "sprout_and_soil:corn_chowder"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 4
+			id: "59569D0C523B33D1"
+			item: {
+				count: 1
+				id: "sprout_and_soil:cornbread"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 2
+			id: "38E959C2A71C7C86"
+			item: {
+				count: 1
+				id: "sprout_and_soil:breakfast_plate"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 2
+			id: "2986C01040577D18"
+			item: {
+				count: 1
+				id: "sprout_and_soil:steak_dinner"
+			}
+			weight: 1.0f
+		}
+		{
+			id: "3BC423AC6DF0C461"
+			item: {
+				count: 1
+				id: "sprout_and_soil:apple_pie"
+			}
+			weight: 1.0f
+		}
+		{
+			count: 3
+			id: "66CA03A785026F19"
+			item: {
+				count: 1
+				id: "sprout_and_soil:ginger_tea"
+			}
+			weight: 1.0f
+		}
+	]
+}

@@ -2632,6 +2632,38 @@
   "reason": "Farming QoL: sweep harvest, sprinklers"
  },
  {
+  "name": "Sprout & Soil",
+  "slug": "sprout-and-soil",
+  "category": "farming and cooking",
+  "side": "both",
+  "license": "Apache-2.0",
+  "modrinth": {
+   "project_id": "nZVwZSoj",
+   "version_id": "c3ZzjRaE",
+   "version_number": "1.0.0+neoforge-1.21.1",
+   "filename": "sprout_and_soil-neoforge-1.21.1-1.0.0.jar",
+   "url": "https://cdn.modrinth.com/data/nZVwZSoj/versions/c3ZzjRaE/sprout_and_soil-neoforge-1.21.1-1.0.0.jar",
+   "sha1": "c6882f70f75ff8ebc24bdf09ec80fdfa4ada0102",
+   "sha512": "d8857e5561efa789d068c95799062d743765271e95f1525c172c91db76a5507369b0a215fe85d4444633acc0706cc6006c85870429bb0dc2e34f59220cf99919",
+   "size": 1152032,
+   "date_published": "2026-10-31T09:38:30.220526Z"
+  },
+  "curseforge": {
+   "project_id": 1386319,
+   "file_id": 9382178,
+   "filename": "sprout_and_soil-neoforge-1.21.1-1.0.0.jar",
+   "release_type": "release",
+   "cf_slug": "sprout-and-soil"
+  },
+  "required_deps": [],
+  "optional_deps": [
+   "jei"
+  ],
+  "decision": "include",
+  "group": "nightbeam",
+  "reason": "40 crops, 12 fruit trees, a cooking pot and 150+ foods: what Last Light grows and eats"
+ },
+ {
   "name": "Fisherman's Coast (mod id fisherman_house)",
   "slug": "fisherman-coast",
   "category": "worldgen / coastal structures",

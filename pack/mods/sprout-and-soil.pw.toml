@@ -1,0 +1,16 @@
+name = "Sprout & Soil"
+filename = "sprout_and_soil-neoforge-1.21.1-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/nZVwZSoj/versions/c3ZzjRaE/sprout_and_soil-neoforge-1.21.1-1.0.0.jar"
+hash-format = "sha512"
+hash = "d8857e5561efa789d068c95799062d743765271e95f1525c172c91db76a5507369b0a215fe85d4444633acc0706cc6006c85870429bb0dc2e34f59220cf99919"
+
+[update]
+[update.curseforge]
+file-id = 9382178
+project-id = 1386319
+[update.modrinth]
+mod-id = "nZVwZSoj"
+version = "c3ZzjRaE"

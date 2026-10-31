@@ -1,4 +1,4 @@
-# Reward tables for the Hearth chapters (h_hearth, h_lastlight, h_clockwork) and the Ashen Contracts (c_contracts).
+# Reward tables for the Hearth chapters (h_hearth, h_garden, h_lastlight, h_clockwork) and the Ashen Contracts (c_contracts).
 # {table: key} rolls one entry by weight. No netherite, no flask upgrades (Sunseeds, Hallowed Tears): contracts repeat.
 
 # ---- Hearth & Harvest / Last Light / The Clockwork Path ----
@@ -15,6 +15,19 @@ hearth_pantry:
     - {item: farmersdelight:roast_chicken, count: 2, weight: 1}
     - {item: farmersdelight:honey_glazed_ham, count: 2, weight: 1}
     - {item: farmersdelight:hot_cocoa, count: 3, weight: 1}
+
+hearth_garden:
+  title: "The Garden Basket"
+  icon: sprout_and_soil:tomato
+  rewards:
+    - {item: sprout_and_soil:vegetable_soup, count: 3, weight: 3}
+    - {item: sprout_and_soil:tomato_soup, count: 3, weight: 3}
+    - {item: sprout_and_soil:corn_chowder, count: 2, weight: 2}
+    - {item: sprout_and_soil:cornbread, count: 4, weight: 2}
+    - {item: sprout_and_soil:breakfast_plate, count: 2, weight: 2}
+    - {item: sprout_and_soil:steak_dinner, count: 2, weight: 1}
+    - {item: sprout_and_soil:apple_pie, count: 1, weight: 1}
+    - {item: sprout_and_soil:ginger_tea, count: 3, weight: 1}
 
 hearth_tavern:
   title: "The Tavern Cellar"

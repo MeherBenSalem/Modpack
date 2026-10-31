@@ -15,6 +15,8 @@
 	chapter.254E1D32E51CD0D3.title: "&aThe Clockwork Path"
 	chapter.25BC9FF73CA087DA.chapter_subtitle: ["Steel, stones, and what the Sovereigns leave behind."]
 	chapter.25BC9FF73CA087DA.title: "&eThe Armory"
+	chapter.2B189F95993CFCF4.chapter_subtitle: ["Forty crops, twelve trees and a pot over the fire. Sprout and Soil."]
+	chapter.2B189F95993CFCF4.title: "&aThe Ash Garden"
 	chapter.3416798044C87559.chapter_subtitle: [
 		"Every crowned and nameless thing under the Eclipse, and the level it expects you to be."
 	]
@@ -401,6 +403,13 @@
 	]
 	quest.117A2520497C8CF2.quest_subtitle: "The burning arena."
 	quest.117A2520497C8CF2.title: "Ignis"
+	quest.117A6DAD76C0DC68.quest_desc: [
+		"A &6Sickle&r cuts every ripe crop around you in one swing, 3x3 or 5x5, and they replant behind you. Fortune works on it."
+		""
+		"&7Harvest a whole patch at once with a sickle."
+	]
+	quest.117A6DAD76C0DC68.quest_subtitle: "A whole patch in one swing."
+	quest.117A6DAD76C0DC68.title: "Reap What You Sow"
 	quest.125F0DA757CBDD14.quest_desc: [
 		"&6The Keeper&r &e♪"
 		""
@@ -494,6 +503,13 @@
 	]
 	quest.14F7C59D230494DE.quest_subtitle: "A stronghold, a library, a door."
 	quest.14F7C59D230494DE.title: "The Eye's Road"
+	quest.150699DF6999D477.quest_desc: [
+		"Vegetables, grains, legumes, berries, herbs, spices, coffee, tea and cotton: forty crops, from every climate the world still has. Some only grow wild far from Last Light."
+		""
+		"&7Harvest every one of the forty crops."
+	]
+	quest.150699DF6999D477.quest_subtitle: "All forty. Even the coffee."
+	quest.150699DF6999D477.title: "&aMaster Gardener"
 	quest.15567CA6EC3B8885.quest_desc: [
 		"A knight in void-black armour keeps the &6Ruined Citadel&r on the outer End islands."
 		""
@@ -522,6 +538,13 @@
 	]
 	quest.15F5C86082963CDF.quest_subtitle: "Villages that fight back live longer."
 	quest.15F5C86082963CDF.title: "Last Light Takes Up Arms"
+	quest.170C8BB04CB6317C.quest_desc: [
+		"Roll a &6Pie Crust&r, fill it with apples, berries or cherries, and bake it. Place a pie to share it a slice at a time."
+		""
+		"&7Bake a pie."
+	]
+	quest.170C8BB04CB6317C.quest_subtitle: "Pastry, fruit and an oven's patience."
+	quest.170C8BB04CB6317C.title: "Easy as Pie"
 	quest.178657B676B4FF56.quest_desc: [
 		"Six scenes survive: &7The Evacuation&r, &7The Instant the Archive Fell&r, &7The Orrery at Work&r, &7A Family Beneath the Conjunction&r, &7The Curator Repaired&r and &7The Final Command&r. Carry all six plates at once."
 		""
@@ -552,6 +575,13 @@
 	]
 	quest.18B87BE4E12BE468.quest_subtitle: "The skeletons won't need it."
 	quest.18B87BE4E12BE468.title: "A Quiver Taken Back"
+	quest.18C936F50B1C929E.quest_desc: [
+		"The garden's &6Cooking Pot&r is iron around a bowl. Set it over a fire or a campfire and it takes up to six ingredients: soups, stews, curries, risotto and more than a hundred other foods."
+		""
+		"&7Craft a cooking pot and set it over a fire."
+	]
+	quest.18C936F50B1C929E.quest_subtitle: "Iron, a bowl and a fire under it."
+	quest.18C936F50B1C929E.title: "&aSomething's Cooking"
 	quest.190A1E4452E9C0BB.quest_desc: [
 		"The ship still has a crew, and the crew still has a captain, and the captain is mostly tentacles."
 		""
@@ -606,6 +636,13 @@
 	]
 	quest.19666D84A72F033D.quest_subtitle: "Friends and Foes. The ones that aren't friends."
 	quest.19666D84A72F033D.title: "Teeth and Ice"
+	quest.19801CA08C6F3CAA.quest_desc: [
+		"Twelve kinds of &6fruit tree&r grow wild in the biomes that suit them. Their leaves blossom, then fruit, then ripen; pick the fruit and the tree keeps it coming. Saplings drop from their leaves like any other tree's."
+		""
+		"&7Get a fruit tree sapling."
+	]
+	quest.19801CA08C6F3CAA.quest_subtitle: "Trees take years. Start now."
+	quest.19801CA08C6F3CAA.title: "Branching Out"
 	quest.19DAFF2C11C635D4.quest_desc: [
 		"A walled keep sinking into a swamp, still garrisoned, still loyal to someone who died a long time ago."
 		""
@@ -716,6 +753,13 @@
 	]
 	quest.1E6B2E42498D1A9F.quest_subtitle: "Ruin, and Remembered."
 	quest.1E6B2E42498D1A9F.title: "Recall the First Room"
+	quest.1E6D817F638ED8EE.quest_desc: [
+		"The first warm bowl at Last Light since the sun went out was soup. It's still most people's favourite."
+		""
+		"&7Eat a bowl of something warm."
+	]
+	quest.1E6D817F638ED8EE.quest_subtitle: "Something warm, in a bowl, at last."
+	quest.1E6D817F638ED8EE.title: "Soup's On"
 	quest.1EB0C168D8B7EF05.quest_desc: [
 		"Not every campfire on the horizon is a friend's. Illagers pitch &6camps&r along the rivers, beaches and forest edges: tents, a cookfire and a lot of crossbows."
 		""
@@ -795,6 +839,13 @@
 	]
 	quest.239F8EB31B6167E6.quest_subtitle: "We sealed a Lens in each shrine before we fled."
 	quest.239F8EB31B6167E6.title: "A Fractured Memory"
+	quest.23BCECC231039355.quest_desc: [
+		"Tea leaves and herbs from the garden brew into hot drinks that leave you &6Cozy&r: no freezing, and a little healing. Roasted coffee beans make &6Coffee&r, and coffee makes you &6Caffeinated&r: faster on your feet and with a pick, for a while."
+		""
+		"&7Warm up with a hot drink."
+	]
+	quest.23BCECC231039355.quest_subtitle: "Ginger, mint or green. Or coffee, if you're brave."
+	quest.23BCECC231039355.title: "A Warm Cup"
 	quest.23C14B15781EAB1B.quest_desc: [
 		"An echo shard ringed with eight Remnant Shards makes a &6Brand of Challenge&r. Use it on a monster and it climbs one rank, gains five levels and one more trait."
 		""
@@ -1048,6 +1099,13 @@
 	]
 	quest.2AE288B066F21681.quest_subtitle: "Bottle a blaze. Be polite about it."
 	quest.2AE288B066F21681.title: "A Fire That Watches Back"
+	quest.2B7DDA06E97E60BF.quest_desc: [
+		"Apples and pears in the temperate woods, oranges and lemons where it's warm, mangoes and bananas in the jungle, olives on the dry hills."
+		""
+		"&7Collect every kind of tree fruit."
+	]
+	quest.2B7DDA06E97E60BF.quest_subtitle: "Every orchard the world kept."
+	quest.2B7DDA06E97E60BF.title: "Fruit Basket"
 	quest.2BACE57C368EB864.quest_desc: [
 		"A &6Windmill Bearing&r with &6sails&r attached turns in any weather, far from any river. More sails, more stress capacity."
 	]
@@ -1575,6 +1633,13 @@
 	]
 	quest.3D62A6C30068A419.quest_subtitle: "You, rewritten for one expedition."
 	quest.3D62A6C30068A419.title: "Living Memories"
+	quest.3DF9D6B06C386A74.quest_desc: [
+		"Breakfast plates, steak dinners and every other plated meal the gardens can feed. Last Light's cooks keep a book of them. Fill it."
+		""
+		"&7Eat every plated meal."
+	]
+	quest.3DF9D6B06C386A74.quest_subtitle: "Every plate in the book."
+	quest.3DF9D6B06C386A74.title: "&aGourmet"
 	quest.3EB68B3A1BA90389.quest_desc: [
 		"Turn a key inside a structure (a dungeon, a temple, a village) and the Archive opens a &6Recollection&r of what it was before. Each place answers once per Ashborn."
 		""
@@ -1824,6 +1889,13 @@
 	]
 	quest.4A77FF56062A9728.quest_subtitle: "The dark can count. Make it count bricks."
 	quest.4A77FF56062A9728.title: "Walls in an Afternoon"
+	quest.4AF5179ECAA5A55E.quest_desc: [
+		"Set copper around your &6Watering Can&r and it becomes a &6Sprinkler&r. Place it next to water and it keeps a whole 9x9 field wet and growing on its own."
+		""
+		"&7Place a sprinkler by your crops."
+	]
+	quest.4AF5179ECAA5A55E.quest_subtitle: "Water that doesn't need you."
+	quest.4AF5179ECAA5A55E.title: "Let It Pour"
 	quest.4B6D3CFFC418A385.quest_desc: [
 		"A &6twinblade&r is an edge at both ends of a pole. Twelve stamina a swing, and &6Whirlwind&r: three spins, a storm of steel around you."
 		""
@@ -2076,6 +2148,13 @@
 	]
 	quest.5651DDA19B1EF5FB.quest_subtitle: "A shrine needs old flame."
 	quest.5651DDA19B1EF5FB.title: "&6Kindling"
+	quest.5659F4AFA29AD7D1.quest_desc: [
+		"The gardeners are long gone, but their gardens kept going without them. &6Wild gardens&r grow in six climates (meadow, woodland, highland, arid, tropical and marsh), and each drops the seeds of what grew there: forty crops between them. Farmers in the villages trade seeds too."
+		""
+		"&7Find a wild garden and break it for seeds."
+	]
+	quest.5659F4AFA29AD7D1.quest_subtitle: "Somebody's garden outlived somebody."
+	quest.5659F4AFA29AD7D1.title: "&aThe Wild Gardens"
 	quest.568BFF2F4516A32D.quest_desc: [
 		"Somebody tried to cure the dead. Somebody failed. The &6Plague Asylum&r stands in the forests, floor upon floor of wards nobody walked out of."
 		""
@@ -2131,6 +2210,13 @@
 	]
 	quest.5867200A6552CB88.quest_subtitle: "Sovereign of the Last Shore. Level 70."
 	quest.5867200A6552CB88.title: "&6Sovereign: Vaelorn, the Wyrm-Ravager"
+	quest.58997DAE1CD7A372.quest_desc: [
+		"A &6Watering Can&r is copper around a bucket. Fill it at any water and hold it over your rows: it waters a 3x3 patch at a time and gives the crops a burst of growth."
+		""
+		"&7Craft a watering can and water a crop."
+	]
+	quest.58997DAE1CD7A372.quest_subtitle: "The sky forgot. You didn't."
+	quest.58997DAE1CD7A372.title: "Rain Maker"
 	quest.59408FECF06D8CF0.quest_desc: [
 		"The &6Labyrinths&r are prisons the Sovereigns dug for things they could not kill. Six of them wind under the world."
 		""
@@ -2138,6 +2224,13 @@
 	]
 	quest.59408FECF06D8CF0.quest_subtitle: "A Labyrinth: the Forgotten Catacombs."
 	quest.59408FECF06D8CF0.title: "Rest in Pieces"
+	quest.59C79D7CBB312104.quest_desc: [
+		"A &6Cutting Board&r and a &6Knife&r turn whole produce into slices, fillets and wedges. A &6Mortar and Pestle&r grinds flour, cornmeal and spices right in the crafting grid."
+		""
+		"&7Craft a knife for the cutting board."
+	]
+	quest.59C79D7CBB312104.quest_subtitle: "Chop first. Cook second."
+	quest.59C79D7CBB312104.title: "Sharp Skills"
 	quest.5A3C796647331707.quest_desc: [
 		"&cVampiric&r: heals for part of what it deals. Don't trade blows; every hit you take feeds it."
 		"&2Venomous&r: poisons. Champions and Remnants poison harder. Carry milk or honey."
@@ -2449,6 +2542,13 @@
 	]
 	quest.65E3C17D51F13C6D.quest_subtitle: "Morgrath's ash is still falling."
 	quest.65E3C17D51F13C6D.title: "&6The Ashlands"
+	quest.65EC08BF822F6078.quest_desc: [
+		"Hearty meals leave you &6Well Fed&r: your hunger drains slowly for a long while after the last bite. Eat one before you call a Sovereign, and spend the fight rolling instead of eating."
+		""
+		"&7Eat a hearty meal and feel Well Fed."
+	]
+	quest.65EC08BF822F6078.quest_subtitle: "A full belly outlasts a long night."
+	quest.65EC08BF822F6078.title: "&aWell Fed"
 	quest.66127E66408DD797.quest_desc: [
 		"A pillar of living obsidian. It doesn't walk; it doesn't need to."
 		""
@@ -2544,6 +2644,13 @@
 	]
 	quest.685BB5F97A1C8228.quest_subtitle: "Rot, patience, then something green."
 	quest.685BB5F97A1C8228.title: "Plant Food"
+	quest.6918A5D14A2331A7.quest_desc: [
+		"&6Right-click&r a ripe crop to pick it and it replants itself, vanilla crops included. Perennials like berries and herbs grow back from the same plant. Corn grows two blocks tall; harvest it from the top."
+		""
+		"&7Harvest your first crop."
+	]
+	quest.6918A5D14A2331A7.quest_subtitle: "Pick it. It plants itself again."
+	quest.6918A5D14A2331A7.title: "Fruits of Your Labor"
 	quest.69446A3F5A0ACE55.quest_desc: [
 		"Wild &6cabbages&r, &6tomatoes&r, &6onions&r and &6rice&r still grow where farms stood before the Eclipse: on beaches, in the warm grasslands, along the rivers. Village farms sometimes keep a row of them."
 		""
@@ -3132,6 +3239,13 @@
 	]
 	quest.7ED324DAAC228EA8.quest_subtitle: "Naturalist. Deer, boar and bear."
 	quest.7ED324DAAC228EA8.title: "The Hunt That Feeds"
+	quest.7F07E64964731380.quest_desc: [
+		"A pumpkin head, a bale of hay and a few sticks. A &6Scarecrow&r stops anything trampling the farmland within 8 blocks of it."
+		""
+		"&7Put up a scarecrow beside your crops."
+	]
+	quest.7F07E64964731380.quest_subtitle: "The crows haven't heard about the Eclipse."
+	quest.7F07E64964731380.title: "Field Guardian"
 	quest.7F2214D371459953.quest_desc: [
 		"Place a &6Cutting Board&r, set an item on it and use it with a tool in hand. A knife slices meat, fish and vegetables; an axe strips logs and keeps the bark."
 		""
@@ -3170,6 +3284,7 @@
 	reward_table.4F9688C9FFA4610A.title: "Delver's Cache"
 	reward_table.51CF557B28B33366.title: "Sovereign's Tribute"
 	reward_table.5B001607D42FDE8B.title: "Treasures of the Deep"
+	reward_table.5D24E616E4A4D7E1.title: "The Garden Basket"
 	reward_table.656B4EB5E7614323.title: "Archive Cache"
 	reward_table.68BF3E5EF6F9206A.title: "Ashborn Provisions"
 	reward_table.68FCF79BD55FC1C8.title: "Major Bounty"

@@ -3,7 +3,8 @@
 
   python3 tools/dump_registry.py     # after tools/test_server.py has filled .cache/jars
 
-For each jar: assets/<ns>/lang/en_us.json -> research/registry/<ns>_en_us.json (if not already there), and
+For each jar: assets/<ns>/lang/en_us.json -> research/registry/<ns>_en_us.json (rewritten every run, so a mod
+update never leaves an old version's ids behind; the first jar with a namespace wins), and
 advancement, structure, dimension and loot-table ids -> research/registry/<ns>_ids.json as {"ids": [...]}.
 build_quests.py --check and build_data.py validate against these files.
 """
@@ -20,6 +21,7 @@ KINDS = {"advancement": "", "worldgen/structure": "", "dimension": "", "loot_tab
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     per_ns = {}
+    langs_written = set()
     for jar in sorted((ROOT / ".cache" / "jars").glob("*/*.jar")):
         try:
             z = zipfile.ZipFile(jar)
@@ -29,9 +31,10 @@ def main():
             m = re.match(r"assets/([a-z0-9_.-]+)/lang/en_us\.json$", n)
             if m:
                 dest = OUT / f"{m.group(1)}_en_us.json"
-                if not dest.exists():
+                if dest.name not in langs_written:
                     try:
                         dest.write_text(json.dumps(json.loads(z.read(n)), indent=1, ensure_ascii=False))
+                        langs_written.add(dest.name)
                     except (json.JSONDecodeError, UnicodeDecodeError):
                         pass
                 continue

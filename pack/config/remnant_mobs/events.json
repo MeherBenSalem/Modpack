@@ -1,0 +1,73 @@
+// Remnants pack: switched on and tuned for Season 1 (the mod leaves these off next to an existing levels.json).
+// Remnants: RPG Mobs 3.1: event nights.
+// New in 3.1. When this file is first created next to an existing config, events start switched off;
+// fresh installs start with them on. The Hunter's Moon is configured in levels.json, as before.
+// Edit and run /remnants reload, or restart. Missing keys are restored with their defaults.
+{
+  // Master switch for the events below (not the Hunter's Moon). One event runs at a time and never
+  // during a Hunter's Moon. /remnants event start <id> starts one now.
+  "enabled": true,
+
+  // One entry per kind of night; copy one under a new id to add another.
+  // trigger: checked at dusk. Rolls chance every every_days nights from first_day, when at least one
+  //   player stands at min_difficulty (0-1, bottom to top of their dimension's band) or more.
+  //   moon: "any", "full" or "new".
+  // announce: title card, chat line and horn at dusk.
+  // effects: while it runs, new mobs get level_bonus levels and rank_multiplier x rank odds;
+  //   event monsters drop shard_multiplier x shards.
+  // hunters: waves of named, ranked monsters (#remnant_mobs:event_hunters) sent after each player,
+  //   per_wave per player every wave_seconds, spawning distance_min-distance_max blocks away, at most
+  //   max_alive per player.
+  // mini_boss: joins the last wave (#remnant_mobs:event_mini_bosses) with this rank, after one random player
+  //   (or every player with per_player). tier picks the boss
+  //   tier ("mini"; other mods can add tiers).
+  // rewards: players who see the dawn get survive_experience XP (and survive_valor Valor with RPG
+  //   Attribute System); the mini-boss drops boss_shards extra Remnant Shards.
+  // dimensions: dimension ids or #tags of dimension types where the event runs.
+  "events": {
+    "grim_vigil": {
+      "enabled": true,
+      "trigger": {
+        "every_days": 10,
+        "first_day": 7,
+        "chance": 0.5,
+        "min_difficulty": 0.15,
+        "moon": "any"
+      },
+      "announce": {
+        "title": true,
+        "chat": true,
+        "sound": true
+      },
+      "effects": {
+        "level_bonus": 3,
+        "rank_multiplier": 1.5,
+        "shard_multiplier": 1.5
+      },
+      "hunters": {
+        "waves": 3,
+        "per_wave": 3,
+        "wave_seconds": 90,
+        "first_wave_seconds": 20,
+        "min_rank": "veteran",
+        "named": true,
+        "distance_min": 20,
+        "distance_max": 32,
+        "max_alive": 6
+      },
+      "mini_boss": {
+        "enabled": true,
+        "per_player": false,
+        "rank": "remnant",
+        "level_bonus": 5,
+        "tier": "mini"
+      },
+      "rewards": {
+        "survive_experience": 50,
+        "survive_valor": 40,
+        "boss_shards": 8
+      },
+      "dimensions": ["minecraft:overworld"]
+    }
+  }
+}

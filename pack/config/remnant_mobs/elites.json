@@ -1,0 +1,32 @@
+// Remnants pack: switched on and tuned for Season 1 (the mod leaves these off next to an existing levels.json).
+// Remnants: RPG Mobs 3.1: elites you can read in one second.
+// New in 3.1. When this file is first created next to an existing config, enabled starts false so
+// ranked monsters look exactly as in 3.0; fresh installs start with it on. Everything here also shows
+// for players without the mod. Edit and run /remnants reload, or restart.
+{
+  // Master switch. When false, Remnant boss bars stay yellow and nothing below applies.
+  "enabled": true,
+
+  // Particles in the rank's colour around ranked monsters of min_rank and above (veteran, elite,
+  // champion, remnant), seen by players within distance blocks. Champions and Remnants get a ring.
+  "aura": {
+    "enabled": true,
+    "min_rank": "elite",
+    "distance": 24
+  },
+
+  // champion: Champions get a boss bar like Remnants. Colours: pink, blue, red, green, yellow,
+  // purple or white. event_boss_color is for an event night's mini-boss.
+  "boss_bars": {
+    "champion": true,
+    "remnant_color": "yellow",
+    "champion_color": "purple",
+    "event_boss_color": "red"
+  },
+
+  // Champions get a generated title too, not only Remnants.
+  "champion_titles": false,
+
+  // Monsters sent by an event night glow (seen through walls) until dawn.
+  "event_glow": true
+}

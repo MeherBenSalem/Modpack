@@ -581,9 +581,44 @@
 			y: 2.25d
 		}
 		{
-			dependencies: ["5A752C24FAE57D9C"]
+			dependencies: ["24B421000D19B905"]
 			icon: {
-				id: "simple_terminals:crafting_terminal"
+				id: "omnivault:storage_hub"
+			}
+			id: "26F15EA649D3A6A9"
+			rewards: [
+				{
+					count: 8
+					id: "1B0CFECB57846723"
+					item: {
+						count: 1
+						id: "omnivault:inventory_cable"
+					}
+					type: "item"
+				}
+				{
+					id: "28BAE21EF4A6724F"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "0AEE22D7C1D9C8A5"
+					item: {
+						count: 1
+						id: "omnivault:storage_hub"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 3.1d
+		}
+		{
+			dependencies: ["26F15EA649D3A6A9"]
+			icon: {
+				id: "omnivault:crafting_terminal"
 			}
 			id: "2FC050ACF53FEE8A"
 			rewards: [
@@ -604,12 +639,91 @@
 					id: "105274E49D3C37B9"
 					item: {
 						count: 1
-						id: "simple_terminals:crafting_terminal"
+						id: "omnivault:crafting_terminal"
 					}
 					type: "item"
 				}
 			]
 			x: 6.0d
+			y: 2.25d
+		}
+		{
+			dependencies: ["26F15EA649D3A6A9"]
+			icon: {
+				id: "omnivault:drawer_1x1"
+			}
+			id: "09DD0BBF1E70CCBB"
+			optional: true
+			rewards: [
+				{
+					count: 6
+					id: "36B363EA6E1FAFD5"
+					item: {
+						count: 1
+						id: "minecraft:iron_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "11B6B7B7C8B15DCD"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "55B60FF0AB756405"
+					item: {
+						count: 1
+						id: "omnivault:drawer_1x1"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 3.1d
+		}
+		{
+			dependencies: ["2FC050ACF53FEE8A"]
+			icon: {
+				id: "omnivault:nexus_core"
+			}
+			id: "0FAC30799ABFA645"
+			optional: true
+			rewards: [
+				{
+					id: "607606A5967B9153"
+					table_id: 1235064283976969780L
+					type: "random"
+				}
+				{
+					count: 8
+					id: "549F09B35B73AB05"
+					item: {
+						count: 1
+						id: "omnivault:blank_pattern"
+					}
+					type: "item"
+				}
+				{
+					id: "7BB1DD6A92B94BD1"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "gear"
+			size: 1.25d
+			tasks: [
+				{
+					id: "721FD247847F653E"
+					item: {
+						count: 1
+						id: "omnivault:nexus_core"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
 			y: 2.25d
 		}
 		{

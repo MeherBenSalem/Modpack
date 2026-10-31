@@ -1,0 +1,62 @@
+// Remnants pack: switched on and tuned for Season 1 (the mod leaves these off next to an existing levels.json).
+// Remnants: RPG Mobs 3.1: loot.
+// New in 3.1. When this file is first created next to an existing config, enabled starts false so
+// drops are exactly as in 3.0; fresh installs start with it on.
+// Edit and run /remnants reload, or restart. Missing keys are restored with their defaults.
+{
+  // Master switch for everything below.
+  "enabled": true,
+
+  // Difficulty is where a monster's level sits in its dimension's band, 0 to 1.
+  // extra_rolls_bonus: ranked monsters roll their loot table loot_rolls (ranks.json) x (1 + this x
+  // difficulty) extra times; fractions are a chance of one more roll. shards_bonus: the same for Remnant
+  // Shards. common_extra_roll: chance, times difficulty, that an unranked monster rolls its loot once more.
+  "scaling": {
+    "extra_rolls_bonus": 1.0,
+    "shards_bonus": 0.5,
+    "common_extra_roll": 0.15
+  },
+
+  // With Mob LootBags installed (mod_id): ranked monsters killed by a player may drop a bag on top of
+  // that mod's own drops. chance and tier per rank (common, uncommon, rare, epic, legendary, mythic);
+  // event_boss is an event night's mini-boss. From tier_up_at_difficulty (0-1, above 1 never) the bag is
+  // one tier better. items: the bag item ids, lowest tier first, used if Mob LootBags' own bag code
+  // cannot be reached.
+  "loot_bags": {
+    "enabled": true,
+    "mod_id": "mob_loot_bags",
+    "chance": {
+      "veteran": 0.0,
+      "elite": 0.1,
+      "champion": 0.3,
+      "remnant": 1.0,
+      "event_boss": 1.0
+    },
+    "tier": {
+      "veteran": "common",
+      "elite": "uncommon",
+      "champion": "rare",
+      "remnant": "epic",
+      "event_boss": "legendary"
+    },
+    "tier_up_at_difficulty": 0.66,
+    "items": [
+      "mob_loot_bags:commonlootbag",
+      "mob_loot_bags:uncommonlootbag",
+      "mob_loot_bags:rarelootbag",
+      "mob_loot_bags:epiclootbag",
+      "mob_loot_bags:legendarylootbag",
+      "mob_loot_bags:mythiclootbag"
+    ]
+  },
+
+  // A column of light over items of min_rarity (uncommon, rare or epic) and above that a ranked
+  // monster drops, for seconds or until picked up, seen within distance blocks. Sent as particles, so
+  // players without the mod see it too. Mob LootBags bags keep that mod's own beams.
+  "beams": {
+    "enabled": true,
+    "min_rarity": "rare",
+    "seconds": 30,
+    "distance": 48
+  }
+}

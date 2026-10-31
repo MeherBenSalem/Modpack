@@ -9,10 +9,76 @@ global.REMNANTS_LINES = {
       "Since then, nothing that dies here stays dead. It comes back wrong. Remnants, we call them. And you came back too, little ember. That makes you the brightest thing left in the world. They will want it. Let's not give it to them."
     ]
   },
+  "s1_prologue_gatekeeper": {
+    "speaker": "keeper",
+    "text": [
+      "Odric kept this gate for the heralds. Kept it well. When the heralds died, nobody told him to stop."
+    ]
+  },
+  "s1_prologue_beyond": {
+    "speaker": "keeper",
+    "text": [
+      "Up the stair. Through the gate. Don't look back; there's nothing behind you but graves, and one of them was yours."
+    ]
+  },
+  "s1_prologue_origin": {
+    "speaker": "keeper",
+    "text": [
+      "You had a life before the ash. Most of you remember a sword, or a prayer, or a debt. Pick the one that feels true. It won't matter to the dead."
+    ]
+  },
+  "s1_prologue_stone": {
+    "speaker": "keeper",
+    "text": [
+      "Stone. Good. Stone doesn't care what you were, either."
+    ]
+  },
+  "s1_prologue_stamina": {
+    "speaker": "keeper",
+    "text": [
+      "You're not strong yet. So don't be there when it lands."
+    ]
+  },
+  "s1_prologue_first_blood": {
+    "speaker": "keeper",
+    "text": [
+      "Don't look at their faces. Some of them used to be someone's."
+    ]
+  },
+  "s1_prologue_runes": {
+    "speaker": "keeper",
+    "text": [
+      "Feel that? A little warmth, where there wasn't any. That was theirs. Now it's yours. Don't lose it."
+    ]
+  },
   "s1_prologue_you_died": {
     "speaker": "keeper",
     "text": [
       "Good. Now you know. Everyone dies once. The trick is not to make a habit of it. Go back to where you fell. Something is wearing your face, and it is holding your light."
+    ]
+  },
+  "s1_prologue_reclaimed": {
+    "speaker": "keeper",
+    "text": [
+      "Strange, killing yourself. It gets easier. That should worry you more than it does."
+    ]
+  },
+  "s1_prologue_armour": {
+    "speaker": "keeper",
+    "text": [
+      "Armour doesn't make you brave. It makes you stupid for a little longer, which is nearly the same thing."
+    ]
+  },
+  "s1_prologue_night": {
+    "speaker": "keeper",
+    "text": [
+      "Nights are longer than they used to be. Or we are smaller. Light a fire and don't argue with the dark."
+    ]
+  },
+  "s1_prologue_know_enemy": {
+    "speaker": "keeper",
+    "text": [
+      "Some of them have died more than once. Each time they come back meaner. Count the crests before you count your chances."
     ]
   },
   "s1_prologue_village": {
@@ -30,16 +96,70 @@ global.REMNANTS_LINES = {
       "Gather their Fragments. Make a sigil. Wake them. And take back the light they never returned."
     ]
   },
+  "s1_act1_embers_kindling": {
+    "speaker": "keeper",
+    "text": [
+      "Campfire for the heart. Gold for the oath. Deepslate for the bones. And old flame, the kind nothing in this world makes any more. Here. I kept some."
+    ]
+  },
   "s1_act1_embers_kindle": {
     "speaker": "keeper",
     "text": [
       "There. Do you see it? First fire in an age that wasn't stolen. Last Light, we'll call this place. The dark can count, Ashborn. Let's give it a number it doesn't like."
     ]
   },
+  "s1_act1_embers_level_up": {
+    "speaker": "keeper",
+    "text": [
+      "Light hoarded is light wasted. The Sovereigns learned that too late. Spend yours."
+    ]
+  },
+  "s1_act1_embers_travel": {
+    "speaker": "keeper",
+    "text": [
+      "One fire is a home. Two fires is a road. Ten fires, and the dark starts to feel crowded."
+    ]
+  },
+  "s1_act1_embers_sellsword": {
+    "speaker": "keeper",
+    "text": [
+      "The Company? Survivors. They stayed together and they stayed paid, which is more than the Sovereigns managed."
+    ]
+  },
+  "s1_act1_embers_spoils": {
+    "speaker": "keeper",
+    "text": [
+      "The dead keep pockets. Habit, I think. Nobody tells them they can't take it with them."
+    ]
+  },
+  "s1_act1_embers_dungeon_trail": {
+    "speaker": "keeper",
+    "text": [
+      "Every guardian carries a map to someone worse. Nobody knows who started the chain. Nobody's reached the end and come back to say."
+    ]
+  },
+  "s1_act1_embers_champion": {
+    "speaker": "keeper",
+    "text": [
+      "When a Sovereign went mad, its champions went with it. They still carry their master's light. Take it back."
+    ]
+  },
+  "s1_act1_embers_fragments": {
+    "speaker": "keeper",
+    "text": [
+      "The Dusk Rider kept the hours for the Crown. When the sun went out, he stopped his clock at that minute, and he has been riding at that minute ever since."
+    ]
+  },
   "s1_act1_embers_dusk_rider": {
     "speaker": "keeper",
     "text": [
       "One ember. Look at it, Ashborn. The first light in an age that came back on its own. Every Ashborn on this world just felt their heart beat a little stronger. That was you. The dark felt it too. It will send something worse."
+    ]
+  },
+  "s1_act1_embers_relic": {
+    "speaker": "keeper",
+    "text": [
+      "The Smith can make something of that. He says the Rider's glaive still keeps time, if you listen."
     ]
   },
   "s1_act2_hunt_tale_red_moon": {
@@ -51,16 +171,88 @@ global.REMNANTS_LINES = {
       "So hunt back. Varghast waits beyond the hunt, and the Frost Matron beyond him. Two more embers. Go and take them."
     ]
   },
+  "s1_act2_hunt_hunters_moon": {
+    "speaker": "keeper",
+    "text": [
+      "Toll's ringing. Bar the doors, sharpen something, and don't stand near the windows. Or go out there. You were always going to go out there."
+    ]
+  },
+  "s1_act2_hunt_grim_vigil": {
+    "speaker": "keeper",
+    "text": [
+      "Some nights the huntsmen don't wait for a red moon. They choose. They learn your name, they take your trail, and they come in threes until the sky goes grey. The last one through the trees will be the one who taught the others. Keep your back to a wall and your eyes on the dawn. It always comes. That's the one promise the dark never broke."
+    ]
+  },
+  "s1_act2_hunt_kindled": {
+    "speaker": "keeper",
+    "text": [
+      "You found one. A Vital Ember. When the sun broke, a little of it fell into everything that was alive to catch it. The dead keep theirs a long time. Take it in, Ashborn. It will make your heart a little bigger, and it won't give the room back when you die."
+    ]
+  },
+  "s1_act2_hunt_punching_up": {
+    "speaker": "keeper",
+    "text": [
+      "The Company has a saying: pick on someone your own size, and you'll stay that size forever."
+    ]
+  },
+  "s1_act2_hunt_challenge": {
+    "speaker": "keeper",
+    "text": [
+      "You're branding them now? On purpose? I've buried braver people than you. Well. Not buried. You know what I mean."
+    ]
+  },
+  "s1_act2_hunt_remnant": {
+    "speaker": "keeper",
+    "text": [
+      "That horn means one of them has your scent. Don't run. They're faster, and they've done this before."
+    ]
+  },
+  "s1_act2_hunt_labyrinth": {
+    "speaker": "keeper",
+    "text": [
+      "The Sovereigns couldn't kill everything they feared. So they dug."
+    ]
+  },
+  "s1_act2_hunt_path": {
+    "speaker": "keeper",
+    "text": [
+      "Your runes have opinions now. Listen to them. A blade, a star, a prayer. Pick one before the dark picks for you."
+    ]
+  },
+  "s1_act2_hunt_varghast_fragments": {
+    "speaker": "keeper",
+    "text": [
+      "Varghast was a good king, once. Too good. He couldn't bear to lose a single soldier, so he kept them. Every arm of every man who fell for him, sewn onto his own."
+    ]
+  },
   "s1_act2_hunt_varghast": {
     "speaker": "keeper",
     "text": [
       "Two embers. When he fell, I heard them. All those soldiers, finally let go. Some of them were saying thank you, Ashborn. I think one of them was saying it to you."
     ]
   },
+  "s1_act2_hunt_crown": {
+    "speaker": "keeper",
+    "text": [
+      "The Crown was made to hold the sun. Every piece still remembers how. Wear it, and it will try to hold you."
+    ]
+  },
+  "s1_act2_hunt_rime_veil": {
+    "speaker": "keeper",
+    "text": [
+      "Sylvara buried her piece of the sun under the snow to keep it from melting away. It worked. Nothing there has melted in an age, including her."
+    ]
+  },
   "s1_act2_hunt_sylvara": {
     "speaker": "keeper",
     "text": [
       "Three embers. Feel that wind? It's warm. For the first time in an age, something in the north is thawing. Three Sovereigns, Ashborn. You're making the dark nervous."
+    ]
+  },
+  "s1_act2_hunt_runebearer": {
+    "speaker": "keeper",
+    "text": [
+      "Fifty levels of light. You glow, you know. Not so anyone else could see. But I can."
     ]
   },
   "s1_act3_deep_tale_old_powers": {
@@ -72,10 +264,46 @@ global.REMNANTS_LINES = {
       "You'll need that memory where you're going. The storm-lord waits beneath the waves, and the gardener behind her roses. Go down. The deep has been waiting for someone to bother it."
     ]
   },
+  "s1_act3_deep_descent": {
+    "speaker": "keeper",
+    "text": [
+      "Quiet down there. Not the polite kind. The kind that is listening back."
+    ]
+  },
+  "s1_act3_deep_warden": {
+    "speaker": "keeper",
+    "text": [
+      "It can't see you. It doesn't need to. Every heart is a drum to it, and yours is louder than most."
+    ]
+  },
+  "s1_act3_deep_monument": {
+    "speaker": "keeper",
+    "text": [
+      "The sea kept a secret for the world. Three old things guard it, and they curse anyone who swims too close. Swim close."
+    ]
+  },
+  "s1_act3_deep_drowned_sky": {
+    "speaker": "keeper",
+    "text": [
+      "Kaelthar was afraid of the dark, so he kept the one thing that still flashed: lightning. He drowned his own coast to keep the storm close. Every bolt you see out there is him, still talking to it."
+    ]
+  },
   "s1_act3_deep_kaelthar": {
     "speaker": "keeper",
     "text": [
       "Four embers. Listen. No thunder. For the first time in an age, the sea is just the sea. Halfway, Ashborn. Halfway home."
+    ]
+  },
+  "s1_act3_deep_ancient_remnant": {
+    "speaker": "keeper",
+    "text": [
+      "Before the Crown, there was a king of sand who refused to die. He was the first. Everything rising out there learned it from him."
+    ]
+  },
+  "s1_act3_deep_scarlet_garden": {
+    "speaker": "keeper",
+    "text": [
+      "Ysolde loved her garden more than her court. When the sun went out, the flowers started dying, so she fed them. First the servants. Then the court. Then herself, a little, every day."
     ]
   },
   "s1_act3_deep_ysolde": {
@@ -93,16 +321,58 @@ global.REMNANTS_LINES = {
       "Past him, beyond the eye of the world, there is a shore where a drop of the sun fell when the Eighth drank it. The Dragon guards it, and Vaelorn, the last of the seven, guards the Dragon. Two more embers. Then the black sun."
     ]
   },
+  "s1_act4_ash_ashlands": {
+    "speaker": "keeper",
+    "text": [
+      "Hot, isn't it? He wanted it to stay warm forever. Be careful what you wish for when you wear a crown."
+    ]
+  },
+  "s1_act4_ash_soulfire_crypt": {
+    "speaker": "keeper",
+    "text": [
+      "The end of the trail. The Archivist owes me a drink. I said someone would make it."
+    ]
+  },
+  "s1_act4_ash_wither": {
+    "speaker": "keeper",
+    "text": [
+      "Three skulls and the sand of lost souls. That's not a summoning, Ashborn, it's a dinner bell."
+    ]
+  },
   "s1_act4_ash_morgrath": {
     "speaker": "keeper",
     "text": [
       "Six embers. Down there, for the first time in an age, the ash has stopped falling. His people can rest now. Maybe he can too."
     ]
   },
+  "s1_act4_ash_stronghold": {
+    "speaker": "keeper",
+    "text": [
+      "Follow the eyes. They know where the edge is. They've been trying to get back there since the sky went dark."
+    ]
+  },
+  "s1_act4_ash_last_shore": {
+    "speaker": "keeper",
+    "text": [
+      "When the Hollow Sovereign drank the sun, a drop of it spilled off the edge of the world. It landed there. The Dragon has been guarding it ever since, and it doesn't know why."
+    ]
+  },
+  "s1_act4_ash_dragon": {
+    "speaker": "keeper",
+    "text": [
+      "Catch its breath before it dies. That breath was sunlight, once. Vaelorn will smell it on you."
+    ]
+  },
   "s1_act4_ash_vaelorn": {
     "speaker": "keeper",
     "text": [
       "Seven embers. All seven. Do you know how long I waited to say that? One light left, and it isn't in this world. Rest first, Ashborn. Then we find the black sun."
+    ]
+  },
+  "s1_act4_ash_crown_remade": {
+    "speaker": "keeper",
+    "text": [
+      "Put it down, Ashborn. It doesn't fit anyone. That was always the problem."
     ]
   },
   "s1_act5_realm_tale_eighth": {
@@ -112,6 +382,12 @@ global.REMNANTS_LINES = {
       "He wasn't a king. He was a herald, one of the ones who carried the flame between the seven and never kept any for himself. When they broke the sun, they forgot him. No Fragment for the herald. No crown.",
       "So he took what was left. All of it. He drank the last of the sun and walked behind it, into the black, and the light went out inside him the moment he swallowed it. A crown with nothing inside.",
       "He's still sitting there, on his throne, under the sun he ate, waiting for someone to tell him it was worth it. It wasn't. Go and tell him."
+    ]
+  },
+  "s1_act5_realm_shard": {
+    "speaker": "keeper",
+    "text": [
+      "Seven Sovereigns, seven embers. The eighth light is where he took it: behind the black sun. You'll need a door."
     ]
   },
   "s1_act5_realm_enter": {
@@ -134,6 +410,12 @@ global.REMNANTS_LINES = {
       "Rest now. The sun remembers you. It remembers all of us, I think. Even the ones who don't deserve it."
     ]
   },
+  "s1_epilogue_homecoming": {
+    "speaker": "keeper",
+    "text": [
+      "The Smith is singing. Badly. The Company's captain is pretending not to cry. Come home, Ashborn. Somebody saved you a seat by the fire, though I suppose you don't need the fire any more."
+    ]
+  },
   "s1_epilogue_keepers_name": {
     "speaker": "keeper",
     "text": [
@@ -146,6 +428,60 @@ global.REMNANTS_LINES = {
     "speaker": "whisper",
     "text": [
       "Seven crowns. One hollow. A herald who kept a little flame for later. You were all so busy with the pieces. Not one of you asked who cracked the sun first."
+    ]
+  },
+  "s1_epilogue_ascendant": {
+    "speaker": "keeper",
+    "text": [
+      "A hundred levels. You could carry a Sovereign's share of light now, and not go mad from it. Probably."
+    ]
+  },
+  "s1_act1_embers_dusk_rider_unlock": {
+    "speaker": "keeper",
+    "text": [
+      "The Sigil's warm. He'll feel it. Wait for dusk, stand somewhere open, and hold it up. The Dusk Rider has ridden the same road every evening for an age. Tonight it goes through you. Don't run from the horse, Ashborn. Roll through it."
+    ]
+  },
+  "s1_act2_hunt_varghast_unlock": {
+    "speaker": "keeper",
+    "text": [
+      "Iron and six Fragments. That's enough to wake him. Varghast will come with every arm he ever took. Don't trade blows with a man who has a hundred of them. Make his Sigil, find somewhere wide, and call."
+    ]
+  },
+  "s1_act2_hunt_sylvara_unlock": {
+    "speaker": "keeper",
+    "text": [
+      "Blue ice and six Fragments. Sylvara will know you're coming before you do. Dress warm, and keep a flask for when the frost bursts. She was gentle, once. She won't be tonight."
+    ]
+  },
+  "s1_act3_deep_kaelthar_unlock": {
+    "speaker": "keeper",
+    "text": [
+      "You have it. The rod, the Fragments. Kaelthar will hear his Sigil the way he hears thunder. Pick a dry day if the sky allows it, and never stand still under him. Not even to breathe."
+    ]
+  },
+  "s1_act3_deep_ysolde_unlock": {
+    "speaker": "keeper",
+    "text": [
+      "Redstone and six Fragments. Red was always her colour. Ysolde will cut you a hundred small times and wait for you to fall over. Don't let her dance. One clean roll, then answer."
+    ]
+  },
+  "s1_act4_ash_morgrath_unlock": {
+    "speaker": "keeper",
+    "text": [
+      "The scrap is still warm. So is he. Morgrath fights in the fire that ended his kingdom, and the fire has never once minded him. Bring something to cool your blood, and don't stand where the ground glows."
+    ]
+  },
+  "s1_act4_ash_vaelorn_unlock": {
+    "speaker": "keeper",
+    "text": [
+      "Dragon's breath, in a bottle. That was sunlight, once. Vaelorn will smell it from the edge of the world and come to take it back. Open ground, Ashborn, and never in front of him. He rides like the last of something."
+    ]
+  },
+  "s1_act5_realm_hollow_sovereign_unlock": {
+    "speaker": "keeper",
+    "text": [
+      "The Seal is made. The altar in the Hollow Citadel is waiting for it, and so is he. He won't think you came to kill him. He'll think you came to kneel. Show him otherwise."
     ]
   },
   "threshold_gate": {
@@ -178,8 +514,52 @@ global.REMNANTS_NARRATION = {
     "line": "s1_prologue_rise",
     "chat": false
   },
+  "295933238D4366D9": {
+    "line": "s1_prologue_gatekeeper",
+    "chat": true
+  },
+  "60736FE08ABE9C7F": {
+    "line": "s1_prologue_beyond",
+    "chat": true
+  },
+  "6D7FD40BC81A0E63": {
+    "line": "s1_prologue_origin",
+    "chat": false
+  },
+  "4C67E689E70A462B": {
+    "line": "s1_prologue_stone",
+    "chat": true
+  },
+  "2A6B94BDD99CE7BC": {
+    "line": "s1_prologue_stamina",
+    "chat": false
+  },
+  "3B2BC7E46FADA8F0": {
+    "line": "s1_prologue_first_blood",
+    "chat": true
+  },
+  "7BCC2DCBDC56577B": {
+    "line": "s1_prologue_runes",
+    "chat": false
+  },
   "7A936AC05E6E9BA9": {
     "line": "s1_prologue_you_died",
+    "chat": true
+  },
+  "282CFDC633090E33": {
+    "line": "s1_prologue_reclaimed",
+    "chat": true
+  },
+  "19610B4F5D841A48": {
+    "line": "s1_prologue_armour",
+    "chat": true
+  },
+  "299D979D228918F3": {
+    "line": "s1_prologue_night",
+    "chat": true
+  },
+  "05EAAA5866A04A29": {
+    "line": "s1_prologue_know_enemy",
     "chat": true
   },
   "20A88504DC6B5A17": {
@@ -190,32 +570,140 @@ global.REMNANTS_NARRATION = {
     "line": "s1_act1_embers_tale_seven",
     "chat": false
   },
+  "5651DDA19B1EF5FB": {
+    "line": "s1_act1_embers_kindling",
+    "chat": true
+  },
   "2D462FB5D6B13E35": {
     "line": "s1_act1_embers_kindle",
+    "chat": true
+  },
+  "29E73181EF9F52B4": {
+    "line": "s1_act1_embers_level_up",
+    "chat": true
+  },
+  "2C20532DADD2D13F": {
+    "line": "s1_act1_embers_travel",
+    "chat": true
+  },
+  "282F5F9817BEE567": {
+    "line": "s1_act1_embers_sellsword",
+    "chat": false
+  },
+  "0706431E96A6A53E": {
+    "line": "s1_act1_embers_spoils",
+    "chat": true
+  },
+  "30F39C23D463CB31": {
+    "line": "s1_act1_embers_dungeon_trail",
+    "chat": true
+  },
+  "6456CEF413461135": {
+    "line": "s1_act1_embers_champion",
+    "chat": true
+  },
+  "27437F0D8FF32DCD": {
+    "line": "s1_act1_embers_fragments",
     "chat": true
   },
   "2A7E4FBEE8E2A089": {
     "line": "s1_act1_embers_dusk_rider",
     "chat": true
   },
+  "6D86DE336AB40AB6": {
+    "line": "s1_act1_embers_relic",
+    "chat": true
+  },
   "456BE32594E10424": {
     "line": "s1_act2_hunt_tale_red_moon",
     "chat": false
   },
+  "1B71C09161A6DDFB": {
+    "line": "s1_act2_hunt_hunters_moon",
+    "chat": true
+  },
+  "3814AEC29AC5D661": {
+    "line": "s1_act2_hunt_grim_vigil",
+    "chat": true
+  },
+  "39BA92A4C0CA0AC3": {
+    "line": "s1_act2_hunt_kindled",
+    "chat": true
+  },
+  "244492C516FAF63B": {
+    "line": "s1_act2_hunt_punching_up",
+    "chat": true
+  },
+  "5C77FA2F283917EA": {
+    "line": "s1_act2_hunt_challenge",
+    "chat": true
+  },
+  "6493FE1CBE6B9CD4": {
+    "line": "s1_act2_hunt_remnant",
+    "chat": true
+  },
+  "3463E48C851C4E39": {
+    "line": "s1_act2_hunt_labyrinth",
+    "chat": true
+  },
+  "037DDC36DF427850": {
+    "line": "s1_act2_hunt_path",
+    "chat": false
+  },
+  "463F4A4D56B7E057": {
+    "line": "s1_act2_hunt_varghast_fragments",
+    "chat": true
+  },
   "190E84DFB94144CA": {
     "line": "s1_act2_hunt_varghast",
+    "chat": true
+  },
+  "289D0416C0109482": {
+    "line": "s1_act2_hunt_crown",
+    "chat": true
+  },
+  "6C617748F8950056": {
+    "line": "s1_act2_hunt_rime_veil",
     "chat": true
   },
   "53F967EF1BEA3D24": {
     "line": "s1_act2_hunt_sylvara",
     "chat": true
   },
+  "337E61B442FEAD4C": {
+    "line": "s1_act2_hunt_runebearer",
+    "chat": true
+  },
   "66EEF900D3D6B3A0": {
     "line": "s1_act3_deep_tale_old_powers",
     "chat": false
   },
+  "36E2AF0A1C071B2E": {
+    "line": "s1_act3_deep_descent",
+    "chat": true
+  },
+  "354182D19FF9BB17": {
+    "line": "s1_act3_deep_warden",
+    "chat": true
+  },
+  "1410C8CE7B678479": {
+    "line": "s1_act3_deep_monument",
+    "chat": true
+  },
+  "7E3D4C73C791AAAC": {
+    "line": "s1_act3_deep_drowned_sky",
+    "chat": true
+  },
   "125F0DA757CBDD14": {
     "line": "s1_act3_deep_kaelthar",
+    "chat": true
+  },
+  "7678FF900809530E": {
+    "line": "s1_act3_deep_ancient_remnant",
+    "chat": true
+  },
+  "1C4F62CC967526A2": {
+    "line": "s1_act3_deep_scarlet_garden",
     "chat": true
   },
   "10A48EAE33052B15": {
@@ -226,17 +714,49 @@ global.REMNANTS_NARRATION = {
     "line": "s1_act4_ash_tale_burning_crown",
     "chat": false
   },
+  "65E3C17D51F13C6D": {
+    "line": "s1_act4_ash_ashlands",
+    "chat": true
+  },
+  "06B2E89F7AAD0CBA": {
+    "line": "s1_act4_ash_soulfire_crypt",
+    "chat": true
+  },
+  "616E722849BB220E": {
+    "line": "s1_act4_ash_wither",
+    "chat": true
+  },
   "67ED0BC9562790E0": {
     "line": "s1_act4_ash_morgrath",
+    "chat": true
+  },
+  "67F80731A0585B0A": {
+    "line": "s1_act4_ash_stronghold",
+    "chat": true
+  },
+  "7CD33967D099FE24": {
+    "line": "s1_act4_ash_last_shore",
+    "chat": true
+  },
+  "4D0587808D220640": {
+    "line": "s1_act4_ash_dragon",
     "chat": true
   },
   "5867200A6552CB88": {
     "line": "s1_act4_ash_vaelorn",
     "chat": true
   },
+  "7A11D1EEA3BD0D28": {
+    "line": "s1_act4_ash_crown_remade",
+    "chat": true
+  },
   "7A21A291E4DB088D": {
     "line": "s1_act5_realm_tale_eighth",
     "chat": false
+  },
+  "4E4B23BBB691EBC8": {
+    "line": "s1_act5_realm_shard",
+    "chat": true
   },
   "63F14370CFF061C7": {
     "line": "s1_act5_realm_enter",
@@ -250,6 +770,10 @@ global.REMNANTS_NARRATION = {
     "line": "s1_epilogue_first_light",
     "chat": false
   },
+  "6CA5B84D2F345074": {
+    "line": "s1_epilogue_homecoming",
+    "chat": false
+  },
   "22201CEDCE4457E8": {
     "line": "s1_epilogue_keepers_name",
     "chat": false
@@ -257,5 +781,94 @@ global.REMNANTS_NARRATION = {
   "21DCE1D40E334C97": {
     "line": "s1_epilogue_who_broke_the_sun",
     "chat": false
+  },
+  "194DBF5B86695C7E": {
+    "line": "s1_epilogue_ascendant",
+    "chat": true
   }
+}
+global.REMNANTS_UNLOCKS = {
+  "063AD2AB6F866AE5": [
+    {
+      "quest": "2A7E4FBEE8E2A089",
+      "deps": [
+        "063AD2AB6F866AE5",
+        "29E73181EF9F52B4"
+      ],
+      "line": "s1_act1_embers_dusk_rider_unlock"
+    }
+  ],
+  "29E73181EF9F52B4": [
+    {
+      "quest": "2A7E4FBEE8E2A089",
+      "deps": [
+        "063AD2AB6F866AE5",
+        "29E73181EF9F52B4"
+      ],
+      "line": "s1_act1_embers_dusk_rider_unlock"
+    }
+  ],
+  "463F4A4D56B7E057": [
+    {
+      "quest": "190E84DFB94144CA",
+      "deps": [
+        "463F4A4D56B7E057"
+      ],
+      "line": "s1_act2_hunt_varghast_unlock"
+    }
+  ],
+  "6C617748F8950056": [
+    {
+      "quest": "53F967EF1BEA3D24",
+      "deps": [
+        "6C617748F8950056"
+      ],
+      "line": "s1_act2_hunt_sylvara_unlock"
+    }
+  ],
+  "7E3D4C73C791AAAC": [
+    {
+      "quest": "125F0DA757CBDD14",
+      "deps": [
+        "7E3D4C73C791AAAC"
+      ],
+      "line": "s1_act3_deep_kaelthar_unlock"
+    }
+  ],
+  "1C4F62CC967526A2": [
+    {
+      "quest": "10A48EAE33052B15",
+      "deps": [
+        "1C4F62CC967526A2"
+      ],
+      "line": "s1_act3_deep_ysolde_unlock"
+    }
+  ],
+  "0242238F2A247AFE": [
+    {
+      "quest": "67ED0BC9562790E0",
+      "deps": [
+        "0242238F2A247AFE"
+      ],
+      "line": "s1_act4_ash_morgrath_unlock"
+    }
+  ],
+  "4D0587808D220640": [
+    {
+      "quest": "5867200A6552CB88",
+      "deps": [
+        "4D0587808D220640"
+      ],
+      "line": "s1_act4_ash_vaelorn_unlock"
+    }
+  ],
+  "7074BD6B0D4A6BB7": [
+    {
+      "quest": "6B937298FD1028CD",
+      "deps": [
+        "7074BD6B0D4A6BB7"
+      ],
+      "line": "s1_act5_realm_hollow_sovereign_unlock"
+    }
+  ]
 }

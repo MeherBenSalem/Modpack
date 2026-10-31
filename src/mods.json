@@ -264,7 +264,7 @@
   "optional_deps": [],
   "decision": "include",
   "group": "bosses",
-  "reason": "Ignis, the Netherite Monstrosity, the Ancient Remnant, the Leviathan, the Harbinger\u2026"
+  "reason": "Ignis, the Netherite Monstrosity, the Ancient Remnant, the Leviathan, the Harbinger…"
  },
  {
   "name": "Mowzie's Mobs",
@@ -2947,19 +2947,19 @@
   "license": "Apache-2.0",
   "modrinth": {
    "project_id": "4eSfhd3M",
-   "version_id": "9GU0cPjU",
-   "version_number": "3.0.0",
-   "filename": "remnant_mobs-neoforge-1.21.1-3.0.0.jar",
-   "url": "https://cdn.modrinth.com/data/4eSfhd3M/versions/9GU0cPjU/remnant_mobs-neoforge-1.21.1-3.0.0.jar",
-   "sha1": "d6724cc1ddefa0c85fe9ec46cfc3b3dad78b9843",
-   "sha512": "a8173ea4581722ad078ead6e582765662c14bb2f76e216f413600ada1475d9f5bcb9f5e0024a93c163a31eab22f18fb732ed13c6d8b118b1f5b8bd8ab65413bf",
-   "size": 400663,
-   "date_published": "2026-10-24T12:09:21.521602Z"
+   "version_id": "fN3n4AJH",
+   "version_number": "3.1.0",
+   "filename": "remnant_mobs-neoforge-1.21.1-3.1.0.jar",
+   "url": "https://cdn.modrinth.com/data/4eSfhd3M/versions/fN3n4AJH/remnant_mobs-neoforge-1.21.1-3.1.0.jar",
+   "sha1": "7ba3e94377e671a18a51e393d9abb05b038e6b39",
+   "sha512": "e951222aafdcc9ef6d95a836fa4a53d59aa6a2d3ad4c05c8a17532a09e17acc8e3ec79b9f0b530376bb2a05e0a230ab6e900fbbe1b4e63567c043f50dc2546ce",
+   "size": 492412,
+   "date_published": "2026-10-29T13:12:50.477176Z"
   },
   "curseforge": {
    "project_id": 1088344,
-   "file_id": 9308810,
-   "filename": "remnant_mobs-neoforge-1.21.1-3.0.0.jar",
+   "file_id": 9362008,
+   "filename": "remnant_mobs-neoforge-1.21.1-3.1.0.jar",
    "release_type": "release",
    "cf_slug": "remnants-rpg-mobs"
   },
@@ -2979,19 +2979,19 @@
   "license": "Apache-2.0",
   "modrinth": {
    "project_id": "d85UTOuq",
-   "version_id": "TERvkZUV",
-   "version_number": "5.0.1+neoforge-1.21.1",
-   "filename": "rpg_attribute_system-neoforge-1.21.1-5.0.1.jar",
-   "url": "https://cdn.modrinth.com/data/d85UTOuq/versions/TERvkZUV/rpg_attribute_system-neoforge-1.21.1-5.0.1.jar",
-   "sha1": "3373049fd9822da8b5244738d5c45ad7f46498ab",
-   "sha512": "14b15fc5f0d46daaa8bca1728e38649fbb8387d130aa2c76b77946881991fa9e2f35d83aeb62b9957e14e27e45636badda8647295530d7047a9053f2f7a446c2",
-   "size": 3677526,
-   "date_published": "2026-10-27T13:55:13.795186Z"
+   "version_id": "kdn9WKdS",
+   "version_number": "5.1.0+neoforge-1.21.1",
+   "filename": "rpg_attribute_system-neoforge-1.21.1-5.1.0.jar",
+   "url": "https://cdn.modrinth.com/data/d85UTOuq/versions/kdn9WKdS/rpg_attribute_system-neoforge-1.21.1-5.1.0.jar",
+   "sha1": "bb7f44a92842d6fa1d36fdd94e5bfb492cafaf66",
+   "sha512": "7baeada3e2395ef43d736efbdb278befcac38e0a8a093af371afdef4ffa39f5c7914e8dde6b32f86bbd72ce352e31056a1bc7403a9054e97678a5a09b7044e3d",
+   "size": 3696526,
+   "date_published": "2026-10-31T10:21:28.342527Z"
   },
   "curseforge": {
    "project_id": 1079687,
-   "file_id": 9343361,
-   "filename": "rpg_attribute_system-neoforge-1.21.1-5.0.1.jar",
+   "file_id": 9382649,
+   "filename": "rpg_attribute_system-neoforge-1.21.1-5.1.0.jar",
    "release_type": "release",
    "cf_slug": "remnants-rpg-stats-skills-progression"
   },
@@ -3068,34 +3068,34 @@
   "reason": "The soulslike core: runes, Ember Shrines, flasks, stamina, dodge, 74 armaments, the seven Sovereigns"
  },
  {
-  "name": "Simple Terminals",
-  "slug": "simple-terminals",
-  "category": "storage QoL",
+  "name": "OmniVault (formerly Simple Terminals)",
+  "slug": "omnivault",
+  "category": "storage",
   "side": "both",
   "license": "Apache-2.0",
   "modrinth": {
    "project_id": "Ss3e4qjk",
-   "version_id": "DpRrldoJ",
-   "version_number": "1.1.1+neoforge-1.21.1",
-   "filename": "simple-terminals-1.21.1-neoforge-1.1.1.jar",
-   "url": "https://cdn.modrinth.com/data/Ss3e4qjk/versions/DpRrldoJ/simple-terminals-1.21.1-neoforge-1.1.1.jar",
-   "sha1": "3fb21b00b6a5cb026f16a2714844a010695dd6ea",
-   "sha512": "56fe737256577b9d97c56281762f28c6a2c7cbfcfee7518afa155718f1b4845aff26c3a0f46bd19042ae85596d4068e68b1fb5386c88bdb5f4f8161cd252a5a1",
-   "size": 54087,
-   "date_published": "2026-10-06T05:12:33.108621Z"
+   "version_id": "fDR6cHQE",
+   "version_number": "2.0.0+neoforge-1.21.1",
+   "filename": "omnivault-1.21.1-neoforge-2.0.0.jar",
+   "url": "https://cdn.modrinth.com/data/Ss3e4qjk/versions/fDR6cHQE/omnivault-1.21.1-neoforge-2.0.0.jar",
+   "sha1": "a601a16efec121dfd11b1b543819f16439c5ac0c",
+   "sha512": "2d7ba178c321ceb7c3a34fb8eab28bf9978a421a1884315d075046ef3b910d6da061ee0975e41e77386a219f73d09e012d8edd1545a97cde957b74b676aa4eb6",
+   "size": 1344988,
+   "date_published": "2026-10-30T13:00:52.861375Z"
   },
   "curseforge": {
    "project_id": 1528758,
-   "file_id": 9076436,
-   "filename": "simple-terminals-1.21.1-neoforge-1.1.1.jar",
+   "file_id": 9372961,
+   "filename": "omnivault-1.21.1-neoforge-2.0.0.jar",
    "release_type": "release",
-   "cf_slug": "simple-terminals"
+   "cf_slug": "omnivault"
   },
   "required_deps": [],
   "optional_deps": [],
   "decision": "include",
   "group": "nightbeam",
-  "reason": "One crafting terminal over your chests"
+  "reason": "All-in-one storage: Storage Hub and cables over your chests, terminals, autocrafting, vaults, drawers and backpacks"
  },
  {
   "name": "Smart Villagers AI (mod id smartvillagers)",
@@ -4064,7 +4064,7 @@
   ],
   "decision": "include",
   "group": "story",
-  "reason": "FTB Quests \u2194 KubeJS"
+  "reason": "FTB Quests ↔ KubeJS"
  },
  {
   "name": "KubeJS",

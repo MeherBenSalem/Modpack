@@ -35,7 +35,7 @@ player a permanent heart.
 |---|---|
 | Paths of the Ashborn | The Ashen Codex (how everything works), The Armory, The Remnant Constellation, The Ashen Company, The Fractured Archive |
 | The World Under Ash | Boss Compendium (every boss), The Dungeon Trail, Wayfarer, Bestiary |
-| Hearth & Harvest | Hearth & Harvest (food, farming, fishing), Last Light (home building, storage), The Clockwork Path (Create) |
+| Hearth and Harvest | Hearth and Harvest (food, farming, fishing), Last Light (home building, storage), The Clockwork Path (Create) |
 | Ashen Contracts | The Huntmaster's repeatable bounty board |
 
 ## Tuning knobs

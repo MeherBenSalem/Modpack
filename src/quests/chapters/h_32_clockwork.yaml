@@ -99,7 +99,7 @@ quests:
     desc: |
       A &6Millstone&r grinds wheat into &6flour&r, bones into bone meal and raw ore into crushed ore.
 
-      Flour and water make dough. The Hearth & Harvest kitchen will thank you.
+      Flour and water make dough. The Hearth and Harvest kitchen will thank you.
     tasks: [{advancement: "create:millstone"}]
     rewards: [{item: create:wheat_flour, count: 16}, {xp: 40}]
 

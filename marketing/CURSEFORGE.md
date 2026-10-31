@@ -53,10 +53,10 @@ Since then nothing that dies stays dead. The Keeper of Last Light gives you your
 | V | The Eclipsed Realm | 70+ | The Hollow Sovereign |
 | Epilogue | First Light | — | The Season 2 hook |
 
-- **The Keeper narrates** the main story and the old tales ("♪ Listen to the Keeper" quests), and speaks at every
-  Sovereign's fall.
+- **The Keeper narrates** the whole main story: the old tales ("♪ Listen to the Keeper" quests), every step of the
+  acts, a warning before each Sovereign and a word at every Sovereign's fall.
 - **Side chapters:** the Ashen Codex (how everything works), the Armory, the Remnant Constellation, the Ashen Company,
-  the Boss Compendium, the Dungeon Trail, the Bestiary, Hearth & Harvest, Last Light and the Clockwork Path.
+  the Boss Compendium, the Dungeon Trail, the Bestiary, Hearth and Harvest, Last Light and the Clockwork Path.
 - **The Ashen Contracts:** a repeatable bounty board, so the mid-game never runs dry.
 - **Old names for every land.** Walk into a new region and its name fades in: the Grey Wood, the Rime Veil, the Broken
   Crowns, the Ashlands, the Starless Reach.

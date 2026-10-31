@@ -38,6 +38,7 @@ quests:
     size: 1.5
     keeper: |
       Campfire for the heart. Gold for the oath. Deepslate for the bones. And old flame, the kind nothing in this world makes any more. Here. I kept some.
+    voice: true
     desc: |
       An &6Ember Shrine&r is a promise made in stone: that light will be kept here, whatever comes. The first shrines were built by the Sun-Crown's heralds. Almost all of them went cold.
 
@@ -72,6 +73,7 @@ quests:
     deps: [kindle]
     keeper: |
       Light hoarded is light wasted. The Sovereigns learned that too late. Spend yours.
+    voice: true
     desc: |
       At a shrine, runes become flesh. The old heralds called it &oattunement&r: letting a scrap of sun decide what kind of person you'll be.
 
@@ -98,6 +100,7 @@ quests:
     deps: [kindle]
     keeper: |
       One fire is a home. Two fires is a road. Ten fires, and the dark starts to feel crowded.
+    voice: true
     desc: |
       Kindled shrines remember each other. Step into one and you can step out of another, as if the light were a single room with many doors.
 
@@ -112,6 +115,7 @@ quests:
     deps: [kindle]
     keeper: |
       The Company? Survivors. They stayed together and they stayed paid, which is more than the Sovereigns managed.
+    voice: true
     desc: |
       The &6Ashen Company&r has no flag, no country and no god. Their captain keeps a ledger of every sellsword who ever drew Company pay, and reads the names aloud on Hunter's Moons.
 
@@ -143,6 +147,7 @@ quests:
     deps: [kindle]
     keeper: |
       The dead keep pockets. Habit, I think. Nobody tells them they can't take it with them.
+    voice: true
     desc: |
       Remnants carry what they carried when they died: coin, trinkets, letters to people long gone. The Company calls it &6spoils&r and doesn't ask whose.
 
@@ -169,6 +174,7 @@ quests:
     deps: [first_dungeon]
     keeper: |
       Every guardian carries a map to someone worse. Nobody knows who started the chain. Nobody's reached the end and come back to say.
+    voice: true
     desc: |
       Four strongholds, four Guardians, one trail of maps. The Company swears the trail was laid by a Sovereign's quartermaster to hide something. The Archivist swears it was a joke. Both have lost people to it.
 
@@ -183,6 +189,7 @@ quests:
     deps: [proven_hunter]
     keeper: |
       When a Sovereign went mad, its champions went with it. They still carry their master's light. Take it back.
+    voice: true
     desc: |
       About one hostile in twenty-five wears a &6gold title&r: a &6champion&r, sworn to a Sovereign an age ago and never released from the oath. Champions carry the Sovereigns' &6Fragments&r, the shards of the broken sun, and affixes like Blazing, Phasing or Warded.
 
@@ -197,6 +204,7 @@ quests:
     deps: [champion]
     keeper: |
       The Dusk Rider kept the hours for the Crown. When the sun went out, he stopped his clock at that minute, and he has been riding at that minute ever since.
+    voice: true
     desc: |
       The first Sovereign is the &6Dusk Rider&r, Who Rides When Light Fails: herald of evening, keeper of the Crown's hours. His token is a &6clock&r. He never forgot what time it was when the sun went out.
 
@@ -221,6 +229,8 @@ quests:
     subtitle: "Who Rides When Light Fails. Level 15."
     icon: runeborn:duskrider_glaive
     deps: [dusk_sigil, level_up]
+    unlock: |
+      The Sigil's warm. He'll feel it. Wait for dusk, stand somewhere open, and hold it up. The Dusk Rider has ridden the same road every evening for an age. Tonight it goes through you. Don't run from the horse, Ashborn. Roll through it.
     shape: gear
     size: 2.0
     keeper: |
@@ -243,6 +253,7 @@ quests:
     deps: [dusk_rider]
     keeper: |
       The Smith can make something of that. He says the Rider's glaive still keeps time, if you listen.
+    voice: true
     desc: |
       A Sovereign's &6Relic&r is the part of them that refused to die: the habit they couldn't break, hardened into an object.
 

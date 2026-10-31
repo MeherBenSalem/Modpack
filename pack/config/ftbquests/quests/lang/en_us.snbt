@@ -8,7 +8,7 @@
 	chapter.19459C781145AE41.chapter_subtitle: ["Prisons, crypts, temples and forts. Somebody built them to keep things in."]
 	chapter.19459C781145AE41.title: "&bThe Dungeon Trail"
 	chapter.1F66B030D96EB9E2.chapter_subtitle: ["The Ashborn still has to eat. Last Light feeds itself."]
-	chapter.1F66B030D96EB9E2.title: "&aHearth & Harvest"
+	chapter.1F66B030D96EB9E2.title: "&aHearth and Harvest"
 	chapter.254E1D32E51CD0D3.chapter_subtitle: [
 		"&7Optional.&r Some Ashborn remember gears. Light automation for Last Light, with Create."
 	]
@@ -47,7 +47,7 @@
 	chapter_group.736A8EEBE4B075CD.title: "&bThe World Under Ash"
 	chapter_group.7641D8544E1E75E6.title: "&ePaths of the Ashborn"
 	chapter_group.764F9A359750532B.title: "&6The Long Eclipse"
-	chapter_group.7E3F2D0C845CD671.title: "&aHearth & Harvest"
+	chapter_group.7E3F2D0C845CD671.title: "&aHearth and Harvest"
 	file.0000000000000001.title: "&6Remnants &7| &fThe Long Eclipse"
 	quest.0057E9078F823C01.quest_desc: [
 		"The sky went cold. The ground didn't. In &6Yellowstone&r the earth still steams and bubbles, as if it remembers noon."
@@ -99,7 +99,7 @@
 	quest.035F99AB6E2BC271.quest_subtitle: "Gold's honest cousin."
 	quest.035F99AB6E2BC271.title: "&aReal Alloys"
 	quest.037DDC36DF427850.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"Your runes have opinions now. Listen to them. A blade, a star, a prayer. Pick one before the dark picks for you.\"&r"
 		""
@@ -147,7 +147,7 @@
 	quest.05A146304EF19E9B.quest_subtitle: "It keeps the Grave Iron."
 	quest.05A146304EF19E9B.title: "The Burial Guardian"
 	quest.05EAAA5866A04A29.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"Some of them have died more than once. Each time they come back meaner. Count the crests before you count your chances.\"&r"
 		""
@@ -174,7 +174,7 @@
 	quest.069692FDDF270544.quest_subtitle: "Fish don't care what happened to the sun."
 	quest.069692FDDF270544.title: "A Line in Dark Water"
 	quest.06B2E89F7AAD0CBA.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"The end of the trail. The Archivist owes me a drink. I said someone would make it.\"&r"
 		""
@@ -185,7 +185,7 @@
 	quest.06B2E89F7AAD0CBA.quest_subtitle: "Tier IV. The end of the dungeon trail."
 	quest.06B2E89F7AAD0CBA.title: "The Soulfire Crypt"
 	quest.0706431E96A6A53E.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"The dead keep pockets. Habit, I think. Nobody tells them they can't take it with them.\"&r"
 		""
@@ -221,6 +221,13 @@
 	]
 	quest.07EB56F3B729FC13.quest_subtitle: "The deepest Labyrinth."
 	quest.07EB56F3B729FC13.title: "The Abyssal Halls"
+	quest.09DD0BBF1E70CCBB.quest_desc: [
+		"A &6Drawer&r holds a great many of a single item and shows it on its face. A &6Copper Vault&r (copper around a chest) is a chest with room to spare, and an &6upgrade kit&r grows any vault, chest or barrel in place, contents and all."
+		""
+		"&7Both join your Storage Hub's network like any other chest."
+	]
+	quest.09DD0BBF1E70CCBB.quest_subtitle: "A place for every one of a thing."
+	quest.09DD0BBF1E70CCBB.title: "Drawers and Vaults"
 	quest.09ECC735C3E73819.quest_desc: [
 		"&o\"If you feel like something is following you, something is. Turn around slowly. Then stop being slow.\"&r"
 		""
@@ -344,6 +351,17 @@
 	]
 	quest.0EEE9DC26AF062BF.quest_subtitle: "Traits that keep it standing."
 	quest.0EEE9DC26AF062BF.title: "Hard to Kill"
+	quest.0FAC30799ABFA645.quest_desc: [
+		"&6The Keeper&r"
+		""
+		"&f&o\"The Crown's treasurers kept ledgers that wrote themselves. I thought it was sorcery. It was just very good bookkeeping.\"&r"
+		""
+		"&6Omnium&r is amethyst, quartz and redstone ground to dust, blended with iron and smelted. Work it into &6Logic&r and &6Advanced Processors&r, and you can build a &6Nexus Core&r: the heart of a network with no channel limits, cells, wireless terminals and &6autocrafting&r."
+		""
+		"&7Encode a recipe in a &6Pattern Encoding Terminal&7, hand it to a &6Pattern Provider&7 and ask the terminal for what you need. JEI's &e+&7 button loads any recipe into the encoder."
+	]
+	quest.0FAC30799ABFA645.quest_subtitle: "Let the vault do the crafting."
+	quest.0FAC30799ABFA645.title: "&dThe Nexus Core"
 	quest.10216BCC92CE4DFA.quest_desc: [
 		"The Ashlands' fortresses sprawl now: halls, bridges, a forge or two. Wither skeletons walk them with their heads still on."
 		""
@@ -459,7 +477,7 @@
 	quest.13C1BD37F51047C4.quest_subtitle: "Every land has a name too."
 	quest.13C1BD37F51047C4.title: "&6The Compass That Listens"
 	quest.1410C8CE7B678479.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"The sea kept a secret for the world. Three old things guard it, and they curse anyone who swims too close. Swim close.\"&r"
 		""
@@ -560,7 +578,7 @@
 	quest.1932FE6F415B39CD.quest_subtitle: "Minor bounty · 10 spiders"
 	quest.1932FE6F415B39CD.title: "Contract: Eight Legs"
 	quest.194DBF5B86695C7E.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"A hundred levels. You could carry a Sovereign's share of light now, and not go mad from it. Probably.\"&r"
 		""
@@ -571,7 +589,7 @@
 	quest.194DBF5B86695C7E.quest_subtitle: "Rune level 100."
 	quest.194DBF5B86695C7E.title: "Ascendant"
 	quest.19610B4F5D841A48.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"Armour doesn't make you brave. It makes you stupid for a little longer, which is nearly the same thing.\"&r"
 		""
@@ -586,7 +604,7 @@
 		""
 		"Kill both. Look down for the first, up for the second."
 	]
-	quest.19666D84A72F033D.quest_subtitle: "Friends & Foes. The ones that aren't friends."
+	quest.19666D84A72F033D.quest_subtitle: "Friends and Foes. The ones that aren't friends."
 	quest.19666D84A72F033D.title: "Teeth and Ice"
 	quest.19DAFF2C11C635D4.quest_desc: [
 		"A walled keep sinking into a swamp, still garrisoned, still loyal to someone who died a long time ago."
@@ -619,7 +637,7 @@
 	quest.1ABD147F1054853C.quest_subtitle: "Every Ashborn starts the same way."
 	quest.1ABD147F1054853C.title: "Wood Before Iron"
 	quest.1B71C09161A6DDFB.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"Toll's ringing. Bar the doors, sharpen something, and don't stand near the windows. Or go out there. You were always going to go out there.\"&r"
 		""
@@ -658,7 +676,7 @@
 	quest.1BD8E51A73CB9F07.quest_subtitle: "Somewhere, a day never ended."
 	quest.1BD8E51A73CB9F07.title: "&eEvery Ruin Has a Before"
 	quest.1C4F62CC967526A2.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"Ysolde loved her garden more than her court. When the sun went out, the flowers started dying, so she fed them. First the servants. Then the court. Then herself, a little, every day.\"&r"
 		""
@@ -794,7 +812,7 @@
 	quest.23DCECA4ED0C21FE.quest_subtitle: "A sky only the Ashborn can see."
 	quest.23DCECA4ED0C21FE.title: "&eThe Remnant Constellation"
 	quest.244492C516FAF63B.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"The Company has a saying: pick on someone your own size, and you'll stay that size forever.\"&r"
 		""
@@ -862,8 +880,15 @@
 	]
 	quest.26F13D2CFD0BD33F.quest_subtitle: "Beer, improved by things that grow underground."
 	quest.26F13D2CFD0BD33F.title: "Strongroot Ale"
+	quest.26F15EA649D3A6A9.quest_desc: [
+		"An &6OmniVault Storage Hub&r (planks, chests, iron and redstone) joins every chest, barrel and Sophisticated chest it touches into one network. &6Inventory Cables&r (wooden slabs, iron nuggets, redstone) carry it to chests further away."
+		""
+		"&7Nothing to power, nothing to feed. Just a room that knows where everything is."
+	]
+	quest.26F15EA649D3A6A9.quest_subtitle: "Every chest it touches becomes one."
+	quest.26F15EA649D3A6A9.title: "The Storage Hub"
 	quest.27437F0D8FF32DCD.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"The Dusk Rider kept the hours for the Crown. When the sun went out, he stopped his clock at that minute, and he has been riding at that minute ever since.\"&r"
 		""
@@ -888,7 +913,7 @@
 	quest.27B8119DAEAD1FB1.quest_subtitle: "Seven places on the water."
 	quest.27B8119DAEAD1FB1.title: "&aCoastal Wanderer"
 	quest.282CFDC633090E33.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"Strange, killing yourself. It gets easier. That should worry you more than it does.\"&r"
 		""
@@ -899,7 +924,7 @@
 	quest.282CFDC633090E33.quest_subtitle: "Take back what's yours."
 	quest.282CFDC633090E33.title: "Not This Time"
 	quest.282F5F9817BEE567.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"The Company? Survivors. They stayed together and they stayed paid, which is more than the Sovereigns managed.\"&r"
 		""
@@ -926,7 +951,7 @@
 	quest.285823D079E22842.quest_subtitle: "One more star, bought and paid for."
 	quest.285823D079E22842.title: "The Remnant Tome"
 	quest.289D0416C0109482.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"The Crown was made to hold the sun. Every piece still remembers how. Wear it, and it will try to hold you.\"&r"
 		""
@@ -946,16 +971,16 @@
 	quest.28C2D4799B0F9121.quest_subtitle: "Bring me what the dead leave behind."
 	quest.28C2D4799B0F9121.title: "&eThe Armory"
 	quest.28DE5885F44FB7AB.quest_desc: [
-		"Your map is parchment and ink, fogged over every land you haven't walked. &eN&r hides the minimap, &eM&r opens the world map, &eB&r places a marker."
+		"Your map is parchment and ink, fogged over every land you haven't walked. &eN&r hides the minimap, &eM&r opens the world map, &eCtrl+B&r places a marker."
 		""
-		"Shrines don't mark themselves. Stand at yours, press &eB&r and pick the &6Site of Grace&r emblem. On the world map, &eG&r lists every grace you've marked."
+		"Shrines don't mark themselves. Stand at yours, press &eCtrl+B&r and pick the &6Site of Grace&r emblem. On the world map, &eG&r lists every grace you've marked."
 		""
 		"Where you die, the map leaves a &cBloodstain&r (it keeps the last three). Your last bed is your &aResting Place&r."
 	]
 	quest.28DE5885F44FB7AB.quest_subtitle: "Mark the fires. The map remembers the rest."
 	quest.28DE5885F44FB7AB.title: "Ink and Grace"
 	quest.295933238D4366D9.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"Odric kept this gate for the heralds. Kept it well. When the heralds died, nobody told him to stop.\"&r"
 		""
@@ -966,7 +991,7 @@
 	quest.295933238D4366D9.quest_subtitle: "Ser Odric was told not to let anyone leave."
 	quest.295933238D4366D9.title: "&6Gatekeeper of the Threshold"
 	quest.299D979D228918F3.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"Nights are longer than they used to be. Or we are smaller. Light a fire and don't argue with the dark.\"&r"
 		""
@@ -977,7 +1002,7 @@
 	quest.299D979D228918F3.quest_subtitle: "Light holds the dark back. For now."
 	quest.299D979D228918F3.title: "The First Night"
 	quest.29E73181EF9F52B4.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"Light hoarded is light wasted. The Sovereigns learned that too late. Spend yours.\"&r"
 		""
@@ -995,7 +1020,7 @@
 	quest.29FDDC247E8E25AD.quest_subtitle: "A basin, and a whisk the size of a man."
 	quest.29FDDC247E8E25AD.title: "Mixing It Up"
 	quest.2A6B94BDD99CE7BC.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"You're not strong yet. So don't be there when it lands.\"&r"
 		""
@@ -1036,7 +1061,7 @@
 	quest.2BC2703123E27B5A.quest_subtitle: "Old Power. An ocean monument. Level 30."
 	quest.2BC2703123E27B5A.title: "&5The Elder Guardian"
 	quest.2C20532DADD2D13F.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"One fire is a home. Two fires is a road. Ten fires, and the dark starts to feel crowded.\"&r"
 		""
@@ -1069,6 +1094,13 @@
 	]
 	quest.2CD95D9E03D2D57F.quest_subtitle: "The glass remembers what stone forgets."
 	quest.2CD95D9E03D2D57F.title: "Through Yesterglass"
+	quest.2CEC302EA8DABAE6.quest_desc: [
+		"Veterans and stronger sometimes drop a &aMending Salve&r, which heals a little over a few seconds. Elites and stronger may drop a &cHunter's Draught&r: a large heal, then regeneration."
+		""
+		"&7Keep one for the fight you didn't plan."
+	]
+	quest.2CEC302EA8DABAE6.quest_subtitle: "The dead carry medicine. Take it."
+	quest.2CEC302EA8DABAE6.title: "Field Dressings"
 	quest.2D0B1E132CA6FE68.quest_desc: [
 		"The ash from the Long Eclipse fell everywhere. In one stretch of savanna, it never blew away."
 		""
@@ -1157,14 +1189,14 @@
 	quest.2FBD8F55F6E3206B.quest_subtitle: "The dead hoard. Fairly, now."
 	quest.2FBD8F55F6E3206B.title: "Everyone's Share"
 	quest.2FC050ACF53FEE8A.quest_desc: [
-		"A &6Crafting Terminal&r (crafting table, chest, redstone torch and a diamond) set against a chest, or against your Storage Controller, shows everything inside in one scrolling view, with a crafting grid beside it."
+		"A &6Terminal&r (iron, glass, redstone and a chest) wired to your Storage Hub shows everything in the network in one scrolling view: search by name, &e@mod&r or &e#tag&r. Add a crafting table and redstone and it becomes a &6Crafting Terminal&r, with a crafting grid beside it."
 		""
 		"&o\"I've seen Sovereigns' treasuries kept worse.\"&r"
 	]
 	quest.2FC050ACF53FEE8A.quest_subtitle: "Every chest at once, and a table to work at."
 	quest.2FC050ACF53FEE8A.title: "&aThe Crafting Terminal"
 	quest.2FF7CCB355D5CBF4.quest_desc: [
-		"A &6Feeding Upgrade&r eats for you from the backpack whenever you're hungry. Stock it from the Hearth & Harvest kitchen and stop opening your inventory in the middle of a fight."
+		"A &6Feeding Upgrade&r eats for you from the backpack whenever you're hungry. Stock it from the Hearth and Harvest kitchen and stop opening your inventory in the middle of a fight."
 	]
 	quest.2FF7CCB355D5CBF4.quest_subtitle: "Eat without stopping."
 	quest.2FF7CCB355D5CBF4.title: "The Pack That Feeds You"
@@ -1206,7 +1238,7 @@
 	quest.30A32CEC43EA5DB9.quest_subtitle: "Three steps to a stone."
 	quest.30A32CEC43EA5DB9.title: "Tempered Steel"
 	quest.30F39C23D463CB31.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"Every guardian carries a map to someone worse. Nobody knows who started the chain. Nobody's reached the end and come back to say.\"&r"
 		""
@@ -1275,7 +1307,7 @@
 	quest.3317D34188380A48.quest_subtitle: "Grave bounty · the Eclipsed Realm"
 	quest.3317D34188380A48.title: "Contract: The Cryptborn"
 	quest.337E61B442FEAD4C.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"Fifty levels of light. You glow, you know. Not so anyone else could see. But I can.\"&r"
 		""
@@ -1286,7 +1318,7 @@
 	quest.337E61B442FEAD4C.quest_subtitle: "Rune level 50."
 	quest.337E61B442FEAD4C.title: "Runebearer"
 	quest.3463E48C851C4E39.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"The Sovereigns couldn't kill everything they feared. So they dug.\"&r"
 		""
@@ -1304,7 +1336,7 @@
 	quest.34B0A6FBE6926ED4.quest_subtitle: "A cavern deep underground. Level 35."
 	quest.34B0A6FBE6926ED4.title: "The Void Blossom"
 	quest.354182D19FF9BB17.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"It can't see you. It doesn't need to. Every heart is a drum to it, and yours is louder than most.\"&r"
 		""
@@ -1345,7 +1377,7 @@
 	quest.3675ACCA0A03C6D3.quest_subtitle: "A bag that bends over so you don't have to."
 	quest.3675ACCA0A03C6D3.title: "Upgrades"
 	quest.36E2AF0A1C071B2E.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"Quiet down there. Not the polite kind. The kind that is listening back.\"&r"
 		""
@@ -1378,6 +1410,17 @@
 	]
 	quest.37BCA8A9E629FACA.quest_subtitle: "Tears of the shrine flame."
 	quest.37BCA8A9E629FACA.title: "Ember and Azure"
+	quest.3814AEC29AC5D661.quest_desc: [
+		"&6The Keeper&r &e♪"
+		""
+		"&f&o\"Some nights the huntsmen don't wait for a red moon. They choose. They learn your name, they take your trail, and they come in threes until the sky goes grey. The last one through the trees will be the one who taught the others. Keep your back to a wall and your eyes on the dawn. It always comes. That's the one promise the dark never broke.\"&r"
+		""
+		"Every so often a &4Grim Vigil&r falls at dusk: a horn, a title across the sky, and until sunrise named, ranked hunters are sent after every survivor in waves. With the last wave comes a &cRemnant&r-rank mini-boss."
+		""
+		"&7Survive until sunrise. Seeing the dawn pays experience and Valor; the mini-boss drops extra Remnant Shards and may drop a &6Vital Ember&7. Check the threat around you any time with &e/remnants difficulty&7."
+	]
+	quest.3814AEC29AC5D661.quest_subtitle: "Named hunters, and something worse. Until dawn."
+	quest.3814AEC29AC5D661.title: "&4The Grim Vigil"
 	quest.38273B3664CCA777.quest_desc: [
 		"A &6Fisherman's Cottage&r sits on a sandy or snowy beach. Saylor lives there, and trades things no village fisherman will."
 		""
@@ -1423,6 +1466,17 @@
 	]
 	quest.39A176F019D32804.quest_subtitle: "Traits that change the fight."
 	quest.39A176F019D32804.title: "Hard to Pin Down"
+	quest.39BA92A4C0CA0AC3.quest_desc: [
+		"&6The Keeper&r &e♪"
+		""
+		"&f&o\"You found one. A Vital Ember. When the sun broke, a little of it fell into everything that was alive to catch it. The dead keep theirs a long time. Take it in, Ashborn. It will make your heart a little bigger, and it won't give the room back when you die.\"&r"
+		""
+		"Ranked monsters, and every event night's mini-boss, sometimes carry a &6Vital Ember&r: the last of the old sun's warmth, kept in something that died."
+		""
+		"&7Use one to gain a heart of max health for good, up to ten. It stays through death."
+	]
+	quest.39BA92A4C0CA0AC3.quest_subtitle: "A spark of the old sun, still warm."
+	quest.39BA92A4C0CA0AC3.title: "&6Kindled"
 	quest.39DE42D02949D134.quest_desc: [
 		"Handcrafted &6trophies&r are made from what you take off the dead: a spider's eye, a skeleton's skull, a creeper's head, a phantom's membrane."
 		""
@@ -1447,7 +1501,7 @@
 	quest.3B27876F2A33641B.quest_subtitle: "The cartographer sells more than maps."
 	quest.3B27876F2A33641B.title: "Call for Adventure"
 	quest.3B2BC7E46FADA8F0.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"Don't look at their faces. Some of them used to be someone's.\"&r"
 		""
@@ -1660,7 +1714,7 @@
 	quest.45A8C358612B49ED.quest_subtitle: "Illager Invasion. Taiga and snow."
 	quest.45A8C358612B49ED.title: "The Illagers' Fort"
 	quest.463F4A4D56B7E057.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"Varghast was a good king, once. Too good. He couldn't bear to lose a single soldier, so he kept them. Every arm of every man who fell for him, sewn onto his own.\"&r"
 		""
@@ -1724,7 +1778,7 @@
 		""
 		"Build one. Tame the other. Light every place the Glare grumbles at."
 	]
-	quest.47CB725721EA1EEA.quest_subtitle: "Friends & Foes. Not everything is hostile."
+	quest.47CB725721EA1EEA.quest_subtitle: "Friends and Foes. Not everything is hostile."
 	quest.47CB725721EA1EEA.title: "Small Kindnesses"
 	quest.48066C21C40D4177.quest_desc: [
 		"&6Zinc Ore&r hides underground in pale veins. Smelt the raw zinc into ingots."
@@ -1778,7 +1832,7 @@
 	quest.4B6D3CFFC418A385.quest_subtitle: "Twinblades"
 	quest.4B6D3CFFC418A385.title: "Two Edges, No Rest"
 	quest.4C67E689E70A462B.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"Stone. Good. Stone doesn't care what you were, either.\"&r"
 		""
@@ -1803,7 +1857,7 @@
 	quest.4CF532D459AE3D38.quest_subtitle: "Born in Chaos. They hunt in packs."
 	quest.4CF532D459AE3D38.title: "The Mound of Hounds"
 	quest.4D0587808D220640.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"Catch its breath before it dies. That breath was sunlight, once. Vaelorn will smell it on you.\"&r"
 		""
@@ -1858,7 +1912,7 @@
 	quest.4E3972478AB115D3.quest_subtitle: "Spawner rooms that grew up."
 	quest.4E3972478AB115D3.title: "Bones and Webs"
 	quest.4E4B23BBB691EBC8.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"Seven Sovereigns, seven embers. The eighth light is where he took it: behind the black sun. You'll need a door.\"&r"
 		""
@@ -2012,7 +2066,7 @@
 	quest.560C7BFC391C8635.quest_subtitle: "The Underworld Arena. Level 55."
 	quest.560C7BFC391C8635.title: "Helvar, the Underworld Knight"
 	quest.5651DDA19B1EF5FB.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"Campfire for the heart. Gold for the oath. Deepslate for the bones. And old flame, the kind nothing in this world makes any more. Here. I kept some.\"&r"
 		""
@@ -2110,7 +2164,7 @@
 	quest.5B17BE44F64CBE69.quest_desc: [
 		"A &6Millstone&r grinds wheat into &6flour&r, bones into bone meal and raw ore into crushed ore."
 		""
-		"Flour and water make dough. The Hearth & Harvest kitchen will thank you."
+		"Flour and water make dough. The Hearth and Harvest kitchen will thank you."
 	]
 	quest.5B17BE44F64CBE69.quest_subtitle: "Flour for the kitchen."
 	quest.5B17BE44F64CBE69.title: "Embrace the Grind"
@@ -2122,7 +2176,7 @@
 	quest.5C4120A5CBCF549B.quest_subtitle: "Twelve notes from the sea. Most of them are complaints."
 	quest.5C4120A5CBCF549B.title: "Message Received"
 	quest.5C77FA2F283917EA.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"You're branding them now? On purpose? I've buried braver people than you. Well. Not buried. You know what I mean.\"&r"
 		""
@@ -2207,7 +2261,7 @@
 	quest.604CE6C989BE7731.quest_subtitle: "The Eclipsed Realm. Ashbound and Corrupted Relics."
 	quest.604CE6C989BE7731.title: "Cogs and Shards"
 	quest.60736FE08ABE9C7F.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"Up the stair. Through the gate. Don't look back; there's nothing behind you but graves, and one of them was yours.\"&r"
 		""
@@ -2248,7 +2302,7 @@
 	quest.615B8AB77BC469EF.quest_subtitle: "Skip the night. Keep your shrine."
 	quest.615B8AB77BC469EF.title: "Rest on the Road"
 	quest.616E722849BB220E.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"Three skulls and the sand of lost souls. That's not a summoning, Ashborn, it's a dinner bell.\"&r"
 		""
@@ -2307,7 +2361,7 @@
 	quest.63F14370CFF061C7.quest_subtitle: "The Realm will not change."
 	quest.63F14370CFF061C7.title: "&5Beneath the Eclipse"
 	quest.6456CEF413461135.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"When a Sovereign went mad, its champions went with it. They still carry their master's light. Take it back.\"&r"
 		""
@@ -2332,7 +2386,7 @@
 	quest.6492667B55216AA8.quest_subtitle: "Break a rule. Pay for it."
 	quest.6492667B55216AA8.title: "Keystones"
 	quest.6493FE1CBE6B9CD4.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"That horn means one of them has your scent. Don't run. They're faster, and they've done this before.\"&r"
 		""
@@ -2385,7 +2439,7 @@
 	quest.65CD1B65F3364DF4.quest_subtitle: "Nothing in a village goes to waste."
 	quest.65CD1B65F3364DF4.title: "Grasping at Straws"
 	quest.65E3C17D51F13C6D.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"Hot, isn't it? He wanted it to stay warm forever. Be careful what you wish for when you wear a crown.\"&r"
 		""
@@ -2464,7 +2518,7 @@
 	quest.67ED0BC9562790E0.quest_subtitle: "Sovereign of the Burning Crown. Level 50."
 	quest.67ED0BC9562790E0.title: "&6Sovereign: Morgrath, Ash Sovereign"
 	quest.67F80731A0585B0A.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"Follow the eyes. They know where the edge is. They've been trying to get back there since the sky went dark.\"&r"
 		""
@@ -2579,7 +2633,7 @@
 	quest.6C3C7785780D7DD1.quest_subtitle: "A Labyrinth: the Sunscorched Tomb."
 	quest.6C3C7785780D7DD1.title: "Dethroned"
 	quest.6C617748F8950056.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"Sylvara buried her piece of the sun under the snow to keep it from melting away. It worked. Nothing there has melted in an age, including her.\"&r"
 		""
@@ -2597,7 +2651,7 @@
 	quest.6C6C3832262BBC37.quest_subtitle: "Bulk cooking, the engineer's way."
 	quest.6C6C3832262BBC37.title: "Through Fire and Soul Fire"
 	quest.6CA5B84D2F345074.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"The Smith is singing. Badly. The Company's captain is pretending not to cry. Come home, Ashborn. Somebody saved you a seat by the fire, though I suppose you don't need the fire any more.\"&r"
 		""
@@ -2629,7 +2683,7 @@
 	quest.6CFEAF41F7D1C50A.quest_subtitle: "Anywhere you dare. Level 90."
 	quest.6CFEAF41F7D1C50A.title: "&cRemnant: Ossukage"
 	quest.6D7FD40BC81A0E63.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"You had a life before the ash. Most of you remember a sword, or a prayer, or a debt. Pick the one that feels true. It won't matter to the dead.\"&r"
 		""
@@ -2640,7 +2694,7 @@
 	quest.6D7FD40BC81A0E63.quest_subtitle: "Pick the life you half-remember."
 	quest.6D7FD40BC81A0E63.title: "What You Were"
 	quest.6D86DE336AB40AB6.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"The Smith can make something of that. He says the Rider's glaive still keeps time, if you listen.\"&r"
 		""
@@ -2826,7 +2880,7 @@
 	quest.7678572C5CDE2BAB.quest_subtitle: "Four small sins make a bigger one."
 	quest.7678572C5CDE2BAB.title: "The Dead Hoard"
 	quest.7678FF900809530E.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"Before the Crown, there was a king of sand who refused to die. He was the first. Everything rising out there learned it from him.\"&r"
 		""
@@ -2924,7 +2978,7 @@
 	quest.79C830E03DC57E0F.quest_subtitle: "Creepers that rose wrong."
 	quest.79C830E03DC57E0F.title: "&aThe Wrongborn"
 	quest.7A11D1EEA3BD0D28.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"Put it down, Ashborn. It doesn't fit anyone. That was always the problem.\"&r"
 		""
@@ -2995,7 +3049,7 @@
 	quest.7B5BD6C5BA5AF56F.quest_subtitle: "She knows every rank and every trait. Ask nicely."
 	quest.7B5BD6C5BA5AF56F.title: "&cThe Huntmaster's Board"
 	quest.7BCC2DCBDC56577B.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"Feel that? A little warmth, where there wasn't any. That was theirs. Now it's yours. Don't lose it.\"&r"
 		""
@@ -3027,7 +3081,7 @@
 	quest.7CC8D5C9FD545DC8.quest_subtitle: "Ingots in, sheets out."
 	quest.7CC8D5C9FD545DC8.title: "Pressed Flat"
 	quest.7CD33967D099FE24.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"When the Hollow Sovereign drank the sun, a drop of it spilled off the edge of the world. It landed there. The Dragon has been guarding it ever since, and it doesn't know why.\"&r"
 		""
@@ -3047,7 +3101,7 @@
 	quest.7D6EF30C6076578E.quest_subtitle: "Your death leaves a Remnant."
 	quest.7D6EF30C6076578E.title: "&cEcho of the Fallen"
 	quest.7E3D4C73C791AAAC.quest_desc: [
-		"&6The Keeper&r"
+		"&6The Keeper&r &e♪"
 		""
 		"&f&o\"Kaelthar was afraid of the dark, so he kept the one thing that still flashed: lightning. He drowned his own coast to keep the storm close. Every bolt you see out there is him, still talking to it.\"&r"
 		""

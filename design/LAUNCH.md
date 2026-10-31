@@ -44,7 +44,10 @@ run and the Last Light NPCs, the Echo and the Eclipse bar work. A client play-te
 
 ## Narration (the Keeper's voice)
 
-- 25 lines (tales, Sovereign falls, the Threshold) are scripted in `src/voice/lines.yaml`, generated from the quests.
+- 81 lines are scripted in `src/voice/lines.yaml`, generated from the quests: every Keeper line in the main story
+  (spoken when its quest completes), eight unlock lines (the Keeper warns you when each Sovereign's fight becomes
+  available; `unlock:` in a quest) and the Threshold's cinematics. KubeJS queues a player's lines so two quests
+  finishing together play one after the other.
 - The shipped audio is a **placeholder made with Kokoro**, an open-source TTS model (Apache-2.0), mastered by
   `tools/build_voice.py`. The ElevenLabs account connected during development had no credits left, so nothing was
   generated there.
@@ -52,6 +55,14 @@ run and the Last Light NPCs, the Echo and the Eclipse bar work. A client play-te
   `python3 tools/build_voice.py`. Real recordings automatically replace the placeholders.
   The voice picked for the Keeper was "Arkadius - Old Storyteller", eleven_v4, about 7,000 characters for the whole script.
 - Players can turn the Keeper down with the *Voice/Speech* volume slider.
+
+## Pack-side fixes for mod bugs (remove when the mod is fixed)
+
+- **Remnants | The Eclipsed Realm 3.1.0:** `fog_gate` and `grace_ember` block models use the old `forge_data` key,
+  which NeoForge 1.21.1 rejects (missing-model blocks). Fixed copies with `neoforge_data` live in
+  `pack/kubejs/assets/remnant_bosses/models/block/`.
+- **Amendments' sliding hotbar selection** draws the selection box over the held item, and Ashen 16x's box is
+  opaque, so the selected item vanished. `config/amendments-client.toml` sets `hotbar_slot_animation_speed = 0`.
 
 ## The Threshold (first-join starting area)
 

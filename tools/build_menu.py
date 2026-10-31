@@ -5,7 +5,8 @@
 
 Title screen (UI scale 2 at 1920x1080, auto-scaled so every window gets the same 960x540 units): the dark plate with
 the logo (menu_background_dark.png), and the five vanilla buttons re-skinned as centred, text-only entries
-(art/out/menu/btn_<entry>_<normal|hover>.png) with a soft chime on hover and a struck bell on click. Keeping the
+(art/out/menu/btn_<entry>_normal.png, and btn_<entry>_hover.apng: a 160 ms one-shot animation that FancyMenu restarts
+on every hover) with a soft chime on hover and a struck bell on click. Keeping the
 vanilla buttons keeps their behaviour. Realms, the vanilla logo, the splash text and the version lines are hidden;
 FancyMenu won't hide the copyright line. The 20x20 icons (language, accessibility, Create, Supplementaries) sit in
 the bottom-left corner, placed by pack/kubejs/client_scripts/remnants/title_menu.js: FancyMenu can't name the
@@ -71,7 +72,7 @@ def vanilla(ident, anchor="vanilla", x=0, y=0, w=200, h=20, hidden=False, skin=N
         a = "[source:local]/config/fancymenu/assets"
         look = (f"  label =\n"
                 f"  backgroundnormal = {a}/menu/btn_{skin}_normal.png\n"
-                f"  backgroundhovered = {a}/menu/btn_{skin}_hover.png\n"
+                f"  backgroundhovered = {a}/menu/btn_{skin}_hover.apng\n"
                 f"  background_texture_inactive = {a}/menu/btn_{skin}_normal.png\n"
                 f"  hoversound = {a}/sounds/ui_hover.ogg\n"
                 f"  clicksound = {a}/sounds/ui_click.ogg\n")
@@ -161,9 +162,10 @@ ENTRIES = [("mc_titlescreen_singleplayer_button", "singleplayer"), ("mc_titlescr
 
 def layout():
     parts = [header("title_screen", "remnants_menu_background_dark.png", True)]
-    # Text-only entries, centred under the logo (logo is part of the background plate). 220x22 units each.
+    # Text-only entries, centred under the logo (logo is part of the background plate). 230x28 units each, so the
+    # hover frame has room around the word (the textures are 920x112, 4 px a unit).
     for i, (ident, skin) in enumerate(ENTRIES):
-        parts.append(vanilla(ident, "mid-centered", -110, 50 + i * 24, 220, 22, skin=skin))
+        parts.append(vanilla(ident, "mid-centered", -115, 46 + i * 30, 230, 28, skin=skin))
     for hidden in ("mc_titlescreen_realms_button", "minecraft_realms_notification_icons_widget",
                    "minecraft_logo_widget", "minecraft_splash_widget", "minecraft_branding_widget"):
         parts.append(vanilla(hidden, hidden=True))
@@ -230,7 +232,7 @@ def main():
     shutil.copy2(out / "menu_background_dark.png", ASSETS / "remnants_menu_background_dark.png")
     for f in ("loading_bar_frame.png", "loading_bar_fill.png"):
         shutil.copy2(out / f, ASSETS / f)
-    for f in (out / "menu").glob("*.png"):
+    for f in [*(out / "menu").glob("*.png"), *(out / "menu").glob("*.apng")]:
         shutil.copy2(f, ASSETS / "menu" / f.name)
     for f in (out / "sounds").glob("*.ogg"):
         shutil.copy2(f, ASSETS / "sounds" / f.name)

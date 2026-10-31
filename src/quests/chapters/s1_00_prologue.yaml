@@ -39,6 +39,7 @@ quests:
     size: 1.5
     keeper: |
       Odric kept this gate for the heralds. Kept it well. When the heralds died, nobody told him to stop.
+    voice: true
     desc: |
       The &6Threshold&r was the heralds' crypt, where the Crown laid its light-bearers to rest. &6Ser Odric&r was their gatekeeper, sworn to keep the dead from leaving. The Eclipse made that oath very busy.
 
@@ -53,6 +54,7 @@ quests:
     deps: [rise]
     keeper: |
       Up the stair. Through the gate. Don't look back; there's nothing behind you but graves, and one of them was yours.
+    voice: true
     desc: |
       The Waygate at the top of the Last Stair is the heralds' road out of the Threshold. It leads to the &6Lands Under Ash&r: the world, what's left of it.
 
@@ -67,6 +69,7 @@ quests:
     deps: [rise]
     keeper: |
       You had a life before the ash. Most of you remember a sword, or a prayer, or a debt. Pick the one that feels true. It won't matter to the dead.
+    voice: true
     desc: |
       Your &6origin&r is the shape your last life left in you: Knight-Errant, Warlord, Duelist, Cutthroat, Astromancer, Oracle, Ronin, Penitent, Hexblade… or &7Ashborn&r, risen with nothing at all.
 
@@ -93,6 +96,7 @@ quests:
     deps: [wood]
     keeper: |
       Stone. Good. Stone doesn't care what you were, either.
+    voice: true
     desc: |
       Under the soil, the world's bones. The first Ashborn fought with whatever the earth gave them, and most of them are Remnants now. Do better than they did.
 
@@ -107,6 +111,7 @@ quests:
     deps: [origin]
     keeper: |
       You're not strong yet. So don't be there when it lands.
+    voice: true
     desc: |
       The dead don't tire. You do. Every swing and every dodge spends &astamina&r, the green bar, and a blow struck while exhausted lands at a fraction of its strength.
 
@@ -121,6 +126,7 @@ quests:
     deps: [stamina, stone]
     keeper: |
       Don't look at their faces. Some of them used to be someone's.
+    voice: true
     desc: |
       The shambling dead are the oldest Remnants: villagers, farmers and soldiers who died in the first dark years and rose before anyone understood what rising meant.
 
@@ -135,6 +141,7 @@ quests:
     deps: [first_blood]
     keeper: |
       Feel that? A little warmth, where there wasn't any. That was theirs. Now it's yours. Don't lose it.
+    voice: true
     desc: |
       When anything dies, the scrap of sunlight it carried leaves it as &6runes&r. The Ashborn are the only things left that can hold them. Runes buy levels, upgrades and wares.
 
@@ -165,6 +172,7 @@ quests:
     deps: [you_died]
     keeper: |
       Strange, killing yourself. It gets easier. That should worry you more than it does.
+    voice: true
     desc: |
       An Echo fights the way you fought when you died: same weapon, same habits, same mistakes. Learn from them before it does.
 
@@ -191,6 +199,7 @@ quests:
     deps: [iron]
     keeper: |
       Armour doesn't make you brave. It makes you stupid for a little longer, which is nearly the same thing.
+    voice: true
     desc: |
       Every Remnant out there was once someone who thought leather was enough.
 
@@ -205,6 +214,7 @@ quests:
     deps: [first_blood]
     keeper: |
       Nights are longer than they used to be. Or we are smaller. Light a fire and don't argue with the dark.
+    voice: true
     desc: |
       Torches keep the small things away. Beds skip the worst of it. Neither will save you from what comes on a &cred moon&r.
 
@@ -219,6 +229,7 @@ quests:
     deps: [first_blood]
     keeper: |
       Some of them have died more than once. Each time they come back meaner. Count the crests before you count your chances.
+    voice: true
     desc: |
       A monster that rises again rises stronger. Its crest shows how many times:
 

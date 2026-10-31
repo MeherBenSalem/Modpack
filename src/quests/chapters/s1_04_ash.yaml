@@ -36,6 +36,7 @@ quests:
     size: 2.0
     keeper: |
       Hot, isn't it? He wanted it to stay warm forever. Be careful what you wish for when you wear a crown.
+    voice: true
     desc: |
       The portal hums with old heat. On the other side, the sky is the colour of a forge and the ground still remembers being a kingdom.
 
@@ -77,6 +78,7 @@ quests:
     deps: [s1_act3_deep/cursed_keep]
     keeper: |
       The end of the trail. The Archivist owes me a drink. I said someone would make it.
+    voice: true
     desc: |
       In the far snows the &6Soulfire Crypt&r burns blue. The Cinder Warden keeps the last map of the dungeon trail, and the last map leads nowhere: just a drawing of the Crypt itself, and a note in an old hand. &o"You found it. Now turn back."&r
 
@@ -135,6 +137,7 @@ quests:
     size: 1.75
     keeper: |
       Three skulls and the sand of lost souls. That's not a summoning, Ashborn, it's a dinner bell.
+    voice: true
     desc: |
       The Wither is the oldest hunger in the world, older than the sun it would have eaten if anyone had let it. It doesn't hate you. It doesn't know you exist. It just wants.
 
@@ -159,6 +162,8 @@ quests:
     subtitle: "Sovereign of the Burning Crown. Level 50."
     icon: runeborn:hellbrand
     deps: [burning_crown]
+    unlock: |
+      The scrap is still warm. So is he. Morgrath fights in the fire that ended his kingdom, and the fire has never once minded him. Bring something to cool your blood, and don't stand where the ground glows.
     shape: gear
     size: 2.0
     keeper: |
@@ -190,6 +195,7 @@ quests:
     deps: [morgrath]
     keeper: |
       Follow the eyes. They know where the edge is. They've been trying to get back there since the sky went dark.
+    voice: true
     desc: |
       The &6strongholds&r were the Crown's watchtowers, built over the one door that leads off the edge of the world. The eyes still point the way home.
 
@@ -206,6 +212,7 @@ quests:
     size: 1.75
     keeper: |
       When the Hollow Sovereign drank the sun, a drop of it spilled off the edge of the world. It landed there. The Dragon has been guarding it ever since, and it doesn't know why.
+    voice: true
     desc: |
       Pale stone under a starless sky. The &6Last Shore&r is where the world ends and the last drop of the old sun fell.
 
@@ -222,6 +229,7 @@ quests:
     size: 2.0
     keeper: |
       Catch its breath before it dies. That breath was sunlight, once. Vaelorn will smell it on you.
+    voice: true
     desc: |
       The Dragon was there before the Crown and it will be there after it. It remembers the Eighth. It remembers someone before him, too, but it won't say who.
 
@@ -234,6 +242,8 @@ quests:
     subtitle: "Sovereign of the Last Shore. Level 70."
     icon: runeborn:wyrmfang_halberd
     deps: [dragon]
+    unlock: |
+      Dragon's breath, in a bottle. That was sunlight, once. Vaelorn will smell it from the edge of the world and come to take it back. Open ground, Ashborn, and never in front of him. He rides like the last of something.
     shape: gear
     size: 2.0
     keeper: |
@@ -255,6 +265,7 @@ quests:
     shape: hexagon
     keeper: |
       Put it down, Ashborn. It doesn't fit anyone. That was always the problem.
+    voice: true
     desc: |
       Six Sovereigns' shards and the Dragon's. The &6Sun-Crown&r, whole for the first time since it was broken. It is lighter than you'd think, and colder.
 

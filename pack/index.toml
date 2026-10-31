@@ -1,8 +1,12 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/amendments-client.toml"
+hash = "289421d59fb5d154d9cadbd24bde394a707beec27b2498db6ff8e8d42c391bef"
+
+[[files]]
 file = "config/defaultoptions/options.txt"
-hash = "7c4e09bf36aaac39e8cb12dbab17aa82a849c006f0af78d489040398c837322a"
+hash = "a6fefaf6aaa3b6f17bb4a8e72303149f530ec0bdac2ca649680218ec17846aae"
 
 [[files]]
 file = "config/fancymenu/assets/loading_bar_fill.png"
@@ -13,44 +17,44 @@ file = "config/fancymenu/assets/loading_bar_frame.png"
 hash = "fa4fc2bcb690acc45cc60c19742ff696168d49b9afd2abf0eabedb5fc9a0e68e"
 
 [[files]]
-file = "config/fancymenu/assets/menu/btn_mods_hover.png"
-hash = "938631bcdafc674f50663596d2c6743472a808bc94756a24fe6f5ba9fe99feb6"
+file = "config/fancymenu/assets/menu/btn_mods_hover.apng"
+hash = "269ccfa27cd641491c182f866b9f328e8ea629f197098e5ee2e20728e76d843b"
 
 [[files]]
 file = "config/fancymenu/assets/menu/btn_mods_normal.png"
-hash = "1b389c39d868da3791ca01d887b76af5f81fdb9db0b23eca74bcd83d01796636"
+hash = "7e887b2a00bc89639468cd3c4c5c6ad8743b805f59d484c9a3ff45ba237b60da"
 
 [[files]]
-file = "config/fancymenu/assets/menu/btn_multiplayer_hover.png"
-hash = "f76049bf998c601f210a3ef46ad314de579b19f364c268c5e9030f0431ef8898"
+file = "config/fancymenu/assets/menu/btn_multiplayer_hover.apng"
+hash = "98f08486b67e18f2b13e0fc3f6a2d9ae62ecd3f91ed92c7f6e653531c0d9391e"
 
 [[files]]
 file = "config/fancymenu/assets/menu/btn_multiplayer_normal.png"
-hash = "576ef3c5f15d6b6a268ca162b4decb68787d49f97d29f98da5a6f03d573ffbb1"
+hash = "016b579f5f05722483c8c384739a0c3927c4609e3f10e73a3fa9b680a9f40b7c"
 
 [[files]]
-file = "config/fancymenu/assets/menu/btn_options_hover.png"
-hash = "f031b45f0acdc552e97c23a388b76fc9f67b5a71c69bd671a8ed88e34a59dc88"
+file = "config/fancymenu/assets/menu/btn_options_hover.apng"
+hash = "eb92c3260395983fd39cdcc62abdb07173a731b3e60d011a8495053878afdca4"
 
 [[files]]
 file = "config/fancymenu/assets/menu/btn_options_normal.png"
-hash = "892a35b8a36176a41d610baa1e424b8ee7f7f3b54f4a3620d85c0274c84e9389"
+hash = "7634c812f0f3734b118dd69816e399faa34c0371b6c5b210a637bf8bebfbeacd"
 
 [[files]]
-file = "config/fancymenu/assets/menu/btn_quit_hover.png"
-hash = "eefbc65d62a13dc3a6a7c09a3d8f0a42716a3f795bdafc3d4ec7a6995901f808"
+file = "config/fancymenu/assets/menu/btn_quit_hover.apng"
+hash = "ba61a1bd163af1e6a1d894bd5b1b884dc2af46c016b4cc53c2d760921423e03c"
 
 [[files]]
 file = "config/fancymenu/assets/menu/btn_quit_normal.png"
-hash = "d172369b3f3b45a9800e4355d08312c424e9b6df3e8225328714aa0976a53523"
+hash = "f14a832db9d166210107637251f1943f39e34a47f3a4601ff71193765c198631"
 
 [[files]]
-file = "config/fancymenu/assets/menu/btn_singleplayer_hover.png"
-hash = "6357d64a359071326239c1e5b7fe18de0cb0923572e4f65b2f834f14ab5bdffa"
+file = "config/fancymenu/assets/menu/btn_singleplayer_hover.apng"
+hash = "b962ed0237c9e08bf8ea12aee4dfa97f7ce42e8352b05c1b9ddc73b45c220789"
 
 [[files]]
 file = "config/fancymenu/assets/menu/btn_singleplayer_normal.png"
-hash = "7bd0ee6e56f266cf61d30283708fe0ecf099d0c5718962c172853b3f568d65a3"
+hash = "5c285fefaab7c1d4262f4bb317570d839886d05b2dc4f43196ed79863a51fb68"
 
 [[files]]
 file = "config/fancymenu/assets/remnants_menu_background_dark.png"
@@ -74,11 +78,15 @@ hash = "a2aa9f1e88b56c1d0dff0859a88548a7923a7a178194d53262386e7e8d85d679"
 
 [[files]]
 file = "config/fancymenu/customization/remnants_title_screen.txt"
-hash = "f345f4fd1acd49c0b7be8a09db6af293e4a58649ce97c1e275e6eb2f9061637b"
+hash = "22dfff1cdea6f4144687585c72baa69f8727b885f5c42650c913b806fa34925d"
 
 [[files]]
 file = "config/fancymenu/options.txt"
 hash = "6df834ff0756d1d57f5ff20abcc8d5e716f7736fe38f83f390d5b4f539b407ab"
+
+[[files]]
+file = "config/fml.toml"
+hash = "ae54768733410adc27681c133e6879af43482b3e05dabd9ef25a13ed13ceb994"
 
 [[files]]
 file = "config/friendsandfoes.json"
@@ -102,7 +110,7 @@ hash = "2cba2a7f6546b25322a012fd526ca5e9ef9199979c687e180ef850bbf7227331"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/h_lastlight.snbt"
-hash = "771f862f10692019d7a7faf9e0e41c61aa86fef06613f0ec2001927fb24bf209"
+hash = "de6a0a429927c2c4cbe26b06d76ac9303c3037edbe801be34eb6260285cef22e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/p_archive.snbt"
@@ -130,7 +138,7 @@ hash = "70deb13392a61b4bf9f05d5cf22939b00777834bcf9bad769dabca11504c2980"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/s1_act2_hunt.snbt"
-hash = "a573378616b302d89d15d2f41a15a291247c501dacf068c314ec16749ada39da"
+hash = "9da4b705846aaa5a371253479c3ee036c7a371d5e3b35225a9f46e785888d98f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/s1_act3_deep.snbt"
@@ -174,7 +182,7 @@ hash = "f8adb9c4678c0cbf6253133e03616524b4a124214bc1ae17c5d79af09ebc18a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "472a3849b84d016f29c01e6f113be7187e170fdcbee868e452c8e5e21025ba35"
+hash = "35a41c9b11516c04a2ccc79f78801ad4fab1ae40b5bf77fd516490fa610e977c"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/ashborn_provisions.snbt"
@@ -285,8 +293,28 @@ file = "config/ras/items_lock.json"
 hash = "ca4ce272bc1764077d6c5766f56cc36870eebe58b1ad5b46da17650079d66474"
 
 [[files]]
+file = "config/remnant_mobs/difficulty.json"
+hash = "0744dfddfcb2f207070234f834503a5971a73ae9d2bc09a7245c78d3377caab3"
+
+[[files]]
+file = "config/remnant_mobs/elites.json"
+hash = "d6d22017a35a6b8eedff10a50d6a2e88e2a15b4a6ebd867cfee40fa9a94f1345"
+
+[[files]]
+file = "config/remnant_mobs/events.json"
+hash = "09c3d83a67902c8e4e984e6821a2aaf85a5b265d01bcfe6e1ca04f5ffc677566"
+
+[[files]]
 file = "config/remnant_mobs/levels.json"
 hash = "febdacde4d7e9b989930bac7411696ccbac749da8ced7dce8da06944ddd908f2"
+
+[[files]]
+file = "config/remnant_mobs/loot.json"
+hash = "fd818418038166cb13b09827d0be68f6ee2dbcd70e295df72fcea726a3f6e8c2"
+
+[[files]]
+file = "config/remnant_mobs/progression.json"
+hash = "40452297da20c70bc9c76284874a3a59a22623c827bfe04b692292e44beecb3d"
 
 [[files]]
 file = "config/runeborn-client.json"
@@ -303,6 +331,14 @@ hash = "e278f3834c56995f246ce8bcfd2f340d846b94056e919d02e602e3e743fa64aa"
 [[files]]
 file = "kubejs/assets/minecraft/textures/environment/sun.png"
 hash = "6257ef956cae1e0e756c34204a2fd15fde642b31cf946d16c84bfad44bf84485"
+
+[[files]]
+file = "kubejs/assets/remnant_bosses/models/block/fog_gate.json"
+hash = "8bac7651387e89425df269692c5acc1ce62a71ad7fac7019deeb98f03ea48f90"
+
+[[files]]
+file = "kubejs/assets/remnant_bosses/models/block/grace_ember.json"
+hash = "f16fbb851aec95ca1800212456078d78cc5a2ee33821c1ab7cf0c7f4c66c911a"
 
 [[files]]
 file = "kubejs/assets/remnants/lang/en_us.json"
@@ -401,20 +437,108 @@ file = "kubejs/assets/remnants/patchouli_books/ashen_codex/en_us/entries/world/s
 hash = "dbf7d98ca8e8d23afff132042bcb73ad8395583476cfda43c80f89d6af904956"
 
 [[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act1_embers_champion.ogg"
+hash = "f9ea7ff47427935e1c4f5d22cffa5ff7691b8fec6c51d6cac22cb1bcc6d6a2a7"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act1_embers_dungeon_trail.ogg"
+hash = "4558323afd8d1cca88cbfe24f2442f4e3ca1816c37089907e98051965837c261"
+
+[[files]]
 file = "kubejs/assets/remnants/sounds/vo/s1_act1_embers_dusk_rider.ogg"
 hash = "f6778e2f787499419068e65bc201f5618508c29280ec147433e956cfe174417d"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act1_embers_dusk_rider_unlock.ogg"
+hash = "7481a4cd07bb99228f1445c0a7be457e6b14182e8f5c78b6632e5c96f72f4e50"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act1_embers_fragments.ogg"
+hash = "c844165af34967e6d8c3dcda7eac4c3796741a2a67c022b0d42c67214e530df9"
 
 [[files]]
 file = "kubejs/assets/remnants/sounds/vo/s1_act1_embers_kindle.ogg"
 hash = "261c275d7d850f1a7cd314d99b2e212cb1130ca95d4cdb7cca93bc3feaf63bcf"
 
 [[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act1_embers_kindling.ogg"
+hash = "c3706ba85e8a8ab574e9c1c3fbe8bf73205931c46d903a5849c9580e0515b07a"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act1_embers_level_up.ogg"
+hash = "04d7594ad2be43412929b884eea1004657a12647479f09b282bdbf9d4245313a"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act1_embers_relic.ogg"
+hash = "e6312573bd397a6b79edf13ccdb4d13ab1a6cf7b7a711279dffc510591a768e1"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act1_embers_sellsword.ogg"
+hash = "562469db9cf9e7f61079bb6200f610c1c33d1378df143d3a141f710e174531f3"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act1_embers_spoils.ogg"
+hash = "b91cca5bebd5c37943802808a51b2d478bdf5483185919ac6e2d002764a3737e"
+
+[[files]]
 file = "kubejs/assets/remnants/sounds/vo/s1_act1_embers_tale_seven.ogg"
 hash = "be87d13ccf66720730f514d4bf1df19db4e7d09d3c8bf4f58579ab03b452a05b"
 
 [[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act1_embers_travel.ogg"
+hash = "45109315fc378b0d90b18d490fd0a0bdacdf1f4e5acf641802bf291f1dbaef46"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act2_hunt_challenge.ogg"
+hash = "58cf4ca4e178c14d7f28561fe6c1642e8dd3f58d2cd014c692bff20ab99d655d"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act2_hunt_crown.ogg"
+hash = "a611e93aa6dcbb3614b78cf1006d5d250c7b537a1b769afa40edb37df53b0f6b"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act2_hunt_grim_vigil.ogg"
+hash = "59ea05f022dff769565da450f4357fd8bfc03897cb5034b963b19802faa331c2"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act2_hunt_hunters_moon.ogg"
+hash = "3802f183b60658fc4d7b270c51f611a64e97d38eec78d9759493edf6e243b720"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act2_hunt_kindled.ogg"
+hash = "a2d47ee257c3dd145688290c2c79d985ead3be5482ccb67e5ef30df3a674467b"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act2_hunt_labyrinth.ogg"
+hash = "c7fa8b2791c7b9f4f3ca83a22a0544c97dd91c670b313dafe3f3bbaf0f36b3a0"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act2_hunt_path.ogg"
+hash = "bb4d4f3ea59a1e966321cc991bb39b1ca3e61d8d953724c6a690b6f60d922e57"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act2_hunt_punching_up.ogg"
+hash = "06cba352f6c0e2b1eb7d95ec78e75e93818cb0864eb1057663d607c3d2599a2b"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act2_hunt_remnant.ogg"
+hash = "2b04689e242ab9c70c3e1cefefa8edd759a7db858ccc7098f92d62a6fa71419f"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act2_hunt_rime_veil.ogg"
+hash = "a2de9bacb34fce7f1980e09ccb2715c112141a00a96f96637a40abb2e476ea27"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act2_hunt_runebearer.ogg"
+hash = "e07afde0bab703ff2e38d5c984c7017a7d8499753f6ba039a6deb87ee79c9e0b"
+
+[[files]]
 file = "kubejs/assets/remnants/sounds/vo/s1_act2_hunt_sylvara.ogg"
 hash = "1edd2e87c6340fe66528d8677dd01362269539e45d3b0933b36128370ea76491"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act2_hunt_sylvara_unlock.ogg"
+hash = "84d87ea2cf9036a46b4d5fe05dea998c0caffeba7ffe9c2ba6c3be7cf81197bc"
 
 [[files]]
 file = "kubejs/assets/remnants/sounds/vo/s1_act2_hunt_tale_red_moon.ogg"
@@ -425,20 +549,88 @@ file = "kubejs/assets/remnants/sounds/vo/s1_act2_hunt_varghast.ogg"
 hash = "7b0422035fdd7cbbba611dffa9388d091a5422e8de102afeb2240776826c8d4e"
 
 [[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act2_hunt_varghast_fragments.ogg"
+hash = "2e4d6511039fc1bf27615aa26e25b91b44abb970978407ba75a3b86d272a1d46"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act2_hunt_varghast_unlock.ogg"
+hash = "c2bbbd3547fda4208b4a101883b7f62cf24b3382f7c42e7e137cd1396babb48d"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act3_deep_ancient_remnant.ogg"
+hash = "40d51f53a29669fe0d759f13a4d86e8ee4b2514f3244407503bbf002d62e99a0"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act3_deep_descent.ogg"
+hash = "2907a210a7e4bf1a22c78ffe67c57111debd3d40c8e5e13b1118e7944c32069a"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act3_deep_drowned_sky.ogg"
+hash = "06bad49141babe06cd1b681895d40f60d5d64f284df458c38673c92084f62142"
+
+[[files]]
 file = "kubejs/assets/remnants/sounds/vo/s1_act3_deep_kaelthar.ogg"
 hash = "e2f16fc4e749900992a57c32dee182700c4eb6d2e0ded8840f53c386c0609223"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act3_deep_kaelthar_unlock.ogg"
+hash = "7ec3104623a6054e27707b5a6db0834335a2df45c0573beb4f0ac513502f9628"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act3_deep_monument.ogg"
+hash = "8bf4979691225b40a1c26d9f58e31e501c37191c12e79f937b651295a232b182"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act3_deep_scarlet_garden.ogg"
+hash = "6c417e3d710b55230e909b7570c3904d2e703dbc9b9944d103a8b3d5d0abf1c7"
 
 [[files]]
 file = "kubejs/assets/remnants/sounds/vo/s1_act3_deep_tale_old_powers.ogg"
 hash = "f8ac2a31069f5c5360d17e74203ae1f74623dd65b40d5e689fe4e07e6515bcfa"
 
 [[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act3_deep_warden.ogg"
+hash = "eeb9fc389d654cb0cb2f392b458ec495cca4212bcd5c5609ceaa9e00add99b32"
+
+[[files]]
 file = "kubejs/assets/remnants/sounds/vo/s1_act3_deep_ysolde.ogg"
 hash = "0eae3ff378189a8b0ebeaa0793e0f589080511fd224daf11b4a4502600f8202e"
 
 [[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act3_deep_ysolde_unlock.ogg"
+hash = "c498809ea9de885f7d7160699d59c294c26f3ed5a73b515c494df215870567c3"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act4_ash_ashlands.ogg"
+hash = "05f26cbbd1f387e37264651449dbaca4b2cae059c7fb8d4ade8d748ae3fef4e6"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act4_ash_crown_remade.ogg"
+hash = "3a52bdca9eda883963d395d93fa548a8b8f21caf5f706d399949e91bd5428a8f"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act4_ash_dragon.ogg"
+hash = "71e0108bd7437b27d8d96a2b749a812c61e76cd6f1fa80931544f23238afb159"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act4_ash_last_shore.ogg"
+hash = "f5bf34a591fe9b0927fbe1b24bab6e144607865ac32166e3215d0402c1cd4bf9"
+
+[[files]]
 file = "kubejs/assets/remnants/sounds/vo/s1_act4_ash_morgrath.ogg"
 hash = "059ce92387f99f24417c07eac46f72b27dc05e82bee4470589a5b7b11fa12622"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act4_ash_morgrath_unlock.ogg"
+hash = "bac34c761f3d1fae2f350947ee51ae1cdabd1dbcfd65adb97a7028436adf445c"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act4_ash_soulfire_crypt.ogg"
+hash = "bd69ce450ecc00b5a4d46fba26ebd882249469d2f952de1ee0b6128531d55e1b"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act4_ash_stronghold.ogg"
+hash = "c1fa9e0b65bfa77f655a58467f1b9fe079d314facb810fbfa60d688c517a0a4d"
 
 [[files]]
 file = "kubejs/assets/remnants/sounds/vo/s1_act4_ash_tale_burning_crown.ogg"
@@ -449,6 +641,14 @@ file = "kubejs/assets/remnants/sounds/vo/s1_act4_ash_vaelorn.ogg"
 hash = "4ace1ee91856e5f51099b640d54961bd73b3fd337bc53044b3d753e9fa6e6fe2"
 
 [[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act4_ash_vaelorn_unlock.ogg"
+hash = "4cce94d647b0c233550fdf200c3f89700b865bb45f2d6dbbad698d07c41eb633"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act4_ash_wither.ogg"
+hash = "2d7471e283985060531f34f256890c49d3dcaa9aafe868783337ffc529a79e4f"
+
+[[files]]
 file = "kubejs/assets/remnants/sounds/vo/s1_act5_realm_enter.ogg"
 hash = "47f4a40de0ce36359c78be2269bfe100b1ee3454a9944e856392c344da6290cd"
 
@@ -457,12 +657,28 @@ file = "kubejs/assets/remnants/sounds/vo/s1_act5_realm_hollow_sovereign.ogg"
 hash = "c5d6aadb09689329d4198f3cce602f264c30e0d9226889287304affdd3a78c68"
 
 [[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act5_realm_hollow_sovereign_unlock.ogg"
+hash = "3af9958276a79903b5401db566de8bb22c2fe630910873801c55d0863e11078a"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_act5_realm_shard.ogg"
+hash = "9edd37a0f48174bf319576d86d55f7c09cde0fb82ef109ce96d9d8c2841231e8"
+
+[[files]]
 file = "kubejs/assets/remnants/sounds/vo/s1_act5_realm_tale_eighth.ogg"
 hash = "1eb43f2f295f68c9f7b20d1b6a578dd624acb52dc0b53be2b8c70fdedfeecf8b"
 
 [[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_epilogue_ascendant.ogg"
+hash = "e0d30e4b2c74e4f9c9bb87cea28ef08995c7ff78616d51ee49840095c9d018db"
+
+[[files]]
 file = "kubejs/assets/remnants/sounds/vo/s1_epilogue_first_light.ogg"
 hash = "8d47f4f585f170e6f7c464ac0cbc947d00be657e96d20d32d885514fd6bdbb29"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_epilogue_homecoming.ogg"
+hash = "c696ac88d67541bca0e1e6d2a132a429a9b394c70f14a2b799d36dad612edc98"
 
 [[files]]
 file = "kubejs/assets/remnants/sounds/vo/s1_epilogue_keepers_name.ogg"
@@ -473,8 +689,52 @@ file = "kubejs/assets/remnants/sounds/vo/s1_epilogue_who_broke_the_sun.ogg"
 hash = "42743b83361b1fe31b954d0e9fac4df6a96bbb788a64d8e727968cc5b20c926b"
 
 [[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_prologue_armour.ogg"
+hash = "4b891dff318dcd7d2f8090d07c060ef134464da255b2dc90de135b58d6688a4a"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_prologue_beyond.ogg"
+hash = "91de8c2e86f125195869514dc7a801eb16500b67804f100ea7171746fd3102d0"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_prologue_first_blood.ogg"
+hash = "33572be9070c73baeae6cc9f0afee5e13640876f8430e7d50e24ab6a783f4004"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_prologue_gatekeeper.ogg"
+hash = "869274ea8a8edfd2f6af555dde30f45b62e0b7c0a78dcb93a8c2737ac4eaff68"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_prologue_know_enemy.ogg"
+hash = "abcee364c130b3044b7527c30d787e9273ef5c73446e96ce65b6d8aeaec4b966"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_prologue_night.ogg"
+hash = "062fdc4518bf8a7f9ceace37a4fff767bd793c50c99cb09721d2dfb4485a2c41"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_prologue_origin.ogg"
+hash = "7c8158a6a4044b430fc367f2ba422d6fb7532de8a36813fd36abdf97ed65def1"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_prologue_reclaimed.ogg"
+hash = "81c5f11de001922d388d8e111ba8a830aaa8ec455288ae30ca435b9b0de7ca66"
+
+[[files]]
 file = "kubejs/assets/remnants/sounds/vo/s1_prologue_rise.ogg"
 hash = "ff371045b48c559b676bcef87093c2ee7504a684a60a7b0fe92176eb74ed3625"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_prologue_runes.ogg"
+hash = "6b8a2dd6ceda62f8c15cbfc87e294f67a855365cedd3bb57ad4f10f32717d93d"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_prologue_stamina.ogg"
+hash = "ed5e9bec2dbf1e439c2715863b8838a4c862b90a38663aa994c9bf14571c6d63"
+
+[[files]]
+file = "kubejs/assets/remnants/sounds/vo/s1_prologue_stone.ogg"
+hash = "ea9d720906bb164483279ab32b59cd0f62db54d2d44cca95a7ac4383e3f0fbd9"
 
 [[files]]
 file = "kubejs/assets/remnants/sounds/vo/s1_prologue_village.ogg"
@@ -502,7 +762,7 @@ hash = "51d0bd61d783a95350069102df90b8ddb91be89dc728425a9f00336e1b6fd337"
 
 [[files]]
 file = "kubejs/assets/remnants/sounds.json"
-hash = "fd60dad020e43bd4d2d42292fbf4c3413ae39c7cb5fed8af062f4b24a541b5a2"
+hash = "fcf678362e2030dc6c3fe8eafbfae6c1e0cb16df516b86422ca9d65b96258b3b"
 
 [[files]]
 file = "kubejs/client_scripts/remnants/title_menu.js"
@@ -918,7 +1178,7 @@ hash = "eeca0594e12b8dab0e93d8b3c60ec9ab12cc618a28e0f8a0b487238fae94bf09"
 
 [[files]]
 file = "kubejs/server_scripts/remnants/narration.js"
-hash = "0742b04b2009fbcdbc54c41de30fab9eee145774c38ead7e7cd452cff67ba66b"
+hash = "2bb0281d2356045480bacdf68a972335e23cdcd17fa613ebdb9afab79ed20951"
 
 [[files]]
 file = "kubejs/server_scripts/remnants/regions.js"
@@ -929,8 +1189,12 @@ file = "kubejs/server_scripts/remnants/threshold.js"
 hash = "232998eca2eedd595f5045585c421bdc76cc69384df5c1749f99379957f8a59c"
 
 [[files]]
+file = "kubejs/startup_scripts/remnants_narration_durations.js"
+hash = "7740833d40c15260ac9945da89bce53f77a5b361e7a5ac225b55f87dd83bcfce"
+
+[[files]]
 file = "kubejs/startup_scripts/remnants_narration_lines.js"
-hash = "35890d6adac059f0fbbc67915fb450fed80ea43bab7cd438608fd673972090a3"
+hash = "58aa943c9eb0686052c30f53d68529ed6c11059e42a6ed5d33902bfe38dade41"
 
 [[files]]
 file = "kubejs/startup_scripts/remnants_threshold_layout.js"
@@ -1482,6 +1746,11 @@ hash = "63d6f063f00ca07dd0b3fa2869c5131c301753d8621dc1c856e3402cb6fdca42"
 metafile = true
 
 [[files]]
+file = "mods/omnivault.pw.toml"
+hash = "6c87add729914f5a67748c5bf17d64a399dac268d84b28783b95a81b23441ee5"
+metafile = true
+
+[[files]]
 file = "mods/packet-fixer.pw.toml"
 hash = "07f0c0b7d61f5931bfba5210babdbda44423fd2a5a5d80932abca200092aac3f"
 metafile = true
@@ -1563,12 +1832,12 @@ metafile = true
 
 [[files]]
 file = "mods/remnants-rpg-mobs.pw.toml"
-hash = "0705ff7b4af50b3cfd6911d17a922089c4678863ac153f06f8cec5e61e41c612"
+hash = "bfafcab9261f2b3a8a039abed78e94294e6eab5fbe8aecdb7776eb5fc98ce939"
 metafile = true
 
 [[files]]
 file = "mods/remnants-rpg-stats-skills-progression.pw.toml"
-hash = "7c00835f51df9aaa10af98983af56acbf4f7d7b5d5e1d59354668c52592b0345"
+hash = "57e02bedd2319170f4cdd1767dd6fa6f1f1d8a2fbb844b9b2cd3dfcd51f60ccc"
 metafile = true
 
 [[files]]
@@ -1599,11 +1868,6 @@ metafile = true
 [[files]]
 file = "mods/shoulder-surfing-reloaded.pw.toml"
 hash = "6dfae2e0af3a2e16c2f077fad85b0d6c788cfdb1e2c7f0427772f3f2a46c1980"
-metafile = true
-
-[[files]]
-file = "mods/simple-terminals.pw.toml"
-hash = "a59ceb25110991d23adf3dc8c90b56aa36eb737b61100479ab61f255fc99d0ba"
 metafile = true
 
 [[files]]

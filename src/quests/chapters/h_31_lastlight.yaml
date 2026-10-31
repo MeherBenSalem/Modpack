@@ -176,7 +176,7 @@ quests:
     pos: [6, 1]
     deps: [pickup]
     desc: |
-      A &6Feeding Upgrade&r eats for you from the backpack whenever you're hungry. Stock it from the Hearth & Harvest kitchen and stop opening your inventory in the middle of a fight.
+      A &6Feeding Upgrade&r eats for you from the backpack whenever you're hungry. Stock it from the Hearth and Harvest kitchen and stop opening your inventory in the middle of a fight.
     tasks: [{item: sophisticatedbackpacks:feeding_upgrade}]
     rewards: [{table: hearth_pantry}, {xp: 80}]
 
@@ -220,19 +220,64 @@ quests:
     tasks: [{item: sophisticatedstorage:controller}]
     rewards: [{item: minecraft:comparator, count: 2}, {xp: 50}]
 
+  - key: hub
+    title: "The Storage Hub"
+    subtitle: "Every chest it touches becomes one."
+    icon: omnivault:storage_hub
+    pos: [4, 3.1]
+    deps: [storage]
+    desc: |
+      An &6OmniVault Storage Hub&r (planks, chests, iron and redstone) joins every chest, barrel and Sophisticated chest it touches into one network. &6Inventory Cables&r (wooden slabs, iron nuggets, redstone) carry it to chests further away.
+
+      &7Nothing to power, nothing to feed. Just a room that knows where everything is.
+    tasks: [{item: omnivault:storage_hub}]
+    rewards: [{item: omnivault:inventory_cable, count: 8}, {xp: 50}]
+
   - key: terminal
     title: "&aThe Crafting Terminal"
     subtitle: "Every chest at once, and a table to work at."
-    icon: simple_terminals:crafting_terminal
+    icon: omnivault:crafting_terminal
     pos: [6, 2.25]
-    deps: [controller]
+    deps: [hub]
     shape: hexagon
     desc: |
-      A &6Crafting Terminal&r (crafting table, chest, redstone torch and a diamond) set against a chest, or against your Storage Controller, shows everything inside in one scrolling view, with a crafting grid beside it.
+      A &6Terminal&r (iron, glass, redstone and a chest) wired to your Storage Hub shows everything in the network in one scrolling view: search by name, &e@mod&r or &e#tag&r. Add a crafting table and redstone and it becomes a &6Crafting Terminal&r, with a crafting grid beside it.
 
       &o"I've seen Sovereigns' treasuries kept worse."&r
-    tasks: [{item: simple_terminals:crafting_terminal}]
+    tasks: [{item: omnivault:crafting_terminal}]
     rewards: [{table: hearth_homestead}, {xp: 100}]
+
+  - key: drawers
+    title: "Drawers and Vaults"
+    subtitle: "A place for every one of a thing."
+    icon: omnivault:drawer_1x1
+    pos: [6, 3.1]
+    deps: [hub]
+    optional: true
+    desc: |
+      A &6Drawer&r holds a great many of a single item and shows it on its face. A &6Copper Vault&r (copper around a chest) is a chest with room to spare, and an &6upgrade kit&r grows any vault, chest or barrel in place, contents and all.
+
+      &7Both join your Storage Hub's network like any other chest.
+    tasks: [{item: omnivault:drawer_1x1}]
+    rewards: [{item: minecraft:iron_ingot, count: 6}, {xp: 50}]
+
+  - key: nexus
+    title: "&dThe Nexus Core"
+    subtitle: "Let the vault do the crafting."
+    icon: omnivault:nexus_core
+    pos: [8, 2.25]
+    deps: [terminal]
+    optional: true
+    shape: gear
+    size: 1.25
+    keeper: |
+      The Crown's treasurers kept ledgers that wrote themselves. I thought it was sorcery. It was just very good bookkeeping.
+    desc: |
+      &6Omnium&r is amethyst, quartz and redstone ground to dust, blended with iron and smelted. Work it into &6Logic&r and &6Advanced Processors&r, and you can build a &6Nexus Core&r: the heart of a network with no channel limits, cells, wireless terminals and &6autocrafting&r.
+
+      &7Encode a recipe in a &6Pattern Encoding Terminal&7, hand it to a &6Pattern Provider&7 and ask the terminal for what you need. JEI's &e+&7 button loads any recipe into the encoder.
+    tasks: [{item: omnivault:nexus_core}]
+    rewards: [{table: hearth_homestead}, {item: omnivault:blank_pattern, count: 8}, {xp: 300}]
 
   # ---- resting ----
   - key: sleeping_bag

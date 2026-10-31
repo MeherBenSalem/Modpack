@@ -36,6 +36,7 @@ quests:
     size: 2.0
     keeper: |
       Seven Sovereigns, seven embers. The eighth light is where he took it: behind the black sun. You'll need a door.
+    voice: true
     desc: |
       A shard of the eclipse itself: a sliver of the dark the Hollow Sovereign hides behind, caught in crystal.
 
@@ -170,6 +171,8 @@ quests:
     subtitle: "The Last King. The eighth light."
     icon: remnant_bosses:hollow_crown
     deps: [regalia]
+    unlock: |
+      The Seal is made. The altar in the Hollow Citadel is waiting for it, and so is he. He won't think you came to kill him. He'll think you came to kneel. Show him otherwise.
     shape: gear
     size: 3.0
     keeper: |

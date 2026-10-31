@@ -69,6 +69,106 @@
 		{
 			dependencies: ["1B71C09161A6DDFB"]
 			icon: {
+				id: "minecraft:wither_skeleton_skull"
+			}
+			id: "3814AEC29AC5D661"
+			rewards: [
+				{
+					id: "1EFBDB8CF2CEC598"
+					table_id: 5603019727193511887L
+					type: "random"
+				}
+				{
+					id: "01ADAAC9A6A271F1"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "remnant_mobs:see_the_dawn"
+					criterion: ""
+					id: "7E66897011E072AE"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: -5.25d
+		}
+		{
+			dependencies: ["6EC45FFDFEE6E919"]
+			icon: {
+				id: "remnant_mobs:vital_ember"
+			}
+			id: "39BA92A4C0CA0AC3"
+			rewards: [
+				{
+					count: 6
+					id: "012432897CB27D6A"
+					item: {
+						count: 1
+						id: "remnant_mobs:remnant_shard"
+					}
+					type: "item"
+				}
+				{
+					id: "759551FBD32E58D2"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [
+				{
+					advancement: "remnant_mobs:kindled"
+					criterion: ""
+					id: "753E6C61CB6DA867"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: -2.625d
+		}
+		{
+			dependencies: ["1B71C09161A6DDFB"]
+			icon: {
+				id: "remnant_mobs:mending_salve"
+			}
+			id: "2CEC302EA8DABAE6"
+			optional: true
+			rewards: [
+				{
+					count: 8
+					id: "54267B410EB39BC3"
+					item: {
+						count: 1
+						id: "minecraft:golden_carrot"
+					}
+					type: "item"
+				}
+				{
+					id: "54E54C39458E90F4"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "337F06A6E67E54DB"
+					item: {
+						count: 1
+						id: "remnant_mobs:mending_salve"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1B71C09161A6DDFB"]
+			icon: {
 				id: "minecraft:iron_sword"
 			}
 			id: "244492C516FAF63B"
@@ -97,7 +197,7 @@
 				}
 			]
 			x: 4.0d
-			y: -3.5d
+			y: -1.75d
 		}
 		{
 			dependencies: ["1B71C09161A6DDFB"]
@@ -126,7 +226,7 @@
 				}
 			]
 			x: 4.0d
-			y: -1.75d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6EC45FFDFEE6E919"]
@@ -160,7 +260,7 @@
 				}
 			]
 			x: 6.0d
-			y: -1.75d
+			y: -0.875d
 		}
 		{
 			dependencies: ["6EC45FFDFEE6E919"]
@@ -199,7 +299,7 @@
 				}
 			]
 			x: 6.0d
-			y: 0.0d
+			y: 0.875d
 		}
 		{
 			dependencies: ["1B71C09161A6DDFB"]
@@ -228,7 +328,7 @@
 				}
 			]
 			x: 4.0d
-			y: 0.0d
+			y: 1.75d
 		}
 		{
 			dependencies: ["30F39C23D463CB31"]
@@ -287,7 +387,7 @@
 				}
 			]
 			x: 4.0d
-			y: 1.75d
+			y: 3.5d
 		}
 		{
 			dependencies: ["1B71C09161A6DDFB"]
@@ -322,7 +422,7 @@
 				}
 			]
 			x: 4.0d
-			y: 3.5d
+			y: 5.25d
 		}
 		{
 			dependencies: ["463F4A4D56B7E057"]
@@ -361,7 +461,7 @@
 				}
 			]
 			x: 6.0d
-			y: 1.75d
+			y: 2.625d
 		}
 		{
 			dependencies: ["190E84DFB94144CA"]

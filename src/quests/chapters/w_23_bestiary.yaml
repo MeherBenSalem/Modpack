@@ -237,7 +237,7 @@ quests:
 
   - key: old_friends
     title: "Small Kindnesses"
-    subtitle: "Friends & Foes. Not everything is hostile."
+    subtitle: "Friends and Foes. Not everything is hostile."
     icon: minecraft:copper_block
     pos: [0, 10]
     deps: [s1_prologue/first_blood]
@@ -252,7 +252,7 @@ quests:
 
   - key: old_foes
     title: "Teeth and Ice"
-    subtitle: "Friends & Foes. The ones that aren't friends."
+    subtitle: "Friends and Foes. The ones that aren't friends."
     icon: friendsandfoes:totem_of_freezing
     pos: [2, 10]
     deps: [s1_prologue/first_blood]

@@ -36,6 +36,7 @@ quests:
     size: 2.0
     keeper: |
       Quiet down there. Not the polite kind. The kind that is listening back.
+    voice: true
     desc: |
       The &8ancient cities&r were built by people who chose the dark before the dark was forced on anyone. Nobody knows why. Their streets are still lit by soul fire, and something still walks them.
 
@@ -52,6 +53,7 @@ quests:
     size: 1.75
     keeper: |
       It can't see you. It doesn't need to. Every heart is a drum to it, and yours is louder than most.
+    voice: true
     desc: |
       The Warden was set to guard the deep cities when their builders left, and told to listen. It has been listening ever since, and it has grown very, very tired of what it hears.
 
@@ -81,6 +83,7 @@ quests:
     size: 1.5
     keeper: |
       The sea kept a secret for the world. Three old things guard it, and they curse anyone who swims too close. Swim close.
+    voice: true
     desc: |
       Deep in the &3ocean monuments&r, three Elder Guardians keep the sea's oldest memory: the first sunrise, sunk in a vault of prismarine so it could never be stolen.
 
@@ -95,6 +98,7 @@ quests:
     deps: [monument]
     keeper: |
       Kaelthar was afraid of the dark, so he kept the one thing that still flashed: lightning. He drowned his own coast to keep the storm close. Every bolt you see out there is him, still talking to it.
+    voice: true
     desc: |
       &6Kaelthar the Stormcaller&r, Sovereign of the Drowned Sky, flooded his kingdom to keep the storm for himself. His token is a &6lightning rod&r.
 
@@ -135,6 +139,8 @@ quests:
     subtitle: "Sovereign of the Drowned Sky. Level 30."
     icon: runeborn:storm_totem
     deps: [drowned_sky]
+    unlock: |
+      You have it. The rod, the Fragments. Kaelthar will hear his Sigil the way he hears thunder. Pick a dry day if the sky allows it, and never stand still under him. Not even to breathe.
     shape: gear
     size: 2.0
     keeper: |
@@ -156,6 +162,7 @@ quests:
     size: 1.75
     keeper: |
       Before the Crown, there was a king of sand who refused to die. He was the first. Everything rising out there learned it from him.
+    voice: true
     desc: |
       The Hollow Sovereign's warrior, Ossukage, likes to call himself the first Remnant. He's wrong.
 
@@ -197,6 +204,7 @@ quests:
     deps: [kaelthar]
     keeper: |
       Ysolde loved her garden more than her court. When the sun went out, the flowers started dying, so she fed them. First the servants. Then the court. Then herself, a little, every day.
+    voice: true
     desc: |
       &6Ysolde, the Crimson Bloom&r, Sovereign of the Scarlet Garden, kept her roses alive in the dark at any price. Her token is a &cblock of redstone&r, the colour of everything she ever loved.
 
@@ -209,6 +217,8 @@ quests:
     subtitle: "Sovereign of the Scarlet Garden. Level 35."
     icon: runeborn:crimsonfall
     deps: [scarlet_garden]
+    unlock: |
+      Redstone and six Fragments. Red was always her colour. Ysolde will cut you a hundred small times and wait for you to fall over. Don't let her dance. One clean roll, then answer.
     shape: gear
     size: 2.0
     keeper: |

@@ -32,6 +32,7 @@ quests:
     deps: [first_light]
     keeper: |
       The Smith is singing. Badly. The Company's captain is pretending not to cry. Come home, Ashborn. Somebody saved you a seat by the fire, though I suppose you don't need the fire any more.
+    voice: true
     desc: |
       Last Light was the first shrine kindled in an age. Now it is just a village with a strange old fire in the middle and a great many people who owe you a drink.
 
@@ -85,6 +86,7 @@ quests:
     optional: true
     keeper: |
       A hundred levels. You could carry a Sovereign's share of light now, and not go mad from it. Probably.
+    voice: true
     desc: |
       The Sovereigns each held a hundredth of the sun and it broke them. You hold more than that, and you're still you. Mostly.
 

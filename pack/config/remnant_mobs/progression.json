@@ -1,0 +1,61 @@
+// Remnants pack: switched on and tuned for Season 1 (the mod leaves these off next to an existing levels.json).
+// Remnants: RPG Mobs 3.1: player progression.
+// New in 3.1. When this file is first created next to an existing config, enabled starts false so
+// worlds and modpacks behave exactly as before; fresh installs start with it on.
+// Edit and run /remnants reload, or restart. Missing keys are restored with their defaults.
+{
+  // Master switch: when false, ranked monsters drop none of the items below and the difficulty meter
+  // is not sent. Items players already have keep working.
+  "enabled": true,
+
+  // Vital Embers: each one eaten adds hearts_per_ember hearts of max health, up to max_bonus_hearts.
+  // keep_on_death: the extra hearts survive death. /remnants hearts shows or sets them.
+  "hearts": {
+    "max_bonus_hearts": 10,
+    "hearts_per_ember": 1,
+    "keep_on_death": true
+  },
+
+  // Chances (0-1) per kill by a player. vital_ember: per rank, and for an event night's mini-boss.
+  // mending_salve: Veteran and above. hunters_draught: Elite and above. Each chance is multiplied by
+  // (1 + difficulty_bonus x difficulty), difficulty going from 0 to 1 across the dimension's level band.
+  "drops": {
+    "vital_ember": {
+      "common": 0.0,
+      "veteran": 0.0,
+      "elite": 0.02,
+      "champion": 0.15,
+      "remnant": 0.6,
+      "event_boss": 1.0
+    },
+    "mending_salve": 0.06,
+    "hunters_draught": 0.08,
+    "difficulty_bonus": 1.0
+  },
+
+  // mending_salve: heals heal health over seconds. hunters_draught: drink to heal heal_fraction of
+  // your max health, then Regeneration I for regeneration_seconds. Cooldowns in seconds.
+  "healing": {
+    "mending_salve": {
+      "heal": 6,
+      "seconds": 3,
+      "cooldown_seconds": 10
+    },
+    "hunters_draught": {
+      "heal_fraction": 0.4,
+      "regeneration_seconds": 5,
+      "cooldown_seconds": 30
+    }
+  },
+
+  // The difficulty meter. send_to_players (server): send each player their difficulty once a second
+  // while enabled. hud (your client): draw it. anchor: top_left, top_right, bottom_left or bottom_right;
+  // x and y: distance in GUI pixels from that corner. /remnants difficulty works for everyone either way.
+  "meter": {
+    "send_to_players": true,
+    "hud": true,
+    "anchor": "bottom_right",
+    "x": 6,
+    "y": 26
+  }
+}

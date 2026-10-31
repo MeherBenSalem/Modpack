@@ -1,0 +1,98 @@
+// Remnants pack: switched on; same distance, day and depth curves as levels.json, play time
+// softened, gear off (levels.json already scales monsters with the RAS level), the Threshold left out for Season 1 (the mod leaves these off next to an existing levels.json).
+// Remnants: RPG Mobs 3.1: the difficulty engine.
+// New in 3.1. When this file is first created next to an existing config, the engine starts switched
+// off so worlds and modpacks behave exactly as before; fresh installs start with it on.
+// Edit and run /remnants reload, or restart. Missing keys are restored with their defaults.
+{
+  // Master switch. When false, levels follow levels.json exactly as in 3.0.
+  // When true, the distance, time and depth settings of levels.json are replaced by the factors below,
+  // and play time and gear join them. Bands, structures, player levels and spread stay in levels.json.
+  "enabled": true,
+
+  // Each factor turns an input into levels: t = input / per, then curve "linear" (t), "sqrt",
+  // "log" (ln(1+t)) or "power" (t^exponent), capped at max (0 = no cap).
+  // days: in-game days. played: hours the nearby player(s) have played (vanilla statistic).
+  // distance: blocks from world spawn (Nether blocks count x8). depth: blocks below start_y.
+  // gear: the gear score of nearby player(s), see gear_score. Per-player inputs use players.mode
+  // and players.radius from levels.json; with nobody near they count 0.
+  "factors": {
+    "days": {
+      "enabled": true,
+      "curve": "linear",
+      "per": 4.0,
+      "exponent": 1.0,
+      "max": 15.0
+    },
+    "played": {
+      "enabled": true,
+      "curve": "sqrt",
+      "per": 2.0,
+      "exponent": 1.0,
+      "max": 5.0
+    },
+    "distance": {
+      "enabled": true,
+      "curve": "linear",
+      "per": 128.0,
+      "exponent": 1.0,
+      "max": 0.0
+    },
+    "depth": {
+      "enabled": true,
+      "curve": "linear",
+      "per": 12.0,
+      "exponent": 1.0,
+      "max": 8.0,
+      "start_y": 32
+    },
+    "gear": {
+      "enabled": false,
+      "curve": "linear",
+      "per": 6.0,
+      "exponent": 1.0,
+      "max": 15.0
+    }
+  },
+
+  // Gear score = armor x armor + toughness x toughness + (attack damage - 1) x attack_damage
+  // + (max health - 20) x extra_health, read from the player's attributes (works with any modded gear).
+  "gear_score": {
+    "armor": 1.0,
+    "toughness": 1.5,
+    "attack_damage": 1.0,
+    "extra_health": 0.5
+  },
+
+  // Rank chances are multiplied by up to max_multiplier as difficulty rises from the bottom to
+  // the top of the dimension's band, following curve (linear, sqrt, log or power).
+  "rank_odds": {
+    "max_multiplier": 2.0,
+    "curve": "sqrt"
+  },
+
+  // Per dimension: (band min + factors) x multiplier + offset. factors overrides any key of a
+  // factor there, e.g. "factors": {"distance": {"per": 64}}.
+  "dimensions": {
+    "minecraft:the_nether": {
+      "multiplier": 1.15,
+      "offset": 0,
+      "factors": {}
+    },
+    "minecraft:the_end": {
+      "multiplier": 1.25,
+      "offset": 0,
+      "factors": {}
+    }
+  },
+
+  // Dimension ids, or #tags of dimension types, that keep the levels.json formula.
+  "exclude_dimensions": ["#remnant_mobs:no_difficulty", "remnants:threshold"],
+
+  // When one of overlap_mod_ids (mods that already give monsters elite affixes) is installed and
+  // disable_overlaps is true, Remnants rolls no traits so the two do not stack. Levels, ranks and events stay.
+  "compat": {
+    "disable_overlaps": false,
+    "overlap_mod_ids": ["champions", "infernalmobs"]
+  }
+}

@@ -22,7 +22,7 @@ include:
     - the-witch-hut: "The Hollow Wood Coven's huts"
     - the-gingerbread-house: "The Coven's sweetest lure: a candy house in the snow (dark fairy tale side story)"
     - genetically-modified-monsters: "Wrongborn creepers: seven variants of the things that rose wrong"
-    - simple-terminals: "One crafting terminal over your chests"
+    - omnivault: "All-in-one storage (formerly Simple Terminals): hub and cables over your chests, terminals, autocrafting, vaults, drawers, backpacks"
   combat:
     - better-combat: "Weapon movesets; Runeborn's armaments get pack-made weapon_attributes"
   bosses:

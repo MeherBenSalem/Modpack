@@ -127,9 +127,9 @@ quests:
     icon: minecraft:filled_map
     deps: [corpse, shrine]
     desc: |
-      Your map is parchment and ink, fogged over every land you haven't walked. &eN&r hides the minimap, &eM&r opens the world map, &eB&r places a marker.
+      Your map is parchment and ink, fogged over every land you haven't walked. &eN&r hides the minimap, &eM&r opens the world map, &eCtrl+B&r places a marker.
 
-      Shrines don't mark themselves. Stand at yours, press &eB&r and pick the &6Site of Grace&r emblem. On the world map, &eG&r lists every grace you've marked.
+      Shrines don't mark themselves. Stand at yours, press &eCtrl+B&r and pick the &6Site of Grace&r emblem. On the world map, &eG&r lists every grace you've marked.
 
       Where you die, the map leaves a &cBloodstain&r (it keeps the last three). Your last bed is your &aResting Place&r.
     tasks: [{checkmark: "I marked a shrine as a Site of Grace"}]

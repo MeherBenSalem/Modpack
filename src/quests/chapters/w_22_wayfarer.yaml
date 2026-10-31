@@ -13,9 +13,9 @@ quests:
     pos: [0, 2.5]
     shape: hexagon
     size: 1.5
-    deps: [s1_prologue/village]
+    deps: [s1_prologue/village, s1_forge/duskforged]
     desc: |
-      An &6Explorer's Compass&r: a plain compass ringed with cracked stone bricks and cobwebs, as if it had been somewhere already.
+      An &6Explorer's Compass&r: a plain compass ringed with cracked stone bricks, cobwebs and two &6Duskforged Ingots&r, as if it had been somewhere already.
 
       Use it to pick any structure in the world by name; it points the way and tells you how far. It won't tell you what's inside.
     tasks: [{item: "explorerscompass:explorerscompass"}]
@@ -175,9 +175,9 @@ quests:
     pos: [0, 8.75]
     shape: hexagon
     size: 1.5
-    deps: [s1_prologue/village]
+    deps: [s1_prologue/village, s1_forge/ashen_alloy]
     desc: |
-      A &6Nature's Compass&r: a compass framed in logs and saplings. Name a kind of land and it turns toward the nearest.
+      A &6Nature's Compass&r: a compass framed in logs and saplings, set on &6Ashen Alloy&r. Name a kind of land and it turns toward the nearest.
 
       The world grew strange in the dark: savannas gone grey, groves that only bloom by moonlight, mountains that never stop climbing.
     tasks: [{item: "naturescompass:naturescompass"}]

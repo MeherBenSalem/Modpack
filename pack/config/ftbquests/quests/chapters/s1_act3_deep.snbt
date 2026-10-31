@@ -8,7 +8,7 @@
 	}
 	id: "698ED4652531778D"
 	images: [ ]
-	order_index: 3
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -275,7 +275,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["7E3D4C73C791AAAC"]
+			dependencies: ["7E3D4C73C791AAAC", "4C098306B8209504"]
 			icon: {
 				id: "runeborn:storm_totem"
 			}
@@ -457,7 +457,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["1C4F62CC967526A2"]
+			dependencies: ["1C4F62CC967526A2", "4C098306B8209504"]
 			icon: {
 				id: "runeborn:crimsonfall"
 			}

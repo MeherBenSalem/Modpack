@@ -17,7 +17,6 @@
 				id: "create:andesite_alloy"
 			}
 			id: "053AA33D36140B4E"
-			optional: true
 			rewards: [
 				{
 					count: 16
@@ -53,7 +52,6 @@
 				id: "create:cogwheel"
 			}
 			id: "6988026593AB272B"
-			optional: true
 			rewards: [
 				{
 					count: 8
@@ -108,7 +106,6 @@
 				id: "create:andesite_casing"
 			}
 			id: "4F1CC87DF85FA7DC"
-			optional: true
 			rewards: [
 				{
 					count: 8
@@ -142,7 +139,6 @@
 				id: "create:water_wheel"
 			}
 			id: "4733C14701DD23BA"
-			optional: true
 			rewards: [
 				{
 					count: 2
@@ -269,7 +265,6 @@
 				id: "create:mechanical_press"
 			}
 			id: "7CC8D5C9FD545DC8"
-			optional: true
 			rewards: [
 				{
 					count: 8
@@ -303,7 +298,6 @@
 				id: "create:belt_connector"
 			}
 			id: "74E6CDE38393A866"
-			optional: true
 			rewards: [
 				{
 					count: 8
@@ -337,7 +331,6 @@
 				id: "create:mechanical_mixer"
 			}
 			id: "29FDDC247E8E25AD"
-			optional: true
 			rewards: [
 				{
 					count: 2
@@ -371,7 +364,6 @@
 				id: "create:encased_fan"
 			}
 			id: "6C6C3832262BBC37"
-			optional: true
 			rewards: [
 				{
 					id: "6B4DB1814347C4AB"
@@ -438,7 +430,6 @@
 				id: "create:zinc_ingot"
 			}
 			id: "48066C21C40D4177"
-			optional: true
 			rewards: [
 				{
 					count: 8
@@ -475,7 +466,6 @@
 				id: "create:blaze_burner"
 			}
 			id: "2AE288B066F21681"
-			optional: true
 			rewards: [
 				{
 					id: "2A6F44B56DD63C40"
@@ -500,7 +490,6 @@
 				id: "create:brass_ingot"
 			}
 			id: "035F99AB6E2BC271"
-			optional: true
 			rewards: [
 				{
 					id: "3F7B8DD9F22E5574"
@@ -565,7 +554,6 @@
 				id: "create:mechanical_crafter"
 			}
 			id: "078DDBFAFBBDF838"
-			optional: true
 			rewards: [
 				{
 					id: "3322226DDF53FAD8"

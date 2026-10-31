@@ -821,7 +821,18 @@ global.REMNANTS_UNLOCKS = {
     {
       "quest": "53F967EF1BEA3D24",
       "deps": [
-        "6C617748F8950056"
+        "6C617748F8950056",
+        "06C780A202DA9F3A"
+      ],
+      "line": "s1_act2_hunt_sylvara_unlock"
+    }
+  ],
+  "06C780A202DA9F3A": [
+    {
+      "quest": "53F967EF1BEA3D24",
+      "deps": [
+        "6C617748F8950056",
+        "06C780A202DA9F3A"
       ],
       "line": "s1_act2_hunt_sylvara_unlock"
     }
@@ -830,16 +841,36 @@ global.REMNANTS_UNLOCKS = {
     {
       "quest": "125F0DA757CBDD14",
       "deps": [
-        "7E3D4C73C791AAAC"
+        "7E3D4C73C791AAAC",
+        "4C098306B8209504"
       ],
       "line": "s1_act3_deep_kaelthar_unlock"
+    }
+  ],
+  "4C098306B8209504": [
+    {
+      "quest": "125F0DA757CBDD14",
+      "deps": [
+        "7E3D4C73C791AAAC",
+        "4C098306B8209504"
+      ],
+      "line": "s1_act3_deep_kaelthar_unlock"
+    },
+    {
+      "quest": "10A48EAE33052B15",
+      "deps": [
+        "1C4F62CC967526A2",
+        "4C098306B8209504"
+      ],
+      "line": "s1_act3_deep_ysolde_unlock"
     }
   ],
   "1C4F62CC967526A2": [
     {
       "quest": "10A48EAE33052B15",
       "deps": [
-        "1C4F62CC967526A2"
+        "1C4F62CC967526A2",
+        "4C098306B8209504"
       ],
       "line": "s1_act3_deep_ysolde_unlock"
     }
@@ -848,16 +879,36 @@ global.REMNANTS_UNLOCKS = {
     {
       "quest": "67ED0BC9562790E0",
       "deps": [
-        "0242238F2A247AFE"
+        "0242238F2A247AFE",
+        "1F6862E77D664118"
       ],
       "line": "s1_act4_ash_morgrath_unlock"
+    }
+  ],
+  "1F6862E77D664118": [
+    {
+      "quest": "67ED0BC9562790E0",
+      "deps": [
+        "0242238F2A247AFE",
+        "1F6862E77D664118"
+      ],
+      "line": "s1_act4_ash_morgrath_unlock"
+    },
+    {
+      "quest": "5867200A6552CB88",
+      "deps": [
+        "4D0587808D220640",
+        "1F6862E77D664118"
+      ],
+      "line": "s1_act4_ash_vaelorn_unlock"
     }
   ],
   "4D0587808D220640": [
     {
       "quest": "5867200A6552CB88",
       "deps": [
-        "4D0587808D220640"
+        "4D0587808D220640",
+        "1F6862E77D664118"
       ],
       "line": "s1_act4_ash_vaelorn_unlock"
     }

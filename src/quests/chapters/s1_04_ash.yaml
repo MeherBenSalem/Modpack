@@ -1,6 +1,6 @@
 chapter: s1_act4_ash
 group: main
-order: 4
+order: 5
 title: "&6Act IV: &fAsh and Crown"
 subtitle: "The Ashlands, the Wither, the Last Shore. Levels 50–70."
 icon: minecraft:netherite_scrap
@@ -161,7 +161,7 @@ quests:
     title: "&6Sovereign: Morgrath, Ash Sovereign"
     subtitle: "Sovereign of the Burning Crown. Level 50."
     icon: runeborn:hellbrand
-    deps: [burning_crown]
+    deps: [burning_crown, s1_forge/seal_deep]
     unlock: |
       The scrap is still warm. So is he. Morgrath fights in the fire that ended his kingdom, and the fire has never once minded him. Bring something to cool your blood, and don't stand where the ground glows.
     shape: gear
@@ -173,6 +173,8 @@ quests:
       Fire doesn't hurt him. Everything else does, just less than you'd like. He doesn't fight to win. He fights so that nobody else does.
 
       &7His Crown Shard makes its bearer immune to fire. Earn it.
+
+      &7His sigil needs the &6Seal of the Deep&7 in the grid. It stays there.
     tasks: [{item: runeborn:sigil_morgrath}, {advancement: "runeborn:feats/fell_morgrath"}]
     rewards: [{table: sovereign_tribute}, {item: runeborn:tempering_stone_7, count: 2}, {xp: 1200}]
 
@@ -241,7 +243,7 @@ quests:
     title: "&6Sovereign: Vaelorn, the Wyrm-Ravager"
     subtitle: "Sovereign of the Last Shore. Level 70."
     icon: runeborn:wyrmfang_halberd
-    deps: [dragon]
+    deps: [dragon, s1_forge/seal_deep]
     unlock: |
       Dragon's breath, in a bottle. That was sunlight, once. Vaelorn will smell it from the edge of the world and come to take it back. Open ground, Ashborn, and never in front of him. He rides like the last of something.
     shape: gear
@@ -253,6 +255,8 @@ quests:
       The last of the seven. He rode the dragons before there was only one, and he hits like the thing he rode. He chose the edge of the world as his kingdom so that nobody could ever come up behind him.
 
       &7Fight him on open ground, and never directly in front of him.
+
+      &7His sigil needs the &6Seal of the Deep&7 in the grid. It stays there.
     tasks: [{item: runeborn:sigil_vaelorn}, {advancement: "runeborn:feats/fell_vaelorn"}]
     rewards: [{table: sovereign_tribute}, {item: runeborn:sovereign_tempering_stone}, {xp: 2000}]
 

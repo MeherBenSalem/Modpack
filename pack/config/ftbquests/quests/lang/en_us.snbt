@@ -3,6 +3,8 @@
 	chapter.00706B057024A893.title: "&6Act IV: &fAsh and Crown"
 	chapter.046A4DB1253C4718.chapter_subtitle: ["Light the first shrine. Call the first Sovereign. Levels 5–15."]
 	chapter.046A4DB1253C4718.title: "&6Act I: &fEmbers"
+	chapter.0E779F79D530D67A.chapter_subtitle: ["Two kinds of storage, one ladder. Each rung needs the other."]
+	chapter.0E779F79D530D67A.title: "&aThe Vaults"
 	chapter.1614F74ADAA06D65.chapter_subtitle: ["Sellswords who survived by staying together. Gold up front."]
 	chapter.1614F74ADAA06D65.title: "&eThe Ashen Company"
 	chapter.19459C781145AE41.chapter_subtitle: ["Prisons, crypts, temples and forts. Somebody built them to keep things in."]
@@ -10,7 +12,7 @@
 	chapter.1F66B030D96EB9E2.chapter_subtitle: ["The Ashborn still has to eat. Last Light feeds itself."]
 	chapter.1F66B030D96EB9E2.title: "&aHearth and Harvest"
 	chapter.254E1D32E51CD0D3.chapter_subtitle: [
-		"&7Optional.&r Some Ashborn remember gears. Light automation for Last Light, with Create."
+		"The Ember Forge runs on Create: a mixer for Ashen Alloy, a press for Duskforged, a fan for Deepsteel, a burner for Sunforged, crafters for the Eclipse Core."
 	]
 	chapter.254E1D32E51CD0D3.title: "&aThe Clockwork Path"
 	chapter.25BC9FF73CA087DA.chapter_subtitle: ["Steel, stones, and what the Sovereigns leave behind."]
@@ -35,6 +37,8 @@
 	chapter.50B167D1406FDCEA.title: "&6Prologue: &fAshborn"
 	chapter.5A0DEE3E083BE9EF.chapter_subtitle: ["Ilse the Huntmaster pays for proof. The board never empties."]
 	chapter.5A0DEE3E083BE9EF.title: "&cAshen Contracts"
+	chapter.5F3DC7D68C4ECB52.chapter_subtitle: ["Six alloys, four seals. Nothing is handed to you twice."]
+	chapter.5F3DC7D68C4ECB52.title: "&6The Ember Forge"
 	chapter.618C9EA6E37794F6.chapter_subtitle: ["The world went dark. It didn't go away. Go and see what's left of it."]
 	chapter.618C9EA6E37794F6.title: "&bWayfarer"
 	chapter.660332D9BC141A99.chapter_subtitle: ["The Huntmaster's ledger: ranks, traits, and every kind of thing that bites."]
@@ -126,7 +130,7 @@
 	quest.0500F324C32C43A3.quest_subtitle: "Old Power. An ancient city. Level 45."
 	quest.0500F324C32C43A3.title: "&5The Warden"
 	quest.053AA33D36140B4E.quest_desc: [
-		"&7This whole path is optional. Nothing in the story needs it; Last Light just runs smoother with it."
+		"&7The Ember Forge needs this path: its alloys come out of a mixer, a press, a fan, a blaze burner and mechanical crafters. The windmill, goggles, millstone, contraptions and deployers stay optional."
 		""
 		"Mix andesite with iron or zinc nuggets into &6Andesite Alloy&r: the bones of every machine to come."
 		""
@@ -165,6 +169,8 @@
 		"A Sigil is a Sovereign's own name, pressed into a scrap of their light. Hold it up at dusk and the name remembers who it belongs to."
 		""
 		"&7Craft the Dusk Rider's Sigil."
+		""
+		"&7The sigil also takes one &6Ashen Alloy&7 (The Ember Forge): the Rider only answers someone who can work a forge."
 	]
 	quest.063AD2AB6F866AE5.quest_subtitle: "Time, folded into a seal."
 	quest.063AD2AB6F866AE5.title: "A Clock for the Dusk"
@@ -186,6 +192,13 @@
 	]
 	quest.06B2E89F7AAD0CBA.quest_subtitle: "Tier IV. The end of the dungeon trail."
 	quest.06B2E89F7AAD0CBA.title: "The Soulfire Crypt"
+	quest.06C780A202DA9F3A.quest_desc: [
+		"The Dusk Rider's &6relic&r in the centre, four &6Sovereign Fragments&r in the corners, four &6Ashen Alloy&r around it."
+		""
+		"The seal opens Act II: Varghast's and Sylvara's sigils need it in the grid, and so does every Duskforged Ingot."
+	]
+	quest.06C780A202DA9F3A.quest_subtitle: "One relic, bound for good."
+	quest.06C780A202DA9F3A.title: "&eThe Seal of Dusk"
 	quest.0706431E96A6A53E.quest_desc: [
 		"&6The Keeper&r &e♪"
 		""
@@ -223,13 +236,11 @@
 	]
 	quest.07EB56F3B729FC13.quest_subtitle: "The deepest Labyrinth."
 	quest.07EB56F3B729FC13.title: "The Abyssal Halls"
-	quest.09DD0BBF1E70CCBB.quest_desc: [
-		"A &6Drawer&r holds a great many of a single item and shows it on its face. A &6Copper Vault&r (copper around a chest) is a chest with room to spare, and an &6upgrade kit&r grows any vault, chest or barrel in place, contents and all."
-		""
-		"&7Both join your Storage Hub's network like any other chest."
+	quest.098CE211ED650279.quest_desc: [
+		"Ring a backpack with &6Ashen Alloy&r (or Create copper sheets for copper first) and it grows with everything still inside. Each tier holds more and fits more upgrades."
 	]
-	quest.09DD0BBF1E70CCBB.quest_subtitle: "A place for every one of a thing."
-	quest.09DD0BBF1E70CCBB.title: "Drawers and Vaults"
+	quest.098CE211ED650279.quest_subtitle: "Bigger, and nothing falls out."
+	quest.098CE211ED650279.title: "Iron-Bound"
 	quest.09ECC735C3E73819.quest_desc: [
 		"&o\"If you feel like something is following you, something is. Turn around slowly. Then stop being slow.\"&r"
 		""
@@ -265,6 +276,11 @@
 	]
 	quest.0B3D47A11A359E87.quest_subtitle: "The Eclipsed Realm. Soldiers of a hollow king."
 	quest.0B3D47A11A359E87.title: "The Hollow Legion"
+	quest.0B63E0A0DB105CCA.quest_desc: [
+		"An Advanced Processor, &6Deepsteel&r, an echo shard and an ender pearl. The million-item cells, quantum links and the quantum wireless terminal start here."
+	]
+	quest.0B63E0A0DB105CCA.quest_subtitle: "Echoes, pearls and Deepsteel."
+	quest.0B63E0A0DB105CCA.title: "&3The Quantum Processor"
 	quest.0BE5288086362BBD.quest_desc: [
 		"Past level 30, a very few monsters rise as &cRemnants&r: named echoes with a title, a boss bar and a horn you can hear from nearly fifty blocks off. They never despawn. They remember."
 		""
@@ -353,17 +369,6 @@
 	]
 	quest.0EEE9DC26AF062BF.quest_subtitle: "Traits that keep it standing."
 	quest.0EEE9DC26AF062BF.title: "Hard to Kill"
-	quest.0FAC30799ABFA645.quest_desc: [
-		"&6The Keeper&r"
-		""
-		"&f&o\"The Crown's treasurers kept ledgers that wrote themselves. I thought it was sorcery. It was just very good bookkeeping.\"&r"
-		""
-		"&6Omnium&r is amethyst, quartz and redstone ground to dust, blended with iron and smelted. Work it into &6Logic&r and &6Advanced Processors&r, and you can build a &6Nexus Core&r: the heart of a network with no channel limits, cells, wireless terminals and &6autocrafting&r."
-		""
-		"&7Encode a recipe in a &6Pattern Encoding Terminal&7, hand it to a &6Pattern Provider&7 and ask the terminal for what you need. JEI's &e+&7 button loads any recipe into the encoder."
-	]
-	quest.0FAC30799ABFA645.quest_subtitle: "Let the vault do the crafting."
-	quest.0FAC30799ABFA645.title: "&dThe Nexus Core"
 	quest.10216BCC92CE4DFA.quest_desc: [
 		"The Ashlands' fortresses sprawl now: halls, bridges, a forge or two. Wither skeletons walk them with their heads still on."
 		""
@@ -379,6 +384,8 @@
 		"Her garden dies with her. Something in you will be sorry about that, and you should let it."
 		""
 		"&7She bleeds you: &cHemorrhage&7 builds with every cut and bursts for a share of your health. Don't let her chain combos; one clean roll beats three panicked ones."
+		""
+		"&7Her sigil needs the &6Seal of the Hunt&7 in the grid. It stays there."
 	]
 	quest.10A48EAE33052B15.quest_subtitle: "Sovereign of the Scarlet Garden. Level 35."
 	quest.10A48EAE33052B15.title: "&6Sovereign: Ysolde, the Crimson Bloom"
@@ -389,6 +396,11 @@
 	]
 	quest.10E01E0949060610.quest_subtitle: "Old Power. Level 60."
 	quest.10E01E0949060610.title: "&5The Wither"
+	quest.114419D78A0C8ED5.quest_desc: [
+		"An OmniVault &6Storage Hub&r is built around a Sophisticated &6Controller&r. It joins every chest, barrel, drawer and Sophisticated chest it touches; &6Inventory Cables&r carry it further."
+	]
+	quest.114419D78A0C8ED5.quest_subtitle: "Every chest it touches becomes one."
+	quest.114419D78A0C8ED5.title: "The Storage Hub"
 	quest.114B02670B918297.quest_desc: [
 		"The third map leads to the hot, wet edges of the world: deserts, badlands, jungles, swamps. The &6Cursed Keep&r is held by the &6Keep Warlord&r, and he hasn't been relieved in an age."
 		""
@@ -418,6 +430,8 @@
 		"He calls lightning down where you stand. The storm loves him back, which is the saddest thing about him."
 		""
 		"&7Keep moving, never stand still for a whole breath, and never fight him in the rain if you can help it."
+		""
+		"&7His sigil needs the &6Seal of the Hunt&7 in the grid. It stays there."
 	]
 	quest.125F0DA757CBDD14.quest_subtitle: "Sovereign of the Drowned Sky. Level 30."
 	quest.125F0DA757CBDD14.title: "&6Sovereign: Kaelthar the Stormcaller"
@@ -479,7 +493,7 @@
 	quest.1396239BCA1C36D0.quest_subtitle: "Eight embers. One sun."
 	quest.1396239BCA1C36D0.title: "&6&lFirst Light"
 	quest.13C1BD37F51047C4.quest_desc: [
-		"A &6Nature's Compass&r: a compass framed in logs and saplings. Name a kind of land and it turns toward the nearest."
+		"A &6Nature's Compass&r: a compass framed in logs and saplings, set on &6Ashen Alloy&r. Name a kind of land and it turns toward the nearest."
 		""
 		"The world grew strange in the dark: savannas gone grey, groves that only bloom by moonlight, mountains that never stop climbing."
 	]
@@ -538,6 +552,13 @@
 	]
 	quest.15F5C86082963CDF.quest_subtitle: "Villages that fight back live longer."
 	quest.15F5C86082963CDF.title: "Last Light Takes Up Arms"
+	quest.17034B0C37AD924F.quest_desc: [
+		"&6Morgrath's&r and &6Vaelorn's&r relics, a &6Nether Star&r, a bottle of &6dragon's breath&r, two Deepsteel Ingots, two Sovereign Fragments and a &6Steak Dinner&r from the garden's kitchen."
+		""
+		"Opens the last door: the &5Eclipse Shard&r needs the Seal of Ash in the grid, and so does Sunforged."
+	]
+	quest.17034B0C37AD924F.quest_subtitle: "A burning crown, a last shore, a star and a dragon's breath."
+	quest.17034B0C37AD924F.title: "&6The Seal of Ash"
 	quest.170C8BB04CB6317C.quest_desc: [
 		"Roll a &6Pie Crust&r, fill it with apples, berries or cherries, and bake it. Place a pie to share it a slice at a time."
 		""
@@ -767,6 +788,13 @@
 	]
 	quest.1EB0C168D8B7EF05.quest_subtitle: "Dungeons and Taverns. An illager camp."
 	quest.1EB0C168D8B7EF05.title: "Smoke That Isn't Yours"
+	quest.1F6862E77D664118.quest_desc: [
+		"&6Kaelthar's&r and &6Ysolde's&r relics, the Warden's &6Heart of the Deep&r, two Moonsilver Ingots, three Sovereign Fragments and a &6Flaxen Cheese Wheel&r, aged in a keg."
+		""
+		"Opens Act IV: Morgrath's and Vaelorn's sigils, and Deepsteel."
+	]
+	quest.1F6862E77D664118.quest_subtitle: "A storm, a garden and a heart that beat in the dark."
+	quest.1F6862E77D664118.title: "&3The Seal of the Deep"
 	quest.1FF5AC3A0B7D829A.quest_desc: [
 		"&6Reinforce&r at a shrine spends runes and stones to raise an armament's plus. Standard steel climbs on &6Tempering Stones&r; unique armaments on &6Lustrous Stones&r."
 		""
@@ -792,6 +820,18 @@
 	]
 	quest.20A88504DC6B5A17.quest_subtitle: "Somewhere, someone kept a fire lit."
 	quest.20A88504DC6B5A17.title: "Smoke on the Horizon"
+	quest.2117F587492EBB8B.quest_desc: [
+		"Press gold into &6golden sheets&r with a Create &6Mechanical Press&r. Then: four Ashen Alloy, two golden sheets, a &6Remnant Shard&r, a &6Tempering Stone II&r and the Seal of Dusk, which stays. Four ingots."
+		""
+		"Duskforged is the pack's gold: gold-tier storage, OmniVault &6Logic Processors&r, the explorer's compass, and every piece of &bdiamond&r gear."
+	]
+	quest.2117F587492EBB8B.quest_subtitle: "Pressed gold, under the evening's seal."
+	quest.2117F587492EBB8B.title: "&7II. &6Duskforged Ingot"
+	quest.2198D2B29D3AA4DF.quest_desc: [
+		"A &6Crafting Upgrade&r puts a crafting grid in the backpack. Keep one spare: OmniVault's &6Crafting Terminal&r is built around one."
+	]
+	quest.2198D2B29D3AA4DF.quest_subtitle: "Craft where you stand."
+	quest.2198D2B29D3AA4DF.title: "A Table on Your Back"
 	quest.21DCE1D40E334C97.quest_desc: [
 		"&5&k|||&r &5A voice from nowhere &k|||&r &e♪"
 		""
@@ -882,13 +922,6 @@
 	]
 	quest.245A28BBE7AF789F.quest_subtitle: "The Forgotten Observatory."
 	quest.245A28BBE7AF789F.title: "&6The Forgotten Watcher"
-	quest.24B421000D19B905.quest_desc: [
-		"A &6Sophisticated Chest&r is planks around a lever, or a chest and a lever. Surround it with iron for an &6Iron Chest&r, or use a &6Tier Upgrade&r on a placed chest to grow it where it stands."
-		""
-		"More room, room for upgrades, and nothing spilled. Barrels work the same way."
-	]
-	quest.24B421000D19B905.quest_subtitle: "The larder outgrew the larder."
-	quest.24B421000D19B905.title: "Chests That Grow"
 	quest.24F3E0341FB78846.quest_desc: [
 		"When the sun went out, one city tried to hide from the dark by digging into it. It dug too deep."
 		""
@@ -931,13 +964,6 @@
 	]
 	quest.26F13D2CFD0BD33F.quest_subtitle: "Beer, improved by things that grow underground."
 	quest.26F13D2CFD0BD33F.title: "Strongroot Ale"
-	quest.26F15EA649D3A6A9.quest_desc: [
-		"An &6OmniVault Storage Hub&r (planks, chests, iron and redstone) joins every chest, barrel and Sophisticated chest it touches into one network. &6Inventory Cables&r (wooden slabs, iron nuggets, redstone) carry it to chests further away."
-		""
-		"&7Nothing to power, nothing to feed. Just a room that knows where everything is."
-	]
-	quest.26F15EA649D3A6A9.quest_subtitle: "Every chest it touches becomes one."
-	quest.26F15EA649D3A6A9.title: "The Storage Hub"
 	quest.27437F0D8FF32DCD.quest_desc: [
 		"&6The Keeper&r &e♪"
 		""
@@ -1041,6 +1067,11 @@
 	]
 	quest.295933238D4366D9.quest_subtitle: "Ser Odric was told not to let anyone leave."
 	quest.295933238D4366D9.title: "&6Gatekeeper of the Threshold"
+	quest.2989448A7B687450.quest_desc: [
+		"A &6Storage Controller&r joins every Sophisticated chest and barrel touching it into one network. Its brain is now an OmniVault &6Logic Processor&r."
+	]
+	quest.2989448A7B687450.quest_subtitle: "A Sophisticated controller, thinking in OmniVault."
+	quest.2989448A7B687450.title: "One Room, Many Chests"
 	quest.299D979D228918F3.quest_desc: [
 		"&6The Keeper&r &e♪"
 		""
@@ -1136,6 +1167,11 @@
 	]
 	quest.2C9C1A4E43C75D9E.quest_subtitle: "Reapers"
 	quest.2C9C1A4E43C75D9E.title: "The Harvest"
+	quest.2CAB36265B86DF9D.quest_desc: [
+		"An OmniVault &6Drawer&r holds a great many of one item and shows it on its face. Its frame is a &6Sophisticated Barrel&r, planks and iron nuggets: the two vaults start sharing parts here and never stop."
+	]
+	quest.2CAB36265B86DF9D.quest_subtitle: "Built on a Sophisticated barrel."
+	quest.2CAB36265B86DF9D.title: "A Drawer for Everything"
 	quest.2CB0F847FFAEAE21.quest_desc: [
 		"Build a &6Stove&r from bricks, iron and a campfire, and set a &6Cooking Pot&r on it. Any heat beneath will do; the stove just does it with dignity."
 		""
@@ -1216,6 +1252,11 @@
 	]
 	quest.2F015422EDB1358D.quest_subtitle: "One is a bodyguard. Two is a warband."
 	quest.2F015422EDB1358D.title: "&eMuster"
+	quest.2F4C04A78B1EBA07.quest_desc: [
+		"A Logic Processor, &6Moonsilver&r, quartz and Omnium. Crafting processors, pattern terminals, assemblers, wireless and the Nexus Core all need one."
+	]
+	quest.2F4C04A78B1EBA07.quest_subtitle: "Moonsilver thinks faster."
+	quest.2F4C04A78B1EBA07.title: "&bThe Advanced Processor"
 	quest.2F549134AFB15975.quest_desc: [
 		"Below the ancient cities lies the &6Otherside&r, littered with &6Ancient Vases&r. Most hold loot. Break the wrong one and a &6Stalker&r climbs out."
 		""
@@ -1246,18 +1287,6 @@
 	]
 	quest.2FBD8F55F6E3206B.quest_subtitle: "The dead hoard. Fairly, now."
 	quest.2FBD8F55F6E3206B.title: "Everyone's Share"
-	quest.2FC050ACF53FEE8A.quest_desc: [
-		"A &6Terminal&r (iron, glass, redstone and a chest) wired to your Storage Hub shows everything in the network in one scrolling view: search by name, &e@mod&r or &e#tag&r. Add a crafting table and redstone and it becomes a &6Crafting Terminal&r, with a crafting grid beside it."
-		""
-		"&o\"I've seen Sovereigns' treasuries kept worse.\"&r"
-	]
-	quest.2FC050ACF53FEE8A.quest_subtitle: "Every chest at once, and a table to work at."
-	quest.2FC050ACF53FEE8A.title: "&aThe Crafting Terminal"
-	quest.2FF7CCB355D5CBF4.quest_desc: [
-		"A &6Feeding Upgrade&r eats for you from the backpack whenever you're hungry. Stock it from the Hearth and Harvest kitchen and stop opening your inventory in the middle of a fight."
-	]
-	quest.2FF7CCB355D5CBF4.quest_subtitle: "Eat without stopping."
-	quest.2FF7CCB355D5CBF4.title: "The Pack That Feeds You"
 	quest.30007ED76BC15B2D.quest_desc: [
 		"&o\"The Ashlands burn without fuel. That's the blazes. Fewer blazes, less burning. Simple sums.\"&r"
 		""
@@ -1427,13 +1456,6 @@
 	]
 	quest.3598EAD366B19674.quest_subtitle: "The Hollow Citadel. Level 100."
 	quest.3598EAD366B19674.title: "&6&lThe Hollow Sovereign"
-	quest.3675ACCA0A03C6D3.quest_desc: [
-		"Every upgrade starts as an &6Upgrade Base&r (iron, leather, string). A &6Pickup Upgrade&r scoops loot into the pack as you walk; set its filter so it leaves the rotten flesh where it fell."
-		""
-		"Magnet, crafting, smelting, compacting, void: there are dozens more, and JEI has every recipe."
-	]
-	quest.3675ACCA0A03C6D3.quest_subtitle: "A bag that bends over so you don't have to."
-	quest.3675ACCA0A03C6D3.title: "Upgrades"
 	quest.36E2AF0A1C071B2E.quest_desc: [
 		"&6The Keeper&r &e♪"
 		""
@@ -1677,6 +1699,11 @@
 	]
 	quest.41A688DC65EE8C37.quest_subtitle: "The third bar. Yes, really."
 	quest.41A688DC65EE8C37.title: "Essence"
+	quest.41C9363857D94090.quest_desc: [
+		"A Tier 4 stack upgrade and an &5Eclipse Core&r. Every slot holds as much as you will ever own. The &6Everlasting&r and &6Inception&r upgrades want a core as well."
+	]
+	quest.41C9363857D94090.quest_subtitle: "The omega stack upgrade."
+	quest.41C9363857D94090.title: "&6Without Limit"
 	quest.41EDE0DA5C7509EA.quest_desc: [
 		"The ocean monuments are halls now, wings and galleries and a throne for an Old Power. Its lesser guardians patrol every corridor."
 		""
@@ -1786,6 +1813,8 @@
 		"&6Varghast the Grafted&r, Sovereign of the Hollow Vale, kept his army's strength the only way he could: by wearing it. By the end there was nothing left of him but grip. His token is a block of &firon&r, the metal of the stitches."
 		""
 		"&7Gather six Fragments and an iron block."
+		""
+		"&7Varghast's sigil needs the &6Seal of Dusk&7 in the grid too. It stays there."
 	]
 	quest.463F4A4D56B7E057.quest_subtitle: "Six Fragments and an iron block."
 	quest.463F4A4D56B7E057.title: "The Grafted King"
@@ -1903,6 +1932,13 @@
 	]
 	quest.4B6D3CFFC418A385.quest_subtitle: "Twinblades"
 	quest.4B6D3CFFC418A385.title: "Two Edges, No Rest"
+	quest.4C098306B8209504.quest_desc: [
+		"&6Varghast's&r and &6Sylvara's&r relics, four Sovereign Fragments, two Duskforged Ingots, and a whole &6Roast Chicken&r feast from the Hearth's kitchen in the middle. The Keeper says the old court never sealed anything on an empty stomach."
+		""
+		"Opens Act III: Kaelthar's and Ysolde's sigils, and Moonsilver."
+	]
+	quest.4C098306B8209504.quest_subtitle: "Two crowns and a feast."
+	quest.4C098306B8209504.title: "&cThe Seal of the Hunt"
 	quest.4C67E689E70A462B.quest_desc: [
 		"&6The Keeper&r &e♪"
 		""
@@ -1990,9 +2026,9 @@
 		""
 		"A shard of the eclipse itself: a sliver of the dark the Hollow Sovereign hides behind, caught in crystal."
 		""
-		"&7Craft an &5Eclipse Shard&7 from an amethyst shard, an ender pearl and a gold ingot."
+		"&7Craft an &5Eclipse Shard&7 from an amethyst shard, an ender pearl and a &6Sunforged Ingot&7, with the &6Seal of Ash&7 in the grid (it stays)."
 	]
-	quest.4E4B23BBB691EBC8.quest_subtitle: "Amethyst, an ender pearl, a gold ingot."
+	quest.4E4B23BBB691EBC8.quest_subtitle: "Amethyst, an ender pearl, a Sunforged Ingot."
 	quest.4E4B23BBB691EBC8.title: "&5Splinter of the Black Sun"
 	quest.4E93F1A57F31020C.quest_desc: [
 		"Monsters that rose more than once wear a crest: &7Common&r → &aVeteran&r → &9Elite&r → &5Champion&r → &cRemnant&r. Each rank pays more experience (up to ten times), extra loot, a &6Remnant Shard&r and bonus Valor."
@@ -2010,6 +2046,9 @@
 	]
 	quest.4E9D7ED6C63801AD.quest_subtitle: "Ten levels above you, and still standing. Briefly."
 	quest.4E9D7ED6C63801AD.title: "Punching Up"
+	quest.4EE5EA30F9CD2FE4.quest_desc: ["Diamond-tier backpacks, chests and barrels take &6Moonsilver Ingots&r."]
+	quest.4EE5EA30F9CD2FE4.quest_subtitle: "Diamond tier."
+	quest.4EE5EA30F9CD2FE4.title: "Moonsilver Stitching"
 	quest.4F1CC87DF85FA7DC.quest_desc: [
 		"Use Andesite Alloy on a &6stripped log&r to make &6Andesite Casing&r. Most of the early machines are built around it."
 	]
@@ -2036,6 +2075,17 @@
 	]
 	quest.5045D3883BE1B335.quest_subtitle: "Supplies need somewhere to live."
 	quest.5045D3883BE1B335.title: "Flax and String"
+	quest.50BEACFFFDC3A65A.quest_desc: [
+		"&6The Keeper&r"
+		""
+		"&f&o\"The Crown's treasurers kept ledgers that wrote themselves. I thought it was sorcery. It was just very good bookkeeping.\"&r"
+		""
+		"Advanced Processors, Omnium and an ender eye build a &6Nexus Core&r: the heart of a network with no channel limits, cells, wireless terminals and &6autocrafting&r."
+		""
+		"&7Encode a recipe in a &6Pattern Encoding Terminal&7, hand it to a &6Pattern Provider&7 and ask the terminal for what you need. JEI's &e+&7 button loads any recipe into the encoder."
+	]
+	quest.50BEACFFFDC3A65A.quest_subtitle: "Let the vault do the crafting."
+	quest.50BEACFFFDC3A65A.title: "&dThe Nexus Core"
 	quest.50C7CAC5DFA54CD2.quest_desc: [
 		"The seven who broke the sun. Each one answers a &6Sigil&r: six Sovereign Fragments and a token. This page only keeps the tally."
 		""
@@ -2061,6 +2111,13 @@
 	]
 	quest.510150BC74B32079.quest_subtitle: "The Gravebound Catacombs. Level 80."
 	quest.510150BC74B32079.title: "The Gravebound Warden"
+	quest.524F47DB586B7FDB.quest_desc: [
+		"A &6Backpack&r starts as a Supplementaries &6Sack&r: sew it into leather and string with two &6Ashen Alloy&r. Carry it, wear it or set it down; it keeps everything inside either way."
+		""
+		"&7When you die, your items wait in your corpse. A backpack is one item. Think about that."
+	]
+	quest.524F47DB586B7FDB.quest_subtitle: "A sack, grown up."
+	quest.524F47DB586B7FDB.title: "Everything You Own, Carried"
 	quest.5308A52218AFD4B1.quest_desc: [
 		"In the hot, wet places stands the &6Cursed Keep&r. Its Warlord died defending it in the first year of the dark. He didn't notice. He's still defending it."
 		""
@@ -2120,6 +2177,8 @@
 		"Call her in the snow, where she feels at home. She fights from range and freezes what she can't reach."
 		""
 		"&7&cFrostbite&7 builds with every hit; let it fill and it bursts for a chunk of your health. Close the distance, use cover against her blizzards and keep a flask for the burst."
+		""
+		"&7Her sigil needs the &6Seal of Dusk&7 in the grid. It stays there."
 	]
 	quest.53F967EF1BEA3D24.quest_subtitle: "Sovereign of the Rime Veil. Level 25."
 	quest.53F967EF1BEA3D24.title: "&6Sovereign: Sylvara, Frost Matron"
@@ -2176,6 +2235,13 @@
 	]
 	quest.576B4D96CAC7D4D4.quest_subtitle: "A cursed island in the frozen sea. Level 35."
 	quest.576B4D96CAC7D4D4.title: "The Corrupted Champion"
+	quest.57AED84A7CD6F580.quest_desc: [
+		"A &6Terminal&r wired to your Storage Hub shows the whole network in one scrolling view: search by name, &e@mod&r or &e#tag&r. Add a Sophisticated &6Crafting Upgrade&r and redstone and it becomes a &6Crafting Terminal&r."
+		""
+		"&o\"I've seen Sovereigns' treasuries kept worse.\"&r"
+	]
+	quest.57AED84A7CD6F580.quest_subtitle: "Every chest at once, and a table to work at."
+	quest.57AED84A7CD6F580.title: "&aThe Crafting Terminal"
 	quest.57B6EC7D178747AD.quest_desc: [
 		"Fireflies are the only lights that still come out at night by choice. Butterflies kept flying through the whole Long Eclipse, out of stubbornness."
 		""
@@ -2207,6 +2273,8 @@
 		"The last of the seven. He rode the dragons before there was only one, and he hits like the thing he rode. He chose the edge of the world as his kingdom so that nobody could ever come up behind him."
 		""
 		"&7Fight him on open ground, and never directly in front of him."
+		""
+		"&7His sigil needs the &6Seal of the Deep&7 in the grid. It stays there."
 	]
 	quest.5867200A6552CB88.quest_subtitle: "Sovereign of the Last Shore. Level 70."
 	quest.5867200A6552CB88.title: "&6Sovereign: Vaelorn, the Wyrm-Ravager"
@@ -2240,13 +2308,6 @@
 	]
 	quest.5A3C796647331707.quest_subtitle: "Traits that follow you home."
 	quest.5A3C796647331707.title: "Blood, Venom and Frost"
-	quest.5A752C24FAE57D9C.quest_desc: [
-		"A &6Storage Controller&r joins every Sophisticated chest and barrel touching it, or touching each other, into one network. Put an item into the controller and it goes to the right chest."
-		""
-		"&7Storage Links stretch the network to chests further away."
-	]
-	quest.5A752C24FAE57D9C.quest_subtitle: "Put it in once. It finds its own shelf."
-	quest.5A752C24FAE57D9C.title: "One Room, Many Chests"
 	quest.5AE07438B5B547E1.quest_desc: [
 		"The executioner of the Hollow Legion. He chained the Eighth's deserters to their own graves, and when the deserters ran out he chained himself."
 		""
@@ -2261,6 +2322,15 @@
 	]
 	quest.5B17BE44F64CBE69.quest_subtitle: "Flour for the kitchen."
 	quest.5B17BE44F64CBE69.title: "Embrace the Grind"
+	quest.5BB8B8DF9037E67A.quest_desc: [
+		"Four Deepsteel Ingots, a &6netherite ingot&r, two &6blaze powder&r, a &6Lustrous Stone VI&r and the Seal of Ash make four &6Sunforged Blend&r."
+		""
+		"Mix each blend with a &6glowstone dust&r in a basin over a &6heated Blaze Burner&r."
+		""
+		"Sunforged opens the Eclipsed Realm (the &5Eclipse Shard&r), the Everlasting upgrades, and every stack upgrade past diamond blocks."
+	]
+	quest.5BB8B8DF9037E67A.quest_subtitle: "Melted over a living flame."
+	quest.5BB8B8DF9037E67A.title: "&7V. &eSunforged Ingot"
 	quest.5C4120A5CBCF549B.quest_desc: [
 		"Now and then a rod or a crab pot brings up a &6Message in a Bottle&r. Open it. Some hold a little treasure; some hold a &6Bottled Map to a Wreck&r."
 		""
@@ -2335,6 +2405,13 @@
 	]
 	quest.5FE44DCC8BF3F598.quest_subtitle: "Read it before it reads you."
 	quest.5FE44DCC8BF3F598.title: "&6Know Thy Enemy"
+	quest.5FF35B988078DCF3.quest_desc: [
+		"Two Duskforged Ingots, two &6diamonds&r, three &6amethyst shards&r, a &6Lustrous Stone I&r and the Seal of the Hunt make two &6Moonsilver Blend&r. Blast the blend."
+		""
+		"Moonsilver is the pack's diamond: diamond-tier storage, every advanced upgrade, OmniVault's &6Advanced Processor&r (and with it autocrafting and wireless), diamond wands."
+	]
+	quest.5FF35B988078DCF3.quest_subtitle: "Cooled under the Hunter's Moon."
+	quest.5FF35B988078DCF3.title: "&7III. &bMoonsilver Ingot"
 	quest.5FFF933FACD13104.quest_desc: [
 		"&o\"The Coven used to say: you catch more Ashborn with sugar than with iron. Then they built the house to prove it.\"&r &7— the Archivist"
 		""
@@ -2412,6 +2489,15 @@
 	]
 	quest.622E439071EE06FA.quest_subtitle: "Make it worse. Get paid double."
 	quest.622E439071EE06FA.title: "Accept the Challenge"
+	quest.6259DDC512E70B15.quest_desc: [
+		"Everything worth building under the black sun is built from &6Ember alloys&r: six of them, one for each part of the road. A Sophisticated chest, an OmniVault terminal, a diamond blade, a Sovereign's sigil: they all ask for the alloy of the act they belong to."
+		""
+		"&6Ashen Alloy&r comes first. After that, every alloy needs a &6Seal&r, bound once from the relics of the Sovereigns that closed the act before. The seal is never used up: it stays in the crafting grid every time you forge."
+		""
+		"&7A Sovereign leaves one relic. Trade it at a shrine for its armament, or bind it into a seal. Its sigil will call it back if you want both."
+	]
+	quest.6259DDC512E70B15.quest_subtitle: "What the Smith knows, and the Keeper won't say."
+	quest.6259DDC512E70B15.title: "&6The Ember Forge"
 	quest.62751E1F10BB8066.quest_desc: [
 		"A monster's level comes from where it rose: &7+1 for every 128 blocks from spawn, +1 every 4 days (up to 15), +1 for every 12 blocks below Y 32&r. Ruins set a floor: outposts 12, fortresses 20, strongholds 25, bastions 30, ancient cities 40. The Ashlands start at 15."
 		""
@@ -2421,6 +2507,11 @@
 	]
 	quest.62751E1F10BB8066.quest_subtitle: "The dark has a number. Learn to read it."
 	quest.62751E1F10BB8066.title: "Reading the Threat"
+	quest.62F4B3CF004A48C7.quest_desc: [
+		"Smith a Wireless Terminal with a &6Quantum Upgrade Template&r and an &5Eclipse Core&r: the network from any distance, in any dimension. Singularity cells, quantum bridges and the quantum assembler are built from cores too."
+	]
+	quest.62F4B3CF004A48C7.quest_subtitle: "The quantum wireless terminal."
+	quest.62F4B3CF004A48C7.title: "&5Everywhere at Once"
 	quest.63233232B452D155.quest_desc: [
 		"The desert has a mouth. Find its &6nest&r and stand where the sand trembles, briefly."
 		""
@@ -2564,7 +2655,7 @@
 	quest.663A276CBC8CEB08.quest_subtitle: "The Eclipsed Realm. Level 75."
 	quest.663A276CBC8CEB08.title: "The Burial Guardian"
 	quest.669ACB3AAEA214D2.quest_desc: [
-		"An &6Explorer's Compass&r: a plain compass ringed with cracked stone bricks and cobwebs, as if it had been somewhere already."
+		"An &6Explorer's Compass&r: a plain compass ringed with cracked stone bricks, cobwebs and two &6Duskforged Ingots&r, as if it had been somewhere already."
 		""
 		"Use it to pick any structure in the world by name; it points the way and tells you how far. It won't tell you what's inside."
 	]
@@ -2585,6 +2676,11 @@
 	]
 	quest.66EEF900D3D6B3A0.quest_subtitle: "Older than the Crown. Maybe older than the sun."
 	quest.66EEF900D3D6B3A0.title: "&e♪ &6The Tale of the Old Powers"
+	quest.674442F083592325.quest_desc: [
+		"The gold tier of every backpack, chest and barrel takes &6Duskforged Ingots&r. So does the gold &6Tier Upgrade&r."
+	]
+	quest.674442F083592325.quest_subtitle: "Gold tier, Duskforged."
+	quest.674442F083592325.title: "Gilded at Dusk"
 	quest.67A822FF15E3AF09.quest_desc: [
 		"The &6straight sword&r does everything adequately, which is more than most things in this world can say. Ten stamina a swing, Strength and Dexterity alike, and &6War Cry&r on &eR&r to harden you for the fight."
 		""
@@ -2614,6 +2710,8 @@
 		"Fire doesn't hurt him. Everything else does, just less than you'd like. He doesn't fight to win. He fights so that nobody else does."
 		""
 		"&7His Crown Shard makes its bearer immune to fire. Earn it."
+		""
+		"&7His sigil needs the &6Seal of the Deep&7 in the grid. It stays there."
 	]
 	quest.67ED0BC9562790E0.quest_subtitle: "Sovereign of the Burning Crown. Level 50."
 	quest.67ED0BC9562790E0.title: "&6Sovereign: Morgrath, Ash Sovereign"
@@ -2628,6 +2726,11 @@
 	]
 	quest.67F80731A0585B0A.quest_subtitle: "Somewhere below, a portal to the Last Shore."
 	quest.67F80731A0585B0A.title: "The Eye of the World"
+	quest.6817BBCBA70CDCEC.quest_desc: [
+		"The netherite tier of backpacks, chests and barrels takes &6Deepsteel&r (and a netherite upgrade template at the smithing table). The highest stack upgrades take Deepsteel and Sunforged too."
+	]
+	quest.6817BBCBA70CDCEC.quest_subtitle: "The last tier."
+	quest.6817BBCBA70CDCEC.title: "Deepsteel Seams"
 	quest.6823AEF49166175C.quest_desc: [
 		"&6Varghast's&r relic becomes his &6Graft-Axe&r or &6Crownsplitter&r, the colossal sword he grafted to his own arm. Both want more Strength than is polite."
 		""
@@ -2658,6 +2761,20 @@
 	]
 	quest.69446A3F5A0ACE55.quest_subtitle: "Somebody planted these, once."
 	quest.69446A3F5A0ACE55.title: "Crops of the Wild"
+	quest.695FD16E5F63C040.quest_desc: [
+		"Every upgrade starts as an &6Upgrade Base&r: Ashen Alloy, leather and string. A &6Pickup Upgrade&r scoops loot into the pack as you walk; set its filter so it leaves the rotten flesh where it fell."
+		""
+		"Magnet, smelting, compacting, void, feeding, tool swapper: JEI has every recipe."
+	]
+	quest.695FD16E5F63C040.quest_subtitle: "A bag that bends over so you don't have to."
+	quest.695FD16E5F63C040.title: "Upgrades"
+	quest.6980BF7C1C957193.quest_desc: [
+		"A Create &6Mechanical Crafting&r recipe, five crafters wide: four &6Sunforged Ingots&r, four &6Grave Iron&r from the Realm's wardens, four &6Royal Soul Fragments&r from its fallen knights, and an &6Eclipse Shard&r at the heart."
+		""
+		"The Core is the end of the Forge: OmniVault's singularity cells, quantum bridges and assemblers, the &6omega&r stack upgrades, the infinity wand and the Everlasting and Inception upgrades all need one."
+	]
+	quest.6980BF7C1C957193.quest_subtitle: "Built around a splinter of the black sun."
+	quest.6980BF7C1C957193.title: "&7VI. &5Eclipse Core"
 	quest.6988026593AB272B.quest_desc: [
 		"&6Shafts&r carry rotation in a straight line. &6Cogwheels&r pass it sideways, and a &6Large Cogwheel&r meshed with a small one changes the speed."
 		""
@@ -2808,16 +2925,16 @@
 		"A Sovereign's &6Relic&r is the part of them that refused to die: the habit they couldn't break, hardened into an object."
 		""
 		"&7Exchange the relic at a shrine for its legendary armament, the &6Duskrider Glaive&7."
+		""
+		"&7Or keep it: the relic is what binds the &6Seal of Dusk&7 in the Ember Forge, and the seal opens Act II. The sigil calls the Rider again if you want both."
 	]
 	quest.6D86DE336AB40AB6.quest_subtitle: "Every Sovereign leaves something behind."
 	quest.6D86DE336AB40AB6.title: "A Relic Remembered"
-	quest.6E014AE2ED557564.quest_desc: [
-		"A &6Backpack&r is leather, string and a chest. Carry it, wear it or set it down; it keeps everything inside either way."
-		""
-		"&7When you die, your items wait in your corpse. A backpack is one item. Think about that."
+	quest.6E2A8F001D7942A5.quest_desc: [
+		"A &6Wireless Terminal&r: a Crafting Terminal, an Advanced Processor, Omnium and a Sophisticated &6Storage Link&r. Reach the network from anywhere within a Wireless Transmitter's range."
 	]
-	quest.6E014AE2ED557564.quest_subtitle: "Pack light. Then don't."
-	quest.6E014AE2ED557564.title: "Everything You Own, Carried"
+	quest.6E2A8F001D7942A5.quest_subtitle: "A Storage Link with a screen."
+	quest.6E2A8F001D7942A5.title: "The Vault in Your Pocket"
 	quest.6EC45FFDFEE6E919.quest_desc: [
 		"A &5Champion&r has risen four times. By now it remembers nothing of who it was, only how it died, and it has learned to make sure that never happens again."
 		""
@@ -2874,6 +2991,11 @@
 	]
 	quest.70D8B91F195CC2F6.quest_subtitle: "Two points. Worth both."
 	quest.70D8B91F195CC2F6.title: "&6The Ultimates"
+	quest.7176C76EEC279852.quest_desc: [
+		"Every &6advanced&r Sophisticated upgrade takes Duskforged, Moonsilver and an OmniVault &6Logic Processor&r where the redstone used to be. Start with an &6Advanced Pickup Upgrade&r: filters, and it never picks up what you told it not to."
+	]
+	quest.7176C76EEC279852.quest_subtitle: "Every upgrade, sharper."
+	quest.7176C76EEC279852.title: "Advanced Upgrades"
 	quest.723B8D2420490EBB.quest_desc: [
 		"The Regalia has weapons too. The &6Greater Golden Axe&r bites harder into the nearly dead; the &6Golden Scythe&r strikes everything in its arc; the &6Greater Golden Hammer&r is mostly an argument."
 		""
@@ -2944,6 +3066,13 @@
 	]
 	quest.748040AE2697D524.quest_subtitle: "Something in the Ashlands kept its light."
 	quest.748040AE2697D524.title: "Fire Golems"
+	quest.748A1795B9FBB3DE.quest_desc: [
+		"A &6Sophisticated Chest&r is planks around a lever. Ring it with &6Ashen Alloy&r for an &6Iron Chest&r, or put a &6Tier Upgrade&r on a placed chest to grow it where it stands. Barrels work the same way."
+		""
+		"In this pack the storage tiers follow the Ember Forge: &fcopper&r is Create copper sheets, &firon&r is Ashen Alloy, &6gold&r Duskforged, &bdiamond&r Moonsilver, &8netherite&r Deepsteel."
+	]
+	quest.748A1795B9FBB3DE.quest_subtitle: "The larder outgrew the larder."
+	quest.748A1795B9FBB3DE.title: "Chests That Grow"
 	quest.74E6CDE38393A866.quest_desc: [
 		"Craft a &6Mechanical Belt&r from dried kelp and connect two shafts with it. Items ride along it, and presses and fans work on them as they pass."
 	]
@@ -3027,11 +3156,6 @@
 	]
 	quest.786FC37A4A6098F2.quest_subtitle: "A forge that learned to walk."
 	quest.786FC37A4A6098F2.title: "The Netherite Monstrosity"
-	quest.78776E476DD6B987.quest_desc: [
-		"Surround a backpack with iron in a crafting grid and it grows, with everything still inside. Copper, iron, gold, diamond, netherite: each tier holds more and fits more upgrades."
-	]
-	quest.78776E476DD6B987.quest_subtitle: "Bigger, and nothing falls out."
-	quest.78776E476DD6B987.title: "Iron-Bound"
 	quest.78F7124FE9EA4E98.quest_desc: [
 		"A &6sacred seal&r casts &eincantations&r on &eR&r, scaling with &eFaith&r. The &6Pilgrim's Seal&r calls down Blessed Flame."
 		""
@@ -3084,6 +3208,15 @@
 	]
 	quest.79C830E03DC57E0F.quest_subtitle: "Creepers that rose wrong."
 	quest.79C830E03DC57E0F.title: "&aThe Wrongborn"
+	quest.79F03607AC11BFB2.quest_desc: [
+		"Four Moonsilver Ingots, a &6Reinforced Echo Shard&r, two &6prismarine crystals&r, a &6Lustrous Stone III&r and the Seal of the Deep make four &6Deepsteel Blend&r."
+		""
+		"Then &6haunt&r it: blow the blend through &6soul fire&r with a Create &6Encased Fan&r. Nothing else will turn it."
+		""
+		"Deepsteel is the pack's netherite: netherite-tier storage, OmniVault's &6Quantum Processor&r, the top stack upgrades, netherite wands."
+	]
+	quest.79F03607AC11BFB2.quest_subtitle: "Haunted in soul fire."
+	quest.79F03607AC11BFB2.title: "&7IV. &3Deepsteel Ingot"
 	quest.7A11D1EEA3BD0D28.quest_desc: [
 		"&6The Keeper&r &e♪"
 		""
@@ -3135,6 +3268,18 @@
 	]
 	quest.7AAFFE69C8355986.quest_subtitle: "A hideout in the snowy plains. Level 20."
 	quest.7AAFFE69C8355986.title: "Skor, the Yeti"
+	quest.7AB2D2748389516F.quest_desc: [
+		"A &6Storage Link&r carries a Sophisticated controller's network to chests that don't touch it. OmniVault's wireless terminal is built around one."
+	]
+	quest.7AB2D2748389516F.quest_subtitle: "A chest across the room, still in the network."
+	quest.7AB2D2748389516F.title: "Reaching Further"
+	quest.7B0CE3845C046AFD.quest_desc: [
+		"&6Omnium&r is amethyst, quartz and redstone ground to dust, blended with Ashen Alloy and smelted. No quartz before the Nether? Mix amethyst, redstone and a &6Remnant Shard&r in a Create basin instead."
+		""
+		"Omnium, &6Duskforged&r and redstone make a &6Logic Processor&r. Both vaults run on it: the Sophisticated &6Controller&r, every &6advanced&r upgrade, every OmniVault device."
+	]
+	quest.7B0CE3845C046AFD.quest_subtitle: "Omnium, Duskforged and redstone."
+	quest.7B0CE3845C046AFD.title: "&eThe Logic Processor"
 	quest.7B54978A2BB19EE5.quest_desc: [
 		"&o\"Piglins you can bargain with. Brutes you bury. Three of them.\"&r"
 		""
@@ -3253,6 +3398,15 @@
 	]
 	quest.7F2214D371459953.quest_subtitle: "Steel for the monsters. A board for the meat."
 	quest.7F2214D371459953.title: "Watch Your Fingers"
+	quest.7F2DB44F1159C923.quest_desc: [
+		"Put two &6iron ingots&r, two &6andesite alloy&r and a &6Faded Rune&r in a Create &6Basin&r under a &6Mechanical Mixer&r. Three Ashen Alloy come out."
+		""
+		"Ashen Alloy is what the pack's iron used to be: Sophisticated chests and backpacks, every upgrade base, OmniVault's frames, iron wands and the Dusk Rider's sigil all want it."
+		""
+		"&7Faded Runes drop from common loot bags. Don't spend every one at the shrine."
+	]
+	quest.7F2DB44F1159C923.quest_subtitle: "Iron, andesite and a rune, stirred."
+	quest.7F2DB44F1159C923.title: "&7I. &fAshen Alloy"
 	quest.7F30D8E42C88A805.quest_desc: [
 		"The Curator leaves a &6Memory Lantern&r. Place it. Use a &6Memory Plate&r on it to load a scene, use it empty-handed to play, crouch-use to clear. The plate isn't used up."
 		""
@@ -3417,6 +3571,7 @@
 	task.4BA76EA085869B92.title: "Enter an ocean monument"
 	task.4C6784E6F5FB8FBB.title: "Open a Message in a Bottle"
 	task.4D4E3941F5106599.title: "Fell Ser Odric"
+	task.4DBE6871886B2E19.title: "I understand the Forge"
 	task.4F042A061B96CF5C.title: "I walk the path of Stormcalling"
 	task.518A0C6A4C9ECC88.title: "Slay a monster with four traits"
 	task.5247E840967F9A6C.title: "The Frosted Prison"

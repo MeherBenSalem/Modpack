@@ -8,7 +8,7 @@
 	}
 	id: "00706B057024A893"
 	images: [ ]
-	order_index: 4
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -338,7 +338,7 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["0242238F2A247AFE"]
+			dependencies: ["0242238F2A247AFE", "1F6862E77D664118"]
 			icon: {
 				id: "runeborn:hellbrand"
 			}
@@ -529,7 +529,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["4D0587808D220640"]
+			dependencies: ["4D0587808D220640", "1F6862E77D664118"]
 			icon: {
 				id: "runeborn:wyrmfang_halberd"
 			}

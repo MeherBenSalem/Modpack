@@ -17,8 +17,10 @@ a world whose sun was eaten; relight it one Ember Shrine and one Sovereign at a 
 | `pack/` | The built pack in [packwiz](https://packwiz.infra.link/) format: `pack.toml`, `index.toml`, `mods/*.pw.toml`, `config/`, `kubejs/`, `defaultconfigs/` |
 | `tools/build_pack.py` | Writes `pack/` from `src/mods.json`; `--export` builds the CurseForge zip, the Modrinth `.mrpack` and the server mod list in `dist/` |
 | `tools/build_quests.py` | Compiles `src/quests/` into FTB Quests files under `pack/config/ftbquests/` |
-| `tools/test_server.py` | Boots the pack on a real NeoForge dedicated server and reports errors |
-| `tools/test_client.py` | Boots the real client headless (Xvfb); `--menu` screenshots the title screen |
+| `src/progression.yaml`, `tools/build_progression.py` | The Ember Forge: tiered alloys, seals and every recipe change (storage interlock, story locks), compiled to KubeJS and checked; `tools/dump_recipes.py` indexes the mods' recipes for it |
+| `tools/server/` | The server pack's start scripts, JVM flags, `server.properties` and `SERVER.md` |
+| `tools/test_server.py` | Unzips the built server pack, starts it with its own `start.sh` and reports errors and warnings |
+| `tools/test_client.py` | Boots the real client headless (Xvfb); `--menu` screenshots the title screen, `--server host:port` joins a server |
 | `art/` | Pack icon, logo, menu background and title card ([`art/README.md`](art/README.md)) |
 | `tools/build_menu.py` | Writes the FancyMenu title screen and Drippy loading screen (`pack/config/fancymenu/`) from `art/out/` |
 | `tools/build_threshold.py` | Writes the Threshold (the first-join starting area): dimension, build function, advancements, layout |
@@ -28,9 +30,11 @@ a world whose sun was eaten; relight it one Ember Shrine and one Sovereign at a 
 ## Build
 
 ```bash
+python3 tools/dump_recipes.py && python3 tools/build_progression.py   # the Ember Forge -> kubejs
 python3 tools/build_quests.py --check   # quests -> pack/config/ftbquests
-python3 tools/build_pack.py --export    # pack/ + dist/*.zip, dist/*.mrpack, dist/server-mods.tsv
-python3 tools/test_server.py            # boot test on NeoForge (Java 21)
+python3 tools/build_pack.py --export    # pack/ + dist/*-curseforge.zip, dist/*.mrpack, dist/*-server.zip
+python3 tools/test_server.py            # boot the server pack (Java 21); --hold 900 keeps it up for a join
+python3 tools/test_client.py --server localhost:25599 --curseforge --xmx 5G   # headless client joins it
 node art/render.cjs art/shots/ember_shrine_sunset.png && python3 tools/build_menu.py   # art + main menu
 python3 tools/build_threshold.py         # the starting area
 python3 tools/build_voice.py --kokoro <model-dir>   # narration (recordings in src/voice/raw/ win)

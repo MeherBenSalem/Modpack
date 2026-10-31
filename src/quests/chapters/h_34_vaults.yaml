@@ -1,0 +1,270 @@
+chapter: h_vaults
+group: hearth
+order: 34
+title: "&aThe Vaults"
+subtitle: "Two kinds of storage, one ladder. Each rung needs the other."
+icon: omnivault:crafting_terminal
+quests:
+  # ---- Tier I: a sack becomes a backpack, a barrel becomes a drawer ----
+  - key: backpack
+    title: "Everything You Own, Carried"
+    subtitle: "A sack, grown up."
+    icon: sophisticatedbackpacks:backpack
+    pos: [0, -2.5]
+    deps: [h_lastlight/sack, s1_forge/ashen_alloy]
+    shape: hexagon
+    size: 1.25
+    desc: |
+      A &6Backpack&r starts as a Supplementaries &6Sack&r: sew it into leather and string with two &6Ashen Alloy&r. Carry it, wear it or set it down; it keeps everything inside either way.
+
+      &7When you die, your items wait in your corpse. A backpack is one item. Think about that.
+    tasks: [{item: sophisticatedbackpacks:backpack}]
+    rewards: [{item: minecraft:leather, count: 8}, {xp: 60}]
+
+  - key: chest
+    title: "Chests That Grow"
+    subtitle: "The larder outgrew the larder."
+    icon: sophisticatedstorage:iron_chest
+    pos: [0, 0]
+    deps: [h_lastlight/home, s1_forge/ashen_alloy]
+    shape: hexagon
+    size: 1.25
+    desc: |
+      A &6Sophisticated Chest&r is planks around a lever. Ring it with &6Ashen Alloy&r for an &6Iron Chest&r, or put a &6Tier Upgrade&r on a placed chest to grow it where it stands. Barrels work the same way.
+
+      In this pack the storage tiers follow the Ember Forge: &fcopper&r is Create copper sheets, &firon&r is Ashen Alloy, &6gold&r Duskforged, &bdiamond&r Moonsilver, &8netherite&r Deepsteel.
+    tasks: [{item: sophisticatedstorage:iron_chest}]
+    rewards: [{item: remnants:ashen_alloy, count: 4}, {xp: 60}]
+
+  - key: drawers
+    title: "A Drawer for Everything"
+    subtitle: "Built on a Sophisticated barrel."
+    icon: omnivault:drawer_1x1
+    pos: [2, 1.75]
+    deps: [chest]
+    desc: |
+      An OmniVault &6Drawer&r holds a great many of one item and shows it on its face. Its frame is a &6Sophisticated Barrel&r, planks and iron nuggets: the two vaults start sharing parts here and never stop.
+    tasks: [{item: omnivault:drawer_1x1}]
+    rewards: [{item: minecraft:iron_nugget, count: 18}, {xp: 50}]
+
+  - key: upgrades
+    title: "Upgrades"
+    subtitle: "A bag that bends over so you don't have to."
+    icon: sophisticatedbackpacks:pickup_upgrade
+    pos: [2, -3.25]
+    deps: [backpack]
+    desc: |
+      Every upgrade starts as an &6Upgrade Base&r: Ashen Alloy, leather and string. A &6Pickup Upgrade&r scoops loot into the pack as you walk; set its filter so it leaves the rotten flesh where it fell.
+
+      Magnet, smelting, compacting, void, feeding, tool swapper: JEI has every recipe.
+    tasks: [{item: sophisticatedbackpacks:pickup_upgrade}]
+    rewards: [{item: sophisticatedbackpacks:upgrade_base, count: 2}, {xp: 50}]
+
+  - key: crafting_upgrade
+    title: "A Table on Your Back"
+    subtitle: "Craft where you stand."
+    icon: sophisticatedbackpacks:crafting_upgrade
+    pos: [4, -3.25]
+    deps: [upgrades]
+    desc: |
+      A &6Crafting Upgrade&r puts a crafting grid in the backpack. Keep one spare: OmniVault's &6Crafting Terminal&r is built around one.
+    tasks: [{item: sophisticatedbackpacks:crafting_upgrade}]
+    rewards: [{xp: 50}]
+
+  - key: backpack_iron
+    title: "Iron-Bound"
+    subtitle: "Bigger, and nothing falls out."
+    icon: sophisticatedbackpacks:iron_backpack
+    pos: [2, -1.75]
+    deps: [backpack]
+    desc: |
+      Ring a backpack with &6Ashen Alloy&r (or Create copper sheets for copper first) and it grows with everything still inside. Each tier holds more and fits more upgrades.
+    tasks: [{item: sophisticatedbackpacks:iron_backpack}]
+    rewards: [{item: remnants:ashen_alloy, count: 4}, {xp: 60}]
+
+  # ---- Tier II: the Logic Processor joins the two ----
+  - key: logic
+    title: "&eThe Logic Processor"
+    subtitle: "Omnium, Duskforged and redstone."
+    icon: omnivault:logic_processor
+    pos: [4, 1.75]
+    deps: [drawers, s1_forge/duskforged]
+    shape: hexagon
+    desc: |
+      &6Omnium&r is amethyst, quartz and redstone ground to dust, blended with Ashen Alloy and smelted. No quartz before the Nether? Mix amethyst, redstone and a &6Remnant Shard&r in a Create basin instead.
+
+      Omnium, &6Duskforged&r and redstone make a &6Logic Processor&r. Both vaults run on it: the Sophisticated &6Controller&r, every &6advanced&r upgrade, every OmniVault device.
+    tasks: [{item: omnivault:logic_processor}]
+    rewards: [{item: omnivault:omnium_ingot, count: 4}, {xp: 150}]
+
+  - key: controller
+    title: "One Room, Many Chests"
+    subtitle: "A Sophisticated controller, thinking in OmniVault."
+    icon: sophisticatedstorage:controller
+    pos: [6, 0]
+    deps: [chest, logic]
+    desc: |
+      A &6Storage Controller&r joins every Sophisticated chest and barrel touching it into one network. Its brain is now an OmniVault &6Logic Processor&r.
+    tasks: [{item: sophisticatedstorage:controller}]
+    rewards: [{xp: 100}]
+
+  - key: hub
+    title: "The Storage Hub"
+    subtitle: "Every chest it touches becomes one."
+    icon: omnivault:storage_hub
+    pos: [6, 1.75]
+    deps: [controller]
+    desc: |
+      An OmniVault &6Storage Hub&r is built around a Sophisticated &6Controller&r. It joins every chest, barrel, drawer and Sophisticated chest it touches; &6Inventory Cables&r carry it further.
+    tasks: [{item: omnivault:storage_hub}]
+    rewards: [{item: omnivault:inventory_cable, count: 8}, {xp: 100}]
+
+  - key: terminal
+    title: "&aThe Crafting Terminal"
+    subtitle: "Every chest at once, and a table to work at."
+    icon: omnivault:crafting_terminal
+    pos: [8, 1.75]
+    deps: [hub, crafting_upgrade]
+    shape: hexagon
+    desc: |
+      A &6Terminal&r wired to your Storage Hub shows the whole network in one scrolling view: search by name, &e@mod&r or &e#tag&r. Add a Sophisticated &6Crafting Upgrade&r and redstone and it becomes a &6Crafting Terminal&r.
+
+      &o"I've seen Sovereigns' treasuries kept worse."&r
+    tasks: [{item: omnivault:crafting_terminal}]
+    rewards: [{table: hearth_homestead}, {xp: 150}]
+
+  - key: backpack_gold
+    title: "Gilded at Dusk"
+    subtitle: "Gold tier, Duskforged."
+    icon: sophisticatedbackpacks:gold_backpack
+    pos: [6, -1.75]
+    deps: [backpack_iron, s1_forge/duskforged]
+    desc: |
+      The gold tier of every backpack, chest and barrel takes &6Duskforged Ingots&r. So does the gold &6Tier Upgrade&r.
+    tasks: [{item: sophisticatedbackpacks:gold_backpack}]
+    rewards: [{item: remnants:duskforged_ingot, count: 2}, {xp: 120}]
+
+  - key: storage_link
+    title: "Reaching Further"
+    subtitle: "A chest across the room, still in the network."
+    icon: sophisticatedstorage:storage_link
+    pos: [8, 0]
+    deps: [controller]
+    desc: |
+      A &6Storage Link&r carries a Sophisticated controller's network to chests that don't touch it. OmniVault's wireless terminal is built around one.
+    tasks: [{item: sophisticatedstorage:storage_link}]
+    rewards: [{xp: 80}]
+
+  # ---- Tier III: Moonsilver ----
+  - key: advanced_processor
+    title: "&bThe Advanced Processor"
+    subtitle: "Moonsilver thinks faster."
+    icon: omnivault:advanced_processor
+    pos: [10, 3.25]
+    deps: [logic, s1_forge/moonsilver]
+    shape: hexagon
+    desc: |
+      A Logic Processor, &6Moonsilver&r, quartz and Omnium. Crafting processors, pattern terminals, assemblers, wireless and the Nexus Core all need one.
+    tasks: [{item: omnivault:advanced_processor}]
+    rewards: [{item: remnants:moonsilver_ingot, count: 1}, {xp: 200}]
+
+  - key: advanced_upgrade
+    title: "Advanced Upgrades"
+    subtitle: "Every upgrade, sharper."
+    icon: sophisticatedbackpacks:advanced_pickup_upgrade
+    pos: [8, -3.25]
+    deps: [upgrades, logic, s1_forge/moonsilver]
+    desc: |
+      Every &6advanced&r Sophisticated upgrade takes Duskforged, Moonsilver and an OmniVault &6Logic Processor&r where the redstone used to be. Start with an &6Advanced Pickup Upgrade&r: filters, and it never picks up what you told it not to.
+    tasks: [{item: sophisticatedbackpacks:advanced_pickup_upgrade}]
+    rewards: [{item: omnivault:logic_processor, count: 2}, {xp: 200}]
+
+  - key: backpack_diamond
+    title: "Moonsilver Stitching"
+    subtitle: "Diamond tier."
+    icon: sophisticatedbackpacks:diamond_backpack
+    pos: [10, -1.75]
+    deps: [backpack_gold, s1_forge/moonsilver]
+    desc: |
+      Diamond-tier backpacks, chests and barrels take &6Moonsilver Ingots&r.
+    tasks: [{item: sophisticatedbackpacks:diamond_backpack}]
+    rewards: [{xp: 250}]
+
+  - key: nexus
+    title: "&dThe Nexus Core"
+    subtitle: "Let the vault do the crafting."
+    icon: omnivault:nexus_core
+    pos: [12, 1.75]
+    deps: [terminal, advanced_processor]
+    shape: gear
+    size: 1.25
+    keeper: |
+      The Crown's treasurers kept ledgers that wrote themselves. I thought it was sorcery. It was just very good bookkeeping.
+    desc: |
+      Advanced Processors, Omnium and an ender eye build a &6Nexus Core&r: the heart of a network with no channel limits, cells, wireless terminals and &6autocrafting&r.
+
+      &7Encode a recipe in a &6Pattern Encoding Terminal&7, hand it to a &6Pattern Provider&7 and ask the terminal for what you need. JEI's &e+&7 button loads any recipe into the encoder.
+    tasks: [{item: omnivault:nexus_core}]
+    rewards: [{table: hearth_homestead}, {item: omnivault:blank_pattern, count: 8}, {xp: 400}]
+
+  - key: wireless
+    title: "The Vault in Your Pocket"
+    subtitle: "A Storage Link with a screen."
+    icon: omnivault:wireless_terminal
+    pos: [12, 0]
+    deps: [storage_link, terminal, advanced_processor]
+    desc: |
+      A &6Wireless Terminal&r: a Crafting Terminal, an Advanced Processor, Omnium and a Sophisticated &6Storage Link&r. Reach the network from anywhere within a Wireless Transmitter's range.
+    tasks: [{item: omnivault:wireless_terminal}]
+    rewards: [{xp: 300}]
+
+  # ---- Tier IV: Deepsteel ----
+  - key: quantum
+    title: "&3The Quantum Processor"
+    subtitle: "Echoes, pearls and Deepsteel."
+    icon: omnivault:quantum_processor
+    pos: [14, 3.25]
+    deps: [advanced_processor, s1_forge/deepsteel]
+    shape: hexagon
+    desc: |
+      An Advanced Processor, &6Deepsteel&r, an echo shard and an ender pearl. The million-item cells, quantum links and the quantum wireless terminal start here.
+    tasks: [{item: omnivault:quantum_processor}]
+    rewards: [{item: remnants:deepsteel_ingot, count: 1}, {xp: 400}]
+
+  - key: backpack_netherite
+    title: "Deepsteel Seams"
+    subtitle: "The last tier."
+    icon: sophisticatedbackpacks:netherite_backpack
+    pos: [14, -1.75]
+    deps: [backpack_diamond, s1_forge/deepsteel]
+    desc: |
+      The netherite tier of backpacks, chests and barrels takes &6Deepsteel&r (and a netherite upgrade template at the smithing table). The highest stack upgrades take Deepsteel and Sunforged too.
+    tasks: [{item: sophisticatedbackpacks:netherite_backpack}]
+    rewards: [{xp: 400}]
+
+  # ---- Tier VI: the Eclipse Core ----
+  - key: omega
+    title: "&6Without Limit"
+    subtitle: "The omega stack upgrade."
+    icon: sophisticatedbackpacks:stack_upgrade_omega_tier
+    pos: [18, -1.75]
+    deps: [backpack_netherite, s1_forge/eclipse_core]
+    shape: gear
+    size: 1.5
+    desc: |
+      A Tier 4 stack upgrade and an &5Eclipse Core&r. Every slot holds as much as you will ever own. The &6Everlasting&r and &6Inception&r upgrades want a core as well.
+    tasks: [{item: sophisticatedbackpacks:stack_upgrade_omega_tier}]
+    rewards: [{xp: 1000}]
+
+  - key: quantum_wireless
+    title: "&5Everywhere at Once"
+    subtitle: "The quantum wireless terminal."
+    icon: omnivault:quantum_wireless_terminal
+    pos: [18, 1.75]
+    deps: [quantum, wireless, s1_forge/eclipse_core]
+    shape: gear
+    size: 1.5
+    desc: |
+      Smith a Wireless Terminal with a &6Quantum Upgrade Template&r and an &5Eclipse Core&r: the network from any distance, in any dimension. Singularity cells, quantum bridges and the quantum assembler are built from cores too.
+    tasks: [{item: omnivault:quantum_wireless_terminal}]
+    rewards: [{table: sovereign_tribute}, {xp: 1000}]

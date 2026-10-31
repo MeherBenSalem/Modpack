@@ -1,0 +1,176 @@
+chapter: s1_forge
+group: main
+order: 1
+title: "&6The Ember Forge"
+subtitle: "Six alloys, four seals. Nothing is handed to you twice."
+icon: remnants:seal_of_dusk
+shape: rsquare
+quests:
+  - key: forge
+    title: "&6The Ember Forge"
+    subtitle: "What the Smith knows, and the Keeper won't say."
+    icon: minecraft:anvil
+    pos: [0, 0]
+    deps: [s1_act1_embers/kindle]
+    shape: hexagon
+    size: 1.75
+    desc: |
+      Everything worth building under the black sun is built from &6Ember alloys&r: six of them, one for each part of the road. A Sophisticated chest, an OmniVault terminal, a diamond blade, a Sovereign's sigil: they all ask for the alloy of the act they belong to.
+
+      &6Ashen Alloy&r comes first. After that, every alloy needs a &6Seal&r, bound once from the relics of the Sovereigns that closed the act before. The seal is never used up: it stays in the crafting grid every time you forge.
+
+      &7A Sovereign leaves one relic. Trade it at a shrine for its armament, or bind it into a seal. Its sigil will call it back if you want both.
+    tasks: [{checkmark: "I understand the Forge"}]
+    rewards: [{item: create:andesite_alloy, count: 16}, {xp: 50}]
+
+  # ---- Tier I ----
+  - key: ashen_alloy
+    title: "&7I. &fAshen Alloy"
+    subtitle: "Iron, andesite and a rune, stirred."
+    icon: remnants:ashen_alloy
+    pos: [2.5, 0]
+    deps: [forge, h_clockwork/mixer]
+    desc: |
+      Put two &6iron ingots&r, two &6andesite alloy&r and a &6Faded Rune&r in a Create &6Basin&r under a &6Mechanical Mixer&r. Three Ashen Alloy come out.
+
+      Ashen Alloy is what the pack's iron used to be: Sophisticated chests and backpacks, every upgrade base, OmniVault's frames, iron wands and the Dusk Rider's sigil all want it.
+
+      &7Faded Runes drop from common loot bags. Don't spend every one at the shrine.
+    tasks: [{item: remnants:ashen_alloy, count: 8}]
+    rewards: [{item: runeborn:faded_rune, count: 4}, {xp: 100}]
+
+  # ---- Tier II ----
+  - key: seal_dusk
+    title: "&eThe Seal of Dusk"
+    subtitle: "One relic, bound for good."
+    icon: remnants:seal_of_dusk
+    pos: [5, -2]
+    deps: [ashen_alloy, s1_act1_embers/dusk_rider]
+    shape: diamond
+    size: 1.25
+    desc: |
+      The Dusk Rider's &6relic&r in the centre, four &6Sovereign Fragments&r in the corners, four &6Ashen Alloy&r around it.
+
+      The seal opens Act II: Varghast's and Sylvara's sigils need it in the grid, and so does every Duskforged Ingot.
+    tasks: [{item: remnants:seal_of_dusk}]
+    rewards: [{item: runeborn:sovereign_fragment, count: 2}, {xp: 200}]
+
+  - key: duskforged
+    title: "&7II. &6Duskforged Ingot"
+    subtitle: "Pressed gold, under the evening's seal."
+    icon: remnants:duskforged_ingot
+    pos: [5, 0]
+    deps: [seal_dusk, h_clockwork/press]
+    desc: |
+      Press gold into &6golden sheets&r with a Create &6Mechanical Press&r. Then: four Ashen Alloy, two golden sheets, a &6Remnant Shard&r, a &6Tempering Stone II&r and the Seal of Dusk, which stays. Four ingots.
+
+      Duskforged is the pack's gold: gold-tier storage, OmniVault &6Logic Processors&r, the explorer's compass, and every piece of &bdiamond&r gear.
+    tasks: [{item: remnants:duskforged_ingot, count: 8}]
+    rewards: [{item: runeborn:tempering_stone_2, count: 2}, {xp: 200}]
+
+  # ---- Tier III ----
+  - key: seal_hunt
+    title: "&cThe Seal of the Hunt"
+    subtitle: "Two crowns and a feast."
+    icon: remnants:seal_of_the_hunt
+    pos: [7.5, -2]
+    deps: [duskforged, s1_act2_hunt/varghast, s1_act2_hunt/sylvara, h_hearth/feast]
+    shape: diamond
+    size: 1.25
+    desc: |
+      &6Varghast's&r and &6Sylvara's&r relics, four Sovereign Fragments, two Duskforged Ingots, and a whole &6Roast Chicken&r feast from the Hearth's kitchen in the middle. The Keeper says the old court never sealed anything on an empty stomach.
+
+      Opens Act III: Kaelthar's and Ysolde's sigils, and Moonsilver.
+    tasks: [{item: remnants:seal_of_the_hunt}]
+    rewards: [{item: runeborn:sovereign_fragment, count: 3}, {xp: 300}]
+
+  - key: moonsilver
+    title: "&7III. &bMoonsilver Ingot"
+    subtitle: "Cooled under the Hunter's Moon."
+    icon: remnants:moonsilver_ingot
+    pos: [7.5, 0]
+    deps: [seal_hunt]
+    desc: |
+      Two Duskforged Ingots, two &6diamonds&r, three &6amethyst shards&r, a &6Lustrous Stone I&r and the Seal of the Hunt make two &6Moonsilver Blend&r. Blast the blend.
+
+      Moonsilver is the pack's diamond: diamond-tier storage, every advanced upgrade, OmniVault's &6Advanced Processor&r (and with it autocrafting and wireless), diamond wands.
+    tasks: [{item: remnants:moonsilver_ingot, count: 8}]
+    rewards: [{item: runeborn:lustrous_stone_1, count: 2}, {xp: 300}]
+
+  # ---- Tier IV ----
+  - key: seal_deep
+    title: "&3The Seal of the Deep"
+    subtitle: "A storm, a garden and a heart that beat in the dark."
+    icon: remnants:seal_of_the_deep
+    pos: [10, -2]
+    deps: [moonsilver, s1_act3_deep/kaelthar, s1_act3_deep/ysolde, s1_act3_deep/warden, h_hearth/cheese]
+    shape: diamond
+    size: 1.25
+    desc: |
+      &6Kaelthar's&r and &6Ysolde's&r relics, the Warden's &6Heart of the Deep&r, two Moonsilver Ingots, three Sovereign Fragments and a &6Flaxen Cheese Wheel&r, aged in a keg.
+
+      Opens Act IV: Morgrath's and Vaelorn's sigils, and Deepsteel.
+    tasks: [{item: remnants:seal_of_the_deep}]
+    rewards: [{item: runeborn:sovereign_fragment, count: 3}, {xp: 400}]
+
+  - key: deepsteel
+    title: "&7IV. &3Deepsteel Ingot"
+    subtitle: "Haunted in soul fire."
+    icon: remnants:deepsteel_ingot
+    pos: [10, 0]
+    deps: [seal_deep, h_clockwork/fan]
+    desc: |
+      Four Moonsilver Ingots, a &6Reinforced Echo Shard&r, two &6prismarine crystals&r, a &6Lustrous Stone III&r and the Seal of the Deep make four &6Deepsteel Blend&r.
+
+      Then &6haunt&r it: blow the blend through &6soul fire&r with a Create &6Encased Fan&r. Nothing else will turn it.
+
+      Deepsteel is the pack's netherite: netherite-tier storage, OmniVault's &6Quantum Processor&r, the top stack upgrades, netherite wands.
+    tasks: [{item: remnants:deepsteel_ingot, count: 8}]
+    rewards: [{item: runeborn:lustrous_stone_3, count: 2}, {xp: 400}]
+
+  # ---- Tier V ----
+  - key: seal_ash
+    title: "&6The Seal of Ash"
+    subtitle: "A burning crown, a last shore, a star and a dragon's breath."
+    icon: remnants:seal_of_ash
+    pos: [12.5, -2]
+    deps: [deepsteel, s1_act4_ash/morgrath, s1_act4_ash/vaelorn, s1_act4_ash/wither, s1_act4_ash/dragon, h_garden/well_fed]
+    shape: diamond
+    size: 1.25
+    desc: |
+      &6Morgrath's&r and &6Vaelorn's&r relics, a &6Nether Star&r, a bottle of &6dragon's breath&r, two Deepsteel Ingots, two Sovereign Fragments and a &6Steak Dinner&r from the garden's kitchen.
+
+      Opens the last door: the &5Eclipse Shard&r needs the Seal of Ash in the grid, and so does Sunforged.
+    tasks: [{item: remnants:seal_of_ash}]
+    rewards: [{item: runeborn:sovereign_fragment, count: 4}, {xp: 600}]
+
+  - key: sunforged
+    title: "&7V. &eSunforged Ingot"
+    subtitle: "Melted over a living flame."
+    icon: remnants:sunforged_ingot
+    pos: [12.5, 0]
+    deps: [seal_ash, h_clockwork/burner]
+    desc: |
+      Four Deepsteel Ingots, a &6netherite ingot&r, two &6blaze powder&r, a &6Lustrous Stone VI&r and the Seal of Ash make four &6Sunforged Blend&r.
+
+      Mix each blend with a &6glowstone dust&r in a basin over a &6heated Blaze Burner&r.
+
+      Sunforged opens the Eclipsed Realm (the &5Eclipse Shard&r), the Everlasting upgrades, and every stack upgrade past diamond blocks.
+    tasks: [{item: remnants:sunforged_ingot, count: 8}]
+    rewards: [{item: runeborn:lustrous_stone_6, count: 2}, {xp: 600}]
+
+  # ---- Tier VI ----
+  - key: eclipse_core
+    title: "&7VI. &5Eclipse Core"
+    subtitle: "Built around a splinter of the black sun."
+    icon: remnants:eclipse_core
+    pos: [15.5, 0]
+    deps: [sunforged, h_clockwork/crafter, s1_act5_realm/gravebound_warden]
+    shape: gear
+    size: 2.0
+    desc: |
+      A Create &6Mechanical Crafting&r recipe, five crafters wide: four &6Sunforged Ingots&r, four &6Grave Iron&r from the Realm's wardens, four &6Royal Soul Fragments&r from its fallen knights, and an &6Eclipse Shard&r at the heart.
+
+      The Core is the end of the Forge: OmniVault's singularity cells, quantum bridges and assemblers, the &6omega&r stack upgrades, the infinity wand and the Everlasting and Inception upgrades all need one.
+    tasks: [{item: remnants:eclipse_core}]
+    rewards: [{table: sovereign_tribute}, {xp: 1000}]

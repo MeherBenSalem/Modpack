@@ -1,6 +1,6 @@
 chapter: s1_act5_realm
 group: main
-order: 5
+order: 6
 title: "&6Act V: &fThe Eclipsed Realm"
 subtitle: "Under the black sun sits a crown with nothing inside. Level 70+."
 icon: remnant_bosses:eclipse_shard
@@ -29,9 +29,9 @@ quests:
 
   - key: shard
     title: "&5Splinter of the Black Sun"
-    subtitle: "Amethyst, an ender pearl, a gold ingot."
+    subtitle: "Amethyst, an ender pearl, a Sunforged Ingot."
     icon: remnant_bosses:eclipse_shard
-    deps: [tale_eighth]
+    deps: [tale_eighth, s1_forge/sunforged]
     shape: hexagon
     size: 2.0
     keeper: |
@@ -40,7 +40,7 @@ quests:
     desc: |
       A shard of the eclipse itself: a sliver of the dark the Hollow Sovereign hides behind, caught in crystal.
 
-      &7Craft an &5Eclipse Shard&7 from an amethyst shard, an ender pearl and a gold ingot.
+      &7Craft an &5Eclipse Shard&7 from an amethyst shard, an ender pearl and a &6Sunforged Ingot&7, with the &6Seal of Ash&7 in the grid (it stays).
     tasks: [{advancement: "remnant_bosses:realm/root"}]
     rewards: [{item: minecraft:amethyst_shard, count: 4}, {xp: 300}]
 

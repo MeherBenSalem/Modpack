@@ -2,7 +2,7 @@ chapter: h_clockwork
 group: hearth
 order: 33
 title: "&aThe Clockwork Path"
-subtitle: "&7Optional.&r Some Ashborn remember gears. Light automation for Last Light, with Create."
+subtitle: "The Ember Forge runs on Create: a mixer for Ashen Alloy, a press for Duskforged, a fan for Deepsteel, a burner for Sunforged, crafters for the Eclipse Core."
 icon: create:cogwheel
 quests:
   # ---- the andesite age ----
@@ -12,11 +12,10 @@ quests:
     icon: create:andesite_alloy
     pos: [0, 0]
     deps: [s1_act1_embers/kindle]
-    optional: true
     shape: hexagon
     size: 1.5
     desc: |
-      &7This whole path is optional. Nothing in the story needs it; Last Light just runs smoother with it.
+      &7The Ember Forge needs this path: its alloys come out of a mixer, a press, a fan, a blaze burner and mechanical crafters. The windmill, goggles, millstone, contraptions and deployers stay optional.
 
       Mix andesite with iron or zinc nuggets into &6Andesite Alloy&r: the bones of every machine to come.
 
@@ -30,7 +29,6 @@ quests:
     icon: create:cogwheel
     pos: [2, -1.25]
     deps: [alloy]
-    optional: true
     desc: |
       &6Shafts&r carry rotation in a straight line. &6Cogwheels&r pass it sideways, and a &6Large Cogwheel&r meshed with a small one changes the speed.
 
@@ -44,7 +42,6 @@ quests:
     icon: create:andesite_casing
     pos: [2, 1.25]
     deps: [alloy]
-    optional: true
     desc: |
       Use Andesite Alloy on a &6stripped log&r to make &6Andesite Casing&r. Most of the early machines are built around it.
     tasks: [{advancement: "create:andesite_casing"}]
@@ -57,7 +54,6 @@ quests:
     icon: create:water_wheel
     pos: [4, -1.75]
     deps: [shafts]
-    optional: true
     desc: |
       Place a &6Water Wheel&r where flowing water strikes its blades and it turns everything connected to it.
 
@@ -110,7 +106,6 @@ quests:
     icon: create:mechanical_press
     pos: [4, 0.75]
     deps: [casing]
-    optional: true
     desc: |
       Set a powered &6Mechanical Press&r over a depot or a belt and feed it ingots. Out come &6iron sheets&r, the plates half of Create's recipes ask for.
 
@@ -124,7 +119,6 @@ quests:
     icon: create:belt_connector
     pos: [4, 1.75]
     deps: [casing]
-    optional: true
     desc: |
       Craft a &6Mechanical Belt&r from dried kelp and connect two shafts with it. Items ride along it, and presses and fans work on them as they pass.
     tasks: [{advancement: "create:belt"}]
@@ -136,7 +130,6 @@ quests:
     icon: create:mechanical_mixer
     pos: [6, 0.5]
     deps: [press]
-    optional: true
     desc: |
       A &6Mechanical Mixer&r over a &6Basin&r combines whatever you drop in.
 
@@ -150,7 +143,6 @@ quests:
     icon: create:encased_fan
     pos: [6, 1.75]
     deps: [belt]
-    optional: true
     desc: |
       Blow an &6Encased Fan&r through fire to smoke, through lava to smelt, through water to wash. Through &6soul fire&r it &6haunts&r: things come out the other side changed.
 
@@ -181,7 +173,6 @@ quests:
     icon: create:zinc_ingot
     pos: [8, 1]
     deps: [mixer]
-    optional: true
     desc: |
       &6Zinc Ore&r hides underground in pale veins. Smelt the raw zinc into ingots.
 
@@ -195,7 +186,6 @@ quests:
     icon: create:blaze_burner
     pos: [8, 0]
     deps: [mixer]
-    optional: true
     desc: |
       Use an &6Empty Blaze Burner&r on a living blaze to trap it inside. Feed it fuel and it heats whatever sits above it.
 
@@ -209,7 +199,6 @@ quests:
     icon: create:brass_ingot
     pos: [10, 0.5]
     deps: [zinc, burner]
-    optional: true
     shape: hexagon
     desc: |
       Drop copper and zinc ingots into a basin over a lit Blaze Burner and let the mixer turn them into &6Brass&r.
@@ -238,7 +227,6 @@ quests:
     icon: create:mechanical_crafter
     pos: [12, 1]
     deps: [brass]
-    optional: true
     desc: |
       Arrange &6Mechanical Crafters&r in the shape of a recipe, point them toward each other and give them rotation. They pass the ingredients along and finish the craft on their own.
     tasks: [{advancement: "create:mechanical_crafter"}]

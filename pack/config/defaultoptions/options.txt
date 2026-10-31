@@ -1,6 +1,7 @@
 renderDistance:10
 simulationDistance:8
 autoJump:false
+guiScale:2
 key_key.runeborn.art:key.keyboard.r
 key_key.runeborn.character:key.keyboard.i
 key_key.runeborn.dodge:key.keyboard.left.alt

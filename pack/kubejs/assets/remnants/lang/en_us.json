@@ -1,4 +1,17 @@
 {
+  "item.remnants.ashen_alloy": "Ashen Alloy",
+  "item.remnants.deepsteel_blend": "Deepsteel Blend",
+  "item.remnants.deepsteel_ingot": "Deepsteel Ingot",
+  "item.remnants.duskforged_ingot": "Duskforged Ingot",
+  "item.remnants.eclipse_core": "Eclipse Core",
+  "item.remnants.moonsilver_blend": "Moonsilver Blend",
+  "item.remnants.moonsilver_ingot": "Moonsilver Ingot",
+  "item.remnants.seal_of_ash": "Seal of Ash",
+  "item.remnants.seal_of_dusk": "Seal of Dusk",
+  "item.remnants.seal_of_the_deep": "Seal of the Deep",
+  "item.remnants.seal_of_the_hunt": "Seal of the Hunt",
+  "item.remnants.sunforged_blend": "Sunforged Blend",
+  "item.remnants.sunforged_ingot": "Sunforged Ingot",
   "subtitles.remnants.vo.keeper": "The Keeper speaks",
   "subtitles.remnants.vo.whisper": "Something whispers"
 }

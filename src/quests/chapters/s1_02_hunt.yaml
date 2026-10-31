@@ -1,6 +1,6 @@
 chapter: s1_act2_hunt
 group: main
-order: 2
+order: 3
 title: "&6Act II: &fThe Hunt"
 subtitle: "The red moon rises. The Remnants hunt you back. Levels 15–30."
 icon: remnant_mobs:brand_of_challenge
@@ -195,7 +195,7 @@ quests:
     title: "The Grafted King"
     subtitle: "Six Fragments and an iron block."
     icon: minecraft:iron_block
-    deps: [hunters_moon]
+    deps: [hunters_moon, s1_forge/seal_dusk]
     keeper: |
       Varghast was a good king, once. Too good. He couldn't bear to lose a single soldier, so he kept them. Every arm of every man who fell for him, sewn onto his own.
     voice: true
@@ -203,6 +203,8 @@ quests:
       &6Varghast the Grafted&r, Sovereign of the Hollow Vale, kept his army's strength the only way he could: by wearing it. By the end there was nothing left of him but grip. His token is a block of &firon&r, the metal of the stitches.
 
       &7Gather six Fragments and an iron block.
+
+      &7Varghast's sigil needs the &6Seal of Dusk&7 in the grid too. It stays there.
     tasks: [{item: runeborn:sovereign_fragment, count: 6}, {item: minecraft:iron_block}]
     rewards: [{xp: 150}]
 
@@ -286,7 +288,7 @@ quests:
     title: "&6Sovereign: Sylvara, Frost Matron"
     subtitle: "Sovereign of the Rime Veil. Level 25."
     icon: runeborn:frostbound_staff
-    deps: [rime_veil]
+    deps: [rime_veil, s1_forge/seal_dusk]
     unlock: |
       Blue ice and six Fragments. Sylvara will know you're coming before you do. Dress warm, and keep a flask for when the frost bursts. She was gentle, once. She won't be tonight.
     shape: gear
@@ -298,6 +300,8 @@ quests:
       Call her in the snow, where she feels at home. She fights from range and freezes what she can't reach.
 
       &7&cFrostbite&7 builds with every hit; let it fill and it bursts for a chunk of your health. Close the distance, use cover against her blizzards and keep a flask for the burst.
+
+      &7Her sigil needs the &6Seal of Dusk&7 in the grid. It stays there.
     tasks: [{item: runeborn:sigil_sylvara}, {advancement: "runeborn:feats/fell_sylvara"}]
     rewards: [{table: sovereign_tribute}, {item: runeborn:tempering_stone_5, count: 2}, {xp: 800}]
 

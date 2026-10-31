@@ -8,7 +8,7 @@
 	}
 	id: "3CFC5F2EB26BB279"
 	images: [ ]
-	order_index: 2
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -390,7 +390,7 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["1B71C09161A6DDFB"]
+			dependencies: ["1B71C09161A6DDFB", "06C780A202DA9F3A"]
 			icon: {
 				id: "minecraft:iron_block"
 			}
@@ -603,7 +603,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["6C617748F8950056"]
+			dependencies: ["6C617748F8950056", "06C780A202DA9F3A"]
 			icon: {
 				id: "runeborn:frostbound_staff"
 			}

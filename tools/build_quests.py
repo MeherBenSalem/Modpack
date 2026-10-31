@@ -481,6 +481,12 @@ def check(refs):
                     known.add(f"{parts[1]}:{'.'.join(parts[2:])}")
         elif isinstance(data, dict) and "ids" in data:
             known.update(data["ids"])
+    # the pack's own items (KubeJS, named in kubejs/assets/<ns>/lang/en_us.json)
+    for f in (ROOT / "pack" / "kubejs" / "assets").glob("*/lang/en_us.json"):
+        for k in json.loads(f.read_text()):
+            parts = k.split(".")
+            if len(parts) == 3 and parts[0] in ("item", "block"):
+                known.add(f"{parts[1]}:{parts[2]}")
     # the pack's own datapack (KubeJS): advancements, dimensions, functions it defines
     for f in (ROOT / "pack" / "kubejs" / "data").glob("*/*/**/*.json"):
         ns, kind = f.relative_to(ROOT / "pack" / "kubejs" / "data").parts[:2]

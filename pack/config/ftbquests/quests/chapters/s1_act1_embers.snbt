@@ -8,7 +8,7 @@
 	}
 	id: "046A4DB1253C4718"
 	images: [ ]
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -466,7 +466,7 @@
 			y: 0.875d
 		}
 		{
-			dependencies: ["27437F0D8FF32DCD"]
+			dependencies: ["27437F0D8FF32DCD", "7F2DB44F1159C923"]
 			icon: {
 				id: "runeborn:sigil_dusk_rider"
 			}

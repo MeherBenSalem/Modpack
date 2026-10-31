@@ -1,6 +1,6 @@
 chapter: s1_act3_deep
 group: main
-order: 3
+order: 4
 title: "&6Act III: &fThe Deep"
 subtitle: "Drowned skies, buried cities, the Old Powers. Levels 30–50."
 icon: minecraft:echo_shard
@@ -138,7 +138,7 @@ quests:
     title: "&6Sovereign: Kaelthar the Stormcaller"
     subtitle: "Sovereign of the Drowned Sky. Level 30."
     icon: runeborn:storm_totem
-    deps: [drowned_sky]
+    deps: [drowned_sky, s1_forge/seal_hunt]
     unlock: |
       You have it. The rod, the Fragments. Kaelthar will hear his Sigil the way he hears thunder. Pick a dry day if the sky allows it, and never stand still under him. Not even to breathe.
     shape: gear
@@ -150,6 +150,8 @@ quests:
       He calls lightning down where you stand. The storm loves him back, which is the saddest thing about him.
 
       &7Keep moving, never stand still for a whole breath, and never fight him in the rain if you can help it.
+
+      &7His sigil needs the &6Seal of the Hunt&7 in the grid. It stays there.
     tasks: [{item: runeborn:sigil_kaelthar}, {advancement: "runeborn:feats/fell_kaelthar"}]
     rewards: [{table: sovereign_tribute}, {item: runeborn:tempering_stone_6, count: 2}, {xp: 900}]
 
@@ -216,7 +218,7 @@ quests:
     title: "&6Sovereign: Ysolde, the Crimson Bloom"
     subtitle: "Sovereign of the Scarlet Garden. Level 35."
     icon: runeborn:crimsonfall
-    deps: [scarlet_garden]
+    deps: [scarlet_garden, s1_forge/seal_hunt]
     unlock: |
       Redstone and six Fragments. Red was always her colour. Ysolde will cut you a hundred small times and wait for you to fall over. Don't let her dance. One clean roll, then answer.
     shape: gear
@@ -228,5 +230,7 @@ quests:
       Her garden dies with her. Something in you will be sorry about that, and you should let it.
 
       &7She bleeds you: &cHemorrhage&7 builds with every cut and bursts for a share of your health. Don't let her chain combos; one clean roll beats three panicked ones.
+
+      &7Her sigil needs the &6Seal of the Hunt&7 in the grid. It stays there.
     tasks: [{item: runeborn:sigil_ysolde}, {advancement: "runeborn:feats/fell_ysolde"}]
     rewards: [{table: sovereign_tribute}, {item: runeborn:lustrous_stone_4, count: 2}, {xp: 1000}]

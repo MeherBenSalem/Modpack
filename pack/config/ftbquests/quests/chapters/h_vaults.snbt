@@ -1,0 +1,696 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "h_vaults"
+	group: "7E3F2D0C845CD671"
+	icon: {
+		id: "omnivault:crafting_terminal"
+	}
+	id: "0E779F79D530D67A"
+	images: [ ]
+	order_index: 34
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5045D3883BE1B335", "7F2DB44F1159C923"]
+			icon: {
+				id: "sophisticatedbackpacks:backpack"
+			}
+			id: "524F47DB586B7FDB"
+			rewards: [
+				{
+					count: 8
+					id: "02AC2BC40BF6A7A2"
+					item: {
+						count: 1
+						id: "minecraft:leather"
+					}
+					type: "item"
+				}
+				{
+					id: "1E05BFDC8D0A172E"
+					type: "xp"
+					xp: 60
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					id: "69E468EEB5580C1D"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:backpack"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["358480A0A0312181", "7F2DB44F1159C923"]
+			icon: {
+				id: "sophisticatedstorage:iron_chest"
+			}
+			id: "748A1795B9FBB3DE"
+			rewards: [
+				{
+					count: 4
+					id: "64BF780108D0D2CD"
+					item: {
+						count: 1
+						id: "remnants:ashen_alloy"
+					}
+					type: "item"
+				}
+				{
+					id: "784DEBCE9F82BF00"
+					type: "xp"
+					xp: 60
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					id: "0A965510A08D7E5D"
+					item: {
+						count: 1
+						id: "sophisticatedstorage:iron_chest"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["748A1795B9FBB3DE"]
+			icon: {
+				id: "omnivault:drawer_1x1"
+			}
+			id: "2CAB36265B86DF9D"
+			rewards: [
+				{
+					count: 18
+					id: "39CA6DBE39D43066"
+					item: {
+						count: 1
+						id: "minecraft:iron_nugget"
+					}
+					type: "item"
+				}
+				{
+					id: "3722436F7FA55942"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "677F07FEF2785F09"
+					item: {
+						count: 1
+						id: "omnivault:drawer_1x1"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["524F47DB586B7FDB"]
+			icon: {
+				id: "sophisticatedbackpacks:pickup_upgrade"
+			}
+			id: "695FD16E5F63C040"
+			rewards: [
+				{
+					count: 2
+					id: "72D55D2FFD91ADA4"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:upgrade_base"
+					}
+					type: "item"
+				}
+				{
+					id: "4C8A42301221350A"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "0EF8ACB75BE12321"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:pickup_upgrade"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -3.25d
+		}
+		{
+			dependencies: ["695FD16E5F63C040"]
+			icon: {
+				id: "sophisticatedbackpacks:crafting_upgrade"
+			}
+			id: "2198D2B29D3AA4DF"
+			rewards: [
+				{
+					id: "32876B5851FCEBA7"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "19F6972A1F66B7D6"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:crafting_upgrade"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -3.25d
+		}
+		{
+			dependencies: ["524F47DB586B7FDB"]
+			icon: {
+				id: "sophisticatedbackpacks:iron_backpack"
+			}
+			id: "098CE211ED650279"
+			rewards: [
+				{
+					count: 4
+					id: "07BAA2A8790954AE"
+					item: {
+						count: 1
+						id: "remnants:ashen_alloy"
+					}
+					type: "item"
+				}
+				{
+					id: "7D15BCCEBB341D60"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "48ADD099A264E8AE"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:iron_backpack"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -1.75d
+		}
+		{
+			dependencies: ["2CAB36265B86DF9D", "2117F587492EBB8B"]
+			icon: {
+				id: "omnivault:logic_processor"
+			}
+			id: "7B0CE3845C046AFD"
+			rewards: [
+				{
+					count: 4
+					id: "7A6D0F7494487FA1"
+					item: {
+						count: 1
+						id: "omnivault:omnium_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "47E34F0C3B2B031A"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "06282BBFB3076D2F"
+					item: {
+						count: 1
+						id: "omnivault:logic_processor"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["748A1795B9FBB3DE", "7B0CE3845C046AFD"]
+			icon: {
+				id: "sophisticatedstorage:controller"
+			}
+			id: "2989448A7B687450"
+			rewards: [
+				{
+					id: "550B9E23EB6EA31D"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "009BDB455F95A415"
+					item: {
+						count: 1
+						id: "sophisticatedstorage:controller"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2989448A7B687450"]
+			icon: {
+				id: "omnivault:storage_hub"
+			}
+			id: "114419D78A0C8ED5"
+			rewards: [
+				{
+					count: 8
+					id: "5F4D420FA00D2DD0"
+					item: {
+						count: 1
+						id: "omnivault:inventory_cable"
+					}
+					type: "item"
+				}
+				{
+					id: "6CC8EDA5CA6427E5"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "521E43848CDB006F"
+					item: {
+						count: 1
+						id: "omnivault:storage_hub"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["114419D78A0C8ED5", "2198D2B29D3AA4DF"]
+			icon: {
+				id: "omnivault:crafting_terminal"
+			}
+			id: "57AED84A7CD6F580"
+			rewards: [
+				{
+					id: "7A9500A93C6017B0"
+					table_id: 1235064283976969780L
+					type: "random"
+				}
+				{
+					id: "66065D260B4467B4"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "70627E3CAB889CBF"
+					item: {
+						count: 1
+						id: "omnivault:crafting_terminal"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["098CE211ED650279", "2117F587492EBB8B"]
+			icon: {
+				id: "sophisticatedbackpacks:gold_backpack"
+			}
+			id: "674442F083592325"
+			rewards: [
+				{
+					count: 2
+					id: "44F4CCF740292585"
+					item: {
+						count: 1
+						id: "remnants:duskforged_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "100F47BC3B65FD6C"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					id: "5C0B68796006ADA9"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:gold_backpack"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -1.75d
+		}
+		{
+			dependencies: ["2989448A7B687450"]
+			icon: {
+				id: "sophisticatedstorage:storage_link"
+			}
+			id: "7AB2D2748389516F"
+			rewards: [
+				{
+					id: "1B03504E15CC0DA5"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "56E07F9820816187"
+					item: {
+						count: 1
+						id: "sophisticatedstorage:storage_link"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B0CE3845C046AFD", "5FF35B988078DCF3"]
+			icon: {
+				id: "omnivault:advanced_processor"
+			}
+			id: "2F4C04A78B1EBA07"
+			rewards: [
+				{
+					id: "6B3DECED46D0D439"
+					item: {
+						count: 1
+						id: "remnants:moonsilver_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "131AC7A46735F829"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "389594B6068C8AA8"
+					item: {
+						count: 1
+						id: "omnivault:advanced_processor"
+					}
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 3.25d
+		}
+		{
+			dependencies: ["695FD16E5F63C040", "7B0CE3845C046AFD", "5FF35B988078DCF3"]
+			icon: {
+				id: "sophisticatedbackpacks:advanced_pickup_upgrade"
+			}
+			id: "7176C76EEC279852"
+			rewards: [
+				{
+					count: 2
+					id: "0A838F996A1B5725"
+					item: {
+						count: 1
+						id: "omnivault:logic_processor"
+					}
+					type: "item"
+				}
+				{
+					id: "488AEBB38A5BC53E"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "6ECD005A115EC59C"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:advanced_pickup_upgrade"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -3.25d
+		}
+		{
+			dependencies: ["674442F083592325", "5FF35B988078DCF3"]
+			icon: {
+				id: "sophisticatedbackpacks:diamond_backpack"
+			}
+			id: "4EE5EA30F9CD2FE4"
+			rewards: [
+				{
+					id: "2E64B19E19955141"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [
+				{
+					id: "39B145C9CA66E16B"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:diamond_backpack"
+					}
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: -1.75d
+		}
+		{
+			dependencies: ["57AED84A7CD6F580", "2F4C04A78B1EBA07"]
+			icon: {
+				id: "omnivault:nexus_core"
+			}
+			id: "50BEACFFFDC3A65A"
+			rewards: [
+				{
+					id: "5FA9C0739E0CC70E"
+					table_id: 1235064283976969780L
+					type: "random"
+				}
+				{
+					count: 8
+					id: "1B460D123E3FAB52"
+					item: {
+						count: 1
+						id: "omnivault:blank_pattern"
+					}
+					type: "item"
+				}
+				{
+					id: "0892D5EE8668EC09"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "gear"
+			size: 1.25d
+			tasks: [
+				{
+					id: "2E5475AE7E83470A"
+					item: {
+						count: 1
+						id: "omnivault:nexus_core"
+					}
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["7AB2D2748389516F", "57AED84A7CD6F580", "2F4C04A78B1EBA07"]
+			icon: {
+				id: "omnivault:wireless_terminal"
+			}
+			id: "6E2A8F001D7942A5"
+			rewards: [
+				{
+					id: "46D1A52160764D9B"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "2258800603F46097"
+					item: {
+						count: 1
+						id: "omnivault:wireless_terminal"
+					}
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2F4C04A78B1EBA07", "79F03607AC11BFB2"]
+			icon: {
+				id: "omnivault:quantum_processor"
+			}
+			id: "0B63E0A0DB105CCA"
+			rewards: [
+				{
+					id: "47F246FCB2B75C15"
+					item: {
+						count: 1
+						id: "remnants:deepsteel_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "7FD7FBFD69EF8136"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "254CEEB50230275D"
+					item: {
+						count: 1
+						id: "omnivault:quantum_processor"
+					}
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 3.25d
+		}
+		{
+			dependencies: ["4EE5EA30F9CD2FE4", "79F03607AC11BFB2"]
+			icon: {
+				id: "sophisticatedbackpacks:netherite_backpack"
+			}
+			id: "6817BBCBA70CDCEC"
+			rewards: [
+				{
+					id: "4303ACEE9A40DDFD"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					id: "5D8E872163E4C230"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:netherite_backpack"
+					}
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: -1.75d
+		}
+		{
+			dependencies: ["6817BBCBA70CDCEC", "6980BF7C1C957193"]
+			icon: {
+				id: "sophisticatedbackpacks:stack_upgrade_omega_tier"
+			}
+			id: "41C9363857D94090"
+			rewards: [
+				{
+					id: "5313A6373D5F13E5"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "7B993C653BFFDEB8"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:stack_upgrade_omega_tier"
+					}
+					type: "item"
+				}
+			]
+			x: 18.0d
+			y: -1.75d
+		}
+		{
+			dependencies: ["0B63E0A0DB105CCA", "6E2A8F001D7942A5", "6980BF7C1C957193"]
+			icon: {
+				id: "omnivault:quantum_wireless_terminal"
+			}
+			id: "62F4B3CF004A48C7"
+			rewards: [
+				{
+					id: "7ED68931D7742985"
+					table_id: 5895024424703439718L
+					type: "random"
+				}
+				{
+					id: "70BB57C3B29FD329"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "06A38A693C1939B1"
+					item: {
+						count: 1
+						id: "omnivault:quantum_wireless_terminal"
+					}
+					type: "item"
+				}
+			]
+			x: 18.0d
+			y: 1.75d
+		}
+	]
+}

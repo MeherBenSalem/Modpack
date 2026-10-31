@@ -8,7 +8,7 @@
 	}
 	id: "42655E5D516196A5"
 	images: [ ]
-	order_index: 5
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
@@ -36,7 +36,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["7A21A291E4DB088D"]
+			dependencies: ["7A21A291E4DB088D", "5BB8B8DF9037E67A"]
 			icon: {
 				id: "remnant_bosses:eclipse_shard"
 			}

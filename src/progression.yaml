@@ -1,0 +1,231 @@
+# The Ember Forge: one progression for the whole pack, tied to the main story.
+#
+# Compiled by tools/build_progression.py into
+#   pack/kubejs/startup_scripts/remnants_forge_items.js     (the custom items)
+#   pack/kubejs/server_scripts/remnants/forge.js            (every recipe change)
+#   pack/kubejs/assets/remnants/lang/en_us.json             (item names, merged)
+# and checked: every id exists, every original recipe it edits exists and really changes, and every material a
+# gate asks for can be obtained (a recipe, a loot table or a loot bag makes it).
+#
+# Six tiers follow the six parts of the story. Tiers II-V each need a Seal: crafted ONCE from the Sovereigns that
+# close the act before (their relics), it stays in the grid every time you forge that tier's alloy. Each alloy needs
+# the alloy before it, a Create machine, and something only that act's world gives. Storage, tech and tools are
+# re-tiered onto the alloys, and the two storage families are locked against each other: OmniVault's network needs
+# Sophisticated parts, and Sophisticated's higher tiers need OmniVault processors.
+#
+#   I    Kindled   first Ember Shrine              Ashen Alloy        Create mixing
+#   II   Dusk      the Dusk Rider                  Duskforged Ingot   Create pressing (golden sheets)
+#   III  Hunt      Varghast and Sylvara            Moonsilver Ingot   blasting
+#   IV   Deep      Kaelthar, Ysolde, the Warden    Deepsteel Ingot    Create haunting (soul fire fan)
+#   V    Ash       Morgrath, Vaelorn, Wither, Dragon  Sunforged Ingot Create heated mixing (blaze burner)
+#   VI   Eclipse   the Eclipsed Realm              Eclipse Core       Create mechanical crafting
+
+items:
+  - {id: remnants:ashen_alloy, name: Ashen Alloy, texture: minecraft:item/iron_ingot, tint: 0xB9AA9C,
+     lore: ["Tier I of the Ember Forge.", "Mixed in a Create basin: iron, andesite alloy and a Faded Rune."]}
+  - {id: remnants:seal_of_dusk, name: Seal of Dusk, texture: remnants:item/ember_seal, tint: 0xF0A060, rarity: rare,
+     stack: 1, lore: ["Tier II. Bound from the Dusk Rider's relic.", "Stays in the grid when you forge Duskforged Ingots."]}
+  - {id: remnants:duskforged_ingot, name: Duskforged Ingot, texture: minecraft:item/iron_ingot, tint: 0xE39A5B,
+     lore: ["Tier II of the Ember Forge.", "Ashen Alloy and golden sheets, under the Seal of Dusk."]}
+  - {id: remnants:seal_of_the_hunt, name: Seal of the Hunt, texture: remnants:item/ember_seal, tint: 0xD84848,
+     rarity: rare, stack: 1, lore: ["Tier III. Bound from Varghast's and Sylvara's relics.", "Stays in the grid when you blend Moonsilver."]}
+  - {id: remnants:moonsilver_blend, name: Moonsilver Blend, texture: minecraft:item/sugar, tint: 0xCFE3FF,
+     lore: ["Blast it into a Moonsilver Ingot."]}
+  - {id: remnants:moonsilver_ingot, name: Moonsilver Ingot, texture: minecraft:item/iron_ingot, tint: 0xD4E6FF,
+     lore: ["Tier III of the Ember Forge.", "Duskforged and diamond, cooled under the Hunter's Moon."]}
+  - {id: remnants:seal_of_the_deep, name: Seal of the Deep, texture: remnants:item/ember_seal, tint: 0x3FC0B8,
+     rarity: rare, stack: 1, lore: ["Tier IV. Bound from Kaelthar's and Ysolde's relics and the Warden's heart.", "Stays in the grid when you blend Deepsteel."]}
+  - {id: remnants:deepsteel_blend, name: Deepsteel Blend, texture: minecraft:item/sugar, tint: 0x3FA9A3,
+     lore: ["Haunt it: blow it through soul fire with a Create fan."]}
+  - {id: remnants:deepsteel_ingot, name: Deepsteel Ingot, texture: minecraft:item/iron_ingot, tint: 0x3C8C88,
+     lore: ["Tier IV of the Ember Forge.", "Moonsilver and echoes from the deep, haunted in soul fire."]}
+  - {id: remnants:seal_of_ash, name: Seal of Ash, texture: remnants:item/ember_seal, tint: 0xFF6A2A, rarity: epic,
+     stack: 1, lore: ["Tier V. Bound from Morgrath's and Vaelorn's relics, a Nether Star and the Dragon's breath.", "Stays in the grid when you blend Sunforged."]}
+  - {id: remnants:sunforged_blend, name: Sunforged Blend, texture: minecraft:item/sugar, tint: 0xFFC14A,
+     lore: ["Mix it over a heated Blaze Burner."]}
+  - {id: remnants:sunforged_ingot, name: Sunforged Ingot, texture: minecraft:item/iron_ingot, tint: 0xFFC548,
+     lore: ["Tier V of the Ember Forge.", "Deepsteel and netherite, melted over a living flame."]}
+  - {id: remnants:eclipse_core, name: Eclipse Core, texture: minecraft:item/nether_star, tint: 0x9A7CFF, rarity: epic,
+     lore: ["Tier VI of the Ember Forge.", "Sunforged ingots around a splinter of the black sun."]}
+
+# Materials of each tier, used by the retier maps below (ingots/gems -> that tier's alloy; storage blocks -> one
+# tier higher, because a block is nine ingots of capacity).
+retier:
+  - mods: [sophisticatedbackpacks, sophisticatedstorage, sophisticatedcore, omnivault, reconstructedwands]
+    skip: ["chipped/", "sawmill/", "_dye", "_clear", "flat_top", "barrel_material", "decoration", "generic_",
+           "packing_tape", "paintbrush"]
+    map:
+      "#c:ingots/copper": create:copper_sheet
+      minecraft:copper_ingot: create:copper_sheet
+      "#c:ingots/iron": remnants:ashen_alloy
+      minecraft:iron_ingot: remnants:ashen_alloy
+      "#c:ingots/gold": remnants:duskforged_ingot
+      minecraft:gold_ingot: remnants:duskforged_ingot
+      "#c:gems/diamond": remnants:moonsilver_ingot
+      minecraft:diamond: remnants:moonsilver_ingot
+      "#c:ingots/netherite": remnants:deepsteel_ingot
+      minecraft:netherite_ingot: remnants:deepsteel_ingot
+      minecraft:netherite_scrap: remnants:deepsteel_ingot
+      "#c:storage_blocks/copper": remnants:ashen_alloy
+      "#c:storage_blocks/iron": remnants:duskforged_ingot
+      "#c:storage_blocks/gold": remnants:moonsilver_ingot
+      "#c:storage_blocks/diamond": remnants:deepsteel_ingot
+      "#c:storage_blocks/netherite": remnants:sunforged_ingot
+      minecraft:end_crystal: remnants:sunforged_ingot
+      "#c:nether_stars": remnants:eclipse_core
+      minecraft:nether_star: remnants:eclipse_core
+
+# Single recipes: `map` swaps ingredients (after the retier map), `pattern`/`key` rewrite a shaped grid, `add`
+# appends shapeless ingredients, `keep` leaves those items in the grid (KubeJS keepIngredient), `result` overrides.
+edits:
+  # --- the storage interlock ---
+  - id: sophisticatedbackpacks:backpack            # a backpack starts as a Supplementaries sack
+    pattern: ["SLS", "AKA", "LLL"]
+    key: {S: "#c:strings", L: "#c:leathers", A: remnants:ashen_alloy, K: supplementaries:sack}
+  - id: sophisticatedstorage:controller             # the Sophisticated controller runs on an OmniVault processor
+    map: {minecraft:comparator: omnivault:logic_processor}
+  - match: "^sophisticated(backpacks|storage):advanced_"   # every advanced upgrade needs OmniVault logic
+    map: {"#c:dusts/redstone": omnivault:logic_processor}
+  - id: sophisticatedbackpacks:stack_upgrade_omega_tier   # the last stack upgrade is an Act V reward
+    pattern: ["E", "U"]
+    key: {E: remnants:eclipse_core, U: sophisticatedbackpacks:stack_upgrade_tier_4}
+  - id: sophisticatedstorage:stack_upgrade_omega_tier
+    pattern: ["E", "U"]
+    key: {E: remnants:eclipse_core, U: sophisticatedstorage:stack_upgrade_tier_5}
+  - id: omnivault:drawer_1x1                        # OmniVault drawers are built on Sophisticated barrels
+    map: {"#c:chests/wooden": sophisticatedstorage:barrel}
+  - id: omnivault:drawer_1x2
+    map: {"#c:chests/wooden": sophisticatedstorage:barrel}
+  - id: omnivault:drawer_2x2
+    map: {"#c:chests/wooden": sophisticatedstorage:barrel}
+  - id: omnivault:storage_hub                       # the network starts at a Sophisticated controller
+    map: {minecraft:chest: sophisticatedstorage:controller}
+  - id: omnivault:drive                             # cells live in a Sophisticated gold barrel
+    map: {minecraft:chest: sophisticatedstorage:gold_barrel}
+  - id: omnivault:crafting_terminal                 # the crafting terminal needs a backpack crafting upgrade
+    map: {minecraft:crafting_table: sophisticatedbackpacks:crafting_upgrade}
+  - id: omnivault:wireless_terminal                 # wireless needs a Sophisticated storage link
+    map: {minecraft:ender_pearl: sophisticatedstorage:storage_link}
+  - id: omnivault:leather_backpack                  # OmniVault backpacks are rebuilt Sophisticated backpacks
+    map: {minecraft:chest: sophisticatedbackpacks:backpack, minecraft:string: omnivault:logic_processor}
+  - id: omnivault:copper_vault
+    map: {minecraft:chest: sophisticatedstorage:chest}
+  # --- the story locks: each Sovereign's sigil needs the seal of the act before ---
+  - id: runeborn:sigil_dusk_rider
+    add: [remnants:ashen_alloy]
+  - id: runeborn:sigil_varghast
+    add: [remnants:seal_of_dusk]
+    keep: [remnants:seal_of_dusk]
+  - id: runeborn:sigil_sylvara
+    add: [remnants:seal_of_dusk]
+    keep: [remnants:seal_of_dusk]
+  - id: runeborn:sigil_kaelthar
+    add: [remnants:seal_of_the_hunt]
+    keep: [remnants:seal_of_the_hunt]
+  - id: runeborn:sigil_ysolde
+    add: [remnants:seal_of_the_hunt]
+    keep: [remnants:seal_of_the_hunt]
+  - id: runeborn:sigil_morgrath
+    add: [remnants:seal_of_the_deep]
+    keep: [remnants:seal_of_the_deep]
+  - id: runeborn:sigil_vaelorn
+    add: [remnants:seal_of_the_deep]
+    keep: [remnants:seal_of_the_deep]
+  - id: remnant_bosses:eclipse_shard               # the Eclipsed Realm opens only after Act IV
+    map: {minecraft:gold_ingot: remnants:sunforged_ingot}
+    add: [remnants:seal_of_ash]
+    keep: [remnants:seal_of_ash]
+  # --- tools of travel ---
+  - id: naturescompass:natures_compass
+    pattern: ["SLS", "LCL", "SAS"]
+    key: {S: "#minecraft:saplings", L: "#minecraft:logs", C: minecraft:compass, A: remnants:ashen_alloy}
+  - id: explorerscompass:explorers_compass
+    pattern: ["WSW", "DCD", "WSW"]
+    key: {W: minecraft:cobweb, S: minecraft:cracked_stone_bricks, C: minecraft:compass, D: remnants:duskforged_ingot}
+  # --- diamond gear is Act II gear ---
+  - {id: minecraft:diamond_helmet, pattern: ["DDD", "DTD"], key: {D: "#c:gems/diamond", T: remnants:duskforged_ingot}}
+  - {id: minecraft:diamond_chestplate, pattern: ["DTD", "DDD", "DDD"], key: {D: "#c:gems/diamond", T: remnants:duskforged_ingot}}
+  - {id: minecraft:diamond_leggings, pattern: ["DDD", "DTD", "D D"], key: {D: "#c:gems/diamond", T: remnants:duskforged_ingot}}
+  - {id: minecraft:diamond_boots, pattern: ["DTD", "D D"], key: {D: "#c:gems/diamond", T: remnants:duskforged_ingot}}
+  - {id: minecraft:diamond_sword, pattern: ["D", "D", "T"], key: {D: "#c:gems/diamond", T: remnants:duskforged_ingot}}
+  - {id: minecraft:diamond_pickaxe, pattern: ["DDD", " T ", " S "], key: {D: "#c:gems/diamond", T: remnants:duskforged_ingot, S: "#c:rods/wooden"}}
+  - {id: minecraft:diamond_axe, pattern: ["DD", "DT", " S"], key: {D: "#c:gems/diamond", T: remnants:duskforged_ingot, S: "#c:rods/wooden"}}
+  - {id: minecraft:diamond_shovel, pattern: ["D", "T", "S"], key: {D: "#c:gems/diamond", T: remnants:duskforged_ingot, S: "#c:rods/wooden"}}
+  - {id: minecraft:diamond_hoe, pattern: ["DD", " T", " S"], key: {D: "#c:gems/diamond", T: remnants:duskforged_ingot, S: "#c:rods/wooden"}}
+
+# New recipes. `shaped`/`shapeless` go through KubeJS (so `keep` works); `json` is passed as-is (Create, smelting).
+recipes:
+  # Tier I: Ashen Alloy, in a Create basin (no heat)
+  - id: remnants:forge/ashen_alloy
+    json: {type: create:mixing, ingredients: [{item: minecraft:iron_ingot}, {item: minecraft:iron_ingot},
+           {item: create:andesite_alloy}, {item: create:andesite_alloy}, {item: runeborn:faded_rune}],
+           results: [{id: remnants:ashen_alloy, count: 3}]}
+  # Tier II: the Seal of Dusk, then Duskforged
+  - id: remnants:forge/seal_of_dusk
+    result: remnants:seal_of_dusk
+    shaped: ["FAF", "ARA", "FAF"]
+    key: {F: runeborn:sovereign_fragment, A: remnants:ashen_alloy, R: runeborn:relic_dusk_rider}
+  - id: remnants:forge/duskforged_ingot
+    result: [remnants:duskforged_ingot, 4]
+    shaped: ["AGA", "RST", "AGA"]
+    key: {A: remnants:ashen_alloy, G: create:golden_sheet, R: remnant_mobs:remnant_shard, S: remnants:seal_of_dusk,
+          T: runeborn:tempering_stone_2}
+    keep: [remnants:seal_of_dusk]
+  # Tier III: the Seal of the Hunt, then Moonsilver
+  - id: remnants:forge/seal_of_the_hunt
+    result: remnants:seal_of_the_hunt
+    shaped: ["FVF", "DHD", "FYF"]
+    key: {F: runeborn:sovereign_fragment, V: runeborn:relic_varghast, Y: runeborn:relic_sylvara,
+          D: remnants:duskforged_ingot, H: farmersdelight:roast_chicken_block}
+  - id: remnants:forge/moonsilver_blend
+    result: [remnants:moonsilver_blend, 2]
+    shaped: ["DAD", "GSG", "ALA"]
+    key: {D: remnants:duskforged_ingot, A: minecraft:amethyst_shard, G: "#c:gems/diamond", S: remnants:seal_of_the_hunt,
+          L: runeborn:lustrous_stone_1}
+    keep: [remnants:seal_of_the_hunt]
+  - id: remnants:forge/moonsilver_ingot
+    json: {type: minecraft:blasting, ingredient: {item: remnants:moonsilver_blend},
+           result: {id: remnants:moonsilver_ingot}, experience: 1.0, cookingtime: 200}
+  # Tier IV: the Seal of the Deep, then Deepsteel
+  - id: remnants:forge/seal_of_the_deep
+    result: remnants:seal_of_the_deep
+    shaped: ["FKF", "MHM", "CYF"]
+    key: {F: runeborn:sovereign_fragment, K: runeborn:relic_kaelthar, Y: runeborn:relic_ysolde,
+          M: remnants:moonsilver_ingot, H: deeperdarker:heart_of_the_deep, C: brewinandchewin:flaxen_cheese_wheel}
+  - id: remnants:forge/deepsteel_blend
+    result: [remnants:deepsteel_blend, 4]
+    shaped: ["MEM", "PSP", "MLM"]
+    key: {M: remnants:moonsilver_ingot, E: deeperdarker:reinforced_echo_shard, P: minecraft:prismarine_crystals,
+          S: remnants:seal_of_the_deep, L: runeborn:lustrous_stone_3}
+    keep: [remnants:seal_of_the_deep]
+  - id: remnants:forge/deepsteel_ingot
+    json: {type: create:haunting, ingredients: [{item: remnants:deepsteel_blend}],
+           results: [{id: remnants:deepsteel_ingot}]}
+  # Tier V: the Seal of Ash, then Sunforged
+  - id: remnants:forge/seal_of_ash
+    result: remnants:seal_of_ash
+    shaped: ["FMF", "DND", "OVB"]
+    key: {F: runeborn:sovereign_fragment, M: runeborn:relic_morgrath, V: runeborn:relic_vaelorn,
+          D: remnants:deepsteel_ingot, N: minecraft:nether_star, B: minecraft:dragon_breath,
+          O: sprout_and_soil:steak_dinner}
+  - id: remnants:forge/sunforged_blend
+    result: [remnants:sunforged_blend, 4]
+    shaped: ["DND", "BSB", "DLD"]
+    key: {D: remnants:deepsteel_ingot, N: minecraft:netherite_ingot, B: minecraft:blaze_powder,
+          S: remnants:seal_of_ash, L: runeborn:lustrous_stone_6}
+    keep: [remnants:seal_of_ash]
+  - id: remnants:forge/sunforged_ingot
+    json: {type: create:mixing, heat_requirement: heated,
+           ingredients: [{item: remnants:sunforged_blend}, {item: minecraft:glowstone_dust}],
+           results: [{id: remnants:sunforged_ingot}]}
+  # Tier VI: the Eclipse Core, on Create mechanical crafters
+  - id: remnants:forge/eclipse_core
+    json: {type: create:mechanical_crafting, accept_mirrored: false, category: misc, show_notification: true,
+           pattern: ["  S  ", " GRG ", "SRXRS", " GRG ", "  S  "],
+           key: {S: {item: remnants:sunforged_ingot}, G: {item: remnant_bosses:grave_iron},
+                 R: {item: remnant_bosses:royal_soul_fragment}, X: {item: remnant_bosses:eclipse_shard}},
+           result: {id: remnants:eclipse_core, count: 1}}
+  # OmniVault's omnium without Nether quartz: a Remnant Shard does the quartz's work
+  - id: remnants:forge/omnium_dust_from_remnant_shard
+    json: {type: create:mixing, ingredients: [{item: minecraft:amethyst_shard}, {item: minecraft:redstone},
+           {item: remnant_mobs:remnant_shard}], results: [{id: omnivault:omnium_dust, count: 2}]}

@@ -12,7 +12,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["20A88504DC6B5A17"]
+			dependencies: ["20A88504DC6B5A17", "2117F587492EBB8B"]
 			icon: {
 				id: "explorerscompass:explorerscompass"
 			}
@@ -395,7 +395,7 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["20A88504DC6B5A17"]
+			dependencies: ["20A88504DC6B5A17", "7F2DB44F1159C923"]
 			icon: {
 				id: "naturescompass:naturescompass"
 			}

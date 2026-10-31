@@ -1,6 +1,6 @@
 chapter: s1_act1_embers
 group: main
-order: 1
+order: 2
 title: "&6Act I: &fEmbers"
 subtitle: "Light the first shrine. Call the first Sovereign. Levels 5–15."
 icon: runeborn:ember_shrine
@@ -216,11 +216,13 @@ quests:
     title: "A Clock for the Dusk"
     subtitle: "Time, folded into a seal."
     icon: runeborn:sigil_dusk_rider
-    deps: [fragments]
+    deps: [fragments, s1_forge/ashen_alloy]
     desc: |
       A Sigil is a Sovereign's own name, pressed into a scrap of their light. Hold it up at dusk and the name remembers who it belongs to.
 
       &7Craft the Dusk Rider's Sigil.
+
+      &7The sigil also takes one &6Ashen Alloy&7 (The Ember Forge): the Rider only answers someone who can work a forge.
     tasks: [{item: runeborn:sigil_dusk_rider}]
     rewards: [{item: minecraft:golden_apple, count: 2}, {xp: 100}]
 
@@ -258,5 +260,7 @@ quests:
       A Sovereign's &6Relic&r is the part of them that refused to die: the habit they couldn't break, hardened into an object.
 
       &7Exchange the relic at a shrine for its legendary armament, the &6Duskrider Glaive&7.
+
+      &7Or keep it: the relic is what binds the &6Seal of Dusk&7 in the Ember Forge, and the seal opens Act II. The sigil calls the Rider again if you want both.
     tasks: [{item: runeborn:relic_dusk_rider}]
     rewards: [{item: runeborn:lustrous_stone_1, count: 2}, {xp: 150}]

@@ -90,9 +90,9 @@ items:
          remnant_bosses:warden_boots]
     40: [remnant_bosses:regalia_cuirass, remnant_bosses:regalia_greaves, remnant_bosses:regalia_sabatons]
   agility:               # anything that flies
-    10: [chronofall:jetpack]
     15: [minecraft:elytra]
     22: [deeperdarker:soul_elytra]
+    24: [chronofall:jetpack]          # its Fabricator recipe needs blaze rods: an Act IV item
   fortitude:             # gauntlets and the heaviest hammers: you have to be able to stand your ground
     14: [mowziesmobs:earthrend_gauntlet]
     16: [block_factorys_bosses:ice_gauntlet, block_factorys_bosses:sandworm_gauntlet]

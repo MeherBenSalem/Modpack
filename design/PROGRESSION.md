@@ -87,7 +87,7 @@ for a second one. Every seal also takes a dish from the Hearth's kitchens, so co
 `src/stat_locks.yaml` (compiled by `tools/build_stat_locks.py` into `config/ras/`) puts gear on the K screen's
 attributes, following the acts so a player who spends points evenly meets each gate about when the item shows up:
 weapons and tools need **Attack Power**, guns and bows **Attack Speed**, armour **Protection**, anything that flies
-**Agility** (jetpack 10, elytra 15, soul elytra 22), compasses and the Fortune Talisman **Exploration**, gauntlets
+**Agility** (elytra 15, soul elytra 22, jetpack 24), compasses and the Fortune Talisman **Exploration**, gauntlets
 and the heaviest hammers **Fortitude**. Thresholds: Act I up to 6, Act II 8-14, Act III 14-24, Act IV 24-32,
 Act V 32-40. Modded ores follow diamond's level gate (titanium 10, diamond-tier ores 12, cobalt 20, ancient debris
 30, orichalcum 32). Level-ups pay the pack's own economy (runes every level, a tempering stone every 5 levels, a

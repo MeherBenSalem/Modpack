@@ -110,7 +110,7 @@ quests:
     pos: [2, -1.25]
     deps: [home, s1_forge/ashen_alloy]
     desc: |
-      An &6Iron Wand&r (iron, redstone and a stick) extends the face you click: one course of wall becomes two, two become ten. It draws blocks from your inventory, shulker boxes and bundles.
+      An &6Iron Wand&r (Ashen Alloy, redstone and a stick) extends the face you click: one course of wall becomes two, two become ten. It draws blocks from your inventory, shulker boxes and bundles.
 
       It can undo its last placements, too (see &eControls&r). Everyone builds a wall in the wrong place once.
     tasks: [{item: reconstructedwands:iron_wand}]

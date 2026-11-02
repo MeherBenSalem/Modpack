@@ -161,7 +161,11 @@ quests:
     desc: |
       Here, the dead don't stay quiet, and that includes you. Where you fell, an &cEcho&r of you rises: a Remnant that wears your face, your gear and your name, guarding the runes you dropped.
 
-      &7Kill your own Echo to take them back. Die again before you do, and the Echo and your runes fade into the ash together.
+      &7Two things wait where you fell, and chat tells you where after every death:
+      &7- your &6items&7, in your &6corpse&7: right-click it to take them back. It stays until you empty it. &fCtrl+U&7 lists your last deaths.
+      &7- your &6runes&7, in the &cbloodstain&7 beside it (red on the minimap, glowing within 96 blocks). Your Echo stands on it: kill it, then step into the bloodstain.
+
+      &7Die again before you reach the bloodstain and those runes fade into the ash with the Echo. The corpse stays.
     tasks: [{advancement: "runeborn:feats/died"}]
     rewards: [{xp: 50}]
 
@@ -176,7 +180,7 @@ quests:
     desc: |
       An Echo fights the way you fought when you died: same weapon, same habits, same mistakes. Learn from them before it does.
 
-      &7Kill your Echo and reclaim your runes.
+      &7Kill your Echo, then walk into your bloodstain to reclaim your runes.
     tasks: [{advancement: "runeborn:feats/reclaimed"}]
     rewards: [{table: wanderers_cache}, {xp: 80}]
 

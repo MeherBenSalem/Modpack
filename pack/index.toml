@@ -6,7 +6,7 @@ hash = "db5ed92739fb28dab282cd1b303b09994e36f49918ad1e6d90ab3757503e9a3b"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
-hash = "6a7b498f0fd0d2e4b1faf78f3ea165c67885c6819f9addc040a4148bc759221d"
+hash = "176b36d648d946da8f479b5151af89864059009091d2c49b6182013687caade2"
 
 [[files]]
 file = "config/dynamic_fps.json"
@@ -313,8 +313,16 @@ file = "config/mob_loot_bags/drops.json"
 hash = "b27bc763ac96cde57e4f1d67c1140093cc1eaa52975645d27eccbd935f10f53b"
 
 [[files]]
+file = "config/ras/blocks_lock.json"
+hash = "0fcfcd72de35655aed79560309f140e603c8172df157c20fd89204b7adde48be"
+
+[[files]]
 file = "config/ras/items_lock.json"
-hash = "ca4ce272bc1764077d6c5766f56cc36870eebe58b1ad5b46da17650079d66474"
+hash = "585d176254ce8561bc60bcf74d421434880e1edd2c38a2a53d3f5d15ef424f90"
+
+[[files]]
+file = "config/ras/levelup_rewards.json"
+hash = "67be0ff162c26452bf976d78e5900803e75d8e9ffefe6369cae238ac62079b8d"
 
 [[files]]
 file = "config/remnant_mobs/difficulty.json"
@@ -910,7 +918,7 @@ hash = "f538075b3fc16efe77a53c4af45d4ca8cb3cf54985b7186a9ca2831ffbbc4723"
 
 [[files]]
 file = "kubejs/data/remnants/function/threshold/build.mcfunction"
-hash = "77468c2ebc48d3bb570eb40bfaaf9cb1a2d0eb63d741e3c59671efbf501fe4ef"
+hash = "bda03f908e4e5dd707216dba582530b64ea8ea08698af5bb112a7427929224a5"
 
 [[files]]
 file = "kubejs/data/remnants/patchouli_books/ashen_codex/book.json"
@@ -1209,6 +1217,10 @@ file = "kubejs/data/twilightforest/tags/worldgen/biome/in_twilight_forest.json"
 hash = "0c615d27d6e7932dab70603593b0d4b2098f06e605c17c7e8549a677ec84ef94"
 
 [[files]]
+file = "kubejs/server_scripts/remnants/deathguide.js"
+hash = "808fe36763f6e2ad8738e1794931abe1d30bbffba5529ab9045ec603a010aa7f"
+
+[[files]]
 file = "kubejs/server_scripts/remnants/echo.js"
 hash = "7eaa1859f380a810731885e829185492d509d33afdb5530d8e2d5297151f64a0"
 
@@ -1238,7 +1250,7 @@ hash = "00450bc7767b091afbb015ec856173b866ff985d523cc88c682d6789a8862f33"
 
 [[files]]
 file = "kubejs/server_scripts/remnants/threshold.js"
-hash = "232998eca2eedd595f5045585c421bdc76cc69384df5c1749f99379957f8a59c"
+hash = "2a65405e3f994821c127e861de31425a3917be609f92f413463b576532dff27c"
 
 [[files]]
 file = "kubejs/startup_scripts/remnants_forge_items.js"
@@ -1254,11 +1266,11 @@ hash = "181e8cc9f57c4c7c01010b7335dec59987f0f231a5d7039cb45cc6f3545c8214"
 
 [[files]]
 file = "kubejs/startup_scripts/remnants_threshold_layout.js"
-hash = "76d31e7c5294e583cf834243fe6e4f744c778d9be3861162a7dab33243504517"
+hash = "9b45627df0f9a5bafaf5cc6f343298f48fbd44f09fd497fa331797fb94c6978e"
 
 [[files]]
 file = "mods/alltheleaks.pw.toml"
-hash = "21846d3ea6ce3a06e09a16e8e321eda74c71fcba0b19867f09a40b7085fc1334"
+hash = "2fa71e8480704ce47de3476ef93a4e6cd14e11480264550ff4dc14f3c2415946"
 metafile = true
 
 [[files]]
@@ -1268,7 +1280,7 @@ metafile = true
 
 [[files]]
 file = "mods/amendments.pw.toml"
-hash = "ac5015e23bf5e88a7de3443457f65578064a341cb2a9b0eb0e300d5cc55c9ffb"
+hash = "7529ab2acf5d675ac33bf1129c4873a6d1589fd936403a5be6a61fdf59a31404"
 metafile = true
 
 [[files]]
@@ -1367,6 +1379,11 @@ hash = "ea29212c8cbd52dfb96c2532d1d8d7d6a4d03532348ef558a7e11f068e661860"
 metafile = true
 
 [[files]]
+file = "mods/chronofall.pw.toml"
+hash = "47452d6aefe5a8f03336436ca8dd61efddf1c6b603bc52ba93ee4f44014c9ba7"
+metafile = true
+
+[[files]]
 file = "mods/chunky.pw.toml"
 hash = "cc7f98af9f4b15f3d1540dafe1f1f8ebf68dccd3f37eb62c02d1ca36b7d7c0ba"
 metafile = true
@@ -1388,7 +1405,7 @@ metafile = true
 
 [[files]]
 file = "mods/collective.pw.toml"
-hash = "17155d97b2471fb4a6193fbddd11b85d702fe354471f3b253918722a68619eee"
+hash = "e010de181aa73b3a3532887846669992bbabc1604455703c060754b9615ba1f2"
 metafile = true
 
 [[files]]
@@ -1404,6 +1421,11 @@ metafile = true
 [[files]]
 file = "mods/controlling.pw.toml"
 hash = "eca763cca4b0e2af4ed620854de98769dc9e2ea7acd14483820351e4b1e7570c"
+metafile = true
+
+[[files]]
+file = "mods/core-utilities.pw.toml"
+hash = "e56167ceeabcdec0993c5c0e8297a5d18138ca8bcaa2a686021802c112ea8bab"
 metafile = true
 
 [[files]]
@@ -1423,7 +1445,7 @@ metafile = true
 
 [[files]]
 file = "mods/creativecore.pw.toml"
-hash = "3ab8c3f5befb8e7fccfdc0fca69f6a0fc06e317826c4e9549aa5c6c1af074d77"
+hash = "55189235f9f2036515c66475434016b3744961bf54501e06750b2b7af1ae37a6"
 metafile = true
 
 [[files]]
@@ -1582,11 +1604,6 @@ hash = "14cdf9ba7ea6e88cb032f84837d71d6b6296310d63ab04450f6f611938dedc8e"
 metafile = true
 
 [[files]]
-file = "mods/genetically-modified-monsters.pw.toml"
-hash = "ebdff63a7ddd5509d83bd0301af0fa3a2d9646ebc5250d94333c6850300500ff"
-metafile = true
-
-[[files]]
 file = "mods/guard-villagers.pw.toml"
 hash = "dd0b9e294b0113f582108bdf5d40b4fb70dc4cc6c9cf8f90095ad1a8a20063f2"
 metafile = true
@@ -1643,7 +1660,7 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "4b4ead0a7180a27e2046246bc8ec72700e47352148558ab2279db42a8692a227"
+hash = "c7d9eb0b87073aa589a91c1dd23c4d43797d4bd3f65ce061182fd6651018bc6e"
 metafile = true
 
 [[files]]
@@ -1663,7 +1680,7 @@ metafile = true
 
 [[files]]
 file = "mods/kubejs.pw.toml"
-hash = "bd4d1afb1c109848c0f2cbb1418db35e4553741b3e901f9be9c8f93ec4c2a1b9"
+hash = "da3a63666a6491407550b39dd75ed3827bbc728adf02677026fd7b0c4ec37a7d"
 metafile = true
 
 [[files]]
@@ -1723,7 +1740,7 @@ metafile = true
 
 [[files]]
 file = "mods/mezzconfig.pw.toml"
-hash = "9666d61e6e5b96e02d0ecbea9a3dd81c8c540df508a21365c54241c3f2be4f16"
+hash = "5721ebb2ebde794b099f29a00636363f490663b7e4add0c4465e23ed6e8b4f0c"
 metafile = true
 
 [[files]]
@@ -1743,7 +1760,7 @@ metafile = true
 
 [[files]]
 file = "mods/moreculling.pw.toml"
-hash = "535ef8e34d041b4f5ed28a5e9365203fbbcd25b0fdf4d61c1939aba47b46f306"
+hash = "08dc024099cd6312667129004eeccf3385277f235beda248fcbf8da9fd39de35"
 metafile = true
 
 [[files]]
@@ -1793,7 +1810,7 @@ metafile = true
 
 [[files]]
 file = "mods/not-enough-animations.pw.toml"
-hash = "abde602cd93175ff5de15192f70b3678d246da4a6128b2d35e2c262106b21984"
+hash = "8b423f2b3f7fc2e51ae252e94b618ceca6d0c04df109ce33961b6179ecf47738"
 metafile = true
 
 [[files]]
@@ -1803,7 +1820,7 @@ metafile = true
 
 [[files]]
 file = "mods/omnivault.pw.toml"
-hash = "6c87add729914f5a67748c5bf17d64a399dac268d84b28783b95a81b23441ee5"
+hash = "24fc313435944adaf0b9115acecc10d4afc394b88f850cb8b7a7cd299e514df3"
 metafile = true
 
 [[files]]
@@ -1838,7 +1855,7 @@ metafile = true
 
 [[files]]
 file = "mods/polymorph.pw.toml"
-hash = "658fb82954f76d08b380117c97f8ff6cbe2c18770b6b5791824ee3b85a12c050"
+hash = "07115b97ec2d795ee2bb4ca906ea57bdb71ac3d7007492aafb9d2ef10a8f9059"
 metafile = true
 
 [[files]]
@@ -1913,7 +1930,7 @@ metafile = true
 
 [[files]]
 file = "mods/rhino.pw.toml"
-hash = "dc340996385f7f1502f8a4e06624fd1f824fd53d55175f90ebe6cf1f707771b8"
+hash = "efab7e704c6736dd5592a286cb32c1a8fcd99f640235feecde4af9632ab27327"
 metafile = true
 
 [[files]]
@@ -1928,7 +1945,7 @@ metafile = true
 
 [[files]]
 file = "mods/shoulder-surfing-reloaded.pw.toml"
-hash = "6dfae2e0af3a2e16c2f077fad85b0d6c788cfdb1e2c7f0427772f3f2a46c1980"
+hash = "eea918e943bc1ce22a782034062c4571e5f31b702520a1f1c06ab0cd3c190988"
 metafile = true
 
 [[files]]
@@ -1948,17 +1965,17 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-backpacks.pw.toml"
-hash = "fd81de73b20ea4b87a314a1c92b0c4a8348dc468f44fee9d06e7287fc8280402"
+hash = "145d252e64bd05703a51f4b57395293305fd03a1ae0a3ad03b07bfecc39a954f"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "de2fb728439c94fb27d7c099d52e864ff590e4745fd0dc7aad72438b9892da47"
+hash = "5f8be406290d9d40096e57a6fb9e8420c15ce5f7552d00f680457986e85c3aec"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-storage.pw.toml"
-hash = "0d4ccbfdf52772dda3f72e18b5b721a51484296486f416ce20152bab92a95bf1"
+hash = "3a72ad35fd0068976381008f70d349fa6d104b06161c84e46675761a52928821"
 metafile = true
 
 [[files]]
@@ -1969,6 +1986,11 @@ metafile = true
 [[files]]
 file = "mods/sparsestructures.pw.toml"
 hash = "d0b0e32ed243fcb5b934095568bd9b648ec07a8ac28f8f0ccbbac5d5fc5a01b6"
+metafile = true
+
+[[files]]
+file = "mods/spore-and-stem.pw.toml"
+hash = "ede4fa1431b6ff3c6afe85da4efc4bac189768b699df7cc7cb8f5cd5ee48dbea"
 metafile = true
 
 [[files]]

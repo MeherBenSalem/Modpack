@@ -18,11 +18,20 @@ OUT = ROOT / "research" / "registry"
 KINDS = {"advancement": "", "worldgen/structure": "", "dimension": "", "loot_table": "loot:"}
 
 
+def current_jars():
+    """Only the jars src/mods.json points at now (the cache keeps old versions; they must not shadow new ones)."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("dump_recipes", ROOT / "tools" / "dump_recipes.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod.included_jars()
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     per_ns = {}
     langs_written = set()
-    for jar in sorted((ROOT / ".cache" / "jars").glob("*/*.jar")):
+    for jar in current_jars():
         try:
             z = zipfile.ZipFile(jar)
         except zipfile.BadZipFile:
@@ -44,6 +53,13 @@ def main():
                 per_ns.setdefault(ns, set()).add(f"{KINDS[kind]}{ns}:{path}")
     for ns, ids in per_ns.items():
         (OUT / f"{ns}_ids.json").write_text(json.dumps({"ids": sorted(ids)}, indent=1))
+    # A namespace no current jar provides any more (a mod left the pack or renamed itself) must not keep
+    # validating quest ids, so its old dumps go.
+    keep = langs_written | {f"{ns}_ids.json" for ns in per_ns}
+    for f in OUT.glob("*.json"):
+        if f.name not in keep and (f.name.endswith("_en_us.json") or f.name.endswith("_ids.json")):
+            f.unlink()
+            print(f"removed stale {f.name}")
     print(f"{len(per_ns)} namespaces dumped to {OUT.relative_to(ROOT)}")
 
 

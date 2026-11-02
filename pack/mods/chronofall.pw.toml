@@ -1,0 +1,16 @@
+name = "Chronofall"
+filename = "chronofall-neoforge-1.21.1-2.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/kVfzGwSI/versions/zcl3NWYX/chronofall-neoforge-1.21.1-2.0.0.jar"
+hash-format = "sha512"
+hash = "c182425af3a8dae80c8ffac406cdae91708260c415b7cd9e3b81385941da5d15c3748a635bd3b99498aa8399aa08e20ca967d7685a48a5543f863f0aca72023c"
+
+[update]
+[update.curseforge]
+file-id = 9330767
+project-id = 1353400
+[update.modrinth]
+mod-id = "kVfzGwSI"
+version = "zcl3NWYX"

@@ -161,7 +161,28 @@ function wake(server, p) {
 
 // ---------------------------------------------------------------- per-player checks (every 10 ticks)
 
+// The ruin floats in the void. Nobody loses a thing to it: fall off any edge and the Threshold puts you back on
+// the path (the nearest place you could have been standing), with nothing taken. Checked every 10 ticks; a fall
+// from the floor at y 64 takes far longer than that to reach the void's killing depth.
+var VOID_CATCH_Y = 52
+function catchFall(server, p) {
+  var name = p.username
+  var spot
+  if (p.x > T.gate.x) spot = T.wake                                   // crypt and hall
+  else if (p.x > T.exit_door.x) spot = [T.gate.x - 3.5, T.wake[1], 0.5, 90]   // the arena, just inside the gate
+  else spot = T.stair_start                                             // the Last Stair and the Waygate
+  p.fallDistance = 0
+  cmd(server, inDim(`tp ${name} ${spot[0]} ${spot[1]} ${spot[2]} ${spot[3]} 0`))
+  cmd(server, `effect give ${name} minecraft:slow_falling 3 0 true`)
+  cmd(server, `effect give ${name} minecraft:resistance 3 4 true`)
+  cmd(server, `title ${name} actionbar ${json({ text: 'The ruin catches you. A fall here costs nothing.', color: 'gray', italic: true })}`)
+}
+
 function playerTick(server, p) {
+  if (inThreshold(p) && p.y < VOID_CATCH_Y) {
+    catchFall(server, p)
+    return
+  }
   var s = state(p)
   if (s === 'pending') {
     var waited = p.persistentData.getInt('remnants_threshold_wait') + 10

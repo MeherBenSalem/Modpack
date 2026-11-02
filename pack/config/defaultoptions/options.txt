@@ -8,6 +8,7 @@ key_key.runeborn.dodge:key.keyboard.left.alt
 key_key.rpg_attribute_system.open_stats_menu_keybind:key.keyboard.k
 key_key.better_with_gold.command_wheel:key.keyboard.g
 key_key.better_with_gold.roster:key.keyboard.u
+key_key.corpse.death_history:key.keyboard.u:CONTROL
 key_key.remnantminimaps.open_map:key.keyboard.m
 key_key.remnantminimaps.toggle_minimap:key.keyboard.n
 key_key.remnantminimaps.add_marker:key.keyboard.b:CONTROL

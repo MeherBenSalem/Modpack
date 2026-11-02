@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "show_feedback": true,
+  "blocks_list": [
+    "[block]chronofall:titanium_ore[blockEnd][level]10[levelEnd]",
+    "[block]minecraft:diamond_ore[blockEnd][level]12[levelEnd]",
+    "[block]minecraft:deepslate_diamond_ore[blockEnd][level]12[levelEnd]",
+    "[block]born_in_chaos_v1:infected_diamond_ore[blockEnd][level]12[levelEnd]",
+    "[block]born_in_chaos_v1:infected_deepslate_diamond_ore[blockEnd][level]12[levelEnd]",
+    "[block]deeperdarker:gloomslate_diamond_ore[blockEnd][level]12[levelEnd]",
+    "[block]deeperdarker:sculk_stone_diamond_ore[blockEnd][level]12[levelEnd]",
+    "[block]chronofall:cobalt_ore[blockEnd][level]20[levelEnd]",
+    "[block]minecraft:ancient_debris[blockEnd][level]30[levelEnd]",
+    "[block]chronofall:orichalcum_ore[blockEnd][level]32[levelEnd]"
+  ]
+}

@@ -56,7 +56,10 @@ def result_of(r):
 def included_jars():
     """Jars are cached by sha1 (build_pack.py / test_server.py); keep the ones an included mod points at."""
     mods = json.loads((ROOT / "src" / "mods.json").read_text())
-    cf_sha1 = json.loads((ROOT / ".cache" / "cf_sha1.json").read_text()) if (ROOT / ".cache" / "cf_sha1.json").exists() else {}
+    cf_sha1 = {}
+    for memo in (ROOT / ".cache" / "cf_sha1.json", ROOT / "src" / "cf_sha1.json"):
+        if memo.exists():
+            cf_sha1.update(json.loads(memo.read_text()))
     want = set()
     for m in mods:
         if m.get("decision") not in ("include", "optional"):
@@ -64,9 +67,9 @@ def included_jars():
         if (m.get("modrinth") or {}).get("sha1"):
             want.add(m["modrinth"]["sha1"])
         cf = m.get("curseforge") or {}
-        for key in (str(cf.get("file_id")), f"{cf.get('project_id')}/{cf.get('file_id')}"):
-            if isinstance(cf_sha1.get(key), str):
-                want.add(cf_sha1[key])
+        rec = cf_sha1.get(str(cf.get("file_id")))
+        if isinstance(rec, dict) and rec.get("sha1"):
+            want.add(rec["sha1"])
     return [jar for d in sorted(JARS.iterdir()) if d.is_dir() and d.name in want for jar in sorted(d.glob("*.jar"))]
 
 

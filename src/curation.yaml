@@ -22,7 +22,9 @@ include:
     - sprout-and-soil: "40 crops, 12 fruit trees, a cooking pot and 150+ foods: what Last Light grows and eats"
     - the-witch-hut: "The Hollow Wood Coven's huts"
     - the-gingerbread-house: "The Coven's sweetest lure: a candy house in the snow (dark fairy tale side story)"
-    - genetically-modified-monsters: "Wrongborn creepers: seven variants of the things that rose wrong"
+    - core-utilities: "The Ashen Works: generators, cables, ore processing, quarry, farms, item pipes on Forge Energy"
+    - chronofall: "Chrono Rifts: fallen future tech guarded by Sentinels; Fabricator, Flux, jetpacks, drones, mechs, rift gates"
+    - spore-and-stem: "A fungal kingdom: giant caps, cultivation, the Mycosis infection, seven creatures and the Myceliarch"
     - omnivault: "All-in-one storage (formerly Simple Terminals): hub and cables over your chests, terminals, autocrafting, vaults, drawers, backpacks"
   combat:
     - better-combat: "Weapon movesets; Runeborn's armaments get pack-made weapon_attributes"

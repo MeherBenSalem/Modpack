@@ -1,0 +1,127 @@
+# RPG Stats gates (Remnants: RPG Stats, Skills & Progression). Compiled by tools/build_stat_locks.py into
+# pack/config/ras/items_lock.json, blocks_lock.json and levelup_rewards.json, with every id checked.
+#
+# An item lock needs points in one attribute (the K screen): a locked weapon can't strike, a locked tool can't break
+# blocks, locked armour can't be worn, a locked item can't be used. A block lock needs an overall RPG level to mine.
+# The thresholds follow the acts so they read as "you are ready for this now", never as a wall: a player who spends
+# points evenly passes each one at about the act where the item first shows up.
+#
+#   Act I  (levels 5-15):  up to 6      Act II (15-30): 8-14      Act III (30-50): 14-24
+#   Act IV (50-70):        24-32        Act V  (70+):   32-40
+#
+# Attributes: 1 Vitality, 2 Attack Power, 3 Attack Speed, 4 Protection, 5 Agility, 6 Fortitude, 7 Toughness,
+# 8 Exploration.
+
+attributes: {vitality: 1, attack_power: 2, attack_speed: 3, protection: 4, agility: 5, fortitude: 6, toughness: 7,
+             exploration: 8}
+
+items:
+  attack_power:          # weapons and tools
+    12: [minecraft:diamond_sword, minecraft:diamond_pickaxe, minecraft:diamond_axe, minecraft:diamond_shovel,
+         minecraft:diamond_hoe]
+    30: [minecraft:netherite_sword, minecraft:netherite_pickaxe, minecraft:netherite_axe, minecraft:netherite_shovel,
+         minecraft:netherite_hoe]
+    3: [chronofall:scrap_sword, chronofall:scrap_axe, chronofall:scrap_pickaxe]
+    6: [born_in_chaos_v1:sharpened_dark_metal_sword, better_with_gold:reinforced_golden_sword,
+        better_with_gold:golden_scythe, born_in_chaos_v1:shell_mace, born_in_chaos_v1:spider_bite_sword]
+    8: [chronofall:titanium_sword, chronofall:titanium_axe, chronofall:titanium_pickaxe,
+        block_factorys_bosses:dagger, mowziesmobs:naga_fang_dagger]
+    10: [aquamirae:dagger_of_greed, born_in_chaos_v1:darkwarblade, born_in_chaos_v1:frostbitten_blade,
+         cataclysm:black_steel_sword, cataclysm:black_steel_axe, cataclysm:black_steel_pickaxe,
+         better_with_gold:greater_golden_hammer, better_with_gold:greater_golden_axe,
+         better_with_gold:reinforced_golden_scythe]
+    12: [aquaculture:neptunium_sword, aquaculture:neptunium_axe, aquaculture:neptunium_pickaxe,
+         born_in_chaos_v1:great_reaper_axe, born_in_chaos_v1:skullbreaker_hammer]
+    14: [chronofall:cobalt_sword, chronofall:cobalt_axe, chronofall:cobalt_pickaxe, mowziesmobs:wrought_axe,
+         aquamirae:shatterblade, aquamirae:terrible_blade, born_in_chaos_v1:nightmare_scythe,
+         better_with_gold:reinforced_greater_golden_hammer, better_with_gold:reinforced_greater_golden_axe,
+         block_factorys_bosses:warrior_sword]
+    16: [deeperdarker:resonarium_sword, deeperdarker:resonarium_axe, deeperdarker:resonarium_pickaxe,
+         aquamirae:tempest_trident, cataclysm:coral_spear, block_factorys_bosses:kraken_trident]
+    18: [block_factorys_bosses:knight_sword, block_factorys_bosses:large_sword]
+    22: [chronofall:orichalcum_sword, chronofall:orichalcum_axe, chronofall:orichalcum_pickaxe,
+         cataclysm:ancient_spear, bosses_of_mass_destruction:earthdive_spear]
+    24: [deeperdarker:warden_sword, deeperdarker:warden_axe, deeperdarker:warden_pickaxe]
+    34: [remnant_bosses:wardens_grasp]
+    36: [remnant_bosses:gravebound_executioner]
+    40: [remnant_bosses:ossukage_sword]
+  attack_speed:          # guns and bows
+    10: [chronofall:pulse_rifle]
+    20: [cataclysm:cursed_bow]
+    28: [cataclysm:laser_gatling]
+  protection:            # armour
+    12: [minecraft:diamond_helmet, minecraft:diamond_chestplate, minecraft:diamond_leggings, minecraft:diamond_boots,
+         aquaculture:neptunium_helmet, aquaculture:neptunium_chestplate, aquaculture:neptunium_leggings,
+         aquaculture:neptunium_boots, mowziesmobs:wrought_helmet,
+         born_in_chaos_v1:nightmare_mantleofthe_night_helmet, born_in_chaos_v1:nightmare_mantleofthe_night_chestplate,
+         born_in_chaos_v1:nightmare_mantleofthe_night_leggings, born_in_chaos_v1:nightmare_mantleofthe_night_boots]
+    30: [minecraft:netherite_helmet, minecraft:netherite_chestplate, minecraft:netherite_leggings,
+         minecraft:netherite_boots]
+    3: [chronofall:scrap_armor_helmet, chronofall:scrap_armor_chestplate, chronofall:scrap_armor_leggings,
+        chronofall:scrap_armor_boots]
+    6: [born_in_chaos_v1:dark_metal_armor_helmet, born_in_chaos_v1:dark_metal_armor_chestplate,
+        born_in_chaos_v1:dark_metal_armor_leggings, born_in_chaos_v1:dark_metal_armor_boots,
+        better_with_gold:reinforced_golden_armor_helmet, better_with_gold:reinforced_golden_armor_chestplate,
+        better_with_gold:reinforced_golden_armor_leggings, better_with_gold:reinforced_golden_armor_boots,
+        born_in_chaos_v1:spiny_shell_armor_helmet, born_in_chaos_v1:spiny_shell_armor_chestplate]
+    8: [chronofall:titanium_armor_helmet, chronofall:titanium_armor_chestplate, chronofall:titanium_armor_leggings,
+        chronofall:titanium_armor_boots, aquamirae:salvager_helmet, aquamirae:salvager_boots]
+    14: [chronofall:cobalt_armor_helmet, chronofall:cobalt_armor_chestplate, chronofall:cobalt_armor_leggings,
+         chronofall:cobalt_armor_boots, aquamirae:terrible_helmet, aquamirae:terrible_chestplate,
+         aquamirae:terrible_leggings, aquamirae:terrible_boots, cataclysm:bone_reptile_helmet,
+         cataclysm:bone_reptile_chestplate]
+    16: [aquamirae:abyssal_heaume, aquamirae:abyssal_tiara, aquamirae:abyssal_brigandine, aquamirae:abyssal_leggings,
+         aquamirae:abyssal_boots, deeperdarker:resonarium_helmet, deeperdarker:resonarium_chestplate,
+         deeperdarker:resonarium_leggings, deeperdarker:resonarium_boots, mowziesmobs:sol_visage,
+         block_factorys_bosses:knight_helmet, block_factorys_bosses:knight_chestplate,
+         block_factorys_bosses:knight_leggings, block_factorys_bosses:knight_boots]
+    18: [mutantmonsters:mutant_skeleton_chestplate, mutantmonsters:mutant_skeleton_leggings,
+         mutantmonsters:mutant_skeleton_boots]
+    22: [chronofall:orichalcum_armor_helmet, chronofall:orichalcum_armor_chestplate,
+         chronofall:orichalcum_armor_leggings, chronofall:orichalcum_armor_boots]
+    24: [deeperdarker:warden_helmet, deeperdarker:warden_chestplate, deeperdarker:warden_leggings,
+         deeperdarker:warden_boots, block_factorys_bosses:dragon_bones_chestplate,
+         block_factorys_bosses:dragon_bones_leggings, block_factorys_bosses:dragon_bones_boots]
+    26: [cataclysm:monstrous_helm]
+    30: [cataclysm:ignitium_helmet, cataclysm:ignitium_chestplate, cataclysm:ignitium_leggings,
+         cataclysm:ignitium_boots, cataclysm:ignitium_elytra_chestplate, cataclysm:cursium_helmet,
+         cataclysm:cursium_chestplate, cataclysm:cursium_leggings, cataclysm:cursium_boots]
+    34: [remnant_bosses:warden_helm, remnant_bosses:warden_hauberk, remnant_bosses:warden_tassets,
+         remnant_bosses:warden_boots]
+    40: [remnant_bosses:regalia_cuirass, remnant_bosses:regalia_greaves, remnant_bosses:regalia_sabatons]
+  agility:               # anything that flies
+    10: [chronofall:jetpack]
+    15: [minecraft:elytra]
+    22: [deeperdarker:soul_elytra]
+  fortitude:             # gauntlets and the heaviest hammers: you have to be able to stand your ground
+    14: [mowziesmobs:earthrend_gauntlet]
+    16: [block_factorys_bosses:ice_gauntlet, block_factorys_bosses:sandworm_gauntlet]
+    18: [mutantmonsters:hulk_hammer]
+    20: [chronofall:mech]
+    24: [cataclysm:gauntlet_of_guard, cataclysm:gauntlet_of_bulwark]
+    28: [cataclysm:gauntlet_of_maelstrom]
+  exploration:           # finding things
+    3: [naturescompass:naturescompass]
+    6: [explorerscompass:explorerscompass]
+    8: [mob_loot_bags:fortune_talisman]
+
+blocks:                  # overall RPG level to mine
+  10: [chronofall:titanium_ore]
+  12: [minecraft:diamond_ore, minecraft:deepslate_diamond_ore, born_in_chaos_v1:infected_diamond_ore,
+       born_in_chaos_v1:infected_deepslate_diamond_ore, deeperdarker:gloomslate_diamond_ore,
+       deeperdarker:sculk_stone_diamond_ore]
+  20: [chronofall:cobalt_ore]
+  30: [minecraft:ancient_debris]
+  32: [chronofall:orichalcum_ore]
+
+# What a level-up pays: the pack's own economy instead of RPG Stats' default diamonds and diamond armour (which
+# skipped the Ember Forge and the gear locks). Runes every level, a tempering stone every 5, a lustrous stone every 10.
+levelup_rewards:
+  max_level: 100
+  every_level: {item: runeborn:faded_rune, count_per_10_levels: 1}      # 1 at 1-9, 2 at 10-19, ...
+  every_5: {item_tiers: [runeborn:tempering_stone_1, runeborn:tempering_stone_2, runeborn:tempering_stone_3,
+                         runeborn:tempering_stone_4, runeborn:tempering_stone_5, runeborn:tempering_stone_6,
+                         runeborn:tempering_stone_7, runeborn:tempering_stone_8]}   # tier = level // 13 + 1
+  every_10: {item_tiers: [runeborn:lustrous_stone_1, runeborn:lustrous_stone_2, runeborn:lustrous_stone_3,
+                          runeborn:lustrous_stone_4, runeborn:lustrous_stone_5, runeborn:lustrous_stone_6,
+                          runeborn:lustrous_stone_7, runeborn:lustrous_stone_8, runeborn:lustrous_stone_9]}  # tier = level // 11

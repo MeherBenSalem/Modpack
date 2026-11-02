@@ -17,6 +17,8 @@ a world whose sun was eaten; relight it one Ember Shrine and one Sovereign at a 
 | `pack/` | The built pack in [packwiz](https://packwiz.infra.link/) format: `pack.toml`, `index.toml`, `mods/*.pw.toml`, `config/`, `kubejs/`, `defaultconfigs/` |
 | `tools/build_pack.py` | Writes `pack/` from `src/mods.json`; `--export` builds the CurseForge zip, the Modrinth `.mrpack` and the self-contained server pack in `dist/` |
 | `tools/build_quests.py` | Compiles `src/quests/` into FTB Quests files under `pack/config/ftbquests/` |
+| `src/stat_locks.yaml`, `tools/build_stat_locks.py` | RPG Stats gates: gear on attributes, ore level gates, level-up rewards (`config/ras/`) |
+| `tools/update_mods.py` | Moves every mod to its newest 1.21.1 NeoForge file on Modrinth and CurseForge (`--write`) |
 | `src/progression.yaml`, `tools/build_progression.py` | The Ember Forge: tiered alloys, seals and every recipe change (storage interlock, story locks), compiled to KubeJS and checked; `tools/dump_recipes.py` indexes the mods' recipes for it |
 | `tools/server/` | The server pack's start scripts, JVM flags, `server.properties` and `SERVER.md` |
 | `tools/test_server.py` | Unzips the built server pack, starts it with its own `start.sh` and reports errors and warnings |

@@ -5,6 +5,8 @@ groups:
     title: "&6The Long Eclipse"
   - key: paths
     title: "&ePaths of the Ashborn"
+  - key: chronicles
+    title: "&dChronicles of the Ash"
   - key: world
     title: "&bThe World Under Ash"
   - key: hearth

@@ -22,7 +22,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "pack" / "kubejs" / "data" / "remnants"
 LAYOUT_JS = ROOT / "pack" / "kubejs" / "startup_scripts" / "remnants_threshold_layout.js"  # global is startup-only
-BUILD_VERSION = 2
+BUILD_VERSION = 3   # 3: floor under the fog gate (players fell through beside it)
 
 Y = 64  # floor level; players stand at Y + 1
 CRYPT = dict(x1=-12, x2=0, z1=-6, z2=6)
@@ -82,6 +82,10 @@ def in_island(x, z):
     if CRYPT["x1"] - 1 <= x <= CRYPT["x2"] + 1 and CRYPT["z1"] - 1 <= z <= CRYPT["z2"] + 1:
         return True
     if HALL["x1"] <= x <= HALL["x2"] and HALL["z1"] - 1 <= z <= HALL["z2"] + 1:
+        return True
+    # the fog gate's own row (and the tiles either side of it) between the hall and the arena's floor circle: without
+    # it only the centre block had floor, and a step sideways at the gate dropped you into the void
+    if GATE_X - 1 <= x <= HALL["x1"] - 1 and -6 <= z <= 6:
         return True
     if (x - ARENA["cx"]) ** 2 + (z - ARENA["cz"]) ** 2 <= (ARENA["r"] + 2) ** 2:
         return True

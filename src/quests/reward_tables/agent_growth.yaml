@@ -1,0 +1,55 @@
+# Reward tables for The Mycelial Court (n_spore, Spore & Stem) and the expanded Ash Garden (h_garden).
+# Keys are prefixed n_spore_ / h_garden_ so they never collide with other chapter authors' tables.
+# No netherite, no flask upgrades, no seals; Ember alloys never appear here.
+
+n_spore_forager_basket:
+  title: "The Forager's Basket"
+  icon: spore_and_stem:truffle
+  rewards:
+    - {item: spore_and_stem:roasted_morel, count: 6, weight: 3}
+    - {item: spore_and_stem:chanterelle_toast, count: 3, weight: 3}
+    - {item: spore_and_stem:foragers_stew, count: 2, weight: 2}
+    - {item: spore_and_stem:glowcap_soup, count: 2, weight: 2}
+    - {item: spore_and_stem:truffle, count: 3, weight: 2}
+    - {item: spore_and_stem:antifungal_tonic, count: 1, weight: 1}
+    - {item: spore_and_stem:truffle_stew, count: 1, weight: 1}
+
+n_spore_bloom_cache:
+  title: "What the Bloom Left"
+  icon: spore_and_stem:lumen_spores
+  rewards:
+    - {item: spore_and_stem:lumen_spores, count: 8, weight: 3}
+    - {item: spore_and_stem:mycoleather, count: 4, weight: 3}
+    - {item: spore_and_stem:glowcap_lantern, count: 3, weight: 2}
+    - {item: spore_and_stem:truffle, count: 4, weight: 2}
+    - {item: remnant_mobs:remnant_shard, count: 6, weight: 2}
+    - {item: runeborn:tempering_stone_3, count: 2, weight: 1}
+    - {item: spore_and_stem:mycelial_core, count: 1, weight: 0.5}
+
+h_garden_seed_satchel:
+  title: "A Satchel of Far Seeds"
+  icon: sprout_and_soil:coffee_beans
+  rewards:
+    - {item: sprout_and_soil:coffee_beans, count: 4, weight: 2}
+    - {item: sprout_and_soil:tea_seeds, count: 4, weight: 2}
+    - {item: sprout_and_soil:peppercorns, count: 4, weight: 2}
+    - {item: sprout_and_soil:ginger, count: 4, weight: 2}
+    - {item: sprout_and_soil:grape_seeds, count: 4, weight: 2}
+    - {item: sprout_and_soil:cotton_seeds, count: 4, weight: 2}
+    - {item: sprout_and_soil:mint_seeds, count: 4, weight: 2}
+    - {item: sprout_and_soil:basil_seeds, count: 4, weight: 2}
+    - {item: sprout_and_soil:pineapple_seeds, count: 2, weight: 1}
+    - {item: sprout_and_soil:orange_sapling, count: 1, weight: 1}
+    - {item: sprout_and_soil:olive_sapling, count: 1, weight: 1}
+
+h_garden_larder:
+  title: "The Long-Night Larder"
+  icon: sprout_and_soil:berry_jam
+  rewards:
+    - {item: sprout_and_soil:berry_jam, count: 2, weight: 3}
+    - {item: sprout_and_soil:orange_marmalade, count: 2, weight: 2}
+    - {item: sprout_and_soil:pickles, count: 2, weight: 2}
+    - {item: sprout_and_soil:raisins, count: 8, weight: 2}
+    - {item: sprout_and_soil:trail_mix, count: 3, weight: 2}
+    - {item: sprout_and_soil:cafe_latte, count: 2, weight: 1}
+    - {item: sprout_and_soil:lemonade, count: 3, weight: 1}

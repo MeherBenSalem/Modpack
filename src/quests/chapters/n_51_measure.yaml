@@ -1,0 +1,207 @@
+chapter: n_measure
+group: chronicles
+order: 51
+title: "&dThe Measure"
+subtitle: "Valor, levels and the K screen: what the dark teaches your body."
+icon: rpg_attribute_system:tome_of_ascension
+quests:
+  - key: start
+    title: "&dThe Tallyman"
+    subtitle: "Stand still. He's measuring."
+    icon: remnant_mobs:remnant_shard
+    pos: [0, 0]
+    deps: [s1_prologue/valor]
+    shape: hexagon
+    size: 1.5
+    desc: |
+      &6Tobiah the Tallyman&r kept the Crown's muster rolls: every soldier's height, reach, weight, and how long they lasted. The Crown is gone. He kept measuring. &o"Stand still. Hm. Taller than the last one. Still dies, I expect."&r
+
+      Every kill teaches your body something, and your body keeps it, death or no death. The dark calls it &6Valor&r. Valor fills your &6RPG level&r, and every level gives one &6attribute point&r. Bigger kills pay more; the Ashlands pay half again, the End double. A &6Remnant Shard&r is fifteen Valor kept in your pocket.
+
+      &7Absorb a Remnant Shard (sneak to absorb the stack).
+    tasks: [{advancement: "remnant_mobs:taste_of_valor"}]
+    rewards: [{item: remnant_mobs:remnant_shard, count: 4}, {xp: 50}]
+
+  - key: first_point
+    title: "&eFirst Point"
+    subtitle: "Nothing is spent until you say so."
+    icon: minecraft:writable_book
+    pos: [2.5, 0]
+    deps: [start]
+    shape: hexagon
+    size: 1.25
+    desc: |
+      Press &eK&r. Your attributes sit on the left, the stats they drive in the middle, the chosen attribute's details on the right. Stage points with &e←&r and &e→&r (&eShift&r moves five) and every number reads &7current → after&r. &eEnter&r confirms the whole build; &eReset&r takes it back. &eTab&r flips to your Status and Records.
+
+      &o"Write it down,"&r says Tobiah. &o"Then you can't pretend you didn't."&r
+
+      &7Spend your first point.
+    tasks: [{checkmark: "I spent a point on the K screen"}]
+    rewards: [{item: remnant_mobs:remnant_shard, count: 4}, {xp: 50}]
+
+  # ---- the eight attributes ----
+  - key: body
+    title: "Flesh and Footing"
+    subtitle: "Vitality, Fortitude, Agility."
+    icon: minecraft:golden_apple
+    pos: [5, -3.5]
+    deps: [first_point]
+    desc: |
+      &6Vitality&r: half a heart of health per point. &6Fortitude&r: one percent less knockback per point; at a hundred, nothing moves you. &6Agility&r: each point adds a fortieth to your walking pace.
+
+      These keep you on your feet long enough for the rest to matter.
+
+      &7Read them, choose, and spend.
+    tasks: [{checkmark: "I know what Vitality, Fortitude and Agility do"}]
+    rewards: [{xp: 60}]
+
+  - key: blade
+    title: "The Edge"
+    subtitle: "Attack Power, Attack Speed."
+    icon: minecraft:iron_sword
+    pos: [5, -1.75]
+    deps: [first_point]
+    desc: |
+      &6Attack Power&r: a fifth of a point of damage per point, a whole point every five. &6Attack Speed&r: each point brings the next swing a little sooner.
+
+      Better weapons and tools look at your Attack Power before they let you use them.
+
+      &7Read them, choose, and spend.
+    tasks: [{checkmark: "I know what Attack Power and Attack Speed do"}]
+    rewards: [{xp: 60}]
+
+  - key: shell
+    title: "The Shell"
+    subtitle: "Protection, Toughness."
+    icon: minecraft:iron_chestplate
+    pos: [5, 0]
+    deps: [first_point]
+    desc: |
+      &6Protection&r: a quarter of a point of armour per point, a whole point every four. &6Toughness&r: a tenth of a point of armour toughness per point, the part of armour that holds against the hardest hits.
+
+      Better armour looks at your Protection before it lets you wear it.
+
+      &7Read them, choose, and spend.
+    tasks: [{checkmark: "I know what Protection and Toughness do"}]
+    rewards: [{xp: 60}]
+
+  - key: exploration
+    title: "Luck by Another Name"
+    subtitle: "Exploration."
+    icon: mob_loot_bags:fortune_talisman
+    pos: [5, 1.75]
+    deps: [first_point, n_spoils/start]
+    desc: |
+      &6Exploration&r is &6Luck&r: a tenth of a point per point spent. Luck leans on loot, and Old Pell's loot bags lean on it hardest: every point of Luck is a point of &6Bag Luck&r, pushing drops toward Rare, Epic and Legendary. Ten points of Exploration do what a Fortune Talisman's luck does, and you can't drop them.
+
+      &o"Luck,"&r says Tobiah, &o"is the only number the dead respect."&r
+
+      &7Open a Rare loot bag.
+    tasks: [{advancement: "mob_loot_bags:open_rare"}]
+    rewards: [{item: mob_loot_bags:uncommonlootbag, count: 2}, {xp: 80}]
+
+  - key: locks
+    title: "Locks on Better Steel"
+    subtitle: "Earned, not found."
+    icon: minecraft:diamond_sword
+    pos: [7.5, -1.75]
+    deps: [blade, s1_forge/duskforged]
+    desc: |
+      Some gear won't answer a weak hand. A locked item asks for a level in one attribute (&6Attack Power&r for weapons and tools, &6Protection&r for armour) and says so on its tooltip, in red until you have it. A few ores won't break for a low RPG level either. The lists grow the deeper the road goes.
+
+      The &eK&r screen tells you how far off you are. Find the gear whenever you like; spend the points before you swing.
+
+      &7Forge a diamond sword (Duskforged in the hilt) and read its tooltip.
+    tasks: [{item: minecraft:diamond_sword}]
+    rewards: [{table: measure_tally}, {xp: 120}]
+
+  # ---- the other ladder ----
+  - key: shrine
+    title: "Two Ladders, One Climb"
+    subtitle: "Runes at the shrine, Valor on the K screen."
+    icon: runeborn:ember_shrine
+    pos: [5, 3.5]
+    deps: [first_point, n_runeborn/start]
+    desc: |
+      Runes spent at an &6Ember Shrine&r buy Runeborn levels: Vigor, Mind, Endurance and the rest. Every one of those levels also grants an &6RPG level&r, and with it a point for the &eK&r screen. The two ladders were built to be climbed together: the shrine for your runes, Valor for the rest.
+
+      &o"Two ledgers,"&r grumbles Tobiah. &o"The Crown had one and lost it."&r
+
+      &7Reach rune level 20.
+    tasks: [{advancement: "runeborn:feats/level_20"}]
+    rewards: [{item: runeborn:faded_rune, count: 4}, {xp: 120}]
+
+  - key: level_50
+    title: "Fifty Rungs"
+    subtitle: "He stops calling you 'it'."
+    icon: runeborn:radiant_rune
+    pos: [7.5, 3.5]
+    deps: [shrine]
+    desc: |
+      Fifty rune levels is fifty RPG levels from the shrine alone, and whatever your Valor added on top. Tobiah turns a page in the muster roll and writes your name in it, which he has never done for an Ashborn before.
+
+      &7Reach rune level 50.
+    tasks: [{advancement: "runeborn:feats/level_50"}]
+    rewards: [{item: rpg_attribute_system:tome_of_ascension}, {xp: 300}]
+
+  # ---- other people's Valor, and taking it back ----
+  - key: tome
+    title: "&6Tome of Ascension"
+    subtitle: "Somebody else's Valor, written down."
+    icon: rpg_attribute_system:tome_of_ascension
+    pos: [0, 3.5]
+    deps: [first_point, n_spoils/start, s1_act2_hunt/hunters_moon]
+    shape: hexagon
+    desc: |
+      A &6Tome of Ascension&r is a life's worth of Valor, written down by someone who didn't need it any more. Use it and you gain an RPG level on the spot, point and all. Tobiah has no idea who wrote them. The dead carry them in Epic, Legendary and Mythic loot bags.
+
+      &7Find a Tome of Ascension.
+    tasks: [{item: rpg_attribute_system:tome_of_ascension}]
+    rewards: [{table: measure_tally}, {xp: 150}]
+
+  - key: rebirth
+    title: "&bScroll of Rebirth"
+    subtitle: "Built wrong? Everybody is, once."
+    icon: rpg_attribute_system:scroll_of_rebirth
+    pos: [0, -3.5]
+    deps: [first_point, s1_act2_hunt/path]
+    shape: hexagon
+    desc: |
+      A &6Scroll of Rebirth&r takes back every attribute point you've spent on the &eK&r screen and hands them back to spend again. Your level stays where it is.
+
+      Tobiah keeps a few, for Ashborn who chose a path and then met the thing at the end of it. &o"Here. Don't make me regret it."&r The shrine's own &6Tear of Rebirth&r does the same for your rune attributes.
+
+      &7Take the scroll. Read it when your build stops working.
+    tasks: [{checkmark: "I'll read it when I need it"}]
+    rewards: [{item: rpg_attribute_system:scroll_of_rebirth}, {xp: 100}]
+
+  - key: deep_valor
+    title: "Richer Dark"
+    subtitle: "The Ashlands remember more."
+    icon: minecraft:netherrack
+    pos: [-2.5, 0]
+    deps: [start, s1_act4_ash/ashlands]
+    optional: true
+    desc: |
+      Kills in the Ashlands pay half again as much &6Valor&r; kills in the End pay double. Big things pay more everywhere. Tobiah recommends somewhere warm for your next few levels.
+
+      &7Set foot in the Ashlands.
+    tasks: [{dimension: minecraft:the_nether}]
+    rewards: [{item: remnant_mobs:remnant_shard, count: 8}, {xp: 150}]
+
+  - key: finale
+    title: "&6The Full Measure"
+    subtitle: "Netherite's lock, opened."
+    icon: minecraft:netherite_chestplate
+    pos: [10, 0]
+    deps: [locks, shell, level_50, s1_act4_ash/netherite]
+    shape: gear
+    size: 2.0
+    desc: |
+      Netherite carries the heaviest lock there is. Tobiah measured the Crown's champions for it once; most of them came up short.
+
+      Raise &6Protection&r to netherite's lock (the tooltip says how high) and wear it. Tobiah closes the muster roll. &o"That's you, then. Every number I've got. Whatever's under the black sun can do the rest of the measuring."&r
+
+      &7Make a netherite chestplate.
+    tasks: [{item: minecraft:netherite_chestplate}]
+    rewards: [{item: rpg_attribute_system:tome_of_ascension, count: 2}, {table: measure_tally}, {xp: 1000}]

@@ -2,7 +2,7 @@ chapter: h_vaults
 group: hearth
 order: 34
 title: "&aThe Vaults"
-subtitle: "Two kinds of storage, one ladder. Each rung needs the other."
+subtitle: "Two kinds of storage, one ladder. Each rung needs the other. Then OmniVault keeps climbing."
 icon: omnivault:crafting_terminal
 quests:
   # ---- Tier I: a sack becomes a backpack, a barrel becomes a drawer ----
@@ -203,7 +203,7 @@ quests:
     desc: |
       Advanced Processors, Omnium and an ender eye build a &6Nexus Core&r: the heart of a network with no channel limits, cells, wireless terminals and &6autocrafting&r.
 
-      &7Encode a recipe in a &6Pattern Encoding Terminal&7, hand it to a &6Pattern Provider&7 and ask the terminal for what you need. JEI's &e+&7 button loads any recipe into the encoder.
+      &7Encode a recipe in a &6Pattern Encoding Terminal&7, hand it to a &6Pattern Provider&7, let an &6Assembler&7 and a &6Crafting Processor&7 do the work, and ask the terminal for what you need. JEI's &e+&7 button loads any recipe into the encoder.
     tasks: [{item: omnivault:nexus_core}]
     rewards: [{table: hearth_homestead}, {item: omnivault:blank_pattern, count: 8}, {xp: 400}]
 
@@ -268,3 +268,313 @@ quests:
       Smith a Wireless Terminal with a &6Quantum Upgrade Template&r and an &5Eclipse Core&r: the network from any distance, in any dimension. Singularity cells, quantum bridges and the quantum assembler are built from cores too.
     tasks: [{item: omnivault:quantum_wireless_terminal}]
     rewards: [{table: sovereign_tribute}, {xp: 1000}]
+
+  # =====================================================================================================
+  # OmniVault, the whole of it: physical storage (left), the Nexus network (right), autocrafting, quantum.
+  # =====================================================================================================
+
+  # ---- Tier I: vaults and the bin ----
+  - key: vault
+    title: "Six Vaults"
+    subtitle: "Copper to Omnium, one kit at a time."
+    icon: omnivault:copper_vault
+    pos: [-2, 0]
+    deps: [chest, h_clockwork/press]
+    desc: |
+      OmniVault keeps its own chests: &6Vaults&r, with a lid on a hinge, a &eSort&r button and a comparator reading of how full they are. A &6Copper Vault&r is Create &6copper sheets&r around a Sophisticated Chest: forty-five slots.
+
+      Iron (Ashen Alloy) holds 54, Gold (Duskforged) 81, Diamond (Moonsilver and glass) 108, Netherite (Deepsteel, at the smithing table) 135 and shrugs off explosions; Omnium, built on a Netherite Vault with an Advanced Processor, holds 162.
+
+      &7A &6Vault Upgrade&7 kit raises a placed vault one tier and keeps its contents, name and facing; the Copper kit turns a plain chest or barrel into a Copper Vault. Build a Copper Vault.
+    tasks: [{item: omnivault:copper_vault}]
+    rewards: [{item: omnivault:iron_vault_kit}, {xp: 60}]
+
+  - key: trash_can
+    title: "Some Things Should Burn"
+    subtitle: "What you can't carry, nobody gets."
+    icon: omnivault:trash_can
+    pos: [-2, 1.75]
+    deps: [chest]
+    optional: true
+    desc: |
+      The Ashen Company's rule on the march: what you can't carry, you burn. &o"Rotten flesh never won a war,"&r says the Captain.
+
+      A &6Trash Can&r is Ashen Alloy and cobblestone around a lava bucket. Whatever goes in is gone, though the last thing you threw away can still be pulled back out. Its automation filter decides what hoppers and pipes may void: an allow-list or a deny-list.
+
+      &7Build a Trash Can.
+    tasks: [{item: omnivault:trash_can}]
+    rewards: [{xp: 40}]
+
+  # ---- Tier II: drawers that think, tools that move ----
+  - key: compacting_drawer
+    title: "Nine Nuggets, One Ingot"
+    subtitle: "One drawer, three shapes of the same thing."
+    icon: omnivault:compacting_drawer
+    pos: [2, 3.5]
+    deps: [drawers, logic]
+    desc: |
+      A &6Compacting Drawer&r holds an item, its block and its nuggets as one amount and hands out whichever shape you ask for. Pour in gold nuggets; take out ingots, or blocks.
+
+      &7Ashen Alloy, two pistons, a Drawer and a Logic Processor. Build one.
+    tasks: [{item: omnivault:compacting_drawer}]
+    rewards: [{item: minecraft:gold_nugget, count: 27}, {xp: 80}]
+
+  - key: drawer_upgrades
+    title: "Deeper Drawers"
+    subtitle: "Iron, gold, diamond, netherite: the Forge's four."
+    icon: omnivault:iron_drawer_upgrade
+    pos: [4, 3.5]
+    deps: [drawers, logic]
+    desc: |
+      A drawer holds thirty-two stacks of one thing (sixteen per slot in a 1×2, eight in a 2×2). Capacity upgrades multiply that and add up: &fIron&r ×2 (Ashen Alloy), &6Gold&r ×4 (Duskforged), &bDiamond&r ×8 (Moonsilver), &8Netherite&r ×16 (Deepsteel). Each is built on the one before, starting from a &6Blank Upgrade Card&r: Ashen Alloy, Omnium, gold nuggets and a Logic Processor.
+
+      A &6Void Drawer Upgrade&r destroys whatever no longer fits.
+
+      &7Sneak-right-click a drawer with an empty hand for its upgrade screen. Make an Iron Drawer Upgrade.
+    tasks: [{item: omnivault:iron_drawer_upgrade}]
+    rewards: [{item: omnivault:upgrade_base, count: 2}, {xp: 80}]
+
+  - key: drawer_controller
+    title: "A Wall That Answers"
+    subtitle: "Every drawer within twelve blocks, as one."
+    icon: omnivault:drawer_controller
+    pos: [3, 5.25]
+    deps: [compacting_drawer, drawer_upgrades]
+    desc: |
+      A &6Drawer Controller&r joins every drawer within twelve blocks: touching it, touching each other, or joined by &6Drawer Trim&r. Hoppers, pipes and the vault network see the whole wall through it.
+
+      A &6Drawer Key&r (Omnium, Ashen Alloy and a gold nugget) locks a drawer to its item, so an empty slot keeps a ghost of what belongs there. Use the key on the controller and the whole wall locks.
+
+      &7Build a controller (Ashen Alloy, Omnium, comparators, a drawer, a Logic Processor), four trim and a key.
+    tasks: [{item: omnivault:drawer_controller}, {item: omnivault:drawer_trim, count: 4}, {item: omnivault:drawer_key}]
+    rewards: [{table: hearth_workshop}, {xp: 120}]
+
+  - key: tools
+    title: "Tools of the Trade"
+    subtitle: "Turn it, take it apart, carry it off."
+    icon: omnivault:relocator
+    pos: [6, 3.5]
+    deps: [logic]
+    desc: |
+      Last Light moves a room at a time. The &6OmniTool&r (Ashen Alloy and Omnium) turns and configures OmniVault blocks with a right-click and dismantles them with a sneak-right-click.
+
+      The &6Relocator&r (slime, Ashen Alloy and a Logic Processor) picks up a chest, a furnace or another mod's machine with everything still inside, and sets it down somewhere else. Sixteen uses.
+
+      &7Make both.
+    tasks: [{item: omnivault:omni_tool}, {item: omnivault:relocator}]
+    rewards: [{item: minecraft:slime_ball, count: 4}, {xp: 80}]
+
+  - key: netherite_relocator
+    title: "A Hand That Never Tires"
+    subtitle: "Deepsteel at the smithing table."
+    icon: omnivault:netherite_relocator
+    pos: [7, 5.25]
+    deps: [tools, s1_forge/deepsteel]
+    optional: true
+    desc: |
+      Smith a Relocator with a &6netherite upgrade template&r and a &6Deepsteel Ingot&r: the &6Netherite Relocator&r never wears out.
+
+      &7The templates still come from the bastions. Make one.
+    tasks: [{item: omnivault:netherite_relocator}]
+    rewards: [{xp: 300}]
+
+  - key: linked_vault
+    title: "The Same Box Everywhere"
+    subtitle: "Three colours on a latch, one chest in every world."
+    icon: omnivault:linked_vault
+    pos: [5, 5.25]
+    deps: [tools, s1_act4_ash/fortress]
+    desc: |
+      A &6Linked Vault&r is twenty-seven slots shared by every Linked Vault with the same three colours on its latches, in any world: blaze rods from Morgrath's forts, wool, obsidian, an ender chest and a Logic Processor. Dye the latches to pick a channel; a diamond or the &6OmniTool&r makes it yours alone.
+
+      A &6Linked Pouch&r (leather, wool, an ender pearl, a Logic Processor) binds to a vault with a sneak-right-click and opens it from anywhere.
+
+      &7Build a Linked Vault and a Linked Pouch.
+    tasks: [{item: omnivault:linked_vault}, {item: omnivault:linked_pouch}]
+    rewards: [{item: minecraft:ender_pearl, count: 2}, {xp: 300}]
+
+  # ---- Tier III: the Nexus network ----
+  - key: cell_drive
+    title: "Cells and a Drive"
+    subtitle: "Chests are for people."
+    icon: omnivault:drive
+    pos: [10.5, 5.25]
+    deps: [nexus]
+    desc: |
+      A Nexus network keeps its own stores in &6storage cells&r: a &6Cell Housing&r (glass, redstone, Ashen Alloy) around a &6Storage Matrix&r. The 4K matrix is redstone, Omnium dust, quartz and a Logic Processor.
+
+      A &6Cell Drive&r is ten bays built into two Sophisticated &6gold barrels&r, each bay with a light: green with room to spare, amber nearly full, red full. &6Nexus Cable&r joins it to the core.
+
+      &7Build a Cell Drive and a 4K Storage Cell, and slot the cell in.
+    tasks: [{item: omnivault:drive}, {item: omnivault:storage_cell_4k}]
+    rewards: [{item: omnivault:omnium_dust, count: 8}, {xp: 200}]
+
+  - key: network_port
+    title: "Pipes Into the Vault"
+    subtitle: "The Works pour; the network sorts."
+    icon: omnivault:network_port
+    pos: [9, 7]
+    deps: [cell_drive, n_works/processing]
+    desc: |
+      The &6Ashen Works&r never stop: crushers, furnaces, a line of item pipes spilling ingots on the floor. A &6Network Port&r is the whole network as one inventory and one tank. Pipe into it and the network files everything; pipe out of it and the network pays.
+
+      The vault needs no power of its own. The Works do.
+
+      &7Ashen Alloy, a hopper, a chest, Omnium and a Logic Processor. Build a Network Port and run the Works' pipes into it.
+    tasks: [{item: omnivault:network_port}]
+    rewards: [{xp: 200}]
+
+  - key: network_cells
+    title: "&bRoom for Everything"
+    subtitle: "Every cell is four of the last."
+    icon: omnivault:storage_cell_64k
+    pos: [10.5, 8.75]
+    deps: [cell_drive, network_port]
+    shape: hexagon
+    size: 1.25
+    desc: |
+      Every matrix is four of the one before. Four 4K matrices, Duskforged and a Logic Processor make a &616K&r; four 16Ks, Moonsilver and an Advanced Processor a &b64K&r. An item cell holds up to 128 kinds of thing.
+
+      Fluids go in a &6Fluid Cell Housing&r (a bucket where the hollow was) around the same matrices: a 4K fluid cell holds a thousand buckets of up to 32 fluids. A cell keeps its contents in the world, not on the item, and an empty cell comes apart again when you sneak-use it.
+
+      &7Build a 64K Storage Cell and a 4K Fluid Cell.
+    tasks: [{item: omnivault:storage_cell_64k}, {item: omnivault:fluid_cell_4k}]
+    rewards: [{table: vaults_quartermaster}, {xp: 400}]
+
+  - key: buses
+    title: "In, Out and Through"
+    subtitle: "The network's hands."
+    icon: omnivault:import_bus
+    pos: [7.5, 8.75]
+    deps: [network_port, n_spoils/opener]
+    desc: |
+      Buses are Omnium and a Logic Processor around a hopper, a piston or a chest. An &6Import Bus&r pulls items and fluids out of what it faces; an &6Export Bus&r pushes them in; a &6Storage Bus&r makes that inventory part of the network, with a filter, a priority and an access mode.
+
+      Old Pell's &6Bag Opener&r empties from the bottom. Put an Import Bus under it and everything the dead carried lands in the vault, sorted.
+
+      &7Upgrade cards make devices better: Speed, Stack, Fuzzy, Redstone. Build one of each bus.
+    tasks: [{item: omnivault:import_bus}, {item: omnivault:export_bus}, {item: omnivault:storage_bus}]
+    rewards: [{item: omnivault:speed_upgrade}, {xp: 200}]
+
+  - key: builders
+    title: "Hands in the World"
+    subtitle: "Mine into the vault, build out of it."
+    icon: omnivault:destructor
+    pos: [7.5, 10.5]
+    deps: [buses]
+    optional: true
+    desc: |
+      A &6Destructor&r mines the block in front of it into the network; a &6Constructor&r places blocks from it. Omnium and a Logic Processor around a diamond pickaxe or a dispenser.
+
+      A cobblestone generator with a Destructor on its face never needs you again.
+
+      &7Build both.
+    tasks: [{item: omnivault:destructor}, {item: omnivault:constructor}]
+    rewards: [{xp: 150}]
+
+  - key: monitor
+    title: "The Vault Talks Back"
+    subtitle: "A number on a screen, a signal on a wire."
+    icon: omnivault:storage_monitor
+    pos: [12, 7]
+    deps: [cell_drive]
+    optional: true
+    desc: |
+      A &6Storage Monitor&r shows one item and its live count; right-click it to store or take. A &6Signal Emitter&r gives a redstone signal while the network holds at least (or fewer than) a number of something you choose. Wire it to a furnace line and the line stops when the shelves are full.
+
+      &7Build a Storage Monitor and a Signal Emitter.
+    tasks: [{item: omnivault:storage_monitor}, {item: omnivault:signal_emitter}]
+    rewards: [{xp: 120}]
+
+  # ---- autocrafting ----
+  - key: patterns
+    title: "Recipes Written Once"
+    subtitle: "Patterns and the Provider."
+    icon: omnivault:pattern_terminal
+    pos: [12.5, 5.25]
+    deps: [nexus]
+    desc: |
+      The Crown's treasurers wrote a recipe down once and never again. A &6Pattern Encoding Terminal&r (a Storage Terminal, an Advanced Processor, a crafting table and a Blank Pattern) writes one onto a &6Blank Pattern&r: a &6crafting pattern&r for a 3×3 recipe, or a &6processing pattern&r (up to nine inputs, three outputs) for a furnace, a Create machine or a Works crusher. JEI's &e+&r fills the editor for you.
+
+      A &6Pattern Provider&r holds nine patterns and pushes processing inputs into the machine it faces.
+
+      &7Build the encoding terminal, encode a crafting pattern and build a Pattern Provider.
+    tasks: [{item: omnivault:pattern_terminal}, {item: omnivault:crafting_pattern}, {item: omnivault:pattern_provider}]
+    rewards: [{item: omnivault:blank_pattern, count: 8}, {xp: 250}]
+
+  - key: autocraft
+    title: "&dAsk, and It Is Made"
+    subtitle: "Assemblers and Crafting Processors."
+    icon: omnivault:assembler
+    pos: [14.5, 5.25]
+    deps: [patterns]
+    shape: hexagon
+    size: 1.25
+    desc: |
+      An &6Assembler&r carries out crafting steps (Omnium, an Advanced Processor, pistons and a crafter); up to four Speed Upgrades double its pace again and again. A &6Crafting Processor&r runs one job at a time (Omnium, Duskforged, an Advanced and a Logic Processor); right-click it for the Crafting Status screen. More of each, more at once.
+
+      &7Middle-click a craftable item in any terminal, enter an amount and press &eCalculate&7: the plan lists what it takes from storage, what it crafts and what's missing. &eStart&7 reserves the ingredients. Build an Assembler and a Crafting Processor.
+    tasks: [{item: omnivault:assembler}, {item: omnivault:crafting_processor}]
+    rewards: [{table: vaults_quartermaster}, {xp: 400}]
+
+  # ---- range and the quantum tier ----
+  - key: transmitter
+    title: "Range"
+    subtitle: "Thirty-two blocks is not a kingdom."
+    icon: omnivault:wireless_transmitter
+    pos: [14, 0]
+    deps: [wireless]
+    desc: |
+      Sneak-use a Wireless Terminal on the Nexus Core to link it; it reaches thirty-two blocks from the core. A &6Wireless Transmitter&r (an ender pearl, a lightning rod, Omnium and an Advanced Processor) reaches sixty-four, and every &6Range Upgrade&r (a Blank Upgrade Card, an ender pearl and amethyst) forty-eight more, up to four.
+
+      &7Build a Wireless Transmitter and a Range Upgrade.
+    tasks: [{item: omnivault:wireless_transmitter}, {item: omnivault:range_upgrade}]
+    rewards: [{item: minecraft:ender_pearl, count: 4}, {xp: 250}]
+
+  - key: quantum_bridge
+    title: "&5Two Places, One Vault"
+    subtitle: "Range ends. Bridges don't."
+    icon: omnivault:quantum_bridge
+    pos: [16, 1.75]
+    deps: [quantum, transmitter, s1_forge/eclipse_core]
+    desc: |
+      A &6Quantum Bridge&r is four echo shards, two Quantum Processors, two ender chests, a Block of Omnium and an &5Eclipse Core&r. Use a &6Quantum Link Card&r on one bridge, then on the other, and the network runs through the pair across any distance and between worlds while both are loaded: a Nether outpost on your main vault, a camp under the black sun wired to Last Light.
+
+      &7Build two bridges and a link card, and entangle them.
+    tasks: [{item: omnivault:quantum_bridge, count: 2}, {item: omnivault:quantum_link_card}]
+    rewards: [{xp: 1000}]
+
+  - key: singularity
+    title: "The Bottomless Cell"
+    subtitle: "Four thousand 4K matrices deep."
+    icon: omnivault:storage_cell_singularity
+    pos: [10.5, 10.5]
+    deps: [network_cells, s1_forge/eclipse_core]
+    optional: true
+    desc: |
+      256K (Omnium and an Advanced Processor), 1M (echo shards and a Quantum Processor), 16M (Deepsteel and an Eclipse Core), and last the &5Singularity&r: four 16M matrices, four Quantum Processors and an Eclipse Core. Two billion items of up to 1,024 kinds, or half a billion buckets.
+
+      Every step is four of the last, so a Singularity is four thousand 4K matrices deep, and every 16K among them wants Duskforged. Nobody builds that by hand. Let the Assemblers do it, and keep the Forge fed.
+
+      &7Build a Singularity Storage Cell.
+    tasks: [{item: omnivault:storage_cell_singularity}]
+    rewards: [{xp: 3000}]
+
+  - key: finale
+    title: "&6The Vault That Thinks"
+    subtitle: "Sixteen crafts a cycle, and a crown's worth of ledgers."
+    icon: omnivault:quantum_assembler
+    pos: [17, 5.25]
+    deps: [autocraft, quantum_bridge, quantum_wireless]
+    shape: gear
+    size: 2.0
+    keeper: |
+      The Crown kept a vault under the throne with every grain the realm owned, and ledgers that counted themselves. You've built the same thing in a shed. The Crown would be furious.
+    desc: |
+      The &6Quantum Assembler&r does sixteen times the crafts per cycle of an Assembler: four Quantum Processors, Omnium, an Assembler and an &5Eclipse Core&r.
+
+      Every chest at Last Light, every drawer, every cell, every outpost behind a bridge, answering one terminal in your pocket and building what you ask for while you sleep. The Sovereigns broke the sun to share it. You only had to share a network.
+
+      &7Build a Quantum Assembler.
+    tasks: [{item: omnivault:quantum_assembler}]
+    rewards: [{table: sovereign_tribute}, {xp: 2000}]

@@ -1,0 +1,38 @@
+# Reward tables for The Vaults (h_vaults, OmniVault expansion), The Measure (n_measure, RPG Stats) and
+# What the Dead Carry (n_spoils, Mob LootBags). Keys are prefixed with their chapter's name.
+# {table: key} rolls one entry by weight. No netherite, Hallowed Tears, Sunseeds, seals or Ember alloys; no bag above
+# Rare (Epic and better bags can roll Sunseeds and Hallowed Tears).
+
+vaults_quartermaster:
+  title: "The Quartermaster's Shelf"
+  icon: omnivault:omnium_ingot
+  rewards:
+    - {item: omnivault:omnium_ingot, count: 4, weight: 3}
+    - {item: omnivault:logic_processor, count: 2, weight: 2}
+    - {item: omnivault:upgrade_base, count: 2, weight: 2}
+    - {item: omnivault:blank_pattern, count: 4, weight: 2}
+    - {item: omnivault:nexus_cable, count: 16, weight: 2}
+    - {item: omnivault:speed_upgrade, count: 1, weight: 1}
+    - {item: omnivault:stack_upgrade, count: 1, weight: 1}
+
+spoils_pells_cut:
+  title: "Pell's Cut"
+  icon: mob_loot_bags:uncommonlootbag
+  rewards:
+    - {item: mob_loot_bags:commonlootbag, count: 4, weight: 3}
+    - {item: mob_loot_bags:uncommonlootbag, count: 2, weight: 3}
+    - {item: mob_loot_bags:rarelootbag, count: 1, weight: 1}
+    - {item: remnant_mobs:remnant_shard, count: 3, weight: 2}
+    - {item: runeborn:faded_rune, count: 3, weight: 2}
+    - {item: runeborn:tempering_stone_2, count: 2, weight: 2}
+    - {item: runeborn:lustrous_rune, count: 1, weight: 1}
+
+measure_tally:
+  title: "The Tallyman's Purse"
+  icon: remnant_mobs:remnant_shard
+  rewards:
+    - {item: remnant_mobs:remnant_shard, count: 6, weight: 3}
+    - {item: runeborn:faded_rune, count: 3, weight: 2}
+    - {item: runeborn:lustrous_rune, count: 1, weight: 1}
+    - {item: minecraft:golden_carrot, count: 6, weight: 2}
+    - {item: runeborn:tempering_stone_2, count: 2, weight: 1}

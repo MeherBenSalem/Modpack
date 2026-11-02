@@ -1,0 +1,397 @@
+chapter: n_spore
+group: chronicles
+order: 53
+title: "&2The Mycelial Court"
+subtitle: "Spore and Stem. What grew while the sun was gone, and what it grew around."
+icon: spore_and_stem:glowcap
+quests:
+  # ---- the hook ----
+  - key: start
+    title: "&2What Grows in the Dark"
+    subtitle: "The sun went out. Not everything minded."
+    icon: spore_and_stem:glowcap
+    pos: [0, 0]
+    deps: [s1_act1_embers/kindle]
+    shape: hexagon
+    size: 1.5
+    keeper: |
+      When the sun went out, the gardens starved. The fields went grey and the orchards forgot their leaves. The mushrooms never noticed. They don't need the sun. They need the dead and the dark, and we have given them an age of both.
+    desc: |
+      Since the Long Eclipse the fungi have grown in the dark places and out of them: caps the size of houses on the &6Rotting Isles&r (Mushroom Fields), threads hanging from every cave roof, things in the &6Hollow Wood&r that look like toadstools until they stand up. Most of it is food. Some of it is hungry.
+
+      &7Pick up any of the new fungi.
+    tasks: [{advancement: "spore_and_stem:root"}]
+    rewards: [{item: minecraft:bone_meal, count: 16}, {xp: 50}]
+
+  # ---- the giants and their woods ----
+  - key: glowcap
+    title: "Lights Out, Caps On"
+    subtitle: "The only light that grew back on its own."
+    icon: spore_and_stem:glowcap
+    pos: [2, -3.5]
+    deps: [start]
+    desc: |
+      A &6Glowcap&r gives off its own light wherever it grows. Eat one raw and you see in the dark for a few seconds. They grow on the Rotting Isles, in the Hollow Wood (dark forests), on cave floors deep underground and through the Underbloom (lush caves).
+
+      &7Pick a Glowcap.
+    tasks: [{advancement: "spore_and_stem:glowcap"}]
+    rewards: [{item: minecraft:bone_meal, count: 8}, {xp: 40}]
+
+  - key: giants
+    title: "Caps the Size of Houses"
+    subtitle: "Bone meal, room, and a little nerve."
+    icon: spore_and_stem:bouncecap_cap
+    pos: [4, -3.5]
+    deps: [glowcap]
+    desc: |
+      Three fungi grow into giants. The &6Huge Glowcap&r hangs curtains of glowing gills that drop &6Lumen Spores&r. The &6Huge Bouncecap&r wears a pink dome: land on it and it bounces you instead of breaking your legs. The &6Huge Inkcap&r drips ink in the Hollow Wood and the Weeping Mire (swamps). The Rotting Isles grow all three.
+
+      None near you? &6Bone meal&r grows each giant from its small mushroom on dirt, moss, mycelium or Mycelial Soil, if it has the room.
+
+      &7Cut the stems of all three giants.
+    tasks:
+      - {item: spore_and_stem:glowcap_stem, count: 4}
+      - {item: spore_and_stem:bouncecap_stem, count: 4}
+      - {item: spore_and_stem:inkcap_stem, count: 4}
+    rewards: [{item: minecraft:bone_meal, count: 16}, {xp: 80}]
+
+  - key: woods
+    title: "Wood That Won't Burn"
+    subtitle: "Three timbers, none of them trees."
+    icon: spore_and_stem:inkcap_planks
+    pos: [6, -4.5]
+    deps: [giants]
+    desc: |
+      Every giant gives a whole wood: stems, hyphae, planks, stairs, slabs, fences, gates, doors, trapdoors, buttons and plates. &6Glowcap&r is a cool blue-grey, &6Bouncecap&r a rosy tan, &6Inkcap&r a charcoal violet. Like the stems of the Ashlands it never catches fire, though it still burns in a furnace, and any recipe that wants planks or logs takes it.
+
+      &7Saw planks from all three.
+    tasks:
+      - {item: spore_and_stem:glowcap_planks, count: 16}
+      - {item: spore_and_stem:bouncecap_planks, count: 16}
+      - {item: spore_and_stem:inkcap_planks, count: 16}
+    rewards: [{item: spore_and_stem:lumen_spores, count: 4}, {xp: 60}]
+
+  # ---- foraging ----
+  - key: veils
+    title: "Threads in the Dark"
+    subtitle: "The roof of every cave is growing something."
+    icon: spore_and_stem:mycelial_thread
+    pos: [2, -1.75]
+    deps: [start]
+    desc: |
+      &6Mycelial Veils&r hang from cave ceilings and grow down like vines; you can climb them. Break one and now and then it leaves a &6Mycelial Thread&r, the string of the fungal world. Some veils carry glowing bulbs: use one to pick &6Lumen Spores&r. Shears take the whole veil instead.
+
+      Shamblers, Mimicaps and Sporemaws carry thread too, if you'd rather take it from something that fights back.
+
+      &7Gather Mycelial Thread.
+    tasks: [{item: spore_and_stem:mycelial_thread, count: 6}]
+    rewards: [{item: minecraft:iron_ingot, count: 2}, {xp: 40}]
+
+  - key: foraging_knife
+    title: "The Forager's Knife"
+    subtitle: "Iron, a stick and a thread."
+    icon: spore_and_stem:foraging_knife
+    pos: [4, -1.75]
+    deps: [veils]
+    desc: |
+      A &6Foraging Knife&r cuts fungal blocks fast and takes more from them: two of every small mushroom you pick, a better share of Lumen Spores, Bouncecap Gel and ink from the giant caps, and one or two threads from every veil instead of a third of one.
+
+      &7Craft a Foraging Knife.
+    tasks: [{item: spore_and_stem:foraging_knife}]
+    rewards: [{item: spore_and_stem:lumen_spores, count: 2}, {xp: 50}]
+
+  - key: small_fungi
+    title: "&2Mycophile"
+    subtitle: "Nine mushrooms. Eight of them won't kill you."
+    icon: spore_and_stem:chanterelle
+    pos: [6, -2.5]
+    deps: [foraging_knife]
+    optional: true
+    shape: gear
+    size: 1.25
+    desc: |
+      &6Glowcap&r and &6Deathcap&r in the Hollow Wood. &6Inkcap&r in the Weeping Mire. &6Bouncecap&r in flower forests and meadows. &6Morel&r in the Grey Wood, &6Chanterelle&r in the Pinewatch (taiga) and the White Wood (birch). &6Frostcap&r in the Rime Veil, &6Puffball&r on the Ashen Fields and the Dusk Steppe, and &6Emberstool&r smouldering by deep lava and in the Crimson Pyre.
+
+      Most are food, each with its own effect. The Deathcap is Poison and Mycosis. Don't.
+
+      &7Collect all nine.
+    tasks: [{advancement: "spore_and_stem:all_fungi"}]
+    rewards: [{table: n_spore_forager_basket}, {table: n_spore_forager_basket}, {xp: 300}]
+
+  - key: truffle
+    title: "Truffle Shuffle"
+    subtitle: "The best thing in the forest is under it."
+    icon: spore_and_stem:truffle
+    pos: [2, 1.75]
+    deps: [start]
+    desc: |
+      &6Truffle Soil&r lies under the Grey Wood, the White Wood, the Hollow Wood and the Pinewatch. Dig it with a shovel for one or two &6Truffles&r; Fortune helps, Silk Touch keeps the soil. Or follow a &6Truffler&r, the mossy boar with a mushroom garden on its back: it sniffs out truffles, digs them up and roots out Truffle Soil nearby. Truffles breed Trufflers.
+
+      &7Dig up a Truffle.
+    tasks: [{advancement: "spore_and_stem:truffle"}]
+    rewards: [{item: spore_and_stem:truffle, count: 2}, {xp: 50}]
+
+  - key: sporeling
+    title: "A Friend in Spores"
+    subtitle: "It waddles. It sneezes. It's yours."
+    icon: spore_and_stem:sporeling_spawn_egg
+    pos: [4, 1.75]
+    deps: [truffle]
+    desc: |
+      &6Sporelings&r are little walking mushrooms with Glowcap, Bouncecap, Inkcap or Chanterelle caps, depending on where they sprouted. They tend the fungi around them. Offer one a &6Truffle&r (it takes one in three) and it follows you, sits when you ask, and sheds a mushroom of its own kind every five to ten minutes. Truffles breed them too.
+
+      &7Tame a Sporeling.
+    tasks: [{advancement: "spore_and_stem:tame_sporeling"}]
+    rewards: [{table: n_spore_forager_basket}, {xp: 60}]
+
+  # ---- cultivation ----
+  - key: mycelial_soil
+    title: "Soil That Remembers"
+    subtitle: "Dirt, bone meal and two mushrooms."
+    icon: spore_and_stem:mycelial_soil
+    pos: [2, 0]
+    deps: [start]
+    desc: |
+      &6Mycelial Soil&r is dirt, bone meal and any two mushrooms, two blocks at a time. Every mushroom lives on it in any light, the plain brown and red ones too, and the soil slowly spreads them, or grows a giant from one when there's room.
+
+      The Hearth's Rich Soil feeds the crops. This feeds what eats the crops when they die.
+
+      &7Make Mycelial Soil.
+    tasks: [{item: spore_and_stem:mycelial_soil, count: 4}]
+    rewards: [{item: minecraft:bone_meal, count: 16}, {xp: 50}]
+
+  - key: cultivation
+    title: "&2Patience of a Log"
+    subtitle: "Inoculate. Wait. Pick. Wait again."
+    icon: spore_and_stem:cultivation_log
+    pos: [4, 0]
+    deps: [mycelial_soil, veils]
+    shape: hexagon
+    size: 1.25
+    desc: |
+      A &6Cultivation Log&r is three logs over Mycelial Thread, Mycelial Soil and Mycelial Thread, two logs a craft. Use a &6Glowcap, Bouncecap, Inkcap, Morel, Chanterelle, Frostcap or Emberstool&r on a fresh log to inoculate it. It fruits through four stages: twice as fast standing on Mycelial Soil, slower under the open daytime sky. Pick a ripe log and it starts the next flush.
+
+      A cellar of logs is a larder that never needs the sun. Last Light has learned to love those.
+
+      &7Inoculate a Cultivation Log.
+    tasks: [{advancement: "spore_and_stem:cultivate"}]
+    rewards: [{item: spore_and_stem:cultivation_log, count: 2}, {xp: 120}]
+
+  - key: kitchen
+    title: "The Forager's Kitchen"
+    subtitle: "A meal that grew in the dark."
+    icon: spore_and_stem:chanterelle_toast
+    pos: [6, 0]
+    deps: [cultivation, h_garden/cooking_pot]
+    desc: |
+      Roast a &6Morel&r over a campfire or in a smoker. Toast &6Chanterelles&r on bread. And the Ash Garden's &6Cooking Pot&r wants a mushroom too: &6Mushroom Risotto&r is rice, an onion, cheese and a brown mushroom in a bowl. Grow the brown ones on Mycelial Soil in the cellar; they don't care about the dark.
+
+      &7Cook a Roasted Morel, Chanterelle Toast and Mushroom Risotto.
+    tasks:
+      - {item: spore_and_stem:roasted_morel}
+      - {item: spore_and_stem:chanterelle_toast}
+      - {item: sprout_and_soil:mushroom_risotto}
+    rewards: [{table: hearth_garden}, {xp: 80}]
+
+  - key: rations
+    title: "Rations for the Rot"
+    subtitle: "Eat well. The thing under the hill won't wait while you chew."
+    icon: spore_and_stem:truffle_stew
+    pos: [8, 1]
+    deps: [kitchen]
+    optional: true
+    desc: |
+      The forager's kitchen keeps a fighter standing. &6Truffle Stew&r (a truffle, a morel, a chanterelle and a baked potato) mends you and wraps you in Absorption. An &6Ember Skewer&r (an Emberstool and a Roasted Morel on a stick) gives Strength. &6Frostcap Tea&r keeps fire off you for a minute and a half.
+
+      &7Cook Truffle Stew, an Ember Skewer and Frostcap Tea.
+    tasks:
+      - {item: spore_and_stem:truffle_stew}
+      - {item: spore_and_stem:ember_skewer}
+      - {item: spore_and_stem:frostcap_tea}
+    rewards: [{table: n_spore_forager_basket}, {xp: 80}]
+
+  # ---- Mycosis ----
+  - key: mycosis
+    title: "&cMycosis"
+    subtitle: "It never kills you. It waits for something else to."
+    icon: spore_and_stem:shambler_spawn_egg
+    pos: [2, 4]
+    deps: [start]
+    shape: hexagon
+    size: 1.25
+    keeper: |
+      Villagers are on that list, Ashborn. My villagers. Keep the spores out of Last Light.
+    desc: |
+      &cMycosis&r is a slow fungal infection: a point of damage every four seconds, faster at higher levels, and it never takes you below one heart. That's the trick of it. It comes from Shambler blows, Deathcaps, spore clouds, Spore Globs and Spore Bombs.
+
+      Anything that dies with Mycosis in it claws back up out of the ground as a &cShambler&r: zombies, husks, drowned, pillagers, vindicators, witches, villagers. Ashborn too. Shamblers don't burn, but they wilt in what daylight is left.
+
+      &7Put down five Shamblers.
+    tasks: [{kill: spore_and_stem:shambler, count: 5}]
+    rewards: [{item: minecraft:milk_bucket}, {xp: 100}]
+
+  - key: cure
+    title: "Clean Bill of Health"
+    subtitle: "Milk, stew or tonic."
+    icon: spore_and_stem:antifungal_tonic
+    pos: [4, 3.75]
+    deps: [mycosis]
+    desc: |
+      Three things cure Mycosis: &6milk&r, a &6Forager's Stew&r (any three edible mushrooms in a bowl) and the &6Antifungal Tonic&r (a Frostcap, a Chanterelle and a honey bottle in a glass bottle). The tonic also leaves you with &aSpore Ward&r for three minutes, and nothing fungal gets in at all.
+
+      &7Drink an Antifungal Tonic.
+    tasks: [{advancement: "spore_and_stem:tonic"}]
+    rewards: [{item: minecraft:honey_bottle, count: 3}, {xp: 60}]
+
+  - key: bloatshroom
+    title: "Pop Goes the Puffball"
+    subtitle: "It swells. Then it's your problem."
+    icon: spore_and_stem:bloatshroom_spawn_egg
+    pos: [4, 5.5]
+    deps: [mycosis]
+    desc: |
+      A &cBloatshroom&r waddles close, swells, and bursts into a cloud of Mycosis, Nausea and Blindness. It breaks no blocks; it only ruins your evening. Fire sets it off early. Kill it from range, or kill it fast and step back.
+
+      &7Kill a Bloatshroom.
+    tasks: [{advancement: "spore_and_stem:bloatshroom"}]
+    rewards: [{item: minecraft:arrow, count: 16}, {xp: 60}]
+
+  - key: mimicap
+    title: "That Mushroom Has Teeth"
+    subtitle: "Not every toadstool is a toadstool."
+    icon: spore_and_stem:mimicap_spawn_egg
+    pos: [2, 6.25]
+    deps: [mycosis]
+    desc: |
+      A &cMimicap&r sits in the Grey Wood and the Pinewatch looking like a plain red or brown toadstool. Come within five blocks and it unfolds six legs, runs up walls and bites. The bite leaves you &cRooted&r to the spot.
+
+      You'll learn this the way everyone does.
+
+      &7Get bitten by a Mimicap.
+    tasks: [{advancement: "spore_and_stem:mimicap"}]
+    rewards: [{item: spore_and_stem:mycelial_thread, count: 4}, {xp: 60}]
+
+  - key: sporemaw
+    title: "Something Under the Cap"
+    subtitle: "The mound is looking at you."
+    icon: spore_and_stem:sporemaw_spawn_egg
+    pos: [0, 5.5]
+    deps: [mycosis]
+    desc: |
+      A &cSporemaw&r waits burrowed in the Hollow Wood, the Weeping Mire and the Underbloom with only its cap showing. Come close and it rises and lobs arcing &cSpore Globs&r. Hit it three times and it burrows away. Close fast, hit hard, and don't stand where the globs land.
+
+      &7Kill a Sporemaw.
+    tasks: [{kill: spore_and_stem:sporemaw}]
+    rewards: [{table: world_huntmaster_ledger}, {xp: 80}]
+
+  - key: mycoleather
+    title: "Grown, Not Tanned"
+    subtitle: "Armour that breathes for you."
+    icon: spore_and_stem:mycoleather_tunic
+    pos: [6, 3]
+    deps: [cure]
+    desc: |
+      Three caps from the giants and a Mycelial Thread make two &6Mycoleather&r. It counts as leather in any recipe that takes any leather, and it makes armour between leather and iron. Wear the whole set and you carry &aSpore Ward&r for as long as it's on.
+
+      &7Wear a full set of Mycoleather.
+    tasks: [{advancement: "spore_and_stem:full_mycoleather"}]
+    rewards: [{table: world_ember_spoils}, {xp: 120}]
+
+  # ---- the Myceliarch ----
+  - key: cores
+    title: "Hearts of the Rot"
+    subtitle: "One kill in twenty, give or take."
+    icon: spore_and_stem:mycelial_core
+    pos: [2, 8]
+    deps: [mimicap, sporemaw, n_spoils/start]
+    desc: |
+      Cut a Shambler, a Mimicap or a Sporemaw down yourself and now and then it leaves a &6Mycelial Core&r, the knot where all its threads met. Mimicaps give one most often, Sporemaws least. Looting helps.
+
+      Like anything that dies under the Eclipse, the fungal dead carry &6loot bags&r too; Old Pell will tell you spores don't spoil a good bag. Open them as you go: a core hunt pays twice.
+
+      &7Take a Mycelial Core.
+    tasks: [{item: spore_and_stem:mycelial_core}]
+    rewards: [{table: world_huntmaster_ledger}, {xp: 150}]
+
+  - key: fruiting_heart
+    title: "The Fruiting Body"
+    subtitle: "You don't dig it up. You give it a reason to rise."
+    icon: spore_and_stem:fruiting_heart
+    pos: [8, 5]
+    deps: [cores, mycoleather, bloatshroom, c_contracts/huntmaster]
+    desc: |
+      &o"Every Shambler I've burned had the same thread running out of its back and into the dirt. I followed one once. Two days. It went under a hill, and the hill was breathing. You can't dig that up. You give it a heart to bloom around, and it comes to you."&r &7— Ilse, the Huntmaster
+
+      A &6Fruiting Heart&r is a Mycelial Core ringed by four Lumen Spores, two Truffles and two Mycoleather. Use it on &6Mycelium, Mycelial Soil, Podzol or Moss&r with room around you: roots and spores rise for three seconds, then the &cMyceliarch&r climbs out of the earth. Only one rises within 96 blocks.
+
+      &7Call up the Myceliarch.
+    tasks: [{advancement: "spore_and_stem:summon"}]
+    rewards: [{item: spore_and_stem:antifungal_tonic, count: 3}, {xp: 150}]
+
+  - key: myceliarch
+    title: "&cThe Myceliarch"
+    subtitle: "The thing every thread was tied to."
+    icon: spore_and_stem:spore_heart
+    pos: [10.5, 4]
+    deps: [fruiting_heart]
+    shape: gear
+    size: 2.0
+    desc: |
+      Every attack is telegraphed; read them. A &cSlam&r up close marks its landing with a ring of spores and throws up Root Spikes. &cRoot Eruption&r cracks the ground in a line toward you before the spikes burst through and root you. Its cap swells before a &cSpore Nova&r: Mycosis II for seven blocks, and a shove. It calls Bloatshrooms and a Shambler to its side.
+
+      At half health it &cblooms again&r: faster, more often, and Spore Globs rain on marked ground. A tonic or the Mycoleather keeps the spores out; nothing keeps the roots out but your feet. It never strays more than forty blocks from where it rose.
+
+      &7Defeat the Myceliarch.
+    tasks: [{advancement: "spore_and_stem:kill_myceliarch"}]
+    rewards: [{table: world_hunt_spoils}, {xp: 500}]
+
+  - key: bloomreaver
+    title: "Reap What You Sow"
+    subtitle: "A blade that spreads what it cuts."
+    icon: spore_and_stem:bloomreaver
+    pos: [12.75, 2.5]
+    deps: [myceliarch, s1_forge/duskforged, n_runeborn/infusion]
+    optional: true
+    desc: |
+      The Myceliarch leaves a &6Spore Heart&r. Bind it to a &6diamond sword&r (a Duskforged Ingot in its hilt, in this world) with two Lumen Spores and two Mycoleather and you have the &6Bloomreaver&r: every hit infects. Use it for a &6Spore Burst&r, Mycosis and Slowness on everything around you, and a shove.
+
+      At a shrine you put an affinity into steel with a whetstone. This one grew its own. Mind what you infect: a zombie that dies with Mycosis gets up again.
+
+      &7Forge the Bloomreaver.
+    tasks: [{advancement: "spore_and_stem:bloomreaver"}]
+    rewards: [{table: n_spore_bloom_cache}, {xp: 250}]
+
+  - key: crown
+    title: "Crown of the Bloom"
+    subtitle: "The only crown in this world nobody had to steal."
+    icon: spore_and_stem:crown_of_the_bloom
+    pos: [12.75, 5.5]
+    deps: [myceliarch]
+    optional: true
+    desc: |
+      Or set the Spore Heart in a &6golden helmet&r with two Glowcap Caps. The &6Crown of the Bloom&r gives Night Vision and Spore Ward while you wear it, and Sporelings trust you on sight.
+
+      One heart, one choice. Another Fruiting Heart calls the Myceliarch back if you want both.
+
+      &7Make the Crown of the Bloom.
+    tasks: [{item: spore_and_stem:crown_of_the_bloom}]
+    rewards: [{table: n_spore_bloom_cache}, {xp: 200}]
+
+  - key: finale
+    title: "&2Light From the Rot"
+    subtitle: "What the dark grew, hung where the dark can see it."
+    icon: spore_and_stem:glowcap_lantern
+    pos: [12.5, -1.5]
+    deps: [myceliarch, woods]
+    shape: gear
+    size: 1.75
+    keeper: |
+      Lanterns that grew. I have kept a fire for an age and never once thought to grow one. Hang them by the shrine.
+
+      And remember this when you cross under the black sun, Ashborn: the dead there don't rot. Nothing grows on them. Ask yourself what kind of place even the mushrooms won't touch.
+    desc: |
+      A &6Glowcap Lantern&r is three glowcap stems around a Lumen Spore under a Mycelial Thread: full light, standing or hanging, and it never needs fuel. The Myceliarch's spores are enough for a street of them.
+
+      &7Bring eight Glowcap Lanterns to Last Light.
+    tasks: [{item: spore_and_stem:glowcap_lantern, count: 8}]
+    rewards: [{table: world_hunt_spoils}, {table: n_spore_forager_basket}, {xp: 600}]

@@ -17,7 +17,7 @@ quests:
     desc: |
       The gardeners are long gone, but their gardens kept going without them. &6Wild gardens&r grow in six climates (meadow, woodland, highland, arid, tropical and marsh), and each drops the seeds of what grew there: forty crops between them. Farmers in the villages trade seeds too.
 
-      &7Find a wild garden and break it for seeds.
+      &7Find a wild garden and shear it to take it home. Break it with anything else for its seeds.
     tasks: [{advancement: "sprout_and_soil:wild_garden"}]
     rewards: [{item: minecraft:bone_meal, count: 16}, {xp: 50}]
 
@@ -228,3 +228,224 @@ quests:
       &7Eat every plated meal.
     tasks: [{advancement: "sprout_and_soil:gourmet"}]
     rewards: [{table: hearth_homestead}, {table: hearth_pantry}, {xp: 500}]
+
+  # ---- gardens far from home ----
+  - key: highland_marsh
+    title: "Cold Hills, Wet Feet"
+    subtitle: "Oats in the pines. Mint in the mire."
+    icon: sprout_and_soil:cranberries
+    pos: [-2.5, -1.75]
+    deps: [wild_garden]
+    desc: |
+      &6Highland gardens&r grow in the Pinewatch (taiga), the windswept hills and the groves: oats, barley, cabbage, leeks, turnips, radishes, blueberries and cranberries. &6Marsh gardens&r grow in the Weeping Mire and along the Grey River: rice, soybeans, celery, cucumbers, green beans, mint and more cranberries.
+
+      &7Bring back oats, cranberries, mint and soybeans.
+    tasks:
+      - {item: sprout_and_soil:oats}
+      - {item: sprout_and_soil:cranberries}
+      - {item: sprout_and_soil:mint}
+      - {item: sprout_and_soil:soybeans}
+    rewards: [{table: h_garden_seed_satchel}, {xp: 80}]
+
+  - key: arid
+    title: "Dry Country"
+    subtitle: "Peppers like it hot. So do grapes."
+    icon: sprout_and_soil:chili_pepper
+    pos: [-2.5, 0]
+    deps: [wild_garden]
+    desc: |
+      &6Arid gardens&r grow where the land dried out: the Dusk Steppe (savanna), the Sunless Sands (desert) and the wooded badlands of the Scarred Reach. They give bell and chili peppers, eggplants, zucchini, sweet potatoes, peanuts, grapes and cotton. Half the big dishes in the cooks' book start here.
+
+      &7Bring back an eggplant, a bell pepper, grapes and peanuts.
+    tasks:
+      - {item: sprout_and_soil:eggplant}
+      - {item: sprout_and_soil:bell_pepper}
+      - {item: sprout_and_soil:grapes}
+      - {item: sprout_and_soil:peanuts}
+    rewards: [{table: h_garden_seed_satchel}, {xp: 80}]
+
+  - key: tropical
+    title: "Beans From the Drowned Green"
+    subtitle: "Coffee doesn't grow at home. Go and get it."
+    icon: sprout_and_soil:coffee_beans
+    pos: [-2.5, 1.75]
+    deps: [wild_garden]
+    desc: |
+      &6Tropical gardens&r grow only in the jungles of the Drowned Green, about as far from Last Light as a garden gets. Nowhere else grows &6coffee&r, &6tea&r, &6peppercorns&r, &6ginger&r or &6pineapples&r wild. Bring the seed home and it grows in any field.
+
+      &7Bring back coffee beans, tea leaves and peppercorns.
+    tasks:
+      - {item: sprout_and_soil:coffee_beans}
+      - {item: sprout_and_soil:tea_leaves}
+      - {item: sprout_and_soil:peppercorns}
+    rewards: [{table: h_garden_seed_satchel}, {xp: 100}]
+
+  - key: farmers_trades
+    title: "The Farmer's Ledger"
+    subtitle: "Seed for emeralds. Cheaper than a jungle."
+    icon: sprout_and_soil:fertilizer
+    pos: [-2.5, -3.5]
+    deps: [wild_garden, n_voices/start]
+    optional: true
+    desc: |
+      Since the villages started remembering you, their &6farmers&r keep their best seed for you. They trade in seeds, produce, fruit, &6fertilizer&r, watering cans and hot meals, and they plant the new crops in their own fields. &6Wandering traders&r bring fruit saplings and rare seeds from the far climates. Nothing in a trader's cart has teeth.
+
+      Fertilizer is bone meal for a whole 5×5 patch: two bone meal, dirt and rotten flesh make four.
+
+      &7Trade with a villager, and mix fertilizer.
+    tasks: [{advancement: "minecraft:adventure/trade"}, {item: sprout_and_soil:fertilizer, count: 4}]
+    rewards: [{item: minecraft:emerald, count: 8}, {xp: 60}]
+
+  - key: far_orchards
+    title: "Every Tree Has Its Weather"
+    subtitle: "Cherries in the blossom, olives on the hills."
+    icon: sprout_and_soil:olive_sapling
+    pos: [2, -4.5]
+    deps: [orchard]
+    desc: |
+      Fruit trees grow wild where the weather suits them: apples, pears, peaches and plums in the Grey Wood and the Ashen Fields; sweet cherries in the Blossom Ruin, flower forests and meadows; oranges, lemons and limes in the Dusk Steppe; olives on the savanna plateaus and wooded badlands; mangoes, avocados and bananas in the Drowned Green. Wandering traders carry saplings too.
+
+      &7Bring home saplings of a sweet cherry, an orange, an olive and a banana.
+    tasks:
+      - {item: sprout_and_soil:sweet_cherry_sapling}
+      - {item: sprout_and_soil:orange_sapling}
+      - {item: sprout_and_soil:olive_sapling}
+      - {item: sprout_and_soil:banana_sapling}
+    rewards: [{item: minecraft:bone_meal, count: 24}, {xp: 120}]
+
+  - key: crates
+    title: "Crated and Counted"
+    subtitle: "Nine of anything is a crate."
+    icon: sprout_and_soil:tomato_crate
+    pos: [0, 2]
+    deps: [harvest]
+    desc: |
+      Nine of a crop pack into a &6crate&r: a block you can stack, store and set out by the door, and craft back into nine whenever you want them. Sprout and Soil crates twenty kinds of produce and fruit; potatoes, carrots and beetroots go in the Hearth's Farmer's Delight crates.
+
+      &7Pack a crate of tomatoes and a crate of onions.
+    tasks: [{item: sprout_and_soil:tomato_crate}, {item: sprout_and_soil:onion_crate}]
+    rewards: [{item: minecraft:bone_meal, count: 16}, {xp: 50}]
+
+  # ---- the larder and the bigger dishes ----
+  - key: spices
+    title: "Salt and Pepper"
+    subtitle: "The difference between food and cooking."
+    icon: sprout_and_soil:black_pepper
+    pos: [0, 5]
+    deps: [tropical, cooking_pot]
+    desc: |
+      &6Salt&r is a bucket of water boiled down in the cooking pot. &6Black pepper&r is peppercorns ground with the &6Mortar and Pestle&r, which stays in the grid and wears down instead of being used up. The mortar also presses &6cooking oil&r from olives, peanuts or soybeans.
+
+      Salt makes cheese, butter, sauce and pickles. Half the book waits on it.
+
+      &7Make salt, black pepper and cooking oil.
+    tasks:
+      - {item: sprout_and_soil:salt}
+      - {item: sprout_and_soil:black_pepper}
+      - {item: sprout_and_soil:cooking_oil}
+    rewards: [{table: hearth_garden}, {xp: 80}]
+
+  - key: coffee
+    title: "Black as the Sky"
+    subtitle: "Roasted, brewed, and served in a mug."
+    icon: sprout_and_soil:coffee
+    pos: [0, 6.75]
+    deps: [spices]
+    desc: |
+      Roast coffee beans in a furnace, smoker or over a campfire, then brew them in the cooking pot with a brick &6mug&r in the container slot. &6Coffee&r leaves you &6Caffeinated&r: faster on your feet and with a pick. Milk and sugar make a &6Café Latte&r, which is Cozy as well. Tea leaves brew &6Green Tea&r the same way.
+
+      &o"Black as the sky and twice as bitter. I'll take two."&r &7— the Captain of the Ashen Company
+
+      &7Drink a coffee and feel it.
+    tasks: [{advancement: "sprout_and_soil:coffee"}]
+    rewards: [{item: sprout_and_soil:roasted_coffee_beans, count: 8}, {xp: 80}]
+
+  - key: preserves
+    title: "Put Up for the Long Night"
+    subtitle: "The villages that lasted were the ones with a cellar."
+    icon: sprout_and_soil:berry_jam
+    pos: [2, 7]
+    deps: [spices]
+    desc: |
+      Before the Eclipse they put food up for winter. Since the Eclipse every season is a long night, and the cellars of Last Light are full of jars. Cook &6berry jam&r (berries, sugar and a bottle) or &6orange marmalade&r in the pot, &6pickles&r from cucumbers and salt, and dry grapes into &6raisins&r in a furnace or smoker.
+
+      &7Put up berry jam, pickles and raisins.
+    tasks:
+      - {item: sprout_and_soil:berry_jam}
+      - {item: sprout_and_soil:pickles}
+      - {item: sprout_and_soil:raisins}
+    rewards: [{table: h_garden_larder}, {xp: 80}]
+
+  - key: big_dishes
+    title: "A Table Worth Sitting At"
+    subtitle: "Plates, not bowls."
+    icon: sprout_and_soil:paella
+    pos: [4, 6]
+    deps: [spices, cutting_board]
+    desc: |
+      The big dishes take a brick &6plate&r and everything you've grown. &6Ratatouille&r: tomato, onion, eggplant, zucchini and bell pepper. &6Paella&r: rice, tomato, bell pepper, garlic, chicken cuts and a raw fish. And a &6Pizza&r, crafted from dough, tomato sauce, cheese, basil and a tomato, then set down and shared a slice at a time.
+
+      &7Make ratatouille, paella and a pizza.
+    tasks:
+      - {item: sprout_and_soil:ratatouille}
+      - {item: sprout_and_soil:paella}
+      - {item: sprout_and_soil:pizza}
+    rewards: [{table: hearth_garden}, {table: hearth_pantry}, {xp: 150}]
+
+  # ---- Better Farming++: the fields ----
+  - key: hoe_sweep
+    title: "A Wider Swing"
+    subtitle: "Diamond takes five rows at once."
+    icon: minecraft:diamond_hoe
+    pos: [8, -3]
+    deps: [h_hearth/sprinkler, s1_forge/duskforged]
+    desc: |
+      &6Better Farming++&r lets any hoe harvest and replant: iron or gold sweeps 3×3, &6diamond 5×5&r, netherite 7×7. Sneak to take a single crop. Each replant costs a seed from the drops, Fortune counts and the hoe wears a point per crop. In this world a diamond hoe has a &6Duskforged Ingot&r in its grip.
+
+      The mod also ships &6Harvest Indicators&r, a resource pack that floats a marker over ripe wheat, carrots, potatoes, beetroots and nether wart. Switch it on or off in Resource Packs.
+
+      &7Craft a diamond hoe.
+    tasks: [{item: minecraft:diamond_hoe}]
+    rewards: [{table: hearth_garden}, {xp: 100}]
+
+  - key: fields
+    title: "&aThe Fields of Last Light"
+    subtitle: "A farm that runs while you're out dying."
+    icon: better_farming_plus:farming_crate
+    pos: [10, -1.5]
+    deps: [sprinkler, hoe_sweep, h_hearth/farming_crate]
+    shape: hexagon
+    size: 1.5
+    desc: |
+      Lay out a real field. A water block hidden under the soil feeds a &6Sprinkler&r; a &6Farming Crate&r in the middle harvests and replants everything ripe in the 9×9 around it, and a hopper underneath carries the harvest to a chest. A scarecrow keeps the soil whole. Then go and kill something. Supper keeps.
+
+      &o"Last Light ate from your fields this year. Nobody went hungry. Do you know how long it's been since I could say that?"&r
+
+      &7Fill the larder: four crates each of potatoes, carrots, corn and tomatoes.
+    tasks:
+      - {item: farmersdelight:potato_crate, count: 4}
+      - {item: farmersdelight:carrot_crate, count: 4}
+      - {item: sprout_and_soil:corn_crate, count: 4}
+      - {item: sprout_and_soil:tomato_crate, count: 4}
+    rewards: [{table: hearth_homestead}, {table: hearth_garden}, {xp: 400}]
+
+  - key: finale
+    title: "&aHarvest Home"
+    subtitle: "One table, and everyone at it."
+    icon: sprout_and_soil:roast_chicken_dinner
+    pos: [12, 5]
+    deps: [fields, big_dishes, n_spore/cultivation]
+    shape: gear
+    size: 1.75
+    keeper: |
+      Sit down, Ashborn. No, all of you: the Company, the Smith, the farmers. One table. When the sun went out we ate standing up, in the dark, with one eye on the door. Not tonight.
+    desc: |
+      The Ember Forge's seals ask for the kitchens' best, and the Seal of Ash wants a &6Steak Dinner&r from this one. Cook enough for the whole of Last Light first. The cellar's cultivation logs give the morels and chanterelles for a &6Truffle Stew&r; the fields give the rest.
+
+      &7Lay out a harvest feast: steak dinners, roast chicken dinners, truffle stew and a carrot cake.
+    tasks:
+      - {item: sprout_and_soil:steak_dinner, count: 4}
+      - {item: sprout_and_soil:roast_chicken_dinner, count: 4}
+      - {item: spore_and_stem:truffle_stew, count: 2}
+      - {item: sprout_and_soil:carrot_cake}
+    rewards: [{table: hearth_homestead}, {table: h_garden_larder}, {xp: 600}]

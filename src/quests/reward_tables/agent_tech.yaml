@@ -1,0 +1,41 @@
+# Reward tables for the tech chronicles: The Ashen Works (n_works, Core Utilities), Chronofall (n_chrono) and
+# The Builder's Wands (n_wands, RE:Constructed Wands). {table: key} rolls one entry by weight.
+# No netherite, no Ember Forge alloys or seals, no flask upgrades.
+
+n_works_crate:
+  title: "Spare Parts from the Works"
+  icon: core_utilities:basic_machine_frame
+  rewards:
+    - {item: core_utilities:basic_circuit, count: 4, weight: 3}
+    - {item: core_utilities:steel_ingot, count: 6, weight: 3}
+    - {item: core_utilities:energized_ingot, count: 2, weight: 2}
+    - {item: core_utilities:cable, count: 16, weight: 2}
+    - {item: core_utilities:speed_upgrade, count: 1, weight: 1}
+    - {item: core_utilities:energy_upgrade, count: 1, weight: 1}
+    - {item: minecraft:redstone, count: 24, weight: 3}
+    - {item: minecraft:coal_block, count: 4, weight: 2}
+
+n_chrono_salvage:
+  title: "Rift Salvage"
+  icon: chronofall:scrap
+  rewards:
+    - {item: chronofall:scrap, count: 8, weight: 3}
+    - {item: chronofall:titanium_ingot, count: 4, weight: 3}
+    - {item: chronofall:cobalt_ingot, count: 2, weight: 2}
+    - {item: chronofall:electrical_conductors, count: 6, weight: 2}
+    - {item: chronofall:blank_printed_circuit_board, count: 2, weight: 2}
+    - {item: chronofall:rift_shard, count: 2, weight: 2}
+    - {item: chronofall:flux_cell, count: 1, weight: 1}
+    - {item: chronofall:printed_circuit_board, count: 1, weight: 1}
+
+n_wands_masonry:
+  title: "A Mason's Load"
+  icon: minecraft:stone_bricks
+  rewards:
+    - {item: minecraft:stone_bricks, count: 64, weight: 3}
+    - {item: minecraft:deepslate_bricks, count: 64, weight: 2}
+    - {item: minecraft:polished_andesite, count: 64, weight: 2}
+    - {item: minecraft:smooth_stone, count: 64, weight: 2}
+    - {item: minecraft:spruce_planks, count: 64, weight: 2}
+    - {item: minecraft:glass, count: 32, weight: 2}
+    - {item: minecraft:lantern, count: 8, weight: 1}

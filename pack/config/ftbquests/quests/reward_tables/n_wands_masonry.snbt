@@ -1,0 +1,73 @@
+{
+	icon: {
+		id: "minecraft:stone_bricks"
+	}
+	id: "31DC8B8989159989"
+	loot_size: 1
+	order_index: 16
+	rewards: [
+		{
+			count: 64
+			id: "7319F6C3E53499D3"
+			item: {
+				count: 1
+				id: "minecraft:stone_bricks"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 64
+			id: "5565D35F2E0E02CB"
+			item: {
+				count: 1
+				id: "minecraft:deepslate_bricks"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 64
+			id: "62FA538423BD96CA"
+			item: {
+				count: 1
+				id: "minecraft:polished_andesite"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 64
+			id: "54101472F4BF8D55"
+			item: {
+				count: 1
+				id: "minecraft:smooth_stone"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 64
+			id: "625FA3EBAC0A18AE"
+			item: {
+				count: 1
+				id: "minecraft:spruce_planks"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 32
+			id: "4F61062121D14D76"
+			item: {
+				count: 1
+				id: "minecraft:glass"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 8
+			id: "73A5B286AD5EA1E6"
+			item: {
+				count: 1
+				id: "minecraft:lantern"
+			}
+			weight: 1.0f
+		}
+	]
+}

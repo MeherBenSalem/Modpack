@@ -100,6 +100,7 @@ lustrous stone every 10) instead of RPG Stats' default diamonds and diamond armo
 | Paths of the Ashborn | The Ashen Codex (how everything works), The Armory, The Remnant Constellation, The Ashen Company, The Fractured Archive |
 | The World Under Ash | Boss Compendium (every boss), The Dungeon Trail, Wayfarer, Bestiary |
 | The Long Eclipse | The Ember Forge (the six alloys and four seals that gate everything) sits after the Prologue |
+| Chronicles of the Ash | One storyline per NightBeam mod, tied to the acts, the Forge and each other: Runeborn, The Measure (RPG Stats), What the Dead Carry (Mob LootBags), The Mycelial Court (Spore & Stem), The Last Coast (Fisherman's Coast), Voices of Last Light (Smart Villagers AI), The Ashen Works (Core Utilities), Chronofall, The Builder's Wands, The Eclipsed Realm (survey) |
 | Hearth and Harvest | Hearth and Harvest (food, farming, fishing), The Ash Garden (Sprout & Soil), Last Light (home, sacks, wands, the village), The Clockwork Path (Create; required for the Forge), The Vaults (Sophisticated and OmniVault, one interlocked ladder) |
 | Ashen Contracts | The Huntmaster's repeatable bounty board |
 

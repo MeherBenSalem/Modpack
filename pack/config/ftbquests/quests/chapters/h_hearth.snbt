@@ -210,7 +210,7 @@
 			y: -2.25d
 		}
 		{
-			dependencies: ["6F9D0921E45DDD1A"]
+			dependencies: ["6F9D0921E45DDD1A", "2117F587492EBB8B"]
 			icon: {
 				id: "better_farming_plus:farming_crate"
 			}

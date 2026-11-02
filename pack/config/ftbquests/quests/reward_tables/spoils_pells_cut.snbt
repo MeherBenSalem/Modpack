@@ -1,0 +1,71 @@
+{
+	icon: {
+		id: "mob_loot_bags:uncommonlootbag"
+	}
+	id: "1E399D96DBF9DD34"
+	loot_size: 1
+	order_index: 12
+	rewards: [
+		{
+			count: 4
+			id: "04BBF0275DC677FA"
+			item: {
+				count: 1
+				id: "mob_loot_bags:commonlootbag"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "0402BC41B835CB32"
+			item: {
+				count: 1
+				id: "mob_loot_bags:uncommonlootbag"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7517626D1142F399"
+			item: {
+				count: 1
+				id: "mob_loot_bags:rarelootbag"
+			}
+			weight: 1.0f
+		}
+		{
+			count: 3
+			id: "05B148493EE0E5C4"
+			item: {
+				count: 1
+				id: "remnant_mobs:remnant_shard"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 3
+			id: "1D7523B863025277"
+			item: {
+				count: 1
+				id: "runeborn:faded_rune"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 2
+			id: "4DD88A690AE57364"
+			item: {
+				count: 1
+				id: "runeborn:tempering_stone_2"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "3D0343A03156BBA6"
+			item: {
+				count: 1
+				id: "runeborn:lustrous_rune"
+			}
+			weight: 1.0f
+		}
+	]
+}

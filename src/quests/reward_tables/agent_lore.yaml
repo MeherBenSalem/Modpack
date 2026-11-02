@@ -1,0 +1,35 @@
+# Reward tables for n_runeborn (n_50_runeborn.yaml), n_realm (n_59_realm.yaml) and the p_archive expansion
+# (p_14_archive.yaml). Keys are prefixed with their chapter. No netherite, Hallowed Tears, Sunseeds or Forge seals.
+
+n_runeborn_purse:
+  title: "The Pilgrim's Purse"
+  icon: runeborn:pilgrim_seal
+  rewards:
+    - {item: runeborn:faded_rune, count: 3, weight: 3}
+    - {item: runeborn:lustrous_rune, count: 1, weight: 2}
+    - {item: runeborn:tempering_stone_2, count: 3, weight: 3}
+    - {item: runeborn:blank_whetstone, count: 1, weight: 2}
+    - {item: minecraft:glistering_melon_slice, count: 3, weight: 2}
+    - {item: minecraft:blaze_powder, count: 3, weight: 2}
+
+n_realm_satchel:
+  title: "Calder's Satchel"
+  icon: remnant_bosses:boss_journal
+  rewards:
+    - {item: runeborn:heros_rune, count: 1, weight: 3}
+    - {item: runeborn:tempering_stone_8, count: 2, weight: 2}
+    - {item: runeborn:lustrous_stone_7, count: 1, weight: 2}
+    - {item: minecraft:gold_ingot, count: 12, weight: 3}
+    - {item: minecraft:golden_apple, count: 2, weight: 2}
+    - {item: minecraft:echo_shard, count: 1, weight: 1}
+
+p_archive_recollection:
+  title: "A Deeper Recollection"
+  icon: tbos:recalled_hour
+  rewards:
+    - {item: tbos:chronicle_shard, count: 3, weight: 3}
+    - {item: tbos:lenswork_crystal, count: 1, weight: 2}
+    - {item: tbos:recalled_hour, count: 1, weight: 2}
+    - {item: tbos:memory_key, count: 1, weight: 2}
+    - {item: minecraft:amethyst_shard, count: 8, weight: 2}
+    - {item: minecraft:experience_bottle, count: 8, weight: 2}

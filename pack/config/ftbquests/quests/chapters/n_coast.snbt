@@ -1,0 +1,538 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "n_coast"
+	group: "487452908E350FD2"
+	icon: {
+		id: "fisherman_house:message_in_a_bottle"
+	}
+	id: "1350FEF0D63B70AC"
+	images: [ ]
+	order_index: 54
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["38273B3664CCA777", "2D462FB5D6B13E35"]
+			icon: {
+				id: "fisherman_house:message_in_a_bottle"
+			}
+			id: "72ADB1E012F117D0"
+			rewards: [
+				{
+					id: "2858AD7F0C883FAF"
+					table_id: 5243491749338036789L
+					type: "random"
+				}
+				{
+					count: 4
+					id: "05E4E6FE06261F30"
+					item: {
+						count: 1
+						id: "minecraft:emerald"
+					}
+					type: "item"
+				}
+				{
+					id: "078F8F4C83C8DE90"
+					type: "xp"
+					xp: 80
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "fisherman_house:buy_crab_pot"
+					criterion: ""
+					id: "1D6D0EC93B9D58E4"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["72ADB1E012F117D0", "1BA27B12A75053E1"]
+			icon: {
+				id: "fisherman_house:chum"
+			}
+			id: "7E52DAD1CCECB80B"
+			rewards: [
+				{
+					count: 12
+					id: "110A6B054A89EF3D"
+					item: {
+						count: 1
+						id: "fisherman_house:fish_bait"
+					}
+					type: "item"
+				}
+				{
+					id: "3D0236DD432473EF"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "775EAB7ADF08FDA8"
+					item: {
+						count: 1
+						id: "fisherman_house:chum"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "75F5C797E84BF37F"
+					item: {
+						count: 1
+						id: "fisherman_house:glow_bait"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7E52DAD1CCECB80B"]
+			icon: {
+				id: "fisherman_house:crab_pot"
+			}
+			id: "13CC49CB82226CB7"
+			optional: true
+			rewards: [
+				{
+					id: "26B3DC22A872DA93"
+					table_id: 5243491749338036789L
+					type: "random"
+				}
+				{
+					id: "62B1B023DC836A68"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "7C5BE90D910B154D"
+					item: {
+						count: 1
+						id: "minecraft:sea_pickle"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0D3B1D1DCCFD838A"
+					item: {
+						count: 1
+						id: "minecraft:slime_ball"
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "78BE5CE887F8416A"
+					item: {
+						count: 1
+						id: "minecraft:prismarine_crystals"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["72ADB1E012F117D0"]
+			icon: {
+				id: "minecraft:bell"
+			}
+			id: "3E6921B8D6D299BA"
+			rewards: [
+				{
+					count: 6
+					id: "62CCAC0E1A073C65"
+					item: {
+						count: 1
+						id: "fisherman_house:glow_bait"
+					}
+					type: "item"
+				}
+				{
+					id: "2061BBD3616DD120"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					advancement: "fisherman_house:discover_harbour_pier"
+					criterion: ""
+					id: "30CC2EB899A42B4D"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3E6921B8D6D299BA", "5C4120A5CBCF549B"]
+			icon: {
+				id: "fisherman_house:message_in_a_bottle"
+			}
+			id: "69BF9A5F8E6E2849"
+			rewards: [
+				{
+					count: 8
+					id: "72975932D450EB2C"
+					item: {
+						count: 1
+						id: "fisherman_house:glow_bait"
+					}
+					type: "item"
+				}
+				{
+					id: "68A9E3A52A582E2B"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "2A645FAF6E078A42"
+					item: {
+						count: 1
+						id: "fisherman_house:message_in_a_bottle"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["69BF9A5F8E6E2849", "1BD8E51A73CB9F07"]
+			icon: {
+				id: "minecraft:writable_book"
+			}
+			id: "1885B251945189E9"
+			optional: true
+			rewards: [
+				{
+					id: "7549C61F790D0DA2"
+					table_id: 7308021363516719907L
+					type: "random"
+				}
+				{
+					id: "3677C277196B814A"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "24E1A96036DC890F"
+					item: {
+						count: 1
+						id: "minecraft:writable_book"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["69BF9A5F8E6E2849", "6CB9503B1FD8393F"]
+			icon: {
+				id: "minecraft:spyglass"
+			}
+			id: "559846CDD402DD95"
+			rewards: [
+				{
+					count: 3
+					id: "329D4798B20409D2"
+					item: {
+						count: 1
+						id: "minecraft:emerald"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6D77CE645657D230"
+					item: {
+						count: 1
+						id: "minecraft:lantern"
+					}
+					type: "item"
+				}
+				{
+					id: "4716F75DAEF8253F"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "1464289B1EAFF324"
+					item: {
+						count: 1
+						id: "minecraft:spyglass"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3E6921B8D6D299BA", "7B700C78C4B0ED2C"]
+			icon: {
+				id: "minecraft:lily_pad"
+			}
+			id: "069AC2A1B24E010C"
+			rewards: [
+				{
+					count: 8
+					id: "12B3BBB9538C64CD"
+					item: {
+						count: 1
+						id: "fisherman_house:chum"
+					}
+					type: "item"
+				}
+				{
+					id: "4BB148A31E0818E3"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					advancement: "fisherman_house:discover_stilt_shack"
+					criterion: ""
+					id: "306C53A454A42A8A"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["069AC2A1B24E010C"]
+			icon: {
+				id: "minecraft:packed_ice"
+			}
+			id: "587EA8EC2B8C4276"
+			rewards: [
+				{
+					count: 8
+					id: "2F0E1EAAE2ECB0AF"
+					item: {
+						count: 1
+						id: "minecraft:cooked_salmon"
+					}
+					type: "item"
+				}
+				{
+					id: "393F1645FC3D584E"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					advancement: "fisherman_house:discover_ice_fishing_camp"
+					criterion: ""
+					id: "09C6AC4828982204"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["587EA8EC2B8C4276"]
+			icon: {
+				id: "minecraft:oak_boat"
+			}
+			id: "12284838860D0265"
+			rewards: [
+				{
+					id: "5F3479D3E03F3BC8"
+					item: {
+						count: 1
+						id: "minecraft:oak_boat"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "2E69933BF3B73F54"
+					item: {
+						count: 1
+						id: "fisherman_house:fish_bait"
+					}
+					type: "item"
+				}
+				{
+					id: "7B0CA2ADA2B3085C"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					advancement: "fisherman_house:discover_river_boathouse"
+					criterion: ""
+					id: "48608252C792C71C"
+					type: "advancement"
+				}
+			]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["559846CDD402DD95", "12284838860D0265", "2A7E4FBEE8E2A089"]
+			icon: {
+				id: "minecraft:filled_map"
+			}
+			id: "52BF2B9667882C90"
+			rewards: [
+				{
+					id: "4CC55425CD222974"
+					table_id: 139939361058897245L
+					type: "random"
+				}
+				{
+					id: "5B1109F674DA29B7"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					advancement: "fisherman_house:discover_sunken_trawler"
+					criterion: ""
+					id: "0419FE1D3EC67CD2"
+					type: "advancement"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["52BF2B9667882C90"]
+			icon: {
+				id: "minecraft:trident"
+			}
+			id: "7F0281287D175581"
+			rewards: [
+				{
+					count: 2
+					id: "435B46A70F87B2D6"
+					item: {
+						count: 1
+						id: "minecraft:nautilus_shell"
+					}
+					type: "item"
+				}
+				{
+					id: "36B3FBEDF69A0A9A"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:drowned"
+					id: "7C8094275D2D646D"
+					type: "kill"
+					value: 2L
+				}
+			]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7F0281287D175581"]
+			icon: {
+				id: "minecraft:heart_of_the_sea"
+			}
+			id: "05C2E2A58053C955"
+			rewards: [
+				{
+					id: "0296814519ED1E90"
+					table_id: 8768236912505058462L
+					type: "random"
+				}
+				{
+					id: "58E8D257387D2910"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "2C12A1A997CCC456"
+					item: {
+						count: 1
+						id: "minecraft:heart_of_the_sea"
+					}
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["05C2E2A58053C955"]
+			icon: {
+				id: "minecraft:conduit"
+			}
+			id: "5279E841306E2E60"
+			rewards: [
+				{
+					id: "3739033C23B66E91"
+					table_id: 5603019727193511887L
+					type: "random"
+				}
+				{
+					count: 16
+					id: "084EF7BEF0204AC6"
+					item: {
+						count: 1
+						id: "minecraft:prismarine"
+					}
+					type: "item"
+				}
+				{
+					id: "119A012324A51697"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "657A2927064EBAB2"
+					item: {
+						count: 1
+						id: "minecraft:conduit"
+					}
+					type: "item"
+				}
+			]
+			x: 14.25d
+			y: 0.0d
+		}
+	]
+}

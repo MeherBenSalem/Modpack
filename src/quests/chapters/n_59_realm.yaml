@@ -1,0 +1,290 @@
+chapter: n_realm
+group: chronicles
+order: 59
+title: "&5The Eclipsed Realm"
+subtitle: "Calder's survey of the land behind the black sun, written before he stopped writing."
+icon: remnant_bosses:grace_ember
+quests:
+  # ---- the survey ----
+  - key: start
+    title: "&5Calder's Survey"
+    subtitle: "The handwriting gets worse toward the end."
+    icon: remnant_bosses:boss_journal
+    pos: [0, 0]
+    deps: [s1_act5_realm/enter]
+    shape: hexagon
+    size: 1.75
+    desc: |
+      The &6Boss Hunts Journal&r has a name inside the cover: &6Calder&r, cartographer to the heralds. He crossed before you did. The arenas are only half of what he wrote; the margins are a survey of everything else under the black sun.
+
+      &o"Nothing here can be built or broken. Good. A map of it will stay true."&r &7— Calder's survey&r
+
+      &7Carry the journal (a book, a bone and an ink sac, if yours went into a corpse). Use it to read your hunts, or sneak at an Ancient Altar with an empty hand.
+    tasks: [{item: remnant_bosses:boss_journal}]
+    rewards: [{table: n_realm_satchel}, {xp: 300}]
+
+  - key: grace
+    title: "Graces Under a Black Sun"
+    subtitle: "Embers of a tree that should not still burn."
+    icon: remnant_bosses:grace_ember
+    pos: [2.5, 0]
+    deps: [start]
+    desc: |
+      The Realm keeps no Ember Shrines. It keeps &6Grace Embers&r, embers of the Gracetree, and Calder marked every one he found. Rest at one to heal and to rise there when you fall. Touch enough and they become a road: a grace travels to any other grace you've touched, and &6Depart&r takes you home.
+
+      Their golden motes drift toward the nearest arena. Calder followed them, and wished he hadn't.
+
+      &7Find a &6Grace Shrine&7 out in the Realm, away from the Arrival Shrine.
+    tasks: [{structure: "remnant_bosses:grace_shrine"}]
+    rewards: [{item: minecraft:golden_carrot, count: 8}, {xp: 300}]
+
+  - key: wastes
+    title: "The Ashen Wastes"
+    subtitle: "Someone else's machines, still running."
+    icon: remnant_bosses:ashen_cog
+    pos: [2.5, -3]
+    deps: [grace]
+    optional: true
+    desc: |
+      Ash, bone, withered trees and things that tick: &6Ashbound Crawlers&r, &6Ember Servitors&r and now and then a &6Rusted Guardian&r, constructs of Kharum, a forge-kingdom older than the Crown. The Hollow Legion patrols here too.
+
+      Calder kept a box of their soot-black &6Ashen Cogs&r. He never worked out what they were for. Neither has the Smith.
+
+      &7Walk the Ashen Wastes and collect four Ashen Cogs.
+    tasks: [{biome: "remnant_bosses:ashen_wastes"}, {item: remnant_bosses:ashen_cog, count: 4}]
+    rewards: [{item: minecraft:iron_ingot, count: 12}, {xp: 250}]
+
+  - key: sea
+    title: "The Stilled Sea"
+    subtitle: "Not a ripple. Not once."
+    icon: minecraft:cod
+    pos: [2.5, 3]
+    deps: [grace]
+    optional: true
+    desc: |
+      The Realm's shores run out into the &6Stilled Sea&r: dark water under a black sun, with fish in it that don't seem to know anything is wrong.
+
+      Calder sat on the shore for a page and a half and wrote nothing but the date he thought it was.
+
+      &7Wade into the Stilled Sea.
+    tasks: [{biome: "remnant_bosses:stilled_sea"}]
+    rewards: [{item: minecraft:cooked_cod, count: 8}, {xp: 150}]
+
+  # ---- the Hollow Legion ----
+  - key: fields
+    title: "The Tarnished Fields"
+    subtitle: "A legion still standing guard over nothing."
+    icon: remnant_bosses:tarnished_regalia
+    pos: [5, -3]
+    deps: [grace]
+    desc: |
+      Grey grass, pale stone and the &6Hollow Legion&r: the soldiers who followed the Eighth behind the sun and never got the order to stop. &6Hollow Sentinels&r hold the line, &6Hollow Arbalists&r hold the high ground, and &6Fallen Standard Bearers&r carry colours bleached white by a sun that isn't there.
+
+      They wear gilt scraps of a coronation that never came. Calder called it &6Tarnished Regalia&r and filled a bag with it.
+
+      &7Walk the Tarnished Fields and take eight Tarnished Regalia from the Legion.
+    tasks: [{biome: "remnant_bosses:tarnished_fields"}, {item: remnant_bosses:tarnished_regalia, count: 8}]
+    rewards: [{item: minecraft:gold_ingot, count: 8}, {xp: 300}]
+
+  - key: citadel
+    title: "The Citadel, Room by Room"
+    subtitle: "You've seen the throne hall. Calder saw the rest."
+    icon: remnant_bosses:sovereigns_seal
+    pos: [7.5, -3]
+    deps: [fields]
+    desc: |
+      Past the gatehouse and the walls: a courtyard, the towers, the &6barracks&r where the Legion still racks its crossbows, and the &6royal vault&r. The barracks chests are heavy with Regalia. The vault sometimes holds a Sovereign's Seal already pressed, and rarely a &6Royal Soul Fragment&r.
+
+      &o"The guard changes at the same hour every day. There are no days here."&r &7— Calder's survey&r
+
+      &7Find a &6Hollow Citadel&7. They stand in the Tarnished Fields and the Ashen Wastes, and there is more than one.
+    tasks: [{structure: "remnant_bosses:hollow_citadel"}]
+    rewards: [{table: n_realm_satchel}, {xp: 400}]
+
+  - key: standard
+    title: "The Legion's Colours"
+    subtitle: "Maren wants something for the Company's wall."
+    icon: minecraft:white_banner
+    pos: [7.5, -5]
+    deps: [citadel, p_company/finale]
+    optional: true
+    desc: |
+      The Ashen Company heard where you've been walking. Maren, its captain, has a use for the men who carry the Legion's colours.
+
+      &o"A company that followed its king into the dark and never got paid. Put their standard-bearers down, and I'll write the Legion into the second ledger. Somebody should."&r &7— Maren, Captain of the Ashen Company&r
+
+      &7Slay three Fallen Standard Bearers.
+    tasks: [{kill: remnants:fallen_standard_bearer, count: 3}]
+    rewards: [{table: paths_company_purse}, {xp: 400}]
+
+  - key: knights
+    title: "The King's Own"
+    subtitle: "Soulbound Knights. Their souls are spoken for."
+    icon: remnant_bosses:royal_soul_fragment
+    pos: [10, -3]
+    deps: [citadel]
+    desc: |
+      The rarest of the Legion is the &6Soulbound Knight&r, who gave the Eighth his soul as well as his oath. Now and then one leaves a &6Royal Soul Fragment&r behind: a sliver of the king who would not be taken. Looting helps.
+
+      Royal Soul Fragments mend the Regalia and the Sovereign's Ruin, and the Ember Forge wants four for the &6Eclipse Core&r.
+
+      &7Slay three Soulbound Knights and hold a Royal Soul Fragment.
+    tasks: [{kill: remnants:soulbound_knight, count: 3}, {item: remnant_bosses:royal_soul_fragment}]
+    rewards: [{item: runeborn:lustrous_stone_7}, {xp: 500}]
+
+  - key: regalia_set
+    title: "Dressed for a Coronation"
+    subtitle: "Gilt over black iron. It still expects a king."
+    icon: remnant_bosses:regalia_cuirass
+    pos: [12.5, -3]
+    deps: [knights, s1_act5_realm/hollow_sovereign]
+    desc: |
+      The Eighth had regalia made for the day he'd be crowned. He wore the &6Hollow Crown&r into his last fight and dropped it at your feet. The rest you make: seven Tarnished Regalia and a Royal Soul Fragment around a diamond piece, for the &6Regalia Cuirass&r, the &6Greaves&r and the &6Sabatons&r.
+
+      Two pieces steady your footing. All four turn a heavy blow into Resistance. The plate wants 40 Protection on the &eK&r screen, the most the Realm asks of anyone.
+
+      &7Hold the Hollow Crown and the Regalia Cuirass, Greaves and Sabatons.
+    tasks: [{item: remnant_bosses:hollow_crown}, {item: remnant_bosses:regalia_cuirass}, {item: remnant_bosses:regalia_greaves}, {item: remnant_bosses:regalia_sabatons}]
+    rewards: [{item: remnant_bosses:tarnished_regalia, count: 8}, {xp: 1000}]
+
+  # ---- the Cryptborn ----
+  - key: barrows
+    title: "The Gravefield Barrows"
+    subtitle: "Graves in rows, and something that keeps them."
+    icon: remnant_bosses:grave_iron
+    pos: [5, 0]
+    deps: [grace]
+    desc: |
+      Barrow after barrow, weathered gravestones, and the &6Cryptborn&r: Gravebound Soldiers, Crypt Lurkers and Catacomb Rats, prisoners of the Ossuary Covenant and what's left of their jailers. Relic Stalkers and Ancient Vessels drift between the mounds, glowing with somebody's old light.
+
+      The rust they carry is &6Grave Iron&r, cell iron from the Covenant's soul-prisons. Six and a block of iron cut a &6Crypt Key&r; four go into the &6Eclipse Core&r.
+
+      &7Walk the Gravefield Barrows and gather twelve Grave Iron.
+    tasks: [{biome: "remnant_bosses:gravefield_barrows"}, {item: remnant_bosses:grave_iron, count: 12}]
+    rewards: [{item: minecraft:iron_block, count: 2}, {xp: 300}]
+
+  - key: catacombs
+    title: "The Covenant's Cells"
+    subtitle: "Below the barrows, every door is still locked."
+    icon: remnant_bosses:crypt_key
+    pos: [7.5, 0]
+    deps: [barrows]
+    desc: |
+      The &6Gravebound Catacombs&r run deep under the Realm, down where the Ossuary Depths begin: an entry stair, a crossing, two blocks of cells, an ossuary gallery, a chain chapel and the burial vault. The cell chests hold bone, chain and Grave Iron. The vault holds more, and about one time in three a Crypt Key nobody used.
+
+      &o"I counted the cells. I stopped counting the occupants."&r &7— Calder's survey&r
+
+      &7Find the &6Gravebound Catacombs&7.
+    tasks: [{structure: "remnant_bosses:gravebound_catacombs"}]
+    rewards: [{table: n_realm_satchel}, {xp: 400}]
+
+  - key: warden_set
+    title: "The Jailer's Plate"
+    subtitle: "He leaves one piece each time he falls."
+    icon: remnant_bosses:warden_helm
+    pos: [10, 1.5]
+    deps: [catacombs, s1_act5_realm/gravebound_warden]
+    optional: true
+    desc: |
+      Every time the &6Gravebound Warden&r falls he leaves one piece of his rusted plate: the &6Helm&r, the &6Hauberk&r, the &6Tassets&r or the &6Boots&r. Two pieces add a tenth to your damage against the undead. All four now and then chain whatever you hit in place.
+
+      Each catacombs' altar answers a Crypt Key once, and its offerings burn away with the rite. Calder marked more than one. Wearing the set takes 34 Protection on the &eK&r screen.
+
+      &7Hold all four pieces of the Warden set.
+    tasks: [{item: remnant_bosses:warden_helm}, {item: remnant_bosses:warden_hauberk}, {item: remnant_bosses:warden_tassets}, {item: remnant_bosses:warden_boots}]
+    rewards: [{item: remnant_bosses:grave_iron, count: 6}, {xp: 800}]
+
+  # ---- the Forgotten Souls ----
+  - key: gracewood
+    title: "The Gracewood"
+    subtitle: "Gilded leaves on trees that never saw a sun."
+    icon: remnant_bosses:graceroot_log
+    pos: [5, 3.5]
+    deps: [grace]
+    desc: |
+      The &6Graceroot&r grows here, gilded leaves and all, some of the trees giants. Calder thought the Gracetree's roots ran under the whole Realm and the graces were where it broke the surface. You can't cut one open to check.
+
+      &6Lost Pilgrims&r wander between the trunks with their candles, still looking for whatever they crossed over to find. Some of them carry a memory.
+
+      &7Walk the Gracewood and put three Lost Pilgrims to rest.
+    tasks: [{biome: "remnant_bosses:gracewood"}, {kill: remnants:lost_pilgrim, count: 3}]
+    rewards: [{item: minecraft:candle, count: 4}, {xp: 300}]
+
+  - key: heights
+    title: "The Lantern Heights"
+    subtitle: "Crystal on the ridges, memory in the crystal."
+    icon: remnant_bosses:memory_shard
+    pos: [7.5, 3.5]
+    deps: [gracewood]
+    desc: |
+      High ground, amethyst on the ridges, and the &6Forgotten Souls&r: Lost Pilgrims, &6Memory Wraiths&r that carry more than they should, and now and then a &6Soul Collector&r. Every &6Memory Shard&r they drop is a splinter of Seyr crystal with somebody's morning still inside.
+
+      You needed four for the Lens. Calder kept going.
+
+      &7Walk the Lantern Heights and gather sixteen Memory Shards.
+    tasks: [{biome: "remnant_bosses:lantern_heights"}, {item: remnant_bosses:memory_shard, count: 16}]
+    rewards: [{item: minecraft:amethyst_shard, count: 8}, {xp: 400}]
+
+  - key: observatory
+    title: "The Lantern Archive"
+    subtitle: "The Observatory kept a library. Nobody returned the books."
+    icon: remnant_bosses:memory_lens
+    pos: [10, 3.5]
+    deps: [heights]
+    desc: |
+      Under the dome of the &6Forgotten Observatory&r: an approach, two halls, a lens gallery and a &6memory vault&r. The archive shelves hold paper, books, candles and Memory Shards. The vault sometimes holds a finished Lens of Memory, and rarely an &6Ancient Knowledge Fragment&r: a tablet shard from the Lantern Archive, its glyph still lit.
+
+      &o"The Watcher looks up. Everything else in here looks down at the page."&r &7— Calder's survey&r
+
+      &7Find a &6Forgotten Observatory&7 on the Lantern Heights.
+    tasks: [{structure: "remnant_bosses:forgotten_observatory"}]
+    rewards: [{table: n_realm_satchel}, {xp: 400}]
+
+  - key: soul_collector
+    title: "Tablets for Oren"
+    subtitle: "The Archivist has heard of a library that remembers."
+    icon: remnant_bosses:knowledge_fragment
+    pos: [12.5, 3.5]
+    deps: [observatory, p_archive/meridian]
+    desc: |
+      Oren read your copy of Calder's survey twice and asked for one thing: the Lantern Archive's &6Ancient Knowledge Fragments&r. The rare &6Soul Collector&r carries them, and the Forgotten Watcher always does.
+
+      &o"Two archives that both refused to let a day end. I'd like to know if they were refusing the same day."&r &7— Oren, the Archivist&r
+
+      &7Slay a Soul Collector and hold two Ancient Knowledge Fragments.
+    tasks: [{kill: remnants:soul_collector}, {item: remnant_bosses:knowledge_fragment, count: 2}]
+    rewards: [{table: paths_archive_cache}, {xp: 600}]
+
+  - key: archivist_set
+    title: "Robes of the Lantern Archive"
+    subtitle: "Soft soles for quiet halls."
+    icon: remnant_bosses:archivist_hood
+    pos: [12.5, 5.5]
+    deps: [soul_collector]
+    optional: true
+    desc: |
+      The archivists who read the crystals wore robes over verdigris plate. Each piece is a diamond piece wrapped in seven Memory Shards and a Knowledge Fragment: the &6Hood&r, &6Robe&r, &6Leggings&r and &6Boots&r.
+
+      Two pieces shake off Blindness and Darkness the moment they touch you. All four turn aside one arrow or bolt every thirty seconds.
+
+      &7Make the whole Archivist set.
+    tasks: [{item: remnant_bosses:archivist_hood}, {item: remnant_bosses:archivist_robe}, {item: remnant_bosses:archivist_leggings}, {item: remnant_bosses:archivist_boots}]
+    rewards: [{item: remnant_bosses:memory_shard, count: 8}, {xp: 800}]
+
+  # ---- the last page ----
+  - key: finale
+    title: "&5&lThe Last Page"
+    subtitle: "Calder sat on the throne to see what the Eighth saw."
+    icon: remnant_bosses:hollow_crown
+    pos: [15, 0]
+    deps: [regalia_set, catacombs, soul_collector, n_runeborn/finale]
+    shape: gear
+    size: 2.0
+    desc: |
+      Calder's last page is in a steadier hand than the rest. He went back to a citadel, sat on the empty throne and looked out at the black sun. &o"From here it looks like a door. He never opened it. He just sat."&r
+
+      Odile found you at a grace, as she promised, and read it over your shoulder. &o"Then someone should walk through."&r
+
+      &7The first citadel's offerings burned away with your first rite. Find another &6Hollow Citadel&7, press a Sovereign's Seal, and fell the &6Hollow Sovereign&7 again in his own regalia. He will know the crown. Take his Royal Soul Fragments home to the Ember Forge: the Eclipse Core is waiting.
+    tasks: [{kill: remnants:hollow_sovereign}]
+    rewards: [{table: sovereign_tribute}, {table: n_realm_satchel}, {xp: 3000}]

@@ -1,0 +1,71 @@
+{
+	icon: {
+		id: "omnivault:omnium_ingot"
+	}
+	id: "5F0615B2B5FBC38A"
+	loot_size: 1
+	order_index: 11
+	rewards: [
+		{
+			count: 4
+			id: "45355985C85E8341"
+			item: {
+				count: 1
+				id: "omnivault:omnium_ingot"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "49138BC00C102B63"
+			item: {
+				count: 1
+				id: "omnivault:logic_processor"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 2
+			id: "3A930BD3A7FB1061"
+			item: {
+				count: 1
+				id: "omnivault:upgrade_base"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 4
+			id: "3491262A4AB5BF3C"
+			item: {
+				count: 1
+				id: "omnivault:blank_pattern"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 16
+			id: "7112D720B7BE22CF"
+			item: {
+				count: 1
+				id: "omnivault:nexus_cable"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "7DF203FB9DE9E574"
+			item: {
+				count: 1
+				id: "omnivault:speed_upgrade"
+			}
+			weight: 1.0f
+		}
+		{
+			id: "22093D7E379C2172"
+			item: {
+				count: 1
+				id: "omnivault:stack_upgrade"
+			}
+			weight: 1.0f
+		}
+	]
+}

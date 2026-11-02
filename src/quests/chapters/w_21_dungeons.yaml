@@ -309,3 +309,200 @@ quests:
       - {advancement: "cataclysm:find_soul_black_smith", title: "The Soul Forge"}
       - {advancement: "cataclysm:find_ruined_citadel", title: "The Ruined Citadel"}
     rewards: [{table: world_eclipse_spoils}, {xp: 1000}]
+
+  # ---- the wardens of the trail: every vault has a keeper ----
+  - key: smuggler_chief
+    title: "Chief Out"
+    subtitle: "The villa's owner, with an axe."
+    icon: minecraft:iron_axe
+    pos: [0, -2.25]
+    deps: [villa]
+    desc: |
+      Every dungeon on the trail has a named guardian, and the &6Smuggler Chief&r is the first: a vindicator with an iron axe and strong opinions about trespass. The villa's vault holds the map to the next dungeon. He would rather it stayed there.
+
+      &7Defeat the Smuggler Chief.&r
+    tasks: [{advancement: "muchmoredungeons:slay_outdoor_villa_guardian"}]
+    rewards: [{table: world_ember_spoils}, {xp: 200}]
+
+  - key: illusionist
+    title: "Illusions Shattered"
+    subtitle: "Count the copies. Hit the one that bleeds."
+    icon: minecraft:bow
+    pos: [2, -2.25]
+    deps: [spire, smuggler_chief]
+    desc: |
+      Somewhere up the Arcane Spire waits the &6Spire Illusionist&r: an illusioner with a bow, a cloud of copies and all the time in the world. Blindness, mirror images, and arrows from three directions at once.
+
+      &7Defeat the Spire Illusionist.&r
+    tasks: [{advancement: "muchmoredungeons:slay_tower_dungeon_guardian"}]
+    rewards: [{table: world_hunt_spoils}, {xp: 300}]
+
+  - key: warlord
+    title: "Warlord Fallen"
+    subtitle: "Still on duty. Still armoured."
+    icon: minecraft:diamond_sword
+    pos: [4, -2.25]
+    deps: [cursed_keep, illusionist]
+    desc: |
+      The &6Keep Warlord&r was a soldier once, then a zombie, then a commander of zombies. He wears iron and swings a diamond sword, and the Keep's spawners keep his garrison topped up.
+
+      &7Defeat the Keep Warlord.&r
+    tasks: [{advancement: "muchmoredungeons:slay_dungeon_t2_guardian"}]
+    rewards: [{table: world_deep_spoils}, {xp: 400}]
+
+  - key: cinder_warden
+    title: "Ashes to Ashes"
+    subtitle: "The last guardian on the trail."
+    icon: minecraft:diamond_axe
+    pos: [6, -2.25]
+    deps: [soulfire, warlord]
+    desc: |
+      The &6Cinder Warden&r is a wither skeleton in a netherite helm with a diamond axe, and the Soulfire Crypt's blue fire is his. Bring milk for the withering, and something to put out the rest.
+
+      &7Defeat the Cinder Warden.&r
+    tasks: [{advancement: "muchmoredungeons:slay_soulfire_crypt_guardian"}]
+    rewards: [{table: world_ash_spoils}, {xp: 500}]
+
+  - key: totem
+    title: "What the Warlord Kept"
+    subtitle: "One more life, in a box."
+    icon: minecraft:totem_of_undying
+    pos: [4, -4.25]
+    deps: [warlord]
+    optional: true
+    desc: |
+      The Cursed Keep's vault, and the Rimefrost Vaults', sometimes hold a &6Totem of Undying&r. So do evokers, and the rarer loot bags. Even for an Ashborn who can't die for good, it is the cheapest death there is: no runes left behind, no Echo, no walk back.
+
+      &7Find a Totem of Undying.&r
+    tasks: [{item: minecraft:totem_of_undying}]
+    rewards: [{table: world_deep_spoils}, {xp: 200}]
+
+  - key: recollection
+    title: "A Dungeon, Remembered"
+    subtitle: "Every ruin has a before. So does every vault."
+    icon: tbos:memory_key
+    pos: [8.5, -4.25]
+    deps: [delver, p_archive/recollection]
+    optional: true
+    desc: |
+      A &6Memory Key&r attuned inside a structure opens a &6Recollection&r of it, a run through the place's memory, once per structure for each player. The trail's dungeons remember more than most: whose villa it was, who climbed the Spire first, who lit the Crypt's blue fire.
+
+      &o"Use the key inside the Keep. I want to know who it was built to keep."&r &7— Oren, the Archivist&r
+
+      &7Open a Recollection inside a dungeon on the trail and bring it home.&r
+    tasks: [{advancement: "tbos:expedition/remember", title: "Bank a Recollection and carry it home"}]
+    rewards: [{table: paths_archive_cache}, {xp: 300}]
+
+  # ---- the six prisons and their wardens ----
+  - key: rimefrost
+    title: "Cold Storage"
+    subtitle: "A Labyrinth: the Rimefrost Vaults."
+    icon: minecraft:blue_ice
+    pos: [9.5, 4.75]
+    deps: [s1_act2_hunt/labyrinth]
+    desc: |
+      Under the snowy plains, taigas and frozen peaks, the &6Rimefrost Vaults&r keep their prisoners on ice. Strays walk the halls, and the &6Frost Lich&r keeps the vault: a stray with a bow and a long memory of the cold.
+
+      &7Enter the Rimefrost Vaults and defeat the Frost Lich.&r
+    tasks:
+      - {advancement: "muchmoredungeons:discover_frost_vaults", title: "Enter the Rimefrost Vaults"}
+      - {advancement: "muchmoredungeons:slay_frost_vaults_guardian", title: "Defeat the Frost Lich"}
+    rewards: [{table: world_hunt_spoils}, {xp: 450}]
+
+  - key: abyssal_halls
+    title: "Bottom of the World"
+    subtitle: "A Labyrinth: the Abyssal Halls."
+    icon: minecraft:sculk
+    pos: [11.25, 4.75]
+    deps: [s1_act2_hunt/sylvara]
+    desc: |
+      The &6Abyssal Halls&r lie deep under every kind of land, down in the deepslate. Their warden is the &6Abyssal Knight&r, a wither skeleton with a netherite sword, and it has had a very long time to practise.
+
+      &7Enter the Abyssal Halls and defeat the Abyssal Knight.&r
+    tasks:
+      - {advancement: "muchmoredungeons:discover_deepslate_halls", title: "Enter the Abyssal Halls"}
+      - {advancement: "muchmoredungeons:slay_deepslate_halls_guardian", title: "Defeat the Abyssal Knight"}
+    rewards: [{table: world_deep_spoils}, {xp: 550}]
+
+  - key: bastille
+    title: "Hot Property"
+    subtitle: "A Labyrinth: the Infernal Bastille."
+    icon: minecraft:gilded_blackstone
+    pos: [13, 4.75]
+    deps: [s1_act4_ash/ashlands]
+    desc: |
+      The last Labyrinth burns in the Ashlands. Blazes and magma cubes crowd the &6Infernal Bastille&r, and the &6Brute Overseer&r, a piglin brute with a golden axe, keeps its vault. He does not care how much gold you are wearing.
+
+      &7Enter an Infernal Bastille and defeat the Brute Overseer.&r
+    tasks:
+      - {advancement: "muchmoredungeons:discover_nether_bastille", title: "Enter an Infernal Bastille"}
+      - {advancement: "muchmoredungeons:slay_nether_bastille_guardian", title: "Defeat the Brute Overseer"}
+    rewards: [{table: world_ash_spoils}, {xp: 650}]
+
+  - key: echoes
+    title: "Echoes in the Deep Halls"
+    subtitle: "The Forge wants what the Halls keep."
+    icon: minecraft:echo_shard
+    pos: [11.25, 6.5]
+    deps: [abyssal_halls]
+    optional: true
+    desc: |
+      The Abyssal Halls' chests are full of the deep's leftovers: soul sand, quartz, amethyst, sculk and &6Echo Shards&r. A &6Reinforced Echo Shard&r (echo shards, a Warden's carapace and a phantom membrane) goes into every &6Deepsteel Ingot&r at the Ember Forge.
+
+      &7Bring back 4 Echo Shards.&r
+    tasks: [{item: minecraft:echo_shard, count: 4}]
+    rewards: [{table: world_deep_spoils}, {xp: 200}]
+
+  - key: labyrinths
+    title: "&6Six Wardens"
+    subtitle: "Every prison's jailer, put down."
+    icon: minecraft:iron_bars
+    pos: [11, 2.5]
+    deps: [every_maze, rimefrost, abyssal_halls, bastille]
+    shape: hexagon
+    size: 1.5
+    desc: |
+      The Sovereigns built six prisons for things they couldn't kill, and set a warden on each: the &6Bone Warden&r, the &6Tomb King&r, the &6Broodmother&r, the &6Frost Lich&r, the &6Abyssal Knight&r and the &6Brute Overseer&r. Nobody ever told them to stop, so you did.
+
+      &o"A jailer outlives its prisoners, given long enough. Then it has only the door to talk to."&r &7— the Keeper&r
+
+      &7Defeat the warden of every Labyrinth.&r
+    tasks:
+      - {advancement: "muchmoredungeons:slay_catacombs_guardian", title: "The Bone Warden (Forgotten Catacombs)"}
+      - {advancement: "muchmoredungeons:slay_sandstone_tomb_guardian", title: "The Tomb King (Sunscorched Tomb)"}
+      - {advancement: "muchmoredungeons:slay_overgrown_warrens_guardian", title: "The Broodmother (Verdant Warrens)"}
+      - {advancement: "muchmoredungeons:slay_frost_vaults_guardian", title: "The Frost Lich (Rimefrost Vaults)"}
+      - {advancement: "muchmoredungeons:slay_deepslate_halls_guardian", title: "The Abyssal Knight (Abyssal Halls)"}
+      - {advancement: "muchmoredungeons:slay_nether_bastille_guardian", title: "The Brute Overseer (Infernal Bastille)"}
+    rewards: [{item: runeborn:heros_rune}, {table: world_ash_spoils}, {xp: 1500}]
+
+  - key: maze_spoils
+    title: "Spoils of the Maze"
+    subtitle: "Big wardens, bigger bags."
+    icon: mob_loot_bags:epiclootbag
+    pos: [13.5, 2.5]
+    deps: [labyrinths, n_spoils/opener]
+    optional: true
+    desc: |
+      The dead hoard, and the Labyrinths' dead hoard best. Tougher things drop loot bags more often, and every doubling of a monster's health over a zombie's adds a point of &6Bag Luck&r, up to two. Kills in the Ashlands add half a point more, and Looting adds half a point per level.
+
+      &7Carry an Epic loot bag out of the mazes. Pell's Bag Opener will take it from there.&r
+    tasks: [{item: mob_loot_bags:epiclootbag}]
+    rewards: [{table: world_ash_spoils}, {xp: 300}]
+
+  - key: finale
+    title: "&6The Last Prison"
+    subtitle: "The Sovereigns learned it from somewhere."
+    icon: remnant_bosses:crypt_key
+    pos: [13.5, 0]
+    deps: [labyrinths, cinder_warden, s1_act5_realm/enter]
+    shape: gear
+    size: 2.0
+    desc: |
+      Ten guardians down; four dungeons and six prisons emptied. Every one was built to the same plan, and the plan is older than the Sovereigns: cells around a vault, a warden at the door, and nobody left to tell the warden to stop.
+
+      The original stands under the black sun. The &6Gravebound Catacombs&r keep the Eclipsed Realm's dead in their cells, and the &6Gravebound Warden&r has never once been relieved.
+
+      &7Enter the Gravebound Catacombs in the Eclipsed Realm.&r
+    tasks: [{structure: "remnant_bosses:gravebound_catacombs", title: "Enter the Gravebound Catacombs"}]
+    rewards: [{table: world_eclipse_spoils}, {item: runeborn:heros_rune}, {xp: 2000}]

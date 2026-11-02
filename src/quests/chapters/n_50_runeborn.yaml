@@ -94,7 +94,7 @@ quests:
     pos: [4.5, -3]
     deps: [flasks, s1_act2_hunt/sylvara]
     desc: |
-      A &6Hallowed Tear&r is crystallised from something that wore a crown and died. Use one and every sip from both flasks grows stronger, up to twelve times over.
+      A &6Hallowed Tear&r is crystallised from something that wore a crown and died. Use one and every sip from both flasks heals a little more, one step per tear, up to &6+12&r.
 
       Every Sovereign and Old Power leaves one. Champions carry them rarely, Legendary and Mythic bags more often.
 
@@ -314,7 +314,7 @@ quests:
     desc: |
       Odile has walked to every shrine still burning, and she says there is one thing left she wants to see: someone carrying both crowned stones at once.
 
-      A &6Sovereign Tempering Stone&r takes standard steel from +24 to &6+25&r; a &6Sovereign Lustrous Stone&r takes unique steel from +9 to &6+10&r. Only crowned things of level fifty and up leave the first (Morgrath, the Wither, Vaelorn, the Dragon), only Vaelorn and the Dragon the second, and Mythic bags carry both.
+      A &6Sovereign Tempering Stone&r takes standard steel from +24 to &6+25&r; a &6Sovereign Lustrous Stone&r takes unique steel from +9 to &6+10&r. Only crowned things of level fifty and up leave the first (Morgrath, the Warden, the Wither, Vaelorn, the Dragon), only Vaelorn and the Dragon the second, and Mythic bags carry both.
 
       &o"The last shrine isn't in this world. Under the black sun they call them graces. I'll meet you at one."&r &7— Odile&r
 

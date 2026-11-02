@@ -1,0 +1,914 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "n_spore"
+	group: "487452908E350FD2"
+	icon: {
+		id: "spore_and_stem:glowcap"
+	}
+	id: "4209E273DEEE6008"
+	images: [ ]
+	order_index: 53
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2D462FB5D6B13E35"]
+			icon: {
+				id: "spore_and_stem:glowcap"
+			}
+			id: "2BB546F1914BEAE3"
+			rewards: [
+				{
+					count: 16
+					id: "5859D74AB7299B04"
+					item: {
+						count: 1
+						id: "minecraft:bone_meal"
+					}
+					type: "item"
+				}
+				{
+					id: "3D2AD6C239797333"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "spore_and_stem:root"
+					criterion: ""
+					id: "4124C5C0D8996350"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2BB546F1914BEAE3"]
+			icon: {
+				id: "spore_and_stem:glowcap"
+			}
+			id: "77C62ACB3C33A970"
+			rewards: [
+				{
+					count: 8
+					id: "77FAA596734B6233"
+					item: {
+						count: 1
+						id: "minecraft:bone_meal"
+					}
+					type: "item"
+				}
+				{
+					id: "1CBC2D5FE3024818"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					advancement: "spore_and_stem:glowcap"
+					criterion: ""
+					id: "644FED49105D2AAE"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["77C62ACB3C33A970"]
+			icon: {
+				id: "spore_and_stem:bouncecap_cap"
+			}
+			id: "67EC6EA974274AA1"
+			rewards: [
+				{
+					count: 16
+					id: "55A1FD7219CD65F0"
+					item: {
+						count: 1
+						id: "minecraft:bone_meal"
+					}
+					type: "item"
+				}
+				{
+					id: "6DA86212FC13F4F0"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "2D0FE6EC8E910283"
+					item: {
+						count: 1
+						id: "spore_and_stem:glowcap_stem"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4732E5572411DA85"
+					item: {
+						count: 1
+						id: "spore_and_stem:bouncecap_stem"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0218E24A43305F74"
+					item: {
+						count: 1
+						id: "spore_and_stem:inkcap_stem"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["67EC6EA974274AA1"]
+			icon: {
+				id: "spore_and_stem:inkcap_planks"
+			}
+			id: "1F1DD6D273D0CCD7"
+			rewards: [
+				{
+					count: 4
+					id: "62C79E065D47ED79"
+					item: {
+						count: 1
+						id: "spore_and_stem:lumen_spores"
+					}
+					type: "item"
+				}
+				{
+					id: "01010FBB31629505"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "0932581E7859AB5F"
+					item: {
+						count: 1
+						id: "spore_and_stem:glowcap_planks"
+					}
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "0349792ED1FF4FA4"
+					item: {
+						count: 1
+						id: "spore_and_stem:bouncecap_planks"
+					}
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "28C0FCB5FD87D384"
+					item: {
+						count: 1
+						id: "spore_and_stem:inkcap_planks"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2BB546F1914BEAE3"]
+			icon: {
+				id: "spore_and_stem:mycelial_thread"
+			}
+			id: "7BF09444CAEFD324"
+			rewards: [
+				{
+					count: 2
+					id: "1B064B9F689D439F"
+					item: {
+						count: 1
+						id: "minecraft:iron_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "0E0AED5F42C729E2"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					count: 6L
+					id: "1A33009B677B5F5A"
+					item: {
+						count: 1
+						id: "spore_and_stem:mycelial_thread"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -1.75d
+		}
+		{
+			dependencies: ["7BF09444CAEFD324"]
+			icon: {
+				id: "spore_and_stem:foraging_knife"
+			}
+			id: "05AB27A67637B482"
+			rewards: [
+				{
+					count: 2
+					id: "74360ED262E17BD1"
+					item: {
+						count: 1
+						id: "spore_and_stem:lumen_spores"
+					}
+					type: "item"
+				}
+				{
+					id: "70B5BD4EC465532D"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "2E558E7609578466"
+					item: {
+						count: 1
+						id: "spore_and_stem:foraging_knife"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -1.75d
+		}
+		{
+			dependencies: ["05AB27A67637B482"]
+			icon: {
+				id: "spore_and_stem:chanterelle"
+			}
+			id: "0BA64E5695E3D9C6"
+			optional: true
+			rewards: [
+				{
+					id: "0EF548B1333F3463"
+					table_id: 3671444327940160823L
+					type: "random"
+				}
+				{
+					id: "4C01B32A8C31483A"
+					table_id: 3671444327940160823L
+					type: "random"
+				}
+				{
+					id: "6CDCBA8FE1227CFE"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "gear"
+			size: 1.25d
+			tasks: [
+				{
+					advancement: "spore_and_stem:all_fungi"
+					criterion: ""
+					id: "7D9C940B960305E5"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2BB546F1914BEAE3"]
+			icon: {
+				id: "spore_and_stem:truffle"
+			}
+			id: "68B5A1507B5EC6A8"
+			rewards: [
+				{
+					count: 2
+					id: "4F4841839B154926"
+					item: {
+						count: 1
+						id: "spore_and_stem:truffle"
+					}
+					type: "item"
+				}
+				{
+					id: "202EB60690AF4A97"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					advancement: "spore_and_stem:truffle"
+					criterion: ""
+					id: "55388A36E72F0C2B"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["68B5A1507B5EC6A8"]
+			icon: {
+				id: "spore_and_stem:sporeling_spawn_egg"
+			}
+			id: "140F4ED671D53B0A"
+			rewards: [
+				{
+					id: "4A3F963665C9A716"
+					table_id: 3671444327940160823L
+					type: "random"
+				}
+				{
+					id: "7DFB75AC7C4C20C1"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					advancement: "spore_and_stem:tame_sporeling"
+					criterion: ""
+					id: "4CF3B0D752655603"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["2BB546F1914BEAE3"]
+			icon: {
+				id: "spore_and_stem:mycelial_soil"
+			}
+			id: "232E614BC125D2D1"
+			rewards: [
+				{
+					count: 16
+					id: "7E4D796FFB615553"
+					item: {
+						count: 1
+						id: "minecraft:bone_meal"
+					}
+					type: "item"
+				}
+				{
+					id: "51D355265A506A80"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "08294364B803825A"
+					item: {
+						count: 1
+						id: "spore_and_stem:mycelial_soil"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["232E614BC125D2D1", "7BF09444CAEFD324"]
+			icon: {
+				id: "spore_and_stem:cultivation_log"
+			}
+			id: "14018E41F622F532"
+			rewards: [
+				{
+					count: 2
+					id: "0FF5F943FBBB9B23"
+					item: {
+						count: 1
+						id: "spore_and_stem:cultivation_log"
+					}
+					type: "item"
+				}
+				{
+					id: "515B8AF9A4F8E49A"
+					type: "xp"
+					xp: 120
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					advancement: "spore_and_stem:cultivate"
+					criterion: ""
+					id: "093E204CF0772E99"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["14018E41F622F532", "18C936F50B1C929E"]
+			icon: {
+				id: "spore_and_stem:chanterelle_toast"
+			}
+			id: "47B10126D36770F8"
+			rewards: [
+				{
+					id: "28599650A685F3D8"
+					table_id: 6711742330688559073L
+					type: "random"
+				}
+				{
+					id: "31CA026E096877E6"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "7803D1F7884464ED"
+					item: {
+						count: 1
+						id: "spore_and_stem:roasted_morel"
+					}
+					type: "item"
+				}
+				{
+					id: "371AF6E8C0900BC7"
+					item: {
+						count: 1
+						id: "spore_and_stem:chanterelle_toast"
+					}
+					type: "item"
+				}
+				{
+					id: "758867095BFBDD5E"
+					item: {
+						count: 1
+						id: "sprout_and_soil:mushroom_risotto"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["47B10126D36770F8"]
+			icon: {
+				id: "spore_and_stem:truffle_stew"
+			}
+			id: "7B712C643CD54F83"
+			optional: true
+			rewards: [
+				{
+					id: "06D4B714D6856C20"
+					table_id: 3671444327940160823L
+					type: "random"
+				}
+				{
+					id: "08CDD89BF4CE55A6"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "2936FDD9ED3612E5"
+					item: {
+						count: 1
+						id: "spore_and_stem:truffle_stew"
+					}
+					type: "item"
+				}
+				{
+					id: "7B1293A707E9C59A"
+					item: {
+						count: 1
+						id: "spore_and_stem:ember_skewer"
+					}
+					type: "item"
+				}
+				{
+					id: "13C7D0E2EC4FC935"
+					item: {
+						count: 1
+						id: "spore_and_stem:frostcap_tea"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2BB546F1914BEAE3"]
+			icon: {
+				id: "spore_and_stem:shambler_spawn_egg"
+			}
+			id: "5C94CD82CD18F64F"
+			rewards: [
+				{
+					id: "20DA6EBC58EB25F0"
+					item: {
+						count: 1
+						id: "minecraft:milk_bucket"
+					}
+					type: "item"
+				}
+				{
+					id: "4A0AED1AFEBC04CE"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					entity: "spore_and_stem:shambler"
+					id: "4815376AB775B156"
+					type: "kill"
+					value: 5L
+				}
+			]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5C94CD82CD18F64F"]
+			icon: {
+				id: "spore_and_stem:antifungal_tonic"
+			}
+			id: "7CD986366582540B"
+			rewards: [
+				{
+					count: 3
+					id: "010B99BE2E956F26"
+					item: {
+						count: 1
+						id: "minecraft:honey_bottle"
+					}
+					type: "item"
+				}
+				{
+					id: "313E27038EBFA4F7"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					advancement: "spore_and_stem:tonic"
+					criterion: ""
+					id: "0FEB0D883905C3AC"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: 3.75d
+		}
+		{
+			dependencies: ["5C94CD82CD18F64F"]
+			icon: {
+				id: "spore_and_stem:bloatshroom_spawn_egg"
+			}
+			id: "2E859056137A3BAD"
+			rewards: [
+				{
+					count: 16
+					id: "79FDC6D52724B5F1"
+					item: {
+						count: 1
+						id: "minecraft:arrow"
+					}
+					type: "item"
+				}
+				{
+					id: "5E96AB655565B6CC"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					advancement: "spore_and_stem:bloatshroom"
+					criterion: ""
+					id: "56A6CDE2594C2987"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5C94CD82CD18F64F"]
+			icon: {
+				id: "spore_and_stem:mimicap_spawn_egg"
+			}
+			id: "5BFFD1145CDAE83A"
+			rewards: [
+				{
+					count: 4
+					id: "34A072335C5F44EA"
+					item: {
+						count: 1
+						id: "spore_and_stem:mycelial_thread"
+					}
+					type: "item"
+				}
+				{
+					id: "129B1D6166C9C1E1"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					advancement: "spore_and_stem:mimicap"
+					criterion: ""
+					id: "189CE353F55F798B"
+					type: "advancement"
+				}
+			]
+			x: 2.0d
+			y: 6.25d
+		}
+		{
+			dependencies: ["5C94CD82CD18F64F"]
+			icon: {
+				id: "spore_and_stem:sporemaw_spawn_egg"
+			}
+			id: "12DA02DB5A9AFAAE"
+			rewards: [
+				{
+					id: "3C892A1CD5314FF2"
+					table_id: 5347775814510086984L
+					type: "random"
+				}
+				{
+					id: "27CE811243D3B6C9"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					entity: "spore_and_stem:sporemaw"
+					id: "1A5CD6A53DA9EA97"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7CD986366582540B"]
+			icon: {
+				id: "spore_and_stem:mycoleather_tunic"
+			}
+			id: "15E92AC07201F30D"
+			rewards: [
+				{
+					id: "0BEDF4483C3C3075"
+					table_id: 4000594783902426681L
+					type: "random"
+				}
+				{
+					id: "29E472F53A205E23"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					advancement: "spore_and_stem:full_mycoleather"
+					criterion: ""
+					id: "143255BA12C0F0CC"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5BFFD1145CDAE83A", "12DA02DB5A9AFAAE", "4C57BBA3B357F248"]
+			icon: {
+				id: "spore_and_stem:mycelial_core"
+			}
+			id: "610D96E3304AE932"
+			rewards: [
+				{
+					id: "16B0E394C46F9957"
+					table_id: 5347775814510086984L
+					type: "random"
+				}
+				{
+					id: "72965AEDD5211E5D"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "2BFF18E3739118AA"
+					item: {
+						count: 1
+						id: "spore_and_stem:mycelial_core"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["610D96E3304AE932", "15E92AC07201F30D", "2E859056137A3BAD", "7B5BD6C5BA5AF56F"]
+			icon: {
+				id: "spore_and_stem:fruiting_heart"
+			}
+			id: "5753C4E1D078973E"
+			rewards: [
+				{
+					count: 3
+					id: "2281A721BD328523"
+					item: {
+						count: 1
+						id: "spore_and_stem:antifungal_tonic"
+					}
+					type: "item"
+				}
+				{
+					id: "74BE26D95A074787"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					advancement: "spore_and_stem:summon"
+					criterion: ""
+					id: "4749EF50692166DD"
+					type: "advancement"
+				}
+			]
+			x: 8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5753C4E1D078973E"]
+			icon: {
+				id: "spore_and_stem:spore_heart"
+			}
+			id: "754FAF74BE8D9E18"
+			rewards: [
+				{
+					id: "5FA3A93C572E6808"
+					table_id: 8538537266808005067L
+					type: "random"
+				}
+				{
+					id: "29501A7D28A008C1"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					advancement: "spore_and_stem:kill_myceliarch"
+					criterion: ""
+					id: "7BD7FBF67CCD447D"
+					type: "advancement"
+				}
+			]
+			x: 10.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["754FAF74BE8D9E18", "2117F587492EBB8B", "790A0382A921E5D6"]
+			icon: {
+				id: "spore_and_stem:bloomreaver"
+			}
+			id: "478EEB14DDB41712"
+			optional: true
+			rewards: [
+				{
+					id: "1E2D2FF442850985"
+					table_id: 4913650258784098866L
+					type: "random"
+				}
+				{
+					id: "5AAA5F3081EB1C2F"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [
+				{
+					advancement: "spore_and_stem:bloomreaver"
+					criterion: ""
+					id: "7111786B72ADF0F4"
+					type: "advancement"
+				}
+			]
+			x: 12.75d
+			y: 2.5d
+		}
+		{
+			dependencies: ["754FAF74BE8D9E18"]
+			icon: {
+				id: "spore_and_stem:crown_of_the_bloom"
+			}
+			id: "776A9827309AB71D"
+			optional: true
+			rewards: [
+				{
+					id: "04AF9F4FDE0F1F92"
+					table_id: 4913650258784098866L
+					type: "random"
+				}
+				{
+					id: "085ECAAAF27D2400"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "70D09CB2DD7DBE9B"
+					item: {
+						count: 1
+						id: "spore_and_stem:crown_of_the_bloom"
+					}
+					type: "item"
+				}
+			]
+			x: 12.75d
+			y: 5.5d
+		}
+		{
+			dependencies: ["754FAF74BE8D9E18", "1F1DD6D273D0CCD7"]
+			icon: {
+				id: "spore_and_stem:glowcap_lantern"
+			}
+			id: "2213DBD53CC7E406"
+			rewards: [
+				{
+					id: "58020E20F128FD05"
+					table_id: 8538537266808005067L
+					type: "random"
+				}
+				{
+					id: "537A5A7DC516DAE5"
+					table_id: 3671444327940160823L
+					type: "random"
+				}
+				{
+					id: "773DC1C6A337606A"
+					type: "xp"
+					xp: 600
+				}
+			]
+			shape: "gear"
+			size: 1.75d
+			tasks: [
+				{
+					count: 8L
+					id: "353F10D4DFD6CE75"
+					item: {
+						count: 1
+						id: "spore_and_stem:glowcap_lantern"
+					}
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: -1.5d
+		}
+	]
+}

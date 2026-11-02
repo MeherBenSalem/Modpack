@@ -1,0 +1,880 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "n_runeborn"
+	group: "487452908E350FD2"
+	icon: {
+		id: "runeborn:ember_shrine"
+	}
+	id: "7309AF4BB69CF9EF"
+	images: [ ]
+	order_index: 50
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2D462FB5D6B13E35"]
+			icon: {
+				id: "runeborn:pilgrim_seal"
+			}
+			id: "07795C2F43B325E8"
+			rewards: [
+				{
+					count: 3
+					id: "51B473EFCE13548B"
+					item: {
+						count: 1
+						id: "minecraft:blaze_powder"
+					}
+					type: "item"
+				}
+				{
+					id: "4BAF2E603CAA3781"
+					table_id: 115114678873939114L
+					type: "random"
+				}
+				{
+					id: "0FF8A906D3872859"
+					type: "xp"
+					xp: 80
+				}
+			]
+			shape: "hexagon"
+			size: 1.75d
+			tasks: [
+				{
+					id: "3133331234716AC5"
+					item: {
+						count: 1
+						id: "runeborn:ember_shrine"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["07795C2F43B325E8"]
+			icon: {
+				id: "runeborn:lustrous_rune"
+			}
+			id: "1C6B40BFBA0D79B0"
+			rewards: [
+				{
+					count: 2
+					id: "1682D4074B804D95"
+					item: {
+						count: 1
+						id: "runeborn:faded_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0BBBB382BA9E86"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "53C66B66F115F97D"
+					item: {
+						count: 1
+						id: "runeborn:faded_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "6C6D7FDEF7D571C4"
+					item: {
+						count: 1
+						id: "runeborn:lustrous_rune"
+					}
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1C6B40BFBA0D79B0", "2A7E4FBEE8E2A089"]
+			icon: {
+				id: "runeborn:rebirth_tear"
+			}
+			id: "58FA7B4296756D30"
+			rewards: [
+				{
+					count: 2
+					id: "4D959D1435B4F8CD"
+					item: {
+						count: 1
+						id: "runeborn:lustrous_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "2EE22275F73D813A"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					advancement: "runeborn:feats/rebirth"
+					criterion: ""
+					id: "0188951F0DAB4C77"
+					type: "advancement"
+				}
+			]
+			x: 4.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["1C6B40BFBA0D79B0", "67ED0BC9562790E0"]
+			icon: {
+				id: "runeborn:heros_rune"
+			}
+			id: "5283D3145E89CB2E"
+			rewards: [
+				{
+					count: 2
+					id: "219BD894AC970BAA"
+					item: {
+						count: 1
+						id: "runeborn:radiant_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "290BBD8A70894826"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "40A37CB7D997D27C"
+					item: {
+						count: 1
+						id: "runeborn:heros_rune"
+					}
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["07795C2F43B325E8"]
+			icon: {
+				id: "runeborn:ember_flask"
+			}
+			id: "10342D4DC59282BB"
+			rewards: [
+				{
+					count: 2
+					id: "45423C97A505E362"
+					item: {
+						count: 1
+						id: "minecraft:glistering_melon_slice"
+					}
+					type: "item"
+				}
+				{
+					count: 6
+					id: "523A89B2A3AFB25C"
+					item: {
+						count: 1
+						id: "minecraft:lapis_lazuli"
+					}
+					type: "item"
+				}
+				{
+					id: "218E787771B8956C"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "4F9DF71C156AD5CA"
+					item: {
+						count: 1
+						id: "runeborn:ember_flask"
+					}
+					type: "item"
+				}
+				{
+					id: "1D2302CB0B636B05"
+					item: {
+						count: 1
+						id: "runeborn:azure_flask"
+					}
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["10342D4DC59282BB", "53F967EF1BEA3D24"]
+			icon: {
+				id: "runeborn:hallowed_tear"
+			}
+			id: "09888D240E37E6B4"
+			rewards: [
+				{
+					count: 4
+					id: "60AF904EF7B307C7"
+					item: {
+						count: 1
+						id: "minecraft:glistering_melon_slice"
+					}
+					type: "item"
+				}
+				{
+					id: "73E7EF28D54220E0"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "4CF09BDA7614771A"
+					item: {
+						count: 1
+						id: "runeborn:hallowed_tear"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["09888D240E37E6B4", "289D0416C0109482"]
+			icon: {
+				id: "runeborn:crown_shard_kaelthar"
+			}
+			id: "30E5FED120A3141F"
+			rewards: [
+				{
+					id: "4E28A3DBAC0B7238"
+					table_id: 115114678873939114L
+					type: "random"
+				}
+				{
+					id: "2C8462D722BC8948"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "75157DDDD3BD4984"
+					type: "checkmark"
+				}
+			]
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["30E5FED120A3141F", "4D0587808D220640"]
+			icon: {
+				id: "runeborn:relic_ender_dragon"
+			}
+			id: "0BDF9795E1C13913"
+			rewards: [
+				{
+					count: 2
+					id: "46B6BA0900A538CD"
+					item: {
+						count: 1
+						id: "runeborn:lustrous_stone_8"
+					}
+					type: "item"
+				}
+				{
+					id: "7F5168312E49C0A5"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					id: "746732611B1B3B95"
+					item: {
+						components: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:lunar_bloomfang)ftbfiltersystem:item(runeborn:abyssal_scepter))"
+						}
+						count: 1
+						id: "ftbfiltersystem:smart_filter"
+					}
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["07795C2F43B325E8", "33DE699171C88E05"]
+			icon: {
+				id: "runeborn:errant_longsword"
+			}
+			id: "0771B5735F02B495"
+			rewards: [
+				{
+					count: 4
+					id: "289496838FB26C59"
+					item: {
+						count: 1
+						id: "runeborn:tempering_stone_2"
+					}
+					type: "item"
+				}
+				{
+					id: "1240F3AD0EBCB1EF"
+					table_id: 115114678873939114L
+					type: "random"
+				}
+				{
+					id: "7870EBFC84B10FAD"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "3330F3BDA27F1DF2"
+					item: {
+						components: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:starshard_kris)ftbfiltersystem:item(runeborn:venomfang_stiletto)ftbfiltersystem:item(runeborn:ossuary_blade)ftbfiltersystem:item(runeborn:emberbrand)ftbfiltersystem:item(runeborn:rimeguard_sword)ftbfiltersystem:item(runeborn:thornspur_rapier)ftbfiltersystem:item(runeborn:fangtooth_cleaver)ftbfiltersystem:item(runeborn:magma_falchion)ftbfiltersystem:item(runeborn:longfang_nodachi)ftbfiltersystem:item(runeborn:mistveil_katana)ftbfiltersystem:item(runeborn:hollow_monk_staff)ftbfiltersystem:item(runeborn:banneret_greatsword)ftbfiltersystem:item(runeborn:hellbrand)ftbfiltersystem:item(runeborn:rimebite_axe)ftbfiltersystem:item(runeborn:ravager_greataxe)ftbfiltersystem:item(runeborn:stoneheart_maul)ftbfiltersystem:item(runeborn:hallowed_lance)ftbfiltersystem:item(runeborn:winters_hook)ftbfiltersystem:item(runeborn:thornlash)ftbfiltersystem:item(runeborn:stormglass_rod)ftbfiltersystem:item(runeborn:crystal_spire_staff)ftbfiltersystem:item(runeborn:gravebound_staff)ftbfiltersystem:item(runeborn:golden_rite_seal)ftbfiltersystem:item(runeborn:flame_prayer_seal))"
+						}
+						count: 1
+						id: "ftbfiltersystem:smart_filter"
+					}
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0771B5735F02B495"]
+			icon: {
+				id: "runeborn:emberbrand"
+			}
+			id: "7E76205FA0B80E64"
+			rewards: [
+				{
+					count: 8
+					id: "15DBA1097BEB148B"
+					item: {
+						count: 1
+						id: "minecraft:lapis_lazuli"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "36E7BBCD291DC037"
+					item: {
+						count: 1
+						id: "runeborn:tempering_stone_2"
+					}
+					type: "item"
+				}
+				{
+					id: "3C7CFE1C8AD0D25B"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					id: "33B6AF4DC028A056"
+					item: {
+						components: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:emberbrand)ftbfiltersystem:item(runeborn:magma_falchion)ftbfiltersystem:item(runeborn:hellbrand)ftbfiltersystem:item(runeborn:ashen_greatsword)ftbfiltersystem:item(runeborn:rimeguard_sword)ftbfiltersystem:item(runeborn:rimebite_axe)ftbfiltersystem:item(runeborn:rimeveil))"
+						}
+						count: 1
+						id: "ftbfiltersystem:smart_filter"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E76205FA0B80E64"]
+			icon: {
+				id: "runeborn:crystal_spire_staff"
+			}
+			id: "25F5C9D2F7FA68FF"
+			optional: true
+			rewards: [
+				{
+					count: 8
+					id: "59DC7032EE03ED0D"
+					item: {
+						count: 1
+						id: "minecraft:amethyst_shard"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "545F267AF6744D6E"
+					item: {
+						count: 1
+						id: "minecraft:lapis_lazuli"
+					}
+					type: "item"
+				}
+				{
+					id: "6A2C6BA055AEEECD"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "13E865E7D0D9BC01"
+					item: {
+						count: 1
+						id: "runeborn:stormglass_rod"
+					}
+					type: "item"
+				}
+				{
+					id: "1B1AF18F93368D25"
+					item: {
+						count: 1
+						id: "runeborn:crystal_spire_staff"
+					}
+					type: "item"
+				}
+				{
+					id: "55265EA759D2893A"
+					item: {
+						count: 1
+						id: "runeborn:gravebound_staff"
+					}
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7E76205FA0B80E64"]
+			icon: {
+				id: "runeborn:golden_rite_seal"
+			}
+			id: "3CC3C03B37815ABF"
+			optional: true
+			rewards: [
+				{
+					count: 8
+					id: "01FE41621A5A449A"
+					item: {
+						count: 1
+						id: "minecraft:golden_carrot"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "3EF60FC1E2F84B99"
+					item: {
+						count: 1
+						id: "minecraft:glistering_melon_slice"
+					}
+					type: "item"
+				}
+				{
+					id: "0B9C510BABB7E021"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "52F87C5898DCD090"
+					item: {
+						count: 1
+						id: "runeborn:golden_rite_seal"
+					}
+					type: "item"
+				}
+				{
+					id: "3220D0728FBBAD1D"
+					item: {
+						count: 1
+						id: "runeborn:flame_prayer_seal"
+					}
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0771B5735F02B495", "2A7E4FBEE8E2A089"]
+			icon: {
+				id: "runeborn:sunlit_sword"
+			}
+			id: "062EBBD80A3EF5EB"
+			optional: true
+			rewards: [
+				{
+					count: 2
+					id: "647E896B9557E721"
+					item: {
+						count: 1
+						id: "runeborn:lustrous_stone_2"
+					}
+					type: "item"
+				}
+				{
+					id: "71F936F534A90B5C"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [
+				{
+					id: "5144E8194F4EDD9B"
+					item: {
+						count: 1
+						id: "runeborn:duskrider_glaive"
+					}
+					type: "item"
+				}
+				{
+					id: "65CFC7953288FB4D"
+					item: {
+						count: 1
+						id: "runeborn:sunlit_sword"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0771B5735F02B495"]
+			icon: {
+				id: "runeborn:keen_whetstone"
+			}
+			id: "564706029B9703A3"
+			rewards: [
+				{
+					count: 2
+					id: "023F9A2057A423DD"
+					item: {
+						count: 1
+						id: "runeborn:blank_whetstone"
+					}
+					type: "item"
+				}
+				{
+					id: "05A5A4C6CB814CFE"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "059E8EA3454A7C96"
+					item: {
+						count: 1
+						id: "runeborn:heavy_whetstone"
+					}
+					type: "item"
+				}
+				{
+					id: "117B8C0CE1E8F268"
+					item: {
+						count: 1
+						id: "runeborn:keen_whetstone"
+					}
+					type: "item"
+				}
+				{
+					id: "461124287909BFE0"
+					item: {
+						count: 1
+						id: "runeborn:quality_whetstone"
+					}
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["564706029B9703A3", "2A7E4FBEE8E2A089"]
+			icon: {
+				id: "runeborn:lightning_whetstone"
+			}
+			id: "790A0382A921E5D6"
+			rewards: [
+				{
+					count: 2
+					id: "7916512CCBB62AF5"
+					item: {
+						count: 1
+						id: "runeborn:blank_whetstone"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "61259A6B42078C0F"
+					item: {
+						count: 1
+						id: "runeborn:tempering_stone_3"
+					}
+					type: "item"
+				}
+				{
+					id: "7D041E789BA5021C"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "7707B104EC47BD9C"
+					item: {
+						count: 1
+						id: "runeborn:magic_whetstone"
+					}
+					type: "item"
+				}
+				{
+					id: "5D05A1EB2F8A83D0"
+					item: {
+						count: 1
+						id: "runeborn:lightning_whetstone"
+					}
+					type: "item"
+				}
+				{
+					id: "36FB423CED09BCC9"
+					item: {
+						count: 1
+						id: "runeborn:sacred_whetstone"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["790A0382A921E5D6", "10A48EAE33052B15"]
+			icon: {
+				id: "runeborn:occult_whetstone"
+			}
+			id: "34B22E675188A6E0"
+			rewards: [
+				{
+					count: 2
+					id: "081D4C48760FBE7F"
+					item: {
+						count: 1
+						id: "runeborn:lustrous_stone_3"
+					}
+					type: "item"
+				}
+				{
+					id: "43FB571C20D34E84"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "47B5438C3219A748"
+					item: {
+						count: 1
+						id: "runeborn:blood_whetstone"
+					}
+					type: "item"
+				}
+				{
+					id: "6B2B4B6308EDA522"
+					item: {
+						count: 1
+						id: "runeborn:poison_whetstone"
+					}
+					type: "item"
+				}
+				{
+					id: "44FB34200472C926"
+					item: {
+						count: 1
+						id: "runeborn:occult_whetstone"
+					}
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["07795C2F43B325E8", "6951F8F68761749D"]
+			icon: {
+				id: "runeborn:tempering_stone_3"
+			}
+			id: "472784F34F6124D2"
+			rewards: [
+				{
+					count: 4
+					id: "11DB53085E09A664"
+					item: {
+						count: 1
+						id: "runeborn:tempering_stone_4"
+					}
+					type: "item"
+				}
+				{
+					id: "7A4F43FAD3CF57B6"
+					table_id: 115114678873939114L
+					type: "random"
+				}
+				{
+					id: "77C645C94C0BC761"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					count: 12L
+					id: "0D1C2554E5ADB13D"
+					item: {
+						count: 1
+						id: "runeborn:tempering_stone_3"
+					}
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["472784F34F6124D2", "67ED0BC9562790E0"]
+			icon: {
+				id: "runeborn:tempering_stone_7"
+			}
+			id: "0F670D0DB7EB3797"
+			rewards: [
+				{
+					count: 3
+					id: "22A07DE10F84DFE9"
+					item: {
+						count: 1
+						id: "runeborn:tempering_stone_8"
+					}
+					type: "item"
+				}
+				{
+					id: "2FBB0765CD5AA2C0"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					count: 6L
+					id: "7D2A09CCE237512E"
+					item: {
+						count: 1
+						id: "runeborn:tempering_stone_7"
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "47CBB2917B5E8087"
+					item: {
+						count: 1
+						id: "runeborn:lustrous_stone_5"
+					}
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"0F670D0DB7EB3797"
+				"34B22E675188A6E0"
+				"0BDF9795E1C13913"
+				"5283D3145E89CB2E"
+				"5867200A6552CB88"
+			]
+			icon: {
+				id: "runeborn:sovereign_tempering_stone"
+			}
+			id: "20DAF2D618071B5B"
+			rewards: [
+				{
+					id: "382E6428D74F3F75"
+					table_id: 5895024424703439718L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "3703D3C0BC6047A8"
+					item: {
+						count: 1
+						id: "runeborn:heros_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "6CEE686D295BB84C"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "2502EC03DE87CDDE"
+					item: {
+						count: 1
+						id: "runeborn:sovereign_tempering_stone"
+					}
+					type: "item"
+				}
+				{
+					id: "54BBB5CD51E6606E"
+					item: {
+						count: 1
+						id: "runeborn:sovereign_lustrous_stone"
+					}
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 0.5d
+		}
+	]
+}

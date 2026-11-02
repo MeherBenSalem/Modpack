@@ -1,0 +1,107 @@
+{
+	icon: {
+		id: "sprout_and_soil:coffee_beans"
+	}
+	id: "58DE3C08F845822C"
+	loot_size: 1
+	order_index: 6
+	rewards: [
+		{
+			count: 4
+			id: "139E219E67BD5115"
+			item: {
+				count: 1
+				id: "sprout_and_soil:coffee_beans"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 4
+			id: "61F447C260FCB75C"
+			item: {
+				count: 1
+				id: "sprout_and_soil:tea_seeds"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 4
+			id: "774B6C17FD0089CC"
+			item: {
+				count: 1
+				id: "sprout_and_soil:peppercorns"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 4
+			id: "6E37CCD733872E69"
+			item: {
+				count: 1
+				id: "sprout_and_soil:ginger"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 4
+			id: "079F71AED0EA5E28"
+			item: {
+				count: 1
+				id: "sprout_and_soil:grape_seeds"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 4
+			id: "1D082F0FDCCD8F3D"
+			item: {
+				count: 1
+				id: "sprout_and_soil:cotton_seeds"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 4
+			id: "6E69315134BE14E4"
+			item: {
+				count: 1
+				id: "sprout_and_soil:mint_seeds"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 4
+			id: "2D8146DADB683479"
+			item: {
+				count: 1
+				id: "sprout_and_soil:basil_seeds"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 2
+			id: "36DEC90DF5974010"
+			item: {
+				count: 1
+				id: "sprout_and_soil:pineapple_seeds"
+			}
+			weight: 1.0f
+		}
+		{
+			id: "6091967F63ED570D"
+			item: {
+				count: 1
+				id: "sprout_and_soil:orange_sapling"
+			}
+			weight: 1.0f
+		}
+		{
+			id: "11E9AF746FB8670F"
+			item: {
+				count: 1
+				id: "sprout_and_soil:olive_sapling"
+			}
+			weight: 1.0f
+		}
+	]
+}

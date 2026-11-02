@@ -98,7 +98,7 @@ hash = "a941ca97ab33bc7095efbf70cf0bb567f11309ed93a3e82f7699ae31306f64ce"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "0a3fae10efd539831674962e4613ee9748946c4dad0b9d923b72811bee6a602a"
+hash = "583e296b0a2eddf6879aadefe95e48825e4f2a232c7cadd21948ab0cf09a6e13"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/c_contracts.snbt"
@@ -110,11 +110,11 @@ hash = "224c88b6c0a8036e396b867e5241b61412299efde8d9f7ebc91dc5d2e2da7316"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/h_garden.snbt"
-hash = "444f1a41d3bddb9be6d496daa59534f864f7c8bc1450f1d44ef656db04548497"
+hash = "1dc71de09d8903131bb6f521d1982e5e728e478bf19c9dcd65656e086fa746ce"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/h_hearth.snbt"
-hash = "2cba2a7f6546b25322a012fd526ca5e9ef9199979c687e180ef850bbf7227331"
+hash = "c1957d70ad32e32224f112476f39d70cca21f7dc23c1fb86152fcbeeb849c574"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/h_lastlight.snbt"
@@ -122,11 +122,51 @@ hash = "0280884df9d9c9337de833b4843166e1ea8fe807a6973d9733ab0d32e3b48c58"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/h_vaults.snbt"
-hash = "ff9d1bbff9f1893b8112e1640867f7e941a093ea492f48e66708e09202ec373f"
+hash = "f40f9b6b5c9975e05a9b31f3774eb7196d28466ac751839a7880f1f77f833cc2"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/n_chrono.snbt"
+hash = "c11780b2c8ba4bbfdf72b3a2187e11c6a2eef40811e7a6f81aa868c2e3156d34"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/n_coast.snbt"
+hash = "8bd7723dc8eb0fb952efa878dad9e942ea84ccf0a9915a9bf48ab5f78399d0fc"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/n_measure.snbt"
+hash = "2dd12b6954deacb919db55c38df4c50ceaf94c9b8fb613df1963630d04c318fa"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/n_realm.snbt"
+hash = "05ab1bc8c05daa4d09f0a6be7fa36f427651205d03614d12f9dc5f1599c3d9f8"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/n_runeborn.snbt"
+hash = "67c93086c2a54eca3e232b9f7737bc8453999cfea7cc308b5e752aba57138aa8"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/n_spoils.snbt"
+hash = "68bf386aea4902ed6bce3da3c1e73ae2eb7bcea5a202791a5139268662cd9528"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/n_spore.snbt"
+hash = "b8d90a6dff43718ba5424bd850560570779bf9acd9b3dd0a0e3e823e42f16edb"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/n_voices.snbt"
+hash = "ba141f85e344a55d23f91028a1020847b01b21ee0019bebb2cfe6a8ff45c5b1d"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/n_wands.snbt"
+hash = "9b261fa5314d7f7a9109d0e600332897f091be3e2b9a1038cd45d354a80a6a46"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/n_works.snbt"
+hash = "97ea2089a2a6c20fb0be896c0b324a0161388750285f78ab24c782dac0f8fd18"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/p_archive.snbt"
-hash = "0576cead150d8ef8bd2a886290960aabaecf2ab398c082d822efed4ee1ec25e7"
+hash = "132b5f3a09ba5ae0fc62ca39274e57c53f578090adbd6c550581b18b0d0ea1e1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/p_armory.snbt"
@@ -138,7 +178,7 @@ hash = "28ce9c506cb128eb5b0c0d48f4abcfd23ae0f78a62eae2e96eefa15417a9997c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/p_company.snbt"
-hash = "cdc06e57a92c7ba05365e0b292312f7bfdee6a702ea92d497dd28fda3f73d5a9"
+hash = "3fa37f261736c324a667bf7ab662bf7fd00211758264db4aed15ed3668e91e8f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/p_constellation.snbt"
@@ -178,7 +218,7 @@ hash = "6208ef63b15c4dcb6811b9cbf44a200987cd3f1f6bd1503612d623e4d73c18ab"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/w_bestiary.snbt"
-hash = "f7cea866ed3b18b70a321d71dc53191753e8d509520cd2d37c91eed3f1c0d94a"
+hash = "f8b3afe38c70ba6e8d8d24feb48c385558e0ec7e1d780517de471752600c8bd5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/w_bosses.snbt"
@@ -186,7 +226,7 @@ hash = "641216342caebe229e6b704d5c8835c94e7f6f22fcba4e056a6add907990688a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/w_dungeons.snbt"
-hash = "5812e9b16a1c752a8ec5523b446c2e0e2348840ea9f5249a2de6a0bce9f8f1e7"
+hash = "26f57ede21fbddf1b556c6e8d75846b754273c0d4b8dab4f15e3629ec380853e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/w_wayfarer.snbt"
@@ -198,7 +238,7 @@ hash = "f8adb9c4678c0cbf6253133e03616524b4a124214bc1ae17c5d79af09ebc18a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "4348e8ac75a5c480cce3d95b3e48d2ecc10e7a46c0b07441fdd32925357128a6"
+hash = "9a6f86fd85210516563c57af3c14439be8575a3e333fe0977126f07da3c76c0c"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/ashborn_provisions.snbt"
@@ -206,67 +246,127 @@ hash = "9fff8f1f0f1b9408f59b23bfacb89015e1afcd9a2d82fd79452773aa921b5f67"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/contracts_grave.snbt"
-hash = "aa586645c426f1860cc7025e6cd759058b2b7809b199becb93c311879091cfde"
+hash = "1122698f6f593e5206920e9659111df7b6ddc222d5bd0e810790ca714bc50deb"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/contracts_major.snbt"
-hash = "70b211f6c62459e5aebe3d10c0a0b58b0fd7c3a6e01fabeee4ab287ca522edc4"
+hash = "aab5487c7aaafa6c3d0354748d66290f19bba1df5b86a512dfe9de8643b0a03b"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/contracts_minor.snbt"
-hash = "0c4181e56826325b87ccfa3bb4ff3db620b484dc07c9e4a027f98cd4cbe1a4a3"
+hash = "0dffa5c8fa03559a55deba5150937442dce4d293d3334f1bf7876a5a8f1cab9f"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/h_garden_larder.snbt"
+hash = "2e1a307e63d1e523c43288465d520dfd44d22e20f07d2746384dbd5093f03a57"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/h_garden_seed_satchel.snbt"
+hash = "78726554234590a9a2fc83775e05ba7fc4541d142add8f229a8042f30292414f"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/hearth_garden.snbt"
-hash = "a3e49f89805d91701ee15154da559181975037a31800106b72e4c35721381e30"
+hash = "8383ea76c192aba60578255214433adb98fe7bffd3955ef8df0398e7f1144246"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/hearth_homestead.snbt"
-hash = "22738a926b8f280f80d68eb096f18a9febb4bb5cc4132a6de2396137cdf6edc3"
+hash = "22f07ed725a45f0673880fc141d5d19ae95d0dbf0acb4a8798f104b81764992c"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/hearth_pantry.snbt"
-hash = "22615a0fe58d092abfc8dbc6ee1efd36ac51041525a45b0d18708d4dca1cedc9"
+hash = "1d840e9ab507cc56ee4e6c51d80e11d3f865f6f2ec78a7d27abaf9f838458306"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/hearth_tackle.snbt"
-hash = "adf170e6805eed64beb8ac2af865a248e3d64e913b40adfec89dafe5677e3b53"
+hash = "c71334b6d99170267860ebe8c4a45d6538ddcd047d5567356c2ca9d1f8535c1d"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/hearth_tavern.snbt"
-hash = "9f02e12857c914208c85526585c2804b0d733c19e6e02c3fbf4ff1034fc8c8c6"
+hash = "6f3e1f7a12ea2d2bdf9b57cd060ba1fe710d0ea2240b215b4d955f87b17ce59a"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/hearth_workshop.snbt"
-hash = "d407265cb3c599d7a24e43dc53a19b2b8ed98b8d2c3fc20e88c60f5ce5e6b3f5"
+hash = "c2c761f27e41ae63dd2358d8f5af743bf2d3720707a1fd61b2ca8a5e90bf4427"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/hunters_spoils.snbt"
 hash = "0582400a24111b6c1aef6faa345edd18c7b9bbbdcbdad6630bc463bb00eece82"
 
 [[files]]
+file = "config/ftbquests/quests/reward_tables/measure_tally.snbt"
+hash = "7c51bb4a6314f56135ce22257ecbb86b222b409f9ea8855a3b055e7bac983733"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/n_chrono_salvage.snbt"
+hash = "2ddf12fe499055fa8f5cad62d8807dbaf8ae6486e86656a8e291e07d6b8c27db"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/n_coast_strongbox.snbt"
+hash = "6b9b8e958f8e068e995e6cd68aa7d301339235d6749be8b985faf8880205f9ed"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/n_realm_satchel.snbt"
+hash = "510d9416b19fb9573c5052d2f8fac8be4e4d3f43871a7945ac25d2347a1932e5"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/n_runeborn_purse.snbt"
+hash = "65331c1ccb8bbcad0fa6e1b6ae31108ca543cb680b8471a386494757adb38386"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/n_spore_bloom_cache.snbt"
+hash = "9acd484281c8f0b385e918cbdc81d7cb60107105f988de3b0e1bc036f2a3fc15"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/n_spore_forager_basket.snbt"
+hash = "8632458d9896d2204677dbd8bd0d08e4347917dcab1adf2d6ee61e5ace96c950"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/n_voices_gratitude.snbt"
+hash = "bcc4292240d4900b07556bd47bc7506178b3e92599577bba23e8e43b7f4800f5"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/n_wands_masonry.snbt"
+hash = "b680cfd4255275ff8eba4e02556c31a33f527a288c47c022b2fcc0a0f4f38094"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/n_works_crate.snbt"
+hash = "3c6536f71006890b415bc675f1e4811c404e14577ce7fe0bf44bf468e79869ee"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/p_archive_recollection.snbt"
+hash = "c716d530ea487b68a32aaa83c2c6ce34d5bfd20b05797c5f6985d438eb733af7"
+
+[[files]]
 file = "config/ftbquests/quests/reward_tables/paths_archive_cache.snbt"
-hash = "0e7e80938e924ec9b7f02438c98c1008319e6513a085e227bb1897047c80755c"
+hash = "28fa4fd0b9e43c2197ab2094a20f4fa32f0ab737f397586a5f3215c09b1ac3b1"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/paths_ashen_lessons.snbt"
-hash = "e20261fabd6d6a82632547b9745452e5ec442abae191bfd700ec29086eacae07"
+hash = "1b2cf5e5528efd1cfa7775e66ff42cb4beb53346cba4249b18139844495253de"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/paths_company_purse.snbt"
-hash = "06958266ff3275b971c3acd1dff488b7cc2eef1d1bac5c9427de308587091776"
+hash = "03bb0cf43e2a01702f2f93e168e5d4a4d3935e6a07cbeb0aa108d4108e759c62"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/paths_smiths_crate.snbt"
-hash = "ad58b9047ac6502ff5c17c21cbf1b80e3457334131dfe7d67b4c187c6a8f4ea5"
+hash = "50258b83ed460618432aaabb263d22592483ca75a864631464fc5a99da2d7b83"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/paths_star_cache.snbt"
-hash = "af020614cccf5430b716612bf9370739defa3bb9deb5cbaff91c2243bede91f1"
+hash = "2277a99fd219cfeaf903e34d50f412c93970b67000d3ff2d77f43c9ce4c0e097"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/sovereign_tribute.snbt"
 hash = "46e1f5d7053c137878ab9f7b8fe605226124e72371a3675204318b8d58a8814f"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/spoils_pells_cut.snbt"
+hash = "218fe0a732c8688f1798184f116761249c9d4a8c7da5657ccf2fdab8bf80d4ce"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/vaults_quartermaster.snbt"
+hash = "31324169cfa648589949853fc1ec361ec6c23a34cb4f6af49eb3f51cc7c56b20"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/wanderers_cache.snbt"
@@ -274,35 +374,35 @@ hash = "3b3d3dc8b8e666971e816d0a5c57ce2c04fc165881e5c13e71b439bef4389fd0"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/world_ash_spoils.snbt"
-hash = "6cd2a69bb4f6c6435c4e5d522de67d7b8993ed5f0e20faf7422cbeef82d33d7b"
+hash = "d83c72d484189ca5ca170d54725aadfa02586c97a5ee228a4c346611f2365f1a"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/world_deep_spoils.snbt"
-hash = "0a489dd4eb8a15101a6f8f1d68f7da7a645c3cab4cba85d9aae0780c2872d3a8"
+hash = "54a79df05f07241a6be03421cc6620e9f254fd065a9ec5beaf4ce8db902db910"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/world_delver_cache.snbt"
-hash = "d54b42a9c1108ec4b082fa4c036cf97731330cd839cf2ff51edab1e52ab0ed6a"
+hash = "d1c724e871ba3502b671f7d3c76d30bde7655444b420b807af3bb52c0c950320"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/world_eclipse_spoils.snbt"
-hash = "a606f9034cf996d5b4f3e07ed83239448e7f132e963027288f3f0627cead948b"
+hash = "64a378bf0d2b5ad8a97ba88172c3b6a27fd4507ff35bcbd6380636bd5aec1eaa"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/world_ember_spoils.snbt"
-hash = "6b154e9edb775a56e887a4e72fd0328ca03eea06e3278d461ce762f18d3c5dea"
+hash = "ee18fedd5c7095ac48ea8d4e373105c352420968fac1e23ac123cdd1b4142377"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/world_hunt_spoils.snbt"
-hash = "7d2b2ba0856a1fbc18cc9993c432392aa6ebc0d93ca94a1dde1ef315998dfa0c"
+hash = "9bd21c1c4133a9de7bd85dc504ffd1858a81b9251d12c177883b043f70843c18"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/world_huntmaster_ledger.snbt"
-hash = "fb6d33ab5059c3fb4d872a143d330c3d04199ebc076a768224804c1b197ac89a"
+hash = "ae80eaf09977f66464340c471d78b6e35ce4fb71607e7b1aaef2f05b4fd8cf5f"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/world_wayfarer_pack.snbt"
-hash = "095c3fd76f1cb9de27e7dd297cb870022b1ecaa596f5f212071551f12189a605"
+hash = "1ae8f0f89d2f3dca5aafd7a2a38106585b9c81ef83791f386cbe06bffc5430d0"
 
 [[files]]
 file = "config/lithium.properties"
@@ -318,7 +418,7 @@ hash = "0fcfcd72de35655aed79560309f140e603c8172df157c20fd89204b7adde48be"
 
 [[files]]
 file = "config/ras/items_lock.json"
-hash = "585d176254ce8561bc60bcf74d421434880e1edd2c38a2a53d3f5d15ef424f90"
+hash = "ec5e31f83aba1275b93cce1555ea510477b2a1dafb2d47545374ff165ffecc8b"
 
 [[files]]
 file = "config/ras/levelup_rewards.json"
@@ -853,6 +953,18 @@ file = "kubejs/data/mob_loot_bags/loot_table/bags/legendary.json"
 hash = "fb09f5e091b9afaada00aabe0ee4c02264a913e1439c3411fdeb51c875d0c7dd"
 
 [[files]]
+file = "kubejs/data/mob_loot_bags/loot_table/bags/locked/the_end.json"
+hash = "9c056a8e8ba48e91c2291cdc8beb08073aa7fcaf57baf2ac0eb38d23a58b92da"
+
+[[files]]
+file = "kubejs/data/mob_loot_bags/loot_table/bags/locked/the_nether.json"
+hash = "c6ac7ee44b836dafd60ae208a35f897c60676a78208d1cc9ee329667a6ec3a01"
+
+[[files]]
+file = "kubejs/data/mob_loot_bags/loot_table/bags/locked.json"
+hash = "549fb1e3c9bce62b80f26c96fae061d58b468fd9224a7eee4f5ec22b4232e92f"
+
+[[files]]
 file = "kubejs/data/mob_loot_bags/loot_table/bags/mythic/the_end.json"
 hash = "9c056a8e8ba48e91c2291cdc8beb08073aa7fcaf57baf2ac0eb38d23a58b92da"
 
@@ -1218,7 +1330,7 @@ hash = "0c615d27d6e7932dab70603593b0d4b2098f06e605c17c7e8549a677ec84ef94"
 
 [[files]]
 file = "kubejs/server_scripts/remnants/deathguide.js"
-hash = "808fe36763f6e2ad8738e1794931abe1d30bbffba5529ab9045ec603a010aa7f"
+hash = "2218f892db47be9bce7582f08217b72970c87ca88c1ef7a80528055c497cd5cb"
 
 [[files]]
 file = "kubejs/server_scripts/remnants/echo.js"
@@ -1230,7 +1342,7 @@ hash = "0ddf8ca8f647f431d5db935a71c39dc4028a8cfa10dce9c583bda2e1a164b144"
 
 [[files]]
 file = "kubejs/server_scripts/remnants/forge.js"
-hash = "c6a1538af7eff986630642317e3cadfdfe451355aa923fd69c0400b092a56196"
+hash = "653faec164ddb18ee67588a4ba221b45b2b74bf8ef2fe0219fc6ebf46b141c6c"
 
 [[files]]
 file = "kubejs/server_scripts/remnants/lastlight.js"

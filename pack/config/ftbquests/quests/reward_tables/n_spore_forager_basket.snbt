@@ -1,0 +1,71 @@
+{
+	icon: {
+		id: "spore_and_stem:truffle"
+	}
+	id: "32F3972A037EFD37"
+	loot_size: 1
+	order_index: 4
+	rewards: [
+		{
+			count: 6
+			id: "2E43736D22A9B061"
+			item: {
+				count: 1
+				id: "spore_and_stem:roasted_morel"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 3
+			id: "53675376C395654B"
+			item: {
+				count: 1
+				id: "spore_and_stem:chanterelle_toast"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "684DC6A4B00621B9"
+			item: {
+				count: 1
+				id: "spore_and_stem:foragers_stew"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 2
+			id: "6AB31C2A0B84630D"
+			item: {
+				count: 1
+				id: "spore_and_stem:glowcap_soup"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 3
+			id: "19A32160F0FF1814"
+			item: {
+				count: 1
+				id: "spore_and_stem:truffle"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "051E6ED49F1B7FA7"
+			item: {
+				count: 1
+				id: "spore_and_stem:antifungal_tonic"
+			}
+			weight: 1.0f
+		}
+		{
+			id: "643F784FAAFA423B"
+			item: {
+				count: 1
+				id: "spore_and_stem:truffle_stew"
+			}
+			weight: 1.0f
+		}
+	]
+}

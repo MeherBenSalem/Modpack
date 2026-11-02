@@ -9,7 +9,7 @@
    "NeoForge",
    "1.21.1"
   ],
-  "note": "170 mods &middot; 424 quests",
+  "note": "172 mods &middot; 667 quests",
   "size": "1632px auto",
   "fadeFrom": 474
  },
@@ -77,7 +77,7 @@
   "seed": 5,
   "bg": "quest_book.jpg",
   "kicker": "The Long Eclipse",
-  "title": "Told in<br>420 quests",
+  "title": "Told in<br>660 quests",
   "shot": "quest_book.jpg",
   "bullets": [
    "A prologue, five acts and an epilogue; every act ends on a Sovereign",
@@ -88,11 +88,11 @@
   "stats": [
    [
     "Chapters",
-    "23"
+    "33"
    ],
    [
     "Quests",
-    "424"
+    "667"
    ],
    [
     "Narrated lines",

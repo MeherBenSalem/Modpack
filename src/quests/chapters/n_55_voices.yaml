@@ -1,0 +1,258 @@
+chapter: n_voices
+group: chronicles
+order: 55
+title: "&dVoices of Last Light"
+subtitle: "Smart Villagers and Guard Villagers. They talk now, they remember, and they ask."
+icon: minecraft:bell
+quests:
+  # ---- the square ----
+  - key: start
+    title: "&dVoices in the Square"
+    subtitle: "One ring a night, so the houses knew who was alive."
+    icon: minecraft:bell
+    pos: [0, 0]
+    deps: [h_lastlight/first_request, s1_act1_embers/kindle]
+    shape: hexagon
+    size: 1.5
+    desc: |
+      Through the Long Eclipse the villagers kept quiet: talk carries, and the dead listen. Only old &6Odda&r spoke, and only with the bell. One ring each night, so every house knew the others still lived. She's buried beside it now.
+
+      Last Light has a shrine again, and its people have found their voices. Each has a name, a mood and a memory of what you said last time, and answers in a speech bubble over its head. They speak in their own plain words; nothing you say to them leaves the world.
+
+      &7Say something to a villager, then ring the village bell once, for Odda.&r
+    tasks:
+      - {advancement: "smartvillagers:root", title: "Speak to a villager"}
+      - {stat: "minecraft:bell_ring", value: 1, title: "Ring a bell"}
+    rewards: [{item: minecraft:emerald, count: 6}, {xp: 60}]
+
+  - key: ledger
+    title: "The Village Ledger"
+    subtitle: "Every favour written down. So is every slight."
+    icon: minecraft:writable_book
+    pos: [2, 0]
+    deps: [start]
+    desc: |
+      Ask any villager with a trade &o"any work for me?"&r. It offers a job that fits its trade, or asks you to deal with what's been creeping up to the walls. Accept from the card in chat, or just say yes. Ask &o"how many?"&r to check your progress, and talk to it again to hand in: it pays in emeralds and experience.
+
+      Three open requests at most, and the same villager waits a while before it asks again. Masters ask for up to twice as much, and pay for it. Nitwits and the jobless have nothing to give.
+
+      &7Check your open requests with &e/villagerai requests&7.&r
+    tasks: [{checkmark: "I checked my open requests"}]
+    rewards: [{item: minecraft:emerald, count: 4}, {xp: 40}]
+
+  # ---- what the village asks for ----
+  - key: harvest
+    title: "The Harvest Won't Bring Itself In"
+    subtitle: "Farmers ask for crops. Who knew."
+    icon: minecraft:wheat
+    pos: [4, -3.5]
+    deps: [ledger, h_garden/harvest]
+    desc: |
+      Farmers ask for &6wheat&r, &6carrots&r, &6potatoes&r, &6beetroot&r, &6pumpkins&r or &6bone meal&r, more from a master than from an apprentice. The Ash Garden grows all of it, and its crops replant themselves when you pick them.
+
+      Keep a stock, and no farmer ever waits on you.
+
+      &7Gather 16 each of wheat, carrots and potatoes for the next farmer who asks.&r
+    tasks:
+      - {item: minecraft:wheat, count: 16}
+      - {item: minecraft:carrot, count: 16}
+      - {item: minecraft:potato, count: 16}
+    rewards: [{table: hearth_garden}, {item: minecraft:emerald, count: 6}, {xp: 80}]
+
+  - key: forge
+    title: "The Forge Is Hungry"
+    subtitle: "A smith is only as good as their stock."
+    icon: minecraft:coal
+    pos: [4, -1.75]
+    deps: [ledger]
+    desc: |
+      Armorers, weaponsmiths and toolsmiths ask for &6iron ingots&r and &6coal&r, and now and then a &6lava bucket&r, &6flint&r or a bundle of &6sticks&r. The Smith Under Ash approves: a village that arms itself keeps his trade alive too.
+
+      &7Gather 12 iron ingots, 16 coal and a lava bucket.&r
+    tasks:
+      - {item: minecraft:iron_ingot, count: 12}
+      - {item: minecraft:coal, count: 16}
+      - {item: minecraft:lava_bucket}
+    rewards: [{table: hearth_workshop}, {xp: 80}]
+
+  - key: nets
+    title: "The Nets Came Back Empty"
+    subtitle: "Last Light's fisherman needs a better coast."
+    icon: minecraft:cod
+    pos: [4, 0]
+    deps: [ledger, n_coast/start]
+    desc: |
+      Fishermen ask for &6cod&r, &6salmon&r, &6string&r and &6coal&r. Last Light's own fisherman has been working a pond. The folk of the coast work the sea with crab pots and bait he has never heard of, and Saylor will sell you both.
+
+      &7Gather 12 cod, 8 salmon and 8 string for the next fisherman who asks.&r
+    tasks:
+      - {item: minecraft:cod, count: 12}
+      - {item: minecraft:salmon, count: 8}
+      - {item: minecraft:string, count: 8}
+    rewards: [{table: hearth_tackle}, {item: minecraft:emerald, count: 6}, {xp: 80}]
+
+  - key: shelves
+    title: "Gaps on the Shelves"
+    subtitle: "Maps don't draw themselves, you know."
+    icon: minecraft:book
+    pos: [4, 1.75]
+    deps: [ledger]
+    optional: true
+    desc: |
+      Librarians want &6paper&r, &6books&r, &6feathers&r and &6ink sacs&r. Cartographers want paper, &6glass panes&r and &6compasses&r. Clerics want rotten flesh, gold, redstone and glass bottles, and nobody asks them why.
+
+      &7Gather 16 paper, 3 books and a compass.&r
+    tasks:
+      - {item: minecraft:paper, count: 16}
+      - {item: minecraft:book, count: 3}
+      - {item: minecraft:compass}
+    rewards: [{item: minecraft:emerald, count: 8}, {xp: 60}]
+
+  - key: slay
+    title: "Monsters at the Walls"
+    subtitle: "They keep creeping up at night."
+    icon: minecraft:zombie_head
+    pos: [4, 3.5]
+    deps: [ledger]
+    desc: |
+      Any villager with a trade may ask you to drive off &czombies&r, &cskeletons&r, &cspiders&r, &ccreepers&r or &cpillagers&r instead. Only kills after you accept count, and the neighbours hear about every job: &o"I heard you drove off 6 zombies for Kael the farmer."&r
+
+      News travels about 48 blocks. So does a bad reputation.
+
+      &7Thin out the dead around the village.&r
+    tasks:
+      - {kill: minecraft:zombie, count: 12}
+      - {kill: minecraft:skeleton, count: 8}
+      - {kill: minecraft:spider, count: 6}
+    rewards: [{table: ashborn_provisions}, {item: minecraft:emerald, count: 6}, {xp: 100}]
+
+  # ---- standing ----
+  - key: friend
+    title: "Good to See You Again, Friend"
+    subtitle: "Stranger, friend, hero. Or wary, then hostile."
+    icon: minecraft:emerald
+    pos: [6, 0]
+    deps: [harvest, forge, nets, shelves, slay]
+    min_deps: 2
+    desc: |
+      Villagers read the reputation the world already keeps for you. A favour or some fair trading makes you a &afriend&r; ten favours make you a &6hero&r. Every finished request adds a little good gossip, and good gossip means better prices.
+
+      Hurt a villager and the street turns &ewary&r, then &chostile&r. Nobody gives work to someone they don't trust, not until the bad gossip fades.
+
+      &7Trade with a villager, and save 24 emeralds from the village's pay.&r
+    tasks: [{advancement: "minecraft:adventure/trade", title: "What a Deal!"}, {item: minecraft:emerald, count: 24}]
+    rewards: [{table: n_voices_gratitude}, {xp: 100}]
+
+  - key: zombie_doctor
+    title: "A Cure for the Dead"
+    subtitle: "The only dead anyone knows how to bring back."
+    icon: minecraft:golden_apple
+    pos: [8, 0]
+    deps: [friend]
+    desc: |
+      Under the Eclipse the dead rise, and villagers are no exception. A &6zombie villager&r is the one kind of risen dead the living know how to bring home: hit it with a splash potion of &6Weakness&r, feed it a &6golden apple&r, and keep it penned while it shakes. A cleric's brewing stand will do for the potion.
+
+      A villager you cured never forgets it. Its prices drop, and the whole street hears why.
+
+      &7Cure a zombie villager.&r
+    tasks: [{advancement: "minecraft:story/cure_zombie_villager"}]
+    rewards: [{item: minecraft:golden_apple, count: 2}, {table: n_voices_gratitude}, {xp: 150}]
+
+  # ---- the watch ----
+  - key: watch
+    title: "The Watch on the Wall"
+    subtitle: "Three guards, kitted properly."
+    icon: minecraft:shield
+    pos: [6, 5.25]
+    deps: [h_lastlight/guard]
+    desc: |
+      A guard trusts you with its kit if you made it a guard, if the village thinks well of you, or if you are its hero. Use a guard to open its gear: armour, a better weapon, and a &6shield&r or food for the off hand. A shield gets raised; food gets eaten when it's hurt. The &6patrol&r button sets where it stands.
+
+      Clerics heal hurt guards and smiths mend their gear, a few times a day each.
+
+      &7Make three guards in all, and bring a shield for one of them.&r
+    tasks:
+      - {stat: "guardvillagers:guards_made", value: 3, title: "Make three guards"}
+      - {item: minecraft:shield}
+    rewards: [{item: minecraft:iron_sword, count: 2}, {xp: 100}]
+
+  - key: golem
+    title: "Hired Help"
+    subtitle: "Iron, and a pumpkin with a face."
+    icon: minecraft:carved_pumpkin
+    pos: [6, 7]
+    deps: [h_lastlight/guard]
+    desc: |
+      Four iron blocks in a T and a carved pumpkin on top make an &6Iron Golem&r, which walks the village and throws whatever threatens it. The village's smiths patch it up when it's hurt.
+
+      &7Build an Iron Golem.&r
+    tasks: [{advancement: "minecraft:adventure/summon_iron_golem"}]
+    rewards: [{item: minecraft:iron_ingot, count: 12}, {xp: 80}]
+
+  - key: omen
+    title: "Voluntary Exile"
+    subtitle: "Kill the one with the banner. Keep the bottle."
+    icon: minecraft:ominous_bottle
+    pos: [8, 5.25]
+    deps: [watch, s1_act1_embers/dusk_rider]
+    desc: |
+      Pillager patrols march behind a &6captain&r with an illager banner. Kill the captain and it drops an &6Ominous Bottle&r. Drink it and you carry a &cBad Omen&r; walk into a village with it and the omen calls a &craid&r down on everyone there.
+
+      That is a terrible idea. Last Light should be ready for it anyway.
+
+      &7Kill a raid captain and keep its Ominous Bottle.&r
+    tasks: [{advancement: "minecraft:adventure/voluntary_exile"}, {item: minecraft:ominous_bottle}]
+    rewards: [{item: minecraft:arrow, count: 32}, {xp: 120}]
+
+  - key: raid
+    title: "&cThe Night the Bell Rang"
+    subtitle: "Odda's bell, rung in earnest."
+    icon: minecraft:crossbow
+    pos: [10, 6.125]
+    deps: [omen, golem]
+    shape: gear
+    size: 2.0
+    desc: |
+      Drink the bottle in Last Light. Wave after wave comes over the fields: pillagers, vindicators, witches, ravagers, and worse things riding with them. Ring the bell and the raiders near it glow. The guards hold the walls, the golem holds the square, and you hold whatever is left. The Ashen Company fights for gold, and this is a fine night to pay them.
+
+      Win, and the village gives you the title it has given no one since Odda: &6Hero of the Village&r.
+
+      &7Defeat a raid.&r
+    tasks: [{advancement: "minecraft:adventure/hero_of_the_village"}]
+    rewards: [{table: hunters_spoils}, {table: n_voices_gratitude}, {xp: 400}]
+
+  - key: hero_guards
+    title: "The Hero's Bell"
+    subtitle: "Ring, and the watch falls in behind you."
+    icon: minecraft:iron_sword
+    pos: [12.25, 6.125]
+    deps: [raid]
+    optional: true
+    desc: |
+      While you carry &6Hero of the Village&r, the guards answer to you. The &6follow&r button in their gear opens, and ringing a village bell calls the guards around it to walk behind you. Clerics will heal you too.
+
+      They are the village's, not yours. The sellswords are the ones who follow you for gold.
+
+      &7Lead a few guards out of the gate.&r
+    tasks: [{checkmark: "Guards followed me from the bell"}]
+    rewards: [{item: minecraft:shield}, {xp: 100}]
+
+  # ---- the end of the chapter ----
+  - key: finale
+    title: "&dThe Voice of Last Light"
+    subtitle: "Somebody has to ring it now."
+    icon: minecraft:bell
+    pos: [12.25, 1.75]
+    deps: [raid, zombie_doctor, h_lastlight/village_hero]
+    shape: gear
+    size: 2.0
+    desc: |
+      Last Light talks about you at every doorway now: the harvests you carried in, the dead you drove off, the night of the raid. The farmers call you a hero. The children call you Odda's ghost, which is nearly a compliment.
+
+      They ask one more thing. Hang a &6bell&r in your own hall, so the village can call you the way Odda called them.
+
+      &o"A shrine makes a place you come back to. Voices make it a place that calls you back."&r &7— the Keeper&r
+
+      &7Get a bell. Armorers sell them, dearly; old villages give theirs up to a pickaxe.&r
+    tasks: [{item: minecraft:bell}]
+    rewards: [{table: n_voices_gratitude}, {item: minecraft:emerald, count: 16}, {item: minecraft:golden_carrot, count: 16}, {xp: 500}]

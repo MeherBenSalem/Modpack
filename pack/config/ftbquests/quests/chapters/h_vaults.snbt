@@ -692,5 +692,766 @@
 			x: 18.0d
 			y: 1.75d
 		}
+		{
+			dependencies: ["748A1795B9FBB3DE", "7CC8D5C9FD545DC8"]
+			icon: {
+				id: "omnivault:copper_vault"
+			}
+			id: "50BCDBF09D7917D4"
+			rewards: [
+				{
+					id: "70E10F9B1829EBF7"
+					item: {
+						count: 1
+						id: "omnivault:iron_vault_kit"
+					}
+					type: "item"
+				}
+				{
+					id: "0657F46445487B55"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "181F4197277CB27F"
+					item: {
+						count: 1
+						id: "omnivault:copper_vault"
+					}
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["748A1795B9FBB3DE"]
+			icon: {
+				id: "omnivault:trash_can"
+			}
+			id: "1001A09855DDE287"
+			optional: true
+			rewards: [
+				{
+					id: "05FBAA9A88BFEBF4"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "2B167AE4686A04E2"
+					item: {
+						count: 1
+						id: "omnivault:trash_can"
+					}
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["2CAB36265B86DF9D", "7B0CE3845C046AFD"]
+			icon: {
+				id: "omnivault:compacting_drawer"
+			}
+			id: "3A782D38C376851C"
+			rewards: [
+				{
+					count: 27
+					id: "51B01538739C8437"
+					item: {
+						count: 1
+						id: "minecraft:gold_nugget"
+					}
+					type: "item"
+				}
+				{
+					id: "29F4CE99740E876F"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "55941CBDC090FA9E"
+					item: {
+						count: 1
+						id: "omnivault:compacting_drawer"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2CAB36265B86DF9D", "7B0CE3845C046AFD"]
+			icon: {
+				id: "omnivault:iron_drawer_upgrade"
+			}
+			id: "69F26B05C030BF25"
+			rewards: [
+				{
+					count: 2
+					id: "11C9A7669B5CF7A0"
+					item: {
+						count: 1
+						id: "omnivault:upgrade_base"
+					}
+					type: "item"
+				}
+				{
+					id: "3B4DCFFA2122C75A"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "0DC65EAC1B8F0318"
+					item: {
+						count: 1
+						id: "omnivault:iron_drawer_upgrade"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3A782D38C376851C", "69F26B05C030BF25"]
+			icon: {
+				id: "omnivault:drawer_controller"
+			}
+			id: "355F7D510A537BD9"
+			rewards: [
+				{
+					id: "60DD65E5F0B70FB3"
+					table_id: 3988307392398943083L
+					type: "random"
+				}
+				{
+					id: "1F30576B3030AEC1"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					id: "247C701BEB69AEA2"
+					item: {
+						count: 1
+						id: "omnivault:drawer_controller"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "72A557D15929859B"
+					item: {
+						count: 1
+						id: "omnivault:drawer_trim"
+					}
+					type: "item"
+				}
+				{
+					id: "62A551D0EA4D7A14"
+					item: {
+						count: 1
+						id: "omnivault:drawer_key"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 5.25d
+		}
+		{
+			dependencies: ["7B0CE3845C046AFD"]
+			icon: {
+				id: "omnivault:relocator"
+			}
+			id: "35A23CE5B42E8D1E"
+			rewards: [
+				{
+					count: 4
+					id: "0D12F02F04EF016C"
+					item: {
+						count: 1
+						id: "minecraft:slime_ball"
+					}
+					type: "item"
+				}
+				{
+					id: "4063F91DFF8F98A5"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "196B6214AC0EC816"
+					item: {
+						count: 1
+						id: "omnivault:omni_tool"
+					}
+					type: "item"
+				}
+				{
+					id: "624BD65DA3D77FD8"
+					item: {
+						count: 1
+						id: "omnivault:relocator"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["35A23CE5B42E8D1E", "79F03607AC11BFB2"]
+			icon: {
+				id: "omnivault:netherite_relocator"
+			}
+			id: "100E0C232444CE39"
+			optional: true
+			rewards: [
+				{
+					id: "64C9935C5271F20B"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "7C258C7B39C9039A"
+					item: {
+						count: 1
+						id: "omnivault:netherite_relocator"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 5.25d
+		}
+		{
+			dependencies: ["35A23CE5B42E8D1E", "6AFD03D05428FB28"]
+			icon: {
+				id: "omnivault:linked_vault"
+			}
+			id: "21384B39505B45BB"
+			rewards: [
+				{
+					count: 2
+					id: "130217B7655758B9"
+					item: {
+						count: 1
+						id: "minecraft:ender_pearl"
+					}
+					type: "item"
+				}
+				{
+					id: "472B7FE005A1880B"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "3FEB9F8EC4384E74"
+					item: {
+						count: 1
+						id: "omnivault:linked_vault"
+					}
+					type: "item"
+				}
+				{
+					id: "5964A0623720A0A9"
+					item: {
+						count: 1
+						id: "omnivault:linked_pouch"
+					}
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 5.25d
+		}
+		{
+			dependencies: ["50BEACFFFDC3A65A"]
+			icon: {
+				id: "omnivault:drive"
+			}
+			id: "15E3676316E9CDDD"
+			rewards: [
+				{
+					count: 8
+					id: "3540243B17788B88"
+					item: {
+						count: 1
+						id: "omnivault:omnium_dust"
+					}
+					type: "item"
+				}
+				{
+					id: "6615EA74C196ADCF"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "373AD841CBD0196F"
+					item: {
+						count: 1
+						id: "omnivault:drive"
+					}
+					type: "item"
+				}
+				{
+					id: "4CD31F3ABD3B8967"
+					item: {
+						count: 1
+						id: "omnivault:storage_cell_4k"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 5.25d
+		}
+		{
+			dependencies: ["15E3676316E9CDDD", "54CDF7C1E86F0131"]
+			icon: {
+				id: "omnivault:network_port"
+			}
+			id: "15EDBA90E475209D"
+			rewards: [
+				{
+					id: "78CB3C4F769B0035"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "438D4E4CCBE9EA63"
+					item: {
+						count: 1
+						id: "omnivault:network_port"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["15E3676316E9CDDD", "15EDBA90E475209D"]
+			icon: {
+				id: "omnivault:storage_cell_64k"
+			}
+			id: "55C7DB1D33CC2272"
+			rewards: [
+				{
+					id: "2FF2E5FEA042BFFA"
+					table_id: 6847184140764955530L
+					type: "random"
+				}
+				{
+					id: "360627D43B2A90C6"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					id: "563C06DF222BBA7D"
+					item: {
+						count: 1
+						id: "omnivault:storage_cell_64k"
+					}
+					type: "item"
+				}
+				{
+					id: "363666F518A56DB5"
+					item: {
+						count: 1
+						id: "omnivault:fluid_cell_4k"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 8.75d
+		}
+		{
+			dependencies: ["15EDBA90E475209D", "6951F8F68761749D"]
+			icon: {
+				id: "omnivault:import_bus"
+			}
+			id: "3F92BDEB3391D003"
+			rewards: [
+				{
+					id: "1D3C5CC2620A12E8"
+					item: {
+						count: 1
+						id: "omnivault:speed_upgrade"
+					}
+					type: "item"
+				}
+				{
+					id: "7BF1E8A4877C0CF9"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "105B1A01FB4BF29B"
+					item: {
+						count: 1
+						id: "omnivault:import_bus"
+					}
+					type: "item"
+				}
+				{
+					id: "6A85413D477409B0"
+					item: {
+						count: 1
+						id: "omnivault:export_bus"
+					}
+					type: "item"
+				}
+				{
+					id: "6C77FF1C39B6B180"
+					item: {
+						count: 1
+						id: "omnivault:storage_bus"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 8.75d
+		}
+		{
+			dependencies: ["3F92BDEB3391D003"]
+			icon: {
+				id: "omnivault:destructor"
+			}
+			id: "44FFF42236F1BB03"
+			optional: true
+			rewards: [
+				{
+					id: "59FE01B6E108B7E1"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "14ECC32E28B41EC7"
+					item: {
+						count: 1
+						id: "omnivault:destructor"
+					}
+					type: "item"
+				}
+				{
+					id: "11C27C94E695926C"
+					item: {
+						count: 1
+						id: "omnivault:constructor"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["15E3676316E9CDDD"]
+			icon: {
+				id: "omnivault:storage_monitor"
+			}
+			id: "78C08C42824A5EC9"
+			optional: true
+			rewards: [
+				{
+					id: "50B9ACDDCEAF745B"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					id: "28B5E9D759DD4C13"
+					item: {
+						count: 1
+						id: "omnivault:storage_monitor"
+					}
+					type: "item"
+				}
+				{
+					id: "76754D41353B7E34"
+					item: {
+						count: 1
+						id: "omnivault:signal_emitter"
+					}
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["50BEACFFFDC3A65A"]
+			icon: {
+				id: "omnivault:pattern_terminal"
+			}
+			id: "3898252D65F299F6"
+			rewards: [
+				{
+					count: 8
+					id: "4ECEFB4C4CE31D0B"
+					item: {
+						count: 1
+						id: "omnivault:blank_pattern"
+					}
+					type: "item"
+				}
+				{
+					id: "04DF1C100A0E7475"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [
+				{
+					id: "5221BEC4137476BD"
+					item: {
+						count: 1
+						id: "omnivault:pattern_terminal"
+					}
+					type: "item"
+				}
+				{
+					id: "54B87FDF388DEC21"
+					item: {
+						count: 1
+						id: "omnivault:crafting_pattern"
+					}
+					type: "item"
+				}
+				{
+					id: "1CD9824A2481F804"
+					item: {
+						count: 1
+						id: "omnivault:pattern_provider"
+					}
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: 5.25d
+		}
+		{
+			dependencies: ["3898252D65F299F6"]
+			icon: {
+				id: "omnivault:assembler"
+			}
+			id: "3D5B3BAEAA3FEE9C"
+			rewards: [
+				{
+					id: "0D64A4328409C6BB"
+					table_id: 6847184140764955530L
+					type: "random"
+				}
+				{
+					id: "16ED3BDAF2DD5EF4"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					id: "49B566F4B45C01C7"
+					item: {
+						count: 1
+						id: "omnivault:assembler"
+					}
+					type: "item"
+				}
+				{
+					id: "7AD5DA5E7B02F84F"
+					item: {
+						count: 1
+						id: "omnivault:crafting_processor"
+					}
+					type: "item"
+				}
+			]
+			x: 14.5d
+			y: 5.25d
+		}
+		{
+			dependencies: ["6E2A8F001D7942A5"]
+			icon: {
+				id: "omnivault:wireless_transmitter"
+			}
+			id: "37BFAB12415604CB"
+			rewards: [
+				{
+					count: 4
+					id: "75022D6BFF1DA595"
+					item: {
+						count: 1
+						id: "minecraft:ender_pearl"
+					}
+					type: "item"
+				}
+				{
+					id: "29856A0E46BC8A6A"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [
+				{
+					id: "6F981DAB2B0F0ED3"
+					item: {
+						count: 1
+						id: "omnivault:wireless_transmitter"
+					}
+					type: "item"
+				}
+				{
+					id: "2A72E86B94B1A8A0"
+					item: {
+						count: 1
+						id: "omnivault:range_upgrade"
+					}
+					type: "item"
+				}
+			]
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B63E0A0DB105CCA", "37BFAB12415604CB", "6980BF7C1C957193"]
+			icon: {
+				id: "omnivault:quantum_bridge"
+			}
+			id: "62341DD832634D03"
+			rewards: [
+				{
+					id: "26CED40EE2927FAC"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "5F611A2E8544A8A0"
+					item: {
+						count: 1
+						id: "omnivault:quantum_bridge"
+					}
+					type: "item"
+				}
+				{
+					id: "3FFD1063A9396EE4"
+					item: {
+						count: 1
+						id: "omnivault:quantum_link_card"
+					}
+					type: "item"
+				}
+			]
+			x: 16.0d
+			y: 3.75d
+		}
+		{
+			dependencies: ["55C7DB1D33CC2272", "6980BF7C1C957193"]
+			icon: {
+				id: "omnivault:storage_cell_singularity"
+			}
+			id: "6F87A60F8AE3AEDE"
+			optional: true
+			rewards: [
+				{
+					id: "79E96E4407A2B01E"
+					type: "xp"
+					xp: 3000
+				}
+			]
+			tasks: [
+				{
+					id: "091F31694AF9C9C5"
+					item: {
+						count: 1
+						id: "omnivault:storage_cell_singularity"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["3D5B3BAEAA3FEE9C", "62341DD832634D03", "62F4B3CF004A48C7"]
+			icon: {
+				id: "omnivault:quantum_assembler"
+			}
+			id: "14E0CCEFC059AE7E"
+			rewards: [
+				{
+					id: "56C673BCC769A16C"
+					table_id: 6847184140764955530L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "45D6A483933F794F"
+					item: {
+						count: 1
+						id: "omnivault:omnium_block"
+					}
+					type: "item"
+				}
+				{
+					id: "7A399A1CFF749952"
+					type: "xp"
+					xp: 2000
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "49DE63E9FB6B5F33"
+					item: {
+						count: 1
+						id: "omnivault:quantum_assembler"
+					}
+					type: "item"
+				}
+			]
+			x: 18.0d
+			y: 5.5d
+		}
 	]
 }

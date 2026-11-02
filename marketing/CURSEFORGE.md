@@ -6,11 +6,11 @@ Everything that died in the dark came back wrong. You wake in a crypt with nothi
 
 **Remnants | The Modpack** is NightBeam Studio's story-driven **soulslike RPG** modpack for Minecraft 1.21.1 on NeoForge.
 It opens in **the Threshold**, a starting area with a boss of its own, then sends you into a world under a black sun to
-relight it one **Ember Shrine** and one **Sovereign** at a time. The story runs through **420 quests**, the dead rise
+relight it one **Ember Shrine** and one **Sovereign** at a time. The story runs through **660 quests**, the dead rise
 ranked and named, and when you die an **Echo** of you guards your runes where you fell.
 
 **Season 1, "The Long Eclipse"** builds NightBeam's own mods (Runeborn, RPG Mobs, the Eclipsed Realm, RPG Stats,
-Skills and Powers, Fellowship and more) into one rule set, with 170 mods in all.
+Skills and Powers, Fellowship and more) into one rule set, with 172 mods in all.
 
 [![Watch the trailer](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/marketing/images/trailer.png)](https://youtu.be/U_x7PBLXGaM)
 
@@ -38,7 +38,7 @@ Skills and Powers, Fellowship and more) into one rule set, with 170 mods in all.
 
 ![The Story](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/marketing/images/header-story.png)
 
-![Told in 420 quests](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/marketing/images/card-story.png)
+![Told in 660 quests](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/marketing/images/card-story.png)
 
 Seven rulers broke the sun to share its light. The Eighth drank what was left and became the **Hollow Sovereign**.
 Since then nothing that dies stays dead. The Keeper of Last Light gives you your first spark; the rest is up to you.
@@ -59,6 +59,15 @@ Since then nothing that dies stays dead. The Keeper of Last Light gives you your
   the Boss Compendium, the Dungeon Trail, the Bestiary, Hearth and Harvest, the Ash Garden, Last Light, the Clockwork
   Path and the Vaults.
 - **The Ashen Contracts:** a repeatable bounty board, so the mid-game never runs dry.
+
+### Chronicles of the Ash: a story for every NightBeam mod
+
+Ten more storylines, woven into the acts, the Ember Forge and each other: a ragpicker who reads loot bags, a
+Tallyman who measures the dead, a fungal court under the caps and the **Myceliarch** at its heart, a lighthouse that
+went out the night a trawler sank, a village that remembers what you did for it, the **Ashen Works**' generators and
+quarries, **Chrono Rifts** dropping pods of a future that never came (jetpacks, drones, mechs and rift gates), the
+builder's wands, the Runeborn way of steel and stones, and a cartographer's survey of the Eclipsed Realm. The
+Vaults, the Garden, the Archive, the Company and the Dungeon Trail grew too.
 
 ### The Ember Forge: nothing is handed to you twice
 
@@ -114,9 +123,12 @@ Every system has one owner, and the overlapping ones are switched off, so every 
 
 - **Runeborn:** origins, runes, Ember Shrines, flasks, stamina, the dodge roll, weapon arts, spells and over 70
   armaments.
-- **RPG Stats:** kills pay Valor, Valor buys levels, levels buy attributes; diamond and netherite gear wait behind them.
+- **RPG Stats:** kills pay Valor, Valor buys levels, levels buy attributes. Gear asks for the attribute that fits it,
+  along the acts: blades want Attack Power, armour Protection, wings and jetpacks Agility, compasses Exploration.
 - **Skills and Powers:** the Remnant Constellation skill tree and elemental casts.
 - **Fellowship:** hire sellswords of the Ashen Company for gold. They fight beside you and go down, not out.
+- **Death you can recover from:** your items wait in your corpse, your runes in the bloodstain your Echo guards, and
+  chat tells you where after every fall.
 - **Loot:** reworked Mob LootBags, rank loot and per-player structure chests.
 - **Travel is earned:** Ember Shrines in the overworld, Grace Embers in the Realm. No waystones.
 
@@ -140,7 +152,7 @@ Every system has one owner, and the overlapping ones are switched off, so every 
 4. **Servers:** download the server pack, unzip it and run `start.sh` (Linux/macOS) or `start.bat` (Windows): it
    installs NeoForge on first start (Java 21). `SERVER.md` inside covers RAM, ports and pregeneration with Chunky.
 
-**Credits.** Built by NightBeam Studio on the work of 170 mods and their authors: thank you. Special thanks to
+**Credits.** Built by NightBeam Studio on the work of 172 mods and their authors: thank you. Special thanks to
 [Subtle Effects](https://www.curseforge.com/minecraft/mc-mods/subtle-effects),
 [Ashen 16x](https://www.curseforge.com/minecraft/texture-packs/ashen-16x),
 [Fresh Animations](https://www.curseforge.com/minecraft/texture-packs/fresh-animations),

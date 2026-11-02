@@ -1,0 +1,61 @@
+{
+	icon: {
+		id: "tbos:recalled_hour"
+	}
+	id: "0636D36EC8983491"
+	loot_size: 1
+	order_index: 10
+	rewards: [
+		{
+			count: 3
+			id: "0043E3441FF4FDF2"
+			item: {
+				count: 1
+				id: "tbos:chronicle_shard"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "5B6021167EC7492B"
+			item: {
+				count: 1
+				id: "tbos:lenswork_crystal"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "435810BBDF0B6F45"
+			item: {
+				count: 1
+				id: "tbos:recalled_hour"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "7F04BBF7FAB835BE"
+			item: {
+				count: 1
+				id: "tbos:memory_key"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 8
+			id: "0F0ABB44AA381707"
+			item: {
+				count: 1
+				id: "minecraft:amethyst_shard"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 8
+			id: "4311A14AEDD81B75"
+			item: {
+				count: 1
+				id: "minecraft:experience_bottle"
+			}
+			weight: 2.0f
+		}
+	]
+}

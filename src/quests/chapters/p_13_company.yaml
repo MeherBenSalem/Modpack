@@ -159,3 +159,179 @@ quests:
       - title: "Any greater golden axe, greater golden hammer or golden scythe"
         item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(better_with_gold:greater_golden_axe)ftbfiltersystem:item(better_with_gold:reinforced_greater_golden_axe)ftbfiltersystem:item(better_with_gold:greater_golden_hammer)ftbfiltersystem:item(better_with_gold:reinforced_greater_golden_hammer)ftbfiltersystem:item(better_with_gold:golden_scythe)ftbfiltersystem:item(better_with_gold:reinforced_golden_scythe))"}}
     rewards: [{item: minecraft:gold_block, count: 1}, {xp: 80}]
+
+  # ---- the band grows ----
+  - key: every_trade
+    title: "Every Trade Under One Banner"
+    subtitle: "A wall, a blade, a bow, a prayer and a storm."
+    icon: minecraft:blaze_rod
+    pos: [6, -2]
+    deps: [downed]
+    desc: |
+      Each trade has one trick, and uses it on its own. A &6Bulwark&r's &6Challenge&r turns everything within 8 blocks onto it for 6 seconds. A &6Skirmisher&r &6Whirls&r through everything close every 6 seconds. A &6Ranger&r looses a three-arrow &6Volley&r every 10. A &6Mender&r heals the worst-hurt ally every 3 seconds and pulls the downed up. An &6Arcanist&r's &6Arc Storm&r strikes everything around its target every 12.
+
+      &7Have one of each of the five trades march with you, together or in turn.&r
+    tasks: [{checkmark: "Bulwark, Skirmisher, Ranger, Mender and Arcanist have all marched with me"}]
+    rewards: [{table: paths_company_purse}, {xp: 150}]
+
+  - key: full_warband
+    title: "Six Swords"
+    subtitle: "The Company's limit. Also its comfort zone."
+    icon: minecraft:iron_sword
+    pos: [8, -2]
+    deps: [every_trade]
+    desc: |
+      A leader keeps &6six&r sellswords at most. Each rolls one or two &6traits&r: Steadfast, Swift, Brutal, Keen-eyed, Stalwart, Devoted, Lucky, Greedy, Hardy, Fearless or Merciful. Read them before you pay. A &6Greedy&r one costs 30% more and hits 10% harder, which is at least honest.
+
+      Sellswords wait by a village bell for about forty minutes before they drift off to find someone else's gold.
+
+      &7March with a full warband of six.&r
+    tasks: [{checkmark: "Six sellswords march with me"}]
+    rewards: [{item: minecraft:gold_ingot, count: 16}, {xp: 200}]
+
+  - key: formations
+    title: "Shield Wall"
+    subtitle: "Line, Wedge, Shield Wall, Circle."
+    icon: minecraft:white_banner
+    pos: [6, -0.25]
+    deps: [warbanner]
+    desc: |
+      On the wheel, &6Formation&r sets the shape: &6Line&r, &6Wedge&r, &6Shield Wall&r or &6Circle&r, around you, or around a planted Warbanner when the order is &6Guard banner&r. &eHold&r keeps them on one spot, &cCharge&r sends them at everything near you, &6Focus&r puts every blade on your target, and &7Fall back&r pulls them in for eight seconds of not swinging.
+
+      &7Plant the banner and hold a Shield Wall around it.&r
+    tasks: [{checkmark: "My band held a Shield Wall around the Warbanner"}]
+    rewards: [{table: paths_company_purse}, {xp: 80}]
+
+  - key: morale
+    title: "Inspired"
+    subtitle: "A band that's winning fights like it."
+    icon: minecraft:goat_horn
+    pos: [4, -3.5]
+    deps: [golden_fish]
+    desc: |
+      Every sellsword starts at 70 &6morale&r. At 80 or more it is &aInspired&r and hits 10% harder; at 25 or less it is &cShaken&r and hits 15% softer. A Golden Fish is worth 30. &6Devoted&r ones never drop below 40, &6Fearless&r ones lose nothing when a friend falls, and each piece of Reinforced Golden Armor you wear lifts the whole band's floor by 5.
+
+      &7Get a sellsword to Inspired. The roster (&eU&7) shows it.&r
+    tasks: [{checkmark: "One of my sellswords is Inspired"}]
+    rewards: [{item: better_with_gold:golden_fish, count: 2}, {xp: 80}]
+
+  - key: cod_order
+    title: "A Standing Order"
+    subtitle: "The Company eats gold. It starts with cod."
+    icon: minecraft:cooked_cod
+    pos: [2, -4.75]
+    deps: [golden_fish, n_coast/start]
+    desc: |
+      Every Golden Fish starts as a cooked cod, and a warband goes through them faster than Maren likes to admit. The coast's crab pots bring cod up by the dozen while you're away fighting. Set up a supply.
+
+      &o"Gold for the hire. Fish for the morale. Cod for the fish. Somebody always forgets the cod."&r &7— Maren&r
+
+      &7Have 16 cooked cod on hand.&r
+    tasks: [{item: minecraft:cooked_cod, count: 16}]
+    rewards: [{item: minecraft:gold_ingot, count: 16}, {xp: 80}]
+
+  # ---- the long road ----
+  - key: champion
+    title: "Champion"
+    subtitle: "Level 10. The Company starts using its name."
+    icon: minecraft:golden_sword
+    pos: [8, 1.5]
+    deps: [blooded, s1_act2_hunt/hunters_moon]
+    desc: |
+      Titles come every five levels: &aVeteran&r at 5, &9Champion&r at 10, &5Hero&r at 15, &6Legend&r at 20. Kills feed them, and bigger kills feed them more. A sellsword can't outgrow you, though: it never levels past your own RPG level.
+
+      &7Bring a sellsword to level 10.&r
+    tasks: [{checkmark: "One of my sellswords is a Champion (level 10)"}]
+    rewards: [{table: paths_company_purse}, {item: better_with_gold:golden_fish, count: 2}, {xp: 250}]
+
+  - key: legend
+    title: "&6Legend"
+    subtitle: "Level 20. The Company writes this one in ink."
+    icon: minecraft:golden_helmet
+    pos: [10, 1.5]
+    deps: [champion, s1_act2_hunt/sylvara]
+    desc: |
+      Twenty levels is as far as a sellsword goes. One that gets there has outlived a great many others. Its Chronicle reads like a saga by now: the oath, the first blood, the bosses, the friends it dragged back from the brink.
+
+      &7Bring a sellsword to level 20.&r
+    tasks: [{checkmark: "One of my sellswords is a Legend (level 20)"}]
+    rewards: [{table: paths_company_purse}, {item: minecraft:gold_block, count: 2}, {xp: 500}]
+
+  - key: final_blow
+    title: "The Final Blow"
+    subtitle: "Somebody else's name on the kill."
+    icon: minecraft:skeleton_skull
+    pos: [8, 3.25]
+    deps: [blooded, s1_act1_embers/dusk_rider]
+    desc: |
+      The Chronicle notices bosses: the Old Powers, and anything else with a hundred and fifty health or more. A sellsword that &6stands against one and lives&r gets a line for it. One that &6strikes the final blow&r gets a better line, and never lets anyone forget it.
+
+      Bring the band to a Sovereign's sigil or a Labyrinth's warden. Keep them standing. Let one of them have the kill.
+
+      &7Let a sellsword land the killing blow on a boss.&r
+    tasks: [{checkmark: "A sellsword's Chronicle says it struck the final blow on a boss"}]
+    rewards: [{table: paths_company_purse}, {xp: 200}]
+
+  # ---- more of the Gilded Regalia ----
+  - key: gilded_tools
+    title: "Gilded Tools"
+    subtitle: "Gold that doesn't bend."
+    icon: better_with_gold:reinforced_golden_pick_axe
+    pos: [0, 3]
+    deps: [template]
+    optional: true
+    desc: |
+      The template takes every golden tool too: sword, pickaxe, axe, shovel and hoe, each with an amethyst block. Reinforced gold keeps gold's speed and its love of enchantments, and lasts about fifty times as long.
+
+      &7Make a Reinforced Golden Sword and a Reinforced Golden Pick Axe.&r
+    tasks: [{item: better_with_gold:reinforced_golden_sword}, {item: better_with_gold:reinforced_golden_pick_axe}]
+    rewards: [{item: minecraft:amethyst_block, count: 2}, {xp: 80}]
+
+  - key: greater_reinforced
+    title: "Heavier Gold"
+    subtitle: "An argument, reinforced."
+    icon: better_with_gold:reinforced_greater_golden_hammer
+    pos: [6, 4.5]
+    deps: [gilded_arms, s1_act2_hunt/hunters_moon]
+    optional: true
+    desc: |
+      Put a greater weapon through the template with an amethyst block and it comes out &6Reinforced&r: the same tricks, harder hits, and real durability. The Reinforced Golden Scythe wants 10 points of Attack Power; the Reinforced Greater Axe and Hammer want 14.
+
+      &7Make any reinforced greater weapon.&r
+    tasks:
+      - title: "A reinforced greater golden axe, greater golden hammer or golden scythe"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(better_with_gold:reinforced_greater_golden_axe)ftbfiltersystem:item(better_with_gold:reinforced_greater_golden_hammer)ftbfiltersystem:item(better_with_gold:reinforced_golden_scythe))"}}
+    rewards: [{item: minecraft:amethyst_block, count: 2}, {table: paths_company_purse}, {xp: 150}]
+
+  # ---- the Company's due ----
+  - key: maze
+    title: "A Bounty on Wardens"
+    subtitle: "Six prisons. Maren pays per warden."
+    icon: minecraft:recovery_compass
+    pos: [10, -2]
+    deps: [full_warband, w_dungeons/labyrinths]
+    desc: |
+      Maren keeps a standing bounty on the Labyrinths' wardens, and you've put down all six. The band would like its share, and a go at the next one: there is always another Labyrinth. Plant the banner at the vault door, set the Bulwark in front, and let the Mender work.
+
+      &o"The Company was hired to clear a Labyrinth once. Twelve went in. The contract paid for twelve. We were very careful about the count."&r &7— Maren&r
+
+      &7Fight a Labyrinth's warden with your warband beside you.&r
+    tasks: [{checkmark: "My warband fought beside me against a Labyrinth's warden"}]
+    rewards: [{table: paths_company_purse}, {table: world_ash_spoils}, {xp: 300}]
+
+  - key: finale
+    title: "&eThe Second Ledger"
+    subtitle: "One for gold. One for names."
+    icon: better_with_gold:warbanner
+    pos: [12, 0]
+    deps: [maze, legend]
+    shape: gear
+    size: 2.0
+    desc: |
+      &o"The Company keeps two ledgers. One for gold, one for names. You've been in the first since the day you paid. Tonight we're writing you into the second."&r &7— Maren, Captain of the Ashen Company&r
+
+      A Legend under your banner, and a warband that walked into the Sovereigns' prisons and walked back out. The Company doesn't do oaths. It does this: your name in ink, beside the ones who stayed.
+
+      &7Read your Legend's Chronicle one more time.&r
+    tasks: [{checkmark: "I read my Legend's Chronicle"}]
+    rewards: [{table: paths_company_purse}, {item: minecraft:gold_block, count: 3}, {item: minecraft:golden_apple, count: 2}, {xp: 800}]

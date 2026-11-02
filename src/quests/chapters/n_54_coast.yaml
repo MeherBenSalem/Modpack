@@ -11,7 +11,7 @@ quests:
     subtitle: "Somebody out there is still writing."
     icon: fisherman_house:message_in_a_bottle
     pos: [0, 0]
-    deps: [h_hearth/coast]
+    deps: [h_hearth/coast, s1_act1_embers/kindle]
     shape: hexagon
     size: 1.5
     desc: |
@@ -224,6 +224,6 @@ quests:
 
       &o"He kept a light so the lost would know the way home. So did I. Neither of us did it for thanks."&r &7— the Keeper&r
 
-      &7Craft a Conduit. Further out, the Elder Guardian keeps an older light under the sea, and it is not a friendly one.&r
+      &7Craft a Conduit. Some drowned carry nautilus shells, and an ocean pot baited with Glow Bait brings them up. Further out, the Elder Guardian keeps an older light under the sea, and it is not a friendly one.&r
     tasks: [{item: minecraft:conduit}]
     rewards: [{table: hunters_spoils}, {item: minecraft:prismarine, count: 16}, {xp: 400}]

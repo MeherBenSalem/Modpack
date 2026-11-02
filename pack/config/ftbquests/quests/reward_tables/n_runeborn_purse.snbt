@@ -1,0 +1,62 @@
+{
+	icon: {
+		id: "runeborn:pilgrim_seal"
+	}
+	id: "0198F830C6B6DCAA"
+	loot_size: 1
+	order_index: 8
+	rewards: [
+		{
+			count: 3
+			id: "646BB50A6CC040FF"
+			item: {
+				count: 1
+				id: "runeborn:faded_rune"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "3BC77A4E61244BBD"
+			item: {
+				count: 1
+				id: "runeborn:lustrous_rune"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 3
+			id: "3C2C377FD74424FB"
+			item: {
+				count: 1
+				id: "runeborn:tempering_stone_2"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "1A07242411479A91"
+			item: {
+				count: 1
+				id: "runeborn:blank_whetstone"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 3
+			id: "1B75D650796EC61F"
+			item: {
+				count: 1
+				id: "minecraft:glistering_melon_slice"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 3
+			id: "2D2D9B45619B0F7F"
+			item: {
+				count: 1
+				id: "minecraft:blaze_powder"
+			}
+			weight: 2.0f
+		}
+	]
+}

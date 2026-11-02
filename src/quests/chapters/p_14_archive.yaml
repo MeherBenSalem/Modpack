@@ -289,3 +289,184 @@ quests:
       &o"You collect ruins. I collect befores. Between us we might have one whole world."&r &7— Oren&r
     tasks: [{advancement: "tbos:expedition/storied"}]
     rewards: [{table: paths_archive_cache}, {item: runeborn:radiant_rune}, {xp: 400}]
+
+  # ---- deeper: materials, waystones, the far floors (the roguelite loop, past the first Remember) ----
+  - key: salvage
+    title: "What the Shrines Are Made Of"
+    subtitle: "Bronze, stone and lenswork, if you don't mind a ruin with a hole in it."
+    icon: tbos:chronicle_bronze
+    pos: [20.5, 5]
+    deps: [memory_key]
+    desc: |
+      The three Fracture Shrines aren't sealed the way the Meridian Archive's chambers are. Their walls are &6Archive Stone&r, their fittings &6Chronicle Bronze&r, with Yesterglass and &6Lenswork Crystal&r set into them, and all of it comes away under a pickaxe. The Archive's own caches pay Lenswork Crystal too.
+
+      &o"Take what you need from the shrines. They were only ever signposts."&r &7— Oren&r
+
+      &7Salvage three Archive Stone, a Chronicle Bronze and a Lenswork Crystal.
+    tasks: [{item: tbos:archive_stone, count: 3}, {item: tbos:chronicle_bronze}, {item: tbos:lenswork_crystal}]
+    rewards: [{item: tbos:chronicle_shard, count: 2}, {xp: 100}]
+
+  - key: waystone
+    title: "A Waystone at Last Light"
+    subtitle: "Bring the Archive's door home."
+    icon: tbos:waystone
+    pos: [22.5, 5]
+    deps: [salvage]
+    desc: |
+      A &6Waystone&r is Chronicle Bronze over a Lenswork Crystal in a frame of Archive Stone. Set one at Last Light and a Memory Key turns there, not just at the Curator Gateway.
+
+      Some floors of the Archive hold a Waystone room. Touch it and the Archive holds that floor for you; any Waystone at home sends you back to the last floor you bound.
+
+      &7Craft a Waystone.
+    tasks: [{item: tbos:waystone}]
+    rewards: [{item: tbos:memory_key}, {xp: 150}]
+
+  - key: cantor_sigils
+    title: "Proof of the Refrain"
+    subtitle: "One sigil for every floor you finished."
+    icon: tbos:cantor_sigil
+    pos: [22.5, 2.75]
+    deps: [remember, n_spoils/opener]
+    desc: |
+      A &6Cantor Sigil&r is the Archive's receipt: proof that a floor's last refrain was silenced. The &6Cantor Cache&r behind each floor boss rolls for every member of the party, like a loot bag that knows your name, and a sigil is always in it.
+
+      Oren keeps them in a drawer marked &o"evidence"&r. He won't say of what.
+
+      &7Hold five Cantor Sigils.
+    tasks: [{item: tbos:cantor_sigil, count: 5}]
+    rewards: [{table: p_archive_recollection}, {xp: 250}]
+
+  - key: recalled_hours
+    title: "Borrowed Time"
+    subtitle: "An hour the Archive forgot to file."
+    icon: tbos:recalled_hour
+    pos: [26.5, -3.5]
+    deps: [forget]
+    desc: |
+      A &6Recalled Hour&r used during a run gives the party back one shared revive. The Cantor Cache behind each floor boss pays one, and lesser wardens and buried rooms sometimes do.
+
+      Forgetting is cheaper when you carry spare hours.
+
+      &7Carry three Recalled Hours at once.
+    tasks: [{item: tbos:recalled_hour, count: 3}]
+    rewards: [{item: tbos:chronicle_shard, count: 3}, {xp: 150}]
+
+  - key: momentum
+    title: "No Turning Back"
+    subtitle: "Bank at double, or don't bank at all."
+    icon: tbos:collapsing_meridian
+    pos: [26.5, -1.5]
+    deps: [forget, n_measure/first_point]
+    desc: |
+      &6Momentum&r starts at ×1.00 and every Forget adds a quarter to the whole Recollection. Somewhere down there it reaches ×2.00. A wipe at ×2.00 loses twice as much, which is what makes it worth it.
+
+      When you Remember, a quarter of the Renown comes home as &6Valor&r for your &eK&r screen. A deep Remember is a level or two you never had to hunt for.
+
+      &7Remember an expedition with Momentum ×2.00 or more.
+    tasks: [{advancement: "tbos:expedition/momentum"}]
+    rewards: [{table: p_archive_recollection}, {xp: 300}]
+
+  - key: cantor
+    title: "&cThe Cantor's Labyrinth"
+    subtitle: "Its pendulum swings tighter before the refrain."
+    icon: tbos:cantor_gate
+    pos: [28.5, -1.5]
+    deps: [momentum, recalled_hours]
+    shape: gear
+    desc: |
+      The floors cycle through eight recollections, and one of them is the &6Cantor's Labyrinth&r: Metronome Hounds that bite on the beat, Labyrinth Ushers that show one way and never the way out, and at the heart of it the &cHour Cantor&r, keeping time in a cage.
+
+      &o"Watch the chest, not the bar."&r &7— the Archive Codex&r
+
+      &7Reach the Labyrinth and silence the Hour Cantor.
+    tasks: [{kill: tbos:hour_cantor}]
+    rewards: [{table: p_archive_recollection}, {item: runeborn:radiant_rune}, {xp: 600}]
+
+  - key: unwritten
+    title: "The Unwritten Hour"
+    subtitle: "The last minute of the day, wearing a body."
+    icon: tbos:ink_pool
+    pos: [30.5, -3.25]
+    deps: [cantor]
+    optional: true
+    desc: |
+      Deeper still, the floors stop being remembered and start being made up: the &6Unwritten Hour&r, where Blank Chronists write on whatever they touch and ink pools where the floor should be. Its keeper is the &cHour-Hand Wraith&r, which sweeps a room the way a hand sweeps a dial.
+
+      &7Slay the Hour-Hand Wraith.
+    tasks: [{kill: tbos:hour_hand_wraith}]
+    rewards: [{table: p_archive_recollection}, {xp: 600}]
+
+  - key: hourglass
+    title: "Against the Sand"
+    subtitle: "Eight minutes a floor."
+    icon: minecraft:clock
+    pos: [26.5, 0.75]
+    deps: [relic]
+    desc: |
+      Attune a key with the &cHourglass&r Distortion and every floor runs on an eight-minute timer. Beat the floor boss in time for an extra key tier and a quarter more Renown. A Remnant relic signed &6Yesterglass&r adds five seconds for every kill; the &6Hourglass Mastery&r Insight adds a minute per rank.
+
+      &7Defeat a floor boss before the Hourglass runs out.
+    tasks: [{advancement: "tbos:expedition/hourglass"}]
+    rewards: [{item: tbos:recalled_hour}, {xp: 300}]
+
+  - key: fractured
+    title: "Fractured"
+    subtitle: "Tier plus Heat. Fifteen or more."
+    icon: tbos:cracked_archive_stone
+    pos: [28.5, 0.75]
+    deps: [hourglass, storied]
+    desc: |
+      &6Fracture&r is the key's tier plus its &cHeat&r, one Heat for every Distortion you switch on, and every point of Heat adds fifteen percent to the Renown you earn. Fortified and Tyrannical make things sturdier, Volatile and Haunted make them meaner, Frailty takes a revive and Amnesia takes a choice.
+
+      &o"A memory under pressure tells you more. It also bites."&r &7— Oren&r
+
+      &7Remember an expedition at Fracture 15 or higher.
+    tasks: [{advancement: "tbos:expedition/fractured"}]
+    rewards: [{table: p_archive_recollection}, {xp: 500}]
+
+  - key: know_archive
+    title: "Know the Archive"
+    subtitle: "Twenty-three pages, sealed until you earn them."
+    icon: tbos:false_shelf
+    pos: [24.5, 5]
+    deps: [storied]
+    optional: true
+    desc: |
+      The Codex's &6Bestiary&r (&eY&r) keeps a page for every Archive creature: the five that roam every floor, the sixteen that belong to one recollection each, the Minotaur and the Last Curator. Each page stays sealed until you kill what's on it.
+
+      &7Record every creature in the Bestiary.
+    tasks: [{advancement: "tbos:expedition/know_the_archive"}]
+    rewards: [{table: p_archive_recollection}, {item: runeborn:heros_rune}, {xp: 800}]
+
+  - key: fellowship
+    title: "Fellowship of the Archive"
+    subtitle: "Four Ashborn, one pool of revives."
+    icon: tbos:resonance_lamp
+    pos: [26.5, 5]
+    deps: [storied]
+    optional: true
+    desc: |
+      A party is up to four Ashborn: &e/party create&r, &e/party invite&r, &e/party accept&r. Everyone within 24 blocks of the key goes in. Revives are shared, loot and Recollections stay personal, and the &6Party Bond&r Insight softens every blow for each friend close by.
+
+      &o"The Ashen Company would charge you for this. I only ask that you write it down."&r &7— Oren&r
+
+      &7Remember an expedition with a party of four.
+    tasks: [{advancement: "tbos:expedition/fellowship"}]
+    rewards: [{table: p_archive_recollection}, {xp: 500}]
+
+  - key: finale
+    title: "&e&lThe Last Key"
+    subtitle: "Tier twenty. The Archive has nothing harder to show you."
+    icon: tbos:memory_key
+    pos: [31, -0.4]
+    deps: [cantor, fractured]
+    shape: gear
+    size: 2.0
+    desc: |
+      Every Remember hands back a key a few tiers higher, up to &6tier 20&r: enemies with nearly three times their health and twice their bite. That deep, the floors are mostly the Archive's guesses about what used to be there.
+
+      &o"We filed a day that never ended, and you have walked every page of it with your name intact. The catalogue is finished. Now I want to know whether the black sun keeps an archive too."&r &7— Oren, the Archivist&r
+
+      &7Remember a tier 20 expedition.
+    tasks: [{advancement: "tbos:expedition/last_key"}]
+    rewards: [{table: sovereign_tribute}, {table: p_archive_recollection}, {item: runeborn:heros_rune, count: 2}, {xp: 2000}]

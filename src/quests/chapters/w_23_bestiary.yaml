@@ -340,7 +340,7 @@ quests:
       - {kill: "remnants:relic_stalker"}
     rewards: [{table: world_eclipse_spoils}, {xp: 800}]
 
-  # ---- NightBeam: Genetically Modified Monsters ----
+  # ---- NightBeam: Spore & Stem (the fungal dead) ----
   - key: wrongborn
     title: "&aThe Rot That Walks"
     subtitle: "The dead feed the caps. The caps get up."
@@ -367,7 +367,7 @@ quests:
     deps: [wrongborn]
     optional: true
     desc: |
-      The &cSporemaw&r lurks where the caps grow thickest and breathes Mycosis at anything that comes close. The Huntmaster pays well for one that dies before it exhales.
+      The &cSporemaw&r waits burrowed where the caps grow thickest and lobs arcing &cSpore Globs&r at anything that comes close. Hit it three times and it burrows away to try again somewhere else. The Huntmaster pays well for one that stays dead.
 
       &7Kill a Sporemaw. An &6Antifungal Tonic&7 clears Mycosis if it catches you.
     tasks:

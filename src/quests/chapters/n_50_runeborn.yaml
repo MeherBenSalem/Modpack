@@ -1,0 +1,323 @@
+chapter: n_runeborn
+group: chronicles
+order: 50
+title: "&dRuneborn"
+subtitle: "Runes, steel and the shrines that hold them. A pilgrim who remembers every armament's first hand."
+icon: runeborn:ember_shrine
+quests:
+  # ---- the pilgrim ----
+  - key: start
+    title: "&dRuneborn"
+    subtitle: "The heralds had a word for people like you."
+    icon: runeborn:pilgrim_seal
+    pos: [0, 0]
+    deps: [s1_act1_embers/kindle]
+    shape: hexagon
+    size: 1.75
+    desc: |
+      The Sun-Crown's heralds called anyone who carried runes &6Runeborn&r: a body holding light that isn't its own. Most of them are Remnants now. You are not, yet.
+
+      A pilgrim has been sleeping beside your shrine. &6Odile&r walks from fire to fire with a shrine strapped to her back, and she remembers whose hand first closed on every armament in the world.
+
+      &o"A shrine you can carry is a home you can't lose. Build one. Then we'll talk about your steel."&r &7— Odile, the Pilgrim&r
+
+      &7Craft a spare &6Ember Shrine&7 and keep it in your pack: a campfire, two gold ingots, blaze powder and three polished deepslate.
+    tasks: [{item: runeborn:ember_shrine}]
+    rewards: [{item: minecraft:blaze_powder, count: 3}, {table: n_runeborn_purse}, {xp: 80}]
+
+  # ---- runes and levelling ----
+  - key: runes
+    title: "A Purse of Light"
+    subtitle: "Faded, Lustrous, Radiant, Hero's, Sovereign."
+    icon: runeborn:lustrous_rune
+    pos: [2.5, -5]
+    deps: [start]
+    desc: |
+      Runes come as coin as well as light. A &6Faded Rune&r is worth 200, a &6Lustrous&r 1,000, a &6Radiant&r 4,000, a &6Hero's&r 12,000 and a &6Sovereign Rune&r 40,000. Every shrine level costs more than the last, so the coin only grows more useful.
+
+      &o"Light in your pocket is a promise. Light in your blood is a target."&r &7— Odile&r
+
+      &7Hold three Faded Runes and a Lustrous Rune at once. Bags, champions, the Keeper and every RPG level pay them. Crush them at a shrine, right before you level.
+    tasks: [{item: runeborn:faded_rune, count: 3}, {item: runeborn:lustrous_rune}]
+    rewards: [{item: runeborn:faded_rune, count: 2}, {xp: 60}]
+
+  - key: rebirth
+    title: "Born Anew"
+    subtitle: "Same level. Different person."
+    icon: runeborn:rebirth_tear
+    pos: [4.5, -6.5]
+    deps: [runes, s1_act1_embers/dusk_rider]
+    desc: |
+      A &6Tear of Rebirth&r lets the shrine pour every point you've spent back into your hands. Your rune level stays; only where it sits changes. Drink it the day your new blade wants Dexterity and you bought Strength.
+
+      Champions rarely carry one. A felled Sovereign leaves one about half the time, and Legendary bags hide them too.
+
+      &7Open &6Rebirth&7 at a shrine with a Tear in your pack and reassign your points. It redraws your eight shrine attributes, not your &eK&7 screen.
+    tasks: [{advancement: "runeborn:feats/rebirth"}]
+    rewards: [{item: runeborn:lustrous_rune, count: 2}, {xp: 150}]
+
+  - key: heros_rune
+    title: "A Hero's Wage"
+    subtitle: "Twelve thousand runes in one hand."
+    icon: runeborn:heros_rune
+    pos: [6.5, -5]
+    deps: [runes, s1_act4_ash/morgrath]
+    desc: |
+      From level fifty up, a crowned thing pays in &6Hero's Runes&r: twelve thousand each, enough to make a shrine level feel cheap again. Legendary and Mythic bags carry them too.
+
+      &o"Morgrath burned a kingdom for less."&r &7— Odile&r
+
+      &7Hold a Hero's Rune.
+    tasks: [{item: runeborn:heros_rune}]
+    rewards: [{item: runeborn:radiant_rune, count: 2}, {xp: 300}]
+
+  # ---- what the Sovereigns leave: flasks, tears, shards, relics ----
+  - key: flasks
+    title: "Two Flasks, One Fire"
+    subtitle: "Health or focus. Decide before the fight."
+    icon: runeborn:ember_flask
+    pos: [2.5, -3]
+    deps: [start]
+    desc: |
+      Every charge you own is split between two flasks, and the shrine's &6Flasks&r service sets the split. All Ember for a blade that never casts. Two or three Azure for anyone who leans on arts. Half and half for a sorcerer who would still rather not be hit.
+
+      Rest, and every charge comes back. Change the split at any shrine, as often as the road changes.
+
+      &7Brew both: an &6Ember Flask&7 (glass bottle, blaze powder, glistering melon slice) and an &bAzure Flask&7 (glass bottle, lapis lazuli, amethyst shard).
+    tasks: [{item: runeborn:ember_flask}, {item: runeborn:azure_flask}]
+    rewards: [{item: minecraft:glistering_melon_slice, count: 2}, {item: minecraft:lapis_lazuli, count: 6}, {xp: 60}]
+
+  - key: tears
+    title: "Hallowed Tears"
+    subtitle: "A dying Sovereign's last kindness."
+    icon: runeborn:hallowed_tear
+    pos: [4.5, -3]
+    deps: [flasks, s1_act2_hunt/sylvara]
+    desc: |
+      A &6Hallowed Tear&r is crystallised from something that wore a crown and died. Use one and every sip from both flasks grows stronger, up to twelve times over.
+
+      Every Sovereign and Old Power leaves one. Champions carry them rarely, Legendary and Mythic bags more often.
+
+      &o"Don't ask whose tears. Drink."&r &7— Odile&r
+
+      &7Hold three Hallowed Tears at once, then use them.
+    tasks: [{item: runeborn:hallowed_tear, count: 3}]
+    rewards: [{item: minecraft:glistering_melon_slice, count: 4}, {xp: 200}]
+
+  - key: blessings
+    title: "One Shard at a Time"
+    subtitle: "Six crowns, six blessings. Wear the one the road needs."
+    icon: runeborn:crown_shard_kaelthar
+    pos: [6.5, -3]
+    deps: [tears, s1_act2_hunt/crown]
+    desc: |
+      A claimed &6Crown Shard&r stays claimed; any shrine lets you choose which one to wear. Choose for the road ahead.
+
+      &6Sylvara's&r (+15% health, no frostbite) for the Rime Veil. &6Kaelthar's&r (+20% lightning, faster stamina) for a Lightning blade. &6Ysolde's&r heals you on every kill and every bleed. &6Morgrath's&r (+15% physical) makes you immune to fire: wear it in the Ashlands. &6Vaelorn's&r cuts spell costs by a fifth and doubles focus recovery. &6Varghast's&r +5 to everything never hurts, and the Dragon's adds a tenth to all damage.
+
+      &7Equip a shard at a shrine's &6Crown Shards&7 service and take it into the fight it suits.
+    tasks: [{checkmark: "I wore a crown shard into the fight it suits"}]
+    rewards: [{table: n_runeborn_purse}, {xp: 150}]
+
+  - key: relic
+    title: "The Dragon's Relic"
+    subtitle: "The Old Power at the world's end kept one too."
+    icon: runeborn:relic_ender_dragon
+    pos: [8.5, -3]
+    deps: [blessings, s1_act4_ash/dragon]
+    desc: |
+      The Smith's ledger lists every relic but one. The &6Relic of the Ender Dragon&r becomes the &6Lunar Bloomfang&r, a greatsword that blooms only under a full moon and looses a crescent of moonlight (&6Lunar Wave&r), or the &6Abyssal Scepter&r, a staff whose &bAbyssal Ray&r pierces everything in its line.
+
+      &o"It was there before the Crown. Its steel will be there after you."&r &7— Odile&r
+
+      &7Exchange the Dragon's relic at a shrine's &6Relics&7 service for either armament.
+    tasks:
+      - title: "The Lunar Bloomfang or the Abyssal Scepter"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:lunar_bloomfang)ftbfiltersystem:item(runeborn:abyssal_scepter))"}}
+    rewards: [{item: runeborn:lustrous_stone_8, count: 2}, {xp: 500}]
+
+  # ---- armaments, arts and spells ----
+  - key: armament
+    title: "&dSeventy-Four Owners"
+    subtitle: "Common, Rare, Epic, Legendary. Only two of those are for sale."
+    icon: runeborn:errant_longsword
+    pos: [2.5, 0]
+    deps: [start, n_measure/first_point]
+    shape: hexagon
+    size: 1.5
+    desc: |
+      Seventy-four &6armaments&r in nineteen classes, and Odile can name the first hand on every one. &7Common&r and &9Rare&r steel rides with &6champions&r (about one in eight drops one) and sits on the shrine &6Merchant's&r shelf: every Common from your first shrine, every Rare once a Sovereign has fallen. &5Epic&r and &6Legendary&r steel comes only from &6relics&r.
+
+      Your &eK&r screen builds the body. The shrine's eight attributes decide which steel that body can lift. Read the requirements before you pay twelve thousand runes for a Rare you can't swing.
+
+      &7Hold any Rare armament.
+    tasks:
+      - title: "Any Rare armament"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:starshard_kris)ftbfiltersystem:item(runeborn:venomfang_stiletto)ftbfiltersystem:item(runeborn:ossuary_blade)ftbfiltersystem:item(runeborn:emberbrand)ftbfiltersystem:item(runeborn:rimeguard_sword)ftbfiltersystem:item(runeborn:thornspur_rapier)ftbfiltersystem:item(runeborn:fangtooth_cleaver)ftbfiltersystem:item(runeborn:magma_falchion)ftbfiltersystem:item(runeborn:longfang_nodachi)ftbfiltersystem:item(runeborn:mistveil_katana)ftbfiltersystem:item(runeborn:hollow_monk_staff)ftbfiltersystem:item(runeborn:banneret_greatsword)ftbfiltersystem:item(runeborn:hellbrand)ftbfiltersystem:item(runeborn:rimebite_axe)ftbfiltersystem:item(runeborn:ravager_greataxe)ftbfiltersystem:item(runeborn:stoneheart_maul)ftbfiltersystem:item(runeborn:hallowed_lance)ftbfiltersystem:item(runeborn:winters_hook)ftbfiltersystem:item(runeborn:thornlash)ftbfiltersystem:item(runeborn:stormglass_rod)ftbfiltersystem:item(runeborn:crystal_spire_staff)ftbfiltersystem:item(runeborn:gravebound_staff)ftbfiltersystem:item(runeborn:golden_rite_seal)ftbfiltersystem:item(runeborn:flame_prayer_seal))"}}
+    rewards: [{item: runeborn:tempering_stone_2, count: 4}, {table: n_runeborn_purse}, {xp: 150}]
+
+  - key: arts
+    title: "Fire and Frost on R"
+    subtitle: "Some steel carries an art that isn't its class's."
+    icon: runeborn:emberbrand
+    pos: [4.5, 0]
+    deps: [armament]
+    desc: |
+      Most armaments share their class's art. A few were forged around their own. &6Ember Cleave&r leaves a wake of fire behind the swing: the &6Emberbrand&r, the &6Magma Falchion&r and the &6Hellbrand&r carry it. &6Rimefrost Stomp&r freezes everything it touches: the &6Rimeguard Sword&r and the &6Rimebite Axe&r.
+
+      Arts cost &bFP&r, and an empty blue bar is a dead art. Points in &bMind&r and a charge or two in the &bAzure Flask&r keep it ready when the door opens.
+
+      &7Hold an armament that carries Ember Cleave or Rimefrost Stomp.
+    tasks:
+      - title: "An armament with Ember Cleave or Rimefrost Stomp"
+        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:emberbrand)ftbfiltersystem:item(runeborn:magma_falchion)ftbfiltersystem:item(runeborn:hellbrand)ftbfiltersystem:item(runeborn:ashen_greatsword)ftbfiltersystem:item(runeborn:rimeguard_sword)ftbfiltersystem:item(runeborn:rimebite_axe)ftbfiltersystem:item(runeborn:rimeveil))"}}
+    rewards: [{item: minecraft:lapis_lazuli, count: 8}, {item: runeborn:tempering_stone_2, count: 2}, {xp: 120}]
+
+  - key: sorcery
+    title: "Three Sorceries"
+    subtitle: "Storm, stars and weight."
+    icon: runeborn:crystal_spire_staff
+    pos: [6.5, -1]
+    deps: [arts]
+    optional: true
+    desc: |
+      A staff casts the one &bsorcery&r bound into it, paid in FP and scaling with &bIntelligence&r. Fall short of its requirement and the spell won't come at all.
+
+      The &6Stormglass Rod's&r &bStorm Bolt&r leaps between three foes. The &6Crystal Spire Staff&r looses a &bStarshard Barrage&r of five. The &6Gravebound Staff&r drops a &bGravity Orb&r that crushes a crowd. All three are Rare: the Merchant's catalyst shelf, or a champion's pack.
+
+      &7Hold all three staves.
+    tasks: [{item: runeborn:stormglass_rod}, {item: runeborn:crystal_spire_staff}, {item: runeborn:gravebound_staff}]
+    rewards: [{item: minecraft:amethyst_shard, count: 8}, {item: minecraft:lapis_lazuli, count: 8}, {xp: 200}]
+
+  - key: incantation
+    title: "Prayers for the Road"
+    subtitle: "One that mends, one that burns."
+    icon: runeborn:golden_rite_seal
+    pos: [6.5, 1]
+    deps: [arts]
+    optional: true
+    desc: |
+      A sacred seal casts its &eincantation&r with &eFaith&r. Odile's own &6Pilgrim's Seal&r calls down &eBlessed Flame&r; she says it was worn smooth by a thousand prayers, and most of them were for rain.
+
+      The &6Seal of the Golden Rite&r casts &eMending Light&r, healing you and everyone beside you. The &6Flame Prayer Seal&r raises a &ePillar of Flame&r under your foe. Both are Rare.
+
+      &7Hold both seals.
+    tasks: [{item: runeborn:golden_rite_seal}, {item: runeborn:flame_prayer_seal}]
+    rewards: [{item: minecraft:golden_carrot, count: 8}, {item: minecraft:glistering_melon_slice, count: 2}, {xp: 150}]
+
+  - key: both_dusk
+    title: "Both Halves of Dusk"
+    subtitle: "One relic, two armaments. Ask him twice."
+    icon: runeborn:sunlit_sword
+    pos: [4.5, 2]
+    deps: [armament, s1_act1_embers/dusk_rider]
+    optional: true
+    desc: |
+      A relic becomes one armament, and the other is gone with it. Unless its Sovereign comes back. The Dusk Rider always does: craft his sigil again, or wait for one of the nights he rides on his own.
+
+      &o"The glaive for the road, the sword for the dawn. He carried both, once."&r &7— Odile&r
+
+      &7Hold the &6Duskrider Glaive&7 and the &6Sunlit Sword&7 at once.
+    tasks: [{item: runeborn:duskrider_glaive}, {item: runeborn:sunlit_sword}]
+    rewards: [{item: runeborn:lustrous_stone_2, count: 2}, {xp: 250}]
+
+  # ---- whetstones and infusion ----
+  - key: whetstones
+    title: "Heavy, Keen, Quality"
+    subtitle: "Three ways to sharpen the same steel."
+    icon: runeborn:keen_whetstone
+    pos: [2.5, 4]
+    deps: [armament]
+    desc: |
+      Infusion doesn't add to an armament. It moves the weight. &7Heavy&r pushes it onto &6Strength&r, &aKeen&r onto &6Dexterity&r, and &6Quality&r leans on both a little harder than standard steel does.
+
+      A &6Blank Whetstone&r is two smooth stone slabs and a flint, or eight Remnant Shards to the Smith. Then an iron block for Heavy, flint and a feather for Keen, an iron ingot and a gold ingot for Quality.
+
+      &7Make all three physical whetstones.
+    tasks: [{item: runeborn:heavy_whetstone}, {item: runeborn:keen_whetstone}, {item: runeborn:quality_whetstone}]
+    rewards: [{item: runeborn:blank_whetstone, count: 2}, {xp: 100}]
+
+  - key: infusion
+    title: "&dSteel That Remembers Fire"
+    subtitle: "Trade a quarter of the edge for an element."
+    icon: runeborn:lightning_whetstone
+    pos: [4.5, 4]
+    deps: [whetstones, s1_act1_embers/dusk_rider]
+    shape: hexagon
+    size: 1.5
+    desc: |
+      An elemental affinity gives up about a quarter of the physical damage for an element and a new attribute to feed. &bMagic&r and &bCold&r answer &bIntelligence&r, and Cold builds frostbite too. &6Fire&r stays with Strength. &6Flame Art&r and &fSacred&r answer &eFaith&r. &eLightning&r answers Dexterity.
+
+      Infusing costs a thousand runes at a shrine and keeps the whetstone, so re-infuse whenever your build changes. Unique armaments never take a stone.
+
+      &7Make a Magic (lapis block), a Lightning (lightning rod) and a Sacred (golden apple) whetstone. Cold wants blue ice; Fire and Flame Art want the Nether.
+    tasks: [{item: runeborn:magic_whetstone}, {item: runeborn:lightning_whetstone}, {item: runeborn:sacred_whetstone}]
+    rewards: [{item: runeborn:blank_whetstone, count: 2}, {item: runeborn:tempering_stone_3, count: 2}, {xp: 200}]
+
+  - key: arcane
+    title: "Blood, Venom and the Occult"
+    subtitle: "Arcane's three whetstones."
+    icon: runeborn:occult_whetstone
+    pos: [6.5, 4]
+    deps: [infusion, s1_act3_deep/ysolde]
+    desc: |
+      Three affinities answer &dArcane&r. &cBlood&r teaches any blade to bleed its target, &2Poison&r teaches it venom, and &dOccult&r gives up almost nothing and feeds whatever status the steel already builds.
+
+      Ysolde bled her garden for centuries and never ran dry. Odile says that is all Arcane is: patience with a knife.
+
+      &7Make a Blood (redstone block, nether wart), a Poison (spider eye, fermented spider eye) and an Occult (echo shard) whetstone. The Merchant stocks all three once enough Sovereigns have fallen.
+    tasks: [{item: runeborn:blood_whetstone}, {item: runeborn:poison_whetstone}, {item: runeborn:occult_whetstone}]
+    rewards: [{item: runeborn:lustrous_stone_3, count: 2}, {xp: 300}]
+
+  # ---- tempering ----
+  - key: tempering
+    title: "&dTwelve to a Grade"
+    subtitle: "Two stones, then four, then six."
+    icon: runeborn:tempering_stone_3
+    pos: [2.5, 6.5]
+    deps: [start, n_spoils/opener]
+    shape: hexagon
+    size: 1.5
+    desc: |
+      Each grade of &6Tempering Stone&r carries three steps, and each step eats more than the last: two stones, then four, then six. Twelve to a grade, eight grades, and a Sovereign's stone for &6+25&r. The runes climb with every plus.
+
+      The bags pay by tier: Common I, Uncommon II and III, Rare III and IV, Epic V and VI, Legendary VII and VIII. Champions drop two to four, Sovereigns six. The Merchant sells I and II from the start and one grade more for each Sovereign you fell, up to V. The Smith trades II for iron and IV for diamonds, and every fifth RPG level pays one.
+
+      &7Hold a full grade: twelve Tempering Stone III.
+    tasks: [{item: runeborn:tempering_stone_3, count: 12}]
+    rewards: [{item: runeborn:tempering_stone_4, count: 4}, {table: n_runeborn_purse}, {xp: 200}]
+
+  - key: deep_stones
+    title: "The Deep Grades"
+    subtitle: "Morgrath pays in stone."
+    icon: runeborn:tempering_stone_7
+    pos: [6.5, 6.5]
+    deps: [tempering, s1_act4_ash/morgrath]
+    desc: |
+      The last grades sit on no shelf. A Sovereign leaves six tempering stones and two lustrous stones of its own weight: &6Morgrath&r pays &6VII&r and &6V&r, &6Vaelorn&r VIII and VII, the Dragon VIII and VIII. Legendary bags carry tempering VII and VIII.
+
+      Unique steel climbs another way: one &6Lustrous Stone&r a step, I through IX, and a Sovereign Lustrous Stone for &6+10&r. Fewer stones, far more runes.
+
+      &7Hold six Tempering Stone VII and two Lustrous Stone V.
+    tasks: [{item: runeborn:tempering_stone_7, count: 6}, {item: runeborn:lustrous_stone_5, count: 2}]
+    rewards: [{item: runeborn:tempering_stone_8, count: 3}, {xp: 400}]
+
+  # ---- finale ----
+  - key: finale
+    title: "&d&lMasterwork, Twice Over"
+    subtitle: "One crowned stone for each kind of steel."
+    icon: runeborn:sovereign_tempering_stone
+    pos: [10, 0.5]
+    deps: [deep_stones, arcane, relic, heros_rune, s1_act4_ash/vaelorn]
+    shape: gear
+    size: 2.0
+    desc: |
+      Odile has walked to every shrine still burning, and she says there is one thing left she wants to see: someone carrying both crowned stones at once.
+
+      A &6Sovereign Tempering Stone&r takes standard steel from +24 to &6+25&r; a &6Sovereign Lustrous Stone&r takes unique steel from +9 to &6+10&r. Only crowned things of level fifty and up leave the first (Morgrath, the Wither, Vaelorn, the Dragon), only Vaelorn and the Dragon the second, and Mythic bags carry both.
+
+      &o"The last shrine isn't in this world. Under the black sun they call them graces. I'll meet you at one."&r &7— Odile&r
+
+      &7Hold a Sovereign Tempering Stone and a Sovereign Lustrous Stone at once.
+    tasks: [{item: runeborn:sovereign_tempering_stone}, {item: runeborn:sovereign_lustrous_stone}]
+    rewards: [{table: sovereign_tribute}, {item: runeborn:heros_rune, count: 2}, {xp: 1500}]

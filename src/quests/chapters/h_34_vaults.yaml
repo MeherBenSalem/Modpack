@@ -522,7 +522,7 @@ quests:
     title: "Range"
     subtitle: "Thirty-two blocks is not a kingdom."
     icon: omnivault:wireless_transmitter
-    pos: [14, 0]
+    pos: [16, 0]
     deps: [wireless]
     desc: |
       Sneak-use a Wireless Terminal on the Nexus Core to link it; it reaches thirty-two blocks from the core. A &6Wireless Transmitter&r (an ender pearl, a lightning rod, Omnium and an Advanced Processor) reaches sixty-four, and every &6Range Upgrade&r (a Blank Upgrade Card, an ender pearl and amethyst) forty-eight more, up to four.
@@ -535,7 +535,7 @@ quests:
     title: "&5Two Places, One Vault"
     subtitle: "Range ends. Bridges don't."
     icon: omnivault:quantum_bridge
-    pos: [16, 1.75]
+    pos: [16, 3.75]
     deps: [quantum, transmitter, s1_forge/eclipse_core]
     desc: |
       A &6Quantum Bridge&r is four echo shards, two Quantum Processors, two ender chests, a Block of Omnium and an &5Eclipse Core&r. Use a &6Quantum Link Card&r on one bridge, then on the other, and the network runs through the pair across any distance and between worlds while both are loaded: a Nether outpost on your main vault, a camp under the black sun wired to Last Light.
@@ -564,7 +564,7 @@ quests:
     title: "&6The Vault That Thinks"
     subtitle: "Sixteen crafts a cycle, and a crown's worth of ledgers."
     icon: omnivault:quantum_assembler
-    pos: [17, 5.25]
+    pos: [18, 5.5]
     deps: [autocraft, quantum_bridge, quantum_wireless]
     shape: gear
     size: 2.0
@@ -577,4 +577,4 @@ quests:
 
       &7Build a Quantum Assembler.
     tasks: [{item: omnivault:quantum_assembler}]
-    rewards: [{table: sovereign_tribute}, {xp: 2000}]
+    rewards: [{table: vaults_quartermaster}, {item: omnivault:omnium_block, count: 2}, {xp: 2000}]

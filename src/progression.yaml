@@ -110,6 +110,12 @@ edits:
     map: {minecraft:chest: sophisticatedbackpacks:backpack, minecraft:string: omnivault:logic_processor}
   - id: omnivault:copper_vault
     map: {minecraft:chest: sophisticatedstorage:chest}
+  # Storage matrices take four of the size below at every step, so an alloy in each one compounds into thousands
+  # of ingots by 16M. The processors carry the tier gate; the matrices go back to plain metals.
+  - match: "^omnivault:storage_matrix_(16k|64k)$"
+    map: {remnants:duskforged_ingot: minecraft:gold_ingot, remnants:moonsilver_ingot: minecraft:diamond}
+  - id: omnivault:logic_processor        # two per craft: every network part and every 4K matrix needs one
+    result_count: 2
   # --- the story locks: each Sovereign's sigil needs the seal of the act before ---
   - id: runeborn:sigil_dusk_rider
     add: [remnants:ashen_alloy]
@@ -225,6 +231,11 @@ recipes:
            key: {S: {item: remnants:sunforged_ingot}, G: {item: remnant_bosses:grave_iron},
                  R: {item: remnant_bosses:royal_soul_fragment}, X: {item: remnant_bosses:eclipse_shard}},
            result: {id: remnants:eclipse_core, count: 1}}
+  # RPG Stats 5.1.0 ships its Scroll of Rebirth recipe in the pre-1.21 data/.../recipes/ folder, which 1.21.1
+  # never loads: the same recipe, so the scroll can be made.
+  - id: remnants:fix/scroll_of_rebirth
+    result: rpg_attribute_system:scroll_of_rebirth
+    shapeless: [minecraft:ender_eye, minecraft:golden_apple, minecraft:enchanted_book, minecraft:nether_star]
   # OmniVault's omnium without Nether quartz: a Remnant Shard does the quartz's work
   - id: remnants:forge/omnium_dust_from_remnant_shard
     json: {type: create:mixing, ingredients: [{item: minecraft:amethyst_shard}, {item: minecraft:redstone},

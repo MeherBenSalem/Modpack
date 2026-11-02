@@ -39,7 +39,7 @@ quests:
     title: "A Rabbit's Foot, Gilded"
     subtitle: "Luck you can carry."
     icon: mob_loot_bags:fortune_talisman
-    pos: [5, -3.5]
+    pos: [2.5, -2.5]
     deps: [tiers]
     desc: |
       &6Bag Luck&r tilts every drop toward the better tiers. It comes from &6Looting&r on your weapon, your &6Luck&r, the size of what you killed, the Nether, the End and a hard world.
@@ -184,4 +184,4 @@ quests:
 
       &7Open a Mythic Loot Bag.
     tasks: [{advancement: "mob_loot_bags:open_mythic"}]
-    rewards: [{table: sovereign_tribute}, {xp: 1000}]
+    rewards: [{table: spoils_pells_cut}, {item: runeborn:radiant_rune, count: 2}, {xp: 1000}]

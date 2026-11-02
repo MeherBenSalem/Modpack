@@ -110,6 +110,21 @@ tiers:
       - [runeborn:sunseed, 4, 1, 1]
       - [rpg_attribute_system:tome_of_ascension, 6, 1, 2]
       - [elementals:remnant_tome, 4, 1, 1]
+  locked:            # opened with a Diamond Key: an Act II reward, so no netherite (the mod's default)
+    rolls: [2, 3]
+    entries:
+      - [minecraft:diamond, 5, 2, 3]
+      - [runeborn:lustrous_rune, 6, 1, 3]
+      - [runeborn:radiant_rune, 4, 1, 1]
+      - [runeborn:tempering_stone_4, 6, 1, 2]
+      - [runeborn:tempering_stone_5, 4, 1, 1]
+      - [runeborn:lustrous_stone_2, 4, 1, 1]
+      - [runeborn:lustrous_stone_3, 3, 1, 1]
+      - [runeborn:sovereign_fragment, 3, 1, 1]
+      - [remnant_mobs:remnant_shard, 5, 2, 4]
+      - [runeborn:keen_whetstone, 1, 1, 1]
+      - [runeborn:heavy_whetstone, 1, 1, 1]
+      - [rpg_attribute_system:tome_of_ascension, 2, 1, 1]
 
 # Extra themed pool for kills in the Nether and the End (replaces the defaults, which add beacons and nether stars).
 dimensions:

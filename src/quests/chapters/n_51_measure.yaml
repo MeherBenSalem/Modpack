@@ -142,7 +142,7 @@ quests:
 
       &7Reach rune level 50.
     tasks: [{advancement: "runeborn:feats/level_50"}]
-    rewards: [{item: rpg_attribute_system:tome_of_ascension}, {xp: 300}]
+    rewards: [{item: runeborn:lustrous_rune, count: 2}, {xp: 300}]
 
   # ---- other people's Valor, and taking it back ----
   - key: tome

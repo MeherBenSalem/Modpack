@@ -96,9 +96,9 @@ quests:
     subtitle: "Let the box do the stooping."
     icon: better_farming_plus:farming_crate
     pos: [6, -2.25]
-    deps: [sprinkler]
+    deps: [sprinkler, s1_forge/duskforged]
     desc: |
-      A &6Farming Crate&r harvests, replants and stores everything in the 9×9 around it, and never voids a harvest.
+      A &6Farming Crate&r harvests, replants and stores everything in the 9×9 around it, and never voids a harvest. It is built around a diamond hoe, and diamond tools take a &6Duskforged Ingot&r in this world.
 
       Set one in the middle of the village fields and go kill something. Supper will be waiting.
     tasks: [{item: better_farming_plus:farming_crate}]

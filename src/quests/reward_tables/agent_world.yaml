@@ -1,0 +1,24 @@
+# Reward tables for n_coast (The Last Coast), n_voices (Voices of Last Light) and the additions to p_company and
+# w_dungeons. {table: key} rolls one entry by weight. No netherite, no Hallowed Tears, no Sunseeds, no seals.
+
+n_coast_strongbox:
+  title: "The Captain's Strongbox"
+  icon: minecraft:nautilus_shell
+  rewards:
+    - {item: minecraft:emerald, count: 8, weight: 3}
+    - {item: minecraft:gold_ingot, count: 6, weight: 3}
+    - {item: minecraft:nautilus_shell, count: 2, weight: 2}
+    - {item: fisherman_house:glow_bait, count: 6, weight: 2}
+    - {item: minecraft:golden_apple, count: 1, weight: 1}
+    - {item: minecraft:diamond, count: 1, weight: 1}
+
+n_voices_gratitude:
+  title: "The Village's Thanks"
+  icon: minecraft:emerald
+  rewards:
+    - {item: minecraft:emerald, count: 10, weight: 4}
+    - {item: minecraft:bread, count: 12, weight: 2}
+    - {item: minecraft:golden_carrot, count: 8, weight: 2}
+    - {item: minecraft:experience_bottle, count: 8, weight: 2}
+    - {item: minecraft:cake, count: 1, weight: 1}
+    - {item: minecraft:name_tag, count: 1, weight: 1}

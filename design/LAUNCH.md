@@ -61,9 +61,6 @@ run and the Last Light NPCs, the Echo and the Eclipse bar work. A client play-te
 
 ## Pack-side fixes for mod bugs (remove when the mod is fixed)
 
-- **Remnants | The Eclipsed Realm 3.1.0:** `fog_gate` and `grace_ember` block models use the old `forge_data` key,
-  which NeoForge 1.21.1 rejects (missing-model blocks). Fixed copies with `neoforge_data` live in
-  `pack/kubejs/assets/remnant_bosses/models/block/`.
 - **Amendments' sliding hotbar selection** draws the selection box over the held item, and Ashen 16x's box is
   opaque, so the selected item vanished. `config/amendments-client.toml` sets `hotbar_slot_animation_speed = 0`.
 

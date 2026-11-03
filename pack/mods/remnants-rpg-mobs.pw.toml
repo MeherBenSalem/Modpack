@@ -1,16 +1,16 @@
 name = "Remnants | RPG Mobs"
-filename = "remnant_mobs-neoforge-1.21.1-3.1.0.jar"
+filename = "remnant_mobs-neoforge-1.21.1-3.1.2.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/4eSfhd3M/versions/fN3n4AJH/remnant_mobs-neoforge-1.21.1-3.1.0.jar"
+url = "https://cdn.modrinth.com/data/4eSfhd3M/versions/4XmWTtbU/remnant_mobs-neoforge-1.21.1-3.1.2.jar"
 hash-format = "sha512"
-hash = "e951222aafdcc9ef6d95a836fa4a53d59aa6a2d3ad4c05c8a17532a09e17acc8e3ec79b9f0b530376bb2a05e0a230ab6e900fbbe1b4e63567c043f50dc2546ce"
+hash = "491a9f0eee94573fab3e416ae7ce596752fd3c4e61feb8ad4b6102dea692ad6c0ff653aefa46edfca56d0201c0e1204227915929a36015e28fc0e0378eaf62dc"
 
 [update]
 [update.curseforge]
-file-id = 9362008
+file-id = 9422249
 project-id = 1088344
 [update.modrinth]
 mod-id = "4eSfhd3M"
-version = "fN3n4AJH"
+version = "4XmWTtbU"

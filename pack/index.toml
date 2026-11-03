@@ -465,14 +465,6 @@ file = "kubejs/assets/minecraft/textures/environment/sun.png"
 hash = "6257ef956cae1e0e756c34204a2fd15fde642b31cf946d16c84bfad44bf84485"
 
 [[files]]
-file = "kubejs/assets/remnant_bosses/models/block/fog_gate.json"
-hash = "8bac7651387e89425df269692c5acc1ce62a71ad7fac7019deeb98f03ea48f90"
-
-[[files]]
-file = "kubejs/assets/remnant_bosses/models/block/grace_ember.json"
-hash = "f16fbb851aec95ca1800212456078d78cc5a2ee33821c1ab7cf0c7f4c66c911a"
-
-[[files]]
 file = "kubejs/assets/remnants/lang/en_us.json"
 hash = "ab4b7fbb409b476257d0995361285be5f2e26aeae3b5232366a39e3bd042d3b8"
 
@@ -1492,7 +1484,7 @@ metafile = true
 
 [[files]]
 file = "mods/chronofall.pw.toml"
-hash = "47452d6aefe5a8f03336436ca8dd61efddf1c6b603bc52ba93ee4f44014c9ba7"
+hash = "fd9b1214a5650ac7b90231f99421e2e2d274014020e7e9518298dedb224120c8"
 metafile = true
 
 [[files]]
@@ -1537,7 +1529,7 @@ metafile = true
 
 [[files]]
 file = "mods/core-utilities.pw.toml"
-hash = "e56167ceeabcdec0993c5c0e8297a5d18138ca8bcaa2a686021802c112ea8bab"
+hash = "b1158c5ef637e1ce56f64db5fb9d11e27004084f1c641f5ad381e4797c0efc66"
 metafile = true
 
 [[files]]
@@ -1857,7 +1849,7 @@ metafile = true
 
 [[files]]
 file = "mods/mob-loot-bags.pw.toml"
-hash = "983b4d8b2df26edd0c9420c5df9e9125110ad4d568385ae1586646fdb0b561be"
+hash = "3cca31921016a5a9bbdec4b00b8ba9c03566af0de682bef97d9390d2759baee6"
 metafile = true
 
 [[files]]
@@ -1892,7 +1884,7 @@ metafile = true
 
 [[files]]
 file = "mods/much-more-dungeons.pw.toml"
-hash = "999977f4374e32d871a1751eb4aab86de41f9f2fdc431e58de0057ed1673dec0"
+hash = "291cce12883358c1849937fc5ea83d186b2e8e727b64fabea4913ca84d915ba7"
 metafile = true
 
 [[files]]
@@ -1932,7 +1924,7 @@ metafile = true
 
 [[files]]
 file = "mods/omnivault.pw.toml"
-hash = "24fc313435944adaf0b9115acecc10d4afc394b88f850cb8b7a7cd299e514df3"
+hash = "d5b05d10ba79f36bd0c8a50c5c72dcb8e5651097a7a9bf625aa89fdf537872c0"
 metafile = true
 
 [[files]]
@@ -1992,7 +1984,7 @@ metafile = true
 
 [[files]]
 file = "mods/reconstructed-wands.pw.toml"
-hash = "ba282c9ae3d1ad68c826963850376346bd1a0687899c17e6fd31094e10b4097e"
+hash = "ce7d93360705027416071adaa8d75f6eb34e064f2e7850aff51b7f3debe2266a"
 metafile = true
 
 [[files]]
@@ -2002,22 +1994,22 @@ metafile = true
 
 [[files]]
 file = "mods/remnants-fellowship.pw.toml"
-hash = "8a679c0431384864f2f77564d2d22cea614549bf81bd5016dc12b81b04fbb906"
+hash = "db8a274b3bb681deee11c80f9e37dd259b0cbd668135d3c40d9b7b7415801ac9"
 metafile = true
 
 [[files]]
 file = "mods/remnants-minimap.pw.toml"
-hash = "c991d12ce005fae0c133bb04b74cd508cca0776df59311eb114c42fa44db581d"
+hash = "a0de06e432c226488f3ed99de3f0c28103229c564186d830cb304492ca6ba12d"
 metafile = true
 
 [[files]]
 file = "mods/remnants-roguelite-dungeons.pw.toml"
-hash = "514e59056947c7e8e4ae210536f15a3c2d39642f62a7025cbefe127b6d4938af"
+hash = "f9ab5fd39d8b8e8117b0859dba1290941f3bbe968e80226ba377c77f5becd575"
 metafile = true
 
 [[files]]
 file = "mods/remnants-rpg-mobs.pw.toml"
-hash = "bfafcab9261f2b3a8a039abed78e94294e6eab5fbe8aecdb7776eb5fc98ce939"
+hash = "2866aa31684fac5f40d49421f083f4c225c56f29652d9340ee50f366d2e41616"
 metafile = true
 
 [[files]]
@@ -2027,7 +2019,7 @@ metafile = true
 
 [[files]]
 file = "mods/remnants-skills-and-powers.pw.toml"
-hash = "bd97604b9dd4bb72ec2723aef38f6ca6045c3c2623b3350d539d1dff6bc38476"
+hash = "1cc5c506266998bf435c09432677a955720965bdd7f34a2fdeb62d865b4643d8"
 metafile = true
 
 [[files]]
@@ -2152,7 +2144,7 @@ metafile = true
 
 [[files]]
 file = "mods/the-witch-hut.pw.toml"
-hash = "3491fad0b2b21841fc31dbaaabd48ddcb1eb779e7980bb9bbd61ca63e75d6a3b"
+hash = "147a9bc848a857ce3dc108de9d5056a42a88fc37937d567bae0d0f630fc3854f"
 metafile = true
 
 [[files]]

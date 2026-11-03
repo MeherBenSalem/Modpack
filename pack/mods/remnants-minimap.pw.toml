@@ -1,16 +1,16 @@
 name = "Remnants | Advanced Minimap & Waypoints (mod id remnantminimaps, formerly Odyssey Map)"
-filename = "remnantminimaps-neoforge-1.21.1-2.0.0.jar"
+filename = "remnantminimaps-neoforge-1.21.1-2.0.1.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/lLviL6Oq/versions/QCxt1U64/remnantminimaps-neoforge-1.21.1-2.0.0.jar"
+url = "https://cdn.modrinth.com/data/lLviL6Oq/versions/EQ1C0fV7/remnantminimaps-neoforge-1.21.1-2.0.1.jar"
 hash-format = "sha512"
-hash = "ada331af90ddc3d9cbc9014b210b8051809280c405ac4f84dd9230c9f1033671fc0a200162d80cd528800af683342689897e53acc8e4a4527ee532643cc44812"
+hash = "5ac43bd8c8ab99ca726261760934ddd40ce3e58da4d4ea5ccea8458e7e559927f8813177a4099360cba44b0b1d460d620c82f254ad592c3c0a850ba3e02c5109"
 
 [update]
 [update.curseforge]
-file-id = 9286028
+file-id = 9417502
 project-id = 1564458
 [update.modrinth]
 mod-id = "lLviL6Oq"
-version = "QCxt1U64"
+version = "EQ1C0fV7"

@@ -1,16 +1,16 @@
 name = "Core Utilities"
-filename = "core_utilities-neoforge-1.21.1-2.0.0.jar"
+filename = "core_utilities-neoforge-1.21.1-2.0.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/uy92hxqE/versions/GGsdWgaL/core_utilities-neoforge-1.21.1-2.0.0.jar"
+url = "https://cdn.modrinth.com/data/uy92hxqE/versions/TjP8zBTB/core_utilities-neoforge-1.21.1-2.0.1.jar"
 hash-format = "sha512"
-hash = "be7b4836424d16fa4845d495a2bd1f86362b1dcb42729e0677b5910b5fe041f3179bbe405f0b7e8da9f81bfb1448eb79eeec9a0336a497afff8f272eae99b883"
+hash = "2c53075d317ed75d3153ffdb495283d6885265c182e8322f80c5c894b89a4ad5979ab1cd8d8ce647d00cf4552357f295bd5498def26c8666a6195bc0ae0f2407"
 
 [update]
 [update.curseforge]
-file-id = 9343421
+file-id = 9421144
 project-id = 1379111
 [update.modrinth]
 mod-id = "uy92hxqE"
-version = "GGsdWgaL"
+version = "TjP8zBTB"

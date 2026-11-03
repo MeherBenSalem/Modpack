@@ -2985,21 +2985,18 @@
   "license": "Apache-2.0",
   "modrinth": {
    "project_id": "d85UTOuq",
-   "version_id": "kdn9WKdS",
-   "version_number": "5.1.0+neoforge-1.21.1",
-   "filename": "rpg_attribute_system-neoforge-1.21.1-5.1.0.jar",
-   "url": "https://cdn.modrinth.com/data/d85UTOuq/versions/kdn9WKdS/rpg_attribute_system-neoforge-1.21.1-5.1.0.jar",
-   "sha1": "bb7f44a92842d6fa1d36fdd94e5bfb492cafaf66",
-   "sha512": "7baeada3e2395ef43d736efbdb278befcac38e0a8a093af371afdef4ffa39f5c7914e8dde6b32f86bbd72ce352e31056a1bc7403a9054e97678a5a09b7044e3d",
-   "size": 3696526,
-   "date_published": "2026-10-31T10:21:28.342527Z"
+   "version_id": "xU10Gxov",
+   "version_number": "5.1.1+neoforge-1.21.1",
+   "filename": "rpg_attribute_system-neoforge-1.21.1-5.1.1.jar",
+   "url": "https://cdn.modrinth.com/data/d85UTOuq/versions/xU10Gxov/rpg_attribute_system-neoforge-1.21.1-5.1.1.jar",
+   "sha1": "8fc36b45a7ce2f530332d054f1a10f312b370b4f",
+   "sha512": "6abd47bfa598e23d8997a5f60601c1464fb7dee51303feed5bd8f73c396abc6cc961685f01702864289566f0235e8cdc925fed0ef26e98454a09a080a84cb280",
+   "size": 3698400
   },
   "curseforge": {
    "project_id": 1079687,
-   "file_id": 9382649,
-   "filename": "rpg_attribute_system-neoforge-1.21.1-5.1.0.jar",
-   "release_type": "release",
-   "cf_slug": "remnants-rpg-stats-skills-progression"
+   "file_id": 9424224,
+   "filename": "rpg_attribute_system-neoforge-1.21.1-5.1.1.jar"
   },
   "required_deps": [
    "jauml"

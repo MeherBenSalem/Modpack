@@ -1,16 +1,16 @@
 name = "Remnants | RPG Stats, Skills & Progression (RPG Attribute System, \"RAS\")"
-filename = "rpg_attribute_system-neoforge-1.21.1-5.1.0.jar"
+filename = "rpg_attribute_system-neoforge-1.21.1-5.1.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/d85UTOuq/versions/kdn9WKdS/rpg_attribute_system-neoforge-1.21.1-5.1.0.jar"
+url = "https://cdn.modrinth.com/data/d85UTOuq/versions/xU10Gxov/rpg_attribute_system-neoforge-1.21.1-5.1.1.jar"
 hash-format = "sha512"
-hash = "7baeada3e2395ef43d736efbdb278befcac38e0a8a093af371afdef4ffa39f5c7914e8dde6b32f86bbd72ce352e31056a1bc7403a9054e97678a5a09b7044e3d"
+hash = "6abd47bfa598e23d8997a5f60601c1464fb7dee51303feed5bd8f73c396abc6cc961685f01702864289566f0235e8cdc925fed0ef26e98454a09a080a84cb280"
 
 [update]
 [update.curseforge]
-file-id = 9382649
+file-id = 9424224
 project-id = 1079687
 [update.modrinth]
 mod-id = "d85UTOuq"
-version = "kdn9WKdS"
+version = "xU10Gxov"

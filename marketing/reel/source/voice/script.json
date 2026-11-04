@@ -1,0 +1,95 @@
+{
+ "note": "The Keeper's lines for the reel. 'take' is an existing in-game recording in src/voice/raw/ (ElevenLabs, voice 'Arkadius - Old Storyteller', eleven_v4, made for beta 9); 'words' picks the phrase by word index in that take's Whisper transcript (wordtimes.json). Nothing is re-timed: build_vo.py cuts each phrase at the quietest point of the pauses around it.",
+ "lines": [
+  {
+   "id": "V1",
+   "take": "intro_1",
+   "words": [
+    0,
+    0
+   ],
+   "text": "Listen."
+  },
+  {
+   "id": "V2",
+   "take": "intro_1",
+   "words": [
+    1,
+    6
+   ],
+   "text": "Once, the world had one sun"
+  },
+  {
+   "id": "V3",
+   "take": "intro_3",
+   "words": [
+    6,
+    18
+   ],
+   "text": "He drank the last of the light himself, and the sky went black."
+  },
+  {
+   "id": "V4",
+   "take": "intro_4",
+   "words": [
+    9,
+    18
+   ],
+   "text": "Nothing that dies here stays dead. It comes back wrong."
+  },
+  {
+   "id": "V5",
+   "take": "intro_7",
+   "words": [
+    13,
+    22
+   ],
+   "text": "But you came back with a spark still in you."
+  },
+  {
+   "id": "V6",
+   "take": "threshold_gate",
+   "words": [
+    0,
+    3
+   ],
+   "text": "Fog. Beyond it, Odric."
+  },
+  {
+   "id": "V7",
+   "take": "s1_prologue_stamina",
+   "words": [
+    0,
+    10
+   ],
+   "text": "You're not strong yet, so don't be there when it lands."
+  },
+  {
+   "id": "V9",
+   "take": "s1_prologue_you_died",
+   "words": [
+    23,
+    33
+   ],
+   "text": "Something is wearing your face, and it is holding your light."
+  },
+  {
+   "id": "V11",
+   "take": "intro_8",
+   "words": [
+    5,
+    15
+   ],
+   "text": "Relight the world, one shrine and one Sovereign at a time."
+  },
+  {
+   "id": "V13",
+   "take": "intro_8",
+   "words": [
+    22,
+    24
+   ],
+   "text": "Now, wake up."
+  }
+ ]
+}

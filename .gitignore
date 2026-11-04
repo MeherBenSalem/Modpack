@@ -2,3 +2,8 @@
 dist/
 run/
 __pycache__/
+
+# reel renders and captures (built outside the repo in $REEL; never commit them)
+marketing/reel/*.mp4
+marketing/reel/out/
+marketing/reel/raw/

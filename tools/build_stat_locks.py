@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Compile src/stat_locks.yaml into RPG Stats' configs: items_lock.json, blocks_lock.json, levelup_rewards.json.
+"""Compile src/stat_locks.yaml into RPG Stats' configs: items_lock.json, blocks_lock.json, levelup_rewards.json,
+mob_xp.json.
 
   python3 tools/build_stat_locks.py        # writes pack/config/ras/*.json; exits non-zero on an unknown id
 
@@ -61,6 +62,12 @@ def main():
         for i in r[key]["item_tiers"]:
             if i not in known:
                 errors.append(f"unknown reward item {i}")
+    mob_rules = []
+    namespaces = {i.split(":")[0] for i in known}
+    for entity, rule in (spec.get("mob_xp") or {}).items():
+        if entity.split(":")[0] not in namespaces:
+            errors.append(f"mob_xp entity {entity} is from a mod that isn't in the pack")
+        mob_rules.append({"id": entity.replace(":", "_"), "entity": entity, "base_xp": rule["base_xp"]})
     if errors:
         print("\n".join(errors))
         sys.exit(1)
@@ -70,6 +77,13 @@ def main():
     (OUT / "blocks_lock.json").write_text(json.dumps({"enabled": True, "show_feedback": True, "blocks_list": blocks},
                                                      indent=2) + "\n")
     (OUT / "levelup_rewards.json").write_text(json.dumps({"enabled": True, "rewards": rewards}, indent=2) + "\n")
+    # Per-mob VP (RPG Stats mob_xp.json). Without a rule a kill pays the victim's max health; weighting stays off so
+    # every other mob keeps exactly that.
+    (OUT / "mob_xp.json").write_text(json.dumps({
+        "schema_version": 1, "enabled": bool(mob_rules),
+        "difficulty_weighting": {"enabled": False, "peaceful": 1, "easy": 1, "normal": 1, "hard": 1},
+        "armor_weighting": {"enabled": False, "per_armor_point": 0, "max_multiplier": 5},
+        "rules": mob_rules}, indent=2) + "\n")
     print(f"{len(items)} item locks, {len(blocks)} block locks, {len(rewards)} level-up rewards -> {OUT.relative_to(ROOT)}")
 
 

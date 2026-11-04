@@ -125,3 +125,9 @@ levelup_rewards:
   every_10: {item_tiers: [runeborn:lustrous_stone_1, runeborn:lustrous_stone_2, runeborn:lustrous_stone_3,
                           runeborn:lustrous_stone_4, runeborn:lustrous_stone_5, runeborn:lustrous_stone_6,
                           runeborn:lustrous_stone_7, runeborn:lustrous_stone_8, runeborn:lustrous_stone_9]}  # tier = level // 11
+
+# VP per kill. RPG Stats pays a kill's max health; RPG Mobs leaves bosses unscaled, so a vanilla Warden pays 500 and
+# Ancient City shriekers summon a new one on demand: players farmed it from level 25 to 170 (CurseForge, Nov 2026).
+# Its first kill still pays well; farming it no longer outpaces the acts.
+mob_xp:
+  minecraft:warden: {base_xp: 100}

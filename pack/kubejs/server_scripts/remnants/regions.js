@@ -1,7 +1,7 @@
 // Area names: when an Ashborn walks into a new kind of land, its name fades in, the way the old maps named it.
 // Biomes are matched by id keywords (vanilla, Terralith and the rest share the vocabulary), first match wins.
 // A name shows after the player has been in it for a few seconds (no flicker on borders), and not again for
-// REGION_REPEAT_TICKS unless they've been somewhere else in between.
+// REGION_REPEAT_TICKS unless they've been somewhere else in between. The first visit ever, the Keeper speaks of it.
 
 (function () {
 var REGION_CHECK = 40              // ticks between checks
@@ -63,7 +63,7 @@ ServerEvents.tick(function (event) {
       var dim = String(p.level.dimension)
       if (SKIP_DIMENSIONS.indexOf(dim) >= 0) return
       var st = p.persistentData.getString('remnants_threshold')
-      if (st === 'pending' || st === 'hub' || st === 'leaving') return
+      if (st === 'pending' || st === 'intro' || st === 'hub' || st === 'leaving') return
       var biome = String(p.level.getBiome(p.blockPosition()).getRegisteredName())
       var name = regionFor(dim, biome)
       if (!name) return
@@ -88,6 +88,14 @@ ServerEvents.tick(function (event) {
         server.runCommandSilent(`title ${n} subtitle ${JSON.stringify({ text: name, color: '#E8D5A3' })}`)
         server.runCommandSilent(`title ${n} title ${JSON.stringify({ text: '' })}`)
         server.runCommandSilent(`execute as ${n} at @s run playsound minecraft:block.amethyst_block.resonate ambient @s ~ ~ ~ 0.6 0.7`)
+        // The first time ever: the Keeper says a word about the place (region_<name> in src/voice/extra_lines.yaml),
+        // queued behind any line already playing.
+        var line = 'region_' + name.replace(/^The /, '').toLowerCase().replace(/[^a-z]+/g, '_').replace(/_$/, '')
+        var voiced = 'remnants_region_voiced_' + line
+        if (!data.getBoolean(voiced) && global.REMNANTS_LINES && global.REMNANTS_LINES[line]) {
+          data.putBoolean(voiced, true)
+          remnantsSay(server, p, line, false)
+        }
       }
     } catch (e) {
       // a biome without a registered name, or a player mid-teleport: try again next check

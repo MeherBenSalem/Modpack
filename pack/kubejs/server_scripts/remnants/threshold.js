@@ -2,13 +2,13 @@
 // dusk), built once per world by function remnants:threshold/build (tools/build_threshold.py writes both the function
 // and the coordinates in threshold_layout.js).
 //
-// A new player picks an origin (Runeborn's screen), the screen fades to black and they wake in the Crypt while the
-// Keeper speaks. West through the Hall of Messages, through the fog gate, into the Arena: Ser Odric, the Gatekeeper.
+// A new player picks an origin (Runeborn's screen) and the Keeper tells the tale of the Long Eclipse over a black screen
+// (the intro: eight narrated title cards, sneak to skip). Then they wake in the Crypt while the Keeper speaks. West through the Hall of Messages, through the fog gate, into the Arena: Ser Odric, the Gatekeeper.
 // Fell him, or fall to him once, and the Ember Door opens; the Last Stair leads to the Waygate and the world.
 //
 // Multiplayer: everyone shares one Threshold. Whoever is inside the arena when the fog seals fights together; others
 // wait at the fog until the fight ends. Each player's progress is their own (persistentData remnants_threshold:
-// "" -> pending -> hub -> done). Players who had already played before this existed skip it. Ops: /threshold.
+// "" -> pending -> intro -> hub -> done). Players who had already played before this existed skip it. Ops: /threshold.
 // Wrapped in a function: server scripts share one scope, and these helper names are generic.
 
 (function () {
@@ -101,6 +101,10 @@ function playTime(p) {
 PlayerEvents.loggedIn(function (event) {
   var p = event.player
   var server = event.server
+  if (state(p) === 'intro') {        // logged out during the intro: tell it again from the start
+    setState(p, 'pending')
+    return
+  }
   if (state(p) !== '') return
   if (server.persistentData.getBoolean('remnants_threshold_off') || playTime(p) > SKIP_IF_PLAYED_TICKS) {
     skip(server, p)
@@ -127,8 +131,66 @@ function hasOrigin(server, p) {
   return false
 }
 
-// The wake: black screen, a bell, the Keeper's voice, the area name.
-function wake(server, p) {
+// The intro: the tale of the Long Eclipse, told by the Keeper over a black screen, one title card per line
+// (intro_1..8 in src/voice/extra_lines.yaml). Each card waits for its line to end (REMNANTS_DURATIONS). Sneak to skip.
+var INTRO = [
+  ['intro_1', { text: '' }, 'Once, there was one sun.'],
+  ['intro_2', { text: '' }, 'Seven Sovereigns broke it, to share it.'],
+  ['intro_3', { text: '' }, 'An eighth drank the last light.'],
+  ['intro_4', { text: 'The Long Eclipse', color: '#E8D5A3' }, 'The dead stopped resting.'],
+  ['intro_5', { text: '' }, 'The Sovereigns wait, half mad.'],
+  ['intro_6', { text: '' }, 'Only the Ember Shrines still burn.'],
+  ['intro_7', { text: '' }, 'You rose with a spark still in you.'],
+  ['intro_8', { text: 'Ashborn', color: 'gold' }, 'Relight the world.']
+]
+var INTRO_GAP = 12        // ticks of silence between lines
+
+function intro(server, p) {
+  var name = p.username
+  var w = T.wake
+  setState(p, 'intro')
+  var id = p.persistentData.getInt('remnants_intro_id') + 1
+  p.persistentData.putInt('remnants_intro_id', id)
+  var total = 40
+  INTRO.forEach(function (b) { total += Math.ceil(((global.REMNANTS_DURATIONS || {})[b[0]] || 8) * 20) + INTRO_GAP })
+  var secs = Math.ceil(total / 20) + 3
+  cmd(server, inDim(`tp ${name} ${w[0]} ${w[1]} ${w[2]} ${w[3]} 15`))
+  cmd(server, `effect give ${name} minecraft:blindness ${secs} 0 true`)
+  cmd(server, `effect give ${name} minecraft:slowness ${secs} 255 true`)
+  cmd(server, `effect give ${name} minecraft:resistance ${secs} 4 true`)
+  cmd(server, `title ${name} actionbar ${json({ text: 'Sneak to skip the tale', color: 'dark_gray', italic: true })}`)
+  var at = 40
+  INTRO.forEach(function (b) {
+    var line = b[0], seconds = (global.REMNANTS_DURATIONS || {})[line] || 8
+    var stay = Math.max(40, Math.ceil(seconds * 20) - 30)
+    server.scheduleInTicks(at, function () {
+      var pl = playerNamed(server, name)
+      if (!pl || state(pl) !== 'intro' || pl.persistentData.getInt('remnants_intro_id') !== id) return
+      cmd(server, `stopsound ${name} voice`)
+      cmd(server, `execute as ${name} at @s run playsound remnants:vo.${line} voice @s ~ ~ ~ 1 1 1`)
+      titleCard(server, name, b[1], { text: b[2], color: 'gray', italic: true }, 20, stay, 20)
+      cmd(server, `title ${name} actionbar ${json({ text: 'Sneak to skip the tale', color: 'dark_gray', italic: true })}`)
+    })
+    at += Math.ceil(seconds * 20) + INTRO_GAP
+  })
+  server.scheduleInTicks(at + 10, function () {
+    var pl = playerNamed(server, name)
+    if (pl && state(pl) === 'intro' && pl.persistentData.getInt('remnants_intro_id') === id) endIntro(server, pl, 'threshold_wake')
+  })
+}
+
+function endIntro(server, p, line) {
+  var name = p.username
+  p.persistentData.putInt('remnants_intro_id', p.persistentData.getInt('remnants_intro_id') + 1)   // cancels the rest
+  cmd(server, `stopsound ${name} voice`)
+  cmd(server, `title ${name} clear`)
+  cmd(server, `effect clear ${name} minecraft:blindness`)
+  wake(server, p, line)
+}
+
+// The wake: black screen, a bell, the Keeper's voice, the area name. After the intro the Keeper only greets you
+// (threshold_wake); if the intro was skipped, the full opening tale plays instead (s1_prologue_rise).
+function wake(server, p, line) {
   var name = p.username
   var w = T.wake
   setState(p, 'hub')
@@ -148,7 +210,7 @@ function wake(server, p) {
   })
   server.scheduleInTicks(70, function () {
     var pl = playerNamed(server, name)
-    if (pl) narrate(server, pl, 's1_prologue_rise', false)
+    if (pl) narrate(server, pl, line || 's1_prologue_rise', false)
   })
   server.scheduleInTicks(150, function () {
     areaCard(server, name, 'The Threshold', 'Where the Ashborn rise')
@@ -187,7 +249,11 @@ function playerTick(server, p) {
   if (s === 'pending') {
     var waited = p.persistentData.getInt('remnants_threshold_wait') + 10
     p.persistentData.putInt('remnants_threshold_wait', waited)
-    if (hasOrigin(server, p) || waited >= ORIGIN_WAIT_TICKS) wake(server, p)
+    if (hasOrigin(server, p) || waited >= ORIGIN_WAIT_TICKS) intro(server, p)
+    return
+  }
+  if (s === 'intro') {
+    if (p.isShiftKeyDown()) endIntro(server, p, 's1_prologue_rise')
     return
   }
   if (s !== 'hub') return

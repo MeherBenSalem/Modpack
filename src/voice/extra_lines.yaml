@@ -16,3 +16,125 @@ threshold_beyond:
   speaker: keeper
   text: |
     There it is. The world, or what the dark left of it. Walk toward the smoke. Someone out there kept a fire lit.
+
+# The intro (threshold.js): the tale of the Long Eclipse over a black screen, one title card per line, on first join.
+intro_1:
+  speaker: keeper
+  text: Listen. Once, the world had one sun, and one crown to hold its light.
+intro_2:
+  speaker: keeper
+  text: Seven rulers swore to share it. The Sovereigns. So they broke the sun into pieces, and each of them carried one home.
+intro_3:
+  speaker: keeper
+  text: An eighth wanted all of it. He drank the last of the light himself. And the sky went black.
+intro_4:
+  speaker: keeper
+  text: We call it the Long Eclipse. Since that day, nothing that dies here stays dead. It comes back wrong. Remnants, we call them.
+intro_5:
+  speaker: keeper
+  text: The Sovereigns did not die either. They hid their pieces of the sun with their champions, and they wait. Half mad. Patient. Hungry.
+intro_6:
+  speaker: keeper
+  text: The only light left lives in the Ember Shrines. Small fires, kept by the few who still remember what warmth was.
+intro_7:
+  speaker: keeper
+  text: And now, you. Risen from the ash, like all the rest of them. But you came back with a spark still in you.
+intro_8:
+  speaker: keeper
+  text: Ashborn, they will call you. Relight the world, one shrine and one Sovereign at a time. Fall, and rise, and try again. Now, wake up.
+# Spoken in the Crypt after the intro (the full tale, s1_prologue_rise, plays instead when the intro is skipped).
+threshold_wake:
+  speaker: keeper
+  text: Another one. Up you get. The ash doesn't keep its dead for long. You heard the tale. Now you're in it. That spark makes you the brightest thing left in the world, little ember. They will want it. Let's not give it to them.
+
+# The first time an Ashborn ever walks into a named land (regions.js), the Keeper says a word about it.
+region_ashen_fields:
+  speaker: keeper
+  text: The Ashen Fields. Wheat grew here once, as far as you could see. Now it's ash, as far as you can see. Keep walking.
+region_grey_wood:
+  speaker: keeper
+  text: The Grey Wood. The trees forgot what colour they were. Don't take that as leave to forget anything yourself.
+region_white_wood:
+  speaker: keeper
+  text: The White Wood. Birch, pale as bone. Quiet here. Too quiet, some say. I say enjoy it while it lasts.
+region_pinewatch:
+  speaker: keeper
+  text: The Pinewatch. The old kings posted sentries in these pines. Some of them are still at their posts.
+region_rime_veil:
+  speaker: keeper
+  text: The Rime Veil. Cold enough to keep the dead fresh. That isn't a comfort. Keep your flask close.
+region_broken_crowns:
+  speaker: keeper
+  text: The Broken Crowns. Mountains, the maps say. I say they're what's left of the thrones. Climb carefully.
+region_dusk_steppe:
+  speaker: keeper
+  text: The Dusk Steppe. Long grass, long shadows, and riders in the dark who never learned that they lost.
+region_sunless_sands:
+  speaker: keeper
+  text: The Sunless Sands. A desert without a sun is a grave that never ends. Somewhere out here sleeps the first Remnant of all.
+region_scarred_reach:
+  speaker: keeper
+  text: The Scarred Reach. Red stone, cut deep. The Sovereigns fought each other here, after the breaking. The land still bleeds.
+region_drowned_green:
+  speaker: keeper
+  text: The Drowned Green. Things grow here faster than they die. Faster than they should. Watch the vines.
+region_blossom_ruin:
+  speaker: keeper
+  text: The Blossom Ruin. Pink petals on old stones, the last of the gardens. Someone tended them after the end. Strange, that.
+region_hollow_wood:
+  speaker: keeper
+  text: The Hollow Wood. The witches live here. They traded with the dark, and did well out of it. Be polite. Be quick.
+region_weeping_mire:
+  speaker: keeper
+  text: The Weeping Mire. Mind your step. Everything that sank here is still down there, and some of it is still awake.
+region_grey_river:
+  speaker: keeper
+  text: A river. It still runs to the sea, as if the sea were still waiting for it. Follow it, if you're ever lost.
+region_last_coast:
+  speaker: keeper
+  text: The Last Coast, where the land runs out. The fishermen still cast their nets here. You don't ask what they catch.
+region_drowned_coast:
+  speaker: keeper
+  text: The Drowned Coast. Shallow water, and old ships beneath it. The cargo is still aboard. So are the crews.
+region_grey_waters:
+  speaker: keeper
+  text: The Grey Waters. A cold sea. Don't swim far. What lives under the ice has been hungry for an age.
+region_drowned_sky:
+  speaker: keeper
+  text: The Drowned Sky. Deep water, darker than the night above it. The temples down there belong to the Old Powers.
+region_rotting_isles:
+  speaker: keeper
+  text: The Rotting Isles. Mushrooms, and nothing else. Nothing hunts here. Rest, if you can stand the smell.
+region_fanged_dark:
+  speaker: keeper
+  text: The Fanged Dark. Caves, with teeth. Bring light, and more of it than you think you'll need.
+region_underbloom:
+  speaker: keeper
+  text: The Underbloom. A garden under the ground, where the sun never reached. The one place the Eclipse forgot.
+region_deep:
+  speaker: keeper
+  text: The Deep. Quiet. Quieter than that. Something down here listens for heartbeats, and it is older than the Crown.
+region_otherside:
+  speaker: keeper
+  text: You went through. Of course you did. This is the other side of the Deep. Nothing here has ever seen light. Don't show it any.
+region_ashlands:
+  speaker: keeper
+  text: The Ashlands. Morgrath's kingdom, before he burned it. The ash still falls. Breathe through your teeth.
+region_valley_of_ash_souls:
+  speaker: keeper
+  text: The Valley of Ash-Souls. Every grain of that sand was someone once. Walk softly. They're listening.
+region_crimson_pyre:
+  speaker: keeper
+  text: The Crimson Pyre. Red fungus, red fire, red hunters. Everything here is hungry, and nothing here is kind.
+region_cold_fire:
+  speaker: keeper
+  text: The Cold Fire. Blue flame that gives no warmth. The tall things here stare. Don't stare back.
+region_cinder_deltas:
+  speaker: keeper
+  text: The Cinder Deltas. Black rock and running fire. Nothing lives here on purpose.
+region_last_shore:
+  speaker: keeper
+  text: The Last Shore, the end of everything. The Dragon remembers the Eighth. Ask it, if you're brave. Most aren't, for long.
+region_starless_reach:
+  speaker: keeper
+  text: The Starless Reach. No sun, no moon, no stars. Even the dark is lonely here.

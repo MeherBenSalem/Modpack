@@ -81,7 +81,8 @@ def master(src, speaker, recorded, dest):
     # Real recordings keep their own voice: only levels and the room, no pitch change.
     chain = FILTERS[speaker] if not recorded else FILTERS[speaker].split("aresample=44100,", 1)[-1]
     if recorded:
-        chain = "aresample=44100," + chain
+        # ...and their own pace: atempo only compensated the placeholder's pitch drop.
+        chain = "aresample=44100," + ",".join(f for f in chain.split(",") if not f.startswith("atempo="))
     dest.parent.mkdir(parents=True, exist_ok=True)
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(src), "-af", chain, "-ac", "2", "-ar", "44100",
                     "-c:a", "libvorbis", "-q:a", "4", str(dest)], check=True)

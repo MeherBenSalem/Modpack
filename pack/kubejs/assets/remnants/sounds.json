@@ -727,5 +727,356 @@
         "stream": true
       }
     ]
+  },
+  "vo.intro_1": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/intro_1",
+        "stream": true
+      }
+    ]
+  },
+  "vo.intro_2": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/intro_2",
+        "stream": true
+      }
+    ]
+  },
+  "vo.intro_3": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/intro_3",
+        "stream": true
+      }
+    ]
+  },
+  "vo.intro_4": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/intro_4",
+        "stream": true
+      }
+    ]
+  },
+  "vo.intro_5": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/intro_5",
+        "stream": true
+      }
+    ]
+  },
+  "vo.intro_6": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/intro_6",
+        "stream": true
+      }
+    ]
+  },
+  "vo.intro_7": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/intro_7",
+        "stream": true
+      }
+    ]
+  },
+  "vo.intro_8": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/intro_8",
+        "stream": true
+      }
+    ]
+  },
+  "vo.threshold_wake": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/threshold_wake",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_ashen_fields": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_ashen_fields",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_grey_wood": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_grey_wood",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_white_wood": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_white_wood",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_pinewatch": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_pinewatch",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_rime_veil": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_rime_veil",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_broken_crowns": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_broken_crowns",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_dusk_steppe": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_dusk_steppe",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_sunless_sands": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_sunless_sands",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_scarred_reach": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_scarred_reach",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_drowned_green": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_drowned_green",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_blossom_ruin": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_blossom_ruin",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_hollow_wood": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_hollow_wood",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_weeping_mire": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_weeping_mire",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_grey_river": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_grey_river",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_last_coast": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_last_coast",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_drowned_coast": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_drowned_coast",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_grey_waters": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_grey_waters",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_drowned_sky": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_drowned_sky",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_rotting_isles": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_rotting_isles",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_fanged_dark": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_fanged_dark",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_underbloom": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_underbloom",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_deep": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_deep",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_otherside": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_otherside",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_ashlands": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_ashlands",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_valley_of_ash_souls": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_valley_of_ash_souls",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_crimson_pyre": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_crimson_pyre",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_cold_fire": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_cold_fire",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_cinder_deltas": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_cinder_deltas",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_last_shore": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_last_shore",
+        "stream": true
+      }
+    ]
+  },
+  "vo.region_starless_reach": {
+    "subtitle": "subtitles.remnants.vo.keeper",
+    "sounds": [
+      {
+        "name": "remnants:vo/region_starless_reach",
+        "stream": true
+      }
+    ]
   }
 }

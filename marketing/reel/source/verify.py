@@ -94,6 +94,21 @@ def loudness(path):
     check(tp <= -1.0, f'true peak {tp:.1f} dBTP (at most -1)')
 
 
+def same(a, b):
+    """Equal, or one letter apart for words of three letters or more (Whisper writes 'Fogg' for 'Fog')."""
+    if a == b:
+        return True
+    if min(len(a), len(b)) < 3 or abs(len(a) - len(b)) > 1:
+        return False
+    prev = list(range(len(b) + 1))
+    for i, ca in enumerate(a, 1):
+        cur = [i]
+        for j, cb in enumerate(b, 1):
+            cur.append(min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (ca != cb)))
+        prev = cur
+    return prev[-1] <= 1
+
+
 def words(path):
     from faster_whisper import WhisperModel
     import librosa
@@ -101,9 +116,13 @@ def words(path):
     cues = json.loads((REEL / 'edit' / 'cues.json').read_text())
     want = ' '.join(script[c['line']]['text'] for c in cues['vo'])
     norm = lambda t: re.findall(r"[a-z']+", t.lower())
-    a = librosa.load(str(path), sr=16000, mono=True)[0]
+    wav = REEL / 'out' / '_words.wav'
+    subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', str(path), '-ac', '1', '-ar', '16000', str(wav)], check=True)
+    a = librosa.load(str(wav), sr=16000, mono=True)[0]
     model = WhisperModel('medium.en', device='cpu', compute_type='int8')
-    segs, _ = model.transcribe(a, beam_size=5, language='en', vad_filter=False)
+    # the story's invented names, as a listener knows them from the captions (Whisper otherwise guesses 'Audrey')
+    segs, _ = model.transcribe(a, beam_size=5, language='en', vad_filter=False,
+                               initial_prompt='The Keeper speaks of Ser Odric, the Ashborn, the Sovereigns and the Remnants.')
     heard = norm(' '.join(s.text for s in segs))
     w = norm(want)
     # every scripted word must appear in order (music may add nothing; Whisper may split contractions)
@@ -111,7 +130,7 @@ def words(path):
     missing = []
     for word in w:
         k = j
-        while k < len(heard) and heard[k] != word:
+        while k < len(heard) and not same(heard[k], word):
             k += 1
         if k == len(heard):
             missing.append(word)

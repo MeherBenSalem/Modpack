@@ -43,14 +43,42 @@ def smooth(u):
     return u * u * (3 - 2 * u)
 
 
+def smooth_times(t, half=7):
+    """Each render's game time was read from the 8 fps grab that first showed it, so it is only known to 1/240 s
+    (4.2 ms) of game time, about a quarter of an output frame. The software renderer's pace is steady over a few
+    frames, so a local straight-line fit through the neighbouring renders recovers the real spacing; it is kept
+    monotonic and never moves a render by more than one grab interval."""
+    t = np.asarray(t, dtype=np.float64)
+    n = len(t)
+    out = t.copy()
+    k = np.arange(n, dtype=np.float64)
+    for i in range(n):
+        a, b = max(0, i - half), min(n, i + half + 1)
+        if b - a >= 5:
+            p = np.polyfit(k[a:b], t[a:b], 1)
+            out[i] = np.clip(np.polyval(p, i), t[i] - 1 / 240, t[i] + 1 / 240)
+    for i in range(1, n):
+        out[i] = max(out[i], out[i - 1] + 1e-5)
+    return out.tolist()
+
+
 class Source:
     """The unique renders of one capture, decoded sequentially (with a small cache around the read head)."""
 
-    def __init__(self, name):
+    def __init__(self, name, stab=False):
         j = json.load(open(f'{REEL}/idx/{name}.json'))
-        self.name, self.idx, self.t = name, j['idx'], j['t']
+        # stabilize.py: per-render sub-pixel corrections onto the smoothed camera path (slow mouse pans)
+        self.corr = json.load(open(f'{REEL}/idx/{name}_stab.json'))['corr'] if stab else None
+        self.name, self.idx = name, j['idx']
+        self.t = smooth_times(j['t'])
         self.k_of = {c: k for k, c in enumerate(self.idx)}
         self.cap, self.pos, self.cache = None, 0, {}
+        # camera snaps: a sudden jump right after near-stillness (motion above 10 and five times the mean of the six
+        # renders before it), the first render of a sharp camera move. Nothing is blended across one.
+        m = np.asarray(j['motion'], dtype=np.float64)
+        self.snaps = [i for i in range(6, len(m)) if m[i] > max(10.0, 5 * m[i - 6:i].mean())]
+        self.snap_t = [0.5 * (self.t[i - 1] + self.t[i]) for i in self.snaps]
+        self.snap_set = set(self.snaps)
 
     def frame(self, k):
         k = max(0, min(len(self.idx) - 1, k))
@@ -65,7 +93,14 @@ class Source:
                 ok, f = self.cap.read()
                 if not ok:
                     raise RuntimeError(f'{self.name}: ran out of frames at {self.pos}')
-                self.cache[self.k_of[self.pos]] = f.astype(np.float32)
+                kk = self.k_of[self.pos]
+                f = f.astype(np.float32)
+                if self.corr is not None:
+                    cx, cy = self.corr[kk]
+                    m = np.array([[1, 0, cx], [0, 1, cy]], np.float32)
+                    f = cv2.warpAffine(f, m, (f.shape[1], f.shape[0]), flags=cv2.INTER_CUBIC,
+                                       borderMode=cv2.BORDER_REPLICATE)
+                self.cache[kk] = f
             else:
                 if not self.cap.grab():
                     raise RuntimeError(f'{self.name}: ran out of frames at {self.pos}')
@@ -74,31 +109,51 @@ class Source:
             del self.cache[kk]
         return self.cache[k]
 
-    def at(self, g):
-        """The picture at game time g: cross-fade between the renders on either side."""
+    def weights(self, g):
+        """The renders that make up the picture at game time g, as [(render, weight)]: a cross-fade between the
+        renders on either side, or the nearer one alone across a camera snap."""
         t = self.t
         if g <= t[0]:
-            return self.frame(0)
+            return [(0, 1.0)]
         i = bisect.bisect_right(t, g) - 1
         if i >= len(t) - 1:
-            return self.frame(len(t) - 1)
+            return [(len(t) - 1, 1.0)]
         w = (g - t[i]) / (t[i + 1] - t[i])
+        if (i + 1) in self.snap_set:
+            return [(i if w < 0.5 else i + 1, 1.0)]
         if w < 0.02:
-            return self.frame(i)
+            return [(i, 1.0)]
         if w > 0.98:
-            return self.frame(i + 1)
-        return self.frame(i) * (1 - w) + self.frame(i + 1) * w
+            return [(i + 1, 1.0)]
+        return [(i, 1 - w), (i + 1, w)]
+
+    def compose(self, ws):
+        acc = None
+        for k, w in sorted(ws.items()):
+            f = self.frame(k)
+            acc = f * w if acc is None else acc + f * w
+        return acc
+
+    def at(self, g):
+        return self.compose(dict(self.weights(g)))
 
     def exposure(self, g, span):
-        """Averages the scene over [g - span/2, g + span/2] (a 180 degree shutter at the shot's speed)."""
-        n = max(1, int(math.ceil(span / 0.0042)))
-        if n == 1:
-            return self.at(g)
-        acc = None
+        """The scene integrated over [g - span/2, g + span/2] (the shutter), never across a camera snap. The
+        integral is taken on the weights (24 points), then only the few renders involved are summed."""
+        lo, hi = g - span / 2, g + span / 2
+        for ts in self.snap_t:                # keep the window on g's side of any camera snap
+            if lo < ts <= g:
+                lo = ts + 1e-4
+            elif g < ts < hi:
+                hi = ts - 1e-4
+        if hi - lo < 1e-4:
+            return self.at(min(max(g, lo), hi))
+        n = 24
+        ws = {}
         for k in range(n):
-            s = self.at(g + span * ((k + 0.5) / n - 0.5))
-            acc = s.copy() if acc is None else acc + s
-        return acc / n
+            for r, w in self.weights(lo + (hi - lo) * (k + 0.5) / n):
+                ws[r] = ws.get(r, 0.0) + w / n
+        return self.compose(ws)
 
 
 def game_time(shot, local):
@@ -254,10 +309,15 @@ def main():
         shot = next((s for s in shots if s['start'] <= t < s['end']), shots[-1])
         local = t - shot['start']
         if shot.get('src'):
-            src = sources.setdefault(shot['src'], Source(shot['src']))
+            key = (shot['src'], bool(shot.get('stab')))
+            if key not in sources:
+                sources[key] = Source(shot['src'], stab=bool(shot.get('stab')))
+            src = sources[key]
             g = game_time(shot, local)
             speed = (game_time(shot, local + 0.01) - game_time(shot, local - 0.01)) / 0.02
-            img = src.exposure(g, SHUTTER * speed / FPS)
+            # at least one mouse-step period of the capture rig (25-30 ms of game time): the camera turned in small
+            # steps at that rate, and integrating over exactly one step turns the staircase back into a smooth pan
+            img = src.exposure(g, max(SHUTTER * speed / FPS, shot.get('exposure', 0.0)))
             img = grade(img, shot.get('grade', {}))
             img = vignette(img, shot.get('vignette', 0.35))
         else:

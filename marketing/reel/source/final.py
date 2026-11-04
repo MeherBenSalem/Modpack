@@ -2,8 +2,8 @@
 """Mixes and masters the reel's sound and muxes it with both picture cuts:
 
   $REEL/edit/mix.wav                      the master (48 kHz stereo, about -14 LUFS, true peak under -1 dBTP)
-  $REEL/out/remnants-beta9-reel-9x16.mp4  1080x1920 60 fps H.264 + AAC 320k
-  $REEL/out/remnants-beta9-reel-16x9.mp4  1920x1080 60 fps H.264 + AAC 320k
+  $REEL/out/remnants-beta9-reel-9x16.mp4  1080x1920 60 fps H.264 High (CRF 17) + AAC 320k, for upload
+  $REEL/out/remnants-beta9-reel-16x9.mp4  1920x1080 60 fps H.264 High (CRF 17) + AAC 320k
 
 The voice gets the channel narration chain and nothing else (high-pass 75 Hz, +1.5 dB at 3.5 kHz, de-ess,
 2.5:1 compression), then a fixed level. The music is sidechain-ducked under the voice; the effects are ducked a
@@ -67,7 +67,9 @@ def measure(path):
 def mux():
     for tag, base in (('9x16', 'base_v.mp4'), ('16x9', 'base_h.mp4')):
         run(['ffmpeg', '-y', '-loglevel', 'error', '-i', E / base, '-i', E / 'mix.wav', '-map', '0:v', '-map', '1:a',
-             '-c:v', 'copy', '-c:a', 'aac', '-b:a', '320k', '-ar', '48000', '-movflags', '+faststart', '-shortest',
+             '-c:v', 'libx264', '-preset', 'slow', '-crf', '17', '-profile:v', 'high', '-pix_fmt', 'yuv420p',
+             '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709', '-g', '120',
+             '-c:a', 'aac', '-b:a', '320k', '-ar', '48000', '-movflags', '+faststart', '-shortest',
              OUT / f'remnants-beta9-reel-{tag}.mp4'])
 
 

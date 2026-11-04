@@ -21,9 +21,14 @@
   presses and mouse moves for the player (Shoulder Surfing's camera, Better Combat swings, Runeborn's dodge roll and
   Ember Flask). `source/capture/intro.py` records the opening tale as a brand-new player sees it.
 - **Smooth playback, no lag.** `source/prep.py` indexes each capture's unique renders and their game times;
-  `source/compose.py` asks for a game time per 60 fps output frame and averages the renders inside half a frame
-  interval (a 180° shutter), cross-fading between neighbours. Nothing plays slower than real time, no frame is
-  repeated. A light per-frame film grain keeps even held black and title frames distinct.
+  `source/compose.py` asks for a game time per 60 fps output frame and integrates the real renders around it,
+  cross-fading between neighbours. Nothing plays slower than real time, no frame is repeated, none is invented.
+  Two details make the motion even. The rig turned the camera with the mouse, and the game turns it in whole
+  pixels (0.15° each), so slow pans arrive as single-pixel ticks: `source/stabilize.py` measures each render's
+  global shift (phase correlation), low-passes the camera path, and the compositor moves each render onto the
+  smooth path (a few pixels at most, inside a 1% push-in). And every frame integrates one mouse-step period of
+  game time (25 ms on pans, 30 ms in fights), so frames that fall on a render and frames that fall between two
+  look the same. A light per-frame film grain keeps even held black and title frames distinct.
 - **Framing.** The portrait and landscape cuts are crops of the same graded 1920×1920 frame. Shots with the pack's
   HUD on use windows that keep only whole HUD elements (boss bar, plates, hotbar) and never a cut-off fragment.
 - **Voice.** Only the pack's own beta 9 recordings of the Keeper (ElevenLabs, "Arkadius - Old Storyteller",

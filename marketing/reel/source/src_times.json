@@ -16,13 +16,29 @@
    "src": "sun_hero",
    "to": "peak",
    "g0": 1.4,
-   "flash": "reveal"
+   "flash": "reveal",
+   "stab": true,
+   "zoom": [
+    [
+     0,
+     1.01
+    ]
+   ],
+   "exposure": 0.025
   },
   {
    "name": "ow_peak",
    "src": "ow_peak",
    "to": "realm",
-   "g0": 2.3
+   "g0": 2.3,
+   "stab": true,
+   "zoom": [
+    [
+     0,
+     1.01
+    ]
+   ],
+   "exposure": 0.025
   },
   {
    "name": "realm_sky",
@@ -36,41 +52,54 @@
      0,
      620
     ]
-   ]
+   ],
+   "stab": true,
+   "zoom": [
+    [
+     0,
+     1.01
+    ]
+   ],
+   "exposure": 0.025
   },
   {
    "name": "ranked_a",
    "src": "ranked_fight",
    "to": "ranked2",
    "g0": 0.4,
-   "hud": true
+   "hud": true,
+   "exposure": 0.03
   },
   {
    "name": "ranked_b",
    "src": "ranked_fight",
    "to": "wake",
    "g0": 3.5,
-   "hud": true
+   "hud": true,
+   "exposure": 0.03
   },
   {
    "name": "wake",
    "src": "wake",
    "to": "fog",
    "g0": 7.3,
-   "hud": true
+   "hud": true,
+   "exposure": 0.025
   },
   {
    "name": "fog",
    "src": "fog",
    "to": "odric_in",
-   "g0": 0.0
+   "g0": 0.0,
+   "exposure": 0.025
   },
   {
    "name": "odric_in",
    "src": "odric_fight",
    "to": "drop",
    "g0": 1.75,
-   "hud": true
+   "hud": true,
+   "exposure": 0.03
   },
   {
    "name": "odric_a",
@@ -79,7 +108,8 @@
    "g0": 3.25,
    "flash": "drop",
    "shake": "drop",
-   "hud": true
+   "hud": true,
+   "exposure": 0.03
   },
   {
    "name": "odric_b",
@@ -87,20 +117,22 @@
    "to": "fights",
    "g0": 6.5,
    "shake": "slam",
-   "hud": true
+   "hud": true,
+   "exposure": 0.03
   },
   {
    "name": "champion",
    "src": "ranked_fight",
    "to": "rider",
    "g0": 7.0,
-   "hud": true
+   "hud": true,
+   "exposure": 0.03
   },
   {
    "name": "rider",
    "src": "dusk_rider",
    "to": "echo",
-   "g0": 1.4,
+   "g0": 2.051,
    "hud": true,
    "zoom_v": [
     [
@@ -114,13 +146,14 @@
      1010
     ]
    ],
-   "vx_override": 960
+   "vx_override": 960,
+   "exposure": 0.03
   },
   {
    "name": "echo_a",
    "src": "echo",
    "to": "echo2",
-   "g0": 0.0,
+   "g0": 0.8,
    "hud": true,
    "zoom_v": [
     [
@@ -135,20 +168,30 @@
     ]
    ],
    "vx_override": 900,
-   "hy_override": 880
+   "hy_override": 880,
+   "exposure": 0.03
   },
   {
    "name": "echo_b",
    "src": "echo",
    "to": "shrine",
-   "g0": 7.5,
-   "hud": true
+   "g0": 8.35,
+   "hud": true,
+   "exposure": 0.03
   },
   {
    "name": "shrine",
    "src": "shrine3",
    "to": "sovereign",
-   "g0": 1.75
+   "g0": 1.75,
+   "stab": true,
+   "zoom": [
+    [
+     0,
+     1.01
+    ]
+   ],
+   "exposure": 0.025
   },
   {
    "name": "sovereign",
@@ -168,7 +211,8 @@
      1010
     ]
    ],
-   "vx_override": 960
+   "vx_override": 960,
+   "exposure": 0.03
   },
   {
    "name": "title",
@@ -181,7 +225,15 @@
      0,
      640
     ]
-   ]
+   ],
+   "stab": true,
+   "zoom": [
+    [
+     0,
+     1.01
+    ]
+   ],
+   "exposure": 0.025
   }
  ],
  "sfx": [
@@ -261,24 +313,25 @@
   {
    "id": 1486,
    "at": 21.25,
-   "gain_db": -9,
-   "why": "through the fog"
+   "gain_db": -11,
+   "why": "through the fog",
+   "dur": 1.6
   },
   {
    "id": 1157,
    "at": 21.3,
    "hit": 0.0,
-   "gain_db": -13,
-   "dur": 3.6,
+   "gain_db": -16,
+   "dur": 2.4,
    "fade_in": 0.3,
    "why": "wind in the arena"
   },
   {
    "id": 2291,
-   "at": 23.5,
+   "at": 24.62,
    "gain_db": -7,
-   "dur": 1.6,
-   "why": "horn as Odric rises"
+   "dur": 1.2,
+   "why": "horn as Odric rises, after his name"
   },
   {
    "id": 2908,
@@ -466,6 +519,11 @@
  "music": {
   "gain_db": 0,
   "dips": [
+   [
+    21.7,
+    24.6,
+    -8
+   ],
    [
     48.55,
     49.0,

@@ -1,5 +1,7 @@
 ![Remnants | The Modpack, Season 1: The Long Eclipse](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/marketing/images/banner.png)
 
+**[Discord](https://discord.gg/TJc3CxR4jK) · [Support NightBeam](https://nightbeam.dev/support) · [NightBeam Pro](https://nightbeam.dev/memberships) · [All projects](https://nightbeam.dev/projects)**
+
 ## The sun was eaten an age ago
 
 Everything that died in the dark came back wrong. You wake in a crypt with nothing, one of the **Ashborn**.
@@ -10,7 +12,7 @@ relight it one **Ember Shrine** and one **Sovereign** at a time. The story runs 
 ranked and named, and when you die an **Echo** of you guards your runes where you fell.
 
 **Season 1, "The Long Eclipse"** builds NightBeam's own mods (Runeborn, RPG Mobs, the Eclipsed Realm, RPG Stats,
-Skills and Powers, Fellowship and more) into one rule set, with 172 mods in all.
+Skills and Powers, Fellowship and more) into one rule set, with 170 mods in all.
 
 [![Watch the trailer](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/marketing/images/trailer.png)](https://youtu.be/U_x7PBLXGaM)
 
@@ -22,7 +24,7 @@ Skills and Powers, Fellowship and more) into one rule set, with 172 mods in all.
 
 ![Wake in the Threshold](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/marketing/images/card-threshold.png)
 
-- **The first ten minutes.** Pick an origin, the screen fades in from black, a bell tolls and the Keeper speaks. You
+- **The opening ten minutes.** Pick an origin, the screen fades in from black, a bell tolls and the Keeper speaks. You
   wake in a ruined crypt floating in its own dimension, frozen at dusk.
 - **The Hall of Messages.** Notes scratched by the Ashborn before you lead west, toward the black sun.
 - **Ser Odric, Gatekeeper of the Threshold.** Behind the fog gate waits a ranked elite with his own boss bar, an Ash
@@ -41,11 +43,11 @@ Skills and Powers, Fellowship and more) into one rule set, with 172 mods in all.
 ![Told in 660 quests](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/marketing/images/card-story.png)
 
 Seven rulers broke the sun to share its light. The Eighth drank what was left and became the **Hollow Sovereign**.
-Since then nothing that dies stays dead. The Keeper of Last Light gives you your first spark; the rest is up to you.
+Since then nothing that dies stays dead. The Keeper of Last Light gives you a spark; the rest is up to you.
 
 | Act | Title | Levels | Ends with |
 |---|---|---|---|
-| Prologue | Ashborn | 1–5 | Your first death, and meeting your own Echo |
+| Prologue | Ashborn | 1–5 | Your opening death, and meeting your own Echo |
 | I | Embers | 5–15 | The Dusk Rider |
 | II | The Hunt | 15–30 | Varghast and Sylvara |
 | III | The Deep | 30–50 | Kaelthar and Ysolde |
@@ -72,11 +74,11 @@ Vaults, the Garden, the Archive, the Company and the Dungeon Trail grew too.
 ### The Ember Forge: nothing is handed to you twice
 
 Progress is earned, not crafted around. Six alloys follow the six parts of the story, and almost everything worth
-building asks for the one its act belongs to. Count on **80+ hours** for a first run.
+building asks for the one its act belongs to. Count on **80+ hours** for one full run.
 
 | Tier | Opens after | Alloy | Made with |
 |---|---|---|---|
-| I | your first Ember Shrine | Ashen Alloy | a Create mixer, iron, andesite alloy, a Faded Rune |
+| I | your opening Ember Shrine | Ashen Alloy | a Create mixer, iron, andesite alloy, a Faded Rune |
 | II | the Dusk Rider | Duskforged Ingot | the **Seal of Dusk**, a Create press, golden sheets, a Remnant Shard |
 | III | Varghast and Sylvara | Moonsilver | the **Seal of the Hunt**, diamonds, amethyst, a blast furnace |
 | IV | Kaelthar, Ysolde and the Warden | Deepsteel | the **Seal of the Deep**, echo shards, a Create fan through soul fire |
@@ -85,8 +87,8 @@ building asks for the one its act belongs to. Count on **80+ hours** for a first
 
 - **Seals are bound once from Sovereign relics** and stay in the crafting grid. A relic buys its armament *or* a seal;
   call the Sovereign again with its sigil if you want both.
-- **The story locks itself.** Each Sovereign's sigil needs the previous act's seal, and the Eclipsed Realm only opens
-  with Sunforged.
+- **The story locks itself.** Each Sovereign's sigil needs the previous act's seal, and the Eclipsed Realm opens
+  once you hold Sunforged.
 - **Two storage mods, one ladder.** Sophisticated Backpacks and Storage and OmniVault are tiered on the alloys and
   need each other: drawers built on Sophisticated barrels, a Storage Hub built around a Sophisticated Controller,
   advanced upgrades run on OmniVault logic.
@@ -99,7 +101,7 @@ building asks for the one its act belongs to. Count on **80+ hours** for a first
 
 ![Eight Sovereigns](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/marketing/images/card-sovereigns.png)
 
-- **The Long Eclipse bar.** One bar for the whole world: *0 / 8 embers rekindled*. Each Sovereign's first defeat on a
+- **The Long Eclipse bar.** One bar for the whole world: *0 / 8 embers rekindled*. The opening defeat of each Sovereign on a
   world rekindles an ember for everyone and gives every player a permanent extra heart, players who join later
   included.
 - **The eight:** the Dusk Rider, Varghast the Grafted, Sylvara the Frost Matron, Kaelthar the Stormcaller, Ysolde the
@@ -113,7 +115,7 @@ building asks for the one its act belongs to. Count on **80+ hours** for a first
   a title and a grudge. Soulslike nameplates show rank, level and traits.
 - **Hunter's Moon:** on a red moon the Remnants hunt: higher levels, more ranks, better spoils.
 - **Your death leaves a Remnant.** Die and an Echo of you rises where you fell, wearing your gear and guarding your
-  runes. Kill it to take them back; die again first and they are gone.
+  runes. Kill it to take them back; die again before that and they are gone.
 
 ![A Soulslike Rule Set](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/marketing/images/header-systems.png)
 
@@ -150,14 +152,26 @@ Every system has one owner, and the overlapping ones are switched off, so every 
 2. Give the game **6–8 GB of RAM** (CurseForge app → Settings → Minecraft → Java Settings).
 3. Create a world and pick your origin. The Threshold takes it from there.
 4. **Servers:** download the server pack, unzip it and run `start.sh` (Linux/macOS) or `start.bat` (Windows): it
-   installs NeoForge on first start (Java 21). `SERVER.md` inside covers RAM, ports and pregeneration with Chunky.
+   installs NeoForge when it starts (Java 21). `SERVER.md` inside covers RAM, ports and pregeneration with Chunky.
 
-**Credits.** Built by NightBeam Studio on the work of 172 mods and their authors: thank you. Special thanks to
+**Credits.** Built by NightBeam Studio on the work of 170 mods and their authors: thank you. Special thanks to
 [Subtle Effects](https://www.curseforge.com/minecraft/mc-mods/subtle-effects),
 [Ashen 16x](https://www.curseforge.com/minecraft/texture-packs/ashen-16x),
 [Fresh Animations](https://www.curseforge.com/minecraft/texture-packs/fresh-animations),
 [Fog](https://www.curseforge.com/minecraft/mc-mods/fog) and
 [Reactive Music](https://www.curseforge.com/minecraft/mc-mods/reactive-music).
-The CurseForge app downloads every mod from its own project page; the server pack bundles those same CurseForge files and is hosted only here.
+The CurseForge app downloads every mod from its own project page; the server pack bundles those same CurseForge files and is hosted on this page.
 
 ![divider](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/marketing/images/divider.png)
+
+---
+
+### More from NightBeam Studio
+
+- **[Remnants: Ashen Legacy](https://www.curseforge.com/minecraft/modpacks/remnants-ashen-legacy)**: the story-driven soulslike RPG modpack built on NightBeam's mods
+- **[Premium server plugins](https://nightbeam.dev/store)**: anti-cheat, ranked PvP, SMP setups and more on BuiltByBit
+- **[NightBeam Pro](https://nightbeam.dev/memberships)**: the model library and NightBeam Forge credits, from $5 a month
+- **[Discord](https://discord.gg/TJc3CxR4jK)**: support, bug reports, suggestions and early looks
+- **[Support NightBeam](https://nightbeam.dev/support)**: help keep every mod free
+
+**Follow:** [YouTube](https://www.youtube.com/@nightbeamstudio) · [Instagram](https://www.instagram.com/nightbeamstudio/) · [X](https://x.com/NightBeamLLC) · [Facebook](https://www.facebook.com/profile.php?id=61574823331471)

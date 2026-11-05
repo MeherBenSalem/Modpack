@@ -1,0 +1,22 @@
+remnants-beta9-reel-9x16.mp4
+  ok    60 fps constant (60/1)
+  ok    3210 frames for 53.5 s (expected 3210)
+  ok    no two consecutive frames identical by MD5 (0 repeats)
+  FAIL  mpdecimate keeps every frame (3003 of 3210)
+  FAIL  smooth motion inside every shot (8 suspect frames: [(27.0, 'jump', 'odric_b'), (27.017, 'stall', 'odric_b'), (27.083, 'jump', 'odric_b'), (29.083, 'stall', 'odric_b'), (29.1, 'jump', 'odric_b'), (29.533, 'stall', 'odric_b'), (34.75, 'jump', 'rider'), (34.783, 'stall', 'rider')])
+  ok    integrated loudness -13.9 LUFS (target -14)
+  ok    true peak -1.4 dBTP (at most -1)
+  sheet /home/user/reel/out/remnants-beta9-reel-9x16_sheet.jpg
+remnants-beta9-reel-16x9.mp4
+  ok    60 fps constant (60/1)
+  ok    3210 frames for 53.5 s (expected 3210)
+  ok    no two consecutive frames identical by MD5 (0 repeats)
+  FAIL  mpdecimate keeps every frame (3004 of 3210)
+  FAIL  smooth motion inside every shot (8 suspect frames: [(27.0, 'jump', 'odric_b'), (27.017, 'stall', 'odric_b'), (27.083, 'jump', 'odric_b'), (29.083, 'stall', 'odric_b'), (29.1, 'jump', 'odric_b'), (29.533, 'stall', 'odric_b'), (34.75, 'jump', 'rider'), (34.783, 'stall', 'rider')])
+  ok    integrated loudness -13.9 LUFS (target -14)
+  ok    true peak -1.4 dBTP (at most -1)
+  sheet /home/user/reel/out/remnants-beta9-reel-16x9_sheet.jpg
+words (the finished mix)
+  heard: listen once the world had one sun he drank the last of the light himself and the sky went black nothing that dies here stays dead it comes back wrong but you came back with a spark still in you fog beyond it odric you're not strong yet so don't be there when it lands something is wearing your face and it is holding your light relight the world one shrine and one sovereign at a time now wake up
+  ok    every scripted word is heard in order (80 words; missing: [])
+4 CHECK(S) FAILED

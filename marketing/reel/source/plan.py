@@ -103,6 +103,7 @@ def cuts():
         'odric2': beat(30),                             # 26.5
         'fights': beat(35),                             # 30.25
         'rider': beat(39),                              # 33.25: a Sovereign, the Dusk Rider
+        'rider2': beat(42),                             # 35.5: the Rider and the Ashborn trade blows
         'echo': beat(44),                               # 37.0
         'echo2': beat(47),                              # 39.25
         'shrine': beat(52),                             # 43.0

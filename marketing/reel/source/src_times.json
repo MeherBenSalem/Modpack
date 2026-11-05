@@ -131,8 +131,29 @@
   {
    "name": "rider",
    "src": "dusk_rider",
-   "to": "echo",
+   "to": "rider2",
    "g0": 2.051,
+   "hud": true,
+   "zoom_v": [
+    [
+     0,
+     1.15
+    ]
+   ],
+   "vy": [
+    [
+     0,
+     1010
+    ]
+   ],
+   "vx_override": 960,
+   "exposure": 0.03
+  },
+  {
+   "name": "rider2",
+   "src": "dusk_rider",
+   "to": "echo",
+   "g0": 5.5,
    "hud": true,
    "zoom_v": [
     [
@@ -153,7 +174,7 @@
    "name": "echo_a",
    "src": "echo",
    "to": "echo2",
-   "g0": 0.8,
+   "g0": 1.05,
    "hud": true,
    "zoom_v": [
     [

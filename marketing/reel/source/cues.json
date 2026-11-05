@@ -1,0 +1,349 @@
+{
+ "duration": 53.5,
+ "music": {
+  "file": "musiclib/678.mp3",
+  "src0": 126.04,
+  "at": 4.0,
+  "gain_db": 0,
+  "dips": [
+   [
+    21.7,
+    24.6,
+    -8
+   ],
+   [
+    48.55,
+    49.0,
+    -9
+   ]
+  ],
+  "tail_fade": 0.25
+ },
+ "vo": [
+  {
+   "line": "V1",
+   "at": 0.7
+  },
+  {
+   "line": "V2",
+   "at": 1.7
+  },
+  {
+   "line": "V3",
+   "at": 5.55
+  },
+  {
+   "line": "V4",
+   "at": 12.55
+  },
+  {
+   "line": "V5",
+   "at": 18.05
+  },
+  {
+   "line": "V6",
+   "at": 21.75
+  },
+  {
+   "line": "V7",
+   "at": 25.85
+  },
+  {
+   "line": "V9",
+   "at": 37.35
+  },
+  {
+   "line": "V11",
+   "at": 43.35
+  },
+  {
+   "line": "V13",
+   "at": 50.15
+  }
+ ],
+ "sfx": [
+  {
+   "id": 1177,
+   "at": 0.0,
+   "hit": 0.0,
+   "gain_db": -9,
+   "dur": 5.2,
+   "fade_in": 0.8,
+   "why": "low wind under the black opening"
+  },
+  {
+   "id": 1143,
+   "at": 10.030000000000001,
+   "gain_db": -1,
+   "why": "deep impact on 'black'"
+  },
+  {
+   "id": 565,
+   "at": 10.030000000000001,
+   "gain_db": -7,
+   "why": "drum under it"
+  },
+  {
+   "id": 3057,
+   "at": 29.41,
+   "gain_db": -5,
+   "why": "the Ash Slam lands on 'lands'"
+  },
+  {
+   "id": 1687,
+   "at": 29.41,
+   "gain_db": -10,
+   "why": "under the slam"
+  },
+  {
+   "id": 619,
+   "at": 0.12,
+   "gain_db": -9,
+   "dur": 5.0,
+   "why": "the bell before the Keeper speaks"
+  },
+  {
+   "id": 2918,
+   "at": 4.75,
+   "gain_db": -3,
+   "why": "whoosh into the black sun reveal"
+  },
+  {
+   "id": 1468,
+   "at": 7.75,
+   "gain_db": -9,
+   "pan": -0.3,
+   "why": "wind swoosh on the cut to the Overworld"
+  },
+  {
+   "id": 2630,
+   "at": 12.25,
+   "gain_db": -9,
+   "why": "darkness sweep: the dead come back"
+  },
+  {
+   "id": 1492,
+   "at": 14.5,
+   "gain_db": -12,
+   "pan": 0.3,
+   "why": "whoosh on the cut"
+  },
+  {
+   "id": 623,
+   "at": 17.5,
+   "gain_db": -7,
+   "dur": 3.4,
+   "why": "the Threshold's bell at the wake"
+  },
+  {
+   "id": 1486,
+   "at": 21.25,
+   "gain_db": -11,
+   "why": "through the fog",
+   "dur": 1.6
+  },
+  {
+   "id": 1157,
+   "at": 21.3,
+   "hit": 0.0,
+   "gain_db": -16,
+   "dur": 2.4,
+   "fade_in": 0.3,
+   "why": "wind in the arena"
+  },
+  {
+   "id": 2291,
+   "at": 24.62,
+   "gain_db": -7,
+   "dur": 1.2,
+   "why": "horn as Odric rises, after his name"
+  },
+  {
+   "id": 2908,
+   "at": 25.0,
+   "gain_db": -2,
+   "why": "the drop"
+  },
+  {
+   "id": 2763,
+   "at": 25.8,
+   "gain_db": -9,
+   "pan": 0.25,
+   "why": "blade"
+  },
+  {
+   "id": 2794,
+   "at": 27.25,
+   "gain_db": -7,
+   "pan": -0.2,
+   "why": "Odric's swing"
+  },
+  {
+   "id": 2765,
+   "at": 28.0,
+   "gain_db": -8,
+   "pan": 0.2,
+   "why": "blade on armour"
+  },
+  {
+   "id": 2789,
+   "at": 30.25,
+   "gain_db": -4,
+   "pan": 0.2,
+   "why": "cut to the Champion"
+  },
+  {
+   "id": 2776,
+   "at": 31.0,
+   "gain_db": -6,
+   "pan": -0.2
+  },
+  {
+   "id": 2762,
+   "at": 31.75,
+   "gain_db": -5,
+   "pan": 0.15
+  },
+  {
+   "id": 2797,
+   "at": 32.5,
+   "gain_db": -5,
+   "pan": -0.1
+  },
+  {
+   "id": 2289,
+   "at": 33.25,
+   "gain_db": -6,
+   "dur": 2.0,
+   "why": "a horn: the Dusk Rider comes"
+  },
+  {
+   "id": 2909,
+   "at": 33.25,
+   "gain_db": -5,
+   "why": "impact on the Sovereign's title"
+  },
+  {
+   "id": 2795,
+   "at": 34.75,
+   "gain_db": -4,
+   "pan": 0.2
+  },
+  {
+   "id": 2775,
+   "at": 35.5,
+   "gain_db": -6,
+   "pan": -0.2
+  },
+  {
+   "id": 2792,
+   "at": 36.25,
+   "gain_db": -7,
+   "pan": 0.1
+  },
+  {
+   "id": 2289,
+   "at": 37.0,
+   "gain_db": -9,
+   "dur": 2.5,
+   "why": "a low horn: your Echo"
+  },
+  {
+   "id": 490,
+   "at": 37.05,
+   "gain_db": -3
+  },
+  {
+   "id": 490,
+   "at": 37.85,
+   "gain_db": -5
+  },
+  {
+   "id": 2765,
+   "at": 39.25,
+   "gain_db": -4,
+   "pan": 0.2
+  },
+  {
+   "id": 2763,
+   "at": 40.0,
+   "gain_db": -6,
+   "pan": -0.2
+  },
+  {
+   "id": 2795,
+   "at": 40.75,
+   "gain_db": -4,
+   "pan": 0.1
+  },
+  {
+   "id": 2776,
+   "at": 41.5,
+   "gain_db": -6,
+   "pan": -0.15
+  },
+  {
+   "id": 2789,
+   "at": 42.25,
+   "gain_db": -4,
+   "pan": 0.2
+  },
+  {
+   "id": 1349,
+   "at": 43.05,
+   "gain_db": -9,
+   "why": "the shrine kindles"
+  },
+  {
+   "id": 1330,
+   "at": 44.4,
+   "hit": 2.875,
+   "gain_db": 12,
+   "dur": 1.9,
+   "why": "its fire"
+  },
+  {
+   "id": 1468,
+   "at": 45.25,
+   "gain_db": -11,
+   "pan": 0.3
+  },
+  {
+   "id": 561,
+   "at": 46.0,
+   "gain_db": -9,
+   "why": "darkness sweep: the Sovereign's pulse"
+  },
+  {
+   "id": 557,
+   "at": 46.0,
+   "gain_db": -5,
+   "why": "low drum"
+  },
+  {
+   "id": 2900,
+   "at": 49.0,
+   "gain_db": -4,
+   "why": "the title",
+   "dur": 3.2
+  },
+  {
+   "id": 788,
+   "at": 49.0,
+   "gain_db": -9,
+   "dur": 2.5
+  },
+  {
+   "id": 619,
+   "at": 52.0,
+   "gain_db": -7,
+   "dur": 1.5,
+   "why": "the bell again, closing the tale"
+  }
+ ],
+ "mix": {
+  "vo_db": 3.0,
+  "music_db": -6.0,
+  "sfx_db": -4.0
+ }
+}

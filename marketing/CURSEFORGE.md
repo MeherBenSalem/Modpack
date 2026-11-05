@@ -1,6 +1,6 @@
 ![Remnants | The Modpack, Season 1: The Long Eclipse](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/marketing/images/banner.png)
 
-**[Discord](https://discord.gg/TJc3CxR4jK) · [Support NightBeam](https://nightbeam.dev/support) · [NightBeam Pro](https://nightbeam.dev/memberships) · [All projects](https://nightbeam.dev/projects)**
+**[Discord](https://discord.gg/TJc3CxR4jK)**
 
 ## The sun was eaten an age ago
 

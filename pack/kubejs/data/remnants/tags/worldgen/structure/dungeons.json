@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "betterdungeons:zombie_dungeon", "required": false},
+    {"id": "betterdungeons:skeleton_dungeon", "required": false},
+    {"id": "betterdungeons:spider_dungeon", "required": false},
+    {"id": "betterdungeons:small_dungeon", "required": false},
+    {"id": "muchmoredungeons:catacombs", "required": false},
+    {"id": "muchmoredungeons:deepslate_halls", "required": false},
+    {"id": "muchmoredungeons:dungeon_t2", "required": false},
+    {"id": "muchmoredungeons:frost_vaults", "required": false},
+    {"id": "muchmoredungeons:overgrown_warrens", "required": false},
+    {"id": "muchmoredungeons:sandstone_tomb", "required": false},
+    {"id": "muchmoredungeons:soulfire_crypt", "required": false},
+    {"id": "muchmoredungeons:tower_dungeon", "required": false},
+    {"id": "muchmoredungeons:outdoor_villa", "required": false},
+    {"id": "graveyard:crypt", "required": false}
+  ]
+}

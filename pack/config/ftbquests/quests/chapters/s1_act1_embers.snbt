@@ -370,7 +370,7 @@
 			tasks: [
 				{
 					id: "01B4C7B15B5C80F1"
-					structure: "betterdungeons:zombie_dungeon"
+					structure: "#remnants:dungeons"
 					type: "structure"
 				}
 			]

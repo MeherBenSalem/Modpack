@@ -4188,11 +4188,11 @@
 		""
 		"&f&o\"When a Sovereign went mad, its champions went with it. They still carry their master's light. Take it back.\"&r"
 		""
-		"About one hostile in twenty-five wears a &6gold title&r: a &6champion&r, sworn to a Sovereign an age ago and never released from the oath. Champions carry the Sovereigns' &6Fragments&r, the shards of the broken sun, and affixes like Blazing, Phasing or Warded."
+		"Some foes rise far stronger than the rest: a &5champion&r, marked by a &5purple ring&r and a boss bar of its own, sworn to a Sovereign an age ago and never released from the oath. Champions carry the Sovereigns' &6Fragments&r, the shards of the broken sun: every champion you fell drops one."
 		""
 		"&7Kill one."
 	]
-	quest.6456CEF413461135.quest_subtitle: "Gold titles. Sovereign Fragments."
+	quest.6456CEF413461135.quest_subtitle: "Purple rings. Sovereign Fragments."
 	quest.6456CEF413461135.title: "Champion's Bane"
 	quest.645A1BE2876F791A.quest_desc: [
 		"Oren read your copy of Calder's survey twice and asked for one thing: the Lantern Archive's &6Ancient Knowledge Fragments&r. The rare &6Soul Collector&r carries them, and the Forgotten Watcher always does."
@@ -5373,7 +5373,7 @@
 	quest.7CAE9FA8D44BB153.quest_desc: [
 		"Before the Eclipse, the Crown's wardens sealed its worst prisoners underground with cages that bred their own guards. The wardens are gone. The cages still breed."
 		""
-		"&7Find and clear a dungeon."
+		"&7Find a dungeon: a spawner crypt, the catacombs, a frozen vault, a sunken tomb or any other dungeon of the old wardens."
 	]
 	quest.7CAE9FA8D44BB153.quest_subtitle: "Someone built these to keep things in."
 	quest.7CAE9FA8D44BB153.title: "Into the Dark Places"

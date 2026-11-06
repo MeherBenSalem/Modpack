@@ -163,8 +163,8 @@ quests:
     desc: |
       Before the Eclipse, the Crown's wardens sealed its worst prisoners underground with cages that bred their own guards. The wardens are gone. The cages still breed.
 
-      &7Find and clear a dungeon.
-    tasks: [{structure: "betterdungeons:zombie_dungeon", title: "Find a dungeon"}]
+      &7Find a dungeon: a spawner crypt, the catacombs, a frozen vault, a sunken tomb or any other dungeon of the old wardens.
+    tasks: [{structure: "#remnants:dungeons", title: "Find a dungeon"}]
     rewards: [{table: wanderers_cache}, {xp: 120}]
 
   - key: dungeon_trail
@@ -184,14 +184,14 @@ quests:
 
   - key: champion
     title: "Champion's Bane"
-    subtitle: "Gold titles. Sovereign Fragments."
+    subtitle: "Purple rings. Sovereign Fragments."
     icon: runeborn:sovereign_fragment
     deps: [proven_hunter]
     keeper: |
       When a Sovereign went mad, its champions went with it. They still carry their master's light. Take it back.
     voice: true
     desc: |
-      About one hostile in twenty-five wears a &6gold title&r: a &6champion&r, sworn to a Sovereign an age ago and never released from the oath. Champions carry the Sovereigns' &6Fragments&r, the shards of the broken sun, and affixes like Blazing, Phasing or Warded.
+      Some foes rise far stronger than the rest: a &5champion&r, marked by a &5purple ring&r and a boss bar of its own, sworn to a Sovereign an age ago and never released from the oath. Champions carry the Sovereigns' &6Fragments&r, the shards of the broken sun: every champion you fell drops one.
 
       &7Kill one.
     tasks: [{advancement: "runeborn:feats/champion"}]

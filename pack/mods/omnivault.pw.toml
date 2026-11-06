@@ -1,16 +1,16 @@
 name = "OmniVault (formerly Simple Terminals)"
-filename = "omnivault-1.21.1-neoforge-2.0.2.jar"
+filename = "omnivault-1.21.1-neoforge-2.0.3.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/Ss3e4qjk/versions/kNEJ4te7/omnivault-1.21.1-neoforge-2.0.2.jar"
+url = "https://cdn.modrinth.com/data/Ss3e4qjk/versions/xZnihQZt/omnivault-1.21.1-neoforge-2.0.3.jar"
 hash-format = "sha512"
-hash = "0baa5efba119c237cac129132010e2efa3815951afbea8d4129dfea5a6d47e20d5ab0bbb6046210fe5e72e17b5344d257259be5cf71c7a892eee8bb895fdbb38"
+hash = "89162f4ca2a571396802a9f328ec1599c5f9d20f441b75959fa865f5080e483644e9453b4839a622241e285c8f5f6f6a34912c31914abc1c0f9e740bc9645a3b"
 
 [update]
 [update.curseforge]
-file-id = 9422275
+file-id = 9474683
 project-id = 1528758
 [update.modrinth]
 mod-id = "Ss3e4qjk"
-version = "kNEJ4te7"
+version = "xZnihQZt"

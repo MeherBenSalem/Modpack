@@ -1,16 +1,16 @@
 name = "Spore & Stem"
-filename = "spore_and_stem-neoforge-1.21.1-2.0.0.jar"
+filename = "spore_and_stem-neoforge-1.21.1-2.0.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/56wxSt5P/versions/E8aqG9yf/spore_and_stem-neoforge-1.21.1-2.0.0.jar"
+url = "https://cdn.modrinth.com/data/56wxSt5P/versions/TWyouCfp/spore_and_stem-neoforge-1.21.1-2.0.1.jar"
 hash-format = "sha512"
-hash = "593c1df4d3b38d3d8eb9ce90acdfd5ef48f4b890fbe456f182ceca9d4494f8befce43a1416aad4cbd2a598f03e0efef5ec343fcac0f2b9c95c5a58d190e04d31"
+hash = "0f220313f92ade2cf49db18809fef38ce1dffdddfb83354d8a3d96cb958e29733f8f6adebce34df94e403c56a07b4ece1e525ce536d53d34057932fc2bf85245"
 
 [update]
 [update.curseforge]
-file-id = 9385983
+file-id = 9474560
 project-id = 1390363
 [update.modrinth]
 mod-id = "56wxSt5P"
-version = "E8aqG9yf"
+version = "TWyouCfp"

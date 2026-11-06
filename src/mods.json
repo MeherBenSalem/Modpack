@@ -2711,8 +2711,8 @@
   },
   "curseforge": {
    "project_id": 1390363,
-   "file_id": 9385983,
-   "filename": "spore_and_stem-neoforge-1.21.1-2.0.0.jar",
+   "file_id": 9474560,
+   "filename": "spore_and_stem-neoforge-1.21.1-2.0.1.jar",
    "cf_slug": "spore-and-stem"
   },
   "required_deps": [],
@@ -3085,8 +3085,8 @@
   },
   "curseforge": {
    "project_id": 1528758,
-   "file_id": 9422275,
-   "filename": "omnivault-1.21.1-neoforge-2.0.2.jar"
+   "file_id": 9474683,
+   "filename": "omnivault-1.21.1-neoforge-2.0.3.jar"
   },
   "required_deps": [],
   "optional_deps": [],
@@ -4813,8 +4813,8 @@
   },
   "curseforge": {
    "project_id": 1379111,
-   "file_id": 9431805,
-   "filename": "core_utilities-neoforge-1.21.1-2.0.2.jar"
+   "file_id": 9474533,
+   "filename": "core_utilities-neoforge-1.21.1-2.0.3.jar"
   },
   "required_deps": [],
   "optional_deps": [],

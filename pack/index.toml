@@ -186,7 +186,7 @@ hash = "6144495327e0b1a01e5d2d297effa1f59cbb82cfcf4b3e1899ef38db1f3a3e37"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/s1_act1_embers.snbt"
-hash = "2fde2471b84f1d47d67ed29382fb660c7400161b8eb515c82d034711f9688686"
+hash = "77e5063730b68e58b9b1ec4a225f5fca96101e27a064ddd86940ca9ab4449cc2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/s1_act2_hunt.snbt"
@@ -238,7 +238,7 @@ hash = "f8adb9c4678c0cbf6253133e03616524b4a124214bc1ae17c5d79af09ebc18a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "9a6f86fd85210516563c57af3c14439be8575a3e333fe0977126f07da3c76c0c"
+hash = "b499c905677ae1ae6db06e964b6d37bee101a734128918ed9fb64fcb0f76ed24"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/ashborn_provisions.snbt"
@@ -1189,6 +1189,10 @@ file = "kubejs/data/remnants/patchouli_books/ashen_codex/book.json"
 hash = "071a1128f9cf5a979c7f492d037f93d7bafccf189161885bf1533d8509a10288"
 
 [[files]]
+file = "kubejs/data/remnants/tags/worldgen/structure/dungeons.json"
+hash = "7d3ff28a0e2e397993c694979144343449c000a56a18012d354c3211bc5d1311"
+
+[[files]]
 file = "kubejs/data/runeborn/weapon_attributes/abyssal_scepter.json"
 hash = "3a915792b163ce17f758374bf1608b1feb76aac2f9bee41a886ca8b7dbf81379"
 
@@ -1482,7 +1486,7 @@ hash = "0c615d27d6e7932dab70603593b0d4b2098f06e605c17c7e8549a677ec84ef94"
 
 [[files]]
 file = "kubejs/server_scripts/remnants/balance.js"
-hash = "a29894a0437137980568aeb05e0ea9b7f4ad3a911a84efab38bd696b08087c49"
+hash = "a84cb25b017616d83f8e015bfb6d0d06aad35e059cd9e01906146c5722d95068"
 
 [[files]]
 file = "kubejs/server_scripts/remnants/deathguide.js"
@@ -1693,7 +1697,7 @@ metafile = true
 
 [[files]]
 file = "mods/core-utilities.pw.toml"
-hash = "d0c656db036d069c9faf125d14e7cef2ae78eeb249e57e004bd8777c7b77fafc"
+hash = "d6e0d54b539f2fff53857497ca2716455df5c040b0d3cb5c33fadf8ae363f475"
 metafile = true
 
 [[files]]
@@ -2088,7 +2092,7 @@ metafile = true
 
 [[files]]
 file = "mods/omnivault.pw.toml"
-hash = "d5b05d10ba79f36bd0c8a50c5c72dcb8e5651097a7a9bf625aa89fdf537872c0"
+hash = "18659abbdc3bfb73085b92d0f867c8799ca9dd31a20b73a553227591fb6ff367"
 metafile = true
 
 [[files]]
@@ -2178,7 +2182,7 @@ metafile = true
 
 [[files]]
 file = "mods/remnants-rpg-stats-skills-progression.pw.toml"
-hash = "b776f0c221b4334f3e3870c27a3e4f932d2404efc34782035afb03f26cf79577"
+hash = "659eb00f8dbd7bb7735ceb054a10dab71e2637670fe8e9d5e6d24f65aa76cdbd"
 metafile = true
 
 [[files]]
@@ -2258,7 +2262,7 @@ metafile = true
 
 [[files]]
 file = "mods/spore-and-stem.pw.toml"
-hash = "ede4fa1431b6ff3c6afe85da4efc4bac189768b699df7cc7cb8f5cd5ee48dbea"
+hash = "3e3034211ea3bf3212ce90cc47ed43607edd4b13bf0556569379ac16539409d0"
 metafile = true
 
 [[files]]

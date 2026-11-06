@@ -2701,13 +2701,13 @@
   "license": "Apache-2.0",
   "modrinth": {
    "project_id": "56wxSt5P",
-   "version_id": "E8aqG9yf",
-   "version_number": "2.0.0+neoforge-1.21.1",
-   "filename": "spore_and_stem-neoforge-1.21.1-2.0.0.jar",
-   "url": "https://cdn.modrinth.com/data/56wxSt5P/versions/E8aqG9yf/spore_and_stem-neoforge-1.21.1-2.0.0.jar",
-   "sha1": "ba37149f7139a955bacbee9dee5bad80f9161339",
-   "sha512": "593c1df4d3b38d3d8eb9ce90acdfd5ef48f4b890fbe456f182ceca9d4494f8befce43a1416aad4cbd2a598f03e0efef5ec343fcac0f2b9c95c5a58d190e04d31",
-   "size": 2294461
+   "version_id": "TWyouCfp",
+   "version_number": "2.0.1+neoforge-1.21.1",
+   "filename": "spore_and_stem-neoforge-1.21.1-2.0.1.jar",
+   "url": "https://cdn.modrinth.com/data/56wxSt5P/versions/TWyouCfp/spore_and_stem-neoforge-1.21.1-2.0.1.jar",
+   "sha1": "cc231740fafc7add5d01e4501819916346563d7b",
+   "sha512": "0f220313f92ade2cf49db18809fef38ce1dffdddfb83354d8a3d96cb958e29733f8f6adebce34df94e403c56a07b4ece1e525ce536d53d34057932fc2bf85245",
+   "size": 2294474
   },
   "curseforge": {
    "project_id": 1390363,
@@ -2985,18 +2985,18 @@
   "license": "Apache-2.0",
   "modrinth": {
    "project_id": "d85UTOuq",
-   "version_id": "xU10Gxov",
-   "version_number": "5.1.1+neoforge-1.21.1",
-   "filename": "rpg_attribute_system-neoforge-1.21.1-5.1.1.jar",
-   "url": "https://cdn.modrinth.com/data/d85UTOuq/versions/xU10Gxov/rpg_attribute_system-neoforge-1.21.1-5.1.1.jar",
-   "sha1": "8fc36b45a7ce2f530332d054f1a10f312b370b4f",
-   "sha512": "6abd47bfa598e23d8997a5f60601c1464fb7dee51303feed5bd8f73c396abc6cc961685f01702864289566f0235e8cdc925fed0ef26e98454a09a080a84cb280",
-   "size": 3698400
+   "version_id": "b1MODLJx",
+   "version_number": "5.1.2+neoforge-1.21.1",
+   "filename": "rpg_attribute_system-neoforge-1.21.1-5.1.2.jar",
+   "url": "https://cdn.modrinth.com/data/d85UTOuq/versions/b1MODLJx/rpg_attribute_system-neoforge-1.21.1-5.1.2.jar",
+   "sha1": "fe0c95130b2dbf66c2cdc4e1f80f1a7daa979c3b",
+   "sha512": "7673951465bfa4aa32105623acae6039b99d3fea42dac8969e9bc71f053fcd6b2b9b41ce386fd5a81055651ff1da4469bffe82b18be2607eb66a685301f36482",
+   "size": 3699027
   },
   "curseforge": {
    "project_id": 1079687,
-   "file_id": 9424224,
-   "filename": "rpg_attribute_system-neoforge-1.21.1-5.1.1.jar"
+   "file_id": 9433701,
+   "filename": "rpg_attribute_system-neoforge-1.21.1-5.1.2.jar"
   },
   "required_deps": [
    "jauml"
@@ -3075,13 +3075,13 @@
   "license": "Apache-2.0",
   "modrinth": {
    "project_id": "Ss3e4qjk",
-   "version_id": "kNEJ4te7",
-   "version_number": "2.0.2+neoforge-1.21.1",
-   "filename": "omnivault-1.21.1-neoforge-2.0.2.jar",
-   "url": "https://cdn.modrinth.com/data/Ss3e4qjk/versions/kNEJ4te7/omnivault-1.21.1-neoforge-2.0.2.jar",
-   "sha1": "dbd56e25c88cc09c983ea433b77240eb8b939cf4",
-   "sha512": "0baa5efba119c237cac129132010e2efa3815951afbea8d4129dfea5a6d47e20d5ab0bbb6046210fe5e72e17b5344d257259be5cf71c7a892eee8bb895fdbb38",
-   "size": 1344990
+   "version_id": "xZnihQZt",
+   "version_number": "2.0.3+neoforge-1.21.1",
+   "filename": "omnivault-1.21.1-neoforge-2.0.3.jar",
+   "url": "https://cdn.modrinth.com/data/Ss3e4qjk/versions/xZnihQZt/omnivault-1.21.1-neoforge-2.0.3.jar",
+   "sha1": "f66869a28eb4677bff657a700b01c7c92964fba2",
+   "sha512": "89162f4ca2a571396802a9f328ec1599c5f9d20f441b75959fa865f5080e483644e9453b4839a622241e285c8f5f6f6a34912c31914abc1c0f9e740bc9645a3b",
+   "size": 1345874
   },
   "curseforge": {
    "project_id": 1528758,
@@ -4803,13 +4803,13 @@
   "license": "Apache-2.0",
   "modrinth": {
    "project_id": "uy92hxqE",
-   "version_id": "U4KV3Sgc",
-   "version_number": "2.0.2+1.21.1-neoforge",
-   "filename": "core_utilities-neoforge-1.21.1-2.0.2.jar",
-   "url": "https://cdn.modrinth.com/data/uy92hxqE/versions/U4KV3Sgc/core_utilities-neoforge-1.21.1-2.0.2.jar",
-   "sha1": "1606937407161340db1f4b7ce6e5ed4e83743917",
-   "sha512": "4b4c0e322f5d262aa19dcb58b12a8203f94739d0906d08a75ced06a3b4f80f480b672578a003eaec3d903ff8b7a7ac33c6f078c88ef2357798c02617d4f070d8",
-   "size": 1056109
+   "version_id": "k7JqOtXh",
+   "version_number": "2.0.3+1.21.1-neoforge",
+   "filename": "core_utilities-neoforge-1.21.1-2.0.3.jar",
+   "url": "https://cdn.modrinth.com/data/uy92hxqE/versions/k7JqOtXh/core_utilities-neoforge-1.21.1-2.0.3.jar",
+   "sha1": "1c58150d9c963a783615070fc0ec89b565899cea",
+   "sha512": "a3f8813d2a8590e11b43ec5c6f12fe86327c50e8a074e01aaedd280461fdc171345fcea18b6b1069fda74eb1c1f879c06031e36aabd3d169e7d41b0bacf4c3a0",
+   "size": 1056348
   },
   "curseforge": {
    "project_id": 1379111,

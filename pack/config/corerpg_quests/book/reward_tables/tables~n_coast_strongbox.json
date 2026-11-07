@@ -1,0 +1,47 @@
+{
+  "id": "tables/n_coast_strongbox",
+  "title": "The Captain's Strongbox",
+  "icon": "minecraft:nautilus_shell",
+  "entries": [
+    {
+      "id": "tables/n_coast_strongbox/0",
+      "type": "item",
+      "item": "minecraft:emerald",
+      "count": 8,
+      "weight": 3
+    },
+    {
+      "id": "tables/n_coast_strongbox/1",
+      "type": "item",
+      "item": "minecraft:gold_ingot",
+      "count": 6,
+      "weight": 3
+    },
+    {
+      "id": "tables/n_coast_strongbox/2",
+      "type": "item",
+      "item": "minecraft:nautilus_shell",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/n_coast_strongbox/3",
+      "type": "item",
+      "item": "fisherman_house:glow_bait",
+      "count": 6,
+      "weight": 2
+    },
+    {
+      "id": "tables/n_coast_strongbox/4",
+      "type": "item",
+      "item": "minecraft:golden_apple",
+      "weight": 1
+    },
+    {
+      "id": "tables/n_coast_strongbox/5",
+      "type": "item",
+      "item": "minecraft:diamond",
+      "weight": 1
+    }
+  ]
+}

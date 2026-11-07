@@ -1,0 +1,53 @@
+{
+  "id": "tables/world_eclipse_spoils",
+  "title": "Light of the Black Sun",
+  "icon": "runeborn:sovereign_tempering_stone",
+  "entries": [
+    {
+      "id": "tables/world_eclipse_spoils/0",
+      "type": "item",
+      "item": "runeborn:sovereign_tempering_stone",
+      "weight": 2
+    },
+    {
+      "id": "tables/world_eclipse_spoils/1",
+      "type": "item",
+      "item": "runeborn:lustrous_stone_6",
+      "count": 2,
+      "weight": 3
+    },
+    {
+      "id": "tables/world_eclipse_spoils/2",
+      "type": "item",
+      "item": "runeborn:lustrous_stone_7",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/world_eclipse_spoils/3",
+      "type": "item",
+      "item": "runeborn:lustrous_stone_8",
+      "weight": 1
+    },
+    {
+      "id": "tables/world_eclipse_spoils/4",
+      "type": "item",
+      "item": "runeborn:heros_rune",
+      "count": 2,
+      "weight": 3
+    },
+    {
+      "id": "tables/world_eclipse_spoils/5",
+      "type": "item",
+      "item": "mob_loot_bags:legendarylootbag",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/world_eclipse_spoils/6",
+      "type": "item",
+      "item": "runeborn:sunseed",
+      "weight": 0.5
+    }
+  ]
+}

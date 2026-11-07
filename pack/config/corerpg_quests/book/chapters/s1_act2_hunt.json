@@ -1,0 +1,856 @@
+{
+  "id": "s1_act2_hunt",
+  "title": "&6Act II: &fThe Hunt",
+  "icon": "remnant_mobs:brand_of_challenge",
+  "group": "groups/main",
+  "subtitle": [
+    "The red moon rises. The Remnants hunt you back. Levels 15–30."
+  ],
+  "default_quest_shape": "rsquare",
+  "quests": [
+    {
+      "id": "s1_act2_hunt/tale_red_moon",
+      "title": "&e♪ &6The Tale of the Red Moon",
+      "subtitle": "Why the dead hunt on certain nights.",
+      "icon": "minecraft:written_book",
+      "x": 0,
+      "y": -0.875,
+      "shape": "hexagon",
+      "size": 1.75,
+      "dependencies": [
+        "s1_act1_embers/dusk_rider"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"You heard the bell last night. You'll hear it again.&r",
+        "",
+        "&f&oWhen the sun went out, the moon kept its light for a while. The old priests called it the Hunter's Moon: the night the Crown's huntsmen rode out to clear the roads. The huntsmen are Remnants now. On certain nights the moon remembers them, and turns the colour of what they hunted.&r",
+        "",
+        "&f&oOn those nights everything that has died before wakes hungrier. They'll find you, Ashborn. Your light is a beacon, and a red moon lets the dead see further.&r",
+        "",
+        "&f&oSo hunt back. Varghast waits beyond the hunt, and the Frost Matron beyond him. Two more embers. Go and take them.\"&r",
+        "",
+        "The &cHunter's Moon&r is the Eclipse's tide: on its nights the dead rise in greater numbers and higher ranks, and the &cRemnants&r, the named ones, begin to walk."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act2_hunt/tale_red_moon/task0",
+          "type": "checkmark",
+          "title": "♪ Listen to the Keeper"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act2_hunt/tale_red_moon/reward0",
+          "type": "xp",
+          "xp": 60
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act2_hunt/hunters_moon",
+      "title": "&cUnder the Hunter's Moon",
+      "subtitle": "Monsters grow stronger until dawn.",
+      "icon": "minecraft:red_dye",
+      "x": 2,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 2,
+      "dependencies": [
+        "s1_act2_hunt/tale_red_moon"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Toll's ringing. Bar the doors, sharpen something, and don't stand near the windows. Or go out there. You were always going to go out there.\"&r",
+        "",
+        "Some full moons rise &cred&r. A toll sounds across the world, and until dawn the Eclipse leans close.",
+        "",
+        "&7On a Hunter's Moon every monster gains &c+5 levels&7, ranks come twice as often and Remnant Shards drop twice as thick. Survive one. Better: hunt through one. Type &e/remnants moon&7 to check tonight's moon."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act2_hunt/hunters_moon/task0",
+          "type": "advancement",
+          "advancement": "remnant_mobs:under_the_hunters_moon",
+          "title": "lang:advancements.remnant_mobs.under_the_hunters_moon.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act2_hunt/hunters_moon/reward0",
+          "type": "random",
+          "table": "tables/hunters_spoils"
+        },
+        {
+          "id": "s1_act2_hunt/hunters_moon/reward1",
+          "type": "xp",
+          "xp": 300
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act2_hunt/grim_vigil",
+      "title": "&4The Grim Vigil",
+      "subtitle": "Named hunters, and something worse. Until dawn.",
+      "icon": "minecraft:wither_skeleton_skull",
+      "x": 4,
+      "y": -5.25,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "s1_act2_hunt/hunters_moon"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Some nights the huntsmen don't wait for a red moon. They choose. They learn your name, they take your trail, and they come in threes until the sky goes grey. The last one through the trees will be the one who taught the others. Keep your back to a wall and your eyes on the dawn. It always comes. That's the one promise the dark never broke.\"&r",
+        "",
+        "Every so often a &4Grim Vigil&r falls at dusk: a horn, a title across the sky, and until sunrise named, ranked hunters are sent after every survivor in waves. With the last wave comes a &cRemnant&r-rank mini-boss.",
+        "",
+        "&7Survive until sunrise. Seeing the dawn pays experience and Valor; the mini-boss drops extra Remnant Shards and may drop a &6Vital Ember&7. Check the threat around you any time with &e/remnants difficulty&7."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act2_hunt/grim_vigil/task0",
+          "type": "advancement",
+          "advancement": "remnant_mobs:see_the_dawn",
+          "title": "lang:advancements.remnant_mobs.see_the_dawn.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act2_hunt/grim_vigil/reward0",
+          "type": "random",
+          "table": "tables/hunters_spoils"
+        },
+        {
+          "id": "s1_act2_hunt/grim_vigil/reward1",
+          "type": "xp",
+          "xp": 400
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act2_hunt/kindled",
+      "title": "&6Kindled",
+      "subtitle": "A spark of the old sun, still warm.",
+      "icon": "remnant_mobs:vital_ember",
+      "x": 6,
+      "y": -2.625,
+      "dependencies": [
+        "s1_act2_hunt/champions_bane"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"You found one. A Vital Ember. When the sun broke, a little of it fell into everything that was alive to catch it. The dead keep theirs a long time. Take it in, Ashborn. It will make your heart a little bigger, and it won't give the room back when you die.\"&r",
+        "",
+        "Ranked monsters, and every event night's mini-boss, sometimes carry a &6Vital Ember&r: the last of the old sun's warmth, kept in something that died.",
+        "",
+        "&7Use one to gain a heart of max health for good, up to ten. It stays through death."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act2_hunt/kindled/task0",
+          "type": "advancement",
+          "advancement": "remnant_mobs:kindled",
+          "title": "lang:advancements.remnant_mobs.kindled.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act2_hunt/kindled/reward0",
+          "type": "item",
+          "item": "remnant_mobs:remnant_shard",
+          "count": 6
+        },
+        {
+          "id": "s1_act2_hunt/kindled/reward1",
+          "type": "xp",
+          "xp": 250
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act2_hunt/field_dressings",
+      "title": "Field Dressings",
+      "subtitle": "The dead carry medicine. Take it.",
+      "icon": "remnant_mobs:mending_salve",
+      "x": 4,
+      "y": -3.5,
+      "dependencies": [
+        "s1_act2_hunt/hunters_moon"
+      ],
+      "optional": true,
+      "description": [
+        "Veterans and stronger sometimes drop a &aMending Salve&r, which heals a little over a few seconds. Elites and stronger may drop a &cHunter's Draught&r: a large heal, then regeneration.",
+        "",
+        "&7Keep one for the fight you didn't plan."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act2_hunt/field_dressings/task0",
+          "type": "item",
+          "item": "remnant_mobs:mending_salve"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act2_hunt/field_dressings/reward0",
+          "type": "item",
+          "item": "minecraft:golden_carrot",
+          "count": 8
+        },
+        {
+          "id": "s1_act2_hunt/field_dressings/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "s1_act2_hunt/punching_up",
+      "title": "Punching Up",
+      "subtitle": "Kill something above your level.",
+      "icon": "minecraft:iron_sword",
+      "x": 4,
+      "y": -1.75,
+      "dependencies": [
+        "s1_act2_hunt/hunters_moon"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"The Company has a saying: pick on someone your own size, and you'll stay that size forever.\"&r",
+        "",
+        "Valor comes faster from fights you shouldn't win. Every Ashborn who ever mattered got there by being reckless at least once and surviving it.",
+        "",
+        "&7A monster whose level burns &cred&7 against yours pays half again as much Valor. Kill one."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act2_hunt/punching_up/task0",
+          "type": "advancement",
+          "advancement": "remnant_mobs:punching_up",
+          "title": "lang:advancements.remnant_mobs.punching_up.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act2_hunt/punching_up/reward0",
+          "type": "item",
+          "item": "runeborn:lustrous_rune",
+          "count": 2
+        },
+        {
+          "id": "s1_act2_hunt/punching_up/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act2_hunt/champions_bane",
+      "title": "Champion's Crest",
+      "subtitle": "Purple crest. Three traits. Bad news.",
+      "icon": "remnant_mobs:remnant_shard",
+      "x": 4,
+      "y": 0,
+      "dependencies": [
+        "s1_act2_hunt/hunters_moon"
+      ],
+      "description": [
+        "A &5Champion&r has risen four times. By now it remembers nothing of who it was, only how it died, and it has learned to make sure that never happens again.",
+        "",
+        "&7It carries three traits and pays five times the experience of its kind. Read its traits before you swing: a &cVolatile&7 one explodes when it dies; a &bBlinking&7 one teleports behind you; a &6Packleader&7 calls its pack at 60% health."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act2_hunt/champions_bane/task0",
+          "type": "advancement",
+          "advancement": "remnant_mobs:champions_bane",
+          "title": "lang:advancements.remnant_mobs.champions_bane.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act2_hunt/champions_bane/reward0",
+          "type": "random",
+          "table": "tables/hunters_spoils"
+        },
+        {
+          "id": "s1_act2_hunt/champions_bane/reward1",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "s1_act2_hunt/challenge",
+      "title": "Accept the Challenge",
+      "subtitle": "Make it worse on purpose.",
+      "icon": "remnant_mobs:brand_of_challenge",
+      "x": 6,
+      "y": -0.875,
+      "dependencies": [
+        "s1_act2_hunt/champions_bane"
+      ],
+      "optional": true,
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"You're branding them now? On purpose? I've buried braver people than you. Well. Not buried. You know what I mean.\"&r",
+        "",
+        "The &6Brand of Challenge&r was the huntsmen's mark: a sign burned into a beast to say &oI chose you&r. The dead still answer it.",
+        "",
+        "&7A Brand gives a monster one more rank and five more levels, and doubles everything it pays. Brand something and kill it."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act2_hunt/challenge/task0",
+          "type": "advancement",
+          "advancement": "remnant_mobs:accept_the_challenge",
+          "title": "lang:advancements.remnant_mobs.accept_the_challenge.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act2_hunt/challenge/reward0",
+          "type": "item",
+          "item": "remnant_mobs:remnant_shard",
+          "count": 6
+        },
+        {
+          "id": "s1_act2_hunt/challenge/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act2_hunt/remnant",
+      "title": "&cA Remnant's End",
+      "subtitle": "It has a name. It has a horn. It has killed people like you.",
+      "icon": "minecraft:goat_horn",
+      "x": 6,
+      "y": 0.875,
+      "shape": "hexagon",
+      "size": 1.75,
+      "dependencies": [
+        "s1_act2_hunt/champions_bane"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"That horn means one of them has your scent. Don't run. They're faster, and they've done this before.\"&r",
+        "",
+        "From level 30 the rarest rank rises: a &cRemnant&r, a monster that died so often it grew a name and a title out of the habit. Its horn carries for forty-eight blocks. It never despawns. When it falls, the whole world hears.",
+        "",
+        "&7Kill a Remnant."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act2_hunt/remnant/task0",
+          "type": "advancement",
+          "advancement": "remnant_mobs:remnants_end",
+          "title": "lang:advancements.remnant_mobs.remnants_end.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act2_hunt/remnant/reward0",
+          "type": "random",
+          "table": "tables/hunters_spoils"
+        },
+        {
+          "id": "s1_act2_hunt/remnant/reward1",
+          "type": "item",
+          "item": "runeborn:radiant_rune"
+        },
+        {
+          "id": "s1_act2_hunt/remnant/reward2",
+          "type": "xp",
+          "xp": 500
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act2_hunt/labyrinth",
+      "title": "Into Every Maze",
+      "subtitle": "The Sovereigns built prisons under the world.",
+      "icon": "minecraft:mossy_stone_bricks",
+      "x": 4,
+      "y": 1.75,
+      "dependencies": [
+        "s1_act2_hunt/hunters_moon"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"The Sovereigns couldn't kill everything they feared. So they dug.\"&r",
+        "",
+        "Under the plains lie the &6Forgotten Catacombs&r, the first of the &6Labyrinths&r: prisons the Sovereigns dug for things they couldn't kill. A Bone Warden still keeps its heart, though nobody remembers who it was told to keep in.",
+        "",
+        "&7Find the Catacombs and break their warden."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act2_hunt/labyrinth/task0",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:slay_catacombs_guardian",
+          "title": "lang:advancements.muchmoredungeons.slay_catacombs_guardian.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act2_hunt/labyrinth/reward0",
+          "type": "random",
+          "table": "tables/hunters_spoils"
+        },
+        {
+          "id": "s1_act2_hunt/labyrinth/reward1",
+          "type": "xp",
+          "xp": 300
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act2_hunt/spire",
+      "title": "The Arcane Spire",
+      "subtitle": "Tier II of the dungeon trail.",
+      "icon": "minecraft:enchanted_book",
+      "x": 0,
+      "y": 0.875,
+      "dependencies": [
+        "s1_act1_embers/dungeon_trail"
+      ],
+      "description": [
+        "In the old forests stands the &6Arcane Spire&r, kept by an illusionist who split himself into reflections to outlive the dark, and has since forgotten which of him is real.",
+        "",
+        "&7Climb the Spire and kill its master."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act2_hunt/spire/task0",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:slay_tower_dungeon_guardian",
+          "title": "lang:advancements.muchmoredungeons.slay_tower_dungeon_guardian.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act2_hunt/spire/reward0",
+          "type": "random",
+          "table": "tables/hunters_spoils"
+        },
+        {
+          "id": "s1_act2_hunt/spire/reward1",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "s1_act2_hunt/path",
+      "title": "Choose a Path",
+      "subtitle": "Blade, sorcery or faith. Or all three, badly.",
+      "icon": "runeborn:astral_staff",
+      "x": 4,
+      "y": 3.5,
+      "dependencies": [
+        "s1_act2_hunt/hunters_moon"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Your runes have opinions now. Listen to them. A blade, a star, a prayer. Pick one before the dark picks for you.\"&r",
+        "",
+        "The &6Remnant Constellation&r is the map the Crown's astromancers drew of every way a person can carry light. Most of its stars went dark with the sun. Yours are lighting up.",
+        "",
+        "&7&6Strength&7 and &6Dexterity&7 for steel, &bIntelligence&7 for staves, &eFaith&7 for sacred seals, &5Arcane&7 for the strange things. Open the Constellation (&eP&7), take your first ability and cast it with &eZ&7. Its &bEssence&7 refills on its own. The &ePaths of the Ashborn&7 chapters go deeper into each one."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act2_hunt/path/task0",
+          "type": "checkmark",
+          "title": "I took my first ability in the Constellation"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act2_hunt/path/reward0",
+          "type": "item",
+          "item": "elementals:remnant_tome"
+        },
+        {
+          "id": "s1_act2_hunt/path/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act2_hunt/varghast_fragments",
+      "title": "The Grafted King",
+      "subtitle": "Six Fragments and an iron block.",
+      "icon": "minecraft:iron_block",
+      "x": 4,
+      "y": 5.25,
+      "dependencies": [
+        "s1_act2_hunt/hunters_moon",
+        "s1_forge/seal_dusk"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Varghast was a good king, once. Too good. He couldn't bear to lose a single soldier, so he kept them. Every arm of every man who fell for him, sewn onto his own.\"&r",
+        "",
+        "&6Varghast the Grafted&r, Sovereign of the Hollow Vale, kept his army's strength the only way he could: by wearing it. By the end there was nothing left of him but grip. His token is a block of &firon&r, the metal of the stitches.",
+        "",
+        "&7Gather six Fragments and an iron block.",
+        "",
+        "&7Varghast's sigil needs the &6Seal of Dusk&7 in the grid too. It stays there."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act2_hunt/varghast_fragments/task0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment",
+          "count": 6
+        },
+        {
+          "id": "s1_act2_hunt/varghast_fragments/task1",
+          "type": "item",
+          "item": "minecraft:iron_block"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act2_hunt/varghast_fragments/reward0",
+          "type": "xp",
+          "xp": 150
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act2_hunt/varghast",
+      "title": "&6Sovereign: Varghast the Grafted",
+      "subtitle": "Sovereign of the Hollow Vale. Level 20.",
+      "icon": "runeborn:graft_axe",
+      "x": 6,
+      "y": 2.625,
+      "shape": "gear",
+      "size": 2,
+      "dependencies": [
+        "s1_act2_hunt/varghast_fragments"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Two embers. When he fell, I heard them. All those soldiers, finally let go. Some of them were saying thank you, Ashborn. I think one of them was saying it to you.\"&r",
+        "",
+        "Craft his &6Sigil&r and call him somewhere wide. He swings like a man with a hundred arms and nothing left to lose, because he has and he hasn't.",
+        "",
+        "&7His grafted arm has the reach of a spear. Don't trade blows; roll &oforward&7 into his swing and punish the recovery."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act2_hunt/varghast/task0",
+          "type": "item",
+          "item": "runeborn:sigil_varghast"
+        },
+        {
+          "id": "s1_act2_hunt/varghast/task1",
+          "type": "advancement",
+          "advancement": "runeborn:feats/fell_varghast",
+          "title": "lang:runeborn.feat.fell_varghast"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act2_hunt/varghast/reward0",
+          "type": "random",
+          "table": "tables/sovereign_tribute"
+        },
+        {
+          "id": "s1_act2_hunt/varghast/reward1",
+          "type": "xp",
+          "xp": 600
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act2_hunt/crown",
+      "title": "A Shard of the Crown",
+      "subtitle": "Wear a piece of the broken sun.",
+      "icon": "runeborn:crown_shard_varghast",
+      "x": 8,
+      "y": -0.875,
+      "dependencies": [
+        "s1_act2_hunt/varghast"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"The Crown was made to hold the sun. Every piece still remembers how. Wear it, and it will try to hold you.\"&r",
+        "",
+        "Every Sovereign but the Dusk Rider leaves a &6Crown Shard&r: a fragment of the Sun-Crown, each with a lasting boon. Six Sovereigns, six shards. The seventh piece was never a Sovereign's to keep.",
+        "",
+        "&7Equip the shard at a shrine."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act2_hunt/crown/task0",
+          "type": "item",
+          "item": "runeborn:crown_shard_varghast"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act2_hunt/crown/reward0",
+          "type": "item",
+          "item": "runeborn:hallowed_tear"
+        },
+        {
+          "id": "s1_act2_hunt/crown/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act2_hunt/rime_veil",
+      "title": "The Rime Veil",
+      "subtitle": "Where the cold went to hide.",
+      "icon": "minecraft:blue_ice",
+      "x": 8,
+      "y": 0.875,
+      "dependencies": [
+        "s1_act2_hunt/varghast"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Sylvara buried her piece of the sun under the snow to keep it from melting away. It worked. Nothing there has melted in an age, including her.\"&r",
+        "",
+        "&6Sylvara, Frost Matron&r, rules the &bRime Veil&r: the frozen lands where the last warmth of the old sun was buried and kept, like a seed nobody was allowed to plant. Her token is &bblue ice&r.",
+        "",
+        "&7Before you call her, learn the cold. In the frozen peaks the &6Frostmaw&7 guards its ice crystal; under the ice, the &6Rimefrost Vaults&7 hold a Frost Lich."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act2_hunt/rime_veil/task0",
+          "type": "item",
+          "item": "minecraft:blue_ice"
+        },
+        {
+          "id": "s1_act2_hunt/rime_veil/task1",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment",
+          "count": 6
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act2_hunt/rime_veil/reward0",
+          "type": "item",
+          "item": "minecraft:golden_apple",
+          "count": 2
+        },
+        {
+          "id": "s1_act2_hunt/rime_veil/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act2_hunt/frostmaw",
+      "title": "The Frostmaw",
+      "subtitle": "Snowy peaks. Something big sleeps there.",
+      "icon": "mowziesmobs:ice_crystal",
+      "x": 10,
+      "y": -1.75,
+      "shape": "gear",
+      "dependencies": [
+        "s1_act2_hunt/rime_veil"
+      ],
+      "optional": true,
+      "description": [
+        "A hulking frost beast sleeps in the snow, curled around a crystal of the Matron's ice like a dog around a bone. It breathes winter and leaps like a falling glacier.",
+        "",
+        "&7Kill the Frostmaw. Its &bIce Crystal&7 freezes everything around its bearer."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act2_hunt/frostmaw/task0",
+          "type": "kill",
+          "entity": "mowziesmobs:frostmaw"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act2_hunt/frostmaw/reward0",
+          "type": "random",
+          "table": "tables/hunters_spoils"
+        },
+        {
+          "id": "s1_act2_hunt/frostmaw/reward1",
+          "type": "xp",
+          "xp": 400
+        }
+      ]
+    },
+    {
+      "id": "s1_act2_hunt/frost_vaults",
+      "title": "The Rimefrost Vaults",
+      "subtitle": "A labyrinth under the snow.",
+      "icon": "minecraft:packed_ice",
+      "x": 10,
+      "y": 0,
+      "dependencies": [
+        "s1_act2_hunt/rime_veil",
+        "s1_act2_hunt/labyrinth"
+      ],
+      "optional": true,
+      "description": [
+        "The Matron's court did not die. It froze, mid-feast, mid-sentence, and the Frost Lich who keeps the vaults has been waiting ever since for someone to finish the conversation.",
+        "",
+        "&7Clear the Rimefrost Vaults and kill their guardian."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act2_hunt/frost_vaults/task0",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:slay_frost_vaults_guardian",
+          "title": "lang:advancements.muchmoredungeons.slay_frost_vaults_guardian.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act2_hunt/frost_vaults/reward0",
+          "type": "random",
+          "table": "tables/hunters_spoils"
+        },
+        {
+          "id": "s1_act2_hunt/frost_vaults/reward1",
+          "type": "xp",
+          "xp": 400
+        }
+      ]
+    },
+    {
+      "id": "s1_act2_hunt/sylvara",
+      "title": "&6Sovereign: Sylvara, Frost Matron",
+      "subtitle": "Sovereign of the Rime Veil. Level 25.",
+      "icon": "runeborn:frostbound_staff",
+      "x": 10,
+      "y": 1.75,
+      "shape": "gear",
+      "size": 2,
+      "dependencies": [
+        "s1_act2_hunt/rime_veil",
+        "s1_forge/seal_dusk"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Three embers. Feel that wind? It's warm. For the first time in an age, something in the north is thawing. Three Sovereigns, Ashborn. You're making the dark nervous.\"&r",
+        "",
+        "Call her in the snow, where she feels at home. She fights from range and freezes what she can't reach.",
+        "",
+        "&7&cFrostbite&7 builds with every hit; let it fill and it bursts for a chunk of your health. Close the distance, use cover against her blizzards and keep a flask for the burst.",
+        "",
+        "&7Her sigil needs the &6Seal of Dusk&7 in the grid. It stays there."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act2_hunt/sylvara/task0",
+          "type": "item",
+          "item": "runeborn:sigil_sylvara"
+        },
+        {
+          "id": "s1_act2_hunt/sylvara/task1",
+          "type": "advancement",
+          "advancement": "runeborn:feats/fell_sylvara",
+          "title": "lang:runeborn.feat.fell_sylvara"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act2_hunt/sylvara/reward0",
+          "type": "random",
+          "table": "tables/sovereign_tribute"
+        },
+        {
+          "id": "s1_act2_hunt/sylvara/reward1",
+          "type": "item",
+          "item": "runeborn:tempering_stone_5",
+          "count": 2
+        },
+        {
+          "id": "s1_act2_hunt/sylvara/reward2",
+          "type": "xp",
+          "xp": 800
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act2_hunt/runebearer",
+      "title": "Runebearer",
+      "subtitle": "Rune level 50.",
+      "icon": "runeborn:radiant_rune",
+      "x": 12,
+      "y": 0,
+      "dependencies": [
+        "s1_act2_hunt/sylvara"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Fifty levels of light. You glow, you know. Not so anyone else could see. But I can.\"&r",
+        "",
+        "You are no longer the weakest thing in the ash. Remnants that once hunted you now hesitate at the edge of your torchlight.",
+        "",
+        "&7Reach rune level 50."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act2_hunt/runebearer/task0",
+          "type": "advancement",
+          "advancement": "runeborn:feats/level_50",
+          "title": "lang:runeborn.feat.level_50"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act2_hunt/runebearer/reward0",
+          "type": "item",
+          "item": "rpg_attribute_system:tome_of_ascension"
+        },
+        {
+          "id": "s1_act2_hunt/runebearer/reward1",
+          "type": "xp",
+          "xp": 400
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "tables/paths_archive_cache",
+  "title": "Archive Cache",
+  "icon": "tbos:chronicle_shard",
+  "entries": [
+    {
+      "id": "tables/paths_archive_cache/0",
+      "type": "item",
+      "item": "tbos:chronicle_shard",
+      "count": 2,
+      "weight": 3
+    },
+    {
+      "id": "tables/paths_archive_cache/1",
+      "type": "item",
+      "item": "tbos:lenswork_crystal",
+      "weight": 2
+    },
+    {
+      "id": "tables/paths_archive_cache/2",
+      "type": "item",
+      "item": "minecraft:amethyst_shard",
+      "count": 8,
+      "weight": 3
+    },
+    {
+      "id": "tables/paths_archive_cache/3",
+      "type": "item",
+      "item": "minecraft:ender_pearl",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/paths_archive_cache/4",
+      "type": "item",
+      "item": "tbos:recalled_hour",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "tables/world_ember_spoils",
+  "title": "Embers' Bounty",
+  "icon": "runeborn:tempering_stone_2",
+  "entries": [
+    {
+      "id": "tables/world_ember_spoils/0",
+      "type": "item",
+      "item": "runeborn:tempering_stone_1",
+      "count": 4,
+      "weight": 3
+    },
+    {
+      "id": "tables/world_ember_spoils/1",
+      "type": "item",
+      "item": "runeborn:tempering_stone_2",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/world_ember_spoils/2",
+      "type": "item",
+      "item": "runeborn:faded_rune",
+      "count": 3,
+      "weight": 3
+    },
+    {
+      "id": "tables/world_ember_spoils/3",
+      "type": "item",
+      "item": "remnant_mobs:remnant_shard",
+      "count": 6,
+      "weight": 2
+    },
+    {
+      "id": "tables/world_ember_spoils/4",
+      "type": "item",
+      "item": "mob_loot_bags:uncommonlootbag",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/world_ember_spoils/5",
+      "type": "item",
+      "item": "minecraft:golden_apple",
+      "weight": 1
+    }
+  ]
+}

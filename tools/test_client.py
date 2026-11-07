@@ -147,7 +147,7 @@ def sync_pack(world):
 
 def offline_uuid(name):
     """The UUID an offline-mode server gives this name (Java's UUID.nameUUIDFromBytes("OfflinePlayer:" + name)), so
-    mods that compare the client's own id with the server's (FTB Teams) see the same player."""
+    mods that compare the client's own id with the server's (quest teams) see the same player."""
     h = bytearray(hashlib.md5(f"OfflinePlayer:{name}".encode()).digest())
     h[6] = h[6] & 0x0F | 0x30
     h[8] = h[8] & 0x3F | 0x80

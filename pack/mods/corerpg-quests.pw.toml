@@ -1,0 +1,16 @@
+name = "Core RPG - Quests Engine"
+filename = "corerpg-quests-1.21.1-neoforge-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ywtf09FK/versions/FE5TdeAH/corerpg-quests-1.21.1-neoforge-1.0.0.jar"
+hash-format = "sha512"
+hash = "8a1cc4dfc17638350206cca69d18db1effc09fd1f80112c03ae73257d574877e008aa010d419f445e4face2422ddbcbc7d0427522f2cd64e6595c4df430b57be"
+
+[update]
+[update.curseforge]
+file-id = 9493949
+project-id = 1585209
+[update.modrinth]
+mod-id = "ywtf09FK"
+version = "FE5TdeAH"

@@ -1,0 +1,54 @@
+{
+  "id": "tables/n_spore_forager_basket",
+  "title": "The Forager's Basket",
+  "icon": "spore_and_stem:truffle",
+  "entries": [
+    {
+      "id": "tables/n_spore_forager_basket/0",
+      "type": "item",
+      "item": "spore_and_stem:roasted_morel",
+      "count": 6,
+      "weight": 3
+    },
+    {
+      "id": "tables/n_spore_forager_basket/1",
+      "type": "item",
+      "item": "spore_and_stem:chanterelle_toast",
+      "count": 3,
+      "weight": 3
+    },
+    {
+      "id": "tables/n_spore_forager_basket/2",
+      "type": "item",
+      "item": "spore_and_stem:foragers_stew",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/n_spore_forager_basket/3",
+      "type": "item",
+      "item": "spore_and_stem:glowcap_soup",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/n_spore_forager_basket/4",
+      "type": "item",
+      "item": "spore_and_stem:truffle",
+      "count": 3,
+      "weight": 2
+    },
+    {
+      "id": "tables/n_spore_forager_basket/5",
+      "type": "item",
+      "item": "spore_and_stem:antifungal_tonic",
+      "weight": 1
+    },
+    {
+      "id": "tables/n_spore_forager_basket/6",
+      "type": "item",
+      "item": "spore_and_stem:truffle_stew",
+      "weight": 1
+    }
+  ]
+}

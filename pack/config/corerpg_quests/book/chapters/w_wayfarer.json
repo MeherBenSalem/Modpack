@@ -1,0 +1,875 @@
+{
+  "id": "w_wayfarer",
+  "title": "&bWayfarer",
+  "icon": "explorerscompass:explorerscompass",
+  "group": "groups/world",
+  "subtitle": [
+    "The world went dark. It didn't go away. Go and see what's left of it."
+  ],
+  "quests": [
+    {
+      "id": "w_wayfarer/compass",
+      "title": "&6The Compass That Knows",
+      "subtitle": "Every ruin has a name. This finds it.",
+      "icon": "explorerscompass:explorerscompass",
+      "x": 0,
+      "y": 2.5,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "s1_prologue/village",
+        "s1_forge/duskforged"
+      ],
+      "description": [
+        "An &6Explorer's Compass&r: a plain compass ringed with cracked stone bricks, cobwebs and two &6Duskforged Ingots&r, as if it had been somewhere already.",
+        "",
+        "Use it to pick any structure in the world by name; it points the way and tells you how far. It won't tell you what's inside."
+      ],
+      "tasks": [
+        {
+          "id": "w_wayfarer/compass/task0",
+          "type": "item",
+          "item": "explorerscompass:explorerscompass"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_wayfarer/compass/reward0",
+          "type": "random",
+          "table": "tables/world_wayfarer_pack"
+        },
+        {
+          "id": "w_wayfarer/compass/reward1",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "w_wayfarer/towns",
+      "title": "Other People's Fires",
+      "subtitle": "Towns and Towers. A village not like yours.",
+      "icon": "minecraft:bell",
+      "x": 2,
+      "y": 0,
+      "dependencies": [
+        "w_wayfarer/compass"
+      ],
+      "description": [
+        "Last Light isn't the only village that kept a fire. Out in the meadows, badlands, groves and swamps, people built in their own fashion and rang their own bells.",
+        "",
+        "Visit one built the way its land wanted. Sellswords loiter by every bell, by the way."
+      ],
+      "tasks": [
+        {
+          "id": "w_wayfarer/towns/task0",
+          "type": "structure",
+          "structure": "#towns_and_towers:town",
+          "title": "Visit a Towns and Towers village"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_wayfarer/towns/reward0",
+          "type": "random",
+          "table": "tables/world_wayfarer_pack"
+        },
+        {
+          "id": "w_wayfarer/towns/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "w_wayfarer/tavern",
+      "title": "Safe Haven",
+      "subtitle": "Dungeons and Taverns. A roof, a fire, a drink.",
+      "icon": "brewinandchewin:tankard",
+      "x": 4,
+      "y": 0,
+      "dependencies": [
+        "w_wayfarer/compass"
+      ],
+      "description": [
+        "Somewhere out there, someone still pours ale for strangers. Find a &6tavern&r.",
+        "",
+        "Sit down. Eat something hot. The road will still be dark when you leave."
+      ],
+      "tasks": [
+        {
+          "id": "w_wayfarer/tavern/task0",
+          "type": "advancement",
+          "advancement": "nova_structures:adventure/find_tavern",
+          "title": "Find a tavern"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_wayfarer/tavern/reward0",
+          "type": "item",
+          "item": "brewinandchewin:mead",
+          "count": 2
+        },
+        {
+          "id": "w_wayfarer/tavern/reward1",
+          "type": "random",
+          "table": "tables/world_wayfarer_pack"
+        },
+        {
+          "id": "w_wayfarer/tavern/reward2",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "w_wayfarer/tavern_quest",
+      "title": "Call for Adventure",
+      "subtitle": "The cartographer sells more than maps.",
+      "icon": "minecraft:map",
+      "x": 6,
+      "y": 0,
+      "dependencies": [
+        "w_wayfarer/tavern"
+      ],
+      "description": [
+        "Every tavern has a &6cartographer&r in the corner, and every cartographer has a map they'd rather sell to someone else.",
+        "",
+        "Trade for a quest map and follow it. Taverns know which roads end somewhere interesting."
+      ],
+      "tasks": [
+        {
+          "id": "w_wayfarer/tavern_quest/task0",
+          "type": "advancement",
+          "advancement": "nova_structures:adventure/tavern_quest",
+          "title": "Buy a tavern quest map"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_wayfarer/tavern_quest/reward0",
+          "type": "random",
+          "table": "tables/world_wayfarer_pack"
+        },
+        {
+          "id": "w_wayfarer/tavern_quest/reward1",
+          "type": "xp",
+          "xp": 250
+        }
+      ]
+    },
+    {
+      "id": "w_wayfarer/camp",
+      "title": "Smoke That Isn't Yours",
+      "subtitle": "Dungeons and Taverns. An illager camp.",
+      "icon": "minecraft:campfire",
+      "x": 8,
+      "y": 0,
+      "dependencies": [
+        "w_wayfarer/compass"
+      ],
+      "description": [
+        "Not every campfire on the horizon is a friend's. Illagers pitch &6camps&r along the rivers, beaches and forest edges: tents, a cookfire and a lot of crossbows.",
+        "",
+        "Walk in loud or walk in quiet. Either way, the loot is in the tents."
+      ],
+      "tasks": [
+        {
+          "id": "w_wayfarer/camp/task0",
+          "type": "structure",
+          "structure": "nova_structures:illager_camp",
+          "title": "Find an illager camp"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_wayfarer/camp/reward0",
+          "type": "random",
+          "table": "tables/world_wayfarer_pack"
+        },
+        {
+          "id": "w_wayfarer/camp/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "w_wayfarer/remnant_ruins",
+      "title": "What the Dark Left Standing",
+      "subtitle": "Dungeons and Taverns. A ruined settlement.",
+      "icon": "minecraft:cracked_stone_bricks",
+      "x": 2,
+      "y": 2.5,
+      "dependencies": [
+        "w_wayfarer/compass"
+      ],
+      "description": [
+        "Not every village kept its fire. The ruined farms, smithies, schools and castles out there are what the Long Eclipse leaves behind: walls, a well, and nobody home.",
+        "",
+        "Walk through one. Take what's useful. Don't sleep there."
+      ],
+      "tasks": [
+        {
+          "id": "w_wayfarer/remnant_ruins/task0",
+          "type": "structure",
+          "structure": "#nova_structures:remnants",
+          "title": "Find a ruined settlement"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_wayfarer/remnant_ruins/reward0",
+          "type": "random",
+          "table": "tables/world_wayfarer_pack"
+        },
+        {
+          "id": "w_wayfarer/remnant_ruins/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "w_wayfarer/chapel",
+      "title": "Where the Prayers Stopped",
+      "subtitle": "Structory. An abandoned chapel.",
+      "icon": "minecraft:candle",
+      "x": 4,
+      "y": 2.5,
+      "dependencies": [
+        "w_wayfarer/compass"
+      ],
+      "description": [
+        "Small chapels stand alone in the plains and forests, their doors open and their candles cold. Somebody prayed for the sun here. It didn't come.",
+        "",
+        "Find one. Light a candle if you like. It can't hurt."
+      ],
+      "tasks": [
+        {
+          "id": "w_wayfarer/chapel/task0",
+          "type": "structure",
+          "structure": "structory:abandoned_chapel",
+          "title": "Find an abandoned chapel"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_wayfarer/chapel/reward0",
+          "type": "random",
+          "table": "tables/world_wayfarer_pack"
+        },
+        {
+          "id": "w_wayfarer/chapel/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "w_wayfarer/lost_soul_city",
+      "title": "The Lost Soul City",
+      "subtitle": "Philip's Ruins. A city that went underground.",
+      "icon": "minecraft:soul_lantern",
+      "x": 6,
+      "y": 2.5,
+      "dependencies": [
+        "w_wayfarer/compass"
+      ],
+      "description": [
+        "When the sun went out, one city tried to hide from the dark by digging into it. It dug too deep.",
+        "",
+        "The &6Lost Soul City&r lies under the forests, hills and plains. Bring light, and a way back up."
+      ],
+      "tasks": [
+        {
+          "id": "w_wayfarer/lost_soul_city/task0",
+          "type": "structure",
+          "structure": "philipsruins:lost_soul_city",
+          "title": "Find the Lost Soul City"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_wayfarer/lost_soul_city/reward0",
+          "type": "random",
+          "table": "tables/world_delver_cache"
+        },
+        {
+          "id": "w_wayfarer/lost_soul_city/reward1",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "w_wayfarer/cottage",
+      "title": "Home of Saylor",
+      "subtitle": "Fisherman's Coast. A cottage on the beach.",
+      "icon": "minecraft:fishing_rod",
+      "x": 2,
+      "y": 5,
+      "dependencies": [
+        "w_wayfarer/compass"
+      ],
+      "description": [
+        "The fishers of the coast never stopped fishing. The dark doesn't care about the tide, and neither do they.",
+        "",
+        "Find &6Saylor's&r cottage on a sandy or snowy beach. The residents trade things you won't find inland."
+      ],
+      "tasks": [
+        {
+          "id": "w_wayfarer/cottage/task0",
+          "type": "advancement",
+          "advancement": "fisherman_house:discover_fisherman_house",
+          "title": "Find a Fisherman's Cottage"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_wayfarer/cottage/reward0",
+          "type": "item",
+          "item": "fisherman_house:fish_bait",
+          "count": 8
+        },
+        {
+          "id": "w_wayfarer/cottage/reward1",
+          "type": "random",
+          "table": "tables/world_wayfarer_pack"
+        },
+        {
+          "id": "w_wayfarer/cottage/reward2",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "w_wayfarer/lighthouse",
+      "title": "Keeper of the Light",
+      "subtitle": "Fisherman's Coast. A lighthouse on the stones.",
+      "icon": "minecraft:lantern",
+      "x": 4,
+      "y": 5,
+      "dependencies": [
+        "w_wayfarer/cottage"
+      ],
+      "description": [
+        "&6Keeper Morrow&r has kept a lamp lit on the stony shore through the whole Long Eclipse. You're not the only one who tends a fire.",
+        "",
+        "Go and say hello. He doesn't get many visitors who aren't drowned."
+      ],
+      "tasks": [
+        {
+          "id": "w_wayfarer/lighthouse/task0",
+          "type": "advancement",
+          "advancement": "fisherman_house:discover_lighthouse",
+          "title": "Find a Lighthouse"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_wayfarer/lighthouse/reward0",
+          "type": "random",
+          "table": "tables/world_wayfarer_pack"
+        },
+        {
+          "id": "w_wayfarer/lighthouse/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "w_wayfarer/bottle",
+      "title": "Message Received",
+      "subtitle": "Twelve notes from the sea.",
+      "icon": "fisherman_house:message_in_a_bottle",
+      "x": 6,
+      "y": 5,
+      "dependencies": [
+        "w_wayfarer/cottage"
+      ],
+      "description": [
+        "The sea gives back what it takes, one bottle at a time. &6Messages in a Bottle&r turn up on rod lines, in crab pots, in coastal chests.",
+        "",
+        "Open one. Some hold treasure, some hold a &6map to a wreck&r, and all of them hold a note from someone who never got home."
+      ],
+      "tasks": [
+        {
+          "id": "w_wayfarer/bottle/task0",
+          "type": "advancement",
+          "advancement": "fisherman_house:open_bottle",
+          "title": "Open a Message in a Bottle"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_wayfarer/bottle/reward0",
+          "type": "item",
+          "item": "fisherman_house:crab_pot"
+        },
+        {
+          "id": "w_wayfarer/bottle/reward1",
+          "type": "random",
+          "table": "tables/world_wayfarer_pack"
+        },
+        {
+          "id": "w_wayfarer/bottle/reward2",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "w_wayfarer/coastal_wanderer",
+      "title": "&6Coastal Wanderer",
+      "subtitle": "All seven places of the coast.",
+      "icon": "fisherman_house:crab_pot",
+      "x": 8.5,
+      "y": 5,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "w_wayfarer/lighthouse",
+        "w_wayfarer/bottle"
+      ],
+      "description": [
+        "Cottage, pier, lighthouse, stilt shack, ice camp, boathouse, and the &6Sunken Trawler&r twelve blocks under the waves.",
+        "",
+        "Visit them all. Frost-Beard Ole, Old Bayou Tam and Ferryman Hale all have opinions about the weather, and they'll share them."
+      ],
+      "tasks": [
+        {
+          "id": "w_wayfarer/coastal_wanderer/task0",
+          "type": "advancement",
+          "advancement": "fisherman_house:all_structures",
+          "title": "Visit all seven coastal places"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_wayfarer/coastal_wanderer/reward0",
+          "type": "item",
+          "item": "minecraft:heart_of_the_sea"
+        },
+        {
+          "id": "w_wayfarer/coastal_wanderer/reward1",
+          "type": "random",
+          "table": "tables/world_hunt_spoils"
+        },
+        {
+          "id": "w_wayfarer/coastal_wanderer/reward2",
+          "type": "xp",
+          "xp": 600
+        }
+      ]
+    },
+    {
+      "id": "w_wayfarer/natures_compass",
+      "title": "&6The Compass That Listens",
+      "subtitle": "Every land has a name too.",
+      "icon": "naturescompass:naturescompass",
+      "x": 0,
+      "y": 8.75,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "s1_prologue/village",
+        "s1_forge/ashen_alloy"
+      ],
+      "description": [
+        "A &6Nature's Compass&r: a compass framed in logs and saplings, set on &6Ashen Alloy&r. Name a kind of land and it turns toward the nearest.",
+        "",
+        "The world grew strange in the dark: savannas gone grey, groves that only bloom by moonlight, mountains that never stop climbing."
+      ],
+      "tasks": [
+        {
+          "id": "w_wayfarer/natures_compass/task0",
+          "type": "item",
+          "item": "naturescompass:naturescompass"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_wayfarer/natures_compass/reward0",
+          "type": "random",
+          "table": "tables/world_wayfarer_pack"
+        },
+        {
+          "id": "w_wayfarer/natures_compass/reward1",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "w_wayfarer/ashen_savanna",
+      "title": "Where the Ash Settled",
+      "subtitle": "Terralith. The Ashen Savanna.",
+      "icon": "minecraft:gray_dye",
+      "x": 2,
+      "y": 7.5,
+      "dependencies": [
+        "w_wayfarer/natures_compass"
+      ],
+      "description": [
+        "The ash from the Long Eclipse fell everywhere. In one stretch of savanna, it never blew away.",
+        "",
+        "Stand in the &6Ashen Savanna&r. You'll feel right at home, Ashborn."
+      ],
+      "tasks": [
+        {
+          "id": "w_wayfarer/ashen_savanna/task0",
+          "type": "biome",
+          "biome": "terralith:ashen_savanna",
+          "title": "Visit an Ashen Savanna"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_wayfarer/ashen_savanna/reward0",
+          "type": "random",
+          "table": "tables/world_wayfarer_pack"
+        },
+        {
+          "id": "w_wayfarer/ashen_savanna/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "w_wayfarer/moonlight",
+      "title": "By the Moon's Grace",
+      "subtitle": "Terralith. The Moonlight Grove.",
+      "icon": "minecraft:glow_berries",
+      "x": 4,
+      "y": 7.5,
+      "dependencies": [
+        "w_wayfarer/natures_compass"
+      ],
+      "description": [
+        "With the sun gone, the moon is the only light that still crosses the sky. Some groves learned to live on it.",
+        "",
+        "Find a &6Moonlight Grove&r. It's the prettiest thing the Eclipse didn't kill."
+      ],
+      "tasks": [
+        {
+          "id": "w_wayfarer/moonlight/task0",
+          "type": "biome",
+          "biome": "terralith:moonlight_grove",
+          "title": "Visit a Moonlight Grove"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_wayfarer/moonlight/reward0",
+          "type": "random",
+          "table": "tables/world_wayfarer_pack"
+        },
+        {
+          "id": "w_wayfarer/moonlight/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "w_wayfarer/yellowstone",
+      "title": "The Warm Ground",
+      "subtitle": "Terralith. Yellowstone.",
+      "icon": "minecraft:magma_block",
+      "x": 6,
+      "y": 7.5,
+      "dependencies": [
+        "w_wayfarer/natures_compass"
+      ],
+      "description": [
+        "The sky went cold. The ground didn't. In &6Yellowstone&r the earth still steams and bubbles, as if it remembers noon.",
+        "",
+        "Warm your hands. Mind the vents."
+      ],
+      "tasks": [
+        {
+          "id": "w_wayfarer/yellowstone/task0",
+          "type": "biome",
+          "biome": "terralith:yellowstone",
+          "title": "Visit Yellowstone"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_wayfarer/yellowstone/reward0",
+          "type": "random",
+          "table": "tables/world_wayfarer_pack"
+        },
+        {
+          "id": "w_wayfarer/yellowstone/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "w_wayfarer/roof_of_the_world",
+      "title": "The Roof of the World",
+      "subtitle": "Tectonic. The jagged peaks.",
+      "icon": "minecraft:snow_block",
+      "x": 8,
+      "y": 7.5,
+      "dependencies": [
+        "w_wayfarer/natures_compass"
+      ],
+      "description": [
+        "The mountains grew in the dark. Ridges climb past the clouds now, and the &6jagged peaks&r are higher than anyone alive has stood.",
+        "",
+        "Climb one. From the top you can see three shrines' worth of country, and none of it lit."
+      ],
+      "tasks": [
+        {
+          "id": "w_wayfarer/roof_of_the_world/task0",
+          "type": "biome",
+          "biome": "minecraft:jagged_peaks",
+          "title": "Stand on the jagged peaks"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_wayfarer/roof_of_the_world/reward0",
+          "type": "random",
+          "table": "tables/world_wayfarer_pack"
+        },
+        {
+          "id": "w_wayfarer/roof_of_the_world/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "w_wayfarer/ice_maze",
+      "title": "The Ship Graveyard",
+      "subtitle": "Aquamirae. The frozen sea.",
+      "icon": "aquamirae:shell_horn",
+      "x": 2,
+      "y": 10,
+      "dependencies": [
+        "w_wayfarer/natures_compass",
+        "s1_act2_hunt/hunters_moon"
+      ],
+      "description": [
+        "The deep frozen ocean is a &6maze of ice&r, wrecks frozen into it like flies in amber. Pirates still haunt the hulls, and worse things haunt the channels.",
+        "",
+        "Enter the &6Ice Maze&r. Wrap up warm, bring a boat, and don't fall in."
+      ],
+      "tasks": [
+        {
+          "id": "w_wayfarer/ice_maze/task0",
+          "type": "advancement",
+          "advancement": "aquamirae:adventure/find_ice_maze",
+          "title": "Enter the Ice Maze"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_wayfarer/ice_maze/reward0",
+          "type": "random",
+          "table": "tables/world_hunt_spoils"
+        },
+        {
+          "id": "w_wayfarer/ice_maze/reward1",
+          "type": "xp",
+          "xp": 400
+        }
+      ]
+    },
+    {
+      "id": "w_wayfarer/ashlands_atlas",
+      "title": "An Atlas of the Ashlands",
+      "subtitle": "Every country of the Nether.",
+      "icon": "minecraft:crimson_fungus",
+      "x": 4,
+      "y": 10,
+      "dependencies": [
+        "w_wayfarer/natures_compass",
+        "s1_act3_deep/ysolde"
+      ],
+      "description": [
+        "Morgrath's ash didn't fall evenly. The &6Ashlands&r have their own countries: blue soul valleys, black basalt deltas, red and teal forests of fungus.",
+        "",
+        "Walk all four. Fire Resistance is cheaper than funerals."
+      ],
+      "tasks": [
+        {
+          "id": "w_wayfarer/ashlands_atlas/task0",
+          "type": "biome",
+          "biome": "minecraft:soul_sand_valley",
+          "title": "Soul Sand Valley"
+        },
+        {
+          "id": "w_wayfarer/ashlands_atlas/task1",
+          "type": "biome",
+          "biome": "minecraft:basalt_deltas",
+          "title": "Basalt Deltas"
+        },
+        {
+          "id": "w_wayfarer/ashlands_atlas/task2",
+          "type": "biome",
+          "biome": "minecraft:crimson_forest",
+          "title": "Crimson Forest"
+        },
+        {
+          "id": "w_wayfarer/ashlands_atlas/task3",
+          "type": "biome",
+          "biome": "minecraft:warped_forest",
+          "title": "Warped Forest"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_wayfarer/ashlands_atlas/reward0",
+          "type": "random",
+          "table": "tables/world_ash_spoils"
+        },
+        {
+          "id": "w_wayfarer/ashlands_atlas/reward1",
+          "type": "xp",
+          "xp": 600
+        }
+      ]
+    },
+    {
+      "id": "w_wayfarer/shattered_end",
+      "title": "The Shore Stays Dark",
+      "subtitle": "Nullscape. The broken End.",
+      "icon": "minecraft:end_stone",
+      "x": 6,
+      "y": 10,
+      "dependencies": [
+        "w_wayfarer/natures_compass",
+        "s1_act4_ash/vaelorn"
+      ],
+      "description": [
+        "The Last Shore isn't a shore anymore. Past the Dragon's island the End breaks into &6crystal peaks&r, &6shadowlands&r and &6void barrens&r, as if something tore through it.",
+        "",
+        "Walk all three. Watch your step; the floor is optional."
+      ],
+      "tasks": [
+        {
+          "id": "w_wayfarer/shattered_end/task0",
+          "type": "biome",
+          "biome": "nullscape:crystal_peaks",
+          "title": "Crystal Peaks"
+        },
+        {
+          "id": "w_wayfarer/shattered_end/task1",
+          "type": "biome",
+          "biome": "nullscape:shadowlands",
+          "title": "Shadowlands"
+        },
+        {
+          "id": "w_wayfarer/shattered_end/task2",
+          "type": "biome",
+          "biome": "nullscape:void_barrens",
+          "title": "Void Barrens"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_wayfarer/shattered_end/reward0",
+          "type": "random",
+          "table": "tables/world_eclipse_spoils"
+        },
+        {
+          "id": "w_wayfarer/shattered_end/reward1",
+          "type": "xp",
+          "xp": 800
+        }
+      ]
+    },
+    {
+      "id": "w_wayfarer/older_dragon",
+      "title": "Bones of an Older Dragon",
+      "subtitle": "Nullscape. Something died here first.",
+      "icon": "minecraft:bone_block",
+      "x": 8,
+      "y": 10,
+      "dependencies": [
+        "w_wayfarer/shattered_end"
+      ],
+      "description": [
+        "Out in the broken End lie the &6bones of a dragon&r far bigger than the one you killed.",
+        "",
+        "The Ender Dragon wasn't the first. Stand in the ribcage and wonder who broke the sun, and whether it was the first thing they broke."
+      ],
+      "tasks": [
+        {
+          "id": "w_wayfarer/older_dragon/task0",
+          "type": "structure",
+          "structure": "nullscape:dragon_skeleton",
+          "title": "Find the dragon's skeleton"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_wayfarer/older_dragon/reward0",
+          "type": "random",
+          "table": "tables/world_eclipse_spoils"
+        },
+        {
+          "id": "w_wayfarer/older_dragon/reward1",
+          "type": "xp",
+          "xp": 600
+        }
+      ]
+    },
+    {
+      "id": "w_wayfarer/gingerbread",
+      "title": "&dThe Sweetest Lure",
+      "subtitle": "A candy house in the snow. Nobody lives there. Nobody lives anywhere near it, either.",
+      "icon": "minecraft:cookie",
+      "x": 10,
+      "y": 10,
+      "dependencies": [
+        "w_wayfarer/compass"
+      ],
+      "description": [
+        "&o\"The Coven used to say: you catch more Ashborn with sugar than with iron. Then they built the house to prove it.\"&r &7— the Archivist",
+        "",
+        "Somewhere in the snow, or out on the open plains, stands a house made of gingerbread and frosting, warm-windowed and smelling of the old world. It was built by the &5Hollow Wood Coven&r as a lure for the hungry and the lost in the first starving winters of the Eclipse.",
+        "",
+        "The witches are gone. The house is still warm. Don't wonder why.",
+        "",
+        "&7Find the Gingerbread House."
+      ],
+      "tasks": [
+        {
+          "id": "w_wayfarer/gingerbread/task0",
+          "type": "structure",
+          "structure": "christmas_ginger_house:christmas_ginger_house",
+          "title": "Find the Gingerbread House"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_wayfarer/gingerbread/reward0",
+          "type": "random",
+          "table": "tables/world_wayfarer_pack"
+        },
+        {
+          "id": "w_wayfarer/gingerbread/reward1",
+          "type": "item",
+          "item": "minecraft:cookie",
+          "count": 16
+        },
+        {
+          "id": "w_wayfarer/gingerbread/reward2",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    }
+  ]
+}

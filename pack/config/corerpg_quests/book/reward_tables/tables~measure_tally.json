@@ -1,0 +1,41 @@
+{
+  "id": "tables/measure_tally",
+  "title": "The Tallyman's Purse",
+  "icon": "remnant_mobs:remnant_shard",
+  "entries": [
+    {
+      "id": "tables/measure_tally/0",
+      "type": "item",
+      "item": "remnant_mobs:remnant_shard",
+      "count": 6,
+      "weight": 3
+    },
+    {
+      "id": "tables/measure_tally/1",
+      "type": "item",
+      "item": "runeborn:faded_rune",
+      "count": 3,
+      "weight": 2
+    },
+    {
+      "id": "tables/measure_tally/2",
+      "type": "item",
+      "item": "runeborn:lustrous_rune",
+      "weight": 1
+    },
+    {
+      "id": "tables/measure_tally/3",
+      "type": "item",
+      "item": "minecraft:golden_carrot",
+      "count": 6,
+      "weight": 2
+    },
+    {
+      "id": "tables/measure_tally/4",
+      "type": "item",
+      "item": "runeborn:tempering_stone_2",
+      "count": 2,
+      "weight": 1
+    }
+  ]
+}

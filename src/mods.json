@@ -1571,47 +1571,6 @@
   "reason": "required by aquamirae"
  },
  {
-  "name": "FTB Library",
-  "slug": "ftb-library",
-  "category": "quests-story-scripting",
-  "side": "both",
-  "license": "All Rights Reserved (Feed The Beast Ltd; CurseForge-only)",
-  "curseforge": {
-   "project_id": 404465,
-   "file_id": 9350706,
-   "filename": "ftb-library-neoforge-2101.1.39.jar"
-  },
-  "required_deps": [
-   "architectury-api"
-  ],
-  "optional_deps": [
-   "ftb-xmod-compat"
-  ],
-  "decision": "include",
-  "group": "library",
-  "reason": "required by ftb-ultimine"
- },
- {
-  "name": "FTB Teams",
-  "slug": "ftb-teams",
-  "category": "quests-story-scripting",
-  "side": "both",
-  "license": "All Rights Reserved (Feed The Beast Ltd; CurseForge-only)",
-  "curseforge": {
-   "project_id": 404468,
-   "file_id": 8724782,
-   "filename": "ftb-teams-neoforge-2101.1.11.jar"
-  },
-  "required_deps": [
-   "architectury-api",
-   "ftb-library"
-  ],
-  "optional_deps": [],
-  "decision": "include",
-  "group": "library",
-  "reason": "required by ftb-quests"
- },
- {
   "name": "Fzzy Config",
   "slug": "fzzy-config",
   "category": "juice",
@@ -2526,26 +2485,6 @@
   "reason": "Pre-generation for servers"
  },
  {
-  "name": "FTB Ultimine",
-  "slug": "ftb-ultimine",
-  "category": "multiplayer",
-  "side": "both",
-  "license": "All Rights Reserved (Feed The Beast Ltd; CurseForge-only)",
-  "curseforge": {
-   "project_id": 386134,
-   "file_id": 8231400,
-   "filename": "ftb-ultimine-neoforge-2101.1.15.jar"
-  },
-  "required_deps": [
-   "architectury-api",
-   "ftb-library"
-  ],
-  "optional_deps": [],
-  "decision": "include",
-  "group": "multiplayer",
-  "reason": "Vein mining"
- },
- {
   "name": "NetherPortalFix",
   "slug": "netherportalfix",
   "category": "multiplayer",
@@ -3186,23 +3125,6 @@
   "decision": "include",
   "group": "nightbeam",
   "reason": "The Hollow Wood Coven's huts"
- },
- {
-  "name": "AllTheLeaks",
-  "slug": "alltheleaks",
-  "category": "performance",
-  "side": "both",
-  "license": "unknown (CurseForge-only; not stated via CFWidget)",
-  "curseforge": {
-   "project_id": 1091339,
-   "file_id": 9360134,
-   "filename": "alltheleaks-1.1.14-1.21.1-neoforge.jar"
-  },
-  "required_deps": [],
-  "optional_deps": [],
-  "decision": "include",
-  "group": "performance",
-  "reason": "Memory-leak fixes"
  },
  {
   "name": "AttributeFix",
@@ -4048,73 +3970,31 @@
   "reason": "Main menu"
  },
  {
-  "name": "FTB Filter System",
-  "slug": "ftb-filter-system",
+  "name": "Core RPG - Quests Engine",
+  "slug": "corerpg-quests",
   "category": "quests-story-scripting",
   "side": "both",
-  "license": "All Rights Reserved (Feed The Beast Ltd; CurseForge-only)",
-  "curseforge": {
-   "project_id": 943925,
-   "file_id": 7429011,
-   "filename": "ftb-filter-system-neoforge-21.1.4.jar"
+  "license": "Apache-2.0",
+  "modrinth": {
+   "project_id": "ywtf09FK",
+   "version_id": "FE5TdeAH",
+   "version_number": "1.0.0+neoforge-1.21.1",
+   "filename": "corerpg-quests-1.21.1-neoforge-1.0.0.jar",
+   "url": "https://cdn.modrinth.com/data/ywtf09FK/versions/FE5TdeAH/corerpg-quests-1.21.1-neoforge-1.0.0.jar",
+   "sha1": "d1b136f940ac8b413f5bc74e44ee45bf6938561c",
+   "sha512": "8a1cc4dfc17638350206cca69d18db1effc09fd1f80112c03ae73257d574877e008aa010d419f445e4face2422ddbcbc7d0427522f2cd64e6595c4df430b57be",
+   "size": 878714
   },
-  "required_deps": [
-   "architectury-api"
-  ],
+  "curseforge": {
+   "project_id": 1585209,
+   "file_id": 9493949,
+   "filename": "corerpg-quests-1.21.1-neoforge-1.0.0.jar"
+  },
+  "required_deps": [],
   "optional_deps": [],
   "decision": "include",
   "group": "story",
-  "reason": "Tag-based quest tasks"
- },
- {
-  "name": "FTB Quests",
-  "slug": "ftb-quests",
-  "category": "quests-story-scripting",
-  "side": "both",
-  "license": "All Rights Reserved (Feed The Beast Ltd; CurseForge-only)",
-  "curseforge": {
-   "project_id": 289412,
-   "file_id": 9298629,
-   "filename": "ftb-quests-neoforge-2101.1.37.jar"
-  },
-  "required_deps": [
-   "architectury-api",
-   "ftb-library",
-   "ftb-teams"
-  ],
-  "optional_deps": [
-   "ftb-filter-system",
-   "ftb-xmod-compat"
-  ],
-  "decision": "include",
-  "group": "story",
-  "reason": "The quest book"
- },
- {
-  "name": "FTB XMod Compat",
-  "slug": "ftb-xmod-compat",
-  "category": "quests-story-scripting",
-  "side": "both",
-  "license": "All Rights Reserved (Feed The Beast Ltd; CurseForge-only)",
-  "curseforge": {
-   "project_id": 889915,
-   "file_id": 9344504,
-   "filename": "ftb-xmod-compat-neoforge-21.1.14.jar"
-  },
-  "required_deps": [
-   "architectury-api",
-   "ftb-library"
-  ],
-  "optional_deps": [
-   "ftb-chunks",
-   "ftb-quests",
-   "jei",
-   "kubejs",
-   "waystones"
-  ],
-  "decision": "include",
-  "group": "story",
-  "reason": "FTB Quests ↔ KubeJS"
+  "reason": "NightBeam's quest book, teams, smart filters and vein mining (replaces the FTB suite; on both CurseForge and Modrinth)"
  },
  {
   "name": "KubeJS",

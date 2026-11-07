@@ -1,0 +1,509 @@
+{
+  "id": "s1_act5_realm",
+  "title": "&6Act V: &fThe Eclipsed Realm",
+  "icon": "remnant_bosses:eclipse_shard",
+  "group": "groups/main",
+  "subtitle": [
+    "Under the black sun sits a crown with nothing inside. Level 70+."
+  ],
+  "default_quest_shape": "rsquare",
+  "quests": [
+    {
+      "id": "s1_act5_realm/tale_eighth",
+      "title": "&e♪ &6The Tale of the Eighth",
+      "subtitle": "The one who wanted all of it.",
+      "icon": "minecraft:written_book",
+      "x": 0,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.75,
+      "dependencies": [
+        "s1_act4_ash/vaelorn"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"I knew him, you know. Before.&r",
+        "",
+        "&f&oHe wasn't a king. He was a herald, one of the ones who carried the flame between the seven and never kept any for himself. When they broke the sun, they forgot him. No Fragment for the herald. No crown.&r",
+        "",
+        "&f&oSo he took what was left. All of it. He drank the last of the sun and walked behind it, into the black, and the light went out inside him the moment he swallowed it. A crown with nothing inside.&r",
+        "",
+        "&f&oHe's still sitting there, on his throne, under the sun he ate, waiting for someone to tell him it was worth it. It wasn't. Go and tell him.\"&r",
+        "",
+        "The &5Hollow Sovereign&r, the Eighth, the Last King, sits in the &5Eclipsed Realm&r: a land behind the black sun, made of the light he swallowed and could not keep."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act5_realm/tale_eighth/task0",
+          "type": "checkmark",
+          "title": "♪ Listen to the Keeper"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act5_realm/tale_eighth/reward0",
+          "type": "xp",
+          "xp": 120
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act5_realm/shard",
+      "title": "&5Splinter of the Black Sun",
+      "subtitle": "Amethyst, an ender pearl, a Sunforged Ingot.",
+      "icon": "remnant_bosses:eclipse_shard",
+      "x": 2,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 2,
+      "dependencies": [
+        "s1_act5_realm/tale_eighth",
+        "s1_forge/sunforged"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Seven Sovereigns, seven embers. The eighth light is where he took it: behind the black sun. You'll need a door.\"&r",
+        "",
+        "A shard of the eclipse itself: a sliver of the dark the Hollow Sovereign hides behind, caught in crystal.",
+        "",
+        "&7Craft an &5Eclipse Shard&7 from an amethyst shard, an ender pearl and a &6Sunforged Ingot&7, with the &6Seal of Ash&7 in the grid (it stays)."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act5_realm/shard/task0",
+          "type": "advancement",
+          "advancement": "remnant_bosses:realm/root",
+          "title": "lang:advancements.remnant_bosses.realm.root.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act5_realm/shard/reward0",
+          "type": "item",
+          "item": "minecraft:amethyst_shard",
+          "count": 4
+        },
+        {
+          "id": "s1_act5_realm/shard/reward1",
+          "type": "xp",
+          "xp": 300
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act5_realm/waygate",
+      "title": "The Way Remembered",
+      "subtitle": "Build the arch. Kindle it with a second shard.",
+      "icon": "remnant_bosses:eclipse_waygate",
+      "x": 4,
+      "y": 0,
+      "dependencies": [
+        "s1_act5_realm/shard"
+      ],
+      "description": [
+        "The heralds built &6Waygates&r to carry the flame between kingdoms. One road was sealed when the Eighth walked down it. Open it again.",
+        "",
+        "&7A Waygate: six polished deepslate around a shard on top and a gold ingot at the bottom. Place it and it raises a stone arch. Use a second &5Eclipse Shard&7 on the arch; it burns for six seconds. Walk through."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act5_realm/waygate/task0",
+          "type": "advancement",
+          "advancement": "remnant_bosses:realm/kindle_waygate",
+          "title": "lang:advancements.remnant_bosses.realm.kindle_waygate.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act5_realm/waygate/reward0",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "s1_act5_realm/enter",
+      "title": "&5Beneath the Eclipse",
+      "subtitle": "The Realm will not change.",
+      "icon": "remnant_bosses:grace_ember",
+      "x": 6,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 2,
+      "dependencies": [
+        "s1_act5_realm/waygate"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"I can't follow you in, Ashborn. Nothing living can, and I'm not sure I count as living any more. Come back with the light. I'll keep the fire going.\"&r",
+        "",
+        "Black sun. A burning tree on the horizon. Silence. The Realm is the Eighth's memory of the world, frozen at the moment he swallowed the light. Nothing here can be built, and nothing can be broken.",
+        "",
+        "&7You arrive at an &6Arrival Shrine&7 with a return Waygate and a &6Grace Ember&7. Rest at graces to heal and set your respawn; their golden motes lead to the nearest arena."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act5_realm/enter/task0",
+          "type": "dimension",
+          "dimension": "remnant_bosses:eclipsed_realm",
+          "title": "Enter the Eclipsed Realm"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act5_realm/enter/reward0",
+          "type": "item",
+          "item": "remnant_bosses:boss_journal"
+        },
+        {
+          "id": "s1_act5_realm/enter/reward1",
+          "type": "xp",
+          "xp": 500
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act5_realm/journal",
+      "title": "Boss Hunts",
+      "subtitle": "Undiscovered. Encountered. Defeated.",
+      "icon": "remnant_bosses:boss_journal",
+      "x": 8,
+      "y": 0,
+      "dependencies": [
+        "s1_act5_realm/enter"
+      ],
+      "description": [
+        "Someone was here before you and kept notes. The handwriting gets worse toward the end.",
+        "",
+        "&7The &6Boss Hunts Journal&7 tracks every boss of the Realm as you find and fell them. Three arenas wait behind &7fog gates: the Gravebound Catacombs, the Forgotten Observatory and the Hollow Citadel. Each has an Ancient Altar already laid with its offerings; you bring the summoning item."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act5_realm/journal/task0",
+          "type": "checkmark",
+          "title": "I read the journal"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act5_realm/journal/reward0",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "s1_act5_realm/burial_guardian",
+      "title": "The Burial Guardian",
+      "subtitle": "It keeps the Grave Iron.",
+      "icon": "remnant_bosses:grave_iron",
+      "x": 10,
+      "y": -1.75,
+      "shape": "gear",
+      "dependencies": [
+        "s1_act5_realm/journal"
+      ],
+      "description": [
+        "In the &6Gravefield Barrows&r, a Burial Guardian tends the graves of the Hollow Legion: the soldiers who followed the Eighth behind the sun. It carries the iron of their coffins.",
+        "",
+        "&7Kill it for &7Grave Iron&7, then forge the &6Crypt Key&7: six Grave Iron around a block of iron."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act5_realm/burial_guardian/task0",
+          "type": "kill",
+          "entity": "remnants:burial_guardian"
+        },
+        {
+          "id": "s1_act5_realm/burial_guardian/task1",
+          "type": "item",
+          "item": "remnant_bosses:crypt_key"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act5_realm/burial_guardian/reward0",
+          "type": "random",
+          "table": "tables/hunters_spoils"
+        },
+        {
+          "id": "s1_act5_realm/burial_guardian/reward1",
+          "type": "xp",
+          "xp": 600
+        }
+      ]
+    },
+    {
+      "id": "s1_act5_realm/gravebound_warden",
+      "title": "&6The Gravebound Warden",
+      "subtitle": "The Gravebound Catacombs.",
+      "icon": "remnant_bosses:wardens_grasp",
+      "x": 12,
+      "y": -0.875,
+      "shape": "gear",
+      "size": 2,
+      "dependencies": [
+        "s1_act5_realm/burial_guardian"
+      ],
+      "description": [
+        "The executioner of the Hollow Legion. He chained the Eighth's deserters to their own graves, and when the deserters ran out he chained himself.",
+        "",
+        "&7Sweeps, chain grabs and graves that erupt beneath you. At half health he raises chain walls: break the four &7Chain Anchors&7 to stagger him."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act5_realm/gravebound_warden/task0",
+          "type": "kill",
+          "entity": "remnants:gravebound_warden"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act5_realm/gravebound_warden/reward0",
+          "type": "random",
+          "table": "tables/sovereign_tribute"
+        },
+        {
+          "id": "s1_act5_realm/gravebound_warden/reward1",
+          "type": "xp",
+          "xp": 1500
+        }
+      ]
+    },
+    {
+      "id": "s1_act5_realm/memory",
+      "title": "Shards of Memory",
+      "subtitle": "The Forgotten Souls remember for you.",
+      "icon": "remnant_bosses:memory_shard",
+      "x": 10,
+      "y": 0,
+      "dependencies": [
+        "s1_act5_realm/journal"
+      ],
+      "description": [
+        "The Realm's forgotten souls carry crumbs of the light the Eighth swallowed: tiny memories of mornings, warmth, colour. Collect enough and you can see through them.",
+        "",
+        "&7Four &6Memory Shards&7, four amethyst and a spyglass make the &6Lens of Memory&7."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act5_realm/memory/task0",
+          "type": "item",
+          "item": "remnant_bosses:memory_shard",
+          "count": 4
+        },
+        {
+          "id": "s1_act5_realm/memory/task1",
+          "type": "item",
+          "item": "remnant_bosses:memory_lens"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act5_realm/memory/reward0",
+          "type": "xp",
+          "xp": 500
+        }
+      ]
+    },
+    {
+      "id": "s1_act5_realm/forgotten_watcher",
+      "title": "&6The Forgotten Watcher",
+      "subtitle": "The Forgotten Observatory.",
+      "icon": "remnant_bosses:watchers_eye",
+      "x": 12,
+      "y": 0.875,
+      "shape": "gear",
+      "size": 2,
+      "dependencies": [
+        "s1_act5_realm/memory"
+      ],
+      "description": [
+        "The Eighth built an observatory to watch the sun he'd lost, and set a Watcher to stare at it so he wouldn't have to. It has been staring at the black for an age. It has started seeing things.",
+        "",
+        "&7Rings of memory bolts, a sweeping beam and a teleport between four lens platforms. In its second phase it makes illusions of itself and hides behind a turning crystal aegis.",
+        "",
+        "&o\"Every ruin has a before.\"&r"
+      ],
+      "tasks": [
+        {
+          "id": "s1_act5_realm/forgotten_watcher/task0",
+          "type": "kill",
+          "entity": "remnants:forgotten_watcher"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act5_realm/forgotten_watcher/reward0",
+          "type": "random",
+          "table": "tables/sovereign_tribute"
+        },
+        {
+          "id": "s1_act5_realm/forgotten_watcher/reward1",
+          "type": "xp",
+          "xp": 1500
+        }
+      ]
+    },
+    {
+      "id": "s1_act5_realm/ossukage",
+      "title": "&cRemnant: Ossukage",
+      "subtitle": "He calls himself the original Remnant.",
+      "icon": "remnant_bosses:ossukage_sword",
+      "x": 10,
+      "y": 1.75,
+      "shape": "gear",
+      "size": 2,
+      "dependencies": [
+        "s1_act5_realm/journal",
+        "s1_act4_ash/wither"
+      ],
+      "description": [
+        "The Eighth's sworn blade, who followed his master behind the sun and was the first to rise again under it. He's proud of that. He shouldn't be: the desert remembers someone older.",
+        "",
+        "&7An Ancient Altar, four skeleton skulls on the pedestals and a &5Nether Star&7. Ossukage answers anywhere, not just in the Realm. He is invulnerable while he rises; then a sword chain, kunai at range, and a second form that raises soldiers and dashes through you."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act5_realm/ossukage/task0",
+          "type": "kill",
+          "entity": "remnants:ossukage"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act5_realm/ossukage/reward0",
+          "type": "random",
+          "table": "tables/sovereign_tribute"
+        },
+        {
+          "id": "s1_act5_realm/ossukage/reward1",
+          "type": "xp",
+          "xp": 1500
+        }
+      ]
+    },
+    {
+      "id": "s1_act5_realm/regalia",
+      "title": "Tarnished Regalia",
+      "subtitle": "A seal for a king who isn't there.",
+      "icon": "remnant_bosses:tarnished_regalia",
+      "x": 14,
+      "y": 0,
+      "dependencies": [
+        "s1_act5_realm/gravebound_warden",
+        "s1_act5_realm/forgotten_watcher"
+      ],
+      "description": [
+        "The Eighth had regalia made for a coronation that never happened. It tarnished in the dark, waiting.",
+        "",
+        "&7Four &6Tarnished Regalia&7, four gold ingots and an &bEcho Shard&7 forge the &6Sovereign's Seal&7. The Hollow Citadel's altar waits for it."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act5_realm/regalia/task0",
+          "type": "item",
+          "item": "remnant_bosses:sovereigns_seal"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act5_realm/regalia/reward0",
+          "type": "item",
+          "item": "minecraft:enchanted_golden_apple"
+        },
+        {
+          "id": "s1_act5_realm/regalia/reward1",
+          "type": "xp",
+          "xp": 500
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act5_realm/hollow_sovereign",
+      "title": "&6&lThe Hollow Sovereign",
+      "subtitle": "The Last King. The eighth light.",
+      "icon": "remnant_bosses:hollow_crown",
+      "x": 16,
+      "y": 0,
+      "shape": "gear",
+      "size": 3,
+      "dependencies": [
+        "s1_act5_realm/regalia"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"It's done. Eight embers. Can you feel it? The light is coming back the way it left: all at once. Come home, Ashborn. Come and see the sun.\"&r",
+        "",
+        "He drank the sun and became a crown with nothing inside. He will tell you it was his by right. He will tell you nobody else remembered him. Both are true. Neither matters now.",
+        "",
+        "&7Three-hit combos and a throne slam; break his guard with an &6axe&7. At two thirds his pauldrons fly and spectral royal guards rise. At one third, spectral crescents and a soul lunge. At the very end, &c\"The Last Command\"&7: a rain of blades."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act5_realm/hollow_sovereign/task0",
+          "type": "advancement",
+          "advancement": "remnant_bosses:realm/remnant_felled",
+          "title": "lang:advancements.remnant_bosses.realm.remnant_felled.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act5_realm/hollow_sovereign/reward0",
+          "type": "random",
+          "table": "tables/sovereign_tribute"
+        },
+        {
+          "id": "s1_act5_realm/hollow_sovereign/reward1",
+          "type": "random",
+          "table": "tables/sovereign_tribute"
+        },
+        {
+          "id": "s1_act5_realm/hollow_sovereign/reward2",
+          "type": "xp",
+          "xp": 5000
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act5_realm/waking_world",
+      "title": "The Waking World",
+      "subtitle": "Go home. Look up.",
+      "icon": "minecraft:sunflower",
+      "x": 18,
+      "y": 0,
+      "dependencies": [
+        "s1_act5_realm/hollow_sovereign"
+      ],
+      "description": [
+        "The Realm is fading behind you, the way a dream does when you try to remember it.",
+        "",
+        "&7Depart the Realm through a grace and walk out into the Overworld."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act5_realm/waking_world/task0",
+          "type": "advancement",
+          "advancement": "remnant_bosses:realm/waking_world",
+          "title": "lang:advancements.remnant_bosses.realm.waking_world.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act5_realm/waking_world/reward0",
+          "type": "xp",
+          "xp": 500
+        }
+      ]
+    }
+  ]
+}

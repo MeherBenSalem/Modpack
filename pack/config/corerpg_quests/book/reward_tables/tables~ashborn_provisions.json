@@ -1,0 +1,35 @@
+{
+  "id": "tables/ashborn_provisions",
+  "title": "Ashborn Provisions",
+  "icon": "minecraft:bread",
+  "entries": [
+    {
+      "id": "tables/ashborn_provisions/0",
+      "type": "item",
+      "item": "minecraft:bread",
+      "count": 8,
+      "weight": 3
+    },
+    {
+      "id": "tables/ashborn_provisions/1",
+      "type": "item",
+      "item": "minecraft:cooked_beef",
+      "count": 6,
+      "weight": 2
+    },
+    {
+      "id": "tables/ashborn_provisions/2",
+      "type": "item",
+      "item": "minecraft:golden_carrot",
+      "count": 4,
+      "weight": 1
+    },
+    {
+      "id": "tables/ashborn_provisions/3",
+      "type": "item",
+      "item": "minecraft:torch",
+      "count": 32,
+      "weight": 2
+    }
+  ]
+}

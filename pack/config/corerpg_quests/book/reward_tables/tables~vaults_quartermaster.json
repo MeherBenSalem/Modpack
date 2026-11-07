@@ -1,0 +1,54 @@
+{
+  "id": "tables/vaults_quartermaster",
+  "title": "The Quartermaster's Shelf",
+  "icon": "omnivault:omnium_ingot",
+  "entries": [
+    {
+      "id": "tables/vaults_quartermaster/0",
+      "type": "item",
+      "item": "omnivault:omnium_ingot",
+      "count": 4,
+      "weight": 3
+    },
+    {
+      "id": "tables/vaults_quartermaster/1",
+      "type": "item",
+      "item": "omnivault:logic_processor",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/vaults_quartermaster/2",
+      "type": "item",
+      "item": "omnivault:upgrade_base",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/vaults_quartermaster/3",
+      "type": "item",
+      "item": "omnivault:blank_pattern",
+      "count": 4,
+      "weight": 2
+    },
+    {
+      "id": "tables/vaults_quartermaster/4",
+      "type": "item",
+      "item": "omnivault:nexus_cable",
+      "count": 16,
+      "weight": 2
+    },
+    {
+      "id": "tables/vaults_quartermaster/5",
+      "type": "item",
+      "item": "omnivault:speed_upgrade",
+      "weight": 1
+    },
+    {
+      "id": "tables/vaults_quartermaster/6",
+      "type": "item",
+      "item": "omnivault:stack_upgrade",
+      "weight": 1
+    }
+  ]
+}

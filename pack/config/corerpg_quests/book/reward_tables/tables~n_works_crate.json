@@ -1,0 +1,61 @@
+{
+  "id": "tables/n_works_crate",
+  "title": "Spare Parts from the Works",
+  "icon": "core_utilities:basic_machine_frame",
+  "entries": [
+    {
+      "id": "tables/n_works_crate/0",
+      "type": "item",
+      "item": "core_utilities:basic_circuit",
+      "count": 4,
+      "weight": 3
+    },
+    {
+      "id": "tables/n_works_crate/1",
+      "type": "item",
+      "item": "core_utilities:steel_ingot",
+      "count": 6,
+      "weight": 3
+    },
+    {
+      "id": "tables/n_works_crate/2",
+      "type": "item",
+      "item": "core_utilities:energized_ingot",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/n_works_crate/3",
+      "type": "item",
+      "item": "core_utilities:cable",
+      "count": 16,
+      "weight": 2
+    },
+    {
+      "id": "tables/n_works_crate/4",
+      "type": "item",
+      "item": "core_utilities:speed_upgrade",
+      "weight": 1
+    },
+    {
+      "id": "tables/n_works_crate/5",
+      "type": "item",
+      "item": "core_utilities:energy_upgrade",
+      "weight": 1
+    },
+    {
+      "id": "tables/n_works_crate/6",
+      "type": "item",
+      "item": "minecraft:redstone",
+      "count": 24,
+      "weight": 3
+    },
+    {
+      "id": "tables/n_works_crate/7",
+      "type": "item",
+      "item": "minecraft:coal_block",
+      "count": 4,
+      "weight": 2
+    }
+  ]
+}

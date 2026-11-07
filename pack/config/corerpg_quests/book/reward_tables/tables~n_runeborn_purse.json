@@ -1,0 +1,47 @@
+{
+  "id": "tables/n_runeborn_purse",
+  "title": "The Pilgrim's Purse",
+  "icon": "runeborn:pilgrim_seal",
+  "entries": [
+    {
+      "id": "tables/n_runeborn_purse/0",
+      "type": "item",
+      "item": "runeborn:faded_rune",
+      "count": 3,
+      "weight": 3
+    },
+    {
+      "id": "tables/n_runeborn_purse/1",
+      "type": "item",
+      "item": "runeborn:lustrous_rune",
+      "weight": 2
+    },
+    {
+      "id": "tables/n_runeborn_purse/2",
+      "type": "item",
+      "item": "runeborn:tempering_stone_2",
+      "count": 3,
+      "weight": 3
+    },
+    {
+      "id": "tables/n_runeborn_purse/3",
+      "type": "item",
+      "item": "runeborn:blank_whetstone",
+      "weight": 2
+    },
+    {
+      "id": "tables/n_runeborn_purse/4",
+      "type": "item",
+      "item": "minecraft:glistering_melon_slice",
+      "count": 3,
+      "weight": 2
+    },
+    {
+      "id": "tables/n_runeborn_purse/5",
+      "type": "item",
+      "item": "minecraft:blaze_powder",
+      "count": 3,
+      "weight": 2
+    }
+  ]
+}

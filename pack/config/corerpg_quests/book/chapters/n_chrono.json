@@ -1,0 +1,944 @@
+{
+  "id": "n_chrono",
+  "title": "&bChronofall",
+  "icon": "chronofall:rift_shard",
+  "group": "groups/chronicles",
+  "subtitle": [
+    "Pieces of a future the eclipse broke loose. Something fell through the hole where the sun was."
+  ],
+  "quests": [
+    {
+      "id": "n_chrono/start",
+      "title": "&bSomething Fell Through",
+      "subtitle": "A streak of fire where the sun used to be.",
+      "icon": "chronofall:rift_shard",
+      "x": 0,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "s1_act1_embers/kindle"
+      ],
+      "description": [
+        "&6The Keeper&r",
+        "",
+        "&f&o\"I have watched the hole where the sun was for longer than you have been ash. Nothing ever came out of it. Tonight something did.\"&r",
+        "",
+        "Some nights a &6Chrono Rift&r tears open in the sky and a &6Chrono Pod&r falls through it in a streak of fire: a piece of a future that the Eclipse broke loose. Every minute of night each Ashborn has a small chance of one (one in twenty-five, never more than one in fifteen minutes). It opens 24 to 48 blocks away, and word of which way to look reaches you.",
+        "",
+        "The pod digs a scorched crater. In it stands a &6Rift Cache&r, and around it two or three &cSentinels&r.",
+        "",
+        "&7Find a crash site and right-click the Rift Cache for its &6Rift Shards&7."
+      ],
+      "tasks": [
+        {
+          "id": "n_chrono/start/task0",
+          "type": "item",
+          "item": "chronofall:rift_shard"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_chrono/start/reward0",
+          "type": "item",
+          "item": "chronofall:scrap",
+          "count": 4
+        },
+        {
+          "id": "n_chrono/start/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "n_chrono/sentinel",
+      "title": "Eyes in the Crater",
+      "subtitle": "They guard a morning that never came.",
+      "icon": "chronofall:sentinel_spawn_egg",
+      "x": 2,
+      "y": -2,
+      "dependencies": [
+        "n_chrono/start"
+      ],
+      "description": [
+        "&cSentinels&r keep their distance and shoot laser bolts (5 damage a hit). Thirty health, a little armour, visors that glow in the dark. They are not Remnants: nothing in them was ever alive, so nothing in them comes back. Close the distance, or bring a shield.",
+        "",
+        "They drop &6Scrap&r, and sometimes a Rift Shard.",
+        "",
+        "&7Destroy three Sentinels."
+      ],
+      "tasks": [
+        {
+          "id": "n_chrono/sentinel/task0",
+          "type": "kill",
+          "entity": "chronofall:sentinel",
+          "value": 3
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_chrono/sentinel/reward0",
+          "type": "random",
+          "table": "tables/world_ember_spoils"
+        },
+        {
+          "id": "n_chrono/sentinel/reward1",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "n_chrono/salvage",
+      "title": "Salvage",
+      "subtitle": "Somebody's tomorrow, in pieces.",
+      "icon": "chronofall:scrap",
+      "x": 2,
+      "y": 0,
+      "dependencies": [
+        "n_chrono/start"
+      ],
+      "description": [
+        "Everything in a Rift Cache is salvage from a year that never came: &6Scrap&r, ingots of metals no smith of the Crown ever named, copper wiring, blank circuit boards, now and then a whole Processor.",
+        "",
+        "The rifts have been falling longer than anyone watched. The deep rock below Y 0 is full of &6Scrap Debris&r: smelt it for scrap (an Electric Furnace from the Ashen Works does it twice as fast). Nine scrap pack into a Block of Scrap.",
+        "",
+        "&7Gather sixteen Scrap."
+      ],
+      "tasks": [
+        {
+          "id": "n_chrono/salvage/task0",
+          "type": "item",
+          "item": "chronofall:scrap",
+          "count": 16
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_chrono/salvage/reward0",
+          "type": "item",
+          "item": "minecraft:torch",
+          "count": 32
+        },
+        {
+          "id": "n_chrono/salvage/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "n_chrono/archivist",
+      "title": "Filed Under Never",
+      "subtitle": "How do you catalogue a thing that never happened?",
+      "icon": "chronofall:rift_shard",
+      "x": 4,
+      "y": -2,
+      "dependencies": [
+        "n_chrono/salvage",
+        "p_archive/meridian"
+      ],
+      "optional": true,
+      "description": [
+        "&o\"I collect befores, Ashborn. Every ruin has one. These have none. Nobody built them and nobody ever will: they are afters, from a morning that never came because the sun went out the night before. Show me a few. I need to know which shelf a thing like that goes on.\"&r &7— Oren, the Archivist&r",
+        "",
+        "&7Show the Archivist four Rift Shards."
+      ],
+      "tasks": [
+        {
+          "id": "n_chrono/archivist/task0",
+          "type": "item",
+          "item": "chronofall:rift_shard",
+          "count": 4
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_chrono/archivist/reward0",
+          "type": "random",
+          "table": "tables/paths_archive_cache"
+        },
+        {
+          "id": "n_chrono/archivist/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "n_chrono/titanium",
+      "title": "Metal Without a Name",
+      "subtitle": "Grey, light and very far from home.",
+      "icon": "chronofall:titanium_ingot",
+      "x": 4,
+      "y": 0,
+      "dependencies": [
+        "n_chrono/salvage"
+      ],
+      "description": [
+        "&6Titanium Ore&r lies deep (below Y 16) and wants an iron pickaxe; the ore only breaks for an Ashborn of &6RPG level 10&r or more. Rift Caches drop the ingots too.",
+        "",
+        "Titanium is the Fabricator's favourite metal. Almost everything it prints wants some.",
+        "",
+        "&7Smelt eight Titanium Ingots."
+      ],
+      "tasks": [
+        {
+          "id": "n_chrono/titanium/task0",
+          "type": "item",
+          "item": "chronofall:titanium_ingot",
+          "count": 8
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_chrono/titanium/reward0",
+          "type": "item",
+          "item": "minecraft:redstone",
+          "count": 8
+        },
+        {
+          "id": "n_chrono/titanium/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "n_chrono/fabricator",
+      "title": "&bThe Fabricator",
+      "subtitle": "It prints tomorrow, one hologram at a time.",
+      "icon": "chronofall:fabricator",
+      "x": 6,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "n_chrono/titanium"
+      ],
+      "description": [
+        "&6The Keeper&r",
+        "",
+        "&f&o\"It makes things out of light. The Crown's forges did that once. I did not think anyone else remembered how.\"&r",
+        "",
+        "Two titanium, a crafting table, redstone, a Block of Scrap and three scrap make a &6Fabricator&r. It knows twenty recipes: flux cells, boards, processors, every device, robot, chip and card.",
+        "",
+        "Pick a recipe to see what you have and what you need. &6Fabricate&r takes the parts from your inventory, and the item prints into the output slot while its hologram turns above the block. Hoppers can take the output.",
+        "",
+        "&7Build a Fabricator."
+      ],
+      "tasks": [
+        {
+          "id": "n_chrono/fabricator/task0",
+          "type": "item",
+          "item": "chronofall:fabricator"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_chrono/fabricator/reward0",
+          "type": "random",
+          "table": "tables/n_chrono_salvage"
+        },
+        {
+          "id": "n_chrono/fabricator/reward1",
+          "type": "xp",
+          "xp": 120
+        }
+      ]
+    },
+    {
+      "id": "n_chrono/wiring",
+      "title": "Copper Wiring",
+      "subtitle": "Green boards, gold veins.",
+      "icon": "chronofall:printed_circuit_board",
+      "x": 8,
+      "y": 0,
+      "dependencies": [
+        "n_chrono/fabricator"
+      ],
+      "description": [
+        "At a crafting table: &6Copper Wiring&r (two copper and a redstone make three) and &6Blank Circuit Boards&r (an iron ingot, green dye and a scrap make two). In the Fabricator, a blank board, two wiring and three gold nuggets print a &6Circuit Board&r.",
+        "",
+        "&7Print two Circuit Boards."
+      ],
+      "tasks": [
+        {
+          "id": "n_chrono/wiring/task0",
+          "type": "item",
+          "item": "chronofall:printed_circuit_board",
+          "count": 2
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_chrono/wiring/reward0",
+          "type": "item",
+          "item": "minecraft:gold_nugget",
+          "count": 18
+        },
+        {
+          "id": "n_chrono/wiring/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "n_chrono/cobalt",
+      "title": "Cobalt",
+      "subtitle": "Blue metal from the bottom of the world.",
+      "icon": "chronofall:cobalt_ingot",
+      "x": 6,
+      "y": 2,
+      "dependencies": [
+        "n_chrono/titanium",
+        "s1_act1_embers/dusk_rider"
+      ],
+      "description": [
+        "&6Cobalt Ore&r lies below Y -16, wants an iron pickaxe, and only breaks for an Ashborn of &6RPG level 20&r. Rift Caches drop the ingots now and then.",
+        "",
+        "Everything that holds &bFlux&r is made of it: the Flux Charger and every Flux Cell.",
+        "",
+        "&7Smelt eight Cobalt Ingots."
+      ],
+      "tasks": [
+        {
+          "id": "n_chrono/cobalt/task0",
+          "type": "item",
+          "item": "chronofall:cobalt_ingot",
+          "count": 8
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_chrono/cobalt/reward0",
+          "type": "item",
+          "item": "minecraft:redstone",
+          "count": 12
+        },
+        {
+          "id": "n_chrono/cobalt/reward1",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "n_chrono/tomorrow_steel",
+      "title": "Tomorrow's Steel",
+      "subtitle": "Four metals, four tiers, one future.",
+      "icon": "chronofall:cobalt_armor_chestplate",
+      "x": 4,
+      "y": 4,
+      "dependencies": [
+        "n_chrono/cobalt"
+      ],
+      "optional": true,
+      "description": [
+        "The rift metals make tools and armour at four tiers: &6scrap&r (between stone and iron), &6titanium&r (iron), &6cobalt&r (diamond) and &6orichalcum&r (between diamond and netherite). Each asks for its points on the K screen: cobalt wants 14 Attack Power for tools, 14 Protection for armour.",
+        "",
+        "A &6Cobalt Pickaxe&r mines whatever a diamond one does, without a Duskforged Ingot in the handle.",
+        "",
+        "&7Make a Cobalt Pickaxe and a Cobalt Chestplate."
+      ],
+      "tasks": [
+        {
+          "id": "n_chrono/tomorrow_steel/task0",
+          "type": "item",
+          "item": "chronofall:cobalt_pickaxe"
+        },
+        {
+          "id": "n_chrono/tomorrow_steel/task1",
+          "type": "item",
+          "item": "chronofall:cobalt_armor_chestplate"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_chrono/tomorrow_steel/reward0",
+          "type": "item",
+          "item": "chronofall:cobalt_ingot",
+          "count": 3
+        },
+        {
+          "id": "n_chrono/tomorrow_steel/reward1",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "n_chrono/flux",
+      "title": "&bFlux",
+      "subtitle": "Power without a single cable.",
+      "icon": "chronofall:flux_charger",
+      "x": 8,
+      "y": 2,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "n_chrono/fabricator",
+        "n_chrono/cobalt",
+        "n_works/power"
+      ],
+      "description": [
+        "Every device from the rifts runs on &bFlux&r. A &6Flux Charger&r (four titanium, three cobalt, a furnace and a block of redstone) burns any furnace fuel (coal: 6,400 Flux) or a Rift Shard (40,000) and holds 100,000. Without a cable it beams the charge to the device in its slot, to the gear of anyone within 4 blocks, and to drones, mechs and skiffs within 8. A printed &6Flux Cell&r (two cobalt, four redstone, a wiring) tops up a robot or vehicle by hand.",
+        "",
+        "&o\"Same coal, same hunger as the generator in the Works. No cables. I hate it. Leave it on.\"&r &7— the Smith Under Ash&r",
+        "",
+        "&7Build a Flux Charger and print two Flux Cells."
+      ],
+      "tasks": [
+        {
+          "id": "n_chrono/flux/task0",
+          "type": "item",
+          "item": "chronofall:flux_charger"
+        },
+        {
+          "id": "n_chrono/flux/task1",
+          "type": "item",
+          "item": "chronofall:flux_cell",
+          "count": 2
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_chrono/flux/reward0",
+          "type": "item",
+          "item": "chronofall:rift_shard"
+        },
+        {
+          "id": "n_chrono/flux/reward1",
+          "type": "item",
+          "item": "minecraft:coal_block",
+          "count": 2
+        },
+        {
+          "id": "n_chrono/flux/reward2",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "n_chrono/processor",
+      "title": "A Mind in Quartz",
+      "subtitle": "Everything that moves needs one.",
+      "icon": "chronofall:central_processing_unit",
+      "x": 10,
+      "y": 0,
+      "dependencies": [
+        "n_chrono/wiring",
+        "n_chrono/flux"
+      ],
+      "description": [
+        "Two Circuit Boards, a Rift Shard and two quartz print a &6Processor&r. Every drone, mech, skiff and weapon from the rifts thinks with one.",
+        "",
+        "Quartz comes from the Ashlands, or out of diorite through Create's crushing wheels. A Rift Cache sometimes holds a whole Processor.",
+        "",
+        "&7Print a Processor."
+      ],
+      "tasks": [
+        {
+          "id": "n_chrono/processor/task0",
+          "type": "item",
+          "item": "chronofall:central_processing_unit"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_chrono/processor/reward0",
+          "type": "item",
+          "item": "minecraft:quartz",
+          "count": 4
+        },
+        {
+          "id": "n_chrono/processor/reward1",
+          "type": "xp",
+          "xp": 120
+        }
+      ]
+    },
+    {
+      "id": "n_chrono/drone",
+      "title": "A Small, Loyal Light",
+      "subtitle": "It follows you. Nothing else from tomorrow does.",
+      "icon": "chronofall:drone",
+      "x": 12,
+      "y": -3,
+      "dependencies": [
+        "n_chrono/processor"
+      ],
+      "description": [
+        "Six scrap, a Flux Cell, a Processor and a Circuit Board print a &6Drone&r. Use it on a block to deploy it; it follows whoever set it down. Sneak-use an empty hand on it to pack it up again.",
+        "",
+        "&7Print a Drone."
+      ],
+      "tasks": [
+        {
+          "id": "n_chrono/drone/task0",
+          "type": "item",
+          "item": "chronofall:drone"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_chrono/drone/reward0",
+          "type": "item",
+          "item": "minecraft:glowstone_dust",
+          "count": 8
+        },
+        {
+          "id": "n_chrono/drone/reward1",
+          "type": "xp",
+          "xp": 120
+        }
+      ]
+    },
+    {
+      "id": "n_chrono/chips",
+      "title": "Chips",
+      "subtitle": "Teach it a trade.",
+      "icon": "chronofall:guard_chip",
+      "x": 14,
+      "y": -3,
+      "dependencies": [
+        "n_chrono/drone"
+      ],
+      "optional": true,
+      "description": [
+        "A &6Blank Card&r (paper, an iron nugget, redstone) and a Circuit Board make every chip. Install one by using it on your drone.",
+        "",
+        "&6Collector Chip&r (and a hopper): brings items lying within 10 blocks to you. &6Guard Chip&r (and a Rift Shard): shoots hostile mobs near you. &6Lamp Chip&r (and four glowstone dust): lights the way.",
+        "",
+        "&7Print all three chips."
+      ],
+      "tasks": [
+        {
+          "id": "n_chrono/chips/task0",
+          "type": "item",
+          "item": "chronofall:collector_chip"
+        },
+        {
+          "id": "n_chrono/chips/task1",
+          "type": "item",
+          "item": "chronofall:guard_chip"
+        },
+        {
+          "id": "n_chrono/chips/task2",
+          "type": "item",
+          "item": "chronofall:lamp_chip"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_chrono/chips/reward0",
+          "type": "random",
+          "table": "tables/n_chrono_salvage"
+        },
+        {
+          "id": "n_chrono/chips/reward1",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "n_chrono/arsenal",
+      "title": "Light That Cuts",
+      "subtitle": "Weapons from a war that never started.",
+      "icon": "chronofall:pulse_rifle",
+      "x": 12,
+      "y": -1,
+      "dependencies": [
+        "n_chrono/processor"
+      ],
+      "optional": true,
+      "description": [
+        "The &6Plasma Cutter&r (titanium, a Flux Cell, a Processor, two Rift Shards and a diamond): hold use to cut the block you look at, up to 12 blocks away, as fast as a diamond tool. The &6Pulse Rifle&r (titanium, a Flux Cell, a Processor, two Rift Shards): a laser bolt every half second, 7 damage each. It wants 10 Attack Speed.",
+        "",
+        "&o\"A crossbow that never needs bolts. The Company will want six.\"&r &7— Maren, Captain of the Ashen Company&r",
+        "",
+        "&7Print a Plasma Cutter and a Pulse Rifle."
+      ],
+      "tasks": [
+        {
+          "id": "n_chrono/arsenal/task0",
+          "type": "item",
+          "item": "chronofall:plasma_cutter"
+        },
+        {
+          "id": "n_chrono/arsenal/task1",
+          "type": "item",
+          "item": "chronofall:pulse_rifle"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_chrono/arsenal/reward0",
+          "type": "random",
+          "table": "tables/world_hunt_spoils"
+        },
+        {
+          "id": "n_chrono/arsenal/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "n_chrono/mech",
+      "title": "Walking Iron",
+      "subtitle": "Tomorrow's knights rode these.",
+      "icon": "chronofall:mech",
+      "x": 12,
+      "y": 1,
+      "dependencies": [
+        "n_chrono/processor",
+        "s1_act2_hunt/sylvara"
+      ],
+      "description": [
+        "Four Blocks of Scrap, eight titanium, three Flux Cells, a Processor and two pistons print a &6Mech&r. Use it on a block to deploy it, right-click to climb in. It steps up blocks, leaps while you hold jump and &6slams&r the ground where it lands (8 damage and knockback all around). Its rider hits harder.",
+        "",
+        "&7Driving one wants 20 Fortitude. Print a Mech."
+      ],
+      "tasks": [
+        {
+          "id": "n_chrono/mech/task0",
+          "type": "item",
+          "item": "chronofall:mech"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_chrono/mech/reward0",
+          "type": "item",
+          "item": "chronofall:titanium_ingot",
+          "count": 4
+        },
+        {
+          "id": "n_chrono/mech/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "n_chrono/cards",
+      "title": "Upgrade Cards",
+      "subtitle": "Fixed bonuses, fixed limits.",
+      "icon": "chronofall:defense_upgrade_card",
+      "x": 14,
+      "y": 1,
+      "dependencies": [
+        "n_chrono/mech"
+      ],
+      "optional": true,
+      "description": [
+        "Every card is a Blank Card printed with one more thing; use it on your mech. &6Bulk&r (a golden apple): +10 health. &6Damage&r (four blaze powder): +2 damage for its rider. &6Defense&r (four titanium): +4 armour. Five of each at most. &6Speed&r (sugar and redstone): +10% speed, three at most. A &6Repair Card&r (two iron, four scrap) mends 20 health.",
+        "",
+        "&7Print a Bulk, a Defense and a Repair Card."
+      ],
+      "tasks": [
+        {
+          "id": "n_chrono/cards/task0",
+          "type": "item",
+          "item": "chronofall:bulk_upgrade_card"
+        },
+        {
+          "id": "n_chrono/cards/task1",
+          "type": "item",
+          "item": "chronofall:defense_upgrade_card"
+        },
+        {
+          "id": "n_chrono/cards/task2",
+          "type": "item",
+          "item": "chronofall:repair_card"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_chrono/cards/reward0",
+          "type": "item",
+          "item": "minecraft:golden_apple"
+        },
+        {
+          "id": "n_chrono/cards/reward1",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "n_chrono/flight",
+      "title": "&bA Seat Above the Ash",
+      "subtitle": "Only the phantoms fly now. Not for much longer.",
+      "icon": "chronofall:skiff",
+      "x": 12,
+      "y": 3,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "n_chrono/processor"
+      ],
+      "description": [
+        "&6The Keeper&r",
+        "",
+        "&f&o\"Nothing has flown over Last Light since the sun went out but the phantoms. Go and show them they are not alone up there.\"&r",
+        "",
+        "Ten titanium, four Flux Cells, a Processor, four Rift Shards and two phantom membranes print a &6Hover Skiff&r: a one-seat craft that banks into its turns. Use it on a block to deploy. W and S for speed, look to steer, jump to climb, sprint to descend; the screen shows Flux, speed and height. About four minutes of flight a charge, so park it by a Flux Charger.",
+        "",
+        "Phantoms find anyone who has not slept in three nights. Their membranes are the only part of them worth keeping.",
+        "",
+        "&7Print a Hover Skiff."
+      ],
+      "tasks": [
+        {
+          "id": "n_chrono/flight/task0",
+          "type": "item",
+          "item": "chronofall:skiff"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_chrono/flight/reward0",
+          "type": "item",
+          "item": "chronofall:flux_cell",
+          "count": 2
+        },
+        {
+          "id": "n_chrono/flight/reward1",
+          "type": "xp",
+          "xp": 250
+        }
+      ]
+    },
+    {
+      "id": "n_chrono/jetpack",
+      "title": "Fire on Your Back",
+      "subtitle": "Seventy-five seconds of not touching the ground.",
+      "icon": "chronofall:jetpack",
+      "x": 14,
+      "y": 3,
+      "dependencies": [
+        "n_chrono/flight",
+        "s1_act4_ash/fortress"
+      ],
+      "optional": true,
+      "description": [
+        "Six titanium, two Flux Cells, a Processor and two &6blaze rods&r from the Ashlands' fortresses print a &6Jetpack&r. Wear it and hold jump to fly: about seventy-five seconds of thrust, and no fall damage while it has charge. A Flux Charger refills it while you stand close.",
+        "",
+        "&7It wants 10 Agility. Print a Jetpack."
+      ],
+      "tasks": [
+        {
+          "id": "n_chrono/jetpack/task0",
+          "type": "item",
+          "item": "chronofall:jetpack"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_chrono/jetpack/reward0",
+          "type": "item",
+          "item": "chronofall:flux_cell"
+        },
+        {
+          "id": "n_chrono/jetpack/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "n_chrono/orichalcum",
+      "title": "Orichalcum",
+      "subtitle": "The deepest metal, the furthest future.",
+      "icon": "chronofall:orichalcum_ingot",
+      "x": 6,
+      "y": 4,
+      "dependencies": [
+        "n_chrono/cobalt",
+        "s1_act2_hunt/sylvara"
+      ],
+      "description": [
+        "&6Orichalcum Ore&r lies at the bottom of the world (Y -64 to -40). It wants a diamond-tier pickaxe (a Cobalt Pickaxe will do) and an Ashborn of &6RPG level 32&r. Rift Caches drop an ingot now and then.",
+        "",
+        "Rift Gates and the Rift Beacon are built on it.",
+        "",
+        "&7Smelt six Orichalcum Ingots."
+      ],
+      "tasks": [
+        {
+          "id": "n_chrono/orichalcum/task0",
+          "type": "item",
+          "item": "chronofall:orichalcum_ingot",
+          "count": 6
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_chrono/orichalcum/reward0",
+          "type": "random",
+          "table": "tables/n_chrono_salvage"
+        },
+        {
+          "id": "n_chrono/orichalcum/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "n_chrono/gates",
+      "title": "Rift Gates",
+      "subtitle": "Two seconds, any distance.",
+      "icon": "chronofall:rift_gate",
+      "x": 8,
+      "y": 4,
+      "dependencies": [
+        "n_chrono/orichalcum",
+        "n_chrono/flux"
+      ],
+      "description": [
+        "Eight black stained glass around a Rift Shard make eight &6Rift Glass&r. Four Rift Glass, two orichalcum, two ender pearls and two Rift Shards print a &6Rift Gate&r; two titanium, a shard and a compass print the &6Rift Tuner&r. Use the tuner on two gates to link them. Stand on one for two seconds and you step out of the other.",
+        "",
+        "&o\"Every road in this world was earned at a shrine. These earn nothing. Earn the orichalcum, then.\"&r &7— the Keeper&r",
+        "",
+        "&7Make eight Rift Glass, print two Rift Gates and a Rift Tuner."
+      ],
+      "tasks": [
+        {
+          "id": "n_chrono/gates/task0",
+          "type": "item",
+          "item": "chronofall:rift_glass",
+          "count": 8
+        },
+        {
+          "id": "n_chrono/gates/task1",
+          "type": "item",
+          "item": "chronofall:rift_gate",
+          "count": 2
+        },
+        {
+          "id": "n_chrono/gates/task2",
+          "type": "item",
+          "item": "chronofall:rift_tuner"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_chrono/gates/reward0",
+          "type": "item",
+          "item": "minecraft:ender_pearl",
+          "count": 4
+        },
+        {
+          "id": "n_chrono/gates/reward1",
+          "type": "xp",
+          "xp": 250
+        }
+      ]
+    },
+    {
+      "id": "n_chrono/realm_gate",
+      "title": "A Gate Under the Black Sun",
+      "subtitle": "A door from a future into a past that won't end.",
+      "icon": "chronofall:rift_tuner",
+      "x": 8,
+      "y": 6,
+      "dependencies": [
+        "n_chrono/gates",
+        "n_realm/start"
+      ],
+      "optional": true,
+      "description": [
+        "Rift Gates don't care how far apart they stand, or in which world. Set one at Last Light, carry its twin into the &5Eclipsed Realm&r and link them with the tuner: the black sun is two seconds from your bed.",
+        "",
+        "&o\"A door from a morning that never came into a night that never ends. I don't like it. Use it anyway.\"&r &7— the Keeper&r",
+        "",
+        "&7Print another pair of gates and link one into the Eclipsed Realm."
+      ],
+      "tasks": [
+        {
+          "id": "n_chrono/realm_gate/task0",
+          "type": "item",
+          "item": "chronofall:rift_gate",
+          "count": 2
+        },
+        {
+          "id": "n_chrono/realm_gate/task1",
+          "type": "checkmark",
+          "title": "One of my gates stands in the Eclipsed Realm"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_chrono/realm_gate/reward0",
+          "type": "random",
+          "table": "tables/n_chrono_salvage"
+        },
+        {
+          "id": "n_chrono/realm_gate/reward1",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "n_chrono/finale",
+      "title": "&bCall the Sky Down",
+      "subtitle": "The hole where the sun was, answering when you knock.",
+      "icon": "chronofall:rift_beacon",
+      "x": 10.5,
+      "y": 5.5,
+      "shape": "gear",
+      "size": 2,
+      "dependencies": [
+        "n_chrono/gates",
+        "n_chrono/processor"
+      ],
+      "description": [
+        "&6The Keeper&r",
+        "",
+        "&f&o\"When the sun went out, the hole it left had to lead somewhere. Now we know: into a tomorrow that was never going to happen, and tomorrow fell. Call it down if you must, Ashborn. Only remember it was never meant for us.\"&r",
+        "",
+        "Four Rift Glass, four orichalcum, a Processor and four Rift Shards print a &6Rift Beacon&r. Use four more shards on it and it calls a Chrono Pod down beside itself, Sentinels and all, when you choose instead of when the sky does.",
+        "",
+        "&7Print a Rift Beacon, call a rift down and destroy the Sentinels that come with it."
+      ],
+      "tasks": [
+        {
+          "id": "n_chrono/finale/task0",
+          "type": "item",
+          "item": "chronofall:rift_beacon"
+        },
+        {
+          "id": "n_chrono/finale/task1",
+          "type": "kill",
+          "entity": "chronofall:sentinel",
+          "value": 3
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_chrono/finale/reward0",
+          "type": "random",
+          "table": "tables/n_chrono_salvage"
+        },
+        {
+          "id": "n_chrono/finale/reward1",
+          "type": "random",
+          "table": "tables/world_hunt_spoils"
+        },
+        {
+          "id": "n_chrono/finale/reward2",
+          "type": "xp",
+          "xp": 500
+        }
+      ]
+    }
+  ]
+}

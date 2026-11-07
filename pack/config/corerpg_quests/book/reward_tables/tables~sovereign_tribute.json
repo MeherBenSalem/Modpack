@@ -1,0 +1,40 @@
+{
+  "id": "tables/sovereign_tribute",
+  "title": "Sovereign's Tribute",
+  "icon": "minecraft:nether_star",
+  "entries": [
+    {
+      "id": "tables/sovereign_tribute/0",
+      "type": "item",
+      "item": "minecraft:diamond",
+      "count": 8,
+      "weight": 3
+    },
+    {
+      "id": "tables/sovereign_tribute/1",
+      "type": "item",
+      "item": "minecraft:enchanted_golden_apple",
+      "weight": 1
+    },
+    {
+      "id": "tables/sovereign_tribute/2",
+      "type": "item",
+      "item": "minecraft:netherite_scrap",
+      "count": 2,
+      "weight": 1
+    },
+    {
+      "id": "tables/sovereign_tribute/3",
+      "type": "item",
+      "item": "minecraft:experience_bottle",
+      "count": 48,
+      "weight": 2
+    },
+    {
+      "id": "tables/sovereign_tribute/4",
+      "type": "item",
+      "item": "minecraft:totem_of_undying",
+      "weight": 1
+    }
+  ]
+}

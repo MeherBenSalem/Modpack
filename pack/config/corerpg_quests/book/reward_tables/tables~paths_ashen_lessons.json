@@ -1,0 +1,41 @@
+{
+  "id": "tables/paths_ashen_lessons",
+  "title": "Ashen Lessons",
+  "icon": "runeborn:faded_rune",
+  "entries": [
+    {
+      "id": "tables/paths_ashen_lessons/0",
+      "type": "item",
+      "item": "runeborn:faded_rune",
+      "count": 2,
+      "weight": 3
+    },
+    {
+      "id": "tables/paths_ashen_lessons/1",
+      "type": "item",
+      "item": "remnant_mobs:remnant_shard",
+      "count": 4,
+      "weight": 3
+    },
+    {
+      "id": "tables/paths_ashen_lessons/2",
+      "type": "item",
+      "item": "runeborn:tempering_stone_1",
+      "count": 3,
+      "weight": 2
+    },
+    {
+      "id": "tables/paths_ashen_lessons/3",
+      "type": "item",
+      "item": "minecraft:golden_carrot",
+      "count": 6,
+      "weight": 2
+    },
+    {
+      "id": "tables/paths_ashen_lessons/4",
+      "type": "item",
+      "item": "runeborn:lustrous_rune",
+      "weight": 1
+    }
+  ]
+}

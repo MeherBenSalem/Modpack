@@ -1,0 +1,729 @@
+{
+  "id": "s1_prologue",
+  "title": "&6Prologue: &fAshborn",
+  "icon": "runeborn:faded_rune",
+  "group": "groups/main",
+  "subtitle": [
+    "You rose from ash with nothing. Start there."
+  ],
+  "default_quest_shape": "rsquare",
+  "quests": [
+    {
+      "id": "s1_prologue/rise",
+      "title": "&6Rise, Ashborn",
+      "subtitle": "The sun was eaten an age ago.",
+      "icon": "runeborn:faded_rune",
+      "x": 0,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 2,
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Another one. Up you get. The ash doesn't keep its dead for long.&r",
+        "",
+        "&f&oListen, because I'll only say it once. Once there was a sun, and a crown to hold its light. Seven rulers swore to share it, so they broke the sun into pieces and each carried one home. An eighth wanted all of it. He drank the last light himself, and the sky went black.&r",
+        "",
+        "&f&oSince then, nothing that dies here stays dead. It comes back wrong. Remnants, we call them. And you came back too, little ember. That makes you the brightest thing left in the world. They will want it. Let's not give it to them.\"&r",
+        "",
+        "You are one of the &6Ashborn&r: risen from ash with no name, no memory and no way to stay dead. The &cRemnants&r, everything that died under the Eclipse and rose wrong, can smell the light in you.",
+        "",
+        "&7Press &eI&7 for your &6Status&7 and the &6Ashen Codex&7. Everything this world will try to kill you with is written there."
+      ],
+      "tasks": [
+        {
+          "id": "s1_prologue/rise/task0",
+          "type": "checkmark",
+          "title": "♪ Listen to the Keeper"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_prologue/rise/reward0",
+          "type": "item",
+          "item": {
+            "id": "patchouli:guide_book",
+            "components": {
+              "patchouli:book": "remnants:ashen_codex"
+            }
+          },
+          "title": "The Ashen Codex"
+        },
+        {
+          "id": "s1_prologue/rise/reward1",
+          "type": "random",
+          "table": "tables/ashborn_provisions"
+        },
+        {
+          "id": "s1_prologue/rise/reward2",
+          "type": "xp",
+          "xp": 20
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_prologue/gatekeeper",
+      "title": "&6Gatekeeper of the Threshold",
+      "subtitle": "Ser Odric was told not to let anyone leave.",
+      "icon": "minecraft:wither_skeleton_skull",
+      "x": 2,
+      "y": -1.75,
+      "shape": "gear",
+      "size": 1.5,
+      "dependencies": [
+        "s1_prologue/rise"
+      ],
+      "optional": true,
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Odric kept this gate for the heralds. Kept it well. When the heralds died, nobody told him to stop.\"&r",
+        "",
+        "The &6Threshold&r was the heralds' crypt, where the Crown laid its light-bearers to rest. &6Ser Odric&r was their gatekeeper, sworn to keep the dead from leaving. The Eclipse made that oath very busy.",
+        "",
+        "&7Beyond the fog in the Hall of Messages, Odric waits. Fall to him once and the &6Ember Door&7 in the crypt opens anyway, but felling him is worth it. Watch for his &cAsh Slam&7: a roar, a ring of smoke, then a blast. Roll out of it, or roll through."
+      ],
+      "tasks": [
+        {
+          "id": "s1_prologue/gatekeeper/task0",
+          "type": "advancement",
+          "advancement": "remnants:threshold/gatekeeper",
+          "title": "Fell Ser Odric"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_prologue/gatekeeper/reward0",
+          "type": "random",
+          "table": "tables/ashborn_provisions"
+        },
+        {
+          "id": "s1_prologue/gatekeeper/reward1",
+          "type": "item",
+          "item": "runeborn:heros_rune"
+        },
+        {
+          "id": "s1_prologue/gatekeeper/reward2",
+          "type": "xp",
+          "xp": 120
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_prologue/beyond",
+      "title": "&6Beyond the Gate",
+      "subtitle": "Up the Last Stair, through the Waygate.",
+      "icon": "minecraft:lodestone",
+      "x": 2,
+      "y": 0,
+      "dependencies": [
+        "s1_prologue/rise"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Up the stair. Through the gate. Don't look back; there's nothing behind you but graves, and one of them was yours.\"&r",
+        "",
+        "The Waygate at the top of the Last Stair is the heralds' road out of the Threshold. It leads to the &6Lands Under Ash&r: the world, what's left of it.",
+        "",
+        "&7Pass the Ember Door and climb to the Waygate."
+      ],
+      "tasks": [
+        {
+          "id": "s1_prologue/beyond/task0",
+          "type": "advancement",
+          "advancement": "remnants:threshold/beyond",
+          "title": "Step through the Waygate"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_prologue/beyond/reward0",
+          "type": "item",
+          "item": "minecraft:bread",
+          "count": 8
+        },
+        {
+          "id": "s1_prologue/beyond/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_prologue/origin",
+      "title": "What You Were",
+      "subtitle": "Pick the life you half-remember.",
+      "icon": "runeborn:errant_longsword",
+      "x": 2,
+      "y": 1.75,
+      "dependencies": [
+        "s1_prologue/rise"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"You had a life before the ash. Most of you remember a sword, or a prayer, or a debt. Pick the one that feels true. It won't matter to the dead.\"&r",
+        "",
+        "Your &6origin&r is the shape your last life left in you: Knight-Errant, Warlord, Duelist, Cutthroat, Astromancer, Oracle, Ronin, Penitent, Hexblade… or &7Ashborn&r, risen with nothing at all.",
+        "",
+        "&7It sets your starting attributes and armament. A &6Tear of Rebirth&7 lets you choose again later, so don't agonise. The dark won't wait."
+      ],
+      "tasks": [
+        {
+          "id": "s1_prologue/origin/task0",
+          "type": "checkmark",
+          "title": "I chose an origin in the Status screen (I)"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_prologue/origin/reward0",
+          "type": "xp",
+          "xp": 30
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_prologue/wood",
+      "title": "Wood Before Iron",
+      "subtitle": "Every Ashborn starts the same way.",
+      "icon": "minecraft:oak_log",
+      "x": 4,
+      "y": -0.875,
+      "dependencies": [
+        "s1_prologue/beyond"
+      ],
+      "description": [
+        "The forests outlived the sun. Trees grow toward a light that isn't there any more, out of habit, the way old soldiers salute an empty throne.",
+        "",
+        "&7Gather logs. Everything starts with wood."
+      ],
+      "tasks": [
+        {
+          "id": "s1_prologue/wood/task0",
+          "type": "item",
+          "filter": "#minecraft:logs",
+          "count": 16
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_prologue/wood/reward0",
+          "type": "item",
+          "item": "minecraft:apple",
+          "count": 4
+        },
+        {
+          "id": "s1_prologue/wood/reward1",
+          "type": "xp",
+          "xp": 20
+        }
+      ]
+    },
+    {
+      "id": "s1_prologue/stone",
+      "title": "Stone Teeth",
+      "subtitle": "Something sharper than your hands.",
+      "icon": "minecraft:stone_sword",
+      "x": 6,
+      "y": 0,
+      "dependencies": [
+        "s1_prologue/wood"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Stone. Good. Stone doesn't care what you were, either.\"&r",
+        "",
+        "Under the soil, the world's bones. The first Ashborn fought with whatever the earth gave them, and most of them are Remnants now. Do better than they did.",
+        "",
+        "&7Mine cobblestone and make a stone pickaxe."
+      ],
+      "tasks": [
+        {
+          "id": "s1_prologue/stone/task0",
+          "type": "item",
+          "item": "minecraft:cobblestone",
+          "count": 32
+        },
+        {
+          "id": "s1_prologue/stone/task1",
+          "type": "item",
+          "item": "minecraft:stone_pickaxe"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_prologue/stone/reward0",
+          "type": "item",
+          "item": "minecraft:torch",
+          "count": 16
+        },
+        {
+          "id": "s1_prologue/stone/reward1",
+          "type": "xp",
+          "xp": 30
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_prologue/stamina",
+      "title": "The Breath Between Blows",
+      "subtitle": "Stamina, and the roll that saves you.",
+      "icon": "minecraft:feather",
+      "x": 4,
+      "y": 0.875,
+      "dependencies": [
+        "s1_prologue/origin"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"You're not strong yet. So don't be there when it lands.\"&r",
+        "",
+        "The dead don't tire. You do. Every swing and every dodge spends &astamina&r, the green bar, and a blow struck while exhausted lands at a fraction of its strength.",
+        "",
+        "&7Tap &eLeft Alt&7 to &6roll&7: for a heartbeat nothing can touch you. Learn the timing on zombies; you'll need it on things that aren't zombies. Weapon arts (&eR&7) cost &bFP&7, the blue bar. Both refill at an Ember Shrine."
+      ],
+      "tasks": [
+        {
+          "id": "s1_prologue/stamina/task0",
+          "type": "checkmark",
+          "title": "I rolled through an attack"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_prologue/stamina/reward0",
+          "type": "xp",
+          "xp": 40
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_prologue/first_blood",
+      "title": "First Blood",
+      "subtitle": "They were people, once. Mostly.",
+      "icon": "minecraft:rotten_flesh",
+      "x": 8,
+      "y": -0.875,
+      "dependencies": [
+        "s1_prologue/stamina",
+        "s1_prologue/stone"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Don't look at their faces. Some of them used to be someone's.\"&r",
+        "",
+        "The shambling dead are the oldest Remnants: villagers, farmers and soldiers who died in the first dark years and rose before anyone understood what rising meant.",
+        "",
+        "&7Every monster carries a &elevel&7 over its head. Levels climb the further you go from where you woke, the deeper you dig and the longer the world lives under the Eclipse. &aGreen&7 is safe. &cRed&7 will kill you. Start with green."
+      ],
+      "tasks": [
+        {
+          "id": "s1_prologue/first_blood/task0",
+          "type": "kill",
+          "entity": "minecraft:zombie",
+          "value": 5
+        },
+        {
+          "id": "s1_prologue/first_blood/task1",
+          "type": "kill",
+          "entity": "minecraft:skeleton",
+          "value": 3
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_prologue/first_blood/reward0",
+          "type": "random",
+          "table": "tables/ashborn_provisions"
+        },
+        {
+          "id": "s1_prologue/first_blood/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_prologue/runes",
+      "title": "Runes",
+      "subtitle": "The light that leaves the dead.",
+      "icon": "runeborn:faded_rune",
+      "x": 10,
+      "y": -2.625,
+      "dependencies": [
+        "s1_prologue/first_blood"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Feel that? A little warmth, where there wasn't any. That was theirs. Now it's yours. Don't lose it.\"&r",
+        "",
+        "When anything dies, the scrap of sunlight it carried leaves it as &6runes&r. The Ashborn are the only things left that can hold them. Runes buy levels, upgrades and wares.",
+        "",
+        "&7The cruel part: when &oyou&7 die, your runes stay where you fell."
+      ],
+      "tasks": [
+        {
+          "id": "s1_prologue/runes/task0",
+          "type": "checkmark",
+          "title": "I understand what I stand to lose"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_prologue/runes/reward0",
+          "type": "xp",
+          "xp": 40
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_prologue/you_died",
+      "title": "&4YOU DIED",
+      "subtitle": "Not the last time.",
+      "icon": "minecraft:skeleton_skull",
+      "x": 12,
+      "y": -0.875,
+      "shape": "diamond",
+      "dependencies": [
+        "s1_prologue/runes"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Good. Now you know. Everyone dies once. The trick is not to make a habit of it. Go back to where you fell. Something is wearing your face, and it is holding your light.\"&r",
+        "",
+        "Here, the dead don't stay quiet, and that includes you. Where you fell, an &cEcho&r of you rises: a Remnant that wears your face, your gear and your name, guarding the runes you dropped.",
+        "",
+        "&7Two things wait where you fell, and chat tells you where after every death:",
+        "&7- your &6items&7, in your &6corpse&7: right-click it to take them back. It stays until you empty it. &fCtrl+U&7 lists your last deaths.",
+        "&7- your &6runes&7, in the &cbloodstain&7 beside it (red on the minimap, glowing within 96 blocks). Your Echo stands on it: kill it, then step into the bloodstain.",
+        "",
+        "&7Die again before you reach the bloodstain and those runes fade into the ash with the Echo. The corpse stays."
+      ],
+      "tasks": [
+        {
+          "id": "s1_prologue/you_died/task0",
+          "type": "advancement",
+          "advancement": "runeborn:feats/died",
+          "title": "lang:runeborn.feat.died"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_prologue/you_died/reward0",
+          "type": "xp",
+          "xp": 50
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_prologue/reclaimed",
+      "title": "Not This Time",
+      "subtitle": "Take back what's yours.",
+      "icon": "runeborn:heros_rune",
+      "x": 14,
+      "y": -0.875,
+      "dependencies": [
+        "s1_prologue/you_died"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Strange, killing yourself. It gets easier. That should worry you more than it does.\"&r",
+        "",
+        "An Echo fights the way you fought when you died: same weapon, same habits, same mistakes. Learn from them before it does.",
+        "",
+        "&7Kill your Echo, then walk into your bloodstain to reclaim your runes."
+      ],
+      "tasks": [
+        {
+          "id": "s1_prologue/reclaimed/task0",
+          "type": "advancement",
+          "advancement": "runeborn:feats/reclaimed",
+          "title": "lang:runeborn.feat.reclaimed"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_prologue/reclaimed/reward0",
+          "type": "random",
+          "table": "tables/wanderers_cache"
+        },
+        {
+          "id": "s1_prologue/reclaimed/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_prologue/iron",
+      "title": "Iron Will",
+      "subtitle": "The world's best argument.",
+      "icon": "minecraft:iron_ingot",
+      "x": 8,
+      "y": 0.875,
+      "dependencies": [
+        "s1_prologue/stone"
+      ],
+      "description": [
+        "Iron remembers the old forges. In the age of the sun, smiths sang over it; now it just goes quiet in the furnace and waits to be useful.",
+        "",
+        "&7Smelt iron. A shield comes with it, and you will want one."
+      ],
+      "tasks": [
+        {
+          "id": "s1_prologue/iron/task0",
+          "type": "item",
+          "item": "minecraft:iron_ingot",
+          "count": 12
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_prologue/iron/reward0",
+          "type": "item",
+          "item": "minecraft:shield"
+        },
+        {
+          "id": "s1_prologue/iron/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "s1_prologue/armour",
+      "title": "Something Between You and Them",
+      "subtitle": "Plate, for the parts that bleed.",
+      "icon": "minecraft:iron_chestplate",
+      "x": 10,
+      "y": -0.875,
+      "dependencies": [
+        "s1_prologue/iron"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Armour doesn't make you brave. It makes you stupid for a little longer, which is nearly the same thing.\"&r",
+        "",
+        "Every Remnant out there was once someone who thought leather was enough.",
+        "",
+        "&7Forge an iron chestplate and helmet."
+      ],
+      "tasks": [
+        {
+          "id": "s1_prologue/armour/task0",
+          "type": "item",
+          "item": "minecraft:iron_chestplate"
+        },
+        {
+          "id": "s1_prologue/armour/task1",
+          "type": "item",
+          "item": "minecraft:iron_helmet"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_prologue/armour/reward0",
+          "type": "item",
+          "item": "minecraft:golden_apple"
+        },
+        {
+          "id": "s1_prologue/armour/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_prologue/night",
+      "title": "The First Night",
+      "subtitle": "Light holds the dark back. For now.",
+      "icon": "minecraft:red_bed",
+      "x": 10,
+      "y": 0.875,
+      "dependencies": [
+        "s1_prologue/first_blood"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Nights are longer than they used to be. Or we are smaller. Light a fire and don't argue with the dark.\"&r",
+        "",
+        "Torches keep the small things away. Beds skip the worst of it. Neither will save you from what comes on a &cred moon&r.",
+        "",
+        "&7Make a bed and carry torches."
+      ],
+      "tasks": [
+        {
+          "id": "s1_prologue/night/task0",
+          "type": "item",
+          "filter": "#minecraft:beds"
+        },
+        {
+          "id": "s1_prologue/night/task1",
+          "type": "item",
+          "item": "minecraft:torch",
+          "count": 32
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_prologue/night/reward0",
+          "type": "item",
+          "item": "minecraft:cooked_beef",
+          "count": 8
+        },
+        {
+          "id": "s1_prologue/night/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_prologue/know_enemy",
+      "title": "Know Thy Enemy",
+      "subtitle": "Veteran, Elite, Champion… Remnant.",
+      "icon": "remnant_mobs:hunters_lens",
+      "x": 10,
+      "y": 2.625,
+      "dependencies": [
+        "s1_prologue/first_blood"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Some of them have died more than once. Each time they come back meaner. Count the crests before you count your chances.\"&r",
+        "",
+        "A monster that rises again rises stronger. Its crest shows how many times:",
+        "",
+        "&7Common&r → &aVeteran&r → &9Elite&r → &5Champion&r → &cRemnant&r",
+        "",
+        "&7Ranked monsters carry &etraits&7 (Vampiric, Blinking, Packleader…) under their name. Every ranked kill drops a &6Remnant Shard&7; crush it to absorb its &6Valor&7. A &6Hunter's Lens&7 reads a monster's threat before you commit. Take this one."
+      ],
+      "tasks": [
+        {
+          "id": "s1_prologue/know_enemy/task0",
+          "type": "advancement",
+          "advancement": "remnant_mobs:know_thy_enemy",
+          "title": "lang:advancements.remnant_mobs.know_thy_enemy.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_prologue/know_enemy/reward0",
+          "type": "item",
+          "item": "remnant_mobs:hunters_lens"
+        },
+        {
+          "id": "s1_prologue/know_enemy/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_prologue/valor",
+      "title": "Taste of Valor",
+      "subtitle": "Your first level.",
+      "icon": "remnant_mobs:remnant_shard",
+      "x": 12,
+      "y": 0.875,
+      "dependencies": [
+        "s1_prologue/know_enemy"
+      ],
+      "description": [
+        "Runes are light; &6Valor&r is memory. Every kill teaches your body something, and your body keeps it.",
+        "",
+        "&7Kills give Valor. Valor gives &6RPG levels&7, and every level gives attribute points. Press &eK&7 to open the &6Level Up&7 screen: stage points, preview, confirm."
+      ],
+      "tasks": [
+        {
+          "id": "s1_prologue/valor/task0",
+          "type": "advancement",
+          "advancement": "remnant_mobs:taste_of_valor",
+          "title": "lang:advancements.remnant_mobs.taste_of_valor.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_prologue/valor/reward0",
+          "type": "xp",
+          "xp": 60
+        },
+        {
+          "id": "s1_prologue/valor/reward1",
+          "type": "random",
+          "table": "tables/ashborn_provisions"
+        }
+      ]
+    },
+    {
+      "id": "s1_prologue/village",
+      "title": "Smoke on the Horizon",
+      "subtitle": "Somewhere, someone kept a fire lit.",
+      "icon": "minecraft:bell",
+      "x": 14,
+      "y": 0.875,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "s1_prologue/night",
+        "s1_prologue/armour",
+        "s1_prologue/valor"
+      ],
+      "min_required_dependencies": 2,
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"There. Smoke. People, and people who stayed small and stayed lit. Take me there, Ashborn. Fire wants company, and so, I'm told, do I.\"&r",
+        "",
+        "Villages survived the Eclipse by being too small to bother with and too stubborn to die. Their bells still ring at dusk, out of habit, to tell the dark that someone is counting.",
+        "",
+        "&7Find a village with a bell."
+      ],
+      "tasks": [
+        {
+          "id": "s1_prologue/village/task0",
+          "type": "structure",
+          "structure": "#minecraft:village",
+          "title": "Find a village"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_prologue/village/reward0",
+          "type": "random",
+          "table": "tables/wanderers_cache"
+        },
+        {
+          "id": "s1_prologue/village/reward1",
+          "type": "xp",
+          "xp": 100
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    }
+  ]
+}

@@ -113,7 +113,7 @@ bar fills, and the Keeper's last line: *"Rest, Ashborn. The sun remembers you."*
    heart for every player. Co-op groups share the climb.
 3. **Hunter's Moon nights.** On a red moon the Remnants hunt: more elites, named Remnants with horns, better spoils.
    The pack's quests teach you to survive them, then to farm them.
-4. **The Ashen Contracts.** A repeatable bounty board (FTB Quests) with rank-themed rewards, so the mid-game never
+4. **The Ashen Contracts.** A repeatable bounty board (the quest book) with rank-themed rewards, so the mid-game never
    runs dry.
 5. **A home that grows.** Last Light gains faces as you progress: each act's quest rewards bring a new named NPC to
    your shrine.

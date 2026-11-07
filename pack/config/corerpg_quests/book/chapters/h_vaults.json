@@ -1,0 +1,1544 @@
+{
+  "id": "h_vaults",
+  "title": "&aThe Vaults",
+  "icon": "omnivault:crafting_terminal",
+  "group": "groups/hearth",
+  "subtitle": [
+    "Two kinds of storage, one ladder. Each rung needs the other. Then OmniVault keeps climbing."
+  ],
+  "quests": [
+    {
+      "id": "h_vaults/backpack",
+      "title": "Everything You Own, Carried",
+      "subtitle": "A sack, grown up.",
+      "icon": "sophisticatedbackpacks:backpack",
+      "x": 0,
+      "y": -2.5,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "h_lastlight/sack",
+        "s1_forge/ashen_alloy"
+      ],
+      "description": [
+        "A &6Backpack&r starts as a Supplementaries &6Sack&r: sew it into leather and string with two &6Ashen Alloy&r. Carry it, wear it or set it down; it keeps everything inside either way.",
+        "",
+        "&7When you die, your items wait in your corpse. A backpack is one item. Think about that."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/backpack/task0",
+          "type": "item",
+          "item": "sophisticatedbackpacks:backpack"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/backpack/reward0",
+          "type": "item",
+          "item": "minecraft:leather",
+          "count": 8
+        },
+        {
+          "id": "h_vaults/backpack/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/chest",
+      "title": "Chests That Grow",
+      "subtitle": "The larder outgrew the larder.",
+      "icon": "sophisticatedstorage:iron_chest",
+      "x": 0,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "h_lastlight/home",
+        "s1_forge/ashen_alloy"
+      ],
+      "description": [
+        "A &6Sophisticated Chest&r is planks around a lever. Ring it with &6Ashen Alloy&r for an &6Iron Chest&r, or put a &6Tier Upgrade&r on a placed chest to grow it where it stands. Barrels work the same way.",
+        "",
+        "In this pack the storage tiers follow the Ember Forge: &fcopper&r is Create copper sheets, &firon&r is Ashen Alloy, &6gold&r Duskforged, &bdiamond&r Moonsilver, &8netherite&r Deepsteel."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/chest/task0",
+          "type": "item",
+          "item": "sophisticatedstorage:iron_chest"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/chest/reward0",
+          "type": "item",
+          "item": "remnants:ashen_alloy",
+          "count": 4
+        },
+        {
+          "id": "h_vaults/chest/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/drawers",
+      "title": "A Drawer for Everything",
+      "subtitle": "Built on a Sophisticated barrel.",
+      "icon": "omnivault:drawer_1x1",
+      "x": 2,
+      "y": 1.75,
+      "dependencies": [
+        "h_vaults/chest"
+      ],
+      "description": [
+        "An OmniVault &6Drawer&r holds a great many of one item and shows it on its face. Its frame is a &6Sophisticated Barrel&r, planks and iron nuggets: the two vaults start sharing parts here and never stop."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/drawers/task0",
+          "type": "item",
+          "item": "omnivault:drawer_1x1"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/drawers/reward0",
+          "type": "item",
+          "item": "minecraft:iron_nugget",
+          "count": 18
+        },
+        {
+          "id": "h_vaults/drawers/reward1",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/upgrades",
+      "title": "Upgrades",
+      "subtitle": "A bag that bends over so you don't have to.",
+      "icon": "sophisticatedbackpacks:pickup_upgrade",
+      "x": 2,
+      "y": -3.25,
+      "dependencies": [
+        "h_vaults/backpack"
+      ],
+      "description": [
+        "Every upgrade starts as an &6Upgrade Base&r: Ashen Alloy, leather and string. A &6Pickup Upgrade&r scoops loot into the pack as you walk; set its filter so it leaves the rotten flesh where it fell.",
+        "",
+        "Magnet, smelting, compacting, void, feeding, tool swapper: JEI has every recipe."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/upgrades/task0",
+          "type": "item",
+          "item": "sophisticatedbackpacks:pickup_upgrade"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/upgrades/reward0",
+          "type": "item",
+          "item": "sophisticatedbackpacks:upgrade_base",
+          "count": 2
+        },
+        {
+          "id": "h_vaults/upgrades/reward1",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/crafting_upgrade",
+      "title": "A Table on Your Back",
+      "subtitle": "Craft where you stand.",
+      "icon": "sophisticatedbackpacks:crafting_upgrade",
+      "x": 4,
+      "y": -3.25,
+      "dependencies": [
+        "h_vaults/upgrades"
+      ],
+      "description": [
+        "A &6Crafting Upgrade&r puts a crafting grid in the backpack. Keep one spare: OmniVault's &6Crafting Terminal&r is built around one."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/crafting_upgrade/task0",
+          "type": "item",
+          "item": "sophisticatedbackpacks:crafting_upgrade"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/crafting_upgrade/reward0",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/backpack_iron",
+      "title": "Iron-Bound",
+      "subtitle": "Bigger, and nothing falls out.",
+      "icon": "sophisticatedbackpacks:iron_backpack",
+      "x": 2,
+      "y": -1.75,
+      "dependencies": [
+        "h_vaults/backpack"
+      ],
+      "description": [
+        "Ring a backpack with &6Ashen Alloy&r (or Create copper sheets for copper first) and it grows with everything still inside. Each tier holds more and fits more upgrades."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/backpack_iron/task0",
+          "type": "item",
+          "item": "sophisticatedbackpacks:iron_backpack"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/backpack_iron/reward0",
+          "type": "item",
+          "item": "remnants:ashen_alloy",
+          "count": 4
+        },
+        {
+          "id": "h_vaults/backpack_iron/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/logic",
+      "title": "&eThe Logic Processor",
+      "subtitle": "Omnium, Duskforged and redstone.",
+      "icon": "omnivault:logic_processor",
+      "x": 4,
+      "y": 1.75,
+      "shape": "hexagon",
+      "dependencies": [
+        "h_vaults/drawers",
+        "s1_forge/duskforged"
+      ],
+      "description": [
+        "&6Omnium&r is amethyst, quartz and redstone ground to dust, blended with Ashen Alloy and smelted. No quartz before the Nether? Mix amethyst, redstone and a &6Remnant Shard&r in a Create basin instead.",
+        "",
+        "Omnium, &6Duskforged&r and redstone make a &6Logic Processor&r. Both vaults run on it: the Sophisticated &6Controller&r, every &6advanced&r upgrade, every OmniVault device."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/logic/task0",
+          "type": "item",
+          "item": "omnivault:logic_processor"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/logic/reward0",
+          "type": "item",
+          "item": "omnivault:omnium_ingot",
+          "count": 4
+        },
+        {
+          "id": "h_vaults/logic/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/controller",
+      "title": "One Room, Many Chests",
+      "subtitle": "A Sophisticated controller, thinking in OmniVault.",
+      "icon": "sophisticatedstorage:controller",
+      "x": 6,
+      "y": 0,
+      "dependencies": [
+        "h_vaults/chest",
+        "h_vaults/logic"
+      ],
+      "description": [
+        "A &6Storage Controller&r joins every Sophisticated chest and barrel touching it into one network. Its brain is now an OmniVault &6Logic Processor&r."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/controller/task0",
+          "type": "item",
+          "item": "sophisticatedstorage:controller"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/controller/reward0",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/hub",
+      "title": "The Storage Hub",
+      "subtitle": "Every chest it touches becomes one.",
+      "icon": "omnivault:storage_hub",
+      "x": 6,
+      "y": 1.75,
+      "dependencies": [
+        "h_vaults/controller"
+      ],
+      "description": [
+        "An OmniVault &6Storage Hub&r is built around a Sophisticated &6Controller&r. It joins every chest, barrel, drawer and Sophisticated chest it touches; &6Inventory Cables&r carry it further."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/hub/task0",
+          "type": "item",
+          "item": "omnivault:storage_hub"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/hub/reward0",
+          "type": "item",
+          "item": "omnivault:inventory_cable",
+          "count": 8
+        },
+        {
+          "id": "h_vaults/hub/reward1",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/terminal",
+      "title": "&aThe Crafting Terminal",
+      "subtitle": "Every chest at once, and a table to work at.",
+      "icon": "omnivault:crafting_terminal",
+      "x": 8,
+      "y": 1.75,
+      "shape": "hexagon",
+      "dependencies": [
+        "h_vaults/hub",
+        "h_vaults/crafting_upgrade"
+      ],
+      "description": [
+        "A &6Terminal&r wired to your Storage Hub shows the whole network in one scrolling view: search by name, &e@mod&r or &e#tag&r. Add a Sophisticated &6Crafting Upgrade&r and redstone and it becomes a &6Crafting Terminal&r.",
+        "",
+        "&o\"I've seen Sovereigns' treasuries kept worse.\"&r"
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/terminal/task0",
+          "type": "item",
+          "item": "omnivault:crafting_terminal"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/terminal/reward0",
+          "type": "random",
+          "table": "tables/hearth_homestead"
+        },
+        {
+          "id": "h_vaults/terminal/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/backpack_gold",
+      "title": "Gilded at Dusk",
+      "subtitle": "Gold tier, Duskforged.",
+      "icon": "sophisticatedbackpacks:gold_backpack",
+      "x": 6,
+      "y": -1.75,
+      "dependencies": [
+        "h_vaults/backpack_iron",
+        "s1_forge/duskforged"
+      ],
+      "description": [
+        "The gold tier of every backpack, chest and barrel takes &6Duskforged Ingots&r. So does the gold &6Tier Upgrade&r."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/backpack_gold/task0",
+          "type": "item",
+          "item": "sophisticatedbackpacks:gold_backpack"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/backpack_gold/reward0",
+          "type": "item",
+          "item": "remnants:duskforged_ingot",
+          "count": 2
+        },
+        {
+          "id": "h_vaults/backpack_gold/reward1",
+          "type": "xp",
+          "xp": 120
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/storage_link",
+      "title": "Reaching Further",
+      "subtitle": "A chest across the room, still in the network.",
+      "icon": "sophisticatedstorage:storage_link",
+      "x": 8,
+      "y": 0,
+      "dependencies": [
+        "h_vaults/controller"
+      ],
+      "description": [
+        "A &6Storage Link&r carries a Sophisticated controller's network to chests that don't touch it. OmniVault's wireless terminal is built around one."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/storage_link/task0",
+          "type": "item",
+          "item": "sophisticatedstorage:storage_link"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/storage_link/reward0",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/advanced_processor",
+      "title": "&bThe Advanced Processor",
+      "subtitle": "Moonsilver thinks faster.",
+      "icon": "omnivault:advanced_processor",
+      "x": 10,
+      "y": 3.25,
+      "shape": "hexagon",
+      "dependencies": [
+        "h_vaults/logic",
+        "s1_forge/moonsilver"
+      ],
+      "description": [
+        "A Logic Processor, &6Moonsilver&r, quartz and Omnium. Crafting processors, pattern terminals, assemblers, wireless and the Nexus Core all need one."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/advanced_processor/task0",
+          "type": "item",
+          "item": "omnivault:advanced_processor"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/advanced_processor/reward0",
+          "type": "item",
+          "item": "remnants:moonsilver_ingot"
+        },
+        {
+          "id": "h_vaults/advanced_processor/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/advanced_upgrade",
+      "title": "Advanced Upgrades",
+      "subtitle": "Every upgrade, sharper.",
+      "icon": "sophisticatedbackpacks:advanced_pickup_upgrade",
+      "x": 8,
+      "y": -3.25,
+      "dependencies": [
+        "h_vaults/upgrades",
+        "h_vaults/logic",
+        "s1_forge/moonsilver"
+      ],
+      "description": [
+        "Every &6advanced&r Sophisticated upgrade takes Duskforged, Moonsilver and an OmniVault &6Logic Processor&r where the redstone used to be. Start with an &6Advanced Pickup Upgrade&r: filters, and it never picks up what you told it not to."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/advanced_upgrade/task0",
+          "type": "item",
+          "item": "sophisticatedbackpacks:advanced_pickup_upgrade"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/advanced_upgrade/reward0",
+          "type": "item",
+          "item": "omnivault:logic_processor",
+          "count": 2
+        },
+        {
+          "id": "h_vaults/advanced_upgrade/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/backpack_diamond",
+      "title": "Moonsilver Stitching",
+      "subtitle": "Diamond tier.",
+      "icon": "sophisticatedbackpacks:diamond_backpack",
+      "x": 10,
+      "y": -1.75,
+      "dependencies": [
+        "h_vaults/backpack_gold",
+        "s1_forge/moonsilver"
+      ],
+      "description": [
+        "Diamond-tier backpacks, chests and barrels take &6Moonsilver Ingots&r."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/backpack_diamond/task0",
+          "type": "item",
+          "item": "sophisticatedbackpacks:diamond_backpack"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/backpack_diamond/reward0",
+          "type": "xp",
+          "xp": 250
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/nexus",
+      "title": "&dThe Nexus Core",
+      "subtitle": "Let the vault do the crafting.",
+      "icon": "omnivault:nexus_core",
+      "x": 12,
+      "y": 1.75,
+      "shape": "gear",
+      "size": 1.25,
+      "dependencies": [
+        "h_vaults/terminal",
+        "h_vaults/advanced_processor"
+      ],
+      "description": [
+        "&6The Keeper&r",
+        "",
+        "&f&o\"The Crown's treasurers kept ledgers that wrote themselves. I thought it was sorcery. It was just very good bookkeeping.\"&r",
+        "",
+        "Advanced Processors, Omnium and an ender eye build a &6Nexus Core&r: the heart of a network with no channel limits, cells, wireless terminals and &6autocrafting&r.",
+        "",
+        "&7Encode a recipe in a &6Pattern Encoding Terminal&7, hand it to a &6Pattern Provider&7, let an &6Assembler&7 and a &6Crafting Processor&7 do the work, and ask the terminal for what you need. JEI's &e+&7 button loads any recipe into the encoder."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/nexus/task0",
+          "type": "item",
+          "item": "omnivault:nexus_core"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/nexus/reward0",
+          "type": "random",
+          "table": "tables/hearth_homestead"
+        },
+        {
+          "id": "h_vaults/nexus/reward1",
+          "type": "item",
+          "item": "omnivault:blank_pattern",
+          "count": 8
+        },
+        {
+          "id": "h_vaults/nexus/reward2",
+          "type": "xp",
+          "xp": 400
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/wireless",
+      "title": "The Vault in Your Pocket",
+      "subtitle": "A Storage Link with a screen.",
+      "icon": "omnivault:wireless_terminal",
+      "x": 12,
+      "y": 0,
+      "dependencies": [
+        "h_vaults/storage_link",
+        "h_vaults/terminal",
+        "h_vaults/advanced_processor"
+      ],
+      "description": [
+        "A &6Wireless Terminal&r: a Crafting Terminal, an Advanced Processor, Omnium and a Sophisticated &6Storage Link&r. Reach the network from anywhere within a Wireless Transmitter's range."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/wireless/task0",
+          "type": "item",
+          "item": "omnivault:wireless_terminal"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/wireless/reward0",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/quantum",
+      "title": "&3The Quantum Processor",
+      "subtitle": "Echoes, pearls and Deepsteel.",
+      "icon": "omnivault:quantum_processor",
+      "x": 14,
+      "y": 3.25,
+      "shape": "hexagon",
+      "dependencies": [
+        "h_vaults/advanced_processor",
+        "s1_forge/deepsteel"
+      ],
+      "description": [
+        "An Advanced Processor, &6Deepsteel&r, an echo shard and an ender pearl. The million-item cells, quantum links and the quantum wireless terminal start here."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/quantum/task0",
+          "type": "item",
+          "item": "omnivault:quantum_processor"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/quantum/reward0",
+          "type": "item",
+          "item": "remnants:deepsteel_ingot"
+        },
+        {
+          "id": "h_vaults/quantum/reward1",
+          "type": "xp",
+          "xp": 400
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/backpack_netherite",
+      "title": "Deepsteel Seams",
+      "subtitle": "The last tier.",
+      "icon": "sophisticatedbackpacks:netherite_backpack",
+      "x": 14,
+      "y": -1.75,
+      "dependencies": [
+        "h_vaults/backpack_diamond",
+        "s1_forge/deepsteel"
+      ],
+      "description": [
+        "The netherite tier of backpacks, chests and barrels takes &6Deepsteel&r (and a netherite upgrade template at the smithing table). The highest stack upgrades take Deepsteel and Sunforged too."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/backpack_netherite/task0",
+          "type": "item",
+          "item": "sophisticatedbackpacks:netherite_backpack"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/backpack_netherite/reward0",
+          "type": "xp",
+          "xp": 400
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/omega",
+      "title": "&6Without Limit",
+      "subtitle": "The omega stack upgrade.",
+      "icon": "sophisticatedbackpacks:stack_upgrade_omega_tier",
+      "x": 18,
+      "y": -1.75,
+      "shape": "gear",
+      "size": 1.5,
+      "dependencies": [
+        "h_vaults/backpack_netherite",
+        "s1_forge/eclipse_core"
+      ],
+      "description": [
+        "A Tier 4 stack upgrade and an &5Eclipse Core&r. Every slot holds as much as you will ever own. The &6Everlasting&r and &6Inception&r upgrades want a core as well."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/omega/task0",
+          "type": "item",
+          "item": "sophisticatedbackpacks:stack_upgrade_omega_tier"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/omega/reward0",
+          "type": "xp",
+          "xp": 1000
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/quantum_wireless",
+      "title": "&5Everywhere at Once",
+      "subtitle": "The quantum wireless terminal.",
+      "icon": "omnivault:quantum_wireless_terminal",
+      "x": 18,
+      "y": 1.75,
+      "shape": "gear",
+      "size": 1.5,
+      "dependencies": [
+        "h_vaults/quantum",
+        "h_vaults/wireless",
+        "s1_forge/eclipse_core"
+      ],
+      "description": [
+        "Smith a Wireless Terminal with a &6Quantum Upgrade Template&r and an &5Eclipse Core&r: the network from any distance, in any dimension. Singularity cells, quantum bridges and the quantum assembler are built from cores too."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/quantum_wireless/task0",
+          "type": "item",
+          "item": "omnivault:quantum_wireless_terminal"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/quantum_wireless/reward0",
+          "type": "random",
+          "table": "tables/sovereign_tribute"
+        },
+        {
+          "id": "h_vaults/quantum_wireless/reward1",
+          "type": "xp",
+          "xp": 1000
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/vault",
+      "title": "Six Vaults",
+      "subtitle": "Copper to Omnium, one kit at a time.",
+      "icon": "omnivault:copper_vault",
+      "x": -2,
+      "y": 0,
+      "dependencies": [
+        "h_vaults/chest",
+        "h_clockwork/press"
+      ],
+      "description": [
+        "OmniVault keeps its own chests: &6Vaults&r, with a lid on a hinge, a &eSort&r button and a comparator reading of how full they are. A &6Copper Vault&r is Create &6copper sheets&r around a Sophisticated Chest: forty-five slots.",
+        "",
+        "Iron (Ashen Alloy) holds 54, Gold (Duskforged) 81, Diamond (Moonsilver and glass) 108, Netherite (Deepsteel, at the smithing table) 135 and shrugs off explosions; Omnium, built on a Netherite Vault with an Advanced Processor, holds 162.",
+        "",
+        "&7A &6Vault Upgrade&7 kit raises a placed vault one tier and keeps its contents, name and facing; the Copper kit turns a plain chest or barrel into a Copper Vault. Build a Copper Vault."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/vault/task0",
+          "type": "item",
+          "item": "omnivault:copper_vault"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/vault/reward0",
+          "type": "item",
+          "item": "omnivault:iron_vault_kit"
+        },
+        {
+          "id": "h_vaults/vault/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/trash_can",
+      "title": "Some Things Should Burn",
+      "subtitle": "What you can't carry, nobody gets.",
+      "icon": "omnivault:trash_can",
+      "x": -2,
+      "y": 1.75,
+      "dependencies": [
+        "h_vaults/chest"
+      ],
+      "optional": true,
+      "description": [
+        "The Ashen Company's rule on the march: what you can't carry, you burn. &o\"Rotten flesh never won a war,\"&r says the Captain.",
+        "",
+        "A &6Trash Can&r is Ashen Alloy and cobblestone around a lava bucket. Whatever goes in is gone, though the last thing you threw away can still be pulled back out. Its automation filter decides what hoppers and pipes may void: an allow-list or a deny-list.",
+        "",
+        "&7Build a Trash Can."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/trash_can/task0",
+          "type": "item",
+          "item": "omnivault:trash_can"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/trash_can/reward0",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/compacting_drawer",
+      "title": "Nine Nuggets, One Ingot",
+      "subtitle": "One drawer, three shapes of the same thing.",
+      "icon": "omnivault:compacting_drawer",
+      "x": 2,
+      "y": 3.5,
+      "dependencies": [
+        "h_vaults/drawers",
+        "h_vaults/logic"
+      ],
+      "description": [
+        "A &6Compacting Drawer&r holds an item, its block and its nuggets as one amount and hands out whichever shape you ask for. Pour in gold nuggets; take out ingots, or blocks.",
+        "",
+        "&7Ashen Alloy, two pistons, a Drawer and a Logic Processor. Build one."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/compacting_drawer/task0",
+          "type": "item",
+          "item": "omnivault:compacting_drawer"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/compacting_drawer/reward0",
+          "type": "item",
+          "item": "minecraft:gold_nugget",
+          "count": 27
+        },
+        {
+          "id": "h_vaults/compacting_drawer/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/drawer_upgrades",
+      "title": "Deeper Drawers",
+      "subtitle": "Iron, gold, diamond, netherite: the Forge's four.",
+      "icon": "omnivault:iron_drawer_upgrade",
+      "x": 4,
+      "y": 3.5,
+      "dependencies": [
+        "h_vaults/drawers",
+        "h_vaults/logic"
+      ],
+      "description": [
+        "A drawer holds thirty-two stacks of one thing (sixteen per slot in a 1×2, eight in a 2×2). Capacity upgrades multiply that and add up: &fIron&r ×2 (Ashen Alloy), &6Gold&r ×4 (Duskforged), &bDiamond&r ×8 (Moonsilver), &8Netherite&r ×16 (Deepsteel). Each is built on the one before, starting from a &6Blank Upgrade Card&r: Ashen Alloy, Omnium, gold nuggets and a Logic Processor.",
+        "",
+        "A &6Void Drawer Upgrade&r destroys whatever no longer fits.",
+        "",
+        "&7Sneak-right-click a drawer with an empty hand for its upgrade screen. Make an Iron Drawer Upgrade."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/drawer_upgrades/task0",
+          "type": "item",
+          "item": "omnivault:iron_drawer_upgrade"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/drawer_upgrades/reward0",
+          "type": "item",
+          "item": "omnivault:upgrade_base",
+          "count": 2
+        },
+        {
+          "id": "h_vaults/drawer_upgrades/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/drawer_controller",
+      "title": "A Wall That Answers",
+      "subtitle": "Every drawer within twelve blocks, as one.",
+      "icon": "omnivault:drawer_controller",
+      "x": 3,
+      "y": 5.25,
+      "dependencies": [
+        "h_vaults/compacting_drawer",
+        "h_vaults/drawer_upgrades"
+      ],
+      "description": [
+        "A &6Drawer Controller&r joins every drawer within twelve blocks: touching it, touching each other, or joined by &6Drawer Trim&r. Hoppers, pipes and the vault network see the whole wall through it.",
+        "",
+        "A &6Drawer Key&r (Omnium, Ashen Alloy and a gold nugget) locks a drawer to its item, so an empty slot keeps a ghost of what belongs there. Use the key on the controller and the whole wall locks.",
+        "",
+        "&7Build a controller (Ashen Alloy, Omnium, comparators, a drawer, a Logic Processor), four trim and a key."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/drawer_controller/task0",
+          "type": "item",
+          "item": "omnivault:drawer_controller"
+        },
+        {
+          "id": "h_vaults/drawer_controller/task1",
+          "type": "item",
+          "item": "omnivault:drawer_trim",
+          "count": 4
+        },
+        {
+          "id": "h_vaults/drawer_controller/task2",
+          "type": "item",
+          "item": "omnivault:drawer_key"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/drawer_controller/reward0",
+          "type": "random",
+          "table": "tables/hearth_workshop"
+        },
+        {
+          "id": "h_vaults/drawer_controller/reward1",
+          "type": "xp",
+          "xp": 120
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/tools",
+      "title": "Tools of the Trade",
+      "subtitle": "Turn it, take it apart, carry it off.",
+      "icon": "omnivault:relocator",
+      "x": 6,
+      "y": 3.5,
+      "dependencies": [
+        "h_vaults/logic"
+      ],
+      "description": [
+        "Last Light moves a room at a time. The &6OmniTool&r (Ashen Alloy and Omnium) turns and configures OmniVault blocks with a right-click and dismantles them with a sneak-right-click.",
+        "",
+        "The &6Relocator&r (slime, Ashen Alloy and a Logic Processor) picks up a chest, a furnace or another mod's machine with everything still inside, and sets it down somewhere else. Sixteen uses.",
+        "",
+        "&7Make both."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/tools/task0",
+          "type": "item",
+          "item": "omnivault:omni_tool"
+        },
+        {
+          "id": "h_vaults/tools/task1",
+          "type": "item",
+          "item": "omnivault:relocator"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/tools/reward0",
+          "type": "item",
+          "item": "minecraft:slime_ball",
+          "count": 4
+        },
+        {
+          "id": "h_vaults/tools/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/netherite_relocator",
+      "title": "A Hand That Never Tires",
+      "subtitle": "Deepsteel at the smithing table.",
+      "icon": "omnivault:netherite_relocator",
+      "x": 7,
+      "y": 5.25,
+      "dependencies": [
+        "h_vaults/tools",
+        "s1_forge/deepsteel"
+      ],
+      "optional": true,
+      "description": [
+        "Smith a Relocator with a &6netherite upgrade template&r and a &6Deepsteel Ingot&r: the &6Netherite Relocator&r never wears out.",
+        "",
+        "&7The templates still come from the bastions. Make one."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/netherite_relocator/task0",
+          "type": "item",
+          "item": "omnivault:netherite_relocator"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/netherite_relocator/reward0",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/linked_vault",
+      "title": "The Same Box Everywhere",
+      "subtitle": "Three colours on a latch, one chest in every world.",
+      "icon": "omnivault:linked_vault",
+      "x": 5,
+      "y": 5.25,
+      "dependencies": [
+        "h_vaults/tools",
+        "s1_act4_ash/fortress"
+      ],
+      "description": [
+        "A &6Linked Vault&r is twenty-seven slots shared by every Linked Vault with the same three colours on its latches, in any world: blaze rods from Morgrath's forts, wool, obsidian, an ender chest and a Logic Processor. Dye the latches to pick a channel; a diamond or the &6OmniTool&r makes it yours alone.",
+        "",
+        "A &6Linked Pouch&r (leather, wool, an ender pearl, a Logic Processor) binds to a vault with a sneak-right-click and opens it from anywhere.",
+        "",
+        "&7Build a Linked Vault and a Linked Pouch."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/linked_vault/task0",
+          "type": "item",
+          "item": "omnivault:linked_vault"
+        },
+        {
+          "id": "h_vaults/linked_vault/task1",
+          "type": "item",
+          "item": "omnivault:linked_pouch"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/linked_vault/reward0",
+          "type": "item",
+          "item": "minecraft:ender_pearl",
+          "count": 2
+        },
+        {
+          "id": "h_vaults/linked_vault/reward1",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/cell_drive",
+      "title": "Cells and a Drive",
+      "subtitle": "Chests are for people.",
+      "icon": "omnivault:drive",
+      "x": 10.5,
+      "y": 5.25,
+      "dependencies": [
+        "h_vaults/nexus"
+      ],
+      "description": [
+        "A Nexus network keeps its own stores in &6storage cells&r: a &6Cell Housing&r (glass, redstone, Ashen Alloy) around a &6Storage Matrix&r. The 4K matrix is redstone, Omnium dust, quartz and a Logic Processor.",
+        "",
+        "A &6Cell Drive&r is ten bays built into two Sophisticated &6gold barrels&r, each bay with a light: green with room to spare, amber nearly full, red full. &6Nexus Cable&r joins it to the core.",
+        "",
+        "&7Build a Cell Drive and a 4K Storage Cell, and slot the cell in."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/cell_drive/task0",
+          "type": "item",
+          "item": "omnivault:drive"
+        },
+        {
+          "id": "h_vaults/cell_drive/task1",
+          "type": "item",
+          "item": "omnivault:storage_cell_4k"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/cell_drive/reward0",
+          "type": "item",
+          "item": "omnivault:omnium_dust",
+          "count": 8
+        },
+        {
+          "id": "h_vaults/cell_drive/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/network_port",
+      "title": "Pipes Into the Vault",
+      "subtitle": "The Works pour; the network sorts.",
+      "icon": "omnivault:network_port",
+      "x": 9,
+      "y": 7,
+      "dependencies": [
+        "h_vaults/cell_drive",
+        "n_works/processing"
+      ],
+      "description": [
+        "The &6Ashen Works&r never stop: crushers, furnaces, a line of item pipes spilling ingots on the floor. A &6Network Port&r is the whole network as one inventory and one tank. Pipe into it and the network files everything; pipe out of it and the network pays.",
+        "",
+        "The vault needs no power of its own. The Works do.",
+        "",
+        "&7Ashen Alloy, a hopper, a chest, Omnium and a Logic Processor. Build a Network Port and run the Works' pipes into it."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/network_port/task0",
+          "type": "item",
+          "item": "omnivault:network_port"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/network_port/reward0",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/network_cells",
+      "title": "&bRoom for Everything",
+      "subtitle": "Every cell is four of the last.",
+      "icon": "omnivault:storage_cell_64k",
+      "x": 10.5,
+      "y": 8.75,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "h_vaults/cell_drive",
+        "h_vaults/network_port"
+      ],
+      "description": [
+        "Every matrix is four of the one before. Four 4K matrices, Duskforged and a Logic Processor make a &616K&r; four 16Ks, Moonsilver and an Advanced Processor a &b64K&r. An item cell holds up to 128 kinds of thing.",
+        "",
+        "Fluids go in a &6Fluid Cell Housing&r (a bucket where the hollow was) around the same matrices: a 4K fluid cell holds a thousand buckets of up to 32 fluids. A cell keeps its contents in the world, not on the item, and an empty cell comes apart again when you sneak-use it.",
+        "",
+        "&7Build a 64K Storage Cell and a 4K Fluid Cell."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/network_cells/task0",
+          "type": "item",
+          "item": "omnivault:storage_cell_64k"
+        },
+        {
+          "id": "h_vaults/network_cells/task1",
+          "type": "item",
+          "item": "omnivault:fluid_cell_4k"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/network_cells/reward0",
+          "type": "random",
+          "table": "tables/vaults_quartermaster"
+        },
+        {
+          "id": "h_vaults/network_cells/reward1",
+          "type": "xp",
+          "xp": 400
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/buses",
+      "title": "In, Out and Through",
+      "subtitle": "The network's hands.",
+      "icon": "omnivault:import_bus",
+      "x": 7.5,
+      "y": 8.75,
+      "dependencies": [
+        "h_vaults/network_port",
+        "n_spoils/opener"
+      ],
+      "description": [
+        "Buses are Omnium and a Logic Processor around a hopper, a piston or a chest. An &6Import Bus&r pulls items and fluids out of what it faces; an &6Export Bus&r pushes them in; a &6Storage Bus&r makes that inventory part of the network, with a filter, a priority and an access mode.",
+        "",
+        "Old Pell's &6Bag Opener&r empties from the bottom. Put an Import Bus under it and everything the dead carried lands in the vault, sorted.",
+        "",
+        "&7Upgrade cards make devices better: Speed, Stack, Fuzzy, Redstone. Build one of each bus."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/buses/task0",
+          "type": "item",
+          "item": "omnivault:import_bus"
+        },
+        {
+          "id": "h_vaults/buses/task1",
+          "type": "item",
+          "item": "omnivault:export_bus"
+        },
+        {
+          "id": "h_vaults/buses/task2",
+          "type": "item",
+          "item": "omnivault:storage_bus"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/buses/reward0",
+          "type": "item",
+          "item": "omnivault:speed_upgrade"
+        },
+        {
+          "id": "h_vaults/buses/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/builders",
+      "title": "Hands in the World",
+      "subtitle": "Mine into the vault, build out of it.",
+      "icon": "omnivault:destructor",
+      "x": 7.5,
+      "y": 10.5,
+      "dependencies": [
+        "h_vaults/buses"
+      ],
+      "optional": true,
+      "description": [
+        "A &6Destructor&r mines the block in front of it into the network; a &6Constructor&r places blocks from it. Omnium and a Logic Processor around a diamond pickaxe or a dispenser.",
+        "",
+        "A cobblestone generator with a Destructor on its face never needs you again.",
+        "",
+        "&7Build both."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/builders/task0",
+          "type": "item",
+          "item": "omnivault:destructor"
+        },
+        {
+          "id": "h_vaults/builders/task1",
+          "type": "item",
+          "item": "omnivault:constructor"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/builders/reward0",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/monitor",
+      "title": "The Vault Talks Back",
+      "subtitle": "A number on a screen, a signal on a wire.",
+      "icon": "omnivault:storage_monitor",
+      "x": 12,
+      "y": 7,
+      "dependencies": [
+        "h_vaults/cell_drive"
+      ],
+      "optional": true,
+      "description": [
+        "A &6Storage Monitor&r shows one item and its live count; right-click it to store or take. A &6Signal Emitter&r gives a redstone signal while the network holds at least (or fewer than) a number of something you choose. Wire it to a furnace line and the line stops when the shelves are full.",
+        "",
+        "&7Build a Storage Monitor and a Signal Emitter."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/monitor/task0",
+          "type": "item",
+          "item": "omnivault:storage_monitor"
+        },
+        {
+          "id": "h_vaults/monitor/task1",
+          "type": "item",
+          "item": "omnivault:signal_emitter"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/monitor/reward0",
+          "type": "xp",
+          "xp": 120
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/patterns",
+      "title": "Recipes Written Once",
+      "subtitle": "Patterns and the Provider.",
+      "icon": "omnivault:pattern_terminal",
+      "x": 12.5,
+      "y": 5.25,
+      "dependencies": [
+        "h_vaults/nexus"
+      ],
+      "description": [
+        "The Crown's treasurers wrote a recipe down once and never again. A &6Pattern Encoding Terminal&r (a Storage Terminal, an Advanced Processor, a crafting table and a Blank Pattern) writes one onto a &6Blank Pattern&r: a &6crafting pattern&r for a 3×3 recipe, or a &6processing pattern&r (up to nine inputs, three outputs) for a furnace, a Create machine or a Works crusher. JEI's &e+&r fills the editor for you.",
+        "",
+        "A &6Pattern Provider&r holds nine patterns and pushes processing inputs into the machine it faces.",
+        "",
+        "&7Build the encoding terminal, encode a crafting pattern and build a Pattern Provider."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/patterns/task0",
+          "type": "item",
+          "item": "omnivault:pattern_terminal"
+        },
+        {
+          "id": "h_vaults/patterns/task1",
+          "type": "item",
+          "item": "omnivault:crafting_pattern"
+        },
+        {
+          "id": "h_vaults/patterns/task2",
+          "type": "item",
+          "item": "omnivault:pattern_provider"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/patterns/reward0",
+          "type": "item",
+          "item": "omnivault:blank_pattern",
+          "count": 8
+        },
+        {
+          "id": "h_vaults/patterns/reward1",
+          "type": "xp",
+          "xp": 250
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/autocraft",
+      "title": "&dAsk, and It Is Made",
+      "subtitle": "Assemblers and Crafting Processors.",
+      "icon": "omnivault:assembler",
+      "x": 14.5,
+      "y": 5.25,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "h_vaults/patterns"
+      ],
+      "description": [
+        "An &6Assembler&r carries out crafting steps (Omnium, an Advanced Processor, pistons and a crafter); up to four Speed Upgrades double its pace again and again. A &6Crafting Processor&r runs one job at a time (Omnium, Duskforged, an Advanced and a Logic Processor); right-click it for the Crafting Status screen. More of each, more at once.",
+        "",
+        "&7Middle-click a craftable item in any terminal, enter an amount and press &eCalculate&7: the plan lists what it takes from storage, what it crafts and what's missing. &eStart&7 reserves the ingredients. Build an Assembler and a Crafting Processor."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/autocraft/task0",
+          "type": "item",
+          "item": "omnivault:assembler"
+        },
+        {
+          "id": "h_vaults/autocraft/task1",
+          "type": "item",
+          "item": "omnivault:crafting_processor"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/autocraft/reward0",
+          "type": "random",
+          "table": "tables/vaults_quartermaster"
+        },
+        {
+          "id": "h_vaults/autocraft/reward1",
+          "type": "xp",
+          "xp": 400
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/transmitter",
+      "title": "Range",
+      "subtitle": "Thirty-two blocks is not a kingdom.",
+      "icon": "omnivault:wireless_transmitter",
+      "x": 16,
+      "y": 0,
+      "dependencies": [
+        "h_vaults/wireless"
+      ],
+      "description": [
+        "Sneak-use a Wireless Terminal on the Nexus Core to link it; it reaches thirty-two blocks from the core. A &6Wireless Transmitter&r (an ender pearl, a lightning rod, Omnium and an Advanced Processor) reaches sixty-four, and every &6Range Upgrade&r (a Blank Upgrade Card, an ender pearl and amethyst) forty-eight more, up to four.",
+        "",
+        "&7Build a Wireless Transmitter and a Range Upgrade."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/transmitter/task0",
+          "type": "item",
+          "item": "omnivault:wireless_transmitter"
+        },
+        {
+          "id": "h_vaults/transmitter/task1",
+          "type": "item",
+          "item": "omnivault:range_upgrade"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/transmitter/reward0",
+          "type": "item",
+          "item": "minecraft:ender_pearl",
+          "count": 4
+        },
+        {
+          "id": "h_vaults/transmitter/reward1",
+          "type": "xp",
+          "xp": 250
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/quantum_bridge",
+      "title": "&5Two Places, One Vault",
+      "subtitle": "Range ends. Bridges don't.",
+      "icon": "omnivault:quantum_bridge",
+      "x": 16,
+      "y": 3.75,
+      "dependencies": [
+        "h_vaults/quantum",
+        "h_vaults/transmitter",
+        "s1_forge/eclipse_core"
+      ],
+      "description": [
+        "A &6Quantum Bridge&r is four echo shards, two Quantum Processors, two ender chests, a Block of Omnium and an &5Eclipse Core&r. Use a &6Quantum Link Card&r on one bridge, then on the other, and the network runs through the pair across any distance and between worlds while both are loaded: a Nether outpost on your main vault, a camp under the black sun wired to Last Light.",
+        "",
+        "&7Build two bridges and a link card, and entangle them."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/quantum_bridge/task0",
+          "type": "item",
+          "item": "omnivault:quantum_bridge",
+          "count": 2
+        },
+        {
+          "id": "h_vaults/quantum_bridge/task1",
+          "type": "item",
+          "item": "omnivault:quantum_link_card"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/quantum_bridge/reward0",
+          "type": "xp",
+          "xp": 1000
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/singularity",
+      "title": "The Bottomless Cell",
+      "subtitle": "Four thousand 4K matrices deep.",
+      "icon": "omnivault:storage_cell_singularity",
+      "x": 10.5,
+      "y": 10.5,
+      "dependencies": [
+        "h_vaults/network_cells",
+        "s1_forge/eclipse_core"
+      ],
+      "optional": true,
+      "description": [
+        "256K (Omnium and an Advanced Processor), 1M (echo shards and a Quantum Processor), 16M (Deepsteel and an Eclipse Core), and last the &5Singularity&r: four 16M matrices, four Quantum Processors and an Eclipse Core. Two billion items of up to 1,024 kinds, or half a billion buckets.",
+        "",
+        "Every step is four of the last, so a Singularity is four thousand 4K matrices deep, and every 16K among them wants Duskforged. Nobody builds that by hand. Let the Assemblers do it, and keep the Forge fed.",
+        "",
+        "&7Build a Singularity Storage Cell."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/singularity/task0",
+          "type": "item",
+          "item": "omnivault:storage_cell_singularity"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/singularity/reward0",
+          "type": "xp",
+          "xp": 3000
+        }
+      ]
+    },
+    {
+      "id": "h_vaults/finale",
+      "title": "&6The Vault That Thinks",
+      "subtitle": "Sixteen crafts a cycle, and a crown's worth of ledgers.",
+      "icon": "omnivault:quantum_assembler",
+      "x": 18,
+      "y": 5.5,
+      "shape": "gear",
+      "size": 2,
+      "dependencies": [
+        "h_vaults/autocraft",
+        "h_vaults/quantum_bridge",
+        "h_vaults/quantum_wireless"
+      ],
+      "description": [
+        "&6The Keeper&r",
+        "",
+        "&f&o\"The Crown kept a vault under the throne with every grain the realm owned, and ledgers that counted themselves. You've built the same thing in a shed. The Crown would be furious.\"&r",
+        "",
+        "The &6Quantum Assembler&r does sixteen times the crafts per cycle of an Assembler: four Quantum Processors, Omnium, an Assembler and an &5Eclipse Core&r.",
+        "",
+        "Every chest at Last Light, every drawer, every cell, every outpost behind a bridge, answering one terminal in your pocket and building what you ask for while you sleep. The Sovereigns broke the sun to share it. You only had to share a network.",
+        "",
+        "&7Build a Quantum Assembler."
+      ],
+      "tasks": [
+        {
+          "id": "h_vaults/finale/task0",
+          "type": "item",
+          "item": "omnivault:quantum_assembler"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_vaults/finale/reward0",
+          "type": "random",
+          "table": "tables/vaults_quartermaster"
+        },
+        {
+          "id": "h_vaults/finale/reward1",
+          "type": "item",
+          "item": "omnivault:omnium_block",
+          "count": 2
+        },
+        {
+          "id": "h_vaults/finale/reward2",
+          "type": "xp",
+          "xp": 2000
+        }
+      ]
+    }
+  ]
+}

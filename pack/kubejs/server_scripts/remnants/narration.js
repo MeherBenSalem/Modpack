@@ -4,6 +4,8 @@
 // sound slider so players can turn the Keeper down without losing music.
 //
 // A narrated quest plays its line when it completes, for every online member of the team that completed it.
+// Core RPG - Quests Engine runs each narrated quest's completion command, `remnants_vo completed <team> <quest>`
+// (written by tools/build_quests.py), and the command below plays the lines.
 // Story beats (Sovereign kills) also print the line in chat; the "♪ Listen" tales don't, because the player is
 // reading the same words in the quest book. Some quests also have an unlock line (global.REMNANTS_UNLOCKS): the
 // Keeper speaks when the quest becomes available, i.e. when its last dependency completes.
@@ -56,42 +58,69 @@ function remnantsSay(server, player, line, chat) {
   })
 }
 
-Object.keys(global.REMNANTS_NARRATION).forEach(function (questId) {
-  var n = global.REMNANTS_NARRATION[questId]
-  FTBQuestsEvents.completed(questId, function (event) {
-    event.getOnlineMembers().forEach(function (p) {
-      remnantsSay(event.server, p, n.line, n.chat)
-    })
-  })
-})
+var CoreQuests = Java.loadClass('dev.nightbeam.corerpg.quests.server.ServerQuests')
+var JavaUUID = Java.loadClass('java.util.UUID')
 
-// Quests by their hex id, read once from the quest file (ids are 64-bit, too wide for a JS number).
-var REMNANTS_QUESTS = null
-function remnantsQuest(file, code) {
-  if (!REMNANTS_QUESTS) {
-    REMNANTS_QUESTS = {}
-    var chapters = file.getAllChapters()
-    for (var i = 0; i < chapters.size(); i++) {
-      var quests = chapters.get(i).getQuests()
-      for (var j = 0; j < quests.size(); j++) REMNANTS_QUESTS[String(quests.get(j).getCodeString())] = quests.get(j)
-    }
+// Online members of a Core RPG team, by the team's id ({team} in a completion command).
+function remnantsTeamMembers(server, teamId) {
+  var quests = CoreQuests.getOrNull()
+  if (!quests) return { members: [], progress: null }
+  var team = null
+  try {
+    team = quests.teams().get(JavaUUID.fromString(teamId))
+  } catch (e) {
+    team = null
   }
-  return REMNANTS_QUESTS[code]
+  if (!team) return { members: [], progress: null }
+  var list = team.onlineMembers(server)
+  var members = []
+  for (var i = 0; i < list.size(); i++) members.push(list.get(i))
+  return { members: members, progress: quests.progress(team) }
 }
 
-// Unlock lines run after the dependency's own line (handlers fire in the order they were registered).
-Object.keys(global.REMNANTS_UNLOCKS).forEach(function (depId) {
-  FTBQuestsEvents.completed(depId, function (event) {
-    var data = event.getData()
-    global.REMNANTS_UNLOCKS[depId].forEach(function (u) {
-      var ready = u.deps.every(function (d) {
-        var q = remnantsQuest(data.getFile(), d)
-        return q != null && data.isCompleted(q)
-      })
-      if (!ready) return
-      event.getOnlineMembers().forEach(function (p) {
-        remnantsSay(event.server, p, u.line, true)
-      })
+// A quest completed: its own line first, then any quest it was the last missing dependency for.
+function remnantsQuestCompleted(server, teamId, questId) {
+  var team = remnantsTeamMembers(server, teamId)
+  if (!team.members.length) return 0
+  var n = global.REMNANTS_NARRATION[questId]
+  if (n) {
+    team.members.forEach(function (p) {
+      remnantsSay(server, p, n.line, n.chat)
+    })
+  }
+  ;(global.REMNANTS_UNLOCKS[questId] || []).forEach(function (u) {
+    var ready = u.deps.every(function (d) {
+      return team.progress.isQuestCompleted(d)
+    })
+    if (!ready) return
+    team.members.forEach(function (p) {
+      remnantsSay(server, p, u.line, true)
     })
   })
+  return 1
+}
+
+ServerEvents.commandRegistry(function (event) {
+  var Commands = event.commands
+  var Arguments = event.arguments
+  event.register(Commands.literal('remnants_vo').requires(function (s) { return s.hasPermission(2) })
+    .then(Commands.literal('completed')
+      .then(Commands.argument('team', Arguments.WORD.create(event))
+        .then(Commands.argument('quest', Arguments.GREEDY_STRING.create(event)).executes(function (ctx) {
+          try {
+            return remnantsQuestCompleted(ctx.source.server, String(Arguments.WORD.getResult(ctx, 'team')),
+              String(Arguments.GREEDY_STRING.getResult(ctx, 'quest')).trim())
+          } catch (e) {
+            console.error('remnants_vo completed failed: ' + e)
+            return 0
+          }
+        }))))
+    .then(Commands.literal('play')
+      .then(Commands.argument('player', Arguments.PLAYER.create(event))
+        .then(Commands.argument('line', Arguments.WORD.create(event)).executes(function (ctx) {
+          var line = String(Arguments.WORD.getResult(ctx, 'line'))
+          if (!global.REMNANTS_LINES[line]) return 0
+          remnantsSay(ctx.source.server, Arguments.PLAYER.getResult(ctx, 'player'), line, true)
+          return 1
+        })))))
 })

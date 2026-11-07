@@ -1,0 +1,53 @@
+{
+  "id": "tables/world_deep_spoils",
+  "title": "Treasures of the Deep",
+  "icon": "runeborn:tempering_stone_6",
+  "entries": [
+    {
+      "id": "tables/world_deep_spoils/0",
+      "type": "item",
+      "item": "runeborn:tempering_stone_5",
+      "count": 3,
+      "weight": 3
+    },
+    {
+      "id": "tables/world_deep_spoils/1",
+      "type": "item",
+      "item": "runeborn:tempering_stone_6",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/world_deep_spoils/2",
+      "type": "item",
+      "item": "runeborn:lustrous_stone_2",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/world_deep_spoils/3",
+      "type": "item",
+      "item": "runeborn:lustrous_stone_3",
+      "weight": 1
+    },
+    {
+      "id": "tables/world_deep_spoils/4",
+      "type": "item",
+      "item": "runeborn:radiant_rune",
+      "count": 2,
+      "weight": 3
+    },
+    {
+      "id": "tables/world_deep_spoils/5",
+      "type": "item",
+      "item": "mob_loot_bags:epiclootbag",
+      "weight": 2
+    },
+    {
+      "id": "tables/world_deep_spoils/6",
+      "type": "item",
+      "item": "runeborn:sunseed",
+      "weight": 0.5
+    }
+  ]
+}

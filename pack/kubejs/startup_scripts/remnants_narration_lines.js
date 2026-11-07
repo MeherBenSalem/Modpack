@@ -744,414 +744,414 @@ global.REMNANTS_LINES = {
   }
 }
 global.REMNANTS_NARRATION = {
-  "79BAD0382EFA559F": {
+  "s1_prologue/rise": {
     "line": "s1_prologue_rise",
     "chat": false
   },
-  "295933238D4366D9": {
+  "s1_prologue/gatekeeper": {
     "line": "s1_prologue_gatekeeper",
     "chat": true
   },
-  "60736FE08ABE9C7F": {
+  "s1_prologue/beyond": {
     "line": "s1_prologue_beyond",
     "chat": true
   },
-  "6D7FD40BC81A0E63": {
+  "s1_prologue/origin": {
     "line": "s1_prologue_origin",
     "chat": false
   },
-  "4C67E689E70A462B": {
+  "s1_prologue/stone": {
     "line": "s1_prologue_stone",
     "chat": true
   },
-  "2A6B94BDD99CE7BC": {
+  "s1_prologue/stamina": {
     "line": "s1_prologue_stamina",
     "chat": false
   },
-  "3B2BC7E46FADA8F0": {
+  "s1_prologue/first_blood": {
     "line": "s1_prologue_first_blood",
     "chat": true
   },
-  "7BCC2DCBDC56577B": {
+  "s1_prologue/runes": {
     "line": "s1_prologue_runes",
     "chat": false
   },
-  "7A936AC05E6E9BA9": {
+  "s1_prologue/you_died": {
     "line": "s1_prologue_you_died",
     "chat": true
   },
-  "282CFDC633090E33": {
+  "s1_prologue/reclaimed": {
     "line": "s1_prologue_reclaimed",
     "chat": true
   },
-  "19610B4F5D841A48": {
+  "s1_prologue/armour": {
     "line": "s1_prologue_armour",
     "chat": true
   },
-  "299D979D228918F3": {
+  "s1_prologue/night": {
     "line": "s1_prologue_night",
     "chat": true
   },
-  "05EAAA5866A04A29": {
+  "s1_prologue/know_enemy": {
     "line": "s1_prologue_know_enemy",
     "chat": true
   },
-  "20A88504DC6B5A17": {
+  "s1_prologue/village": {
     "line": "s1_prologue_village",
     "chat": true
   },
-  "46646A7C9FE93DA1": {
+  "s1_act1_embers/tale_seven": {
     "line": "s1_act1_embers_tale_seven",
     "chat": false
   },
-  "5651DDA19B1EF5FB": {
+  "s1_act1_embers/kindling": {
     "line": "s1_act1_embers_kindling",
     "chat": true
   },
-  "2D462FB5D6B13E35": {
+  "s1_act1_embers/kindle": {
     "line": "s1_act1_embers_kindle",
     "chat": true
   },
-  "29E73181EF9F52B4": {
+  "s1_act1_embers/level_up": {
     "line": "s1_act1_embers_level_up",
     "chat": true
   },
-  "2C20532DADD2D13F": {
+  "s1_act1_embers/travel": {
     "line": "s1_act1_embers_travel",
     "chat": true
   },
-  "282F5F9817BEE567": {
+  "s1_act1_embers/sellsword": {
     "line": "s1_act1_embers_sellsword",
     "chat": false
   },
-  "0706431E96A6A53E": {
+  "s1_act1_embers/spoils": {
     "line": "s1_act1_embers_spoils",
     "chat": true
   },
-  "30F39C23D463CB31": {
+  "s1_act1_embers/dungeon_trail": {
     "line": "s1_act1_embers_dungeon_trail",
     "chat": true
   },
-  "6456CEF413461135": {
+  "s1_act1_embers/champion": {
     "line": "s1_act1_embers_champion",
     "chat": true
   },
-  "27437F0D8FF32DCD": {
+  "s1_act1_embers/fragments": {
     "line": "s1_act1_embers_fragments",
     "chat": true
   },
-  "2A7E4FBEE8E2A089": {
+  "s1_act1_embers/dusk_rider": {
     "line": "s1_act1_embers_dusk_rider",
     "chat": true
   },
-  "6D86DE336AB40AB6": {
+  "s1_act1_embers/relic": {
     "line": "s1_act1_embers_relic",
     "chat": true
   },
-  "456BE32594E10424": {
+  "s1_act2_hunt/tale_red_moon": {
     "line": "s1_act2_hunt_tale_red_moon",
     "chat": false
   },
-  "1B71C09161A6DDFB": {
+  "s1_act2_hunt/hunters_moon": {
     "line": "s1_act2_hunt_hunters_moon",
     "chat": true
   },
-  "3814AEC29AC5D661": {
+  "s1_act2_hunt/grim_vigil": {
     "line": "s1_act2_hunt_grim_vigil",
     "chat": true
   },
-  "39BA92A4C0CA0AC3": {
+  "s1_act2_hunt/kindled": {
     "line": "s1_act2_hunt_kindled",
     "chat": true
   },
-  "244492C516FAF63B": {
+  "s1_act2_hunt/punching_up": {
     "line": "s1_act2_hunt_punching_up",
     "chat": true
   },
-  "5C77FA2F283917EA": {
+  "s1_act2_hunt/challenge": {
     "line": "s1_act2_hunt_challenge",
     "chat": true
   },
-  "6493FE1CBE6B9CD4": {
+  "s1_act2_hunt/remnant": {
     "line": "s1_act2_hunt_remnant",
     "chat": true
   },
-  "3463E48C851C4E39": {
+  "s1_act2_hunt/labyrinth": {
     "line": "s1_act2_hunt_labyrinth",
     "chat": true
   },
-  "037DDC36DF427850": {
+  "s1_act2_hunt/path": {
     "line": "s1_act2_hunt_path",
     "chat": false
   },
-  "463F4A4D56B7E057": {
+  "s1_act2_hunt/varghast_fragments": {
     "line": "s1_act2_hunt_varghast_fragments",
     "chat": true
   },
-  "190E84DFB94144CA": {
+  "s1_act2_hunt/varghast": {
     "line": "s1_act2_hunt_varghast",
     "chat": true
   },
-  "289D0416C0109482": {
+  "s1_act2_hunt/crown": {
     "line": "s1_act2_hunt_crown",
     "chat": true
   },
-  "6C617748F8950056": {
+  "s1_act2_hunt/rime_veil": {
     "line": "s1_act2_hunt_rime_veil",
     "chat": true
   },
-  "53F967EF1BEA3D24": {
+  "s1_act2_hunt/sylvara": {
     "line": "s1_act2_hunt_sylvara",
     "chat": true
   },
-  "337E61B442FEAD4C": {
+  "s1_act2_hunt/runebearer": {
     "line": "s1_act2_hunt_runebearer",
     "chat": true
   },
-  "66EEF900D3D6B3A0": {
+  "s1_act3_deep/tale_old_powers": {
     "line": "s1_act3_deep_tale_old_powers",
     "chat": false
   },
-  "36E2AF0A1C071B2E": {
+  "s1_act3_deep/descent": {
     "line": "s1_act3_deep_descent",
     "chat": true
   },
-  "354182D19FF9BB17": {
+  "s1_act3_deep/warden": {
     "line": "s1_act3_deep_warden",
     "chat": true
   },
-  "1410C8CE7B678479": {
+  "s1_act3_deep/monument": {
     "line": "s1_act3_deep_monument",
     "chat": true
   },
-  "7E3D4C73C791AAAC": {
+  "s1_act3_deep/drowned_sky": {
     "line": "s1_act3_deep_drowned_sky",
     "chat": true
   },
-  "125F0DA757CBDD14": {
+  "s1_act3_deep/kaelthar": {
     "line": "s1_act3_deep_kaelthar",
     "chat": true
   },
-  "7678FF900809530E": {
+  "s1_act3_deep/ancient_remnant": {
     "line": "s1_act3_deep_ancient_remnant",
     "chat": true
   },
-  "1C4F62CC967526A2": {
+  "s1_act3_deep/scarlet_garden": {
     "line": "s1_act3_deep_scarlet_garden",
     "chat": true
   },
-  "10A48EAE33052B15": {
+  "s1_act3_deep/ysolde": {
     "line": "s1_act3_deep_ysolde",
     "chat": true
   },
-  "3C10E6447520A102": {
+  "s1_act4_ash/tale_burning_crown": {
     "line": "s1_act4_ash_tale_burning_crown",
     "chat": false
   },
-  "65E3C17D51F13C6D": {
+  "s1_act4_ash/ashlands": {
     "line": "s1_act4_ash_ashlands",
     "chat": true
   },
-  "06B2E89F7AAD0CBA": {
+  "s1_act4_ash/soulfire_crypt": {
     "line": "s1_act4_ash_soulfire_crypt",
     "chat": true
   },
-  "616E722849BB220E": {
+  "s1_act4_ash/wither": {
     "line": "s1_act4_ash_wither",
     "chat": true
   },
-  "67ED0BC9562790E0": {
+  "s1_act4_ash/morgrath": {
     "line": "s1_act4_ash_morgrath",
     "chat": true
   },
-  "67F80731A0585B0A": {
+  "s1_act4_ash/stronghold": {
     "line": "s1_act4_ash_stronghold",
     "chat": true
   },
-  "7CD33967D099FE24": {
+  "s1_act4_ash/last_shore": {
     "line": "s1_act4_ash_last_shore",
     "chat": true
   },
-  "4D0587808D220640": {
+  "s1_act4_ash/dragon": {
     "line": "s1_act4_ash_dragon",
     "chat": true
   },
-  "5867200A6552CB88": {
+  "s1_act4_ash/vaelorn": {
     "line": "s1_act4_ash_vaelorn",
     "chat": true
   },
-  "7A11D1EEA3BD0D28": {
+  "s1_act4_ash/crown_remade": {
     "line": "s1_act4_ash_crown_remade",
     "chat": true
   },
-  "7A21A291E4DB088D": {
+  "s1_act5_realm/tale_eighth": {
     "line": "s1_act5_realm_tale_eighth",
     "chat": false
   },
-  "4E4B23BBB691EBC8": {
+  "s1_act5_realm/shard": {
     "line": "s1_act5_realm_shard",
     "chat": true
   },
-  "63F14370CFF061C7": {
+  "s1_act5_realm/enter": {
     "line": "s1_act5_realm_enter",
     "chat": true
   },
-  "6B937298FD1028CD": {
+  "s1_act5_realm/hollow_sovereign": {
     "line": "s1_act5_realm_hollow_sovereign",
     "chat": true
   },
-  "1396239BCA1C36D0": {
+  "s1_epilogue/first_light": {
     "line": "s1_epilogue_first_light",
     "chat": false
   },
-  "6CA5B84D2F345074": {
+  "s1_epilogue/homecoming": {
     "line": "s1_epilogue_homecoming",
     "chat": false
   },
-  "22201CEDCE4457E8": {
+  "s1_epilogue/keepers_name": {
     "line": "s1_epilogue_keepers_name",
     "chat": false
   },
-  "21DCE1D40E334C97": {
+  "s1_epilogue/who_broke_the_sun": {
     "line": "s1_epilogue_who_broke_the_sun",
     "chat": false
   },
-  "194DBF5B86695C7E": {
+  "s1_epilogue/ascendant": {
     "line": "s1_epilogue_ascendant",
     "chat": true
   }
 }
 global.REMNANTS_UNLOCKS = {
-  "063AD2AB6F866AE5": [
+  "s1_act1_embers/dusk_sigil": [
     {
-      "quest": "2A7E4FBEE8E2A089",
+      "quest": "s1_act1_embers/dusk_rider",
       "deps": [
-        "063AD2AB6F866AE5",
-        "29E73181EF9F52B4"
+        "s1_act1_embers/dusk_sigil",
+        "s1_act1_embers/level_up"
       ],
       "line": "s1_act1_embers_dusk_rider_unlock"
     }
   ],
-  "29E73181EF9F52B4": [
+  "s1_act1_embers/level_up": [
     {
-      "quest": "2A7E4FBEE8E2A089",
+      "quest": "s1_act1_embers/dusk_rider",
       "deps": [
-        "063AD2AB6F866AE5",
-        "29E73181EF9F52B4"
+        "s1_act1_embers/dusk_sigil",
+        "s1_act1_embers/level_up"
       ],
       "line": "s1_act1_embers_dusk_rider_unlock"
     }
   ],
-  "463F4A4D56B7E057": [
+  "s1_act2_hunt/varghast_fragments": [
     {
-      "quest": "190E84DFB94144CA",
+      "quest": "s1_act2_hunt/varghast",
       "deps": [
-        "463F4A4D56B7E057"
+        "s1_act2_hunt/varghast_fragments"
       ],
       "line": "s1_act2_hunt_varghast_unlock"
     }
   ],
-  "6C617748F8950056": [
+  "s1_act2_hunt/rime_veil": [
     {
-      "quest": "53F967EF1BEA3D24",
+      "quest": "s1_act2_hunt/sylvara",
       "deps": [
-        "6C617748F8950056",
-        "06C780A202DA9F3A"
+        "s1_act2_hunt/rime_veil",
+        "s1_forge/seal_dusk"
       ],
       "line": "s1_act2_hunt_sylvara_unlock"
     }
   ],
-  "06C780A202DA9F3A": [
+  "s1_forge/seal_dusk": [
     {
-      "quest": "53F967EF1BEA3D24",
+      "quest": "s1_act2_hunt/sylvara",
       "deps": [
-        "6C617748F8950056",
-        "06C780A202DA9F3A"
+        "s1_act2_hunt/rime_veil",
+        "s1_forge/seal_dusk"
       ],
       "line": "s1_act2_hunt_sylvara_unlock"
     }
   ],
-  "7E3D4C73C791AAAC": [
+  "s1_act3_deep/drowned_sky": [
     {
-      "quest": "125F0DA757CBDD14",
+      "quest": "s1_act3_deep/kaelthar",
       "deps": [
-        "7E3D4C73C791AAAC",
-        "4C098306B8209504"
+        "s1_act3_deep/drowned_sky",
+        "s1_forge/seal_hunt"
       ],
       "line": "s1_act3_deep_kaelthar_unlock"
     }
   ],
-  "4C098306B8209504": [
+  "s1_forge/seal_hunt": [
     {
-      "quest": "125F0DA757CBDD14",
+      "quest": "s1_act3_deep/kaelthar",
       "deps": [
-        "7E3D4C73C791AAAC",
-        "4C098306B8209504"
+        "s1_act3_deep/drowned_sky",
+        "s1_forge/seal_hunt"
       ],
       "line": "s1_act3_deep_kaelthar_unlock"
     },
     {
-      "quest": "10A48EAE33052B15",
+      "quest": "s1_act3_deep/ysolde",
       "deps": [
-        "1C4F62CC967526A2",
-        "4C098306B8209504"
+        "s1_act3_deep/scarlet_garden",
+        "s1_forge/seal_hunt"
       ],
       "line": "s1_act3_deep_ysolde_unlock"
     }
   ],
-  "1C4F62CC967526A2": [
+  "s1_act3_deep/scarlet_garden": [
     {
-      "quest": "10A48EAE33052B15",
+      "quest": "s1_act3_deep/ysolde",
       "deps": [
-        "1C4F62CC967526A2",
-        "4C098306B8209504"
+        "s1_act3_deep/scarlet_garden",
+        "s1_forge/seal_hunt"
       ],
       "line": "s1_act3_deep_ysolde_unlock"
     }
   ],
-  "0242238F2A247AFE": [
+  "s1_act4_ash/burning_crown": [
     {
-      "quest": "67ED0BC9562790E0",
+      "quest": "s1_act4_ash/morgrath",
       "deps": [
-        "0242238F2A247AFE",
-        "1F6862E77D664118"
+        "s1_act4_ash/burning_crown",
+        "s1_forge/seal_deep"
       ],
       "line": "s1_act4_ash_morgrath_unlock"
     }
   ],
-  "1F6862E77D664118": [
+  "s1_forge/seal_deep": [
     {
-      "quest": "67ED0BC9562790E0",
+      "quest": "s1_act4_ash/morgrath",
       "deps": [
-        "0242238F2A247AFE",
-        "1F6862E77D664118"
+        "s1_act4_ash/burning_crown",
+        "s1_forge/seal_deep"
       ],
       "line": "s1_act4_ash_morgrath_unlock"
     },
     {
-      "quest": "5867200A6552CB88",
+      "quest": "s1_act4_ash/vaelorn",
       "deps": [
-        "4D0587808D220640",
-        "1F6862E77D664118"
+        "s1_act4_ash/dragon",
+        "s1_forge/seal_deep"
       ],
       "line": "s1_act4_ash_vaelorn_unlock"
     }
   ],
-  "4D0587808D220640": [
+  "s1_act4_ash/dragon": [
     {
-      "quest": "5867200A6552CB88",
+      "quest": "s1_act4_ash/vaelorn",
       "deps": [
-        "4D0587808D220640",
-        "1F6862E77D664118"
+        "s1_act4_ash/dragon",
+        "s1_forge/seal_deep"
       ],
       "line": "s1_act4_ash_vaelorn_unlock"
     }
   ],
-  "7074BD6B0D4A6BB7": [
+  "s1_act5_realm/regalia": [
     {
-      "quest": "6B937298FD1028CD",
+      "quest": "s1_act5_realm/hollow_sovereign",
       "deps": [
-        "7074BD6B0D4A6BB7"
+        "s1_act5_realm/regalia"
       ],
       "line": "s1_act5_realm_hollow_sovereign_unlock"
     }

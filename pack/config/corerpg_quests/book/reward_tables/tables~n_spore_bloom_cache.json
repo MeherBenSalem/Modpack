@@ -1,0 +1,55 @@
+{
+  "id": "tables/n_spore_bloom_cache",
+  "title": "What the Bloom Left",
+  "icon": "spore_and_stem:lumen_spores",
+  "entries": [
+    {
+      "id": "tables/n_spore_bloom_cache/0",
+      "type": "item",
+      "item": "spore_and_stem:lumen_spores",
+      "count": 8,
+      "weight": 3
+    },
+    {
+      "id": "tables/n_spore_bloom_cache/1",
+      "type": "item",
+      "item": "spore_and_stem:mycoleather",
+      "count": 4,
+      "weight": 3
+    },
+    {
+      "id": "tables/n_spore_bloom_cache/2",
+      "type": "item",
+      "item": "spore_and_stem:glowcap_lantern",
+      "count": 3,
+      "weight": 2
+    },
+    {
+      "id": "tables/n_spore_bloom_cache/3",
+      "type": "item",
+      "item": "spore_and_stem:truffle",
+      "count": 4,
+      "weight": 2
+    },
+    {
+      "id": "tables/n_spore_bloom_cache/4",
+      "type": "item",
+      "item": "remnant_mobs:remnant_shard",
+      "count": 6,
+      "weight": 2
+    },
+    {
+      "id": "tables/n_spore_bloom_cache/5",
+      "type": "item",
+      "item": "runeborn:tempering_stone_3",
+      "count": 2,
+      "weight": 1
+    },
+    {
+      "id": "tables/n_spore_bloom_cache/6",
+      "type": "item",
+      "item": "spore_and_stem:mycelial_core",
+      "weight": 0.5
+    }
+  ]
+}

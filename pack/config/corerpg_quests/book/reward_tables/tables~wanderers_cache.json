@@ -1,0 +1,46 @@
+{
+  "id": "tables/wanderers_cache",
+  "title": "Wanderer's Cache",
+  "icon": "minecraft:chest",
+  "entries": [
+    {
+      "id": "tables/wanderers_cache/0",
+      "type": "item",
+      "item": "minecraft:iron_ingot",
+      "count": 8,
+      "weight": 3
+    },
+    {
+      "id": "tables/wanderers_cache/1",
+      "type": "item",
+      "item": "minecraft:gold_ingot",
+      "count": 6,
+      "weight": 2
+    },
+    {
+      "id": "tables/wanderers_cache/2",
+      "type": "item",
+      "item": "minecraft:diamond",
+      "weight": 1
+    },
+    {
+      "id": "tables/wanderers_cache/3",
+      "type": "item",
+      "item": "minecraft:ender_pearl",
+      "count": 2,
+      "weight": 1
+    },
+    {
+      "id": "tables/wanderers_cache/4",
+      "type": "item",
+      "item": "minecraft:name_tag",
+      "weight": 1
+    },
+    {
+      "id": "tables/wanderers_cache/5",
+      "type": "item",
+      "item": "minecraft:saddle",
+      "weight": 1
+    }
+  ]
+}

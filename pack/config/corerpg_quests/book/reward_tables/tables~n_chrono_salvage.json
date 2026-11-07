@@ -1,0 +1,61 @@
+{
+  "id": "tables/n_chrono_salvage",
+  "title": "Rift Salvage",
+  "icon": "chronofall:scrap",
+  "entries": [
+    {
+      "id": "tables/n_chrono_salvage/0",
+      "type": "item",
+      "item": "chronofall:scrap",
+      "count": 8,
+      "weight": 3
+    },
+    {
+      "id": "tables/n_chrono_salvage/1",
+      "type": "item",
+      "item": "chronofall:titanium_ingot",
+      "count": 4,
+      "weight": 3
+    },
+    {
+      "id": "tables/n_chrono_salvage/2",
+      "type": "item",
+      "item": "chronofall:cobalt_ingot",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/n_chrono_salvage/3",
+      "type": "item",
+      "item": "chronofall:electrical_conductors",
+      "count": 6,
+      "weight": 2
+    },
+    {
+      "id": "tables/n_chrono_salvage/4",
+      "type": "item",
+      "item": "chronofall:blank_printed_circuit_board",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/n_chrono_salvage/5",
+      "type": "item",
+      "item": "chronofall:rift_shard",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/n_chrono_salvage/6",
+      "type": "item",
+      "item": "chronofall:flux_cell",
+      "weight": 1
+    },
+    {
+      "id": "tables/n_chrono_salvage/7",
+      "type": "item",
+      "item": "chronofall:printed_circuit_board",
+      "weight": 1
+    }
+  ]
+}

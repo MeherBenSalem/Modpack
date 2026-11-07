@@ -1,0 +1,484 @@
+{
+  "id": "n_spoils",
+  "title": "&dWhat the Dead Carry",
+  "icon": "mob_loot_bags:legendarylootbag",
+  "group": "groups/chronicles",
+  "subtitle": [
+    "Mob LootBags: six tiers, four strange bags, two machines and a ragpicker."
+  ],
+  "quests": [
+    {
+      "id": "n_spoils/start",
+      "title": "&dWhat the Dead Carry",
+      "subtitle": "Their fingers only open at the end.",
+      "icon": "mob_loot_bags:commonlootbag",
+      "x": 0,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "s1_act1_embers/spoils"
+      ],
+      "description": [
+        "&6The Keeper&r",
+        "",
+        "&f&o\"The dead don't hoard gold. They hoard what they couldn't put down. Somebody has to pick it up.\"&r",
+        "",
+        "A letter, a ring, a loaf for a road that ended: when a Remnant falls, its fingers finally open. &6Old Pell&r, who picks the ash behind the shrine for whatever falls out, calls it spoils. &o\"Everything the dead carry, they carried for a reason. Usually a bad one.\"&r",
+        "",
+        "&7Hostile monsters drop &6loot bags&7 when you kill them: about one kill in seven for something your size, more from bigger things, a quarter as often from spawner cages. Only your kills count (your pets' and arrows' too). Open one."
+      ],
+      "tasks": [
+        {
+          "id": "n_spoils/start/task0",
+          "type": "advancement",
+          "advancement": "mob_loot_bags:open_bag",
+          "title": "lang:advancements.mob_loot_bags.open_bag.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_spoils/start/reward0",
+          "type": "item",
+          "item": "mob_loot_bags:commonlootbag",
+          "count": 3
+        },
+        {
+          "id": "n_spoils/start/reward1",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "n_spoils/tiers",
+      "title": "Six Weights of Grief",
+      "subtitle": "Common to Mythic.",
+      "icon": "mob_loot_bags:rarelootbag",
+      "x": 2.5,
+      "y": 0,
+      "dependencies": [
+        "n_spoils/start"
+      ],
+      "description": [
+        "Six tiers: &fCommon&r, &aUncommon&r, &9Rare&r, &5Epic&r, &6Legendary&r, &dMythic&r. Out here they fall about 60, 26, 9.5, 3.5, 0.9 and 0.1 times in a hundred. Hold &eShift&r over a bag for its real odds, sampled from what this land put inside: runes, Tempering and Lustrous Stones, Remnant Shards, whetstones, tomes and food.",
+        "",
+        "&7Four bags of a tier craft into one of the next; one splits back into four. Hold use to open a bag, or sneak to open the whole stack. Craft a Rare bag from four Uncommons."
+      ],
+      "tasks": [
+        {
+          "id": "n_spoils/tiers/task0",
+          "type": "item",
+          "item": "mob_loot_bags:rarelootbag"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_spoils/tiers/reward0",
+          "type": "item",
+          "item": "runeborn:faded_rune",
+          "count": 2
+        },
+        {
+          "id": "n_spoils/tiers/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "n_spoils/talisman",
+      "title": "A Rabbit's Foot, Gilded",
+      "subtitle": "Luck you can carry.",
+      "icon": "mob_loot_bags:fortune_talisman",
+      "x": 2.5,
+      "y": -2.5,
+      "dependencies": [
+        "n_spoils/tiers"
+      ],
+      "description": [
+        "&6Bag Luck&r tilts every drop toward the better tiers. It comes from &6Looting&r on your weapon, your &6Luck&r, the size of what you killed, the Nether, the End and a hard world.",
+        "",
+        "A &6Fortune Talisman&r (an emerald, gold and a rabbit's foot) carried anywhere on you is a whole point of Bag Luck, and a quarter more bags besides. Pell's advice: luck can be trained too. The Tallyman's &6Exploration&r attribute is Luck by another name.",
+        "",
+        "&7Make a Fortune Talisman."
+      ],
+      "tasks": [
+        {
+          "id": "n_spoils/talisman/task0",
+          "type": "advancement",
+          "advancement": "mob_loot_bags:fortune_talisman",
+          "title": "lang:advancements.mob_loot_bags.fortune_talisman.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_spoils/talisman/reward0",
+          "type": "item",
+          "item": "minecraft:emerald",
+          "count": 4
+        },
+        {
+          "id": "n_spoils/talisman/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "n_spoils/opener",
+      "title": "&eThe Bag Opener",
+      "subtitle": "Pell's fingers are older than the Eclipse.",
+      "icon": "mob_loot_bags:loot_bag_opener_block",
+      "x": 5,
+      "y": -1.75,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "n_spoils/tiers"
+      ],
+      "description": [
+        "Pell would like a machine. A &6Bag Opener&r is iron, a hopper, redstone, an emerald and a chest: nine bags in, eighteen stacks out. Hoppers feed it from the top and sides and empty it from the bottom. It waits for Hourglass bags to ripen, and a comparator can read it.",
+        "",
+        "&7Four redstone modes: always on, on with a signal, on without one, or one bag per pulse. Build a Bag Opener."
+      ],
+      "tasks": [
+        {
+          "id": "n_spoils/opener/task0",
+          "type": "advancement",
+          "advancement": "mob_loot_bags:bag_opener",
+          "title": "lang:advancements.mob_loot_bags.bag_opener.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_spoils/opener/reward0",
+          "type": "item",
+          "item": "minecraft:hopper",
+          "count": 2
+        },
+        {
+          "id": "n_spoils/opener/reward1",
+          "type": "random",
+          "table": "tables/spoils_pells_cut"
+        },
+        {
+          "id": "n_spoils/opener/reward2",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "n_spoils/recycler",
+      "title": "One Mob's Trash",
+      "subtitle": "Rotten flesh, ground into hope.",
+      "icon": "mob_loot_bags:loot_bag_recycle_block",
+      "x": 7.5,
+      "y": -3.5,
+      "dependencies": [
+        "n_spoils/opener"
+      ],
+      "description": [
+        "Rotten flesh, bones, string, arrows, feathers: every grave field leaves the same junk. A &6Loot Recycler&r (iron, a grindstone, smooth stone, a composter and redstone) grinds it into salvage points, and every &664 points&r becomes a fresh Common bag. Pearls, blaze rods, ghast tears and old weapons are worth more.",
+        "",
+        "Feed it bags you don't want and it keeps their experience until you take it.",
+        "",
+        "&7Build a Loot Recycler."
+      ],
+      "tasks": [
+        {
+          "id": "n_spoils/recycler/task0",
+          "type": "advancement",
+          "advancement": "mob_loot_bags:loot_recycler",
+          "title": "lang:advancements.mob_loot_bags.loot_recycler.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_spoils/recycler/reward0",
+          "type": "item",
+          "item": "mob_loot_bags:commonlootbag",
+          "count": 4
+        },
+        {
+          "id": "n_spoils/recycler/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "n_spoils/hourglass",
+      "title": "Worth the Wait",
+      "subtitle": "A promise the dead couldn't keep.",
+      "icon": "mob_loot_bags:timed_loot_bag",
+      "x": 7.5,
+      "y": -1.75,
+      "dependencies": [
+        "n_spoils/opener"
+      ],
+      "optional": true,
+      "description": [
+        "An &6Hourglass&r bag is still keeping time for someone. Carry it five to ten minutes and it ripens into &5two bags of Epic or better&r, with a handful of bottled experience. The Bag Opener knows to wait for it.",
+        "",
+        "&7Three bags in a hundred are Hourglasses. Let one ripen and open it."
+      ],
+      "tasks": [
+        {
+          "id": "n_spoils/hourglass/task0",
+          "type": "advancement",
+          "advancement": "mob_loot_bags:open_hourglass",
+          "title": "lang:advancements.mob_loot_bags.open_hourglass.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_spoils/hourglass/reward0",
+          "type": "xp",
+          "xp": 120
+        }
+      ]
+    },
+    {
+      "id": "n_spoils/epic",
+      "title": "Stones for the Smith",
+      "subtitle": "What tempering is made of.",
+      "icon": "mob_loot_bags:epiclootbag",
+      "x": 5,
+      "y": 0,
+      "dependencies": [
+        "n_spoils/tiers",
+        "n_runeborn/tempering"
+      ],
+      "description": [
+        "The Smith Under Ash tempers with what the dead leave behind, and the dead leave it in bags. &5Epic&r bags pay &6Tempering Stones&r V and VI, &6Lustrous Stones&r II and III, the six affinity &6whetstones&r, Radiant runes and Sovereign Fragments. Rare bags carry the lower stones; Legendary the higher ones.",
+        "",
+        "&o\"I don't ask where you found them,\"&r says the Smith. &o\"I ask how many.\"&r",
+        "",
+        "&7Open an Epic Loot Bag."
+      ],
+      "tasks": [
+        {
+          "id": "n_spoils/epic/task0",
+          "type": "advancement",
+          "advancement": "mob_loot_bags:open_epic",
+          "title": "lang:advancements.mob_loot_bags.open_epic.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_spoils/epic/reward0",
+          "type": "item",
+          "item": "runeborn:tempering_stone_3",
+          "count": 2
+        },
+        {
+          "id": "n_spoils/epic/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "n_spoils/legendary",
+      "title": "&6Jackpot",
+      "subtitle": "Somebody held on very hard.",
+      "icon": "mob_loot_bags:legendarylootbag",
+      "x": 7.5,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "n_spoils/epic"
+      ],
+      "description": [
+        "Legendary bags come from the dead who held on hardest. They pay &6Hero's runes&r, Tempering Stones VII and VIII, Lustrous Stones IV to VI, &6Tomes of Ascension&r, a Tear of Rebirth, and now and then a Hallowed Tear or a Sunseed. The whole world hears when one drops.",
+        "",
+        "Bad luck runs out. Twelve kills without a bag and the next one drops one; twenty bags below Rare and the next is Rare; two hundred without a Legendary and the next is &6Legendary&r.",
+        "",
+        "&7Open a Legendary Loot Bag."
+      ],
+      "tasks": [
+        {
+          "id": "n_spoils/legendary/task0",
+          "type": "advancement",
+          "advancement": "mob_loot_bags:open_legendary",
+          "title": "lang:advancements.mob_loot_bags.open_legendary.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_spoils/legendary/reward0",
+          "type": "random",
+          "table": "tables/spoils_pells_cut"
+        },
+        {
+          "id": "n_spoils/legendary/reward1",
+          "type": "item",
+          "item": "runeborn:lustrous_rune",
+          "count": 2
+        },
+        {
+          "id": "n_spoils/legendary/reward2",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "n_spoils/locked",
+      "title": "Safecracker",
+      "subtitle": "Sealed by someone who meant to come back.",
+      "icon": "mob_loot_bags:locked_lootbags",
+      "x": 5,
+      "y": 1.75,
+      "dependencies": [
+        "n_spoils/tiers",
+        "n_measure/first_point"
+      ],
+      "description": [
+        "Cut a &6Diamond Key&r from a diamond on a stonecutter. It is used up, and it only has to be somewhere on you. Inside a &bLocked&r bag is the old world's best: always one piece of enchanted &5netherite&r gear, and two or three of netherite ingots, diamonds, ancient debris, a smithing template, a totem or a golden apple.",
+        "",
+        "Netherite won't answer a weak hand. Read the gear's lock, then the Tallyman's &eK&r screen, before you get excited.",
+        "",
+        "&7One bag in a hundred comes out Locked. Cut a key and open one."
+      ],
+      "tasks": [
+        {
+          "id": "n_spoils/locked/task0",
+          "type": "item",
+          "item": "mob_loot_bags:diamond_key"
+        },
+        {
+          "id": "n_spoils/locked/task1",
+          "type": "advancement",
+          "advancement": "mob_loot_bags:open_locked",
+          "title": "lang:advancements.mob_loot_bags.open_locked.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_spoils/locked/reward0",
+          "type": "item",
+          "item": "minecraft:diamond"
+        },
+        {
+          "id": "n_spoils/locked/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "n_spoils/cursed",
+      "title": "Tempting Fate",
+      "subtitle": "Something packed this bag with a grudge.",
+      "icon": "mob_loot_bags:cursed_lootbag",
+      "x": 5,
+      "y": 3.5,
+      "dependencies": [
+        "n_spoils/tiers"
+      ],
+      "optional": true,
+      "description": [
+        "A &cCursed&r bag rolls the dice when you open it. Half the time three to five &ccursed&r monsters rise around you, glowing, and each one you kill drops a bag of its own. Sometimes it's a &6Legendary&r jackpot. Sometimes a hex that lasts twelve seconds. Sometimes something stranger.",
+        "",
+        "&7Two bags in a hundred come out Cursed. Open one with your back to a wall."
+      ],
+      "tasks": [
+        {
+          "id": "n_spoils/cursed/task0",
+          "type": "advancement",
+          "advancement": "mob_loot_bags:open_cursed",
+          "title": "lang:advancements.mob_loot_bags.open_cursed.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_spoils/cursed/reward0",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "n_spoils/summoning",
+      "title": "Pocket Bestiary",
+      "subtitle": "The dead carry their grudges too.",
+      "icon": "mob_loot_bags:summoning_lootbags",
+      "x": 7.5,
+      "y": 3.5,
+      "dependencies": [
+        "n_spoils/cursed"
+      ],
+      "optional": true,
+      "description": [
+        "A &6Summoning&r bag is a sack of spawn eggs: zombies, skeletons, creepers, spiders, slimes, a ghast if the dead disliked you. Open it somewhere with a door you can close.",
+        "",
+        "&7Open a Summoning Loot Bag."
+      ],
+      "tasks": [
+        {
+          "id": "n_spoils/summoning/task0",
+          "type": "advancement",
+          "advancement": "mob_loot_bags:open_summoning",
+          "title": "lang:advancements.mob_loot_bags.open_summoning.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_spoils/summoning/reward0",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "n_spoils/finale",
+      "title": "&dMyth Made Real",
+      "subtitle": "One bag in a thousand.",
+      "icon": "mob_loot_bags:mythiclootbag",
+      "x": 10.5,
+      "y": 0,
+      "shape": "gear",
+      "size": 2,
+      "dependencies": [
+        "n_spoils/legendary"
+      ],
+      "description": [
+        "One bag in a thousand is &dMythic&r, or you make one from four Legendaries and a &6nether star&r. Every boss this land knows (the Old Powers, the Cataclysm's monsters, the Realm's wardens and the rest) drops three bags of Epic or better when it dies, each with a fifteen-in-a-hundred chance of Mythic. Inside: Sovereign runes, Lustrous Stones VII to IX, Sovereign stones, Tomes of Ascension.",
+        "",
+        "Pell turns the empty bag over in his hands. &o\"Someone carried this all the way down. Wonder what they meant to buy with it.\"&r He sells the stories to the Archivist; the bags he keeps.",
+        "",
+        "&7Open a Mythic Loot Bag."
+      ],
+      "tasks": [
+        {
+          "id": "n_spoils/finale/task0",
+          "type": "advancement",
+          "advancement": "mob_loot_bags:open_mythic",
+          "title": "lang:advancements.mob_loot_bags.open_mythic.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_spoils/finale/reward0",
+          "type": "random",
+          "table": "tables/spoils_pells_cut"
+        },
+        {
+          "id": "n_spoils/finale/reward1",
+          "type": "item",
+          "item": "runeborn:radiant_rune",
+          "count": 2
+        },
+        {
+          "id": "n_spoils/finale/reward2",
+          "type": "xp",
+          "xp": 1000
+        }
+      ]
+    }
+  ]
+}

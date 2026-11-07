@@ -1,19 +1,25 @@
 #!/usr/bin/env python3
-"""Compile the readable quest sources in src/quests/*.yaml into FTB Quests files (FTB Quests 2101, NeoForge 1.21.1).
+"""Compile the readable quest sources in src/quests/*.yaml into a Core RPG - Quests Engine book (1.21.1).
 
-  python3 modpack/tools/build_quests.py            # writes pack/config/ftbquests/quests/
-  python3 modpack/tools/build_quests.py --check    # also validates ids against research/registry/*.json
+  python3 tools/build_quests.py            # writes pack/config/corerpg_quests/book/
+  python3 tools/build_quests.py --check    # also validates ids against research/registry/*.json
+
+The book is plain JSON (book.json, chapters/<chapter>.json, reward_tables/<table>.json). Ids are readable and
+stable: a chapter is its file name, a quest is "<chapter>/<key>", a task "<chapter>/<key>/task<n>", a reward
+"<chapter>/<key>/reward<n>", a reward table "tables/<key>". Never rename a chapter or a quest key once released:
+progress is saved against these ids.
 
 A chapter file looks like:
 
-  chapter: act1_embers          # file name and id seed; never rename once released (ids derive from it)
+  chapter: act1_embers          # file name and id
   group: main                   # a key from src/quests/groups.yaml
   order: 1
   title: "&6Act I: Embers"
   subtitle: "Light the first shrine."
   icon: minecraft:campfire
+  shape: hexagon                # optional: the chapter's default quest shape
   quests:
-    - key: first_shrine         # unique inside the chapter; ids derive from chapter + key
+    - key: first_shrine         # unique inside the chapter
       title: "The First Ember"
       subtitle: "A fire the dark respects"
       desc: |
@@ -30,22 +36,27 @@ A chapter file looks like:
       shape: hexagon            # optional
       size: 1.5                 # optional
       deps: [wake, prologue/choose_origin]   # same-chapter keys or chapter/key
+      min_deps: 1               # optional: unlock once this many dependencies are done
       optional: false
       hide_until_deps: false
+      hide_dependency_lines: false
       repeatable: false
-      tasks:   [{item: minecraft:campfire, count: 1}, {tag: minecraft:logs, count: 16},
-                {kill: minecraft:zombie, count: 5}, {dimension: ...},
-                {structure: ...}, {biome: ...}, {advancement: ...}, {observe: ...}, {checkmark: "Read me"},
-                {xp_levels: 10}, {stat: minecraft:mob_kills, value: 100}]
+      tasks:   [{item: minecraft:campfire, count: 1, consume: false}, {tag: minecraft:logs, count: 16},
+                {filter: "any(runeborn:emberbrand, #c:swords)", count: 1},
+                {kill: minecraft:zombie, count: 5}, {dimension: ...}, {structure: ...}, {biome: ...},
+                {advancement: ..., criterion: ...}, {observe: ..., observe_type: 0|1, timer: ticks},
+                {checkmark: "Read me"}, {xp_levels: 10}, {stat: minecraft:bell_ring, value: 100}]
       rewards: [{item: minecraft:bread, count: 4}, {xp: 100}, {xp_levels: 3}, {table: hunters_cache},
-                {choice: origin_kits}, {loot: ember_cache}, {command: "/title @p ...", as_player: false}]
+                {choice: origin_kits}, {command: "/lastlight arrive huntmaster {p}"}]
 
 Reward tables live in src/quests/reward_tables.yaml and src/quests/reward_tables/*.yaml
 (key -> {title, icon, loot_size, rewards: [{item, count, weight}]}).
 Item values may also be {id: ..., count: ..., components: {...}} for named or enchanted items.
+
+Narration: quests with a voiced line, and the dependencies of quests with an unlock line, get a completion command
+("remnants_vo completed <team> <quest>") that kubejs/server_scripts/remnants/narration.js handles.
 """
 import argparse
-import hashlib
 import json
 import re
 import shutil
@@ -56,81 +67,64 @@ import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "src" / "quests"
-OUT = ROOT / "pack" / "config" / "ftbquests" / "quests"
+OUT = ROOT / "pack" / "config" / "corerpg_quests" / "book"
+OLD_FTB = ROOT / "pack" / "config" / "ftbquests"
 VOICE_SRC = ROOT / "src" / "voice"
 # startup script: KubeJS 2101 only lets startup scripts assign to `global`; server scripts read it
 NARRATION_JS = ROOT / "pack" / "kubejs" / "startup_scripts" / "remnants_narration_lines.js"
 REGISTRY = ROOT / "research" / "registry"
+NARRATION_COMMAND = "remnants_vo completed {team} {quest}"
+# advancement id -> {"key": translation key} or {"text": ...}; written by tools/dump_advancement_titles.py
+_ADV = REGISTRY / "advancement_titles.json"
+ADV_TITLES = json.loads(_ADV.read_text()) if _ADV.exists() else {}
+
+ID_OK = re.compile(r"^[a-z0-9_./-]{1,64}$")
+SHAPES = {"circle", "square", "rsquare", "diamond", "pentagon", "hexagon", "octagon", "heart", "gear", "shield",
+          "star", "none", ""}
 
 
-class L(int):
-    pass
-
-
-class D(float):
-    pass
-
-
-class F(float):
-    pass
-
-
-def qid(*parts):
-    """Stable 16-hex id from a seed; first digit 0-7 so it stays a positive long like FTB's own ids."""
-    h = hashlib.sha1(("remnants-s1:" + "/".join(map(str, parts))).encode()).hexdigest().upper()[:16]
-    return "%X" % (int(h[0], 16) & 7) + h[1:]
-
-
-KEY_OK = re.compile(r"^[A-Za-z0-9_.+-]+$")  # SNBT's unquoted-key alphabet
-
-
-def snbt(v, ind=0):
-    t = "\t"
-    if isinstance(v, bool):
-        return "true" if v else "false"
-    if isinstance(v, L):
-        return f"{int(v)}L"
-    if isinstance(v, D):
-        return f"{float(v)}d"
-    if isinstance(v, F):
-        return f"{float(v)}f"
-    if isinstance(v, int):
-        return str(v)
-    if isinstance(v, float):
-        return f"{v}d"
-    if isinstance(v, str):
-        return json.dumps(v, ensure_ascii=False)
-    if isinstance(v, list):
-        if not v:
-            return "[ ]"
-        if all(isinstance(x, str) for x in v) and sum(len(x) for x in v) < 80:
-            return "[" + ", ".join(snbt(x) for x in v) + "]"
-        return "[\n" + "".join(t * (ind + 1) + snbt(x, ind + 1) + "\n" for x in v) + t * ind + "]"
-    if isinstance(v, dict):
-        if not v:
-            return "{ }"
-        rows = []
-        for k in sorted(v):
-            key = k if KEY_OK.match(k) else json.dumps(k)
-            rows.append(t * (ind + 1) + f"{key}: {snbt(v[k], ind + 1)}")
-        return "{\n" + "\n".join(rows) + "\n" + t * ind + "}"
-    raise TypeError(f"can't write {v!r}")
-
-
-def item_stack(spec, count=1):
+def item_value(spec):
+    """An item id, or the vanilla item stack object for named/enchanted items (count lives on the task)."""
     if isinstance(spec, str):
-        return {"count": count, "id": spec}
-    out = {"count": spec.get("count", count), "id": spec["id"]}
+        return spec
+    out = {"id": spec["id"]}
     if spec.get("components"):
         out["components"] = spec["components"]
-    return out
+    return out if len(out) > 1 else spec["id"]
+
+
+def item_id(spec):
+    return spec if isinstance(spec, str) else spec["id"]
+
+
+def item_count(spec, outer):
+    if outer is not None:
+        return outer
+    return 1 if isinstance(spec, str) else spec.get("count", 1)
+
+
+PLACE_NAMES = {"#minecraft:village": "a village", "minecraft:the_nether": "the Nether", "minecraft:the_end": "the End",
+               "minecraft:overworld": "the Overworld", "deeperdarker:otherside": "the Otherside",
+               "remnant_bosses:eclipsed_realm": "the Eclipsed Realm", "minecraft:ancient_city": "an Ancient City",
+               "betteroceanmonuments:ocean_monument": "an Ocean Monument", "betterfortresses:fortress": "a Nether Fortress",
+               "betterstrongholds:stronghold": "a Stronghold", "remnant_bosses:grace_shrine": "a Grace Shrine",
+               "remnant_bosses:hollow_citadel": "the Hollow Citadel",
+               "remnant_bosses:gravebound_catacombs": "the Gravebound Catacombs",
+               "remnant_bosses:forgotten_observatory": "the Forgotten Observatory"}
+
+
+def place_name(rid):
+    """'betterstrongholds:stronghold' -> 'Stronghold'; tags and vanilla dimensions read naturally."""
+    if rid in PLACE_NAMES:
+        return PLACE_NAMES[rid]
+    path = rid.lstrip("#").split(":")[-1].split("/")[-1]
+    return " ".join(w if w in ("of", "the", "and") else w.capitalize() for w in path.split("_"))
 
 
 def lang_lines(text):
     if not text:
         return []
-    lines = [ln.rstrip() for ln in text.strip("\n").split("\n")]
-    return [ln for ln in lines]
+    return [ln.rstrip() for ln in text.strip("\n").split("\n")]
 
 
 SPEAKERS = {  # yaml field -> (header, text colour)
@@ -155,9 +149,14 @@ def spoken_text(text):
     return "\n\n".join(" ".join(p.split()) for p in text.strip().split("\n\n") if p.strip())
 
 
+def number(v):
+    """Whole numbers as ints so the JSON stays tidy."""
+    f = float(v)
+    return int(f) if f.is_integer() else f
+
+
 class Compiler:
     def __init__(self):
-        self.lang = {}            # file name -> {key: value}
         self.used_ids = set()
         self.quest_ids = {}       # "chapter/key" -> id
         self.tables = {}          # key -> id
@@ -165,43 +164,53 @@ class Compiler:
         self.voice = []           # narrated lines: {line, quest, speaker, text, chat}
         self.unlocks = []         # lines spoken when a quest becomes available: {line, quest, deps, text}
 
-    def new_id(self, *parts):
-        i = qid(*parts)
-        if i in self.used_ids:
-            sys.exit(f"id collision for {'/'.join(map(str, parts))}")
-        self.used_ids.add(i)
-        return i
+    def new_id(self, value):
+        if not ID_OK.match(value):
+            sys.exit(f"invalid id {value!r}: use a-z 0-9 _ - . / (at most 64 characters)")
+        if value in self.used_ids:
+            sys.exit(f"id collision for {value}")
+        self.used_ids.add(value)
+        return value
 
-    def put(self, file, key, value):
-        if value in (None, "", []):
-            return
+    @staticmethod
+    def text(where, value):
+        """Core RPG reads '&' + a code as formatting; keep a bare '&' out of the book ("Hearth and Harvest")."""
         for line in (value if isinstance(value, list) else [value]):
-            # FTB Quests reads every '&' as a formatting code; a bare one ("Hearth & Harvest") breaks the whole
-            # text in game (the sidebar showed it as an invalid format). Write "and" instead.
-            bad = re.search(r"&(?![0-9a-fk-orA-FK-OR])", line)
+            bad = re.search(r"&(?![0-9a-fk-orA-FK-OR])", line or "")
             if bad:
-                sys.exit(f"{key}: '&' that isn't a formatting code: {line[max(0, bad.start() - 20):bad.end() + 20]!r}")
-        self.lang.setdefault(file, {})[key] = value
+                sys.exit(f"{where}: '&' that isn't a formatting code: {line[max(0, bad.start() - 20):bad.end() + 20]!r}")
+        return value
 
     # ---- tasks and rewards ----
-    def task(self, chapter, qkey, n, t):
-        tid = self.new_id(chapter, qkey, "task", n)
-        where = f"{chapter}/{qkey} task {n}"
-        out = {"id": tid}
+    def task(self, qid, n, t):
+        out = {"id": self.new_id(f"{qid}/task{n}")}
+        where = f"{qid} task {n}"
         if "item" in t:
-            out.update(type="item", item=item_stack(t["item"]))
-            if t.get("count", 1) != 1:
-                out["count"] = L(t["count"])
+            out.update(type="item", item=item_value(t["item"]))
+            count = item_count(t["item"], t.get("count"))
+            if count != 1:
+                out["count"] = count
             if t.get("consume"):
                 out["consume_items"] = "true"
-            self.refs.append((where, "item", t["item"] if isinstance(t["item"], str) else t["item"]["id"]))
-        elif "tag" in t:  # any item in an item tag, through FTB Filter System's smart filter
-            out.update(type="item", item={"count": 1, "id": "ftbfiltersystem:smart_filter", "components": {
-                "ftbfiltersystem:filter": f"ftbfiltersystem:item_tag({t['tag']})"}})
+            self.refs.append((where, "item", item_id(t["item"])))
+        elif "filter" in t:  # a Core RPG filter expression, e.g. "any(runeborn:emberbrand, #c:swords)"
+            out.update(type="item", filter=t["filter"])
             if t.get("count", 1) != 1:
-                out["count"] = L(t["count"])
+                out["count"] = t["count"]
+            if t.get("consume"):
+                out["consume_items"] = "true"
+            for atom in re.findall(r"(?<![#@\w])([a-z0-9_.-]+:[a-z0-9_./-]+)", t["filter"]):
+                self.refs.append((where, "item", atom))
+        elif "tag" in t:  # any item in an item tag, through a filter expression
+            out.update(type="item", filter=f"#{t['tag']}")
+            if t.get("count", 1) != 1:
+                out["count"] = t["count"]
+            if t.get("consume"):
+                out["consume_items"] = "true"
         elif "kill" in t:
-            out.update(type="kill", entity=t["kill"], value=L(t.get("count", 1)))
+            out.update(type="kill", entity=t["kill"])
+            if t.get("count", 1) != 1:
+                out["value"] = t["count"]
             self.refs.append((where, "entity", t["kill"]))
         elif "dimension" in t:
             out.update(type="dimension", dimension=t["dimension"])
@@ -212,53 +221,75 @@ class Compiler:
         elif "biome" in t:
             out.update(type="biome", biome=t["biome"])
         elif "advancement" in t:
-            out.update(type="advancement", advancement=t["advancement"], criterion=t.get("criterion", ""))
+            out.update(type="advancement", advancement=t["advancement"])
+            if t.get("criterion"):
+                out["criterion"] = t["criterion"]
             self.refs.append((where, "advancement", t["advancement"]))
         elif "observe" in t:
-            out.update(type="observation", observe_type=t.get("observe_type", 0), timer=L(t.get("timer", 0)),
-                       to_observe=t["observe"])
+            entity = t.get("observe_type", 0) in (1, "entity")
+            out.update(type="observation", target="entity" if entity else "block")
+            out["entity" if entity else "block"] = t["observe"]
+            if t.get("timer"):
+                out["ticks"] = max(1, int(t["timer"]))
         elif "checkmark" in t:
             out.update(type="checkmark")
         elif "xp_levels" in t:
-            out.update(type="xp", value=L(t["xp_levels"]), points=False)
+            out.update(type="xp", value=t["xp_levels"])
         elif "stat" in t:
-            out.update(type="stat", stat=t["stat"], value=t.get("value", 1))
+            out.update(type="stat", stat=t["stat"])
+            if t.get("value", 1) != 1:
+                out["value"] = t["value"]
         else:
             sys.exit(f"{where}: unknown task {t}")
         title = t.get("title") or (t["checkmark"] if isinstance(t.get("checkmark"), str) else None)
-        self.put(self.cur_lang, f"task.{tid}.title", title)
+        if title:
+            out["title"] = self.text(where, title)
+        elif "structure" in t or "dimension" in t:
+            # Structures and dimensions have no translated names, so name them from the id.
+            out["title"] = ("Find " if "structure" in t else "Enter ") + place_name(t.get("structure") or t["dimension"])
+        elif "advancement" in t and t["advancement"] in ADV_TITLES:
+            # The advancement's own name (clients only know the advancements they can already see).
+            known = ADV_TITLES[t["advancement"]]
+            out["title"] = f"lang:{known['key']}" if "key" in known else known["text"]
+        if t.get("optional"):
+            out["optional_task"] = True
         return out
 
-    def reward(self, chapter, qkey, n, r):
-        rid = self.new_id(chapter, qkey, "reward", n)
-        out = {"id": rid}
+    def reward(self, qid, n, r):
+        out = {"id": self.new_id(f"{qid}/reward{n}")}
+        where = f"{qid} reward {n}"
         if "item" in r:
-            out.update(type="item", item=item_stack(r["item"]))
-            if r.get("count", 1) != 1:
-                out["count"] = r["count"]
-            self.refs.append((f"{chapter}/{qkey} reward {n}", "item",
-                              r["item"] if isinstance(r["item"], str) else r["item"]["id"]))
+            out.update(type="item", item=item_value(r["item"]))
+            count = item_count(r["item"], r.get("count"))
+            if count != 1:
+                out["count"] = count
+            self.refs.append((where, "item", item_id(r["item"])))
         elif "xp" in r:
             out.update(type="xp", xp=r["xp"])
         elif "xp_levels" in r:
-            out.update(type="xp_levels", xp_levels=r["xp_levels"])
+            out.update(type="xp_levels", levels=r["xp_levels"])
         elif any(k in r for k in ("table", "choice", "loot")):
-            kind = "random" if "table" in r else ("choice" if "choice" in r else "loot")
-            key = r.get("table") or r.get("choice") or r.get("loot")
+            if "loot" in r:
+                sys.exit(f"{where}: loot crate rewards are not used by this pack; use table: or choice:")
+            kind = "random" if "table" in r else "choice"
+            key = r.get("table") or r.get("choice")
             if key not in self.tables:
-                sys.exit(f"{chapter}/{qkey}: unknown reward table {key}")
-            out.update(type=kind, table_id=L(int(self.tables[key], 16)))
+                sys.exit(f"{where}: unknown reward table {key}")
+            out.update(type=kind, table=self.tables[key])
         elif "command" in r:
-            out.update(type="command", command=r["command"], permission_level=r.get("permission_level", 2),
-                       elevate_perms=True, silent=r.get("silent", True))
-            if r.get("icon"):
-                out["icon"] = {"id": r["icon"]}
+            out.update(type="command", command=r["command"])
+            if r.get("permission_level", 2) != 2:
+                out["permission_level"] = r["permission_level"]
+            if not r.get("silent", True):
+                out["silent"] = False
         else:
-            sys.exit(f"{chapter}/{qkey}: unknown reward {r}")
+            sys.exit(f"{where}: unknown reward {r}")
         if r.get("title"):
-            self.put(self.cur_lang, f"reward.{rid}.title", r["title"])
+            out["title"] = self.text(where, r["title"])
+        if r.get("icon"):
+            out["icon"] = r["icon"]
         if r.get("team"):
-            out["team_reward"] = True
+            out["team_reward"] = "true"
         return out
 
     # ---- layout ----
@@ -290,77 +321,83 @@ class Compiler:
     # ---- chapters ----
     def chapter(self, doc, groups):
         ch = doc["chapter"]
-        cid = self.new_id("chapter", ch)
-        self.cur_lang = f"chapters/{ch}"
-        self.put(self.cur_lang, f"chapter.{cid}.title", doc["title"])
-        self.put(self.cur_lang, f"chapter.{cid}.chapter_subtitle", lang_lines(doc.get("subtitle", "")))
+        out = {"id": ch, "title": self.text(ch, doc["title"]), "icon": doc["icon"], "group": groups[doc["group"]]}
+        if doc.get("subtitle"):
+            out["subtitle"] = self.text(ch, lang_lines(doc["subtitle"]))
+        if doc.get("shape"):
+            if doc["shape"] not in SHAPES:
+                sys.exit(f"{ch}: unknown shape {doc['shape']}")
+            out["default_quest_shape"] = doc["shape"]
+        if doc.get("progression_mode"):
+            out["progression_mode"] = doc["progression_mode"]
         quests = doc["quests"]
         self.layout(quests)
         out_q = []
         for q in quests:
             k = q["key"]
-            qid_ = self.quest_ids[f"{ch}/{k}"]
+            qid = self.quest_ids[f"{ch}/{k}"]
             deps = []
             for dkey in q.get("deps", []):
                 full = dkey if "/" in dkey else f"{ch}/{dkey}"
                 if full not in self.quest_ids:
-                    sys.exit(f"{ch}/{k}: unknown dependency {dkey}")
+                    sys.exit(f"{qid}: unknown dependency {dkey}")
                 deps.append(self.quest_ids[full])
-            entry = {"id": qid_, "x": D(q["pos"][0]), "y": D(q["pos"][1]),
-                     "tasks": [self.task(ch, k, i, t) for i, t in enumerate(q.get("tasks") or [{"checkmark": True}])],
-                     "rewards": [self.reward(ch, k, i, r) for i, r in enumerate(q.get("rewards", []))]}
+            entry = {"id": qid, "title": self.text(qid, q["title"])}
+            if q.get("subtitle"):
+                entry["subtitle"] = self.text(qid, q["subtitle"])
+            if q.get("icon"):
+                entry["icon"] = q["icon"]
+                self.refs.append((qid, "icon", q["icon"]))
+            entry["x"], entry["y"] = number(q["pos"][0]), number(q["pos"][1])
+            if q.get("shape"):
+                if q["shape"] not in SHAPES:
+                    sys.exit(f"{qid}: unknown shape {q['shape']}")
+                entry["shape"] = q["shape"]
+            if q.get("size") is not None:
+                entry["size"] = number(q["size"])
             if deps:
                 entry["dependencies"] = deps
-            if q.get("icon"):
-                entry["icon"] = {"id": q["icon"]}
-            for src, dst in (("shape", "shape"), ("size", "size")):
-                if q.get(src) is not None:
-                    entry[dst] = D(q[src]) if dst == "size" else q[src]
+            if q.get("min_deps"):
+                entry["min_required_dependencies"] = q["min_deps"]
             if q.get("optional"):
                 entry["optional"] = True
             if q.get("hide_until_deps"):
-                entry["hide_until_deps_complete"] = True
+                entry["hide_until_deps_complete"] = "true"
             if q.get("repeatable"):
-                entry["can_repeat"] = True
-            if q.get("min_deps"):
-                entry["min_required_dependencies"] = q["min_deps"]
+                entry["repeatable"] = True
             if q.get("hide_dependency_lines"):
-                entry["hide_dependency_lines"] = True
-            self.put(self.cur_lang, f"quest.{qid_}.title", q["title"])
-            self.put(self.cur_lang, f"quest.{qid_}.quest_subtitle", q.get("subtitle"))
+                entry["hide_dependency_lines"] = "true"
+
             desc = []
             for field in SPEAKERS:
                 if q.get(field):
                     desc += spoken(field, q[field], bool(q.get("voice")))
                     if q.get("voice"):
                         tasks = q.get("tasks") or [{"checkmark": True}]
-                        self.voice.append({"line": f"{ch}_{k}", "quest": qid_, "speaker": field,
+                        self.voice.append({"line": f"{ch}_{k}", "quest": qid, "speaker": field,
                                            "text": spoken_text(q[field]),
                                            "chat": not any("checkmark" in t for t in tasks)})
             if q.get("voice") and not desc:
-                sys.exit(f"{ch}/{k}: voice: true needs a keeper or whisper text")
+                sys.exit(f"{qid}: voice: true needs a keeper or whisper text")
             if q.get("unlock"):
                 if not deps:
-                    sys.exit(f"{ch}/{k}: unlock needs deps (it plays when the last one completes)")
-                self.unlocks.append({"line": f"{ch}_{k}_unlock", "quest": qid_, "deps": deps,
+                    sys.exit(f"{qid}: unlock needs deps (it plays when the last one completes)")
+                self.unlocks.append({"line": f"{ch}_{k}_unlock", "quest": qid, "deps": deps,
                                      "text": spoken_text(q["unlock"])})
             body = lang_lines(q.get("desc", ""))
             if desc and body:
                 desc.append("")
-            self.put(self.cur_lang, f"quest.{qid_}.quest_desc", desc + body)
+            if desc + body:
+                entry["description"] = self.text(qid, desc + body)
+            entry["tasks"] = [self.task(qid, i, t) for i, t in enumerate(q.get("tasks") or [{"checkmark": True}])]
+            entry["rewards"] = [self.reward(qid, i, r) for i, r in enumerate(q.get("rewards", []))]
             out_q.append(entry)
-        chapter = {"default_hide_dependency_lines": False, "default_quest_shape": doc.get("shape", ""),
-                   "filename": ch, "group": groups[doc["group"]], "icon": {"id": doc["icon"]}, "id": cid,
-                   "images": [], "order_index": doc.get("order", 0), "quest_links": [], "quests": out_q}
-        if doc.get("progression_mode"):
-            chapter["progression_mode"] = doc["progression_mode"]
-        return ch, chapter
+        out["quests"] = out_q
+        return ch, out
 
     def run(self):
         meta = yaml.safe_load((SRC / "groups.yaml").read_text())
-        groups = {}
-        for i, g in enumerate(meta["groups"]):
-            groups[g["key"]] = self.new_id("group", g["key"])
+        groups = {g["key"]: self.new_id(f"groups/{g['key']}") for g in meta["groups"]}
         tables_src = yaml.safe_load((SRC / "reward_tables.yaml").read_text()) or {}
         for extra in sorted(SRC.glob("reward_tables/*.yaml")):  # one file per chapter author
             for key, table in (yaml.safe_load(extra.read_text()) or {}).items():
@@ -368,70 +405,72 @@ class Compiler:
                     sys.exit(f"{extra.name}: reward table {key} already defined")
                 tables_src[key] = table
         for key in tables_src:
-            self.tables[key] = self.new_id("table", key)
+            self.tables[key] = self.new_id(f"tables/{key}")
 
         docs = []
         for f in sorted(SRC.glob("chapters/*.yaml")):
             doc = yaml.safe_load(f.read_text())
             if not doc:
                 continue
-            seen = set()
+            self.new_id(doc["chapter"])
             for q in doc["quests"]:
-                if q["key"] in seen:
+                full = f"{doc['chapter']}/{q['key']}"
+                if full in self.quest_ids:
                     sys.exit(f"{f.name}: duplicate quest key {q['key']}")
-                seen.add(q["key"])
-                self.quest_ids[f"{doc['chapter']}/{q['key']}"] = self.new_id("quest", doc["chapter"], q["key"])
+                self.quest_ids[full] = self.new_id(full)
             docs.append(doc)
+        docs.sort(key=lambda d: (list(groups).index(d["group"]), d.get("order", 0), d["chapter"]))
 
         if OUT.exists():
             shutil.rmtree(OUT)
         (OUT / "chapters").mkdir(parents=True)
         (OUT / "reward_tables").mkdir()
-        (OUT / "lang").mkdir()
+        if OLD_FTB and OLD_FTB.exists():  # the pack used FTB Quests until 1.0.0-beta.11
+            shutil.rmtree(OLD_FTB)
 
-        data = {"default_autoclaim_rewards": "disabled", "default_consume_items": False,
-                "default_quest_disable_jei": False, "default_quest_shape": "circle", "default_reward_team": False,
-                "detection_delay": 20, "disable_gui": False, "drop_loot_crates": False,
-                "emergency_items_cooldown": 300, "grid_scale": D(0.5), "icon": {"id": meta["icon"]},
-                "lock_message": "", "loot_crate_no_drop": {"boss": 0, "monster": 600, "passive": 4000},
-                "pause_game": False, "progression_mode": "flexible", "show_lock_icons": True, "version": 13}
-        (OUT / "data.snbt").write_text(snbt(data) + "\n")
-        self.put("file", "file.0000000000000001.title", meta["title"])
-        (OUT / "chapter_groups.snbt").write_text(snbt({"chapter_groups": [{"id": groups[g["key"]]}
-                                                                          for g in meta["groups"]]}) + "\n")
-        for g in meta["groups"]:
-            self.put("chapter_group", f"chapter_group.{groups[g['key']]}.title", g["title"])
+        def write(path, data):
+            path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")
 
-        self.cur_lang = "reward_table"
         for order, (key, t) in enumerate(tables_src.items()):
             tid = self.tables[key]
-            rewards = []
+            entries = []
             for n, r in enumerate(t["rewards"]):
-                e = {"id": self.new_id("table", key, n), "item": item_stack(r["item"])}
-                if r.get("count", 1) != 1:
-                    e["count"] = r["count"]
-                if r.get("weight") is not None:
-                    e["weight"] = F(r["weight"])
-                rewards.append(e)
-                self.refs.append((f"table {key}", "item", r["item"] if isinstance(r["item"], str) else r["item"]["id"]))
-            table = {"id": tid, "loot_size": t.get("loot_size", 1), "order_index": order, "rewards": rewards}
+                e = {"id": self.new_id(f"{tid}/{n}"), "type": "item", "item": item_value(r["item"])}
+                count = item_count(r["item"], r.get("count"))
+                if count != 1:
+                    e["count"] = count
+                e["weight"] = number(r.get("weight", 1))
+                entries.append(e)
+                self.refs.append((f"table {key}", "item", item_id(r["item"])))
+            table = {"id": tid, "title": self.text(tid, t["title"])}
             if t.get("icon"):
-                table["icon"] = {"id": t["icon"]}
-            (OUT / "reward_tables" / f"{key}.snbt").write_text(snbt(table) + "\n")
-            self.put("reward_table", f"reward_table.{tid}.title", t["title"])
+                table["icon"] = t["icon"]
+            if t.get("loot_size", 1) != 1:
+                table["rolls"] = t["loot_size"]
+            table["entries"] = entries
+            write(OUT / "reward_tables" / f"{tid.replace('/', '~')}.json", table)
 
         n_quests = 0
+        chapters = []
         for doc in docs:
             name, chapter = self.chapter(doc, groups)
-            (OUT / "chapters" / f"{name}.snbt").write_text(snbt(chapter) + "\n")
+            chapters.append((name, chapter))
             n_quests += len(chapter["quests"])
+        # Narration hooks, now that every voiced line and unlock is known.
+        hooked = {v["quest"] for v in self.voice} | {d for u in self.unlocks for d in u["deps"]}
+        for name, chapter in chapters:
+            for q in chapter["quests"]:
+                if q["id"] in hooked:
+                    q["completion_command"] = NARRATION_COMMAND
+            write(OUT / "chapters" / f"{name}.json", chapter)
 
-        # FTB Quests 2101.1.37 reads only lang/<locale>.snbt files (it skips the lang/<locale>/ folders later
-        # versions write), so every chapter's strings go into one file.
-        merged = {}
-        for entries in self.lang.values():
-            merged.update(entries)
-        (OUT / "lang" / "en_us.snbt").write_text(snbt(dict(sorted(merged.items()))) + "\n")
+        book = {"title": self.text("book", meta["title"]), "icon": meta["icon"],
+                "lock_message": "&7Finish the quests that lead here first.",
+                "progression_mode": "flexible", "default_quest_shape": "circle", "detection_delay": 20,
+                "emergency_items_cooldown": 300, "loot_crate_drops": False,
+                "groups": [{"id": groups[g["key"]], "title": self.text(g["key"], g["title"])} for g in meta["groups"]],
+                "chapter_order": [name for name, _ in chapters]}
+        write(OUT / "book.json", book)
         self.write_voice()
         return len(docs), n_quests, len(self.tables)
 
@@ -501,11 +540,12 @@ def check(refs):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true")
-    ap.add_argument("--out", help="write somewhere else (e.g. a scratch dir) instead of pack/config/ftbquests/quests")
+    ap.add_argument("--out", help="write somewhere else (e.g. a scratch dir) instead of pack/config/corerpg_quests/book")
     args = ap.parse_args()
     if args.out:
-        global OUT
+        global OUT, OLD_FTB
         OUT = Path(args.out)
+        OLD_FTB = None
     c = Compiler()
     chapters, quests, tables = c.run()
     print(f"{chapters} chapters, {quests} quests, {tables} reward tables -> {OUT}")

@@ -1,0 +1,82 @@
+{
+  "id": "tables/h_garden_seed_satchel",
+  "title": "A Satchel of Far Seeds",
+  "icon": "sprout_and_soil:coffee_beans",
+  "entries": [
+    {
+      "id": "tables/h_garden_seed_satchel/0",
+      "type": "item",
+      "item": "sprout_and_soil:coffee_beans",
+      "count": 4,
+      "weight": 2
+    },
+    {
+      "id": "tables/h_garden_seed_satchel/1",
+      "type": "item",
+      "item": "sprout_and_soil:tea_seeds",
+      "count": 4,
+      "weight": 2
+    },
+    {
+      "id": "tables/h_garden_seed_satchel/2",
+      "type": "item",
+      "item": "sprout_and_soil:peppercorns",
+      "count": 4,
+      "weight": 2
+    },
+    {
+      "id": "tables/h_garden_seed_satchel/3",
+      "type": "item",
+      "item": "sprout_and_soil:ginger",
+      "count": 4,
+      "weight": 2
+    },
+    {
+      "id": "tables/h_garden_seed_satchel/4",
+      "type": "item",
+      "item": "sprout_and_soil:grape_seeds",
+      "count": 4,
+      "weight": 2
+    },
+    {
+      "id": "tables/h_garden_seed_satchel/5",
+      "type": "item",
+      "item": "sprout_and_soil:cotton_seeds",
+      "count": 4,
+      "weight": 2
+    },
+    {
+      "id": "tables/h_garden_seed_satchel/6",
+      "type": "item",
+      "item": "sprout_and_soil:mint_seeds",
+      "count": 4,
+      "weight": 2
+    },
+    {
+      "id": "tables/h_garden_seed_satchel/7",
+      "type": "item",
+      "item": "sprout_and_soil:basil_seeds",
+      "count": 4,
+      "weight": 2
+    },
+    {
+      "id": "tables/h_garden_seed_satchel/8",
+      "type": "item",
+      "item": "sprout_and_soil:pineapple_seeds",
+      "count": 2,
+      "weight": 1
+    },
+    {
+      "id": "tables/h_garden_seed_satchel/9",
+      "type": "item",
+      "item": "sprout_and_soil:orange_sapling",
+      "weight": 1
+    },
+    {
+      "id": "tables/h_garden_seed_satchel/10",
+      "type": "item",
+      "item": "sprout_and_soil:olive_sapling",
+      "weight": 1
+    }
+  ]
+}

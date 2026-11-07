@@ -25,6 +25,8 @@ key_key.tbos.memory_2:key.keyboard.o
 key_key.tbos.memory_3:key.keyboard.grave.accent
 key_key.tbos.memory_loadout:key.keyboard.semicolon
 key_key.tbos.toggle_objectives:key.keyboard.j
+key_key.corerpg_quests.open_book:key.keyboard.j:CONTROL
+key_key.corerpg_quests.vein_mine:key.keyboard.grave.accent
 key_key.reconstructedwands.wheel:key.keyboard.unknown
 key_key.reconstructedwands.screen:key.keyboard.unknown
 resourcePacks:["vanilla","mod_resources","file/Ashen_16x.zip","file/FreshAnimations_v1.11.1_1.20+.zip"]

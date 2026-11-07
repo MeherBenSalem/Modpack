@@ -8,11 +8,11 @@ Everything that died in the dark came back wrong. You wake in a crypt with nothi
 
 **Remnants | The Modpack** is NightBeam Studio's story-driven **soulslike RPG** modpack for Minecraft 1.21.1 on NeoForge.
 It opens in **the Threshold**, a starting area with a boss of its own, then sends you into a world under a black sun to
-relight it one **Ember Shrine** and one **Sovereign** at a time. The story runs through **660 quests**, the dead rise
+relight it one **Ember Shrine** and one **Sovereign** at a time. The story runs through **667 quests**, the dead rise
 ranked and named, and when you die an **Echo** of you guards your runes where you fell.
 
 **Season 1, "The Long Eclipse"** builds NightBeam's own mods (Runeborn, RPG Mobs, the Eclipsed Realm, RPG Stats,
-Skills and Powers, Fellowship and more) into one rule set, with 170 mods in all.
+Skills and Powers, Fellowship and more) into one rule set, with 166 mods in all.
 
 [![Watch the trailer](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/marketing/images/trailer.png)](https://youtu.be/U_x7PBLXGaM)
 
@@ -40,7 +40,7 @@ Skills and Powers, Fellowship and more) into one rule set, with 170 mods in all.
 
 ![The Story](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/marketing/images/header-story.png)
 
-![Told in 660 quests](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/marketing/images/card-story.png)
+![Told in 667 quests](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/marketing/images/card-story.png)
 
 Seven rulers broke the sun to share its light. The Eighth drank what was left and became the **Hollow Sovereign**.
 Since then nothing that dies stays dead. The Keeper of Last Light gives you a spark; the rest is up to you.
@@ -154,7 +154,7 @@ Every system has one owner, and the overlapping ones are switched off, so every 
 4. **Servers:** download the server pack, unzip it and run `start.sh` (Linux/macOS) or `start.bat` (Windows): it
    installs NeoForge when it starts (Java 21). `SERVER.md` inside covers RAM, ports and pregeneration with Chunky.
 
-**Credits.** Built by NightBeam Studio on the work of 170 mods and their authors: thank you. Special thanks to
+**Credits.** Built by NightBeam Studio on the work of 166 mods and their authors: thank you. Special thanks to
 [Subtle Effects](https://www.curseforge.com/minecraft/mc-mods/subtle-effects),
 [Ashen 16x](https://www.curseforge.com/minecraft/texture-packs/ashen-16x),
 [Fresh Animations](https://www.curseforge.com/minecraft/texture-packs/fresh-animations),

@@ -6,6 +6,7 @@ a banner, a divider, a header and a card per section, bullet lists and a couple 
 | File | Size | What it is |
 |---|---|---|
 | `CURSEFORGE.md` | | The page text (CurseForge's Markdown editor). Images load from this repo's `main` branch on raw.githubusercontent.com |
+| `MODRINTH.md` | | The same page for Modrinth: Modrinth install steps, Modrinth credit links, and the AI-use disclosure Modrinth requires |
 | `images/banner.png` | 1800×600 | Title, tagline and chips over the eclipse at sunset |
 | `images/divider.png` | 1400×40 | Gold rule with a diamond (transparent) |
 | `images/header-*.png` | 1400×120 | Section headers: threshold, story, bosses, systems, world, install (transparent edges) |

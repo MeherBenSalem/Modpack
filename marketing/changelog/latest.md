@@ -61,7 +61,7 @@
 
 - **The Gingerbread House is now a whole winter's worth of the Coven's baking** (The Gingerbread House 2.0.0): the
   house is rebuilt from gingerbread, icing and candy blocks and turns up more often, and snowy lands gain decorated
-  trees, presents, reindeer, gingerbread men and Krampus. *The Wayfarer*'s Gingerbread House quest is unchanged.
+  trees, presents, reindeer, gingerbread men and Krampus. *The Wayfarer*'s Gingerbread House quest still finds the house, and now pays a Poppet (Ysolde's offering).
   New things only appear in land you have not explored yet.
 
 ### Updated

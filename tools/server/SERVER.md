@@ -31,7 +31,7 @@ equal to -Xmx) and server settings in `server.properties`.
   aren't kicked as flying) and `max-tick-time=180000` (heavy structure worldgen can't trip the 60 s watchdog; a truly
   hung server still stops after 3 minutes).
 - `user_jvm_args.txt`: G1 with Aikar's flags for short, steady GC pauses.
-- Performance mods already included: ModernFix, FerriteCore, Lithium, AllTheLeaks, Clumps, Packet Fixer and spark.
+- Performance mods already included: ModernFix, FerriteCore, Lithium, Clumps, Packet Fixer and spark.
 
 ## Pregenerate the world with Chunky (recommended)
 

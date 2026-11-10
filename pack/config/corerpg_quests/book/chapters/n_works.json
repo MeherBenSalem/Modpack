@@ -1,0 +1,1060 @@
+{
+  "id": "n_works",
+  "title": "&6The Ashen Works",
+  "icon": "core_utilities:combustion_generator",
+  "group": "groups/chronicles",
+  "subtitle": [
+    "Lightning in boxes, built by engineers who outlived their sun. Core Utilities."
+  ],
+  "quests": [
+    {
+      "id": "n_works/start",
+      "title": "&6The Ashen Works",
+      "subtitle": "The Smith kept one book that isn't about swords.",
+      "icon": "core_utilities:guide_book",
+      "x": 0,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "s1_act1_embers/dusk_rider"
+      ],
+      "description": [
+        "&o\"Before the Eclipse there were people who made fire you couldn't see. Lightning in a box, they called it. I called them show-offs. Then the sun went out, the boxes went cold, and I'm the last one left who can read their drawings.\"&r &7— the Smith Under Ash&r",
+        "",
+        "The &6Ashen Works&r were the old world's engineering halls: generators, cables, crushers, a drill that reached the floor of the world. The Clockwork Path turns water into motion; the Works turn fire, lava and what light is left into &6Forge Energy&r (FE).",
+        "",
+        "&7Craft the &6Core Utilities Manual&7 (a book and a copper ingot). It explains every block; JEI shows every machine recipe."
+      ],
+      "tasks": [
+        {
+          "id": "n_works/start/task0",
+          "type": "item",
+          "item": "core_utilities:guide_book"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_works/start/reward0",
+          "type": "item",
+          "item": "minecraft:copper_ingot",
+          "count": 8
+        },
+        {
+          "id": "n_works/start/reward1",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "n_works/frame",
+      "title": "Bones of a Machine",
+      "subtitle": "Iron outside, copper at the heart.",
+      "icon": "core_utilities:basic_machine_frame",
+      "x": 2,
+      "y": 0,
+      "dependencies": [
+        "n_works/start"
+      ],
+      "description": [
+        "Every machine in the Works starts as a &6Basic Machine Frame&r (eight iron around a copper ingot makes two) and thinks with a &6Basic Circuit&r (two copper, an iron and two redstone makes two).",
+        "",
+        "&7Make two frames and two circuits. You will want many more."
+      ],
+      "tasks": [
+        {
+          "id": "n_works/frame/task0",
+          "type": "item",
+          "item": "core_utilities:basic_machine_frame",
+          "count": 2
+        },
+        {
+          "id": "n_works/frame/task1",
+          "type": "item",
+          "item": "core_utilities:basic_circuit",
+          "count": 2
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_works/frame/reward0",
+          "type": "item",
+          "item": "minecraft:redstone",
+          "count": 16
+        },
+        {
+          "id": "n_works/frame/reward1",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "n_works/wrench",
+      "title": "Read the Lightning",
+      "subtitle": "A key for every face, and a needle that counts.",
+      "icon": "core_utilities:configuration_wrench",
+      "x": 2,
+      "y": -2,
+      "dependencies": [
+        "n_works/frame"
+      ],
+      "description": [
+        "The &6Configuration Wrench&r (two iron) rotates machines and turns cable and pipe faces on and off; Sneak + right-click takes any Works block apart without losing it. The &6Multimeter&r reads how much energy a block holds, or how many conduits a cable network has and how much it can carry.",
+        "",
+        "Every machine's screen has a &6Sides&r panel: click a face to make it an input, an output, both or nothing. A comparator beside a machine reads its charge.",
+        "",
+        "&7Make a wrench and a multimeter."
+      ],
+      "tasks": [
+        {
+          "id": "n_works/wrench/task0",
+          "type": "item",
+          "item": "core_utilities:configuration_wrench"
+        },
+        {
+          "id": "n_works/wrench/task1",
+          "type": "item",
+          "item": "core_utilities:multimeter"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_works/wrench/reward0",
+          "type": "item",
+          "item": "minecraft:coal",
+          "count": 16
+        },
+        {
+          "id": "n_works/wrench/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "n_works/power",
+      "title": "&6Fire Into Lightning",
+      "subtitle": "Coal goes in. Something better comes out.",
+      "icon": "core_utilities:combustion_generator",
+      "x": 4,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "n_works/frame"
+      ],
+      "description": [
+        "A &6Combustion Generator&r burns any furnace fuel for &640 FE/t&r: a lump of coal is 64,000 FE, a lava bucket 800,000 (the empty bucket stays in the slot). It only takes new fuel when its buffer has room, so nothing burns for nothing.",
+        "",
+        "Generators push their power into anything touching them that takes it. Machines take it on every face.",
+        "",
+        "&7Build a Combustion Generator: five iron, a furnace, a machine frame and two circuits."
+      ],
+      "tasks": [
+        {
+          "id": "n_works/power/task0",
+          "type": "item",
+          "item": "core_utilities:combustion_generator"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_works/power/reward0",
+          "type": "item",
+          "item": "minecraft:coal",
+          "count": 32
+        },
+        {
+          "id": "n_works/power/reward1",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "n_works/solar",
+      "title": "What Light Is Left",
+      "subtitle": "An eaten sun still leaks.",
+      "icon": "core_utilities:solar_panel",
+      "x": 4,
+      "y": -2,
+      "dependencies": [
+        "n_works/power"
+      ],
+      "description": [
+        "A &6Solar Panel&r drinks whatever grey daylight still reaches the ground: &620 FE/t&r on a clear day, half in rain, a quarter in a storm, nothing at night. It needs open sky above it and pushes its power down and sideways, so set a cable or a machine underneath.",
+        "",
+        "&o\"Funny thing to build under a black sun. The engineers built them anyway. Optimists, the lot of them.\"&r &7— the Smith Under Ash&r",
+        "",
+        "&7Build a Solar Panel: amethyst, a comparator, a repeater, lapis and redstone around a frame."
+      ],
+      "tasks": [
+        {
+          "id": "n_works/solar/task0",
+          "type": "item",
+          "item": "core_utilities:solar_panel"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_works/solar/reward0",
+          "type": "item",
+          "item": "minecraft:amethyst_shard",
+          "count": 8
+        },
+        {
+          "id": "n_works/solar/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "n_works/solar_advanced",
+      "title": "Gilded Panels",
+      "subtitle": "Four times the light from the same grey sky.",
+      "icon": "core_utilities:solar_panel_tier_21",
+      "x": 6,
+      "y": -2,
+      "dependencies": [
+        "n_works/solar"
+      ],
+      "optional": true,
+      "description": [
+        "Wrap a Solar Panel in four gold ingots, three amethyst shards and a block of redstone: an &6Advanced Solar Panel&r makes &680 FE/t&r in full daylight.",
+        "",
+        "&7Build an Advanced Solar Panel."
+      ],
+      "tasks": [
+        {
+          "id": "n_works/solar_advanced/task0",
+          "type": "item",
+          "item": "core_utilities:solar_panel_tier_21"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_works/solar_advanced/reward0",
+          "type": "item",
+          "item": "minecraft:redstone_block",
+          "count": 2
+        },
+        {
+          "id": "n_works/solar_advanced/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "n_works/solar_elite",
+      "title": "Diamond Glass",
+      "subtitle": "The engineers' second-best idea.",
+      "icon": "core_utilities:solar_panel_tier_31",
+      "x": 8,
+      "y": -2,
+      "dependencies": [
+        "n_works/solar_advanced",
+        "s1_forge/moonsilver"
+      ],
+      "optional": true,
+      "description": [
+        "Four diamonds, amethyst and a block of redstone around an Advanced panel make an &6Elite Solar Panel&r: &6320 FE/t&r. The Smith only drew this one out for you once you had cooled Moonsilver. He says diamonds are for people who know what they're worth.",
+        "",
+        "&7Build an Elite Solar Panel."
+      ],
+      "tasks": [
+        {
+          "id": "n_works/solar_elite/task0",
+          "type": "item",
+          "item": "core_utilities:solar_panel_tier_31"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_works/solar_elite/reward0",
+          "type": "random",
+          "table": "tables/n_works_crate"
+        },
+        {
+          "id": "n_works/solar_elite/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "n_works/solar_ultimate",
+      "title": "The Ultimate Panel",
+      "subtitle": "Four ingots of a dead king's metal, spent on daylight.",
+      "icon": "core_utilities:solar_panel_tier_41",
+      "x": 10,
+      "y": -2,
+      "dependencies": [
+        "n_works/solar_elite",
+        "s1_act4_ash/netherite"
+      ],
+      "optional": true,
+      "description": [
+        "Four &5netherite ingots&r around an Elite panel: the &6Ultimate Solar Panel&r makes &61,280 FE/t&r, more than thirty combustion generators, and never asks for coal.",
+        "",
+        "&o\"Netherite on a roof. Morgrath would weep. Build two.\"&r &7— the Smith Under Ash&r",
+        "",
+        "&7Build an Ultimate Solar Panel."
+      ],
+      "tasks": [
+        {
+          "id": "n_works/solar_ultimate/task0",
+          "type": "item",
+          "item": "core_utilities:solar_panel_tier_41"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_works/solar_ultimate/reward0",
+          "type": "random",
+          "table": "tables/n_works_crate"
+        },
+        {
+          "id": "n_works/solar_ultimate/reward1",
+          "type": "random",
+          "table": "tables/n_works_crate"
+        },
+        {
+          "id": "n_works/solar_ultimate/reward2",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "n_works/geothermal",
+      "title": "Lava Never Sleeps",
+      "subtitle": "The world's own furnace, free of charge.",
+      "icon": "core_utilities:geothermal_generator",
+      "x": 4,
+      "y": 2,
+      "dependencies": [
+        "n_works/power",
+        "s1_forge/duskforged"
+      ],
+      "optional": true,
+      "description": [
+        "A &6Geothermal Generator&r makes &615 FE/t&r for every lava source block touching one of its faces, up to 90 FE/t with lava on all six. The lava is never used up. In the Ashlands a lava lake is a power plant Morgrath already paid for.",
+        "",
+        "Its four &6obsidian&r want a diamond pickaxe, and in this pack a diamond pickaxe wants a Duskforged Ingot.",
+        "",
+        "&7Build a Geothermal Generator: obsidian, glass, a bucket, a frame and two circuits."
+      ],
+      "tasks": [
+        {
+          "id": "n_works/geothermal/task0",
+          "type": "item",
+          "item": "core_utilities:geothermal_generator"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_works/geothermal/reward0",
+          "type": "item",
+          "item": "minecraft:obsidian",
+          "count": 4
+        },
+        {
+          "id": "n_works/geothermal/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "n_works/grid",
+      "title": "Copper Veins",
+      "subtitle": "Power that waits for you.",
+      "icon": "core_utilities:energy_cell_basic",
+      "x": 6,
+      "y": 0,
+      "dependencies": [
+        "n_works/power"
+      ],
+      "description": [
+        "&6Basic Energy Cables&r (three copper and six blue dye make eight) carry up to &6512 FE/t&r per network and hold nothing themselves. Different tiers never connect. Wrench a face to cut a connection.",
+        "",
+        "A &6Basic Energy Cell&r stores 1M FE and moves 2k FE/t: every face takes energy in, the front pushes it out. It keeps its charge when you break it, so the furnaces keep working through the night.",
+        "",
+        "&7Run sixteen cables and build a Basic Energy Cell."
+      ],
+      "tasks": [
+        {
+          "id": "n_works/grid/task0",
+          "type": "item",
+          "item": "core_utilities:cable",
+          "count": 16
+        },
+        {
+          "id": "n_works/grid/task1",
+          "type": "item",
+          "item": "core_utilities:energy_cell_basic"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_works/grid/reward0",
+          "type": "item",
+          "item": "minecraft:blue_dye",
+          "count": 8
+        },
+        {
+          "id": "n_works/grid/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "n_works/processing",
+      "title": "&6Ore Twice Over",
+      "subtitle": "Two dusts from every ore.",
+      "icon": "core_utilities:crusher",
+      "x": 8,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "n_works/grid"
+      ],
+      "description": [
+        "The &6Crusher&r (24 FE/t) turns an ore block into two dusts (copper ore into six) and raw ore into one dust with a 50% chance of a second. The &6Electric Furnace&r (16 FE/t) smelts any furnace recipe twice as fast as a furnace. Together they double what the mines give you.",
+        "",
+        "The crusher grinds more than ore: coal into &6Coal Dust&r, cobblestone into gravel, gravel into sand, a bone into six bone meal, a blaze rod into four powder.",
+        "",
+        "&7Build a Crusher and an Electric Furnace."
+      ],
+      "tasks": [
+        {
+          "id": "n_works/processing/task0",
+          "type": "item",
+          "item": "core_utilities:crusher"
+        },
+        {
+          "id": "n_works/processing/task1",
+          "type": "item",
+          "item": "core_utilities:electric_furnace"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_works/processing/reward0",
+          "type": "item",
+          "item": "minecraft:raw_iron",
+          "count": 16
+        },
+        {
+          "id": "n_works/processing/reward1",
+          "type": "xp",
+          "xp": 120
+        }
+      ]
+    },
+    {
+      "id": "n_works/alloys",
+      "title": "The Alloy Smelter",
+      "subtitle": "Two things in, one better thing out.",
+      "icon": "core_utilities:alloy_smelter",
+      "x": 10,
+      "y": 0,
+      "dependencies": [
+        "n_works/processing"
+      ],
+      "description": [
+        "The &6Alloy Smelter&r (32 FE/t) takes two inputs. An iron ingot and two Coal Dust make &6Steel&r. A gold ingot and four redstone make an &6Energized Ingot&r. An Energized Ingot and an ender pearl make &6Ender Alloy&r. Four netherite scrap and four gold make netherite, if you ever find the scrap.",
+        "",
+        "&7Build an Alloy Smelter (iron, redstone, two blast furnaces, a frame and a circuit) and make four Steel Ingots."
+      ],
+      "tasks": [
+        {
+          "id": "n_works/alloys/task0",
+          "type": "item",
+          "item": "core_utilities:alloy_smelter"
+        },
+        {
+          "id": "n_works/alloys/task1",
+          "type": "item",
+          "item": "core_utilities:steel_ingot",
+          "count": 4
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_works/alloys/reward0",
+          "type": "item",
+          "item": "core_utilities:coal_dust",
+          "count": 16
+        },
+        {
+          "id": "n_works/alloys/reward1",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "n_works/compressor",
+      "title": "Pressed Thin",
+      "subtitle": "Steel skin for steel machines.",
+      "icon": "core_utilities:compressor",
+      "x": 12,
+      "y": 0,
+      "dependencies": [
+        "n_works/alloys"
+      ],
+      "description": [
+        "The &6Compressor&r (24 FE/t) presses ingots into plates: iron, copper, gold and steel. &6Steel Plates&r are the skin of every advanced machine. It also packs snow, ice and sand, and squeezes sixty-four Coal Dust into a diamond, which the engineers thought was very funny.",
+        "",
+        "&7Build a Compressor, then press eight Steel Plates and two Gold Plates."
+      ],
+      "tasks": [
+        {
+          "id": "n_works/compressor/task0",
+          "type": "item",
+          "item": "core_utilities:compressor"
+        },
+        {
+          "id": "n_works/compressor/task1",
+          "type": "item",
+          "item": "core_utilities:steel_plate",
+          "count": 8
+        },
+        {
+          "id": "n_works/compressor/task2",
+          "type": "item",
+          "item": "core_utilities:gold_plate",
+          "count": 2
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_works/compressor/reward0",
+          "type": "item",
+          "item": "core_utilities:steel_ingot",
+          "count": 4
+        },
+        {
+          "id": "n_works/compressor/reward1",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "n_works/advanced",
+      "title": "The Advanced Frame",
+      "subtitle": "Steel outside, energized thoughts inside.",
+      "icon": "core_utilities:advanced_machine_frame",
+      "x": 14,
+      "y": 0,
+      "dependencies": [
+        "n_works/compressor",
+        "s1_forge/duskforged"
+      ],
+      "description": [
+        "An &6Advanced Circuit&r is two basic circuits, two gold plates and an Energized Ingot. Seven steel plates and one of those around a basic frame make an &6Advanced Machine Frame&r: the body of the quarry and the grinder.",
+        "",
+        "Both of those machines cut with diamond, a pickaxe in one and a sword in the other, and in this pack diamond tools take a &6Duskforged Ingot&r. The Works' advanced tier waits for the Ember Forge's second.",
+        "",
+        "&7Make an Advanced Circuit and an Advanced Machine Frame."
+      ],
+      "tasks": [
+        {
+          "id": "n_works/advanced/task0",
+          "type": "item",
+          "item": "core_utilities:advanced_circuit"
+        },
+        {
+          "id": "n_works/advanced/task1",
+          "type": "item",
+          "item": "core_utilities:advanced_machine_frame"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_works/advanced/reward0",
+          "type": "random",
+          "table": "tables/n_works_crate"
+        },
+        {
+          "id": "n_works/advanced/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "n_works/grid_advanced",
+      "title": "Heavier Lines",
+      "subtitle": "Eight million FE in one box.",
+      "icon": "core_utilities:energy_cell_advanced",
+      "x": 14,
+      "y": -2,
+      "dependencies": [
+        "n_works/advanced"
+      ],
+      "description": [
+        "&6Advanced Energy Cables&r (eight basic cables around an Energized Ingot) carry &64,096 FE/t&r. An &6Advanced Energy Cell&r (steel plates, an Advanced Circuit and redstone blocks around a basic cell) stores 8M FE and moves 16k FE/t.",
+        "",
+        "&7Make eight Advanced Energy Cables and an Advanced Energy Cell."
+      ],
+      "tasks": [
+        {
+          "id": "n_works/grid_advanced/task0",
+          "type": "item",
+          "item": "core_utilities:cable_advanced",
+          "count": 8
+        },
+        {
+          "id": "n_works/grid_advanced/task1",
+          "type": "item",
+          "item": "core_utilities:energy_cell_advanced"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_works/grid_advanced/reward0",
+          "type": "item",
+          "item": "minecraft:redstone_block",
+          "count": 4
+        },
+        {
+          "id": "n_works/grid_advanced/reward1",
+          "type": "xp",
+          "xp": 120
+        }
+      ]
+    },
+    {
+      "id": "n_works/elite",
+      "title": "Ender Alloy",
+      "subtitle": "The drawings he kept back.",
+      "icon": "core_utilities:elite_circuit",
+      "x": 16.5,
+      "y": -2,
+      "dependencies": [
+        "n_works/grid_advanced",
+        "s1_forge/moonsilver"
+      ],
+      "description": [
+        "&o\"Anyone who can't make the Forge's third alloy has no business holding sixty-four million of anything.\"&r &7— the Smith Under Ash&r",
+        "",
+        "&6Ender Alloy&r comes out of the Alloy Smelter (an Energized Ingot and an ender pearl). Two diamonds, two Advanced Circuits and one Ender Alloy make an &6Elite Circuit&r, the brain of the Works' last tier.",
+        "",
+        "&7Make four Ender Alloy Ingots and an Elite Circuit."
+      ],
+      "tasks": [
+        {
+          "id": "n_works/elite/task0",
+          "type": "item",
+          "item": "core_utilities:ender_alloy_ingot",
+          "count": 4
+        },
+        {
+          "id": "n_works/elite/task1",
+          "type": "item",
+          "item": "core_utilities:elite_circuit"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_works/elite/reward0",
+          "type": "item",
+          "item": "minecraft:ender_pearl",
+          "count": 4
+        },
+        {
+          "id": "n_works/elite/reward1",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "n_works/quarry",
+      "title": "&6The Drill to the Floor of the World",
+      "subtitle": "Nine by nine, all the way down.",
+      "icon": "core_utilities:quarry",
+      "x": 16,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "n_works/advanced"
+      ],
+      "description": [
+        "The &6Quarry&r mines a 9x9 hole below itself, one layer at a time, down to bedrock: &6400 FE&r a block. It skips fluids, unbreakable blocks and anything holding an inventory, so the Deep's chests stay where they are. Give it an output face with a chest or a pipe, and turn on Auto-eject.",
+        "",
+        "&o\"The old crews ran these down past the Deep. Some of the crews came back.\"&r &7— the Smith Under Ash&r",
+        "",
+        "&7Build a Quarry: steel plates, an Advanced Circuit, two pistons, an Advanced Machine Frame and a diamond pickaxe."
+      ],
+      "tasks": [
+        {
+          "id": "n_works/quarry/task0",
+          "type": "item",
+          "item": "core_utilities:quarry"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_works/quarry/reward0",
+          "type": "random",
+          "table": "tables/n_works_crate"
+        },
+        {
+          "id": "n_works/quarry/reward1",
+          "type": "random",
+          "table": "tables/world_delver_cache"
+        },
+        {
+          "id": "n_works/quarry/reward2",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "n_works/upgrades",
+      "title": "Faster, Leaner, Wider",
+      "subtitle": "Eight upgrades a machine, no more.",
+      "icon": "core_utilities:range_upgrade",
+      "x": 16,
+      "y": 2,
+      "dependencies": [
+        "n_works/quarry"
+      ],
+      "optional": true,
+      "description": [
+        "Every machine has three upgrade slots that take up to eight upgrades in all.",
+        "",
+        "&6Speed&r (steel, redstone, a circuit): +50% speed, at more FE per tick. &6Energy&r (steel, glowstone, a circuit): 15% less energy per tick, or 10% more output in a generator. &6Range&r (steel, ender pearls, an Advanced Circuit): 2 more blocks of radius for the Quarry, the Crop Harvester and the Mob Grinder. Enough of them and the quarry digs 33x33.",
+        "",
+        "&7Make a Speed Upgrade and a Range Upgrade."
+      ],
+      "tasks": [
+        {
+          "id": "n_works/upgrades/task0",
+          "type": "item",
+          "item": "core_utilities:speed_upgrade"
+        },
+        {
+          "id": "n_works/upgrades/task1",
+          "type": "item",
+          "item": "core_utilities:range_upgrade"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_works/upgrades/reward0",
+          "type": "item",
+          "item": "minecraft:ender_pearl",
+          "count": 2
+        },
+        {
+          "id": "n_works/upgrades/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "n_works/harvester",
+      "title": "Fields That Reap Themselves",
+      "subtitle": "The Garden grows it. The Works can do the stooping.",
+      "icon": "core_utilities:crop_harvester",
+      "x": 7,
+      "y": 2,
+      "dependencies": [
+        "n_works/processing",
+        "h_garden/fields"
+      ],
+      "optional": true,
+      "description": [
+        "The Ash Garden's fields feed Last Light, and fields want stooping. The &6Crop Harvester&r watches a 9x9 patch on its own layer and the one above, cuts whatever is ripe and replants it from the drops: wheat, carrots, potatoes, beetroot, nether wart, cocoa, sweet berries, melons, pumpkins, sugar cane and cactus. Bone meal in its slot feeds the young ones.",
+        "",
+        "&7Build a Crop Harvester: an iron hoe, a water bucket, a frame and two circuits."
+      ],
+      "tasks": [
+        {
+          "id": "n_works/harvester/task0",
+          "type": "item",
+          "item": "core_utilities:crop_harvester"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_works/harvester/reward0",
+          "type": "random",
+          "table": "tables/hearth_garden"
+        },
+        {
+          "id": "n_works/harvester/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "n_works/breaker",
+      "title": "Hands of Iron",
+      "subtitle": "Break, place, repeat. Nobody gets tired.",
+      "icon": "core_utilities:block_breaker",
+      "x": 9,
+      "y": 2,
+      "dependencies": [
+        "n_works/processing"
+      ],
+      "optional": true,
+      "description": [
+        "The &6Block Breaker&r breaks whatever appears in front of it the moment it appears: cobblestone generators and tree farms build themselves around one. The &6Block Placer&r places blocks from its inventory in front of it. Both follow their redstone mode, so a clock can pulse them.",
+        "",
+        "&7Build a Block Breaker (an iron pickaxe) and a Block Placer (a dispenser)."
+      ],
+      "tasks": [
+        {
+          "id": "n_works/breaker/task0",
+          "type": "item",
+          "item": "core_utilities:block_breaker"
+        },
+        {
+          "id": "n_works/breaker/task1",
+          "type": "item",
+          "item": "core_utilities:block_placer"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_works/breaker/reward0",
+          "type": "item",
+          "item": "minecraft:iron_ingot",
+          "count": 6
+        },
+        {
+          "id": "n_works/breaker/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "n_works/grinder",
+      "title": "The Grinder",
+      "subtitle": "It never touches anything with a name.",
+      "icon": "core_utilities:mob_grinder",
+      "x": 14,
+      "y": 2,
+      "dependencies": [
+        "n_works/advanced"
+      ],
+      "description": [
+        "The &6Mob Grinder&r strikes every mob in an area in front of it and gathers up their drops: &6200 FE&r a hit. Range upgrades widen the area, speed upgrades swing it faster.",
+        "",
+        "It never touches players, named mobs or bosses. The worst things under the Eclipse are still your problem.",
+        "",
+        "&7Build a Mob Grinder: steel plates, a diamond sword, two Advanced Circuits and an Advanced Machine Frame."
+      ],
+      "tasks": [
+        {
+          "id": "n_works/grinder/task0",
+          "type": "item",
+          "item": "core_utilities:mob_grinder"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_works/grinder/reward0",
+          "type": "random",
+          "table": "tables/world_ember_spoils"
+        },
+        {
+          "id": "n_works/grinder/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "n_works/pipes",
+      "title": "Pipes in the Walls",
+      "subtitle": "Items that walk themselves.",
+      "icon": "core_utilities:item_pipe",
+      "x": 8,
+      "y": 4,
+      "dependencies": [
+        "n_works/processing"
+      ],
+      "description": [
+        "&6Item Pipes&r (two iron and a glass make four) move items between inventories: chests, furnaces and other mods' machines alike. Wrench the face of a pipe that touches an inventory to make it &6extract&r (an orange arrow): it pulls items out every few ticks and shares them round-robin with every other inventory on the network. Wrench it again to turn the face off.",
+        "",
+        "An Item Pipe moves 4 items every half second.",
+        "",
+        "&7Lay sixteen Item Pipes."
+      ],
+      "tasks": [
+        {
+          "id": "n_works/pipes/task0",
+          "type": "item",
+          "item": "core_utilities:item_pipe",
+          "count": 16
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_works/pipes/reward0",
+          "type": "item",
+          "item": "minecraft:glass",
+          "count": 16
+        },
+        {
+          "id": "n_works/pipes/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "n_works/vault_feed",
+      "title": "The Drill Feeds the Vault",
+      "subtitle": "Everything the drill brings up, filed away.",
+      "icon": "core_utilities:rapid_item_pipe",
+      "x": 19,
+      "y": 3,
+      "dependencies": [
+        "n_works/pipes",
+        "n_works/quarry",
+        "h_vaults/network_cells"
+      ],
+      "optional": true,
+      "description": [
+        "&6Rapid Item Pipes&r (eight pipes around an Energized Ingot) move 32 items every quarter second: enough to keep up with a quarry. Run them from the quarry into an OmniVault &6Network Port&r, which takes items for the whole network like one chest, and every block the drill brings up lands on the Vaults' storage cells instead of the floor.",
+        "",
+        "&7Lay eight Rapid Item Pipes and feed your quarry into the network."
+      ],
+      "tasks": [
+        {
+          "id": "n_works/vault_feed/task0",
+          "type": "item",
+          "item": "core_utilities:rapid_item_pipe",
+          "count": 8
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_works/vault_feed/reward0",
+          "type": "random",
+          "table": "tables/n_works_crate"
+        },
+        {
+          "id": "n_works/vault_feed/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "n_works/plates",
+      "title": "Older Tricks",
+      "subtitle": "Before the Works made lightning, they made doors.",
+      "icon": "core_utilities:vector_plate_tier_1",
+      "x": 0,
+      "y": 2,
+      "dependencies": [
+        "n_works/start"
+      ],
+      "optional": true,
+      "description": [
+        "The Works' first blocks need no power at all. A &6Pushing Plate&r (a blank plate and an activator rail; redstone makes it stronger, four tiers) launches whoever steps on it the way it faces, unless they sneak. &6Effect plates&r (a golden apple, a redstone torch and one more thing) heal, hasten, poison or wither whoever touches them.",
+        "",
+        "&6Filters&r only let one kind of thing through. A &6Player Filter&r lets Ashborn pass and stops everything else at Last Light's gate; the wrench inverts any filter. The &6Mob Net&r (string, an Eye of Ender and a stick) carries one mob wherever you want it, once you've been to the Ashlands for the blaze powder.",
+        "",
+        "&7Make a Pushing Plate and a Player Filter."
+      ],
+      "tasks": [
+        {
+          "id": "n_works/plates/task0",
+          "type": "item",
+          "item": "core_utilities:vector_plate_tier_1"
+        },
+        {
+          "id": "n_works/plates/task1",
+          "type": "item",
+          "item": "core_utilities:player_filter"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_works/plates/reward0",
+          "type": "item",
+          "item": "minecraft:golden_apple"
+        },
+        {
+          "id": "n_works/plates/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "n_works/finale",
+      "title": "&6The Works Relit",
+      "subtitle": "Sixty-four million FE in one box.",
+      "icon": "core_utilities:energy_cell_elite",
+      "x": 19,
+      "y": 0,
+      "shape": "gear",
+      "size": 2,
+      "dependencies": [
+        "n_works/quarry",
+        "n_works/elite"
+      ],
+      "description": [
+        "Four Ender Alloy, an Elite Circuit and redstone blocks around an Advanced cell: the &6Elite Energy Cell&r holds 64M FE and moves 128k FE/t. &6Elite Energy Cables&r (eight advanced around an Ender Alloy) carry 32,768 FE/t. The Works are lit again, and they are yours.",
+        "",
+        "&o\"The engineers would have hated you. They hated anyone faster.\"&r &7— the Smith Under Ash&r",
+        "",
+        "The manual's last page is a drawing nobody explained: a box falling out of the black sun, trailing fire. The Smith says the engineers were waiting for something to fall. Watch the night sky.",
+        "",
+        "&7Build an Elite Energy Cell and eight Elite Energy Cables."
+      ],
+      "tasks": [
+        {
+          "id": "n_works/finale/task0",
+          "type": "item",
+          "item": "core_utilities:energy_cell_elite"
+        },
+        {
+          "id": "n_works/finale/task1",
+          "type": "item",
+          "item": "core_utilities:cable_elite",
+          "count": 8
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_works/finale/reward0",
+          "type": "random",
+          "table": "tables/n_works_crate"
+        },
+        {
+          "id": "n_works/finale/reward1",
+          "type": "random",
+          "table": "tables/paths_smiths_crate"
+        },
+        {
+          "id": "n_works/finale/reward2",
+          "type": "xp",
+          "xp": 600
+        }
+      ]
+    }
+  ]
+}

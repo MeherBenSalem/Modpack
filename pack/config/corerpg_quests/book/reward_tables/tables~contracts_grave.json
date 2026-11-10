@@ -1,0 +1,66 @@
+{
+  "id": "tables/contracts_grave",
+  "title": "Grave Bounty",
+  "icon": "runeborn:radiant_rune",
+  "entries": [
+    {
+      "id": "tables/contracts_grave/0",
+      "type": "item",
+      "item": "remnant_mobs:remnant_shard",
+      "count": 16,
+      "weight": 3
+    },
+    {
+      "id": "tables/contracts_grave/1",
+      "type": "item",
+      "item": "runeborn:radiant_rune",
+      "count": 2,
+      "weight": 3
+    },
+    {
+      "id": "tables/contracts_grave/2",
+      "type": "item",
+      "item": "runeborn:heros_rune",
+      "weight": 0.5
+    },
+    {
+      "id": "tables/contracts_grave/3",
+      "type": "item",
+      "item": "runeborn:tempering_stone_5",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/contracts_grave/4",
+      "type": "item",
+      "item": "runeborn:tempering_stone_6",
+      "count": 2,
+      "weight": 1
+    },
+    {
+      "id": "tables/contracts_grave/5",
+      "type": "item",
+      "item": "runeborn:tempering_stone_7",
+      "weight": 0.5
+    },
+    {
+      "id": "tables/contracts_grave/6",
+      "type": "item",
+      "item": "mob_loot_bags:rarelootbag",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/contracts_grave/7",
+      "type": "item",
+      "item": "mob_loot_bags:epiclootbag",
+      "weight": 1
+    },
+    {
+      "id": "tables/contracts_grave/8",
+      "type": "item",
+      "item": "mob_loot_bags:legendarylootbag",
+      "weight": 0.3
+    }
+  ]
+}

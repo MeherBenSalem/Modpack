@@ -1,0 +1,56 @@
+{
+  "id": "tables/h_garden_larder",
+  "title": "The Long-Night Larder",
+  "icon": "sprout_and_soil:berry_jam",
+  "entries": [
+    {
+      "id": "tables/h_garden_larder/0",
+      "type": "item",
+      "item": "sprout_and_soil:berry_jam",
+      "count": 2,
+      "weight": 3
+    },
+    {
+      "id": "tables/h_garden_larder/1",
+      "type": "item",
+      "item": "sprout_and_soil:orange_marmalade",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/h_garden_larder/2",
+      "type": "item",
+      "item": "sprout_and_soil:pickles",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/h_garden_larder/3",
+      "type": "item",
+      "item": "sprout_and_soil:raisins",
+      "count": 8,
+      "weight": 2
+    },
+    {
+      "id": "tables/h_garden_larder/4",
+      "type": "item",
+      "item": "sprout_and_soil:trail_mix",
+      "count": 3,
+      "weight": 2
+    },
+    {
+      "id": "tables/h_garden_larder/5",
+      "type": "item",
+      "item": "sprout_and_soil:cafe_latte",
+      "count": 2,
+      "weight": 1
+    },
+    {
+      "id": "tables/h_garden_larder/6",
+      "type": "item",
+      "item": "sprout_and_soil:lemonade",
+      "count": 3,
+      "weight": 1
+    }
+  ]
+}

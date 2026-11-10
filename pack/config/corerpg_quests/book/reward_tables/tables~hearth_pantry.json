@@ -1,0 +1,63 @@
+{
+  "id": "tables/hearth_pantry",
+  "title": "Last Light Pantry",
+  "icon": "farmersdelight:cooking_pot",
+  "entries": [
+    {
+      "id": "tables/hearth_pantry/0",
+      "type": "item",
+      "item": "farmersdelight:beef_stew",
+      "count": 3,
+      "weight": 3
+    },
+    {
+      "id": "tables/hearth_pantry/1",
+      "type": "item",
+      "item": "farmersdelight:vegetable_soup",
+      "count": 3,
+      "weight": 3
+    },
+    {
+      "id": "tables/hearth_pantry/2",
+      "type": "item",
+      "item": "farmersdelight:fish_stew",
+      "count": 3,
+      "weight": 2
+    },
+    {
+      "id": "tables/hearth_pantry/3",
+      "type": "item",
+      "item": "farmersdelight:steak_and_potatoes",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/hearth_pantry/4",
+      "type": "item",
+      "item": "farmersdelight:shepherds_pie",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/hearth_pantry/5",
+      "type": "item",
+      "item": "farmersdelight:roast_chicken",
+      "count": 2,
+      "weight": 1
+    },
+    {
+      "id": "tables/hearth_pantry/6",
+      "type": "item",
+      "item": "farmersdelight:honey_glazed_ham",
+      "count": 2,
+      "weight": 1
+    },
+    {
+      "id": "tables/hearth_pantry/7",
+      "type": "item",
+      "item": "farmersdelight:hot_cocoa",
+      "count": 3,
+      "weight": 1
+    }
+  ]
+}

@@ -16,7 +16,8 @@ a world whose sun was eaten; relight it one Ember Shrine and one Sovereign at a 
 | `src/pack.json` | Pack name, version, Minecraft and NeoForge versions |
 | `pack/` | The built pack in [packwiz](https://packwiz.infra.link/) format: `pack.toml`, `index.toml`, `mods/*.pw.toml`, `config/`, `kubejs/`, `defaultconfigs/` |
 | `tools/build_pack.py` | Writes `pack/` from `src/mods.json`; `--export` builds the CurseForge zip, the Modrinth `.mrpack` and the self-contained server pack in `dist/` |
-| `tools/build_quests.py` | Compiles `src/quests/` into FTB Quests files under `pack/config/ftbquests/` |
+| `tools/build_quests.py` | Compiles `src/quests/` into the Core RPG - Quests Engine book under `pack/config/corerpg_quests/book/` |
+| `tools/dump_advancement_titles.py` | Indexes every advancement title from the mods' jars (`research/registry/advancement_titles.json`) so untitled advancement tasks show the advancement's name |
 | `src/stat_locks.yaml`, `tools/build_stat_locks.py` | RPG Stats gates: gear on attributes, ore level gates, level-up rewards (`config/ras/`) |
 | `tools/update_mods.py` | Moves every mod to its newest 1.21.1 NeoForge file on Modrinth and CurseForge (`--write`) |
 | `src/progression.yaml`, `tools/build_progression.py` | The Ember Forge: tiered alloys, seals and every recipe change (storage interlock, story locks), compiled to KubeJS and checked; `tools/dump_recipes.py` indexes the mods' recipes for it |
@@ -28,12 +29,13 @@ a world whose sun was eaten; relight it one Ember Shrine and one Sovereign at a 
 | `tools/build_threshold.py` | Writes the Threshold (the first-join starting area): dimension, build function, advancements, layout |
 | `tools/build_voice.py` | Masters the Keeper's narration (`src/voice/`) into `kubejs/assets/remnants/sounds/vo/` |
 | `tools/check_cf.py` | Checks every CurseForge project/file id against the live project before an export |
+| `tools/publish_cf.py`, `tools/publish_mr.py` | Upload a release to CurseForge (modpack zip + server pack) and Modrinth (`.mrpack`); run by the "Publish to CurseForge" and "Publish to Modrinth" workflows |
 
 ## Build
 
 ```bash
 python3 tools/dump_recipes.py && python3 tools/build_progression.py   # the Ember Forge -> kubejs
-python3 tools/build_quests.py --check   # quests -> pack/config/ftbquests
+python3 tools/build_quests.py --check   # quests -> pack/config/corerpg_quests/book
 python3 tools/build_pack.py --export    # pack/ + dist/*-curseforge.zip, dist/*.mrpack, dist/*-server.zip
 python3 tools/test_server.py            # boot the server pack (Java 21); --hold 900 keeps it up for a join
 python3 tools/test_client.py --server localhost:25599 --curseforge --xmx 5G   # headless client joins it

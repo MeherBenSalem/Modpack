@@ -157,7 +157,7 @@ quests:
       Each takes the template, and an amethyst block, for a reinforced version.
     tasks:
       - title: "Any greater golden axe, greater golden hammer or golden scythe"
-        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(better_with_gold:greater_golden_axe)ftbfiltersystem:item(better_with_gold:reinforced_greater_golden_axe)ftbfiltersystem:item(better_with_gold:greater_golden_hammer)ftbfiltersystem:item(better_with_gold:reinforced_greater_golden_hammer)ftbfiltersystem:item(better_with_gold:golden_scythe)ftbfiltersystem:item(better_with_gold:reinforced_golden_scythe))"}}
+        filter: "any(better_with_gold:greater_golden_axe, better_with_gold:reinforced_greater_golden_axe, better_with_gold:greater_golden_hammer, better_with_gold:reinforced_greater_golden_hammer, better_with_gold:golden_scythe, better_with_gold:reinforced_golden_scythe)"
     rewards: [{item: minecraft:gold_block, count: 1}, {xp: 80}]
 
   # ---- the band grows ----
@@ -300,7 +300,7 @@ quests:
       &7Make any reinforced greater weapon.&r
     tasks:
       - title: "A reinforced greater golden axe, greater golden hammer or golden scythe"
-        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(better_with_gold:reinforced_greater_golden_axe)ftbfiltersystem:item(better_with_gold:reinforced_greater_golden_hammer)ftbfiltersystem:item(better_with_gold:reinforced_golden_scythe))"}}
+        filter: "any(better_with_gold:reinforced_greater_golden_axe, better_with_gold:reinforced_greater_golden_hammer, better_with_gold:reinforced_golden_scythe)"
     rewards: [{item: minecraft:amethyst_block, count: 2}, {table: paths_company_purse}, {xp: 150}]
 
   # ---- the Company's due ----

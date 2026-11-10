@@ -1,0 +1,904 @@
+{
+  "id": "p_company",
+  "title": "&eThe Ashen Company",
+  "icon": "better_with_gold:warbanner",
+  "group": "groups/paths",
+  "subtitle": [
+    "Sellswords who survived by staying together. Gold up front."
+  ],
+  "quests": [
+    {
+      "id": "p_company/muster",
+      "title": "&eMuster",
+      "subtitle": "One is a bodyguard. Two is a warband.",
+      "icon": "better_with_gold:warbanner",
+      "x": 0,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "s1_act1_embers/sellsword"
+      ],
+      "description": [
+        "&o\"Gold up front. Graves are extra.\"&r &7— Maren, Captain of the Ashen Company&r",
+        "",
+        "A sellsword's price is paid in &6gold ingots&r, used on the sellsword itself: a handful at level 1, and a few more for every level of experience it brings with it. They loiter near village bells, waiting for someone solvent.",
+        "",
+        "Hire a second."
+      ],
+      "tasks": [
+        {
+          "id": "p_company/muster/task0",
+          "type": "checkmark",
+          "title": "Two sellswords march with me"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_company/muster/reward0",
+          "type": "item",
+          "item": "minecraft:gold_ingot",
+          "count": 8
+        },
+        {
+          "id": "p_company/muster/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "p_company/classes",
+      "title": "Five Trades",
+      "subtitle": "Somebody has to carry you home.",
+      "icon": "minecraft:shield",
+      "x": 2,
+      "y": -1.5,
+      "dependencies": [
+        "p_company/muster"
+      ],
+      "description": [
+        "Every sellsword has a trade. &6Bulwarks&r hold the line and &6Challenge&r foes onto themselves. &6Skirmishers&r &6Whirl&r through crowds. &6Rangers&r loose &6Volleys&r. &6Arcanists&r call an &6Arc Storm&r. &6Menders&r heal, and haul the fallen back to their feet.",
+        "",
+        "Each also has a trait (Steadfast, Brutal, Keen-eyed, Greedy…) and the epithet that came with it. Hire a Mender."
+      ],
+      "tasks": [
+        {
+          "id": "p_company/classes/task0",
+          "type": "checkmark",
+          "title": "A Mender marches with me"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_company/classes/reward0",
+          "type": "random",
+          "table": "tables/paths_company_purse"
+        },
+        {
+          "id": "p_company/classes/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "p_company/downed",
+      "title": "Downed, Not Dead",
+      "subtitle": "Thirty seconds is a long time to bleed.",
+      "icon": "minecraft:red_dye",
+      "x": 4,
+      "y": -1.5,
+      "dependencies": [
+        "p_company/classes"
+      ],
+      "description": [
+        "A sellsword that drops isn't dead yet. It's &cdowned&r, bleeding out for thirty seconds. Crouch beside it for three to pull it back up, or let your Mender do it.",
+        "",
+        "One that bleeds out limps back to camp after five minutes. On harsher worlds it doesn't come back at all, and its name goes into the &6Remembrance&r."
+      ],
+      "tasks": [
+        {
+          "id": "p_company/downed/task0",
+          "type": "checkmark",
+          "title": "I pulled a downed sellsword back to its feet"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_company/downed/reward0",
+          "type": "item",
+          "item": "minecraft:golden_apple"
+        },
+        {
+          "id": "p_company/downed/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "p_company/wheel",
+      "title": "The Command Wheel",
+      "subtitle": "They listen. Mostly.",
+      "icon": "minecraft:compass",
+      "x": 2,
+      "y": 0,
+      "dependencies": [
+        "p_company/muster"
+      ],
+      "description": [
+        "Hold &eG&r for the &6command wheel&r: &aFollow&r, &cCharge&r, &6Focus&r your target, &eHold&r here, &7Fall back&r, &6Guard banner&r, &6Formation&r and &6Recall&r.",
+        "",
+        "They follow you through doors, dimensions and the odd logout. If one gets lost anyway, &6Recall&r brings it back."
+      ],
+      "tasks": [
+        {
+          "id": "p_company/wheel/task0",
+          "type": "checkmark",
+          "title": "I gave an order from the wheel (G)"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_company/wheel/reward0",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "p_company/warbanner",
+      "title": "Plant the Banner",
+      "subtitle": "A place to stand.",
+      "icon": "better_with_gold:warbanner",
+      "x": 4,
+      "y": 0,
+      "dependencies": [
+        "p_company/wheel"
+      ],
+      "description": [
+        "A &6Warbanner&r is gold around a black banner, on a stick, or twenty gold from Maren. Use it on the ground to plant it, and your warband guards it in formation. Use it in the air to lift it, and they follow you again.",
+        "",
+        "Formations: &6Line&r, &6Wedge&r, &6Shield Wall&r and &6Circle&r, around you or around the banner."
+      ],
+      "tasks": [
+        {
+          "id": "p_company/warbanner/task0",
+          "type": "item",
+          "item": "better_with_gold:warbanner"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_company/warbanner/reward0",
+          "type": "random",
+          "table": "tables/paths_company_purse"
+        },
+        {
+          "id": "p_company/warbanner/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "p_company/chronicle",
+      "title": "The Chronicle",
+      "subtitle": "Two ledgers. One for gold, one for names.",
+      "icon": "minecraft:writable_book",
+      "x": 4,
+      "y": 1.5,
+      "dependencies": [
+        "p_company/wheel"
+      ],
+      "description": [
+        "Press &eU&r for the &6roster&r. Every sellsword has a portrait, a level, a title and a &6Chronicle&r written from what it actually did: the oath it swore, the kill that blooded it, the time it saved you.",
+        "",
+        "&o\"The Company keeps two ledgers. One for gold, one for names. The second one's longer.\"&r"
+      ],
+      "tasks": [
+        {
+          "id": "p_company/chronicle/task0",
+          "type": "checkmark",
+          "title": "I read a sellsword's Chronicle (U)"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_company/chronicle/reward0",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "p_company/blooded",
+      "title": "Blooded",
+      "subtitle": "Veteran, Champion, Hero, Legend.",
+      "icon": "minecraft:iron_sword",
+      "x": 6,
+      "y": 1.5,
+      "dependencies": [
+        "p_company/chronicle"
+      ],
+      "description": [
+        "Sellswords level as they fight, up to 20, and never past your own RPG level. Along the way they earn titles: &aVeteran&r, &9Champion&r, &5Hero&r, &6Legend&r.",
+        "",
+        "Keep one alive long enough to earn the first. Harder than it sounds. Easier than the last."
+      ],
+      "tasks": [
+        {
+          "id": "p_company/blooded/task0",
+          "type": "checkmark",
+          "title": "One of my sellswords earned a title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_company/blooded/reward0",
+          "type": "item",
+          "item": "better_with_gold:golden_fish",
+          "count": 2
+        },
+        {
+          "id": "p_company/blooded/reward1",
+          "type": "random",
+          "table": "tables/paths_company_purse"
+        },
+        {
+          "id": "p_company/blooded/reward2",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "p_company/golden_fish",
+      "title": "The Golden Fish",
+      "subtitle": "Expensive. So are funerals.",
+      "icon": "better_with_gold:golden_fish",
+      "x": 2,
+      "y": -3,
+      "dependencies": [
+        "p_company/muster"
+      ],
+      "description": [
+        "Feed a &6Golden Fish&r to a sellsword: full health and +30 &6morale&r. It's eight gold ingots around a cooked cod. Expensive. So are funerals.",
+        "",
+        "Morale rises and falls with the fight. A band that's winning fights like it."
+      ],
+      "tasks": [
+        {
+          "id": "p_company/golden_fish/task0",
+          "type": "item",
+          "item": "better_with_gold:golden_fish",
+          "count": 3
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_company/golden_fish/reward0",
+          "type": "item",
+          "item": "minecraft:cod",
+          "count": 4
+        },
+        {
+          "id": "p_company/golden_fish/reward1",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "p_company/template",
+      "title": "Gilded Regalia",
+      "subtitle": "Gold is soft. Reinforced gold only looks it.",
+      "icon": "better_with_gold:upgrade_template",
+      "x": 2,
+      "y": 3,
+      "dependencies": [
+        "p_company/muster"
+      ],
+      "description": [
+        "The Company's old smiths still work gold. An &6Upgrade Template&r (gold ingots around obsidian and an amethyst shard), a golden piece and an &6amethyst block&r make &6Reinforced Golden&r gear at a smithing table.",
+        "",
+        "&o\"Everyone in the Company was paid in gold once. The clever ones wore it.\"&r"
+      ],
+      "tasks": [
+        {
+          "id": "p_company/template/task0",
+          "type": "item",
+          "item": "better_with_gold:upgrade_template"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_company/template/reward0",
+          "type": "item",
+          "item": "minecraft:amethyst_block",
+          "count": 2
+        },
+        {
+          "id": "p_company/template/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "p_company/regalia",
+      "title": "Dressed in Gold",
+      "subtitle": "The look of someone who pays on time.",
+      "icon": "better_with_gold:reinforced_golden_armor_chestplate",
+      "x": 4,
+      "y": 3,
+      "dependencies": [
+        "p_company/template"
+      ],
+      "description": [
+        "Every piece of &6Reinforced Golden Armor&r you wear makes the sellswords near you hit &a3%&r harder. A full set is twelve.",
+        "",
+        "It also gives you the unmistakable look of someone who pays on time, which does more for morale than any speech."
+      ],
+      "tasks": [
+        {
+          "id": "p_company/regalia/task0",
+          "type": "item",
+          "item": "better_with_gold:reinforced_golden_armor_helmet"
+        },
+        {
+          "id": "p_company/regalia/task1",
+          "type": "item",
+          "item": "better_with_gold:reinforced_golden_armor_chestplate"
+        },
+        {
+          "id": "p_company/regalia/task2",
+          "type": "item",
+          "item": "better_with_gold:reinforced_golden_armor_leggings"
+        },
+        {
+          "id": "p_company/regalia/task3",
+          "type": "item",
+          "item": "better_with_gold:reinforced_golden_armor_boots"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_company/regalia/reward0",
+          "type": "random",
+          "table": "tables/paths_company_purse"
+        },
+        {
+          "id": "p_company/regalia/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "p_company/gilded_arms",
+      "title": "Gilded Arms",
+      "subtitle": "Heavy gold, swung with intent.",
+      "icon": "better_with_gold:greater_golden_hammer",
+      "x": 4,
+      "y": 4.5,
+      "dependencies": [
+        "p_company/template"
+      ],
+      "optional": true,
+      "description": [
+        "The Regalia has weapons too. The &6Greater Golden Axe&r bites harder into the nearly dead; the &6Golden Scythe&r strikes everything in its arc; the &6Greater Golden Hammer&r is mostly an argument.",
+        "",
+        "Each takes the template, and an amethyst block, for a reinforced version."
+      ],
+      "tasks": [
+        {
+          "id": "p_company/gilded_arms/task0",
+          "type": "item",
+          "filter": "any(better_with_gold:greater_golden_axe, better_with_gold:reinforced_greater_golden_axe, better_with_gold:greater_golden_hammer, better_with_gold:reinforced_greater_golden_hammer, better_with_gold:golden_scythe, better_with_gold:reinforced_golden_scythe)",
+          "title": "Any greater golden axe, greater golden hammer or golden scythe"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_company/gilded_arms/reward0",
+          "type": "item",
+          "item": "minecraft:gold_block"
+        },
+        {
+          "id": "p_company/gilded_arms/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "p_company/every_trade",
+      "title": "Every Trade Under One Banner",
+      "subtitle": "A wall, a blade, a bow, a prayer and a storm.",
+      "icon": "minecraft:blaze_rod",
+      "x": 6,
+      "y": -2,
+      "dependencies": [
+        "p_company/downed"
+      ],
+      "description": [
+        "Each trade has one trick, and uses it on its own. A &6Bulwark&r's &6Challenge&r turns everything within 8 blocks onto it for 6 seconds. A &6Skirmisher&r &6Whirls&r through everything close every 6 seconds. A &6Ranger&r looses a three-arrow &6Volley&r every 10. A &6Mender&r heals the worst-hurt ally every 3 seconds and pulls the downed up. An &6Arcanist&r's &6Arc Storm&r strikes everything around its target every 12.",
+        "",
+        "&7Have one of each of the five trades march with you, together or in turn.&r"
+      ],
+      "tasks": [
+        {
+          "id": "p_company/every_trade/task0",
+          "type": "checkmark",
+          "title": "Bulwark, Skirmisher, Ranger, Mender and Arcanist have all marched with me"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_company/every_trade/reward0",
+          "type": "random",
+          "table": "tables/paths_company_purse"
+        },
+        {
+          "id": "p_company/every_trade/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "p_company/full_warband",
+      "title": "Six Swords",
+      "subtitle": "The Company's limit. Also its comfort zone.",
+      "icon": "minecraft:iron_sword",
+      "x": 8,
+      "y": -2,
+      "dependencies": [
+        "p_company/every_trade"
+      ],
+      "description": [
+        "A leader keeps &6six&r sellswords at most. Each rolls one or two &6traits&r: Steadfast, Swift, Brutal, Keen-eyed, Stalwart, Devoted, Lucky, Greedy, Hardy, Fearless or Merciful. Read them before you pay. A &6Greedy&r one costs 30% more and hits 10% harder, which is at least honest.",
+        "",
+        "Sellswords wait by a village bell for about forty minutes before they drift off to find someone else's gold.",
+        "",
+        "&7March with a full warband of six.&r"
+      ],
+      "tasks": [
+        {
+          "id": "p_company/full_warband/task0",
+          "type": "checkmark",
+          "title": "Six sellswords march with me"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_company/full_warband/reward0",
+          "type": "item",
+          "item": "minecraft:gold_ingot",
+          "count": 16
+        },
+        {
+          "id": "p_company/full_warband/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "p_company/formations",
+      "title": "Shield Wall",
+      "subtitle": "Line, Wedge, Shield Wall, Circle.",
+      "icon": "minecraft:white_banner",
+      "x": 6,
+      "y": -0.25,
+      "dependencies": [
+        "p_company/warbanner"
+      ],
+      "description": [
+        "On the wheel, &6Formation&r sets the shape: &6Line&r, &6Wedge&r, &6Shield Wall&r or &6Circle&r, around you, or around a planted Warbanner when the order is &6Guard banner&r. &eHold&r keeps them on one spot, &cCharge&r sends them at everything near you, &6Focus&r puts every blade on your target, and &7Fall back&r pulls them in for eight seconds of not swinging.",
+        "",
+        "&7Plant the banner and hold a Shield Wall around it.&r"
+      ],
+      "tasks": [
+        {
+          "id": "p_company/formations/task0",
+          "type": "checkmark",
+          "title": "My band held a Shield Wall around the Warbanner"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_company/formations/reward0",
+          "type": "random",
+          "table": "tables/paths_company_purse"
+        },
+        {
+          "id": "p_company/formations/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "p_company/morale",
+      "title": "Inspired",
+      "subtitle": "A band that's winning fights like it.",
+      "icon": "minecraft:goat_horn",
+      "x": 4,
+      "y": -3.5,
+      "dependencies": [
+        "p_company/golden_fish"
+      ],
+      "description": [
+        "Every sellsword starts at 70 &6morale&r. At 80 or more it is &aInspired&r and hits 10% harder; at 25 or less it is &cShaken&r and hits 15% softer. A Golden Fish is worth 30. &6Devoted&r ones never drop below 40, &6Fearless&r ones lose nothing when a friend falls, and each piece of Reinforced Golden Armor you wear lifts the whole band's floor by 5.",
+        "",
+        "&7Get a sellsword to Inspired. The roster (&eU&7) shows it.&r"
+      ],
+      "tasks": [
+        {
+          "id": "p_company/morale/task0",
+          "type": "checkmark",
+          "title": "One of my sellswords is Inspired"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_company/morale/reward0",
+          "type": "item",
+          "item": "better_with_gold:golden_fish",
+          "count": 2
+        },
+        {
+          "id": "p_company/morale/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "p_company/cod_order",
+      "title": "A Standing Order",
+      "subtitle": "The Company eats gold. It starts with cod.",
+      "icon": "minecraft:cooked_cod",
+      "x": 2,
+      "y": -4.75,
+      "dependencies": [
+        "p_company/golden_fish",
+        "n_coast/start"
+      ],
+      "description": [
+        "Every Golden Fish starts as a cooked cod, and a warband goes through them faster than Maren likes to admit. The coast's crab pots bring cod up by the dozen while you're away fighting. Set up a supply.",
+        "",
+        "&o\"Gold for the hire. Fish for the morale. Cod for the fish. Somebody always forgets the cod.\"&r &7— Maren&r",
+        "",
+        "&7Have 16 cooked cod on hand.&r"
+      ],
+      "tasks": [
+        {
+          "id": "p_company/cod_order/task0",
+          "type": "item",
+          "item": "minecraft:cooked_cod",
+          "count": 16
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_company/cod_order/reward0",
+          "type": "item",
+          "item": "minecraft:gold_ingot",
+          "count": 16
+        },
+        {
+          "id": "p_company/cod_order/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "p_company/champion",
+      "title": "Champion",
+      "subtitle": "Level 10. The Company starts using its name.",
+      "icon": "minecraft:golden_sword",
+      "x": 8,
+      "y": 1.5,
+      "dependencies": [
+        "p_company/blooded",
+        "s1_act2_hunt/hunters_moon"
+      ],
+      "description": [
+        "Titles come every five levels: &aVeteran&r at 5, &9Champion&r at 10, &5Hero&r at 15, &6Legend&r at 20. Kills feed them, and bigger kills feed them more. A sellsword can't outgrow you, though: it never levels past your own RPG level.",
+        "",
+        "&7Bring a sellsword to level 10.&r"
+      ],
+      "tasks": [
+        {
+          "id": "p_company/champion/task0",
+          "type": "checkmark",
+          "title": "One of my sellswords is a Champion (level 10)"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_company/champion/reward0",
+          "type": "random",
+          "table": "tables/paths_company_purse"
+        },
+        {
+          "id": "p_company/champion/reward1",
+          "type": "item",
+          "item": "better_with_gold:golden_fish",
+          "count": 2
+        },
+        {
+          "id": "p_company/champion/reward2",
+          "type": "xp",
+          "xp": 250
+        }
+      ]
+    },
+    {
+      "id": "p_company/legend",
+      "title": "&6Legend",
+      "subtitle": "Level 20. The Company writes this one in ink.",
+      "icon": "minecraft:golden_helmet",
+      "x": 10,
+      "y": 1.5,
+      "dependencies": [
+        "p_company/champion",
+        "s1_act2_hunt/sylvara"
+      ],
+      "description": [
+        "Twenty levels is as far as a sellsword goes. One that gets there has outlived a great many others. Its Chronicle reads like a saga by now: the oath, the first blood, the bosses, the friends it dragged back from the brink.",
+        "",
+        "&7Bring a sellsword to level 20.&r"
+      ],
+      "tasks": [
+        {
+          "id": "p_company/legend/task0",
+          "type": "checkmark",
+          "title": "One of my sellswords is a Legend (level 20)"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_company/legend/reward0",
+          "type": "random",
+          "table": "tables/paths_company_purse"
+        },
+        {
+          "id": "p_company/legend/reward1",
+          "type": "item",
+          "item": "minecraft:gold_block",
+          "count": 2
+        },
+        {
+          "id": "p_company/legend/reward2",
+          "type": "xp",
+          "xp": 500
+        }
+      ]
+    },
+    {
+      "id": "p_company/final_blow",
+      "title": "The Final Blow",
+      "subtitle": "Somebody else's name on the kill.",
+      "icon": "minecraft:skeleton_skull",
+      "x": 8,
+      "y": 3.25,
+      "dependencies": [
+        "p_company/blooded",
+        "s1_act1_embers/dusk_rider"
+      ],
+      "description": [
+        "The Chronicle notices bosses: the Old Powers, and anything else with a hundred and fifty health or more. A sellsword that &6stands against one and lives&r gets a line for it. One that &6strikes the final blow&r gets a better line, and never lets anyone forget it.",
+        "",
+        "Bring the band to a Sovereign's sigil or a Labyrinth's warden. Keep them standing. Let one of them have the kill.",
+        "",
+        "&7Let a sellsword land the killing blow on a boss.&r"
+      ],
+      "tasks": [
+        {
+          "id": "p_company/final_blow/task0",
+          "type": "checkmark",
+          "title": "A sellsword's Chronicle says it struck the final blow on a boss"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_company/final_blow/reward0",
+          "type": "random",
+          "table": "tables/paths_company_purse"
+        },
+        {
+          "id": "p_company/final_blow/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "p_company/gilded_tools",
+      "title": "Gilded Tools",
+      "subtitle": "Gold that doesn't bend.",
+      "icon": "better_with_gold:reinforced_golden_pick_axe",
+      "x": 0,
+      "y": 3,
+      "dependencies": [
+        "p_company/template"
+      ],
+      "optional": true,
+      "description": [
+        "The template takes every golden tool too: sword, pickaxe, axe, shovel and hoe, each with an amethyst block. Reinforced gold keeps gold's speed and its love of enchantments, and lasts about fifty times as long.",
+        "",
+        "&7Make a Reinforced Golden Sword and a Reinforced Golden Pick Axe.&r"
+      ],
+      "tasks": [
+        {
+          "id": "p_company/gilded_tools/task0",
+          "type": "item",
+          "item": "better_with_gold:reinforced_golden_sword"
+        },
+        {
+          "id": "p_company/gilded_tools/task1",
+          "type": "item",
+          "item": "better_with_gold:reinforced_golden_pick_axe"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_company/gilded_tools/reward0",
+          "type": "item",
+          "item": "minecraft:amethyst_block",
+          "count": 2
+        },
+        {
+          "id": "p_company/gilded_tools/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "p_company/greater_reinforced",
+      "title": "Heavier Gold",
+      "subtitle": "An argument, reinforced.",
+      "icon": "better_with_gold:reinforced_greater_golden_hammer",
+      "x": 6,
+      "y": 4.5,
+      "dependencies": [
+        "p_company/gilded_arms",
+        "s1_act2_hunt/hunters_moon"
+      ],
+      "optional": true,
+      "description": [
+        "Put a greater weapon through the template with an amethyst block and it comes out &6Reinforced&r: the same tricks, harder hits, and real durability. The Reinforced Golden Scythe wants 10 points of Attack Power; the Reinforced Greater Axe and Hammer want 14.",
+        "",
+        "&7Make any reinforced greater weapon.&r"
+      ],
+      "tasks": [
+        {
+          "id": "p_company/greater_reinforced/task0",
+          "type": "item",
+          "filter": "any(better_with_gold:reinforced_greater_golden_axe, better_with_gold:reinforced_greater_golden_hammer, better_with_gold:reinforced_golden_scythe)",
+          "title": "A reinforced greater golden axe, greater golden hammer or golden scythe"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_company/greater_reinforced/reward0",
+          "type": "item",
+          "item": "minecraft:amethyst_block",
+          "count": 2
+        },
+        {
+          "id": "p_company/greater_reinforced/reward1",
+          "type": "random",
+          "table": "tables/paths_company_purse"
+        },
+        {
+          "id": "p_company/greater_reinforced/reward2",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "p_company/maze",
+      "title": "A Bounty on Wardens",
+      "subtitle": "Six prisons. Maren pays per warden.",
+      "icon": "minecraft:recovery_compass",
+      "x": 10,
+      "y": -2,
+      "dependencies": [
+        "p_company/full_warband",
+        "w_dungeons/labyrinths"
+      ],
+      "description": [
+        "Maren keeps a standing bounty on the Labyrinths' wardens, and you've put down all six. The band would like its share, and a go at the next one: there is always another Labyrinth. Plant the banner at the vault door, set the Bulwark in front, and let the Mender work.",
+        "",
+        "&o\"The Company was hired to clear a Labyrinth once. Twelve went in. The contract paid for twelve. We were very careful about the count.\"&r &7— Maren&r",
+        "",
+        "&7Fight a Labyrinth's warden with your warband beside you.&r"
+      ],
+      "tasks": [
+        {
+          "id": "p_company/maze/task0",
+          "type": "checkmark",
+          "title": "My warband fought beside me against a Labyrinth's warden"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_company/maze/reward0",
+          "type": "random",
+          "table": "tables/paths_company_purse"
+        },
+        {
+          "id": "p_company/maze/reward1",
+          "type": "random",
+          "table": "tables/world_ash_spoils"
+        },
+        {
+          "id": "p_company/maze/reward2",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "p_company/finale",
+      "title": "&eThe Second Ledger",
+      "subtitle": "One for gold. One for names.",
+      "icon": "better_with_gold:warbanner",
+      "x": 12,
+      "y": 0,
+      "shape": "gear",
+      "size": 2,
+      "dependencies": [
+        "p_company/maze",
+        "p_company/legend"
+      ],
+      "description": [
+        "&o\"The Company keeps two ledgers. One for gold, one for names. You've been in the first since the day you paid. Tonight we're writing you into the second.\"&r &7— Maren, Captain of the Ashen Company&r",
+        "",
+        "A Legend under your banner, and a warband that walked into the Sovereigns' prisons and walked back out. The Company doesn't do oaths. It does this: your name in ink, beside the ones who stayed.",
+        "",
+        "&7Read your Legend's Chronicle one more time.&r"
+      ],
+      "tasks": [
+        {
+          "id": "p_company/finale/task0",
+          "type": "checkmark",
+          "title": "I read my Legend's Chronicle"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_company/finale/reward0",
+          "type": "random",
+          "table": "tables/paths_company_purse"
+        },
+        {
+          "id": "p_company/finale/reward1",
+          "type": "item",
+          "item": "minecraft:gold_block",
+          "count": 3
+        },
+        {
+          "id": "p_company/finale/reward2",
+          "type": "item",
+          "item": "minecraft:golden_apple",
+          "count": 2
+        },
+        {
+          "id": "p_company/finale/reward3",
+          "type": "xp",
+          "xp": 800
+        }
+      ]
+    }
+  ]
+}

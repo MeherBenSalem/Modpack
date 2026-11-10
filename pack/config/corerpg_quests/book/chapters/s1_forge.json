@@ -1,0 +1,454 @@
+{
+  "id": "s1_forge",
+  "title": "&6The Ember Forge",
+  "icon": "remnants:seal_of_dusk",
+  "group": "groups/main",
+  "subtitle": [
+    "Six alloys, four seals. Nothing is handed to you twice."
+  ],
+  "default_quest_shape": "rsquare",
+  "quests": [
+    {
+      "id": "s1_forge/forge",
+      "title": "&6The Ember Forge",
+      "subtitle": "What the Smith knows, and the Keeper won't say.",
+      "icon": "minecraft:anvil",
+      "x": 0,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.75,
+      "dependencies": [
+        "s1_act1_embers/kindle"
+      ],
+      "description": [
+        "Everything worth building under the black sun is built from &6Ember alloys&r: six of them, one for each part of the road. A Sophisticated chest, an OmniVault terminal, a diamond blade, a Sovereign's sigil: they all ask for the alloy of the act they belong to.",
+        "",
+        "&6Ashen Alloy&r comes first. After that, every alloy needs a &6Seal&r, bound once from the relics of the Sovereigns that closed the act before. The seal is never used up: it stays in the crafting grid every time you forge.",
+        "",
+        "&7A Sovereign leaves one relic. Trade it at a shrine for its armament, or bind it into a seal. Its sigil will call it back if you want both."
+      ],
+      "tasks": [
+        {
+          "id": "s1_forge/forge/task0",
+          "type": "checkmark",
+          "title": "I understand the Forge"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_forge/forge/reward0",
+          "type": "item",
+          "item": "create:andesite_alloy",
+          "count": 16
+        },
+        {
+          "id": "s1_forge/forge/reward1",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "s1_forge/ashen_alloy",
+      "title": "&7I. &fAshen Alloy",
+      "subtitle": "Iron, andesite and a rune, stirred.",
+      "icon": "remnants:ashen_alloy",
+      "x": 2.5,
+      "y": 0,
+      "dependencies": [
+        "s1_forge/forge",
+        "h_clockwork/mixer"
+      ],
+      "description": [
+        "Put two &6iron ingots&r, two &6andesite alloy&r and a &6Faded Rune&r in a Create &6Basin&r under a &6Mechanical Mixer&r. Three Ashen Alloy come out.",
+        "",
+        "Ashen Alloy is what the pack's iron used to be: Sophisticated chests and backpacks, every upgrade base, OmniVault's frames, iron wands and the Dusk Rider's sigil all want it.",
+        "",
+        "&7Faded Runes drop from common loot bags. Don't spend every one at the shrine."
+      ],
+      "tasks": [
+        {
+          "id": "s1_forge/ashen_alloy/task0",
+          "type": "item",
+          "item": "remnants:ashen_alloy",
+          "count": 8
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_forge/ashen_alloy/reward0",
+          "type": "item",
+          "item": "runeborn:faded_rune",
+          "count": 4
+        },
+        {
+          "id": "s1_forge/ashen_alloy/reward1",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "s1_forge/seal_dusk",
+      "title": "&eThe Seal of Dusk",
+      "subtitle": "One relic, bound for good.",
+      "icon": "remnants:seal_of_dusk",
+      "x": 5,
+      "y": -2,
+      "shape": "diamond",
+      "size": 1.25,
+      "dependencies": [
+        "s1_forge/ashen_alloy",
+        "s1_act1_embers/dusk_rider"
+      ],
+      "description": [
+        "The Dusk Rider's &6relic&r in the centre, four &6Sovereign Fragments&r in the corners, four &6Ashen Alloy&r around it.",
+        "",
+        "The seal opens Act II: Varghast's and Sylvara's sigils need it in the grid, and so does every Duskforged Ingot."
+      ],
+      "tasks": [
+        {
+          "id": "s1_forge/seal_dusk/task0",
+          "type": "item",
+          "item": "remnants:seal_of_dusk"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_forge/seal_dusk/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment",
+          "count": 2
+        },
+        {
+          "id": "s1_forge/seal_dusk/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_forge/duskforged",
+      "title": "&7II. &6Duskforged Ingot",
+      "subtitle": "Pressed gold, under the evening's seal.",
+      "icon": "remnants:duskforged_ingot",
+      "x": 5,
+      "y": 0,
+      "dependencies": [
+        "s1_forge/seal_dusk",
+        "h_clockwork/press"
+      ],
+      "description": [
+        "Press gold into &6golden sheets&r with a Create &6Mechanical Press&r. Then: four Ashen Alloy, two golden sheets, a &6Remnant Shard&r, a &6Tempering Stone II&r and the Seal of Dusk, which stays. Four ingots.",
+        "",
+        "Duskforged is the pack's gold: gold-tier storage, OmniVault &6Logic Processors&r, the explorer's compass, and every piece of &bdiamond&r gear."
+      ],
+      "tasks": [
+        {
+          "id": "s1_forge/duskforged/task0",
+          "type": "item",
+          "item": "remnants:duskforged_ingot",
+          "count": 8
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_forge/duskforged/reward0",
+          "type": "item",
+          "item": "runeborn:tempering_stone_2",
+          "count": 2
+        },
+        {
+          "id": "s1_forge/duskforged/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "s1_forge/seal_hunt",
+      "title": "&cThe Seal of the Hunt",
+      "subtitle": "Two crowns and a feast.",
+      "icon": "remnants:seal_of_the_hunt",
+      "x": 7.5,
+      "y": -2,
+      "shape": "diamond",
+      "size": 1.25,
+      "dependencies": [
+        "s1_forge/duskforged",
+        "s1_act2_hunt/varghast",
+        "s1_act2_hunt/sylvara",
+        "h_hearth/feast"
+      ],
+      "description": [
+        "&6Varghast's&r and &6Sylvara's&r relics, four Sovereign Fragments, two Duskforged Ingots, and a whole &6Roast Chicken&r feast from the Hearth's kitchen in the middle. The Keeper says the old court never sealed anything on an empty stomach.",
+        "",
+        "Opens Act III: Kaelthar's and Ysolde's sigils, and Moonsilver."
+      ],
+      "tasks": [
+        {
+          "id": "s1_forge/seal_hunt/task0",
+          "type": "item",
+          "item": "remnants:seal_of_the_hunt"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_forge/seal_hunt/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment",
+          "count": 3
+        },
+        {
+          "id": "s1_forge/seal_hunt/reward1",
+          "type": "xp",
+          "xp": 300
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_forge/moonsilver",
+      "title": "&7III. &bMoonsilver Ingot",
+      "subtitle": "Cooled under the Hunter's Moon.",
+      "icon": "remnants:moonsilver_ingot",
+      "x": 7.5,
+      "y": 0,
+      "dependencies": [
+        "s1_forge/seal_hunt"
+      ],
+      "description": [
+        "Two Duskforged Ingots, two &6diamonds&r, three &6amethyst shards&r, a &6Lustrous Stone I&r and the Seal of the Hunt make two &6Moonsilver Blend&r. Blast the blend.",
+        "",
+        "Moonsilver is the pack's diamond: diamond-tier storage, every advanced upgrade, OmniVault's &6Advanced Processor&r (and with it autocrafting and wireless), diamond wands."
+      ],
+      "tasks": [
+        {
+          "id": "s1_forge/moonsilver/task0",
+          "type": "item",
+          "item": "remnants:moonsilver_ingot",
+          "count": 8
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_forge/moonsilver/reward0",
+          "type": "item",
+          "item": "runeborn:lustrous_stone_1",
+          "count": 2
+        },
+        {
+          "id": "s1_forge/moonsilver/reward1",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "s1_forge/seal_deep",
+      "title": "&3The Seal of the Deep",
+      "subtitle": "A storm, a garden and a heart that beat in the dark.",
+      "icon": "remnants:seal_of_the_deep",
+      "x": 10,
+      "y": -2,
+      "shape": "diamond",
+      "size": 1.25,
+      "dependencies": [
+        "s1_forge/moonsilver",
+        "s1_act3_deep/kaelthar",
+        "s1_act3_deep/ysolde",
+        "s1_act3_deep/warden",
+        "h_hearth/cheese"
+      ],
+      "description": [
+        "&6Kaelthar's&r and &6Ysolde's&r relics, the Warden's &6Heart of the Deep&r, two Moonsilver Ingots, three Sovereign Fragments and a &6Flaxen Cheese Wheel&r, aged in a keg.",
+        "",
+        "Opens Act IV: Morgrath's and Vaelorn's sigils, and Deepsteel."
+      ],
+      "tasks": [
+        {
+          "id": "s1_forge/seal_deep/task0",
+          "type": "item",
+          "item": "remnants:seal_of_the_deep"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_forge/seal_deep/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment",
+          "count": 3
+        },
+        {
+          "id": "s1_forge/seal_deep/reward1",
+          "type": "xp",
+          "xp": 400
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_forge/deepsteel",
+      "title": "&7IV. &3Deepsteel Ingot",
+      "subtitle": "Haunted in soul fire.",
+      "icon": "remnants:deepsteel_ingot",
+      "x": 10,
+      "y": 0,
+      "dependencies": [
+        "s1_forge/seal_deep",
+        "h_clockwork/fan"
+      ],
+      "description": [
+        "Four Moonsilver Ingots, a &6Reinforced Echo Shard&r, two &6prismarine crystals&r, a &6Lustrous Stone III&r and the Seal of the Deep make four &6Deepsteel Blend&r.",
+        "",
+        "Then &6haunt&r it: blow the blend through &6soul fire&r with a Create &6Encased Fan&r. Nothing else will turn it.",
+        "",
+        "Deepsteel is the pack's netherite: netherite-tier storage, OmniVault's &6Quantum Processor&r, the top stack upgrades, netherite wands."
+      ],
+      "tasks": [
+        {
+          "id": "s1_forge/deepsteel/task0",
+          "type": "item",
+          "item": "remnants:deepsteel_ingot",
+          "count": 8
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_forge/deepsteel/reward0",
+          "type": "item",
+          "item": "runeborn:lustrous_stone_3",
+          "count": 2
+        },
+        {
+          "id": "s1_forge/deepsteel/reward1",
+          "type": "xp",
+          "xp": 400
+        }
+      ]
+    },
+    {
+      "id": "s1_forge/seal_ash",
+      "title": "&6The Seal of Ash",
+      "subtitle": "A burning crown, a last shore, a star and a dragon's breath.",
+      "icon": "remnants:seal_of_ash",
+      "x": 12.5,
+      "y": -2,
+      "shape": "diamond",
+      "size": 1.25,
+      "dependencies": [
+        "s1_forge/deepsteel",
+        "s1_act4_ash/morgrath",
+        "s1_act4_ash/vaelorn",
+        "s1_act4_ash/wither",
+        "s1_act4_ash/dragon",
+        "h_garden/well_fed"
+      ],
+      "description": [
+        "&6Morgrath's&r and &6Vaelorn's&r relics, a &6Nether Star&r, a bottle of &6dragon's breath&r, two Deepsteel Ingots, two Sovereign Fragments and a &6Steak Dinner&r from the garden's kitchen.",
+        "",
+        "Opens the last door: the &5Eclipse Shard&r needs the Seal of Ash in the grid, and so does Sunforged."
+      ],
+      "tasks": [
+        {
+          "id": "s1_forge/seal_ash/task0",
+          "type": "item",
+          "item": "remnants:seal_of_ash"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_forge/seal_ash/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment",
+          "count": 4
+        },
+        {
+          "id": "s1_forge/seal_ash/reward1",
+          "type": "xp",
+          "xp": 600
+        }
+      ]
+    },
+    {
+      "id": "s1_forge/sunforged",
+      "title": "&7V. &eSunforged Ingot",
+      "subtitle": "Melted over a living flame.",
+      "icon": "remnants:sunforged_ingot",
+      "x": 12.5,
+      "y": 0,
+      "dependencies": [
+        "s1_forge/seal_ash",
+        "h_clockwork/burner"
+      ],
+      "description": [
+        "Four Deepsteel Ingots, a &6netherite ingot&r, two &6blaze powder&r, a &6Lustrous Stone VI&r and the Seal of Ash make four &6Sunforged Blend&r.",
+        "",
+        "Mix each blend with a &6glowstone dust&r in a basin over a &6heated Blaze Burner&r.",
+        "",
+        "Sunforged opens the Eclipsed Realm (the &5Eclipse Shard&r), the Everlasting upgrades, and every stack upgrade past diamond blocks."
+      ],
+      "tasks": [
+        {
+          "id": "s1_forge/sunforged/task0",
+          "type": "item",
+          "item": "remnants:sunforged_ingot",
+          "count": 8
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_forge/sunforged/reward0",
+          "type": "item",
+          "item": "runeborn:lustrous_stone_6",
+          "count": 2
+        },
+        {
+          "id": "s1_forge/sunforged/reward1",
+          "type": "xp",
+          "xp": 600
+        }
+      ]
+    },
+    {
+      "id": "s1_forge/eclipse_core",
+      "title": "&7VI. &5Eclipse Core",
+      "subtitle": "Built around a splinter of the black sun.",
+      "icon": "remnants:eclipse_core",
+      "x": 15.5,
+      "y": 0,
+      "shape": "gear",
+      "size": 2,
+      "dependencies": [
+        "s1_forge/sunforged",
+        "h_clockwork/crafter",
+        "s1_act5_realm/gravebound_warden"
+      ],
+      "description": [
+        "A Create &6Mechanical Crafting&r recipe, five crafters wide: four &6Sunforged Ingots&r, four &6Grave Iron&r from the Realm's wardens, four &6Royal Soul Fragments&r from its fallen knights, and an &6Eclipse Shard&r at the heart.",
+        "",
+        "The Core is the end of the Forge: OmniVault's singularity cells, quantum bridges and assemblers, the &6omega&r stack upgrades, the infinity wand and the Everlasting and Inception upgrades all need one."
+      ],
+      "tasks": [
+        {
+          "id": "s1_forge/eclipse_core/task0",
+          "type": "item",
+          "item": "remnants:eclipse_core"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_forge/eclipse_core/reward0",
+          "type": "random",
+          "table": "tables/sovereign_tribute"
+        },
+        {
+          "id": "s1_forge/eclipse_core/reward1",
+          "type": "xp",
+          "xp": 1000
+        }
+      ]
+    }
+  ]
+}

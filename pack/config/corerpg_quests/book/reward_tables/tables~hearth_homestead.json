@@ -1,0 +1,56 @@
+{
+  "id": "tables/hearth_homestead",
+  "title": "Homestead Crate",
+  "icon": "handcrafted:oak_table",
+  "entries": [
+    {
+      "id": "tables/hearth_homestead/0",
+      "type": "item",
+      "item": "minecraft:emerald",
+      "count": 8,
+      "weight": 3
+    },
+    {
+      "id": "tables/hearth_homestead/1",
+      "type": "item",
+      "item": "minecraft:lantern",
+      "count": 6,
+      "weight": 2
+    },
+    {
+      "id": "tables/hearth_homestead/2",
+      "type": "item",
+      "item": "supplementaries:sconce",
+      "count": 6,
+      "weight": 2
+    },
+    {
+      "id": "tables/hearth_homestead/3",
+      "type": "item",
+      "item": "minecraft:iron_ingot",
+      "count": 8,
+      "weight": 2
+    },
+    {
+      "id": "tables/hearth_homestead/4",
+      "type": "item",
+      "item": "supplementaries:jar",
+      "count": 3,
+      "weight": 1
+    },
+    {
+      "id": "tables/hearth_homestead/5",
+      "type": "item",
+      "item": "sophisticatedbackpacks:upgrade_base",
+      "count": 2,
+      "weight": 1
+    },
+    {
+      "id": "tables/hearth_homestead/6",
+      "type": "item",
+      "item": "minecraft:white_wool",
+      "count": 16,
+      "weight": 1
+    }
+  ]
+}

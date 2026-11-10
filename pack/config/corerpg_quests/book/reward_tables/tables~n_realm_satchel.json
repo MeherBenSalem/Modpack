@@ -1,0 +1,46 @@
+{
+  "id": "tables/n_realm_satchel",
+  "title": "Calder's Satchel",
+  "icon": "remnant_bosses:boss_journal",
+  "entries": [
+    {
+      "id": "tables/n_realm_satchel/0",
+      "type": "item",
+      "item": "runeborn:heros_rune",
+      "weight": 3
+    },
+    {
+      "id": "tables/n_realm_satchel/1",
+      "type": "item",
+      "item": "runeborn:tempering_stone_8",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/n_realm_satchel/2",
+      "type": "item",
+      "item": "runeborn:lustrous_stone_7",
+      "weight": 2
+    },
+    {
+      "id": "tables/n_realm_satchel/3",
+      "type": "item",
+      "item": "minecraft:gold_ingot",
+      "count": 12,
+      "weight": 3
+    },
+    {
+      "id": "tables/n_realm_satchel/4",
+      "type": "item",
+      "item": "minecraft:golden_apple",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/n_realm_satchel/5",
+      "type": "item",
+      "item": "minecraft:echo_shard",
+      "weight": 1
+    }
+  ]
+}

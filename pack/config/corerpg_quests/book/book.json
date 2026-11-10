@@ -1,0 +1,71 @@
+{
+  "title": "&6Remnants &7| &fThe Long Eclipse",
+  "icon": "minecraft:campfire",
+  "lock_message": "&7Finish the quests that lead here first.",
+  "progression_mode": "flexible",
+  "default_quest_shape": "circle",
+  "detection_delay": 20,
+  "emergency_items_cooldown": 300,
+  "loot_crate_drops": false,
+  "groups": [
+    {
+      "id": "groups/main",
+      "title": "&6The Long Eclipse"
+    },
+    {
+      "id": "groups/paths",
+      "title": "&ePaths of the Ashborn"
+    },
+    {
+      "id": "groups/chronicles",
+      "title": "&dChronicles of the Ash"
+    },
+    {
+      "id": "groups/world",
+      "title": "&bThe World Under Ash"
+    },
+    {
+      "id": "groups/hearth",
+      "title": "&aHearth and Harvest"
+    },
+    {
+      "id": "groups/contracts",
+      "title": "&cAshen Contracts"
+    }
+  ],
+  "chapter_order": [
+    "s1_prologue",
+    "s1_forge",
+    "s1_act1_embers",
+    "s1_act2_hunt",
+    "s1_act3_deep",
+    "s1_act4_ash",
+    "s1_act5_realm",
+    "s1_epilogue",
+    "p_codex",
+    "p_armory",
+    "p_constellation",
+    "p_company",
+    "p_archive",
+    "n_runeborn",
+    "n_measure",
+    "n_spoils",
+    "n_spore",
+    "n_coast",
+    "n_voices",
+    "n_works",
+    "n_chrono",
+    "n_wands",
+    "n_realm",
+    "w_bosses",
+    "w_dungeons",
+    "w_wayfarer",
+    "w_bestiary",
+    "h_hearth",
+    "h_garden",
+    "h_lastlight",
+    "h_clockwork",
+    "h_vaults",
+    "c_contracts"
+  ]
+}

@@ -1,6 +1,6 @@
 # Writing quests for Remnants S1
 
-Quests are YAML in `src/quests/chapters/*.yaml`, compiled by `tools/build_quests.py` into FTB Quests 2101 files. The
+Quests are YAML in `src/quests/chapters/*.yaml`, compiled by `tools/build_quests.py` into a Core RPG - Quests Engine book (`pack/config/corerpg_quests/book/`). The
 format is documented at the top of `tools/build_quests.py`; `src/quests/chapters/s1_01_embers.yaml` is the reference
 chapter. Read `design/STORY.md` first: every quest serves the story or teaches a system.
 

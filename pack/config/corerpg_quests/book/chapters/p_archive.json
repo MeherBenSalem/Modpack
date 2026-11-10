@@ -1,0 +1,1248 @@
+{
+  "id": "p_archive",
+  "title": "&eThe Fractured Archive",
+  "icon": "tbos:yesterglass_lens",
+  "group": "groups/paths",
+  "subtitle": [
+    "Every ruin has a before. Someone has been collecting them."
+  ],
+  "quests": [
+    {
+      "id": "p_archive/before",
+      "title": "&eEvery Ruin Has a Before",
+      "subtitle": "Somewhere, a day never ended.",
+      "icon": "tbos:archivists_journal",
+      "x": 0,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "s1_prologue/village"
+      ],
+      "description": [
+        "Somewhere in this world, a day never ended. An &6Archivist's Journal&r turned up in your pack the day you woke. Read it.",
+        "",
+        "Three &6Fracture Shrines&r stand at fixed places, a long walk from spawn. They mark where the catalogue tore. Find one.",
+        "",
+        "&o\"The day did not end. We filed it anyway.\"&r &7— the Archivist's Journal&r"
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/before/task0",
+          "type": "advancement",
+          "advancement": "tbos:story/root",
+          "title": "Find a Fracture Shrine"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/before/reward0",
+          "type": "random",
+          "table": "tables/ashborn_provisions"
+        },
+        {
+          "id": "p_archive/before/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "p_archive/cracked_lens",
+      "title": "A Fractured Memory",
+      "subtitle": "We sealed a Lens in each shrine before we fled.",
+      "icon": "tbos:cracked_yesterglass_lens",
+      "x": 2,
+      "y": 0,
+      "dependencies": [
+        "p_archive/before"
+      ],
+      "description": [
+        "Open the shrine's &6Fracture Coffer&r. Inside: a &6Cracked Yesterglass Lens&r and an &6Archive Survey Map&r.",
+        "",
+        "The Lens catches moments that have already passed. The crack is why it only catches pieces."
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/cracked_lens/task0",
+          "type": "advancement",
+          "advancement": "tbos:story/obtain_cracked_lens",
+          "title": "lang:advancements.tbos.obtain_cracked_lens.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/cracked_lens/reward0",
+          "type": "item",
+          "item": "tbos:lenswork_crystal"
+        },
+        {
+          "id": "p_archive/cracked_lens/reward1",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "p_archive/repair_lens",
+      "title": "Through Yesterglass",
+      "subtitle": "The glass remembers what stone forgets.",
+      "icon": "tbos:yesterglass_lens",
+      "x": 4,
+      "y": 0,
+      "dependencies": [
+        "p_archive/cracked_lens"
+      ],
+      "description": [
+        "Mend the Lens. The recipe viewer knows what the glass wants: Yesterglass, a Lenswork Crystal and a Chronicle Shard around the cracked one.",
+        "",
+        "&o\"A repaired Lens does not invent a past. It only agrees to see one.\"&r &7— the Archivist's Journal&r"
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/repair_lens/task0",
+          "type": "advancement",
+          "advancement": "tbos:story/repair_lens",
+          "title": "lang:advancements.tbos.repair_lens.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/repair_lens/reward0",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "p_archive/meridian",
+      "title": "&eThe Meridian Archive",
+      "subtitle": "The Overworld forgot it. The map didn't.",
+      "icon": "tbos:archive_survey_map",
+      "x": 6,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "p_archive/repair_lens"
+      ],
+      "description": [
+        "Use the &6Survey Map&r for a bearing, and again for a fresh one. No compass will find the &6Meridian Archive&r; only the map remembers where it stands.",
+        "",
+        "Cross its threshold.",
+        "",
+        "&7Word of an open Archive travels fast. Someone at Last Light has been waiting a long time to hear it.&r"
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/meridian/task0",
+          "type": "advancement",
+          "advancement": "tbos:story/enter_archive",
+          "title": "lang:advancements.tbos.enter_archive.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/meridian/reward0",
+          "type": "command",
+          "command": "/lastlight arrive archivist {p}",
+          "title": "Oren the Archivist comes to Last Light",
+          "icon": "minecraft:lectern"
+        },
+        {
+          "id": "p_archive/meridian/reward1",
+          "type": "random",
+          "table": "tables/paths_archive_cache"
+        },
+        {
+          "id": "p_archive/meridian/reward2",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "p_archive/atrium",
+      "title": "Recall the First Room",
+      "subtitle": "Ruin, and Remembered.",
+      "icon": "tbos:memory_anchor",
+      "x": 8,
+      "y": 0,
+      "dependencies": [
+        "p_archive/meridian"
+      ],
+      "description": [
+        "The Archive exists in two tenses: &7Ruin&r, what's left, and &bRemembered&r, the page still open. Use the Lens at a &6Memory Anchor&r to move a room between them.",
+        "",
+        "Reconstruct the &6Parallax Atrium&r.",
+        "",
+        "&o\"Every ruin has a before. I collect befores.\"&r &7— Oren, the Archivist&r"
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/atrium/task0",
+          "type": "advancement",
+          "advancement": "tbos:story/reconstruct_first_room",
+          "title": "lang:advancements.tbos.reconstruct_first_room.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/atrium/reward0",
+          "type": "item",
+          "item": "tbos:chronicle_shard",
+          "count": 2
+        },
+        {
+          "id": "p_archive/atrium/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "p_archive/alignment",
+      "title": "Lines Across Time",
+      "subtitle": "The observatory still wants its lines drawn.",
+      "icon": "tbos:alignment_dial",
+      "x": 10,
+      "y": 0,
+      "dependencies": [
+        "p_archive/atrium"
+      ],
+      "description": [
+        "In the Hall of Alignment, turn each dial until its conduit of light reaches the engraved mark. The broken dials only turn in the &bRemembered&r Hall.",
+        "",
+        "Made a mess of it? Crouch-use the Memory Anchor and the dials return to north."
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/alignment/task0",
+          "type": "advancement",
+          "advancement": "tbos:story/solve_hall_of_alignment",
+          "title": "lang:advancements.tbos.solve_hall.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/alignment/reward0",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "p_archive/choir",
+      "title": "The Hours Answer",
+      "subtitle": "Still keeping time for someone who isn't there.",
+      "icon": "tbos:resonant_bell",
+      "x": 12,
+      "y": 0,
+      "dependencies": [
+        "p_archive/alignment"
+      ],
+      "description": [
+        "In &bRemembered&r, watch the Choir of Hours: four steps, each with a light, a silhouette, a pitch and a subtitle. Return to &7Ruin&r and repeat them in order.",
+        "",
+        "A wrong cadence costs nothing but pride. Fail often enough and the old mechanism etches the answer for you, which is somehow worse."
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/choir/task0",
+          "type": "advancement",
+          "advancement": "tbos:story/complete_choir_of_hours",
+          "title": "lang:advancements.tbos.complete_choir.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/choir/reward0",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "p_archive/broken_meridian",
+      "title": "Causality Has Weight",
+      "subtitle": "A bridge in two tenses.",
+      "icon": "tbos:meridian_relay",
+      "x": 14,
+      "y": 0,
+      "dependencies": [
+        "p_archive/choir"
+      ],
+      "description": [
+        "The first bridge over the Broken Meridian exists only in memory. Follow the live channel of light to its remote seal, arm it, then wake the glowing socket to move the relay.",
+        "",
+        "Return to &7Ruin&r. What's left of the relay is your second crossing."
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/broken_meridian/task0",
+          "type": "advancement",
+          "advancement": "tbos:story/cross_broken_meridian",
+          "title": "lang:advancements.tbos.cross_meridian.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/broken_meridian/reward0",
+          "type": "item",
+          "item": "tbos:lenswork_crystal"
+        },
+        {
+          "id": "p_archive/broken_meridian/reward1",
+          "type": "xp",
+          "xp": 120
+        }
+      ]
+    },
+    {
+      "id": "p_archive/curator",
+      "title": "&cThe Last Curator",
+      "subtitle": "It was told to preserve this day forever.",
+      "icon": "tbos:archive_core",
+      "x": 16,
+      "y": 0,
+      "shape": "gear",
+      "size": 2,
+      "dependencies": [
+        "p_archive/broken_meridian"
+      ],
+      "description": [
+        "It was told to preserve this day forever, and it's still obeying. Open the Archive Core and it begins the &6Catalogue&r.",
+        "",
+        "Read the floor: in &6Catalogue&r, leave the marked row; in &6Revision&r, leave the marked radius; in &cErasure&r, its afterimages detonate where they were recorded. Trigger the &6Memory Anchor&r to revise the Grand Orrery around it, and strike while its core is exposed."
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/curator/task0",
+          "type": "advancement",
+          "advancement": "tbos:story/defeat_last_curator",
+          "title": "lang:advancements.tbos.defeat_curator.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/curator/reward0",
+          "type": "random",
+          "table": "tables/paths_archive_cache"
+        },
+        {
+          "id": "p_archive/curator/reward1",
+          "type": "item",
+          "item": "runeborn:lustrous_rune"
+        },
+        {
+          "id": "p_archive/curator/reward2",
+          "type": "xp",
+          "xp": 400
+        }
+      ]
+    },
+    {
+      "id": "p_archive/scenes",
+      "title": "The Past, Kept Kindly",
+      "subtitle": "A memory made small.",
+      "icon": "tbos:memory_lantern",
+      "x": 18,
+      "y": -2.5,
+      "dependencies": [
+        "p_archive/curator"
+      ],
+      "description": [
+        "The Curator leaves a &6Memory Lantern&r. Place it. Use a &6Memory Plate&r on it to load a scene, use it empty-handed to play, crouch-use to clear. The plate isn't used up.",
+        "",
+        "Watch one scene through to the end. They were visitors, mostly. The record kept them anyway."
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/scenes/task0",
+          "type": "advancement",
+          "advancement": "tbos:story/obtain_memory_lantern",
+          "title": "lang:advancements.tbos.obtain_lantern.title"
+        },
+        {
+          "id": "p_archive/scenes/task1",
+          "type": "advancement",
+          "advancement": "tbos:story/display_complete_memory_scene",
+          "title": "lang:advancements.tbos.display_scene.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/scenes/reward0",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "p_archive/plates",
+      "title": "Six Ways to Remember",
+      "subtitle": "The whole of the last day.",
+      "icon": "tbos:memory_plate",
+      "x": 20,
+      "y": -2.5,
+      "dependencies": [
+        "p_archive/scenes"
+      ],
+      "optional": true,
+      "description": [
+        "Six scenes survive: &7The Evacuation&r, &7The Instant the Archive Fell&r, &7The Orrery at Work&r, &7A Family Beneath the Conjunction&r, &7The Curator Repaired&r and &7The Final Command&r. Carry all six plates at once.",
+        "",
+        "&o\"Bring me all six and I'll tell you which one is a lie. Archives are polite like that.\"&r &7— Oren&r"
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/plates/task0",
+          "type": "advancement",
+          "advancement": "tbos:story/collect_all_memory_plates",
+          "title": "lang:advancements.tbos.collect_plates.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/plates/reward0",
+          "type": "random",
+          "table": "tables/paths_archive_cache"
+        },
+        {
+          "id": "p_archive/plates/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "p_archive/gateway",
+      "title": "&eBeyond the Curator's Gate",
+      "subtitle": "Every recollection they failed to finish.",
+      "icon": "tbos:curator_core",
+      "x": 18.5,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "p_archive/curator"
+      ],
+      "description": [
+        "The Archive Core is now the &6Curator Gateway&r. Carry the &6Curator Core&r and your repaired Lens and step through into the &6Fractured Archive&r: floor after floor rebuilt from what the archivists never finished.",
+        "",
+        "It keeps its own death rules. Your party shares its revives, a &6Recalled Hour&r buys one back, and no Echo rises there."
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/gateway/task0",
+          "type": "advancement",
+          "advancement": "tbos:story/enter_fractured_archive",
+          "title": "lang:advancements.tbos.enter_fractured_archive.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/gateway/reward0",
+          "type": "item",
+          "item": "tbos:memory_key"
+        },
+        {
+          "id": "p_archive/gateway/reward1",
+          "type": "item",
+          "item": "tbos:recalled_hour"
+        },
+        {
+          "id": "p_archive/gateway/reward2",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "p_archive/living_memories",
+      "title": "Living Memories",
+      "subtitle": "You, rewritten for one expedition.",
+      "icon": "tbos:light_dust",
+      "x": 18.5,
+      "y": 2,
+      "dependencies": [
+        "p_archive/gateway"
+      ],
+      "description": [
+        "Inside the Archive you build yourself from drafts. Clear encounters to discover &6Living Memories&r: abilities like &6Echo Lance&r, &6Parallax Step&r and &6Recall&r on &eH&r, &eO&r and &e`&r, and artifacts that bend them (&6Split Prism&r, &6Storm Filament&r, &6Returning Thread&r…).",
+        "",
+        "&e;&r opens the loadout. They last one expedition. Choose as if it's the only one."
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/living_memories/task0",
+          "type": "checkmark",
+          "title": "I drafted a Living Memory"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/living_memories/reward0",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "p_archive/memory_key",
+      "title": "A Key Cut from Memory",
+      "subtitle": "Amethyst, gold, and a pearl for the lock.",
+      "icon": "tbos:memory_key",
+      "x": 20.5,
+      "y": 0,
+      "dependencies": [
+        "p_archive/gateway"
+      ],
+      "description": [
+        "A &6Memory Key&r (amethyst, gold and an ender pearl, or a trade with Oren) opens an expedition. Use it on a &6Waystone&r, on the Curator Gateway, or inside any structure.",
+        "",
+        "The Attunement screen offers &cDistortions&r: Fortified, Tyrannical, Bolstering, Volatile, Haunted, Frailty, Hourglass, Amnesia. Each adds &cHeat&r; &6Fracture&r is tier plus Heat, and Fracture pays. Friends within 24 blocks come along."
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/memory_key/task0",
+          "type": "advancement",
+          "advancement": "tbos:expedition/root",
+          "title": "Attune a Memory Key"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/memory_key/reward0",
+          "type": "item",
+          "item": "tbos:memory_key"
+        },
+        {
+          "id": "p_archive/memory_key/reward1",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "p_archive/recollection",
+      "title": "Echo of a Place",
+      "subtitle": "This is what he means by befores.",
+      "icon": "tbos:waystone",
+      "x": 22.5,
+      "y": -1.5,
+      "dependencies": [
+        "p_archive/memory_key"
+      ],
+      "description": [
+        "Turn a key inside a structure (a dungeon, a temple, a village) and the Archive opens a &6Recollection&r of what it was before. Each place answers once per Ashborn.",
+        "",
+        "&o\"A ruin is a story with the middle torn out. Go and read me the middle.\"&r &7— Oren&r"
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/recollection/task0",
+          "type": "advancement",
+          "advancement": "tbos:expedition/recollection",
+          "title": "lang:advancements.tbos.expedition.recollection.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/recollection/reward0",
+          "type": "random",
+          "table": "tables/paths_archive_cache"
+        },
+        {
+          "id": "p_archive/recollection/reward1",
+          "type": "xp",
+          "xp": 120
+        }
+      ]
+    },
+    {
+      "id": "p_archive/remember",
+      "title": "&aRemember",
+      "subtitle": "Bank it. Go home. Keep it forever.",
+      "icon": "tbos:chronicle_shard",
+      "x": 22.5,
+      "y": 0,
+      "dependencies": [
+        "p_archive/memory_key"
+      ],
+      "description": [
+        "Every floor ends behind a boss. Then comes the choice: &aRemember&r or &cForget&r.",
+        "",
+        "&aRemember&r banks your &6Renown&r times your &6Momentum&r, brings your sealed Relics home and earns a better key. Your Codex keeps it forever, and a quarter of the Renown comes home as &6Valor&r."
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/remember/task0",
+          "type": "advancement",
+          "advancement": "tbos:expedition/remember",
+          "title": "lang:advancements.tbos.expedition.remember.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/remember/reward0",
+          "type": "item",
+          "item": "tbos:memory_key"
+        },
+        {
+          "id": "p_archive/remember/reward1",
+          "type": "random",
+          "table": "tables/paths_archive_cache"
+        },
+        {
+          "id": "p_archive/remember/reward2",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "p_archive/forget",
+      "title": "&cForget",
+      "subtitle": "Deeper, for more. Or for nothing.",
+      "icon": "tbos:shatter_pane",
+      "x": 24.5,
+      "y": -1.5,
+      "dependencies": [
+        "p_archive/remember"
+      ],
+      "description": [
+        "&cForget&r takes the party a floor deeper and raises &6Momentum&r by a quarter. Everyone votes.",
+        "",
+        "If the party falls, everything unbanked is lost and the key dims. Greed has a multiplier now. So does grief."
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/forget/task0",
+          "type": "advancement",
+          "advancement": "tbos:expedition/forget",
+          "title": "lang:advancements.tbos.expedition.forget.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/forget/reward0",
+          "type": "item",
+          "item": "tbos:recalled_hour"
+        },
+        {
+          "id": "p_archive/forget/reward1",
+          "type": "xp",
+          "xp": 120
+        }
+      ]
+    },
+    {
+      "id": "p_archive/relic",
+      "title": "Remnant",
+      "subtitle": "The rarest thing the Archive gives back.",
+      "icon": "minecraft:diamond_sword",
+      "x": 24.5,
+      "y": 0,
+      "dependencies": [
+        "p_archive/remember"
+      ],
+      "description": [
+        "Floor bosses seal &6Relics&r into your Recollection: weapons and armour with affixes like Keen, Thirsting, Echoing or Storied, graded Common up to Legendary, and rarest of all, &cRemnant&r.",
+        "",
+        "A Remnant relic carries a signature: &6Last Hour&r, &6Fracture Step&r, &6Choir's Echo&r or &6Yesterglass&r. Recover one."
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/relic/task0",
+          "type": "advancement",
+          "advancement": "tbos:expedition/remnant_relic",
+          "title": "lang:advancements.tbos.expedition.remnant_relic.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/relic/reward0",
+          "type": "random",
+          "table": "tables/paths_archive_cache"
+        },
+        {
+          "id": "p_archive/relic/reward1",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "p_archive/weekly",
+      "title": "This Week's Memory",
+      "subtitle": "Same recollection, everyone.",
+      "icon": "minecraft:clock",
+      "x": 24.5,
+      "y": 1.5,
+      "dependencies": [
+        "p_archive/remember"
+      ],
+      "description": [
+        "Every week the Archive offers one recollection to everyone. Claim the &6Weekly Memory Key&r from the Weekly page of your &6Archive Codex&r (&eY&r). Its Distortions are sealed; the only choice left is how deep.",
+        "",
+        "Remember it. The board shows who went deepest."
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/weekly/task0",
+          "type": "advancement",
+          "advancement": "tbos:expedition/weekly",
+          "title": "lang:advancements.tbos.expedition.weekly.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/weekly/reward0",
+          "type": "item",
+          "item": "tbos:memory_key"
+        },
+        {
+          "id": "p_archive/weekly/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "p_archive/storied",
+      "title": "Storied",
+      "subtitle": "What the Archive remembers of you.",
+      "icon": "tbos:archive_seal",
+      "x": 24.5,
+      "y": 3,
+      "shape": "hexagon",
+      "dependencies": [
+        "p_archive/remember"
+      ],
+      "description": [
+        "Banked Renown raises your &6Archive Codex&r (&eY&r) from level 1 to 30, and each level is an &6Insight&r to spend: Last Stand, Keymaker, Hoarder, Second Draft and a dozen more. The &6Bestiary&r records every creature you've slain; the &6Hall of Records&r remembers who did it best.",
+        "",
+        "Reach Codex level 10.",
+        "",
+        "&o\"You collect ruins. I collect befores. Between us we might have one whole world.\"&r &7— Oren&r"
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/storied/task0",
+          "type": "advancement",
+          "advancement": "tbos:expedition/storied",
+          "title": "lang:advancements.tbos.expedition.storied.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/storied/reward0",
+          "type": "random",
+          "table": "tables/paths_archive_cache"
+        },
+        {
+          "id": "p_archive/storied/reward1",
+          "type": "item",
+          "item": "runeborn:radiant_rune"
+        },
+        {
+          "id": "p_archive/storied/reward2",
+          "type": "xp",
+          "xp": 400
+        }
+      ]
+    },
+    {
+      "id": "p_archive/salvage",
+      "title": "What the Shrines Are Made Of",
+      "subtitle": "Bronze, stone and lenswork, if you don't mind a ruin with a hole in it.",
+      "icon": "tbos:chronicle_bronze",
+      "x": 20.5,
+      "y": 5,
+      "dependencies": [
+        "p_archive/memory_key"
+      ],
+      "description": [
+        "The three Fracture Shrines aren't sealed the way the Meridian Archive's chambers are. Their walls are &6Archive Stone&r, their fittings &6Chronicle Bronze&r, with Yesterglass and &6Lenswork Crystal&r set into them, and all of it comes away under a pickaxe. The Archive's own caches pay Lenswork Crystal too.",
+        "",
+        "&o\"Take what you need from the shrines. They were only ever signposts.\"&r &7— Oren&r",
+        "",
+        "&7Salvage three Archive Stone, a Chronicle Bronze and a Lenswork Crystal."
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/salvage/task0",
+          "type": "item",
+          "item": "tbos:archive_stone",
+          "count": 3
+        },
+        {
+          "id": "p_archive/salvage/task1",
+          "type": "item",
+          "item": "tbos:chronicle_bronze"
+        },
+        {
+          "id": "p_archive/salvage/task2",
+          "type": "item",
+          "item": "tbos:lenswork_crystal"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/salvage/reward0",
+          "type": "item",
+          "item": "tbos:chronicle_shard",
+          "count": 2
+        },
+        {
+          "id": "p_archive/salvage/reward1",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "p_archive/waystone",
+      "title": "A Waystone at Last Light",
+      "subtitle": "Bring the Archive's door home.",
+      "icon": "tbos:waystone",
+      "x": 22.5,
+      "y": 5,
+      "dependencies": [
+        "p_archive/salvage"
+      ],
+      "description": [
+        "A &6Waystone&r is Chronicle Bronze over a Lenswork Crystal in a frame of Archive Stone. Set one at Last Light and a Memory Key turns there, not just at the Curator Gateway.",
+        "",
+        "Some floors of the Archive hold a Waystone room. Touch it and the Archive holds that floor for you; any Waystone at home sends you back to the last floor you bound.",
+        "",
+        "&7Craft a Waystone."
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/waystone/task0",
+          "type": "item",
+          "item": "tbos:waystone"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/waystone/reward0",
+          "type": "item",
+          "item": "tbos:memory_key"
+        },
+        {
+          "id": "p_archive/waystone/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "p_archive/cantor_sigils",
+      "title": "Proof of the Refrain",
+      "subtitle": "One sigil for every floor you finished.",
+      "icon": "tbos:cantor_sigil",
+      "x": 22.5,
+      "y": 2.75,
+      "dependencies": [
+        "p_archive/remember",
+        "n_spoils/opener"
+      ],
+      "description": [
+        "A &6Cantor Sigil&r is the Archive's receipt: proof that a floor's last refrain was silenced. The &6Cantor Cache&r behind each floor boss rolls for every member of the party, like a loot bag that knows your name, and a sigil is always in it.",
+        "",
+        "Oren keeps them in a drawer marked &o\"evidence\"&r. He won't say of what.",
+        "",
+        "&7Hold five Cantor Sigils."
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/cantor_sigils/task0",
+          "type": "item",
+          "item": "tbos:cantor_sigil",
+          "count": 5
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/cantor_sigils/reward0",
+          "type": "random",
+          "table": "tables/p_archive_recollection"
+        },
+        {
+          "id": "p_archive/cantor_sigils/reward1",
+          "type": "xp",
+          "xp": 250
+        }
+      ]
+    },
+    {
+      "id": "p_archive/recalled_hours",
+      "title": "Borrowed Time",
+      "subtitle": "An hour the Archive forgot to file.",
+      "icon": "tbos:recalled_hour",
+      "x": 26.5,
+      "y": -3.5,
+      "dependencies": [
+        "p_archive/forget"
+      ],
+      "description": [
+        "A &6Recalled Hour&r used during a run gives the party back one shared revive. The Cantor Cache behind each floor boss pays one, and lesser wardens and buried rooms sometimes do.",
+        "",
+        "Forgetting is cheaper when you carry spare hours.",
+        "",
+        "&7Carry three Recalled Hours at once."
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/recalled_hours/task0",
+          "type": "item",
+          "item": "tbos:recalled_hour",
+          "count": 3
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/recalled_hours/reward0",
+          "type": "item",
+          "item": "tbos:chronicle_shard",
+          "count": 3
+        },
+        {
+          "id": "p_archive/recalled_hours/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "p_archive/momentum",
+      "title": "No Turning Back",
+      "subtitle": "Bank at double, or don't bank at all.",
+      "icon": "tbos:collapsing_meridian",
+      "x": 26.5,
+      "y": -1.5,
+      "dependencies": [
+        "p_archive/forget",
+        "n_measure/first_point"
+      ],
+      "description": [
+        "&6Momentum&r starts at ×1.00 and every Forget adds a quarter to the whole Recollection. Somewhere down there it reaches ×2.00. A wipe at ×2.00 loses twice as much, which is what makes it worth it.",
+        "",
+        "When you Remember, a quarter of the Renown comes home as &6Valor&r for your &eK&r screen. A deep Remember is a level or two you never had to hunt for.",
+        "",
+        "&7Remember an expedition with Momentum ×2.00 or more."
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/momentum/task0",
+          "type": "advancement",
+          "advancement": "tbos:expedition/momentum",
+          "title": "lang:advancements.tbos.expedition.momentum.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/momentum/reward0",
+          "type": "random",
+          "table": "tables/p_archive_recollection"
+        },
+        {
+          "id": "p_archive/momentum/reward1",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "p_archive/cantor",
+      "title": "&cThe Cantor's Labyrinth",
+      "subtitle": "Its pendulum swings tighter before the refrain.",
+      "icon": "minecraft:bell",
+      "x": 28.5,
+      "y": -1.5,
+      "shape": "gear",
+      "dependencies": [
+        "p_archive/momentum",
+        "p_archive/recalled_hours"
+      ],
+      "description": [
+        "The floors cycle through eight recollections, and one of them is the &6Cantor's Labyrinth&r: Metronome Hounds that bite on the beat, Labyrinth Ushers that show one way and never the way out, and at the heart of it the &cHour Cantor&r, keeping time in a cage.",
+        "",
+        "&o\"Watch the chest, not the bar.\"&r &7— the Archive Codex&r",
+        "",
+        "&7Reach the Labyrinth and silence the Hour Cantor."
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/cantor/task0",
+          "type": "kill",
+          "entity": "tbos:hour_cantor"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/cantor/reward0",
+          "type": "random",
+          "table": "tables/p_archive_recollection"
+        },
+        {
+          "id": "p_archive/cantor/reward1",
+          "type": "item",
+          "item": "runeborn:radiant_rune"
+        },
+        {
+          "id": "p_archive/cantor/reward2",
+          "type": "xp",
+          "xp": 600
+        }
+      ]
+    },
+    {
+      "id": "p_archive/unwritten",
+      "title": "The Unwritten Hour",
+      "subtitle": "The last minute of the day, wearing a body.",
+      "icon": "tbos:ink_pool",
+      "x": 30.5,
+      "y": -3.25,
+      "dependencies": [
+        "p_archive/cantor"
+      ],
+      "optional": true,
+      "description": [
+        "Deeper still, the floors stop being remembered and start being made up: the &6Unwritten Hour&r, where Blank Chronists write on whatever they touch and ink pools where the floor should be. Its keeper is the &cHour-Hand Wraith&r, which sweeps a room the way a hand sweeps a dial.",
+        "",
+        "&7Slay the Hour-Hand Wraith."
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/unwritten/task0",
+          "type": "kill",
+          "entity": "tbos:hour_hand_wraith"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/unwritten/reward0",
+          "type": "random",
+          "table": "tables/p_archive_recollection"
+        },
+        {
+          "id": "p_archive/unwritten/reward1",
+          "type": "xp",
+          "xp": 600
+        }
+      ]
+    },
+    {
+      "id": "p_archive/hourglass",
+      "title": "Against the Sand",
+      "subtitle": "Eight minutes a floor.",
+      "icon": "minecraft:clock",
+      "x": 26.5,
+      "y": 0.75,
+      "dependencies": [
+        "p_archive/relic"
+      ],
+      "description": [
+        "Attune a key with the &cHourglass&r Distortion and every floor runs on an eight-minute timer. Beat the floor boss in time for an extra key tier and a quarter more Renown. A Remnant relic signed &6Yesterglass&r adds five seconds for every kill; the &6Hourglass Mastery&r Insight adds a minute per rank.",
+        "",
+        "&7Defeat a floor boss before the Hourglass runs out."
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/hourglass/task0",
+          "type": "advancement",
+          "advancement": "tbos:expedition/hourglass",
+          "title": "lang:advancements.tbos.expedition.hourglass.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/hourglass/reward0",
+          "type": "item",
+          "item": "tbos:recalled_hour"
+        },
+        {
+          "id": "p_archive/hourglass/reward1",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "p_archive/fractured",
+      "title": "Fractured",
+      "subtitle": "Tier plus Heat. Fifteen or more.",
+      "icon": "tbos:cracked_archive_stone",
+      "x": 28.5,
+      "y": 0.75,
+      "dependencies": [
+        "p_archive/hourglass",
+        "p_archive/storied"
+      ],
+      "description": [
+        "&6Fracture&r is the key's tier plus its &cHeat&r, one Heat for every Distortion you switch on, and every point of Heat adds fifteen percent to the Renown you earn. Fortified and Tyrannical make things sturdier, Volatile and Haunted make them meaner, Frailty takes a revive and Amnesia takes a choice.",
+        "",
+        "&o\"A memory under pressure tells you more. It also bites.\"&r &7— Oren&r",
+        "",
+        "&7Remember an expedition at Fracture 15 or higher."
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/fractured/task0",
+          "type": "advancement",
+          "advancement": "tbos:expedition/fractured",
+          "title": "lang:advancements.tbos.expedition.fractured.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/fractured/reward0",
+          "type": "random",
+          "table": "tables/p_archive_recollection"
+        },
+        {
+          "id": "p_archive/fractured/reward1",
+          "type": "xp",
+          "xp": 500
+        }
+      ]
+    },
+    {
+      "id": "p_archive/know_archive",
+      "title": "Know the Archive",
+      "subtitle": "Twenty-three pages, sealed until you earn them.",
+      "icon": "tbos:false_shelf",
+      "x": 24.5,
+      "y": 5,
+      "dependencies": [
+        "p_archive/storied"
+      ],
+      "optional": true,
+      "description": [
+        "The Codex's &6Bestiary&r (&eY&r) keeps a page for every Archive creature: the five that roam every floor, the sixteen that belong to one recollection each, the Minotaur and the Last Curator. Each page stays sealed until you kill what's on it.",
+        "",
+        "&7Record every creature in the Bestiary."
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/know_archive/task0",
+          "type": "advancement",
+          "advancement": "tbos:expedition/know_the_archive",
+          "title": "lang:advancements.tbos.expedition.know_the_archive.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/know_archive/reward0",
+          "type": "random",
+          "table": "tables/p_archive_recollection"
+        },
+        {
+          "id": "p_archive/know_archive/reward1",
+          "type": "item",
+          "item": "runeborn:heros_rune"
+        },
+        {
+          "id": "p_archive/know_archive/reward2",
+          "type": "xp",
+          "xp": 800
+        }
+      ]
+    },
+    {
+      "id": "p_archive/fellowship",
+      "title": "Fellowship of the Archive",
+      "subtitle": "Four Ashborn, one pool of revives.",
+      "icon": "tbos:resonance_lamp",
+      "x": 26.5,
+      "y": 5,
+      "dependencies": [
+        "p_archive/storied"
+      ],
+      "optional": true,
+      "description": [
+        "A party is up to four Ashborn: &e/party create&r, &e/party invite&r, &e/party accept&r. Everyone within 24 blocks of the key goes in. Revives are shared, loot and Recollections stay personal, and the &6Party Bond&r Insight softens every blow for each friend close by.",
+        "",
+        "&o\"The Ashen Company would charge you for this. I only ask that you write it down.\"&r &7— Oren&r",
+        "",
+        "&7Remember an expedition with a party of four."
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/fellowship/task0",
+          "type": "advancement",
+          "advancement": "tbos:expedition/fellowship",
+          "title": "lang:advancements.tbos.expedition.fellowship.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/fellowship/reward0",
+          "type": "random",
+          "table": "tables/p_archive_recollection"
+        },
+        {
+          "id": "p_archive/fellowship/reward1",
+          "type": "xp",
+          "xp": 500
+        }
+      ]
+    },
+    {
+      "id": "p_archive/finale",
+      "title": "&e&lThe Last Key",
+      "subtitle": "Tier twenty. The Archive has nothing harder to show you.",
+      "icon": "tbos:memory_key",
+      "x": 31,
+      "y": -0.4,
+      "shape": "gear",
+      "size": 2,
+      "dependencies": [
+        "p_archive/cantor",
+        "p_archive/fractured"
+      ],
+      "description": [
+        "Every Remember hands back a key a few tiers higher, up to &6tier 20&r: enemies with nearly three times their health and twice their bite. That deep, the floors are mostly the Archive's guesses about what used to be there.",
+        "",
+        "&o\"We filed a day that never ended, and you have walked every page of it with your name intact. The catalogue is finished. Now I want to know whether the black sun keeps an archive too.\"&r &7— Oren, the Archivist&r",
+        "",
+        "&7Remember a tier 20 expedition."
+      ],
+      "tasks": [
+        {
+          "id": "p_archive/finale/task0",
+          "type": "advancement",
+          "advancement": "tbos:expedition/last_key",
+          "title": "lang:advancements.tbos.expedition.last_key.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_archive/finale/reward0",
+          "type": "random",
+          "table": "tables/sovereign_tribute"
+        },
+        {
+          "id": "p_archive/finale/reward1",
+          "type": "random",
+          "table": "tables/p_archive_recollection"
+        },
+        {
+          "id": "p_archive/finale/reward2",
+          "type": "item",
+          "item": "runeborn:heros_rune",
+          "count": 2
+        },
+        {
+          "id": "p_archive/finale/reward3",
+          "type": "xp",
+          "xp": 2000
+        }
+      ]
+    }
+  ]
+}

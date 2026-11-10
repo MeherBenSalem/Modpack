@@ -1,0 +1,47 @@
+{
+  "id": "tables/world_huntmaster_ledger",
+  "title": "The Huntmaster's Ledger",
+  "icon": "remnant_mobs:hunters_lens",
+  "entries": [
+    {
+      "id": "tables/world_huntmaster_ledger/0",
+      "type": "item",
+      "item": "remnant_mobs:remnant_shard",
+      "count": 8,
+      "weight": 3
+    },
+    {
+      "id": "tables/world_huntmaster_ledger/1",
+      "type": "item",
+      "item": "runeborn:faded_rune",
+      "count": 3,
+      "weight": 2
+    },
+    {
+      "id": "tables/world_huntmaster_ledger/2",
+      "type": "item",
+      "item": "runeborn:lustrous_rune",
+      "weight": 2
+    },
+    {
+      "id": "tables/world_huntmaster_ledger/3",
+      "type": "item",
+      "item": "mob_loot_bags:uncommonlootbag",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/world_huntmaster_ledger/4",
+      "type": "item",
+      "item": "remnant_mobs:brand_of_challenge",
+      "weight": 1
+    },
+    {
+      "id": "tables/world_huntmaster_ledger/5",
+      "type": "item",
+      "item": "minecraft:golden_carrot",
+      "count": 8,
+      "weight": 1
+    }
+  ]
+}

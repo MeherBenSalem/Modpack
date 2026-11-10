@@ -369,7 +369,7 @@ quests:
   - key: cantor
     title: "&cThe Cantor's Labyrinth"
     subtitle: "Its pendulum swings tighter before the refrain."
-    icon: tbos:cantor_gate
+    icon: minecraft:bell
     pos: [28.5, -1.5]
     deps: [momentum, recalled_hours]
     shape: gear

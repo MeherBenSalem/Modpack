@@ -1,18 +1,22 @@
 # Launching Season 1
 
-## Platform: CurseForge first
+## Platforms: CurseForge and Modrinth
 
-- **CurseForge is the primary platform.** FTB Quests, FTB Library, FTB Teams, FTB Filter System, FTB XMod Compat,
-  FTB Ultimine and AllTheLeaks exist only on CurseForge, and ~85% of NightBeam's downloads already come from there.
-  Upload `dist/*-curseforge.zip` as the pack file and `dist/*-server.zip` as its server pack.
-- **Modrinth needs two decisions before it's possible:**
-  1. The quest book would have to move to a Modrinth-hosted quest mod (Odyssey Quests, formerly Heracles), or the FTB
-     mods be bundled with permission. `tools/build_pack.py --export` lists every mod a Modrinth export is missing.
-  2. Modrinth's AI policy (enforced since 2026-09-27) bans projects "entirely or primarily comprised of"
-     generative-AI output and requires disclosure when the description or substantial content relies on it. This
-     pack's quests, story text and scripts were drafted with AI assistance. Before any Modrinth upload, the owner
-     should rewrite and own the text, and the page must carry the disclosure. AI-generated icons and gallery images
-     are banned outright there: use real in-game screenshots and human-made art.
+- **Both platforms get the same pack.** Since 1.0.0-beta.11 every mod is on both: the FTB suite (Quests, Library,
+  Teams, Filter System, XMod Compat, Ultimine) was replaced by NightBeam's own Core RPG - Quests Engine, and
+  AllTheLeaks (CurseForge-only; ModernFix and FerriteCore already cover it) was dropped. `tools/build_pack.py --export`
+  warns if a mod is ever missing from one of the exports.
+- **CurseForge** (project 1772691): upload `dist/*-curseforge.zip` as the pack file and `dist/*-server.zip` as its
+  server pack (Actions -> Publish to CurseForge).
+- **Modrinth**: upload `dist/*.mrpack` (Actions -> Publish to Modrinth, once the project exists and its id is set as
+  the `REMNANTS_MODRINTH_ID` repository variable). Modrinth packs reference every mod on Modrinth's CDN and carry no
+  jars; server owners use the CurseForge server pack or install the `.mrpack` with a Modrinth-aware launcher.
+- **AI policy.** Modrinth (enforced since 2026-09-27) bans projects "entirely or primarily comprised of"
+  generative-AI output and requires disclosure when the description or substantial content relies on it. This
+  pack's quests, story text and scripts were drafted with AI assistance, and the Keeper's narration may be
+  synthesised. Before the Modrinth upload, the owner should rewrite and own the text, and the page must carry the
+  disclosure. AI-generated icons and gallery images are banned outright there: use real in-game screenshots and
+  human-made art.
 - CurseForge: check its current content and AI-disclosure rules at upload time and disclose the same way.
 
 ## Licences
@@ -26,7 +30,7 @@
   still allow bundling the All Rights Reserved and ND-licensed jars above. Never add jars to `pack/`.
 - Non-commercial licences (Jade, Patchouli, the Legendary Tooltips family, Fresh Animations) mean the pack must stay
   free. Paid server ranks that sell gameplay would need those authors' permission.
-- AllTheLeaks, Catalogue and Fzzy Config licences were not verified by the research; check them before release.
+- Catalogue and Fzzy Config licences were not verified by the research; check them before release.
 
 ## Play-test checklist (things a server boot can't prove)
 

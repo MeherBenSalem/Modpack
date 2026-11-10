@@ -1,0 +1,645 @@
+{
+  "id": "h_clockwork",
+  "title": "&aThe Clockwork Path",
+  "icon": "create:cogwheel",
+  "group": "groups/hearth",
+  "subtitle": [
+    "The Ember Forge runs on Create: a mixer for Ashen Alloy, a press for Duskforged, a fan for Deepsteel, a burner for Sunforged, crafters for the Eclipse Core."
+  ],
+  "quests": [
+    {
+      "id": "h_clockwork/alloy",
+      "title": "&aAshen Engineers",
+      "subtitle": "Someone before the Eclipse built machines. Some of you remember how.",
+      "icon": "create:andesite_alloy",
+      "x": 0,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "s1_act1_embers/kindle"
+      ],
+      "description": [
+        "&7The Ember Forge needs this path: its alloys come out of a mixer, a press, a fan, a blaze burner and mechanical crafters. The windmill, goggles, millstone, contraptions and deployers stay optional.",
+        "",
+        "Mix andesite with iron or zinc nuggets into &6Andesite Alloy&r: the bones of every machine to come.",
+        "",
+        "&o\"The old world ran on wheels and water. It ran right up until it didn't.\"&r"
+      ],
+      "tasks": [
+        {
+          "id": "h_clockwork/alloy/task0",
+          "type": "advancement",
+          "advancement": "create:andesite_alloy",
+          "title": "lang:advancement.create.andesite_alloy"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_clockwork/alloy/reward0",
+          "type": "item",
+          "item": "create:andesite_alloy",
+          "count": 16
+        },
+        {
+          "id": "h_clockwork/alloy/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "h_clockwork/shafts",
+      "title": "Shafts and Cogs",
+      "subtitle": "Turn one thing; turn everything.",
+      "icon": "create:cogwheel",
+      "x": 2,
+      "y": -1.25,
+      "dependencies": [
+        "h_clockwork/alloy"
+      ],
+      "description": [
+        "&6Shafts&r carry rotation in a straight line. &6Cogwheels&r pass it sideways, and a &6Large Cogwheel&r meshed with a small one changes the speed.",
+        "",
+        "Everything in Create turns. Learn to make it turn."
+      ],
+      "tasks": [
+        {
+          "id": "h_clockwork/shafts/task0",
+          "type": "item",
+          "item": "create:shaft",
+          "count": 8
+        },
+        {
+          "id": "h_clockwork/shafts/task1",
+          "type": "item",
+          "item": "create:cogwheel",
+          "count": 4
+        },
+        {
+          "id": "h_clockwork/shafts/task2",
+          "type": "item",
+          "item": "create:large_cogwheel",
+          "count": 2
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_clockwork/shafts/reward0",
+          "type": "item",
+          "item": "create:andesite_alloy",
+          "count": 8
+        },
+        {
+          "id": "h_clockwork/shafts/reward1",
+          "type": "xp",
+          "xp": 30
+        }
+      ]
+    },
+    {
+      "id": "h_clockwork/casing",
+      "title": "The Andesite Age",
+      "subtitle": "Every machine needs a coat.",
+      "icon": "create:andesite_casing",
+      "x": 2,
+      "y": 1.25,
+      "dependencies": [
+        "h_clockwork/alloy"
+      ],
+      "description": [
+        "Use Andesite Alloy on a &6stripped log&r to make &6Andesite Casing&r. Most of the early machines are built around it."
+      ],
+      "tasks": [
+        {
+          "id": "h_clockwork/casing/task0",
+          "type": "advancement",
+          "advancement": "create:andesite_casing",
+          "title": "lang:advancement.create.andesite_casing"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_clockwork/casing/reward0",
+          "type": "item",
+          "item": "create:andesite_casing",
+          "count": 8
+        },
+        {
+          "id": "h_clockwork/casing/reward1",
+          "type": "xp",
+          "xp": 30
+        }
+      ]
+    },
+    {
+      "id": "h_clockwork/water_wheel",
+      "title": "Harnessed Hydraulics",
+      "subtitle": "The rivers still run. Put them to work.",
+      "icon": "create:water_wheel",
+      "x": 4,
+      "y": -1.75,
+      "dependencies": [
+        "h_clockwork/shafts"
+      ],
+      "description": [
+        "Place a &6Water Wheel&r where flowing water strikes its blades and it turns everything connected to it.",
+        "",
+        "Each source gives a little &6stress capacity&r and each machine draws some. Ask too much and the whole line stops: add wheels, or slow things down."
+      ],
+      "tasks": [
+        {
+          "id": "h_clockwork/water_wheel/task0",
+          "type": "advancement",
+          "advancement": "create:water_wheel",
+          "title": "lang:advancement.create.water_wheel"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_clockwork/water_wheel/reward0",
+          "type": "item",
+          "item": "create:water_wheel",
+          "count": 2
+        },
+        {
+          "id": "h_clockwork/water_wheel/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "h_clockwork/windmill",
+      "title": "A Mild Breeze",
+      "subtitle": "The wind doesn't care about the sun either.",
+      "icon": "create:windmill_bearing",
+      "x": 4,
+      "y": -0.75,
+      "dependencies": [
+        "h_clockwork/shafts"
+      ],
+      "optional": true,
+      "description": [
+        "A &6Windmill Bearing&r with &6sails&r attached turns in any weather, far from any river. More sails, more stress capacity."
+      ],
+      "tasks": [
+        {
+          "id": "h_clockwork/windmill/task0",
+          "type": "advancement",
+          "advancement": "create:windmill",
+          "title": "lang:advancement.create.windmill"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_clockwork/windmill/reward0",
+          "type": "item",
+          "item": "create:white_sail",
+          "count": 8
+        },
+        {
+          "id": "h_clockwork/windmill/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "h_clockwork/goggles",
+      "title": "Kitted Out",
+      "subtitle": "See the strain before it breaks.",
+      "icon": "create:goggles",
+      "x": 6,
+      "y": -2.5,
+      "dependencies": [
+        "h_clockwork/water_wheel"
+      ],
+      "optional": true,
+      "description": [
+        "Wear &6Engineer's Goggles&r and hold a &6Wrench&r. The goggles show speed and stress on anything you look at; the wrench turns blocks and picks machines up whole."
+      ],
+      "tasks": [
+        {
+          "id": "h_clockwork/goggles/task0",
+          "type": "advancement",
+          "advancement": "create:wrench_goggles",
+          "title": "lang:advancement.create.wrench_goggles"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_clockwork/goggles/reward0",
+          "type": "xp",
+          "xp": 30
+        }
+      ]
+    },
+    {
+      "id": "h_clockwork/millstone",
+      "title": "Embrace the Grind",
+      "subtitle": "Flour for the kitchen.",
+      "icon": "create:millstone",
+      "x": 6,
+      "y": -1.5,
+      "dependencies": [
+        "h_clockwork/water_wheel"
+      ],
+      "optional": true,
+      "description": [
+        "A &6Millstone&r grinds wheat into &6flour&r, bones into bone meal and raw ore into crushed ore.",
+        "",
+        "Flour and water make dough. The Hearth and Harvest kitchen will thank you."
+      ],
+      "tasks": [
+        {
+          "id": "h_clockwork/millstone/task0",
+          "type": "advancement",
+          "advancement": "create:millstone",
+          "title": "lang:advancement.create.millstone"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_clockwork/millstone/reward0",
+          "type": "item",
+          "item": "create:wheat_flour",
+          "count": 16
+        },
+        {
+          "id": "h_clockwork/millstone/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "h_clockwork/press",
+      "title": "Pressed Flat",
+      "subtitle": "Ingots in, sheets out.",
+      "icon": "create:mechanical_press",
+      "x": 4,
+      "y": 0.75,
+      "dependencies": [
+        "h_clockwork/casing"
+      ],
+      "description": [
+        "Set a powered &6Mechanical Press&r over a depot or a belt and feed it ingots. Out come &6iron sheets&r, the plates half of Create's recipes ask for.",
+        "",
+        "Over a basin, the same press compacts things instead."
+      ],
+      "tasks": [
+        {
+          "id": "h_clockwork/press/task0",
+          "type": "advancement",
+          "advancement": "create:mechanical_press",
+          "title": "lang:advancement.create.mechanical_press"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_clockwork/press/reward0",
+          "type": "item",
+          "item": "create:iron_sheet",
+          "count": 8
+        },
+        {
+          "id": "h_clockwork/press/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "h_clockwork/belt",
+      "title": "On the Belt",
+      "subtitle": "Make the work come to you.",
+      "icon": "create:belt_connector",
+      "x": 4,
+      "y": 1.75,
+      "dependencies": [
+        "h_clockwork/casing"
+      ],
+      "description": [
+        "Craft a &6Mechanical Belt&r from dried kelp and connect two shafts with it. Items ride along it, and presses and fans work on them as they pass."
+      ],
+      "tasks": [
+        {
+          "id": "h_clockwork/belt/task0",
+          "type": "advancement",
+          "advancement": "create:belt",
+          "title": "lang:advancement.create.belt"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_clockwork/belt/reward0",
+          "type": "item",
+          "item": "create:belt_connector",
+          "count": 8
+        },
+        {
+          "id": "h_clockwork/belt/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "h_clockwork/mixer",
+      "title": "Mixing It Up",
+      "subtitle": "A basin, and a whisk the size of a man.",
+      "icon": "create:mechanical_mixer",
+      "x": 6,
+      "y": 0.5,
+      "dependencies": [
+        "h_clockwork/press"
+      ],
+      "description": [
+        "A &6Mechanical Mixer&r over a &6Basin&r combines whatever you drop in.",
+        "",
+        "Some recipes want heat beneath the basin, and only a &6Blaze Burner&r gives enough of it."
+      ],
+      "tasks": [
+        {
+          "id": "h_clockwork/mixer/task0",
+          "type": "advancement",
+          "advancement": "create:mechanical_mixer",
+          "title": "lang:advancement.create.mechanical_mixer"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_clockwork/mixer/reward0",
+          "type": "item",
+          "item": "create:basin",
+          "count": 2
+        },
+        {
+          "id": "h_clockwork/mixer/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "h_clockwork/fan",
+      "title": "Through Fire and Soul Fire",
+      "subtitle": "Bulk cooking, the engineer's way.",
+      "icon": "create:encased_fan",
+      "x": 6,
+      "y": 1.75,
+      "dependencies": [
+        "h_clockwork/belt"
+      ],
+      "description": [
+        "Blow an &6Encased Fan&r through fire to smoke, through lava to smelt, through water to wash. Through &6soul fire&r it &6haunts&r: things come out the other side changed.",
+        "",
+        "Run a belt of raw meat past a fire and the whole village eats tonight."
+      ],
+      "tasks": [
+        {
+          "id": "h_clockwork/fan/task0",
+          "type": "advancement",
+          "advancement": "create:fan_processing",
+          "title": "lang:advancement.create.fan_processing"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_clockwork/fan/reward0",
+          "type": "random",
+          "table": "tables/hearth_pantry"
+        },
+        {
+          "id": "h_clockwork/fan/reward1",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "h_clockwork/contraption",
+      "title": "&aMoving with Purpose",
+      "subtitle": "Harvesters on a bearing, sweeping the fields.",
+      "icon": "create:mechanical_harvester",
+      "x": 6,
+      "y": 3.25,
+      "shape": "gear",
+      "size": 1.5,
+      "dependencies": [
+        "h_clockwork/press",
+        "h_clockwork/belt"
+      ],
+      "optional": true,
+      "description": [
+        "Fix &6Mechanical Harvesters&r, drills or saws to a moving frame (a bearing, a piston, a cart) and set it in motion. That's a &6contraption&r: the old world's favourite trick.",
+        "",
+        "A harvester boom sweeping the wheat while you're off killing Sovereigns. Last Light, fed by clockwork."
+      ],
+      "tasks": [
+        {
+          "id": "h_clockwork/contraption/task0",
+          "type": "advancement",
+          "advancement": "create:contraption_actors",
+          "title": "lang:advancement.create.contraption_actors"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_clockwork/contraption/reward0",
+          "type": "random",
+          "table": "tables/hearth_workshop"
+        },
+        {
+          "id": "h_clockwork/contraption/reward1",
+          "type": "random",
+          "table": "tables/hearth_pantry"
+        },
+        {
+          "id": "h_clockwork/contraption/reward2",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "h_clockwork/zinc",
+      "title": "A Grey Metal",
+      "subtitle": "Zinc, deep and patient.",
+      "icon": "create:zinc_ingot",
+      "x": 8,
+      "y": 1,
+      "dependencies": [
+        "h_clockwork/mixer"
+      ],
+      "description": [
+        "&6Zinc Ore&r hides underground in pale veins. Smelt the raw zinc into ingots.",
+        "",
+        "Copper and zinc together make brass. Brass makes the clever machines."
+      ],
+      "tasks": [
+        {
+          "id": "h_clockwork/zinc/task0",
+          "type": "item",
+          "item": "create:zinc_ingot",
+          "count": 8
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_clockwork/zinc/reward0",
+          "type": "item",
+          "item": "create:raw_zinc",
+          "count": 8
+        },
+        {
+          "id": "h_clockwork/zinc/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "h_clockwork/burner",
+      "title": "A Fire That Watches Back",
+      "subtitle": "Bottle a blaze. Be polite about it.",
+      "icon": "create:blaze_burner",
+      "x": 8,
+      "y": 0,
+      "dependencies": [
+        "h_clockwork/mixer"
+      ],
+      "description": [
+        "Use an &6Empty Blaze Burner&r on a living blaze to trap it inside. Feed it fuel and it heats whatever sits above it.",
+        "",
+        "Blazes live in the &cAshlands&r. Bring a shield, or several."
+      ],
+      "tasks": [
+        {
+          "id": "h_clockwork/burner/task0",
+          "type": "advancement",
+          "advancement": "create:burner",
+          "title": "lang:advancement.create.burner"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_clockwork/burner/reward0",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "h_clockwork/brass",
+      "title": "&aReal Alloys",
+      "subtitle": "Gold's honest cousin.",
+      "icon": "create:brass_ingot",
+      "x": 10,
+      "y": 0.5,
+      "shape": "hexagon",
+      "dependencies": [
+        "h_clockwork/zinc",
+        "h_clockwork/burner"
+      ],
+      "description": [
+        "Drop copper and zinc ingots into a basin over a lit Blaze Burner and let the mixer turn them into &6Brass&r.",
+        "",
+        "Brass casings, electron tubes, brass hands: everything past this point needs it."
+      ],
+      "tasks": [
+        {
+          "id": "h_clockwork/brass/task0",
+          "type": "advancement",
+          "advancement": "create:brass",
+          "title": "lang:advancement.create.brass"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_clockwork/brass/reward0",
+          "type": "random",
+          "table": "tables/hearth_workshop"
+        },
+        {
+          "id": "h_clockwork/brass/reward1",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "h_clockwork/deployer",
+      "title": "A Hand That Isn't Yours",
+      "subtitle": "It uses what it holds. It never gets tired.",
+      "icon": "create:deployer",
+      "x": 12,
+      "y": 0,
+      "dependencies": [
+        "h_clockwork/brass"
+      ],
+      "optional": true,
+      "description": [
+        "A &6Deployer&r uses whatever item it holds on the block in front of it: places, clicks, plants, shears. Point one at a field with seeds in its hand.",
+        "",
+        "&7It can also attack. It will not dodge."
+      ],
+      "tasks": [
+        {
+          "id": "h_clockwork/deployer/task0",
+          "type": "advancement",
+          "advancement": "create:deployer",
+          "title": "lang:advancement.create.deployer"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_clockwork/deployer/reward0",
+          "type": "item",
+          "item": "create:brass_ingot",
+          "count": 4
+        },
+        {
+          "id": "h_clockwork/deployer/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "h_clockwork/crafter",
+      "title": "Automated Assembly",
+      "subtitle": "A crafting table that does its own work.",
+      "icon": "create:mechanical_crafter",
+      "x": 12,
+      "y": 1,
+      "dependencies": [
+        "h_clockwork/brass"
+      ],
+      "description": [
+        "Arrange &6Mechanical Crafters&r in the shape of a recipe, point them toward each other and give them rotation. They pass the ingredients along and finish the craft on their own."
+      ],
+      "tasks": [
+        {
+          "id": "h_clockwork/crafter/task0",
+          "type": "advancement",
+          "advancement": "create:mechanical_crafter",
+          "title": "lang:advancement.create.mechanical_crafter"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_clockwork/crafter/reward0",
+          "type": "random",
+          "table": "tables/hearth_workshop"
+        },
+        {
+          "id": "h_clockwork/crafter/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    }
+  ]
+}

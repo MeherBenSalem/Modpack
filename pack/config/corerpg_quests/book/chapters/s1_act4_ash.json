@@ -1,0 +1,747 @@
+{
+  "id": "s1_act4_ash",
+  "title": "&6Act IV: &fAsh and Crown",
+  "icon": "minecraft:netherite_scrap",
+  "group": "groups/main",
+  "subtitle": [
+    "The Ashlands, the Wither, the Last Shore. Levels 50–70."
+  ],
+  "default_quest_shape": "rsquare",
+  "quests": [
+    {
+      "id": "s1_act4_ash/tale_burning_crown",
+      "title": "&e♪ &6The Tale of the Burning Crown",
+      "subtitle": "The proudest of the seven.",
+      "icon": "minecraft:written_book",
+      "x": 0,
+      "y": -0.875,
+      "shape": "hexagon",
+      "size": 1.75,
+      "dependencies": [
+        "s1_act3_deep/ysolde"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Down there, the ash is still falling. Do you know what it is?&r",
+        "",
+        "&f&oMorgrath was the proudest of the seven. When he saw the others going mad, he swore no one would rule his kingdom after him. So he burned it. Every field, every hall, every soul who called him king. When it was done, he sat on the ashes and called himself their Sovereign.&r",
+        "",
+        "&f&oThe ash you'll breathe down there was his people, Ashborn. Breathe gently.&r",
+        "",
+        "&f&oPast him, beyond the eye of the world, there is a shore where a drop of the sun fell when the Eighth drank it. The Dragon guards it, and Vaelorn, the last of the seven, guards the Dragon. Two more embers. Then the black sun.\"&r",
+        "",
+        "The &6Ashlands&r were once the Burning Crown, the richest kingdom of the seven. Now they are a furnace that never cools, and their Sovereign still sits on its throne of cinders."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act4_ash/tale_burning_crown/task0",
+          "type": "checkmark",
+          "title": "♪ Listen to the Keeper"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act4_ash/tale_burning_crown/reward0",
+          "type": "xp",
+          "xp": 100
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act4_ash/ashlands",
+      "title": "&6The Ashlands",
+      "subtitle": "Morgrath's ash is still falling.",
+      "icon": "minecraft:netherrack",
+      "x": 2,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 2,
+      "dependencies": [
+        "s1_act4_ash/tale_burning_crown"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Hot, isn't it? He wanted it to stay warm forever. Be careful what you wish for when you wear a crown.\"&r",
+        "",
+        "The portal hums with old heat. On the other side, the sky is the colour of a forge and the ground still remembers being a kingdom.",
+        "",
+        "&7Mob levels start high in the Ashlands. Go prepared."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act4_ash/ashlands/task0",
+          "type": "dimension",
+          "dimension": "minecraft:the_nether",
+          "title": "Enter the Nether"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act4_ash/ashlands/reward0",
+          "type": "item",
+          "item": {
+            "id": "minecraft:potion",
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:long_fire_resistance"
+              }
+            }
+          },
+          "count": 2
+        },
+        {
+          "id": "s1_act4_ash/ashlands/reward1",
+          "type": "xp",
+          "xp": 300
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act4_ash/fortress",
+      "title": "A Fortress in the Ash",
+      "subtitle": "Blaze rods and wither skulls.",
+      "icon": "minecraft:blaze_rod",
+      "x": 4,
+      "y": -0.875,
+      "dependencies": [
+        "s1_act4_ash/ashlands"
+      ],
+      "description": [
+        "Morgrath's war-forts still stand, manned by the things that tended his furnaces. The blazes were his smiths. The wither skeletons were his honour guard, and they still salute anything with a crown.",
+        "",
+        "&7Find a fortress and take eight blaze rods."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act4_ash/fortress/task0",
+          "type": "structure",
+          "structure": "betterfortresses:fortress",
+          "title": "Find a Nether Fortress"
+        },
+        {
+          "id": "s1_act4_ash/fortress/task1",
+          "type": "item",
+          "item": "minecraft:blaze_rod",
+          "count": 8
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act4_ash/fortress/reward0",
+          "type": "random",
+          "table": "tables/hunters_spoils"
+        },
+        {
+          "id": "s1_act4_ash/fortress/reward1",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "s1_act4_ash/bastille",
+      "title": "The Infernal Bastille",
+      "subtitle": "The last Labyrinth burns.",
+      "icon": "minecraft:blackstone",
+      "x": 4,
+      "y": 0.875,
+      "dependencies": [
+        "s1_act4_ash/ashlands"
+      ],
+      "optional": true,
+      "description": [
+        "Morgrath had prisons too. When he burned his kingdom, he forgot to burn them. The prisoners noticed.",
+        "",
+        "&7Clear the Infernal Bastille and kill its guardian."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act4_ash/bastille/task0",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:slay_nether_bastille_guardian",
+          "title": "lang:advancements.muchmoredungeons.slay_nether_bastille_guardian.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act4_ash/bastille/reward0",
+          "type": "random",
+          "table": "tables/hunters_spoils"
+        },
+        {
+          "id": "s1_act4_ash/bastille/reward1",
+          "type": "xp",
+          "xp": 500
+        }
+      ]
+    },
+    {
+      "id": "s1_act4_ash/soulfire_crypt",
+      "title": "The Soulfire Crypt",
+      "subtitle": "Tier IV. The end of the dungeon trail.",
+      "icon": "minecraft:soul_campfire",
+      "x": 0,
+      "y": 0.875,
+      "dependencies": [
+        "s1_act3_deep/cursed_keep"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"The end of the trail. The Archivist owes me a drink. I said someone would make it.\"&r",
+        "",
+        "In the far snows the &6Soulfire Crypt&r burns blue. The Cinder Warden keeps the last map of the dungeon trail, and the last map leads nowhere: just a drawing of the Crypt itself, and a note in an old hand. &o\"You found it. Now turn back.\"&r",
+        "",
+        "&7Kill the Cinder Warden."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act4_ash/soulfire_crypt/task0",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:slay_soulfire_crypt_guardian",
+          "title": "lang:advancements.muchmoredungeons.slay_soulfire_crypt_guardian.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act4_ash/soulfire_crypt/reward0",
+          "type": "random",
+          "table": "tables/sovereign_tribute"
+        },
+        {
+          "id": "s1_act4_ash/soulfire_crypt/reward1",
+          "type": "xp",
+          "xp": 600
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act4_ash/monstrosity",
+      "title": "The Netherite Monstrosity",
+      "subtitle": "A forge that learned to walk.",
+      "icon": "cataclysm:monstrous_horn",
+      "x": 6,
+      "y": -3.5,
+      "shape": "gear",
+      "dependencies": [
+        "s1_act4_ash/fortress"
+      ],
+      "optional": true,
+      "description": [
+        "Morgrath's greatest forge was built to make a weapon that could never be broken. It worked. The weapon was the forge, and it got up.",
+        "",
+        "&7Kill the Netherite Monstrosity."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act4_ash/monstrosity/task0",
+          "type": "kill",
+          "entity": "cataclysm:netherite_monstrosity"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act4_ash/monstrosity/reward0",
+          "type": "random",
+          "table": "tables/sovereign_tribute"
+        },
+        {
+          "id": "s1_act4_ash/monstrosity/reward1",
+          "type": "xp",
+          "xp": 1000
+        }
+      ]
+    },
+    {
+      "id": "s1_act4_ash/ignis",
+      "title": "Ignis",
+      "subtitle": "The burning arena.",
+      "icon": "cataclysm:the_incinerator",
+      "x": 6,
+      "y": -1.75,
+      "shape": "gear",
+      "dependencies": [
+        "s1_act4_ash/fortress"
+      ],
+      "optional": true,
+      "description": [
+        "In the depths of the Ashlands a burning knight waits in a ring of fire. It was Morgrath's champion, the one who lit the first torch. It is still loyal, and it is still holding the torch.",
+        "",
+        "&7Kill Ignis."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act4_ash/ignis/task0",
+          "type": "kill",
+          "entity": "cataclysm:ignis"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act4_ash/ignis/reward0",
+          "type": "random",
+          "table": "tables/sovereign_tribute"
+        },
+        {
+          "id": "s1_act4_ash/ignis/reward1",
+          "type": "xp",
+          "xp": 1200
+        }
+      ]
+    },
+    {
+      "id": "s1_act4_ash/underworld_knight",
+      "title": "The Underworld Knight",
+      "subtitle": "A duel in the deep arena.",
+      "icon": "block_factorys_bosses:knight_sword",
+      "x": 6,
+      "y": 0,
+      "shape": "gear",
+      "dependencies": [
+        "s1_act4_ash/fortress"
+      ],
+      "optional": true,
+      "description": [
+        "A knight who swore to guard the Ashlands' gate until relieved. Nobody came to relieve him. He'd like to duel you about it.",
+        "",
+        "&7Kill the Underworld Knight."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act4_ash/underworld_knight/task0",
+          "type": "kill",
+          "entity": "block_factorys_bosses:underworld_knight"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act4_ash/underworld_knight/reward0",
+          "type": "random",
+          "table": "tables/sovereign_tribute"
+        },
+        {
+          "id": "s1_act4_ash/underworld_knight/reward1",
+          "type": "xp",
+          "xp": 1000
+        }
+      ]
+    },
+    {
+      "id": "s1_act4_ash/wither",
+      "title": "&5The Withering",
+      "subtitle": "Old Power: the Wither.",
+      "icon": "runeborn:relic_wither",
+      "x": 6,
+      "y": 1.75,
+      "shape": "gear",
+      "size": 1.75,
+      "dependencies": [
+        "s1_act4_ash/fortress"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Three skulls and the sand of lost souls. That's not a summoning, Ashborn, it's a dinner bell.\"&r",
+        "",
+        "The Wither is the oldest hunger in the world, older than the sun it would have eaten if anyone had let it. It doesn't hate you. It doesn't know you exist. It just wants.",
+        "",
+        "&7Fight it somewhere you don't mind losing. &6Keep its Nether Star&7: something in the Eclipsed Realm answers to one."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act4_ash/wither/task0",
+          "type": "kill",
+          "entity": "minecraft:wither"
+        },
+        {
+          "id": "s1_act4_ash/wither/task1",
+          "type": "item",
+          "item": "runeborn:relic_wither"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act4_ash/wither/reward0",
+          "type": "random",
+          "table": "tables/sovereign_tribute"
+        },
+        {
+          "id": "s1_act4_ash/wither/reward1",
+          "type": "xp",
+          "xp": 1200
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act4_ash/burning_crown",
+      "title": "The Burning Crown",
+      "subtitle": "Morgrath's token is what's left of the world's best metal.",
+      "icon": "minecraft:netherite_scrap",
+      "x": 6,
+      "y": 3.5,
+      "dependencies": [
+        "s1_act4_ash/fortress"
+      ],
+      "description": [
+        "&6Morgrath, Ash Sovereign&r, of the Burning Crown. His token is &8netherite scrap&r: ancient debris, the melted bones of his kingdom's treasure, the only thing his fire couldn't destroy.",
+        "",
+        "&7Gather six Fragments and a scrap of netherite."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act4_ash/burning_crown/task0",
+          "type": "item",
+          "item": "minecraft:netherite_scrap"
+        },
+        {
+          "id": "s1_act4_ash/burning_crown/task1",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment",
+          "count": 6
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act4_ash/burning_crown/reward0",
+          "type": "xp",
+          "xp": 200
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act4_ash/morgrath",
+      "title": "&6Sovereign: Morgrath, Ash Sovereign",
+      "subtitle": "Sovereign of the Burning Crown. Level 50.",
+      "icon": "runeborn:hellbrand",
+      "x": 8,
+      "y": 0,
+      "shape": "gear",
+      "size": 2,
+      "dependencies": [
+        "s1_act4_ash/burning_crown",
+        "s1_forge/seal_deep"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Six embers. Down there, for the first time in an age, the ash has stopped falling. His people can rest now. Maybe he can too.\"&r",
+        "",
+        "Fire doesn't hurt him. Everything else does, just less than you'd like. He doesn't fight to win. He fights so that nobody else does.",
+        "",
+        "&7His Crown Shard makes its bearer immune to fire. Earn it.",
+        "",
+        "&7His sigil needs the &6Seal of the Deep&7 in the grid. It stays there."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act4_ash/morgrath/task0",
+          "type": "item",
+          "item": "runeborn:sigil_morgrath"
+        },
+        {
+          "id": "s1_act4_ash/morgrath/task1",
+          "type": "advancement",
+          "advancement": "runeborn:feats/fell_morgrath",
+          "title": "lang:runeborn.feat.fell_morgrath"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act4_ash/morgrath/reward0",
+          "type": "random",
+          "table": "tables/sovereign_tribute"
+        },
+        {
+          "id": "s1_act4_ash/morgrath/reward1",
+          "type": "item",
+          "item": "runeborn:tempering_stone_7",
+          "count": 2
+        },
+        {
+          "id": "s1_act4_ash/morgrath/reward2",
+          "type": "xp",
+          "xp": 1200
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act4_ash/netherite",
+      "title": "Worthy of Netherite",
+      "subtitle": "Attribute 30. The metal knows.",
+      "icon": "minecraft:netherite_chestplate",
+      "x": 10,
+      "y": -0.875,
+      "dependencies": [
+        "s1_act4_ash/morgrath"
+      ],
+      "description": [
+        "Netherite was Morgrath's metal, and it remembers being his. It won't let just anyone carry it.",
+        "",
+        "&7Netherite weapons and armour refuse anyone below &6level 30&7 in the matching attribute (Attack Power for weapons, Protection for armour). Make a netherite ingot."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act4_ash/netherite/task0",
+          "type": "item",
+          "item": "minecraft:netherite_ingot"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act4_ash/netherite/reward0",
+          "type": "item",
+          "item": "minecraft:netherite_upgrade_smithing_template"
+        },
+        {
+          "id": "s1_act4_ash/netherite/reward1",
+          "type": "xp",
+          "xp": 400
+        }
+      ]
+    },
+    {
+      "id": "s1_act4_ash/stronghold",
+      "title": "The Eye of the World",
+      "subtitle": "Somewhere below, a portal to the Last Shore.",
+      "icon": "minecraft:ender_eye",
+      "x": 10,
+      "y": 0.875,
+      "dependencies": [
+        "s1_act4_ash/morgrath"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Follow the eyes. They know where the edge is. They've been trying to get back there since the sky went dark.\"&r",
+        "",
+        "The &6strongholds&r were the Crown's watchtowers, built over the one door that leads off the edge of the world. The eyes still point the way home.",
+        "",
+        "&7Find a stronghold."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act4_ash/stronghold/task0",
+          "type": "structure",
+          "structure": "betterstrongholds:stronghold",
+          "title": "Find a Stronghold"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act4_ash/stronghold/reward0",
+          "type": "item",
+          "item": "minecraft:ender_pearl",
+          "count": 8
+        },
+        {
+          "id": "s1_act4_ash/stronghold/reward1",
+          "type": "xp",
+          "xp": 300
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act4_ash/last_shore",
+      "title": "&6The Last Shore",
+      "subtitle": "The End is where the sun's last light fell.",
+      "icon": "minecraft:end_stone",
+      "x": 12,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.75,
+      "dependencies": [
+        "s1_act4_ash/stronghold"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"When the Hollow Sovereign drank the sun, a drop of it spilled off the edge of the world. It landed there. The Dragon has been guarding it ever since, and it doesn't know why.\"&r",
+        "",
+        "Pale stone under a starless sky. The &6Last Shore&r is where the world ends and the last drop of the old sun fell.",
+        "",
+        "&7Enter the End."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act4_ash/last_shore/task0",
+          "type": "dimension",
+          "dimension": "minecraft:the_end",
+          "title": "Enter the End"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act4_ash/last_shore/reward0",
+          "type": "random",
+          "table": "tables/hunters_spoils"
+        },
+        {
+          "id": "s1_act4_ash/last_shore/reward1",
+          "type": "xp",
+          "xp": 400
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act4_ash/dragon",
+      "title": "&5The Dragon at the World's Edge",
+      "subtitle": "Old Power: the Ender Dragon.",
+      "icon": "runeborn:relic_ender_dragon",
+      "x": 14,
+      "y": 0,
+      "shape": "gear",
+      "size": 2,
+      "dependencies": [
+        "s1_act4_ash/last_shore"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Catch its breath before it dies. That breath was sunlight, once. Vaelorn will smell it on you.\"&r",
+        "",
+        "The Dragon was there before the Crown and it will be there after it. It remembers the Eighth. It remembers someone before him, too, but it won't say who.",
+        "",
+        "&7Break the crystals. Bring a bow. Bring bottles: before it dies, catch its &dbreath&7. The last Sovereign answers to nothing else."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act4_ash/dragon/task0",
+          "type": "kill",
+          "entity": "minecraft:ender_dragon"
+        },
+        {
+          "id": "s1_act4_ash/dragon/task1",
+          "type": "item",
+          "item": "minecraft:dragon_breath"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act4_ash/dragon/reward0",
+          "type": "random",
+          "table": "tables/sovereign_tribute"
+        },
+        {
+          "id": "s1_act4_ash/dragon/reward1",
+          "type": "item",
+          "item": "runeborn:crown_shard_ender_dragon"
+        },
+        {
+          "id": "s1_act4_ash/dragon/reward2",
+          "type": "xp",
+          "xp": 1500
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act4_ash/vaelorn",
+      "title": "&6Sovereign: Vaelorn, the Wyrm-Ravager",
+      "subtitle": "Sovereign of the Last Shore. Level 70.",
+      "icon": "runeborn:wyrmfang_halberd",
+      "x": 16,
+      "y": -0.875,
+      "shape": "gear",
+      "size": 2,
+      "dependencies": [
+        "s1_act4_ash/dragon",
+        "s1_forge/seal_deep"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Seven embers. All seven. Do you know how long I waited to say that? One light left, and it isn't in this world. Rest first, Ashborn. Then we find the black sun.\"&r",
+        "",
+        "The last of the seven. He rode the dragons before there was only one, and he hits like the thing he rode. He chose the edge of the world as his kingdom so that nobody could ever come up behind him.",
+        "",
+        "&7Fight him on open ground, and never directly in front of him.",
+        "",
+        "&7His sigil needs the &6Seal of the Deep&7 in the grid. It stays there."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act4_ash/vaelorn/task0",
+          "type": "item",
+          "item": "runeborn:sigil_vaelorn"
+        },
+        {
+          "id": "s1_act4_ash/vaelorn/task1",
+          "type": "advancement",
+          "advancement": "runeborn:feats/fell_vaelorn",
+          "title": "lang:runeborn.feat.fell_vaelorn"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act4_ash/vaelorn/reward0",
+          "type": "random",
+          "table": "tables/sovereign_tribute"
+        },
+        {
+          "id": "s1_act4_ash/vaelorn/reward1",
+          "type": "item",
+          "item": "runeborn:sovereign_tempering_stone"
+        },
+        {
+          "id": "s1_act4_ash/vaelorn/reward2",
+          "type": "xp",
+          "xp": 2000
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act4_ash/crown_remade",
+      "title": "&6The Crown Remade",
+      "subtitle": "Seven shards. One Sun-Crown.",
+      "icon": "runeborn:crown_shard_ender_dragon",
+      "x": 16,
+      "y": 0.875,
+      "shape": "hexagon",
+      "dependencies": [
+        "s1_act4_ash/dragon"
+      ],
+      "optional": true,
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Put it down, Ashborn. It doesn't fit anyone. That was always the problem.\"&r",
+        "",
+        "Six Sovereigns' shards and the Dragon's. The &6Sun-Crown&r, whole for the first time since it was broken. It is lighter than you'd think, and colder.",
+        "",
+        "&7Remake the Crown from all seven shards."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act4_ash/crown_remade/task0",
+          "type": "advancement",
+          "advancement": "runeborn:feats/crown",
+          "title": "lang:runeborn.feat.crown"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act4_ash/crown_remade/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_rune"
+        },
+        {
+          "id": "s1_act4_ash/crown_remade/reward1",
+          "type": "xp",
+          "xp": 1000
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+# Publish a release to Modrinth: build the pack from this commit and upload the .mrpack with the patch notes.
+# Run it by hand (Actions -> Publish to Modrinth -> Run workflow) once the release is tested. The project id comes
+# from the REMNANTS_MODRINTH_ID repository variable (or the input) and the token from a repository secret; the token
+# is never printed.
+name: Publish to Modrinth
+
+on:
+  workflow_dispatch:
+    inputs:
+      changelog:
+        description: Patch notes (markdown file in the repo)
+        required: true
+        default: marketing/changelog/latest.md
+      release_type:
+        description: alpha, beta or release
+        required: true
+        default: beta
+      project:
+        description: Modrinth project id or slug (empty uses the REMNANTS_MODRINTH_ID variable)
+        required: false
+        default: ""
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - name: Build the modpack
+        run: python3 tools/build_pack.py --export
+      - name: Upload to Modrinth
+        env:
+          MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN || secrets.MODRINTH_API_TOKEN }}
+          PROJECT: ${{ inputs.project || vars.REMNANTS_MODRINTH_ID }}
+          CHANGELOG: ${{ inputs.changelog }}
+          RELEASE_TYPE: ${{ inputs.release_type }}
+        run: |
+          if [ -z "$MODRINTH_TOKEN" ]; then
+            echo "No Modrinth token secret found (expected MODRINTH_TOKEN)." >&2
+            exit 1
+          fi
+          if [ -z "$PROJECT" ]; then
+            echo "No Modrinth project: set the REMNANTS_MODRINTH_ID repository variable or the project input." >&2
+            exit 1
+          fi
+          python3 tools/publish_mr.py --project "$PROJECT" --changelog "$CHANGELOG" --release-type "$RELEASE_TYPE"

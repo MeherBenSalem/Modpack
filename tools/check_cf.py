@@ -5,8 +5,10 @@
 
 A mod is WRONG when its file has another name, sits in the project under another id, or the project is a different
 build (title says Forge or Fabric, not NeoForge) that doesn't list it. It is "unlisted" when the project simply doesn't
-list the file; cfwidget shows only a project's newest files, so check those by hand, but both fail the run (the
-owner's first import broke on exactly such ids). Responses are cached in .cache/cfwidget/ for a day.
+list the file; both fail the run (the owner's first import broke on exactly such ids). cfwidget shows only a
+project's newest files and can be hours behind a new upload, so a file it doesn't list is looked up on
+curseforge.com itself: public (approved) there under the same project and name, it passes. Responses are cached in
+.cache/cfwidget/ for a day.
 """
 import json
 import re
@@ -39,6 +41,18 @@ def project(pid):
     return data
 
 
+def on_curseforge(pid, fid, filename):
+    """True when curseforge.com lists this file in this project as public (status 4) under this name."""
+    try:
+        req = urllib.request.Request(f"https://www.curseforge.com/api/v1/mods/{pid}/files/{fid}",
+                                     headers={"User-Agent": "remnants-modpack-check/1.0"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            d = json.loads(r.read()).get("data") or {}
+    except Exception:  # not found, or the site is unreachable: stay "unlisted"
+        return False
+    return d.get("status") == 4 and (not filename or d.get("fileName") == filename)
+
+
 def main():
     mods = json.loads((ROOT / "src" / "mods.json").read_text())
     bad, unlisted = [], []
@@ -60,7 +74,7 @@ def main():
             bad.append(f"{m['slug']}: project {cf['project_id']} is \"{title}\" and doesn't list file {cf['file_id']}")
         elif cf.get("filename") and any(f["name"] == cf["filename"] for f in files.values()):
             bad.append(f"{m['slug']}: {cf['filename']} is in project {cf['project_id']} under another file id")
-        else:
+        elif not on_curseforge(cf["project_id"], cf["file_id"], cf.get("filename")):
             unlisted.append(f"{m['slug']}: file {cf['file_id']} not in the newest files of \"{title}\"")
     for line in unlisted:
         print("unlisted:", line)

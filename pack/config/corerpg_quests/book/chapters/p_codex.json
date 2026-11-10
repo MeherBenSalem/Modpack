@@ -1,0 +1,833 @@
+{
+  "id": "p_codex",
+  "title": "&eThe Ashen Codex",
+  "icon": "minecraft:writable_book",
+  "group": "groups/paths",
+  "subtitle": [
+    "Everything the dark will try, written in the margins. Press I."
+  ],
+  "quests": [
+    {
+      "id": "p_codex/codex",
+      "title": "&eThe Ashen Codex",
+      "subtitle": "All a Runeborn must know.",
+      "icon": "minecraft:writable_book",
+      "x": 0,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "s1_prologue/rise"
+      ],
+      "description": [
+        "Press &eI&r for your &6Status&r. The &6Codex&r inside it holds the rules of this world: runes, shrines, flasks, armaments, Sovereigns.",
+        "",
+        "This chapter is the margin notes. Each page teaches one system and checks that you've actually used it.",
+        "",
+        "&o\"Read it twice. The dead have.\"&r"
+      ],
+      "tasks": [
+        {
+          "id": "p_codex/codex/task0",
+          "type": "advancement",
+          "advancement": "runeborn:feats/root",
+          "title": "Choose who you were"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_codex/codex/reward0",
+          "type": "item",
+          "item": "minecraft:torch",
+          "count": 16
+        },
+        {
+          "id": "p_codex/codex/reward1",
+          "type": "xp",
+          "xp": 30
+        }
+      ]
+    },
+    {
+      "id": "p_codex/stamina",
+      "title": "The Green Bar",
+      "subtitle": "Stamina, and the roll that saves you.",
+      "icon": "minecraft:feather",
+      "x": 2,
+      "y": -4.5,
+      "dependencies": [
+        "p_codex/codex"
+      ],
+      "description": [
+        "Every swing and every roll spends &astamina&r. It comes back fast the moment you stop. Fight it down to nothing and your blows land at &c60%&r.",
+        "",
+        "Tap &eLeft Alt&r to &6roll&r. A roll costs nearly two straight-sword swings, and for a third of a second nothing can touch you. Roll &ointo&r the blow, not away from it.",
+        "",
+        "Spiders leap. Roll under the leap and cut as it lands."
+      ],
+      "tasks": [
+        {
+          "id": "p_codex/stamina/task0",
+          "type": "kill",
+          "entity": "minecraft:spider",
+          "value": 4
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_codex/stamina/reward0",
+          "type": "item",
+          "item": "minecraft:cooked_beef",
+          "count": 4
+        },
+        {
+          "id": "p_codex/stamina/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "p_codex/arts",
+      "title": "Arts and the Blue Bar",
+      "subtitle": "FP is spent, not owed.",
+      "icon": "minecraft:lapis_lazuli",
+      "x": 4,
+      "y": -4.5,
+      "dependencies": [
+        "p_codex/stamina"
+      ],
+      "description": [
+        "Every armament carries a &6weapon art&r. Press &eR&r to unleash it. Arts cost &bFP&r, the blue bar, and recharge after a short cooldown.",
+        "",
+        "Staves cast &bsorceries&r that scale with Intelligence; sacred seals cast &eincantations&r that scale with Faith. On a catalyst, &eR&r casts its bound spell.",
+        "",
+        "&bMind&r raises your FP. It trickles back on its own, slowly. The Azure Flask is faster."
+      ],
+      "tasks": [
+        {
+          "id": "p_codex/arts/task0",
+          "type": "checkmark",
+          "title": "I unleashed a weapon art (R)"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_codex/arts/reward0",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "p_codex/shrine",
+      "title": "Rest by the Flame",
+      "subtitle": "Heal, refill, and choose where you wake.",
+      "icon": "runeborn:ember_shrine",
+      "x": 6,
+      "y": -4.5,
+      "dependencies": [
+        "p_codex/arts"
+      ],
+      "description": [
+        "Use a placed &6Ember Shrine&r to kindle it. &aRest&r restores health and FP, refills your flasks and binds your return there when you fall. You can't rest with enemies close; neither could anyone else, which is why the shrines survived.",
+        "",
+        "The menu holds the rest: &6Level Up&r, &6Reinforce&r, &6Infuse&r, &6Flasks&r, &6Travel&r, the &6Merchant&r, &6Relics&r, &6Crown Shards&r and &6Rebirth&r."
+      ],
+      "tasks": [
+        {
+          "id": "p_codex/shrine/task0",
+          "type": "advancement",
+          "advancement": "runeborn:feats/kindle",
+          "title": "Kindle an Ember Shrine"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_codex/shrine/reward0",
+          "type": "item",
+          "item": "minecraft:blaze_powder",
+          "count": 2
+        },
+        {
+          "id": "p_codex/shrine/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "p_codex/flasks",
+      "title": "Ember and Azure",
+      "subtitle": "Tears of the shrine flame.",
+      "icon": "runeborn:ember_flask",
+      "x": 8,
+      "y": -7.5,
+      "dependencies": [
+        "p_codex/shrine"
+      ],
+      "description": [
+        "The &6Ember Flask&r restores health; the &bAzure Flask&r restores FP. Use one to drink. Every charge comes back when you rest, and the shrine's &6Flasks&r service splits your charges between the two.",
+        "",
+        "A &6Sunseed&r adds a charge, up to fourteen. A &6Hallowed Tear&r makes every sip stronger. Champions and Sovereigns carry them, and the Keeper will part with a Sunseed for enough shards and gold."
+      ],
+      "tasks": [
+        {
+          "id": "p_codex/flasks/task0",
+          "type": "item",
+          "item": "runeborn:sunseed"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_codex/flasks/reward0",
+          "type": "item",
+          "item": "minecraft:glistering_melon_slice",
+          "count": 2
+        },
+        {
+          "id": "p_codex/flasks/reward1",
+          "type": "item",
+          "item": "minecraft:amethyst_shard",
+          "count": 2
+        },
+        {
+          "id": "p_codex/flasks/reward2",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "p_codex/travel",
+      "title": "Between Two Fires",
+      "subtitle": "The road is shorter if you've lit both ends.",
+      "icon": "minecraft:ender_pearl",
+      "x": 8,
+      "y": -6,
+      "dependencies": [
+        "p_codex/shrine"
+      ],
+      "description": [
+        "A kindled shrine stays kindled, and every one is a door. Open &6Travel&r at any shrine to step out at another.",
+        "",
+        "Kindle them where you'll need to come back: the mouth of a dungeon, the edge of the Ashlands, the road home."
+      ],
+      "tasks": [
+        {
+          "id": "p_codex/travel/task0",
+          "type": "advancement",
+          "advancement": "runeborn:feats/travel",
+          "title": "lang:runeborn.feat.travel"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_codex/travel/reward0",
+          "type": "item",
+          "item": "minecraft:ender_pearl",
+          "count": 2
+        },
+        {
+          "id": "p_codex/travel/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "p_codex/level_up",
+      "title": "Runebearer",
+      "subtitle": "Two ladders, one climb.",
+      "icon": "runeborn:radiant_rune",
+      "x": 8,
+      "y": -4.5,
+      "dependencies": [
+        "p_codex/shrine"
+      ],
+      "description": [
+        "&6Level Up&r at a shrine spends runes on one of eight attributes: &6Vigor&r (health), &bMind&r (FP), &aEndurance&r (stamina and poise), &6Strength&r, &6Dexterity&r, &bIntelligence&r, &eFaith&r and &dArcane&r (status and discovery). Your rune level is their sum.",
+        "",
+        "Every rune level also grants an &6RPG level&r, with points for your &eK&r screen.",
+        "",
+        "Reach rune level 50."
+      ],
+      "tasks": [
+        {
+          "id": "p_codex/level_up/task0",
+          "type": "advancement",
+          "advancement": "runeborn:feats/level_50",
+          "title": "lang:runeborn.feat.level_50"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_codex/level_up/reward0",
+          "type": "item",
+          "item": "runeborn:lustrous_rune",
+          "count": 2
+        },
+        {
+          "id": "p_codex/level_up/reward1",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "p_codex/reinforce",
+      "title": "The Smith's Service",
+      "subtitle": "Stones the dead leave behind.",
+      "icon": "runeborn:tempering_stone_1",
+      "x": 8,
+      "y": -3,
+      "dependencies": [
+        "p_codex/shrine"
+      ],
+      "description": [
+        "&6Reinforce&r at a shrine spends runes and stones to raise an armament's plus. Standard steel climbs on &6Tempering Stones&r; unique armaments on &6Lustrous Stones&r.",
+        "",
+        "The first stones are cheap: iron, flint and cobbled deepslate make two. The rest of the trade lives in &eThe Armory&r."
+      ],
+      "tasks": [
+        {
+          "id": "p_codex/reinforce/task0",
+          "type": "item",
+          "item": "runeborn:tempering_stone_1",
+          "count": 8
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_codex/reinforce/reward0",
+          "type": "item",
+          "item": "runeborn:tempering_stone_2",
+          "count": 2
+        },
+        {
+          "id": "p_codex/reinforce/reward1",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "p_codex/minimap",
+      "title": "Ink and Grace",
+      "subtitle": "Mark the fires. The map remembers the rest.",
+      "icon": "minecraft:filled_map",
+      "x": 8,
+      "y": -1.5,
+      "dependencies": [
+        "p_codex/corpse",
+        "p_codex/shrine"
+      ],
+      "description": [
+        "Your map is parchment and ink, fogged over every land you haven't walked. &eN&r hides the minimap, &eM&r opens the world map, &eCtrl+B&r places a marker.",
+        "",
+        "Shrines don't mark themselves. Stand at yours, press &eCtrl+B&r and pick the &6Site of Grace&r emblem. On the world map, &eG&r lists every grace you've marked.",
+        "",
+        "Where you die, the map leaves a &cBloodstain&r (it keeps the last three). Your last bed is your &aResting Place&r."
+      ],
+      "tasks": [
+        {
+          "id": "p_codex/minimap/task0",
+          "type": "checkmark",
+          "title": "I marked a shrine as a Site of Grace"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_codex/minimap/reward0",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "p_codex/runes",
+      "title": "Light in Your Pocket",
+      "subtitle": "Runes you hold are runes you can lose.",
+      "icon": "runeborn:faded_rune",
+      "x": 2,
+      "y": -1.5,
+      "dependencies": [
+        "p_codex/codex"
+      ],
+      "description": [
+        "Everything you kill pays &6runes&r: more for higher levels, far more for champions and Sovereigns. They're held, not banked. When you die, they stay where you fell.",
+        "",
+        "Sometimes the dead drop runes as an item: a &6Faded Rune&r is 200, a Lustrous 1,000, a Radiant 4,000. An item in your pack goes into your corpse when you die, not into the ash. Crush it when you're standing at a shrine, not before."
+      ],
+      "tasks": [
+        {
+          "id": "p_codex/runes/task0",
+          "type": "advancement",
+          "advancement": "runeborn:feats/died",
+          "title": "Fall"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_codex/runes/reward0",
+          "type": "item",
+          "item": "runeborn:faded_rune",
+          "count": 2
+        },
+        {
+          "id": "p_codex/runes/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "p_codex/echo",
+      "title": "&cEcho of the Fallen",
+      "subtitle": "Your death leaves a Remnant.",
+      "icon": "minecraft:zombie_head",
+      "x": 4,
+      "y": -1.5,
+      "dependencies": [
+        "p_codex/runes"
+      ],
+      "description": [
+        "Where you fall, an &cEcho&r rises: &c\"Echo of <you>\"&r, wearing a copy of your armour and swinging a copy of your weapon, with twice the health it deserves. Fire won't touch it. It stands over your runes.",
+        "",
+        "It rises as a zombie, a wither skeleton in the Ashlands, an enderman in the End. Put it down and walk into the glow.",
+        "",
+        "Die again first and the Echo fades, with every rune it guarded. &7The Fractured Archive keeps its own rules; no Echo rises there.&r"
+      ],
+      "tasks": [
+        {
+          "id": "p_codex/echo/task0",
+          "type": "advancement",
+          "advancement": "runeborn:feats/reclaimed",
+          "title": "Reclaim your lost runes"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_codex/echo/reward0",
+          "type": "random",
+          "table": "tables/paths_ashen_lessons"
+        },
+        {
+          "id": "p_codex/echo/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "p_codex/corpse",
+      "title": "What the Corpse Keeps",
+      "subtitle": "Your things wait where you fell.",
+      "icon": "minecraft:chest",
+      "x": 6,
+      "y": -1.5,
+      "dependencies": [
+        "p_codex/echo"
+      ],
+      "description": [
+        "Your gear doesn't scatter. It stays in your &6corpse&r, lying where you died. Open it and take everything back with &6Transfer Items&r.",
+        "",
+        "The Echo's armour is only a copy, and it drops nothing. The real thing is in the corpse it's standing on, which is exactly why it's standing there."
+      ],
+      "tasks": [
+        {
+          "id": "p_codex/corpse/task0",
+          "type": "checkmark",
+          "title": "I took my gear back from my corpse"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_codex/corpse/reward0",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "p_codex/valor",
+      "title": "Valor and the K Screen",
+      "subtitle": "Kills pay twice.",
+      "icon": "remnant_mobs:remnant_shard",
+      "x": 2,
+      "y": 0,
+      "dependencies": [
+        "p_codex/codex"
+      ],
+      "description": [
+        "Kills also pay &6Valor&r. Valor fills your &6RPG level&r, and every level gives points for Vitality, Attack Power, Attack Speed, Protection, Toughness, Agility, Fortitude and Exploration.",
+        "",
+        "Press &eK&r. Stage points with the arrow keys (&eShift&r for five), read the &7current → after&r preview, and press &eEnter&r to confirm.",
+        "",
+        "A &6Remnant Shard&r is 15 Valor waiting to be crushed. Sneak to crush the stack."
+      ],
+      "tasks": [
+        {
+          "id": "p_codex/valor/task0",
+          "type": "advancement",
+          "advancement": "remnant_mobs:taste_of_valor",
+          "title": "Absorb a Remnant Shard"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_codex/valor/reward0",
+          "type": "item",
+          "item": "remnant_mobs:remnant_shard",
+          "count": 4
+        },
+        {
+          "id": "p_codex/valor/reward1",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "p_codex/item_locks",
+      "title": "Earned, Not Found",
+      "subtitle": "Diamond is a promise you have to keep.",
+      "icon": "minecraft:diamond_pickaxe",
+      "x": 4,
+      "y": 0,
+      "dependencies": [
+        "p_codex/valor"
+      ],
+      "description": [
+        "Some gear refuses a weak hand. &bDiamond&r tools and weapons need &612 Attack Power&r; diamond armour needs &612 Protection&r. &5Netherite&r asks for 30.",
+        "",
+        "The tooltip tells you what's missing. Find the diamonds whenever you like. Spend the points before you swing."
+      ],
+      "tasks": [
+        {
+          "id": "p_codex/item_locks/task0",
+          "type": "item",
+          "item": "minecraft:diamond_pickaxe"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_codex/item_locks/reward0",
+          "type": "item",
+          "item": "minecraft:diamond",
+          "count": 2
+        },
+        {
+          "id": "p_codex/item_locks/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "p_codex/threat",
+      "title": "Reading the Threat",
+      "subtitle": "The dark has a number. Learn to read it.",
+      "icon": "remnant_mobs:hunters_lens",
+      "x": 2,
+      "y": 4.5,
+      "dependencies": [
+        "p_codex/codex"
+      ],
+      "description": [
+        "A monster's level comes from where it rose: &7+1 for every 128 blocks from spawn, +1 every 4 days (up to 15), +1 for every 12 blocks below Y 32&r. Ruins set a floor: outposts 12, fortresses 20, strongholds 25, bastions 30, ancient cities 40. The Ashlands start at 15.",
+        "",
+        "Your own level drags theirs a third of the way toward you. Kills above your level pay half again; kills far below pay a quarter.",
+        "",
+        "Hold a &6Hunter's Lens&r to read the area. Look through it to read one monster whole."
+      ],
+      "tasks": [
+        {
+          "id": "p_codex/threat/task0",
+          "type": "advancement",
+          "advancement": "remnant_mobs:know_thy_enemy",
+          "title": "Look through a Hunter's Lens"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_codex/threat/reward0",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "p_codex/ranks",
+      "title": "Crest and Rank",
+      "subtitle": "Some of them have died before.",
+      "icon": "minecraft:goat_horn",
+      "x": 4,
+      "y": 4.5,
+      "dependencies": [
+        "p_codex/threat"
+      ],
+      "description": [
+        "Monsters that rose more than once wear a crest: &7Common&r → &aVeteran&r → &9Elite&r → &5Champion&r → &cRemnant&r. Each rank pays more experience (up to ten times), extra loot, a &6Remnant Shard&r and bonus Valor.",
+        "",
+        "Don't mistake a &5Champion&r crest for a &6gold title&r. The gold title is the Sovereigns' mark, with affixes like Blazing or Warded, and it carries their Fragments.",
+        "",
+        "&o\"Every rank has a weakness. Every Remnant has a name. Learn both.\"&r &7— Ilse, the Huntmaster&r"
+      ],
+      "tasks": [
+        {
+          "id": "p_codex/ranks/task0",
+          "type": "advancement",
+          "advancement": "remnant_mobs:proven_hunter",
+          "title": "Slay an Elite"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_codex/ranks/reward0",
+          "type": "random",
+          "table": "tables/hunters_spoils"
+        },
+        {
+          "id": "p_codex/ranks/reward1",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "p_codex/traits",
+      "title": "Nothing Left to Hide",
+      "subtitle": "Sixteen ways to die, four at a time.",
+      "icon": "minecraft:fermented_spider_eye",
+      "x": 6,
+      "y": 1,
+      "dependencies": [
+        "p_codex/ranks"
+      ],
+      "description": [
+        "Ranked monsters carry &etraits&r, listed under their name. Read them before you swing.",
+        "",
+        "&eVolatile&r explodes after it dies: step away. &eThornskin&r returns melee damage. &eDeflecting&r shrugs off arrows. &eWarded&r regrows its shield if you let it rest. &ePackleader&r calls copies once wounded. &eBlinking&r ends up behind you.",
+        "",
+        "Kill a monster with four traits."
+      ],
+      "tasks": [
+        {
+          "id": "p_codex/traits/task0",
+          "type": "advancement",
+          "advancement": "remnant_mobs:nothing_left_to_hide",
+          "title": "lang:advancements.remnant_mobs.nothing_left_to_hide.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_codex/traits/reward0",
+          "type": "item",
+          "item": "remnant_mobs:remnant_shard",
+          "count": 6
+        },
+        {
+          "id": "p_codex/traits/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "p_codex/brand",
+      "title": "Accept the Challenge",
+      "subtitle": "Make it worse. Get paid double.",
+      "icon": "remnant_mobs:brand_of_challenge",
+      "x": 6,
+      "y": 2.75,
+      "dependencies": [
+        "p_codex/ranks"
+      ],
+      "optional": true,
+      "description": [
+        "A &6Brand of Challenge&r, used on a leveled monster, lifts it one rank, five levels and one trait, and doubles what it pays. A Remnant can't rise any higher, which is the only mercy in the description.",
+        "",
+        "Craft one from Remnant Shards and an echo shard, or trade shards to the Huntmaster."
+      ],
+      "tasks": [
+        {
+          "id": "p_codex/brand/task0",
+          "type": "advancement",
+          "advancement": "remnant_mobs:accept_the_challenge",
+          "title": "lang:advancements.remnant_mobs.accept_the_challenge.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_codex/brand/reward0",
+          "type": "item",
+          "item": "remnant_mobs:remnant_shard",
+          "count": 4
+        },
+        {
+          "id": "p_codex/brand/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "p_codex/remnant",
+      "title": "&cA Remnant's End",
+      "subtitle": "A name, a title and a grudge.",
+      "icon": "minecraft:wither_skeleton_skull",
+      "x": 6,
+      "y": 4.5,
+      "shape": "gear",
+      "size": 1.5,
+      "dependencies": [
+        "p_codex/ranks"
+      ],
+      "description": [
+        "Rarest of all is a &cRemnant&r: a named echo with a title, rising only past level 30. It never despawns. Its horn carries 48 blocks (&o\"A Remnant stirs nearby\"&r), it wears a boss bar, and when it falls the whole world hears who did it.",
+        "",
+        "Bring full flasks. Read its traits through the Lens first."
+      ],
+      "tasks": [
+        {
+          "id": "p_codex/remnant/task0",
+          "type": "advancement",
+          "advancement": "remnant_mobs:remnants_end",
+          "title": "lang:advancements.remnant_mobs.remnants_end.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_codex/remnant/reward0",
+          "type": "random",
+          "table": "tables/hunters_spoils"
+        },
+        {
+          "id": "p_codex/remnant/reward1",
+          "type": "item",
+          "item": "runeborn:radiant_rune"
+        },
+        {
+          "id": "p_codex/remnant/reward2",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "p_codex/hunters_moon",
+      "title": "The Hunter's Moon",
+      "subtitle": "Some full moons come up red.",
+      "icon": "minecraft:redstone",
+      "x": 6,
+      "y": 6.25,
+      "dependencies": [
+        "p_codex/ranks"
+      ],
+      "description": [
+        "On about one full moon in three, a toll sounds and the &cHunter's Moon&r rises. Until dawn, monsters spawn five levels stronger, ranks come twice as often and shards drop double.",
+        "",
+        "An icon on your HUD tells you it's up. Survive one first. Then learn to farm it."
+      ],
+      "tasks": [
+        {
+          "id": "p_codex/hunters_moon/task0",
+          "type": "advancement",
+          "advancement": "remnant_mobs:under_the_hunters_moon",
+          "title": "Slay a ranked monster under a Hunter's Moon"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_codex/hunters_moon/reward0",
+          "type": "item",
+          "item": "remnant_mobs:remnant_shard",
+          "count": 8
+        },
+        {
+          "id": "p_codex/hunters_moon/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "p_codex/sovereigns",
+      "title": "Fragments, Sigils, Relics, Crowns",
+      "subtitle": "How a Sovereign is called, and what it leaves.",
+      "icon": "runeborn:sovereign_fragment",
+      "x": 6,
+      "y": 8,
+      "dependencies": [
+        "p_codex/ranks"
+      ],
+      "description": [
+        "Gold-titled champions carry &6Sovereign Fragments&r. Six Fragments and the right token make a &6Sigil&r. Use it, and a Sovereign answers.",
+        "",
+        "A felled Sovereign leaves a &6Relic&r, exchanged at a shrine for one of two legendary armaments, and most leave a &6Crown Shard&r: use it to claim its blessing, then wear one at a time from a shrine. The Old Powers keep relics too.",
+        "",
+        "Each Sovereign's first fall rekindles an ember of &6The Long Eclipse&r for everyone. &e/lastlight eclipse&r shows the count."
+      ],
+      "tasks": [
+        {
+          "id": "p_codex/sovereigns/task0",
+          "type": "advancement",
+          "advancement": "runeborn:feats/summon",
+          "title": "Call a Sovereign with its Sigil"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_codex/sovereigns/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment"
+        },
+        {
+          "id": "p_codex/sovereigns/reward1",
+          "type": "xp",
+          "xp": 120
+        }
+      ]
+    },
+    {
+      "id": "p_codex/loot_bags",
+      "title": "The Dead Hoard",
+      "subtitle": "Four small sins make a bigger one.",
+      "icon": "mob_loot_bags:rarelootbag",
+      "x": 2,
+      "y": 1.5,
+      "dependencies": [
+        "p_codex/codex"
+      ],
+      "description": [
+        "Monsters drop &6loot bags&r: Common, Uncommon, Rare, Epic, Legendary, &dMythic&r. Hold use to open one; hold &eShift&r over it to read its real odds.",
+        "",
+        "Four bags of a tier craft into the next (Mythic also wants a nether star), and any bag splits back into four. Odd ones turn up: &cCursed&r bags gamble, &6Hourglass&r bags ripen if you wait, &bLocked&r bags want a Diamond Key cut from a diamond.",
+        "",
+        "Combine four Uncommon bags and open the Rare."
+      ],
+      "tasks": [
+        {
+          "id": "p_codex/loot_bags/task0",
+          "type": "advancement",
+          "advancement": "mob_loot_bags:open_rare",
+          "title": "Open a Rare Loot Bag"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "p_codex/loot_bags/reward0",
+          "type": "item",
+          "item": "mob_loot_bags:uncommonlootbag",
+          "count": 2
+        },
+        {
+          "id": "p_codex/loot_bags/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    }
+  ]
+}

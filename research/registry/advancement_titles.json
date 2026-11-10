@@ -1,0 +1,2321 @@
+{
+ "aquamirae:adventure/encounter_the_shipbreaker": {
+  "key": "advancements.aquamirae.encounter_the_shipbreaker.title"
+ },
+ "aquamirae:adventure/find_ice_maze": {
+  "key": "advancements.aquamirae.find_ice_maze.title"
+ },
+ "aquamirae:adventure/obtain_abyssal_upgrade_smithing_template": {
+  "key": "advancements.aquamirae.obtain_abyssal_upgrade_smithing_template.title"
+ },
+ "aquamirae:adventure/obtain_all_abyssal_armor": {
+  "key": "advancements.aquamirae.obtain_all_abyssal_armor.title"
+ },
+ "aquamirae:adventure/obtain_all_abyssal_weapons": {
+  "key": "advancements.aquamirae.obtain_all_abyssal_weapons.title"
+ },
+ "aquamirae:adventure/obtain_all_salvager_armor": {
+  "key": "advancements.aquamirae.obtain_all_salvager_armor.title"
+ },
+ "aquamirae:adventure/obtain_all_terrible_armor": {
+  "key": "advancements.aquamirae.obtain_all_terrible_armor.title"
+ },
+ "aquamirae:adventure/obtain_all_terrible_weapons": {
+  "key": "advancements.aquamirae.obtain_all_terrible_weapons.title"
+ },
+ "aquamirae:adventure/obtain_frozen_key": {
+  "key": "advancements.aquamirae.obtain_frozen_key.title"
+ },
+ "aquamirae:adventure/obtain_pirate_pouch": {
+  "key": "advancements.aquamirae.obtain_pirate_pouch.title"
+ },
+ "aquamirae:adventure/obtain_rune_of_the_storm": {
+  "key": "advancements.aquamirae.obtain_rune_of_the_storm.title"
+ },
+ "aquamirae:adventure/obtain_shell_horn": {
+  "key": "advancements.aquamirae.obtain_shell_horn.title"
+ },
+ "aquamirae:adventure/obtain_ship_graveyard_echo": {
+  "key": "advancements.aquamirae.obtain_ship_graveyard_echo.title"
+ },
+ "aquamirae:adventure/obtain_terrible_upgrade_smithing_template": {
+  "key": "advancements.aquamirae.obtain_terrible_upgrade_smithing_template.title"
+ },
+ "aquamirae:adventure/obtain_tidepiercer": {
+  "key": "advancements.aquamirae.obtain_tidepiercer.title"
+ },
+ "aquamirae:adventure/root": {
+  "key": "advancements.aquamirae.root.title"
+ },
+ "aquamirae:adventure/survive_the_shipbreaker": {
+  "key": "advancements.aquamirae.survive_the_shipbreaker.title"
+ },
+ "aquamirae:adventure/tame_shellback": {
+  "key": "advancements.aquamirae.tame_shellback.title"
+ },
+ "artifacts:adventurous_eater": {
+  "key": "artifacts.advancements.adventurous_eater.title"
+ },
+ "artifacts:amateur_archaeologist": {
+  "key": "artifacts.advancements.amateur_archaeologist.title"
+ },
+ "artifacts:chest_slayer": {
+  "key": "artifacts.advancements.chest_slayer.title"
+ },
+ "better_witch_huts:all_huts": {
+  "key": "advancements.better_witch_huts.all_huts.title"
+ },
+ "better_witch_huts:broke_hex": {
+  "key": "advancements.better_witch_huts.broke_hex.title"
+ },
+ "better_witch_huts:first_errand": {
+  "key": "advancements.better_witch_huts.first_errand.title"
+ },
+ "better_witch_huts:first_pact": {
+  "key": "advancements.better_witch_huts.first_pact.title"
+ },
+ "better_witch_huts:found_hut": {
+  "key": "advancements.better_witch_huts.found_hut.title"
+ },
+ "better_witch_huts:hexed": {
+  "key": "advancements.better_witch_huts.hexed.title"
+ },
+ "better_witch_huts:hunted": {
+  "key": "advancements.better_witch_huts.hunted.title"
+ },
+ "better_witch_huts:killed_resident": {
+  "key": "advancements.better_witch_huts.killed_resident.title"
+ },
+ "better_witch_huts:kin": {
+  "key": "advancements.better_witch_huts.kin.title"
+ },
+ "better_witch_huts:known": {
+  "key": "advancements.better_witch_huts.known.title"
+ },
+ "better_witch_huts:poppet_ward": {
+  "key": "advancements.better_witch_huts.poppet_ward.title"
+ },
+ "better_witch_huts:root": {
+  "key": "advancements.better_witch_huts.root.title"
+ },
+ "better_witch_huts:ten_errands": {
+  "key": "advancements.better_witch_huts.ten_errands.title"
+ },
+ "better_witch_huts:three_hexes": {
+  "key": "advancements.better_witch_huts.three_hexes.title"
+ },
+ "better_witch_huts:three_pacts": {
+  "key": "advancements.better_witch_huts.three_pacts.title"
+ },
+ "better_witch_huts:trusted": {
+  "key": "advancements.better_witch_huts.trusted.title"
+ },
+ "better_witch_huts:undying_saved": {
+  "key": "advancements.better_witch_huts.undying_saved.title"
+ },
+ "better_witch_huts:visit_bog_hut": {
+  "key": "advancements.better_witch_huts.visit_bog_hut.title"
+ },
+ "better_witch_huts:visit_bone_hut": {
+  "key": "advancements.better_witch_huts.visit_bone_hut.title"
+ },
+ "better_witch_huts:visit_hedge_cottage": {
+  "key": "advancements.better_witch_huts.visit_hedge_cottage.title"
+ },
+ "better_witch_huts:visit_mangrove_roost": {
+  "key": "advancements.better_witch_huts.visit_mangrove_roost.title"
+ },
+ "better_witch_huts:visit_nightshade_circle": {
+  "key": "advancements.better_witch_huts.visit_nightshade_circle.title"
+ },
+ "better_witch_huts:visit_rime_hut": {
+  "key": "advancements.better_witch_huts.visit_rime_hut.title"
+ },
+ "better_witch_huts:visit_witch_hut": {
+  "key": "advancements.better_witch_huts.visit_witch_hut.title"
+ },
+ "better_witch_huts:witch_bottle": {
+  "key": "advancements.better_witch_huts.witch_bottle.title"
+ },
+ "betterdeserttemples:root": {
+  "key": "betterdeserttemples.advancements.root.title"
+ },
+ "betterdeserttemples:temple_clear": {
+  "key": "betterdeserttemples.advancements.temple_clear.title"
+ },
+ "betterdeserttemples:temple_entry": {
+  "key": "betterdeserttemples.advancements.temple_entry.title"
+ },
+ "betterdungeons:all_dungeons": {
+  "key": "Professional Dungeoneer"
+ },
+ "betterdungeons:root": {
+  "key": "YUNG's Better Dungeons"
+ },
+ "betterdungeons:skeleton_dungeon": {
+  "key": "A Bone to Pick"
+ },
+ "betterdungeons:small_dungeon": {
+  "key": "Quite the Renovation"
+ },
+ "betterdungeons:small_nether_dungeon": {
+  "key": "A Special Addition"
+ },
+ "betterdungeons:spider_dungeon": {
+  "key": "Cobweb Entanglement"
+ },
+ "betterdungeons:zombie_dungeon": {
+  "key": "When in Rome"
+ },
+ "block_factorys_bosses:die_boss": {
+  "key": "advancement.die_boss.title"
+ },
+ "block_factorys_bosses:kill_all_bosses": {
+  "key": "advancement.kill_all_bosses.title"
+ },
+ "block_factorys_bosses:kill_boss_under_minute": {
+  "key": "advancement.kill_boss_under_minute.title"
+ },
+ "block_factorys_bosses:kill_dragon": {
+  "key": "advancement.kill_dragon.title"
+ },
+ "block_factorys_bosses:kill_kraken": {
+  "key": "advancement.kill_kraken.title"
+ },
+ "block_factorys_bosses:kill_sandworm": {
+  "key": "advancement.kill_sandworm.title"
+ },
+ "block_factorys_bosses:kill_underworld_knight": {
+  "key": "advancement.kill_underworld_knight.title"
+ },
+ "block_factorys_bosses:kill_yeti": {
+  "key": "advancement.kill_yeti.title"
+ },
+ "block_factorys_bosses:no_hit_dragon": {
+  "key": "advancement.no_hit_dragon.title"
+ },
+ "block_factorys_bosses:no_hit_kraken": {
+  "key": "advancement.no_hit_kraken.title"
+ },
+ "block_factorys_bosses:no_hit_sandworm": {
+  "key": "advancement.no_hit_sandworm.title"
+ },
+ "block_factorys_bosses:no_hit_underworld_knight": {
+  "key": "advancement.no_hit_underworld_knight.title"
+ },
+ "block_factorys_bosses:no_hit_yeti": {
+  "key": "advancement.no_hit_yeti.title"
+ },
+ "born_in_chaos_v1:arachnophobes_nightmare": {
+  "key": "advancements.arachnophobes_nightmare.title"
+ },
+ "born_in_chaos_v1:big_boy": {
+  "key": "advancements.big_boy.title"
+ },
+ "born_in_chaos_v1:bonk": {
+  "key": "advancements.bonk.title"
+ },
+ "born_in_chaos_v1:bornin_chaos": {
+  "key": "advancements.bornin_chaos.title"
+ },
+ "born_in_chaos_v1:bury_them_all": {
+  "key": "advancements.bury_them_all.title"
+ },
+ "born_in_chaos_v1:bypassingthe_expiration_date": {
+  "key": "advancements.bypassingthe_expiration_date.title"
+ },
+ "born_in_chaos_v1:chaos_knight": {
+  "key": "advancements.chaos_knight.title"
+ },
+ "born_in_chaos_v1:charm_collector": {
+  "key": "advancements.charm_collector.title"
+ },
+ "born_in_chaos_v1:compact_necromancy": {
+  "key": "advancements.compact_necromancy.title"
+ },
+ "born_in_chaos_v1:cultural_attribute": {
+  "key": "advancements.cultural_attribute.title"
+ },
+ "born_in_chaos_v1:dark_blacksmith": {
+  "key": "advancements.dark_blacksmith.title"
+ },
+ "born_in_chaos_v1:dark_creator": {
+  "key": "advancements.dark_creator.title"
+ },
+ "born_in_chaos_v1:dark_forging": {
+  "key": "advancements.dark_forging.title"
+ },
+ "born_in_chaos_v1:dark_metallurgy": {
+  "key": "advancements.dark_metallurgy.title"
+ },
+ "born_in_chaos_v1:deceived_hopes": {
+  "key": "advancements.deceived_hopes.title"
+ },
+ "born_in_chaos_v1:disgusting_lootbox": {
+  "key": "advancements.disgusting_lootbox.title"
+ },
+ "born_in_chaos_v1:dismantledto_bones": {
+  "key": "advancements.dismantledto_bones.title"
+ },
+ "born_in_chaos_v1:double_trouble": {
+  "key": "advancements.double_trouble.title"
+ },
+ "born_in_chaos_v1:excessive_fly_swatter": {
+  "key": "advancements.excessive_fly_swatter.title"
+ },
+ "born_in_chaos_v1:exorcism": {
+  "key": "advancements.exorcism.title"
+ },
+ "born_in_chaos_v1:explosive_temper": {
+  "key": "advancements.explosive_temper.title"
+ },
+ "born_in_chaos_v1:fighting_nightmares": {
+  "key": "advancements.fighting_nightmares.title"
+ },
+ "born_in_chaos_v1:food_fight": {
+  "key": "advancements.food_fight.title"
+ },
+ "born_in_chaos_v1:freshen_your_breath": {
+  "key": "advancements.freshen_your_breath.title"
+ },
+ "born_in_chaos_v1:good_demoman": {
+  "key": "advancements.good_demoman.title"
+ },
+ "born_in_chaos_v1:grave_ravager": {
+  "key": "advancements.grave_ravager.title"
+ },
+ "born_in_chaos_v1:guidetothenextworld": {
+  "key": "advancements.guidetothenextworld.title"
+ },
+ "born_in_chaos_v1:hat_for_dark_deeds": {
+  "key": "advancements.hat_for_dark_deeds.title"
+ },
+ "born_in_chaos_v1:hatman": {
+  "key": "advancements.hatman.title"
+ },
+ "born_in_chaos_v1:heart_thief": {
+  "key": "advancements.heart_thief.title"
+ },
+ "born_in_chaos_v1:horror_underthe_mantle": {
+  "key": "advancements.horror_underthe_mantle.title"
+ },
+ "born_in_chaos_v1:horrorofthe_depths": {
+  "key": "advancements.horrorofthe_depths.title"
+ },
+ "born_in_chaos_v1:infernal_hatman": {
+  "key": "advancements.infernal_hatman.title"
+ },
+ "born_in_chaos_v1:infernal_medicine": {
+  "key": "advancements.infernal_medicine.title"
+ },
+ "born_in_chaos_v1:insect_repellent": {
+  "key": "advancements.insect_repellent.title"
+ },
+ "born_in_chaos_v1:junior_summoner": {
+  "key": "advancements.junior_summoner.title"
+ },
+ "born_in_chaos_v1:lifeturnedouttobeacomedy": {
+  "key": "advancements.lifeturnedouttobeacomedy.title"
+ },
+ "born_in_chaos_v1:mr_decoction": {
+  "key": "advancements.mr_decoction.title"
+ },
+ "born_in_chaos_v1:my_size": {
+  "key": "advancements.my_size.title"
+ },
+ "born_in_chaos_v1:naughty_child": {
+  "key": "advancements.naughty_child.title"
+ },
+ "born_in_chaos_v1:one_explosion_is_good_two_is_better": {
+  "key": "advancements.one_explosion_is_good_two_is_better.title"
+ },
+ "born_in_chaos_v1:protectedby_darkness": {
+  "key": "advancements.protectedby_darkness.title"
+ },
+ "born_in_chaos_v1:pumpkin_lord": {
+  "key": "advancements.pumpkin_lord.title"
+ },
+ "born_in_chaos_v1:pumpkin_sir": {
+  "key": "advancements.pumpkin_sir.title"
+ },
+ "born_in_chaos_v1:rampage": {
+  "key": "advancements.rampage.title"
+ },
+ "born_in_chaos_v1:scarecrow": {
+  "key": "advancements.scarecrow.title"
+ },
+ "born_in_chaos_v1:shakeand_mix": {
+  "key": "advancements.shakeand_mix.title"
+ },
+ "born_in_chaos_v1:shell_warrior": {
+  "key": "advancements.shell_warrior.title"
+ },
+ "born_in_chaos_v1:soul_eater": {
+  "key": "advancements.soul_eater.title"
+ },
+ "born_in_chaos_v1:spider_warlord": {
+  "key": "advancements.spider_warlord.title"
+ },
+ "born_in_chaos_v1:spruce_cowboyinthe_moonlight": {
+  "key": "advancements.spruce_cowboyinthe_moonlight.title"
+ },
+ "born_in_chaos_v1:squireofthe_dark_lord": {
+  "key": "advancements.squireofthe_dark_lord.title"
+ },
+ "born_in_chaos_v1:sweet_battle": {
+  "key": "advancements.sweet_battle.title"
+ },
+ "born_in_chaos_v1:symphonyof_chaos": {
+  "key": "advancements.symphonyof_chaos.title"
+ },
+ "born_in_chaos_v1:the_wind_darkening": {
+  "key": "advancements.the_wind_darkening.title"
+ },
+ "born_in_chaos_v1:transmutalogy": {
+  "key": "advancements.transmutalogy.title"
+ },
+ "born_in_chaos_v1:trickor_treat": {
+  "key": "advancements.trickor_treat.title"
+ },
+ "born_in_chaos_v1:unitywith_darknessachievement": {
+  "key": "advancements.unitywith_darknessachievement.title"
+ },
+ "born_in_chaos_v1:unlucky_hunter": {
+  "key": "advancements.unlucky_hunter.title"
+ },
+ "born_in_chaos_v1:waste_recycler": {
+  "key": "advancements.waste_recycler.title"
+ },
+ "born_in_chaos_v1:wrong_santa": {
+  "key": "advancements.wrong_santa.title"
+ },
+ "born_in_chaos_v1:yoursatietywillbe_eternal": {
+  "key": "advancements.yoursatietywillbe_eternal.title"
+ },
+ "bosses_of_mass_destruction:adventure/night_lich_defeat": {
+  "key": "advancements.adventure.night_lich_defeat.title"
+ },
+ "bosses_of_mass_destruction:adventure/void_blossom_defeat": {
+  "key": "advancements.adventure.void_blossom_defeat.title"
+ },
+ "bosses_of_mass_destruction:end/obsidilith_defeat": {
+  "key": "advancements.end.obsidilith_defeat.title"
+ },
+ "bosses_of_mass_destruction:nether/gauntlet_defeat": {
+  "key": "advancements.nether.gauntlet_defeat.title"
+ },
+ "brewinandchewin:main/brew_drink": {
+  "key": "brewinandchewin.advancement.brew_drink"
+ },
+ "brewinandchewin:main/chef_of_the_ages": {
+  "key": "brewinandchewin.advancement.chef_of_the_ages"
+ },
+ "brewinandchewin:main/cook_fiery_fondue": {
+  "key": "brewinandchewin.advancement.cook_fiery_fondue"
+ },
+ "brewinandchewin:main/crafting_problem": {
+  "key": "brewinandchewin.advancement.crafting_problem"
+ },
+ "brewinandchewin:main/ferment_cheese": {
+  "key": "brewinandchewin.advancement.ferment_cheese"
+ },
+ "brewinandchewin:main/place_keg": {
+  "key": "brewinandchewin.advancement.place_keg"
+ },
+ "brewinandchewin:main/place_temperature_block_near_keg": {
+  "key": "brewinandchewin.advancement.place_temperature_block_near_keg"
+ },
+ "brewinandchewin:main/root": {
+  "key": "brewinandchewin.advancement.root"
+ },
+ "cataclysm:find_acropolis": {
+  "key": "advancements.cataclysm.acropolis.title"
+ },
+ "cataclysm:find_ancient_factory": {
+  "key": "advancements.cataclysm.ancient_factory.title"
+ },
+ "cataclysm:find_burning_arena": {
+  "key": "advancements.cataclysm.burning_arena.title"
+ },
+ "cataclysm:find_cursed_pyramid": {
+  "key": "advancements.cataclysm.cursed_pyramid.title"
+ },
+ "cataclysm:find_frosted_prison": {
+  "key": "advancements.cataclysm.frosted_prison.title"
+ },
+ "cataclysm:find_ruined_citadel": {
+  "key": "advancements.cataclysm.find_ruined_citadel.title"
+ },
+ "cataclysm:find_soul_black_smith": {
+  "key": "advancements.cataclysm.find_soul_black_smith.title"
+ },
+ "cataclysm:find_sunken_city": {
+  "key": "advancements.cataclysm.sunken_city.title"
+ },
+ "cataclysm:kill_all_bosses": {
+  "key": "advancements.cataclysm.kill_all_bosses.title"
+ },
+ "cataclysm:kill_clawdian": {
+  "key": "advancements.cataclysm.kill_clawdian.title"
+ },
+ "cataclysm:kill_ender_golem": {
+  "key": "advancements.cataclysm.kill_ender_golem.title"
+ },
+ "cataclysm:kill_ender_guardian": {
+  "key": "advancements.cataclysm.kill_ender_guardian.title"
+ },
+ "cataclysm:kill_harbinger": {
+  "key": "advancements.cataclysm.kill_harbinger.title"
+ },
+ "cataclysm:kill_ignis": {
+  "key": "advancements.cataclysm.kill_ignis.title"
+ },
+ "cataclysm:kill_leviathan": {
+  "key": "advancements.cataclysm.kill_leviathan.title"
+ },
+ "cataclysm:kill_maledictus": {
+  "key": "advancements.cataclysm.kill_maledictus.title"
+ },
+ "cataclysm:kill_monstrosity": {
+  "key": "advancements.cataclysm.kill_monstrosity.title"
+ },
+ "cataclysm:kill_remnant": {
+  "key": "advancements.cataclysm.kill_remnant.title"
+ },
+ "cataclysm:kill_revenant": {
+  "key": "advancements.cataclysm.kill_revenant.title"
+ },
+ "cataclysm:kill_scylla": {
+  "key": "advancements.cataclysm.kill_scylla.title"
+ },
+ "cataclysm:root": {
+  "key": "advancements.cataclysm.root.title"
+ },
+ "christmas_ginger_house:christmas_eve": {
+  "key": "advancements.christmas_ginger_house.christmas_eve.title"
+ },
+ "christmas_ginger_house:deck_the_halls": {
+  "key": "advancements.christmas_ginger_house.deck_the_halls.title"
+ },
+ "christmas_ginger_house:dress_the_part": {
+  "key": "advancements.christmas_ginger_house.dress_the_part.title"
+ },
+ "christmas_ginger_house:home_sweet_home": {
+  "key": "advancements.christmas_ginger_house.home_sweet_home.title"
+ },
+ "christmas_ginger_house:naughty_list": {
+  "key": "advancements.christmas_ginger_house.naughty_list.title"
+ },
+ "christmas_ginger_house:open_advent_door": {
+  "key": "advancements.christmas_ginger_house.open_advent_door.title"
+ },
+ "christmas_ginger_house:reindeer_games": {
+  "key": "advancements.christmas_ginger_house.reindeer_games.title"
+ },
+ "christmas_ginger_house:root": {
+  "key": "advancements.christmas_ginger_house.root.title"
+ },
+ "christmas_ginger_house:sweet_tooth": {
+  "key": "advancements.christmas_ginger_house.sweet_tooth.title"
+ },
+ "christmas_ginger_house:unwrap_present": {
+  "key": "advancements.christmas_ginger_house.unwrap_present.title"
+ },
+ "christmas_ginger_house:warm_and_cozy": {
+  "key": "advancements.christmas_ginger_house.warm_and_cozy.title"
+ },
+ "create:andesite_alloy": {
+  "key": "advancement.create.andesite_alloy"
+ },
+ "create:andesite_casing": {
+  "key": "advancement.create.andesite_casing"
+ },
+ "create:anvil_plough": {
+  "key": "advancement.create.anvil_plough"
+ },
+ "create:arm_blaze_burner": {
+  "key": "advancement.create.arm_blaze_burner"
+ },
+ "create:arm_many_targets": {
+  "key": "advancement.create.arm_many_targets"
+ },
+ "create:backtank": {
+  "key": "advancement.create.backtank"
+ },
+ "create:belt": {
+  "key": "advancement.create.belt"
+ },
+ "create:belt_funnel_kiss": {
+  "key": "advancement.create.belt_funnel_kiss"
+ },
+ "create:brass": {
+  "key": "advancement.create.brass"
+ },
+ "create:brass_casing": {
+  "key": "advancement.create.brass_casing"
+ },
+ "create:burner": {
+  "key": "advancement.create.burner"
+ },
+ "create:cardboard": {
+  "key": "advancement.create.cardboard"
+ },
+ "create:cardboard_armor": {
+  "key": "advancement.create.cardboard_armor"
+ },
+ "create:cardboard_armor_trim": {
+  "key": "advancement.create.cardboard_armor_trim"
+ },
+ "create:cart_pickup": {
+  "key": "advancement.create.cart_pickup"
+ },
+ "create:chained_drain": {
+  "key": "advancement.create.chained_drain"
+ },
+ "create:chocolate_bucket": {
+  "key": "advancement.create.chocolate_bucket"
+ },
+ "create:chute": {
+  "key": "advancement.create.chute"
+ },
+ "create:clockwork_bearing": {
+  "key": "advancement.create.clockwork_bearing"
+ },
+ "create:compacting": {
+  "key": "advancement.create.compacting"
+ },
+ "create:conductor": {
+  "key": "advancement.create.conductor"
+ },
+ "create:contraption_actors": {
+  "key": "advancement.create.contraption_actors"
+ },
+ "create:copper": {
+  "key": "advancement.create.copper"
+ },
+ "create:copper_casing": {
+  "key": "advancement.create.copper_casing"
+ },
+ "create:crafter_lazy_000": {
+  "key": "advancement.create.crafter_lazy_000"
+ },
+ "create:cross_streams": {
+  "key": "advancement.create.cross_streams"
+ },
+ "create:crusher_maxed_0000": {
+  "key": "advancement.create.crusher_maxed_0000"
+ },
+ "create:crushing_wheel": {
+  "key": "advancement.create.crushing_wheel"
+ },
+ "create:cuckoo_clock": {
+  "key": "advancement.create.cuckoo_clock"
+ },
+ "create:deployer": {
+  "key": "advancement.create.deployer"
+ },
+ "create:display_board_0": {
+  "key": "advancement.create.display_board_0"
+ },
+ "create:display_link": {
+  "key": "advancement.create.display_link"
+ },
+ "create:diving_suit": {
+  "key": "advancement.create.diving_suit"
+ },
+ "create:diving_suit_lava": {
+  "key": "advancement.create.diving_suit_lava"
+ },
+ "create:drain": {
+  "key": "advancement.create.drain"
+ },
+ "create:ejector_maxed": {
+  "key": "advancement.create.ejector_maxed"
+ },
+ "create:encased_fan": {
+  "key": "advancement.create.encased_fan"
+ },
+ "create:extendo_grip": {
+  "key": "advancement.create.extendo_grip"
+ },
+ "create:extendo_grip_dual": {
+  "key": "advancement.create.extendo_grip_dual"
+ },
+ "create:factory_gauge": {
+  "key": "advancement.create.factory_gauge"
+ },
+ "create:fan_processing": {
+  "key": "advancement.create.fan_processing"
+ },
+ "create:fist_bump": {
+  "key": "advancement.create.fist_bump"
+ },
+ "create:foods": {
+  "key": "advancement.create.foods"
+ },
+ "create:frogport": {
+  "key": "advancement.create.frogport"
+ },
+ "create:funnel": {
+  "key": "advancement.create.funnel"
+ },
+ "create:glass_pipe": {
+  "key": "advancement.create.glass_pipe"
+ },
+ "create:hand_crank_000": {
+  "key": "advancement.create.hand_crank_000"
+ },
+ "create:haunted_bell": {
+  "key": "advancement.create.haunted_bell"
+ },
+ "create:honey_drain": {
+  "key": "advancement.create.honey_drain"
+ },
+ "create:hose_pulley": {
+  "key": "advancement.create.hose_pulley"
+ },
+ "create:hose_pulley_lava": {
+  "key": "advancement.create.hose_pulley_lava"
+ },
+ "create:lava_wheel_00000": {
+  "key": "advancement.create.lava_wheel_00000"
+ },
+ "create:linked_controller": {
+  "key": "advancement.create.linked_controller"
+ },
+ "create:long_train": {
+  "key": "advancement.create.long_train"
+ },
+ "create:long_travel": {
+  "key": "advancement.create.long_travel"
+ },
+ "create:mechanical_arm": {
+  "key": "advancement.create.mechanical_arm"
+ },
+ "create:mechanical_crafter": {
+  "key": "advancement.create.mechanical_crafter"
+ },
+ "create:mechanical_mixer": {
+  "key": "advancement.create.mechanical_mixer"
+ },
+ "create:mechanical_press": {
+  "key": "advancement.create.mechanical_press"
+ },
+ "create:mechanical_pump_0": {
+  "key": "advancement.create.mechanical_pump_0"
+ },
+ "create:millstone": {
+  "key": "advancement.create.millstone"
+ },
+ "create:musical_arm": {
+  "key": "advancement.create.musical_arm"
+ },
+ "create:package_chute_throw": {
+  "key": "advancement.create.package_chute_throw"
+ },
+ "create:packager": {
+  "key": "advancement.create.packager"
+ },
+ "create:pipe_organ": {
+  "key": "advancement.create.pipe_organ"
+ },
+ "create:portable_storage_interface": {
+  "key": "advancement.create.portable_storage_interface"
+ },
+ "create:potato_cannon": {
+  "key": "advancement.create.potato_cannon"
+ },
+ "create:potato_cannon_collide": {
+  "key": "advancement.create.potato_cannon_collide"
+ },
+ "create:precision_mechanism": {
+  "key": "advancement.create.precision_mechanism"
+ },
+ "create:pulley_maxed": {
+  "key": "advancement.create.pulley_maxed"
+ },
+ "create:red_signal": {
+  "key": "advancement.create.red_signal"
+ },
+ "create:root": {
+  "key": "advancement.create.root"
+ },
+ "create:rose_quartz": {
+  "key": "advancement.create.rose_quartz"
+ },
+ "create:saw_processing": {
+  "key": "advancement.create.saw_processing"
+ },
+ "create:self_deploying": {
+  "key": "advancement.create.self_deploying"
+ },
+ "create:shifting_gears": {
+  "key": "advancement.create.shifting_gears"
+ },
+ "create:speed_controller": {
+  "key": "advancement.create.speed_controller"
+ },
+ "create:spout": {
+  "key": "advancement.create.spout"
+ },
+ "create:steam_engine": {
+  "key": "advancement.create.steam_engine"
+ },
+ "create:steam_engine_maxed": {
+  "key": "advancement.create.steam_engine_maxed"
+ },
+ "create:steam_whistle": {
+  "key": "advancement.create.steam_whistle"
+ },
+ "create:stock_ticker": {
+  "key": "advancement.create.stock_ticker"
+ },
+ "create:stressometer": {
+  "key": "advancement.create.stressometer"
+ },
+ "create:stressometer_maxed": {
+  "key": "advancement.create.stressometer_maxed"
+ },
+ "create:sturdy_sheet": {
+  "key": "advancement.create.sturdy_sheet"
+ },
+ "create:super_glue": {
+  "key": "advancement.create.super_glue"
+ },
+ "create:table_cloth_shop": {
+  "key": "advancement.create.table_cloth_shop"
+ },
+ "create:track_0": {
+  "key": "advancement.create.track_0"
+ },
+ "create:track_crafting_factory": {
+  "key": "advancement.create.track_crafting_factory"
+ },
+ "create:track_signal": {
+  "key": "advancement.create.track_signal"
+ },
+ "create:train": {
+  "key": "advancement.create.train"
+ },
+ "create:train_casing_00": {
+  "key": "advancement.create.train_casing_00"
+ },
+ "create:train_crash": {
+  "key": "advancement.create.train_crash"
+ },
+ "create:train_crash_backwards": {
+  "key": "advancement.create.train_crash_backwards"
+ },
+ "create:train_portal": {
+  "key": "advancement.create.train_portal"
+ },
+ "create:train_roadkill": {
+  "key": "advancement.create.train_roadkill"
+ },
+ "create:train_whistle": {
+  "key": "advancement.create.train_whistle"
+ },
+ "create:water_supply": {
+  "key": "advancement.create.water_supply"
+ },
+ "create:water_wheel": {
+  "key": "advancement.create.water_wheel"
+ },
+ "create:windmill": {
+  "key": "advancement.create.windmill"
+ },
+ "create:windmill_maxed": {
+  "key": "advancement.create.windmill_maxed"
+ },
+ "create:wrench_goggles": {
+  "key": "advancement.create.wrench_goggles"
+ },
+ "deeperdarker:main/enter_otherside": {
+  "key": "advancements.deeperdarker.enter_otherside.title"
+ },
+ "deeperdarker:main/explore_otherside": {
+  "key": "advancements.deeperdarker.explore_otherside.title"
+ },
+ "deeperdarker:main/find_ancient_city": {
+  "key": "advancements.deeperdarker.find_ancient_city.title"
+ },
+ "deeperdarker:main/find_ancient_temple": {
+  "key": "advancements.deeperdarker.find_ancient_temple.title"
+ },
+ "deeperdarker:main/kill_all_sculk_mobs": {
+  "key": "advancements.deeperdarker.kill_all_sculk_mobs.title"
+ },
+ "deeperdarker:main/kill_warden": {
+  "key": "advancements.deeperdarker.kill_warden.title"
+ },
+ "deeperdarker:main/obtain_reinforced_echo_shard": {
+  "key": "advancements.deeperdarker.obtain_reinforced_echo_shard.title"
+ },
+ "deeperdarker:main/obtain_sculk_transmitter": {
+  "key": "advancements.deeperdarker.obtain_sculk_transmitter.title"
+ },
+ "deeperdarker:main/obtain_sonorous_staff": {
+  "key": "advancements.deeperdarker.obtain_sonorous_staff.title"
+ },
+ "deeperdarker:main/root": {
+  "key": "advancements.deeperdarker.root.title"
+ },
+ "deeperdarker:main/warden_armor": {
+  "key": "advancements.deeperdarker.warden_armor.title"
+ },
+ "dungeons_arise:find_abandoned_temple": {
+  "key": "advancement.dungeons_arise.find_abandoned_temple.title"
+ },
+ "dungeons_arise:find_aviary": {
+  "key": "advancement.dungeons_arise.find_aviary.title"
+ },
+ "dungeons_arise:find_bandit_towers": {
+  "key": "advancement.dungeons_arise.find_bandit_towers.title"
+ },
+ "dungeons_arise:find_bandit_village": {
+  "key": "advancement.dungeons_arise.find_bandit_village.title"
+ },
+ "dungeons_arise:find_bathhouse": {
+  "key": "advancement.dungeons_arise.find_bathhouse.title"
+ },
+ "dungeons_arise:find_ceryneian_hind": {
+  "key": "advancement.dungeons_arise.find_ceryneian_hind.title"
+ },
+ "dungeons_arise:find_coliseum": {
+  "key": "advancement.dungeons_arise.find_coliseum.title"
+ },
+ "dungeons_arise:find_fishing_hut": {
+  "key": "advancement.dungeons_arise.find_fishing_hut.title"
+ },
+ "dungeons_arise:find_foundry": {
+  "key": "advancement.dungeons_arise.find_foundry.title"
+ },
+ "dungeons_arise:find_giant_mushroom": {
+  "key": "advancement.dungeons_arise.find_giant_mushroom.title"
+ },
+ "dungeons_arise:find_greenwood_pub": {
+  "key": "advancement.dungeons_arise.find_greenwood_pub.title"
+ },
+ "dungeons_arise:find_heavenly_challenger": {
+  "key": "advancement.dungeons_arise.find_heavenly_challenger.title"
+ },
+ "dungeons_arise:find_heavenly_conqueror": {
+  "key": "advancement.dungeons_arise.find_heavenly_conqueror.title"
+ },
+ "dungeons_arise:find_heavenly_rider": {
+  "key": "advancement.dungeons_arise.find_heavenly_rider.title"
+ },
+ "dungeons_arise:find_illager_campsite": {
+  "key": "advancement.dungeons_arise.find_illager_campsite.title"
+ },
+ "dungeons_arise:find_illager_corsair_or_illager_galley": {
+  "key": "advancement.dungeons_arise.find_illager_corsair_or_illager_galley.title"
+ },
+ "dungeons_arise:find_illager_fort": {
+  "key": "advancement.dungeons_arise.find_illager_fort.title"
+ },
+ "dungeons_arise:find_illager_windmill": {
+  "key": "advancement.dungeons_arise.find_illager_windmill.title"
+ },
+ "dungeons_arise:find_infested_temple": {
+  "key": "advancement.dungeons_arise.find_infested_temple.title"
+ },
+ "dungeons_arise:find_infested_temple_map": {
+  "key": "advancement.dungeons_arise.find_infested_temple_map.title"
+ },
+ "dungeons_arise:find_keep_kayra": {
+  "key": "advancement.dungeons_arise.find_keep_kayra.title"
+ },
+ "dungeons_arise:find_kisegi_sanctuary": {
+  "key": "advancement.dungeons_arise.find_kisegi_sanctuary.title"
+ },
+ "dungeons_arise:find_lighthouse": {
+  "key": "advancement.dungeons_arise.find_lighthouse.title"
+ },
+ "dungeons_arise:find_mechanical_nest": {
+  "key": "advancement.dungeons_arise.find_mechanical_nest.title"
+ },
+ "dungeons_arise:find_merchant_campsite": {
+  "key": "advancement.dungeons_arise.find_merchant_campsite.title"
+ },
+ "dungeons_arise:find_mining_complex": {
+  "key": "advancement.dungeons_arise.find_mining_complex.title"
+ },
+ "dungeons_arise:find_monastery": {
+  "key": "advancement.dungeons_arise.find_monastery.title"
+ },
+ "dungeons_arise:find_mushroom_house": {
+  "key": "advancement.dungeons_arise.find_mushroom_house.title"
+ },
+ "dungeons_arise:find_mushroom_mines": {
+  "key": "advancement.dungeons_arise.find_mushroom_mines.title"
+ },
+ "dungeons_arise:find_mushroom_village": {
+  "key": "advancement.dungeons_arise.find_mushroom_village.title"
+ },
+ "dungeons_arise:find_plague_asylum": {
+  "key": "advancement.dungeons_arise.find_plague_asylum.title"
+ },
+ "dungeons_arise:find_scorched_mines": {
+  "key": "advancement.dungeons_arise.find_scorched_mines.title"
+ },
+ "dungeons_arise:find_shiraz_palace": {
+  "key": "advancement.dungeons_arise.find_shiraz_palace.title"
+ },
+ "dungeons_arise:find_small_blimp": {
+  "key": "advancement.dungeons_arise.find_small_blimp.title"
+ },
+ "dungeons_arise:find_thornborn_towers": {
+  "key": "advancement.dungeons_arise.find_thornborn_towers.title"
+ },
+ "dungeons_arise:find_typhon": {
+  "key": "advancement.dungeons_arise.find_typhon.title"
+ },
+ "dungeons_arise:find_undead_pirate_ship": {
+  "key": "advancement.dungeons_arise.find_undead_pirate_ship.title"
+ },
+ "dungeons_arise:find_wishing_well": {
+  "key": "advancement.dungeons_arise.find_wishing_well.title"
+ },
+ "dungeons_arise:wda_root": {
+  "key": "advancement.dungeons_arise.wda_root.title"
+ },
+ "farmersdelight:main/craft_knife": {
+  "key": "advancements.farmersdelight.craft_knife.title"
+ },
+ "farmersdelight:main/eat_nourishing_food": {
+  "key": "advancements.farmersdelight.eat_nourishing_food.title"
+ },
+ "farmersdelight:main/get_fd_seed": {
+  "key": "advancements.farmersdelight.get_fd_seed.title"
+ },
+ "farmersdelight:main/get_ham": {
+  "key": "advancements.farmersdelight.get_ham.title"
+ },
+ "farmersdelight:main/get_mushroom_colony": {
+  "key": "advancements.farmersdelight.get_mushroom_colony.title"
+ },
+ "farmersdelight:main/get_rich_soil": {
+  "key": "advancements.farmersdelight.get_rich_soil.title"
+ },
+ "farmersdelight:main/harvest_ropelogged_tomato": {
+  "key": "advancements.farmersdelight.harvest_ropelogged_tomato.title"
+ },
+ "farmersdelight:main/harvest_straw": {
+  "key": "advancements.farmersdelight.harvest_straw.title"
+ },
+ "farmersdelight:main/hit_raider_with_rotten_tomato": {
+  "key": "advancements.farmersdelight.hit_raider_with_rotten_tomato.title"
+ },
+ "farmersdelight:main/master_chef": {
+  "key": "advancements.farmersdelight.master_chef.title"
+ },
+ "farmersdelight:main/obtain_netherite_knife": {
+  "key": "advancements.farmersdelight.obtain_netherite_knife.title"
+ },
+ "farmersdelight:main/place_campfire": {
+  "key": "advancements.farmersdelight.place_campfire.title"
+ },
+ "farmersdelight:main/place_cooking_pot": {
+  "key": "advancements.farmersdelight.place_cooking_pot.title"
+ },
+ "farmersdelight:main/place_feast": {
+  "key": "advancements.farmersdelight.place_feast.title"
+ },
+ "farmersdelight:main/place_organic_compost": {
+  "key": "advancements.farmersdelight.place_organic_compost.title"
+ },
+ "farmersdelight:main/place_skillet": {
+  "key": "advancements.farmersdelight.place_skillet.title"
+ },
+ "farmersdelight:main/plant_all_crops": {
+  "key": "advancements.farmersdelight.plant_all_crops.title"
+ },
+ "farmersdelight:main/plant_rice": {
+  "key": "advancements.farmersdelight.plant_rice.title"
+ },
+ "farmersdelight:main/root": {
+  "key": "advancements.farmersdelight.root.title"
+ },
+ "farmersdelight:main/use_cutting_board": {
+  "key": "advancements.farmersdelight.use_cutting_board.title"
+ },
+ "farmersdelight:main/use_skillet": {
+  "key": "advancements.farmersdelight.use_skillet.title"
+ },
+ "fisherman_house:all_structures": {
+  "key": "advancements.fisherman_house.all_structures.title"
+ },
+ "fisherman_house:buy_crab_pot": {
+  "key": "advancements.fisherman_house.buy_crab_pot.title"
+ },
+ "fisherman_house:discover_fisherman_house": {
+  "key": "advancements.fisherman_house.discover_fisherman_house.title"
+ },
+ "fisherman_house:discover_harbour_pier": {
+  "key": "advancements.fisherman_house.discover_harbour_pier.title"
+ },
+ "fisherman_house:discover_ice_fishing_camp": {
+  "key": "advancements.fisherman_house.discover_ice_fishing_camp.title"
+ },
+ "fisherman_house:discover_lighthouse": {
+  "key": "advancements.fisherman_house.discover_lighthouse.title"
+ },
+ "fisherman_house:discover_river_boathouse": {
+  "key": "advancements.fisherman_house.discover_river_boathouse.title"
+ },
+ "fisherman_house:discover_stilt_shack": {
+  "key": "advancements.fisherman_house.discover_stilt_shack.title"
+ },
+ "fisherman_house:discover_sunken_trawler": {
+  "key": "advancements.fisherman_house.discover_sunken_trawler.title"
+ },
+ "fisherman_house:get_crab_pot": {
+  "key": "advancements.fisherman_house.get_crab_pot.title"
+ },
+ "fisherman_house:open_bottle": {
+  "key": "advancements.fisherman_house.open_bottle.title"
+ },
+ "fisherman_house:root": {
+  "key": "advancements.fisherman_house.root.title"
+ },
+ "friendsandfoes:adventure/activate_zombie_horse_trap": {
+  "key": "advancements.friendsandfoes.survival.activate_zombie_horse_trap.title"
+ },
+ "friendsandfoes:adventure/complete_hide_and_seek_game": {
+  "key": "advancements.friendsandfoes.adventure.complete_hide_and_seek_game.title"
+ },
+ "friendsandfoes:adventure/it_bites": {
+  "key": "advancements.friendsandfoes.adventure.it_bites.title"
+ },
+ "friendsandfoes:adventure/kill_barnacle": {
+  "key": "advancements.friendsandfoes.adventure.kill_barnacle.title"
+ },
+ "friendsandfoes:adventure/kill_iceologer": {
+  "key": "advancements.friendsandfoes.adventure.kill_iceologer.title"
+ },
+ "friendsandfoes:adventure/kill_illusioner": {
+  "key": "advancements.friendsandfoes.adventure.kill_illusioner.title"
+ },
+ "friendsandfoes:adventure/summon_copper_golem": {
+  "key": "advancements.friendsandfoes.adventure.summon_copper_golem.title"
+ },
+ "friendsandfoes:adventure/the_magicians": {
+  "key": "advancements.friendsandfoes.adventure.the_magicians.title"
+ },
+ "friendsandfoes:husbandry/beehive": {
+  "key": "advancements.friendsandfoes.husbandry.beehive.title"
+ },
+ "friendsandfoes:husbandry/shear_a_moobloom": {
+  "key": "advancements.friendsandfoes.husbandry.shear_a_moobloom.title"
+ },
+ "friendsandfoes:husbandry/tame_a_glare": {
+  "key": "advancements.friendsandfoes.husbandry.tame_a_glare.title"
+ },
+ "friendsandfoes:nether/find_citadel": {
+  "key": "advancements.friendsandfoes.nether.find_citadel.title"
+ },
+ "friendsandfoes:nether/kill_wildfire": {
+  "key": "advancements.friendsandfoes.nether.kill_wildfire.title"
+ },
+ "friendsandfoes:nether/obtain_wildfire_crown": {
+  "key": "advancements.friendsandfoes.nether.obtain_wildfire_crown.title"
+ },
+ "graveyard:graveyard/all_overrun_villages": {
+  "key": "advancements.graveyard.all_overrun_villages.title"
+ },
+ "graveyard:graveyard/black_bone_staff": {
+  "key": "advancements.graveyard.black_bone_staff.title"
+ },
+ "graveyard:graveyard/bone_collector": {
+  "key": "advancements.graveyard.bone_collector.title"
+ },
+ "graveyard:graveyard/chronicle_act_one": {
+  "key": "advancements.graveyard.chronicle_act_one.title"
+ },
+ "graveyard:graveyard/chronicle_act_two": {
+  "key": "advancements.graveyard.chronicle_act_two.title"
+ },
+ "graveyard:graveyard/corruption": {
+  "key": "advancements.graveyard.corruption.title"
+ },
+ "graveyard:graveyard/craft_charred_wood": {
+  "key": "advancements.graveyard.craft_charred_wood.title"
+ },
+ "graveyard:graveyard/craft_coffin": {
+  "key": "advancements.graveyard.craft_coffin.title"
+ },
+ "graveyard:graveyard/crypt": {
+  "key": "advancements.graveyard.crypt.title"
+ },
+ "graveyard:graveyard/cyan_bone_staff": {
+  "key": "advancements.graveyard.cyan_bone_staff.title"
+ },
+ "graveyard:graveyard/dark_iron": {
+  "key": "advancements.graveyard.dark_iron.title"
+ },
+ "graveyard:graveyard/dead_tree": {
+  "key": "advancements.graveyard.dead_tree.title"
+ },
+ "graveyard:graveyard/desert_graveyard": {
+  "key": "advancements.graveyard.desert_graveyard.title"
+ },
+ "graveyard:graveyard/equip_ghouling_coffin": {
+  "key": "advancements.graveyard.equip_coffin.title"
+ },
+ "graveyard:graveyard/extinguish_smoldering": {
+  "key": "advancements.graveyard.extinguish_smoldering.title"
+ },
+ "graveyard:graveyard/find_skeleton": {
+  "key": "advancements.graveyard.find_skeleton.title"
+ },
+ "graveyard:graveyard/first_chronicle_page": {
+  "key": "advancements.graveyard.first_chronicle_page.title"
+ },
+ "graveyard:graveyard/ghoul_emerges": {
+  "key": "advancements.graveyard.ghoul_emerges.title"
+ },
+ "graveyard:graveyard/giant_mushroom": {
+  "key": "advancements.graveyard.giant_mushroom.title"
+ },
+ "graveyard:graveyard/haunted_house": {
+  "key": "advancements.graveyard.haunted_house.title"
+ },
+ "graveyard:graveyard/ignite_smoldering": {
+  "key": "advancements.graveyard.ignite_smoldering.title"
+ },
+ "graveyard:graveyard/kill_acolyte_bone_dagger": {
+  "key": "advancements.graveyard.kill_acolyte_bone_dagger.title"
+ },
+ "graveyard:graveyard/kill_graveyard_mob": {
+  "key": "advancements.graveyard.kill_graveyard_mob.title"
+ },
+ "graveyard:graveyard/kill_horde": {
+  "key": "advancements.graveyard.kill_horde.title"
+ },
+ "graveyard:graveyard/kill_while_blinded": {
+  "key": "advancements.graveyard.kill_while_blinded.title"
+ },
+ "graveyard:graveyard/kill_wraith": {
+  "key": "advancements.graveyard.kill_wraith.title"
+ },
+ "graveyard:graveyard/large_graveyard": {
+  "key": "advancements.graveyard.large_graveyard.title"
+ },
+ "graveyard:graveyard/lich_prison": {
+  "key": "advancements.graveyard.lich_prison.title"
+ },
+ "graveyard:graveyard/lower_bone_staff": {
+  "key": "advancements.graveyard.lower_bone_staff.title"
+ },
+ "graveyard:graveyard/magpie_loot": {
+  "key": "advancements.graveyard.magpie_loot.title"
+ },
+ "graveyard:graveyard/medium_graveyard": {
+  "key": "advancements.graveyard.medium_graveyard.title"
+ },
+ "graveyard:graveyard/middle_bone_staff": {
+  "key": "advancements.graveyard.middle_bone_staff.title"
+ },
+ "graveyard:graveyard/overrun_village": {
+  "key": "advancements.graveyard.overrun_village.title"
+ },
+ "graveyard:graveyard/place_lore_book": {
+  "key": "advancements.graveyard.place_lore_book.title"
+ },
+ "graveyard:graveyard/purple_bone_staff": {
+  "key": "advancements.graveyard.purple_bone_staff.title"
+ },
+ "graveyard:graveyard/raven_on_gravestone": {
+  "key": "advancements.graveyard.raven_on_gravestone.title"
+ },
+ "graveyard:graveyard/red_bone_staff": {
+  "key": "advancements.graveyard.red_bone_staff.title"
+ },
+ "graveyard:graveyard/redeem_ten_tormented_villagers": {
+  "key": "advancements.graveyard.redeem_ten_tormented_villagers.title"
+ },
+ "graveyard:graveyard/redeem_tormented_villager": {
+  "key": "advancements.graveyard.redeem_tormented_villager.title"
+ },
+ "graveyard:graveyard/root": {
+  "key": "advancements.graveyard.root.title"
+ },
+ "graveyard:graveyard/scare_crows": {
+  "key": "advancements.graveyard.scare_crows.title"
+ },
+ "graveyard:graveyard/scarecrow": {
+  "key": "advancements.graveyard.scarecrow.title"
+ },
+ "graveyard:graveyard/summon_lich": {
+  "key": "advancements.graveyard.summon_lich.title"
+ },
+ "graveyard:graveyard/tormented_villager_dawn": {
+  "key": "advancements.graveyard.tormented_villager_dawn.title"
+ },
+ "graveyard:graveyard/upper_bone_staff": {
+  "key": "advancements.graveyard.upper_bone_staff.title"
+ },
+ "graveyard:graveyard/vial_of_blood": {
+  "key": "advancements.graveyard.vial_of_blood.title"
+ },
+ "graveyard:graveyard/white_bone_staff": {
+  "key": "advancements.graveyard.white_bone_staff.title"
+ },
+ "graveyard:graveyard/wraith_dim_light": {
+  "key": "advancements.graveyard.dim_light.title"
+ },
+ "guardvillagers:adventure/recruit_guard": {
+  "key": "guardvillagers.advancements.adventure.recruit_guard.title"
+ },
+ "horseman:husbandry/summon_horse": {
+  "key": "advancement.horseman.summon_horse.title"
+ },
+ "lootr:100loot": {
+  "key": "lootr.advancements.100loot.title"
+ },
+ "lootr:10loot": {
+  "key": "lootr.advancements.10loot.title"
+ },
+ "lootr:1barrel": {
+  "key": "lootr.advancements.1barrel.title"
+ },
+ "lootr:1cart": {
+  "key": "lootr.advancements.1cart.title"
+ },
+ "lootr:1chest": {
+  "key": "lootr.advancements.1chest.title"
+ },
+ "lootr:1frame": {
+  "key": "lootr.advancements.1frame.title"
+ },
+ "lootr:1shulker": {
+  "key": "lootr.advancements.1shulker.title"
+ },
+ "lootr:25loot": {
+  "key": "lootr.advancements.25loot.title"
+ },
+ "lootr:50loot": {
+  "key": "lootr.advancements.50loot.title"
+ },
+ "lootr:all_gravel": {
+  "key": "lootr.advancements.all_gravel.title"
+ },
+ "lootr:archaeologist": {
+  "key": "lootr.advancements.archaeologist.title"
+ },
+ "lootr:emergency_escape_hatch": {
+  "key": "lootr.advancements.emergency_escape_hatch.title"
+ },
+ "lootr:pot_opened": {
+  "key": "lootr.advancements.a_pot.title"
+ },
+ "lootr:root": {
+  "key": "lootr.advancements.root.title"
+ },
+ "lootr:social": {
+  "key": "lootr.advancements.social.title"
+ },
+ "lootr:trapped_chest": {
+  "key": "lootr.advancements.trapped_chest.title"
+ },
+ "minecraft:adventure/adventuring_time": {
+  "key": "advancements.adventure.adventuring_time.title"
+ },
+ "minecraft:adventure/arbalistic": {
+  "key": "advancements.adventure.arbalistic.title"
+ },
+ "minecraft:adventure/avoid_vibration": {
+  "key": "advancements.adventure.avoid_vibration.title"
+ },
+ "minecraft:adventure/blowback": {
+  "key": "advancements.adventure.blowback.title"
+ },
+ "minecraft:adventure/brush_armadillo": {
+  "key": "advancements.adventure.brush_armadillo.title"
+ },
+ "minecraft:adventure/bullseye": {
+  "key": "advancements.adventure.bullseye.title"
+ },
+ "minecraft:adventure/craft_decorated_pot_using_only_sherds": {
+  "key": "advancements.adventure.craft_decorated_pot_using_only_sherds.title"
+ },
+ "minecraft:adventure/crafters_crafting_crafters": {
+  "key": "advancements.adventure.crafters_crafting_crafters.title"
+ },
+ "minecraft:adventure/fall_from_world_height": {
+  "key": "advancements.adventure.fall_from_world_height.title"
+ },
+ "minecraft:adventure/hero_of_the_village": {
+  "key": "advancements.adventure.hero_of_the_village.title"
+ },
+ "minecraft:adventure/honey_block_slide": {
+  "key": "advancements.adventure.honey_block_slide.title"
+ },
+ "minecraft:adventure/kill_a_mob": {
+  "key": "advancements.adventure.kill_a_mob.title"
+ },
+ "minecraft:adventure/kill_all_mobs": {
+  "key": "advancements.adventure.kill_all_mobs.title"
+ },
+ "minecraft:adventure/kill_mob_near_sculk_catalyst": {
+  "key": "advancements.adventure.kill_mob_near_sculk_catalyst.title"
+ },
+ "minecraft:adventure/lighten_up": {
+  "key": "advancements.adventure.lighten_up.title"
+ },
+ "minecraft:adventure/lightning_rod_with_villager_no_fire": {
+  "key": "advancements.adventure.lightning_rod_with_villager_no_fire.title"
+ },
+ "minecraft:adventure/minecraft_trials_edition": {
+  "key": "advancements.adventure.minecraft_trials_edition.title"
+ },
+ "minecraft:adventure/ol_betsy": {
+  "key": "advancements.adventure.ol_betsy.title"
+ },
+ "minecraft:adventure/overoverkill": {
+  "key": "advancements.adventure.overoverkill.title"
+ },
+ "minecraft:adventure/play_jukebox_in_meadows": {
+  "key": "advancements.adventure.play_jukebox_in_meadows.title"
+ },
+ "minecraft:adventure/read_power_of_chiseled_bookshelf": {
+  "key": "advancements.adventure.read_power_from_chiseled_bookshelf.title"
+ },
+ "minecraft:adventure/revaulting": {
+  "key": "advancements.adventure.revaulting.title"
+ },
+ "minecraft:adventure/root": {
+  "key": "advancements.adventure.root.title"
+ },
+ "minecraft:adventure/salvage_sherd": {
+  "key": "advancements.adventure.salvage_sherd.title"
+ },
+ "minecraft:adventure/shoot_arrow": {
+  "key": "advancements.adventure.shoot_arrow.title"
+ },
+ "minecraft:adventure/sleep_in_bed": {
+  "key": "advancements.adventure.sleep_in_bed.title"
+ },
+ "minecraft:adventure/sniper_duel": {
+  "key": "advancements.adventure.sniper_duel.title"
+ },
+ "minecraft:adventure/spyglass_at_dragon": {
+  "key": "advancements.adventure.spyglass_at_dragon.title"
+ },
+ "minecraft:adventure/spyglass_at_ghast": {
+  "key": "advancements.adventure.spyglass_at_ghast.title"
+ },
+ "minecraft:adventure/spyglass_at_parrot": {
+  "key": "advancements.adventure.spyglass_at_parrot.title"
+ },
+ "minecraft:adventure/summon_iron_golem": {
+  "key": "advancements.adventure.summon_iron_golem.title"
+ },
+ "minecraft:adventure/throw_trident": {
+  "key": "advancements.adventure.throw_trident.title"
+ },
+ "minecraft:adventure/totem_of_undying": {
+  "key": "advancements.adventure.totem_of_undying.title"
+ },
+ "minecraft:adventure/trade": {
+  "key": "advancements.adventure.trade.title"
+ },
+ "minecraft:adventure/trade_at_world_height": {
+  "key": "advancements.adventure.trade_at_world_height.title"
+ },
+ "minecraft:adventure/trim_with_all_exclusive_armor_patterns": {
+  "key": "advancements.adventure.trim_with_all_exclusive_armor_patterns.title"
+ },
+ "minecraft:adventure/trim_with_any_armor_pattern": {
+  "key": "advancements.adventure.trim_with_any_armor_pattern.title"
+ },
+ "minecraft:adventure/two_birds_one_arrow": {
+  "key": "advancements.adventure.two_birds_one_arrow.title"
+ },
+ "minecraft:adventure/under_lock_and_key": {
+  "key": "advancements.adventure.under_lock_and_key.title"
+ },
+ "minecraft:adventure/very_very_frightening": {
+  "key": "advancements.adventure.very_very_frightening.title"
+ },
+ "minecraft:adventure/voluntary_exile": {
+  "key": "advancements.adventure.voluntary_exile.title"
+ },
+ "minecraft:adventure/walk_on_powder_snow_with_leather_boots": {
+  "key": "advancements.adventure.walk_on_powder_snow_with_leather_boots.title"
+ },
+ "minecraft:adventure/who_needs_rockets": {
+  "key": "advancements.adventure.who_needs_rockets.title"
+ },
+ "minecraft:adventure/whos_the_pillager_now": {
+  "key": "advancements.adventure.whos_the_pillager_now.title"
+ },
+ "minecraft:end/dragon_breath": {
+  "key": "advancements.end.dragon_breath.title"
+ },
+ "minecraft:end/dragon_egg": {
+  "key": "advancements.end.dragon_egg.title"
+ },
+ "minecraft:end/elytra": {
+  "key": "advancements.end.elytra.title"
+ },
+ "minecraft:end/enter_end_gateway": {
+  "key": "advancements.end.enter_end_gateway.title"
+ },
+ "minecraft:end/find_end_city": {
+  "key": "advancements.end.find_end_city.title"
+ },
+ "minecraft:end/kill_dragon": {
+  "key": "advancements.end.kill_dragon.title"
+ },
+ "minecraft:end/levitate": {
+  "key": "advancements.end.levitate.title"
+ },
+ "minecraft:end/respawn_dragon": {
+  "key": "advancements.end.respawn_dragon.title"
+ },
+ "minecraft:end/root": {
+  "key": "advancements.end.root.title"
+ },
+ "minecraft:husbandry/allay_deliver_cake_to_note_block": {
+  "key": "advancements.husbandry.allay_deliver_cake_to_note_block.title"
+ },
+ "minecraft:husbandry/allay_deliver_item_to_player": {
+  "key": "advancements.husbandry.allay_deliver_item_to_player.title"
+ },
+ "minecraft:husbandry/axolotl_in_a_bucket": {
+  "key": "advancements.husbandry.axolotl_in_a_bucket.title"
+ },
+ "minecraft:husbandry/balanced_diet": {
+  "key": "advancements.husbandry.balanced_diet.title"
+ },
+ "minecraft:husbandry/bred_all_animals": {
+  "key": "advancements.husbandry.breed_all_animals.title"
+ },
+ "minecraft:husbandry/breed_an_animal": {
+  "key": "advancements.husbandry.breed_an_animal.title"
+ },
+ "minecraft:husbandry/complete_catalogue": {
+  "key": "advancements.husbandry.complete_catalogue.title"
+ },
+ "minecraft:husbandry/feed_snifflet": {
+  "key": "advancements.husbandry.feed_snifflet.title"
+ },
+ "minecraft:husbandry/fishy_business": {
+  "key": "advancements.husbandry.fishy_business.title"
+ },
+ "minecraft:husbandry/froglights": {
+  "key": "advancements.husbandry.froglights.title"
+ },
+ "minecraft:husbandry/kill_axolotl_target": {
+  "key": "advancements.husbandry.kill_axolotl_target.title"
+ },
+ "minecraft:husbandry/leash_all_frog_variants": {
+  "key": "advancements.husbandry.leash_all_frog_variants.title"
+ },
+ "minecraft:husbandry/make_a_sign_glow": {
+  "key": "advancements.husbandry.make_a_sign_glow.title"
+ },
+ "minecraft:husbandry/obtain_netherite_hoe": {
+  "key": "advancements.husbandry.netherite_hoe.title"
+ },
+ "minecraft:husbandry/obtain_sniffer_egg": {
+  "key": "advancements.husbandry.obtain_sniffer_egg.title"
+ },
+ "minecraft:husbandry/plant_any_sniffer_seed": {
+  "key": "advancements.husbandry.plant_any_sniffer_seed.title"
+ },
+ "minecraft:husbandry/plant_seed": {
+  "key": "advancements.husbandry.plant_seed.title"
+ },
+ "minecraft:husbandry/remove_wolf_armor": {
+  "key": "advancements.husbandry.remove_wolf_armor.title"
+ },
+ "minecraft:husbandry/repair_wolf_armor": {
+  "key": "advancements.husbandry.repair_wolf_armor.title"
+ },
+ "minecraft:husbandry/ride_a_boat_with_a_goat": {
+  "key": "advancements.husbandry.ride_a_boat_with_a_goat.title"
+ },
+ "minecraft:husbandry/root": {
+  "key": "advancements.husbandry.root.title"
+ },
+ "minecraft:husbandry/safely_harvest_honey": {
+  "key": "advancements.husbandry.safely_harvest_honey.title"
+ },
+ "minecraft:husbandry/silk_touch_nest": {
+  "key": "advancements.husbandry.silk_touch_nest.title"
+ },
+ "minecraft:husbandry/tactical_fishing": {
+  "key": "advancements.husbandry.tactical_fishing.title"
+ },
+ "minecraft:husbandry/tadpole_in_a_bucket": {
+  "key": "advancements.husbandry.tadpole_in_a_bucket.title"
+ },
+ "minecraft:husbandry/tame_an_animal": {
+  "key": "advancements.husbandry.tame_an_animal.title"
+ },
+ "minecraft:husbandry/wax_off": {
+  "key": "advancements.husbandry.wax_off.title"
+ },
+ "minecraft:husbandry/wax_on": {
+  "key": "advancements.husbandry.wax_on.title"
+ },
+ "minecraft:husbandry/whole_pack": {
+  "key": "advancements.husbandry.whole_pack.title"
+ },
+ "minecraft:nether/all_effects": {
+  "key": "advancements.nether.all_effects.title"
+ },
+ "minecraft:nether/all_potions": {
+  "key": "advancements.nether.all_potions.title"
+ },
+ "minecraft:nether/brew_potion": {
+  "key": "advancements.nether.brew_potion.title"
+ },
+ "minecraft:nether/charge_respawn_anchor": {
+  "key": "advancements.nether.charge_respawn_anchor.title"
+ },
+ "minecraft:nether/create_beacon": {
+  "key": "advancements.nether.create_beacon.title"
+ },
+ "minecraft:nether/create_full_beacon": {
+  "key": "advancements.nether.create_full_beacon.title"
+ },
+ "minecraft:nether/distract_piglin": {
+  "key": "advancements.nether.distract_piglin.title"
+ },
+ "minecraft:nether/explore_nether": {
+  "key": "advancements.nether.explore_nether.title"
+ },
+ "minecraft:nether/fast_travel": {
+  "key": "advancements.nether.fast_travel.title"
+ },
+ "minecraft:nether/find_bastion": {
+  "key": "advancements.nether.find_bastion.title"
+ },
+ "minecraft:nether/find_fortress": {
+  "key": "advancements.nether.find_fortress.title"
+ },
+ "minecraft:nether/get_wither_skull": {
+  "key": "advancements.nether.get_wither_skull.title"
+ },
+ "minecraft:nether/loot_bastion": {
+  "key": "advancements.nether.loot_bastion.title"
+ },
+ "minecraft:nether/netherite_armor": {
+  "key": "advancements.nether.netherite_armor.title"
+ },
+ "minecraft:nether/obtain_ancient_debris": {
+  "key": "advancements.nether.obtain_ancient_debris.title"
+ },
+ "minecraft:nether/obtain_blaze_rod": {
+  "key": "advancements.nether.obtain_blaze_rod.title"
+ },
+ "minecraft:nether/obtain_crying_obsidian": {
+  "key": "advancements.nether.obtain_crying_obsidian.title"
+ },
+ "minecraft:nether/return_to_sender": {
+  "key": "advancements.nether.return_to_sender.title"
+ },
+ "minecraft:nether/ride_strider": {
+  "key": "advancements.nether.ride_strider.title"
+ },
+ "minecraft:nether/ride_strider_in_overworld_lava": {
+  "key": "advancements.nether.ride_strider_in_overworld_lava.title"
+ },
+ "minecraft:nether/root": {
+  "key": "advancements.nether.root.title"
+ },
+ "minecraft:nether/summon_wither": {
+  "key": "advancements.nether.summon_wither.title"
+ },
+ "minecraft:nether/uneasy_alliance": {
+  "key": "advancements.nether.uneasy_alliance.title"
+ },
+ "minecraft:nether/use_lodestone": {
+  "key": "advancements.nether.use_lodestone.title"
+ },
+ "minecraft:story/cure_zombie_villager": {
+  "key": "advancements.story.cure_zombie_villager.title"
+ },
+ "minecraft:story/deflect_arrow": {
+  "key": "advancements.story.deflect_arrow.title"
+ },
+ "minecraft:story/enchant_item": {
+  "key": "advancements.story.enchant_item.title"
+ },
+ "minecraft:story/enter_the_end": {
+  "key": "advancements.story.enter_the_end.title"
+ },
+ "minecraft:story/enter_the_nether": {
+  "key": "advancements.story.enter_the_nether.title"
+ },
+ "minecraft:story/follow_ender_eye": {
+  "key": "advancements.story.follow_ender_eye.title"
+ },
+ "minecraft:story/form_obsidian": {
+  "key": "advancements.story.form_obsidian.title"
+ },
+ "minecraft:story/iron_tools": {
+  "key": "advancements.story.iron_tools.title"
+ },
+ "minecraft:story/lava_bucket": {
+  "key": "advancements.story.lava_bucket.title"
+ },
+ "minecraft:story/mine_diamond": {
+  "key": "advancements.story.mine_diamond.title"
+ },
+ "minecraft:story/mine_stone": {
+  "key": "advancements.story.mine_stone.title"
+ },
+ "minecraft:story/obtain_armor": {
+  "key": "advancements.story.obtain_armor.title"
+ },
+ "minecraft:story/root": {
+  "key": "advancements.story.root.title"
+ },
+ "minecraft:story/shiny_gear": {
+  "key": "advancements.story.shiny_gear.title"
+ },
+ "minecraft:story/smelt_iron": {
+  "key": "advancements.story.smelt_iron.title"
+ },
+ "minecraft:story/upgrade_tools": {
+  "key": "advancements.story.upgrade_tools.title"
+ },
+ "mob_loot_bags:bag_opener": {
+  "key": "advancements.mob_loot_bags.bag_opener.title"
+ },
+ "mob_loot_bags:fortune_talisman": {
+  "key": "advancements.mob_loot_bags.fortune_talisman.title"
+ },
+ "mob_loot_bags:loot_recycler": {
+  "key": "advancements.mob_loot_bags.loot_recycler.title"
+ },
+ "mob_loot_bags:open_bag": {
+  "key": "advancements.mob_loot_bags.open_bag.title"
+ },
+ "mob_loot_bags:open_cursed": {
+  "key": "advancements.mob_loot_bags.open_cursed.title"
+ },
+ "mob_loot_bags:open_epic": {
+  "key": "advancements.mob_loot_bags.open_epic.title"
+ },
+ "mob_loot_bags:open_hourglass": {
+  "key": "advancements.mob_loot_bags.open_hourglass.title"
+ },
+ "mob_loot_bags:open_legendary": {
+  "key": "advancements.mob_loot_bags.open_legendary.title"
+ },
+ "mob_loot_bags:open_locked": {
+  "key": "advancements.mob_loot_bags.open_locked.title"
+ },
+ "mob_loot_bags:open_mythic": {
+  "key": "advancements.mob_loot_bags.open_mythic.title"
+ },
+ "mob_loot_bags:open_rare": {
+  "key": "advancements.mob_loot_bags.open_rare.title"
+ },
+ "mob_loot_bags:open_summoning": {
+  "key": "advancements.mob_loot_bags.open_summoning.title"
+ },
+ "mob_loot_bags:root": {
+  "key": "advancements.mob_loot_bags.root.title"
+ },
+ "mowziesmobs:kill_bluff": {
+  "key": "advancements.mowziesmobs.kill_bluff.title"
+ },
+ "mowziesmobs:kill_elokosa_howler": {
+  "key": "advancements.mowziesmobs.kill_elokosa_howler.title"
+ },
+ "mowziesmobs:kill_ferrous_wroughtnaut": {
+  "key": "advancements.mowziesmobs.kill_ferrous_wroughtnaut.title"
+ },
+ "mowziesmobs:kill_foliaath": {
+  "key": "advancements.mowziesmobs.kill_foliaath.title"
+ },
+ "mowziesmobs:kill_frostmaw": {
+  "key": "advancements.mowziesmobs.kill_frostmaw.title"
+ },
+ "mowziesmobs:kill_grottol": {
+  "key": "advancements.mowziesmobs.kill_grottol.title"
+ },
+ "mowziesmobs:kill_grottol_fortune": {
+  "key": "advancements.mowziesmobs.kill_grottol_fortune.title"
+ },
+ "mowziesmobs:kill_grottol_silk_touch": {
+  "key": "advancements.mowziesmobs.kill_grottol_silk_touch.title"
+ },
+ "mowziesmobs:kill_naga": {
+  "key": "advancements.mowziesmobs.kill_naga.title"
+ },
+ "mowziesmobs:kill_umvuthana_raptor": {
+  "key": "advancements.mowziesmobs.kill_umvuthana_raptor.title"
+ },
+ "mowziesmobs:kill_umvuthi": {
+  "key": "advancements.mowziesmobs.kill_umvuthi.title"
+ },
+ "mowziesmobs:root": {
+  "key": "advancements.mowziesmobs.root.title"
+ },
+ "mowziesmobs:sculptor_challenge": {
+  "key": "advancements.mowziesmobs.sculptor_challenge.title"
+ },
+ "mowziesmobs:sculptor_failure": {
+  "key": "advancements.mowziesmobs.sculptor_failure.title"
+ },
+ "mowziesmobs:sneak_grove": {
+  "key": "advancements.mowziesmobs.sneak_grove.title"
+ },
+ "mowziesmobs:steal_ice_crystal": {
+  "key": "advancements.mowziesmobs.steal_ice_crystal.title"
+ },
+ "mowziesmobs:suns_blessing": {
+  "key": "advancements.mowziesmobs.suns_blessing.title"
+ },
+ "muchmoredungeons:all_dungeons": {
+  "key": "advancements.muchmoredungeons.all_dungeons.title"
+ },
+ "muchmoredungeons:all_labyrinths": {
+  "key": "advancements.muchmoredungeons.all_labyrinths.title"
+ },
+ "muchmoredungeons:discover_catacombs": {
+  "key": "advancements.muchmoredungeons.discover_catacombs.title"
+ },
+ "muchmoredungeons:discover_deepslate_halls": {
+  "key": "advancements.muchmoredungeons.discover_deepslate_halls.title"
+ },
+ "muchmoredungeons:discover_dungeon_t2": {
+  "key": "advancements.muchmoredungeons.discover_dungeon_t2.title"
+ },
+ "muchmoredungeons:discover_frost_vaults": {
+  "key": "advancements.muchmoredungeons.discover_frost_vaults.title"
+ },
+ "muchmoredungeons:discover_nether_bastille": {
+  "key": "advancements.muchmoredungeons.discover_nether_bastille.title"
+ },
+ "muchmoredungeons:discover_outdoor_villa": {
+  "key": "advancements.muchmoredungeons.discover_outdoor_villa.title"
+ },
+ "muchmoredungeons:discover_overgrown_warrens": {
+  "key": "advancements.muchmoredungeons.discover_overgrown_warrens.title"
+ },
+ "muchmoredungeons:discover_sandstone_tomb": {
+  "key": "advancements.muchmoredungeons.discover_sandstone_tomb.title"
+ },
+ "muchmoredungeons:discover_soulfire_crypt": {
+  "key": "advancements.muchmoredungeons.discover_soulfire_crypt.title"
+ },
+ "muchmoredungeons:discover_tower_dungeon": {
+  "key": "advancements.muchmoredungeons.discover_tower_dungeon.title"
+ },
+ "muchmoredungeons:root": {
+  "key": "advancements.muchmoredungeons.root.title"
+ },
+ "muchmoredungeons:slay_catacombs_guardian": {
+  "key": "advancements.muchmoredungeons.slay_catacombs_guardian.title"
+ },
+ "muchmoredungeons:slay_deepslate_halls_guardian": {
+  "key": "advancements.muchmoredungeons.slay_deepslate_halls_guardian.title"
+ },
+ "muchmoredungeons:slay_dungeon_t2_guardian": {
+  "key": "advancements.muchmoredungeons.slay_dungeon_t2_guardian.title"
+ },
+ "muchmoredungeons:slay_frost_vaults_guardian": {
+  "key": "advancements.muchmoredungeons.slay_frost_vaults_guardian.title"
+ },
+ "muchmoredungeons:slay_nether_bastille_guardian": {
+  "key": "advancements.muchmoredungeons.slay_nether_bastille_guardian.title"
+ },
+ "muchmoredungeons:slay_outdoor_villa_guardian": {
+  "key": "advancements.muchmoredungeons.slay_outdoor_villa_guardian.title"
+ },
+ "muchmoredungeons:slay_overgrown_warrens_guardian": {
+  "key": "advancements.muchmoredungeons.slay_overgrown_warrens_guardian.title"
+ },
+ "muchmoredungeons:slay_sandstone_tomb_guardian": {
+  "key": "advancements.muchmoredungeons.slay_sandstone_tomb_guardian.title"
+ },
+ "muchmoredungeons:slay_soulfire_crypt_guardian": {
+  "key": "advancements.muchmoredungeons.slay_soulfire_crypt_guardian.title"
+ },
+ "muchmoredungeons:slay_tower_dungeon_guardian": {
+  "key": "advancements.muchmoredungeons.slay_tower_dungeon_guardian.title"
+ },
+ "mutantmonsters:burn_zombie_burn": {
+  "key": "advancements.mutantmonsters.burn_zombie_burn.title"
+ },
+ "mutantmonsters:frosty_the_snow_golem": {
+  "key": "advancements.mutantmonsters.frosty_the_snow_golem.title"
+ },
+ "mutantmonsters:gunpowder_spice": {
+  "key": "advancements.mutantmonsters.gunpowder_spice.title"
+ },
+ "mutantmonsters:hulk_smash": {
+  "key": "advancements.mutantmonsters.hulk_smash.title"
+ },
+ "mutantmonsters:no_bones_about_it": {
+  "key": "advancements.mutantmonsters.no_bones_about_it.title"
+ },
+ "mutantmonsters:root": {
+  "key": "advancements.mutantmonsters.root.title"
+ },
+ "mutantmonsters:spider_pig_spider_pig": {
+  "key": "advancements.mutantmonsters.spider_pig_spider_pig.title"
+ },
+ "mutantmonsters:you_da_bomby": {
+  "key": "advancements.mutantmonsters.you_da_bomby.title"
+ },
+ "naturalist:husbandry/feed_bear_honeycomb": {
+  "key": "advancements.husbandry.feed_bear_honeycomb.title"
+ },
+ "naturalist:husbandry/feed_hippo_melon": {
+  "key": "advancements.husbandry.feed_hippo_melon.title"
+ },
+ "naturalist:husbandry/ride_giraffe_with_map": {
+  "key": "advancements.husbandry.ride_giraffe_with_map.title"
+ },
+ "nova_structures:adventure/conquer_miner_outpost": {
+  "key": "advancement.dnt.adventure.conquer_miner_outpost.title"
+ },
+ "nova_structures:adventure/find_all_illager_structures": {
+  "key": "advancement.dnt.adventure.find_all_illager_structures.title"
+ },
+ "nova_structures:adventure/find_illager_manor": {
+  "key": "advancement.dnt.adventure.find_illager_manor.title"
+ },
+ "nova_structures:adventure/find_illager_mansion": {
+  "key": "advancement.dnt.adventure.find_illager_mansion.title"
+ },
+ "nova_structures:adventure/find_lone_citadel": {
+  "key": "advancement.dnt.adventure.find_lone_citadel.title"
+ },
+ "nova_structures:adventure/find_pillager_outpost": {
+  "key": "advancement.dnt.adventure.find_pillager_outpost.title"
+ },
+ "nova_structures:adventure/find_shrine": {
+  "key": "advancement.dnt.adventure.find_shrine.title"
+ },
+ "nova_structures:adventure/find_swamp_village": {
+  "key": "advancement.dnt.adventure.find_swamp_village.title"
+ },
+ "nova_structures:adventure/find_tavern": {
+  "key": "advancement.dnt.adventure.find_tavern.title"
+ },
+ "nova_structures:adventure/find_toxic_lair": {
+  "key": "advancement.dnt.adventure.find_toxic_lair.title"
+ },
+ "nova_structures:adventure/find_trident_trial_monument": {
+  "key": "advancement.dnt.adventure.find_trident_trial_monument.title"
+ },
+ "nova_structures:adventure/find_witch_villa": {
+  "key": "advancement.dnt.adventure.find_witch_villa.title"
+ },
+ "nova_structures:adventure/kill_all_minibosses": {
+  "key": "advancement.dnt.adventure.kill_all_minibosses.title"
+ },
+ "nova_structures:adventure/kill_breeze_boss": {
+  "key": "advancement.dnt.adventure.kill_breeze_boss.title"
+ },
+ "nova_structures:adventure/kill_cave_spider_boss": {
+  "key": "advancement.dnt.adventure.kill_cave_spider_boss.title"
+ },
+ "nova_structures:adventure/kill_guardian_boss": {
+  "key": "advancement.dnt.adventure.kill_guardian_boss.title"
+ },
+ "nova_structures:adventure/loot_illager_hideout": {
+  "key": "advancement.dnt.adventure.loot_illager_hideout.title"
+ },
+ "nova_structures:adventure/tavern_quest": {
+  "key": "advancement.dnt.adventure.tavern_quest.title"
+ },
+ "nova_structures:end/find_end_castle": {
+  "key": "advancement.dnt.end.find_end_castle.title"
+ },
+ "nova_structures:end/find_end_lighthouse": {
+  "key": "advancement.dnt.end.find_end_lighthouse.title"
+ },
+ "nova_structures:end/find_end_ship": {
+  "key": "advancement.dnt.end.find_end_ship.title"
+ },
+ "nova_structures:end/kill_phantom_boss": {
+  "key": "advancement.dnt.end.kill_phantom_boss.title"
+ },
+ "nova_structures:nether/find_donjon": {
+  "key": "advancement.dnt.nether.find_donjon.title"
+ },
+ "nova_structures:nether/find_hamlet": {
+  "key": "advancement.dnt.nether.find_hamlet.title"
+ },
+ "nova_structures:nether/find_keep": {
+  "key": "advancement.dnt.nether.find_keep.title"
+ },
+ "nova_structures:nether/find_nether_skeleton": {
+  "key": "advancement.dnt.nether.find_nether_skeleton.title"
+ },
+ "nova_structures:nether/find_piglin_outpost": {
+  "key": "advancement.dnt.nether.find_piglin_outpost.title"
+ },
+ "nova_structures:nether/find_piglins": {
+  "key": "advancement.dnt.nether.find_piglins.title"
+ },
+ "nova_structures:nether/find_port": {
+  "key": "advancement.dnt.nether.find_port.title"
+ },
+ "nova_structures:nether/find_skeleton_tower": {
+  "key": "advancement.dnt.nether.find_skeleton_tower.title"
+ },
+ "nova_structures:nether/powder_snow_keep": {
+  "key": "advancement.dnt.nether.powder_snow_keep.title"
+ },
+ "nova_structures:root": {
+  "key": "advancement.dnt.root.title"
+ },
+ "nullscape:root": {
+  "key": "Desolation"
+ },
+ "remnant_bosses:realm/enter_realm": {
+  "key": "advancements.remnant_bosses.realm.enter_realm.title"
+ },
+ "remnant_bosses:realm/kindle_waygate": {
+  "key": "advancements.remnant_bosses.realm.kindle_waygate.title"
+ },
+ "remnant_bosses:realm/remnant_felled": {
+  "key": "advancements.remnant_bosses.realm.remnant_felled.title"
+ },
+ "remnant_bosses:realm/root": {
+  "key": "advancements.remnant_bosses.realm.root.title"
+ },
+ "remnant_bosses:realm/waking_world": {
+  "key": "advancements.remnant_bosses.realm.waking_world.title"
+ },
+ "remnant_mobs:accept_the_challenge": {
+  "key": "advancements.remnant_mobs.accept_the_challenge.title"
+ },
+ "remnant_mobs:champions_bane": {
+  "key": "advancements.remnant_mobs.champions_bane.title"
+ },
+ "remnant_mobs:kindled": {
+  "key": "advancements.remnant_mobs.kindled.title"
+ },
+ "remnant_mobs:know_thy_enemy": {
+  "key": "advancements.remnant_mobs.know_thy_enemy.title"
+ },
+ "remnant_mobs:nothing_left_to_hide": {
+  "key": "advancements.remnant_mobs.nothing_left_to_hide.title"
+ },
+ "remnant_mobs:proven_hunter": {
+  "key": "advancements.remnant_mobs.proven_hunter.title"
+ },
+ "remnant_mobs:punching_up": {
+  "key": "advancements.remnant_mobs.punching_up.title"
+ },
+ "remnant_mobs:remnants_end": {
+  "key": "advancements.remnant_mobs.remnants_end.title"
+ },
+ "remnant_mobs:root": {
+  "key": "advancements.remnant_mobs.root.title"
+ },
+ "remnant_mobs:see_the_dawn": {
+  "key": "advancements.remnant_mobs.see_the_dawn.title"
+ },
+ "remnant_mobs:taste_of_valor": {
+  "key": "advancements.remnant_mobs.taste_of_valor.title"
+ },
+ "remnant_mobs:under_the_hunters_moon": {
+  "key": "advancements.remnant_mobs.under_the_hunters_moon.title"
+ },
+ "remnants:threshold/beyond": {
+  "text": "Beyond the Gate"
+ },
+ "remnants:threshold/gatekeeper": {
+  "text": "Gatekeeper Felled"
+ },
+ "remnants:threshold/woke": {
+  "text": "The Threshold"
+ },
+ "runeborn:feats/champion": {
+  "key": "runeborn.feat.champion"
+ },
+ "runeborn:feats/crown": {
+  "key": "runeborn.feat.crown"
+ },
+ "runeborn:feats/died": {
+  "key": "runeborn.feat.died"
+ },
+ "runeborn:feats/fell_dusk_rider": {
+  "key": "runeborn.feat.fell_dusk_rider"
+ },
+ "runeborn:feats/fell_kaelthar": {
+  "key": "runeborn.feat.fell_kaelthar"
+ },
+ "runeborn:feats/fell_morgrath": {
+  "key": "runeborn.feat.fell_morgrath"
+ },
+ "runeborn:feats/fell_sylvara": {
+  "key": "runeborn.feat.fell_sylvara"
+ },
+ "runeborn:feats/fell_vaelorn": {
+  "key": "runeborn.feat.fell_vaelorn"
+ },
+ "runeborn:feats/fell_varghast": {
+  "key": "runeborn.feat.fell_varghast"
+ },
+ "runeborn:feats/fell_ysolde": {
+  "key": "runeborn.feat.fell_ysolde"
+ },
+ "runeborn:feats/infused": {
+  "key": "runeborn.feat.infused"
+ },
+ "runeborn:feats/kindle": {
+  "key": "runeborn.feat.kindle"
+ },
+ "runeborn:feats/level_100": {
+  "key": "runeborn.feat.level_100"
+ },
+ "runeborn:feats/level_20": {
+  "key": "runeborn.feat.level_20"
+ },
+ "runeborn:feats/level_50": {
+  "key": "runeborn.feat.level_50"
+ },
+ "runeborn:feats/masterwork": {
+  "key": "runeborn.feat.masterwork"
+ },
+ "runeborn:feats/rebirth": {
+  "key": "runeborn.feat.rebirth"
+ },
+ "runeborn:feats/reclaimed": {
+  "key": "runeborn.feat.reclaimed"
+ },
+ "runeborn:feats/root": {
+  "key": "runeborn.feat.root"
+ },
+ "runeborn:feats/summon": {
+  "key": "runeborn.feat.summon"
+ },
+ "runeborn:feats/tempered": {
+  "key": "runeborn.feat.tempered"
+ },
+ "runeborn:feats/travel": {
+  "key": "runeborn.feat.travel"
+ },
+ "smartvillagers:first_request": {
+  "key": "advancements.smartvillagers.first_request.title"
+ },
+ "smartvillagers:root": {
+  "key": "advancements.smartvillagers.root.title"
+ },
+ "smartvillagers:village_hero": {
+  "key": "advancements.smartvillagers.village_hero.title"
+ },
+ "spore_and_stem:all_fungi": {
+  "key": "advancements.spore_and_stem.all_fungi.title"
+ },
+ "spore_and_stem:bloatshroom": {
+  "key": "advancements.spore_and_stem.bloatshroom.title"
+ },
+ "spore_and_stem:bloomreaver": {
+  "key": "advancements.spore_and_stem.bloomreaver.title"
+ },
+ "spore_and_stem:bounce": {
+  "key": "advancements.spore_and_stem.bounce.title"
+ },
+ "spore_and_stem:cultivate": {
+  "key": "advancements.spore_and_stem.cultivate.title"
+ },
+ "spore_and_stem:full_mycoleather": {
+  "key": "advancements.spore_and_stem.full_mycoleather.title"
+ },
+ "spore_and_stem:glowcap": {
+  "key": "advancements.spore_and_stem.glowcap.title"
+ },
+ "spore_and_stem:kill_myceliarch": {
+  "key": "advancements.spore_and_stem.kill_myceliarch.title"
+ },
+ "spore_and_stem:mimicap": {
+  "key": "advancements.spore_and_stem.mimicap.title"
+ },
+ "spore_and_stem:mycoleather": {
+  "key": "advancements.spore_and_stem.mycoleather.title"
+ },
+ "spore_and_stem:root": {
+  "key": "advancements.spore_and_stem.root.title"
+ },
+ "spore_and_stem:summon": {
+  "key": "advancements.spore_and_stem.summon.title"
+ },
+ "spore_and_stem:tame_sporeling": {
+  "key": "advancements.spore_and_stem.tame_sporeling.title"
+ },
+ "spore_and_stem:tonic": {
+  "key": "advancements.spore_and_stem.tonic.title"
+ },
+ "spore_and_stem:truffle": {
+  "key": "advancements.spore_and_stem.truffle.title"
+ },
+ "sprout_and_soil:coffee": {
+  "key": "advancements.sprout_and_soil.coffee.title"
+ },
+ "sprout_and_soil:cooking_pot": {
+  "key": "advancements.sprout_and_soil.cooking_pot.title"
+ },
+ "sprout_and_soil:cozy": {
+  "key": "advancements.sprout_and_soil.cozy.title"
+ },
+ "sprout_and_soil:cutting_board": {
+  "key": "advancements.sprout_and_soil.cutting_board.title"
+ },
+ "sprout_and_soil:first_meal": {
+  "key": "advancements.sprout_and_soil.first_meal.title"
+ },
+ "sprout_and_soil:fruit_basket": {
+  "key": "advancements.sprout_and_soil.fruit_basket.title"
+ },
+ "sprout_and_soil:gourmet": {
+  "key": "advancements.sprout_and_soil.gourmet.title"
+ },
+ "sprout_and_soil:harvest": {
+  "key": "advancements.sprout_and_soil.harvest.title"
+ },
+ "sprout_and_soil:master_gardener": {
+  "key": "advancements.sprout_and_soil.master_gardener.title"
+ },
+ "sprout_and_soil:orchard": {
+  "key": "advancements.sprout_and_soil.orchard.title"
+ },
+ "sprout_and_soil:pie": {
+  "key": "advancements.sprout_and_soil.pie.title"
+ },
+ "sprout_and_soil:root": {
+  "key": "advancements.sprout_and_soil.root.title"
+ },
+ "sprout_and_soil:scarecrow": {
+  "key": "advancements.sprout_and_soil.scarecrow.title"
+ },
+ "sprout_and_soil:sickle": {
+  "key": "advancements.sprout_and_soil.sickle.title"
+ },
+ "sprout_and_soil:sprinkler": {
+  "key": "advancements.sprout_and_soil.sprinkler.title"
+ },
+ "sprout_and_soil:watering_can": {
+  "key": "advancements.sprout_and_soil.watering_can.title"
+ },
+ "sprout_and_soil:well_fed": {
+  "key": "advancements.sprout_and_soil.well_fed.title"
+ },
+ "sprout_and_soil:wild_garden": {
+  "key": "advancements.sprout_and_soil.wild_garden.title"
+ },
+ "supplementaries:adventure/globe": {
+  "key": "advancements.adventure.globe.title"
+ },
+ "supplementaries:adventure/road_sign": {
+  "key": "advancements.adventure.road_sign.title"
+ },
+ "supplementaries:husbandry/angry_birds": {
+  "key": "advancements.husbandry.angry_birds.title"
+ },
+ "supplementaries:husbandry/soap": {
+  "key": "advancements.husbandry.soap.title"
+ },
+ "supplementaries:husbandry/sus_stew": {
+  "key": "advancements.husbandry.sus_stew.title"
+ },
+ "supplementaries:husbandry/turn_table": {
+  "key": "advancements.husbandry.turn_table.title"
+ },
+ "supplementaries:husbandry/wrench": {
+  "key": "advancements.husbandry.wrench.title"
+ },
+ "supplementaries:nether/goblet": {
+  "key": "advancements.nether.goblet.title"
+ },
+ "supplementaries:story/unenchanter": {
+  "key": "advancements.story.unenchanter.title"
+ },
+ "tbos:expedition/archivist_eternal": {
+  "key": "advancements.tbos.expedition.archivist_eternal.title"
+ },
+ "tbos:expedition/fellowship": {
+  "key": "advancements.tbos.expedition.fellowship.title"
+ },
+ "tbos:expedition/forget": {
+  "key": "advancements.tbos.expedition.forget.title"
+ },
+ "tbos:expedition/fractured": {
+  "key": "advancements.tbos.expedition.fractured.title"
+ },
+ "tbos:expedition/hourglass": {
+  "key": "advancements.tbos.expedition.hourglass.title"
+ },
+ "tbos:expedition/know_the_archive": {
+  "key": "advancements.tbos.expedition.know_the_archive.title"
+ },
+ "tbos:expedition/last_key": {
+  "key": "advancements.tbos.expedition.last_key.title"
+ },
+ "tbos:expedition/momentum": {
+  "key": "advancements.tbos.expedition.momentum.title"
+ },
+ "tbos:expedition/recollection": {
+  "key": "advancements.tbos.expedition.recollection.title"
+ },
+ "tbos:expedition/remember": {
+  "key": "advancements.tbos.expedition.remember.title"
+ },
+ "tbos:expedition/remnant_relic": {
+  "key": "advancements.tbos.expedition.remnant_relic.title"
+ },
+ "tbos:expedition/root": {
+  "key": "advancements.tbos.expedition.root.title"
+ },
+ "tbos:expedition/storied": {
+  "key": "advancements.tbos.expedition.storied.title"
+ },
+ "tbos:expedition/weekly": {
+  "key": "advancements.tbos.expedition.weekly.title"
+ },
+ "tbos:story/collect_all_memory_plates": {
+  "key": "advancements.tbos.collect_plates.title"
+ },
+ "tbos:story/complete_choir_of_hours": {
+  "key": "advancements.tbos.complete_choir.title"
+ },
+ "tbos:story/cross_broken_meridian": {
+  "key": "advancements.tbos.cross_meridian.title"
+ },
+ "tbos:story/defeat_last_curator": {
+  "key": "advancements.tbos.defeat_curator.title"
+ },
+ "tbos:story/display_complete_memory_scene": {
+  "key": "advancements.tbos.display_scene.title"
+ },
+ "tbos:story/enter_archive": {
+  "key": "advancements.tbos.enter_archive.title"
+ },
+ "tbos:story/enter_fractured_archive": {
+  "key": "advancements.tbos.enter_fractured_archive.title"
+ },
+ "tbos:story/obtain_cracked_lens": {
+  "key": "advancements.tbos.obtain_cracked_lens.title"
+ },
+ "tbos:story/obtain_memory_lantern": {
+  "key": "advancements.tbos.obtain_lantern.title"
+ },
+ "tbos:story/reconstruct_first_room": {
+  "key": "advancements.tbos.reconstruct_first_room.title"
+ },
+ "tbos:story/repair_lens": {
+  "key": "advancements.tbos.repair_lens.title"
+ },
+ "tbos:story/root": {
+  "key": "advancements.tbos.root.title"
+ },
+ "tbos:story/solve_hall_of_alignment": {
+  "key": "advancements.tbos.solve_hall.title"
+ }
+}

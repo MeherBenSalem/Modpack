@@ -1,0 +1,507 @@
+{
+  "id": "n_measure",
+  "title": "&dThe Measure",
+  "icon": "rpg_attribute_system:tome_of_ascension",
+  "group": "groups/chronicles",
+  "subtitle": [
+    "Valor, levels and the K screen: what the dark teaches your body."
+  ],
+  "quests": [
+    {
+      "id": "n_measure/start",
+      "title": "&dThe Tallyman",
+      "subtitle": "Stand still. He's measuring.",
+      "icon": "remnant_mobs:remnant_shard",
+      "x": 0,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "s1_prologue/valor"
+      ],
+      "description": [
+        "&6Tobiah the Tallyman&r kept the Crown's muster rolls: every soldier's height, reach, weight, and how long they lasted. The Crown is gone. He kept measuring. &o\"Stand still. Hm. Taller than the last one. Still dies, I expect.\"&r",
+        "",
+        "Every kill teaches your body something, and your body keeps it, death or no death. The dark calls it &6Valor&r. Valor fills your &6RPG level&r, and every level gives one &6attribute point&r. Bigger kills pay more; the Ashlands pay half again, the End double. A &6Remnant Shard&r is fifteen Valor kept in your pocket.",
+        "",
+        "&7Absorb a Remnant Shard (sneak to absorb the stack)."
+      ],
+      "tasks": [
+        {
+          "id": "n_measure/start/task0",
+          "type": "advancement",
+          "advancement": "remnant_mobs:taste_of_valor",
+          "title": "lang:advancements.remnant_mobs.taste_of_valor.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_measure/start/reward0",
+          "type": "item",
+          "item": "remnant_mobs:remnant_shard",
+          "count": 4
+        },
+        {
+          "id": "n_measure/start/reward1",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "n_measure/first_point",
+      "title": "&eFirst Point",
+      "subtitle": "Nothing is spent until you say so.",
+      "icon": "minecraft:writable_book",
+      "x": 2.5,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "n_measure/start"
+      ],
+      "description": [
+        "Press &eK&r. Your attributes sit on the left, the stats they drive in the middle, the chosen attribute's details on the right. Stage points with &e←&r and &e→&r (&eShift&r moves five) and every number reads &7current → after&r. &eEnter&r confirms the whole build; &eReset&r takes it back. &eTab&r flips to your Status and Records.",
+        "",
+        "&o\"Write it down,\"&r says Tobiah. &o\"Then you can't pretend you didn't.\"&r",
+        "",
+        "&7Spend your first point."
+      ],
+      "tasks": [
+        {
+          "id": "n_measure/first_point/task0",
+          "type": "checkmark",
+          "title": "I spent a point on the K screen"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_measure/first_point/reward0",
+          "type": "item",
+          "item": "remnant_mobs:remnant_shard",
+          "count": 4
+        },
+        {
+          "id": "n_measure/first_point/reward1",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "n_measure/body",
+      "title": "Flesh and Footing",
+      "subtitle": "Vitality, Fortitude, Agility.",
+      "icon": "minecraft:golden_apple",
+      "x": 5,
+      "y": -3.5,
+      "dependencies": [
+        "n_measure/first_point"
+      ],
+      "description": [
+        "&6Vitality&r: half a heart of health per point. &6Fortitude&r: one percent less knockback per point; at a hundred, nothing moves you. &6Agility&r: each point adds a fortieth to your walking pace.",
+        "",
+        "These keep you on your feet long enough for the rest to matter.",
+        "",
+        "&7Read them, choose, and spend."
+      ],
+      "tasks": [
+        {
+          "id": "n_measure/body/task0",
+          "type": "checkmark",
+          "title": "I know what Vitality, Fortitude and Agility do"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_measure/body/reward0",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "n_measure/blade",
+      "title": "The Edge",
+      "subtitle": "Attack Power, Attack Speed.",
+      "icon": "minecraft:iron_sword",
+      "x": 5,
+      "y": -1.75,
+      "dependencies": [
+        "n_measure/first_point"
+      ],
+      "description": [
+        "&6Attack Power&r: a fifth of a point of damage per point, a whole point every five. &6Attack Speed&r: each point brings the next swing a little sooner.",
+        "",
+        "Better weapons and tools look at your Attack Power before they let you use them.",
+        "",
+        "&7Read them, choose, and spend."
+      ],
+      "tasks": [
+        {
+          "id": "n_measure/blade/task0",
+          "type": "checkmark",
+          "title": "I know what Attack Power and Attack Speed do"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_measure/blade/reward0",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "n_measure/shell",
+      "title": "The Shell",
+      "subtitle": "Protection, Toughness.",
+      "icon": "minecraft:iron_chestplate",
+      "x": 5,
+      "y": 0,
+      "dependencies": [
+        "n_measure/first_point"
+      ],
+      "description": [
+        "&6Protection&r: a quarter of a point of armour per point, a whole point every four. &6Toughness&r: a tenth of a point of armour toughness per point, the part of armour that holds against the hardest hits.",
+        "",
+        "Better armour looks at your Protection before it lets you wear it.",
+        "",
+        "&7Read them, choose, and spend."
+      ],
+      "tasks": [
+        {
+          "id": "n_measure/shell/task0",
+          "type": "checkmark",
+          "title": "I know what Protection and Toughness do"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_measure/shell/reward0",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "n_measure/exploration",
+      "title": "Luck by Another Name",
+      "subtitle": "Exploration.",
+      "icon": "mob_loot_bags:fortune_talisman",
+      "x": 5,
+      "y": 1.75,
+      "dependencies": [
+        "n_measure/first_point",
+        "n_spoils/start"
+      ],
+      "description": [
+        "&6Exploration&r is &6Luck&r: a tenth of a point per point spent. Luck leans on loot, and Old Pell's loot bags lean on it hardest: every point of Luck is a point of &6Bag Luck&r, pushing drops toward Rare, Epic and Legendary. Ten points of Exploration do what a Fortune Talisman's luck does, and you can't drop them.",
+        "",
+        "&o\"Luck,\"&r says Tobiah, &o\"is the only number the dead respect.\"&r",
+        "",
+        "&7Open a Rare loot bag."
+      ],
+      "tasks": [
+        {
+          "id": "n_measure/exploration/task0",
+          "type": "advancement",
+          "advancement": "mob_loot_bags:open_rare",
+          "title": "lang:advancements.mob_loot_bags.open_rare.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_measure/exploration/reward0",
+          "type": "item",
+          "item": "mob_loot_bags:uncommonlootbag",
+          "count": 2
+        },
+        {
+          "id": "n_measure/exploration/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "n_measure/locks",
+      "title": "Locks on Better Steel",
+      "subtitle": "Earned, not found.",
+      "icon": "minecraft:diamond_sword",
+      "x": 7.5,
+      "y": -1.75,
+      "dependencies": [
+        "n_measure/blade",
+        "s1_forge/duskforged"
+      ],
+      "description": [
+        "Some gear won't answer a weak hand. A locked item asks for a level in one attribute (&6Attack Power&r for weapons and tools, &6Protection&r for armour) and says so on its tooltip, in red until you have it. A few ores won't break for a low RPG level either. The lists grow the deeper the road goes.",
+        "",
+        "The &eK&r screen tells you how far off you are. Find the gear whenever you like; spend the points before you swing.",
+        "",
+        "&7Forge a diamond sword (Duskforged in the hilt) and read its tooltip."
+      ],
+      "tasks": [
+        {
+          "id": "n_measure/locks/task0",
+          "type": "item",
+          "item": "minecraft:diamond_sword"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_measure/locks/reward0",
+          "type": "random",
+          "table": "tables/measure_tally"
+        },
+        {
+          "id": "n_measure/locks/reward1",
+          "type": "xp",
+          "xp": 120
+        }
+      ]
+    },
+    {
+      "id": "n_measure/shrine",
+      "title": "Two Ladders, One Climb",
+      "subtitle": "Runes at the shrine, Valor on the K screen.",
+      "icon": "runeborn:ember_shrine",
+      "x": 5,
+      "y": 3.5,
+      "dependencies": [
+        "n_measure/first_point",
+        "n_runeborn/start"
+      ],
+      "description": [
+        "Runes spent at an &6Ember Shrine&r buy Runeborn levels: Vigor, Mind, Endurance and the rest. Every one of those levels also grants an &6RPG level&r, and with it a point for the &eK&r screen. The two ladders were built to be climbed together: the shrine for your runes, Valor for the rest.",
+        "",
+        "&o\"Two ledgers,\"&r grumbles Tobiah. &o\"The Crown had one and lost it.\"&r",
+        "",
+        "&7Reach rune level 20."
+      ],
+      "tasks": [
+        {
+          "id": "n_measure/shrine/task0",
+          "type": "advancement",
+          "advancement": "runeborn:feats/level_20",
+          "title": "lang:runeborn.feat.level_20"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_measure/shrine/reward0",
+          "type": "item",
+          "item": "runeborn:faded_rune",
+          "count": 4
+        },
+        {
+          "id": "n_measure/shrine/reward1",
+          "type": "xp",
+          "xp": 120
+        }
+      ]
+    },
+    {
+      "id": "n_measure/level_50",
+      "title": "Fifty Rungs",
+      "subtitle": "He stops calling you 'it'.",
+      "icon": "runeborn:radiant_rune",
+      "x": 7.5,
+      "y": 3.5,
+      "dependencies": [
+        "n_measure/shrine"
+      ],
+      "description": [
+        "Fifty rune levels is fifty RPG levels from the shrine alone, and whatever your Valor added on top. Tobiah turns a page in the muster roll and writes your name in it, which he has never done for an Ashborn before.",
+        "",
+        "&7Reach rune level 50."
+      ],
+      "tasks": [
+        {
+          "id": "n_measure/level_50/task0",
+          "type": "advancement",
+          "advancement": "runeborn:feats/level_50",
+          "title": "lang:runeborn.feat.level_50"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_measure/level_50/reward0",
+          "type": "item",
+          "item": "runeborn:lustrous_rune",
+          "count": 2
+        },
+        {
+          "id": "n_measure/level_50/reward1",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "n_measure/tome",
+      "title": "&6Tome of Ascension",
+      "subtitle": "Somebody else's Valor, written down.",
+      "icon": "rpg_attribute_system:tome_of_ascension",
+      "x": 0,
+      "y": 3.5,
+      "shape": "hexagon",
+      "dependencies": [
+        "n_measure/first_point",
+        "n_spoils/start",
+        "s1_act2_hunt/hunters_moon"
+      ],
+      "description": [
+        "A &6Tome of Ascension&r is a life's worth of Valor, written down by someone who didn't need it any more. Use it and you gain an RPG level on the spot, point and all. Tobiah has no idea who wrote them. The dead carry them in Epic, Legendary and Mythic loot bags.",
+        "",
+        "&7Find a Tome of Ascension."
+      ],
+      "tasks": [
+        {
+          "id": "n_measure/tome/task0",
+          "type": "item",
+          "item": "rpg_attribute_system:tome_of_ascension"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_measure/tome/reward0",
+          "type": "random",
+          "table": "tables/measure_tally"
+        },
+        {
+          "id": "n_measure/tome/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "n_measure/rebirth",
+      "title": "&bScroll of Rebirth",
+      "subtitle": "Built wrong? Everybody is, once.",
+      "icon": "rpg_attribute_system:scroll_of_rebirth",
+      "x": 0,
+      "y": -3.5,
+      "shape": "hexagon",
+      "dependencies": [
+        "n_measure/first_point",
+        "s1_act2_hunt/path"
+      ],
+      "description": [
+        "A &6Scroll of Rebirth&r takes back every attribute point you've spent on the &eK&r screen and hands them back to spend again. Your level stays where it is.",
+        "",
+        "Tobiah keeps a few, for Ashborn who chose a path and then met the thing at the end of it. &o\"Here. Don't make me regret it.\"&r The shrine's own &6Tear of Rebirth&r does the same for your rune attributes.",
+        "",
+        "&7Take the scroll. Read it when your build stops working."
+      ],
+      "tasks": [
+        {
+          "id": "n_measure/rebirth/task0",
+          "type": "checkmark",
+          "title": "I'll read it when I need it"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_measure/rebirth/reward0",
+          "type": "item",
+          "item": "rpg_attribute_system:scroll_of_rebirth"
+        },
+        {
+          "id": "n_measure/rebirth/reward1",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "n_measure/deep_valor",
+      "title": "Richer Dark",
+      "subtitle": "The Ashlands remember more.",
+      "icon": "minecraft:netherrack",
+      "x": -2.5,
+      "y": 0,
+      "dependencies": [
+        "n_measure/start",
+        "s1_act4_ash/ashlands"
+      ],
+      "optional": true,
+      "description": [
+        "Kills in the Ashlands pay half again as much &6Valor&r; kills in the End pay double. Big things pay more everywhere. Tobiah recommends somewhere warm for your next few levels.",
+        "",
+        "&7Set foot in the Ashlands."
+      ],
+      "tasks": [
+        {
+          "id": "n_measure/deep_valor/task0",
+          "type": "dimension",
+          "dimension": "minecraft:the_nether",
+          "title": "Enter the Nether"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_measure/deep_valor/reward0",
+          "type": "item",
+          "item": "remnant_mobs:remnant_shard",
+          "count": 8
+        },
+        {
+          "id": "n_measure/deep_valor/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "n_measure/finale",
+      "title": "&6The Full Measure",
+      "subtitle": "Netherite's lock, opened.",
+      "icon": "minecraft:netherite_chestplate",
+      "x": 10,
+      "y": 0,
+      "shape": "gear",
+      "size": 2,
+      "dependencies": [
+        "n_measure/locks",
+        "n_measure/shell",
+        "n_measure/level_50",
+        "s1_act4_ash/netherite"
+      ],
+      "description": [
+        "Netherite carries the heaviest lock there is. Tobiah measured the Crown's champions for it once; most of them came up short.",
+        "",
+        "Raise &6Protection&r to netherite's lock (the tooltip says how high) and wear it. Tobiah closes the muster roll. &o\"That's you, then. Every number I've got. Whatever's under the black sun can do the rest of the measuring.\"&r",
+        "",
+        "&7Make a netherite chestplate."
+      ],
+      "tasks": [
+        {
+          "id": "n_measure/finale/task0",
+          "type": "item",
+          "item": "minecraft:netherite_chestplate"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_measure/finale/reward0",
+          "type": "item",
+          "item": "rpg_attribute_system:tome_of_ascension",
+          "count": 2
+        },
+        {
+          "id": "n_measure/finale/reward1",
+          "type": "random",
+          "table": "tables/measure_tally"
+        },
+        {
+          "id": "n_measure/finale/reward2",
+          "type": "xp",
+          "xp": 1000
+        }
+      ]
+    }
+  ]
+}

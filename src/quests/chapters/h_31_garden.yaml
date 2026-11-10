@@ -53,7 +53,7 @@ quests:
     icon: sprout_and_soil:sprinkler
     pos: [6, -1]
     deps: [watering_can]
-    optional: true
+    # not optional: The Fields of Last Light (fields) needs it, and a required quest must never wait on an optional one
     desc: |
       Set copper around your &6Watering Can&r and it becomes a &6Sprinkler&r. Place it next to water and it keeps a whole 9x9 field wet and growing on its own.
 

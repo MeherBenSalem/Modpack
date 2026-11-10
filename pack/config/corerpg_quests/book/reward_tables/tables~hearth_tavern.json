@@ -1,0 +1,56 @@
+{
+  "id": "tables/hearth_tavern",
+  "title": "The Tavern Cellar",
+  "icon": "brewinandchewin:keg",
+  "entries": [
+    {
+      "id": "tables/hearth_tavern/0",
+      "type": "item",
+      "item": "brewinandchewin:beer",
+      "count": 2,
+      "weight": 3
+    },
+    {
+      "id": "tables/hearth_tavern/1",
+      "type": "item",
+      "item": "brewinandchewin:mead",
+      "count": 2,
+      "weight": 3
+    },
+    {
+      "id": "tables/hearth_tavern/2",
+      "type": "item",
+      "item": "brewinandchewin:strongroot_ale",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/hearth_tavern/3",
+      "type": "item",
+      "item": "brewinandchewin:flaxen_cheese_wedge",
+      "count": 4,
+      "weight": 2
+    },
+    {
+      "id": "tables/hearth_tavern/4",
+      "type": "item",
+      "item": "brewinandchewin:jerky",
+      "count": 6,
+      "weight": 2
+    },
+    {
+      "id": "tables/hearth_tavern/5",
+      "type": "item",
+      "item": "brewinandchewin:kippers",
+      "count": 4,
+      "weight": 1
+    },
+    {
+      "id": "tables/hearth_tavern/6",
+      "type": "item",
+      "item": "brewinandchewin:pizza_slice",
+      "count": 4,
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,1421 @@
+{
+  "id": "w_dungeons",
+  "title": "&bThe Dungeon Trail",
+  "icon": "minecraft:spawner",
+  "group": "groups/world",
+  "subtitle": [
+    "Prisons, crypts, temples and forts. Somebody built them to keep things in."
+  ],
+  "quests": [
+    {
+      "id": "w_dungeons/villa",
+      "title": "Contraband",
+      "subtitle": "Tier I: the Smuggler's Villa.",
+      "icon": "minecraft:filled_map",
+      "x": 0,
+      "y": 0,
+      "dependencies": [
+        "s1_act1_embers/kindle"
+      ],
+      "description": [
+        "The &6dungeon trail&r starts with thieves. A &6Smuggler's Villa&r stands in the open plains, meadows, flower forests and savannas.",
+        "",
+        "Every dungeon on the trail has a named guardian and a vault, and every vault holds a &6Dungeon Map&r to the next, harder one. Follow the maps.",
+        "",
+        "&7An Explorer's Compass finds them too, if you'd rather not read."
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/villa/task0",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:discover_outdoor_villa",
+          "title": "Find a Smuggler's Villa"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/villa/reward0",
+          "type": "random",
+          "table": "tables/world_delver_cache"
+        },
+        {
+          "id": "w_dungeons/villa/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/spire",
+      "title": "Spellbound Heights",
+      "subtitle": "Tier II: the Arcane Spire.",
+      "icon": "minecraft:enchanted_book",
+      "x": 2,
+      "y": 0,
+      "dependencies": [
+        "w_dungeons/villa"
+      ],
+      "description": [
+        "The villa's map points to a tower in the forests and taigas. The &6Arcane Spire&r belongs to a &6Spire Illusionist&r, who prefers you confused.",
+        "",
+        "Climb it. Count the copies. Hit the one that bleeds."
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/spire/task0",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:discover_tower_dungeon",
+          "title": "Enter an Arcane Spire"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/spire/reward0",
+          "type": "random",
+          "table": "tables/world_hunt_spoils"
+        },
+        {
+          "id": "w_dungeons/spire/reward1",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/cursed_keep",
+      "title": "Cursed Ground",
+      "subtitle": "Tier III: the Cursed Keep.",
+      "icon": "minecraft:zombie_head",
+      "x": 4,
+      "y": 0,
+      "dependencies": [
+        "w_dungeons/spire",
+        "s1_act2_hunt/sylvara"
+      ],
+      "description": [
+        "The third map leads to the hot, wet edges of the world: deserts, badlands, jungles, swamps. The &6Cursed Keep&r is held by the &6Keep Warlord&r, and he hasn't been relieved in an age.",
+        "",
+        "&7Cartographers disagree on whether it's the second or third dungeon. The map says III. Trust the map."
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/cursed_keep/task0",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:discover_dungeon_t2",
+          "title": "Enter a Cursed Keep"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/cursed_keep/reward0",
+          "type": "random",
+          "table": "tables/world_deep_spoils"
+        },
+        {
+          "id": "w_dungeons/cursed_keep/reward1",
+          "type": "xp",
+          "xp": 400
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/soulfire",
+      "title": "Cold Fire",
+      "subtitle": "Tier IV: the Soulfire Crypt.",
+      "icon": "minecraft:soul_lantern",
+      "x": 6,
+      "y": 0,
+      "dependencies": [
+        "w_dungeons/cursed_keep",
+        "s1_act3_deep/ysolde"
+      ],
+      "description": [
+        "The last map points to the snow: plains, slopes, groves and taigas. Under the ice burns the &6Soulfire Crypt&r, and the &6Cinder Warden&r keeps its fire blue.",
+        "",
+        "Fire Resistance won't save you from what's holding the sword. It helps with everything else."
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/soulfire/task0",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:discover_soulfire_crypt",
+          "title": "Enter a Soulfire Crypt"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/soulfire/reward0",
+          "type": "random",
+          "table": "tables/world_ash_spoils"
+        },
+        {
+          "id": "w_dungeons/soulfire/reward1",
+          "type": "xp",
+          "xp": 500
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/delver",
+      "title": "&6Dungeon Delver",
+      "subtitle": "All four dungeons.",
+      "icon": "minecraft:spawner",
+      "x": 8.5,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "w_dungeons/soulfire"
+      ],
+      "description": [
+        "Villa, Spire, Keep and Crypt. Four doors the Sovereigns' servants locked, and you walked through every one.",
+        "",
+        "&o\"Most people follow a treasure map once. You followed four. That's not luck, that's a habit.\"&r"
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/delver/task0",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:all_dungeons",
+          "title": "Enter all four dungeons"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/delver/reward0",
+          "type": "item",
+          "item": "runeborn:heros_rune"
+        },
+        {
+          "id": "w_dungeons/delver/reward1",
+          "type": "item",
+          "item": "mob_loot_bags:epiclootbag"
+        },
+        {
+          "id": "w_dungeons/delver/reward2",
+          "type": "xp",
+          "xp": 800
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/catacombs",
+      "title": "Rest in Pieces",
+      "subtitle": "A Labyrinth: the Forgotten Catacombs.",
+      "icon": "minecraft:bone_block",
+      "x": 0,
+      "y": 2.5,
+      "dependencies": [
+        "s1_act2_hunt/hunters_moon"
+      ],
+      "description": [
+        "The &6Labyrinths&r are prisons the Sovereigns dug for things they could not kill. Six of them wind under the world.",
+        "",
+        "The nearest lies under the plains, meadows and forests: the &6Forgotten Catacombs&r. Walk in. Remember the way out."
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/catacombs/task0",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:discover_catacombs",
+          "title": "Enter the Forgotten Catacombs"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/catacombs/reward0",
+          "type": "random",
+          "table": "tables/world_delver_cache"
+        },
+        {
+          "id": "w_dungeons/catacombs/reward1",
+          "type": "xp",
+          "xp": 250
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/tomb",
+      "title": "Dethroned",
+      "subtitle": "A Labyrinth: the Sunscorched Tomb.",
+      "icon": "minecraft:sandstone",
+      "x": 2,
+      "y": 2.5,
+      "dependencies": [
+        "w_dungeons/catacombs"
+      ],
+      "description": [
+        "Under the deserts and badlands, a king was buried with his court and never told to stop ruling. The &6Tomb King&r is a husk with a crown and a long memory.",
+        "",
+        "Bring food and a way to see in the dark. Leave with whatever he was holding; guardians always drop their weapons."
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/tomb/task0",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:discover_sandstone_tomb",
+          "title": "Enter the Sunscorched Tomb"
+        },
+        {
+          "id": "w_dungeons/tomb/task1",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:slay_sandstone_tomb_guardian",
+          "title": "Defeat the Tomb King"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/tomb/reward0",
+          "type": "random",
+          "table": "tables/world_hunt_spoils"
+        },
+        {
+          "id": "w_dungeons/tomb/reward1",
+          "type": "xp",
+          "xp": 450
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/warrens",
+      "title": "Exterminator",
+      "subtitle": "A Labyrinth: the Verdant Warrens.",
+      "icon": "minecraft:cobweb",
+      "x": 4,
+      "y": 2.5,
+      "dependencies": [
+        "w_dungeons/catacombs"
+      ],
+      "description": [
+        "Under jungles, swamps and lush caves, the &6Verdant Warrens&r breed spiders the way other places grow moss. At the heart sits the &6Broodmother&r.",
+        "",
+        "Shears for the webs, a sword for the rest, and don't look up."
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/warrens/task0",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:discover_overgrown_warrens",
+          "title": "Enter the Verdant Warrens"
+        },
+        {
+          "id": "w_dungeons/warrens/task1",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:slay_overgrown_warrens_guardian",
+          "title": "Defeat the Broodmother"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/warrens/reward0",
+          "type": "random",
+          "table": "tables/world_hunt_spoils"
+        },
+        {
+          "id": "w_dungeons/warrens/reward1",
+          "type": "xp",
+          "xp": 450
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/every_maze",
+      "title": "&6Into Every Maze",
+      "subtitle": "All six Labyrinths.",
+      "icon": "minecraft:recovery_compass",
+      "x": 8.5,
+      "y": 2.5,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "w_dungeons/tomb",
+        "w_dungeons/warrens",
+        "s1_act3_deep/ysolde"
+      ],
+      "description": [
+        "Six prisons. The &6Catacombs&r, the &6Tomb&r and the &6Warrens&r you know. The &6Rimefrost Vaults&r lie under the snow, the &6Abyssal Halls&r deep under everything, and the &6Infernal Bastille&r burns in the Ashlands.",
+        "",
+        "Enter them all. Whether you leave each one is, technically, a separate matter."
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/every_maze/task0",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:all_labyrinths",
+          "title": "Enter all six Labyrinths"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/every_maze/reward0",
+          "type": "item",
+          "item": "runeborn:heros_rune"
+        },
+        {
+          "id": "w_dungeons/every_maze/reward1",
+          "type": "item",
+          "item": "mob_loot_bags:legendarylootbag"
+        },
+        {
+          "id": "w_dungeons/every_maze/reward2",
+          "type": "xp",
+          "xp": 1000
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/bones_and_webs",
+      "title": "Bones and Webs",
+      "subtitle": "Spawner rooms that grew up.",
+      "icon": "minecraft:skeleton_skull",
+      "x": 0,
+      "y": 5,
+      "dependencies": [
+        "s1_act1_embers/kindle"
+      ],
+      "description": [
+        "The old monster rooms aren't small anymore. Some became &6Fortresses of the Undead&r, skeletons stacked to the ceiling. Others became &6Spider Caves&r, and you can guess.",
+        "",
+        "Break the spawners, or light them out. Loot the chests either way."
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/bones_and_webs/task0",
+          "type": "structure",
+          "structure": "betterdungeons:skeleton_dungeon",
+          "title": "Enter a Fortress of the Undead"
+        },
+        {
+          "id": "w_dungeons/bones_and_webs/task1",
+          "type": "structure",
+          "structure": "betterdungeons:spider_dungeon",
+          "title": "Find a Spider Cave"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/bones_and_webs/reward0",
+          "type": "random",
+          "table": "tables/world_delver_cache"
+        },
+        {
+          "id": "w_dungeons/bones_and_webs/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/mineshaft",
+      "title": "Old Workings",
+      "subtitle": "Someone dug for something. Then stopped.",
+      "icon": "minecraft:rail",
+      "x": 2,
+      "y": 5,
+      "dependencies": [
+        "s1_act1_embers/kindle"
+      ],
+      "description": [
+        "Mineshafts run under every kind of land, and each one is built from what was growing above it: spruce in the taiga, acacia in the savanna, ice in the cold.",
+        "",
+        "Ore, rails and the occasional chest. Mind the cave spiders, and don't ask why the miners left."
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/mineshaft/task0",
+          "type": "structure",
+          "structure": "#bettermineshafts:better_mineshafts",
+          "title": "Walk into a mineshaft"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/mineshaft/reward0",
+          "type": "random",
+          "table": "tables/ashborn_provisions"
+        },
+        {
+          "id": "w_dungeons/mineshaft/reward1",
+          "type": "item",
+          "item": "minecraft:iron_ingot",
+          "count": 8
+        },
+        {
+          "id": "w_dungeons/mineshaft/reward2",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/desert_temple",
+      "title": "Eternal Slumber",
+      "subtitle": "A temple, a curse, a Pharaoh.",
+      "icon": "minecraft:chiseled_sandstone",
+      "x": 4,
+      "y": 5,
+      "dependencies": [
+        "s1_act1_embers/kindle"
+      ],
+      "description": [
+        "The desert temples go deeper than they used to. Traps, puzzles, a curse that slows your hands, and at the bottom a &6Pharaoh&r who never agreed to leave.",
+        "",
+        "Watch the floor, read the walls, and end him. The curse lifts when he does."
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/desert_temple/task0",
+          "type": "advancement",
+          "advancement": "betterdeserttemples:temple_entry",
+          "title": "Enter a desert temple"
+        },
+        {
+          "id": "w_dungeons/desert_temple/task1",
+          "type": "advancement",
+          "advancement": "betterdeserttemples:temple_clear",
+          "title": "Slay the Pharaoh"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/desert_temple/reward0",
+          "type": "random",
+          "table": "tables/world_ember_spoils"
+        },
+        {
+          "id": "w_dungeons/desert_temple/reward1",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/jungle_temple",
+      "title": "Under the Vines",
+      "subtitle": "The jungle remembers who built it.",
+      "icon": "minecraft:mossy_cobblestone",
+      "x": 6,
+      "y": 5,
+      "dependencies": [
+        "s1_act1_embers/kindle"
+      ],
+      "description": [
+        "The jungle temples are bigger, older and meaner than the stories. Tripwires, darts and puzzles that kill you for guessing.",
+        "",
+        "Go slowly. Step where the last one didn't."
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/jungle_temple/task0",
+          "type": "structure",
+          "structure": "betterjungletemples:jungle_temple",
+          "title": "Enter a jungle temple"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/jungle_temple/reward0",
+          "type": "random",
+          "table": "tables/world_delver_cache"
+        },
+        {
+          "id": "w_dungeons/jungle_temple/reward1",
+          "type": "xp",
+          "xp": 250
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/monument",
+      "title": "The Drowned Halls",
+      "subtitle": "An ocean monument, inside and out.",
+      "icon": "minecraft:prismarine_bricks",
+      "x": 0,
+      "y": 7.5,
+      "dependencies": [
+        "s1_act2_hunt/sylvara"
+      ],
+      "description": [
+        "The ocean monuments are halls now, wings and galleries and a throne for an Old Power. Its lesser guardians patrol every corridor.",
+        "",
+        "Water Breathing, Night Vision, a door or two for air pockets. Clear the patrols and the monument is yours to search."
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/monument/task0",
+          "type": "structure",
+          "structure": "betteroceanmonuments:ocean_monument",
+          "title": "Enter an ocean monument"
+        },
+        {
+          "id": "w_dungeons/monument/task1",
+          "type": "kill",
+          "entity": "minecraft:guardian",
+          "value": 6
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/monument/reward0",
+          "type": "random",
+          "table": "tables/world_deep_spoils"
+        },
+        {
+          "id": "w_dungeons/monument/reward1",
+          "type": "xp",
+          "xp": 400
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/fortress",
+      "title": "Skulls for the Withering",
+      "subtitle": "A Nether fortress, and what it guards.",
+      "icon": "minecraft:wither_skeleton_skull",
+      "x": 2,
+      "y": 7.5,
+      "dependencies": [
+        "s1_act3_deep/ysolde"
+      ],
+      "description": [
+        "The Ashlands' fortresses sprawl now: halls, bridges, a forge or two. Wither skeletons walk them with their heads still on.",
+        "",
+        "Three of those heads build the Wither. Take them."
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/fortress/task0",
+          "type": "structure",
+          "structure": "betterfortresses:fortress",
+          "title": "Enter a Nether fortress"
+        },
+        {
+          "id": "w_dungeons/fortress/task1",
+          "type": "item",
+          "item": "minecraft:wither_skeleton_skull",
+          "count": 3
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/fortress/reward0",
+          "type": "random",
+          "table": "tables/world_ash_spoils"
+        },
+        {
+          "id": "w_dungeons/fortress/reward1",
+          "type": "xp",
+          "xp": 400
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/stronghold",
+      "title": "The Eye's Road",
+      "subtitle": "A stronghold, a library, a door.",
+      "icon": "minecraft:ender_eye",
+      "x": 4,
+      "y": 7.5,
+      "dependencies": [
+        "s1_act3_deep/ysolde"
+      ],
+      "description": [
+        "Strongholds are proper dungeons now: prisons, crypts, libraries and traps, all built around a door to the Last Shore.",
+        "",
+        "Eyes of Ender lead you there. Bring more than you think. Bring torches for the way back."
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/stronghold/task0",
+          "type": "structure",
+          "structure": "betterstrongholds:stronghold",
+          "title": "Enter a stronghold"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/stronghold/reward0",
+          "type": "random",
+          "table": "tables/world_ash_spoils"
+        },
+        {
+          "id": "w_dungeons/stronghold/reward1",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/plague_asylum",
+      "title": "The Plague Asylum",
+      "subtitle": "When Dungeons Arise. A forest set piece.",
+      "icon": "minecraft:fermented_spider_eye",
+      "x": 0,
+      "y": 10,
+      "dependencies": [
+        "s1_act2_hunt/hunters_moon"
+      ],
+      "description": [
+        "Somebody tried to cure the dead. Somebody failed. The &6Plague Asylum&r stands in the forests, floor upon floor of wards nobody walked out of.",
+        "",
+        "Bring friends. It's a co-op dungeon on purpose."
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/plague_asylum/task0",
+          "type": "advancement",
+          "advancement": "dungeons_arise:find_plague_asylum",
+          "title": "Find a Plague Asylum"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/plague_asylum/reward0",
+          "type": "random",
+          "table": "tables/world_hunt_spoils"
+        },
+        {
+          "id": "w_dungeons/plague_asylum/reward1",
+          "type": "xp",
+          "xp": 400
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/keep_kayra",
+      "title": "Keep Kayra",
+      "subtitle": "When Dungeons Arise. A fortress in the swamp.",
+      "icon": "minecraft:iron_bars",
+      "x": 2,
+      "y": 10,
+      "dependencies": [
+        "s1_act2_hunt/sylvara"
+      ],
+      "description": [
+        "A walled keep sinking into a swamp, still garrisoned, still loyal to someone who died a long time ago.",
+        "",
+        "Storm the walls or find the side door. Both are traditional."
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/keep_kayra/task0",
+          "type": "advancement",
+          "advancement": "dungeons_arise:find_keep_kayra",
+          "title": "Find Keep Kayra"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/keep_kayra/reward0",
+          "type": "random",
+          "table": "tables/world_deep_spoils"
+        },
+        {
+          "id": "w_dungeons/keep_kayra/reward1",
+          "type": "xp",
+          "xp": 500
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/crypt",
+      "title": "Into Darkness",
+      "subtitle": "The Graveyard. A crypt underground.",
+      "icon": "graveyard:vial_of_blood",
+      "x": 4,
+      "y": 10,
+      "dependencies": [
+        "s1_act1_embers/kindle"
+      ],
+      "description": [
+        "Under the graveyards are the &6crypts&r: coffins, candles and acolytes who pray to things that answer.",
+        "",
+        "Don't open a coffin unless you're ready for what's inside. Wraiths don't forgive being woken."
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/crypt/task0",
+          "type": "structure",
+          "structure": "graveyard:crypt",
+          "title": "Find an underground crypt"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/crypt/reward0",
+          "type": "random",
+          "table": "tables/world_delver_cache"
+        },
+        {
+          "id": "w_dungeons/crypt/reward1",
+          "type": "xp",
+          "xp": 250
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/illager_fort",
+      "title": "The Illagers' Fort",
+      "subtitle": "Illager Invasion. Taiga and snow.",
+      "icon": "minecraft:crossbow",
+      "x": 6,
+      "y": 10,
+      "dependencies": [
+        "s1_act2_hunt/hunters_moon"
+      ],
+      "description": [
+        "The illagers stopped raiding villages long enough to build themselves a &6fort&r in the taiga. Then they went back to raiding.",
+        "",
+        "&6Inquisitors&r hold the gates, &6Provokers&r stir up the garrison, and vindicators do what vindicators do. Take the walls first."
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/illager_fort/task0",
+          "type": "structure",
+          "structure": "illagerinvasion:illager_fort",
+          "title": "Find an Illager Fort"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/illager_fort/reward0",
+          "type": "random",
+          "table": "tables/world_hunt_spoils"
+        },
+        {
+          "id": "w_dungeons/illager_fort/reward1",
+          "type": "xp",
+          "xp": 350
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/cataclysm_lairs",
+      "title": "&6Lairs of the Cataclysm",
+      "subtitle": "Eight arenas across three worlds.",
+      "icon": "cataclysm:monstrous_eye",
+      "x": 8.5,
+      "y": 10,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "s1_act2_hunt/sylvara"
+      ],
+      "description": [
+        "Eight great lairs, each built around something that should have stayed asleep: a pyramid, a prison, a factory and a sunken city in the Overworld; an arena and a forge in the Ashlands; a citadel at the Last Shore; an acropolis over the warm sea.",
+        "",
+        "Cataclysm's &6Eyes&r fly toward their lairs like Eyes of Ender. Find all eight. Fighting what's inside is the Compendium's business."
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/cataclysm_lairs/task0",
+          "type": "advancement",
+          "advancement": "cataclysm:find_cursed_pyramid",
+          "title": "The Cursed Pyramid"
+        },
+        {
+          "id": "w_dungeons/cataclysm_lairs/task1",
+          "type": "advancement",
+          "advancement": "cataclysm:find_frosted_prison",
+          "title": "The Frosted Prison"
+        },
+        {
+          "id": "w_dungeons/cataclysm_lairs/task2",
+          "type": "advancement",
+          "advancement": "cataclysm:find_ancient_factory",
+          "title": "The Ancient Factory"
+        },
+        {
+          "id": "w_dungeons/cataclysm_lairs/task3",
+          "type": "advancement",
+          "advancement": "cataclysm:find_sunken_city",
+          "title": "The Sunken City"
+        },
+        {
+          "id": "w_dungeons/cataclysm_lairs/task4",
+          "type": "advancement",
+          "advancement": "cataclysm:find_acropolis",
+          "title": "The Acropolis"
+        },
+        {
+          "id": "w_dungeons/cataclysm_lairs/task5",
+          "type": "advancement",
+          "advancement": "cataclysm:find_burning_arena",
+          "title": "The Burning Arena"
+        },
+        {
+          "id": "w_dungeons/cataclysm_lairs/task6",
+          "type": "advancement",
+          "advancement": "cataclysm:find_soul_black_smith",
+          "title": "The Soul Forge"
+        },
+        {
+          "id": "w_dungeons/cataclysm_lairs/task7",
+          "type": "advancement",
+          "advancement": "cataclysm:find_ruined_citadel",
+          "title": "The Ruined Citadel"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/cataclysm_lairs/reward0",
+          "type": "random",
+          "table": "tables/world_eclipse_spoils"
+        },
+        {
+          "id": "w_dungeons/cataclysm_lairs/reward1",
+          "type": "xp",
+          "xp": 1000
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/smuggler_chief",
+      "title": "Chief Out",
+      "subtitle": "The villa's owner, with an axe.",
+      "icon": "minecraft:iron_axe",
+      "x": 0,
+      "y": -2.25,
+      "dependencies": [
+        "w_dungeons/villa"
+      ],
+      "description": [
+        "Every dungeon on the trail has a named guardian, and the &6Smuggler Chief&r is the first: a vindicator with an iron axe and strong opinions about trespass. The villa's vault holds the map to the next dungeon. He would rather it stayed there.",
+        "",
+        "&7Defeat the Smuggler Chief.&r"
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/smuggler_chief/task0",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:slay_outdoor_villa_guardian",
+          "title": "lang:advancements.muchmoredungeons.slay_outdoor_villa_guardian.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/smuggler_chief/reward0",
+          "type": "random",
+          "table": "tables/world_ember_spoils"
+        },
+        {
+          "id": "w_dungeons/smuggler_chief/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/illusionist",
+      "title": "Illusions Shattered",
+      "subtitle": "Count the copies. Hit the one that bleeds.",
+      "icon": "minecraft:bow",
+      "x": 2,
+      "y": -2.25,
+      "dependencies": [
+        "w_dungeons/spire",
+        "w_dungeons/smuggler_chief"
+      ],
+      "description": [
+        "Somewhere up the Arcane Spire waits the &6Spire Illusionist&r: an illusioner with a bow, a cloud of copies and all the time in the world. Blindness, mirror images, and arrows from three directions at once.",
+        "",
+        "&7Defeat the Spire Illusionist.&r"
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/illusionist/task0",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:slay_tower_dungeon_guardian",
+          "title": "lang:advancements.muchmoredungeons.slay_tower_dungeon_guardian.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/illusionist/reward0",
+          "type": "random",
+          "table": "tables/world_hunt_spoils"
+        },
+        {
+          "id": "w_dungeons/illusionist/reward1",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/warlord",
+      "title": "Warlord Fallen",
+      "subtitle": "Still on duty. Still armoured.",
+      "icon": "minecraft:diamond_sword",
+      "x": 4,
+      "y": -2.25,
+      "dependencies": [
+        "w_dungeons/cursed_keep",
+        "w_dungeons/illusionist"
+      ],
+      "description": [
+        "The &6Keep Warlord&r was a soldier once, then a zombie, then a commander of zombies. He wears iron and swings a diamond sword, and the Keep's spawners keep his garrison topped up.",
+        "",
+        "&7Defeat the Keep Warlord.&r"
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/warlord/task0",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:slay_dungeon_t2_guardian",
+          "title": "lang:advancements.muchmoredungeons.slay_dungeon_t2_guardian.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/warlord/reward0",
+          "type": "random",
+          "table": "tables/world_deep_spoils"
+        },
+        {
+          "id": "w_dungeons/warlord/reward1",
+          "type": "xp",
+          "xp": 400
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/cinder_warden",
+      "title": "Ashes to Ashes",
+      "subtitle": "The last guardian on the trail.",
+      "icon": "minecraft:diamond_axe",
+      "x": 6,
+      "y": -2.25,
+      "dependencies": [
+        "w_dungeons/soulfire",
+        "w_dungeons/warlord"
+      ],
+      "description": [
+        "The &6Cinder Warden&r is a wither skeleton in a netherite helm with a diamond axe, and the Soulfire Crypt's blue fire is his. Bring milk for the withering, and something to put out the rest.",
+        "",
+        "&7Defeat the Cinder Warden.&r"
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/cinder_warden/task0",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:slay_soulfire_crypt_guardian",
+          "title": "lang:advancements.muchmoredungeons.slay_soulfire_crypt_guardian.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/cinder_warden/reward0",
+          "type": "random",
+          "table": "tables/world_ash_spoils"
+        },
+        {
+          "id": "w_dungeons/cinder_warden/reward1",
+          "type": "xp",
+          "xp": 500
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/totem",
+      "title": "What the Warlord Kept",
+      "subtitle": "One more life, in a box.",
+      "icon": "minecraft:totem_of_undying",
+      "x": 4,
+      "y": -4.25,
+      "dependencies": [
+        "w_dungeons/warlord"
+      ],
+      "optional": true,
+      "description": [
+        "The Cursed Keep's vault, and the Rimefrost Vaults', sometimes hold a &6Totem of Undying&r. So do evokers, and the rarer loot bags. Even for an Ashborn who can't die for good, it is the cheapest death there is: no runes left behind, no Echo, no walk back.",
+        "",
+        "&7Find a Totem of Undying.&r"
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/totem/task0",
+          "type": "item",
+          "item": "minecraft:totem_of_undying"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/totem/reward0",
+          "type": "random",
+          "table": "tables/world_deep_spoils"
+        },
+        {
+          "id": "w_dungeons/totem/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/recollection",
+      "title": "A Dungeon, Remembered",
+      "subtitle": "Every ruin has a before. So does every vault.",
+      "icon": "tbos:memory_key",
+      "x": 8.5,
+      "y": -4.25,
+      "dependencies": [
+        "w_dungeons/delver",
+        "p_archive/recollection"
+      ],
+      "optional": true,
+      "description": [
+        "A &6Memory Key&r attuned inside a structure opens a &6Recollection&r of it, a run through the place's memory, once per structure for each player. The trail's dungeons remember more than most: whose villa it was, who climbed the Spire first, who lit the Crypt's blue fire.",
+        "",
+        "&o\"Use the key inside the Keep. I want to know who it was built to keep.\"&r &7— Oren, the Archivist&r",
+        "",
+        "&7Open a Recollection inside a dungeon on the trail and bring it home.&r"
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/recollection/task0",
+          "type": "advancement",
+          "advancement": "tbos:expedition/remember",
+          "title": "Bank a Recollection and carry it home"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/recollection/reward0",
+          "type": "random",
+          "table": "tables/paths_archive_cache"
+        },
+        {
+          "id": "w_dungeons/recollection/reward1",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/rimefrost",
+      "title": "Cold Storage",
+      "subtitle": "A Labyrinth: the Rimefrost Vaults.",
+      "icon": "minecraft:blue_ice",
+      "x": 9.5,
+      "y": 4.75,
+      "dependencies": [
+        "s1_act2_hunt/labyrinth"
+      ],
+      "description": [
+        "Under the snowy plains, taigas and frozen peaks, the &6Rimefrost Vaults&r keep their prisoners on ice. Strays walk the halls, and the &6Frost Lich&r keeps the vault: a stray with a bow and a long memory of the cold.",
+        "",
+        "&7Enter the Rimefrost Vaults and defeat the Frost Lich.&r"
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/rimefrost/task0",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:discover_frost_vaults",
+          "title": "Enter the Rimefrost Vaults"
+        },
+        {
+          "id": "w_dungeons/rimefrost/task1",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:slay_frost_vaults_guardian",
+          "title": "Defeat the Frost Lich"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/rimefrost/reward0",
+          "type": "random",
+          "table": "tables/world_hunt_spoils"
+        },
+        {
+          "id": "w_dungeons/rimefrost/reward1",
+          "type": "xp",
+          "xp": 450
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/abyssal_halls",
+      "title": "Bottom of the World",
+      "subtitle": "A Labyrinth: the Abyssal Halls.",
+      "icon": "minecraft:sculk",
+      "x": 11.25,
+      "y": 4.75,
+      "dependencies": [
+        "s1_act2_hunt/sylvara"
+      ],
+      "description": [
+        "The &6Abyssal Halls&r lie deep under every kind of land, down in the deepslate. Their warden is the &6Abyssal Knight&r, a wither skeleton with a netherite sword, and it has had a very long time to practise.",
+        "",
+        "&7Enter the Abyssal Halls and defeat the Abyssal Knight.&r"
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/abyssal_halls/task0",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:discover_deepslate_halls",
+          "title": "Enter the Abyssal Halls"
+        },
+        {
+          "id": "w_dungeons/abyssal_halls/task1",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:slay_deepslate_halls_guardian",
+          "title": "Defeat the Abyssal Knight"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/abyssal_halls/reward0",
+          "type": "random",
+          "table": "tables/world_deep_spoils"
+        },
+        {
+          "id": "w_dungeons/abyssal_halls/reward1",
+          "type": "xp",
+          "xp": 550
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/bastille",
+      "title": "Hot Property",
+      "subtitle": "A Labyrinth: the Infernal Bastille.",
+      "icon": "minecraft:gilded_blackstone",
+      "x": 13,
+      "y": 4.75,
+      "dependencies": [
+        "s1_act4_ash/ashlands"
+      ],
+      "description": [
+        "The last Labyrinth burns in the Ashlands. Blazes and magma cubes crowd the &6Infernal Bastille&r, and the &6Brute Overseer&r, a piglin brute with a golden axe, keeps its vault. He does not care how much gold you are wearing.",
+        "",
+        "&7Enter an Infernal Bastille and defeat the Brute Overseer.&r"
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/bastille/task0",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:discover_nether_bastille",
+          "title": "Enter an Infernal Bastille"
+        },
+        {
+          "id": "w_dungeons/bastille/task1",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:slay_nether_bastille_guardian",
+          "title": "Defeat the Brute Overseer"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/bastille/reward0",
+          "type": "random",
+          "table": "tables/world_ash_spoils"
+        },
+        {
+          "id": "w_dungeons/bastille/reward1",
+          "type": "xp",
+          "xp": 650
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/echoes",
+      "title": "Echoes in the Deep Halls",
+      "subtitle": "The Forge wants what the Halls keep.",
+      "icon": "minecraft:echo_shard",
+      "x": 11.25,
+      "y": 6.5,
+      "dependencies": [
+        "w_dungeons/abyssal_halls"
+      ],
+      "optional": true,
+      "description": [
+        "The Abyssal Halls' chests are full of the deep's leftovers: soul sand, quartz, amethyst, sculk and &6Echo Shards&r. A &6Reinforced Echo Shard&r (echo shards, a Warden's carapace and a phantom membrane) goes into every &6Deepsteel Ingot&r at the Ember Forge.",
+        "",
+        "&7Bring back 4 Echo Shards.&r"
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/echoes/task0",
+          "type": "item",
+          "item": "minecraft:echo_shard",
+          "count": 4
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/echoes/reward0",
+          "type": "random",
+          "table": "tables/world_deep_spoils"
+        },
+        {
+          "id": "w_dungeons/echoes/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/labyrinths",
+      "title": "&6Six Wardens",
+      "subtitle": "Every prison's jailer, put down.",
+      "icon": "minecraft:iron_bars",
+      "x": 11,
+      "y": 2.5,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "w_dungeons/every_maze",
+        "w_dungeons/rimefrost",
+        "w_dungeons/abyssal_halls",
+        "w_dungeons/bastille"
+      ],
+      "description": [
+        "The Sovereigns built six prisons for things they couldn't kill, and set a warden on each: the &6Bone Warden&r, the &6Tomb King&r, the &6Broodmother&r, the &6Frost Lich&r, the &6Abyssal Knight&r and the &6Brute Overseer&r. Nobody ever told them to stop, so you did.",
+        "",
+        "&o\"A jailer outlives its prisoners, given long enough. Then it has only the door to talk to.\"&r &7— the Keeper&r",
+        "",
+        "&7Defeat the warden of every Labyrinth.&r"
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/labyrinths/task0",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:slay_catacombs_guardian",
+          "title": "The Bone Warden (Forgotten Catacombs)"
+        },
+        {
+          "id": "w_dungeons/labyrinths/task1",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:slay_sandstone_tomb_guardian",
+          "title": "The Tomb King (Sunscorched Tomb)"
+        },
+        {
+          "id": "w_dungeons/labyrinths/task2",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:slay_overgrown_warrens_guardian",
+          "title": "The Broodmother (Verdant Warrens)"
+        },
+        {
+          "id": "w_dungeons/labyrinths/task3",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:slay_frost_vaults_guardian",
+          "title": "The Frost Lich (Rimefrost Vaults)"
+        },
+        {
+          "id": "w_dungeons/labyrinths/task4",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:slay_deepslate_halls_guardian",
+          "title": "The Abyssal Knight (Abyssal Halls)"
+        },
+        {
+          "id": "w_dungeons/labyrinths/task5",
+          "type": "advancement",
+          "advancement": "muchmoredungeons:slay_nether_bastille_guardian",
+          "title": "The Brute Overseer (Infernal Bastille)"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/labyrinths/reward0",
+          "type": "item",
+          "item": "runeborn:heros_rune"
+        },
+        {
+          "id": "w_dungeons/labyrinths/reward1",
+          "type": "random",
+          "table": "tables/world_ash_spoils"
+        },
+        {
+          "id": "w_dungeons/labyrinths/reward2",
+          "type": "xp",
+          "xp": 1500
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/maze_spoils",
+      "title": "Spoils of the Maze",
+      "subtitle": "Big wardens, bigger bags.",
+      "icon": "mob_loot_bags:epiclootbag",
+      "x": 13.5,
+      "y": 2.5,
+      "dependencies": [
+        "w_dungeons/labyrinths",
+        "n_spoils/opener"
+      ],
+      "optional": true,
+      "description": [
+        "The dead hoard, and the Labyrinths' dead hoard best. Tougher things drop loot bags more often, and every doubling of a monster's health over a zombie's adds a point of &6Bag Luck&r, up to two. Kills in the Ashlands add half a point more, and Looting adds half a point per level.",
+        "",
+        "&7Carry an Epic loot bag out of the mazes. Pell's Bag Opener will take it from there.&r"
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/maze_spoils/task0",
+          "type": "item",
+          "item": "mob_loot_bags:epiclootbag"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/maze_spoils/reward0",
+          "type": "random",
+          "table": "tables/world_ash_spoils"
+        },
+        {
+          "id": "w_dungeons/maze_spoils/reward1",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "w_dungeons/finale",
+      "title": "&6The Last Prison",
+      "subtitle": "The Sovereigns learned it from somewhere.",
+      "icon": "remnant_bosses:crypt_key",
+      "x": 13.5,
+      "y": 0,
+      "shape": "gear",
+      "size": 2,
+      "dependencies": [
+        "w_dungeons/labyrinths",
+        "w_dungeons/cinder_warden",
+        "s1_act5_realm/enter"
+      ],
+      "description": [
+        "Ten guardians down; four dungeons and six prisons emptied. Every one was built to the same plan, and the plan is older than the Sovereigns: cells around a vault, a warden at the door, and nobody left to tell the warden to stop.",
+        "",
+        "The original stands under the black sun. The &6Gravebound Catacombs&r keep the Eclipsed Realm's dead in their cells, and the &6Gravebound Warden&r has never once been relieved.",
+        "",
+        "&7Enter the Gravebound Catacombs in the Eclipsed Realm.&r"
+      ],
+      "tasks": [
+        {
+          "id": "w_dungeons/finale/task0",
+          "type": "structure",
+          "structure": "remnant_bosses:gravebound_catacombs",
+          "title": "Enter the Gravebound Catacombs"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "w_dungeons/finale/reward0",
+          "type": "random",
+          "table": "tables/world_eclipse_spoils"
+        },
+        {
+          "id": "w_dungeons/finale/reward1",
+          "type": "item",
+          "item": "runeborn:heros_rune"
+        },
+        {
+          "id": "w_dungeons/finale/reward2",
+          "type": "xp",
+          "xp": 2000
+        }
+      ]
+    }
+  ]
+}

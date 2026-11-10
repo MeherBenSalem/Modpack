@@ -1,0 +1,409 @@
+{
+  "id": "n_wands",
+  "title": "&aThe Builder's Wands",
+  "icon": "reconstructedwands:diamond_wand",
+  "group": "groups/chronicles",
+  "subtitle": [
+    "Five wands, four cores, walls in an afternoon. RE:Constructed Wands."
+  ],
+  "quests": [
+    {
+      "id": "n_wands/start",
+      "title": "&aStone Before Iron",
+      "subtitle": "The masons' oldest trick.",
+      "icon": "reconstructedwands:stone_wand",
+      "x": 0,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "s1_act1_embers/kindle"
+      ],
+      "description": [
+        "The Crown's masons raised the Labyrinths with a wave of the hand. Their wands are dust, but the trick survived them: cobblestone, redstone and a stick make a &6Stone Wand&r.",
+        "",
+        "Right-click the face of a block and the wand copies that face across every matching block behind it: a floor gets a layer, a wall gets thicker, a path gets wider. The outline shows what the next click will place, and turns red where you're short of blocks. A stone wand places up to &627&r a click and takes no cores.",
+        "",
+        "&7Craft a Stone Wand."
+      ],
+      "tasks": [
+        {
+          "id": "n_wands/start/task0",
+          "type": "item",
+          "item": "reconstructedwands:stone_wand"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_wands/start/reward0",
+          "type": "item",
+          "item": "minecraft:cobblestone",
+          "count": 64
+        },
+        {
+          "id": "n_wands/start/reward1",
+          "type": "xp",
+          "xp": 30
+        }
+      ]
+    },
+    {
+      "id": "n_wands/controls",
+      "title": "Know Your Wand",
+      "subtitle": "Read this before you wall in the river.",
+      "icon": "minecraft:writable_book",
+      "x": 0,
+      "y": 2,
+      "dependencies": [
+        "n_wands/start"
+      ],
+      "description": [
+        "&6Sneak + right-click&r opens the wand's settings: mode, lock, direction, replace, match and random. Do it on a &6chest&r instead and the wand draws its blocks from that chest, from up to 64 blocks away. Shulker boxes, bundles and your Ender Chest feed it too.",
+        "",
+        "&6Ctrl + scroll&r sets how many blocks a click places. &6Sneak + scroll&r locks a direction, or picks the Architect's shape. &6Ctrl + Z&r and &6Ctrl + Y&r undo and redo, ten steps deep; nothing is ever duplicated. &6Random&r mixes the blocks in your hotbar, for walls that look as old as the rest of the world.",
+        "",
+        "&7The wand's own mode-wheel and settings keys are unbound in this pack (R is your weapon art, G the command wheel). Bind them in Controls if you want them."
+      ],
+      "tasks": [
+        {
+          "id": "n_wands/controls/task0",
+          "type": "checkmark",
+          "title": "I know my wand"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_wands/controls/reward0",
+          "type": "xp",
+          "xp": 20
+        }
+      ]
+    },
+    {
+      "id": "n_wands/exchange",
+      "title": "The Exchange Core",
+      "subtitle": "Cobblestone today, stone bricks tomorrow.",
+      "icon": "reconstructedwands:core_exchange",
+      "x": 2.5,
+      "y": -3.5,
+      "dependencies": [
+        "n_wands/start",
+        "h_lastlight/wand"
+      ],
+      "description": [
+        "Stone wands take no cores. The &6Iron Wand&r you made for Last Light does: craft a core together with it and the core is installed.",
+        "",
+        "Two emeralds, an ender pearl and glass panes make an &6Exchange Core&r. Exchange mode swaps a surface for the block in your offhand. Stairs and logs keep their facing, and the old blocks come back to you.",
+        "",
+        "&7Craft an Exchange Core."
+      ],
+      "tasks": [
+        {
+          "id": "n_wands/exchange/task0",
+          "type": "item",
+          "item": "reconstructedwands:core_exchange"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_wands/exchange/reward0",
+          "type": "random",
+          "table": "tables/n_wands_masonry"
+        },
+        {
+          "id": "n_wands/exchange/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "n_wands/angel",
+      "title": "The Angel Core",
+      "subtitle": "A block where there was only air.",
+      "icon": "reconstructedwands:core_angel",
+      "x": 2.5,
+      "y": -1.75,
+      "dependencies": [
+        "n_wands/start",
+        "h_lastlight/wand",
+        "s1_forge/duskforged"
+      ],
+      "description": [
+        "Two &6Duskforged Ingots&r, a feather and glass panes: in this pack the &6Angel Core&r is built on the Ember Forge's second tier. Angel mode places a block in mid-air in front of you, or behind the block you click. Bridges over chasms, the first block of a tower. Not while you are falling; the wand has standards.",
+        "",
+        "An iron wand reaches 4 blocks out, a diamond one 16.",
+        "",
+        "&7Craft an Angel Core."
+      ],
+      "tasks": [
+        {
+          "id": "n_wands/angel/task0",
+          "type": "item",
+          "item": "reconstructedwands:core_angel"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_wands/angel/reward0",
+          "type": "random",
+          "table": "tables/n_wands_masonry"
+        },
+        {
+          "id": "n_wands/angel/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "n_wands/destruction",
+      "title": "The Destruction Core",
+      "subtitle": "Unbuilding, one surface at a time.",
+      "icon": "reconstructedwands:core_destruction",
+      "x": 2.5,
+      "y": 0,
+      "dependencies": [
+        "n_wands/start",
+        "h_lastlight/wand",
+        "s1_forge/duskforged"
+      ],
+      "description": [
+        "A block of diamond between two &6diamond pickaxes&r (each takes a Duskforged Ingot in this pack) and glass panes make a &6Destruction Core&r. Destruction mode removes the exposed surface of matching blocks, and the drops go straight to your inventory as if broken with the tool in your offhand: hold a Silk Touch pickaxe there and you keep the blocks themselves.",
+        "",
+        "It leaves ores, spawners and bedrock alone.",
+        "",
+        "&7Craft a Destruction Core."
+      ],
+      "tasks": [
+        {
+          "id": "n_wands/destruction/task0",
+          "type": "item",
+          "item": "reconstructedwands:core_destruction"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_wands/destruction/reward0",
+          "type": "item",
+          "item": "minecraft:torch",
+          "count": 32
+        },
+        {
+          "id": "n_wands/destruction/reward1",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "n_wands/four_cores",
+      "title": "The Full Kit",
+      "subtitle": "One wand, five trades.",
+      "icon": "reconstructedwands:core_architect",
+      "x": 5,
+      "y": -1.75,
+      "dependencies": [
+        "n_wands/exchange",
+        "n_wands/angel",
+        "n_wands/destruction",
+        "h_lastlight/architect"
+      ],
+      "optional": true,
+      "description": [
+        "A wand holds every core at once. With Exchange, Angel, Destruction and the &6Architect Core&r you made for Last Light, one wand does five jobs; switch between them in the settings.",
+        "",
+        "&7Install all four cores in one wand."
+      ],
+      "tasks": [
+        {
+          "id": "n_wands/four_cores/task0",
+          "type": "checkmark",
+          "title": "My wand holds all four cores"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_wands/four_cores/reward0",
+          "type": "random",
+          "table": "tables/n_wands_masonry"
+        },
+        {
+          "id": "n_wands/four_cores/reward1",
+          "type": "random",
+          "table": "tables/n_wands_masonry"
+        },
+        {
+          "id": "n_wands/four_cores/reward2",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "n_wands/diamond",
+      "title": "&aThe Moonsilver Wand",
+      "subtitle": "A thousand blocks a click.",
+      "icon": "reconstructedwands:diamond_wand",
+      "x": 2.5,
+      "y": 2,
+      "shape": "hexagon",
+      "size": 1.25,
+      "dependencies": [
+        "n_wands/start",
+        "h_lastlight/wand",
+        "s1_forge/moonsilver"
+      ],
+      "description": [
+        "The pack rebuilt the &6Diamond Wand&r on the Ember Forge's third tier: a &6Moonsilver Ingot&r over redstone and a stick. It places up to &61,024&r blocks a click, reaches 16 blocks in Angel mode, clears or swaps 81 at a time, and lasts 1,561 uses. Wands mend in an anvil and take Unbreaking and Mending.",
+        "",
+        "Craft your cores into it like before.",
+        "",
+        "&7Craft a Diamond Wand."
+      ],
+      "tasks": [
+        {
+          "id": "n_wands/diamond/task0",
+          "type": "item",
+          "item": "reconstructedwands:diamond_wand"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_wands/diamond/reward0",
+          "type": "random",
+          "table": "tables/n_wands_masonry"
+        },
+        {
+          "id": "n_wands/diamond/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "n_wands/quarry_feed",
+      "title": "Stone by the Thousand",
+      "subtitle": "The Works dig. The wand builds.",
+      "icon": "minecraft:cobbled_deepslate",
+      "x": 2.5,
+      "y": 4,
+      "dependencies": [
+        "n_wands/diamond",
+        "n_works/quarry"
+      ],
+      "optional": true,
+      "description": [
+        "A thousand blocks a click is a thousand blocks you have to own. The Ashen Works' &6Quarry&r brings stone and deepslate up by the chestful. Sneak + right-click the chest it fills and the wand builds straight out of the mine, from anywhere within 64 blocks.",
+        "",
+        "&7Gather 512 Cobbled Deepslate."
+      ],
+      "tasks": [
+        {
+          "id": "n_wands/quarry_feed/task0",
+          "type": "item",
+          "item": "minecraft:cobbled_deepslate",
+          "count": 512
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_wands/quarry_feed/reward0",
+          "type": "item",
+          "item": "minecraft:deepslate_tiles",
+          "count": 64
+        },
+        {
+          "id": "n_wands/quarry_feed/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "n_wands/netherite",
+      "title": "The Deepsteel Wand",
+      "subtitle": "Two thousand blocks, and it keeps what you taught it.",
+      "icon": "reconstructedwands:netherite_wand",
+      "x": 5,
+      "y": 2,
+      "dependencies": [
+        "n_wands/diamond",
+        "s1_forge/deepsteel"
+      ],
+      "description": [
+        "At a smithing table: a &6netherite upgrade template&r, your Diamond Wand and a &6Deepsteel Ingot&r (not netherite: the Forge's fourth tier took its place). The &6Netherite Wand&r keeps the cores you installed, places &62,048&r blocks a click, reaches 32 in Angel mode and clears or swaps 128.",
+        "",
+        "Templates wait in the Ashlands' bastions.",
+        "",
+        "&7Upgrade to a Netherite Wand."
+      ],
+      "tasks": [
+        {
+          "id": "n_wands/netherite/task0",
+          "type": "item",
+          "item": "reconstructedwands:netherite_wand"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_wands/netherite/reward0",
+          "type": "random",
+          "table": "tables/n_wands_masonry"
+        },
+        {
+          "id": "n_wands/netherite/reward1",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "n_wands/finale",
+      "title": "&aThe Infinity Wand",
+      "subtitle": "Walls for a world that gets its sun back.",
+      "icon": "reconstructedwands:infinity_wand",
+      "x": 7.5,
+      "y": 2,
+      "shape": "gear",
+      "size": 2,
+      "dependencies": [
+        "n_wands/netherite",
+        "s1_forge/eclipse_core"
+      ],
+      "description": [
+        "&6The Keeper&r",
+        "",
+        "&f&o\"You set a splinter of the black sun on a stick so you could build faster. Good. Build them something worth the light coming back to.\"&r",
+        "",
+        "An &6Eclipse Core&r over redstone and a stick makes the &6Infinity Wand&r: it never breaks, places 2,048 blocks a click and reaches 64 blocks in Angel mode.",
+        "",
+        "&7Craft the Infinity Wand."
+      ],
+      "tasks": [
+        {
+          "id": "n_wands/finale/task0",
+          "type": "item",
+          "item": "reconstructedwands:infinity_wand"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_wands/finale/reward0",
+          "type": "random",
+          "table": "tables/n_wands_masonry"
+        },
+        {
+          "id": "n_wands/finale/reward1",
+          "type": "random",
+          "table": "tables/n_wands_masonry"
+        },
+        {
+          "id": "n_wands/finale/reward2",
+          "type": "xp",
+          "xp": 600
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "id": "s1_epilogue",
+  "title": "&6Epilogue: &fFirst Light",
+  "icon": "minecraft:sunflower",
+  "group": "groups/main",
+  "subtitle": [
+    "The sun remembers you. The End doesn't."
+  ],
+  "default_quest_shape": "rsquare",
+  "quests": [
+    {
+      "id": "s1_epilogue/first_light",
+      "title": "&6&lFirst Light",
+      "subtitle": "Eight embers. One sun.",
+      "icon": "minecraft:sunflower",
+      "x": 0,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 3,
+      "dependencies": [
+        "s1_act5_realm/waking_world"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"Look at that. Go on, look. I'd almost forgotten the colour.&r",
+        "",
+        "&f&oEvery ember you rekindled is still burning, and every Ashborn on this world carries a heart for each one. The dead are lying down, Ashborn. Not all of them. Most. The ones still walking out there are just stubborn, like the rest of us.&r",
+        "",
+        "&f&oRest now. The sun remembers you. It remembers all of us, I think. Even the ones who don't deserve it.\"&r",
+        "",
+        "The &6Long Eclipse&r is over. Mostly."
+      ],
+      "tasks": [
+        {
+          "id": "s1_epilogue/first_light/task0",
+          "type": "checkmark",
+          "title": "♪ I watched the sun come up"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_epilogue/first_light/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_rune"
+        },
+        {
+          "id": "s1_epilogue/first_light/reward1",
+          "type": "item",
+          "item": "rpg_attribute_system:tome_of_ascension",
+          "count": 2
+        },
+        {
+          "id": "s1_epilogue/first_light/reward2",
+          "type": "xp",
+          "xp": 2000
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_epilogue/homecoming",
+      "title": "Homecoming",
+      "subtitle": "Last Light, in daylight.",
+      "icon": "minecraft:bell",
+      "x": 2,
+      "y": -0.875,
+      "dependencies": [
+        "s1_epilogue/first_light"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"The Smith is singing. Badly. The Company's captain is pretending not to cry. Come home, Ashborn. Somebody saved you a seat by the fire, though I suppose you don't need the fire any more.\"&r",
+        "",
+        "Last Light was the first shrine kindled in an age. Now it is just a village with a strange old fire in the middle and a great many people who owe you a drink.",
+        "",
+        "&7Rest at the Ember Shrine in Last Light."
+      ],
+      "tasks": [
+        {
+          "id": "s1_epilogue/homecoming/task0",
+          "type": "checkmark",
+          "title": "I rested at Last Light"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_epilogue/homecoming/reward0",
+          "type": "random",
+          "table": "tables/wanderers_cache"
+        },
+        {
+          "id": "s1_epilogue/homecoming/reward1",
+          "type": "xp",
+          "xp": 500
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_epilogue/keepers_name",
+      "title": "&e♪ &6The Keeper's Name",
+      "subtitle": "You never asked.",
+      "icon": "minecraft:written_book",
+      "x": 4,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "s1_epilogue/homecoming"
+      ],
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"You never asked my name. Nobody does. I'll tell you anyway, since you've earned it: I don't have one. Heralds didn't. We had a title, a flame and a road.&r",
+        "",
+        "&f&oI carried the first flame to the forge where the Crown was made. I watched them break the sun into pieces, and I said nothing. That's my share of all this.&r",
+        "",
+        "&f&oAfter, I kept a little of the old flame. Just in case. I gave it to you.\"&r",
+        "",
+        "The Fractured Archive records a herald who carried the first flame to the Crown's forge, and stood by while the Sovereigns broke the sun. The herald's name was never written. Only the title: &6Keeper&r."
+      ],
+      "tasks": [
+        {
+          "id": "s1_epilogue/keepers_name/task0",
+          "type": "checkmark",
+          "title": "♪ Listen to the Keeper"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_epilogue/keepers_name/reward0",
+          "type": "xp",
+          "xp": 500
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_epilogue/who_broke_the_sun",
+      "title": "&5Who Broke the Sun?",
+      "subtitle": "Seven crowns, one hollow.",
+      "icon": "minecraft:dragon_egg",
+      "x": 6,
+      "y": 0,
+      "shape": "diamond",
+      "size": 1.5,
+      "dependencies": [
+        "s1_epilogue/keepers_name"
+      ],
+      "description": [
+        "&5&k|||&r &5A voice from nowhere &k|||&r &e♪",
+        "",
+        "&d&o\"Seven crowns. One hollow. A herald who kept a little flame for later. You were all so busy with the pieces. Not one of you asked who cracked the sun first.\"&r",
+        "",
+        "The Sovereigns broke the sun to share it. The Hollow Sovereign drank what was left. But the Archive is certain of one more thing: the sun was already cracked when the Crown was forged.",
+        "",
+        "Something at the edge of the End is still dark. The Dragon remembers the Eighth, and it remembers someone before him.",
+        "",
+        "&7Season 2 begins where this one ends. Until then: the Boss Compendium, the Fractured Archive and the Ashen Contracts are endless."
+      ],
+      "tasks": [
+        {
+          "id": "s1_epilogue/who_broke_the_sun/task0",
+          "type": "checkmark",
+          "title": "To be continued"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_epilogue/who_broke_the_sun/reward0",
+          "type": "xp",
+          "xp": 500
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_epilogue/ascendant",
+      "title": "Ascendant",
+      "subtitle": "Rune level 100.",
+      "icon": "runeborn:sovereign_rune",
+      "x": 2,
+      "y": 0.875,
+      "dependencies": [
+        "s1_epilogue/first_light"
+      ],
+      "optional": true,
+      "description": [
+        "&6The Keeper&r &e♪",
+        "",
+        "&f&o\"A hundred levels. You could carry a Sovereign's share of light now, and not go mad from it. Probably.\"&r",
+        "",
+        "The Sovereigns each held a hundredth of the sun and it broke them. You hold more than that, and you're still you. Mostly.",
+        "",
+        "&7Reach rune level 100."
+      ],
+      "tasks": [
+        {
+          "id": "s1_epilogue/ascendant/task0",
+          "type": "advancement",
+          "advancement": "runeborn:feats/level_100",
+          "title": "lang:runeborn.feat.level_100"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_epilogue/ascendant/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_lustrous_stone"
+        },
+        {
+          "id": "s1_epilogue/ascendant/reward1",
+          "type": "xp",
+          "xp": 1000
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    }
+  ]
+}

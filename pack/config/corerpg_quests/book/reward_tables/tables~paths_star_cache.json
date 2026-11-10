@@ -1,0 +1,40 @@
+{
+  "id": "tables/paths_star_cache",
+  "title": "Starfall Cache",
+  "icon": "elementals:fire_rune",
+  "entries": [
+    {
+      "id": "tables/paths_star_cache/0",
+      "type": "item",
+      "item": "elementals:fire_rune",
+      "weight": 2
+    },
+    {
+      "id": "tables/paths_star_cache/1",
+      "type": "item",
+      "item": "elementals:water_rune",
+      "weight": 2
+    },
+    {
+      "id": "tables/paths_star_cache/2",
+      "type": "item",
+      "item": "minecraft:amethyst_shard",
+      "count": 6,
+      "weight": 3
+    },
+    {
+      "id": "tables/paths_star_cache/3",
+      "type": "item",
+      "item": "minecraft:lapis_lazuli",
+      "count": 8,
+      "weight": 3
+    },
+    {
+      "id": "tables/paths_star_cache/4",
+      "type": "item",
+      "item": "minecraft:experience_bottle",
+      "count": 8,
+      "weight": 2
+    }
+  ]
+}

@@ -4506,5 +4506,29 @@
    "config/no_more_63_ae2.toml (maxItemTypesPerCell)"
   ],
   "lang_files": []
+ },
+ {
+  "name": "Core RPG - Quests Engine",
+  "slug": "corerpg-quests",
+  "category": "quests-story-scripting",
+  "side": "both",
+  "license": "Apache-2.0",
+  "modrinth": {
+   "project_id": "ywtf09FK",
+   "version_id": "FE5TdeAH",
+   "version_number": "1.0.0+neoforge-1.21.1",
+   "filename": "corerpg-quests-1.21.1-neoforge-1.0.0.jar",
+   "url": "https://cdn.modrinth.com/data/ywtf09FK/versions/FE5TdeAH/corerpg-quests-1.21.1-neoforge-1.0.0.jar",
+   "sha1": "d1b136f940ac8b413f5bc74e44ee45bf6938561c",
+   "sha512": "8a1cc4dfc17638350206cca69d18db1effc09fd1f80112c03ae73257d574877e008aa010d419f445e4face2422ddbcbc7d0427522f2cd64e6595c4df430b57be",
+   "size": 878714
+  },
+  "curseforge": {
+   "project_id": 1585209,
+   "file_id": 9493949,
+   "filename": "corerpg-quests-1.21.1-neoforge-1.0.0.jar"
+  },
+  "required_deps": [],
+  "optional_deps": []
  }
 ]

@@ -1,0 +1,53 @@
+{
+  "id": "tables/contracts_major",
+  "title": "Major Bounty",
+  "icon": "runeborn:lustrous_rune",
+  "entries": [
+    {
+      "id": "tables/contracts_major/0",
+      "type": "item",
+      "item": "remnant_mobs:remnant_shard",
+      "count": 8,
+      "weight": 3
+    },
+    {
+      "id": "tables/contracts_major/1",
+      "type": "item",
+      "item": "runeborn:lustrous_rune",
+      "count": 2,
+      "weight": 3
+    },
+    {
+      "id": "tables/contracts_major/2",
+      "type": "item",
+      "item": "runeborn:radiant_rune",
+      "weight": 1
+    },
+    {
+      "id": "tables/contracts_major/3",
+      "type": "item",
+      "item": "runeborn:tempering_stone_3",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/contracts_major/4",
+      "type": "item",
+      "item": "runeborn:tempering_stone_4",
+      "weight": 1
+    },
+    {
+      "id": "tables/contracts_major/5",
+      "type": "item",
+      "item": "mob_loot_bags:uncommonlootbag",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/contracts_major/6",
+      "type": "item",
+      "item": "mob_loot_bags:rarelootbag",
+      "weight": 1
+    }
+  ]
+}

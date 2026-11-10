@@ -1,0 +1,1266 @@
+{
+  "id": "h_garden",
+  "title": "&aThe Ash Garden",
+  "icon": "sprout_and_soil:cooking_pot",
+  "group": "groups/hearth",
+  "subtitle": [
+    "Forty crops, twelve trees and a pot over the fire. Sprout and Soil."
+  ],
+  "quests": [
+    {
+      "id": "h_garden/wild_garden",
+      "title": "&aThe Wild Gardens",
+      "subtitle": "Somebody's garden outlived somebody.",
+      "icon": "sprout_and_soil:tomato_seeds",
+      "x": 0,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "h_hearth/knife"
+      ],
+      "description": [
+        "The gardeners are long gone, but their gardens kept going without them. &6Wild gardens&r grow in six climates (meadow, woodland, highland, arid, tropical and marsh), and each drops the seeds of what grew there: forty crops between them. Farmers in the villages trade seeds too.",
+        "",
+        "&7Find a wild garden and shear it to take it home. Break it with anything else for its seeds."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/wild_garden/task0",
+          "type": "advancement",
+          "advancement": "sprout_and_soil:wild_garden",
+          "title": "lang:advancements.sprout_and_soil.wild_garden.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/wild_garden/reward0",
+          "type": "item",
+          "item": "minecraft:bone_meal",
+          "count": 16
+        },
+        {
+          "id": "h_garden/wild_garden/reward1",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "h_garden/harvest",
+      "title": "Fruits of Your Labor",
+      "subtitle": "Pick it. It plants itself again.",
+      "icon": "sprout_and_soil:tomato",
+      "x": 2,
+      "y": 0,
+      "dependencies": [
+        "h_garden/wild_garden"
+      ],
+      "description": [
+        "&6Right-click&r a ripe crop to pick it and it replants itself, vanilla crops included. Perennials like berries and herbs grow back from the same plant. Corn grows two blocks tall; harvest it from the top.",
+        "",
+        "&7Harvest your first crop."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/harvest/task0",
+          "type": "advancement",
+          "advancement": "sprout_and_soil:harvest",
+          "title": "lang:advancements.sprout_and_soil.harvest.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/harvest/reward0",
+          "type": "item",
+          "item": "sprout_and_soil:corn_seeds",
+          "count": 4
+        },
+        {
+          "id": "h_garden/harvest/reward1",
+          "type": "item",
+          "item": "sprout_and_soil:cotton_seeds",
+          "count": 4
+        },
+        {
+          "id": "h_garden/harvest/reward2",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "h_garden/watering_can",
+      "title": "Rain Maker",
+      "subtitle": "The sky forgot. You didn't.",
+      "icon": "sprout_and_soil:watering_can",
+      "x": 4,
+      "y": -1,
+      "dependencies": [
+        "h_garden/harvest"
+      ],
+      "description": [
+        "A &6Watering Can&r is copper around a bucket. Fill it at any water and hold it over your rows: it waters a 3x3 patch at a time and gives the crops a burst of growth.",
+        "",
+        "&7Craft a watering can and water a crop."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/watering_can/task0",
+          "type": "advancement",
+          "advancement": "sprout_and_soil:watering_can",
+          "title": "lang:advancements.sprout_and_soil.watering_can.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/watering_can/reward0",
+          "type": "item",
+          "item": "minecraft:copper_ingot",
+          "count": 6
+        },
+        {
+          "id": "h_garden/watering_can/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "h_garden/sprinkler",
+      "title": "Let It Pour",
+      "subtitle": "Water that doesn't need you.",
+      "icon": "sprout_and_soil:sprinkler",
+      "x": 6,
+      "y": -1,
+      "dependencies": [
+        "h_garden/watering_can"
+      ],
+      "description": [
+        "Set copper around your &6Watering Can&r and it becomes a &6Sprinkler&r. Place it next to water and it keeps a whole 9x9 field wet and growing on its own.",
+        "",
+        "&7Place a sprinkler by your crops."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/sprinkler/task0",
+          "type": "advancement",
+          "advancement": "sprout_and_soil:sprinkler",
+          "title": "lang:advancements.sprout_and_soil.sprinkler.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/sprinkler/reward0",
+          "type": "random",
+          "table": "tables/hearth_garden"
+        },
+        {
+          "id": "h_garden/sprinkler/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "h_garden/sickle",
+      "title": "Reap What You Sow",
+      "subtitle": "A whole patch in one swing.",
+      "icon": "sprout_and_soil:iron_sickle",
+      "x": 4,
+      "y": 1,
+      "dependencies": [
+        "h_garden/harvest"
+      ],
+      "description": [
+        "A &6Sickle&r cuts every ripe crop around you in one swing, 3x3 or 5x5, and they replant behind you. Fortune works on it.",
+        "",
+        "&7Harvest a whole patch at once with a sickle."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/sickle/task0",
+          "type": "advancement",
+          "advancement": "sprout_and_soil:sickle",
+          "title": "lang:advancements.sprout_and_soil.sickle.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/sickle/reward0",
+          "type": "item",
+          "item": "minecraft:iron_ingot",
+          "count": 4
+        },
+        {
+          "id": "h_garden/sickle/reward1",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "h_garden/scarecrow",
+      "title": "Field Guardian",
+      "subtitle": "The crows haven't heard about the Eclipse.",
+      "icon": "sprout_and_soil:scarecrow",
+      "x": 6,
+      "y": 1,
+      "dependencies": [
+        "h_garden/sickle"
+      ],
+      "optional": true,
+      "description": [
+        "A pumpkin head, a bale of hay and a few sticks. A &6Scarecrow&r stops anything trampling the farmland within 8 blocks of it.",
+        "",
+        "&7Put up a scarecrow beside your crops."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/scarecrow/task0",
+          "type": "advancement",
+          "advancement": "sprout_and_soil:scarecrow",
+          "title": "lang:advancements.sprout_and_soil.scarecrow.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/scarecrow/reward0",
+          "type": "item",
+          "item": "minecraft:hay_block",
+          "count": 4
+        },
+        {
+          "id": "h_garden/scarecrow/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "h_garden/master_gardener",
+      "title": "&aMaster Gardener",
+      "subtitle": "All forty. Even the coffee.",
+      "icon": "sprout_and_soil:corn",
+      "x": 8,
+      "y": 0,
+      "shape": "gear",
+      "size": 1.5,
+      "dependencies": [
+        "h_garden/sickle",
+        "h_garden/watering_can"
+      ],
+      "optional": true,
+      "description": [
+        "Vegetables, grains, legumes, berries, herbs, spices, coffee, tea and cotton: forty crops, from every climate the world still has. Some only grow wild far from Last Light.",
+        "",
+        "&7Harvest every one of the forty crops."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/master_gardener/task0",
+          "type": "advancement",
+          "advancement": "sprout_and_soil:master_gardener",
+          "title": "lang:advancements.sprout_and_soil.master_gardener.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/master_gardener/reward0",
+          "type": "random",
+          "table": "tables/hearth_homestead"
+        },
+        {
+          "id": "h_garden/master_gardener/reward1",
+          "type": "random",
+          "table": "tables/hearth_garden"
+        },
+        {
+          "id": "h_garden/master_gardener/reward2",
+          "type": "xp",
+          "xp": 500
+        }
+      ]
+    },
+    {
+      "id": "h_garden/orchard",
+      "title": "Branching Out",
+      "subtitle": "Trees take years. Start now.",
+      "icon": "sprout_and_soil:apple_sapling",
+      "x": 2,
+      "y": -2.5,
+      "dependencies": [
+        "h_garden/wild_garden"
+      ],
+      "description": [
+        "Twelve kinds of &6fruit tree&r grow wild in the biomes that suit them. Their leaves blossom, then fruit, then ripen; pick the fruit and the tree keeps it coming. Saplings drop from their leaves like any other tree's.",
+        "",
+        "&7Get a fruit tree sapling."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/orchard/task0",
+          "type": "advancement",
+          "advancement": "sprout_and_soil:orchard",
+          "title": "lang:advancements.sprout_and_soil.orchard.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/orchard/reward0",
+          "type": "item",
+          "item": "minecraft:bone_meal",
+          "count": 16
+        },
+        {
+          "id": "h_garden/orchard/reward1",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "h_garden/fruit_basket",
+      "title": "Fruit Basket",
+      "subtitle": "Every orchard the world kept.",
+      "icon": "sprout_and_soil:pineapple",
+      "x": 4,
+      "y": -2.5,
+      "dependencies": [
+        "h_garden/orchard"
+      ],
+      "optional": true,
+      "description": [
+        "Apples and pears in the temperate woods, oranges and lemons where it's warm, mangoes and bananas in the jungle, olives on the dry hills.",
+        "",
+        "&7Collect every kind of tree fruit."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/fruit_basket/task0",
+          "type": "advancement",
+          "advancement": "sprout_and_soil:fruit_basket",
+          "title": "lang:advancements.sprout_and_soil.fruit_basket.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/fruit_basket/reward0",
+          "type": "random",
+          "table": "tables/hearth_garden"
+        },
+        {
+          "id": "h_garden/fruit_basket/reward1",
+          "type": "random",
+          "table": "tables/hearth_garden"
+        },
+        {
+          "id": "h_garden/fruit_basket/reward2",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "h_garden/cooking_pot",
+      "title": "&aSomething's Cooking",
+      "subtitle": "Iron, a bowl and a fire under it.",
+      "icon": "sprout_and_soil:cooking_pot",
+      "x": 2,
+      "y": 3.25,
+      "shape": "hexagon",
+      "dependencies": [
+        "h_garden/harvest"
+      ],
+      "description": [
+        "The garden's &6Cooking Pot&r is iron around a bowl. Set it over a fire or a campfire and it takes up to six ingredients: soups, stews, curries, risotto and more than a hundred other foods.",
+        "",
+        "&7Craft a cooking pot and set it over a fire."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/cooking_pot/task0",
+          "type": "advancement",
+          "advancement": "sprout_and_soil:cooking_pot",
+          "title": "lang:advancements.sprout_and_soil.cooking_pot.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/cooking_pot/reward0",
+          "type": "item",
+          "item": "sprout_and_soil:onion_crate"
+        },
+        {
+          "id": "h_garden/cooking_pot/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "h_garden/cutting_board",
+      "title": "Sharp Skills",
+      "subtitle": "Chop first. Cook second.",
+      "icon": "sprout_and_soil:cutting_board",
+      "x": 4,
+      "y": 4,
+      "dependencies": [
+        "h_garden/cooking_pot"
+      ],
+      "description": [
+        "A &6Cutting Board&r and a &6Knife&r turn whole produce into slices, fillets and wedges. A &6Mortar and Pestle&r grinds flour, cornmeal and spices right in the crafting grid.",
+        "",
+        "&7Craft a knife for the cutting board."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/cutting_board/task0",
+          "type": "advancement",
+          "advancement": "sprout_and_soil:cutting_board",
+          "title": "lang:advancements.sprout_and_soil.cutting_board.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/cutting_board/reward0",
+          "type": "item",
+          "item": "sprout_and_soil:tomato",
+          "count": 6
+        },
+        {
+          "id": "h_garden/cutting_board/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "h_garden/first_meal",
+      "title": "Soup's On",
+      "subtitle": "Something warm, in a bowl, at last.",
+      "icon": "sprout_and_soil:vegetable_soup",
+      "x": 4,
+      "y": 2.5,
+      "dependencies": [
+        "h_garden/cooking_pot"
+      ],
+      "description": [
+        "The first warm bowl at Last Light since the sun went out was soup. It's still most people's favourite.",
+        "",
+        "&7Eat a bowl of something warm."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/first_meal/task0",
+          "type": "advancement",
+          "advancement": "sprout_and_soil:first_meal",
+          "title": "lang:advancements.sprout_and_soil.first_meal.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/first_meal/reward0",
+          "type": "random",
+          "table": "tables/hearth_garden"
+        },
+        {
+          "id": "h_garden/first_meal/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "h_garden/pie",
+      "title": "Easy as Pie",
+      "subtitle": "Pastry, fruit and an oven's patience.",
+      "icon": "sprout_and_soil:apple_pie",
+      "x": 6,
+      "y": 4,
+      "dependencies": [
+        "h_garden/cutting_board"
+      ],
+      "description": [
+        "Roll a &6Pie Crust&r, fill it with apples, berries or cherries, and bake it. Place a pie to share it a slice at a time.",
+        "",
+        "&7Bake a pie."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/pie/task0",
+          "type": "advancement",
+          "advancement": "sprout_and_soil:pie",
+          "title": "lang:advancements.sprout_and_soil.pie.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/pie/reward0",
+          "type": "item",
+          "item": "sprout_and_soil:cherry_pie"
+        },
+        {
+          "id": "h_garden/pie/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "h_garden/warm_cup",
+      "title": "A Warm Cup",
+      "subtitle": "Ginger, mint or green. Or coffee, if you're brave.",
+      "icon": "sprout_and_soil:ginger_tea",
+      "x": 6,
+      "y": 2.5,
+      "dependencies": [
+        "h_garden/first_meal"
+      ],
+      "description": [
+        "Tea leaves and herbs from the garden brew into hot drinks that leave you &6Cozy&r: no freezing, and a little healing. Roasted coffee beans make &6Coffee&r, and coffee makes you &6Caffeinated&r: faster on your feet and with a pick, for a while.",
+        "",
+        "&7Warm up with a hot drink."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/warm_cup/task0",
+          "type": "advancement",
+          "advancement": "sprout_and_soil:cozy",
+          "title": "lang:advancements.sprout_and_soil.cozy.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/warm_cup/reward0",
+          "type": "item",
+          "item": "sprout_and_soil:coffee",
+          "count": 3
+        },
+        {
+          "id": "h_garden/warm_cup/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "h_garden/well_fed",
+      "title": "&aWell Fed",
+      "subtitle": "A full belly outlasts a long night.",
+      "icon": "sprout_and_soil:steak_dinner",
+      "x": 8,
+      "y": 3.25,
+      "shape": "hexagon",
+      "dependencies": [
+        "h_garden/first_meal"
+      ],
+      "description": [
+        "Hearty meals leave you &6Well Fed&r: your hunger drains slowly for a long while after the last bite. Eat one before you call a Sovereign, and spend the fight rolling instead of eating.",
+        "",
+        "&7Eat a hearty meal and feel Well Fed."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/well_fed/task0",
+          "type": "advancement",
+          "advancement": "sprout_and_soil:well_fed",
+          "title": "lang:advancements.sprout_and_soil.well_fed.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/well_fed/reward0",
+          "type": "random",
+          "table": "tables/hearth_garden"
+        },
+        {
+          "id": "h_garden/well_fed/reward1",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "h_garden/gourmet",
+      "title": "&aGourmet",
+      "subtitle": "Every plate in the book.",
+      "icon": "sprout_and_soil:breakfast_plate",
+      "x": 10,
+      "y": 3.25,
+      "shape": "gear",
+      "size": 1.5,
+      "dependencies": [
+        "h_garden/well_fed",
+        "h_garden/pie"
+      ],
+      "optional": true,
+      "description": [
+        "Breakfast plates, steak dinners and every other plated meal the gardens can feed. Last Light's cooks keep a book of them. Fill it.",
+        "",
+        "&7Eat every plated meal."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/gourmet/task0",
+          "type": "advancement",
+          "advancement": "sprout_and_soil:gourmet",
+          "title": "lang:advancements.sprout_and_soil.gourmet.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/gourmet/reward0",
+          "type": "random",
+          "table": "tables/hearth_homestead"
+        },
+        {
+          "id": "h_garden/gourmet/reward1",
+          "type": "random",
+          "table": "tables/hearth_pantry"
+        },
+        {
+          "id": "h_garden/gourmet/reward2",
+          "type": "xp",
+          "xp": 500
+        }
+      ]
+    },
+    {
+      "id": "h_garden/highland_marsh",
+      "title": "Cold Hills, Wet Feet",
+      "subtitle": "Oats in the pines. Mint in the mire.",
+      "icon": "sprout_and_soil:cranberries",
+      "x": -2.5,
+      "y": -1.75,
+      "dependencies": [
+        "h_garden/wild_garden"
+      ],
+      "description": [
+        "&6Highland gardens&r grow in the Pinewatch (taiga), the windswept hills and the groves: oats, barley, cabbage, leeks, turnips, radishes, blueberries and cranberries. &6Marsh gardens&r grow in the Weeping Mire and along the Grey River: rice, soybeans, celery, cucumbers, green beans, mint and more cranberries.",
+        "",
+        "&7Bring back oats, cranberries, mint and soybeans."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/highland_marsh/task0",
+          "type": "item",
+          "item": "sprout_and_soil:oats"
+        },
+        {
+          "id": "h_garden/highland_marsh/task1",
+          "type": "item",
+          "item": "sprout_and_soil:cranberries"
+        },
+        {
+          "id": "h_garden/highland_marsh/task2",
+          "type": "item",
+          "item": "sprout_and_soil:mint"
+        },
+        {
+          "id": "h_garden/highland_marsh/task3",
+          "type": "item",
+          "item": "sprout_and_soil:soybeans"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/highland_marsh/reward0",
+          "type": "random",
+          "table": "tables/h_garden_seed_satchel"
+        },
+        {
+          "id": "h_garden/highland_marsh/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "h_garden/arid",
+      "title": "Dry Country",
+      "subtitle": "Peppers like it hot. So do grapes.",
+      "icon": "sprout_and_soil:chili_pepper",
+      "x": -2.5,
+      "y": 0,
+      "dependencies": [
+        "h_garden/wild_garden"
+      ],
+      "description": [
+        "&6Arid gardens&r grow where the land dried out: the Dusk Steppe (savanna), the Sunless Sands (desert) and the wooded badlands of the Scarred Reach. They give bell and chili peppers, eggplants, zucchini, sweet potatoes, peanuts, grapes and cotton. Half the big dishes in the cooks' book start here.",
+        "",
+        "&7Bring back an eggplant, a bell pepper, grapes and peanuts."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/arid/task0",
+          "type": "item",
+          "item": "sprout_and_soil:eggplant"
+        },
+        {
+          "id": "h_garden/arid/task1",
+          "type": "item",
+          "item": "sprout_and_soil:bell_pepper"
+        },
+        {
+          "id": "h_garden/arid/task2",
+          "type": "item",
+          "item": "sprout_and_soil:grapes"
+        },
+        {
+          "id": "h_garden/arid/task3",
+          "type": "item",
+          "item": "sprout_and_soil:peanuts"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/arid/reward0",
+          "type": "random",
+          "table": "tables/h_garden_seed_satchel"
+        },
+        {
+          "id": "h_garden/arid/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "h_garden/tropical",
+      "title": "Beans From the Drowned Green",
+      "subtitle": "Coffee doesn't grow at home. Go and get it.",
+      "icon": "sprout_and_soil:coffee_beans",
+      "x": -2.5,
+      "y": 1.75,
+      "dependencies": [
+        "h_garden/wild_garden"
+      ],
+      "description": [
+        "&6Tropical gardens&r grow only in the jungles of the Drowned Green, about as far from Last Light as a garden gets. Nowhere else grows &6coffee&r, &6tea&r, &6peppercorns&r, &6ginger&r or &6pineapples&r wild. Bring the seed home and it grows in any field.",
+        "",
+        "&7Bring back coffee beans, tea leaves and peppercorns."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/tropical/task0",
+          "type": "item",
+          "item": "sprout_and_soil:coffee_beans"
+        },
+        {
+          "id": "h_garden/tropical/task1",
+          "type": "item",
+          "item": "sprout_and_soil:tea_leaves"
+        },
+        {
+          "id": "h_garden/tropical/task2",
+          "type": "item",
+          "item": "sprout_and_soil:peppercorns"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/tropical/reward0",
+          "type": "random",
+          "table": "tables/h_garden_seed_satchel"
+        },
+        {
+          "id": "h_garden/tropical/reward1",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "h_garden/farmers_trades",
+      "title": "The Farmer's Ledger",
+      "subtitle": "Seed for emeralds. Cheaper than a jungle.",
+      "icon": "sprout_and_soil:fertilizer",
+      "x": -2.5,
+      "y": -3.5,
+      "dependencies": [
+        "h_garden/wild_garden",
+        "n_voices/start"
+      ],
+      "optional": true,
+      "description": [
+        "Since the villages started remembering you, their &6farmers&r keep their best seed for you. They trade in seeds, produce, fruit, &6fertilizer&r, watering cans and hot meals, and they plant the new crops in their own fields. &6Wandering traders&r bring fruit saplings and rare seeds from the far climates. Nothing in a trader's cart has teeth.",
+        "",
+        "Fertilizer is bone meal for a whole 5×5 patch: two bone meal, dirt and rotten flesh make four.",
+        "",
+        "&7Trade with a villager, and mix fertilizer."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/farmers_trades/task0",
+          "type": "advancement",
+          "advancement": "minecraft:adventure/trade",
+          "title": "lang:advancements.adventure.trade.title"
+        },
+        {
+          "id": "h_garden/farmers_trades/task1",
+          "type": "item",
+          "item": "sprout_and_soil:fertilizer",
+          "count": 4
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/farmers_trades/reward0",
+          "type": "item",
+          "item": "minecraft:emerald",
+          "count": 8
+        },
+        {
+          "id": "h_garden/farmers_trades/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "h_garden/far_orchards",
+      "title": "Every Tree Has Its Weather",
+      "subtitle": "Cherries in the blossom, olives on the hills.",
+      "icon": "sprout_and_soil:olive_sapling",
+      "x": 2,
+      "y": -4.5,
+      "dependencies": [
+        "h_garden/orchard"
+      ],
+      "description": [
+        "Fruit trees grow wild where the weather suits them: apples, pears, peaches and plums in the Grey Wood and the Ashen Fields; sweet cherries in the Blossom Ruin, flower forests and meadows; oranges, lemons and limes in the Dusk Steppe; olives on the savanna plateaus and wooded badlands; mangoes, avocados and bananas in the Drowned Green. Wandering traders carry saplings too.",
+        "",
+        "&7Bring home saplings of a sweet cherry, an orange, an olive and a banana."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/far_orchards/task0",
+          "type": "item",
+          "item": "sprout_and_soil:sweet_cherry_sapling"
+        },
+        {
+          "id": "h_garden/far_orchards/task1",
+          "type": "item",
+          "item": "sprout_and_soil:orange_sapling"
+        },
+        {
+          "id": "h_garden/far_orchards/task2",
+          "type": "item",
+          "item": "sprout_and_soil:olive_sapling"
+        },
+        {
+          "id": "h_garden/far_orchards/task3",
+          "type": "item",
+          "item": "sprout_and_soil:banana_sapling"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/far_orchards/reward0",
+          "type": "item",
+          "item": "minecraft:bone_meal",
+          "count": 24
+        },
+        {
+          "id": "h_garden/far_orchards/reward1",
+          "type": "xp",
+          "xp": 120
+        }
+      ]
+    },
+    {
+      "id": "h_garden/crates",
+      "title": "Crated and Counted",
+      "subtitle": "Nine of anything is a crate.",
+      "icon": "sprout_and_soil:tomato_crate",
+      "x": 0,
+      "y": 2,
+      "dependencies": [
+        "h_garden/harvest"
+      ],
+      "description": [
+        "Nine of a crop pack into a &6crate&r: a block you can stack, store and set out by the door, and craft back into nine whenever you want them. Sprout and Soil crates twenty kinds of produce and fruit; potatoes, carrots and beetroots go in the Hearth's Farmer's Delight crates.",
+        "",
+        "&7Pack a crate of tomatoes and a crate of onions."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/crates/task0",
+          "type": "item",
+          "item": "sprout_and_soil:tomato_crate"
+        },
+        {
+          "id": "h_garden/crates/task1",
+          "type": "item",
+          "item": "sprout_and_soil:onion_crate"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/crates/reward0",
+          "type": "item",
+          "item": "minecraft:bone_meal",
+          "count": 16
+        },
+        {
+          "id": "h_garden/crates/reward1",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "h_garden/spices",
+      "title": "Salt and Pepper",
+      "subtitle": "The difference between food and cooking.",
+      "icon": "sprout_and_soil:black_pepper",
+      "x": 0,
+      "y": 5,
+      "dependencies": [
+        "h_garden/tropical",
+        "h_garden/cooking_pot"
+      ],
+      "description": [
+        "&6Salt&r is a bucket of water boiled down in the cooking pot. &6Black pepper&r is peppercorns ground with the &6Mortar and Pestle&r, which stays in the grid and wears down instead of being used up. The mortar also presses &6cooking oil&r from olives, peanuts or soybeans.",
+        "",
+        "Salt makes cheese, butter, sauce and pickles. Half the book waits on it.",
+        "",
+        "&7Make salt, black pepper and cooking oil."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/spices/task0",
+          "type": "item",
+          "item": "sprout_and_soil:salt"
+        },
+        {
+          "id": "h_garden/spices/task1",
+          "type": "item",
+          "item": "sprout_and_soil:black_pepper"
+        },
+        {
+          "id": "h_garden/spices/task2",
+          "type": "item",
+          "item": "sprout_and_soil:cooking_oil"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/spices/reward0",
+          "type": "random",
+          "table": "tables/hearth_garden"
+        },
+        {
+          "id": "h_garden/spices/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "h_garden/coffee",
+      "title": "Black as the Sky",
+      "subtitle": "Roasted, brewed, and served in a mug.",
+      "icon": "sprout_and_soil:coffee",
+      "x": 0,
+      "y": 6.75,
+      "dependencies": [
+        "h_garden/spices"
+      ],
+      "description": [
+        "Roast coffee beans in a furnace, smoker or over a campfire, then brew them in the cooking pot with a brick &6mug&r in the container slot. &6Coffee&r leaves you &6Caffeinated&r: faster on your feet and with a pick. Milk and sugar make a &6Café Latte&r, which is Cozy as well. Tea leaves brew &6Green Tea&r the same way.",
+        "",
+        "&o\"Black as the sky and twice as bitter. I'll take two.\"&r &7— the Captain of the Ashen Company",
+        "",
+        "&7Drink a coffee and feel it."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/coffee/task0",
+          "type": "advancement",
+          "advancement": "sprout_and_soil:coffee",
+          "title": "lang:advancements.sprout_and_soil.coffee.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/coffee/reward0",
+          "type": "item",
+          "item": "sprout_and_soil:roasted_coffee_beans",
+          "count": 8
+        },
+        {
+          "id": "h_garden/coffee/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "h_garden/preserves",
+      "title": "Put Up for the Long Night",
+      "subtitle": "The villages that lasted were the ones with a cellar.",
+      "icon": "sprout_and_soil:berry_jam",
+      "x": 2,
+      "y": 7,
+      "dependencies": [
+        "h_garden/spices"
+      ],
+      "description": [
+        "Before the Eclipse they put food up for winter. Since the Eclipse every season is a long night, and the cellars of Last Light are full of jars. Cook &6berry jam&r (berries, sugar and a bottle) or &6orange marmalade&r in the pot, &6pickles&r from cucumbers and salt, and dry grapes into &6raisins&r in a furnace or smoker.",
+        "",
+        "&7Put up berry jam, pickles and raisins."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/preserves/task0",
+          "type": "item",
+          "item": "sprout_and_soil:berry_jam"
+        },
+        {
+          "id": "h_garden/preserves/task1",
+          "type": "item",
+          "item": "sprout_and_soil:pickles"
+        },
+        {
+          "id": "h_garden/preserves/task2",
+          "type": "item",
+          "item": "sprout_and_soil:raisins"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/preserves/reward0",
+          "type": "random",
+          "table": "tables/h_garden_larder"
+        },
+        {
+          "id": "h_garden/preserves/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "h_garden/big_dishes",
+      "title": "A Table Worth Sitting At",
+      "subtitle": "Plates, not bowls.",
+      "icon": "sprout_and_soil:paella",
+      "x": 4,
+      "y": 6,
+      "dependencies": [
+        "h_garden/spices",
+        "h_garden/cutting_board"
+      ],
+      "description": [
+        "The big dishes take a brick &6plate&r and everything you've grown. &6Ratatouille&r: tomato, onion, eggplant, zucchini and bell pepper. &6Paella&r: rice, tomato, bell pepper, garlic, chicken cuts and a raw fish. And a &6Pizza&r, crafted from dough, tomato sauce, cheese, basil and a tomato, then set down and shared a slice at a time.",
+        "",
+        "&7Make ratatouille, paella and a pizza."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/big_dishes/task0",
+          "type": "item",
+          "item": "sprout_and_soil:ratatouille"
+        },
+        {
+          "id": "h_garden/big_dishes/task1",
+          "type": "item",
+          "item": "sprout_and_soil:paella"
+        },
+        {
+          "id": "h_garden/big_dishes/task2",
+          "type": "item",
+          "item": "sprout_and_soil:pizza"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/big_dishes/reward0",
+          "type": "random",
+          "table": "tables/hearth_garden"
+        },
+        {
+          "id": "h_garden/big_dishes/reward1",
+          "type": "random",
+          "table": "tables/hearth_pantry"
+        },
+        {
+          "id": "h_garden/big_dishes/reward2",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "h_garden/hoe_sweep",
+      "title": "A Wider Swing",
+      "subtitle": "Diamond takes five rows at once.",
+      "icon": "minecraft:diamond_hoe",
+      "x": 8,
+      "y": -3,
+      "dependencies": [
+        "h_hearth/sprinkler",
+        "s1_forge/duskforged"
+      ],
+      "description": [
+        "&6Better Farming++&r lets any hoe harvest and replant: iron or gold sweeps 3×3, &6diamond 5×5&r, netherite 7×7. Sneak to take a single crop. Each replant costs a seed from the drops, Fortune counts and the hoe wears a point per crop. In this world a diamond hoe has a &6Duskforged Ingot&r in its grip.",
+        "",
+        "The mod also ships &6Harvest Indicators&r, a resource pack that floats a marker over ripe wheat, carrots, potatoes, beetroots and nether wart. Switch it on or off in Resource Packs.",
+        "",
+        "&7Craft a diamond hoe."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/hoe_sweep/task0",
+          "type": "item",
+          "item": "minecraft:diamond_hoe"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/hoe_sweep/reward0",
+          "type": "random",
+          "table": "tables/hearth_garden"
+        },
+        {
+          "id": "h_garden/hoe_sweep/reward1",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "h_garden/fields",
+      "title": "&aThe Fields of Last Light",
+      "subtitle": "A farm that runs while you're out dying.",
+      "icon": "better_farming_plus:farming_crate",
+      "x": 10,
+      "y": -1.5,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "h_garden/sprinkler",
+        "h_garden/hoe_sweep",
+        "h_hearth/farming_crate"
+      ],
+      "description": [
+        "Lay out a real field. A water block hidden under the soil feeds a &6Sprinkler&r; a &6Farming Crate&r in the middle harvests and replants everything ripe in the 9×9 around it, and a hopper underneath carries the harvest to a chest. A scarecrow keeps the soil whole. Then go and kill something. Supper keeps.",
+        "",
+        "&o\"Last Light ate from your fields this year. Nobody went hungry. Do you know how long it's been since I could say that?\"&r",
+        "",
+        "&7Fill the larder: four crates each of potatoes, carrots, corn and tomatoes."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/fields/task0",
+          "type": "item",
+          "item": "farmersdelight:potato_crate",
+          "count": 4
+        },
+        {
+          "id": "h_garden/fields/task1",
+          "type": "item",
+          "item": "farmersdelight:carrot_crate",
+          "count": 4
+        },
+        {
+          "id": "h_garden/fields/task2",
+          "type": "item",
+          "item": "sprout_and_soil:corn_crate",
+          "count": 4
+        },
+        {
+          "id": "h_garden/fields/task3",
+          "type": "item",
+          "item": "sprout_and_soil:tomato_crate",
+          "count": 4
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/fields/reward0",
+          "type": "random",
+          "table": "tables/hearth_homestead"
+        },
+        {
+          "id": "h_garden/fields/reward1",
+          "type": "random",
+          "table": "tables/hearth_garden"
+        },
+        {
+          "id": "h_garden/fields/reward2",
+          "type": "xp",
+          "xp": 400
+        }
+      ]
+    },
+    {
+      "id": "h_garden/finale",
+      "title": "&aHarvest Home",
+      "subtitle": "One table, and everyone at it.",
+      "icon": "sprout_and_soil:roast_chicken_dinner",
+      "x": 12,
+      "y": 5,
+      "shape": "gear",
+      "size": 1.75,
+      "dependencies": [
+        "h_garden/fields",
+        "h_garden/big_dishes",
+        "n_spore/cultivation"
+      ],
+      "description": [
+        "&6The Keeper&r",
+        "",
+        "&f&o\"Sit down, Ashborn. No, all of you: the Company, the Smith, the farmers. One table. When the sun went out we ate standing up, in the dark, with one eye on the door. Not tonight.\"&r",
+        "",
+        "The Ember Forge's seals ask for the kitchens' best, and the Seal of Ash wants a &6Steak Dinner&r from this one. Cook enough for the whole of Last Light first. The cellar's cultivation logs give the morels and chanterelles for a &6Truffle Stew&r; the fields give the rest.",
+        "",
+        "&7Lay out a harvest feast: steak dinners, roast chicken dinners, truffle stew and a carrot cake."
+      ],
+      "tasks": [
+        {
+          "id": "h_garden/finale/task0",
+          "type": "item",
+          "item": "sprout_and_soil:steak_dinner",
+          "count": 4
+        },
+        {
+          "id": "h_garden/finale/task1",
+          "type": "item",
+          "item": "sprout_and_soil:roast_chicken_dinner",
+          "count": 4
+        },
+        {
+          "id": "h_garden/finale/task2",
+          "type": "item",
+          "item": "spore_and_stem:truffle_stew",
+          "count": 2
+        },
+        {
+          "id": "h_garden/finale/task3",
+          "type": "item",
+          "item": "sprout_and_soil:carrot_cake"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_garden/finale/reward0",
+          "type": "random",
+          "table": "tables/hearth_homestead"
+        },
+        {
+          "id": "h_garden/finale/reward1",
+          "type": "random",
+          "table": "tables/h_garden_larder"
+        },
+        {
+          "id": "h_garden/finale/reward2",
+          "type": "xp",
+          "xp": 600
+        }
+      ]
+    }
+  ]
+}

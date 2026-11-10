@@ -133,7 +133,7 @@ quests:
       &7Exchange the Dragon's relic at a shrine's &6Relics&7 service for either armament.
     tasks:
       - title: "The Lunar Bloomfang or the Abyssal Scepter"
-        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:lunar_bloomfang)ftbfiltersystem:item(runeborn:abyssal_scepter))"}}
+        filter: "any(runeborn:lunar_bloomfang, runeborn:abyssal_scepter)"
     rewards: [{item: runeborn:lustrous_stone_8, count: 2}, {xp: 500}]
 
   # ---- armaments, arts and spells ----
@@ -153,7 +153,7 @@ quests:
       &7Hold any Rare armament.
     tasks:
       - title: "Any Rare armament"
-        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:starshard_kris)ftbfiltersystem:item(runeborn:venomfang_stiletto)ftbfiltersystem:item(runeborn:ossuary_blade)ftbfiltersystem:item(runeborn:emberbrand)ftbfiltersystem:item(runeborn:rimeguard_sword)ftbfiltersystem:item(runeborn:thornspur_rapier)ftbfiltersystem:item(runeborn:fangtooth_cleaver)ftbfiltersystem:item(runeborn:magma_falchion)ftbfiltersystem:item(runeborn:longfang_nodachi)ftbfiltersystem:item(runeborn:mistveil_katana)ftbfiltersystem:item(runeborn:hollow_monk_staff)ftbfiltersystem:item(runeborn:banneret_greatsword)ftbfiltersystem:item(runeborn:hellbrand)ftbfiltersystem:item(runeborn:rimebite_axe)ftbfiltersystem:item(runeborn:ravager_greataxe)ftbfiltersystem:item(runeborn:stoneheart_maul)ftbfiltersystem:item(runeborn:hallowed_lance)ftbfiltersystem:item(runeborn:winters_hook)ftbfiltersystem:item(runeborn:thornlash)ftbfiltersystem:item(runeborn:stormglass_rod)ftbfiltersystem:item(runeborn:crystal_spire_staff)ftbfiltersystem:item(runeborn:gravebound_staff)ftbfiltersystem:item(runeborn:golden_rite_seal)ftbfiltersystem:item(runeborn:flame_prayer_seal))"}}
+        filter: "any(runeborn:starshard_kris, runeborn:venomfang_stiletto, runeborn:ossuary_blade, runeborn:emberbrand, runeborn:rimeguard_sword, runeborn:thornspur_rapier, runeborn:fangtooth_cleaver, runeborn:magma_falchion, runeborn:longfang_nodachi, runeborn:mistveil_katana, runeborn:hollow_monk_staff, runeborn:banneret_greatsword, runeborn:hellbrand, runeborn:rimebite_axe, runeborn:ravager_greataxe, runeborn:stoneheart_maul, runeborn:hallowed_lance, runeborn:winters_hook, runeborn:thornlash, runeborn:stormglass_rod, runeborn:crystal_spire_staff, runeborn:gravebound_staff, runeborn:golden_rite_seal, runeborn:flame_prayer_seal)"
     rewards: [{item: runeborn:tempering_stone_2, count: 4}, {table: n_runeborn_purse}, {xp: 150}]
 
   - key: arts
@@ -170,7 +170,7 @@ quests:
       &7Hold an armament that carries Ember Cleave or Rimefrost Stomp.
     tasks:
       - title: "An armament with Ember Cleave or Rimefrost Stomp"
-        item: {id: ftbfiltersystem:smart_filter, components: {"ftbfiltersystem:filter": "ftbfiltersystem:or(ftbfiltersystem:item(runeborn:emberbrand)ftbfiltersystem:item(runeborn:magma_falchion)ftbfiltersystem:item(runeborn:hellbrand)ftbfiltersystem:item(runeborn:ashen_greatsword)ftbfiltersystem:item(runeborn:rimeguard_sword)ftbfiltersystem:item(runeborn:rimebite_axe)ftbfiltersystem:item(runeborn:rimeveil))"}}
+        filter: "any(runeborn:emberbrand, runeborn:magma_falchion, runeborn:hellbrand, runeborn:ashen_greatsword, runeborn:rimeguard_sword, runeborn:rimebite_axe, runeborn:rimeveil)"
     rewards: [{item: minecraft:lapis_lazuli, count: 8}, {item: runeborn:tempering_stone_2, count: 2}, {xp: 120}]
 
   - key: sorcery

@@ -1,0 +1,976 @@
+{
+  "id": "h_hearth",
+  "title": "&aHearth and Harvest",
+  "icon": "farmersdelight:cooking_pot",
+  "group": "groups/hearth",
+  "subtitle": [
+    "The Ashborn still has to eat. Last Light feeds itself."
+  ],
+  "quests": [
+    {
+      "id": "h_hearth/knife",
+      "title": "&aHunt and Gather",
+      "subtitle": "Undying isn't the same as fed.",
+      "icon": "farmersdelight:flint_knife",
+      "x": 0,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "s1_prologue/village"
+      ],
+      "description": [
+        "You can't die for good. You can still go hungry, and a hungry Ashborn can't sprint, can't heal and can't outrun much of anything.",
+        "",
+        "Craft a &6knife&r from flint or iron. It takes more from the world than a sword does: straw from grass, ham from pigs, slices from a fish.",
+        "",
+        "&o\"The villages that lived through the Eclipse learned one thing before swordplay. Supper.\"&r"
+      ],
+      "tasks": [
+        {
+          "id": "h_hearth/knife/task0",
+          "type": "advancement",
+          "advancement": "farmersdelight:main/craft_knife",
+          "title": "lang:advancements.farmersdelight.craft_knife.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_hearth/knife/reward0",
+          "type": "random",
+          "table": "tables/ashborn_provisions"
+        },
+        {
+          "id": "h_hearth/knife/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "h_hearth/straw",
+      "title": "Grasping at Straws",
+      "subtitle": "Nothing in a village goes to waste.",
+      "icon": "farmersdelight:straw",
+      "x": 2,
+      "y": -4.5,
+      "dependencies": [
+        "h_hearth/knife"
+      ],
+      "description": [
+        "Cut grass, wheat or rice with your knife and keep the &6straw&r.",
+        "",
+        "Straw twists into rope and canvas. Rope climbs, and tomatoes climb it too. Canvas keeps the rain off the larder."
+      ],
+      "tasks": [
+        {
+          "id": "h_hearth/straw/task0",
+          "type": "advancement",
+          "advancement": "farmersdelight:main/harvest_straw",
+          "title": "lang:advancements.farmersdelight.harvest_straw.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_hearth/straw/reward0",
+          "type": "item",
+          "item": "farmersdelight:rope",
+          "count": 16
+        },
+        {
+          "id": "h_hearth/straw/reward1",
+          "type": "xp",
+          "xp": 30
+        }
+      ]
+    },
+    {
+      "id": "h_hearth/rich_soil",
+      "title": "Plant Food",
+      "subtitle": "Rot, patience, then something green.",
+      "icon": "farmersdelight:rich_soil",
+      "x": 4,
+      "y": -4.5,
+      "dependencies": [
+        "h_hearth/straw"
+      ],
+      "description": [
+        "Mix &6Organic Compost&r from dirt, straw, bone meal and rotten flesh (or tree bark), set it down and leave it be. Sunlight, water and nearby mushrooms hurry it along.",
+        "",
+        "In time it turns into &6Rich Soil&r. Crops grown in it get a free push now and then, and mushrooms planted on it spread into colonies.",
+        "",
+        "&7The dead feed the living. Even here."
+      ],
+      "tasks": [
+        {
+          "id": "h_hearth/rich_soil/task0",
+          "type": "advancement",
+          "advancement": "farmersdelight:main/get_rich_soil",
+          "title": "lang:advancements.farmersdelight.get_rich_soil.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_hearth/rich_soil/reward0",
+          "type": "item",
+          "item": "minecraft:bone_meal",
+          "count": 16
+        },
+        {
+          "id": "h_hearth/rich_soil/reward1",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "h_hearth/wild_crops",
+      "title": "Crops of the Wild",
+      "subtitle": "Somebody planted these, once.",
+      "icon": "farmersdelight:cabbage",
+      "x": 2,
+      "y": -3,
+      "dependencies": [
+        "h_hearth/knife"
+      ],
+      "description": [
+        "Wild &6cabbages&r, &6tomatoes&r, &6onions&r and &6rice&r still grow where farms stood before the Eclipse: on beaches, in the warm grasslands, along the rivers. Village farms sometimes keep a row of them.",
+        "",
+        "Gather any of them and bring the seed home."
+      ],
+      "tasks": [
+        {
+          "id": "h_hearth/wild_crops/task0",
+          "type": "advancement",
+          "advancement": "farmersdelight:main/get_fd_seed",
+          "title": "lang:advancements.farmersdelight.get_fd_seed.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_hearth/wild_crops/reward0",
+          "type": "item",
+          "item": "minecraft:bone_meal",
+          "count": 8
+        },
+        {
+          "id": "h_hearth/wild_crops/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "h_hearth/rice",
+      "title": "Dipping Your Roots",
+      "subtitle": "Rice wants its feet wet.",
+      "icon": "farmersdelight:rice",
+      "x": 4,
+      "y": -3.25,
+      "dependencies": [
+        "h_hearth/wild_crops"
+      ],
+      "description": [
+        "Plant &6rice&r in water one block deep. It grows up out of the water and gives you grain and straw both.",
+        "",
+        "Half the cooking pot's recipes start with rice. The other half want an onion."
+      ],
+      "tasks": [
+        {
+          "id": "h_hearth/rice/task0",
+          "type": "advancement",
+          "advancement": "farmersdelight:main/plant_rice",
+          "title": "lang:advancements.farmersdelight.plant_rice.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_hearth/rice/reward0",
+          "type": "item",
+          "item": "farmersdelight:cooked_rice",
+          "count": 4
+        },
+        {
+          "id": "h_hearth/rice/reward1",
+          "type": "xp",
+          "xp": 30
+        }
+      ]
+    },
+    {
+      "id": "h_hearth/sprinkler",
+      "title": "Rain on Demand",
+      "subtitle": "The sky stopped helping. Copper didn't.",
+      "icon": "better_farming_plus:sprinkler",
+      "x": 4,
+      "y": -2.25,
+      "dependencies": [
+        "h_hearth/wild_crops"
+      ],
+      "description": [
+        "Right-click a ripe crop to harvest and replant it in one motion. With a hoe in hand the harvest sweeps: iron or gold 3×3, diamond 5×5.",
+        "",
+        "A &6Sprinkler&r (copper and a bucket) keeps a 9×9 field wet and growing about three times as fast. It needs water within four blocks, below it or beside it."
+      ],
+      "tasks": [
+        {
+          "id": "h_hearth/sprinkler/task0",
+          "type": "item",
+          "item": "better_farming_plus:sprinkler"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_hearth/sprinkler/reward0",
+          "type": "item",
+          "item": "minecraft:copper_ingot",
+          "count": 8
+        },
+        {
+          "id": "h_hearth/sprinkler/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "h_hearth/farming_crate",
+      "title": "The Crate That Farms",
+      "subtitle": "Let the box do the stooping.",
+      "icon": "better_farming_plus:farming_crate",
+      "x": 6,
+      "y": -2.25,
+      "dependencies": [
+        "h_hearth/sprinkler",
+        "s1_forge/duskforged"
+      ],
+      "description": [
+        "A &6Farming Crate&r harvests, replants and stores everything in the 9×9 around it, and never voids a harvest. It is built around a diamond hoe, and diamond tools take a &6Duskforged Ingot&r in this world.",
+        "",
+        "Set one in the middle of the village fields and go kill something. Supper will be waiting."
+      ],
+      "tasks": [
+        {
+          "id": "h_hearth/farming_crate/task0",
+          "type": "item",
+          "item": "better_farming_plus:farming_crate"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_hearth/farming_crate/reward0",
+          "type": "random",
+          "table": "tables/hearth_pantry"
+        },
+        {
+          "id": "h_hearth/farming_crate/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "h_hearth/cutting_board",
+      "title": "Watch Your Fingers",
+      "subtitle": "Steel for the monsters. A board for the meat.",
+      "icon": "farmersdelight:cutting_board",
+      "x": 2,
+      "y": 0,
+      "dependencies": [
+        "h_hearth/knife"
+      ],
+      "description": [
+        "Place a &6Cutting Board&r, set an item on it and use it with a tool in hand. A knife slices meat, fish and vegetables; an axe strips logs and keeps the bark.",
+        "",
+        "More food from less. That's the whole trick of surviving."
+      ],
+      "tasks": [
+        {
+          "id": "h_hearth/cutting_board/task0",
+          "type": "advancement",
+          "advancement": "farmersdelight:main/use_cutting_board",
+          "title": "lang:advancements.farmersdelight.use_cutting_board.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_hearth/cutting_board/reward0",
+          "type": "item",
+          "item": "farmersdelight:cabbage",
+          "count": 4
+        },
+        {
+          "id": "h_hearth/cutting_board/reward1",
+          "type": "item",
+          "item": "farmersdelight:tomato",
+          "count": 4
+        },
+        {
+          "id": "h_hearth/cutting_board/reward2",
+          "type": "xp",
+          "xp": 30
+        }
+      ]
+    },
+    {
+      "id": "h_hearth/kitchen",
+      "title": "&aDinner's Served",
+      "subtitle": "A stove, a pot, a reason to come home.",
+      "icon": "farmersdelight:cooking_pot",
+      "x": 4,
+      "y": 0,
+      "shape": "hexagon",
+      "dependencies": [
+        "h_hearth/cutting_board"
+      ],
+      "description": [
+        "Build a &6Stove&r from bricks, iron and a campfire, and set a &6Cooking Pot&r on it. Any heat beneath will do; the stove just does it with dignity.",
+        "",
+        "The pot takes up to six ingredients and a bowl, and gives back meals that keep you going far longer than raw meat ever did.",
+        "",
+        "&o\"A shrine warms the dead. A stove warms the living. Keep both lit.\"&r"
+      ],
+      "tasks": [
+        {
+          "id": "h_hearth/kitchen/task0",
+          "type": "item",
+          "item": "farmersdelight:stove"
+        },
+        {
+          "id": "h_hearth/kitchen/task1",
+          "type": "advancement",
+          "advancement": "farmersdelight:main/place_cooking_pot",
+          "title": "lang:advancements.farmersdelight.place_cooking_pot.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_hearth/kitchen/reward0",
+          "type": "random",
+          "table": "tables/hearth_pantry"
+        },
+        {
+          "id": "h_hearth/kitchen/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "h_hearth/skillet",
+      "title": "Portable Cooking",
+      "subtitle": "Supper on the road.",
+      "icon": "farmersdelight:skillet",
+      "x": 6,
+      "y": -1,
+      "dependencies": [
+        "h_hearth/kitchen"
+      ],
+      "description": [
+        "Hold a &6Skillet&r in one hand and raw food in the other, stand near a fire, and cook as you go. Sneak to set it down as a block over a fire or a stove, and it cooks there too.",
+        "",
+        "It also makes a perfectly respectable club. Nobody has to know."
+      ],
+      "tasks": [
+        {
+          "id": "h_hearth/skillet/task0",
+          "type": "advancement",
+          "advancement": "farmersdelight:main/use_skillet",
+          "title": "lang:advancements.farmersdelight.use_skillet.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_hearth/skillet/reward0",
+          "type": "item",
+          "item": "minecraft:cooked_porkchop",
+          "count": 6
+        },
+        {
+          "id": "h_hearth/skillet/reward1",
+          "type": "xp",
+          "xp": 30
+        }
+      ]
+    },
+    {
+      "id": "h_hearth/nourishing",
+      "title": "Nourishing!",
+      "subtitle": "A full belly outlasts a long fight.",
+      "icon": "farmersdelight:steak_and_potatoes",
+      "x": 6,
+      "y": 0,
+      "dependencies": [
+        "h_hearth/kitchen"
+      ],
+      "description": [
+        "Plated meals grant &6Nourishment&r: your hunger stops draining while it lasts. Soups and stews grant &6Comfort&r: you heal naturally however empty your stomach is.",
+        "",
+        "Eat one before a long dungeon and you won't be chewing bread in the middle of a boss's second phase."
+      ],
+      "tasks": [
+        {
+          "id": "h_hearth/nourishing/task0",
+          "type": "advancement",
+          "advancement": "farmersdelight:main/eat_nourishing_food",
+          "title": "lang:advancements.farmersdelight.eat_nourishing_food.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_hearth/nourishing/reward0",
+          "type": "item",
+          "item": "farmersdelight:vegetable_soup",
+          "count": 3
+        },
+        {
+          "id": "h_hearth/nourishing/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "h_hearth/feast",
+      "title": "&aA Glorious Feast",
+      "subtitle": "Some meals are meant for the whole village.",
+      "icon": "farmersdelight:roast_chicken_block",
+      "x": 8,
+      "y": -0.25,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "h_hearth/nourishing"
+      ],
+      "description": [
+        "Cook a &6feast&r (a Roast Chicken, a Stuffed Pumpkin, a Honey Glazed Ham or a Shepherd's Pie) and set it down. Anyone with a bowl can take a serving.",
+        "",
+        "The sellswords of the Ashen Company will fight for gold. They'll stay for this."
+      ],
+      "tasks": [
+        {
+          "id": "h_hearth/feast/task0",
+          "type": "advancement",
+          "advancement": "farmersdelight:main/place_feast",
+          "title": "lang:advancements.farmersdelight.place_feast.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_hearth/feast/reward0",
+          "type": "random",
+          "table": "tables/hearth_pantry"
+        },
+        {
+          "id": "h_hearth/feast/reward1",
+          "type": "random",
+          "table": "tables/hearth_pantry"
+        },
+        {
+          "id": "h_hearth/feast/reward2",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "h_hearth/master_chef",
+      "title": "Master of the Last Kitchen",
+      "subtitle": "Every dish, at least once.",
+      "icon": "farmersdelight:honey_glazed_ham",
+      "x": 10,
+      "y": -0.25,
+      "dependencies": [
+        "h_hearth/feast"
+      ],
+      "optional": true,
+      "description": [
+        "Eat a course of every meal the cooking pot knows. It's a long menu. You have, technically, forever.",
+        "",
+        "&7A long-term goal. Your advancements list the dishes you still owe."
+      ],
+      "tasks": [
+        {
+          "id": "h_hearth/master_chef/task0",
+          "type": "advancement",
+          "advancement": "farmersdelight:main/master_chef",
+          "title": "lang:advancements.farmersdelight.master_chef.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_hearth/master_chef/reward0",
+          "type": "item",
+          "item": "minecraft:golden_carrot",
+          "count": 16
+        },
+        {
+          "id": "h_hearth/master_chef/reward1",
+          "type": "item",
+          "item": "runeborn:lustrous_rune",
+          "count": 2
+        },
+        {
+          "id": "h_hearth/master_chef/reward2",
+          "type": "xp",
+          "xp": 300
+        }
+      ]
+    },
+    {
+      "id": "h_hearth/keg",
+      "title": "Here Starts the Process",
+      "subtitle": "Patience, in a barrel.",
+      "icon": "brewinandchewin:keg",
+      "x": 6,
+      "y": 1.25,
+      "dependencies": [
+        "h_hearth/kitchen"
+      ],
+      "description": [
+        "A &6Keg&r (iron, planks and a honeycomb) ferments drinks and cheese from a base liquid and up to four ingredients. Pour from it into &6tankards&r.",
+        "",
+        "Some brews want warmth, some want cold. A &6Heating Cask&r or an &6Ice Crate&r next to the keg shifts its temperature.",
+        "",
+        "&o\"The Company says it can't fight sober. I've seen it fight drunk. Brew anyway.\"&r"
+      ],
+      "tasks": [
+        {
+          "id": "h_hearth/keg/task0",
+          "type": "advancement",
+          "advancement": "brewinandchewin:main/place_keg",
+          "title": "lang:brewinandchewin.advancement.place_keg"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_hearth/keg/reward0",
+          "type": "item",
+          "item": "brewinandchewin:tankard",
+          "count": 4
+        },
+        {
+          "id": "h_hearth/keg/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "h_hearth/mead",
+      "title": "Mead for the Living",
+      "subtitle": "Honey, wheat and sweet berries. And time.",
+      "icon": "brewinandchewin:mead",
+      "x": 8,
+      "y": 1.25,
+      "dependencies": [
+        "h_hearth/keg"
+      ],
+      "description": [
+        "Fill a keg with honey, add wheat, seeds and sweet berries, and wait. &6Mead&r is what the Ashen Company drinks to its dead.",
+        "",
+        "Every brew leaves you a little &6Tipsy&r. Don't roll into a fight seeing double."
+      ],
+      "tasks": [
+        {
+          "id": "h_hearth/mead/task0",
+          "type": "item",
+          "item": "brewinandchewin:mead",
+          "count": 2
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_hearth/mead/reward0",
+          "type": "random",
+          "table": "tables/hearth_tavern"
+        },
+        {
+          "id": "h_hearth/mead/reward1",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "h_hearth/strongroot",
+      "title": "Strongroot Ale",
+      "subtitle": "Beer, improved by things that grow underground.",
+      "icon": "brewinandchewin:strongroot_ale",
+      "x": 10,
+      "y": 1.25,
+      "dependencies": [
+        "h_hearth/mead"
+      ],
+      "description": [
+        "Brew plain &6beer&r first: water, wheat, seeds and a brown mushroom. Then ferment that beer again with beetroot, potato, another mushroom and a strip of &6jerky&r.",
+        "",
+        "&6Strongroot Ale&r is a miner's drink. It makes a long day underground feel shorter, and the walk home feel longer."
+      ],
+      "tasks": [
+        {
+          "id": "h_hearth/strongroot/task0",
+          "type": "item",
+          "item": "brewinandchewin:strongroot_ale"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_hearth/strongroot/reward0",
+          "type": "random",
+          "table": "tables/hearth_tavern"
+        },
+        {
+          "id": "h_hearth/strongroot/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "h_hearth/cheese",
+      "title": "Taste of Time",
+      "subtitle": "The one thing here that improves with age.",
+      "icon": "brewinandchewin:flaxen_cheese_wheel",
+      "x": 8,
+      "y": 2.25,
+      "dependencies": [
+        "h_hearth/keg"
+      ],
+      "description": [
+        "Ferment milk with a brown mushroom, pumpkin seeds and sugar in a &6warm&r keg. Draw the full keg off with a &6honeycomb&r for a rind and you get an &6Unripe Cheese Wheel&r. Set it down and leave it alone.",
+        "",
+        "When it's ripe, cut it into wedges on a board. Cheese keeps. Most things in this world don't."
+      ],
+      "tasks": [
+        {
+          "id": "h_hearth/cheese/task0",
+          "type": "item",
+          "item": "brewinandchewin:flaxen_cheese_wheel"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_hearth/cheese/reward0",
+          "type": "item",
+          "item": "brewinandchewin:ham_and_cheese_sandwich",
+          "count": 4
+        },
+        {
+          "id": "h_hearth/cheese/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "h_hearth/rod",
+      "title": "A Line in Dark Water",
+      "subtitle": "Fish don't care what happened to the sun.",
+      "icon": "aquaculture:iron_fishing_rod",
+      "x": 2,
+      "y": 4.25,
+      "dependencies": [
+        "h_hearth/knife"
+      ],
+      "description": [
+        "Craft an &6Iron Fishing Rod&r. Aquaculture's rods take a &6hook&r, &6bait&r, a coloured line and a bobber; fit them at a &6Tackle Box&r.",
+        "",
+        "Every water keeps its own fish: rivers, oceans, jungles, swamps and frozen seas."
+      ],
+      "tasks": [
+        {
+          "id": "h_hearth/rod/task0",
+          "type": "item",
+          "item": "aquaculture:iron_fishing_rod"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_hearth/rod/reward0",
+          "type": "item",
+          "item": "aquaculture:worm",
+          "count": 8
+        },
+        {
+          "id": "h_hearth/rod/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "h_hearth/big_catch",
+      "title": "The Ones That Didn't Get Away",
+      "subtitle": "Every fisher has a story. Bring proof.",
+      "icon": "aquaculture:tuna",
+      "x": 4,
+      "y": 3.5,
+      "dependencies": [
+        "h_hearth/rod"
+      ],
+      "description": [
+        "Land a &6Tuna&r from the open ocean and a &6Catfish&r from a river or lake inland.",
+        "",
+        "Fillet the big ones with a &6Fillet Knife&r. A tuna feeds a table. A catfish feeds the village cats, mostly."
+      ],
+      "tasks": [
+        {
+          "id": "h_hearth/big_catch/task0",
+          "type": "item",
+          "item": "aquaculture:tuna"
+        },
+        {
+          "id": "h_hearth/big_catch/task1",
+          "type": "item",
+          "item": "aquaculture:catfish"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_hearth/big_catch/reward0",
+          "type": "item",
+          "item": "aquaculture:iron_fillet_knife"
+        },
+        {
+          "id": "h_hearth/big_catch/reward1",
+          "type": "random",
+          "table": "tables/hearth_tackle"
+        },
+        {
+          "id": "h_hearth/big_catch/reward2",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "h_hearth/coast",
+      "title": "Home of Saylor",
+      "subtitle": "Someone on the shore kept fishing through the end of the world.",
+      "icon": "fisherman_house:fishing_net",
+      "x": 4,
+      "y": 5,
+      "dependencies": [
+        "h_hearth/rod"
+      ],
+      "description": [
+        "A &6Fisherman's Cottage&r sits on a sandy or snowy beach. Saylor lives there, and trades things no village fisherman will.",
+        "",
+        "The coast has six more places like it, each with its own resident: Harbourmaster Wren, Keeper Morrow, Old Bayou Tam, Frost-Beard Ole, Ferryman Hale… and two deckhands who don't say much anymore."
+      ],
+      "tasks": [
+        {
+          "id": "h_hearth/coast/task0",
+          "type": "advancement",
+          "advancement": "fisherman_house:discover_fisherman_house",
+          "title": "lang:advancements.fisherman_house.discover_fisherman_house.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_hearth/coast/reward0",
+          "type": "random",
+          "table": "tables/hearth_tackle"
+        },
+        {
+          "id": "h_hearth/coast/reward1",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "h_hearth/crab_pot",
+      "title": "Pot Luck",
+      "subtitle": "Bait it, sink it, walk away.",
+      "icon": "fisherman_house:crab_pot",
+      "x": 6,
+      "y": 4.25,
+      "dependencies": [
+        "h_hearth/coast"
+      ],
+      "description": [
+        "Knot &6Fishing Nets&r from string, then a &6Crab Pot&r from nets and sticks, or buy one from a coast fisherman. Set it in open water with &6bait&r inside.",
+        "",
+        "&6Fish Bait&r is seeds and rotten flesh. &6Chum&r and &6Glow Bait&r are the others; the swamp folk swear by chum. Rain doubles the catch, and a hopper underneath empties the pot for you."
+      ],
+      "tasks": [
+        {
+          "id": "h_hearth/crab_pot/task0",
+          "type": "advancement",
+          "advancement": "fisherman_house:get_crab_pot",
+          "title": "lang:advancements.fisherman_house.get_crab_pot.title"
+        },
+        {
+          "id": "h_hearth/crab_pot/task1",
+          "type": "item",
+          "item": "fisherman_house:fish_bait",
+          "count": 8
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_hearth/crab_pot/reward0",
+          "type": "item",
+          "item": "fisherman_house:chum",
+          "count": 8
+        },
+        {
+          "id": "h_hearth/crab_pot/reward1",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "h_hearth/bottle",
+      "title": "Message Received",
+      "subtitle": "Twelve notes from the sea. Most of them are complaints.",
+      "icon": "fisherman_house:message_in_a_bottle",
+      "x": 6,
+      "y": 5.25,
+      "dependencies": [
+        "h_hearth/coast"
+      ],
+      "description": [
+        "Now and then a rod or a crab pot brings up a &6Message in a Bottle&r. Open it. Some hold a little treasure; some hold a &6Bottled Map to a Wreck&r.",
+        "",
+        "The sea had a lot to say before the Eclipse. It hasn't stopped."
+      ],
+      "tasks": [
+        {
+          "id": "h_hearth/bottle/task0",
+          "type": "advancement",
+          "advancement": "fisherman_house:open_bottle",
+          "title": "lang:advancements.fisherman_house.open_bottle.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_hearth/bottle/reward0",
+          "type": "random",
+          "table": "tables/wanderers_cache"
+        },
+        {
+          "id": "h_hearth/bottle/reward1",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "h_hearth/lighthouse",
+      "title": "Keeper of the Light",
+      "subtitle": "Another fire someone refused to let go out.",
+      "icon": "minecraft:lantern",
+      "x": 6,
+      "y": 6.25,
+      "dependencies": [
+        "h_hearth/coast"
+      ],
+      "description": [
+        "On a stony shore stands a &6Lighthouse&r. Keeper Morrow lives there, and trades with anyone who makes the climb.",
+        "",
+        "&o\"A keeper of a light, by the sea. We'd have a great deal to talk about, he and I.\"&r"
+      ],
+      "tasks": [
+        {
+          "id": "h_hearth/lighthouse/task0",
+          "type": "advancement",
+          "advancement": "fisherman_house:discover_lighthouse",
+          "title": "lang:advancements.fisherman_house.discover_lighthouse.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_hearth/lighthouse/reward0",
+          "type": "item",
+          "item": "minecraft:lantern",
+          "count": 4
+        },
+        {
+          "id": "h_hearth/lighthouse/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "h_hearth/coastal_wanderer",
+      "title": "&aCoastal Wanderer",
+      "subtitle": "Seven places on the water.",
+      "icon": "fisherman_house:crab_pot",
+      "x": 8,
+      "y": 5.25,
+      "shape": "hexagon",
+      "dependencies": [
+        "h_hearth/lighthouse",
+        "h_hearth/crab_pot",
+        "h_hearth/bottle"
+      ],
+      "optional": true,
+      "description": [
+        "Visit all seven: the Cottage, the Harbour Pier, the Lighthouse, the Stilt Shack, the Ice Fishing Camp, the River Boathouse and, under twelve blocks of water, the &6Sunken Trawler&r.",
+        "",
+        "&7The captain's chest on the trawler sometimes holds a Heart of the Sea. The drowned deckhands would rather it didn't."
+      ],
+      "tasks": [
+        {
+          "id": "h_hearth/coastal_wanderer/task0",
+          "type": "advancement",
+          "advancement": "fisherman_house:all_structures",
+          "title": "lang:advancements.fisherman_house.all_structures.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_hearth/coastal_wanderer/reward0",
+          "type": "random",
+          "table": "tables/hunters_spoils"
+        },
+        {
+          "id": "h_hearth/coastal_wanderer/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "h_hearth/venison",
+      "title": "Game in the Ash",
+      "subtitle": "The deer survived the Eclipse. Mostly by running.",
+      "icon": "naturalist:cooked_venison",
+      "x": 2,
+      "y": 2,
+      "dependencies": [
+        "h_hearth/knife"
+      ],
+      "description": [
+        "The wild keeps its own larder: &6venison&r from deer, &6drumsticks&r from turkeys, &6duck&r from the ponds, &6crab meat&r on the beaches.",
+        "",
+        "Deer bolt at the first footstep. Come at them slowly, or bring a bow."
+      ],
+      "tasks": [
+        {
+          "id": "h_hearth/venison/task0",
+          "type": "item",
+          "item": "naturalist:cooked_venison",
+          "count": 4
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_hearth/venison/reward0",
+          "type": "random",
+          "table": "tables/ashborn_provisions"
+        },
+        {
+          "id": "h_hearth/venison/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    }
+  ]
+}

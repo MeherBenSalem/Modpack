@@ -1,0 +1,602 @@
+{
+  "id": "n_coast",
+  "title": "&dThe Last Coast",
+  "icon": "fisherman_house:message_in_a_bottle",
+  "group": "groups/chronicles",
+  "subtitle": [
+    "Fisherman's Coast. Twelve notes in bottles, one wreck, and a lamp that went out once."
+  ],
+  "quests": [
+    {
+      "id": "n_coast/start",
+      "title": "&dThe Last Coast",
+      "subtitle": "Somebody out there is still writing.",
+      "icon": "fisherman_house:message_in_a_bottle",
+      "x": 0,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "h_hearth/coast",
+        "s1_act1_embers/kindle"
+      ],
+      "description": [
+        "Saylor has fished this shore since before the sun went out, and he has one complaint: the &6bottles&r. One washes in every few days now, more than ever, and the hand on the notes is always the same.",
+        "",
+        "&o\"Somebody out there is still writing. I'd like to know who before I run out of shelf.\"&r &7— Saylor&r",
+        "",
+        "&7Buy a Crab Pot from one of the coast's fishermen, to show you mean to stay. Saylor wants four emeralds.&r"
+      ],
+      "tasks": [
+        {
+          "id": "n_coast/start/task0",
+          "type": "advancement",
+          "advancement": "fisherman_house:buy_crab_pot",
+          "title": "Buy a Crab Pot from a resident fisherman"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_coast/start/reward0",
+          "type": "random",
+          "table": "tables/hearth_tackle"
+        },
+        {
+          "id": "n_coast/start/reward1",
+          "type": "item",
+          "item": "minecraft:emerald",
+          "count": 4
+        },
+        {
+          "id": "n_coast/start/reward2",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "n_coast/baits",
+      "title": "Three Baits",
+      "subtitle": "Fast, faster, and lucky.",
+      "icon": "fisherman_house:chum",
+      "x": 2,
+      "y": -2,
+      "dependencies": [
+        "n_coast/start",
+        "h_hearth/crab_pot"
+      ],
+      "description": [
+        "A Crab Pot catches on its own, slowly. Bait changes that. &6Fish Bait&r halves the wait. &6Chum&r (raw cod or salmon, rotten flesh and bone meal) is faster still, and a little lucky. &6Glow Bait&r (glow berries and a glow ink sac) hurries nothing, but it is very lucky, and the treasure a lucky pot brings up is often a bottle.",
+        "",
+        "&7Make four Chum and four Glow Bait.&r"
+      ],
+      "tasks": [
+        {
+          "id": "n_coast/baits/task0",
+          "type": "item",
+          "item": "fisherman_house:chum",
+          "count": 4
+        },
+        {
+          "id": "n_coast/baits/task1",
+          "type": "item",
+          "item": "fisherman_house:glow_bait",
+          "count": 4
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_coast/baits/reward0",
+          "type": "item",
+          "item": "fisherman_house:fish_bait",
+          "count": 12
+        },
+        {
+          "id": "n_coast/baits/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "n_coast/waters",
+      "title": "Every Water Keeps Its Own",
+      "subtitle": "Pots don't work in puddles. Somebody wrote that down.",
+      "icon": "fisherman_house:crab_pot",
+      "x": 4,
+      "y": -2,
+      "dependencies": [
+        "n_coast/baits"
+      ],
+      "optional": true,
+      "description": [
+        "A pot needs open water around it, and what it brings up depends on where it sits: &6sea pickles&r and prismarine from the ocean, clay and lily pads from rivers, &6slime&r and bones from the swamp, ice and &6prismarine crystals&r from frozen water. Rain doubles the pace, a hopper underneath empties it, and a comparator reads how full it is.",
+        "",
+        "&o\"Note to self: crab pots do not work in a puddle.\"&r &7— a bottle&r",
+        "",
+        "&7Bring something up from the ocean, the swamp and the frozen sea.&r"
+      ],
+      "tasks": [
+        {
+          "id": "n_coast/waters/task0",
+          "type": "item",
+          "item": "minecraft:sea_pickle",
+          "count": 2
+        },
+        {
+          "id": "n_coast/waters/task1",
+          "type": "item",
+          "item": "minecraft:slime_ball",
+          "count": 4
+        },
+        {
+          "id": "n_coast/waters/task2",
+          "type": "item",
+          "item": "minecraft:prismarine_crystals",
+          "count": 2
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_coast/waters/reward0",
+          "type": "random",
+          "table": "tables/hearth_tackle"
+        },
+        {
+          "id": "n_coast/waters/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "n_coast/harbour",
+      "title": "Land Ahoy",
+      "subtitle": "The harbourmaster keeps his pots baited. He was told to.",
+      "icon": "minecraft:bell",
+      "x": 2,
+      "y": 0,
+      "dependencies": [
+        "n_coast/start"
+      ],
+      "description": [
+        "On a sandy beach a &6Harbour Pier&r runs out over the water, with a bell, a bait shop and &6Harbourmaster Wren&r. His brother &6Dunstan&r crewed a trawler that went out one night and never came back.",
+        "",
+        "Wren isn't worried. Dunstan writes: &o\"Message for my brother Wren at the harbour: I'm fine. Keep the pots baited.\"&r Wren has kept them baited for years.",
+        "",
+        "&7Walk out on a Harbour Pier.&r"
+      ],
+      "tasks": [
+        {
+          "id": "n_coast/harbour/task0",
+          "type": "advancement",
+          "advancement": "fisherman_house:discover_harbour_pier",
+          "title": "lang:advancements.fisherman_house.discover_harbour_pier.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_coast/harbour/reward0",
+          "type": "item",
+          "item": "fisherman_house:glow_bait",
+          "count": 6
+        },
+        {
+          "id": "n_coast/harbour/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "n_coast/letters",
+      "title": "Twelve Notes",
+      "subtitle": "Most of them are complaints. One of them is a map.",
+      "icon": "fisherman_house:message_in_a_bottle",
+      "x": 4,
+      "y": 0,
+      "dependencies": [
+        "n_coast/harbour",
+        "h_hearth/bottle"
+      ],
+      "description": [
+        "Bottles come up on rods, in crab pots and in the coast's chests, and Saylor, Wren and the lighthouse keeper each sell one now and then. Twelve different notes go round, most in the same sailor's hand: where the cod bite, which bait to use, who owes him money.",
+        "",
+        "&o\"Glow bait, rainy night, open water. Trust me.\"&r",
+        "",
+        "About one bottle in four holds a &6Bottled Map to a Wreck&r instead of treasure. &7Gather three unopened bottles, then open them when you're ready to read.&r"
+      ],
+      "tasks": [
+        {
+          "id": "n_coast/letters/task0",
+          "type": "item",
+          "item": "fisherman_house:message_in_a_bottle",
+          "count": 3
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_coast/letters/reward0",
+          "type": "item",
+          "item": "fisherman_house:glow_bait",
+          "count": 8
+        },
+        {
+          "id": "n_coast/letters/reward1",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "n_coast/archive_copy",
+      "title": "Befores, Bottled",
+      "subtitle": "The Archivist pays for gossip, if it's old enough.",
+      "icon": "minecraft:writable_book",
+      "x": 6,
+      "y": -2,
+      "dependencies": [
+        "n_coast/letters",
+        "p_archive/before"
+      ],
+      "optional": true,
+      "description": [
+        "&o\"Every ruin has a before. Twelve notes from a coast that kept fishing through the end of the world? That's a before with the smell still on it.\"&r &7— Oren, the Archivist&r",
+        "",
+        "Oren wants the notes copied out for the Archive, the terrible poem included.",
+        "",
+        "&7Bring a Book and Quill.&r"
+      ],
+      "tasks": [
+        {
+          "id": "n_coast/archive_copy/task0",
+          "type": "item",
+          "item": "minecraft:writable_book"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_coast/archive_copy/reward0",
+          "type": "random",
+          "table": "tables/paths_archive_cache"
+        },
+        {
+          "id": "n_coast/archive_copy/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "n_coast/morrow",
+      "title": "Three Emeralds",
+      "subtitle": "The lighthouse keeper owes someone money.",
+      "icon": "minecraft:spyglass",
+      "x": 6,
+      "y": 0,
+      "dependencies": [
+        "n_coast/letters",
+        "h_hearth/lighthouse"
+      ],
+      "description": [
+        "&o\"To whoever finds this: the lighthouse keeper owes me three emeralds.\"&r",
+        "",
+        "Keeper Morrow doesn't deny it. He owed Dunstan three emeralds the night the trawler came home in the dark: the one night in thirty years his lamp went out. From the lamp room he watched it miss the harbour. He has kept the light burning every night since.",
+        "",
+        "&7Get a Spyglass. Morrow sells one, and from his lamp room you can see where the gulls circle.&r"
+      ],
+      "tasks": [
+        {
+          "id": "n_coast/morrow/task0",
+          "type": "item",
+          "item": "minecraft:spyglass"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_coast/morrow/reward0",
+          "type": "item",
+          "item": "minecraft:emerald",
+          "count": 3
+        },
+        {
+          "id": "n_coast/morrow/reward1",
+          "type": "item",
+          "item": "minecraft:lantern",
+          "count": 4
+        },
+        {
+          "id": "n_coast/morrow/reward2",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "n_coast/tam",
+      "title": "Bayou Living",
+      "subtitle": "The swamp folk swear by chum.",
+      "icon": "minecraft:lily_pad",
+      "x": 4,
+      "y": 2,
+      "dependencies": [
+        "n_coast/harbour",
+        "n_voices/start"
+      ],
+      "description": [
+        "Up on stilts over a swamp lives &6Old Bayou Tam&r, who buys slime by the handful and sells chum cheaper than anyone. Dunstan used to stop for it, and wrote as much: &o\"The swamp folk swear by chum. The ice folk swear at the cold.\"&r",
+        "",
+        "Since Last Light found its voice, the coast talks too. Say something to Tam; ask him if he has work.",
+        "",
+        "&7Find a Stilt Shack in a swamp.&r"
+      ],
+      "tasks": [
+        {
+          "id": "n_coast/tam/task0",
+          "type": "advancement",
+          "advancement": "fisherman_house:discover_stilt_shack",
+          "title": "lang:advancements.fisherman_house.discover_stilt_shack.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_coast/tam/reward0",
+          "type": "item",
+          "item": "fisherman_house:chum",
+          "count": 8
+        },
+        {
+          "id": "n_coast/tam/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "n_coast/ole",
+      "title": "Cold Feet",
+      "subtitle": "The ice folk swear at the cold.",
+      "icon": "minecraft:packed_ice",
+      "x": 6,
+      "y": 2,
+      "dependencies": [
+        "n_coast/tam"
+      ],
+      "description": [
+        "On a frozen sea or river, a camp sits over a hole in the ice. &6Frost-Beard Ole&r has fished it for longer than he'll admit, and he remembers Dunstan as the only sailor who ever came north on purpose.",
+        "",
+        "Pots work under the ice too. They bring up ice, snowballs and the odd prismarine crystal.",
+        "",
+        "&7Find an Ice Fishing Camp.&r"
+      ],
+      "tasks": [
+        {
+          "id": "n_coast/ole/task0",
+          "type": "advancement",
+          "advancement": "fisherman_house:discover_ice_fishing_camp",
+          "title": "lang:advancements.fisherman_house.discover_ice_fishing_camp.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_coast/ole/reward0",
+          "type": "item",
+          "item": "minecraft:cooked_salmon",
+          "count": 8
+        },
+        {
+          "id": "n_coast/ole/reward1",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "n_coast/hale",
+      "title": "Up the River",
+      "subtitle": "Every bottle goes downstream eventually.",
+      "icon": "minecraft:oak_boat",
+      "x": 8,
+      "y": 2,
+      "dependencies": [
+        "n_coast/ole"
+      ],
+      "description": [
+        "Inland, on a river through plains or forest, &6Ferryman Hale&r keeps a boathouse and sells a boat to anyone with three emeralds. He ferried Dunstan down to the sea the season the trawler sailed, and swears he heard him singing about the &6stony point&r.",
+        "",
+        "&o\"If you find this, the cod are biting off the stony point. Tell no one.\"&r",
+        "",
+        "&7Find a River Boathouse.&r"
+      ],
+      "tasks": [
+        {
+          "id": "n_coast/hale/task0",
+          "type": "advancement",
+          "advancement": "fisherman_house:discover_river_boathouse",
+          "title": "lang:advancements.fisherman_house.discover_river_boathouse.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_coast/hale/reward0",
+          "type": "item",
+          "item": "minecraft:oak_boat"
+        },
+        {
+          "id": "n_coast/hale/reward1",
+          "type": "item",
+          "item": "fisherman_house:fish_bait",
+          "count": 8
+        },
+        {
+          "id": "n_coast/hale/reward2",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "n_coast/trawler",
+      "title": "X Marks the Wreck",
+      "subtitle": "Follow the gulls. Mind the drowned.",
+      "icon": "minecraft:filled_map",
+      "x": 8,
+      "y": 0,
+      "dependencies": [
+        "n_coast/morrow",
+        "n_coast/hale",
+        "s1_act1_embers/dusk_rider"
+      ],
+      "description": [
+        "A Bottled Map, Morrow's bearing and the ferryman's song all point the same way: off the stony point, on the open sea floor, at least twelve blocks down.",
+        "",
+        "&o\"Follow the gulls to the wreck. Mind the drowned.\"&r",
+        "",
+        "&7Find the Sunken Trawler. Bring Water Breathing, or a lot of doors.&r"
+      ],
+      "tasks": [
+        {
+          "id": "n_coast/trawler/task0",
+          "type": "advancement",
+          "advancement": "fisherman_house:discover_sunken_trawler",
+          "title": "lang:advancements.fisherman_house.discover_sunken_trawler.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_coast/trawler/reward0",
+          "type": "random",
+          "table": "tables/wanderers_cache"
+        },
+        {
+          "id": "n_coast/trawler/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "n_coast/deckhand",
+      "title": "The Drowned Deckhand",
+      "subtitle": "I'm fine. Keep the pots baited.",
+      "icon": "minecraft:trident",
+      "x": 10,
+      "y": 0,
+      "dependencies": [
+        "n_coast/trawler"
+      ],
+      "description": [
+        "The crew never left. Under the Long Eclipse the drowned don't rest; they keep their posts, and one of them still answers to &6Deckhand&r. He has Dunstan's habits. He minds the nets, he tidies the captain's cabin, and now and then another bottle floats up from the wreck.",
+        "",
+        "Put the crew to rest. Wren deserves a real letter.",
+        "",
+        "&7Kill the drowned at the wreck.&r"
+      ],
+      "tasks": [
+        {
+          "id": "n_coast/deckhand/task0",
+          "type": "kill",
+          "entity": "minecraft:drowned",
+          "value": 2
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_coast/deckhand/reward0",
+          "type": "item",
+          "item": "minecraft:nautilus_shell",
+          "count": 2
+        },
+        {
+          "id": "n_coast/deckhand/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "n_coast/strongbox",
+      "title": "The Captain's Strongbox",
+      "subtitle": "The drowned took the nets, but not the chest.",
+      "icon": "minecraft:heart_of_the_sea",
+      "x": 12,
+      "y": 0,
+      "dependencies": [
+        "n_coast/deckhand"
+      ],
+      "description": [
+        "&o\"Our trawler went down with the captain's strongbox. The map is on the back.\"&r",
+        "",
+        "The captain's chest holds emeralds, gold, nautilus shells and, about one wreck in four, a &6Heart of the Sea&r. If this one was looted by the tide, the buried treasure on a shipwreck's map will do.",
+        "",
+        "&7Get a Heart of the Sea.&r"
+      ],
+      "tasks": [
+        {
+          "id": "n_coast/strongbox/task0",
+          "type": "item",
+          "item": "minecraft:heart_of_the_sea"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_coast/strongbox/reward0",
+          "type": "random",
+          "table": "tables/n_coast_strongbox"
+        },
+        {
+          "id": "n_coast/strongbox/reward1",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "n_coast/finale",
+      "title": "&dA Light for the Drowned",
+      "subtitle": "Keep the pots baited.",
+      "icon": "minecraft:conduit",
+      "x": 14.25,
+      "y": 0,
+      "shape": "gear",
+      "size": 2,
+      "dependencies": [
+        "n_coast/strongbox"
+      ],
+      "description": [
+        "Morrow's lamp is for the living on the water. The dead under it need another kind of light. A &6Conduit&r is a Heart of the Sea in a cage of eight nautilus shells: set it in a frame of prismarine underwater and it lets you breathe, and built big enough it strikes any drowned thing that comes near.",
+        "",
+        "Build one for the wreck, or for Wren's pier. Then tell Wren the truth. He'll keep the pots baited anyway.",
+        "",
+        "&o\"He kept a light so the lost would know the way home. So did I. Neither of us did it for thanks.\"&r &7— the Keeper&r",
+        "",
+        "&7Craft a Conduit. Some drowned carry nautilus shells, and an ocean pot baited with Glow Bait brings them up. Further out, the Elder Guardian keeps an older light under the sea, and it is not a friendly one.&r"
+      ],
+      "tasks": [
+        {
+          "id": "n_coast/finale/task0",
+          "type": "item",
+          "item": "minecraft:conduit"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "n_coast/finale/reward0",
+          "type": "random",
+          "table": "tables/hunters_spoils"
+        },
+        {
+          "id": "n_coast/finale/reward1",
+          "type": "item",
+          "item": "minecraft:prismarine",
+          "count": 16
+        },
+        {
+          "id": "n_coast/finale/reward2",
+          "type": "xp",
+          "xp": 400
+        }
+      ]
+    }
+  ]
+}

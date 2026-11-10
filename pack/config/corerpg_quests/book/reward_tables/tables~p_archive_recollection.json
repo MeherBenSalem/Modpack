@@ -1,0 +1,46 @@
+{
+  "id": "tables/p_archive_recollection",
+  "title": "A Deeper Recollection",
+  "icon": "tbos:recalled_hour",
+  "entries": [
+    {
+      "id": "tables/p_archive_recollection/0",
+      "type": "item",
+      "item": "tbos:chronicle_shard",
+      "count": 3,
+      "weight": 3
+    },
+    {
+      "id": "tables/p_archive_recollection/1",
+      "type": "item",
+      "item": "tbos:lenswork_crystal",
+      "weight": 2
+    },
+    {
+      "id": "tables/p_archive_recollection/2",
+      "type": "item",
+      "item": "tbos:recalled_hour",
+      "weight": 2
+    },
+    {
+      "id": "tables/p_archive_recollection/3",
+      "type": "item",
+      "item": "tbos:memory_key",
+      "weight": 2
+    },
+    {
+      "id": "tables/p_archive_recollection/4",
+      "type": "item",
+      "item": "minecraft:amethyst_shard",
+      "count": 8,
+      "weight": 2
+    },
+    {
+      "id": "tables/p_archive_recollection/5",
+      "type": "item",
+      "item": "minecraft:experience_bottle",
+      "count": 8,
+      "weight": 2
+    }
+  ]
+}

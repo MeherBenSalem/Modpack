@@ -86,7 +86,6 @@ include:
     - immediatelyfast: "Rendering speed"
     - entityculling: "Skip hidden entities"
     - moreculling: "Skip hidden faces"
-    - alltheleaks: "Memory-leak fixes"
     - leaves-be-gone: "Fast leaf decay"
     - clumps: "XP orb clumping (bosses drop a lot)"
     - spark: "Profiler for bug reports"
@@ -112,9 +111,7 @@ include:
     - better-advancements: "Readable advancement tree (quests use many advancements)"
     - chat-heads: "Co-op chat"
   story:
-    - ftb-quests: "The quest book"
-    - ftb-filter-system: "Tag-based quest tasks"
-    - ftb-xmod-compat: "FTB Quests ↔ KubeJS"
+    - corerpg-quests: "The quest book, teams, smart filters and vein mining (NightBeam; replaces the FTB suite)"
     - patchouli: "Lore book"
     - easy-npc: "Story NPCs for later seasons and hand-made scenes"
     - fancymenu: "Main menu"
@@ -131,7 +128,6 @@ include:
     - corpse: "Your items wait in a corpse; your runes wait with your Echo"
     - comforts: "Sleeping bags for the road"
   multiplayer:
-    - ftb-ultimine: "Vein mining"
     - netherportalfix: "Portals link where you expect"
     - chunky: "Pre-generation for servers"
     - ping-wheel: "Co-op pings"

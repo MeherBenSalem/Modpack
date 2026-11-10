@@ -1,0 +1,62 @@
+{
+  "id": "tables/hearth_garden",
+  "title": "The Garden Basket",
+  "icon": "sprout_and_soil:tomato",
+  "entries": [
+    {
+      "id": "tables/hearth_garden/0",
+      "type": "item",
+      "item": "sprout_and_soil:vegetable_soup",
+      "count": 3,
+      "weight": 3
+    },
+    {
+      "id": "tables/hearth_garden/1",
+      "type": "item",
+      "item": "sprout_and_soil:tomato_soup",
+      "count": 3,
+      "weight": 3
+    },
+    {
+      "id": "tables/hearth_garden/2",
+      "type": "item",
+      "item": "sprout_and_soil:corn_chowder",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/hearth_garden/3",
+      "type": "item",
+      "item": "sprout_and_soil:cornbread",
+      "count": 4,
+      "weight": 2
+    },
+    {
+      "id": "tables/hearth_garden/4",
+      "type": "item",
+      "item": "sprout_and_soil:breakfast_plate",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/hearth_garden/5",
+      "type": "item",
+      "item": "sprout_and_soil:steak_dinner",
+      "count": 2,
+      "weight": 1
+    },
+    {
+      "id": "tables/hearth_garden/6",
+      "type": "item",
+      "item": "sprout_and_soil:apple_pie",
+      "weight": 1
+    },
+    {
+      "id": "tables/hearth_garden/7",
+      "type": "item",
+      "item": "sprout_and_soil:ginger_tea",
+      "count": 3,
+      "weight": 1
+    }
+  ]
+}

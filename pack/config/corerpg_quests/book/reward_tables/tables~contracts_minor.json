@@ -1,0 +1,53 @@
+{
+  "id": "tables/contracts_minor",
+  "title": "Minor Bounty",
+  "icon": "remnant_mobs:remnant_shard",
+  "entries": [
+    {
+      "id": "tables/contracts_minor/0",
+      "type": "item",
+      "item": "remnant_mobs:remnant_shard",
+      "count": 4,
+      "weight": 3
+    },
+    {
+      "id": "tables/contracts_minor/1",
+      "type": "item",
+      "item": "runeborn:faded_rune",
+      "count": 3,
+      "weight": 3
+    },
+    {
+      "id": "tables/contracts_minor/2",
+      "type": "item",
+      "item": "runeborn:lustrous_rune",
+      "weight": 1
+    },
+    {
+      "id": "tables/contracts_minor/3",
+      "type": "item",
+      "item": "runeborn:tempering_stone_1",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/contracts_minor/4",
+      "type": "item",
+      "item": "runeborn:tempering_stone_2",
+      "weight": 1
+    },
+    {
+      "id": "tables/contracts_minor/5",
+      "type": "item",
+      "item": "mob_loot_bags:commonlootbag",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/contracts_minor/6",
+      "type": "item",
+      "item": "mob_loot_bags:uncommonlootbag",
+      "weight": 1
+    }
+  ]
+}

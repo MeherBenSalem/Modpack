@@ -1,0 +1,46 @@
+{
+  "id": "tables/paths_smiths_crate",
+  "title": "The Smith's Crate",
+  "icon": "runeborn:tempering_stone_2",
+  "entries": [
+    {
+      "id": "tables/paths_smiths_crate/0",
+      "type": "item",
+      "item": "runeborn:tempering_stone_2",
+      "count": 3,
+      "weight": 3
+    },
+    {
+      "id": "tables/paths_smiths_crate/1",
+      "type": "item",
+      "item": "runeborn:tempering_stone_3",
+      "count": 2,
+      "weight": 2
+    },
+    {
+      "id": "tables/paths_smiths_crate/2",
+      "type": "item",
+      "item": "runeborn:blank_whetstone",
+      "weight": 2
+    },
+    {
+      "id": "tables/paths_smiths_crate/3",
+      "type": "item",
+      "item": "runeborn:lustrous_stone_1",
+      "weight": 1
+    },
+    {
+      "id": "tables/paths_smiths_crate/4",
+      "type": "item",
+      "item": "runeborn:lustrous_rune",
+      "weight": 2
+    },
+    {
+      "id": "tables/paths_smiths_crate/5",
+      "type": "item",
+      "item": "minecraft:iron_ingot",
+      "count": 8,
+      "weight": 2
+    }
+  ]
+}

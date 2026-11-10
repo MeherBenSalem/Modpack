@@ -1,0 +1,33 @@
+{
+  "id": "tables/paths_company_purse",
+  "title": "The Company's Purse",
+  "icon": "minecraft:gold_ingot",
+  "entries": [
+    {
+      "id": "tables/paths_company_purse/0",
+      "type": "item",
+      "item": "minecraft:gold_ingot",
+      "count": 10,
+      "weight": 4
+    },
+    {
+      "id": "tables/paths_company_purse/1",
+      "type": "item",
+      "item": "better_with_gold:golden_fish",
+      "weight": 2
+    },
+    {
+      "id": "tables/paths_company_purse/2",
+      "type": "item",
+      "item": "minecraft:golden_carrot",
+      "count": 8,
+      "weight": 2
+    },
+    {
+      "id": "tables/paths_company_purse/3",
+      "type": "item",
+      "item": "minecraft:gold_block",
+      "weight": 1
+    }
+  ]
+}

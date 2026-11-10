@@ -1,0 +1,569 @@
+{
+  "id": "h_lastlight",
+  "title": "&aLast Light",
+  "icon": "handcrafted:oak_table",
+  "group": "groups/hearth",
+  "subtitle": [
+    "A shrine makes a place you come back to. The rest makes it home."
+  ],
+  "quests": [
+    {
+      "id": "h_lastlight/home",
+      "title": "&aA Home Worth Defending",
+      "subtitle": "Last Light needs more than a fire.",
+      "icon": "handcrafted:oak_table",
+      "x": 0,
+      "y": 0.75,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "s1_act1_embers/kindle"
+      ],
+      "description": [
+        "&o\"A shrine makes a place you come back to. A table makes it a place you'd want to.\"&r",
+        "",
+        "Craft a &6table&r and a &6chair&r from any wood. Handcrafted furniture can be sat on, set with plates and cups, and dressed with cushions and sheets.",
+        "",
+        "The village has a name now. Give it a hall."
+      ],
+      "tasks": [
+        {
+          "id": "h_lastlight/home/task0",
+          "type": "item",
+          "filter": "#handcrafted:tables"
+        },
+        {
+          "id": "h_lastlight/home/task1",
+          "type": "item",
+          "filter": "#handcrafted:chairs"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_lastlight/home/reward0",
+          "type": "random",
+          "table": "tables/hearth_homestead"
+        },
+        {
+          "id": "h_lastlight/home/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "h_lastlight/fancy_bed",
+      "title": "A Bed Worth Waking In",
+      "subtitle": "You can't die for good. You can at least sleep well.",
+      "icon": "handcrafted:oak_fancy_bed",
+      "x": 2,
+      "y": -4.5,
+      "dependencies": [
+        "h_lastlight/home"
+      ],
+      "description": [
+        "A &6fancy bed&r takes planks, wool, a &6cushion&r and a &6sheet&r. It does what a bed does, with more dignity.",
+        "",
+        "Sleeping in a bed sets your respawn, so keep it within sight of the shrine."
+      ],
+      "tasks": [
+        {
+          "id": "h_lastlight/fancy_bed/task0",
+          "type": "item",
+          "filter": "#handcrafted:fancy_beds"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_lastlight/fancy_bed/reward0",
+          "type": "item",
+          "item": "minecraft:white_wool",
+          "count": 8
+        },
+        {
+          "id": "h_lastlight/fancy_bed/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "h_lastlight/trophy",
+      "title": "Trophy Wall",
+      "subtitle": "Proof, mounted.",
+      "icon": "handcrafted:skeleton_trophy",
+      "x": 4,
+      "y": -4.5,
+      "dependencies": [
+        "h_lastlight/fancy_bed"
+      ],
+      "description": [
+        "Handcrafted &6trophies&r are made from what you take off the dead: a spider's eye, a skeleton's skull, a creeper's head, a phantom's membrane.",
+        "",
+        "Hang one above the shrine. The Keeper won't say anything. The Keeper will look at it."
+      ],
+      "tasks": [
+        {
+          "id": "h_lastlight/trophy/task0",
+          "type": "item",
+          "filter": "#handcrafted:trophies"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_lastlight/trophy/reward0",
+          "type": "item",
+          "item": "remnant_mobs:remnant_shard",
+          "count": 4
+        },
+        {
+          "id": "h_lastlight/trophy/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "h_lastlight/sack",
+      "title": "Flax and String",
+      "subtitle": "Supplies need somewhere to live.",
+      "icon": "supplementaries:sack",
+      "x": 2,
+      "y": -3,
+      "dependencies": [
+        "h_lastlight/home"
+      ],
+      "description": [
+        "&6Flax&r grows wild here and there and plants like any crop. Weave it with string into a &6Sack&r: a bag you can set down, pick up and carry with everything still inside.",
+        "",
+        "Sacks are heavy. So is dying with everything you own in your pockets."
+      ],
+      "tasks": [
+        {
+          "id": "h_lastlight/sack/task0",
+          "type": "item",
+          "item": "supplementaries:sack"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_lastlight/sack/reward0",
+          "type": "item",
+          "item": "minecraft:string",
+          "count": 16
+        },
+        {
+          "id": "h_lastlight/sack/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "h_lastlight/jars",
+      "title": "Glass and Patience",
+      "subtitle": "Keep what's precious where you can see it.",
+      "icon": "supplementaries:jar",
+      "x": 4,
+      "y": -3.5,
+      "dependencies": [
+        "h_lastlight/sack"
+      ],
+      "description": [
+        "A &6Jar&r stores what bowls, bottles and buckets carry (honey, soup, potions, water), a stack of cookies, or a small living thing.",
+        "",
+        "Some Ashborn keep a jar of honey by the shrine. Some keep a jar of something that glows."
+      ],
+      "tasks": [
+        {
+          "id": "h_lastlight/jars/task0",
+          "type": "item",
+          "item": "supplementaries:jar",
+          "count": 2
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_lastlight/jars/reward0",
+          "type": "item",
+          "item": "minecraft:honey_bottle",
+          "count": 4
+        },
+        {
+          "id": "h_lastlight/jars/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "h_lastlight/quiver",
+      "title": "A Quiver Taken Back",
+      "subtitle": "The skeletons won't need it.",
+      "icon": "supplementaries:quiver",
+      "x": 4,
+      "y": -2.5,
+      "dependencies": [
+        "h_lastlight/sack"
+      ],
+      "description": [
+        "Some skeletons rise with a &6Quiver&r on their backs. Kill them and it's yours. Dungeon chests and pillager camps hide a few more.",
+        "",
+        "A quiver holds several kinds of arrow and lets you choose which one to loose. Carry it in your offhand or an accessory slot."
+      ],
+      "tasks": [
+        {
+          "id": "h_lastlight/quiver/task0",
+          "type": "item",
+          "item": "supplementaries:quiver"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_lastlight/quiver/reward0",
+          "type": "item",
+          "item": "minecraft:arrow",
+          "count": 32
+        },
+        {
+          "id": "h_lastlight/quiver/reward1",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "h_lastlight/globe",
+      "title": "The World as It Was",
+      "subtitle": "Round, and lit. Imagine that.",
+      "icon": "supplementaries:globe",
+      "x": 6,
+      "y": -3,
+      "dependencies": [
+        "h_lastlight/jars"
+      ],
+      "description": [
+        "The &6Wandering Trader&r still carries &6Globes&r, painted back when the world had a sun to turn under. Buy one and set it somewhere in Last Light.",
+        "",
+        "Spin it. Nobody's stopping you."
+      ],
+      "tasks": [
+        {
+          "id": "h_lastlight/globe/task0",
+          "type": "item",
+          "item": "supplementaries:globe"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_lastlight/globe/reward0",
+          "type": "item",
+          "item": "minecraft:emerald",
+          "count": 6
+        },
+        {
+          "id": "h_lastlight/globe/reward1",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "h_lastlight/wand",
+      "title": "Walls in an Afternoon",
+      "subtitle": "The dark can count. Make it count bricks.",
+      "icon": "reconstructedwands:iron_wand",
+      "x": 2,
+      "y": -1.25,
+      "dependencies": [
+        "h_lastlight/home",
+        "s1_forge/ashen_alloy"
+      ],
+      "description": [
+        "An &6Iron Wand&r (Ashen Alloy, redstone and a stick) extends the face you click: one course of wall becomes two, two become ten. It draws blocks from your inventory, shulker boxes and bundles.",
+        "",
+        "It can undo its last placements, too (see &eControls&r). Everyone builds a wall in the wrong place once."
+      ],
+      "tasks": [
+        {
+          "id": "h_lastlight/wand/task0",
+          "type": "item",
+          "item": "reconstructedwands:iron_wand"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_lastlight/wand/reward0",
+          "type": "item",
+          "item": "minecraft:stone_bricks",
+          "count": 64
+        },
+        {
+          "id": "h_lastlight/wand/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "h_lastlight/architect",
+      "title": "The Architect's Core",
+      "subtitle": "Lines, walls, rings. Geometry against the dark.",
+      "icon": "reconstructedwands:core_architect",
+      "x": 4,
+      "y": -1.25,
+      "dependencies": [
+        "h_lastlight/wand"
+      ],
+      "description": [
+        "Craft an &6Architect Core&r (glass panes, amethyst and a compass) and combine it with your wand in a crafting grid. Click two corners for a line, wall, floor, box or cube; click a centre, then an edge, for a circle or a ring.",
+        "",
+        "&7Angel, Exchange and Destruction cores fit the same way.",
+        "",
+        "A ring of stone around Last Light won't stop a Sovereign. It will stop most of what comes before one."
+      ],
+      "tasks": [
+        {
+          "id": "h_lastlight/architect/task0",
+          "type": "item",
+          "item": "reconstructedwands:core_architect"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_lastlight/architect/reward0",
+          "type": "item",
+          "item": "minecraft:amethyst_shard",
+          "count": 4
+        },
+        {
+          "id": "h_lastlight/architect/reward1",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "h_lastlight/lootr",
+      "title": "Everyone's Share",
+      "subtitle": "The dead hoard. Fairly, now.",
+      "icon": "minecraft:chest",
+      "x": 2,
+      "y": 1.75,
+      "dependencies": [
+        "h_lastlight/home"
+      ],
+      "description": [
+        "Loot chests in dungeons, ruins and towers are &6per-player&r: everyone who opens one gets their own roll, and nobody takes a companion's share.",
+        "",
+        "Open ten of them. A loot chest looks different once you've opened it, so you always know which ones are left."
+      ],
+      "tasks": [
+        {
+          "id": "h_lastlight/lootr/task0",
+          "type": "advancement",
+          "advancement": "lootr:10loot",
+          "title": "lang:lootr.advancements.10loot.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_lastlight/lootr/reward0",
+          "type": "random",
+          "table": "tables/wanderers_cache"
+        },
+        {
+          "id": "h_lastlight/lootr/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "h_lastlight/sleeping_bag",
+      "title": "Rest on the Road",
+      "subtitle": "Skip the night. Keep your shrine.",
+      "icon": "comforts:sleeping_bag_red",
+      "x": 2,
+      "y": 4,
+      "dependencies": [
+        "h_lastlight/home"
+      ],
+      "description": [
+        "A &6Sleeping Bag&r lets you sleep through the night wherever you unroll it, and it doesn't move your respawn. Your shrine stays your shrine.",
+        "",
+        "&7You can't sleep with monsters nearby. On a Hunter's Moon, there are always monsters nearby."
+      ],
+      "tasks": [
+        {
+          "id": "h_lastlight/sleeping_bag/task0",
+          "type": "item",
+          "filter": "#comforts:sleeping_bags"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_lastlight/sleeping_bag/reward0",
+          "type": "random",
+          "table": "tables/ashborn_provisions"
+        },
+        {
+          "id": "h_lastlight/sleeping_bag/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "h_lastlight/hammock",
+      "title": "The Night Shift",
+      "subtitle": "Some hunts only happen after dark.",
+      "icon": "comforts:hammock_white",
+      "x": 4,
+      "y": 4,
+      "dependencies": [
+        "h_lastlight/sleeping_bag"
+      ],
+      "description": [
+        "Hang a &6Hammock&r between two &6Rope and Nails&r and you can sleep through the &oday&r instead.",
+        "",
+        "For Ashborn who prefer to hunt when the hunting is good."
+      ],
+      "tasks": [
+        {
+          "id": "h_lastlight/hammock/task0",
+          "type": "item",
+          "filter": "#comforts:hammocks"
+        },
+        {
+          "id": "h_lastlight/hammock/task1",
+          "type": "item",
+          "item": "comforts:rope_and_nail",
+          "count": 2
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_lastlight/hammock/reward0",
+          "type": "item",
+          "item": "minecraft:torch",
+          "count": 32
+        },
+        {
+          "id": "h_lastlight/hammock/reward1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "h_lastlight/first_request",
+      "title": "A Favour for a Friend",
+      "subtitle": "The villagers have problems too. Smaller ones.",
+      "icon": "minecraft:emerald",
+      "x": 2,
+      "y": 5.75,
+      "dependencies": [
+        "h_lastlight/home"
+      ],
+      "description": [
+        "The villagers of Last Light talk. Stand close and say something in chat; they answer in speech bubbles. Ask one for work.",
+        "",
+        "Accept the request (&e/villagerai request accept&r) and see it through: fetch what they need, or kill what's bothering them. They pay in emeralds, and they remember."
+      ],
+      "tasks": [
+        {
+          "id": "h_lastlight/first_request/task0",
+          "type": "advancement",
+          "advancement": "smartvillagers:first_request",
+          "title": "lang:advancements.smartvillagers.first_request.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_lastlight/first_request/reward0",
+          "type": "item",
+          "item": "minecraft:emerald",
+          "count": 8
+        },
+        {
+          "id": "h_lastlight/first_request/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "h_lastlight/village_hero",
+      "title": "Hero of the Village Square",
+      "subtitle": "Ten favours. They'll name a well after you.",
+      "icon": "minecraft:bell",
+      "x": 4,
+      "y": 5.25,
+      "dependencies": [
+        "h_lastlight/first_request"
+      ],
+      "description": [
+        "Finish &6ten&r villager requests. Word spreads: your standing climbs from stranger to friend to &6hero&r, and heroes get better prices.",
+        "",
+        "&7Gossip carries about 48 blocks. So does a bad reputation."
+      ],
+      "tasks": [
+        {
+          "id": "h_lastlight/village_hero/task0",
+          "type": "advancement",
+          "advancement": "smartvillagers:village_hero",
+          "title": "lang:advancements.smartvillagers.village_hero.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_lastlight/village_hero/reward0",
+          "type": "random",
+          "table": "tables/wanderers_cache"
+        },
+        {
+          "id": "h_lastlight/village_hero/reward1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "h_lastlight/guard",
+      "title": "Last Light Takes Up Arms",
+      "subtitle": "Villages that fight back live longer.",
+      "icon": "minecraft:iron_sword",
+      "x": 4,
+      "y": 6.25,
+      "dependencies": [
+        "h_lastlight/first_request"
+      ],
+      "description": [
+        "Give a sword to a villager with no profession and they become a &6Guard&r: armoured, patrolling, loyal to the bell.",
+        "",
+        "Guards are not sellswords. They won't follow you out. That's rather the point."
+      ],
+      "tasks": [
+        {
+          "id": "h_lastlight/guard/task0",
+          "type": "advancement",
+          "advancement": "guardvillagers:adventure/recruit_guard",
+          "title": "lang:guardvillagers.advancements.adventure.recruit_guard.title"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "h_lastlight/guard/reward0",
+          "type": "item",
+          "item": "minecraft:iron_sword"
+        },
+        {
+          "id": "h_lastlight/guard/reward1",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    }
+  ]
+}

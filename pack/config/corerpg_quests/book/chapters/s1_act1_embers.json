@@ -510,14 +510,14 @@
         "",
         "Some foes rise far stronger than the rest: a &5champion&r, marked by a &5purple ring&r and a boss bar of its own, sworn to a Sovereign an age ago and never released from the oath. Champions carry the Sovereigns' &6Fragments&r, the shards of the broken sun: every champion you fell drops one.",
         "",
-        "&7Kill one."
+        "&7Kill one. It counts however it dies, as long as you wounded it in its last moments: by your blade, by fire, or finished off by a sellsword."
       ],
       "tasks": [
         {
           "id": "s1_act1_embers/champion/task0",
           "type": "advancement",
-          "advancement": "runeborn:feats/champion",
-          "title": "lang:runeborn.feat.champion"
+          "advancement": "remnant_mobs:champions_bane",
+          "title": "Slay a champion"
         }
       ],
       "rewards": [

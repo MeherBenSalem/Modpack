@@ -1,16 +1,16 @@
 name = "The Gingerbread House (mod id christmas_ginger_house)"
-filename = "christmas_ginger_house-1.0.0-neoforge-1.21.1.jar"
+filename = "christmas_ginger_house-neoforge-1.21.1-2.0.0.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/Ddgd2w2n/versions/aEQ294YN/christmas_ginger_house-1.0.0-neoforge-1.21.1.jar"
+url = "https://cdn.modrinth.com/data/Ddgd2w2n/versions/F1my73Sp/christmas_ginger_house-neoforge-1.21.1-2.0.0.jar"
 hash-format = "sha512"
-hash = "39cdcd1e23127451ac72ff9a2994f803eccb3f2922ba57e79a7e007d9da8c5964984d93ab563c3f66c917fd58f076cea9c015be4cf6e5d443392434dda6b9ea8"
+hash = "e79a0c36b067d26227207c2c4ba3af76baed1a5e6d94f35de4e8cf9109d8bc4c331cea3dbde2eeed1def39db5cedb47283c69618cb25d280b4ed5975e1ff3c33"
 
 [update]
 [update.curseforge]
-file-id = 7374514
+file-id = 9452375
 project-id = 1409805
 [update.modrinth]
 mod-id = "Ddgd2w2n"
-version = "aEQ294YN"
+version = "F1my73Sp"

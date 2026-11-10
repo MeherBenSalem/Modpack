@@ -18,7 +18,7 @@ hash = "b00e4ea94fdcd488e2c33467be49f6b216739201785512c26c12e956e86e7a92"
 
 [[files]]
 file = "config/corerpg_quests/book/chapters/h_garden.json"
-hash = "43834b7aeb953411c5a6978ee13cf2ea514d8f1e8f694bc880e89baa8f9e50c9"
+hash = "e8785f90414f27ba9e70c0c819bc4dbf19ccebdc21ae73aff5c8845b2a1f57e0"
 
 [[files]]
 file = "config/corerpg_quests/book/chapters/h_hearth.json"
@@ -94,7 +94,7 @@ hash = "b0327fff48735cf062667113693bd91507fbd05a54aee4b480b7bc91ff0d890f"
 
 [[files]]
 file = "config/corerpg_quests/book/chapters/s1_act1_embers.json"
-hash = "8a7091bee2acfea6eaffa0dc6a92e3a313d4d779beddd8873e94796d18d4fee5"
+hash = "f12e3b4b7d1058a9adaff7ca43df305b445cc917445761bdc250c0cf1344022a"
 
 [[files]]
 file = "config/corerpg_quests/book/chapters/s1_act2_hunt.json"
@@ -1478,7 +1478,7 @@ hash = "0c615d27d6e7932dab70603593b0d4b2098f06e605c17c7e8549a677ec84ef94"
 
 [[files]]
 file = "kubejs/server_scripts/remnants/balance.js"
-hash = "a84cb25b017616d83f8e015bfb6d0d06aad35e059cd9e01906146c5722d95068"
+hash = "0186d849be2b7655afe5edc3990bfe0902d29ab752dafa445bbbc1ba12152fd4"
 
 [[files]]
 file = "kubejs/server_scripts/remnants/deathguide.js"
@@ -1549,7 +1549,7 @@ metafile = true
 
 [[files]]
 file = "mods/aquaculture.pw.toml"
-hash = "ed5426b63159c7892a50158ab4671d0920e80311480d1dfa87faa68b8b3f97ac"
+hash = "adb485ad5f62cb6e1460cc3126052000596ff7b7784223b4827ca57b7a9d2db3"
 metafile = true
 
 [[files]]
@@ -1574,7 +1574,7 @@ metafile = true
 
 [[files]]
 file = "mods/balm.pw.toml"
-hash = "a08870c5281fbecbe206b3640dcdd99ce5508d7b7b844ebb90ae24ef9401b57f"
+hash = "b1a2e20d8b21da4b2a2ae7babaf313eb1eac58e7c349ad3b67bbb5ff2b95d364"
 metafile = true
 
 [[files]]
@@ -1664,7 +1664,7 @@ metafile = true
 
 [[files]]
 file = "mods/collective.pw.toml"
-hash = "e010de181aa73b3a3532887846669992bbabc1604455703c060754b9615ba1f2"
+hash = "0865479931db503ed08ece5ba9e340ec5aa52f596a223e4cb518402d808df060"
 metafile = true
 
 [[files]]
@@ -1709,7 +1709,7 @@ metafile = true
 
 [[files]]
 file = "mods/creativecore.pw.toml"
-hash = "55189235f9f2036515c66475434016b3744961bf54501e06750b2b7af1ae37a6"
+hash = "00a73b1974e8f4e0f84220cc5f628ef1ffb20c06d0a1e2a4c72d48219e847239"
 metafile = true
 
 [[files]]
@@ -1749,17 +1749,17 @@ metafile = true
 
 [[files]]
 file = "mods/easy-npc-config-ui.pw.toml"
-hash = "cd205aa9f036d00f66805000589faed9fbe16e6bcc6a1686abf31e1cfec706b2"
+hash = "588f38db8c25e6d7813b4daf2e7782d3e7dddd7cc458b057a96e95c49bdd383c"
 metafile = true
 
 [[files]]
 file = "mods/easy-npc-core.pw.toml"
-hash = "c2c50865b3c7a5bbcd68bf4f98ad140892dbbbb0eeb31ac1a009995c18458292"
+hash = "183543ccc13821d9b81583f71a725761cfad6e35f72e851a88933843fd626ba4"
 metafile = true
 
 [[files]]
 file = "mods/easy-npc.pw.toml"
-hash = "fe96469678b43064db89d65b3562d22f7c4389781d0af4f36fa969c937d45be2"
+hash = "36a8ce4cdcfa2b4155d1fc9b1a9ac02bd0135ea6417b4d038e566557a0dbd2bc"
 metafile = true
 
 [[files]]
@@ -1779,7 +1779,7 @@ metafile = true
 
 [[files]]
 file = "mods/entitytexturefeatures.pw.toml"
-hash = "7e2c53ea6475094b89a88805f2845f382e31dc233aaf7902c42562afa7238059"
+hash = "9529493994e46295c63ba15ae4edca4b2062d0efeaf0809ebd8d684ad1ac446f"
 metafile = true
 
 [[files]]
@@ -1794,7 +1794,7 @@ metafile = true
 
 [[files]]
 file = "mods/fancymenu.pw.toml"
-hash = "c5b6d03122a1e44b871947e1dfb5e7914eecc9095f23f13caf867eb4e0a9ced3"
+hash = "49d08cc22bf0e477f277fa3649ca2bc863e0696d4e4dc3cea65e83bee9a9a6fd"
 metafile = true
 
 [[files]]
@@ -1974,7 +1974,7 @@ metafile = true
 
 [[files]]
 file = "mods/mezzconfig.pw.toml"
-hash = "5721ebb2ebde794b099f29a00636363f490663b7e4add0c4465e23ed6e8b4f0c"
+hash = "e542a434c9d91b90a0fd57fad8f1a3a034f2201b8a0b45d223faeaac640245a9"
 metafile = true
 
 [[files]]
@@ -1989,7 +1989,7 @@ metafile = true
 
 [[files]]
 file = "mods/moonlight.pw.toml"
-hash = "9c1c21b5e49c05da4364708c01cb89b06c3a8ef42d2eea4f54b0f089e5740f0f"
+hash = "b67ef82eac2018a3a0a066e93507904474eec93821a9fbf5594d0169a0bdb49a"
 metafile = true
 
 [[files]]
@@ -2054,7 +2054,7 @@ metafile = true
 
 [[files]]
 file = "mods/omnivault.pw.toml"
-hash = "18659abbdc3bfb73085b92d0f867c8799ca9dd31a20b73a553227591fb6ff367"
+hash = "58fee02af16335a2cb28ebe498920fb3643aae994fe65ff3ab2f2b04332eec42"
 metafile = true
 
 [[files]]
@@ -2064,7 +2064,7 @@ metafile = true
 
 [[files]]
 file = "mods/particle-rain.pw.toml"
-hash = "ed88ef1745a50f01bd97f1615fd6c38a8f69464d1c53b28f88ab2d89cd5753d0"
+hash = "e48bca0593afae8a5c1e4aa3a3c833f3f234d588548f5afa05d51a1108cbe4fe"
 metafile = true
 
 [[files]]
@@ -2144,7 +2144,7 @@ metafile = true
 
 [[files]]
 file = "mods/remnants-rpg-stats-skills-progression.pw.toml"
-hash = "659eb00f8dbd7bb7735ceb054a10dab71e2637670fe8e9d5e6d24f65aa76cdbd"
+hash = "96e8be5cb5a53a42686c1a03ea602a6266c1fc29436a1d7598445b0aab302870"
 metafile = true
 
 [[files]]
@@ -2199,17 +2199,17 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-backpacks.pw.toml"
-hash = "145d252e64bd05703a51f4b57395293305fd03a1ae0a3ad03b07bfecc39a954f"
+hash = "14b60cdd8f0e107425d0a109e95de246f31880272e00b93560194d5855f0364c"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "5f8be406290d9d40096e57a6fb9e8420c15ce5f7552d00f680457986e85c3aec"
+hash = "63f7a1a4c7e8c43b8db1e279fafa994e54c31f7edbdb9bd6cebfbe85f523c543"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-storage.pw.toml"
-hash = "3a72ad35fd0068976381008f70d349fa6d104b06161c84e46675761a52928821"
+hash = "ebd2a10a4ae532af1f99a930a2bab533a35877b3260f790988db0b49dac1206f"
 metafile = true
 
 [[files]]
@@ -2264,7 +2264,7 @@ metafile = true
 
 [[files]]
 file = "mods/the-gingerbread-house.pw.toml"
-hash = "cf22661be0fc5462fcdc0dc02233ab265d38087192a3eaa385c0fe4c41c3da91"
+hash = "4d9bdd678172f1ef200245121e528ce0c428b88ca74b7f8c8dd3d805f4021c57"
 metafile = true
 
 [[files]]
@@ -2359,5 +2359,5 @@ metafile = true
 
 [[files]]
 file = "resourcepacks/fresh-animations.pw.toml"
-hash = "1c057318297b9ad4c83cd33cc037769f3ec66faed6b7b194ace4a9fa62be5437"
+hash = "5856be81622180fd556b76f9e05c4d584672bacf5006ccfdba24b104ea18e67e"
 metafile = true

@@ -491,6 +491,39 @@
  "cataclysm:root": {
   "key": "advancements.cataclysm.root.title"
  },
+ "christmas_ginger_house:christmas_eve": {
+  "key": "advancements.christmas_ginger_house.christmas_eve.title"
+ },
+ "christmas_ginger_house:deck_the_halls": {
+  "key": "advancements.christmas_ginger_house.deck_the_halls.title"
+ },
+ "christmas_ginger_house:dress_the_part": {
+  "key": "advancements.christmas_ginger_house.dress_the_part.title"
+ },
+ "christmas_ginger_house:home_sweet_home": {
+  "key": "advancements.christmas_ginger_house.home_sweet_home.title"
+ },
+ "christmas_ginger_house:naughty_list": {
+  "key": "advancements.christmas_ginger_house.naughty_list.title"
+ },
+ "christmas_ginger_house:open_advent_door": {
+  "key": "advancements.christmas_ginger_house.open_advent_door.title"
+ },
+ "christmas_ginger_house:reindeer_games": {
+  "key": "advancements.christmas_ginger_house.reindeer_games.title"
+ },
+ "christmas_ginger_house:root": {
+  "key": "advancements.christmas_ginger_house.root.title"
+ },
+ "christmas_ginger_house:sweet_tooth": {
+  "key": "advancements.christmas_ginger_house.sweet_tooth.title"
+ },
+ "christmas_ginger_house:unwrap_present": {
+  "key": "advancements.christmas_ginger_house.unwrap_present.title"
+ },
+ "christmas_ginger_house:warm_and_cozy": {
+  "key": "advancements.christmas_ginger_house.warm_and_cozy.title"
+ },
  "create:andesite_alloy": {
   "key": "advancement.create.andesite_alloy"
  },

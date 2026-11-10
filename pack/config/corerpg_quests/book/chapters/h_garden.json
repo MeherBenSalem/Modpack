@@ -136,7 +136,6 @@
       "dependencies": [
         "h_garden/watering_can"
       ],
-      "optional": true,
       "description": [
         "Set copper around your &6Watering Can&r and it becomes a &6Sprinkler&r. Place it next to water and it keeps a whole 9x9 field wet and growing on its own.",
         "",

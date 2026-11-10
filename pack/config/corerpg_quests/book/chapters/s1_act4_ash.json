@@ -31,6 +31,8 @@
         "",
         "&f&oPast him, beyond the eye of the world, there is a shore where a drop of the sun fell when the Eighth drank it. The Dragon guards it, and Vaelorn, the last of the seven, guards the Dragon. Two more embers. Then the black sun.\"&r",
         "",
+        "Five embers, and the sky has gone from black to a deep blue. Now you can see what the dark was hiding: a pillar of ash on the horizon that has never stopped rising.",
+        "",
         "The &6Ashlands&r were once the Burning Crown, the richest kingdom of the seven. Now they are a furnace that never cools, and their Sovereign still sits on its throne of cinders."
       ],
       "tasks": [
@@ -94,6 +96,11 @@
         },
         {
           "id": "s1_act4_ash/ashlands/reward1",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment"
+        },
+        {
+          "id": "s1_act4_ash/ashlands/reward2",
           "type": "xp",
           "xp": 300
         }
@@ -132,11 +139,17 @@
       "rewards": [
         {
           "id": "s1_act4_ash/fortress/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment",
+          "count": 2
+        },
+        {
+          "id": "s1_act4_ash/fortress/reward1",
           "type": "random",
           "table": "tables/hunters_spoils"
         },
         {
-          "id": "s1_act4_ash/fortress/reward1",
+          "id": "s1_act4_ash/fortress/reward2",
           "type": "xp",
           "xp": 300
         }
@@ -209,11 +222,17 @@
       "rewards": [
         {
           "id": "s1_act4_ash/soulfire_crypt/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment",
+          "count": 2
+        },
+        {
+          "id": "s1_act4_ash/soulfire_crypt/reward1",
           "type": "random",
           "table": "tables/sovereign_tribute"
         },
         {
-          "id": "s1_act4_ash/soulfire_crypt/reward1",
+          "id": "s1_act4_ash/soulfire_crypt/reward2",
           "type": "xp",
           "xp": 600
         }
@@ -367,11 +386,17 @@
       "rewards": [
         {
           "id": "s1_act4_ash/wither/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment",
+          "count": 2
+        },
+        {
+          "id": "s1_act4_ash/wither/reward1",
           "type": "random",
           "table": "tables/sovereign_tribute"
         },
         {
-          "id": "s1_act4_ash/wither/reward1",
+          "id": "s1_act4_ash/wither/reward2",
           "type": "xp",
           "xp": 1200
         }
@@ -391,7 +416,9 @@
       "description": [
         "&6Morgrath, Ash Sovereign&r, of the Burning Crown. His token is &8netherite scrap&r: ancient debris, the melted bones of his kingdom's treasure, the only thing his fire couldn't destroy.",
         "",
-        "&7Gather six Fragments and a scrap of netherite."
+        "&7Gather six Fragments and a scrap of netherite.",
+        "",
+        "&7His offering is a &6Fire Seed&7, from the Remnant Constellation's pyromancers (a Fire Rune, a blaze rod, quartz and wheat seeds): the only thing that will grow in what he left. Blazes and Fire Golems carry Fire Runes."
       ],
       "tasks": [
         {
@@ -404,6 +431,11 @@
           "type": "item",
           "item": "runeborn:sovereign_fragment",
           "count": 6
+        },
+        {
+          "id": "s1_act4_ash/burning_crown/task2",
+          "type": "item",
+          "item": "elementals:fire_element_food"
         }
       ],
       "rewards": [
@@ -455,17 +487,23 @@
       "rewards": [
         {
           "id": "s1_act4_ash/morgrath/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment",
+          "count": 2
+        },
+        {
+          "id": "s1_act4_ash/morgrath/reward1",
           "type": "random",
           "table": "tables/sovereign_tribute"
         },
         {
-          "id": "s1_act4_ash/morgrath/reward1",
+          "id": "s1_act4_ash/morgrath/reward2",
           "type": "item",
           "item": "runeborn:tempering_stone_7",
           "count": 2
         },
         {
-          "id": "s1_act4_ash/morgrath/reward2",
+          "id": "s1_act4_ash/morgrath/reward3",
           "type": "xp",
           "xp": 1200
         }
@@ -538,11 +576,16 @@
         {
           "id": "s1_act4_ash/stronghold/reward0",
           "type": "item",
+          "item": "runeborn:sovereign_fragment"
+        },
+        {
+          "id": "s1_act4_ash/stronghold/reward1",
+          "type": "item",
           "item": "minecraft:ender_pearl",
           "count": 8
         },
         {
-          "id": "s1_act4_ash/stronghold/reward1",
+          "id": "s1_act4_ash/stronghold/reward2",
           "type": "xp",
           "xp": 300
         }
@@ -628,18 +671,63 @@
       "rewards": [
         {
           "id": "s1_act4_ash/dragon/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment",
+          "count": 2
+        },
+        {
+          "id": "s1_act4_ash/dragon/reward1",
           "type": "random",
           "table": "tables/sovereign_tribute"
         },
         {
-          "id": "s1_act4_ash/dragon/reward1",
+          "id": "s1_act4_ash/dragon/reward2",
           "type": "item",
           "item": "runeborn:crown_shard_ender_dragon"
         },
         {
-          "id": "s1_act4_ash/dragon/reward2",
+          "id": "s1_act4_ash/dragon/reward3",
           "type": "xp",
           "xp": 1500
+        }
+      ],
+      "completion_command": "remnants_vo completed {team} {quest}"
+    },
+    {
+      "id": "s1_act4_ash/hour_before",
+      "title": "The Hour Before",
+      "subtitle": "The last of the seven wants the last of something.",
+      "icon": "chronofall:rift_glass",
+      "x": 16,
+      "y": -0.875,
+      "dependencies": [
+        "s1_act4_ash/dragon"
+      ],
+      "description": [
+        "&6Vaelorn, the Wyrm-Ravager&r, rode the dragons when there were many. Now there is one fewer than one, and its breath is in your bottle. That is his token.",
+        "",
+        "His offering is a pane of &6Rift Glass&r: black glass set around a &bRift Shard&r from the craters where pieces of another time fell through (eight panes a craft; Chronofall's chapter). Look through it and the sky has more than one dragon in it.",
+        "",
+        "&7Gather six Sovereign Fragments and a pane of Rift Glass. The sigil takes them with the dragon's breath and the &6Seal of the Deep&7, which stays."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act4_ash/hour_before/task0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment",
+          "count": 6
+        },
+        {
+          "id": "s1_act4_ash/hour_before/task1",
+          "type": "item",
+          "item": "chronofall:rift_glass"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act4_ash/hour_before/reward0",
+          "type": "xp",
+          "xp": 300
         }
       ],
       "completion_command": "remnants_vo completed {team} {quest}"
@@ -649,12 +737,13 @@
       "title": "&6Sovereign: Vaelorn, the Wyrm-Ravager",
       "subtitle": "Sovereign of the Last Shore. Level 70.",
       "icon": "runeborn:wyrmfang_halberd",
-      "x": 16,
-      "y": -0.875,
+      "x": 18,
+      "y": 0,
       "shape": "gear",
       "size": 2,
       "dependencies": [
         "s1_act4_ash/dragon",
+        "s1_act4_ash/hour_before",
         "s1_forge/seal_deep"
       ],
       "description": [

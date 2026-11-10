@@ -116,26 +116,44 @@ edits:
     map: {remnants:duskforged_ingot: minecraft:gold_ingot, remnants:moonsilver_ingot: minecraft:diamond}
   - id: omnivault:logic_processor        # two per craft: every network part and every 4K matrix needs one
     result_count: 2
-  # --- the story locks: each Sovereign's sigil needs the seal of the act before ---
+    map: {minecraft:redstone: core_utilities:basic_circuit}      # the vault's minds are the Works' circuits
+  - id: omnivault:advanced_processor
+    map: {minecraft:quartz: core_utilities:advanced_circuit}
+  - id: omnivault:quantum_processor
+    map: {minecraft:ender_pearl: core_utilities:elite_circuit}
+  # --- the Works, Chronofall and the Company on the Forge's tiers ---
+  - id: core_utilities:basic_machine_frame_recipe   # a frame is Ashen Alloy around a pressed copper plate (two per craft)
+    pattern: ["IAI", "ACA", "IAI"]
+    key: {I: minecraft:iron_ingot, A: remnants:ashen_alloy, C: create:copper_sheet}
+  - id: core_utilities:elite_circuit                # the Works' last tier is Moonsilver
+    map: {minecraft:diamond: remnants:moonsilver_ingot}
+  - id: chronofall:flux_charger                     # Flux is the Works' fire: the charger is built on its generator
+    map: {minecraft:furnace: core_utilities:combustion_generator}
+  - id: better_with_gold:upgrade_template           # the Company's reinforced gold is Act II gear, like diamond
+    pattern: ["GOG", "GAG", "GDG"]
+    key: {G: minecraft:gold_ingot, O: minecraft:obsidian, A: minecraft:amethyst_shard, D: remnants:duskforged_ingot}
+  # --- the story locks: each Sovereign's sigil needs the seal of the act before, and an offering: one thing made by
+  #     the living, each from a different workshop of Last Light (design/PROGRESSION_GRAPH.md). Six Fragments, a token,
+  #     the seal and the offering fill the grid exactly. ---
   - id: runeborn:sigil_dusk_rider
     add: [remnants:ashen_alloy]
-  - id: runeborn:sigil_varghast
-    add: [remnants:seal_of_dusk]
+  - id: runeborn:sigil_varghast            # offering: the Company's banner: an army to answer his
+    add: [remnants:seal_of_dusk, better_with_gold:warbanner]
     keep: [remnants:seal_of_dusk]
-  - id: runeborn:sigil_sylvara
-    add: [remnants:seal_of_dusk]
+  - id: runeborn:sigil_sylvara            # offering: a warm cup from the Mycelial Court's kitchen
+    add: [remnants:seal_of_dusk, spore_and_stem:frostcap_tea]
     keep: [remnants:seal_of_dusk]
-  - id: runeborn:sigil_kaelthar
-    add: [remnants:seal_of_the_hunt]
+  - id: runeborn:sigil_kaelthar            # offering: lightning in a box, from the Works
+    add: [remnants:seal_of_the_hunt, core_utilities:energy_cell_basic]
     keep: [remnants:seal_of_the_hunt]
-  - id: runeborn:sigil_ysolde
-    add: [remnants:seal_of_the_hunt]
+  - id: runeborn:sigil_ysolde            # offering: the Coven's stand-in for a court
+    add: [remnants:seal_of_the_hunt, better_witch_huts:poppet]
     keep: [remnants:seal_of_the_hunt]
-  - id: runeborn:sigil_morgrath
-    add: [remnants:seal_of_the_deep]
+  - id: runeborn:sigil_morgrath            # offering: a Fire Seed: something that grows in ash
+    add: [remnants:seal_of_the_deep, elementals:fire_element_food]
     keep: [remnants:seal_of_the_deep]
-  - id: runeborn:sigil_vaelorn
-    add: [remnants:seal_of_the_deep]
+  - id: runeborn:sigil_vaelorn            # offering: a pane of the hour before, from Chronofall
+    add: [remnants:seal_of_the_deep, chronofall:rift_glass]
     keep: [remnants:seal_of_the_deep]
   - id: remnant_bosses:eclipse_shard               # the Eclipsed Realm opens only after Act IV
     map: {minecraft:gold_ingot: remnants:sunforged_ingot}
@@ -240,3 +258,76 @@ recipes:
   - id: remnants:forge/omnium_dust_from_remnant_shard
     json: {type: create:mixing, ingredients: [{item: minecraft:amethyst_shard}, {item: minecraft:redstone},
            {item: remnant_mobs:remnant_shard}], results: [{id: omnivault:omnium_dust, count: 2}]}
+
+# ---------------------------------------------------------------------------------------------------------------
+# The progression graph, as data. tools/validate_pack.py checks it against the game's real recipes and the quest
+# book, and writes the tables in design/PROGRESSION_GRAPH.md from it.
+#
+# stages: the story's parts. A quest belongs to the latest stage whose opening quest is among its dependencies.
+#   first_found: the stage in which the WORLD first offers a raw material (a boss's drop, another dimension's
+#   blocks): a Sovereign's relic belongs to the stage of the quests that come after its fall. Anything not listed
+#   is there from the start. A recipe can still make a material earlier (quartz out of diorite in
+#   Create's crushing wheels), and a required quest's reward counts for the quests after it (the Keeper's blaze
+#   powder for the first shrine). A trailing * matches a prefix.
+stages:
+  names: [Prologue, Act I, Act II, Act III, Act IV, Act V, Epilogue]
+  opens: [s1_act1_embers/kindle, s1_act1_embers/dusk_rider, s1_act2_hunt/sylvara, s1_act3_deep/ysolde,
+          s1_act4_ash/vaelorn, s1_act5_realm/hollow_sovereign]
+  first_found:
+    2: [runeborn:relic_dusk_rider, runeborn:relic_varghast, runeborn:crown_shard_varghast,
+        "chronofall:raw_cobalt", "chronofall:cobalt_ore"]
+    3: [runeborn:relic_sylvara, runeborn:crown_shard_sylvara, runeborn:relic_kaelthar, runeborn:crown_shard_kaelthar,
+        runeborn:relic_warden, runeborn:relic_elder_guardian,
+        minecraft:echo_shard, minecraft:sculk, minecraft:sculk_catalyst, minecraft:sculk_sensor,
+        minecraft:sculk_shrieker, minecraft:sculk_vein, minecraft:disc_fragment_5, "deeperdarker:*",
+        "chronofall:raw_orichalcum", "chronofall:orichalcum_ore"]
+    4: [runeborn:relic_ysolde, runeborn:crown_shard_ysolde, runeborn:relic_morgrath, runeborn:crown_shard_morgrath,
+        runeborn:relic_wither, runeborn:relic_ender_dragon, runeborn:crown_shard_ender_dragon,
+        minecraft:netherrack, minecraft:blaze_rod, minecraft:nether_wart, minecraft:ghast_tear,
+        minecraft:wither_skeleton_skull, minecraft:nether_star, minecraft:soul_sand, minecraft:soul_soil,
+        minecraft:quartz, minecraft:nether_quartz_ore, minecraft:ancient_debris, minecraft:netherite_scrap,
+        minecraft:crimson_stem, minecraft:warped_stem, minecraft:crimson_fungus, minecraft:warped_fungus,
+        minecraft:shroomlight, minecraft:basalt, minecraft:blackstone, elementals:fire_rune,
+        minecraft:chorus_fruit, minecraft:chorus_flower, minecraft:shulker_shell, minecraft:elytra,
+        minecraft:dragon_breath, minecraft:dragon_head, minecraft:dragon_egg, minecraft:end_stone]
+    5: [runeborn:relic_vaelorn, runeborn:crown_shard_vaelorn, "remnant_bosses:*"]
+
+# gates: the recipes that hold the story together. `item` is what the recipe makes, `quest` the quest that asks for
+# it (so the recipe must be craftable by the time that quest opens), `from` the workshops whose things go in and
+# `to` the one it opens.
+gates:
+  # --- the spine: the Ember Forge and the Sovereigns ---
+  - {item: remnants:ashen_alloy, quest: s1_forge/ashen_alloy, from: [Create, Runeborn, Mob LootBags], to: The Ember Forge I}
+  - {item: runeborn:sigil_dusk_rider, quest: s1_act1_embers/dusk_sigil, from: [The Ember Forge I, RPG Mobs], to: The Dusk Rider}
+  - {item: remnants:seal_of_dusk, quest: s1_forge/seal_dusk, from: [The Dusk Rider, RPG Mobs], to: Act II}
+  - {item: remnants:duskforged_ingot, quest: s1_forge/duskforged, from: [Create, RPG Mobs, Runeborn], to: The Ember Forge II}
+  - {item: runeborn:sigil_varghast, quest: s1_act2_hunt/varghast, from: [Seal of Dusk, The Ashen Company], to: Varghast}
+  - {item: runeborn:sigil_sylvara, quest: s1_act2_hunt/sylvara, from: [Seal of Dusk, The Mycelial Court], to: Sylvara}
+  - {item: remnants:seal_of_the_hunt, quest: s1_forge/seal_hunt, from: [Varghast, Sylvara, Hearth and Harvest], to: Act III}
+  - {item: remnants:moonsilver_ingot, quest: s1_forge/moonsilver, from: [The Ember Forge II, Runeborn], to: The Ember Forge III}
+  - {item: runeborn:sigil_kaelthar, quest: s1_act3_deep/kaelthar, from: [Seal of the Hunt, The Ashen Works], to: Kaelthar}
+  - {item: runeborn:sigil_ysolde, quest: s1_act3_deep/ysolde, from: [Seal of the Hunt, The Hollow Wood Coven], to: Ysolde}
+  - {item: remnants:seal_of_the_deep, quest: s1_forge/seal_deep, from: [Kaelthar, Ysolde, The Warden, Hearth and Harvest], to: Act IV}
+  - {item: remnants:deepsteel_ingot, quest: s1_forge/deepsteel, from: [The Ember Forge III, Deeper and Darker, Create], to: The Ember Forge IV}
+  - {item: runeborn:sigil_morgrath, quest: s1_act4_ash/morgrath, from: [Seal of the Deep, The Remnant Constellation], to: Morgrath}
+  - {item: runeborn:sigil_vaelorn, quest: s1_act4_ash/vaelorn, from: [Seal of the Deep, Chronofall], to: Vaelorn}
+  - {item: remnants:seal_of_ash, quest: s1_forge/seal_ash, from: [Morgrath, Vaelorn, The Wither, The Dragon, The Ash Garden], to: Act V}
+  - {item: remnants:sunforged_ingot, quest: s1_forge/sunforged, from: [The Ember Forge IV, Create], to: The Ember Forge V}
+  - {item: remnant_bosses:eclipse_shard, quest: s1_act5_realm/shard, from: [The Ember Forge V, Seal of Ash], to: The Eclipsed Realm}
+  - {item: remnants:eclipse_core, quest: s1_forge/eclipse_core, from: [The Ember Forge V, The Eclipsed Realm, Create], to: The Ember Forge VI}
+  # --- the ribs: one workshop hands the next its key part ---
+  - {item: core_utilities:basic_machine_frame, quest: n_works/frame, from: [The Ember Forge I, Create], to: The Ashen Works}
+  - {item: core_utilities:elite_circuit, quest: n_works/elite, from: [The Ember Forge III], to: The Ashen Works (elite)}
+  - {item: omnivault:logic_processor, quest: h_vaults/logic, from: [The Ember Forge II, The Ashen Works], to: The Vaults}
+  - {item: omnivault:advanced_processor, quest: h_vaults/advanced_processor, from: [The Ember Forge III, The Ashen Works], to: The Vaults (advanced)}
+  - {item: omnivault:quantum_processor, quest: h_vaults/quantum, from: [The Ember Forge IV, The Ashen Works], to: The Vaults (quantum)}
+  - {item: sophisticatedbackpacks:backpack, quest: h_vaults/backpack, from: [The Ember Forge I, Last Light], to: The Vaults}
+  - {item: chronofall:flux_charger, quest: n_chrono/flux, from: [The Ashen Works], to: Chronofall}
+  - {item: better_with_gold:upgrade_template, quest: p_company/template, from: [The Ember Forge II], to: The Ashen Company}
+
+# fragments: the main line's currency. By the end of every stage, at least `guaranteed_share` of the Sovereign
+# Fragments the story has asked for so far must come from required main-line quests' rewards; kills, loot bags,
+# contracts and Every Hand at the Forge cover the rest and the second calls.
+fragments:
+  item: runeborn:sovereign_fragment
+  guaranteed_share: 0.75

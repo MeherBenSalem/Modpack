@@ -23,6 +23,8 @@ quests:
       So hunt back. Varghast waits beyond the hunt, and the Frost Matron beyond him. Two more embers. Go and take them.
     voice: true
     desc: |
+      The Dusk Rider held one minute still for an age. With him fallen the nights turn again, and the first thing to turn is the moon.
+
       The &cHunter's Moon&r is the Eclipse's tide: on its nights the dead rise in greater numbers and higher ranks, and the &cRemnants&r, the named ones, begin to walk.
     tasks: [{checkmark: "♪ Listen to the Keeper"}]
     rewards: [{xp: 60}]
@@ -42,7 +44,7 @@ quests:
 
       &7On a Hunter's Moon every monster gains &c+5 levels&7, ranks come twice as often and Remnant Shards drop twice as thick. Survive one. Better: hunt through one. Type &e/remnants moon&7 to check tonight's moon.
     tasks: [{advancement: "remnant_mobs:under_the_hunters_moon"}]
-    rewards: [{table: hunters_spoils}, {xp: 300}]
+    rewards: [{item: runeborn:sovereign_fragment, count: 2}, {table: hunters_spoils}, {xp: 300}]
 
   - key: grim_vigil
     title: "&4The Grim Vigil"
@@ -59,7 +61,7 @@ quests:
 
       &7Survive until sunrise. Seeing the dawn pays experience and Valor; the mini-boss drops extra Remnant Shards and may drop a &6Vital Ember&7. Check the threat around you any time with &e/remnants difficulty&7.
     tasks: [{advancement: "remnant_mobs:see_the_dawn"}]
-    rewards: [{table: hunters_spoils}, {xp: 400}]
+    rewards: [{item: runeborn:sovereign_fragment, count: 2}, {table: hunters_spoils}, {xp: 400}]
 
   - key: kindled
     title: "&6Kindled"
@@ -120,7 +122,7 @@ quests:
     title: "Accept the Challenge"
     subtitle: "Make it worse on purpose."
     icon: remnant_mobs:brand_of_challenge
-    deps: [champions_bane]
+    deps: [champions_bane, s1_act3_deep/descent]   # a Brand needs an echo shard: the ancient cities (Act III)
     optional: true
     keeper: |
       You're branding them now? On purpose? I've buried braver people than you. Well. Not buried. You know what I mean.
@@ -147,7 +149,7 @@ quests:
 
       &7Kill a Remnant.
     tasks: [{advancement: "remnant_mobs:remnants_end"}]
-    rewards: [{table: hunters_spoils}, {item: runeborn:radiant_rune}, {xp: 500}]
+    rewards: [{item: runeborn:sovereign_fragment, count: 2}, {table: hunters_spoils}, {item: runeborn:radiant_rune}, {xp: 500}]
 
   - key: labyrinth
     title: "Into Every Maze"
@@ -162,7 +164,7 @@ quests:
 
       &7Find the Catacombs and break their warden.
     tasks: [{advancement: "muchmoredungeons:slay_catacombs_guardian"}]
-    rewards: [{table: hunters_spoils}, {xp: 300}]
+    rewards: [{item: runeborn:sovereign_fragment, count: 2}, {table: hunters_spoils}, {xp: 300}]
 
   - key: spire
     title: "The Arcane Spire"
@@ -174,7 +176,7 @@ quests:
 
       &7Climb the Spire and kill its master.
     tasks: [{advancement: "muchmoredungeons:slay_tower_dungeon_guardian"}]
-    rewards: [{table: hunters_spoils}, {xp: 300}]
+    rewards: [{item: runeborn:sovereign_fragment, count: 2}, {table: hunters_spoils}, {xp: 300}]
 
   - key: path
     title: "Choose a Path"
@@ -205,7 +207,9 @@ quests:
       &7Gather six Fragments and an iron block.
 
       &7Varghast's sigil needs the &6Seal of Dusk&7 in the grid too. It stays there.
-    tasks: [{item: runeborn:sovereign_fragment, count: 6}, {item: minecraft:iron_block}]
+
+      &7From here on a Sovereign answers six Fragments, a token and an &6offering&7: one thing made by the living, to remind them what they owed. Varghast owed his soldiers. Bring a &6Warbanner&7 of the Ashen Company (gold around a black banner, on a stick; Maren sells them too). The sigil takes it with the &6Seal of Dusk&7, which stays.
+    tasks: [{item: runeborn:sovereign_fragment, count: 6}, {item: minecraft:iron_block}, {item: better_with_gold:warbanner}]
     rewards: [{xp: 150}]
 
   - key: varghast
@@ -225,7 +229,7 @@ quests:
 
       &7His grafted arm has the reach of a spear. Don't trade blows; roll &oforward&7 into his swing and punish the recovery.
     tasks: [{item: runeborn:sigil_varghast}, {advancement: "runeborn:feats/fell_varghast"}]
-    rewards: [{table: sovereign_tribute}, {xp: 600}]
+    rewards: [{item: runeborn:sovereign_fragment, count: 2}, {table: sovereign_tribute}, {xp: 600}]
 
   - key: crown
     title: "A Shard of the Crown"
@@ -254,7 +258,9 @@ quests:
       &6Sylvara, Frost Matron&r, rules the &bRime Veil&r: the frozen lands where the last warmth of the old sun was buried and kept, like a seed nobody was allowed to plant. Her token is &bblue ice&r.
 
       &7Before you call her, learn the cold. In the frozen peaks the &6Frostmaw&7 guards its ice crystal; under the ice, the &6Rimefrost Vaults&7 hold a Frost Lich.
-    tasks: [{item: minecraft:blue_ice}, {item: runeborn:sovereign_fragment, count: 6}]
+
+      &7Her offering is the thing she buried: warmth. Brew a cup of &6Frostcap Tea&7 (two Frostcaps, sugar and a glass bottle). Frostcaps are the Mycelial Court's pale mushrooms, and they only grow in her own Rime Veil.
+    tasks: [{item: minecraft:blue_ice}, {item: runeborn:sovereign_fragment, count: 6}, {item: spore_and_stem:frostcap_tea}]
     rewards: [{item: minecraft:golden_apple, count: 2}, {xp: 200}]
 
   - key: frostmaw

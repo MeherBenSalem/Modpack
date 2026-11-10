@@ -31,6 +31,8 @@
         "",
         "&f&oYou'll need that memory where you're going. The storm-lord waits beneath the waves, and the gardener behind her roses. Go down. The deep has been waiting for someone to bother it.\"&r",
         "",
+        "Three embers burn and the Rime Veil is thawing. The meltwater has to go somewhere. It goes down, into places older than the Crown, and it is waking what sleeps there.",
+        "",
         "The &5Old Powers&r are the world's first guardians: the &6Warden&r, the &6Elder Guardian&r, the &6Wither&r and the &6Ender Dragon&r. Each keeps a &6Relic&r, and the Relics are the only things left that remember the sun as it was."
       ],
       "tasks": [
@@ -81,11 +83,16 @@
       "rewards": [
         {
           "id": "s1_act3_deep/descent/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment"
+        },
+        {
+          "id": "s1_act3_deep/descent/reward1",
           "type": "random",
           "table": "tables/hunters_spoils"
         },
         {
-          "id": "s1_act3_deep/descent/reward1",
+          "id": "s1_act3_deep/descent/reward2",
           "type": "xp",
           "xp": 300
         }
@@ -128,11 +135,17 @@
       "rewards": [
         {
           "id": "s1_act3_deep/warden/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment",
+          "count": 2
+        },
+        {
+          "id": "s1_act3_deep/warden/reward1",
           "type": "random",
           "table": "tables/sovereign_tribute"
         },
         {
-          "id": "s1_act3_deep/warden/reward1",
+          "id": "s1_act3_deep/warden/reward2",
           "type": "xp",
           "xp": 800
         }
@@ -213,11 +226,17 @@
       "rewards": [
         {
           "id": "s1_act3_deep/monument/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment",
+          "count": 2
+        },
+        {
+          "id": "s1_act3_deep/monument/reward1",
           "type": "random",
           "table": "tables/hunters_spoils"
         },
         {
-          "id": "s1_act3_deep/monument/reward1",
+          "id": "s1_act3_deep/monument/reward2",
           "type": "xp",
           "xp": 500
         }
@@ -241,7 +260,9 @@
         "",
         "&6Kaelthar the Stormcaller&r, Sovereign of the Drowned Sky, flooded his kingdom to keep the storm for himself. His token is a &6lightning rod&r.",
         "",
-        "&7Before him, the drowned coast has other things to fight: a sunken city with a Leviathan, a kraken's ship, a frozen pirate captain. None is required. All of them will teach you about water."
+        "&7Before him, the drowned coast has other things to fight: a sunken city with a Leviathan, a kraken's ship, a frozen pirate captain. None is required. All of them will teach you about water.",
+        "",
+        "&7His offering is the one thing he kept: lightning. The Ashen Works can box it. Bring a &6Basic Energy Cell&7 (a machine frame, a circuit, iron and blocks of redstone). It need not be charged. He will know what it is for."
       ],
       "tasks": [
         {
@@ -254,6 +275,11 @@
           "type": "item",
           "item": "runeborn:sovereign_fragment",
           "count": 6
+        },
+        {
+          "id": "s1_act3_deep/drowned_sky/task2",
+          "type": "item",
+          "item": "core_utilities:energy_cell_basic"
         }
       ],
       "rewards": [
@@ -384,17 +410,23 @@
       "rewards": [
         {
           "id": "s1_act3_deep/kaelthar/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment",
+          "count": 2
+        },
+        {
+          "id": "s1_act3_deep/kaelthar/reward1",
           "type": "random",
           "table": "tables/sovereign_tribute"
         },
         {
-          "id": "s1_act3_deep/kaelthar/reward1",
+          "id": "s1_act3_deep/kaelthar/reward2",
           "type": "item",
           "item": "runeborn:tempering_stone_6",
           "count": 2
         },
         {
-          "id": "s1_act3_deep/kaelthar/reward2",
+          "id": "s1_act3_deep/kaelthar/reward3",
           "type": "xp",
           "xp": 900
         }
@@ -434,11 +466,17 @@
       "rewards": [
         {
           "id": "s1_act3_deep/ancient_remnant/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment",
+          "count": 2
+        },
+        {
+          "id": "s1_act3_deep/ancient_remnant/reward1",
           "type": "random",
           "table": "tables/sovereign_tribute"
         },
         {
-          "id": "s1_act3_deep/ancient_remnant/reward1",
+          "id": "s1_act3_deep/ancient_remnant/reward2",
           "type": "xp",
           "xp": 1000
         }
@@ -471,11 +509,17 @@
       "rewards": [
         {
           "id": "s1_act3_deep/cursed_keep/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment",
+          "count": 2
+        },
+        {
+          "id": "s1_act3_deep/cursed_keep/reward1",
           "type": "random",
           "table": "tables/hunters_spoils"
         },
         {
-          "id": "s1_act3_deep/cursed_keep/reward1",
+          "id": "s1_act3_deep/cursed_keep/reward2",
           "type": "xp",
           "xp": 400
         }
@@ -536,7 +580,9 @@
         "",
         "&6Ysolde, the Crimson Bloom&r, Sovereign of the Scarlet Garden, kept her roses alive in the dark at any price. Her token is a &cblock of redstone&r, the colour of everything she ever loved.",
         "",
-        "&7Gather six Fragments and a block of redstone."
+        "&7Gather six Fragments and a block of redstone.",
+        "",
+        "&7Her offering is a &6Poppet&7: the Hollow Wood Coven's doll of wheat and string around an amethyst shard, made to stand in for a person. She fed her court to her roses. Send her one more courtier."
       ],
       "tasks": [
         {
@@ -549,6 +595,11 @@
           "type": "item",
           "item": "runeborn:sovereign_fragment",
           "count": 6
+        },
+        {
+          "id": "s1_act3_deep/scarlet_garden/task2",
+          "type": "item",
+          "item": "better_witch_huts:poppet"
         }
       ],
       "rewards": [

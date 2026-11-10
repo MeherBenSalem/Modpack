@@ -61,6 +61,13 @@
       "type": "item",
       "item": "mob_loot_bags:legendarylootbag",
       "weight": 0.3
+    },
+    {
+      "id": "tables/contracts_grave/9",
+      "type": "item",
+      "item": "runeborn:sovereign_fragment",
+      "count": 2,
+      "weight": 2
     }
   ]
 }

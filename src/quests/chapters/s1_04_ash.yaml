@@ -23,6 +23,8 @@ quests:
       Past him, beyond the eye of the world, there is a shore where a drop of the sun fell when the Eighth drank it. The Dragon guards it, and Vaelorn, the last of the seven, guards the Dragon. Two more embers. Then the black sun.
     voice: true
     desc: |
+      Five embers, and the sky has gone from black to a deep blue. Now you can see what the dark was hiding: a pillar of ash on the horizon that has never stopped rising.
+
       The &6Ashlands&r were once the Burning Crown, the richest kingdom of the seven. Now they are a furnace that never cools, and their Sovereign still sits on its throne of cinders.
     tasks: [{checkmark: "♪ Listen to the Keeper"}]
     rewards: [{xp: 100}]
@@ -44,6 +46,7 @@ quests:
     tasks: [{dimension: "minecraft:the_nether"}]
     rewards:
       - {item: {id: minecraft:potion, components: {"minecraft:potion_contents": {potion: "minecraft:long_fire_resistance"}}}, count: 2}
+      - {item: runeborn:sovereign_fragment}
       - {xp: 300}
 
   - key: fortress
@@ -56,7 +59,7 @@ quests:
 
       &7Find a fortress and take eight blaze rods.
     tasks: [{structure: "betterfortresses:fortress"}, {item: minecraft:blaze_rod, count: 8}]
-    rewards: [{table: hunters_spoils}, {xp: 300}]
+    rewards: [{item: runeborn:sovereign_fragment, count: 2}, {table: hunters_spoils}, {xp: 300}]
 
   - key: bastille
     title: "The Infernal Bastille"
@@ -84,7 +87,7 @@ quests:
 
       &7Kill the Cinder Warden.
     tasks: [{advancement: "muchmoredungeons:slay_soulfire_crypt_guardian"}]
-    rewards: [{table: sovereign_tribute}, {xp: 600}]
+    rewards: [{item: runeborn:sovereign_fragment, count: 2}, {table: sovereign_tribute}, {xp: 600}]
 
   - key: monstrosity
     title: "The Netherite Monstrosity"
@@ -143,7 +146,7 @@ quests:
 
       &7Fight it somewhere you don't mind losing. &6Keep its Nether Star&7: something in the Eclipsed Realm answers to one.
     tasks: [{kill: minecraft:wither}, {item: runeborn:relic_wither}]
-    rewards: [{table: sovereign_tribute}, {xp: 1200}]
+    rewards: [{item: runeborn:sovereign_fragment, count: 2}, {table: sovereign_tribute}, {xp: 1200}]
 
   - key: burning_crown
     title: "The Burning Crown"
@@ -154,7 +157,9 @@ quests:
       &6Morgrath, Ash Sovereign&r, of the Burning Crown. His token is &8netherite scrap&r: ancient debris, the melted bones of his kingdom's treasure, the only thing his fire couldn't destroy.
 
       &7Gather six Fragments and a scrap of netherite.
-    tasks: [{item: minecraft:netherite_scrap}, {item: runeborn:sovereign_fragment, count: 6}]
+
+      &7His offering is a &6Fire Seed&7, from the Remnant Constellation's pyromancers (a Fire Rune, a blaze rod, quartz and wheat seeds): the only thing that will grow in what he left. Blazes and Fire Golems carry Fire Runes.
+    tasks: [{item: minecraft:netherite_scrap}, {item: runeborn:sovereign_fragment, count: 6}, {item: elementals:fire_element_food}]
     rewards: [{xp: 200}]
 
   - key: morgrath
@@ -176,7 +181,7 @@ quests:
 
       &7His sigil needs the &6Seal of the Deep&7 in the grid. It stays there.
     tasks: [{item: runeborn:sigil_morgrath}, {advancement: "runeborn:feats/fell_morgrath"}]
-    rewards: [{table: sovereign_tribute}, {item: runeborn:tempering_stone_7, count: 2}, {xp: 1200}]
+    rewards: [{item: runeborn:sovereign_fragment, count: 2}, {table: sovereign_tribute}, {item: runeborn:tempering_stone_7, count: 2}, {xp: 1200}]
 
   - key: netherite
     title: "Worthy of Netherite"
@@ -203,7 +208,7 @@ quests:
 
       &7Find a stronghold.
     tasks: [{structure: "betterstrongholds:stronghold"}]
-    rewards: [{item: minecraft:ender_pearl, count: 8}, {xp: 300}]
+    rewards: [{item: runeborn:sovereign_fragment}, {item: minecraft:ender_pearl, count: 8}, {xp: 300}]
 
   - key: last_shore
     title: "&6The Last Shore"
@@ -237,13 +242,27 @@ quests:
 
       &7Break the crystals. Bring a bow. Bring bottles: before it dies, catch its &dbreath&7. The last Sovereign answers to nothing else.
     tasks: [{kill: minecraft:ender_dragon}, {item: minecraft:dragon_breath}]
-    rewards: [{table: sovereign_tribute}, {item: runeborn:crown_shard_ender_dragon}, {xp: 1500}]
+    rewards: [{item: runeborn:sovereign_fragment, count: 2}, {table: sovereign_tribute}, {item: runeborn:crown_shard_ender_dragon}, {xp: 1500}]
+
+  - key: hour_before
+    title: "The Hour Before"
+    subtitle: "The last of the seven wants the last of something."
+    icon: chronofall:rift_glass
+    deps: [dragon]
+    desc: |
+      &6Vaelorn, the Wyrm-Ravager&r, rode the dragons when there were many. Now there is one fewer than one, and its breath is in your bottle. That is his token.
+
+      His offering is a pane of &6Rift Glass&r: black glass set around a &bRift Shard&r from the craters where pieces of another time fell through (eight panes a craft; Chronofall's chapter). Look through it and the sky has more than one dragon in it.
+
+      &7Gather six Sovereign Fragments and a pane of Rift Glass. The sigil takes them with the dragon's breath and the &6Seal of the Deep&7, which stays.
+    tasks: [{item: runeborn:sovereign_fragment, count: 6}, {item: chronofall:rift_glass}]
+    rewards: [{xp: 300}]
 
   - key: vaelorn
     title: "&6Sovereign: Vaelorn, the Wyrm-Ravager"
     subtitle: "Sovereign of the Last Shore. Level 70."
     icon: runeborn:wyrmfang_halberd
-    deps: [dragon, s1_forge/seal_deep]
+    deps: [dragon, hour_before, s1_forge/seal_deep]
     unlock: |
       Dragon's breath, in a bottle. That was sunlight, once. Vaelorn will smell it from the edge of the world and come to take it back. Open ground, Ashborn, and never in front of him. He rides like the last of something.
     shape: gear

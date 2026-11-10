@@ -157,7 +157,7 @@ quests:
     shape: hexagon
     size: 1.25
     desc: |
-      Every device from the rifts runs on &bFlux&r. A &6Flux Charger&r (four titanium, three cobalt, a furnace and a block of redstone) burns any furnace fuel (coal: 6,400 Flux) or a Rift Shard (40,000) and holds 100,000. Without a cable it beams the charge to the device in its slot, to the gear of anyone within 4 blocks, and to drones, mechs and skiffs within 8. A printed &6Flux Cell&r (two cobalt, four redstone, a wiring) tops up a robot or vehicle by hand.
+      Every device from the rifts runs on &bFlux&r. A &6Flux Charger&r (four titanium, three cobalt, a &6Combustion Generator&r from the Ashen Works and a block of redstone) burns any furnace fuel (coal: 6,400 Flux) or a Rift Shard (40,000) and holds 100,000. Without a cable it beams the charge to the device in its slot, to the gear of anyone within 4 blocks, and to drones, mechs and skiffs within 8. A printed &6Flux Cell&r (two cobalt, four redstone, a wiring) tops up a robot or vehicle by hand.
 
       &o"Same coal, same hunger as the generator in the Works. No cables. I hate it. Leave it on."&r &7— the Smith Under Ash&r
 
@@ -314,6 +314,8 @@ quests:
       &o"Every road in this world was earned at a shrine. These earn nothing. Earn the orichalcum, then."&r &7— the Keeper&r
 
       &7Make eight Rift Glass, print two Rift Gates and a Rift Tuner.
+
+      &7Keep a pane of Rift Glass back. It is the offering &6Vaelorn, the Wyrm-Ravager&7 answers (Act IV, &6The Hour Before&7).
     tasks: [{item: chronofall:rift_glass, count: 8}, {item: chronofall:rift_gate, count: 2}, {item: chronofall:rift_tuner}]
     rewards: [{item: minecraft:ender_pearl, count: 4}, {xp: 250}]
 

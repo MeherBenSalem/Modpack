@@ -31,6 +31,8 @@
         "",
         "&f&oSo hunt back. Varghast waits beyond the hunt, and the Frost Matron beyond him. Two more embers. Go and take them.\"&r",
         "",
+        "The Dusk Rider held one minute still for an age. With him fallen the nights turn again, and the first thing to turn is the moon.",
+        "",
         "The &cHunter's Moon&r is the Eclipse's tide: on its nights the dead rise in greater numbers and higher ranks, and the &cRemnants&r, the named ones, begin to walk."
       ],
       "tasks": [
@@ -81,11 +83,17 @@
       "rewards": [
         {
           "id": "s1_act2_hunt/hunters_moon/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment",
+          "count": 2
+        },
+        {
+          "id": "s1_act2_hunt/hunters_moon/reward1",
           "type": "random",
           "table": "tables/hunters_spoils"
         },
         {
-          "id": "s1_act2_hunt/hunters_moon/reward1",
+          "id": "s1_act2_hunt/hunters_moon/reward2",
           "type": "xp",
           "xp": 300
         }
@@ -124,11 +132,17 @@
       "rewards": [
         {
           "id": "s1_act2_hunt/grim_vigil/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment",
+          "count": 2
+        },
+        {
+          "id": "s1_act2_hunt/grim_vigil/reward1",
           "type": "random",
           "table": "tables/hunters_spoils"
         },
         {
-          "id": "s1_act2_hunt/grim_vigil/reward1",
+          "id": "s1_act2_hunt/grim_vigil/reward2",
           "type": "xp",
           "xp": 400
         }
@@ -300,7 +314,8 @@
       "x": 6,
       "y": -0.875,
       "dependencies": [
-        "s1_act2_hunt/champions_bane"
+        "s1_act2_hunt/champions_bane",
+        "s1_act3_deep/descent"
       ],
       "optional": true,
       "description": [
@@ -367,16 +382,22 @@
       "rewards": [
         {
           "id": "s1_act2_hunt/remnant/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment",
+          "count": 2
+        },
+        {
+          "id": "s1_act2_hunt/remnant/reward1",
           "type": "random",
           "table": "tables/hunters_spoils"
         },
         {
-          "id": "s1_act2_hunt/remnant/reward1",
+          "id": "s1_act2_hunt/remnant/reward2",
           "type": "item",
           "item": "runeborn:radiant_rune"
         },
         {
-          "id": "s1_act2_hunt/remnant/reward2",
+          "id": "s1_act2_hunt/remnant/reward3",
           "type": "xp",
           "xp": 500
         }
@@ -413,11 +434,17 @@
       "rewards": [
         {
           "id": "s1_act2_hunt/labyrinth/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment",
+          "count": 2
+        },
+        {
+          "id": "s1_act2_hunt/labyrinth/reward1",
           "type": "random",
           "table": "tables/hunters_spoils"
         },
         {
-          "id": "s1_act2_hunt/labyrinth/reward1",
+          "id": "s1_act2_hunt/labyrinth/reward2",
           "type": "xp",
           "xp": 300
         }
@@ -450,11 +477,17 @@
       "rewards": [
         {
           "id": "s1_act2_hunt/spire/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment",
+          "count": 2
+        },
+        {
+          "id": "s1_act2_hunt/spire/reward1",
           "type": "random",
           "table": "tables/hunters_spoils"
         },
         {
-          "id": "s1_act2_hunt/spire/reward1",
+          "id": "s1_act2_hunt/spire/reward2",
           "type": "xp",
           "xp": 300
         }
@@ -520,7 +553,9 @@
         "",
         "&7Gather six Fragments and an iron block.",
         "",
-        "&7Varghast's sigil needs the &6Seal of Dusk&7 in the grid too. It stays there."
+        "&7Varghast's sigil needs the &6Seal of Dusk&7 in the grid too. It stays there.",
+        "",
+        "&7From here on a Sovereign answers six Fragments, a token and an &6offering&7: one thing made by the living, to remind them what they owed. Varghast owed his soldiers. Bring a &6Warbanner&7 of the Ashen Company (gold around a black banner, on a stick; Maren sells them too). The sigil takes it with the &6Seal of Dusk&7, which stays."
       ],
       "tasks": [
         {
@@ -533,6 +568,11 @@
           "id": "s1_act2_hunt/varghast_fragments/task1",
           "type": "item",
           "item": "minecraft:iron_block"
+        },
+        {
+          "id": "s1_act2_hunt/varghast_fragments/task2",
+          "type": "item",
+          "item": "better_with_gold:warbanner"
         }
       ],
       "rewards": [
@@ -581,11 +621,17 @@
       "rewards": [
         {
           "id": "s1_act2_hunt/varghast/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment",
+          "count": 2
+        },
+        {
+          "id": "s1_act2_hunt/varghast/reward1",
           "type": "random",
           "table": "tables/sovereign_tribute"
         },
         {
-          "id": "s1_act2_hunt/varghast/reward1",
+          "id": "s1_act2_hunt/varghast/reward2",
           "type": "xp",
           "xp": 600
         }
@@ -649,7 +695,9 @@
         "",
         "&6Sylvara, Frost Matron&r, rules the &bRime Veil&r: the frozen lands where the last warmth of the old sun was buried and kept, like a seed nobody was allowed to plant. Her token is &bblue ice&r.",
         "",
-        "&7Before you call her, learn the cold. In the frozen peaks the &6Frostmaw&7 guards its ice crystal; under the ice, the &6Rimefrost Vaults&7 hold a Frost Lich."
+        "&7Before you call her, learn the cold. In the frozen peaks the &6Frostmaw&7 guards its ice crystal; under the ice, the &6Rimefrost Vaults&7 hold a Frost Lich.",
+        "",
+        "&7Her offering is the thing she buried: warmth. Brew a cup of &6Frostcap Tea&7 (two Frostcaps, sugar and a glass bottle). Frostcaps are the Mycelial Court's pale mushrooms, and they only grow in her own Rime Veil."
       ],
       "tasks": [
         {
@@ -662,6 +710,11 @@
           "type": "item",
           "item": "runeborn:sovereign_fragment",
           "count": 6
+        },
+        {
+          "id": "s1_act2_hunt/rime_veil/task2",
+          "type": "item",
+          "item": "spore_and_stem:frostcap_tea"
         }
       ],
       "rewards": [

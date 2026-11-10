@@ -145,11 +145,13 @@ quests:
     subtitle: "Something in the Ashlands kept its light."
     icon: elementals:fire_rune
     pos: [6, 1.75]
-    deps: [essence]
+    deps: [essence, s1_act4_ash/ashlands]   # Fire Golems and blazes live in the Ashlands
     desc: |
       In the &cAshlands&r, &6Fire Golems&r walk the wastes, the crimson forests and the basalt deltas. They're slow to die and slower to share.
 
       Each one drops &6Fire Runes&r and magma cream, and now and then a whole &6Remnant Tome&r. Blazes carry Fire Runes too.
+
+      &7A Fire Rune, a blaze rod, quartz and wheat seeds make a &6Fire Seed&7. Eat one to wake Pyromancy for free, and keep one: it is the offering &6Morgrath, Ash Sovereign&7 answers (Act IV, &6The Burning Crown&7).
     tasks: [{kill: elementals:fire_golem, count: 3}, {item: elementals:fire_rune, count: 2}]
     rewards: [{item: minecraft:magma_cream, count: 4}, {table: paths_star_cache}, {xp: 150}]
 

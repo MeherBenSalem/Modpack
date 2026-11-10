@@ -1,5 +1,37 @@
 ## 1.0.0-beta.12: Champion's Bane, for real
 
+### New: one road through every workshop
+
+- **Act I has a reason to hurry.** Kindle Last Light and a bell tolls that nobody rang. The old shrines did not go
+  cold by themselves: the Dusk Rider puts them out, and yours is now on his road (*The Road He Rides*). Each act's
+  opening and each Seal now says what the last Sovereign's fall set loose.
+- **Sovereign Fragments at the story's pace.** They used to come almost only from champions, about one monster in
+  three hundred. Now an **Elite** carries one about one time in four, a **Remnant** drops two, the main quests pay
+  them as you go, the Huntmaster's Contracts pay them for as long as you hunt, and finishing any three side chapters
+  pays six (*Every Hand at the Forge*).
+- **Offerings.** From Varghast on, a Sovereign answers six Fragments, a token and one thing made by the living, each
+  from a different corner of Last Light: a **Warbanner** (the Ashen Company), **Frostcap Tea** (the Mycelial Court),
+  a **Basic Energy Cell** (the Ashen Works), a **Poppet** (the Hollow Wood Coven), a **Fire Seed** (the Remnant
+  Constellation) and **Rift Glass** (Chronofall). Each is a plain recipe, given in the quest. The Dusk Rider's sigil
+  is unchanged.
+- **The workshops lean on each other.**
+  - The Ashen Works' **Machine Frame** is Ashen Alloy and iron around a pressed copper sheet, and its **Elite
+    Circuit** takes Moonsilver instead of diamonds.
+  - OmniVault's **Logic, Advanced and Quantum Processors** each take the Works' Basic, Advanced and Elite Circuit.
+  - Chronofall's **Flux Charger** is built on the Works' Combustion Generator.
+  - The Company's **Upgrade Template** takes one Duskforged Ingot.
+
+### Updating an existing world
+
+- Nothing you finished is undone: completed quests stay complete, and sigils, processors and frames you already
+  made still work. Only new crafts use the new recipes.
+- Three quests are new (*The Road He Rides*, *The Hour Before*, *Every Hand at the Forge*). A quest you had open
+  but not finished may show a lock again until its new step is done: *Six Pieces of the Sun* waits for *The Road He
+  Rides* (one click), *Vaelorn* for *The Hour Before*, the vault processors for the Works' circuits.
+- Two quests moved to where their materials are: *Fire Golems* (the Constellation) opens in the Ashlands, and
+  *Accept the Challenge* once you have found an ancient city.
+- The two new passages of the Keeper are text only for now; every recorded line is unchanged.
+
 ### Fixed
 
 - **Champion's Bane (Act I) would not complete for many players, and champions often dropped no Fragment.**

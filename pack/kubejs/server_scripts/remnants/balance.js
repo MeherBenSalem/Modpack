@@ -21,26 +21,36 @@ ServerEvents.tags('entity_type', function (event) {
 // popup (RPG Mobs') and dropped nothing, and the Act I quest, which waited for Runeborn's, never completed. Now:
 // - the quest reads remnant_mobs:champions_bane, the advancement the player really receives (s1_01_embers.yaml);
 // - the Fragment and Runeborn's feat follow RPG Mobs' own rule (its Rewards.killer and Rewards.onDeath), below;
+//   since beta 12 a Remnant drops two Fragments and an Elite sometimes carries one;
 // - Runeborn's feat is also granted whenever RPG Mobs' advancement is earned, and at login to anyone who already
 //   has it, so the two never disagree again, in old worlds too.
 var CHAMPION_ADVANCEMENT = 'remnant_mobs:champions_bane'
 var CHAMPION_FEAT = 'runeborn:feats/champion'
-var CHAMPION_RANK_TAGS = ['remnant_mobs.champion', 'remnant_mobs.remnant']   // champion rank or higher
-var CHAMPION_DATA_TAG = 'remnant_mobs:data|'    // remnant_mobs:data|level|rank|traits|seed|flags
-var CHAMPION_MINION_FLAG = 2                    // RPG Mobs' MobData.MINION: summoned by a trait, pays nothing
+var RANK_DATA_TAG = 'remnant_mobs:data|'        // remnant_mobs:data|level|rank|traits|seed|flags
+var RANK_MINION_FLAG = 2                        // RPG Mobs' MobData.MINION: summoned by a trait, pays nothing
 
-function championRanked(entity) {
-  var ranked = false
+// Sovereign Fragments by rank (design/PROGRESSION_GRAPH.md, "The Fragment budget"). The story asks for 55 of them,
+// and RPG Mobs raises a champion from about one spawn in three hundred, from mob level 15: far too few on their
+// own. Elites (one spawn in seventy, from level 8) carry a Fragment one time in four, so the hunt pays from Act I.
+var FRAGMENT_DROPS = {
+  'remnant_mobs.elite': { count: 1, chance: 0.25, champion: false },
+  'remnant_mobs.champion': { count: 1, chance: 1, champion: true },
+  'remnant_mobs.remnant': { count: 2, chance: 1, champion: true }
+}
+
+// The rank RPG Mobs gave a mob, or null for unranked mobs and trait-summoned minions.
+function fragmentRank(entity) {
+  var rank = null
   var minion = false
   entity.tags.forEach(function (tag) {
     tag = String(tag)
-    if (CHAMPION_RANK_TAGS.indexOf(tag) >= 0) ranked = true
-    if (tag.indexOf(CHAMPION_DATA_TAG) === 0) {
+    if (FRAGMENT_DROPS[tag]) rank = FRAGMENT_DROPS[tag]
+    if (tag.indexOf(RANK_DATA_TAG) === 0) {
       var flags = parseInt(tag.split('|')[5] || '0', 10)
-      if (!isNaN(flags) && (flags & CHAMPION_MINION_FLAG) !== 0) minion = true
+      if (!isNaN(flags) && (flags & RANK_MINION_FLAG) !== 0) minion = true
     }
   })
-  return ranked && !minion
+  return minion ? null : rank
 }
 
 // The player a kill belongs to, as RPG Mobs decides it: the attacker, or whoever hurt the mob last.
@@ -53,12 +63,15 @@ function championKiller(entity, source) {
 
 EntityEvents.death(function (event) {
   var e = event.entity
-  if (e.isPlayer() || !championRanked(e)) return
+  if (e.isPlayer()) return
+  var rank = fragmentRank(e)
+  if (!rank) return
   var killer = championKiller(e, event.source)
   if (!killer) return
   var server = event.server
-  server.runCommandSilent(`advancement grant ${killer.username} only ${CHAMPION_FEAT}`)
-  server.runCommandSilent(`execute in ${String(e.level.dimension)} run summon minecraft:item ${e.x} ${e.y + 0.5} ${e.z} {Item:{id:"runeborn:sovereign_fragment",count:1},PickupDelay:10}`)
+  if (rank.champion) server.runCommandSilent(`advancement grant ${killer.username} only ${CHAMPION_FEAT}`)
+  if (Math.random() >= rank.chance) return
+  server.runCommandSilent(`execute in ${String(e.level.dimension)} run summon minecraft:item ${e.x} ${e.y + 0.5} ${e.z} {Item:{id:"runeborn:sovereign_fragment",count:${rank.count}},PickupDelay:10}`)
 })
 
 PlayerEvents.advancement(function (event) {

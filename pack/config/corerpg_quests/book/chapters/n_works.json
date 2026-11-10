@@ -55,12 +55,16 @@
       "x": 2,
       "y": 0,
       "dependencies": [
-        "n_works/start"
+        "n_works/start",
+        "s1_forge/ashen_alloy",
+        "h_clockwork/press"
       ],
       "description": [
-        "Every machine in the Works starts as a &6Basic Machine Frame&r (eight iron around a copper ingot makes two) and thinks with a &6Basic Circuit&r (two copper, an iron and two redstone makes two).",
+        "Every machine in the Works starts as a &6Basic Machine Frame&r (four iron and four &6Ashen Alloy&r around a pressed &6copper sheet&r make two) and thinks with a &6Basic Circuit&r (two copper, an iron and two redstone makes two).",
         "",
-        "&7Make two frames and two circuits. You will want many more."
+        "&7Make two frames and two circuits. You will want many more.",
+        "",
+        "&7The engineers built on what the Forge gave them: the alloy from your basin, the sheet from your press. The vaults return the favour: OmniVault's &6Logic Processor&7 thinks with one of these circuits."
       ],
       "tasks": [
         {
@@ -384,7 +388,9 @@
         "",
         "A &6Basic Energy Cell&r stores 1M FE and moves 2k FE/t: every face takes energy in, the front pushes it out. It keeps its charge when you break it, so the furnaces keep working through the night.",
         "",
-        "&7Run sixteen cables and build a Basic Energy Cell."
+        "&7Run sixteen cables and build a Basic Energy Cell.",
+        "",
+        "&7Build a second cell when you reach the sea. A Basic Energy Cell is the offering &6Kaelthar the Stormcaller&7 answers (Act III, &6The Drowned Sky&7)."
       ],
       "tasks": [
         {
@@ -647,7 +653,7 @@
       "description": [
         "&o\"Anyone who can't make the Forge's third alloy has no business holding sixty-four million of anything.\"&r &7— the Smith Under Ash&r",
         "",
-        "&6Ender Alloy&r comes out of the Alloy Smelter (an Energized Ingot and an ender pearl). Two diamonds, two Advanced Circuits and one Ender Alloy make an &6Elite Circuit&r, the brain of the Works' last tier.",
+        "&6Ender Alloy&r comes out of the Alloy Smelter (an Energized Ingot and an ender pearl). Two &6Moonsilver Ingots&r, two Advanced Circuits and one Ender Alloy make an &6Elite Circuit&r, the brain of the Works' last tier.",
         "",
         "&7Make four Ender Alloy Ingots and an Elite Circuit."
       ],

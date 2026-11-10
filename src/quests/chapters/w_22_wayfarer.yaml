@@ -309,5 +309,7 @@ quests:
       The witches are gone. The house is still warm. Don't wonder why.
 
       &7Find the Gingerbread House.
+
+      &7The Coven leaves a &6Poppet&7 on the sill for whoever finds the house: wheat and string around an amethyst shard, a doll that stands in for a person. It is the offering &6Ysolde, the Crimson Bloom&7 answers (Act III, &6The Scarlet Garden&7).
     tasks: [{structure: "christmas_ginger_house:christmas_ginger_house", title: "Find the Gingerbread House"}]
-    rewards: [{table: world_wayfarer_pack}, {item: minecraft:cookie, count: 16}, {xp: 200}]
+    rewards: [{item: better_witch_huts:poppet}, {table: world_wayfarer_pack}, {item: minecraft:cookie, count: 16}, {xp: 200}]

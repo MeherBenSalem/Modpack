@@ -70,6 +70,23 @@ for a second one. Every seal also takes a dish from the Hearth's kitchens, so co
 - **Omnium without the Nether.** A Create mixing recipe makes Omnium dust from amethyst, redstone and a Remnant
   Shard, so Tier II storage doesn't wait for Nether quartz.
 
+**One road through every workshop (beta 12)**
+
+The whole dependency graph, with every gated recipe and what it needs, is in
+[`PROGRESSION_GRAPH.md`](PROGRESSION_GRAPH.md); `tools/validate_pack.py` checks it against the game's real recipes.
+What beta 12 added to the Forge:
+
+- **The Ashen Works on the tiers.** A Basic Machine Frame is Ashen Alloy and iron around a pressed copper sheet; the
+  Elite Circuit takes Moonsilver in place of diamonds.
+- **The vaults think with the Works' circuits.** OmniVault's Logic, Advanced and Quantum Processors each take the
+  Works' Basic, Advanced and Elite Circuit.
+- **Chronofall runs on the Works.** The Flux Charger is built on a Combustion Generator.
+- **The Company's gold is Act II gear.** The Upgrade Template takes a Duskforged Ingot, like diamond gear.
+- **Offerings.** From Varghast on, a sigil is six Fragments, the token, the seal and one offering made in a side
+  workshop: a Warbanner, Frostcap Tea, a Basic Energy Cell, a Poppet, a Fire Seed, Rift Glass.
+- **Fragments at the story's pace.** Elites carry one about one time in four, a Remnant drops two, main-line quests
+  and the Contracts pay them, and finishing any three side chapters pays six.
+
 **How long it takes (one player, first run)**
 
 | Part | Levels | Hours | What eats the time |
@@ -112,3 +129,5 @@ lustrous stone every 10) instead of RPG Stats' default diamonds and diamond armo
 - Bag drop rate: `config/mob_loot_bags/drops.json` (`global_multiplier: 0.75`); bag contents: `src/data/loot_bags.yaml`
 - Forge costs and what each tier gates: `src/progression.yaml` (then `python3 tools/build_progression.py`)
 - Echo strength: `ECHO_HEALTH_BONUS` / `ECHO_DAMAGE_BONUS` in `kubejs/server_scripts/remnants/echo.js`
+- Sovereign Fragments by rank: `FRAGMENT_DROPS` in `kubejs/server_scripts/remnants/balance.js`; the share quests must
+  guarantee: `fragments.guaranteed_share` in `src/progression.yaml`

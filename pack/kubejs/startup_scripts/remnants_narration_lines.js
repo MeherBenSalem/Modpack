@@ -1132,6 +1132,7 @@ global.REMNANTS_UNLOCKS = {
       "quest": "s1_act4_ash/vaelorn",
       "deps": [
         "s1_act4_ash/dragon",
+        "s1_act4_ash/hour_before",
         "s1_forge/seal_deep"
       ],
       "line": "s1_act4_ash_vaelorn_unlock"
@@ -1142,6 +1143,18 @@ global.REMNANTS_UNLOCKS = {
       "quest": "s1_act4_ash/vaelorn",
       "deps": [
         "s1_act4_ash/dragon",
+        "s1_act4_ash/hour_before",
+        "s1_forge/seal_deep"
+      ],
+      "line": "s1_act4_ash_vaelorn_unlock"
+    }
+  ],
+  "s1_act4_ash/hour_before": [
+    {
+      "quest": "s1_act4_ash/vaelorn",
+      "deps": [
+        "s1_act4_ash/dragon",
+        "s1_act4_ash/hour_before",
         "s1_forge/seal_deep"
       ],
       "line": "s1_act4_ash_vaelorn_unlock"

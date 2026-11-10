@@ -157,12 +157,54 @@
       "completion_command": "remnants_vo completed {team} {quest}"
     },
     {
+      "id": "s1_act1_embers/riders_road",
+      "title": "&6The Road He Rides",
+      "subtitle": "Why the old shrines went cold.",
+      "icon": "minecraft:bell",
+      "x": 6,
+      "y": -4.375,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "s1_act1_embers/kindle"
+      ],
+      "description": [
+        "&6The Keeper&r",
+        "",
+        "&f&o\"Listen. The bell. Nobody in this village rang it.&r",
+        "",
+        "&f&oDo you know why the old shrines went cold, Ashborn? Nobody put them out. Somebody came by at dusk, every dusk, and ended the day there. He keeps the hours for a Crown that isn't listening, and a lit shrine is an hour that won't end when he says so.&r",
+        "",
+        "&f&oYou have put Last Light on his road. Tonight, or the night after, the Dusk Rider comes to close it.\"&r",
+        "",
+        "The &6Dusk Rider&r is the first of the seven, and the only one still doing his duty: he rides at the minute the sun went out and puts out whatever is still burning. Every shrine the heralds built went cold that way. Last Light is next on his rounds.",
+        "",
+        "You cannot outrun him and you cannot hide a fire. You can call him first: on your ground, at your hour, with a &6Sigil&r made of six &6Sovereign Fragments&r, his token and an alloy from the &6Ember Forge&r. Every quest in this act is a step toward that.",
+        "",
+        "&7He already rides some nights. If you hear hooves before you are ready, stay near the shrine and roll &othrough&7 the charge."
+      ],
+      "tasks": [
+        {
+          "id": "s1_act1_embers/riders_road/task0",
+          "type": "checkmark",
+          "title": "Read the Keeper's warning"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_act1_embers/riders_road/reward0",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
       "id": "s1_act1_embers/level_up",
       "title": "Spend Your Light",
       "subtitle": "Runes become strength at the shrine.",
       "icon": "runeborn:heros_rune",
       "x": 6,
-      "y": -3.5,
+      "y": -2.625,
       "dependencies": [
         "s1_act1_embers/kindle"
       ],
@@ -241,7 +283,7 @@
       "subtitle": "Two fires, one road.",
       "icon": "minecraft:campfire",
       "x": 6,
-      "y": -1.75,
+      "y": -0.875,
       "dependencies": [
         "s1_act1_embers/kindle"
       ],
@@ -288,7 +330,7 @@
       "subtitle": "They fight for gold, not causes.",
       "icon": "better_with_gold:warbanner",
       "x": 6,
-      "y": 0,
+      "y": 0.875,
       "dependencies": [
         "s1_act1_embers/kindle"
       ],
@@ -344,14 +386,16 @@
       "subtitle": "Kill something that has died before.",
       "icon": "remnant_mobs:remnant_shard",
       "x": 6,
-      "y": 1.75,
+      "y": 2.625,
       "dependencies": [
         "s1_act1_embers/kindle"
       ],
       "description": [
         "An Elite has risen three times. Each death took something human from it and gave back something worse. It carries a blue crest and two traits.",
         "",
-        "&7Elites pay triple experience, extra loot, a Remnant Shard and bonus Valor. Kill one."
+        "&7Elites pay triple experience, extra loot, a Remnant Shard and bonus Valor. Kill one.",
+        "",
+        "&7Elites sometimes carry a &6Sovereign Fragment&7, about one time in four. Your first is on the Keeper."
       ],
       "tasks": [
         {
@@ -364,11 +408,16 @@
       "rewards": [
         {
           "id": "s1_act1_embers/proven_hunter/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment"
+        },
+        {
+          "id": "s1_act1_embers/proven_hunter/reward1",
           "type": "random",
           "table": "tables/hunters_spoils"
         },
         {
-          "id": "s1_act1_embers/proven_hunter/reward1",
+          "id": "s1_act1_embers/proven_hunter/reward2",
           "type": "xp",
           "xp": 150
         }
@@ -380,7 +429,7 @@
       "subtitle": "The dead hoard.",
       "icon": "mob_loot_bags:commonlootbag",
       "x": 6,
-      "y": 3.5,
+      "y": 4.375,
       "dependencies": [
         "s1_act1_embers/kindle"
       ],
@@ -442,11 +491,16 @@
       "rewards": [
         {
           "id": "s1_act1_embers/first_dungeon/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment"
+        },
+        {
+          "id": "s1_act1_embers/first_dungeon/reward1",
           "type": "random",
           "table": "tables/wanderers_cache"
         },
         {
-          "id": "s1_act1_embers/first_dungeon/reward1",
+          "id": "s1_act1_embers/first_dungeon/reward2",
           "type": "xp",
           "xp": 120
         }
@@ -482,11 +536,17 @@
       "rewards": [
         {
           "id": "s1_act1_embers/dungeon_trail/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment",
+          "count": 2
+        },
+        {
+          "id": "s1_act1_embers/dungeon_trail/reward1",
           "type": "random",
           "table": "tables/hunters_spoils"
         },
         {
-          "id": "s1_act1_embers/dungeon_trail/reward1",
+          "id": "s1_act1_embers/dungeon_trail/reward2",
           "type": "xp",
           "xp": 200
         }
@@ -523,6 +583,11 @@
       "rewards": [
         {
           "id": "s1_act1_embers/champion/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment"
+        },
+        {
+          "id": "s1_act1_embers/champion/reward1",
           "type": "xp",
           "xp": 150
         }
@@ -537,7 +602,8 @@
       "x": 10,
       "y": 0.875,
       "dependencies": [
-        "s1_act1_embers/champion"
+        "s1_act1_embers/champion",
+        "s1_act1_embers/riders_road"
       ],
       "description": [
         "&6The Keeper&r &e♪",
@@ -546,7 +612,9 @@
         "",
         "The first Sovereign is the &6Dusk Rider&r, Who Rides When Light Fails: herald of evening, keeper of the Crown's hours. His token is a &6clock&r. He never forgot what time it was when the sun went out.",
         "",
-        "&7Gather six &6Sovereign Fragments&7 and a clock."
+        "&7Gather six &6Sovereign Fragments&7 and a clock.",
+        "",
+        "&7Where Fragments come from: every &5champion&7 drops one and a &cRemnant&7 two, an &9Elite&7 about one time in four, and the quests on this road pay them (your first Elite, your first dungeon, the Smuggler's Villa, your first champion). Rare loot bags and the Huntmaster's &6Contracts&7 pay the rest."
       ],
       "tasks": [
         {

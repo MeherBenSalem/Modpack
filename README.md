@@ -10,7 +10,7 @@ a world whose sun was eaten; relight it one Ember Shrine and one Sovereign at a 
 
 | Path | What it is |
 |---|---|
-| `design/` | Story bible, progression and mechanics design |
+| `design/` | Story bible, progression and mechanics design; [`design/PROGRESSION_GRAPH.md`](design/PROGRESSION_GRAPH.md) is the dependency graph of the whole pack |
 | `src/mods.json` | The curated mod list (source of truth): Modrinth and CurseForge ids, sides, reasons |
 | `src/quests/` | Quests as readable YAML: chapters, groups, reward tables |
 | `src/pack.json` | Pack name, version, Minecraft and NeoForge versions |
@@ -29,6 +29,8 @@ a world whose sun was eaten; relight it one Ember Shrine and one Sovereign at a 
 | `tools/build_threshold.py` | Writes the Threshold (the first-join starting area): dimension, build function, advancements, layout |
 | `tools/build_voice.py` | Masters the Keeper's narration (`src/voice/`) into `kubejs/assets/remnants/sounds/vo/` |
 | `tools/check_cf.py` | Checks every CurseForge project/file id against the live project before an export |
+| `tools/dump_live.py` | Boots the server pack once with a dev-only script and records what the game really registers (ids, tags, every recipe after KubeJS, loot tables) in `research/registry/live/` |
+| `tools/validate_pack.py`, `src/validation.yaml` | Checks the quests, the Ember Forge and the progression graph against that record: book in sync, no cycles, every id real, every asked-for item obtainable and available by its act, every gate craftable in time, the Fragment budget. `--why <item>` explains how an item is obtained |
 | `tools/publish_cf.py`, `tools/publish_mr.py` | Upload a release to CurseForge (modpack zip + server pack) and Modrinth (`.mrpack`); run by the "Publish to CurseForge" and "Publish to Modrinth" workflows |
 
 ## Build
@@ -36,6 +38,7 @@ a world whose sun was eaten; relight it one Ember Shrine and one Sovereign at a 
 ```bash
 python3 tools/dump_recipes.py && python3 tools/build_progression.py   # the Ember Forge -> kubejs
 python3 tools/build_quests.py --check   # quests -> pack/config/corerpg_quests/book
+python3 tools/validate_pack.py          # the whole graph against the game's real recipes (after a mod update: tools/dump_live.py first)
 python3 tools/build_pack.py --export    # pack/ + dist/*-curseforge.zip, dist/*.mrpack, dist/*-server.zip
 python3 tools/test_server.py            # boot the server pack (Java 21); --hold 900 keeps it up for a join
 python3 tools/test_client.py --server localhost:25599 --curseforge --xmx 5G   # headless client joins it

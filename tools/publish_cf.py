@@ -10,6 +10,7 @@ set to the modpack file, which is how CurseForge attaches server packs. The toke
 `--dry-run` prints the metadata and stops before uploading.
 """
 import argparse
+import time
 import json
 import os
 import sys
@@ -69,6 +70,8 @@ def main():
     ap.add_argument("--project", type=int, required=True)
     ap.add_argument("--changelog", required=True, help="markdown file with the patch notes")
     ap.add_argument("--release-type", default="beta", choices=["alpha", "beta", "release"])
+    ap.add_argument("--server-for", type=int, metavar="FILE_ID",
+                    help="upload only the server pack, under this already uploaded modpack file")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
     token = os.environ.get("CF_API_TOKEN", "").strip()
@@ -90,6 +93,8 @@ def main():
         print(json.dumps({"client": client.name, "server": server.name, "pack": {**pack_meta, "changelog": "..."},
                           "server_pack": {**server_meta, "changelog": "..."}}, indent=1))
         return
+    if args.server_for:
+        return upload_server(token, args.project, server_meta, server, args.server_for)
     mc_ids, neo_ids = game_version_ids(token, meta["minecraft"])
     status, text = 0, ""
     for versions in (mc_ids + neo_ids, mc_ids):          # modpacks may refuse a loader version; retry without it
@@ -100,9 +105,24 @@ def main():
         sys.exit(f"modpack upload failed: HTTP {status}: {text[:500]}")
     file_id = json.loads(text)["id"]
     print(f"modpack file {file_id} uploaded")
-    status, text = upload(token, args.project, {**server_meta, "parentFileID": file_id}, server)
+    upload_server(token, args.project, server_meta, server, file_id)
+
+
+def upload_server(token, project, server_meta, server, file_id):
+    """Attach the server pack to modpack file `file_id`. A server error (5xx) is retried twice: the modpack file is
+    already up, so starting over would upload it a second time. If it still fails, run the workflow again with
+    server_for set to file_id."""
+    status, text = 0, ""
+    for attempt in range(3):
+        if attempt:
+            print(f"HTTP {status}; retrying in {30 * attempt} s", flush=True)
+            time.sleep(30 * attempt)
+        status, text = upload(token, project, {**server_meta, "parentFileID": file_id}, server)
+        if status < 500:
+            break
     if status != 200:
-        sys.exit(f"server pack upload failed (the modpack file {file_id} is up): HTTP {status}: {text[:500]}")
+        sys.exit(f"server pack upload failed (the modpack file {file_id} is up; rerun with server_for={file_id}): "
+                 f"HTTP {status}: {text[:500]}")
     print(f"server pack file {json.loads(text)['id']} uploaded under {file_id}")
 
 

@@ -14,6 +14,10 @@ on:
         description: alpha, beta or release
         required: true
         default: beta
+      server_for:
+        description: Only attach the server pack to this already uploaded modpack file id (after a failed server upload)
+        required: false
+        default: ""
 
 jobs:
   publish:
@@ -32,9 +36,10 @@ jobs:
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN || secrets.CURSEFORGE_API_TOKEN || secrets.CURSEFORGE_TOKEN || secrets.CF_TOKEN || secrets.CF_API_KEY || secrets.CURSEFORGE_API_KEY || secrets.CURSEFORGE_KEY }}
           CHANGELOG: ${{ inputs.changelog }}
           RELEASE_TYPE: ${{ inputs.release_type }}
+          SERVER_FOR: ${{ inputs.server_for }}
         run: |
           if [ -z "$CF_API_TOKEN" ]; then
             echo "No CurseForge token secret found (expected CF_API_TOKEN or CURSEFORGE_API_TOKEN)." >&2
             exit 1
           fi
-          python3 tools/publish_cf.py --project 1772691 --changelog "$CHANGELOG" --release-type "$RELEASE_TYPE"
+          python3 tools/publish_cf.py --project 1772691 --changelog "$CHANGELOG" --release-type "$RELEASE_TYPE" ${SERVER_FOR:+--server-for "$SERVER_FOR"}

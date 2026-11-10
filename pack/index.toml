@@ -1041,8 +1041,24 @@ file = "kubejs/assets/remnants/sounds.json"
 hash = "7d2340f559acad8119501896cccf61192750b5ce6dc13703c065cfe472df4e4c"
 
 [[files]]
+file = "kubejs/assets/remnants/textures/gui/sprites/sponsor/apex_icon.png"
+hash = "d40cc032ca9ae53f29a44bc997a609fea457fa27abaaf1ac0a45ca1948622c0b"
+
+[[files]]
+file = "kubejs/assets/remnants/textures/gui/sprites/sponsor/need_a_server.png"
+hash = "ed8f714f71f8b228d92eaaa99bed24f96a7616c5e08c68afb3451395ddd9f161"
+
+[[files]]
+file = "kubejs/assets/remnants/textures/gui/sprites/sponsor/need_a_server_hover.png"
+hash = "8f07727df6d4a8ff476bd99d03021fd108f742311382c744e8c9af04bbe76d2b"
+
+[[files]]
 file = "kubejs/assets/remnants/textures/item/ember_seal.png"
 hash = "0d19566b0a668750a5f4c1d368b472cc7f989cb3e554edba18d07d1b6c31d84a"
+
+[[files]]
+file = "kubejs/client_scripts/remnants/community.js"
+hash = "73174865ec42d499f7d6072c3521fb5ba4eb02a1c4e5cfada61ea9ecd6ea02cb"
 
 [[files]]
 file = "kubejs/client_scripts/remnants/forge_tooltips.js"

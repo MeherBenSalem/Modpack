@@ -21,6 +21,15 @@
   - Chronofall's **Flux Charger** is built on the Works' Combustion Generator.
   - The Company's **Upgrade Template** takes one Duskforged Ingot.
 
+### New: a place to play together
+
+- **The NightBeam Community Server is in your Multiplayer list.** The first time this version starts, the pack adds
+  `sv6af1d94aa636b.apexmc.co:1376` below your own servers. It never touches the servers you already have, and if you
+  delete the entry it stays gone, through later updates too.
+- **"Need a server?"** A small button on the title screen (bottom right) and on the Multiplayer screen (top right)
+  opens the page of Apex Hosting, the pack's sponsor, through Minecraft's usual "open this link?" screen. The code
+  **APEX25** takes 25% off a new server there. Dedicated servers are not changed by any of this.
+
 ### Updating an existing world
 
 - Nothing you finished is undone: completed quests stay complete, and sigils, processors and frames you already

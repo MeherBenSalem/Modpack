@@ -3,7 +3,9 @@
 <head>
 <meta charset="utf-8">
 <!-- Remnants S1 art: the logo (transparent) and the menu/title-card composites (the icon is src/icon.html).
-     Rendered by art/render.cjs; #view=logo|menu|card|menu2|btn picks the piece. Fonts are SIL OFL (art/fonts). -->
+     Rendered by art/render.cjs; #view=logo|menu|card|menu2|btn|sponsor|apexicon picks the piece. Fonts are SIL OFL
+     (art/fonts). The sponsor pieces show the supplied Apex Hosting banner (art/sponsors/) through a window: the
+     logo's cube mark is cropped from it, never redrawn. -->
 <style>
   @font-face { font-family: "Cinzel Decorative"; font-weight: 900; src: url("../fonts/CinzelDecorative-Black.ttf"); }
   @font-face { font-family: "Cinzel Decorative"; font-weight: 700; src: url("../fonts/CinzelDecorative-Bold.ttf"); }
@@ -17,7 +19,8 @@
   .piece { display: none; position: relative; overflow: hidden; }
   body[data-view="logo"] #logo,
   body[data-view="menu"] #menu, body[data-view="card"] #card,
-  body[data-view="menu2"] #menu2, body[data-view="btn"] #btn { display: block; }
+  body[data-view="menu2"] #menu2, body[data-view="btn"] #btn,
+  body[data-view="sponsor"] #sponsor, body[data-view="apexicon"] #apexicon { display: block; }
 
   /* ---------- logo ---------- */
   #logo { width: 1600px; height: 700px; }
@@ -76,6 +79,27 @@
   #btn .rule.t { top: 12px; } #btn .rule.b { bottom: 12px; }
   #btn .gem { top: 50%; width: 11px; height: 11px; margin-top: -5.5px; background: #f2c45a; transform: rotate(45deg);
     box-shadow: 0 0 10px rgba(255,150,50,.9); }
+  /* ---------- the sponsor entry: 736x120 (184x30 GUI units at 4x), bottom-right of the title screen. The mark is a
+     32x32 window on the supplied banner (the cube between APEX and HOSTING, at 725,28), scaled up, never redrawn. */
+  .apex-mark { background-image: url("../sponsors/apex-hosting-banner-849x141.png"); background-repeat: no-repeat;
+    --k: calc(var(--side) / 32); background-size: calc(849px * var(--k)) calc(141px * var(--k));
+    background-position: calc(-725px * var(--k)) calc(-28px * var(--k)); width: calc(var(--side) * 1px); height: calc(var(--side) * 1px); }
+  #apexicon { width: 64px; height: 64px; }
+  #apexicon .apex-mark { --side: 64; }
+  #sponsor { width: 736px; height: 120px; background: transparent; }
+  #sponsor .apex-mark { --side: 84; position: absolute; left: 16px; top: 18px; border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.8); }
+  #sponsor .lines { position: absolute; left: 122px; top: 0; bottom: 0; right: 8px; display: flex; flex-direction: column; justify-content: center; }
+  #sponsor .ask { font-family: "Cinzel"; font-weight: 600; font-size: 40px; letter-spacing: 6px; line-height: 46px; white-space: nowrap;
+    color: rgb(185,176,160); text-shadow: 0 2px 6px rgba(0,0,0,.95); }
+  #sponsor .by { font-family: "Garamond"; font-style: italic; font-size: 34px; line-height: 36px; white-space: nowrap;
+    color: #a39a88; text-shadow: 0 2px 6px rgba(0,0,0,.95); }
+  #sponsor .underline { position: absolute; left: 122px; right: 24px; bottom: 10px; height: 2px; display: none;
+    background: linear-gradient(90deg, rgba(242,196,90,.95), rgba(255,228,168,1) 40%, transparent); }
+  #sponsor.hover .ask { color: rgb(255,243,214); text-shadow: 0 0 14px rgba(255,190,90,.55), 0 2px 6px rgba(0,0,0,.95); }
+  #sponsor.hover .by { color: #d9b77a; }
+  #sponsor.hover .underline { display: block; }
+  #sponsor.hover .apex-mark { box-shadow: 0 0 14px rgba(255,190,90,.55), 0 2px 8px rgba(0,0,0,.8); }
   #card .tag { position: absolute; left: 0; right: 0; bottom: 70px; text-align: center; font-family: "Garamond"; font-style: italic;
     font-size: 40px; color: #f3dfb0; text-shadow: 0 2px 10px rgba(0,0,0,.95); }
 </style>
@@ -150,11 +174,15 @@
 
 <div id="btn" class="piece"><div class="glow"></div><div class="rule t"></div><div class="rule b"></div><div class="gem l"></div><div class="gem r"></div><div class="label"><span id="btn-label"></span></div></div>
 
+<div id="sponsor" class="piece"><div class="apex-mark"></div><div class="lines"><div class="ask">NEED A SERVER?</div><div class="by">Sponsored by Apex Hosting</div></div><div class="underline"></div></div>
+<div id="apexicon" class="piece"><div class="apex-mark"></div></div>
+
 <script>
   const p = new URLSearchParams(location.hash.slice(1));
   document.body.dataset.view = p.get('view') || 'logo';
   if (p.get('label')) document.getElementById('btn-label').textContent = p.get('label')
   if (p.get('state') === 'hover') document.getElementById('btn').classList.add('hover')
+  if (p.get('state') === 'hover') document.getElementById('sponsor').classList.add('hover')
   if (p.get('view') === 'btn') document.fonts.ready.then(() => {   // lay the hover frame out around the measured word
     const btn = document.getElementById('btn'), label = document.getElementById('btn-label');
     const t = p.get('state') === 'hover' ? Math.min(1, Math.max(0, +(p.get('t') ?? 1))) : 0;

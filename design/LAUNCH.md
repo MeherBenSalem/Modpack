@@ -19,6 +19,33 @@
   human-made art.
 - CurseForge: check its current content and AI-disclosure rules at upload time and disclose the same way.
 
+## Community server and sponsor (Apex Hosting)
+
+- **What players get.** The NightBeam Community Server (`sv6af1d94aa636b.apexmc.co:1376`) appears in the Multiplayer
+  list, and a "Need a server?" button on the title screen and on the Multiplayer screen opens
+  https://apexhost.gg/NightBeam through Minecraft's own link confirmation. Name, address and link are the four
+  constants at the top of `pack/kubejs/client_scripts/remnants/community.js`.
+- **How the server entry is added.** A `servers.dat` in the pack's overrides would replace the player's own list on
+  the first install and again on every update, so the pack ships none. The client script loads the player's list
+  with the game's own `ServerList`, appends the entry only if that address is not already there, saves, and writes
+  `local/remnants/community_server.json` (a folder the pack never ships, so launchers leave it alone). While that
+  marker names the current address the script does nothing: a player who deletes the entry does not get it back,
+  on the next start or the next pack version. Change the address in a later version and it is offered once more.
+- **Dedicated servers are not touched.** Client scripts and assets are in `CLIENT_ONLY` in `tools/build_pack.py`,
+  so the server zip has neither the script nor the sprites.
+- **The Apex mark is a crop of the banner Apex supplied** (`art/sponsors/`), not a drawing of their logo
+  (`art/README.md`).
+- **Platform rules** (checked 2026-11-10; details in `marketing/README.md`):
+  - CurseForge wants hosting banners and server promotion at the bottom of the description, so that is where
+    `marketing/CURSEFORGE.md` has them. Its policy also says CurseForge expects authors not to "interfere with the
+    players' in-game experience" with ads. The button is one quiet menu entry with no pop-up, like the host buttons
+    many large packs carry, but that sentence is a moderator's call: if CurseForge objects, delete
+    `community.js` and the pack is back to the plain menu.
+  - Modrinth needs its advertising disclosure switched on for this project (project settings), because the pack
+    carries a sponsor button and a sponsored server entry.
+- **Before the release that carries this,** set the community server up on the Apex panel with the server zip of the
+  same version (checklist in the pull request that added this section), and join it once from a fresh install.
+
 ## Licences
 
 - Several mods forbid re-hosting or only allow links: FancyMenu, Drippy Loading Screen, LambDynamicLights, Fresh

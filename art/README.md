@@ -12,6 +12,9 @@ The icon, logo, main-menu background and title card for Season 1. Everything is 
 | `shots/ember_shrine_sunset.png` | 1920×1080 | The in-game shot: an Ashborn-armoured stand at an Ember Shrine at sunset |
 | `out/menu_background_dark.png` | 1920×1080 | The title screen and loading screen plate: the shot darkened, the logo centred |
 | `out/menu/btn_<entry>_<normal\|hover>.png` | 640×64 | Text-only menu entries; hover adds the gold glow and rules |
+| `out/menu/btn_server_<normal\|hover>.png` | 736×120 | The "Need a server?" entry of the title screen (184×30 GUI units at 4×): the menu's own lettering, "Sponsored by Apex Hosting" under it and the Apex mark |
+| `out/sponsor/apex_icon.png` | 64×64 | The Apex mark alone, for the button on the Multiplayer screen |
+| `sponsors/apex-hosting-banner-849x141.png` | 849×141 | The banner Apex Hosting supplied. The store pages link it as it is, and the Apex mark above is a crop of it (`.apex-mark` in `src/art.html`), never a redrawn logo |
 | `out/sounds/ui_hover.ogg`, `ui_click.ogg` | | Synthesised here (`numpy`): a soft chime and a struck bell |
 | `out/loading_bar_frame.png`, `loading_bar_fill.png` | 1200×40 | The loading screen's thin gold bar |
 
@@ -19,7 +22,8 @@ The icon, logo, main-menu background and title card for Season 1. Everything is 
 
 ```bash
 node art/render.cjs art/shots/ember_shrine_sunset.png   # art/out/*.png
-python3 tools/build_menu.py                              # pack/config/fancymenu/ (layout + assets)
+node art/render.cjs --sponsor                            # only the sponsor button and the Apex mark
+python3 tools/build_menu.py                              # pack/config/fancymenu/ (layout + assets) and the sponsor sprites
 python3 tools/test_client.py --menu --size 1920x1080     # screenshot of the real title screen: run/client/menu.png
 ```
 
@@ -28,7 +32,10 @@ To use a different background, take a 1920×1080 screenshot in the pack (F1 hide
 
 The small icon buttons (Create, language, Supplementaries, accessibility) sit in the bottom-left corner, placed by
 `pack/kubejs/client_scripts/remnants/title_menu.js`, because FancyMenu 3.9.14 can't target the 1.21.1 language and
-accessibility buttons. The eclipsed sun in the sky is `pack/kubejs/assets/minecraft/textures/environment/sun.png`.
+accessibility buttons. The "Need a server?" button is not a FancyMenu element either: `tools/build_menu.py` copies its sprites to
+`pack/kubejs/assets/remnants/textures/gui/sprites/sponsor/` and
+`pack/kubejs/client_scripts/remnants/community.js` adds a vanilla button on the title screen and on the Multiplayer
+screen (see "Community server and sponsor" in `design/LAUNCH.md`). The eclipsed sun in the sky is `pack/kubejs/assets/minecraft/textures/environment/sun.png`.
 
 ## Fonts
 

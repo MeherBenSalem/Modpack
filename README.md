@@ -26,6 +26,7 @@ a world whose sun was eaten; relight it one Ember Shrine and one Sovereign at a 
 | `tools/test_client.py` | Boots the real client headless (Xvfb); `--menu` screenshots the title screen, `--server host:port` joins a server |
 | `art/` | Pack icon, logo, menu background and title card ([`art/README.md`](art/README.md)) |
 | `tools/build_menu.py` | Writes the FancyMenu title screen and Drippy loading screen (`pack/config/fancymenu/`) from `art/out/` |
+| `pack/kubejs/client_scripts/remnants/community.js` | Adds the NightBeam Community Server to the Multiplayer list once per install and the "Need a server?" sponsor button (`design/LAUNCH.md`) |
 | `tools/build_threshold.py` | Writes the Threshold (the first-join starting area): dimension, build function, advancements, layout |
 | `tools/build_voice.py` | Masters the Keeper's narration (`src/voice/`) into `kubejs/assets/remnants/sounds/vo/` |
 | `tools/check_cf.py` | Checks every CurseForge project/file id against the live project before an export |

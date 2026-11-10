@@ -1,0 +1,77 @@
+# What tools/validate_pack.py cannot see in the game's recipes and loot tables.
+#
+# `granted`: items the game or a mod hands out in code (a boss drop, a machine whose recipes are compiled into the
+# mod, a merchant, something that ripens in the world). Each group says how a survival player gets them. The
+# validator treats them as obtainable; everything else must come from a recipe, a loot table or a generated block.
+# Add an item here only after checking the source in the mod (its jar, its docs or in game), and say where.
+granted:
+  - reason: >-
+      Sold by the Ember Shrine's merchant for runes: Runeborn's Common and Rare armaments
+      (io.nightbeam.runeborn.core.shop.Merchant lists every weapon of those two rarities; Runeborn 3.0.0).
+    items: [runeborn:ashborn_club, runeborn:astral_staff, runeborn:banneret_greatsword,
+            runeborn:beast_claws, runeborn:crystal_spire_staff, runeborn:cutthroat_kris,
+            runeborn:desert_shamshir, runeborn:duelist_scimitar, runeborn:emberbrand,
+            runeborn:errant_longsword, runeborn:executioner_greataxe, runeborn:fangtooth_cleaver,
+            runeborn:flame_prayer_seal, runeborn:golden_rite_seal, runeborn:grave_scythe,
+            runeborn:gravebound_staff, runeborn:hallowed_lance, runeborn:hellbrand,
+            runeborn:hexblade_estoc, runeborn:highland_claymore, runeborn:hollow_monk_staff,
+            runeborn:iron_warhammer, runeborn:ironbound_knuckles, runeborn:jawbone_axe,
+            runeborn:longfang_nodachi, runeborn:magma_falchion, runeborn:militia_spear,
+            runeborn:mistveil_katana, runeborn:morning_star, runeborn:noble_rapier,
+            runeborn:oathsworn_blade, runeborn:ossuary_blade, runeborn:penitent_mace,
+            runeborn:pilgrim_seal, runeborn:ravager_greataxe, runeborn:rimebite_axe,
+            runeborn:rimeguard_sword, runeborn:ronin_uchigatana, runeborn:ruinbreaker,
+            runeborn:rusted_dagger, runeborn:sentinel_halberd, runeborn:starshard_kris,
+            runeborn:stoneheart_maul, runeborn:stormglass_rod, runeborn:thornlash,
+            runeborn:thornspur_rapier, runeborn:titans_gavel, runeborn:twinfang_glaive,
+            runeborn:venomfang_stiletto, runeborn:warlord_battleaxe, runeborn:wavecut_flamberge,
+            runeborn:winters_hook]
+  - reason: >-
+      Exchanged at an Ember Shrine for a relic: Runeborn's Epic and Legendary armaments, two per relic
+      (the Sovereigns' and the Old Powers' relics; Runeborn 3.0.0).
+    items: [runeborn:abyssal_scepter, runeborn:ashen_greatsword, runeborn:bloodbloom_sigil,
+            runeborn:bloomwarden_mace, runeborn:crimsonfall, runeborn:crownsplitter,
+            runeborn:dragonsoul_seal, runeborn:duskrider_glaive, runeborn:eclipse_twinblade,
+            runeborn:frostbound_staff, runeborn:graft_axe, runeborn:gravewarden_scythe,
+            runeborn:lunar_bloomfang, runeborn:rimeveil, runeborn:shadowfang, runeborn:starfall_slab,
+            runeborn:storm_totem, runeborn:stormcaller_pike, runeborn:stormfang, runeborn:sunlit_sword,
+            runeborn:voidstar_hammer, runeborn:wyrmfang_halberd]
+  - reason: Dropped by its Sovereign or Old Power when it dies (Runeborn's code, not a loot table).
+    items: [runeborn:relic_dusk_rider, runeborn:relic_varghast, runeborn:relic_sylvara, runeborn:relic_kaelthar,
+            runeborn:relic_ysolde, runeborn:relic_morgrath, runeborn:relic_vaelorn, runeborn:relic_warden,
+            runeborn:relic_elder_guardian, runeborn:relic_wither, runeborn:relic_ender_dragon,
+            runeborn:crown_shard_ender_dragon, runeborn:crown_shard_varghast, runeborn:crown_shard_sylvara,
+            runeborn:crown_shard_kaelthar, runeborn:crown_shard_ysolde, runeborn:crown_shard_morgrath,
+            runeborn:crown_shard_vaelorn]
+  - reason: Vanilla, in code. The Wither drops the star; dragon's breath is bottled from the Ender Dragon's breath.
+    items: [minecraft:nether_star, minecraft:dragon_breath]
+  - reason: Vanilla. Enchanting table, librarians, and chests (where the loot table lists a plain book).
+    items: [minecraft:enchanted_book]
+  - reason: >-
+      Dropped by the Warden through Deeper and Darker's loot modifier
+      (data/deeperdarker/loot_modifiers/warden_heart_from_warden.json), which loot tables do not show.
+    items: [deeperdarker:heart_of_the_deep]
+  - reason: >-
+      Printed in Chronofall's Fabricator, whose recipes are compiled into the mod (none are data). The grids are
+      the ones the Chronofall chapter's quests give; the Fabricator itself is a crafting-table recipe.
+    items: [chronofall:printed_circuit_board, chronofall:central_processing_unit, chronofall:flux_cell,
+            chronofall:drone, chronofall:collector_chip, chronofall:guard_chip, chronofall:lamp_chip,
+            chronofall:plasma_cutter, chronofall:pulse_rifle, chronofall:mech, chronofall:bulk_upgrade_card,
+            chronofall:defense_upgrade_card, chronofall:repair_card, chronofall:skiff, chronofall:jetpack,
+            chronofall:rift_tuner]
+  - reason: >-
+      Made in Core Utilities' machines, whose recipes are compiled into the mod: the Alloy Smelter (steel,
+      energized, ender alloy) and the Compressor (plates).
+    items: [core_utilities:steel_ingot, core_utilities:energized_ingot, core_utilities:ender_alloy_ingot,
+            core_utilities:steel_plate, core_utilities:gold_plate, core_utilities:iron_plate,
+            core_utilities:copper_plate]
+  - reason: Written onto a Blank Pattern in OmniVault's Pattern Encoding Terminal.
+    items: [omnivault:crafting_pattern, omnivault:processing_pattern]
+  - reason: An Unripe Flaxen Cheese Wheel (keg recipe) ripens into it once it is set down in the world.
+    items: [brewinandchewin:flaxen_cheese_wheel]
+  - reason: Dropped by ranked monsters (RPG Mobs' progression drops are rolled in code; config progression.json).
+    items: [remnant_mobs:mending_salve, remnant_mobs:vital_ember, remnant_mobs:hunters_draught]
+  - reason: Dropped by drowned and guardians (Skills and Powers hands its runes out in code).
+    items: [elementals:water_rune, elementals:fire_rune]
+  - reason: Caught alive with Naturalist's Bug Net.
+    items: [naturalist:butterfly, naturalist:firefly]

@@ -92,6 +92,7 @@ contracts_minor:
     - {item: runeborn:tempering_stone_2, count: 1, weight: 1}
     - {item: mob_loot_bags:commonlootbag, count: 2, weight: 2}
     - {item: mob_loot_bags:uncommonlootbag, count: 1, weight: 1}
+    - {item: runeborn:sovereign_fragment, count: 1, weight: 1}
 
 contracts_major:
   title: "Major Bounty"
@@ -104,6 +105,7 @@ contracts_major:
     - {item: runeborn:tempering_stone_4, count: 1, weight: 1}
     - {item: mob_loot_bags:uncommonlootbag, count: 2, weight: 2}
     - {item: mob_loot_bags:rarelootbag, count: 1, weight: 1}
+    - {item: runeborn:sovereign_fragment, count: 1, weight: 2}
 
 contracts_grave:
   title: "Grave Bounty"
@@ -118,3 +120,4 @@ contracts_grave:
     - {item: mob_loot_bags:rarelootbag, count: 2, weight: 2}
     - {item: mob_loot_bags:epiclootbag, count: 1, weight: 1}
     - {item: mob_loot_bags:legendarylootbag, count: 1, weight: 0.3}
+    - {item: runeborn:sovereign_fragment, count: 2, weight: 2}

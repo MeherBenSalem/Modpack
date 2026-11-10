@@ -227,12 +227,13 @@
       "shape": "hexagon",
       "dependencies": [
         "h_vaults/drawers",
-        "s1_forge/duskforged"
+        "s1_forge/duskforged",
+        "n_works/frame"
       ],
       "description": [
         "&6Omnium&r is amethyst, quartz and redstone ground to dust, blended with Ashen Alloy and smelted. No quartz before the Nether? Mix amethyst, redstone and a &6Remnant Shard&r in a Create basin instead.",
         "",
-        "Omnium, &6Duskforged&r and redstone make a &6Logic Processor&r. Both vaults run on it: the Sophisticated &6Controller&r, every &6advanced&r upgrade, every OmniVault device."
+        "Omnium, &6Duskforged&r and two &6Basic Circuits&r from the Ashen Works make two &6Logic Processors&r. Both vaults run on it: the Sophisticated &6Controller&r, every &6advanced&r upgrade, every OmniVault device."
       ],
       "tasks": [
         {
@@ -428,10 +429,11 @@
       "shape": "hexagon",
       "dependencies": [
         "h_vaults/logic",
-        "s1_forge/moonsilver"
+        "s1_forge/moonsilver",
+        "n_works/advanced"
       ],
       "description": [
-        "A Logic Processor, &6Moonsilver&r, quartz and Omnium. Crafting processors, pattern terminals, assemblers, wireless and the Nexus Core all need one."
+        "Two Logic Processors, &6Moonsilver&r, Omnium and an &6Advanced Circuit&r from the Ashen Works. Crafting processors, pattern terminals, assemblers, wireless and the Nexus Core all need one."
       ],
       "tasks": [
         {
@@ -606,10 +608,11 @@
       "shape": "hexagon",
       "dependencies": [
         "h_vaults/advanced_processor",
-        "s1_forge/deepsteel"
+        "s1_forge/deepsteel",
+        "n_works/elite"
       ],
       "description": [
-        "An Advanced Processor, &6Deepsteel&r, an echo shard and an ender pearl. The million-item cells, quantum links and the quantum wireless terminal start here."
+        "Two Advanced Processors, &6Deepsteel&r, an echo shard and an &6Elite Circuit&r from the Ashen Works. The million-item cells, quantum links and the quantum wireless terminal start here."
       ],
       "tasks": [
         {

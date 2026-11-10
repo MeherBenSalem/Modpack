@@ -48,6 +48,12 @@
       "type": "item",
       "item": "mob_loot_bags:rarelootbag",
       "weight": 1
+    },
+    {
+      "id": "tables/contracts_major/7",
+      "type": "item",
+      "item": "runeborn:sovereign_fragment",
+      "weight": 2
     }
   ]
 }

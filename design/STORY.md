@@ -97,6 +97,22 @@ masters them (or synthesises placeholders with the open Kokoro TTS) into `kubejs
 | V | **The Eclipsed Realm** | 70+ | Cross into the black sun's realm; three fog gates: the Gravebound Warden, the Forgotten Watcher, Ossukage | **The Hollow Sovereign** on his throne |
 | Epilogue | **First Light** | — | The sun returns over the Overworld, but the End stays dark; the Dragon remembers the Eighth | Season 2 teaser |
 
+### The spine: why each act happens
+
+- **The hook.** The old shrines did not go cold by themselves. The Dusk Rider, the one Sovereign still doing his
+  duty, rides at the minute the sun went out and puts out whatever still burns. Kindling Last Light puts it on his
+  road, so Act I is a race to call him first, on your ground.
+- **Each Seal wakes the next act.** Binding the Rider's stopped minute lets the nights turn again (the Hunter's Moon).
+  Binding Varghast and Sylvara thaws the Rime Veil, and the meltwater wakes the Deep. Binding Kaelthar, Ysolde and
+  the Warden's heart clears the sky enough to show the ash still rising. Binding Morgrath, Vaelorn, the Wither's star
+  and the Dragon's breath leaves one dark place in the sky, and it is a door.
+- **Offerings.** From Varghast on, a Sovereign answers six Fragments, a token and one thing made by the living, to
+  remind them what they owed: a Warbanner for the king who kept his dead soldiers, Frostcap Tea for the queen who
+  buried warmth, a boxed charge for the lord who kept the lightning, a Poppet for the gardener who fed her court to
+  her roses, a Fire Seed for the king who burned every field, a pane of Rift Glass for the last dragon-rider.
+
+The graph behind this, with every gate, is [`PROGRESSION_GRAPH.md`](PROGRESSION_GRAPH.md).
+
 ### The ending
 
 When the Hollow Sovereign falls, the light he drank returns. Every player sees the title **FIRST LIGHT**, the Eclipse

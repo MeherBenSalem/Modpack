@@ -30,11 +30,11 @@ hash = "e32af8b086e1a8d4e057a8a1a869c70f4b710125beeecefeaf15ad5c29bffc2f"
 
 [[files]]
 file = "config/corerpg_quests/book/chapters/h_vaults.json"
-hash = "f477cc8fdffce1b5ba41e8df103973e6fd189a268ae0353eb5756fd15709a33b"
+hash = "a0df30f518d4d3acc3be7a1a92c749ba7f025b5f9bf7acf1645fb5bbd68302c2"
 
 [[files]]
 file = "config/corerpg_quests/book/chapters/n_chrono.json"
-hash = "336add7e61b9cb524f6af074dac507cb83c3cd3b85d3218265922ee3a832d59f"
+hash = "7d1408dfaa3c3374713a8e1175d50a146d686ed323b633b3d9bb55671eb5b1dc"
 
 [[files]]
 file = "config/corerpg_quests/book/chapters/n_coast.json"
@@ -58,7 +58,7 @@ hash = "973c33219d6cf5fc22add1374b301eac952c8d720d8ade6a5a495a7b589acf0a"
 
 [[files]]
 file = "config/corerpg_quests/book/chapters/n_spore.json"
-hash = "ea17f7e1115dc32987ea8fa38f22553b62629c329cf8897eca75116b9dac9f13"
+hash = "76ab3b6b339c1bc60ab6c639d65c5fd4fa0ce6730ca7e4d81e8d03165fcea929"
 
 [[files]]
 file = "config/corerpg_quests/book/chapters/n_voices.json"
@@ -70,7 +70,7 @@ hash = "876a2a7345dced4248072dad54cf29fdd5afd9c5ed9128bf33a49fd41a823e5c"
 
 [[files]]
 file = "config/corerpg_quests/book/chapters/n_works.json"
-hash = "9552feeee5c382d80b482717da85413885b2959b1131c05aaff3600c559867e4"
+hash = "b1028f2c8621e1b36c5f6f02530e64a28add37179fcd2049aa9fe13d724aa741"
 
 [[files]]
 file = "config/corerpg_quests/book/chapters/p_archive.json"
@@ -86,31 +86,31 @@ hash = "a07a6cc5c352df28312a2f061dd50ad1b4bf418fc0f1676d5172e30eeebcab23"
 
 [[files]]
 file = "config/corerpg_quests/book/chapters/p_company.json"
-hash = "e5c44057df3e7151f5e57b4ed37c9603828564d98ba03fa6cd5ae005f669146b"
+hash = "c64d0f192150937a3180ba5c6aedfb543217e39e11a5654f6ea5fe0f244e3905"
 
 [[files]]
 file = "config/corerpg_quests/book/chapters/p_constellation.json"
-hash = "b0327fff48735cf062667113693bd91507fbd05a54aee4b480b7bc91ff0d890f"
+hash = "b2221df37b431796c9f8deef2a90a7f195858bb47cd110ba3fcd4c617ecc6545"
 
 [[files]]
 file = "config/corerpg_quests/book/chapters/s1_act1_embers.json"
-hash = "f12e3b4b7d1058a9adaff7ca43df305b445cc917445761bdc250c0cf1344022a"
+hash = "1bc73a39e97b1f0a394a0796bab2a6a3ed70279f320ad10dcf3dc0d967c0e26f"
 
 [[files]]
 file = "config/corerpg_quests/book/chapters/s1_act2_hunt.json"
-hash = "c5a8bde0e607f25f6fc5f211a995a9eeb1299fc2378d928a895ed5065f50131f"
+hash = "c3132300d15ef97bbbe6b95ee182bcc306bd772edab291363da7b7015269c558"
 
 [[files]]
 file = "config/corerpg_quests/book/chapters/s1_act3_deep.json"
-hash = "ad81db63fdc571d59fa89845d306f32a2cb4510c2eb08e22f2be6eae2f21c092"
+hash = "e007841b0bc9322f63f5b0f97f7a89c47289ea64cdefa2a8b50c5d885a2ca974"
 
 [[files]]
 file = "config/corerpg_quests/book/chapters/s1_act4_ash.json"
-hash = "630b38bf0af104e15613e74d36c19f908998cc5548d1f9d751287eb20aa36fbd"
+hash = "1ea5b5293252f1bd8a699d080553b6d895060f41d30b87e374999d59700da353"
 
 [[files]]
 file = "config/corerpg_quests/book/chapters/s1_act5_realm.json"
-hash = "93be02da84240749922baa62a511db487472d028d9f090c0c55bc8af82264225"
+hash = "ac27a7ac561f9b6095dedb20533872115c494cad7626683c050f68a8f7ea62d2"
 
 [[files]]
 file = "config/corerpg_quests/book/chapters/s1_epilogue.json"
@@ -118,7 +118,7 @@ hash = "b7bb0cd7da1e29ba8928cba5c400a5d8fa0849916ab3bd34f0948a7fb0d706d6"
 
 [[files]]
 file = "config/corerpg_quests/book/chapters/s1_forge.json"
-hash = "894acccd2e104d2372cf8ff7486c326a3227310fd4618b11c06defe5b8d02ab4"
+hash = "8d49deb76b33d0640df12c9e1c5dee3ddc13af8ef848f063fcfcadec813d7f6e"
 
 [[files]]
 file = "config/corerpg_quests/book/chapters/s1_prologue.json"
@@ -138,7 +138,7 @@ hash = "0bce61a572d1280b60a7c195964ae92517bbf20e24adc976728e579083d491fd"
 
 [[files]]
 file = "config/corerpg_quests/book/chapters/w_wayfarer.json"
-hash = "7a727ee15d01e9995308153f875e0ce3731bc8dd55419ed32a919b0e370de3e7"
+hash = "efb3f3101aa55337e79fb79ded0635bda7f4deefb4c6dcfa20a64fdc2c53e9a8"
 
 [[files]]
 file = "config/corerpg_quests/book/reward_tables/tables~ashborn_provisions.json"
@@ -146,15 +146,15 @@ hash = "1dfa65f1211d9b3e132a2b97e24c7a581054222b5b9fcd59df99cef3c2d2febf"
 
 [[files]]
 file = "config/corerpg_quests/book/reward_tables/tables~contracts_grave.json"
-hash = "90b3aa29451fbcf3878ebd617959137ec03d335f0d0162db856e8fff338daa09"
+hash = "16b0c923e47df43d8e6939455aa042f5616c0f2d4d967e65e2d26c100727bf90"
 
 [[files]]
 file = "config/corerpg_quests/book/reward_tables/tables~contracts_major.json"
-hash = "2f4b182555b3f7bdd2d38da40c1f0170fb263b6ea3c45bd8420af29c1bdc8555"
+hash = "dd1fd1dd62548df65e0d13002860fe7e22930e5549e585623217ce4190d32ca9"
 
 [[files]]
 file = "config/corerpg_quests/book/reward_tables/tables~contracts_minor.json"
-hash = "82c153c6fb26c7aa7c87a9a71939c0f51fb17946b8090774074d7ff29f6b139d"
+hash = "9ec280a9eb4050d94460e68cdc36fbabf82383f170e8031589db5c3b88dd98a3"
 
 [[files]]
 file = "config/corerpg_quests/book/reward_tables/tables~h_garden_larder.json"
@@ -1478,7 +1478,7 @@ hash = "0c615d27d6e7932dab70603593b0d4b2098f06e605c17c7e8549a677ec84ef94"
 
 [[files]]
 file = "kubejs/server_scripts/remnants/balance.js"
-hash = "0186d849be2b7655afe5edc3990bfe0902d29ab752dafa445bbbc1ba12152fd4"
+hash = "f0eb7ef5bb337e9da9ec61dd2ecb2cdbdf01e47602c58d2e5e93cef81ba85d59"
 
 [[files]]
 file = "kubejs/server_scripts/remnants/deathguide.js"
@@ -1494,7 +1494,7 @@ hash = "0ddf8ca8f647f431d5db935a71c39dc4028a8cfa10dce9c583bda2e1a164b144"
 
 [[files]]
 file = "kubejs/server_scripts/remnants/forge.js"
-hash = "653faec164ddb18ee67588a4ba221b45b2b74bf8ef2fe0219fc6ebf46b141c6c"
+hash = "618068a563f1e53b6798800dc6cf0a55537354761ba554479b89f9bb4a1ff461"
 
 [[files]]
 file = "kubejs/server_scripts/remnants/lastlight.js"
@@ -1526,7 +1526,7 @@ hash = "63d8b0597649f971f9843d11c37c62dfddabb3f85ee843b2b08e6cef57b2d8bb"
 
 [[files]]
 file = "kubejs/startup_scripts/remnants_narration_lines.js"
-hash = "42f24264ba6b63308a7745eec1024d9d38137855dd01a94096cf18331a9c40ff"
+hash = "3c5010e0c58e8788b708ad0460a1d9a8207f24e87c4de3543742addc4384a127"
 
 [[files]]
 file = "kubejs/startup_scripts/remnants_threshold_layout.js"

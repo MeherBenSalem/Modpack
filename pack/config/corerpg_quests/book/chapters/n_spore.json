@@ -522,7 +522,9 @@
       "description": [
         "The forager's kitchen keeps a fighter standing. &6Truffle Stew&r (a truffle, a morel, a chanterelle and a baked potato) mends you and wraps you in Absorption. An &6Ember Skewer&r (an Emberstool and a Roasted Morel on a stick) gives Strength. &6Frostcap Tea&r keeps fire off you for a minute and a half.",
         "",
-        "&7Cook Truffle Stew, an Ember Skewer and Frostcap Tea."
+        "&7Cook Truffle Stew, an Ember Skewer and Frostcap Tea.",
+        "",
+        "&7Brew a second cup. Frostcap Tea is the offering &6Sylvara, Frost Matron&7 answers (Act II, &6The Rime Veil&7)."
       ],
       "tasks": [
         {

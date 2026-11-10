@@ -353,12 +353,15 @@
       "x": 6,
       "y": 1.75,
       "dependencies": [
-        "p_constellation/essence"
+        "p_constellation/essence",
+        "s1_act4_ash/ashlands"
       ],
       "description": [
         "In the &cAshlands&r, &6Fire Golems&r walk the wastes, the crimson forests and the basalt deltas. They're slow to die and slower to share.",
         "",
-        "Each one drops &6Fire Runes&r and magma cream, and now and then a whole &6Remnant Tome&r. Blazes carry Fire Runes too."
+        "Each one drops &6Fire Runes&r and magma cream, and now and then a whole &6Remnant Tome&r. Blazes carry Fire Runes too.",
+        "",
+        "&7A Fire Rune, a blaze rod, quartz and wheat seeds make a &6Fire Seed&7. Eat one to wake Pyromancy for free, and keep one: it is the offering &6Morgrath, Ash Sovereign&7 answers (Act IV, &6The Burning Crown&7)."
       ],
       "tasks": [
         {

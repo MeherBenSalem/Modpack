@@ -71,6 +71,8 @@ quests:
       A &6Warbanner&r is gold around a black banner, on a stick, or twenty gold from Maren. Use it on the ground to plant it, and your warband guards it in formation. Use it in the air to lift it, and they follow you again.
 
       Formations: &6Line&r, &6Wedge&r, &6Shield Wall&r and &6Circle&r, around you or around the banner.
+
+      &7Keep a spare. A Warbanner is the offering &6Varghast the Grafted&7 answers (Act II, &6The Grafted King&7): he owed his soldiers, and this is what an army that is still paid looks like.
     tasks: [{item: better_with_gold:warbanner}]
     rewards: [{table: paths_company_purse}, {xp: 80}]
 
@@ -119,9 +121,9 @@ quests:
     subtitle: "Gold is soft. Reinforced gold only looks it."
     icon: better_with_gold:upgrade_template
     pos: [2, 3]
-    deps: [muster]
+    deps: [muster, s1_forge/duskforged]
     desc: |
-      The Company's old smiths still work gold. An &6Upgrade Template&r (gold ingots around obsidian and an amethyst shard), a golden piece and an &6amethyst block&r make &6Reinforced Golden&r gear at a smithing table.
+      The Company's old smiths still work gold. An &6Upgrade Template&r (gold ingots around obsidian and an amethyst shard, with one &6Duskforged Ingot&r at the foot), a golden piece and an &6amethyst block&r make &6Reinforced Golden&r gear at a smithing table.
 
       &o"Everyone in the Company was paid in gold once. The clever ones wore it."&r
     tasks: [{item: better_with_gold:upgrade_template}]

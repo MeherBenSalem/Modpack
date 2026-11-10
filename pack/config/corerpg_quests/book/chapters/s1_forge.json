@@ -25,7 +25,9 @@
         "",
         "&6Ashen Alloy&r comes first. After that, every alloy needs a &6Seal&r, bound once from the relics of the Sovereigns that closed the act before. The seal is never used up: it stays in the crafting grid every time you forge.",
         "",
-        "&7A Sovereign leaves one relic. Trade it at a shrine for its armament, or bind it into a seal. Its sigil will call it back if you want both."
+        "&7A Sovereign leaves one relic. Trade it at a shrine for its armament, or bind it into a seal. Its sigil will call it back if you want both.",
+        "",
+        "&7The Forge reaches every workshop in Last Light. The Works' machine frames are Ashen Alloy; the vaults' processors think with the Works' circuits; Chronofall's charger is built on the Works' generator; and every Sovereign after the Rider wants an &6offering&7 made in one of them. Nothing you learn in one chapter is wasted in the next."
       ],
       "tasks": [
         {
@@ -104,7 +106,9 @@
       "description": [
         "The Dusk Rider's &6relic&r in the centre, four &6Sovereign Fragments&r in the corners, four &6Ashen Alloy&r around it.",
         "",
-        "The seal opens Act II: Varghast's and Sylvara's sigils need it in the grid, and so does every Duskforged Ingot."
+        "The seal opens Act II: Varghast's and Sylvara's sigils need it in the grid, and so does every Duskforged Ingot.",
+        "",
+        "&7What you are binding is the Rider's stopped minute. While it sat in his clock the nights could not turn. In your seal they can, and the first thing to turn is the moon: Act II."
       ],
       "tasks": [
         {
@@ -184,7 +188,9 @@
       "description": [
         "&6Varghast's&r and &6Sylvara's&r relics, four Sovereign Fragments, two Duskforged Ingots, and a whole &6Roast Chicken&r feast from the Hearth's kitchen in the middle. The Keeper says the old court never sealed anything on an empty stomach.",
         "",
-        "Opens Act III: Kaelthar's and Ysolde's sigils, and Moonsilver."
+        "Opens Act III: Kaelthar's and Ysolde's sigils, and Moonsilver.",
+        "",
+        "&7A king who would not let go and a queen who would not let thaw, bound together. The thaw runs down into the deep, and the deep wakes: Act III."
       ],
       "tasks": [
         {
@@ -264,7 +270,9 @@
       "description": [
         "&6Kaelthar's&r and &6Ysolde's&r relics, the Warden's &6Heart of the Deep&r, two Moonsilver Ingots, three Sovereign Fragments and a &6Flaxen Cheese Wheel&r, aged in a keg.",
         "",
-        "Opens Act IV: Morgrath's and Vaelorn's sigils, and Deepsteel."
+        "Opens Act IV: Morgrath's and Vaelorn's sigils, and Deepsteel.",
+        "",
+        "&7Storm, bloom and the heart of the thing that listened. With them bound the sky clears enough to show the ash still rising in the south: Act IV."
       ],
       "tasks": [
         {
@@ -348,7 +356,9 @@
       "description": [
         "&6Morgrath's&r and &6Vaelorn's&r relics, a &6Nether Star&r, a bottle of &6dragon's breath&r, two Deepsteel Ingots, two Sovereign Fragments and a &6Steak Dinner&r from the garden's kitchen.",
         "",
-        "Opens the last door: the &5Eclipse Shard&r needs the Seal of Ash in the grid, and so does Sunforged."
+        "Opens the last door: the &5Eclipse Shard&r needs the Seal of Ash in the grid, and so does Sunforged.",
+        "",
+        "&7The last two crowns, the star of the oldest hunger and a breath of the first sun. Seven embers. Only one door is still shut: Act V."
       ],
       "tasks": [
         {
@@ -447,6 +457,68 @@
           "id": "s1_forge/eclipse_core/reward1",
           "type": "xp",
           "xp": 1000
+        }
+      ]
+    },
+    {
+      "id": "s1_forge/every_hand",
+      "title": "&6Every Hand at the Forge",
+      "subtitle": "Last Light is more than one fire.",
+      "icon": "runeborn:sovereign_fragment",
+      "x": 0,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.5,
+      "dependencies": [
+        "p_company/finale",
+        "n_works/finale",
+        "h_vaults/finale",
+        "n_chrono/finale",
+        "n_spore/finale",
+        "n_coast/finale",
+        "n_voices/finale",
+        "n_wands/finale",
+        "n_runeborn/finale",
+        "h_garden/finale",
+        "p_archive/finale",
+        "w_dungeons/finale"
+      ],
+      "min_required_dependencies": 3,
+      "optional": true,
+      "description": [
+        "&6The Keeper&r",
+        "",
+        "&f&o\"Three of them finished. The Company's ledger, or the Works, or the vault that thinks, or the garden. It doesn't matter which. What matters is that somebody in this village built something that wasn't a weapon and saw it through.&r",
+        "",
+        "&f&oThe Sovereigns each kept their piece of the sun to themselves. Look around you, Ashborn. This is what it looks like when people don't.\"&r",
+        "",
+        "Finish any &6three&r of Last Light's crafts (the last quest of the Company, the Works, the Vaults, Chronofall, the Mycelial Court, the Last Coast, the Voices, the Wands, Runeborn, the Ash Garden, the Fractured Archive or the Dungeon Trail) and the village pays it back in the only coin the road ahead takes.",
+        "",
+        "&7Six &6Sovereign Fragments&7: one whole sigil, or a second call to a Sovereign whose relic you spent."
+      ],
+      "tasks": [
+        {
+          "id": "s1_forge/every_hand/task0",
+          "type": "checkmark",
+          "title": "Three crafts finished"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "s1_forge/every_hand/reward0",
+          "type": "item",
+          "item": "runeborn:sovereign_fragment",
+          "count": 6
+        },
+        {
+          "id": "s1_forge/every_hand/reward1",
+          "type": "random",
+          "table": "tables/sovereign_tribute"
+        },
+        {
+          "id": "s1_forge/every_hand/reward2",
+          "type": "xp",
+          "xp": 800
         }
       ]
     }

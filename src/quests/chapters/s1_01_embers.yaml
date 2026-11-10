@@ -66,6 +66,29 @@ quests:
       - {table: wanderers_cache}
       - {xp: 150}
 
+  - key: riders_road
+    title: "&6The Road He Rides"
+    subtitle: "Why the old shrines went cold."
+    icon: minecraft:bell
+    deps: [kindle]
+    shape: hexagon
+    size: 1.5
+    keeper: |
+      Listen. The bell. Nobody in this village rang it.
+
+      Do you know why the old shrines went cold, Ashborn? Nobody put them out. Somebody came by at dusk, every dusk, and ended the day there. He keeps the hours for a Crown that isn't listening, and a lit shrine is an hour that won't end when he says so.
+
+      You have put Last Light on his road. Tonight, or the night after, the Dusk Rider comes to close it.
+    voice: false   # new in beta 12: no recording yet
+    desc: |
+      The &6Dusk Rider&r is the first of the seven, and the only one still doing his duty: he rides at the minute the sun went out and puts out whatever is still burning. Every shrine the heralds built went cold that way. Last Light is next on his rounds.
+
+      You cannot outrun him and you cannot hide a fire. You can call him first: on your ground, at your hour, with a &6Sigil&r made of six &6Sovereign Fragments&r, his token and an alloy from the &6Ember Forge&r. Every quest in this act is a step toward that.
+
+      &7He already rides some nights. If you hear hooves before you are ready, stay near the shrine and roll &othrough&7 the charge.
+    tasks: [{checkmark: "Read the Keeper's warning"}]
+    rewards: [{xp: 60}]
+
   - key: level_up
     title: "Spend Your Light"
     subtitle: "Runes become strength at the shrine."
@@ -137,8 +160,10 @@ quests:
       An Elite has risen three times. Each death took something human from it and gave back something worse. It carries a blue crest and two traits.
 
       &7Elites pay triple experience, extra loot, a Remnant Shard and bonus Valor. Kill one.
+
+      &7Elites sometimes carry a &6Sovereign Fragment&7, about one time in four. Your first is on the Keeper.
     tasks: [{advancement: "remnant_mobs:proven_hunter"}]
-    rewards: [{table: hunters_spoils}, {xp: 150}]
+    rewards: [{item: runeborn:sovereign_fragment}, {table: hunters_spoils}, {xp: 150}]
 
   - key: spoils
     title: "Spoils of the Dead"
@@ -165,7 +190,7 @@ quests:
 
       &7Find a dungeon: a spawner crypt, the catacombs, a frozen vault, a sunken tomb or any other dungeon of the old wardens.
     tasks: [{structure: "#remnants:dungeons", title: "Find a dungeon"}]
-    rewards: [{table: wanderers_cache}, {xp: 120}]
+    rewards: [{item: runeborn:sovereign_fragment}, {table: wanderers_cache}, {xp: 120}]
 
   - key: dungeon_trail
     title: "The Dungeon Trail"
@@ -180,7 +205,7 @@ quests:
 
       &7Start with the &6Smuggler's Villa&7 and kill its chief.
     tasks: [{advancement: "muchmoredungeons:slay_outdoor_villa_guardian"}]
-    rewards: [{table: hunters_spoils}, {xp: 200}]
+    rewards: [{item: runeborn:sovereign_fragment, count: 2}, {table: hunters_spoils}, {xp: 200}]
 
   - key: champion
     title: "Champion's Bane"
@@ -197,13 +222,13 @@ quests:
     # RPG Mobs' own advancement (champion rank or higher, credited to whoever hurt it last): the one the player
     # really gets. Runeborn's feats/champion has the same title and is granted alongside it (balance.js).
     tasks: [{advancement: "remnant_mobs:champions_bane", title: "Slay a champion"}]
-    rewards: [{xp: 150}]
+    rewards: [{item: runeborn:sovereign_fragment}, {xp: 150}]
 
   - key: fragments
     title: "Six Pieces of the Sun"
     subtitle: "A Sovereign answers six Fragments and a token."
     icon: runeborn:sovereign_fragment
-    deps: [champion]
+    deps: [champion, riders_road]
     keeper: |
       The Dusk Rider kept the hours for the Crown. When the sun went out, he stopped his clock at that minute, and he has been riding at that minute ever since.
     voice: true
@@ -211,6 +236,8 @@ quests:
       The first Sovereign is the &6Dusk Rider&r, Who Rides When Light Fails: herald of evening, keeper of the Crown's hours. His token is a &6clock&r. He never forgot what time it was when the sun went out.
 
       &7Gather six &6Sovereign Fragments&7 and a clock.
+
+      &7Where Fragments come from: every &5champion&7 drops one and a &cRemnant&7 two, an &9Elite&7 about one time in four, and the quests on this road pay them (your first Elite, your first dungeon, the Smuggler's Villa, your first champion). Rare loot bags and the Huntmaster's &6Contracts&7 pay the rest.
     tasks: [{item: runeborn:sovereign_fragment, count: 6}, {item: minecraft:clock}]
     rewards: [{xp: 150}]
 

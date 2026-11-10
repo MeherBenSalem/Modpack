@@ -33,6 +33,14 @@ chapter. Read `design/STORY.md` first: every quest serves the story or teaches a
    U roster, M map, N minimap, B marker, P skill tree, Z/X/C/V ability casts, Y Archive codex, H/O/` memories, J
    Archive objectives.
 10. **Chapter keys** never change once released: quest ids are derived from `chapter` + `key`.
+11. **Ask only for what the act has.** A quest belongs to the latest act whose opening quest it depends on
+    (`stages` in `src/progression.yaml`), and may only ask for items that exist by then: no blaze rods before the
+    Ashlands, no echo shards before the ancient cities. If a quest needs something from a later act, make it depend
+    on that act's anchor. A required quest never depends on an optional one.
+12. **New tasks go last, new quests get new keys.** Progress is saved per task index (`<quest>/task<n>`), so append
+    a task instead of inserting one, and never reuse a key.
+13. **Run the validator.** `python3 tools/validate_pack.py` must end with `0 error(s)`; `--why <item>` shows how an
+    item is obtained and from which act. New Keeper text is `voice: false` until it has been recorded.
 
 ## Main-story anchors side chapters can depend on
 

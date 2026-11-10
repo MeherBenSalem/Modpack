@@ -15,6 +15,11 @@ the bottom-left corner, placed by pack/kubejs/client_scripts/remnants/title_menu
 Loading screen: the same plate, a thin gold progress bar and the percentage (Drippy Loading Screen layouts are
 FancyMenu layouts for the screen drippy_loading_overlay). Format: FancyMenu 3 layout files; the key reference is
 in the commit that added this (FancyMenu 3.9.14 bytecode).
+
+Sponsor button: art/out/menu/btn_server_<normal|hover>.png and art/out/sponsor/apex_icon.png (the mark cropped from the
+supplied banner by art/render.cjs) are copied into kubejs/assets/remnants/textures/gui/sprites/sponsor/ as GUI sprites.
+pack/kubejs/client_scripts/remnants/community.js adds the buttons: FancyMenu's own "open link" action skips
+Minecraft's confirmation screen, and the Multiplayer screen is not a FancyMenu layout.
 """
 import shutil
 import uuid
@@ -23,6 +28,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 FM = ROOT / "pack" / "config" / "fancymenu"
 ASSETS = FM / "assets"
+SPRITES = ROOT / "pack" / "kubejs" / "assets" / "remnants" / "textures" / "gui" / "sprites" / "sponsor"
+SPONSOR_SPRITES = {"menu/btn_server_normal.png": "need_a_server.png", "menu/btn_server_hover.png": "need_a_server_hover.png",
+                   "sponsor/apex_icon.png": "apex_icon.png"}
 
 
 def uid(seed):
@@ -233,7 +241,14 @@ def main():
     for f in ("loading_bar_frame.png", "loading_bar_fill.png"):
         shutil.copy2(out / f, ASSETS / f)
     for f in [*(out / "menu").glob("*.png"), *(out / "menu").glob("*.apng")]:
+        if f.name.startswith("btn_server_"):
+            continue                      # the sponsor entry is a KubeJS GUI sprite, not a FancyMenu texture
         shutil.copy2(f, ASSETS / "menu" / f.name)
+    if SPRITES.exists():
+        shutil.rmtree(SPRITES)
+    SPRITES.mkdir(parents=True)
+    for src, name in SPONSOR_SPRITES.items():
+        shutil.copy2(out / src, SPRITES / name)
     for f in (out / "sounds").glob("*.ogg"):
         shutil.copy2(f, ASSETS / "sounds" / f.name)
     custom = FM / "customization"
@@ -246,6 +261,7 @@ def main():
         "type = customizablemenus\n\nnet.minecraft.client.gui.screens.TitleScreen {\n}\n\n"
         "de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen {\n}\n")
     print("wrote pack/config/fancymenu/customization/remnants_title_screen.txt, remnants_loading_screen.txt and assets")
+    print(f"wrote {len(SPONSOR_SPRITES)} sponsor sprites to {SPRITES.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

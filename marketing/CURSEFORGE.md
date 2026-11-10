@@ -8,7 +8,7 @@ Everything that died in the dark came back wrong. You wake in a crypt with nothi
 
 **Remnants | The Modpack** is NightBeam Studio's story-driven **soulslike RPG** modpack for Minecraft 1.21.1 on NeoForge.
 It opens in **the Threshold**, a starting area with a boss of its own, then sends you into a world under a black sun to
-relight it one **Ember Shrine** and one **Sovereign** at a time. The story runs through **667 quests**, the dead rise
+relight it one **Ember Shrine** and one **Sovereign** at a time. The story runs through **670 quests**, the dead rise
 ranked and named, and when you die an **Echo** of you guards your runes where you fell.
 
 **Season 1, "The Long Eclipse"** builds NightBeam's own mods (Runeborn, RPG Mobs, the Eclipsed Realm, RPG Stats,
@@ -40,7 +40,7 @@ Skills and Powers, Fellowship and more) into one rule set, with 166 mods in all.
 
 ![The Story](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/marketing/images/header-story.png)
 
-![Told in 667 quests](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/marketing/images/card-story.png)
+![Told in 670 quests](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/marketing/images/card-story.png)
 
 Seven rulers broke the sun to share its light. The Eighth drank what was left and became the **Hollow Sovereign**.
 Since then nothing that dies stays dead. The Keeper of Last Light gives you a spark; the rest is up to you.
@@ -61,6 +61,11 @@ Since then nothing that dies stays dead. The Keeper of Last Light gives you a sp
   the Boss Compendium, the Dungeon Trail, the Bestiary, Hearth and Harvest, the Ash Garden, Last Light, the Clockwork
   Path and the Vaults.
 - **The Ashen Contracts:** a repeatable bounty board, so the mid-game never runs dry.
+
+**New in beta 12: one road through every workshop.** Act I now opens on a threat: the old shrines did not go
+cold by themselves, the Dusk Rider puts them out, and yours is on his road. From Varghast on, each Sovereign answers
+an offering made in a different workshop of Last Light, Sovereign Fragments come at the story's pace (Elites,
+Remnants, quests and contracts all pay them), and the workshops build on each other's parts.
 
 ### Chronicles of the Ash: a story for every NightBeam mod
 
@@ -165,6 +170,18 @@ The CurseForge app downloads every mod from its own project page; the server pac
 ![divider](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/marketing/images/divider.png)
 
 ---
+
+### Play together
+
+**NightBeam Community Server:** `sv6af1d94aa636b.apexmc.co:1376`. The pack adds it to your Multiplayer list the first time it starts,
+next to your own servers. Delete it and it stays gone.
+
+[![Apex Hosting: get 25% off a new server with the code APEX25](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/art/sponsors/apex-hosting-banner-849x141.png)](https://apexhost.gg/NightBeam)
+
+**Sponsored by Apex Hosting.** Want a server of your own for Remnants? [Apex Hosting](https://apexhost.gg/NightBeam)
+sponsors this pack: the code **APEX25** takes 25% off a new server. In the game that is one "Need a server?" button,
+on the title screen and on the Multiplayer screen, which opens the same page through Minecraft's own link
+confirmation. No pop-ups, and nothing else in the pack is sponsored.
 
 ### More from NightBeam Studio
 

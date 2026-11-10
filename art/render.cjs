@@ -46,7 +46,8 @@ function apng(frames, delays, plays) {
   const root = __dirname;
   const out = path.join(root, 'out');
   fs.mkdirSync(path.join(out, 'menu'), { recursive: true });
-  const shot = process.argv[2] ? 'file://' + path.resolve(process.argv[2]) : null;
+  const shotArg = process.argv.slice(2).find(a => !a.startsWith('--'));
+  const shot = shotArg ? 'file://' + path.resolve(shotArg) : null;
   const browser = await chromium.launch();
   const jobs = [
     { view: 'logo', w: 1600, h: 700, file: 'logo.png', transparent: true },
@@ -65,6 +66,17 @@ function apng(frames, delays, plays) {
     HOVER_T.forEach((t, i) => jobs.push({ view: 'btn', w: 920, h: 112, file: `menu/.frames/${key}_${i}.png`, transparent: true,
                                           extra: `&label=${encodeURIComponent(label)}&state=hover&t=${t}` }));
   }
+  // The sponsor entry (bottom-right of the title screen, 736x120 = 184x30 GUI units at 4x) and the 16x16 mark for the
+  // Multiplayer screen's button (64x64). Both show the supplied banner in art/sponsors/ through a window: the cube
+  // mark is cropped, never redrawn. `node art/render.cjs --sponsor` renders only these three.
+  const SPONSOR = [
+    { view: 'sponsor', w: 736, h: 120, file: 'menu/btn_server_normal.png', transparent: true, extra: '&state=normal' },
+    { view: 'sponsor', w: 736, h: 120, file: 'menu/btn_server_hover.png', transparent: true, extra: '&state=hover' },
+    { view: 'apexicon', w: 64, h: 64, file: 'sponsor/apex_icon.png' },
+  ];
+  const sponsorOnly = process.argv.includes('--sponsor');
+  if (sponsorOnly) jobs.length = 0;
+  jobs.push(...SPONSOR);
   for (const j of jobs) {
     const page = await browser.newPage({ viewport: { width: j.w, height: j.h } });
     const hash = `view=${j.view}` + (shot ? `&shot=${encodeURIComponent(shot)}` : '') + (j.extra || '');
@@ -77,6 +89,7 @@ function apng(frames, delays, plays) {
     await page.close();
     console.log('wrote', path.join('art/out', j.file));
   }
+  if (sponsorOnly) { await browser.close(); return; }
   // Pack each entry's hover frames into one APNG: 20 ms a frame, the last held for a minute, played once.
   for (const [key] of ENTRIES) {
     const frames = HOVER_T.map((_, i) => fs.readFileSync(path.join(out, 'menu', '.frames', `${key}_${i}.png`)));

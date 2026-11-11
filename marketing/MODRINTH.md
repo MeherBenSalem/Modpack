@@ -19,7 +19,7 @@ relight it one **Ember Shrine** and one **Sovereign** at a time. The story runs 
 ranked and named, and when you die an **Echo** of you guards your runes where you fell.
 
 **Season 1, "The Long Eclipse"** builds NightBeam's own mods (Runeborn, RPG Mobs, the Eclipsed Realm, RPG Stats,
-Skills and Powers, Fellowship and more) into one rule set, with 166 mods in all.
+Skills and Powers, Fellowship and more) into one rule set, with 167 mods in all.
 
 [![Watch the trailer](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/marketing/images/trailer.png)](https://youtu.be/U_x7PBLXGaM)
 
@@ -172,7 +172,7 @@ Every system has one owner, and the overlapping ones are switched off, so every 
    `SERVER.md` inside covers RAM, ports and pregeneration), or install this `.mrpack` on the server with
    [mrpack-install](https://github.com/nothub/mrpack-install).
 
-**Credits.** Built by NightBeam Studio on the work of 166 mods and their authors: thank you. Special thanks to
+**Credits.** Built by NightBeam Studio on the work of 167 mods and their authors: thank you. Special thanks to
 [Subtle Effects](https://modrinth.com/mod/4q8UOK1d),
 [Ashen 16x](https://modrinth.com/resourcepack/LSmohupN),
 [Fresh Animations](https://modrinth.com/resourcepack/50dA9Sha),
@@ -180,9 +180,9 @@ Every system has one owner, and the overlapping ones are switched off, so every 
 [Reactive Music](https://modrinth.com/mod/Bqnfeesx).
 The pack downloads every mod from its own Modrinth project; nothing is re-hosted here.
 
-**Sponsor.** Apex Hosting sponsors this pack. In the game that is one "Need a server?" button, on the title screen
-and on the Multiplayer screen, which opens apexhost.gg/NightBeam through Minecraft's own link confirmation, and the
-community server above, added to your server list once (delete it and it stays gone). No pop-ups, and nothing else
+**Sponsor.** Apex Hosting sponsors this pack. In the game that is one "Need a server?" button on the title screen
+and one "Looking for a server?" row in the Multiplayer list (Apex Hosting Partner Link), which open Apex's order
+screen, where a server comes with Remnants already installed, and the community server above, added to your server list once (delete it and it stays gone). No pop-ups, and nothing else
 in the pack is sponsored.
 
 ### How this pack was made

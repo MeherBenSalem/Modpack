@@ -851,18 +851,18 @@
   "license": "MIT",
   "modrinth": {
    "project_id": "kepjj2sy",
-   "version_id": "5380Ijsk",
-   "version_number": "1.21.1-5.3.0+neoforge",
-   "filename": "ShoulderSurfing-NeoForge-1.21.1-5.3.0.jar",
-   "url": "https://cdn.modrinth.com/data/kepjj2sy/versions/5380Ijsk/ShoulderSurfing-NeoForge-1.21.1-5.3.0.jar",
-   "sha1": "18dbbf3d47c100200aaacbd6eab58793885c905b",
-   "sha512": "d4e6a267fcb6013fec796766ee75c282e44a070f9eb8bf34ea0c390e7798854bf8933372ec3d5837343eb10e15e928fdefbde3edecb9c779a19a7a8c4483ebe2",
-   "size": 435072
+   "version_id": "ESA9aXtk",
+   "version_number": "1.21.1-5.3.1+neoforge",
+   "filename": "ShoulderSurfing-NeoForge-1.21.1-5.3.1.jar",
+   "url": "https://cdn.modrinth.com/data/kepjj2sy/versions/ESA9aXtk/ShoulderSurfing-NeoForge-1.21.1-5.3.1.jar",
+   "sha1": "96d958fbd14713a3e50905b64d59d9fe31a26c63",
+   "sha512": "62700a37028649d2c6ef2b3d22c0b53ff3f7c0aa964bcb9a3e6bff25116492c39900676a816e939b164cc6e44304905159a32b28629dc2db878e9a3da9b9c11b",
+   "size": 435296
   },
   "curseforge": {
    "project_id": 243190,
-   "file_id": 9389661,
-   "filename": "ShoulderSurfing-NeoForge-1.21.1-5.3.0.jar"
+   "file_id": 9547205,
+   "filename": "ShoulderSurfing-NeoForge-1.21.1-5.3.1.jar"
   },
   "required_deps": [],
   "optional_deps": [],
@@ -1353,18 +1353,18 @@
   "license": "LicenseRef-All-Rights-Reserved",
   "modrinth": {
    "project_id": "e0M1UDsY",
-   "version_id": "sMzlSb4G",
-   "version_number": "1.21.1-8.85-fabric+forge+neo",
-   "filename": "collective-1.21.1-8.85.jar",
-   "url": "https://cdn.modrinth.com/data/e0M1UDsY/versions/sMzlSb4G/collective-1.21.1-8.85.jar",
-   "sha1": "1b0a89c71dc300c52c4bb2f68792781b7e331838",
-   "sha512": "5994ff7c2e10c87c2c5844095314eb7a2d9f57a77c18ff966aa1182f23ccdd9a13b7fafcb1c1db35892f87e2dcbce805168301dd21fb24c6db4305c907eb708d",
-   "size": 1624988
+   "version_id": "ry7LvdEb",
+   "version_number": "1.21.1-8.86-fabric+forge+neo",
+   "filename": "collective-1.21.1-8.86.jar",
+   "url": "https://cdn.modrinth.com/data/e0M1UDsY/versions/ry7LvdEb/collective-1.21.1-8.86.jar",
+   "sha1": "91f6a5c0ea671349b710a34810160abfb5dcc4c0",
+   "sha512": "b741915a3952bfb1f83ff74a3aee84128fb0d09b8e75ff836b1820c1b2d221fd5cf4bfa91146afee02468f6a7010cf5ae2b8f64746a6fc7bfa1e27b0abc4f99a",
+   "size": 1633821
   },
   "curseforge": {
    "project_id": 342584,
-   "file_id": 9527337,
-   "filename": "collective-1.21.1-8.85.jar"
+   "file_id": 9548438,
+   "filename": "collective-1.21.1-8.86.jar"
   },
   "required_deps": [],
   "optional_deps": [],
@@ -1407,18 +1407,18 @@
   "license": "LGPL-3.0-only",
   "modrinth": {
    "project_id": "OsZiaDHq",
-   "version_id": "M3URMOz9",
-   "version_number": "2.13.53",
-   "filename": "CreativeCore_NEOFORGE_v2.13.53_mc1.21.1.jar",
-   "url": "https://cdn.modrinth.com/data/OsZiaDHq/versions/M3URMOz9/CreativeCore_NEOFORGE_v2.13.53_mc1.21.1.jar",
-   "sha1": "56f51e9effa80e7fbc7301fc74d63363a1571707",
-   "sha512": "91d2be2d894094089964e5e4e9c9cfb996b703884d72b3f0a696668792802d0775ab358ea76c9bff0c75dd30e01a3fa9c3d05a52a1265965edabedef39a3f989",
-   "size": 1236971
+   "version_id": "v8QrwctR",
+   "version_number": "2.13.54",
+   "filename": "CreativeCore_NEOFORGE_v2.13.54_mc1.21.1.jar",
+   "url": "https://cdn.modrinth.com/data/OsZiaDHq/versions/v8QrwctR/CreativeCore_NEOFORGE_v2.13.54_mc1.21.1.jar",
+   "sha1": "07db1f441349db503fc21a146606121747780b7b",
+   "sha512": "ad96d5e95278f30d4077fc79ce1ebf48b8ae5fcf204a2f79729cc04e0e22d47ee0c4950d514751d7360e6d04d540c60ea41b142ba4a9e2ee1cfd3f7e41e1af70",
+   "size": 1237192
   },
   "curseforge": {
    "project_id": 257814,
-   "file_id": 9474088,
-   "filename": "CreativeCore_NEOFORGE_v2.13.53_mc1.21.1.jar"
+   "file_id": 9542277,
+   "filename": "CreativeCore_NEOFORGE_v2.13.54_mc1.21.1.jar"
   },
   "required_deps": [],
   "optional_deps": [],
@@ -2982,21 +2982,18 @@
   "license": "Apache-2.0",
   "modrinth": {
    "project_id": "ENwBoUVH",
-   "version_id": "9IohPC6P",
-   "version_number": "3.0.0+neoforge-1.21.1",
-   "filename": "runeborn-neoforge-1.21.1-3.0.0.jar",
-   "url": "https://cdn.modrinth.com/data/ENwBoUVH/versions/9IohPC6P/runeborn-neoforge-1.21.1-3.0.0.jar",
-   "sha1": "48ee9fbfe05240343253e33f764c53ba70b30c9f",
-   "sha512": "3739e40d20ff09ec7a1706224d804b5d73b37354dba413fb4836409b16f0f2ceb5db4d26c932bf06a58e95117f656df4c3ba3eaf78fd632a470ccf696962794c",
-   "size": 715691,
-   "date_published": "2026-10-23T09:59:27.029279Z"
+   "version_id": "gEMJej1g",
+   "version_number": "3.0.1+neoforge-1.21.1",
+   "filename": "runeborn-neoforge-1.21.1-3.0.1.jar",
+   "url": "https://cdn.modrinth.com/data/ENwBoUVH/versions/gEMJej1g/runeborn-neoforge-1.21.1-3.0.1.jar",
+   "sha1": "4bca5fb0a87306321e75093ebb8c5f50409f694f",
+   "sha512": "4927114f6b4a86dad2110553471b2ffd33ac39b8ef604c9f1cfa225df7946a83924f38de43e0ae6d5b9819f21ac74b1aa2b15305dd8fa29a4f573ce305800007",
+   "size": 715818
   },
   "curseforge": {
    "project_id": 1150827,
-   "file_id": 9296400,
-   "filename": "runeborn-neoforge-1.21.1-3.0.0.jar",
-   "release_type": "release",
-   "cf_slug": "runeborn-soulslike-rpg-progression"
+   "file_id": 9554702,
+   "filename": "runeborn-neoforge-1.21.1-3.0.1.jar"
   },
   "required_deps": [],
   "optional_deps": [
@@ -3974,18 +3971,18 @@
   "license": "Apache-2.0",
   "modrinth": {
    "project_id": "ywtf09FK",
-   "version_id": "FE5TdeAH",
-   "version_number": "1.0.0+neoforge-1.21.1",
-   "filename": "corerpg-quests-1.21.1-neoforge-1.0.0.jar",
-   "url": "https://cdn.modrinth.com/data/ywtf09FK/versions/FE5TdeAH/corerpg-quests-1.21.1-neoforge-1.0.0.jar",
-   "sha1": "d1b136f940ac8b413f5bc74e44ee45bf6938561c",
-   "sha512": "8a1cc4dfc17638350206cca69d18db1effc09fd1f80112c03ae73257d574877e008aa010d419f445e4face2422ddbcbc7d0427522f2cd64e6595c4df430b57be",
-   "size": 878714
+   "version_id": "QTsqD5Bd",
+   "version_number": "1.0.1+neoforge-1.21.1",
+   "filename": "corerpg-quests-1.21.1-neoforge-1.0.1.jar",
+   "url": "https://cdn.modrinth.com/data/ywtf09FK/versions/QTsqD5Bd/corerpg-quests-1.21.1-neoforge-1.0.1.jar",
+   "sha1": "7ab16dd14c26c35b4144b8fc69cb9cf1af3e2ce1",
+   "sha512": "bb77cd70ff25aed33dab30c4dbc96b7745ba1d85952e4b6df74909e571fd164a02d803a37dba55ae3bf4bc265fac6eea296cfc0154dbf88dade4d5f7d95b49f4",
+   "size": 878765
   },
   "curseforge": {
    "project_id": 1585209,
-   "file_id": 9493949,
-   "filename": "corerpg-quests-1.21.1-neoforge-1.0.0.jar"
+   "file_id": 9554692,
+   "filename": "corerpg-quests-1.21.1-neoforge-1.0.1.jar"
   },
   "required_deps": [],
   "optional_deps": [],
@@ -4725,5 +4722,32 @@
   "decision": "include",
   "group": "nightbeam",
   "reason": "Chrono Rifts: pods of future tech fall at night, guarded by Sentinels; the Fabricator, Flux, jetpacks, drones, mechs, rift gates"
+ },
+ {
+  "name": "Apex Hosting Partner Link",
+  "slug": "apex-hosting-partner-link",
+  "category": "quests-story-scripting",
+  "side": "client",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "modrinth": {
+   "project_id": "32A5wpl8",
+   "version_id": "GwZAuNt0",
+   "version_number": "1.1.0",
+   "filename": "apexhosting-partner-link-neoforge-1.21.1-1.1.0.jar",
+   "url": "https://cdn.modrinth.com/data/32A5wpl8/versions/GwZAuNt0/apexhosting-partner-link-neoforge-1.21.1-1.1.0.jar",
+   "sha1": "4f8d3105b61c125fd7741ff53e3c0b453c624c77",
+   "sha512": "083734ca4a7166b20da2807f4b3c17738fdc6a7f0e708aa12baffc62405e16e5c3994514d962379701752f812e55922fadb1a6a5cfccc02c9672be64e34743a6",
+   "size": 841084
+  },
+  "curseforge": {
+   "project_id": 1622270,
+   "file_id": 9270421,
+   "filename": "apexhosting-partner-link-neoforge-1.21.1-1.1.0.jar"
+  },
+  "required_deps": [],
+  "optional_deps": [],
+  "decision": "include",
+  "group": "story",
+  "reason": "The sponsor's own mod (Apex Hosting asked for it, Nov 2026): the Need a server? button opens its order screen, which prefills this pack at checkout (config/apexhosting-partner-link.properties)"
  }
 ]

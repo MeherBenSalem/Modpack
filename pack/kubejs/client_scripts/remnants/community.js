@@ -7,16 +7,23 @@
 //    marker (local/remnants/community_server.json, outside everything the pack ships) records that the address was
 //    offered, so a player who deletes the entry does not get it back on the next launch or the next pack update.
 //    A new address in a later pack version is offered once again.
-// 2. A "Need a server?" button on the title screen (drawn in the menu's own style, bottom right) and on the
-//    Multiplayer screen (a vanilla button with the Apex mark, top right) opens the sponsor's page through
-//    Minecraft's own "Are you sure you want to open the following website?" screen. The sprites come from the
-//    supplied banner (art/sponsors/, cropped by art/render.cjs, copied by tools/build_menu.py).
+// 2. A "Need a server?" button on the title screen (drawn in the menu's own style, bottom right) opens the order
+//    screen of Apex's own mod, Apex Hosting Partner Link (since beta 13, at Apex's request): the player picks a
+//    plan in game and lands on Apex's checkout with this pack prefilled (config/apexhosting-partner-link.properties
+//    holds the affiliate id and the pack's name on their side). That mod also adds its own "Looking for a server?"
+//    row to the Multiplayer list, so the pack's button there is only drawn when the mod is missing; without the
+//    mod both buttons open the sponsor's page through Minecraft's own link confirmation, as in beta 12.
+//    The sprites come from the supplied banner (art/sponsors/, cropped by art/render.cjs, copied by
+//    tools/build_menu.py).
 // Everything is wrapped in try/catch: an error thrown from a screen event crashes the client.
 
 var COMMUNITY_NAME = 'NightBeam Community Server'
 var COMMUNITY_ADDRESS = 'sv6af1d94aa636b.apexmc.co:1376'
 var SPONSOR_URL = 'https://apexhost.gg/NightBeam'
 var COMMUNITY_MARKER = 'local/remnants/community_server.json'
+
+var PARTNER_LINK_MOD = 'apexhosting_partner_link'
+var PARTNER_LINK_API = 'com.apexhosting.partnerlink.ApexPartnerLinkApi'
 
 var CommunityTitleScreen = Java.loadClass('net.minecraft.client.gui.screens.TitleScreen')
 var CommunityMultiplayerScreen = Java.loadClass('net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen')
@@ -28,7 +35,7 @@ NativeEvents.onEvent(Java.loadClass('net.neoforged.neoforge.client.event.ScreenE
     if (screen instanceof CommunityTitleScreen) {
       offerCommunityServer()
       event.addListener(titleSponsorButton(screen))
-    } else if (screen instanceof CommunityMultiplayerScreen) {
+    } else if (screen instanceof CommunityMultiplayerScreen && !Platform.isLoaded(PARTNER_LINK_MOD)) {
       event.addListener(multiplayerSponsorButton(screen))
     }
   } catch (e) {
@@ -64,6 +71,14 @@ function sponsorPress(screen) {
   var ConfirmLinkScreen = Java.loadClass('net.minecraft.client.gui.screens.ConfirmLinkScreen')
   return function (button) {
     try {
+      if (Platform.isLoaded(PARTNER_LINK_MOD)) {
+        Client.setScreen(Java.loadClass(PARTNER_LINK_API).createConfiguratorScreen(screen))
+        return
+      }
+    } catch (e) {
+      console.error('[Remnants] Apex order screen, opening the link instead: ' + e)
+    }
+    try {
       ConfirmLinkScreen.confirmLinkNow(screen, SPONSOR_URL)
     } catch (e) {
       console.error('[Remnants] sponsor link: ' + e)
@@ -73,6 +88,9 @@ function sponsorPress(screen) {
 
 function sponsorTooltip() {
   var Tooltip = Java.loadClass('net.minecraft.client.gui.components.Tooltip')
+  if (Platform.isLoaded(PARTNER_LINK_MOD)) {
+    return Tooltip.create(Text.of('Apex Hosting sponsors this pack. Pick a server here and it comes with Remnants already installed.'))
+  }
   return Tooltip.create(Text.of('Apex Hosting sponsors this pack. Opens apexhost.gg/NightBeam in your browser (25% off a new server with the code APEX25).'))
 }
 

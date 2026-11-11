@@ -22,9 +22,13 @@
 ## Community server and sponsor (Apex Hosting)
 
 - **What players get.** The NightBeam Community Server (`sv6af1d94aa636b.apexmc.co:1376`) appears in the Multiplayer
-  list, and a "Need a server?" button on the title screen and on the Multiplayer screen opens
-  https://apexhost.gg/NightBeam through Minecraft's own link confirmation. Name, address and link are the four
-  constants at the top of `pack/kubejs/client_scripts/remnants/community.js`.
+  list, and a "Need a server?" button on the title screen opens the order screen of Apex's own mod, Apex Hosting
+  Partner Link (in the pack since beta 13, at Apex's request). That mod also puts a "Looking for a server?" row in
+  the Multiplayer list. Its settings are in `pack/config/apexhosting-partner-link.properties`: `affiliate_id=17314`
+  and `server_version=remnants-ashen-legacy` are the values Apex gave; `modrinth_project_id` is empty until the
+  Modrinth project exists. Without the mod the button falls back to https://apexhost.gg/NightBeam through
+  Minecraft's own link confirmation. Name, address and link are the constants at the top of
+  `pack/kubejs/client_scripts/remnants/community.js`.
 - **How the server entry is added.** A `servers.dat` in the pack's overrides would replace the player's own list on
   the first install and again on every update, so the pack ships none. The client script loads the player's list
   with the game's own `ServerList`, appends the entry only if that address is not already there, saves, and writes

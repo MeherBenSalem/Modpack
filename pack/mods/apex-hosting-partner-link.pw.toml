@@ -1,0 +1,16 @@
+name = "Apex Hosting Partner Link"
+filename = "apexhosting-partner-link-neoforge-1.21.1-1.1.0.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/32A5wpl8/versions/GwZAuNt0/apexhosting-partner-link-neoforge-1.21.1-1.1.0.jar"
+hash-format = "sha512"
+hash = "083734ca4a7166b20da2807f4b3c17738fdc6a7f0e708aa12baffc62405e16e5c3994514d962379701752f812e55922fadb1a6a5cfccc02c9672be64e34743a6"
+
+[update]
+[update.curseforge]
+file-id = 9270421
+project-id = 1622270
+[update.modrinth]
+mod-id = "32A5wpl8"
+version = "GwZAuNt0"

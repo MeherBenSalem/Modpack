@@ -12,7 +12,7 @@ relight it one **Ember Shrine** and one **Sovereign** at a time. The story runs 
 ranked and named, and when you die an **Echo** of you guards your runes where you fell.
 
 **Season 1, "The Long Eclipse"** builds NightBeam's own mods (Runeborn, RPG Mobs, the Eclipsed Realm, RPG Stats,
-Skills and Powers, Fellowship and more) into one rule set, with 166 mods in all.
+Skills and Powers, Fellowship and more) into one rule set, with 167 mods in all.
 
 [![Watch the trailer](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/marketing/images/trailer.png)](https://youtu.be/U_x7PBLXGaM)
 
@@ -159,7 +159,7 @@ Every system has one owner, and the overlapping ones are switched off, so every 
 4. **Servers:** download the server pack, unzip it and run `start.sh` (Linux/macOS) or `start.bat` (Windows): it
    installs NeoForge when it starts (Java 21). `SERVER.md` inside covers RAM, ports and pregeneration with Chunky.
 
-**Credits.** Built by NightBeam Studio on the work of 166 mods and their authors: thank you. Special thanks to
+**Credits.** Built by NightBeam Studio on the work of 167 mods and their authors: thank you. Special thanks to
 [Subtle Effects](https://www.curseforge.com/minecraft/mc-mods/subtle-effects),
 [Ashen 16x](https://www.curseforge.com/minecraft/texture-packs/ashen-16x),
 [Fresh Animations](https://www.curseforge.com/minecraft/texture-packs/fresh-animations),
@@ -179,9 +179,10 @@ next to your own servers. Delete it and it stays gone.
 [![Apex Hosting: get 25% off a new server with the code APEX25](https://raw.githubusercontent.com/MeherBenSalem/Modpack/main/art/sponsors/apex-hosting-banner-849x141.png)](https://apexhost.gg/NightBeam)
 
 **Sponsored by Apex Hosting.** Want a server of your own for Remnants? [Apex Hosting](https://apexhost.gg/NightBeam)
-sponsors this pack: the code **APEX25** takes 25% off a new server. In the game that is one "Need a server?" button,
-on the title screen and on the Multiplayer screen, which opens the same page through Minecraft's own link
-confirmation. No pop-ups, and nothing else in the pack is sponsored.
+sponsors this pack: the code **APEX25** takes 25% off a new server. In the game that is one "Need a server?" button
+on the title screen and one "Looking for a server?" row in the Multiplayer list (Apex Hosting Partner Link): both
+open Apex's order screen, where a server comes with Remnants already installed. No pop-ups, and nothing else in the
+pack is sponsored.
 
 ### More from NightBeam Studio
 

@@ -5,6 +5,10 @@ file = "config/amendments-client.toml"
 hash = "db5ed92739fb28dab282cd1b303b09994e36f49918ad1e6d90ab3757503e9a3b"
 
 [[files]]
+file = "config/apexhosting-partner-link.properties"
+hash = "36be08e6e58ad0d167c90ef12c726b9024c211d9df60186680e7dbafd6dc86a5"
+
+[[files]]
 file = "config/corerpg_quests/book/book.json"
 hash = "cc5bae53c2359f009d9bd64609ef1c6a794592305756b80dd81a356f5c6282bc"
 
@@ -421,8 +425,12 @@ file = "config/ras/mob_xp.json"
 hash = "a683f111ab78bd733fff7c1c9b04bdc0c8c925ce5f62f29b4615db7446894c7e"
 
 [[files]]
+file = "config/ras/settings.json"
+hash = "d2e71ffee3206b5522c6916b7471ce1cbb014828bd93dc49225fa80c5345a263"
+
+[[files]]
 file = "config/remnant_mobs/difficulty.json"
-hash = "0744dfddfcb2f207070234f834503a5971a73ae9d2bc09a7245c78d3377caab3"
+hash = "ac1b43403f3ac3c7a554fae6ae777d515ed32847e0da0a9e63671141f9c32e83"
 
 [[files]]
 file = "config/remnant_mobs/elites.json"
@@ -434,7 +442,7 @@ hash = "09c3d83a67902c8e4e984e6821a2aaf85a5b265d01bcfe6e1ca04f5ffc677566"
 
 [[files]]
 file = "config/remnant_mobs/levels.json"
-hash = "febdacde4d7e9b989930bac7411696ccbac749da8ced7dce8da06944ddd908f2"
+hash = "fc9928e5ec82116ce720da7e75063ccea760728ff2621ea88b00a8bf7895fe98"
 
 [[files]]
 file = "config/remnant_mobs/loot.json"
@@ -450,7 +458,7 @@ hash = "69aa0c8771f776719d38331e3659d91421f37dad072797b231ac220834ecb513"
 
 [[files]]
 file = "config/runeborn-server.json"
-hash = "9ac8fd6177521ab62a82fc73cbad5ab59e83fc8efe2717cc9b50a90a785dfa27"
+hash = "061490e1066e997fb9fd475f32f6b04284aea68f79d6c8a43927636a1549524c"
 
 [[files]]
 file = "config/sparsestructures.json5"
@@ -1058,7 +1066,7 @@ hash = "0d19566b0a668750a5f4c1d368b472cc7f989cb3e554edba18d07d1b6c31d84a"
 
 [[files]]
 file = "kubejs/client_scripts/remnants/community.js"
-hash = "73174865ec42d499f7d6072c3521fb5ba4eb02a1c4e5cfada61ea9ecd6ea02cb"
+hash = "0fbc4251a08fd2d2b0d52e9b353a559e51ba82c8d48d49d6ffae5564565f0a6e"
 
 [[files]]
 file = "kubejs/client_scripts/remnants/forge_tooltips.js"
@@ -1521,6 +1529,10 @@ file = "kubejs/server_scripts/remnants/narration.js"
 hash = "daf8fbf55a030f5343ace609496941173c2e43fcd3a17fd78e75cb06448db008"
 
 [[files]]
+file = "kubejs/server_scripts/remnants/pacing.js"
+hash = "ef877c6046e24e81093bcbe846ffee8265f538d9cb11d0eba6d1ec680e9bba40"
+
+[[files]]
 file = "kubejs/server_scripts/remnants/recipes.js"
 hash = "4012e797a136e4c4235b91e3c82e2ff114b1e3466f199e920d87070832c15e26"
 
@@ -1556,6 +1568,11 @@ metafile = true
 [[files]]
 file = "mods/amendments.pw.toml"
 hash = "7529ab2acf5d675ac33bf1129c4873a6d1589fd936403a5be6a61fdf59a31404"
+metafile = true
+
+[[files]]
+file = "mods/apex-hosting-partner-link.pw.toml"
+hash = "4ca24558dcc4938cdce24770ff842275281d2e8a08083fca666e1663a1635cd3"
 metafile = true
 
 [[files]]
@@ -1680,7 +1697,7 @@ metafile = true
 
 [[files]]
 file = "mods/collective.pw.toml"
-hash = "0865479931db503ed08ece5ba9e340ec5aa52f596a223e4cb518402d808df060"
+hash = "e722aae646f4c42db62b3a17606e166a7f621ac59955706c833cd200b5f43d20"
 metafile = true
 
 [[files]]
@@ -1705,7 +1722,7 @@ metafile = true
 
 [[files]]
 file = "mods/corerpg-quests.pw.toml"
-hash = "8a4b3e4173ac04d2fc261f69878ffadc9478ea5b3ec3eaf71258faa8bd55676d"
+hash = "aee92bb6a0834add9cf9690a462241f1b189e699b6bd7bf46dc9b2e998fb739b"
 metafile = true
 
 [[files]]
@@ -1725,7 +1742,7 @@ metafile = true
 
 [[files]]
 file = "mods/creativecore.pw.toml"
-hash = "00a73b1974e8f4e0f84220cc5f628ef1ffb20c06d0a1e2a4c72d48219e847239"
+hash = "751aef2a2cda9df3c4851d92c07ca89ff5a52747c38ab1fd4e71ffaf84cbe920"
 metafile = true
 
 [[files]]
@@ -2185,7 +2202,7 @@ metafile = true
 
 [[files]]
 file = "mods/runeborn-soulslike-rpg-progression.pw.toml"
-hash = "e7478595206529f59ac765d3259bad3b31a29506d2d0c9f1e17c9d6b585824b1"
+hash = "32d5ee79f992f081eb0a77bdfb699629f347b3801579cae8ef42ce5f9f76b9ac"
 metafile = true
 
 [[files]]
@@ -2195,7 +2212,7 @@ metafile = true
 
 [[files]]
 file = "mods/shoulder-surfing-reloaded.pw.toml"
-hash = "eea918e943bc1ce22a782034062c4571e5f31b702520a1f1c06ab0cd3c190988"
+hash = "25cf4a5c97fab0219e4fcede15a52f17f69e053217399581b3edfea13d1274df"
 metafile = true
 
 [[files]]

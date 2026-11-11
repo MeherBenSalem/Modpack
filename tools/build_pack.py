@@ -269,7 +269,7 @@ def export(mods, meta):
 # Parts of the pack a dedicated server never reads: client-only mods' configs, client configs, KubeJS client
 # scripts and assets (sounds, textures, lang, book text). Paths relative to pack/.
 CLIENT_ONLY = ("config/defaultoptions/", "config/fancymenu/", "config/dynamic_fps.json", "kubejs/assets/",
-               "kubejs/client_scripts/")
+               "kubejs/client_scripts/", "config/apexhosting-partner-link.properties")
 SERVER_DIRS = ("config", "defaultconfigs", "kubejs", "datapacks")
 
 

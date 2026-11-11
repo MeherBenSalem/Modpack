@@ -126,6 +126,20 @@ levelup_rewards:
                           runeborn:lustrous_stone_4, runeborn:lustrous_stone_5, runeborn:lustrous_stone_6,
                           runeborn:lustrous_stone_7, runeborn:lustrous_stone_8, runeborn:lustrous_stone_9]}  # tier = level // 11
 
+# How much Valor each RPG level costs (config/ras/settings.json, exp_required_per_level). RPG Stats' own table
+# starts at 140 and reaches 950 by level 10, written for a mod played alone. Here two ladders feed the same RPG
+# level (Valor from kills, and every rune level bought at a shrine), and a kill pays the victim's max health, which
+# RPG Mobs raises with every mob level: players were level 40 where the acts expect 15. This table and
+# levelCostMultiplier in config/runeborn-server.json (2.5) are tuned together for about one level an hour:
+# Prologue 1-5, Act I to 15, Act II to 30 (design/PROGRESSION.md, "How long it takes").
+#   levels 1..early_levels cost early_step x level; after that base + step x n + curve x n^2, n = level - early_levels.
+leveling:
+  early_levels: 5
+  early_step: 700
+  step: 450
+  curve: 4
+  table_levels: 300
+
 # VP per kill. RPG Stats pays a kill's max health; RPG Mobs leaves bosses unscaled, so a vanilla Warden pays 500 and
 # Ancient City shriekers summon a new one on demand: players farmed it from level 25 to 170 (CurseForge, Nov 2026).
 # Its first kill still pays well; farming it no longer outpaces the acts.

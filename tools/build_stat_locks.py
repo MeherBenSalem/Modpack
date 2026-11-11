@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compile src/stat_locks.yaml into RPG Stats' configs: items_lock.json, blocks_lock.json, levelup_rewards.json,
+"""Compile src/stat_locks.yaml into RPG Stats' configs: items_lock.json, blocks_lock.json, levelup_rewards.json, settings.json (the Valor each level costs),
 mob_xp.json.
 
   python3 tools/build_stat_locks.py        # writes pack/config/ras/*.json; exits non-zero on an unknown id
@@ -84,6 +84,19 @@ def main():
         "difficulty_weighting": {"enabled": False, "peaceful": 1, "easy": 1, "normal": 1, "hard": 1},
         "armor_weighting": {"enabled": False, "per_armor_point": 0, "max_multiplier": 5},
         "rules": mob_rules}, indent=2) + "\n")
+    # The Valor each level costs. settings.json is RPG Stats' main file, so the pack ships all of it: the mod's own
+    # defaults (src/ras_settings.json, as RPG Stats 5.1.3 writes them) with the table replaced.
+    lv = spec["leveling"]
+    settings = json.loads((ROOT / "src" / "ras_settings.json").read_text())
+    early, base = lv["early_levels"], lv["early_levels"] * lv["early_step"]
+    table = []
+    for level in range(1, lv["table_levels"] + 1):
+        n = level - early
+        xp = lv["early_step"] * level if n <= 0 else base + lv["step"] * n + lv["curve"] * n * n
+        table.append(f"[level]{level}[levelEnd][xp]{int(round(xp, -1))}[xpEnd]")
+    settings["exp_required_per_level"] = table
+    settings["first_level_vp"] = settings["exp_curve_first_level_xp"] = float(lv["early_step"])
+    (OUT / "settings.json").write_text(json.dumps(settings, indent=2, ensure_ascii=False) + "\n")
     print(f"{len(items)} item locks, {len(blocks)} block locks, {len(rewards)} level-up rewards -> {OUT.relative_to(ROOT)}")
 
 

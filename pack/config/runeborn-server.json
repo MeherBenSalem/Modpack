@@ -1,6 +1,6 @@
 {
   "runeGainMultiplier": 1.0,
-  "levelCostMultiplier": 1.0,
+  "levelCostMultiplier": 2.5,
   "smithingCostMultiplier": 1.0,
   "merchantPriceMultiplier": 1.0,
   "dropRunesOnDeath": true,

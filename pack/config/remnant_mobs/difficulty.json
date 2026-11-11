@@ -20,7 +20,7 @@
     "days": {
       "enabled": true,
       "curve": "linear",
-      "per": 4.0,
+      "per": 6.0,
       "exponent": 1.0,
       "max": 15.0
     },
@@ -34,7 +34,7 @@
     "distance": {
       "enabled": true,
       "curve": "linear",
-      "per": 128.0,
+      "per": 176.0,
       "exponent": 1.0,
       "max": 0.0
     },

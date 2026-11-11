@@ -124,8 +124,11 @@ lustrous stone every 10) instead of RPG Stats' default diamonds and diamond armo
 ## Tuning knobs
 
 - Mob curve: `config/remnant_mobs/levels.json`, `ranks.json`
+- How many monsters stand around a player, by story stage, which monsters wait for a stage, and the flies:
+  `PACE_CAPS`, `PACE_TIERS`, `PACE_FLY_ODDS` in `kubejs/server_scripts/remnants/pacing.js`
 - Runes and costs: `config/runeborn-server.json` (`runeGainMultiplier`, `levelCostMultiplier`)
-- Player leveling: `config/ras/settings.json`; gear gates: `config/ras/items_lock.json`
+- Player leveling: the Valor table, `leveling` in `src/stat_locks.yaml` (compiled into `config/ras/settings.json`),
+  tuned together with `levelCostMultiplier`; gear gates: `config/ras/items_lock.json`
 - Bag drop rate: `config/mob_loot_bags/drops.json` (`global_multiplier: 0.75`); bag contents: `src/data/loot_bags.yaml`
 - Forge costs and what each tier gates: `src/progression.yaml` (then `python3 tools/build_progression.py`)
 - Echo strength: `ECHO_HEALTH_BONUS` / `ECHO_DAMAGE_BONUS` in `kubejs/server_scripts/remnants/echo.js`

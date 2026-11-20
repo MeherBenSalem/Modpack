@@ -1,50 +1,38 @@
-## 1.0.0-beta.13: A Quieter First Night
-
-### Changed: the world starts quiet and fills up with the story
-
-- **Fewer monsters at once, early.** A new Ashborn used to meet as many monsters on their first night as someone
-  who had felled four Sovereigns: 18 to 31 within 72 blocks, measured. Now the land around you holds about 7 until
-  you kindle your first Ember Shrine, then 10, and three or four more for each Sovereign you fell. From your fourth
-  Sovereign on there is no limit. In a party, the player furthest in the story sets the pace.
-- **The worst of them wait their turn.** Bruisers, Door Knights, Dread Hounds, Mother Spiders and their like rise
-  once you have kindled a shrine. Fallen Chaos Knights, Nightmare Stalkers, Lifestealers, Missionaries and the
-  mutants rise after the Dusk Rider falls. Spawners, dungeons and bosses are untouched.
-- **Far fewer flies.** Corpse flies, gadflies and swarmers made up a third of the night (10 of 27 monsters in one
-  count). About one in six still rises, and never more than two near you.
-- **Monsters grow stronger more slowly.** They gain a level every 176 blocks from spawn (was 128) and every 6 days
-  (was 4), and each level adds 4.5% health and 2.2% damage (was 6% and 3%).
-
-### Changed: levels take longer, as the acts always meant
-
-- **Valor.** RPG levels came about three times faster than the story expects: level 40 where Act I ends at 15.
-  The first level now takes 700 Valor (was 140) and level 10 takes 5,850 (was 950).
-- **Rune levels at a shrine cost 2.5 times more.** Each one still gives an RPG level as well. Smithing and the
-  merchant cost what they did.
-- **Your level and points are kept.** Only the levels you earn from now on cost the new amounts.
-
-### New: pick a server without leaving the game
-
-- **"Need a server?" now opens Apex Hosting's order screen** (Apex Hosting Partner Link, the sponsor's own mod):
-  choose the memory you want and Apex sets the server up with Remnants already installed. The Multiplayer list
-  gains Apex's "Looking for a server?" row in place of the pack's small button.
+## 1.0.0-beta.14: Steel Bites Again
 
 ### Fixed
 
-- **The health number on the HUD looked doubled** as soon as you wore armor: the armor value was drawn on top of
-  it. It now sits after the number (Runeborn 3.0.1).
-- **The quest book's chapter list flickered** when you kept scrolling past its last chapter (Core RPG - Quests
-  Engine 1.0.1).
+- **Melee did almost nothing to Cataclysm bosses**, and they healed it straight back: every sword, axe and mace
+  hit landed as 0.1 damage, while staves still worked. Runeborn sent each melee hit through the boss's damage cap
+  twice. Melee now hurts them as it should (Runeborn 3.0.2).
 
 ### Updated
 
 | Mod | From | To |
 |---|---|---|
-| Apex Hosting Partner Link | new | 1.1.0 |
-| Runeborn | 3.0.0 | 3.0.1 |
-| Core RPG - Quests Engine | 1.0.0 | 1.0.1 |
-| Collective | 8.85 | 8.86 |
-| CreativeCore | 2.13.53 | 2.13.54 |
-| Shoulder Surfing Reloaded | 5.3.0 | 5.3.1 |
+| Runeborn | 3.0.1 | 3.0.2 |
+| Remnants: RPG Mobs | 3.1.2 | 3.2.1 |
+| Remnants: The Eclipsed Realm | 3.1.1 | 3.1.2 |
+| Remnants: Fellowship | 2.0.1 | 2.0.2 |
+| Remnants: Advanced Minimap & Waypoints | 2.0.1 | 2.1.0 |
+| Remnants: Roguelite Dungeons | 1.0.1 | 1.0.2 |
+| The Witch Hut | 2.0.0 | 2.0.1 |
+| Mob LootBags | 2.0.1 | 2.0.3 |
+| Apex Hosting Partner Link | 1.1.0 | 1.1.1 |
+| Architectury API | 13.0.11 | 13.0.12 |
+| Collective | 8.86 | 8.87 |
+| Curios API | 9.5.1 | 9.6.0 |
+| Easy NPC (Bundle, Core, Config UI) | 7.18.0 | 7.20.0 |
+| Entity Culling | 1.11.3 | 1.12.1 |
+| Friends&Foes | 5.0.4 | 5.0.5 |
+| Just Enough Items | 19.70.0 | 19.71.0 |
+| Kotlin for Forge | 5.12.0 | 5.13.0 |
+| Particle Rain | 4.0.3 | 4.0.4 |
+| Sophisticated Backpacks | 3.26.21 | 3.26.22 |
+| Sophisticated Core | 1.5.32 | 1.5.39 |
+| Sophisticated Storage | 1.6.16 | 1.6.20 |
+| Structure Layout Optimizer | 1.0.12 | 1.0.13 |
+| Subtle Effects | 1.15.1 | 1.15.3 |
+| Supplementaries | 4.0.2 | 4.1.3 |
 
-Worlds from beta 12 load unchanged, and quest progress is kept. Monsters already in the world keep the level they
-rose with.
+Worlds from beta 13 load unchanged, and quest progress is kept.

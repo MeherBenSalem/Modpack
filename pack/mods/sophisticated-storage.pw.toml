@@ -1,16 +1,16 @@
 name = "Sophisticated Storage"
-filename = "sophisticatedstorage-1.21.1-1.6.16.2222.jar"
+filename = "sophisticatedstorage-1.21.1-1.6.20.2239.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/hMlaZH8f/versions/hC4LaBhJ/sophisticatedstorage-1.21.1-1.6.16.2222.jar"
+url = "https://cdn.modrinth.com/data/hMlaZH8f/versions/t9QwDIi8/sophisticatedstorage-1.21.1-1.6.20.2239.jar"
 hash-format = "sha512"
-hash = "a3bf3141fd0853b45014a273db67f164af00f96d96a84acc84e34455286f5a7f539ae1408029eec06650d38e1c2f800d839830d4bd6d198250ec102da8feb01b"
+hash = "df3a1d6f5483d8de792f127c0106c7d935497d468cf7330c65b1a1d3796069ade21367f49e4a283c2d2aa3e1244e454d36c896ba825accf3efed029c5f8e9fd5"
 
 [update]
 [update.curseforge]
-file-id = 9431872
+file-id = 9692522
 project-id = 619320
 [update.modrinth]
 mod-id = "hMlaZH8f"
-version = "hC4LaBhJ"
+version = "t9QwDIi8"

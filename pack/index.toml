@@ -1572,7 +1572,7 @@ metafile = true
 
 [[files]]
 file = "mods/apex-hosting-partner-link.pw.toml"
-hash = "4ca24558dcc4938cdce24770ff842275281d2e8a08083fca666e1663a1635cd3"
+hash = "fe4c5c2421d7a4fa6a898d3e918fc3f1c5dd7e14df7dbc8a20d56af153c7551c"
 metafile = true
 
 [[files]]
@@ -1592,7 +1592,7 @@ metafile = true
 
 [[files]]
 file = "mods/architectury-api.pw.toml"
-hash = "7bacb9044cdb435be148ad05ccdb9eb91e7ee74e5f7b1a0eb7e0a2ab109779c6"
+hash = "87c277fe3a275e2d1c36873235556789148271b4d0f32ba1e522b695931ccba6"
 metafile = true
 
 [[files]]
@@ -1697,7 +1697,7 @@ metafile = true
 
 [[files]]
 file = "mods/collective.pw.toml"
-hash = "e722aae646f4c42db62b3a17606e166a7f621ac59955706c833cd200b5f43d20"
+hash = "75585b897190aebaace7007daad4bc372cc24958be65ddf40a7dce16deeac6f7"
 metafile = true
 
 [[files]]
@@ -1752,7 +1752,7 @@ metafile = true
 
 [[files]]
 file = "mods/curios.pw.toml"
-hash = "09d9e525ae14ab9e2ca3acc188c921380f0b1eb1511570c64208a36dbf75135c"
+hash = "77f30356bebf5c2041f27dc4fbda7f07ca05de040f94463b4ec4d4dd91bdedd7"
 metafile = true
 
 [[files]]
@@ -1782,17 +1782,17 @@ metafile = true
 
 [[files]]
 file = "mods/easy-npc-config-ui.pw.toml"
-hash = "588f38db8c25e6d7813b4daf2e7782d3e7dddd7cc458b057a96e95c49bdd383c"
+hash = "6a55333d707ebc60fd405493b2dea7baf522eed50b6cd8e7319e389de6e09eb6"
 metafile = true
 
 [[files]]
 file = "mods/easy-npc-core.pw.toml"
-hash = "183543ccc13821d9b81583f71a725761cfad6e35f72e851a88933843fd626ba4"
+hash = "942c6e6ac8e660a45e1f45fc0924e27a54cc155029fc42b3da3623e1347c5b58"
 metafile = true
 
 [[files]]
 file = "mods/easy-npc.pw.toml"
-hash = "36a8ce4cdcfa2b4155d1fc9b1a9ac02bd0135ea6417b4d038e566557a0dbd2bc"
+hash = "b74d5aada3abed2db423c837ecbbe361f6bc93441d0e97379f0d519f4929450a"
 metafile = true
 
 [[files]]
@@ -1807,7 +1807,7 @@ metafile = true
 
 [[files]]
 file = "mods/entityculling.pw.toml"
-hash = "d0cc1dfd8eda24ef323abfdc3d9b909573d3b5c0acc3bb5a980656ca95170825"
+hash = "21fc850c14ba3915a39fd575e2f9387467178e70d0a74ff2c05fbd98278dca9e"
 metafile = true
 
 [[files]]
@@ -1857,7 +1857,7 @@ metafile = true
 
 [[files]]
 file = "mods/friends-and-foes-forge.pw.toml"
-hash = "f604a5206ba382c8920fe6cc166cac558b02d20a5784ae02dae4c55234f1e2fc"
+hash = "411d1d40e76f238f9bcbb950de6122e27b4ba33beff6bb48db236b9e5172e02f"
 metafile = true
 
 [[files]]
@@ -1927,7 +1927,7 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "c7d9eb0b87073aa589a91c1dd23c4d43797d4bd3f65ce061182fd6651018bc6e"
+hash = "d30bbf5880dacf2d67c32a7b0979cd42c2737c32d7f3b091dc83f687c5892dcb"
 metafile = true
 
 [[files]]
@@ -1942,7 +1942,7 @@ metafile = true
 
 [[files]]
 file = "mods/kotlin-for-forge.pw.toml"
-hash = "0a09932f4feaf63666f7dba0930f6d0e6d59d74b2b718ef2c1395164801d71a8"
+hash = "0cf17c7d0834d77d43073a72e1d5037b12e6f94d20507225af1b519b989af094"
 metafile = true
 
 [[files]]
@@ -2012,7 +2012,7 @@ metafile = true
 
 [[files]]
 file = "mods/mob-loot-bags.pw.toml"
-hash = "3cca31921016a5a9bbdec4b00b8ba9c03566af0de682bef97d9390d2759baee6"
+hash = "4f2b26c1b16a61d727ea21c55a7bad1479415c9544222f30013f60ac09ddb435"
 metafile = true
 
 [[files]]
@@ -2097,7 +2097,7 @@ metafile = true
 
 [[files]]
 file = "mods/particle-rain.pw.toml"
-hash = "e48bca0593afae8a5c1e4aa3a3c833f3f234d588548f5afa05d51a1108cbe4fe"
+hash = "30aef1b300c20adaa919998381675ea2538726538b87b797532e15d0ee656d4b"
 metafile = true
 
 [[files]]
@@ -2152,27 +2152,27 @@ metafile = true
 
 [[files]]
 file = "mods/remnants-eclipsed-realm.pw.toml"
-hash = "314ce38635d9f1a7c8317a6fe572183d5b4160d32324580ec40a3d2409b1182c"
+hash = "1f9d71b9708076fc49a161002cd25eb66be0a97f40daba29633ea1557c605fb3"
 metafile = true
 
 [[files]]
 file = "mods/remnants-fellowship.pw.toml"
-hash = "db8a274b3bb681deee11c80f9e37dd259b0cbd668135d3c40d9b7b7415801ac9"
+hash = "9d7b6dcd6831a358074f7655acb128838dbec9e8231fba9bfe94079d53fc3121"
 metafile = true
 
 [[files]]
 file = "mods/remnants-minimap.pw.toml"
-hash = "a0de06e432c226488f3ed99de3f0c28103229c564186d830cb304492ca6ba12d"
+hash = "1774a0889cbd1b8e511c7a605ac08687296e5cd0ae1a1a0980796be2d0b3e52d"
 metafile = true
 
 [[files]]
 file = "mods/remnants-roguelite-dungeons.pw.toml"
-hash = "f9ab5fd39d8b8e8117b0859dba1290941f3bbe968e80226ba377c77f5becd575"
+hash = "808ffcd5844c349459822a1ed1767109e1808328d183f4903bffa5a95c7c0671"
 metafile = true
 
 [[files]]
 file = "mods/remnants-rpg-mobs.pw.toml"
-hash = "2866aa31684fac5f40d49421f083f4c225c56f29652d9340ee50f366d2e41616"
+hash = "2727e3204dba12b48c1fc27f8e979b4783816cbc37b8cbb31ee8b17d4cc791d2"
 metafile = true
 
 [[files]]
@@ -2202,7 +2202,7 @@ metafile = true
 
 [[files]]
 file = "mods/runeborn-soulslike-rpg-progression.pw.toml"
-hash = "32d5ee79f992f081eb0a77bdfb699629f347b3801579cae8ef42ce5f9f76b9ac"
+hash = "acf62ad90ca4c6ce08c32e28f8b6c7823d1e79fa103a06108344fa74a9ef134f"
 metafile = true
 
 [[files]]
@@ -2232,17 +2232,17 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-backpacks.pw.toml"
-hash = "14b60cdd8f0e107425d0a109e95de246f31880272e00b93560194d5855f0364c"
+hash = "9a0c508313317d127b3754aa9a67092295187d73b7892893728f30830fe6515b"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "63f7a1a4c7e8c43b8db1e279fafa994e54c31f7edbdb9bd6cebfbe85f523c543"
+hash = "669f51e5144285e411c7543d5924ea8f399871e1e38fb09cdb38c504bd2846c6"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-storage.pw.toml"
-hash = "ebd2a10a4ae532af1f99a930a2bab533a35877b3260f790988db0b49dac1206f"
+hash = "3cad1929a04ca91124a6f96bd4f6172538c7389d3c03d79789b9a0535cc4c645"
 metafile = true
 
 [[files]]
@@ -2272,17 +2272,17 @@ metafile = true
 
 [[files]]
 file = "mods/structure-layout-optimizer.pw.toml"
-hash = "f2942c5734f2107e4de29d3862ed7f96b76eaf609f0d9beeea4878730d6b5469"
+hash = "775b643cca4259268ce3847e2a02842cad9d7a4d00101f673a9944b51b6d17a8"
 metafile = true
 
 [[files]]
 file = "mods/subtle-effects.pw.toml"
-hash = "f093b62ee076bdd601010925f572e469d1af354463573ee934a8cca005370781"
+hash = "94d8e6a92cf58329c9e068bb03b5e317659110271c9b9fb3554f63930a87e2eb"
 metafile = true
 
 [[files]]
 file = "mods/supplementaries.pw.toml"
-hash = "c23ed462636640350e48eb5c1d8aabdc2e8de1a4be536543e226fb8f4d50cb91"
+hash = "dda557a16c6900c25fd8ee747aa9a8681ed6e84a7864c4962bc4e1bed73f5dd7"
 metafile = true
 
 [[files]]
@@ -2307,7 +2307,7 @@ metafile = true
 
 [[files]]
 file = "mods/the-witch-hut.pw.toml"
-hash = "147a9bc848a857ce3dc108de9d5056a42a88fc37937d567bae0d0f630fc3854f"
+hash = "2d879ba1e7ba34dc2ea96de51136ddcc4a144004af339c8c218857ac0f9e1009"
 metafile = true
 
 [[files]]

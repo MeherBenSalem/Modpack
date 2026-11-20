@@ -1,0 +1,82 @@
+# Update and test a pack branch: move every mod to its newest 1.21.1 NeoForge file (only when CurseForge and
+# Modrinth both have it), rebuild pack/ and dist/, check the CurseForge ids, boot the server pack until "Done",
+# then boot a client into that world. Changes to src/ and pack/ are committed back to the branch.
+# Runs on pushes to pack/** branches, or by hand.
+name: Pack update and boot test
+
+on:
+  push:
+    branches: ["pack/**"]
+  workflow_dispatch:
+    inputs:
+      update:
+        description: Move mods to their newest files first (true/false)
+        required: false
+        default: "true"
+
+permissions:
+  contents: write
+
+jobs:
+  update-and-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - run: pip install pyyaml
+      - name: Update mods
+        if: ${{ github.event_name == 'push' || inputs.update == 'true' }}
+        run: |
+          mkdir -p reports
+          python3 tools/update_mods.py --write 2>&1 | tee reports/update-mods.txt
+      - name: Build the pack, the CurseForge zip, the .mrpack and the server pack
+        run: python3 tools/build_pack.py --export 2>&1 | tee reports/build-pack.txt
+      - name: Check CurseForge ids
+        continue-on-error: true
+        id: checkcf
+        run: python3 tools/check_cf.py 2>&1 | tee reports/check-cf.txt; exit ${PIPESTATUS[0]}
+      - name: Commit updated mods back to the branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add src pack
+          if ! git diff --cached --quiet; then
+            git commit -m "Pack: move mods to their newest 1.21.1 NeoForge files (automated)"
+            git push
+          fi
+      - name: Boot the server pack
+        id: server
+        continue-on-error: true
+        run: python3 tools/test_server.py --timeout 1500 2>&1 | tee reports/test-server.txt; exit ${PIPESTATUS[0]}
+      - name: Install a virtual screen for the client test
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq xvfb libgl1-mesa-dri libglx-mesa0 x11-utils imagemagick > /dev/null
+      - name: Boot a client into that world
+        id: client
+        continue-on-error: true
+        run: python3 tools/test_client.py --seconds 120 --xmx 8G 2>&1 | tee reports/test-client.txt; exit ${PIPESTATUS[0]}
+      - name: Collect reports
+        if: always()
+        run: |
+          mkdir -p reports/server reports/client
+          cp run/serverpack/boot-report.json run/serverpack/logs/latest.log reports/server/ 2>/dev/null || true
+          cp -r run/serverpack/crash-reports reports/server/ 2>/dev/null || true
+          cp run/client/boot-report.json run/client/boot.png run/client/logs/latest.log reports/client/ 2>/dev/null || true
+          cp -r run/client/crash-reports reports/client/ 2>/dev/null || true
+          ls -la dist > reports/dist.txt 2>/dev/null || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pack-reports
+          path: reports
+      - name: Fail when a boot failed
+        if: steps.server.outcome != 'success' || steps.client.outcome != 'success' || steps.checkcf.outcome != 'success'
+        run: |
+          echo "check_cf: ${{ steps.checkcf.outcome }}, server: ${{ steps.server.outcome }}, client: ${{ steps.client.outcome }}"
+          exit 1

@@ -1,16 +1,16 @@
 name = "Remnants | Fellowship (mod id better_with_gold, formerly Better With Gold)"
-filename = "better_with_gold-neoforge-1.21.1-2.0.1.jar"
+filename = "better_with_gold-neoforge-1.21.1-2.0.2.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/B3cmf35A/versions/pP4Jl3yN/better_with_gold-neoforge-1.21.1-2.0.1.jar"
+url = "https://cdn.modrinth.com/data/B3cmf35A/versions/ZpyhVvk3/better_with_gold-neoforge-1.21.1-2.0.2.jar"
 hash-format = "sha512"
-hash = "839097c7691a69d0c6e37c95e5b9075150f62395e66dcd7becbfc8be260c2a534f274549055899b6e327756c3edbfaeb24e055c811509408c55174d5b2ac3953"
+hash = "622e403fc25f62fc5cc271507a3361ec7f8d047bfd01815be795a6bf87fc0784fdb2d1b9f5413023dceca30a11b871b0fd7ed61cb6dd30fd8c051ad8c997d4b8"
 
 [update]
 [update.curseforge]
-file-id = 9418572
+file-id = 9664137
 project-id = 1305455
 [update.modrinth]
 mod-id = "B3cmf35A"
-version = "pP4Jl3yN"
+version = "ZpyhVvk3"

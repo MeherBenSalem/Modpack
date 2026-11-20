@@ -155,18 +155,18 @@
   "license": "CC-BY-NC-ND-4.0",
   "modrinth": {
    "project_id": "BOCJKD49",
-   "version_id": "GFgkK01z",
-   "version_number": "neoforge-5.0.4+mc1.21.1",
-   "filename": "friendsandfoes-neoforge-5.0.4+mc1.21.1.jar",
-   "url": "https://cdn.modrinth.com/data/BOCJKD49/versions/GFgkK01z/friendsandfoes-neoforge-5.0.4%2Bmc1.21.1.jar",
-   "sha1": "0bb94ce6451d043fc480188f7e44715b83f351e8",
-   "sha512": "fcd2d45fb98b9baef8e6ff651dab0a52d8519fb472c01fb94a9e95147dfb37dff676afb61600e28523a9d65d01a4e58d9f5362964aa6c9f839a97530d4359be0",
-   "size": 5280741
+   "version_id": "SHNibBGE",
+   "version_number": "neoforge-5.0.5+mc1.21.1",
+   "filename": "friendsandfoes-neoforge-5.0.5+mc1.21.1.jar",
+   "url": "https://cdn.modrinth.com/data/BOCJKD49/versions/SHNibBGE/friendsandfoes-neoforge-5.0.5%2Bmc1.21.1.jar",
+   "sha1": "f82a19b725c2751576aa2d5fe9086eab6aab4ff7",
+   "sha512": "7d9949c61475bc641a493f5380f197bd991e1517d4a73ecb1cb037f2a069cfada8376a528def93699a0a96a6463cd849b9cca51ae23ffcf7bb9f5f0fb7579cbd",
+   "size": 5280774
   },
   "curseforge": {
    "project_id": 602059,
-   "file_id": 9331874,
-   "filename": "friendsandfoes-neoforge-5.0.4+mc1.21.1.jar"
+   "file_id": 9647342,
+   "filename": "friendsandfoes-neoforge-5.0.5-mc1.21.1.jar"
   },
   "required_deps": [
    "resourceful-lib"
@@ -682,18 +682,18 @@
   "license": "MIT",
   "modrinth": {
    "project_id": "u6dRKJwZ",
-   "version_id": "1vC6z8wV",
-   "version_number": "19.70.0.469",
-   "filename": "jei-1.21.1-neoforge-19.70.0.469.jar",
-   "url": "https://cdn.modrinth.com/data/u6dRKJwZ/versions/1vC6z8wV/jei-1.21.1-neoforge-19.70.0.469.jar",
-   "sha1": "363f10ce1d8918381a125cc1e8d800caf1bcb40e",
-   "sha512": "65e9ed5d032e6f284dbdc7f5a41ca43f35ffb9e086419105ee6b360333b1349dc5967bf6ca250f8f02adf73326318945b6c4e57624c0e0a09fc566731e328bc1",
-   "size": 4784333
+   "version_id": "kmb7KviL",
+   "version_number": "19.71.0.470",
+   "filename": "jei-1.21.1-neoforge-19.71.0.470.jar",
+   "url": "https://cdn.modrinth.com/data/u6dRKJwZ/versions/kmb7KviL/jei-1.21.1-neoforge-19.71.0.470.jar",
+   "sha1": "80faa0b3525728d9dddd1142b5b201358c9fe774",
+   "sha512": "6a3f093991d039e81a1ab0df35b06fe279a26d3180d8472c052a5015cda874df3590ec495cc5ee8b69a39fbfbe6acc18e082a80eb71f2ab5c3313e91f6b47356",
+   "size": 7085566
   },
   "curseforge": {
    "project_id": 238222,
-   "file_id": 9393327,
-   "filename": "jei-1.21.1-neoforge-19.70.0.469.jar"
+   "file_id": 9701110,
+   "filename": "jei-1.21.1-neoforge-19.71.0.470.jar"
   },
   "required_deps": [
    "mezzconfig"
@@ -1106,18 +1106,18 @@
   "license": "MIT",
   "modrinth": {
    "project_id": "nrikgvxm",
-   "version_id": "inhna3NE",
-   "version_number": "v4.0.3+1.21.1-neoforge",
-   "filename": "particlerain-4.0.3+1.21.1-neoforge.jar",
-   "url": "https://cdn.modrinth.com/data/nrikgvxm/versions/inhna3NE/particlerain-4.0.3%2B1.21.1-neoforge.jar",
-   "sha1": "d1b6bb30d56d29b6f850bfbd29d45fc5e3bcaf02",
-   "sha512": "85d3ee20ebecaeac9a3f83e27ac71a811d2429c0e918566d84e921f7f6937532ca466437b75f16498550f1dbaa4d563773174287dc6f22d869d1dcc80531ab5d",
-   "size": 623684
+   "version_id": "DW2m22Qi",
+   "version_number": "v4.0.4+1.21.1-neoforge",
+   "filename": "particlerain-4.0.4+1.21.1-neoforge.jar",
+   "url": "https://cdn.modrinth.com/data/nrikgvxm/versions/DW2m22Qi/particlerain-4.0.4%2B1.21.1-neoforge.jar",
+   "sha1": "0a8c52eea34e3bf9edcc7b2b03d1f8a100cb71be",
+   "sha512": "0e3ba8f5f83904ff8979d8d69f8e5be0eef340b6d1e326762ec9ab933c088ab63ef3b88117dc1023000ade11e9ad23d84390e3840b08519bb20638c131b08151",
+   "size": 626707
   },
   "curseforge": {
    "project_id": 421897,
-   "file_id": 9430176,
-   "filename": "particlerain-4.0.3-1.21.1-neoforge.jar"
+   "file_id": 9707371,
+   "filename": "particlerain-4.0.4-1.21.1-neoforge.jar"
   },
   "required_deps": [],
   "optional_deps": [],
@@ -1160,18 +1160,18 @@
   "license": "LicenseRef-All-Rights-Reserved",
   "modrinth": {
    "project_id": "4q8UOK1d",
-   "version_id": "ReUDmzrA",
-   "version_number": "1.15.1",
-   "filename": "SubtleEffects-neoforge-1.21.1-1.15.1.jar",
-   "url": "https://cdn.modrinth.com/data/4q8UOK1d/versions/ReUDmzrA/SubtleEffects-neoforge-1.21.1-1.15.1.jar",
-   "sha1": "e8ab4df7ac4bf3d88fa389a1cf97ad2449c3206d",
-   "sha512": "4bc61c3cb3df0d774f623eb9177c0ec3d74617c044d3a80a5b564094d2b14c9ebc98b79893a01bb5461d92141787bb814dd869101a293a840dade027bd0a56a1",
-   "size": 3445062
+   "version_id": "1Cj3QYAu",
+   "version_number": "1.15.3",
+   "filename": "SubtleEffects-neoforge-1.21.1-1.15.3.jar",
+   "url": "https://cdn.modrinth.com/data/4q8UOK1d/versions/1Cj3QYAu/SubtleEffects-neoforge-1.21.1-1.15.3.jar",
+   "sha1": "886b352836f2453ed73e6b7b3142fdf34a6cdd72",
+   "sha512": "cdd70d36cd2837cf97b61c276b085d1517e3a4c04e495aa0da7f48af989900853f6e8ac248351d78b062bd08be7cbabc0826299e5d3afa44d94f38dc4cb83b53",
+   "size": 3477966
   },
   "curseforge": {
    "project_id": 1023913,
-   "file_id": 9150589,
-   "filename": "SubtleEffects-neoforge-1.21.1-1.15.1.jar"
+   "file_id": 9671909,
+   "filename": "SubtleEffects-neoforge-1.21.1-1.15.3.jar"
   },
   "required_deps": [
    "fzzy-config"
@@ -1189,18 +1189,18 @@
   "license": "LGPL-3.0-only",
   "modrinth": {
    "project_id": "lhGA9TYQ",
-   "version_id": "1IiqEQGl",
-   "version_number": "13.0.11+neoforge",
-   "filename": "architectury-13.0.11-neoforge.jar",
-   "url": "https://cdn.modrinth.com/data/lhGA9TYQ/versions/1IiqEQGl/architectury-13.0.11-neoforge.jar",
-   "sha1": "008656a0702801174b8ec245ed7aad1921d6e9f1",
-   "sha512": "d9f7c3bb8162577dfb461ffdf04bd6a3563c7586934a0e2a744c14421beffb8286f0d88d4c758317003f20f99fe8072a39b9d675af061e036970d36db36027f0",
-   "size": 584734
+   "version_id": "xGfBrBzj",
+   "version_number": "13.0.12+neoforge",
+   "filename": "architectury-13.0.12-neoforge.jar",
+   "url": "https://cdn.modrinth.com/data/lhGA9TYQ/versions/xGfBrBzj/architectury-13.0.12-neoforge.jar",
+   "sha1": "646dace27624ac08ad8d229fe15f6601a8b7fbb2",
+   "sha512": "286127f99708d1e2723e1dcc9104ebcab258f04db92040fc2394e5b7faf36d731ef3b84e592d94ec0d0f7f899eca84f806b1e012223da4894d4d8af5030ffe0f",
+   "size": 584731
   },
   "curseforge": {
    "project_id": 419699,
-   "file_id": 8492726,
-   "filename": "architectury-13.0.11-neoforge.jar"
+   "file_id": 9608861,
+   "filename": "architectury-13.0.12-neoforge.jar"
   },
   "required_deps": [],
   "optional_deps": [],
@@ -1353,18 +1353,18 @@
   "license": "LicenseRef-All-Rights-Reserved",
   "modrinth": {
    "project_id": "e0M1UDsY",
-   "version_id": "ry7LvdEb",
-   "version_number": "1.21.1-8.86-fabric+forge+neo",
-   "filename": "collective-1.21.1-8.86.jar",
-   "url": "https://cdn.modrinth.com/data/e0M1UDsY/versions/ry7LvdEb/collective-1.21.1-8.86.jar",
-   "sha1": "91f6a5c0ea671349b710a34810160abfb5dcc4c0",
-   "sha512": "b741915a3952bfb1f83ff74a3aee84128fb0d09b8e75ff836b1820c1b2d221fd5cf4bfa91146afee02468f6a7010cf5ae2b8f64746a6fc7bfa1e27b0abc4f99a",
-   "size": 1633821
+   "version_id": "MvfIbC5P",
+   "version_number": "1.21.1-8.87-fabric+forge+neo",
+   "filename": "collective-1.21.1-8.87.jar",
+   "url": "https://cdn.modrinth.com/data/e0M1UDsY/versions/MvfIbC5P/collective-1.21.1-8.87.jar",
+   "sha1": "c202e2894c366b8203db435acc83ea225fb20bb2",
+   "sha512": "2741b4b42def6f5f8bbfa9d73c1548e606017173ca7b045d507fa050d2d56dc6cda979d7a5ec9946eb2d5ba7a7f5a8c8dee0949fe389ae1989c1b086d609a856",
+   "size": 1634586
   },
   "curseforge": {
    "project_id": 342584,
-   "file_id": 9548438,
-   "filename": "collective-1.21.1-8.86.jar"
+   "file_id": 9628280,
+   "filename": "collective-1.21.1-8.87.jar"
   },
   "required_deps": [],
   "optional_deps": [],
@@ -1463,18 +1463,18 @@
   "license": "LGPL-3.0-or-later",
   "modrinth": {
    "project_id": "vvuO3ImH",
-   "version_id": "yohfFbgD",
-   "version_number": "9.5.1+1.21.1",
-   "filename": "curios-neoforge-9.5.1+1.21.1.jar",
-   "url": "https://cdn.modrinth.com/data/vvuO3ImH/versions/yohfFbgD/curios-neoforge-9.5.1%2B1.21.1.jar",
-   "sha1": "418fcd42e3a7844c9bdc71c9b6401fdb3894e0c4",
-   "sha512": "5981a267686b744e7e3c227f78cbcd5267c14ac6979a28e814695f4589273998563147207fef4a5cdb7cdbdc39797cd95d9e4abadb55869f18e02a38d0654ae5",
-   "size": 410690
+   "version_id": "KJsZIQrT",
+   "version_number": "9.6.0+1.21.1",
+   "filename": "curios-neoforge-9.6.0+1.21.1.jar",
+   "url": "https://cdn.modrinth.com/data/vvuO3ImH/versions/KJsZIQrT/curios-neoforge-9.6.0%2B1.21.1.jar",
+   "sha1": "110fa48c45be8d8421bf2e0bd706f11ec47cc7f8",
+   "sha512": "1453d7c970f37b357967dbdad080ed107e90eea2b151e88a5e51b271a38ac72686d47a328fb8b3125cb8c6069130b72ac4b1c023f18ba5244f7550e4599bf8a4",
+   "size": 411707
   },
   "curseforge": {
    "project_id": 309927,
-   "file_id": 6529130,
-   "filename": "curios-neoforge-9.5.1+1.21.1.jar"
+   "file_id": 9694505,
+   "filename": "curios-neoforge-9.6.0-1.21.1.jar"
   },
   "required_deps": [],
   "optional_deps": [],
@@ -1490,18 +1490,18 @@
   "license": "MIT",
   "modrinth": {
    "project_id": "uTGjf7vA",
-   "version_id": "5k9n62gb",
-   "version_number": "7.18.0",
-   "filename": "easy_npc_config_ui-neoforge-1.21.1-7.18.0.jar",
-   "url": "https://cdn.modrinth.com/data/uTGjf7vA/versions/5k9n62gb/easy_npc_config_ui-neoforge-1.21.1-7.18.0.jar",
-   "sha1": "7b9564421c4c50e4d0cd7168c5442bb3a34fabc3",
-   "sha512": "83c1d70d7381eca36daef79e250ee3b06caf12c2caa3966e3b82cba74516bd55ff7144fdfe9d71f5e75df51850ac60eab8d532eca7d4bc460b676095f305d604",
-   "size": 1186275
+   "version_id": "x2X1dzmL",
+   "version_number": "7.20.0",
+   "filename": "easy_npc_config_ui-neoforge-1.21.1-7.20.0.jar",
+   "url": "https://cdn.modrinth.com/data/uTGjf7vA/versions/x2X1dzmL/easy_npc_config_ui-neoforge-1.21.1-7.20.0.jar",
+   "sha1": "7738a362f324567a1e6ed0c8857c4cf686fbfc03",
+   "sha512": "843113e362464c301537ebbf8c6b4ee3172065f0314d4bc35349f00b39df6dfdaf347fbdfb0ee67c975eaaf14a6689b76df05644705d2d3cfdf9c5a888a4b57e",
+   "size": 1186266
   },
   "curseforge": {
    "project_id": 1214728,
-   "file_id": 9411881,
-   "filename": "easy_npc_config_ui-neoforge-1.21.1-7.18.0.jar"
+   "file_id": 9688467,
+   "filename": "easy_npc_config_ui-neoforge-1.21.1-7.20.0.jar"
   },
   "required_deps": [
    "easy-npc-core"
@@ -1521,18 +1521,18 @@
   "license": "MIT",
   "modrinth": {
    "project_id": "Epm6R3P2",
-   "version_id": "9TVwS7rU",
-   "version_number": "7.18.0",
-   "filename": "easy_npc-neoforge-1.21.1-7.18.0.jar",
-   "url": "https://cdn.modrinth.com/data/Epm6R3P2/versions/9TVwS7rU/easy_npc-neoforge-1.21.1-7.18.0.jar",
-   "sha1": "ca84b46e2c4d907c8b3fce3447d2ddf41034b8c8",
-   "sha512": "2bcabc384dcc5c6cb4eb28712b583df3228002f27d2c3801efff6681673c113001b10ce333fa48ee206486500d9b8a83f62bfc2208820466319dc5ce6043ec5c",
-   "size": 3132335
+   "version_id": "DKyg6Yk7",
+   "version_number": "7.20.0",
+   "filename": "easy_npc-neoforge-1.21.1-7.20.0.jar",
+   "url": "https://cdn.modrinth.com/data/Epm6R3P2/versions/DKyg6Yk7/easy_npc-neoforge-1.21.1-7.20.0.jar",
+   "sha1": "921df3f033f6c6df36a284b49cb53bc95303d1d4",
+   "sha512": "f5aa46ea858b7ba2e5184598bb0f6b6d870db1f5733962838d4658b208a91bb5b0ce5c2d048b80a1fcf5b249eeb36d0b905f1920398a48a63ff1d818933e1cd6",
+   "size": 3157251
   },
   "curseforge": {
    "project_id": 1308987,
-   "file_id": 9411875,
-   "filename": "easy_npc-neoforge-1.21.1-7.18.0.jar"
+   "file_id": 9688446,
+   "filename": "easy_npc-neoforge-1.21.1-7.20.0.jar"
   },
   "required_deps": [],
   "optional_deps": [
@@ -1688,18 +1688,18 @@
   "license": "LGPL-2.1-only",
   "modrinth": {
    "project_id": "ordsPcFz",
-   "version_id": "uhJhCT7X",
-   "version_number": "5.12.0",
-   "filename": "kotlinforforge-5.12.0-all.jar",
-   "url": "https://cdn.modrinth.com/data/ordsPcFz/versions/uhJhCT7X/kotlinforforge-5.12.0-all.jar",
-   "sha1": "d10d062caf1aad9aec82d7852f2fee1781735c1f",
-   "sha512": "b8c3942f4d33179edf3f102f3d870b99dd436f8b8236dbbd31aa51b888162c692cfd88927295f24dc8b4375232f4c6c17360c5d6c4823f93cbcd7cf4bdc8bd14",
-   "size": 7279264
+   "version_id": "9ZlVvei8",
+   "version_number": "5.13.0",
+   "filename": "kotlinforforge-5.13.0-all.jar",
+   "url": "https://cdn.modrinth.com/data/ordsPcFz/versions/9ZlVvei8/kotlinforforge-5.13.0-all.jar",
+   "sha1": "b1d5563f4e3db9ec4a4a2b371560aa171d6de237",
+   "sha512": "64a26f73e3299ad09b350d3421e3f97a5ccd158d1936fb50fc57f3c88bf6fd33814568bf43a0886f79ada4be65d65d232d9e20a901833150ec5b89a01c46d459",
+   "size": 7364729
   },
   "curseforge": {
    "project_id": 351264,
-   "file_id": 8335665,
-   "filename": "kotlinforforge-5.12.0-all.jar"
+   "file_id": 9641139,
+   "filename": "kotlinforforge-5.13.0-all.jar"
   },
   "required_deps": [],
   "optional_deps": [],
@@ -2098,18 +2098,18 @@
   "license": "LicenseRef-All-Rights-Reserved",
   "modrinth": {
    "project_id": "nmoqTijg",
-   "version_id": "ceT6tucA",
-   "version_number": "1.21.1-1.5.32.2464",
-   "filename": "sophisticatedcore-1.21.1-1.5.32.2464.jar",
-   "url": "https://cdn.modrinth.com/data/nmoqTijg/versions/ceT6tucA/sophisticatedcore-1.21.1-1.5.32.2464.jar",
-   "sha1": "1e78bb86812f8de3b0bd017081aae6cd6d57ce04",
-   "sha512": "1250d8604b1ab0e3510ca31cc7da2cd469bc543b3e925f2d483a50edd1703d0c740a6b1dbe6cc5202d5bdca99e5bc93e23fb9ae0b5dedb8e37033456df3d27eb",
-   "size": 1845848
+   "version_id": "9e7VbbdS",
+   "version_number": "1.21.1-1.5.39.2489",
+   "filename": "sophisticatedcore-1.21.1-1.5.39.2489.jar",
+   "url": "https://cdn.modrinth.com/data/nmoqTijg/versions/9e7VbbdS/sophisticatedcore-1.21.1-1.5.39.2489.jar",
+   "sha1": "27d19713fec2c1b1e8e8158b2c7e285d6153778b",
+   "sha512": "eb11155bbebd1e84957ccd3207ab54a0f9c47f09796bd8fdcc23aeaa16def26661c070e30846bb9eae752e08c0ee510eb2cd4c790bf2e4575212907fef9cde1d",
+   "size": 1855442
   },
   "curseforge": {
    "project_id": 618298,
-   "file_id": 9524669,
-   "filename": "sophisticatedcore-1.21.1-1.5.32.2464.jar"
+   "file_id": 9692552,
+   "filename": "sophisticatedcore-1.21.1-1.5.39.2489.jar"
   },
   "required_deps": [],
   "optional_deps": [],
@@ -2434,18 +2434,18 @@
   "license": "LicenseRef-Supplementaries-Team-License",
   "modrinth": {
    "project_id": "fFEIiSDQ",
-   "version_id": "rWq0ko29",
-   "version_number": "1.21.1-4.0.2",
-   "filename": "supplementaries-1.21.1-4.0.2-neoforge.jar",
-   "url": "https://cdn.modrinth.com/data/fFEIiSDQ/versions/rWq0ko29/supplementaries-1.21.1-4.0.2-neoforge.jar",
-   "sha1": "af25cb08a82c72b3fb67508071ce627714bd2b57",
-   "sha512": "092034ac007c327c9dd58c68ae585df59fa523a5ca40da88b34ad8f1c6347523d302e490acc1650eae6837f46979442ea8a8c151802074de2da99c396ec28894",
-   "size": 13840377
+   "version_id": "lTN2U3b1",
+   "version_number": "1.21.1-4.1.3",
+   "filename": "supplementaries-1.21.1-4.1.3-neoforge.jar",
+   "url": "https://cdn.modrinth.com/data/fFEIiSDQ/versions/lTN2U3b1/supplementaries-1.21.1-4.1.3-neoforge.jar",
+   "sha1": "5fc5038ef40e472db8af3efe72acb6cd54156535",
+   "sha512": "a5507fe8da77d0b3290c3553911917311872904a461d450b64c07f4e35ce2e57ffae6d4401d6d5bb4f5a5e1964b9f06e442515a8161fb184251f92e4d47a7ecd",
+   "size": 13944682
   },
   "curseforge": {
    "project_id": 412082,
-   "file_id": 9211734,
-   "filename": "supplementaries-1.21.1-4.0.2-neoforge.jar"
+   "file_id": 9687485,
+   "filename": "supplementaries-1.21.1-4.1.3-neoforge.jar"
   },
   "required_deps": [
    "moonlight"
@@ -2698,18 +2698,18 @@
   "license": "Apache-2.0",
   "modrinth": {
    "project_id": "uEntVAnd",
-   "version_id": "SrCvbHMo",
-   "version_number": "2.0.1+neoforge-1.21.1",
-   "filename": "mob_loot_bags-neoforge-1.21.1-2.0.1.jar",
-   "url": "https://cdn.modrinth.com/data/uEntVAnd/versions/SrCvbHMo/mob_loot_bags-neoforge-1.21.1-2.0.1.jar",
-   "sha1": "d8bce35cdc984a2083c6e388af54601889a13281",
-   "sha512": "6bc7ed42efb8f7f9793d725635db5876b78f7f684911602dab76949850adfe66b0bb8a89fef0634bbd67f1979ba25e2ec63d868390830c77881d7f869dc68308",
-   "size": 553808
+   "version_id": "huPqlxjq",
+   "version_number": "2.0.3+neoforge-1.21.1",
+   "filename": "mob_loot_bags-neoforge-1.21.1-2.0.3.jar",
+   "url": "https://cdn.modrinth.com/data/uEntVAnd/versions/huPqlxjq/mob_loot_bags-neoforge-1.21.1-2.0.3.jar",
+   "sha1": "9178a38548143d4e331f861085bfc11b25b88e77",
+   "sha512": "c05b0fa2d6fa252316bab559261e98568890ebd7782060ffacec5765ac331fbb6b29960bfa92ba0fc4318a0321fbf4cb4eaa784a68c9ce81c8ec89dcb7c05255",
+   "size": 553857
   },
   "curseforge": {
    "project_id": 1093276,
-   "file_id": 9418342,
-   "filename": "mob_loot_bags-neoforge-1.21.1-2.0.1.jar"
+   "file_id": 9680878,
+   "filename": "mob_loot_bags-neoforge-1.21.1-2.0.3.jar"
   },
   "required_deps": [],
   "optional_deps": [],
@@ -2779,18 +2779,18 @@
   "license": "Apache-2.0",
   "modrinth": {
    "project_id": "coZxDAGe",
-   "version_id": "Bbk3qFxK",
-   "version_number": "3.1.1+neoforge-1.21.1",
-   "filename": "remnant_bosses-neoforge-1.21.1-3.1.1.jar",
-   "url": "https://cdn.modrinth.com/data/coZxDAGe/versions/Bbk3qFxK/remnant_bosses-neoforge-1.21.1-3.1.1.jar",
-   "sha1": "9dc27418d236380d18430c4ac93a90e67ad7297b",
-   "sha512": "1b0dca5d14b0718fcf0ba6b544641f28e6297ee707d4b3f0c631ea1b522d8db8d7a7a93f799927dc2511b75d7e09b56202a46c3e638b5aea3917d9c46e8f576c",
-   "size": 3985909
+   "version_id": "Gqked0ok",
+   "version_number": "3.1.2+neoforge-1.21.1",
+   "filename": "remnant_bosses-neoforge-1.21.1-3.1.2.jar",
+   "url": "https://cdn.modrinth.com/data/coZxDAGe/versions/Gqked0ok/remnant_bosses-neoforge-1.21.1-3.1.2.jar",
+   "sha1": "3a8308d088b3b48ced83256643dfe90a2808a885",
+   "sha512": "7db726b78196fed5b102caa261ac14daba6c77b1559f7768fede60e3eadfcae7579e842c87f285ee75a3a27a4eac17f42a99a20b9cbca21aafa91cdd9e470ec9",
+   "size": 3989372
   },
   "curseforge": {
    "project_id": 1225026,
-   "file_id": 9423548,
-   "filename": "remnant_bosses-neoforge-1.21.1-3.1.1.jar"
+   "file_id": 9664534,
+   "filename": "remnant_bosses-neoforge-1.21.1-3.1.2.jar"
   },
   "required_deps": [
    "geckolib",
@@ -2809,18 +2809,18 @@
   "license": "Apache-2.0",
   "modrinth": {
    "project_id": "B3cmf35A",
-   "version_id": "pP4Jl3yN",
-   "version_number": "2.0.1+neoforge-1.21.1",
-   "filename": "better_with_gold-neoforge-1.21.1-2.0.1.jar",
-   "url": "https://cdn.modrinth.com/data/B3cmf35A/versions/pP4Jl3yN/better_with_gold-neoforge-1.21.1-2.0.1.jar",
-   "sha1": "e940f667e22b7f71b72b7ba5bb5dede1817528fe",
-   "sha512": "839097c7691a69d0c6e37c95e5b9075150f62395e66dcd7becbfc8be260c2a534f274549055899b6e327756c3edbfaeb24e055c811509408c55174d5b2ac3953",
-   "size": 686749
+   "version_id": "ZpyhVvk3",
+   "version_number": "2.0.2+neoforge-1.21.1",
+   "filename": "better_with_gold-neoforge-1.21.1-2.0.2.jar",
+   "url": "https://cdn.modrinth.com/data/B3cmf35A/versions/ZpyhVvk3/better_with_gold-neoforge-1.21.1-2.0.2.jar",
+   "sha1": "6c8d18c39e39c6e577879524ef1827fbb6f9cc91",
+   "sha512": "622e403fc25f62fc5cc271507a3361ec7f8d047bfd01815be795a6bf87fc0784fdb2d1b9f5413023dceca30a11b871b0fd7ed61cb6dd30fd8c051ad8c997d4b8",
+   "size": 686750
   },
   "curseforge": {
    "project_id": 1305455,
-   "file_id": 9418572,
-   "filename": "better_with_gold-neoforge-1.21.1-2.0.1.jar"
+   "file_id": 9664137,
+   "filename": "better_with_gold-neoforge-1.21.1-2.0.2.jar"
   },
   "required_deps": [],
   "optional_deps": [
@@ -2838,18 +2838,18 @@
   "license": "Apache-2.0",
   "modrinth": {
    "project_id": "lLviL6Oq",
-   "version_id": "EQ1C0fV7",
-   "version_number": "2.0.1+neoforge-1.21.1",
-   "filename": "remnantminimaps-neoforge-1.21.1-2.0.1.jar",
-   "url": "https://cdn.modrinth.com/data/lLviL6Oq/versions/EQ1C0fV7/remnantminimaps-neoforge-1.21.1-2.0.1.jar",
-   "sha1": "b7a51c00c41e1af647ee41334cc53d0fbe842568",
-   "sha512": "5ac43bd8c8ab99ca726261760934ddd40ce3e58da4d4ea5ccea8458e7e559927f8813177a4099360cba44b0b1d460d620c82f254ad592c3c0a850ba3e02c5109",
-   "size": 922008
+   "version_id": "Uw4ENAfY",
+   "version_number": "2.1.0+neoforge-1.21.1",
+   "filename": "remnantminimaps-neoforge-1.21.1-2.1.0.jar",
+   "url": "https://cdn.modrinth.com/data/lLviL6Oq/versions/Uw4ENAfY/remnantminimaps-neoforge-1.21.1-2.1.0.jar",
+   "sha1": "7ba13835dc597632ed906ee2f5f884553194f808",
+   "sha512": "a92c69d85e9aea2b03fc8a33783cde874e546cba0c79c40b233390e1556d90424fc9612b05d0954ae3c08b4daff6b01f27f6cadc363cda546f48d995290f56b6",
+   "size": 1017104
   },
   "curseforge": {
    "project_id": 1564458,
-   "file_id": 9417502,
-   "filename": "remnantminimaps-neoforge-1.21.1-2.0.1.jar"
+   "file_id": 9570837,
+   "filename": "remnantminimaps-neoforge-1.21.1-2.1.0.jar"
   },
   "required_deps": [],
   "optional_deps": [],
@@ -2865,18 +2865,18 @@
   "license": "LicenseRef-All-Rights-Reserved",
   "modrinth": {
    "project_id": "gKOBlOap",
-   "version_id": "bKXbXyvM",
-   "version_number": "1.0.1+mc1.21.1+neoforge",
-   "filename": "tbos-neoforge-1.21.1-1.0.1.jar",
-   "url": "https://cdn.modrinth.com/data/gKOBlOap/versions/bKXbXyvM/tbos-neoforge-1.21.1-1.0.1.jar",
-   "sha1": "9c433d66b969d5e97dd55e1e019ed3937de344b7",
-   "sha512": "d19bd8f8e5c8fe885ac31a546582bcba686b0c22f58b85b0b76703f26903767562db64b1cfa6fbd9326ba4561cc8505e52089035f2a19f9278eae5b4605e9a1a",
-   "size": 12608186
+   "version_id": "83KQPLv6",
+   "version_number": "1.0.2+mc1.21.1+neoforge",
+   "filename": "tbos-neoforge-1.21.1-1.0.2.jar",
+   "url": "https://cdn.modrinth.com/data/gKOBlOap/versions/83KQPLv6/tbos-neoforge-1.21.1-1.0.2.jar",
+   "sha1": "30023bd65067d5436a3a0ffa72023d0d8db8d8f4",
+   "sha512": "899875378c465aa3520a75da0e7dd788d1b18ef8466d086bf012c5fd835409cea57026ce48e7240f986e35938f2674f1709ca76a7cb7be0f7939e56ad5ae227b",
+   "size": 12615022
   },
   "curseforge": {
    "project_id": 1621994,
-   "file_id": 9416901,
-   "filename": "tbos-neoforge-1.21.1-1.0.1.jar"
+   "file_id": 9686358,
+   "filename": "tbos-neoforge-1.21.1-1.0.2.jar"
   },
   "required_deps": [],
   "optional_deps": [
@@ -2895,18 +2895,18 @@
   "license": "Apache-2.0",
   "modrinth": {
    "project_id": "4eSfhd3M",
-   "version_id": "4XmWTtbU",
-   "version_number": "3.1.2",
-   "filename": "remnant_mobs-neoforge-1.21.1-3.1.2.jar",
-   "url": "https://cdn.modrinth.com/data/4eSfhd3M/versions/4XmWTtbU/remnant_mobs-neoforge-1.21.1-3.1.2.jar",
-   "sha1": "7f6e9b374175e74a2688fe70190e4dfa84ccc9e4",
-   "sha512": "491a9f0eee94573fab3e416ae7ce596752fd3c4e61feb8ad4b6102dea692ad6c0ff653aefa46edfca56d0201c0e1204227915929a36015e28fc0e0378eaf62dc",
-   "size": 493886
+   "version_id": "6XQvRKGO",
+   "version_number": "3.2.1",
+   "filename": "remnant_mobs-neoforge-1.21.1-3.2.1.jar",
+   "url": "https://cdn.modrinth.com/data/4eSfhd3M/versions/6XQvRKGO/remnant_mobs-neoforge-1.21.1-3.2.1.jar",
+   "sha1": "25a06b17a5acbb5342cb03e9ca449739e5025823",
+   "sha512": "14a6ee0e5fcc4bd282f2398c99133b9b9cc0d1ba6298764cae604cdb582492ac8771732199eeba4357f6b87992dba06bbbb860f47b7d6ef2113f52acc6ffd7a9",
+   "size": 570544
   },
   "curseforge": {
    "project_id": 1088344,
-   "file_id": 9422249,
-   "filename": "remnant_mobs-neoforge-1.21.1-3.1.2.jar"
+   "file_id": 9685460,
+   "filename": "remnant_mobs-neoforge-1.21.1-3.2.1.jar"
   },
   "required_deps": [],
   "optional_deps": [
@@ -2982,18 +2982,18 @@
   "license": "Apache-2.0",
   "modrinth": {
    "project_id": "ENwBoUVH",
-   "version_id": "gEMJej1g",
-   "version_number": "3.0.1+neoforge-1.21.1",
-   "filename": "runeborn-neoforge-1.21.1-3.0.1.jar",
-   "url": "https://cdn.modrinth.com/data/ENwBoUVH/versions/gEMJej1g/runeborn-neoforge-1.21.1-3.0.1.jar",
-   "sha1": "4bca5fb0a87306321e75093ebb8c5f50409f694f",
-   "sha512": "4927114f6b4a86dad2110553471b2ffd33ac39b8ef604c9f1cfa225df7946a83924f38de43e0ae6d5b9819f21ac74b1aa2b15305dd8fa29a4f573ce305800007",
-   "size": 715818
+   "version_id": "N4xK0W9h",
+   "version_number": "3.0.2+neoforge-1.21.1",
+   "filename": "runeborn-neoforge-1.21.1-3.0.2.jar",
+   "url": "https://cdn.modrinth.com/data/ENwBoUVH/versions/N4xK0W9h/runeborn-neoforge-1.21.1-3.0.2.jar",
+   "sha1": "add64b4793709fc4a792178cba0425ec947a77d8",
+   "sha512": "90c51ba36e7b26a83aed498e664718f50af416462e3058bdc9832f38a6ba9c9295523f95be5832b4c41163c8946a20531c87d9308ab60c894f8bc389dc6cad3a",
+   "size": 715899
   },
   "curseforge": {
    "project_id": 1150827,
-   "file_id": 9554702,
-   "filename": "runeborn-neoforge-1.21.1-3.0.1.jar"
+   "file_id": 9713153,
+   "filename": "runeborn-neoforge-1.21.1-3.0.2.jar"
   },
   "required_deps": [],
   "optional_deps": [
@@ -3099,18 +3099,18 @@
   "license": "Apache-2.0",
   "modrinth": {
    "project_id": "xcgCWpcP",
-   "version_id": "t3ukht53",
-   "version_number": "2.0.0+neoforge-1.21.1",
-   "filename": "better_witch_huts-neoforge-1.21.1-2.0.0.jar",
-   "url": "https://cdn.modrinth.com/data/xcgCWpcP/versions/t3ukht53/better_witch_huts-neoforge-1.21.1-2.0.0.jar",
-   "sha1": "87d2fa2ddaf9fdc2abdae62ba1bc0498c7801f05",
-   "sha512": "3b77bd75c95d6f85d05452ff4e130e07cdf49fb25c51072c6a2060bc4874b82abf91ec3d21812030adc2823c2f10554c72ab00729123d3a3cfa633bf87a7ebd4",
-   "size": 598040
+   "version_id": "qvWchC7T",
+   "version_number": "2.0.1+neoforge-1.21.1",
+   "filename": "better_witch_huts-neoforge-1.21.1-2.0.1.jar",
+   "url": "https://cdn.modrinth.com/data/xcgCWpcP/versions/qvWchC7T/better_witch_huts-neoforge-1.21.1-2.0.1.jar",
+   "sha1": "9ced3b6499e95cf968961ff11b0777f4fd591604",
+   "sha512": "0db1c32d00c58b68c08ac7fe18a8a1116f46630633a86957e3e749464d71311049dc3c68b614c4fe8ea50192ba9682b37d00d8a5cd14e5ac49684bc8b3a39637",
+   "size": 598039
   },
   "curseforge": {
    "project_id": 1393188,
-   "file_id": 9404982,
-   "filename": "better_witch_huts-neoforge-1.21.1-2.0.0.jar"
+   "file_id": 9664070,
+   "filename": "better_witch_huts-neoforge-1.21.1-2.0.1.jar"
   },
   "required_deps": [
    "jauml"
@@ -3214,18 +3214,18 @@
   "license": "LicenseRef-tr7zw-Protective-License",
   "modrinth": {
    "project_id": "NNAgCjsB",
-   "version_id": "eieYbWYb",
-   "version_number": "1.11.3",
-   "filename": "entityculling-neoforge-1.11.3-mc1.21.1.jar",
-   "url": "https://cdn.modrinth.com/data/NNAgCjsB/versions/eieYbWYb/entityculling-neoforge-1.11.3-mc1.21.1.jar",
-   "sha1": "f122f84f329793675b2625d51b77f990d7de3579",
-   "sha512": "93e83dd690b91d610be29451b34836c9daa7e08bd952f88ffa07c62d8774bbaac2ff0c6768d2cbf1b14f47d0b86f98cef9fd341e0d29bd37207eaf4aa2abea63",
-   "size": 1510075
+   "version_id": "DDaDZQ47",
+   "version_number": "1.12.1",
+   "filename": "entityculling-neoforge-1.12.1-mc1.21.1.jar",
+   "url": "https://cdn.modrinth.com/data/NNAgCjsB/versions/DDaDZQ47/entityculling-neoforge-1.12.1-mc1.21.1.jar",
+   "sha1": "75671869d5991e7fbeed77f0549501d1368d6f44",
+   "sha512": "c1818837b0e43f67fa4cd2cfffc2d57c17e579b405b215dd627e3ea68d0c000b56a79614cd41f20451ea7a687e9e9de66afe871f0b9bcec680699445ea0d9fa3",
+   "size": 1523607
   },
   "curseforge": {
    "project_id": 448233,
-   "file_id": 9100286,
-   "filename": "entityculling-neoforge-1.11.3-mc1.21.1.jar"
+   "file_id": 9594031,
+   "filename": "entityculling-neoforge-1.12.1-mc1.21.1.jar"
   },
   "required_deps": [],
   "optional_deps": [],
@@ -3438,18 +3438,18 @@
   "license": "MIT",
   "modrinth": {
    "project_id": "ayPU0OHc",
-   "version_id": "eTz03Gfd",
-   "version_number": "1.0.12+1.21.1-neoforge",
-   "filename": "structure_layout_optimizer-neoforge-1.0.12.jar",
-   "url": "https://cdn.modrinth.com/data/ayPU0OHc/versions/eTz03Gfd/structure_layout_optimizer-neoforge-1.0.12.jar",
-   "sha1": "052c31cb9881c04c17d949345539aa8684f474bf",
-   "sha512": "8c38ebd0e221f5bfe887a40ab21caede40cadc90bfc3b8dbbc79888c07faee44d58f12a974f1c5af324c9feceaa2ed04ea62724c6453650c77e1910582914153",
-   "size": 61777
+   "version_id": "cn0D1llp",
+   "version_number": "1.0.13+1.21.1-neoforge",
+   "filename": "structure_layout_optimizer-neoforge-1.0.13.jar",
+   "url": "https://cdn.modrinth.com/data/ayPU0OHc/versions/cn0D1llp/structure_layout_optimizer-neoforge-1.0.13.jar",
+   "sha1": "f6c9a3393e9b833ca4671c093c38fccabcdaea0d",
+   "sha512": "61629e94f05bb9baadfd4ef480ec2158b0633a0c72c4e688660b40e549e1f7b3621058de0743f31f5014370158bc6ea223bdc5929a8183fbe041d50653211703",
+   "size": 95065
   },
   "curseforge": {
    "project_id": 1087831,
-   "file_id": 7439136,
-   "filename": "structure_layout_optimizer-neoforge-1.0.12.jar"
+   "file_id": 9619387,
+   "filename": "structure_layout_optimizer-neoforge-1.0.13.jar"
   },
   "required_deps": [
    "resourceful-config"
@@ -3721,18 +3721,18 @@
   "license": "LicenseRef-All-Rights-Reserved",
   "modrinth": {
    "project_id": "TyCTlI4b",
-   "version_id": "tJnK2DE1",
-   "version_number": "1.21.1-3.26.21.2249",
-   "filename": "sophisticatedbackpacks-1.21.1-3.26.21.2249.jar",
-   "url": "https://cdn.modrinth.com/data/TyCTlI4b/versions/tJnK2DE1/sophisticatedbackpacks-1.21.1-3.26.21.2249.jar",
-   "sha1": "940e93e9eaaf7db50c308c2a849a471830f6c1ea",
-   "sha512": "1373f5cdf9093e9613c82d429b6670538bf0fa1a397f5cc1e5e807fca0debd77139de67764c111bc369eea4cc1a395bbd790ec337413353fd1c987b7d9376249",
-   "size": 1265683
+   "version_id": "CbYrTzNh",
+   "version_number": "1.21.1-3.26.22.2257",
+   "filename": "sophisticatedbackpacks-1.21.1-3.26.22.2257.jar",
+   "url": "https://cdn.modrinth.com/data/TyCTlI4b/versions/CbYrTzNh/sophisticatedbackpacks-1.21.1-3.26.22.2257.jar",
+   "sha1": "098cd62db8b38b937ca821d1de8511b9ed2c7142",
+   "sha512": "19718945b6db0bbd25ca80ef6ec8c76b50c214c80663297a08321dd3252c5a9780f94c1caffb618fc87bf8eec1bf0afceefcdeede9fa121d81407b6d4dd1d69c",
+   "size": 1266183
   },
   "curseforge": {
    "project_id": 422301,
-   "file_id": 9524812,
-   "filename": "sophisticatedbackpacks-1.21.1-3.26.21.2249.jar"
+   "file_id": 9692576,
+   "filename": "sophisticatedbackpacks-1.21.1-3.26.22.2257.jar"
   },
   "required_deps": [
    "sophisticated-core"
@@ -3758,18 +3758,18 @@
   "license": "LicenseRef-All-Rights-Reserved",
   "modrinth": {
    "project_id": "hMlaZH8f",
-   "version_id": "hC4LaBhJ",
-   "version_number": "1.21.1-1.6.16.2222",
-   "filename": "sophisticatedstorage-1.21.1-1.6.16.2222.jar",
-   "url": "https://cdn.modrinth.com/data/hMlaZH8f/versions/hC4LaBhJ/sophisticatedstorage-1.21.1-1.6.16.2222.jar",
-   "sha1": "33d8daae028961f3b8d8b8e9e1c6d3ab91f6d2c2",
-   "sha512": "a3bf3141fd0853b45014a273db67f164af00f96d96a84acc84e34455286f5a7f539ae1408029eec06650d38e1c2f800d839830d4bd6d198250ec102da8feb01b",
-   "size": 1936453
+   "version_id": "t9QwDIi8",
+   "version_number": "1.21.1-1.6.20.2239",
+   "filename": "sophisticatedstorage-1.21.1-1.6.20.2239.jar",
+   "url": "https://cdn.modrinth.com/data/hMlaZH8f/versions/t9QwDIi8/sophisticatedstorage-1.21.1-1.6.20.2239.jar",
+   "sha1": "13b863fa5fa12896caaece3a1b4e5f9475c7f591",
+   "sha512": "df3a1d6f5483d8de792f127c0106c7d935497d468cf7330c65b1a1d3796069ade21367f49e4a283c2d2aa3e1244e454d36c896ba825accf3efed029c5f8e9fd5",
+   "size": 2100126
   },
   "curseforge": {
    "project_id": 619320,
-   "file_id": 9431872,
-   "filename": "sophisticatedstorage-1.21.1-1.6.16.2222.jar"
+   "file_id": 9692522,
+   "filename": "sophisticatedstorage-1.21.1-1.6.20.2239.jar"
   },
   "required_deps": [
    "sophisticated-core"
@@ -3909,18 +3909,18 @@
   "license": "MIT",
   "modrinth": {
    "project_id": "CgGEe1h3",
-   "version_id": "bVaYwkNt",
-   "version_number": "7.18.0",
-   "filename": "easy_npc_bundle-neoforge-1.21.1-7.18.0.jar",
-   "url": "https://cdn.modrinth.com/data/CgGEe1h3/versions/bVaYwkNt/easy_npc_bundle-neoforge-1.21.1-7.18.0.jar",
-   "sha1": "9345fcce498992d718eea9da415bc3d814495056",
-   "sha512": "aa2ac1858d2cef4cceff9abbfec61966d300949f3c385d1c3a5dbb4dc58be4c194b4e166bd6bbd1ab0bea49ec802a4a35b72ac245d70acb53d2edd0f1c461e20",
-   "size": 25224
+   "version_id": "1P9Xgr5Y",
+   "version_number": "7.20.0",
+   "filename": "easy_npc_bundle-neoforge-1.21.1-7.20.0.jar",
+   "url": "https://cdn.modrinth.com/data/CgGEe1h3/versions/1P9Xgr5Y/easy_npc_bundle-neoforge-1.21.1-7.20.0.jar",
+   "sha1": "03ba9ac3991608cb7ac66e7de635d1cdf44ae061",
+   "sha512": "26508d79aab79e82d5fde2956f51a22c84cabf97e438cff80915ded662a6f03c996ed8c633af4934ac2081cecedd634351500d066a9a281eb371a641f5bb5970",
+   "size": 25223
   },
   "curseforge": {
    "project_id": 559312,
-   "file_id": 9411885,
-   "filename": "easy_npc_bundle-neoforge-1.21.1-7.18.0.jar"
+   "file_id": 9688487,
+   "filename": "easy_npc_bundle-neoforge-1.21.1-7.20.0.jar"
   },
   "required_deps": [
    "easy-npc-config-ui",
@@ -4731,18 +4731,18 @@
   "license": "LicenseRef-All-Rights-Reserved",
   "modrinth": {
    "project_id": "32A5wpl8",
-   "version_id": "GwZAuNt0",
-   "version_number": "1.1.0",
-   "filename": "apexhosting-partner-link-neoforge-1.21.1-1.1.0.jar",
-   "url": "https://cdn.modrinth.com/data/32A5wpl8/versions/GwZAuNt0/apexhosting-partner-link-neoforge-1.21.1-1.1.0.jar",
-   "sha1": "4f8d3105b61c125fd7741ff53e3c0b453c624c77",
-   "sha512": "083734ca4a7166b20da2807f4b3c17738fdc6a7f0e708aa12baffc62405e16e5c3994514d962379701752f812e55922fadb1a6a5cfccc02c9672be64e34743a6",
-   "size": 841084
+   "version_id": "FnSMvqwa",
+   "version_number": "1.1.1",
+   "filename": "apexhosting-partner-link-neoforge-1.21.1-1.1.1.jar",
+   "url": "https://cdn.modrinth.com/data/32A5wpl8/versions/FnSMvqwa/apexhosting-partner-link-neoforge-1.21.1-1.1.1.jar",
+   "sha1": "ade589e2d90164c337fe083391be037ccfe69381",
+   "sha512": "51e64dfe4e49b31b3f271faf1558fecf34cdfe169da7e09ccf32cbe98667764942b071c6f4e524d5999ba2cc025a7e565f267671f8560c886f1a10f825bb77a7",
+   "size": 841064
   },
   "curseforge": {
    "project_id": 1622270,
-   "file_id": 9270421,
-   "filename": "apexhosting-partner-link-neoforge-1.21.1-1.1.0.jar"
+   "file_id": 9672843,
+   "filename": "apexhosting-partner-link-neoforge-1.21.1-1.1.1.jar"
   },
   "required_deps": [],
   "optional_deps": [],

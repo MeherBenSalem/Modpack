@@ -1,12 +1,12 @@
 name = "Remnants | The Modpack Season 1"
 author = "NightBeam Studio"
-version = "1.0.0-beta.13"
+version = "1.0.0-beta.14"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "5d33f3e393a45bb6a16ff8cbe60ad1c3c279624dbad45bda886a0dfd371120a2"
+hash = "2abaf5d09516ce991e3f3445ab5088746b5c278aefb6743fae5701d0d3d6425e"
 
 [versions]
 minecraft = "1.21.1"

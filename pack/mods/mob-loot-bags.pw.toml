@@ -1,16 +1,16 @@
 name = "Mob LootBags"
-filename = "mob_loot_bags-neoforge-1.21.1-2.0.1.jar"
+filename = "mob_loot_bags-neoforge-1.21.1-2.0.3.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/uEntVAnd/versions/SrCvbHMo/mob_loot_bags-neoforge-1.21.1-2.0.1.jar"
+url = "https://cdn.modrinth.com/data/uEntVAnd/versions/huPqlxjq/mob_loot_bags-neoforge-1.21.1-2.0.3.jar"
 hash-format = "sha512"
-hash = "6bc7ed42efb8f7f9793d725635db5876b78f7f684911602dab76949850adfe66b0bb8a89fef0634bbd67f1979ba25e2ec63d868390830c77881d7f869dc68308"
+hash = "c05b0fa2d6fa252316bab559261e98568890ebd7782060ffacec5765ac331fbb6b29960bfa92ba0fc4318a0321fbf4cb4eaa784a68c9ce81c8ec89dcb7c05255"
 
 [update]
 [update.curseforge]
-file-id = 9418342
+file-id = 9680878
 project-id = 1093276
 [update.modrinth]
 mod-id = "uEntVAnd"
-version = "SrCvbHMo"
+version = "huPqlxjq"

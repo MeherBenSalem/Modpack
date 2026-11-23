@@ -1,7 +1,7 @@
 {
   "name": "The Huntmaster",
   "icon": "minecraft:crossbow",
-  "category": "remnants:people",
+  "category": "patchouli:people",
   "sortnum": 3,
   "pages": [
     {

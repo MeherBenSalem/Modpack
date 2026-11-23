@@ -25,7 +25,7 @@ quests:
       &7Press &eI&7 for your &6Status&7 and the &6Ashen Codex&7. Everything this world will try to kill you with is written there.
     tasks: [{checkmark: "♪ Listen to the Keeper"}]
     rewards:
-      - {item: {id: patchouli:guide_book, components: {"patchouli:book": "remnants:ashen_codex"}}, title: "The Ashen Codex"}
+      - {item: {id: patchouli:guide_book, components: {"patchouli:book": "patchouli:ashen_codex"}}, title: "The Ashen Codex"}
       - {table: ashborn_provisions}
       - {xp: 20}
 

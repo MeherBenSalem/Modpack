@@ -1,7 +1,7 @@
 {
   "name": "Echoes of the Fallen",
   "icon": "minecraft:skeleton_skull",
-  "category": "remnants:dead",
+  "category": "patchouli:dead",
   "sortnum": 2,
   "pages": [
     {

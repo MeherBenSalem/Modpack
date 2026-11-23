@@ -1,7 +1,7 @@
 {
   "name": "The Archivist",
   "icon": "minecraft:lectern",
-  "category": "remnants:people",
+  "category": "patchouli:people",
   "sortnum": 2,
   "pages": [
     {

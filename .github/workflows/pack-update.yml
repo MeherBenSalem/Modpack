@@ -37,7 +37,9 @@ jobs:
           mkdir -p reports
           python3 tools/update_mods.py --write 2>&1 | tee reports/update-mods.txt
       - name: Build the pack, the CurseForge zip, the .mrpack and the server pack
-        run: python3 tools/build_pack.py --export 2>&1 | tee reports/build-pack.txt
+        run: |
+          mkdir -p reports
+          python3 tools/build_pack.py --export 2>&1 | tee reports/build-pack.txt
       - name: Check CurseForge ids
         continue-on-error: true
         id: checkcf

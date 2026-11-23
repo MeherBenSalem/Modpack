@@ -1,7 +1,7 @@
 {
   "name": "Ranks of the Risen",
   "icon": "remnant_mobs:hunters_lens",
-  "category": "remnants:dead",
+  "category": "patchouli:dead",
   "sortnum": 0,
   "pages": [
     {

@@ -3,6 +3,7 @@
 
 - Better Combat movesets for Runeborn's armaments   (src/data/runeborn_movesets.yaml)
 - Mob LootBags loot tables and the pack's boss tags (src/data/loot_bags.yaml)
+- The Ashen Codex guide book, written to pack/patchouli_books/ (src/data/codex.yaml)
 
 Every modded id is checked against the lang dumps in research/registry/ so a typo fails the build.
 """
@@ -86,26 +87,33 @@ def loot_bags():
 
 
 def codex():
-    """The Ashen Codex (Patchouli): book.json in data, categories and entries in assets (use_resource_pack)."""
+    """The Ashen Codex (Patchouli), as an external book: pack/patchouli_books/ashen_codex/ (book.json + en_us/).
+
+    Patchouli only reads book.json from mod jars (data/<modid>/patchouli_books/) and from the patchouli_books folder
+    in the game directory, never from datapacks, so a book.json under kubejs/data never registers and the item shows
+    "Invalid book". Books in that folder get the id patchouli:<folder> and read their pages from the same folder,
+    so categories are patchouli:<key> and the quest reward names patchouli:ashen_codex.
+    """
     src = yaml.safe_load((ROOT / "src" / "data" / "codex.yaml").read_text())
     book = "ashen_codex"
-    write_json(OUT / "remnants" / "patchouli_books" / book / "book.json", {
-        "name": src["name"], "landing_text": src["landing"], "version": 1, "use_resource_pack": True,
+    root = ROOT / "pack" / "patchouli_books" / book
+    if root.exists():
+        for old in root.rglob("*.json"):
+            old.unlink()
+    write_json(root / "book.json", {
+        "name": src["name"], "landing_text": src["landing"], "version": 1,
         "model": "patchouli:book_brown", "book_texture": "patchouli:textures/gui/book_brown.png",
         "show_progress": False, "i18n": False})
-    assets = ROOT / "pack" / "kubejs" / "assets" / "remnants" / "patchouli_books" / book / "en_us"
-    if assets.exists():
-        for old in assets.rglob("*.json"):
-            old.unlink()
+    pages = root / "en_us"
     n = 0
     for order, cat in enumerate(src["categories"]):
         check(cat["icon"], "codex")
-        write_json(assets / "categories" / f"{cat['key']}.json", {
+        write_json(pages / "categories" / f"{cat['key']}.json", {
             "name": cat["name"], "description": cat["description"], "icon": cat["icon"], "sortnum": order})
         for eorder, e in enumerate(cat["entries"]):
             check(e["icon"], "codex")
-            write_json(assets / "entries" / cat["key"] / f"{e['key']}.json", {
-                "name": e["name"], "icon": e["icon"], "category": f"remnants:{cat['key']}", "sortnum": eorder,
+            write_json(pages / "entries" / cat["key"] / f"{e['key']}.json", {
+                "name": e["name"], "icon": e["icon"], "category": f"patchouli:{cat['key']}", "sortnum": eorder,
                 "pages": [{"type": "patchouli:text", "text": t} for t in e["pages"]]})
             n += 1
     return n

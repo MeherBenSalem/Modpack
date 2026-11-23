@@ -267,10 +267,11 @@ def export(mods, meta):
 
 
 # Parts of the pack a dedicated server never reads: client-only mods' configs, client configs, KubeJS client
-# scripts and assets (sounds, textures, lang, book text). Paths relative to pack/.
+# scripts and assets (sounds, textures, lang, book text). Paths relative to pack/. patchouli_books/ holds the pack's
+# Patchouli guide books (the Ashen Codex): the server needs each book.json to know the book, not its pages.
 CLIENT_ONLY = ("config/defaultoptions/", "config/fancymenu/", "config/dynamic_fps.json", "kubejs/assets/",
                "kubejs/client_scripts/", "config/apexhosting-partner-link.properties")
-SERVER_DIRS = ("config", "defaultconfigs", "kubejs", "datapacks")
+SERVER_DIRS = ("config", "defaultconfigs", "kubejs", "datapacks", "patchouli_books")
 
 
 def server_side(m):
@@ -282,6 +283,8 @@ def server_file(rel):
     if rel.split("/")[0] not in SERVER_DIRS or rel.startswith(CLIENT_ONLY):
         return False
     name = rel.rsplit("/", 1)[-1]
+    if rel.startswith("patchouli_books/"):
+        return name == "book.json"
     return not (rel.startswith("config/") and re.search(r"[-_.]client\.(toml|json5?|cfg|properties|snbt)$", name))
 
 

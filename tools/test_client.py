@@ -7,9 +7,9 @@
                                          # join the server pack's dedicated server (offline name "Ashborn")
 
 Installs the NeoForge client into run/client, downloads every client-side and shared mod (sha1-checked), the
-resource packs, and the non-sound vanilla assets, copies the pack's config/kubejs/defaultconfigs, then launches
-offline with --quickPlaySingleplayer (or --quickPlayMultiplayer with --server). Writes run/client/boot.png and
-run/client/boot-report.json (with ERROR/WARN lines of logs/latest.log grouped, as test_server.py does).
+resource packs, and the non-sound vanilla assets, copies the pack's config/kubejs/defaultconfigs/patchouli_books,
+then launches offline with --quickPlaySingleplayer (or --quickPlayMultiplayer with --server). Writes run/client/boot.png
+and run/client/boot-report.json (with ERROR/WARN lines of logs/latest.log grouped, as test_server.py does).
 Exit code 0 when the client reached a loaded world without a crash report (with --server: and stayed connected).
 """
 import argparse
@@ -130,7 +130,7 @@ def sync_mods(mods, curseforge=False):
 
 
 def sync_pack(world):
-    for d in ("config", "defaultconfigs", "kubejs"):
+    for d in ("config", "defaultconfigs", "kubejs", "patchouli_books"):
         if (RUN / d).exists():
             shutil.rmtree(RUN / d)
         if (ROOT / "pack" / d).exists():

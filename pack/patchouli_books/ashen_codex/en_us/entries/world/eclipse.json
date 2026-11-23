@@ -1,7 +1,7 @@
 {
   "name": "The Long Eclipse",
   "icon": "remnant_bosses:eclipse_shard",
-  "category": "remnants:world",
+  "category": "patchouli:world",
   "sortnum": 2,
   "pages": [
     {

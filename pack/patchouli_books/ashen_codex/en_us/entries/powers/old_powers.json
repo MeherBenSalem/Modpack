@@ -1,7 +1,7 @@
 {
   "name": "Older Than the Crown",
   "icon": "minecraft:nether_star",
-  "category": "remnants:powers",
+  "category": "patchouli:powers",
   "sortnum": 0,
   "pages": [
     {

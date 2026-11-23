@@ -44,7 +44,7 @@
           "item": {
             "id": "patchouli:guide_book",
             "components": {
-              "patchouli:book": "remnants:ashen_codex"
+              "patchouli:book": "patchouli:ashen_codex"
             }
           },
           "title": "The Ashen Codex"

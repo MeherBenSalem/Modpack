@@ -1,7 +1,7 @@
 {
   "name": "The Hunter's Moon",
   "icon": "minecraft:red_dye",
-  "category": "remnants:dead",
+  "category": "patchouli:dead",
   "sortnum": 1,
   "pages": [
     {
